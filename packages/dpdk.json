@@ -1,0 +1,23 @@
+{
+  "name": "dpdk",
+  "meta": {
+    "description": "Library for fast packet processing",
+    "homepage": "http://dpdk.org/",
+    "license": "Apache License 2.0"
+  },
+  "src": {
+    "method": "git",
+    "versions": [
+      {
+        "name": "HEAD",
+        "value": {
+          "url": "https://github.com/nimscale/dpdk",
+          "rev": "95cb59863364de548a6519a2638154e6a7910f32",
+          "date": "2017-03-05T11:13:38+08:00",
+          "sha256": "1wnn4zb1qwvspa5al87g4hr17c2s0rdgvzm1jjlkwm6mbb4nprm4",
+          "fetchSubmodules": false
+        }
+      }
+    ]
+  }
+}

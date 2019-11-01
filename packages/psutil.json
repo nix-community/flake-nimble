@@ -1,0 +1,23 @@
+{
+  "name": "psutil",
+  "meta": {
+    "description": "psutil is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network). Since 2018 maintained by Juan Carlos because was abandoned.",
+    "homepage": "https://github.com/johnscillieri/psutil-nim",
+    "license": "BSD"
+  },
+  "src": {
+    "method": "git",
+    "versions": [
+      {
+        "name": "HEAD",
+        "value": {
+          "url": "https://github.com/juancarlospaco/psutil-nim",
+          "rev": "2990ec0e1666fcd9dc7e28d607306bb8bb1473be",
+          "date": "2019-10-23T08:43:34-04:00",
+          "sha256": "0l3kx1hdv6cwrrxpq4xybcm9nfj0x57hg4yf9s3gkf4vfnbnp9zc",
+          "fetchSubmodules": false
+        }
+      }
+    ]
+  }
+}
