@@ -1,0 +1,303 @@
+{
+  "name": "gintro",
+  "meta": {
+    "description": "High level GObject-Introspection based GTK3 bindings",
+    "homepage": "https://github.com/stefansalewski/gintro",
+    "license": "MIT"
+  },
+  "src": {
+    "method": "git",
+    "versions": [
+      {
+        "name": "0.6.0",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "c2b13b0b903a6bb5e78cd5f0eb64a629a8e5ad12",
+          "date": "2019-10-28T13:05:12+01:00",
+          "sha256": "11pdn0z78h247in9lf4sp1l68fpzm7h9p2ys3l15gzxjp4sa4m72",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.5.5",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "f3a8dcfdbeaea6589e47052a31bfc832018f0ceb",
+          "date": "2019-09-21T21:10:59+02:00",
+          "sha256": "17d5c2fskqjarg0gs77smmyqypq0q5jrmnhv81c5nw8za3mnavhj",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.5.4",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "8979188f4cc811b8d6043e0e7e1d1e09c723ef2d",
+          "date": "2019-09-14T12:31:27+02:00",
+          "sha256": "1hqp9p53bl9n6zjvpvcafqzwf992xihq45wrk9r2xm0g3w0xsisk",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.5.3",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "e9082e0efe42637a35f3111601b17c3189cf167c",
+          "date": "2019-08-13T18:37:17+02:00",
+          "sha256": "0hkg8rl0wz7ib2720ikv5mhq1i6dpx405f86q0jlrvikny60jr23",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.5.2",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "1052e1347401bfcf42bb087ae926fe6da26b32b2",
+          "date": "2019-07-03T09:20:16+02:00",
+          "sha256": "0lmn67cxgv1b0h4sr14z3aiy65gayd3zsi945djmaaz1ml84p1vj",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.5.1",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "5c31092dc684a2a19cbab5bf02638f660704961f",
+          "date": "2019-06-29T21:23:08+02:00",
+          "sha256": "1qk9jd2sp4xqy921l8j7pf5fg728bfip3ljs4z3fw7n3rgwf7kmp",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.5.0",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "fd6cda7fe834c42ef7639997bb2b1ba68e833339",
+          "date": "2019-06-22T20:24:06+02:00",
+          "sha256": "1x3zpw2kbz536kx0jv22mnnmbb9z16d0i01z3kgcia8lhgrbslsa",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.23",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "92f788236e7a071c0928dd13207f61978ce504c1",
+          "date": "2019-06-17T18:48:05+02:00",
+          "sha256": "1ibyd5nn3h0fdl10cj63ca8hv9cnfx5s9adm0ah0gzpj8aqwc6j5",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.22",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "8dbad9458158a0377a40338bc78252583f8790a6",
+          "date": "2019-06-05T18:02:02+02:00",
+          "sha256": "0a6qz51gl3bczisrac99nq3a1bqxwaqgvk21j8fdmi3xmylzx54g",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.20",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "d0f0f35bb1577fa5661deac3175b5adf66ab6e31",
+          "date": "2019-06-05T17:42:07+02:00",
+          "sha256": "0h69i0vq19s6qzxnkwlrzlznj4b7fc7r3rcn7qmcl431v0ywjn8a",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.18",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "4c93a26d04c3fef17e217208142d985e90d3f0bc",
+          "date": "2019-04-27T09:02:37+02:00",
+          "sha256": "0s3mdbsadjq6cckm7gxd91lg928rbmlv81bg0h9kj7hpygqn8hra",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.17",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "e84cb1dba9007c50250f4c90156bb755e4dafd5d",
+          "date": "2019-04-16T06:29:52+02:00",
+          "sha256": "1cyif60611gig0r65zlgk15rvxyp00dddqcd9bc54xx3znxmygbv",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.16",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "6854a0886ae20ecea8e7fef69670f0a49a4041b3",
+          "date": "2019-04-14T13:14:12+02:00",
+          "sha256": "0rpl2aj8d80kk5zn6lykh966fmpwnrmdqc8nv6lb42xrk13ks63c",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.15",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "8a59ea33d0177fe80ebdc87fcf94e7bda8be1982",
+          "date": "2019-04-14T12:56:38+02:00",
+          "sha256": "1ihvp4794fks4faphb304gx73j6gqrcy8dmdypbmjsindprspm5r",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.14",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "8a59ea33d0177fe80ebdc87fcf94e7bda8be1982",
+          "date": "2019-04-14T12:56:38+02:00",
+          "sha256": "1ihvp4794fks4faphb304gx73j6gqrcy8dmdypbmjsindprspm5r",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.11",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "6fe96176030fe35113819befc36b5d5f641d38f3",
+          "date": "2019-02-17T14:17:30+01:00",
+          "sha256": "1l4495d18mzp2qbmd60lhyhwba993f8hd7hscgl1r68kms4him24",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.10",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "ac537bbe843b392a49958c10d142fc557f91e962",
+          "date": "2019-02-10T13:10:26+01:00",
+          "sha256": "172asb1y3xn504wi8vifa415dd27ifmxhvrcl5pcxl0kh75pxfk7",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.9",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "a4f845f987fed04316a941371c2e7e89ff2ab19a",
+          "date": "2019-02-10T11:56:27+01:00",
+          "sha256": "08f4sw69hvsc14q8cial5ypn0hsqjr1drlds0cllrnckd411wcc1",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.8",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "fb75f1512c7095f04639d15ce2c48ee4086a6755",
+          "date": "2019-01-15T21:45:26+01:00",
+          "sha256": "12j84ip383y5pc612dp34fydchnj8rdwp5wxvqkpxg8073avc9br",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.7",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "696a7952bf5449e4bb83fd3135e89ae1624d2d57",
+          "date": "2018-10-22T11:12:06+02:00",
+          "sha256": "16kzgzqjhdspdpr2kqhrxjrrvs6cha9a1kwvl5xgmvvkxbr1h2zi",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.6",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "f7e692dbe2edef5b3d655e03f3b8c2d86dce05e6",
+          "date": "2018-09-30T20:45:01+02:00",
+          "sha256": "0j5a0rn4flzl9wvdi6304y9r5xr9bb7rgkyispczxk4mr82kmcd7",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.5",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "32b3018a7b51dc082ad4a972807f55ff5aaad6dd",
+          "date": "2018-08-20T08:09:56+02:00",
+          "sha256": "0i4rmqplil9a763hii4v8f11dlydv6z96pwhmlhvmcvyy8gnvv2v",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.4",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "37f7ee9aceb866a3051db0aa919c3f736043e13b",
+          "date": "2018-08-02T16:31:54+02:00",
+          "sha256": "01lsw73d0dpdm9jia6qy1yda6r0bzbm6kj87zi6r1gzf8djnffrm",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.3",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "fa5226486998f507324a98098977c47ced922447",
+          "date": "2018-04-25T10:28:48+02:00",
+          "sha256": "1z2yn0hvqdp9r9jhcw1msxbwq3zlr6wnyfz8aa9ym8vfaa9vr5j9",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.2",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "f4fd43950470869bd2e9fce944ada1b90749af5e",
+          "date": "2018-03-11T15:24:08+01:00",
+          "sha256": "0p7mw37iqcm3w02k39xfgdx2dbgib5f4b3sjyh6pa2f4zw4x6dvj",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.1",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "b8cb5d901acbe3c68078175134b85b26666edfb7",
+          "date": "2018-03-04T13:53:39+01:00",
+          "sha256": "1b6d89fqkss3qcynyb8wxw71x23v6nny71arnw1npws8c5gvb8iw",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.4.0",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "0b09e8cea240d19b9aa363511b594a26ced8f365",
+          "date": "2018-02-26T12:00:44+01:00",
+          "sha256": "05ld2dg6z9sjlpgfpjci5fshx5rxwvd6kbr4v9cf8cvdi83f5b4p",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.2.0",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "765ecaf9cc15ff6e76b09f11aab47e14a7fa6f97",
+          "date": "2017-08-30T12:10:19+02:00",
+          "sha256": "0m42dxmw03z6iz6ah9y0aqvj3qwsxd2wxkq8x1027zi367ipw717",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.1.0",
+        "value": {
+          "url": "https://github.com/stefansalewski/gintro",
+          "rev": "b0849a903d3458c416ce4a2757cec5d43cdcd618",
+          "date": "2017-07-21T18:54:30+02:00",
+          "sha256": "0i352x876lzhcj4pp8fl65ydbcjy8cqmy0gcwb1pxqd583z1zq3v",
+          "fetchSubmodules": false
+        }
+      }
+    ]
+  }
+}

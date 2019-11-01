@@ -1,0 +1,43 @@
+{
+  "name": "drand48",
+  "meta": {
+    "description": "Nim implementation of the standard unix drand48 pseudo random number generator",
+    "homepage": "https://github.com/JeffersonLab/drand48",
+    "license": "BSD3"
+  },
+  "src": {
+    "method": "git",
+    "versions": [
+      {
+        "name": "1.1.0",
+        "value": {
+          "url": "https://github.com/JeffersonLab/drand48",
+          "rev": "c43e31749d665c5c6cdf5a6540929965bc53195e",
+          "date": "2018-11-25T13:14:15-05:00",
+          "sha256": "1l7v49810jnlq1sk3dgmc3bs4046mf9ssj3vkzbvznvb7z5kia58",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "1.0.1",
+        "value": {
+          "url": "https://github.com/JeffersonLab/drand48",
+          "rev": "6eb363e19d42b9841ef43c2963fd4700622514e8",
+          "date": "2018-02-07T09:52:18-05:00",
+          "sha256": "0fmcxd8bymh7zq1swd1z5mfh4y6ns1zqf8snffykgsz7ffqm8m5v",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "1.0.0",
+        "value": {
+          "url": "https://github.com/JeffersonLab/drand48",
+          "rev": "531b000046f199c73d1a558219461483146b9a38",
+          "date": "2017-09-29T15:07:00-04:00",
+          "sha256": "04vb6lzbf0ycm8gq64hirmx4g5l3880fkazli7fxf7s5g9y9gk3q",
+          "fetchSubmodules": false
+        }
+      }
+    ]
+  }
+}
