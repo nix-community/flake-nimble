@@ -1,7 +1,7 @@
-import std/strutils, std/tables
+import std/sequtils, std/strutils, std/tables
 
 type
-  ValueKind = enum
+  ValueKind* = enum
     tInt,
     tBool,
     tString,
@@ -50,7 +50,7 @@ func `$`*(v: Value): string =
   of tBool:
     result = if v.boolean: "True" else: "False"
   of tString:
-    result = escape v.str
+    result = "\"$1\"" % (v.str.replace("\"", "\\\""))
   of tPath:
     result = v.path
   of tNull:
@@ -58,12 +58,14 @@ func `$`*(v: Value): string =
   of tAttrs:
     result = "{"
     for key, val in v.attrs.pairs:
-      result.add("\"$1\"=$2;" % [ key, $val ])
+      let key = if key.validIdentifier: key else: key.escape
+      result.add("$1=$2;" % [ key, $val ])
     result.add "}"
   of tList:
-    result = "["
+    result = "[ "
     for e in v.list:
       result.add $e
+      result.add " "
     result.add "]"
   of tFloat:
     result = $v.fnum
@@ -84,11 +86,14 @@ func toNix*(x: string): Value =
 func toPath*(x: string): Value =
    Value(kind: tPath, path: x)
 
-func toNix*(pairs: openArray[(string, Value)]): Value =
+template toNix*(pairs: openArray[(string, Value)]): Value =
   Value(kind: tAttrs, attrs: toTable pairs)
 
 func toNix*(x: seq[Value]): Value =
   Value(kind: tList, list: x)
+
+template toNix*(x: seq[untyped]): Value =
+  map(x, toNix).toNix
 
 func toNix*(x: openarray[Value]): Value =
   Value(kind: tList, list: x[x.low .. x.high])
@@ -97,7 +102,7 @@ func toNix*(x: float): Value =
   Value(kind: tFloat, fnum: x)
 
 template `[]=`*(result: Value; key: string; val: untyped) =
-  result.attrs[key] = toNix val
+  result.attrs[key] = val.toNix
 
 proc `[]`*(attrs: Value; key: string): Value =
   attrs.attrs[key]
@@ -107,3 +112,9 @@ proc newNull*(): Value =
 
 proc newAttrs*(): Value =
   Value(kind: tAttrs, attrs: initTable[string, Value]())
+
+func newList*(): Value =
+  Value(kind: tList)
+
+proc add*(x, y: Value) =
+  x.list.add y

@@ -1,6 +1,9 @@
 import private/nix
 
-import std/json, std/osproc, std/sequtils, std/tables
+import nimblepkg/download, nimblepkg/packageinfo, nimblepkg/options, nimblepkg/version
+
+import std/algorithm, std/json, std/os, std/osproc, std/sequtils, std/streams,
+    std/strutils, std/tables, std/osproc, std/tables, std/random, std/uri
 
 proc toNix(js: JsonNode): Value =
   case js.kind
@@ -50,7 +53,7 @@ proc prefetch(js: JsonNode): Value =
   else:
     result = toNix prefetch
 
-proc main() =
+proc mainOld() =
   let pkgs = parseFile "packages_official.json"
   var
     values = newAttrs()
@@ -71,5 +74,131 @@ proc main() =
   stdout.write $values
   if 0 < errors.elems.len:
     stderr.write errors.pretty
+
+proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
+  var
+    url = pkg.url
+    uri = parseUri pkg.url
+    subdir = ""
+  if uri.query != "":
+    if uri.query.startsWith("subdir="):
+      subdir = uri.query[7 .. ^1]
+    uri.query = ""
+    url = $uri
+  var args = @[ "--quiet", "--url", url ]
+  if tag != "":
+    args.add "--ref"
+    args.add tag
+  result = execProcess(
+    "nix-prefetch-git",
+    args=args,
+    options={poEchoCmd,poUsePath}).parseJson
+  if subdir != "":
+    result["subdir"] = %* subdir
+
+func metaAttrs(pkg: Package): JsonNode =
+  %*
+    {"description": pkg.description
+    ,"homepage": pkg.web
+    ,"license": pkg.license
+    }
+
+proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
+  ## Generate a JSON array of source code versions and digests.
+  ## The result is a combination of previously collected
+  ## and freshly generated data.
+  result = newJObject()
+  result["method"] = %* pkg.downloadMethod
+  if pkg.downloadMethod == "git":
+    var table = initOrderedTable[Version, JsonNode]()
+
+    if prev.contains "src":
+      let src = prev["src"]
+      if src.contains "versions":
+        for e in src["versions"].items:
+          # collect previous versions
+          let version = e["name"].getStr.Version
+          table[version] = e["value"]
+
+    for version, tag in pkg.packageVersions:
+      # collect current versions
+      if table.contains version:
+        table[version]["url"] = %* pkg.url
+      else:
+        table[version] = prefetchVersion(pkg, tag)
+
+    var versionList = newJArray()
+    for version, value in table:
+      versionList.add(%*
+        { "name": (string)version
+        , "value": value
+        })
+    if versionList.len == 0:
+      versionList.add(%*
+        { "name": "HEAD"
+        , "value": prefetchVersion(pkg)
+        })
+    result["versions"] = versionList
+
+proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
+  %*
+    { "name": pkg.name
+    , "meta": pkg.metaAttrs
+    , "src": sourcesList(pkg, prev)
+    }
+
+proc createPackageFile(path: string; pkg: Package) =
+  echo "create ", path
+  let jsonPkg = generatePackageJson(pkg, newJObject())
+  writeFile(path, pretty jsonPkg)
+
+proc updatePackageFile(path: string; pkg: Package) =
+  echo "update ", path
+  let jsonPkg = generatePackageJson(pkg, parseFile path)
+  writeFile(path, pretty jsonPkg)
+
+proc exit() {.noconv.} =
+  var pathList: seq[string]
+  for kind, path in walkDir("packages", relative=true):
+    if kind == pcFile and path.endsWith ".json":
+      pathList.add("./" & path)
+  let
+    indexPath = "packages/default.nix"
+    indexExpr = map(pathList.sorted, toPath).toNix
+  writeFile(indexPath, $indexExpr)
+  discard execProcess(
+    "nixfmt",
+    args=[indexPath],
+    options={poEchoCmd,poUsePath})
+  quit 0
+
+proc main() =
+  setControlCHook(exit)
+  var pkgList = parseCmdLine().getPackageList()
+  shuffle pkgList
+    # This could take a while, and the error handling is
+    # poor. Shuffle the package list so eventually everything
+    # gets done after enough retries.
+
+  createDir "packages"
+  for pkg in pkgList:
+    #if pkg.url.contains "ehmry":
+    if pkg.url == "": continue
+    doAssert(pkg.name != "default")
+    let jsonPath = "packages/" & pkg.name & ".json"
+    if existsFile jsonPath:
+      try:
+        updatePackageFile(jsonPath, pkg)
+      except:
+        echo "failed to update package for ", pkg.name
+        echo getCurrentExceptionMsg()
+        break
+    else:
+      try: createPackageFile(jsonPath, pkg)
+      except:
+        echo "failed to create package for ", pkg.name
+        echo getCurrentExceptionMsg()
+        continue
+  exit()
 
 main()

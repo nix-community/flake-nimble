@@ -11,4 +11,4 @@ bin           = @["nix_from_nimble"]
 
 # Dependencies
 
-requires "nim >= 0.20.2"
+requires "nim >= 0.20.2", "nimble"
