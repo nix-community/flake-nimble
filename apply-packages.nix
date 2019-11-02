@@ -17,7 +17,7 @@ let
               src' = fetchgit {
                 inherit (ver.value) fetchSubmodules rev sha256 url;
               };
-            in if hasAttr "subdir" ver.value then "${src' /subdir}" else src';
+            in if hasAttr "subdir" ver then "${src' /subdir}" else src';
           };
         };
       versioned = map expandVersion args.src.versions;
