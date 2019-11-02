@@ -1,0 +1,15 @@
+diff --git a/src/nimblepkg/packageinfo.nim b/src/nimblepkg/packageinfo.nim
+index 64e15df..e12c83e 100644
+--- a/src/nimblepkg/packageinfo.nim
++++ b/src/nimblepkg/packageinfo.nim
+@@ -121,8 +121,8 @@ proc fromJson(obj: JSonNode): Package =
+   else:
+     result.alias = ""
+     result.version = obj.optionalField("version")
+-    result.url = obj.requiredField("url")
+-    result.downloadMethod = obj.requiredField("method")
++    result.url = obj.optionalField("url")
++    result.downloadMethod = obj.optionalField("method")
+     result.dvcsTag = obj.optionalField("dvcs-tag")
+     result.license = obj.requiredField("license")
+     result.tags = @[]

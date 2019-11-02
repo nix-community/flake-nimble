@@ -1,0 +1,85 @@
+diff --git a/lib/genode/alloc.nim b/lib/genode/alloc.nim
+index a21a3ad7b..3ddd3074b 100644
+--- a/lib/genode/alloc.nim
++++ b/lib/genode/alloc.nim
+@@ -17,18 +17,18 @@ when not defined(genode):
+ when not declared(GenodeEnv):
+   include genode/env
+ 
+-type DataspaceCapability {.
+-  importcpp: "Genode::Dataspace_capability", pure.} = object
++type RamDataspaceCapability {.
++  importcpp: "Genode::Ram_dataspace_capability", pure.} = object
+ 
+ type
+   Map = object
+     attachment: pointer
+     size: int
+-    ds: DataspaceCapability
++    ds: RamDataspaceCapability
+ 
+   SlabMeta = object
+     next: ptr MapSlab
+-    ds: DataspaceCapability
++    ds: RamDataspaceCapability
+ 
+   MapSlab = object
+     meta: SlabMeta
+@@ -45,11 +45,11 @@ proc capsAvail(env: GenodeEnv): int {.
+   ## Return the number of available capabilities.
+   ## Each dataspace allocation consumes a capability.
+ 
+-proc allocDataspace(env: GenodeEnv; size: int): DataspaceCapability {.
++proc allocDataspace(env: GenodeEnv; size: int): RamDataspaceCapability {.
+   importcpp: "#->pd().alloc(@)".}
+   ## Allocate a dataspace and its capability.
+ 
+-proc attachDataspace(env: GenodeEnv; ds: DataspaceCapability): pointer {.
++proc attachDataspace(env: GenodeEnv; ds: RamDataspaceCapability): pointer {.
+   importcpp: "#->rm().attach(@)".}
+   ## Attach a dataspace into the component address-space.
+ 
+@@ -57,7 +57,7 @@ proc detachAddress(env: GenodeEnv; p: pointer) {.
+   importcpp: "#->rm().detach(@)".}
+   ## Detach a dataspace from the component address-space.
+ 
+-proc freeDataspace(env: GenodeEnv; ds: DataspaceCapability) {.
++proc freeDataspace(env: GenodeEnv; ds: RamDataspaceCapability) {.
+   importcpp: "#->pd().free(@)".}
+   ## Free a dataspace.
+ 
+diff --git a/lib/pure/os.nim b/lib/pure/os.nim
+index e59c0962d..fe8bc7448 100644
+--- a/lib/pure/os.nim
++++ b/lib/pure/os.nim
+@@ -2563,11 +2563,13 @@ elif defined(windows):
+     raise newException(IndexError, formatErrorIndexBound(i, ownArgv.len-1))
+ 
+ elif defined(genode):
+-  proc paramStr*(i: int): TaintedString =
+-    raise newException(OSError, "paramStr is not implemented on Genode")
++  proc paramCount*(): int = 0
+ 
+-  proc paramCount*(): int =
+-    raise newException(OSError, "paramCount is not implemented on Genode")
++  proc paramStr*(i: int): TaintedString =
++    if i == 0:
++      result = ""
++    else:
++      raise newException(IndexError, formatErrorIndexBound(i, 0))
+ 
+ elif not defined(createNimRtl) and
+   not(defined(posix) and appType == "lib"):
+diff --git a/lib/pure/unittest.nim b/lib/pure/unittest.nim
+index 46d63db8b..35322ec65 100644
+--- a/lib/pure/unittest.nim
++++ b/lib/pure/unittest.nim
+@@ -96,7 +96,7 @@
+ import
+   macros, strutils, streams, times, sets, sequtils
+ 
+-when declared(stdout):
++when declared(stdout) and not declared(genode):
+   import os
+ 
+ when not defined(ECMAScript):

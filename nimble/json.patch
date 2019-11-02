@@ -1,0 +1,169 @@
+diff --git a/src/nimble.nim b/src/nimble.nim
+index e214538..7b559a5 100644
+--- a/src/nimble.nim
++++ b/src/nimble.nim
+@@ -581,12 +581,20 @@ proc search(options: Options) =
+   if needsRefresh(options):
+     raise newException(NimbleError, "Please run nimble refresh.")
+   let pkgList = getPackageList(options)
+-  var found = false
++  var
++    found = false
++    jsonOutput =  newJArray()
+   template onFound {.dirty.} =
+-    echoPackage(pkg)
+-    if pkg.alias.len == 0 and options.queryVersions:
+-      echoPackageVersions(pkg)
+-    echo(" ")
++    if options.jsonOutput:
++      let info = pkg.toJson
++      if pkg.alias.len == 0 and options.queryVersions:
++        info["versions"] = packageVersionsJson(pkg)
++      jsonOutput.add info
++    else:
++      echoPackage(pkg)
++      if pkg.alias.len == 0 and options.queryVersions:
++        echoPackageVersions(pkg)
++      echo(" ")
+     found = true
+     break forPkg
+ 
+@@ -603,17 +611,34 @@ proc search(options: Options) =
+ 
+   if not found:
+     display("Error", "No package found.", Error, HighPriority)
++  elif options.jsonOutput:
++    echo jsonOutput
+ 
+-proc list(options: Options) =
+-  if needsRefresh(options):
+-    raise newException(NimbleError, "Please run nimble refresh.")
+-  let pkgList = getPackageList(options)
++proc echoList(pkgList: seq[Package], queryVersions: bool) =
+   for pkg in pkgList:
+     echoPackage(pkg)
+-    if pkg.alias.len == 0 and options.queryVersions:
++    if pkg.alias.len == 0 and queryVersions:
+       echoPackageVersions(pkg)
+     echo(" ")
+ 
++proc jsonList(pkgList: seq[Package], queryVersions: bool) =
++  let output = newJArray()
++  for i, pkg in pkgList:
++    let info = pkg.toJson
++    if queryVersions:
++      info["versions"] = packageVersionsJson(pkg)
++    output.add info
++  echo output
++
++proc list(options: Options) =
++  if needsRefresh(options):
++    raise newException(NimbleError, "Please run nimble refresh.")
++  let pkgList = getPackageList(options)
++  if options.jsonOutput:
++    jsonList(pkgList, options.queryVersions)
++  else:
++    echoList(pkgList, options.queryVersions)
++
+ proc listInstalled(options: Options) =
+   var h = initOrderedTable[string, seq[string]]()
+   let pkgs = getInstalledPkgsMin(options.getPkgsDir(), options)
+diff --git a/src/nimblepkg/download.nim b/src/nimblepkg/download.nim
+index 85bf54f..c4e15dc 100644
+--- a/src/nimblepkg/download.nim
++++ b/src/nimblepkg/download.nim
+@@ -1,7 +1,8 @@
+ # Copyright (C) Dominik Picheta. All rights reserved.
+ # BSD License. Look at license.txt for more info.
+ 
+-import parseutils, os, osproc, strutils, tables, pegs, uri
++import parseutils, os, osproc, strutils, tables, pegs, uri, json
++
+ import packageinfo, packageparser, version, tools, common, options, cli
+ from algorithm import SortOrder, sorted
+ from sequtils import toSeq, filterIt, map
+@@ -286,6 +287,20 @@ proc echoPackageVersions*(pkg: Package) =
+     echo("  versions:    (Remote tag retrieval not supported by " &
+         pkg.downloadMethod & ")")
+ 
++proc packageVersionsJson*(pkg: Package): JsonNode =
++  result = newJArray()
++  let downMethod = pkg.downloadMethod.getDownloadMethod()
++  try:
++    case downMethod
++    of DownloadMethod.git:
++      let versions = getTagsListRemote(pkg.url, downMethod).getVersionList()
++      for v in values(versions):
++        result.add %v
++    of DownloadMethod.hg:
++      discard
++  except:
++    result = %* { "exception": getCurrentExceptionMsg() }
++
+ when isMainModule:
+   # Test version sorting
+   block:
+diff --git a/src/nimblepkg/options.nim b/src/nimblepkg/options.nim
+index bf050fe..2c5671e 100644
+--- a/src/nimblepkg/options.nim
++++ b/src/nimblepkg/options.nim
+@@ -15,6 +15,7 @@ type
+     uninstallRevDeps*: bool
+     queryVersions*: bool
+     queryInstalled*: bool
++    jsonOutput*:bool
+     nimbleDir*: string
+     verbosity*: cli.Priority
+     action*: Action
+@@ -101,8 +102,10 @@ Commands:
+                                   can be optionally specified.
+   search       pkg/tag            Searches for a specified package. Search is
+                                   performed by tag and by name.
++               [--json]           Format output as JSON.
+                [--ver]            Query remote server for package version.
+   list                            Lists all packages.
++               [--json]           Format output as JSON.
+                [--ver]            Query remote server for package version.
+                [-i, --installed]  Lists all installed packages.
+   tasks                           Lists the tasks specified in the Nimble
+@@ -120,6 +123,8 @@ Options:
+   -v, --version                   Print version information.
+   -y, --accept                    Accept all interactive prompts.
+   -n, --reject                    Reject all interactive prompts.
++      --json                      Produce JSON formatted output when
++                                  searching or listing packages
+       --ver                       Query remote server for package version
+                                   information when searching or listing packages
+       --nimbleDir:dirname         Set the Nimble directory.
+@@ -339,6 +344,8 @@ proc parseFlag*(flag, val: string, result: var Options, kind = cmdLongOption) =
+       result.queryInstalled = true
+     of "ver":
+       result.queryVersions = true
++    of "json":
++      result.jsonOutput = true
+     else:
+       wasFlagHandled = false
+   of actionInstall:
+diff --git a/src/nimblepkg/packageinfo.nim b/src/nimblepkg/packageinfo.nim
+index f00c59f..64e15df 100644
+--- a/src/nimblepkg/packageinfo.nim
++++ b/src/nimblepkg/packageinfo.nim
+@@ -425,6 +425,18 @@ proc echoPackage*(pkg: Package) =
+     if pkg.web.len > 0:
+       echo("  website:     " & pkg.web)
+ 
++func toJson*(pkg: Package, queryVersions = false): JsonNode =
++  result = %*{
++    "name": %pkg.name,
++    "url": %pkg.url,
++    "method": %pkg.downloadMethod,
++    "tags": %pkg.tags,
++    "description": %pkg.description,
++    "license": %pkg.license,
++  }
++  if pkg.web.len > 0:
++    result["web"] = %pkg.web
++
+ proc getDownloadDirName*(pkg: Package, verRange: VersionRange): string =
+   result = pkg.name
+   let verSimple = getSimpleString(verRange)
