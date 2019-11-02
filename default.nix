@@ -48,6 +48,7 @@ let
       '';
     };
 
-  nimblePackages = import ./apply-packages.nix { inherit (world) fetchgit; } buildNimble;
+  nimblePackages =
+    import ./apply-packages.nix { inherit (world) fetchgit; } buildNimble;
 
 in builtins.listToAttrs (nimblePackages) // { inherit nim; }

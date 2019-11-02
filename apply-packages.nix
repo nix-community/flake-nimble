@@ -1,15 +1,16 @@
-{ fetchgit }: F:
+{ fetchgit }:
+F:
 
 let
-  importPackage = path:
+  importPackage = { name, value }:
     with builtins;
     let
-      args = fromJSON (readFile path);
+      args = fromJSON (readFile value);
       expandVersion = assert args.src.method == "git";
         ver: {
-          name = "${args.name}_${replaceStrings [ "." ] [ "_" ] ver.name}";
+          name = "${name}_${replaceStrings [ "." ] [ "_" ] ver.name}";
           value = F {
-            pname = args.name;
+            pname = name;
             version = ver.name;
             inherit (args) meta;
             src = let
@@ -21,10 +22,13 @@ let
         };
       versioned = map expandVersion args.src.versions;
       current = head versioned;
-    in if args.src ? versions then (versioned ++ [{
-      inherit (args) name;
-      inherit (current) value;
-    }]) else [ ];
+    in if args.src ? versions then
+      (versioned ++ [{
+        inherit name;
+        inherit (current) value;
+      }])
+    else
+      [ ];
 
   pkgsPaths = import ./packages;
   pkgsList = map importPackage pkgsPaths;

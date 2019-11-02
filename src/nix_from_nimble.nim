@@ -142,8 +142,7 @@ proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
 
 proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
   %*
-    { "name": pkg.name
-    , "meta": pkg.metaAttrs
+    { "meta": pkg.metaAttrs
     , "src": sourcesList(pkg, prev)
     }
 
@@ -158,18 +157,21 @@ proc updatePackageFile(path: string; pkg: Package) =
   writeFile(path, pretty jsonPkg)
 
 proc exit() {.noconv.} =
-  var pathList: seq[string]
+  var indexList: seq[Value]
   for kind, path in walkDir("packages", relative=true):
     if kind == pcFile and path.endsWith ".json":
-      pathList.add("./" & path)
-  let
-    indexPath = "packages/default.nix"
-    indexExpr = map(pathList.sorted, toPath).toNix
-  writeFile(indexPath, $indexExpr)
-  discard execProcess(
-    "nixfmt",
-    args=[indexPath],
-    options={poEchoCmd,poUsePath})
+      var name = path
+      name.removeSuffix ".json";
+      let pair = [("name", name.toNix), ("value", ("./"&path).toPath)].toNix
+      indexList.add(pair)
+  sort(indexList) do (x, y: Value) -> int:
+    cmp(x["name"].str, y["name"].str)
+  let stream = openFileStream("packages/default.nix", fmWrite)
+  stream.writeLine("[")
+  for pair in indexList:
+    stream.writeLine(pair)
+  stream.writeLine("]")
+  close stream
   quit 0
 
 proc main() =
