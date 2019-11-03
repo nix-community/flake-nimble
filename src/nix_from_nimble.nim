@@ -214,26 +214,33 @@ proc toNix(dep: PkgTuple): Value =
   ].toNix
 
 proc generateDeps(options: Options) =
+  let args = options.action.arguments
+  if args.len != 1:
+    echo "a single package directory argument must be passed"
+    quit -1
+  let pkgDir = args[0]
   cli.setSuppressMessages(true)
-  let p = getPkgInfo(os.getCurrentDir(), options)
+  let p = getPkgInfo(pkgDir, options)
   let attrs =
-    [ ("name", p.name.toNix)
+    [ ("pname", p.name.toNix)
     , ("version", p.version.toNix)
-    , ("specialVersion", p.version.toNix)
-    , ("desc", p.description.toNix)
-    , ("license", p.license.toNix)
-    , ( "skipDirs", p.skipDirs.toNix)
-    , ("skipFiles", p.skipFiles.toNix)
-    , ("skipExt", p.skipExt.toNix)
-    , ("installDirs", p.installDirs.toNix)
-    , ("installFiles", p.installFiles.toNix)
-    , ("installExt", p.installExt.toNix)
-    , ("requires", p.requires.map(toNix).toNix)
-    , ("bin", p.bin.toNix)
-    , ("binDir", p.binDir.toNix)
-    , ("srcDir", p.srcDir.toNix)
-    , ("backend", p.backend.toNix)
-    , ("foreignDeps", p.backend.toNix)
+    , ("nimSpecialVersion", p.version.toNix)
+    , ("nimbleSkipDirs", p.skipDirs.toNix)
+    , ("nimbleSkipFiles", p.skipFiles.toNix)
+    , ("nimbleSkipExt", p.skipExt.toNix)
+    , ("nimbleInstallDirs", p.installDirs.toNix)
+    , ("nimbleInstallFiles", p.installFiles.toNix)
+    , ("nimbleInstallExt", p.installExt.toNix)
+    , ("nimbleRequires", p.requires.map(toNix).toNix)
+    , ("nimbleBin", p.bin.toNix)
+    , ("nimbleBinDir", p.binDir.toNix)
+    , ("nimbleSrcDir", p.srcDir.toNix)
+    , ("nimbleBackend", p.backend.toNix)
+    , ("nimbleForeignDeps", p.backend.toNix)
+    , ("meta",
+      [ ("description", p.description.toNix)
+      , ("license", p.license.toNix)
+      ].toNix)
     ].toNix
   echo attrs
 
