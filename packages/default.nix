@@ -46,7 +46,6 @@
 {name="assimp";value=./assimp.json;}
 {name="ast_pattern_matching";value=./ast_pattern_matching.json;}
 {name="astar";value=./astar.json;}
-{name="asyncdispatch2";value=./asyncdispatch2.json;}
 {name="asyncdocker";value=./asyncdocker.json;}
 {name="asyncevents";value=./asyncevents.json;}
 {name="asyncmysql";value=./asyncmysql.json;}
@@ -98,7 +97,6 @@
 {name="bpg";value=./bpg.json;}
 {name="brainfuck";value=./brainfuck.json;}
 {name="breeze";value=./breeze.json;}
-{name="bump";value=./bump.json;}
 {name="bytes2human";value=./bytes2human.json;}
 {name="byteutils";value=./byteutils.json;}
 {name="c2nim";value=./c2nim.json;}
@@ -114,10 +112,8 @@
 {name="cbor";value=./cbor.json;}
 {name="cello";value=./cello.json;}
 {name="chebyshev";value=./chebyshev.json;}
-{name="chipmunk";value=./chipmunk.json;}
 {name="chipmunk6";value=./chipmunk6.json;}
 {name="chipmunk7_demos";value=./chipmunk7_demos.json;}
-{name="chonker";value=./chonker.json;}
 {name="chroma";value=./chroma.json;}
 {name="chronicles";value=./chronicles.json;}
 {name="chrono";value=./chrono.json;}
@@ -128,10 +124,8 @@
 {name="classy";value=./classy.json;}
 {name="clblast";value=./clblast.json;}
 {name="clibpp";value=./clibpp.json;}
-{name="cligen";value=./cligen.json;}
 {name="cliptomania";value=./cliptomania.json;}
 {name="closure_compiler";value=./closure_compiler.json;}
-{name="closure_methods";value=./closure_methods.json;}
 {name="clr";value=./clr.json;}
 {name="cmake";value=./cmake.json;}
 {name="cmd";value=./cmd.json;}
@@ -211,7 +205,6 @@
 {name="einheit";value=./einheit.json;}
 {name="elvis";value=./elvis.json;}
 {name="emerald";value=./emerald.json;}
-{name="eminim";value=./eminim.json;}
 {name="emmy";value=./emmy.json;}
 {name="enet";value=./enet.json;}
 {name="ensem";value=./ensem.json;}
@@ -424,7 +417,6 @@
 {name="libp2p";value=./libp2p.json;}
 {name="libplist";value=./libplist.json;}
 {name="libravatar";value=./libravatar.json;}
-{name="libserialport";value=./libserialport.json;}
 {name="libsha";value=./libsha.json;}
 {name="libsodium";value=./libsodium.json;}
 {name="libssh";value=./libssh.json;}
@@ -478,7 +470,6 @@
 {name="moduleinit";value=./moduleinit.json;}
 {name="moe";value=./moe.json;}
 {name="mofuw";value=./mofuw.json;}
-{name="monad";value=./monad.json;}
 {name="mongo";value=./mongo.json;}
 {name="mongrel2";value=./mongrel2.json;}
 {name="monit";value=./monit.json;}
@@ -507,7 +498,6 @@
 {name="nat_traversal";value=./nat_traversal.json;}
 {name="native_dialogs";value=./native_dialogs.json;}
 {name="ncurses";value=./ncurses.json;}
-{name="ndb";value=./ndb.json;}
 {name="ndbex";value=./ndbex.json;}
 {name="ndf";value=./ndf.json;}
 {name="negamax";value=./negamax.json;}
@@ -526,16 +516,7 @@
 {name="nifty";value=./nifty.json;}
 {name="nigui";value=./nigui.json;}
 {name="niledb";value=./niledb.json;}
-{name="nim-ao";value=./nim-ao.json;}
-{name="nim-geocoding";value=./nim-geocoding.json;}
-{name="nim-glfw";value=./nim-glfw.json;}
-{name="nim-libclang";value=./nim-libclang.json;}
 {name="nim-libgd";value=./nim-libgd.json;}
-{name="nim-locale";value=./nim-locale.json;}
-{name="nim-ogg";value=./nim-ogg.json;}
-{name="nim-portaudio";value=./nim-portaudio.json;}
-{name="nim-sndfile";value=./nim-sndfile.json;}
-{name="nim-vorbis";value=./nim-vorbis.json;}
 {name="nim7z";value=./nim7z.json;}
 {name="nimAES";value=./nimAES.json;}
 {name="nimAGG";value=./nimAGG.json;}
@@ -556,7 +537,6 @@
 {name="nimactors";value=./nimactors.json;}
 {name="nimagehide";value=./nimagehide.json;}
 {name="nimalpm";value=./nimalpm.json;}
-{name="nimarchive";value=./nimarchive.json;}
 {name="nimassets";value=./nimassets.json;}
 {name="nimates";value=./nimates.json;}
 {name="nimbass";value=./nimbass.json;}
@@ -611,7 +591,6 @@
 {name="nimlapack";value=./nimlapack.json;}
 {name="nimler";value=./nimler.json;}
 {name="nimlevenshtein";value=./nimlevenshtein.json;}
-{name="nimlibpng";value=./nimlibpng.json;}
 {name="nimlibxlsxwriter";value=./nimlibxlsxwriter.json;}
 {name="nimline";value=./nimline.json;}
 {name="nimlsp";value=./nimlsp.json;}
@@ -652,13 +631,9 @@
 {name="nimsuggest";value=./nimsuggest.json;}
 {name="nimsvg";value=./nimsvg.json;}
 {name="nimterlingua";value=./nimterlingua.json;}
-{name="nimterop";value=./nimterop.json;}
 {name="nimtess2";value=./nimtess2.json;}
 {name="nimtomd";value=./nimtomd.json;}
-{name="nimtorch";value=./nimtorch.json;}
-{name="nimwc";value=./nimwc.json;}
 {name="nimx";value=./nimx.json;}
-{name="nimyaml";value=./nimyaml.json;}
 {name="nimzbar";value=./nimzbar.json;}
 {name="nimzend";value=./nimzend.json;}
 {name="nish";value=./nish.json;}
@@ -809,7 +784,6 @@
 {name="redisclient";value=./redisclient.json;}
 {name="redisparser";value=./redisparser.json;}
 {name="redissessions";value=./redissessions.json;}
-{name="redneck_translator";value=./redneck_translator.json;}
 {name="redux";value=./redux.json;}
 {name="redux_nim";value=./redux_nim.json;}
 {name="reframe";value=./reframe.json;}
@@ -863,6 +837,7 @@
 {name="sha1";value=./sha1.json;}
 {name="sha1ext";value=./sha1ext.json;}
 {name="sha3";value=./sha3.json;}
+{name="shaname";value=./shaname.json;}
 {name="shared";value=./shared.json;}
 {name="sharedmempool";value=./sharedmempool.json;}
 {name="shell";value=./shell.json;}
@@ -1058,7 +1033,6 @@
 {name="webaudio";value=./webaudio.json;}
 {name="webdriver";value=./webdriver.json;}
 {name="webp";value=./webp.json;}
-{name="websitecreator";value=./websitecreator.json;}
 {name="websocket";value=./websocket.json;}
 {name="webterminal";value=./webterminal.json;}
 {name="webview";value=./webview.json;}
