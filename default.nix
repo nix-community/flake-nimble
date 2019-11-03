@@ -40,10 +40,8 @@ let
         } ''
           export HOME=$NIX_BUILD_TOP
           cd $src
-          ${nimbleHelper} info $src > $out
-          # || echo { broken = true\; } > $out && exit 0
-          nimble check
-          # || echo { broken = true\; } > $out && exit 0
+          ${nimbleHelper} info $src > $out || echo { broken = true\; } > $out && exit 0
+          nimble check || echo { broken = true\; } > $out && exit 0
         '';
 
       pkgInfo = import pkgInfoDrv;
