@@ -11,7 +11,9 @@
 
   outputs = { self, nixpkgs }:
   {
-    packages = import ./packages.nix { inherit nixpkgs; };
+    packages = import ./default.nix {
+      nixpkgs = import nixpkgs { system = "x86_64-linux"; };
+    };
     defaultPackage = self.packages.nim;
   };
 }
