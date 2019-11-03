@@ -1,0 +1,23 @@
+commit 9ac5be53ba69f86cc3c7796256efe01f6f6650e4
+Author: Emery Hemingway <ehmry@posteo.net>
+Date:   Fri Nov 1 18:55:36 2019 +0100
+
+    Ignore git subdir when fetching git tags
+
+diff --git a/src/nimblepkg/download.nim b/src/nimblepkg/download.nim
+index 3bbfa25..1f9e7a8 100644
+--- a/src/nimblepkg/download.nim
++++ b/src/nimblepkg/download.nim
+@@ -85,6 +85,12 @@ proc getTagsList(dir: string, meth: DownloadMethod): seq[string] =
+     result = @[]
+ 
+ proc getTagsListRemote*(url: string, meth: DownloadMethod): seq[string] =
++  var
++    url = url
++    uri = parseUri url
++  if uri.query != "":
++    uri.query = ""
++    url = $uri
+   result = @[]
+   case meth
+   of DownloadMethod.git:

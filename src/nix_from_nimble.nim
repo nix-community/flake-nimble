@@ -81,6 +81,14 @@ proc mainOld() =
   if 0 < errors.elems.len:
     stderr.write errors.pretty
 
+proc packageVersions(pkg: Package): OrderedTable[Version, string] =
+  let downMethod = pkg.downloadMethod.getDownloadMethod()
+  case downMethod
+  of DownloadMethod.git:
+    getTagsListRemote(pkg.url, downMethod).getVersionList()
+  of DownloadMethod.hg:
+    initOrderedTable[Version, string]()
+
 proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
   var
     url = pkg.url

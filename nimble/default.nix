@@ -3,6 +3,7 @@
 stdenv.mkDerivation rec {
   pname = "nimble";
   version = "0.11.0";
+  outputs = [ "out" "lib" ];
 
   nativeBuildInputs = [ nim ];
 
@@ -15,20 +16,13 @@ stdenv.mkDerivation rec {
     sha256 = "1n8qi10173cbwsai2y346zf3r14hk8qib2qfcfnlx9a8hibrh6rv";
   };
 
-  patches = [
-    ./json.patch
-    ./url.patch
-  ];
+  patches = [ ./json.patch ./subdir.patch ./tempdir.patch ./url.patch ];
 
   enableParallelBuilding = true;
 
   NIX_LDFLAGS = [ "-lcrypto" ];
 
-  nimFlags = [
-    "--cpu:${nim.host.cpu}"
-    "--os:${nim.host.os}"
-    "--nilseqs:on"
-  ];
+  nimFlags = [ "--cpu:${nim.host.cpu}" "--os:${nim.host.os}" "--nilseqs:on" ];
 
   buildPhase = ''
     runHook preBuild
@@ -47,6 +41,8 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
     install -D nimble $out/bin/nimble
+    mkdir -p $lib
+    cp -r src $lib/
     runHook postInstall
   '';
 
