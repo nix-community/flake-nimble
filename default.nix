@@ -25,27 +25,32 @@ let
   '';
 
   buildNimble = self:
-    { src, meta, ... }:
+    { src, homepage }:
     let
       pkgInfoDrv = nixpkgs.runCommand "pkginfo" {
         preferLocal = true;
         inherit src;
         buildInputs = [ nim ];
-      } "${nimbleHelper} deps $src > $out";
+      } "${nimbleHelper} info $src > $out";
 
       pkgInfo = import pkgInfoDrv;
 
       resolvePkg = { name, range }: builtins.getAttr name self;
 
-      pkgInputs = map resolvePkg pkgInfo.nimbleRequires;
+      nimbleInputs = map resolvePkg pkgInfo.nimble.requires;
 
-    in builtins.trace pkgInputs nixpkgs.stdenv.mkDerivation (pkgInfo // {
-      # pname and version is in pkgInfo
+    in nixpkgs.stdenv.mkDerivation {
       inherit src;
-      meta = meta // pkgInfo.meta;
-      nimbleRequires = null;
+      inherit (pkgInfo) pname version;
+      meta = { inherit homepage; } // pkgInfo.meta;
+      passthru = { inherit (pkgInfo) nimble; };
 
-      buildInputs = [ nim ] ++ pkgInputs;
+      setupHook = ./setup-hook.sh;
+
+      buildInputs = [ nim ];
+      propagatedBuildInputs = nimbleInputs;
+
+      nimFlags = pkgInfo.nimble.backend;
 
       preHook = ''
         export HOME="$NIX_BUILD_TOP"
@@ -57,15 +62,19 @@ let
       doCheck = true;
 
       buildPhase = ''
+        echo nimFlags are $nimFlags
+        set -v
         runHook preBuild
-        for bin in $nimbleBin; do
-          nim $nimbleBackend --out:$out/bin/$bin $nimbleSrcDir/$bin.nim
+        for bin in ${toString pkgInfo.nimble.bin}; do
+          nim $nimFlags --out:$out/bin/$bin ${pkgInfo.nimble.srcDir}/$bin.nim
         done
         runHook postBuild
       '';
 
       installPhase = ''
         runHook preInstall
+        mkdir -p $out
+        cp -r ${pkgInfo.nimble.srcDir} $out/src
         runHook postInstall
       '';
 
@@ -73,9 +82,7 @@ let
         runHook preCheck
         runHook postCheck
       '';
-    });
-
-  fix = f: let x = f x; in x;
+    };
 
   sources =
     # Read the package list and expand to all package versions
@@ -88,9 +95,7 @@ let
             ver: {
               name = "${name}_${replaceStrings [ "." ] [ "_" ] ver.name}";
               value = {
-                pname = name;
-                version = ver.name;
-                inherit (args) meta;
+                inherit (args) homepage;
                 src = let
                   src' = nixpkgs.fetchgit {
                     inherit (ver.value) fetchSubmodules rev sha256 url;
@@ -98,23 +103,20 @@ let
                 in if hasAttr "subdir" ver then "${src' /subdir}" else src';
               };
             };
-          versioned = map expandVersion args.src.versions;
-          current = head versioned;
-        in if args.src ? versions then
-          (versioned ++ [{
-            inherit name;
-            inherit (current) value;
-          }])
-        else
-          [ ];
+          versions = map expandVersion args.src.versions;
+        in {
+          inherit name;
+          value = if args.src ? versions then (head versions).value else null;
+        };
 
       pkgsPaths = import ./packages;
-      pkgsList = map importPackage pkgsPaths;
-    in builtins.concatLists pkgsList;
+    in map importPackage pkgsPaths;
 
   self = builtins.listToAttrs (map ({ name, value }: {
     inherit name;
     value = buildNimble self value;
-  }) sources) // { inherit nim; };
+  }) sources) // {
+    inherit nim;
+  };
 
 in self

@@ -102,13 +102,6 @@ proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
   if subdir != "":
     result["subdir"] = %* subdir
 
-func metaAttrs(pkg: Package): JsonNode =
-  %*
-    {"description": pkg.description
-    ,"homepage": pkg.web
-    ,"license": pkg.license
-    }
-
 proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
   ## Generate a JSON array of source code versions and digests.
   ## The result is a combination of previously collected
@@ -147,10 +140,7 @@ proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
     result["versions"] = versionList
 
 proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
-  %*
-    { "meta": pkg.metaAttrs
-    , "src": sourcesList(pkg, prev)
-    }
+  %*{ "homepage": pkg.web, "src": sourcesList(pkg, prev)}
 
 proc createPackageFile(path: string; pkg: Package) =
   echo "create ", path
@@ -199,13 +189,11 @@ proc generateSources(options: Options) =
       except:
         echo "failed to update package for ", pkg.name
         echo getCurrentExceptionMsg()
-        break
     else:
       try: createPackageFile(jsonPath, pkg)
       except:
         echo "failed to create package for ", pkg.name
         echo getCurrentExceptionMsg()
-        continue
   exit()
 
 proc toNix(dep: PkgTuple): Value =
@@ -213,7 +201,7 @@ proc toNix(dep: PkgTuple): Value =
   , ("range", ($dep.ver).toNix)
   ].toNix
 
-proc generateDeps(options: Options) =
+proc generateInfo(options: Options) =
   let args = options.action.arguments
   if args.len != 1:
     echo "a single package directory argument must be passed"
@@ -221,22 +209,26 @@ proc generateDeps(options: Options) =
   let pkgDir = args[0]
   cli.setSuppressMessages(true)
   let p = getPkgInfo(pkgDir, options)
+  let nimbleAttrs =
+    [ ("specialVersion", p.version.toNix)
+    , ("skipDirs", p.skipDirs.toNix)
+    , ("skipFiles", p.skipFiles.toNix)
+    , ("skipExt", p.skipExt.toNix)
+    , ("installDirs", p.installDirs.toNix)
+    , ("installFiles", p.installFiles.toNix)
+    , ("installExt", p.installExt.toNix)
+    , ("requires", p.requires.map(toNix).toNix)
+    , ("bin", p.bin.toNix)
+    , ("binDir", (if p.binDir == "": "." else: p.binDir).toNix)
+    , ("srcDir", (if p.srcDir == "": "." else: p.srcDir).toNix)
+    , ("backend", p.backend.toNix)
+    , ("foreignDeps", p.backend.toNix)
+  ].toNix
+
   let attrs =
     [ ("pname", p.name.toNix)
     , ("version", p.version.toNix)
-    , ("nimSpecialVersion", p.version.toNix)
-    , ("nimbleSkipDirs", p.skipDirs.toNix)
-    , ("nimbleSkipFiles", p.skipFiles.toNix)
-    , ("nimbleSkipExt", p.skipExt.toNix)
-    , ("nimbleInstallDirs", p.installDirs.toNix)
-    , ("nimbleInstallFiles", p.installFiles.toNix)
-    , ("nimbleInstallExt", p.installExt.toNix)
-    , ("nimbleRequires", p.requires.map(toNix).toNix)
-    , ("nimbleBin", p.bin.toNix)
-    , ("nimbleBinDir", p.binDir.toNix)
-    , ("nimbleSrcDir", p.srcDir.toNix)
-    , ("nimbleBackend", p.backend.toNix)
-    , ("nimbleForeignDeps", p.backend.toNix)
+    , ("nimble", nimbleAttrs)
     , ("meta",
       [ ("description", p.description.toNix)
       , ("license", p.license.toNix)
@@ -251,8 +243,8 @@ proc main() =
     case options.action.command
     of "generate":
       generateSources(options)
-    of "deps":
-      generateDeps(options)
+    of "info":
+      generateInfo(options)
     else:
       echo "unhandled command ", options.action.command
       quit -1
