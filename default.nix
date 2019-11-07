@@ -38,10 +38,13 @@ let
           inherit src;
           buildInputs = [ nim ];
         } ''
-          export HOME=$NIX_BUILD_TOP
+          export NIMBLE_DIR=$NIX_BUILD_TOP
           cd $src
-          ${nimbleHelper} info $src > $out || echo { broken = true\; } > $out && exit 0
-          nimble check || echo { broken = true\; } > $out && exit 0
+          if ! nimble check; then
+            echo { broken = true\; } > $out
+            exit 0
+          fi
+          ${nimbleHelper} info $src > $out
         '';
 
       pkgInfo = import pkgInfoDrv;
