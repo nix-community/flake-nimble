@@ -140,7 +140,14 @@ let
           versions = map expandVersion args.src.versions;
         in {
           inherit name;
-          value = if args.src ? versions then (head versions).value else null;
+          value = if args.src ? versions then
+            (head versions).value
+          else
+            nixpkgs.runCommand name { } ''
+              mkdir -p $out/nix-support
+              echo No sources generated for package ${name}" > $out/failure-report
+              echo "report failure-report $out failure-report" >> $out/nix-support/hydra-build-products
+            '';
         };
 
       pkgsPaths = import ./packages;
