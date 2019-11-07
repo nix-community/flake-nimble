@@ -40,14 +40,18 @@ let
         } ''
           export NIMBLE_DIR=$NIX_BUILD_TOP
           cd $src
+          mkdir -p $out/nix-support
           if ! nimble check; then
-            echo { broken = true\; } > $out
+            nimble check > $out/nimble.check && true
+            echo { broken = true\; } > $out/nimble.nix
+            echo "report nimble.check $out nimble.check" > \
+              $out/nix-support/hydra-build-products
             exit 0
           fi
-          ${nimbleHelper} info $src > $out
+          ${nimbleHelper} info $src > $out/nimble.nix
         '';
 
-      pkgInfo = import pkgInfoDrv;
+      pkgInfo = import (pkgInfoDrv + "/nimble.nix");
 
       missingDependency = with builtins;
         any ({ name, range }: !hasAttr name self) pkgInfo.nimble.requires;
