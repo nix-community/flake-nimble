@@ -5,8 +5,8 @@
 #
 # This function wraps a Nim compiler to meet these requirements.
 
-{ name ? "", targetPackages, stdenv, lib, makeWrapper, pkgconfig, nim, nimStdLib, nimble
-}:
+{ name ? "", targetPackages, stdenv, lib, makeWrapper, pkgconfig, nim, nimStdLib
+, nimble }:
 
 let
   inherit (stdenv) hostPlatform targetPlatform lib;

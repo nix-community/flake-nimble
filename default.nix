@@ -23,13 +23,13 @@ let
       }/nix_from_nimble.nim
     '';
 
-  buildNimble =
+  buildNimble' =
     # Build a package by inspecting the package sources and
     # matching dependencies to other packages. Failure to
     # generate a package produces a derivation marked broken
     # rather than an evaluation error.
-    { self, name }:
-    { src, homepage }:
+    self:
+    { name, src, homepage }:
     let
       pkgInfoDrv =
         # Generate a Nix expression file from the package source
@@ -153,11 +153,12 @@ let
       pkgsPaths = import ./packages;
     in map importPackage pkgsPaths;
 
-  self = builtins.listToAttrs (map ({ name, value }: {
+  self = let buildNimble = buildNimble' self;
+  in builtins.listToAttrs (map ({ name, value }: {
     inherit name;
-    value = buildNimble { inherit self name; } value;
+    value = buildNimble ({ inherit name; } // value);
   }) sources) // {
-    inherit nim;
+    nim = nim // { inherit buildNimble; };
     nimrod = nim;
     # Some Nimble still packages refer to the compiler as "nimrod"
   };
