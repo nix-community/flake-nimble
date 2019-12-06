@@ -33,7 +33,7 @@ proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
       url = $uri
     var args = @[ "--quiet", "--url", url ]
     if tag != "":
-      args.add "--ref"
+      args.add "--rev"
       args.add tag
     result = execProcess(
       "nix-prefetch-git",

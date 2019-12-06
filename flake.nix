@@ -3,7 +3,7 @@
 
   description = "Nimble packages";
 
-  inputs = { nixpkgs.uri = "git+https://github.com/edolstra/nixpkgs"; };
+  inputs.nixpkgs.uri = "git+https://github.com/edolstra/nixpkgs";
 
   outputs = { self, nixpkgs }:
     let
@@ -18,5 +18,16 @@
         });
 
       defaultPackage = forAllSystems (system: self.packages."${system}".nim);
+
+      dev-shell = forAllSystems (system:
+        let
+          thisSystem = builtins.getAttr system;
+          legacyPackages = thisSystem nixpkgs.legacyPackages;
+          selfPackages = thisSystem self.packages;
+        in with legacyPackages;
+        mkShell {
+          buildInputs =
+            [ selfPackages.nim gnumake nix-prefetch-git nix-prefetch-hg ];
+        });
     };
 }

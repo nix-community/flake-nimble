@@ -1,6 +1,3 @@
-#! /usr/bin/env nix-shell
-#! nix-shell -i make -p gnumake nim nix-prefetch-git
-
 packages/default.nix: nix_from_nimble
 	nimble update
 	./$< generate
