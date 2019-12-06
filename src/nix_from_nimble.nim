@@ -11,76 +11,6 @@ import nimblepkg/common,
 import std/algorithm, std/json, std/os, std/osproc, std/sequtils, std/streams,
     std/strutils, std/tables, std/osproc, std/tables, std/random, std/uri
 
-proc toNix(js: JsonNode): Value =
-  case js.kind
-  of JNull: result = newNull()
-  of JBool: result = toNix js.bval
-  of JInt: result = toNix js.num
-  of JFloat: result = toNix js.fnum
-  of JString: result = toNix js.str
-  of JObject:
-    result = newAttrs()
-    for k, v in js.fields:
-      result[k] = toNix v
-  of JArray:
-    result = toNix(map(js.elems, toNix))
-
-proc collect(result: Value; js: JsonNode; nk, jk: string) =
-  if js.fields.hasKey jk:
-    result.attrs[nk] = toNix js[jk]
-
-proc meta(js: JsonNode): Value =
-  result = newAttrs()
-  for k, v in js.fields:
-    case k
-    of "method", "name", "url":
-      discard
-    else:
-      result[k] = toNix v
-
-proc src(js: JsonNode): Value =
-  result = newAttrs()
-  result.collect(js, "method", "method")
-  result.collect(js, "url", "url")
-
-proc prefetch(js: JsonNode): Value =
-  let
-    url = getStr js["url"]
-    cmd = case js["method"].getStr
-      of "git": "nix-prefetch-git"
-      of "hg": "nix-prefetch-hg"
-      else:
-        raiseAssert "unhandled source method " & $js["method"]
-    (prefetch, code) = execCmdEx(cmd & " " & $js["url"])
-  if code == 0:
-    result = newAttrs()
-    result["url"] = url
-    result["js"] = prefetch
-  else:
-    result = toNix prefetch
-
-proc mainOld() =
-  let pkgs = parseFile "packages_official.json"
-  var
-    values = newAttrs()
-    errors = newJArray()
-  for jp in pkgs:
-    block:
-      if jp.fields.hasKey "alias":
-        discard
-      else:
-        let
-          np = newAttrs()
-        np["meta"] = jp.meta
-        np["src"] = prefetch jp
-        values[jp["name"].getStr] = np
-    #except:
-    #  errors.add jp
-
-  stdout.write $values
-  if 0 < errors.elems.len:
-    stderr.write errors.pretty
-
 proc packageVersions(pkg: Package): OrderedTable[Version, string] =
   let downMethod = pkg.downloadMethod.getDownloadMethod()
   case downMethod
@@ -90,25 +20,32 @@ proc packageVersions(pkg: Package): OrderedTable[Version, string] =
     initOrderedTable[Version, string]()
 
 proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
-  var
-    url = pkg.url
-    uri = parseUri pkg.url
-    subdir = ""
-  if uri.query != "":
-    if uri.query.startsWith("subdir="):
-      subdir = uri.query[7 .. ^1]
-    uri.query = ""
-    url = $uri
-  var args = @[ "--quiet", "--url", url ]
-  if tag != "":
-    args.add "--ref"
-    args.add tag
-  result = execProcess(
-    "nix-prefetch-git",
-    args=args,
-    options={poEchoCmd,poUsePath}).parseJson
-  if subdir != "":
-    result["subdir"] = %* subdir
+  case pkg.downloadMethod.getDownloadMethod()
+  of DownloadMethod.git:
+    var
+      url = pkg.url
+      uri = parseUri pkg.url
+      subdir = ""
+    if uri.query != "":
+      if uri.query.startsWith("subdir="):
+        subdir = uri.query[7 .. ^1]
+      uri.query = ""
+      url = $uri
+    var args = @[ "--quiet", "--url", url ]
+    if tag != "":
+      args.add "--ref"
+      args.add tag
+    result = execProcess(
+      "nix-prefetch-git",
+      args=args,
+      options={poEchoCmd,poUsePath}).parseJson
+    if subdir != "":
+      result["subdir"] = %* subdir
+  of DownloadMethod.hg:
+    result = execProcess(
+      "nix-prefetch-hg",
+      args=[ pkg.url ],
+      options={poEchoCmd,poUsePath}).parseJson
 
 proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
   ## Generate a JSON array of source code versions and digests.
@@ -116,36 +53,35 @@ proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
   ## and freshly generated data.
   result = newJObject()
   result["method"] = %* pkg.downloadMethod
-  if pkg.downloadMethod == "git":
-    var table = initOrderedTable[Version, JsonNode]()
+  var table = initOrderedTable[Version, JsonNode]()
 
-    if prev.contains "src":
-      let src = prev["src"]
-      if src.contains "versions":
-        for e in src["versions"].items:
-          # collect previous versions
-          let version = e["name"].getStr.Version
-          table[version] = e["value"]
+  if prev.contains "src":
+    let src = prev["src"]
+    if src.contains "versions":
+      for e in src["versions"].items:
+        # collect previous versions
+        let version = e["name"].getStr.Version
+        table[version] = e["value"]
 
-    for version, tag in pkg.packageVersions:
-      # collect current versions
-      if table.contains version:
-        table[version]["url"] = %* pkg.url
-      else:
-        table[version] = prefetchVersion(pkg, tag)
+  for version, tag in pkg.packageVersions:
+    # collect current versions
+    if table.contains version:
+      table[version]["url"] = %* pkg.url
+    else:
+      table[version] = prefetchVersion(pkg, tag)
 
-    var versionList = newJArray()
-    for version, value in table:
-      versionList.add(%*
-        { "name": (string)version
-        , "value": value
-        })
-    if versionList.len == 0:
-      versionList.add(%*
-        { "name": "HEAD"
-        , "value": prefetchVersion(pkg)
-        })
-    result["versions"] = versionList
+  var versionList = newJArray()
+  for version, value in table:
+    versionList.add(%*
+      { "name": (string)version
+      , "value": value
+      })
+  if versionList.len == 0:
+    versionList.add(%*
+      { "name": "HEAD"
+      , "value": prefetchVersion(pkg)
+      })
+  result["versions"] = versionList
 
 proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
   %*{ "homepage": pkg.web, "src": sourcesList(pkg, prev)}
@@ -180,14 +116,21 @@ proc exit() {.noconv.} =
 
 proc generateSources(options: Options) =
   setControlCHook(exit)
-  var pkgList = options.getPackageList()
+  let args = options.action.arguments
+  var pkgList: seq[Package]
+  if args.len == 0:
+    pkgList = options.getPackageList()
+  else:
+    for arg in args:
+      var pkg: Package
+      if getPackage(arg, options, pkg):
+        pkgList.add pkg
   shuffle pkgList
     # This could take a while, and the error handling is poor.
     # Shuffle the package list so eventually everything gets done.
 
   createDir "packages"
   for pkg in pkgList:
-    #if pkg.url.contains "ehmry":
     if pkg.url == "": continue
     doAssert(pkg.name != "default")
     let jsonPath = "packages/" & pkg.name & ".json"
