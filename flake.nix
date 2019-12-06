@@ -3,7 +3,7 @@
 
   description = "Nimble packages";
 
-  inputs = { nixpkgs.uri = "git+https://github.com/edolstra/nixpkgs.git"; };
+  inputs = { nixpkgs.uri = "git+https://github.com/edolstra/nixpkgs"; };
 
   outputs = { self, nixpkgs }:
     let
@@ -13,7 +13,9 @@
 
     in {
       packages = forAllSystems (system:
-        import ./default.nix { nixpkgs = import nixpkgs { inherit system; }; });
+        import ./default.nix {
+          nixpkgs = builtins.getAttr system nixpkgs.legacyPackages;
+        });
 
       defaultPackage = forAllSystems (system: self.packages."${system}".nim);
     };
