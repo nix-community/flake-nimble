@@ -64,6 +64,7 @@ in stdenv.mkDerivation {
     # This patch allows us to override the compiler
     # configuration using a wrapper.
     ./genode.patch
+    ./detect_nixos.patch
   ];
 
   enableParallelBuilding = true;

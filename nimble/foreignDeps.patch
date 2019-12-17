@@ -1,0 +1,51 @@
+commit cdbd2065aaa9eec45964cfe0aee78cf869410ae4
+Author: Emery Hemingway <ehmry@posteo.net>
+Date:   Tue Dec 17 08:13:47 2019 +0000
+
+    Parse foreignDep
+
+diff --git a/src/nimblepkg/nimscriptapi.nim b/src/nimblepkg/nimscriptapi.nim
+index a8b4ba3..e7e1bee 100644
+--- a/src/nimblepkg/nimscriptapi.nim
++++ b/src/nimblepkg/nimscriptapi.nim
+@@ -45,6 +45,11 @@ proc requires*(deps: varargs[string]) =
+   ## package.
+   for d in deps: requiresData.add(d)
+ 
++proc foreignDep*(deps: varargs[string]) =
++  ## Call this to set the list of external dependencies of your Nimble
++  ## package.
++  for d in deps: foreignDeps.add(d)
++
+ proc getParams() =
+   # Called by nimscriptwrapper.nim:execNimscript()
+   #   nim e --flags /full/path/to/file.nims /full/path/to/file.out action
+@@ -115,9 +120,12 @@ proc printPkgInfo(): string =
+   printSeqIfLen beforeHooks
+   printSeqIfLen afterHooks
+ 
+-  if requiresData.len != 0:
++  if requiresData.len != 0 or foreignDeps.len != 0:
+     result &= "\n[Deps]\n"
+-    result &= &"requires: \"{requiresData.join(\", \")}\"\n"
++    if requiresData.len != 0:
++      result &= &"requires: \"{requiresData.join(\", \")}\"\n"
++    if foreignDeps.len != 0:
++      result &= &"foreignDeps: \"{foreignDeps.join(\", \")}\"\n"
+ 
+ proc onExit*() =
+   if "printPkgInfo".normalize in commandLineParams:
+diff --git a/src/nimblepkg/packageparser.nim b/src/nimblepkg/packageparser.nim
+index 9458074..65811fa 100644
+--- a/src/nimblepkg/packageparser.nim
++++ b/src/nimblepkg/packageparser.nim
+@@ -277,6 +277,9 @@ proc readPackageInfoFromNimble(path: string; result: var PackageInfo) =
+           of "requires":
+             for v in ev.value.multiSplit:
+               result.requires.add(parseRequires(v.strip))
++          of "foreigndeps":
++            for v in ev.value.multiSplit:
++              result.foreignDeps.add(v.strip)
+           else:
+             raise newException(NimbleError, "Invalid field: " & ev.key)
+         else: raise newException(NimbleError,

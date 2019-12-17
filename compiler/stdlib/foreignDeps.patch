@@ -1,0 +1,67 @@
+diff --git a/lib/pure/distros.nim b/lib/pure/distros.nim
+index 07508cfdd..6dec3e23f 100644
+--- a/lib/pure/distros.nim
++++ b/lib/pure/distros.nim
+@@ -8,22 +8,7 @@
+ #
+ 
+ ## This module implements the basics for Linux distribution ("distro")
+-## detection and the OS's native package manager. Its primary purpose is to
+-## produce output for Nimble packages like::
+-##
+-##  To complete the installation, run:
+-##
+-##  sudo apt-get libblas-dev
+-##  sudo apt-get libvoodoo
+-##
+-## The above output could be the result of a code snippet like:
+-##
+-## .. code-block:: nim
+-##
+-##   if detectOs(Ubuntu):
+-##     foreignDep "lbiblas-dev"
+-##     foreignDep "libvoodoo"
+-##
++## detection and the OS's native package manager.
+ 
+ from strutils import contains, toLowerAscii
+ 
+@@ -187,18 +172,6 @@ template detectOs*(d: untyped): bool =
+   ## enum value.
+   detectOsImpl(Distribution.d)
+ 
+-when not defined(nimble):
+-  var foreignDeps: seq[string] = @[]
+-
+-proc foreignCmd*(cmd: string; requiresSudo = false) =
+-  ## Registers a foreign command to the intern list of commands
+-  ## that can be queried later.
+-  let c = (if requiresSudo: "sudo " else: "") & cmd
+-  when defined(nimble):
+-    nimscriptapi.foreignDeps.add(c)
+-  else:
+-    foreignDeps.add(c)
+-
+ proc foreignDepInstallCmd*(foreignPackageName: string): (string, bool) =
+   ## Returns the distro's native command line to install 'foreignPackageName'
+   ## and whether it requires root/admin rights.
+@@ -239,19 +212,3 @@ proc foreignDepInstallCmd*(foreignPackageName: string): (string, bool) =
+     result = ("pkgman install " & p, true)
+   else:
+     result = ("brew install " & p, false)
+-
+-proc foreignDep*(foreignPackageName: string) =
+-  ## Registers 'foreignPackageName' to the internal list of foreign deps.
+-  ## It is your job to ensure the package name
+-  let (installCmd, sudo) = foreignDepInstallCmd(foreignPackageName)
+-  foreignCmd installCmd, sudo
+-
+-proc echoForeignDeps*() =
+-  ## Writes the list of registered foreign deps to stdout.
+-  for d in foreignDeps:
+-    echo d
+-
+-when false:
+-  foreignDep("libblas-dev")
+-  foreignDep "libfoo"
+-  echoForeignDeps()

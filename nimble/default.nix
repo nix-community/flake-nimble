@@ -16,7 +16,13 @@ stdenv.mkDerivation rec {
     sha256 = "1n8qi10173cbwsai2y346zf3r14hk8qib2qfcfnlx9a8hibrh6rv";
   };
 
-  patches = [ ./json.patch ./subdir.patch ./tempdir.patch ./url.patch ];
+  patches = [
+    ./json.patch
+    ./subdir.patch
+    ./tempdir.patch
+    ./url.patch
+    ./foreignDeps.patch
+  ];
 
   enableParallelBuilding = true;
 
