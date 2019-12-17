@@ -70,7 +70,8 @@ let
           setupHook = ./setup-hook.sh;
 
           buildInputs = [ nim ];
-          propagatedBuildInputs = nimbleInputs;
+          propagatedBuildInputs = nimbleInputs ++
+            (map (name: builtins.getAttr name nixpkgs) pkgInfo.nimble.foreignDeps);
 
           nimFlags = pkgInfo.nimble.backend;
 
