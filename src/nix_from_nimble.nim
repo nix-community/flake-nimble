@@ -81,6 +81,9 @@ proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
       {"name": "HEAD"
       , "value": prefetchVersion(pkg)
       })
+  proc cmpVer(x, y: JsonNode): int =
+    cmp(x["name"].str, y["name"].str)
+  sort(versionList.elems, cmpVer, SortOrder.Descending)
   result["versions"] = versionList
 
 proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
