@@ -173,7 +173,7 @@ proc generateInfo(options: Options) =
     , ("binDir", (if p.binDir == "": "." else: p.binDir).toNix)
     , ("srcDir", (if p.srcDir == "": "." else: p.srcDir).toNix)
     , ("backend", p.backend.toNix)
-    , ("foreignDeps", p.backend.toNix)
+    , ("foreignDeps", p.foreignDeps.toNix)
   ].toNix
 
   let attrs =
