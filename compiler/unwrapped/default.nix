@@ -3,49 +3,118 @@
 { stdenv, lib, fetchurl, openssl, pcre, readline, boehmgc, sqlite }:
 
 let
-  parseCpu = platform: with platform;
+  parseCpu = platform:
+    with platform;
     # Derive a Nim CPU identifier
-    if isAarch32 then "arm" else
-    if isAarch64 then "arm64" else
-    if isAlpha then "alpha" else
-    if isAvr then "avr" else
-    if isMips && is32bit then "mips" else
-    if isMips && is64bit then "mips64" else
-    if isMsp430 then "msp430" else
-    if isPowerPC && is32bit then "powerpc" else
-    if isPowerPC && is64bit then "powerpc64" else
-    if isRiscV && is64bit then "riscv64" else
-    if isSparc then "sparc" else
-    if isx86_32 then "i386" else
-    if isx86_64 then "amd64" else
-    abort "no Nim CPU support known for ${config}";
 
-  parseOs = platform: with platform;
+    if isAarch32 then
+      "arm"
+    else
+
+    if isAarch64 then
+      "arm64"
+    else
+
+    if isAlpha then
+      "alpha"
+    else
+
+    if isAvr then
+      "avr"
+    else
+
+    if isMips && is32bit then
+      "mips"
+    else
+
+    if isMips && is64bit then
+      "mips64"
+    else
+
+    if isMsp430 then
+      "msp430"
+    else
+
+    if isPowerPC && is32bit then
+      "powerpc"
+    else
+
+    if isPowerPC && is64bit then
+      "powerpc64"
+    else
+
+    if isRiscV && is64bit then
+      "riscv64"
+    else
+
+    if isSparc then
+      "sparc"
+    else
+
+    if isx86_32 then
+      "i386"
+    else
+
+    if isx86_64 then
+      "amd64"
+    else
+
+      abort "no Nim CPU support known for ${config}";
+
+  parseOs = platform:
+    with platform;
     # Derive a Nim OS identifier
-    let isGenode =
-      if platform ? isGenode
-      then platform.isGenode
-      else false;
-    in
-    if isAndroid then "Android" else
-    if isDarwin then "MacOSX" else
-    if isFreeBSD then "FreeBSD" else
-    if isGenode then "Genode" else
-    if isLinux then "Linux" else
-    if isNetBSD then "NetBSD" else
-    if isNone then "Standalone" else
-    if isOpenBSD then "OpenBSD" else
-    if isWindows then "Windows" else
-    if isiOS then "iOS" else
-    abort "no Nim OS support known for ${config}";
+    let isGenode = if platform ? isGenode then platform.isGenode else false;
+
+    in if isAndroid then
+      "Android"
+    else
+
+    if isDarwin then
+      "MacOSX"
+    else
+
+    if isFreeBSD then
+      "FreeBSD"
+    else
+
+    if isGenode then
+      "Genode"
+    else
+
+    if isLinux then
+      "Linux"
+    else
+
+    if isNetBSD then
+      "NetBSD"
+    else
+
+    if isNone then
+      "Standalone"
+    else
+
+    if isOpenBSD then
+      "OpenBSD"
+    else
+
+    if isWindows then
+      "Windows"
+    else
+
+    if isiOS then
+      "iOS"
+    else
+
+      abort "no Nim OS support known for ${config}";
 
   parsePlatform = p: {
     cpu = parseCpu p;
     os = parseOs p;
   };
 
-  nimBuild  = parsePlatform stdenv.buildPlatform;
-  nimHost   = parsePlatform stdenv.hostPlatform;
+  nimBuild = parsePlatform stdenv.buildPlatform;
+  nimHost = parsePlatform stdenv.hostPlatform;
   nimTarget = parsePlatform stdenv.targetPlatform;
 
   version = "1.0.2";
@@ -107,7 +176,11 @@ in stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  passthru = { build = nimBuild; host = nimHost; target = nimTarget; };
+  passthru = {
+    build = nimBuild;
+    host = nimHost;
+    target = nimTarget;
+  };
 
   meta = with stdenv.lib; {
     description = "Statically typed, imperative programming language";

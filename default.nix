@@ -70,8 +70,9 @@ let
           setupHook = ./setup-hook.sh;
 
           buildInputs = [ nim ];
-          propagatedBuildInputs = nimbleInputs ++
-            (map (name: builtins.getAttr name nixpkgs) pkgInfo.nimble.foreignDeps);
+          propagatedBuildInputs = nimbleInputs
+            ++ (map (name: builtins.getAttr name nixpkgs)
+              pkgInfo.nimble.foreignDeps);
 
           nimFlags = pkgInfo.nimble.backend;
 
@@ -107,17 +108,21 @@ let
 
       buildTry = builtins.tryEval buildDrv;
 
-    in with builtins; if pkgInfo ? broken then
-      trace "${name} has broken pkgInfo"
-      pkgInfoDrv // { meta.broken = true; } # TODO: failure report
+    in with builtins;
+    if pkgInfo ? broken then
+      trace "${name} has broken pkgInfo" pkgInfoDrv // {
+        meta.broken = true;
+      } # TODO: failure report
     else if missingDependency then
-      trace "${name} has a missingDependency"
-      pkgInfoDrv // { meta.broken = true; } # TODO: failure report
+      trace "${name} has a missingDependency" pkgInfoDrv // {
+        meta.broken = true;
+      } # TODO: failure report
     else if buildTry.success then
       buildTry.value
     else
-      trace "tryEval buildDrv ${name} failed"
-      pkgInfoDrv // { meta.broken = true; }; # TODO: failure report
+      trace "tryEval buildDrv ${name} failed" pkgInfoDrv // {
+        meta.broken = true;
+      }; # TODO: failure report
 
   sources =
     # Read the package list and expand to all package versions

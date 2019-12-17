@@ -29,6 +29,6 @@ in stdenv.mkDerivation {
   '';
 
   meta = nim.meta // {
-    description = nim.meta.description+" (standard library)";
+    description = nim.meta.description + " (standard library)";
   };
 }

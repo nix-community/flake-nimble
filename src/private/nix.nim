@@ -59,7 +59,7 @@ func `$`*(v: Value): string =
     result = "{"
     for key, val in v.attrs.pairs:
       let key = if key.validIdentifier: key else: key.escape
-      result.add("$1=$2;" % [ key, $val ])
+      result.add("$1=$2;" % [key, $val])
     result.add "}"
   of tList:
     result = "[ "
@@ -75,16 +75,16 @@ func `$`*(v: Value): string =
 func toNix*(x: Value): Value = x
 
 func toNix*(x: SomeInteger): Value =
-   Value(kind: tInt, num: x)
+  Value(kind: tInt, num: x)
 
 func toNix*(x: bool): Value =
-   Value(kind: tBool, boolean: x)
+  Value(kind: tBool, boolean: x)
 
 func toNix*(x: string): Value =
-   Value(kind: tString, str: x)
+  Value(kind: tString, str: x)
 
 func toPath*(x: string): Value =
-   Value(kind: tPath, path: x)
+  Value(kind: tPath, path: x)
 
 template toNix*(pairs: openArray[(string, Value)]): Value =
   Value(kind: tAttrs, attrs: toTable pairs)

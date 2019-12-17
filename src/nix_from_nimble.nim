@@ -31,21 +31,21 @@ proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
         subdir = uri.query[7 .. ^1]
       uri.query = ""
       url = $uri
-    var args = @[ "--quiet", "--url", url ]
+    var args = @["--quiet", "--url", url]
     if tag != "":
       args.add "--rev"
       args.add tag
     result = execProcess(
       "nix-prefetch-git",
-      args=args,
-      options={poEchoCmd,poUsePath}).parseJson
+      args = args,
+      options = {poEchoCmd, poUsePath}).parseJson
     if subdir != "":
       result["subdir"] = %* subdir
   of DownloadMethod.hg:
     result = execProcess(
       "nix-prefetch-hg",
-      args=[ pkg.url ],
-      options={poEchoCmd,poUsePath}).parseJson
+      args = [pkg.url],
+      options = {poEchoCmd, poUsePath}).parseJson
 
 proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
   ## Generate a JSON array of source code versions and digests.
@@ -72,19 +72,19 @@ proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
 
   var versionList = newJArray()
   for version, value in table:
-    versionList.add(%*
-      { "name": (string)version
+    versionList.add( %*
+      {"name": (string)version
       , "value": value
       })
   if versionList.len == 0:
-    versionList.add(%*
-      { "name": "HEAD"
+    versionList.add( %*
+      {"name": "HEAD"
       , "value": prefetchVersion(pkg)
       })
   result["versions"] = versionList
 
 proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
-  %*{ "homepage": pkg.web, "src": sourcesList(pkg, prev)}
+  %*{"homepage": pkg.web, "src": sourcesList(pkg, prev)}
 
 proc createPackageFile(path: string; pkg: Package) =
   echo "create ", path
@@ -98,7 +98,7 @@ proc updatePackageFile(path: string; pkg: Package) =
 
 proc exit() {.noconv.} =
   var indexList: seq[Value]
-  for kind, path in walkDir("packages", relative=true):
+  for kind, path in walkDir("packages", relative = true):
     if kind == pcFile and path.endsWith ".json":
       var name = path
       name.removeSuffix ".json";
