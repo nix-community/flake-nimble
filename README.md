@@ -4,7 +4,6 @@ This repository contains experimental-grade, auto-generated Nix packages for mos
 [Nimble](https://github.com/nim-lang/nimble) packages.
 
 ## TODO:
- - external libraries, foreignDep parsing
  - automatic testing
  - Back-versioning
 
@@ -17,10 +16,16 @@ nix flake add nimble 'git+https://git.sr.ht/~ehmry/nim_nix_flake'
 ```
 
 The flake can now be referred to by subsequent `nix` invocations:
-```shell
-nix run nimble#packages.x86_64-linux.NimTacToe -c NimTacToe
 
-nix run nimble#packages.x86_64-linux.nim -c nim c foo.nim
+```shell
+nix run nimble#NimTacToe -c NimTacToe
+  # Build and execute a Nimble binary
+
+nix run nimble#nim -c nim c foo.nim
+  # Invoke the Nim compiler
+
+nix dev-shell nimble
+  # Enter a shell with the Nim and Nimble utilities
 ```
 
 ## Synchronization
@@ -37,3 +42,18 @@ This will prefetch the repositories of new and updated Nimble packages and
 record the necessary metadata to fetch the source as a fixed-output derivation.
 Each package has such a fixed-output that is used as a input to a derivations
 that produce metadata to (attempt to) build the package.
+
+## Upstream
+
+Dependencies from Nixpkgs can be declared upstream from the *.nimble file. This 
+feature is experimental and still needs to be negotiated with the Nimble team.
+
+```nim
+# toxcore.nimble
+...
+
+import distros
+if detectOs(NixOS): # true for NixOS or any Nix shell
+  foreignDep "libtoxcore"
+  foreignDep "pkgconfig"
+```
