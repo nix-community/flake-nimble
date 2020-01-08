@@ -21,7 +21,7 @@ The flake can now be referred to by subsequent `nix` invocations:
 nix run nimble#NimTacToe -c NimTacToe
   # Build and execute a Nimble binary
 
-nix run nimble#nim -c nim c foo.nim
+nix app nimble c foo.nim
   # Invoke the Nim compiler
 
 nix dev-shell nimble
