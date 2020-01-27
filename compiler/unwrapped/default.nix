@@ -117,7 +117,7 @@ let
   nimHost = parsePlatform stdenv.hostPlatform;
   nimTarget = parsePlatform stdenv.targetPlatform;
 
-  version = "1.0.2";
+  version = "1.0.6";
 
 in stdenv.mkDerivation {
   pname = "nim";
@@ -125,7 +125,7 @@ in stdenv.mkDerivation {
 
   src = fetchurl {
     url = "https://nim-lang.org/download/nim-${version}.tar.xz";
-    sha256 = "1rjinrs119c8i6wzz5fzjfml7n7kbd5hb9642g4rr8qxkq4sx83k";
+    sha256 = "1cv6bxc7w21455c0pv0r2h64ljyzw266jsk1fsgiiyk2rx8mfkhk";
   };
 
   patches = [
@@ -133,7 +133,6 @@ in stdenv.mkDerivation {
     # This patch allows us to override the compiler
     # configuration using a wrapper.
     ./genode.patch
-    ./detect_nixos.patch
   ];
 
   enableParallelBuilding = true;
