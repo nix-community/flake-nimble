@@ -9,28 +9,27 @@
 
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
 
-      mkApp =
-        { drv
-        , name ? drv.pname or drv.name
-        , exePath ? "/bin/${name}"
-        }:
-        {
-          type = "app";
-          program = "${drv}${exePath}";
-        };
+      mkApp = { drv, name ? drv.pname or drv.name, exePath ? "/bin/${name}" }: {
+        type = "app";
+        program = "${drv}${exePath}";
+      };
 
     in {
       packages = forAllSystems (system:
-        import ./default.nix {
-          nixpkgs = builtins.getAttr system nixpkgs.legacyPackages;
-        });
+        let
+          pkgs = import ./default.nix {
+            nixpkgs = builtins.getAttr system nixpkgs.legacyPackages;
+          };
+          blacklist = import ./blacklist.nix;
+        in removeAttrs pkgs blacklist);
       defaultPackage = forAllSystems (system: self.packages."${system}".nim);
 
-      apps = forAllSystems (system:
-        {
-          nim = mkApp { name = "nim"; drv = self.packages.${system}.nim; };
-        }
-      );
+      apps = forAllSystems (system: {
+        nim = mkApp {
+          name = "nim";
+          drv = self.packages.${system}.nim;
+        };
+      });
       defaultApp = forAllSystems (system: self.apps."${system}".nim);
 
       devShell = forAllSystems (system:
