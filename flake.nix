@@ -5,9 +5,30 @@
 
   outputs = { self, nixpkgs }:
     let
-      systems = [ "x86_64-linux" ];
+      localSystems = [ "x86_64-linux" ];
+      crossSystems = [ "x86_64-genode" ];
 
-      forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
+      forAllLocalSystems = f:
+        nixpkgs.lib.genAttrs localSystems (system:
+          f {
+            inherit system;
+            localSystem = system;
+            crossSystem = system;
+          });
+
+      forAllCrossSystems = f:
+        with builtins;
+        let
+          f' = localSystem: crossSystem:
+            let system = localSystem + "-" + crossSystem;
+            in {
+              name = system;
+              value = f { inherit system localSystem crossSystem; };
+            };
+          list = nixpkgs.lib.lists.crossLists f' [ localSystems crossSystems ];
+        in listToAttrs list;
+
+      forAllSystems = f: (forAllLocalSystems f) // (forAllCrossSystems f);
 
       mkApp = { drv, name ? drv.pname or drv.name, exePath ? "/bin/${name}" }: {
         type = "app";
@@ -15,24 +36,29 @@
       };
 
     in {
-      packages = forAllSystems (system:
+      packages = forAllSystems ({ system, localSystem, crossSystem }:
         let
           pkgs = import ./default.nix {
-            nixpkgs = builtins.getAttr system nixpkgs.legacyPackages;
+            buildPackages = self.packages.${localSystem};
+            nixpkgs = nixpkgs.legacyPackages.${system};
           };
           blacklist = import ./blacklist.nix;
         in removeAttrs pkgs blacklist);
-      defaultPackage = forAllSystems (system: self.packages."${system}".nim);
 
-      apps = forAllSystems (system: {
+      defaultPackage =
+        forAllSystems ({ system, ... }: self.packages.${system}.nim);
+
+      apps = forAllSystems ({ system, ... }: {
         nim = mkApp {
           name = "nim";
           drv = self.packages.${system}.nim;
         };
       });
-      defaultApp = forAllSystems (system: self.apps."${system}".nim);
 
-      devShell = forAllSystems (system:
+      defaultApp =
+        forAllLocalSystems ({ system, ... }: self.apps."${system}".nim);
+
+      devShell = forAllLocalSystems ({ system, ... }:
         let
           thisSystem = builtins.getAttr system;
           legacyPackages = thisSystem nixpkgs.legacyPackages;

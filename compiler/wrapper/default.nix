@@ -5,8 +5,7 @@
 #
 # This function wraps a Nim compiler to meet these requirements.
 
-{ name ? "", targetPackages, stdenv, lib, makeWrapper, pkgconfig, nim, nimStdLib
-, nimble }:
+{ name ? "", stdenv, lib, makeWrapper, pkgconfig, nim, nimStdLib, nimble }:
 
 let
   inherit (stdenv) hostPlatform targetPlatform lib;
@@ -18,17 +17,13 @@ in stdenv.mkDerivation {
 
   nativeBuildInputs = [ makeWrapper pkgconfig ];
 
-  buildInputs = [ ] ++ lib.optional
-    (if targetPlatform ? isGenode then targetPlatform.isGenode else false)
-    (with targetPackages; [ genode.base.dev genode.os.dev genode.libc.dev ]);
-
   dontUnpack = true;
   dontConfigure = true;
   dontBuild = true;
 
   targetOs = nim.target.os;
   targetCpu = nim.target.cpu;
-  ccKind = with targetPackages.stdenv;
+  ccKind = with stdenv;
     if cc.isGNU then
       "gcc"
     else if cc.isClang then
@@ -42,15 +37,6 @@ in stdenv.mkDerivation {
   inherit nimStdLib;
 
   installPhase = ''
-    passC=
-    passL=
-    echo targetOs=$targetOs
-    if [ "$targetOs" == "Genode" ]; then
-      export passC=`pkg-config --cflags libc genode-os genode-base genode-prg`
-      export passL=`pkg-config --libs libc libm genode-prg`
-    fi
-    echo passC=$passC
-
     mkdir -p $out/bin $out/etc/nim
     substituteAll ${./nim.cfg} $out/etc/nim/nim.cfg
 
@@ -58,9 +44,9 @@ in stdenv.mkDerivation {
       local binname=`basename $binpath`
       makeWrapper $binpath $out/bin/${targetPlatform.config}-$binname \
         --set NIM_CONFIG_PATH "$out/etc/nim" \
-        --prefix PATH : ${lib.makeBinPath [ targetPackages.stdenv.cc nim ]} \
+        --prefix PATH : ${lib.makeBinPath [ stdenv.cc nim ]} \
         --prefix LD_LIBRARY_PATH : ${
-          stdenv.lib.makeLibraryPath [ targetPackages.stdenv.cc.libc ]
+          stdenv.lib.makeLibraryPath [ stdenv.cc.libc ]
         }
       ln -s $out/bin/${targetPlatform.config}-$binname $out/bin/$binname
     done
