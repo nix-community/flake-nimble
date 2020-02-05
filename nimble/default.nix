@@ -1,13 +1,11 @@
-{ stdenv, fetchFromGitHub, makeWrapper, nim, openssl }:
+{ stdenv, fetchFromGitHub, makeWrapper, nim, openssl, buildPackages }:
 
-stdenv.mkDerivation rec {
+buildPackages.stdenv.mkDerivation rec {
   pname = "nimble";
   version = "0.11.0";
   outputs = [ "out" "lib" ];
 
-  nativeBuildInputs = [ nim ];
-
-  buildInputs = [ makeWrapper openssl ];
+  nativeBuildInputs = [ nim makeWrapper openssl ];
 
   src = fetchFromGitHub {
     owner = "nim-lang";
@@ -28,7 +26,7 @@ stdenv.mkDerivation rec {
 
   NIX_LDFLAGS = [ "-lcrypto" ];
 
-  nimFlags = [ "--cpu:${nim.host.cpu}" "--os:${nim.host.os}" "--nilseqs:on" ];
+  nimFlags = [ "--cpu:${nim.build.cpu}" "--os:${nim.build.os}" "--nilseqs:on" ];
 
   buildPhase = ''
     runHook preBuild

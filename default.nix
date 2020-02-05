@@ -1,4 +1,4 @@
-{ nixpkgs ? import <nixpkgs> { } }:
+{ nixpkgs ? import <nixpkgs> { }, buildPackages }:
 
 let
   nim-unwrapped = nixpkgs.callPackage ./compiler/unwrapped { };
@@ -13,12 +13,16 @@ let
     nimble = nimble-unwrapped;
   };
 
+  nativeBuildInputs = [ buildPackages.nim ];
+
   nimbleHelper =
     # Utility for generating Nix metadata from Nimble
 
-    nixpkgs.runCommand "nimbleHelper" { buildInputs = [ nim ]; } ''
+    nixpkgs.buildPackages.runCommand "nimbleHelper" {
+      inherit nativeBuildInputs;
+    } ''
       export HOME=$NIX_BUILD_TOP
-      nim c --path:${nimble-unwrapped.lib}/src --out:$out ${
+      nim compile --path:${nimble-unwrapped.lib}/src --out:$out ${
         ./src
       }/nix_from_nimble.nim
     '';
@@ -33,10 +37,10 @@ let
     let
       pkgInfoDrv =
         # Generate a Nix expression file from the package source
-        nixpkgs.runCommand (name + "-pkginfo") {
+        nixpkgs.buildPackages.runCommand (name + "-pkginfo") {
           preferLocalBuild = true;
           inherit src;
-          buildInputs = [ nim ];
+          inherit nativeBuildInputs;
         } ''
           export NIMBLE_DIR=$NIX_BUILD_TOP
           cd $src
@@ -69,7 +73,7 @@ let
 
           setupHook = ./setup-hook.sh;
 
-          buildInputs = [ nim ];
+          inherit nativeBuildInputs;
           propagatedBuildInputs = nimbleInputs
             ++ (map (name: builtins.getAttr name nixpkgs)
               pkgInfo.nimble.foreignDeps);
@@ -149,7 +153,7 @@ let
           value = if args.src ? versions then
             (head versions).value
           else
-            nixpkgs.runCommand name { } ''
+            nixpkgs.buildPackages.runCommand name { } ''
               mkdir -p $out/nix-support
               echo No sources generated for package ${name}" > $out/failure-report
               echo "report failure-report $out failure-report" >> $out/nix-support/hydra-build-products

@@ -1,6 +1,6 @@
 # https://nim-lang.github.io/Nim/packaging.html
 
-{ stdenv, lib, fetchurl, openssl, pcre, readline, boehmgc, sqlite }:
+{ stdenv, lib, fetchurl, buildPackages }:
 
 let
   parseCpu = platform:
@@ -64,9 +64,8 @@ let
   parseOs = platform:
     with platform;
     # Derive a Nim OS identifier
-    let isGenode = if platform ? isGenode then platform.isGenode else false;
 
-    in if isAndroid then
+    if isAndroid then
       "Android"
     else
 
@@ -78,7 +77,7 @@ let
       "FreeBSD"
     else
 
-    if isGenode then
+    if platform.isGenode or false then
       "Genode"
     else
 
@@ -119,7 +118,7 @@ let
 
   version = "1.0.6";
 
-in stdenv.mkDerivation {
+in buildPackages.stdenv.mkDerivation {
   pname = "nim";
   inherit version;
 
@@ -139,13 +138,19 @@ in stdenv.mkDerivation {
 
   NIX_LDFLAGS = [ "-lcrypto" "-lpcre" "-lreadline" "-lgc" "-lsqlite3" ];
 
-  buildInputs = [ openssl pcre readline boehmgc sqlite ];
+  nativeBuildInputs = with buildPackages; [
+    boehmgc
+    openssl
+    pcre
+    readline
+    sqlite
+  ];
 
   dontConfigure = true;
 
   kochArgs = [
-    "--cpu:${nimHost.cpu}"
-    "--os:${nimHost.os}"
+    "--cpu:${nimBuild.cpu}"
+    "--os:${nimBuild.os}"
     "-d:release"
     "-d:useGnuReadline"
     (lib.optionals (stdenv.isDarwin || stdenv.isLinux) "-d:nativeStacktrace")
