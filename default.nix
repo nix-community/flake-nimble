@@ -33,7 +33,7 @@ let
     # generate a package produces a derivation marked broken
     # rather than an evaluation error.
     self:
-    { name, src, homepage, nimbleInputs ? { } }:
+    { name, src, homepage, nimbleInputs ? { }, ... }@attrs:
     let
       pkgInfoDrv =
         # Generate a Nix expression file from the package source
@@ -72,7 +72,7 @@ let
 
       buildDrv =
         # Build function to use if evaluation succeeds
-        nixpkgs.stdenv.mkDerivation {
+        nixpkgs.stdenv.mkDerivation (attrs // {
           inherit src;
           inherit (pkgInfo) pname version;
           meta = { inherit homepage; } // pkgInfo.meta;
@@ -115,7 +115,7 @@ let
             runHook preCheck
             runHook postCheck
           '';
-        };
+        });
 
       buildTry = builtins.tryEval buildDrv;
 
