@@ -33,7 +33,7 @@ let
     # generate a package produces a derivation marked broken
     # rather than an evaluation error.
     self:
-    { name, src, homepage }:
+    { name, src, homepage ? src.meta.homepage, nimbleInputs ? { }, ... }@attrs:
     let
       pkgInfoDrv =
         # Generate a Nix expression file from the package source
@@ -60,12 +60,19 @@ let
       missingDependency = with builtins;
         any ({ name, range }: !hasAttr name self) pkgInfo.nimble.requires;
 
-      resolvePkg = { name, range }: builtins.getAttr name self;
-      nimbleInputs = map resolvePkg pkgInfo.nimble.requires;
+      missingDependencies = with builtins;
+        let
+          missing = filter ({ name, range }: !hasAttr name self)
+            pkgInfo.nimble.requires;
+        in map (getAttr name) missing;
+
+      resolvePkg = { name, range }:
+        builtins.getAttr name (self // nimbleInputs);
+      nimbleInputs' = map resolvePkg pkgInfo.nimble.requires;
 
       buildDrv =
         # Build function to use if evaluation succeeds
-        nixpkgs.stdenv.mkDerivation {
+        nixpkgs.stdenv.mkDerivation (attrs // rec {
           inherit src;
           inherit (pkgInfo) pname version;
           meta = { inherit homepage; } // pkgInfo.meta;
@@ -74,11 +81,16 @@ let
           setupHook = ./setup-hook.sh;
 
           inherit nativeBuildInputs;
-          propagatedBuildInputs = nimbleInputs
+          propagatedBuildInputs = nimbleInputs'
             ++ (map (name: builtins.getAttr name nixpkgs)
               pkgInfo.nimble.foreignDeps);
 
-          nimFlags = pkgInfo.nimble.backend;
+          nimFlags = with builtins;
+            let
+              libs = filter (pkg: hasAttr "nimble" (pkg.passthru or { }))
+                nimbleInputs';
+              libPaths = map (lib: ''--path:"${lib}/src"'') libs;
+            in toString ([ pkgInfo.nimble.backend ] ++ libPaths);
 
           preHook = ''
             export HOME="$NIX_BUILD_TOP"
@@ -108,7 +120,7 @@ let
             runHook preCheck
             runHook postCheck
           '';
-        };
+        });
 
       buildTry = builtins.tryEval buildDrv;
 
@@ -118,7 +130,9 @@ let
         meta.broken = true;
       } # TODO: failure report
     else if missingDependency then
-      trace "${name} has a missingDependency" pkgInfoDrv // {
+      trace
+      "${name} has a missingDependency [ ${toString missingDependencies} ]"
+      pkgInfoDrv // {
         meta.broken = true;
       } # TODO: failure report
     else if buildTry.success then
