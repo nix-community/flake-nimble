@@ -33,7 +33,7 @@ let
     # generate a package produces a derivation marked broken
     # rather than an evaluation error.
     self:
-    { name, src, homepage, nimbleInputs ? { }, ... }@attrs:
+    { name, src, homepage ? src.meta.homepage, nimbleInputs ? { }, ... }@attrs:
     let
       pkgInfoDrv =
         # Generate a Nix expression file from the package source
