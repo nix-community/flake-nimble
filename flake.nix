@@ -46,7 +46,7 @@
         in removeAttrs pkgs blacklist);
 
       defaultPackage =
-        forAllSystems ({ system, ... }: self.packages.${system}.nim);
+        forAllSystems ({ system, ... }: self.packages.${system}.nimble);
 
       apps = forAllSystems ({ system, ... }: {
         nim = mkApp {
@@ -56,7 +56,7 @@
       });
 
       defaultApp =
-        forAllLocalSystems ({ system, ... }: self.apps."${system}".nim);
+        forAllLocalSystems ({ system, ... }: self.apps."${system}".nimble);
 
       devShell = forAllLocalSystems ({ system, ... }:
         let
