@@ -72,7 +72,7 @@ let
 
       buildDrv =
         # Build function to use if evaluation succeeds
-        nixpkgs.stdenv.mkDerivation (attrs // {
+        nixpkgs.stdenv.mkDerivation (attrs // rec {
           inherit src;
           inherit (pkgInfo) pname version;
           meta = { inherit homepage; } // pkgInfo.meta;
@@ -85,7 +85,12 @@ let
             ++ (map (name: builtins.getAttr name nixpkgs)
               pkgInfo.nimble.foreignDeps);
 
-          nimFlags = pkgInfo.nimble.backend;
+          nimFlags = with builtins;
+            let
+              libs = filter (pkg: hasAttr "nimble" (pkg.passthru or { }))
+                nimbleInputs';
+              libPaths = map (lib: ''--path:"${lib}/src"'') libs;
+            in toString ([ pkgInfo.nimble.backend ] ++ libPaths);
 
           preHook = ''
             export HOME="$NIX_BUILD_TOP"
