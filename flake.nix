@@ -50,12 +50,32 @@
       defaultPackage =
         forAllSystems ({ system, ... }: self.packages.${system}.nimble);
 
-      apps = forAllSystems ({ system, ... }: {
-        nim = mkApp {
-          name = "nim";
-          drv = self.packages.${system}.nim;
-        };
-      });
+      apps = forAllSystems ({ system, ... }:
+        let
+          appThunks = with builtins;
+            let
+              pkgs = self.packages.${system};
+              f = name: {
+                inherit name;
+                value = let drv = getAttr name pkgs;
+                in if drv.nimble.bin == [ ] then
+                  null
+                else
+                  mkApp { inherit name drv; };
+              };
+              pkgNames = attrNames pkgs;
+              mapped = map f pkgNames;
+            in listToAttrs mapped;
+        in appThunks // {
+          nim = mkApp {
+            name = "nim";
+            drv = self.packages.${system}.nim;
+          };
+          nimble = mkApp {
+            name = "nim";
+            drv = self.packages.${system}.nimble;
+          };
+        });
 
       defaultApp =
         forAllLocalSystems ({ system, ... }: self.apps."${system}".nimble);
