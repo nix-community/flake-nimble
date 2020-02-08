@@ -1,0 +1,28 @@
+diff --git a/lib/system/dyncalls.nim b/lib/system/dyncalls.nim
+index d16dbdf92..99514d4b1 100644
+--- a/lib/system/dyncalls.nim
++++ b/lib/system/dyncalls.nim
+@@ -151,14 +151,17 @@ elif defined(windows) or defined(dos):
+ 
+ elif defined(genode):
+ 
+-  proc nimUnloadLibrary(lib: LibHandle) {.
+-    error: "nimUnloadLibrary not implemented".}
++  proc nimUnloadLibrary(lib: LibHandle) =
++    echo "nimUnloadLibrary not implemented"
++    quit(1)
+ 
+-  proc nimLoadLibrary(path: string): LibHandle {.
+-    error: "nimLoadLibrary not implemented".}
++  proc nimLoadLibrary(path: string): LibHandle =
++    echo "nimLoadLibrary not implemented"
++    quit(1)
+ 
+-  proc nimGetProcAddr(lib: LibHandle, name: cstring): ProcAddr {.
+-    error: "nimGetProcAddr not implemented".}
++  proc nimGetProcAddr(lib: LibHandle, name: cstring): ProcAddr =
++    echo "nimGetProcAddr not implemented"
++    quit(1)
+ 
+ elif defined(nintendoswitch):
+   proc nimUnloadLibrary(lib: LibHandle) =
