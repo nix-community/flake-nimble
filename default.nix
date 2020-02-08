@@ -90,7 +90,11 @@ let
               libs = filter (pkg: hasAttr "nimble" (pkg.passthru or { }))
                 nimbleInputs';
               libPaths = map (lib: ''--path:"${lib}/src"'') libs;
-            in toString ([ pkgInfo.nimble.backend ] ++ libPaths);
+            in toString ([
+              pkgInfo.nimble.backend
+              "--cpu:${nim.host.cpu}"
+              "--os:${nim.host.os}"
+            ] ++ libPaths);
 
           preHook = ''
             export HOME="$NIX_BUILD_TOP"
