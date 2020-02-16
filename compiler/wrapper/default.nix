@@ -38,6 +38,13 @@ in stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/bin $out/etc/nim
+    export genodeLinkFlags=${
+      if targetPlatform.isGenode then
+        "`pkg-config --libs ${stdenv.cc.libc}/lib/pkgconfig/genode-prg.pc`"
+      else
+        ""
+    }
+
     substituteAll ${./nim.cfg} $out/etc/nim/nim.cfg
 
     for binpath in ${nim}/bin/nim ${nimble}/bin/nimble; do

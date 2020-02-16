@@ -132,7 +132,6 @@ in buildPackages.stdenv.mkDerivation {
     # This patch allows us to override the compiler
     # configuration using a wrapper.
     ./genode.patch
-    ./genode-dyncalls.patch
   ];
 
   enableParallelBuilding = true;

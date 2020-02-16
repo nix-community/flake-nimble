@@ -1,0 +1,398 @@
+diff --git a/lib/system/dyncalls.nim b/lib/system/dyncalls.nim
+index d16dbdf92..7802101ad 100644
+--- a/lib/system/dyncalls.nim
++++ b/lib/system/dyncalls.nim
+@@ -19,11 +19,11 @@ const
+ 
+ proc nimLoadLibraryError(path: string) =
+   # carefully written to avoid memory allocation:
+-  cstderr.rawWrite("could not load: ")
+-  cstderr.rawWrite(path)
+-  cstderr.rawWrite("\n")
++  writeToStdErr("could not load: ")
++  writeToStdErr(path)
++  writeToStdErr("\n")
+   when not defined(nimDebugDlOpen) and not defined(windows):
+-    cstderr.rawWrite("compile with -d:nimDebugDlOpen for more information\n")
++    writeToStdErr("compile with -d:nimDebugDlOpen for more information\n")
+   when defined(windows) and defined(guiapp):
+     # Because console output is not shown in GUI apps, display error as message box:
+     const prefix = "could not load: "
+@@ -35,9 +35,9 @@ proc nimLoadLibraryError(path: string) =
+ 
+ proc procAddrError(name: cstring) {.compilerproc, nonReloadable, hcrInline.} =
+   # carefully written to avoid memory allocation:
+-  cstderr.rawWrite("could not import: ")
+-  cstderr.rawWrite(name)
+-  cstderr.rawWrite("\n")
++  writeToStdErr("could not import: ")
++  writeToStdErr(name)
++  writeToStdErr("\n")
+   quit(1)
+ 
+ # this code was inspired from Lua's source code:
+@@ -79,8 +79,8 @@ when defined(posix):
+     when defined(nimDebugDlOpen):
+       let error = dlerror()
+       if error != nil:
+-        cstderr.rawWrite(error)
+-        cstderr.rawWrite("\n")
++        writeToStdErr(error)
++        writeToStdErr("\n")
+ 
+   proc nimGetProcAddr(lib: LibHandle, name: cstring): ProcAddr =
+     result = dlsym(lib, name)
+@@ -151,31 +151,34 @@ elif defined(windows) or defined(dos):
+ 
+ elif defined(genode):
+ 
+-  proc nimUnloadLibrary(lib: LibHandle) {.
+-    error: "nimUnloadLibrary not implemented".}
++  proc nimUnloadLibrary(lib: LibHandle) =
++    echo "nimUnloadLibrary not implemented"
++    quit(1)
+ 
+-  proc nimLoadLibrary(path: string): LibHandle {.
+-    error: "nimLoadLibrary not implemented".}
++  proc nimLoadLibrary(path: string): LibHandle =
++    echo "nimLoadLibrary not implemented"
++    quit(1)
+ 
+-  proc nimGetProcAddr(lib: LibHandle, name: cstring): ProcAddr {.
+-    error: "nimGetProcAddr not implemented".}
++  proc nimGetProcAddr(lib: LibHandle, name: cstring): ProcAddr =
++    echo "nimGetProcAddr not implemented"
++    quit(1)
+ 
+ elif defined(nintendoswitch):
+   proc nimUnloadLibrary(lib: LibHandle) =
+-    cstderr.rawWrite("nimUnLoadLibrary not implemented")
+-    cstderr.rawWrite("\n")
++    writeToStdErr("nimUnLoadLibrary not implemented")
++    writeToStdErr("\n")
+     quit(1)
+ 
+   proc nimLoadLibrary(path: string): LibHandle =
+-    cstderr.rawWrite("nimLoadLibrary not implemented")
+-    cstderr.rawWrite("\n")
++    writeToStdErr("nimLoadLibrary not implemented")
++    writeToStdErr("\n")
+     quit(1)
+ 
+ 
+   proc nimGetProcAddr(lib: LibHandle, name: cstring): ProcAddr =
+-    cstderr.rawWrite("nimGetProAddr not implemented")
+-    cstderr.rawWrite(name)
+-    cstderr.rawWrite("\n")
++    writeToStdErr("nimGetProAddr not implemented")
++    writeToStdErr(name)
++    writeToStdErr("\n")
+     quit(1)
+ 
+ else:
+diff --git a/lib/system/excpt.nim b/lib/system/excpt.nim
+index c6de410b1..07cb923a8 100644
+--- a/lib/system/excpt.nim
++++ b/lib/system/excpt.nim
+@@ -17,8 +17,11 @@ var
+     ## instead of `stdmsg.write` when printing stacktrace.
+     ## Unstable API.
+ 
+-when not defined(windows) or not defined(guiapp):
+-  proc writeToStdErr(msg: cstring) = rawWrite(cstderr, msg)
++when defined(genode):
++  proc writeToStdErr(msg: cstring) =
++    {.emit: "Genode::error(Genode::Cstring(`msg`));".}
++elif not defined(windows) or not defined(guiapp):
++  proc writeToStdErr*(msg: cstring) = rawWrite(cstderr, msg)
+ 
+ else:
+   proc MessageBoxA(hWnd: pointer, lpText, lpCaption: cstring, uType: int): int32 {.
+diff --git a/lib/system/fatal.nim b/lib/system/fatal.nim
+index 087753d3d..919db3081 100644
+--- a/lib/system/fatal.nim
++++ b/lib/system/fatal.nim
+@@ -22,7 +22,7 @@ elif defined(nimQuirky) and not defined(nimscript):
+     add(buf, " [")
+     add(buf, name exceptn)
+     add(buf, "]")
+-    cstderr.rawWrite buf
++    writeToStdErr buf
+     quit 1
+ 
+   proc sysFatal(exceptn: typedesc, message: string) {.inline, noreturn.} =
+diff --git a/lib/system/gc.nim b/lib/system/gc.nim
+index 54f4f4946..0b9ee8b5b 100644
+--- a/lib/system/gc.nim
++++ b/lib/system/gc.nim
+@@ -104,11 +104,11 @@ when not defined(useNimRtl):
+ template gcAssert(cond: bool, msg: string) =
+   when defined(useGcAssert):
+     if not cond:
+-      cstderr.rawWrite "[GCASSERT] "
+-      cstderr.rawWrite msg
++      writeToStdErr "[GCASSERT] "
++      writeToStdErr msg
+       when defined(logGC):
+-        cstderr.rawWrite "[GCASSERT] statistics:\L"
+-        cstderr.rawWrite GC_getStatistics()
++        writeToStdErr "[GCASSERT] statistics:\L"
++        writeToStdErr GC_getStatistics()
+       GC_disable()
+       writeStackTrace()
+       #var x: ptr int
+diff --git a/lib/system/gc_common.nim b/lib/system/gc_common.nim
+index fe07766d9..6e3e44562 100644
+--- a/lib/system/gc_common.nim
++++ b/lib/system/gc_common.nim
+@@ -461,7 +461,7 @@ proc nimRegisterGlobalMarker(markerProc: GlobalMarkerProc) {.compilerproc.} =
+     globalMarkers[globalMarkersLen] = markerProc
+     inc globalMarkersLen
+   else:
+-    cstderr.rawWrite("[GC] cannot register global variable; too many global variables")
++    writeToStdErr("[GC] cannot register global variable; too many global variables")
+     quit 1
+ 
+ proc nimRegisterThreadLocalMarker(markerProc: GlobalMarkerProc) {.compilerproc.} =
+@@ -469,5 +469,5 @@ proc nimRegisterThreadLocalMarker(markerProc: GlobalMarkerProc) {.compilerproc.}
+     threadLocalMarkers[threadLocalMarkersLen] = markerProc
+     inc threadLocalMarkersLen
+   else:
+-    cstderr.rawWrite("[GC] cannot register thread local variable; too many thread local variables")
++    writeToStdErr("[GC] cannot register thread local variable; too many thread local variables")
+     quit 1
+diff --git a/lib/system/gc_hooks.nim b/lib/system/gc_hooks.nim
+index 70f02e657..a55359b61 100644
+--- a/lib/system/gc_hooks.nim
++++ b/lib/system/gc_hooks.nim
+@@ -23,7 +23,7 @@ proc nimRegisterGlobalMarker(markerProc: GlobalMarkerProc) {.compilerproc.} =
+     globalMarkers[globalMarkersLen] = markerProc
+     inc globalMarkersLen
+   else:
+-    cstderr.rawWrite("[GC] cannot register global variable; too many global variables")
++    writeToStdErr("[GC] cannot register global variable; too many global variables")
+     quit 1
+ 
+ proc nimRegisterThreadLocalMarker(markerProc: GlobalMarkerProc) {.compilerproc.} =
+@@ -31,7 +31,7 @@ proc nimRegisterThreadLocalMarker(markerProc: GlobalMarkerProc) {.compilerproc.}
+     threadLocalMarkers[threadLocalMarkersLen] = markerProc
+     inc threadLocalMarkersLen
+   else:
+-    cstderr.rawWrite("[GC] cannot register thread local variable; too many thread local variables")
++    writeToStdErr("[GC] cannot register thread local variable; too many thread local variables")
+     quit 1
+ 
+ proc traverseGlobals*() =
+diff --git a/lib/system/gc_ms.nim b/lib/system/gc_ms.nim
+index 3ce428930..898f82527 100644
+--- a/lib/system/gc_ms.nim
++++ b/lib/system/gc_ms.nim
+@@ -88,8 +88,8 @@ when not defined(useNimRtl):
+ template gcAssert(cond: bool, msg: string) =
+   when defined(useGcAssert):
+     if not cond:
+-      cstderr.rawWrite "[GCASSERT] "
+-      cstderr.rawWrite msg
++      writeToStdErr "[GCASSERT] "
++      writeToStdErr msg
+       quit 1
+ 
+ proc cellToUsr(cell: PCell): pointer {.inline.} =
+diff --git a/lib/system/io.nim b/lib/system/io.nim
+index f1f201423..6041b0631 100644
+--- a/lib/system/io.nim
++++ b/lib/system/io.nim
+@@ -35,13 +35,17 @@ type
+ 
+ # text file handling:
+ when not defined(nimscript) and not defined(js):
+-  var
+-    stdin* {.importc: "stdin", header: "<stdio.h>".}: File
+-      ## The standard input stream.
+-    stdout* {.importc: "stdout", header: "<stdio.h>".}: File
+-      ## The standard output stream.
+-    stderr* {.importc: "stderr", header: "<stdio.h>".}: File
+-      ## The standard error stream.
++  when defined(genode):
++    var
++      stdin*, stdout*, stderr*: File
++  else:
++    var
++      stdin* {.importc: "stdin", header: "<stdio.h>".}: File
++        ## The standard input stream.
++      stdout* {.importc: "stdout", header: "<stdio.h>".}: File
++        ## The standard output stream.
++      stderr* {.importc: "stderr", header: "<stdio.h>".}: File
++        ## The standard error stream.
+ 
+ when defined(useStdoutAsStdmsg):
+   template stdmsg*: File = stdout
+@@ -105,15 +109,16 @@ else:
+     importc: "fseeko", header: "<stdio.h>", tags: [].}
+   proc c_ftell(f: File): int64 {.
+     importc: "ftello", header: "<stdio.h>", tags: [].}
+-proc c_ferror(f: File): cint {.
+-  importc: "ferror", header: "<stdio.h>", tags: [].}
+-proc c_setvbuf(f: File, buf: pointer, mode: cint, size: csize): cint {.
+-  importc: "setvbuf", header: "<stdio.h>", tags: [].}
++when not defined(genode):
++  proc c_ferror(f: File): cint {.
++    importc: "ferror", header: "<stdio.h>", tags: [].}
++  proc c_setvbuf(f: File, buf: pointer, mode: cint, size: csize): cint {.
++    importc: "setvbuf", header: "<stdio.h>", tags: [].}
+ 
+-proc c_fprintf(f: File, frmt: cstring): cint {.
+-  importc: "fprintf", header: "<stdio.h>", varargs, discardable.}
+-proc c_fputc(c: char, f: File): cint {.
+-  importc: "fputc", header: "<stdio.h>".}
++  proc c_fprintf(f: File, frmt: cstring): cint {.
++    importc: "fprintf", header: "<stdio.h>", varargs, discardable.}
++  proc c_fputc(c: char, f: File): cint {.
++    importc: "fputc", header: "<stdio.h>".}
+ 
+ # When running nim in android app, stdout goes nowhere, so echo gets ignored
+ # To redirect echo to the android logcat, use -d:androidNDK
+@@ -138,7 +143,7 @@ when not defined(NimScript):
+     errno {.importc, header: "<errno.h>".}: cint ## error variable
+ 
+ proc checkErr(f: File) =
+-  when not defined(NimScript):
++  when not defined(NimScript) and not defined(genode):
+     if c_ferror(f) != 0:
+       let msg = "errno: " & $errno & " `" & $strerror(errno) & "`"
+       c_clearerr(f)
+@@ -177,16 +182,22 @@ proc readChars*(f: File, a: var openArray[char], start, len: Natural): int {.
+ 
+ proc write*(f: File, c: cstring) {.tags: [WriteIOEffect], benign.} =
+   ## Writes a value to the file `f`. May throw an IO exception.
+-  discard c_fputs(c, f)
+-  checkErr(f)
++  when defined(genode):
++    raiseEIO("writeBuffer not implemented for this platform")
++  else:
++    discard c_fputs(c, f)
++    checkErr(f)
+ 
+ proc writeBuffer*(f: File, buffer: pointer, len: Natural): int {.
+   tags: [WriteIOEffect], benign.} =
+   ## writes the bytes of buffer pointed to by the parameter `buffer` to the
+   ## file `f`. Returns the number of actual written bytes, which may be less
+   ## than `len` in case of an error.
+-  result = c_fwrite(buffer, 1, len, f)
+-  checkErr(f)
++  when defined(genode):
++    raiseEIO("writeBuffer not implemented for this platform")
++  else:
++    result = c_fwrite(buffer, 1, len, f)
++    checkErr(f)
+ 
+ proc writeBytes*(f: File, a: openArray[int8|uint8], start, len: Natural): int {.
+   tags: [WriteIOEffect], benign.} =
+@@ -342,34 +353,35 @@ proc readLine*(f: File): TaintedString  {.tags: [ReadIOEffect], benign.} =
+   result = TaintedString(newStringOfCap(80))
+   if not readLine(f, result): raiseEOF()
+ 
+-proc write*(f: File, i: int) {.tags: [WriteIOEffect], benign.} =
+-  when sizeof(int) == 8:
+-    if c_fprintf(f, "%lld", i) < 0: checkErr(f)
+-  else:
+-    if c_fprintf(f, "%ld", i) < 0: checkErr(f)
++when not defined(genode):
++  proc write*(f: File, i: int) {.tags: [WriteIOEffect], benign.} =
++    when sizeof(int) == 8:
++      if c_fprintf(f, "%lld", i) < 0: checkErr(f)
++    else:
++      if c_fprintf(f, "%ld", i) < 0: checkErr(f)
+ 
+-proc write*(f: File, i: BiggestInt) {.tags: [WriteIOEffect], benign.} =
+-  when sizeof(BiggestInt) == 8:
+-    if c_fprintf(f, "%lld", i) < 0: checkErr(f)
+-  else:
+-    if c_fprintf(f, "%ld", i) < 0: checkErr(f)
++  proc write*(f: File, i: BiggestInt) {.tags: [WriteIOEffect], benign.} =
++    when sizeof(BiggestInt) == 8:
++      if c_fprintf(f, "%lld", i) < 0: checkErr(f)
++    else:
++      if c_fprintf(f, "%ld", i) < 0: checkErr(f)
+ 
+-proc write*(f: File, b: bool) {.tags: [WriteIOEffect], benign.} =
+-  if b: write(f, "true")
+-  else: write(f, "false")
++  proc write*(f: File, b: bool) {.tags: [WriteIOEffect], benign.} =
++    if b: write(f, "true")
++    else: write(f, "false")
+ 
+-proc write*(f: File, r: float32) {.tags: [WriteIOEffect], benign.} =
+-  var buffer: array[65, char]
+-  discard writeFloatToBuffer(buffer, r)
+-  if c_fprintf(f, "%s", buffer[0].addr) < 0: checkErr(f)
++  proc write*(f: File, r: float32) {.tags: [WriteIOEffect], benign.} =
++    var buffer: array[65, char]
++    discard writeFloatToBuffer(buffer, r)
++    if c_fprintf(f, "%s", buffer[0].addr) < 0: checkErr(f)
+ 
+-proc write*(f: File, r: BiggestFloat) {.tags: [WriteIOEffect], benign.} =
+-  var buffer: array[65, char]
+-  discard writeFloatToBuffer(buffer, r)
+-  if c_fprintf(f, "%s", buffer[0].addr) < 0: checkErr(f)
++  proc write*(f: File, r: BiggestFloat) {.tags: [WriteIOEffect], benign.} =
++    var buffer: array[65, char]
++    discard writeFloatToBuffer(buffer, r)
++    if c_fprintf(f, "%s", buffer[0].addr) < 0: checkErr(f)
+ 
+-proc write*(f: File, c: char) {.tags: [WriteIOEffect], benign.} =
+-  discard c_putc(cint(c), f)
++  proc write*(f: File, c: char) {.tags: [WriteIOEffect], benign.} =
++    discard c_putc(cint(c), f)
+ 
+ proc write*(f: File, a: varargs[string, `$`]) {.tags: [WriteIOEffect], benign.} =
+   for x in items(a): write(f, x)
+@@ -535,10 +547,11 @@ proc open*(f: var File, filename: string,
+         return false
+     result = true
+     f = cast[File](p)
+-    if bufSize > 0 and bufSize <= high(cint).int:
+-      discard c_setvbuf(f, nil, IOFBF, bufSize.cint)
+-    elif bufSize == 0:
+-      discard c_setvbuf(f, nil, IONBF, 0)
++    when not defined(genode):
++      if bufSize > 0 and bufSize <= high(cint).int:
++        discard c_setvbuf(f, nil, IOFBF, bufSize.cint)
++      elif bufSize == 0:
++        discard c_setvbuf(f, nil, IONBF, 0)
+ 
+ proc reopen*(f: File, filename: string, mode: FileMode = fmRead): bool {.
+   tags: [], benign.} =
+@@ -589,12 +602,13 @@ proc getFileSize*(f: File): int64 {.tags: [ReadIOEffect], benign.} =
+ 
+ proc setStdIoUnbuffered*() {.tags: [], benign.} =
+   ## Configures `stdin`, `stdout` and `stderr` to be unbuffered.
+-  when declared(stdout):
+-    discard c_setvbuf(stdout, nil, IONBF, 0)
+-  when declared(stderr):
+-    discard c_setvbuf(stderr, nil, IONBF, 0)
+-  when declared(stdin):
+-    discard c_setvbuf(stdin, nil, IONBF, 0)
++  when not defined(genode):
++    when declared(stdout):
++      discard c_setvbuf(stdout, nil, IONBF, 0)
++    when declared(stderr):
++      discard c_setvbuf(stderr, nil, IONBF, 0)
++    when declared(stdin):
++      discard c_setvbuf(stdin, nil, IONBF, 0)
+ 
+ when declared(stdout):
+   when defined(windows) and compileOption("threads"):
+diff --git a/lib/system/mmdisp.nim b/lib/system/mmdisp.nim
+index cba88104d..ff6631088 100644
+--- a/lib/system/mmdisp.nim
++++ b/lib/system/mmdisp.nim
+@@ -62,7 +62,7 @@ const
+ 
+ proc raiseOutOfMem() {.noinline.} =
+   if outOfMemHook != nil: outOfMemHook()
+-  cstderr.rawWrite("out of memory")
++  writeToStdErr("out of memory")
+   quit(1)
+ 
+ when defined(boehmgc):

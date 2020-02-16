@@ -1,0 +1,1025 @@
+diff --git a/lib/pure/includes/osenv.nim b/lib/pure/includes/osenv.nim
+index 1ddc51f8f..796cc26af 100644
+--- a/lib/pure/includes/osenv.nim
++++ b/lib/pure/includes/osenv.nim
+@@ -5,12 +5,16 @@ when not declared(os) and not declared(ospaths):
+ 
+ from parseutils import skipIgnoreCase
+ 
+-proc c_getenv(env: cstring): cstring {.
+-  importc: "getenv", header: "<stdlib.h>".}
+-proc c_putenv(env: cstring): cint {.
+-  importc: "putenv", header: "<stdlib.h>".}
+-proc c_unsetenv(env: cstring): cint {.
+-  importc: "unsetenv", header: "<stdlib.h>".}
++when defined(genode) and not defined(posix):
++  import xmltree
++  import genode/config
++else:
++  proc c_getenv(env: cstring): cstring {.
++    importc: "getenv", header: "<stdlib.h>".}
++  proc c_putenv(env: cstring): cint {.
++    importc: "putenv", header: "<stdlib.h>".}
++  proc c_unsetenv(env: cstring): cint {.
++    importc: "unsetenv", header: "<stdlib.h>".}
+ 
+ # Environment handling cannot be put into RTL, because the ``envPairs``
+ # iterator depends on ``environment``.
+@@ -52,6 +56,11 @@ when defined(windows) and not defined(nimscript):
+           e = cast[WideCString](cast[ByteAddress](eend)+2)
+           if eend[1].int == 0: break
+         discard freeEnvironmentStringsW(env)
++      elif defined(genode):
++        let config = parseConfigRom()
++        for subnode in config.items:
++          if subnode.tag == "env":
++            add(environment, subnode.attr("key") & "=" & subnode.attr("value"))
+       else:
+         var
+           env = getEnvironmentStringsA()
+@@ -65,6 +74,15 @@ when defined(windows) and not defined(nimscript):
+         discard freeEnvironmentStringsA(env)
+       envComputed = true
+ 
++elif defined(genode):
++  proc getEnvVarsC() =
++    if not envComputed:
++      let config = parseConfigRom()
++      for subnode in config.items:
++        if subnode.tag == "env":
++          add(environment, subnode.attr("key") & "=" & subnode.attr("value"))
++      envComputed = true
++
+ else:
+   const
+     useNSGetEnviron = (defined(macosx) and not defined(ios)) or defined(nimscript)
+@@ -106,7 +124,7 @@ proc findEnvVar(key: string): int =
+       if startsWith(environment[i], temp): return i
+   return -1
+ 
+-proc getEnv*(key: string, default = ""): TaintedString {.tags: [ReadEnvEffect].} =
++proc getEnv*(key: string, default = ""): TaintedString {.tags: [ReadEnvEffect,ReadIOEffect].} =
+   ## Returns the value of the `environment variable`:idx: named `key`.
+   ##
+   ## If the variable does not exist, `""` is returned. To distinguish
+@@ -129,11 +147,12 @@ proc getEnv*(key: string, default = ""): TaintedString {.tags: [ReadEnvEffect].}
+     if i >= 0:
+       return TaintedString(substr(environment[i], find(environment[i], '=')+1))
+     else:
+-      var env = c_getenv(key)
+-      if env == nil: return TaintedString(default)
+-      result = TaintedString($env)
++      when defined(c_getenv):
++        var env = c_getenv(key)
++        if env == nil: return TaintedString(default)
++        result = TaintedString($env)
+ 
+-proc existsEnv*(key: string): bool {.tags: [ReadEnvEffect].} =
++proc existsEnv*(key: string): bool {.tags: [ReadEnvEffect,ReadIOEffect].} =
+   ## Checks whether the environment variable named `key` exists.
+   ## Returns true if it exists, false otherwise.
+   ##
+@@ -148,8 +167,9 @@ proc existsEnv*(key: string): bool {.tags: [ReadEnvEffect].} =
+   when nimvm:
+     discard "built into the compiler"
+   else:
+-    if c_getenv(key) != nil: return true
+-    else: return findEnvVar(key) >= 0
++    when defined(c_getenv):
++      if c_getenv(key) != nil: return true
++    return findEnvVar(key) >= 0
+ 
+ proc putEnv*(key, val: string) {.tags: [WriteEnvEffect].} =
+   ## Sets the value of the `environment variable`:idx: named `key` to `val`.
+@@ -168,22 +188,25 @@ proc putEnv*(key, val: string) {.tags: [WriteEnvEffect].} =
+   when nimvm:
+     discard "built into the compiler"
+   else:
+-    var indx = findEnvVar(key)
+-    if indx >= 0:
+-      environment[indx] = key & '=' & val
++    when not defined(c_putenv):
++      raiseOSError(OSErrorCode(-1), "putEnv not implemented")
+     else:
+-      add environment, (key & '=' & val)
+-      indx = high(environment)
+-    when defined(windows) and not defined(nimscript):
+-      when useWinUnicode:
+-        var k = newWideCString(key)
+-        var v = newWideCString(val)
+-        if setEnvironmentVariableW(k, v) == 0'i32: raiseOSError(osLastError())
++      var indx = findEnvVar(key)
++      if indx >= 0:
++        environment[indx] = key & '=' & val
+       else:
+-        if setEnvironmentVariableA(key, val) == 0'i32: raiseOSError(osLastError())
+-    else:
+-      if c_putenv(environment[indx]) != 0'i32:
+-        raiseOSError(osLastError())
++        add environment, (key & '=' & val)
++        indx = high(environment)
++      when defined(windows) and not defined(nimscript):
++        when useWinUnicode:
++          var k = newWideCString(key)
++          var v = newWideCString(val)
++          if setEnvironmentVariableW(k, v) == 0'i32: raiseOSError(osLastError())
++        else:
++          if setEnvironmentVariableA(key, val) == 0'i32: raiseOSError(osLastError())
++      else:
++        if c_putenv(environment[indx]) != 0'i32:
++          raiseOSError(osLastError())
+ 
+ proc delEnv*(key: string) {.tags: [WriteEnvEffect].} =
+   ## Deletes the `environment variable`:idx: named `key`.
+@@ -197,20 +220,23 @@ proc delEnv*(key: string) {.tags: [WriteEnvEffect].} =
+   when nimvm:
+     discard "built into the compiler"
+   else:
+-    var indx = findEnvVar(key)
+-    if indx < 0: return # Do nothing if the env var is not already set
+-    when defined(windows) and not defined(nimscript):
+-      when useWinUnicode:
+-        var k = newWideCString(key)
+-        if setEnvironmentVariableW(k, nil) == 0'i32: raiseOSError(osLastError())
+-      else:
+-        if setEnvironmentVariableA(key, nil) == 0'i32: raiseOSError(osLastError())
++    when not defined(c_unsetenv):
++      raiseOSError(OSErrorCode(-1), "delEnv not implemented")
+     else:
+-      if c_unsetenv(key) != 0'i32:
+-        raiseOSError(osLastError())
+-    environment.delete(indx)
++      var indx = findEnvVar(key)
++      if indx < 0: return # Do nothing if the env var is not already set
++      when defined(windows) and not defined(nimscript):
++        when useWinUnicode:
++          var k = newWideCString(key)
++          if setEnvironmentVariableW(k, nil) == 0'i32: raiseOSError(osLastError())
++        else:
++          if setEnvironmentVariableA(key, nil) == 0'i32: raiseOSError(osLastError())
++      else:
++        if c_unsetenv(key) != 0'i32:
++          raiseOSError(osLastError())
++      environment.delete(indx)
+ 
+-iterator envPairs*(): tuple[key, value: TaintedString] {.tags: [ReadEnvEffect].} =
++iterator envPairs*(): tuple[key, value: TaintedString] {.tags: [ReadEnvEffect,ReadIOEffect].} =
+   ## Iterate over all `environments variables`:idx:.
+   ##
+   ## In the first component of the tuple is the name of the current variable stored,
+diff --git a/lib/pure/os.nim b/lib/pure/os.nim
+index d91a135c3..db91e0967 100644
+--- a/lib/pure/os.nim
++++ b/lib/pure/os.nim
+@@ -15,18 +15,18 @@
+ ##   import os
+ ##
+ ##   let myFile = "/path/to/my/file.nim"
+-## 
++##
+ ##   let pathSplit = splitPath(myFile)
+ ##   assert pathSplit.head == "/path/to/my"
+ ##   assert pathSplit.tail == "file.nim"
+-## 
++##
+ ##   assert parentDir(myFile) == "/path/to/my"
+-## 
++##
+ ##   let fileSplit = splitFile(myFile)
+ ##   assert fileSplit.dir == "/path/to/my"
+ ##   assert fileSplit.name == "file"
+ ##   assert fileSplit.ext == ".nim"
+-## 
++##
+ ##   assert myFile.changeFileExt("c") == "/path/to/my/file.c"
+ 
+ ##
+@@ -62,6 +62,12 @@ elif defined(posix):
+ 
+   proc toTime(ts: Timespec): times.Time {.inline.} =
+     result = initTime(ts.tv_sec.int64, ts.tv_nsec.int)
++elif defined(genode):
++  import genode/vfs, genode/timer
++  import times
++  template raiseGenodeError(info: string) =
++    raiseOSError(OSErrorCode(-1), info)
++
+ else:
+   {.error: "OS module not ported to your operating system!".}
+ 
+@@ -956,6 +962,12 @@ proc existsFile*(filename: string): bool {.rtl, extern: "nos$1",
+       var a = getFileAttributesA(filename)
+     if a != -1'i32:
+       result = (a and FILE_ATTRIBUTE_DIRECTORY) == 0'i32
++  elif defined(genode):
++    try:
++      let stat = vfs.stat(filename)
++      stat.isFile
++    except:
++      false
+   else:
+     var res: Stat
+     return stat(filename, res) >= 0'i32 and S_ISREG(res.st_mode)
+@@ -975,6 +987,12 @@ proc existsDir*(dir: string): bool {.rtl, extern: "nos$1", tags: [ReadDirEffect]
+       var a = getFileAttributesA(dir)
+     if a != -1'i32:
+       result = (a and FILE_ATTRIBUTE_DIRECTORY) != 0'i32
++  when defined(genode):
++    try:
++      let stat = vfs.stat(dir)
++      stat.isDir
++    except:
++      false
+   else:
+     var res: Stat
+     return stat(dir, res) >= 0'i32 and S_ISDIR(res.st_mode)
+@@ -995,6 +1013,12 @@ proc symlinkExists*(link: string): bool {.rtl, extern: "nos$1",
+       var a = getFileAttributesA(link)
+     if a != -1'i32:
+       result = (a and FILE_ATTRIBUTE_REPARSE_POINT) != 0'i32
++  when defined(genode):
++    try:
++      let stat = vfs.stat(link)
++      stat.isSymlink
++    except:
++      false
+   else:
+     var res: Stat
+     return lstat(link, res) >= 0'i32 and S_ISLNK(res.st_mode)
+@@ -1016,10 +1040,13 @@ proc dirExists*(dir: string): bool {.inline, noNimScript.} =
+   existsDir(dir)
+ 
+ when not defined(windows) and not weirdTarget:
+-  proc checkSymlink(path: string): bool =
+-    var rawInfo: Stat
+-    if lstat(path, rawInfo) < 0'i32: result = false
+-    else: result = S_ISLNK(rawInfo.st_mode)
++  when defined(genode):
++    proc checkSymlink(path: string): bool = symlinkExists(path)
++  else:
++    proc checkSymlink(path: string): bool =
++      var rawInfo: Stat
++      if lstat(path, rawInfo) < 0'i32: result = false
++      else: result = S_ISLNK(rawInfo.st_mode)
+ 
+ const
+   ExeExts* = ## Platform specific file extension for executables.
+@@ -1038,46 +1065,46 @@ proc findExe*(exe: string, followSymlinks: bool = true;
+   ## If the system supports symlinks it also resolves them until it
+   ## meets the actual file. This behavior can be disabled if desired
+   ## by setting `followSymlinks = false`.
+-
+-  if exe.len == 0: return
+-  template checkCurrentDir() =
+-    for ext in extensions:
+-      result = addFileExt(exe, ext)
+-      if existsFile(result): return
+-  when defined(posix):
+-    if '/' in exe: checkCurrentDir()
+-  else:
+-    checkCurrentDir()
+-  let path = string(getEnv("PATH"))
+-  for candidate in split(path, PathSep):
+-    if candidate.len == 0: continue
+-    when defined(windows):
+-      var x = (if candidate[0] == '"' and candidate[^1] == '"':
+-                substr(candidate, 1, candidate.len-2) else: candidate) /
+-              exe
++  when not defined(genode):
++    if exe.len == 0: return
++    template checkCurrentDir() =
++      for ext in extensions:
++        result = addFileExt(exe, ext)
++        if existsFile(result): return
++    when defined(posix):
++      if '/' in exe: checkCurrentDir()
+     else:
+-      var x = expandTilde(candidate) / exe
+-    for ext in extensions:
+-      var x = addFileExt(x, ext)
+-      if existsFile(x):
+-        when not defined(windows):
+-          while followSymlinks: # doubles as if here
+-            if x.checkSymlink:
+-              var r = newString(256)
+-              var len = readlink(x, r, 256)
+-              if len < 0:
+-                raiseOSError(osLastError())
+-              if len > 256:
+-                r = newString(len+1)
+-                len = readlink(x, r, len)
+-              setLen(r, len)
+-              if isAbsolute(r):
+-                x = r
++      checkCurrentDir()
++    let path = string(getEnv("PATH"))
++    for candidate in split(path, PathSep):
++      if candidate.len == 0: continue
++      when defined(windows):
++        var x = (if candidate[0] == '"' and candidate[^1] == '"':
++                  substr(candidate, 1, candidate.len-2) else: candidate) /
++                exe
++      else:
++        var x = expandTilde(candidate) / exe
++      for ext in extensions:
++        var x = addFileExt(x, ext)
++        if existsFile(x):
++          when not defined(windows):
++            while followSymlinks: # doubles as if here
++              if x.checkSymlink:
++                var r = newString(256)
++                var len = readlink(x, r, 256)
++                if len < 0:
++                  raiseOSError(osLastError())
++                if len > 256:
++                  r = newString(len+1)
++                  len = readlink(x, r, len)
++                setLen(r, len)
++                if isAbsolute(r):
++                  x = r
++                else:
++                  x = parentDir(x) / r
+               else:
+-                x = parentDir(x) / r
+-            else:
+-              break
+-        return x
++                break
++          return x
+   result = ""
+ 
+ when weirdTarget:
+@@ -1091,7 +1118,9 @@ proc getLastModificationTime*(file: string): times.Time {.rtl, extern: "nos$1",
+   ## * `getLastAccessTime proc <#getLastAccessTime,string>`_
+   ## * `getCreationTime proc <#getCreationTime,string>`_
+   ## * `fileNewer proc <#fileNewer,string,string>`_
+-  when defined(posix):
++  when defined(genode):
++    fromUnix(getLastModificationTime(vfs.stat(file)).int64)
++  elif defined(posix):
+     var res: Stat
+     if stat(file, res) < 0'i32: raiseOSError(osLastError())
+     result = res.st_mtim.toTime
+@@ -1109,7 +1138,9 @@ proc getLastAccessTime*(file: string): times.Time {.rtl, extern: "nos$1", noNimS
+   ## * `getLastModificationTime proc <#getLastModificationTime,string>`_
+   ## * `getCreationTime proc <#getCreationTime,string>`_
+   ## * `fileNewer proc <#fileNewer,string,string>`_
+-  when defined(posix):
++  when defined(genode):
++    discard
++  elif defined(posix):
+     var res: Stat
+     if stat(file, res) < 0'i32: raiseOSError(osLastError())
+     result = res.st_atim.toTime
+@@ -1131,7 +1162,9 @@ proc getCreationTime*(file: string): times.Time {.rtl, extern: "nos$1", noNimScr
+   ## * `getLastModificationTime proc <#getLastModificationTime,string>`_
+   ## * `getLastAccessTime proc <#getLastAccessTime,string>`_
+   ## * `fileNewer proc <#fileNewer,string,string>`_
+-  when defined(posix):
++  when defined(genode):
++    discard
++  elif defined(posix):
+     var res: Stat
+     if stat(file, res) < 0'i32: raiseOSError(osLastError())
+     result = res.st_ctim.toTime
+@@ -1159,6 +1192,9 @@ proc fileNewer*(a, b: string): bool {.rtl, extern: "nos$1", noNimScript.} =
+   else:
+     result = getLastModificationTime(a) > getLastModificationTime(b)
+ 
++when defined(genode):
++  var cwd: string
++
+ proc getCurrentDir*(): string {.rtl, extern: "nos$1", tags: [], noNimScript.} =
+   ## Returns the `current working directory`:idx: i.e. where the built
+   ## binary is run.
+@@ -1198,6 +1234,8 @@ proc getCurrentDir*(): string {.rtl, extern: "nos$1", tags: [], noNimScript.} =
+         else:
+           setLen(result, L)
+           break
++  elif defined(genode):
++    cwd
+   else:
+     var bufsize = 1024 # should be enough
+     result = newString(bufsize)
+@@ -1230,7 +1268,12 @@ proc setCurrentDir*(newDir: string) {.inline, tags: [], noNimScript.} =
+     else:
+       if setCurrentDirectoryA(newDir) == 0'i32: raiseOSError(osLastError())
+   else:
+-    if chdir(newDir) != 0'i32: raiseOSError(osLastError())
++    when defined(genode):
++      if not vfs.stat(newDir).isDir:
++        raiseGenodeError("new working directory is not an existing directory")
++      cwd = newDir
++    when defined(posix):
++      if chdir(newDir) != 0'i32: raiseOSError(osLastError())
+ 
+ when not weirdTarget:
+   proc absolutePath*(path: string, root = getCurrentDir()): string {.noNimScript.} =
+@@ -1368,6 +1411,9 @@ proc sameFile*(path1, path2: string): bool {.rtl, extern: "nos$1",
+     discard closeHandle(f2)
+ 
+     if not success: raiseOSError(lastErr)
++  elif defined(genode):
++    path1 == path2
++    # TODO: CWD
+   else:
+     var a, b: Stat
+     if stat(path1, a) < 0'i32 or stat(path2, b) < 0'i32:
+@@ -1437,7 +1483,12 @@ proc getFilePermissions*(filename: string): set[FilePermission] {.
+   ## See also:
+   ## * `setFilePermissions proc <#setFilePermissions,string,set[FilePermission]>`_
+   ## * `FilePermission enum <#FilePermission>`_
+-  when defined(posix):
++  when defined(genode):
++    let stat = vfs.stat(filename)
++    if stat.readable: result.incl(fpUserRead)
++    if stat.writeable: result.incl(fpUserWrite)
++    if stat.executable: result.incl(fpUserExec)
++  elif defined(posix):
+     var a: Stat
+     if stat(filename, a) < 0'i32: raiseOSError(osLastError())
+     result = {}
+@@ -1475,7 +1526,10 @@ proc setFilePermissions*(filename: string, permissions: set[FilePermission]) {.
+   ## See also:
+   ## * `getFilePermissions <#getFilePermissions,string>`_
+   ## * `FilePermission enum <#FilePermission>`_
+-  when defined(posix):
++  when defined(genode):
++    raiseGenodeError("setFilePermissions not implemented")
++    # TODO: not sure if this is implemented upstream
++  elif defined(posix):
+     var p = 0.Mode
+     if fpUserRead in permissions: p = p or S_IRUSR.Mode
+     if fpUserWrite in permissions: p = p or S_IWUSR.Mode
+@@ -1611,6 +1665,10 @@ proc tryRemoveFile*(file: string): bool {.rtl, extern: "nos$1", tags: [WriteDirE
+          setFileAttributes(f, FILE_ATTRIBUTE_NORMAL) != 0 and
+          deleteFile(f) != 0:
+         result = true
++  elif defined(genode):
++    result = case vfs.unlink(file)
++    of UNLINK_ERR_NO_ENTRY, UNLINK_OK: true
++    else: false
+   else:
+     if unlink(file) != 0'i32 and errno != ENOENT:
+       result = false
+@@ -1629,11 +1687,19 @@ proc removeFile*(file: string) {.rtl, extern: "nos$1", tags: [WriteDirEffect], n
+   ## * `copyFileWithPermissions proc <#copyFileWithPermissions,string,string>`_
+   ## * `tryRemoveFile proc <#tryRemoveFile,string>`_
+   ## * `moveFile proc <#moveFile,string,string>`_
+-  if not tryRemoveFile(file):
+-    when defined(Windows):
+-      raiseOSError(osLastError())
++  when defined(genode):
++    let err = vfs.unlink(file)
++    case err
++    of UNLINK_ERR_NO_ENTRY, UNLINK_OK:
++      discard
+     else:
+-      raiseOSError(osLastError(), $strerror(errno))
++      raiseGenodeError($err)
++  else:
++    if not tryRemoveFile(file):
++      when defined(Windows):
++        raiseOSError(osLastError())
++      else:
++        raiseOSError(osLastError(), $strerror(errno))
+ 
+ proc tryMoveFSObject(source, dest: string): bool {.noNimScript.} =
+   ## Moves a file or directory from `source` to `dest`.
+@@ -1648,6 +1714,15 @@ proc tryMoveFSObject(source, dest: string): bool {.noNimScript.} =
+       if moveFileExW(s, d, MOVEFILE_COPY_ALLOWED) == 0'i32: raiseOSError(osLastError())
+     else:
+       if moveFileExA(source, dest, MOVEFILE_COPY_ALLOWED) == 0'i32: raiseOSError(osLastError())
++  elif defined(genode):
++    let err = rename(source, dest)
++    case err
++    of RENAME_OK:
++      return true
++    of RENAME_ERR_CROSS_FS:
++      return false
++    else:
++      raiseOSError(OSErrorCode(-0), $err)
+   else:
+     if c_rename(source, dest) != 0'i32:
+       let err = osLastError()
+@@ -1753,6 +1828,10 @@ template walkCommon(pattern: string, filter) =
+           let errCode = getLastError()
+           if errCode == ERROR_NO_MORE_FILES: break
+           else: raiseOSError(errCode.OSErrorCode)
++  elif defined(genode):
++    echo "walkCommon not implemented"
++    quit -1
++    # TODO: implement globbing in pure Nim
+   else: # here we use glob
+     var
+       f: Glob
+@@ -1850,6 +1929,8 @@ proc expandFilename*(filename: string): string {.rtl, extern: "nos$1",
+       result = x
+     if not existsFile(result) and not existsDir(result):
+       raise newException(OSError, "file '" & result & "' does not exist")
++  elif defined(genode):
++    result = filename
+   else:
+     # according to Posix we don't need to allocate space for result pathname.
+     # But we need to free return value with free(3).
+@@ -1950,6 +2031,9 @@ iterator walkDir*(dir: string; relative=false): tuple[kind: PathComponent, path:
+             let errCode = getLastError()
+             if errCode == ERROR_NO_MORE_FILES: break
+             else: raiseOSError(errCode.OSErrorCode)
++    elif defined(genode):
++      echo "walkDir not implemented"
++      quit -1 # TODO
+     else:
+       var d = opendir(dir)
+       if d != nil:
+@@ -2043,6 +2127,13 @@ proc rawRemoveDir(dir: string) {.noNimScript.} =
+     if res == 0'i32 and lastError.int32 != 3'i32 and
+         lastError.int32 != 18'i32 and lastError.int32 != 2'i32:
+       raiseOSError(lastError)
++  elif defined(genode):
++    let err = vfs.unlink(dir)
++    case err
++    of UNLINK_ERR_NO_ENTRY, UNLINK_OK:
++      discard
++    else:
++      raiseGenodeError($err)
+   else:
+     if rmdir(dir) != 0'i32 and errno != ENOENT: raiseOSError(osLastError())
+ 
+@@ -2099,6 +2190,15 @@ proc rawCreateDir(dir: string): bool {.noNimScript.} =
+     else:
+       #echo res
+       raiseOSError(osLastError(), dir)
++  elif defined(genode):
++    let err = vfs.createDir(dir)
++    case err
++    of OPENDIR_OK:
++      return true
++    of OPENDIR_ERR_NODE_ALREADY_EXISTS:
++      return false
++    else:
++      raiseGenodeError($err)
+   else:
+     when useWinUnicode:
+       wrapUnary(res, createDirectoryW, dir)
+@@ -2237,6 +2337,10 @@ proc createSymlink*(src, dest: string) {.noNimScript.} =
+     else:
+       if createSymbolicLinkA(dest, src, flag) == 0 or getLastError() != 0:
+         raiseOSError(osLastError())
++  elif defined(genode):
++    # let err = vfs.symlink(src, dest)
++    # if err != OPENLINK_OK:
++    raiseGenodeError("symlink not implemented")
+   else:
+     if symlink(src, dest) != 0:
+       raiseOSError(osLastError())
+@@ -2259,6 +2363,8 @@ proc createHardlink*(src, dest: string) {.noNimScript.} =
+     else:
+       if createHardLinkA(dest, src, nil) == 0:
+         raiseOSError(osLastError())
++  elif defined(genode):
++    raiseGenodeError("hardlinking not possible for this platform")
+   else:
+     if link(src, dest) != 0:
+       raiseOSError(osLastError())
+@@ -2289,7 +2395,7 @@ proc copyFileWithPermissions*(source, dest: string,
+   ## * `moveFile proc <#moveFile,string,string>`_
+   ## * `copyDirWithPermissions proc <#copyDirWithPermissions,string,string>`_
+   copyFile(source, dest)
+-  when not defined(Windows):
++  when not defined(Windows) and not defined(genode):
+     try:
+       setFilePermissions(dest, getFilePermissions(source))
+     except:
+@@ -2324,7 +2430,7 @@ proc copyDirWithPermissions*(source, dest: string,
+   ## * `existsOrCreateDir proc <#existsOrCreateDir,string>`_
+   ## * `createDir proc <#createDir,string>`_
+   createDir(dest)
+-  when not defined(Windows):
++  when not defined(Windows) and not defined(genode):
+     try:
+       setFilePermissions(dest, getFilePermissions(source))
+     except:
+@@ -2366,6 +2472,8 @@ proc expandSymlink*(symlinkPath: string): string {.noNimScript.} =
+   ## * `createSymlink proc <#createSymlink,string,string>`_
+   when defined(windows):
+     result = symlinkPath
++  elif defined(genode):
++    raiseGenodeError("expandSymlink not implemented")
+   else:
+     result = newString(256)
+     var len = readlink(symlinkPath, result, 256)
+@@ -2415,63 +2523,64 @@ proc parseCmdLine*(c: string): seq[string] {.
+   ## * `paramCount proc <#paramCount>`_
+   ## * `paramStr proc <#paramStr,int>`_
+   ## * `commandLineParams proc <#commandLineParams>`_
+-
+   result = @[]
+-  var i = 0
+-  var a = ""
+-  while true:
+-    setLen(a, 0)
+-    # eat all delimiting whitespace
+-    while i < c.len and c[i] in {' ', '\t', '\l', '\r'}: inc(i)
+-    if i >= c.len: break
+-    when defined(windows):
+-      # parse a single argument according to the above rules:
+-      var inQuote = false
+-      while i < c.len:
+-        case c[i]
+-        of '\\':
+-          var j = i
+-          while j < c.len and c[j] == '\\': inc(j)
+-          if j < c.len and c[j] == '"':
+-            for k in 1..(j-i) div 2: a.add('\\')
+-            if (j-i) mod 2 == 0:
+-              i = j
++  when defined(genode):
++    result = @[]
++    var i = 0
++    var a = ""
++    while true:
++      setLen(a, 0)
++      # eat all delimiting whitespace
++      while i < c.len and c[i] in {' ', '\t', '\l', '\r'}: inc(i)
++      if i >= c.len: break
++      when defined(windows):
++        # parse a single argument according to the above rules:
++        var inQuote = false
++        while i < c.len:
++          case c[i]
++          of '\\':
++            var j = i
++            while j < c.len and c[j] == '\\': inc(j)
++            if j < c.len and c[j] == '"':
++              for k in 1..(j-i) div 2: a.add('\\')
++              if (j-i) mod 2 == 0:
++                i = j
++              else:
++                a.add('"')
++                i = j+1
+             else:
+-              a.add('"')
+-              i = j+1
+-          else:
+-            a.add(c[i])
++              a.add(c[i])
++              inc(i)
++          of '"':
+             inc(i)
+-        of '"':
+-          inc(i)
+-          if not inQuote: inQuote = true
+-          elif i < c.len and c[i] == '"':
++            if not inQuote: inQuote = true
++            elif i < c.len and c[i] == '"':
++              a.add(c[i])
++              inc(i)
++            else:
++              inQuote = false
++              break
++          of ' ', '\t':
++            if not inQuote: break
+             a.add(c[i])
+             inc(i)
+           else:
+-            inQuote = false
+-            break
+-        of ' ', '\t':
+-          if not inQuote: break
+-          a.add(c[i])
+-          inc(i)
+-        else:
+-          a.add(c[i])
+-          inc(i)
+-    else:
+-      case c[i]
+-      of '\'', '\"':
+-        var delim = c[i]
+-        inc(i) # skip ' or "
+-        while i < c.len and c[i] != delim:
+-          add a, c[i]
+-          inc(i)
+-        if i < c.len: inc(i)
++            a.add(c[i])
++            inc(i)
+       else:
+-        while i < c.len and c[i] > ' ':
+-          add(a, c[i])
+-          inc(i)
+-    add(result, a)
++        case c[i]
++        of '\'', '\"':
++          var delim = c[i]
++          inc(i) # skip ' or "
++          while i < c.len and c[i] != delim:
++            add a, c[i]
++            inc(i)
++          if i < c.len: inc(i)
++        else:
++          while i < c.len and c[i] > ' ':
++            add(a, c[i])
++            inc(i)
++      add(result, a)
+ 
+ when defined(nimdoc):
+   # Common forward declaration docstring block for parameter retrieval procs.
+@@ -2781,6 +2890,8 @@ proc sleep*(milsecs: int) {.rtl, extern: "nos$1", tags: [TimeEffect], noNimScrip
+   ## Sleeps `milsecs` milliseconds.
+   when defined(windows):
+     winlean.sleep(int32(milsecs))
++  elif defined(genode):
++    timer.sleep(milsecs)
+   else:
+     var a, b: Timespec
+     a.tv_sec = posix.Time(milsecs div 1000)
+@@ -2808,6 +2919,10 @@ when defined(Windows) or weirdTarget:
+   type
+     DeviceId* = int32
+     FileId* = int64
++elif defined(genode):
++  type
++    DeviceId* = culong
++    FileId* = culong
+ else:
+   type
+     DeviceId* = Dev
+@@ -2858,6 +2973,24 @@ template rawToFormalFileInfo(rawInfo, path, formalInfo): untyped =
+     if (rawInfo.dwFileAttributes and FILE_ATTRIBUTE_REPARSE_POINT) != 0'i32:
+       formalInfo.kind = succ(result.kind)
+ 
++  elif defined(genode):
++    formalInfo.id.device = rawInfo.device
++    formalInfo.id.file = rawInfo.inode
++    formalInfo.size = rawInfo.size
++    formalInfo.lastWriteTime = fromUnix(rawInfo.getLastModificationTime)
++    if rawInfo.isFile:
++      formalInfo.kind = pcFile
++    elif rawInfo.isDir:
++      formalInfo.kind = pcDir
++    elif rawInfo.isSymlink:
++      raiseGenodeError("symlink reading not implemented")
++    if rawInfo.readable:
++      formalInfo.permissions.incl(fpUserRead)
++    if rawInfo.writeable:
++      formalInfo.permissions.incl(fpUserWrite)
++    if rawInfo.executable:
++      formalInfo.permissions.incl(fpUserExec)
++
+   else:
+     template checkAndIncludeMode(rawMode, formalMode: untyped) =
+       if (rawInfo.st_mode and rawMode.Mode) != 0.Mode:
+@@ -2915,6 +3048,8 @@ proc getFileInfo*(handle: FileHandle): FileInfo {.noNimScript.} =
+     if getFileInformationByHandle(realHandle, addr rawInfo) == 0:
+       raiseOSError(osLastError())
+     rawToFormalFileInfo(rawInfo, "", result)
++  elif defined(genode):
++    raiseGenodeError("getFileInfo for FileHandle not implemented")
+   else:
+     var rawInfo: Stat
+     if fstat(handle, rawInfo) < 0'i32:
+@@ -2959,6 +3094,9 @@ proc getFileInfo*(path: string, followSymlink = true): FileInfo {.noNimScript.}
+       raiseOSError(osLastError())
+     rawToFormalFileInfo(rawInfo, path, result)
+     discard closeHandle(handle)
++  elif defined(genode):
++    var stat = vfs.stat(path)
++    rawToFormalFileInfo(stat, path, result)
+   else:
+     var rawInfo: Stat
+     if followSymlink:
+@@ -3008,6 +3146,8 @@ proc getCurrentProcessId*(): int {.noNimScript.} =
+     proc GetCurrentProcessId(): DWORD {.stdcall, dynlib: "kernel32",
+                                         importc: "GetCurrentProcessId".}
+     result = GetCurrentProcessId().int
++  elif defined(genode):
++   result = 1
+   else:
+     result = getpid()
+ 
+@@ -3016,7 +3156,9 @@ proc getCurrentProcessId*(): int {.noNimScript.} =
+ proc setLastModificationTime*(file: string, t: times.Time) {.noNimScript.} =
+   ## Sets the `file`'s last modification time. `OSError` is raised in case of
+   ## an error.
+-  when defined(posix):
++  when defined(genode):
++    discard
++  elif defined(posix):
+     let unixt = posix.Time(t.toUnix)
+     let micro = convert(Nanoseconds, Microseconds, t.nanosecond)
+     var timevals = [Timeval(tv_sec: unixt, tv_usec: micro),
+diff --git a/lib/pure/streams.nim b/lib/pure/streams.nim
+index 4fed11861..e6d7bdc97 100644
+--- a/lib/pure/streams.nim
++++ b/lib/pure/streams.nim
+@@ -111,7 +111,7 @@ type
+     ## * That these fields here shouldn't be used directly.
+     ##   They are accessible so that a stream implementation can override them.
+     closeImpl*: proc (s: Stream)
+-      {.nimcall, raises: [Exception, IOError, OSError], tags: [WriteIOEffect], gcsafe.}
++      {.nimcall, raises: [Exception, IOError, OSError], tags: [], gcsafe.}
+     atEndImpl*: proc (s: Stream): bool
+       {.nimcall, raises: [Defect, IOError, OSError], tags: [], gcsafe.}
+     setPositionImpl*: proc (s: Stream, pos: int)
+diff --git a/lib/pure/strtabs.nim b/lib/pure/strtabs.nim
+index ca28e7766..a1ce14eba 100644
+--- a/lib/pure/strtabs.nim
++++ b/lib/pure/strtabs.nim
+@@ -299,7 +299,7 @@ proc getValue(t: StringTableRef, flags: set[FormatFlag], key: string): string =
+   # hm difficult: assume safety in taint mode here. XXX This is dangerous!
+   when defined(js):
+     result = ""
+-  else:
++  elif not defined(genode):
+     if useEnvironment in flags: result = os.getEnv(key).string
+     else: result = ""
+   if result.len == 0:
+diff --git a/lib/pure/strutils.nim b/lib/pure/strutils.nim
+index a2fc43f1c..fafed9ff1 100644
+--- a/lib/pure/strutils.nim
++++ b/lib/pure/strutils.nim
+@@ -2288,7 +2288,7 @@ proc validIdentifier*(s: string): bool {.noSideEffect,
+ 
+ 
+ # floating point formatting:
+-when not defined(js):
++when not defined(js) and not defined(genode):
+   proc c_sprintf(buf, frmt: cstring): cint {.header: "<stdio.h>",
+                                      importc: "sprintf", varargs, noSideEffect.}
+ 
+@@ -2339,6 +2339,8 @@ proc formatBiggestFloat*(f: BiggestFloat, format: FloatFormatMode = ffDefault,
+       # Depending on the locale either dot or comma is produced,
+       # but nothing else is possible:
+       if result[i] in {'.', ','}: result[i] = decimalsep
++  elif defined(genode):
++    raise newException(Defect, "formatBiggestFloat not implemented for this platform")
+   else:
+     const floatFormatToChar: array[FloatFormatMode, char] = ['g', 'f', 'e']
+     var
+diff --git a/lib/pure/times.nim b/lib/pure/times.nim
+index f255bdd42..628b5fb61 100644
+--- a/lib/pure/times.nim
++++ b/lib/pure/times.nim
+@@ -220,6 +220,29 @@ when defined(JS):
+     system.inc(a, b)
+   {.pop.}
+ 
++elif defined(genode):
++  include genode/env
++  const rtcHeader = "<rtc_session/connection.h>"
++
++  type Timestamp {.
++    importcpp: "Rtc::Timestamp", header: rtcHeader, final, pure.} = object
++      microsecond*: cuint
++      second*: cuint
++      minute*: cuint
++      hour*: cuint
++      day*: cuint
++      month*: cuint
++      year*: cuint
++
++  proc rtcCurrentTime(): Timestamp =
++    type RtcConnection {.importcpp: "Rtc::Connection", header: rtcHeader, final, pure.} = object
++    proc initRtc(env: GenodeEnvObj; label: cstring): RtcConnection {.
++      importcpp, constructor.}
++    proc current_time(rtc: RtcConnection): Timestamp {.importcpp.}
++    let session = initRtc(runtimeEnv.toObj, "Nim runtime")
++      # is this labeling useful?
++    session.current_time()
++
+ elif defined(posix):
+   import posix
+ 
+@@ -1096,34 +1119,46 @@ when defined(JS):
+     result.isDst = false
+ 
+ else:
+-  proc toAdjUnix(tm: Tm): int64 =
+-    let epochDay = toEpochDay(tm.tm_mday, (tm.tm_mon + 1).Month,
+-                              tm.tm_year.int + 1900)
+-    result = epochDay * secondsInDay
+-    result.inc tm.tm_hour * secondsInHour
+-    result.inc tm.tm_min * 60
+-    result.inc tm.tm_sec
+-
+-  proc getLocalOffsetAndDst(unix: int64): tuple[offset: int, dst: bool] =
+-    # Windows can't handle unix < 0, so we fall back to unix = 0.
+-    # FIXME: This should be improved by falling back to the WinAPI instead.
+-    when defined(windows):
+-      if unix < 0:
+-        var a = 0.CTime
+-        let tmPtr = localtime(a)
+-        if not tmPtr.isNil:
+-          let tm = tmPtr[]
+-          return ((0 - tm.toAdjUnix).int, false)
+-        return (0, false)
+-
+-    # In case of a 32-bit time_t, we fallback to the closest available
+-    # timezone information.
+-    var a = clamp(unix, low(CTime).int64, high(CTime).int64).CTime
+-    let tmPtr = localtime(a)
+-    if not tmPtr.isNil:
+-      let tm = tmPtr[]
+-      return ((a.int64 - tm.toAdjUnix).int, tm.tm_isdst > 0)
+-    return (0, false)
++  when defined(genode):
++    proc toEpochSeconds(ts: Timestamp): int64 =
++      let epochDay = toEpochDay(ts.day, ts.month.Month, ts.year.int)
++      result = epochDay * secondsInDay
++      result.inc ts.hour.int * secondsInHour
++      result.inc ts.minute.int * 60
++      result.inc ts.second.int
++
++    proc getLocalOffsetAndDst(unix: int64): tuple[offset: int, dst: bool] =
++      (0, false)
++
++  else:
++    proc toAdjUnix(tm: Tm): int64 =
++      let epochDay = toEpochDay(tm.tm_mday, (tm.tm_mon + 1).Month,
++                                tm.tm_year.int + 1900)
++      result = epochDay * secondsInDay
++      result.inc tm.tm_hour * secondsInHour
++      result.inc tm.tm_min * 60
++      result.inc tm.tm_sec
++
++    proc getLocalOffsetAndDst(unix: int64): tuple[offset: int, dst: bool] =
++      # Windows can't handle unix < 0, so we fall back to unix = 0.
++      # FIXME: This should be improved by falling back to the WinAPI instead.
++      when defined(windows):
++        if unix < 0:
++          var a = 0.CTime
++          let tmPtr = localtime(a)
++          if not tmPtr.isNil:
++            let tm = tmPtr[]
++            return ((0 - tm.toAdjUnix).int, false)
++          return (0, false)
++
++      # In case of a 32-bit time_t, we fallback to the closest available
++      # timezone information.
++      var a = clamp(unix, low(CTime).int64, high(CTime).int64).CTime
++      let tmPtr = localtime(a)
++      if not tmPtr.isNil:
++        let tm = tmPtr[]
++        return ((a.int64 - tm.toAdjUnix).int, tm.tm_isdst > 0)
++      return (0, false)
+ 
+   proc localZonedTimeFromTime(time: Time): ZonedTime =
+     let (offset, dst) = getLocalOffsetAndDst(time.seconds)
+@@ -1211,6 +1246,12 @@ proc getTime*(): Time {.tags: [TimeEffect], benign.} =
+     gettimeofday(a)
+     result = initTime(a.tv_sec.int64,
+                       convert(Microseconds, Nanoseconds, a.tv_usec.int))
++  elif defined(genode):
++    let ts = rtcCurrentTime()
++    result.seconds = ts.toEpochSeconds
++    result.nanosecond = ts.microsecond.int  div 1_000
++      # TODO: need a timer session for actual sub-second accuracy
++
+   elif defined(posix):
+     var ts: Timespec
+     discard clock_gettime(CLOCK_REALTIME, ts)
+@@ -2545,6 +2586,9 @@ when not defined(JS):
+       gettimeofday(a)
+       result = toBiggestFloat(a.tv_sec.int64) + toBiggestFloat(
+           a.tv_usec)*0.00_0001
++    elif defined(genode):
++      let ts = rtcCurrentTime()
++      ts.toEpochSeconds.float + (ts.microsecond.float / 1_000_000.0)
+     elif defined(posix):
+       var ts: Timespec
+       discard clock_gettime(CLOCK_REALTIME, ts)
+@@ -2665,7 +2709,7 @@ proc fractional*(dur: Duration): Duration {.inline, deprecated.} =
+         nanoseconds = 9)
+   initDuration(nanoseconds = dur.nanosecond)
+ 
+-when not defined(JS):
++when not defined(JS) and not defined(Genode):
+   proc unixTimeToWinTime*(time: CTime): int64
+       {.deprecated: "Use toWinTime instead".} =
+     ## Converts a UNIX `Time` (``time_t``) to a Windows file time
+@@ -2738,6 +2782,8 @@ proc getTimezone*(): int
+     # This is wrong since it will include DST offsets, but the behavior has
+     # always been wrong for bsd and the proc is deprecated so lets ignore it.
+     return now().utcOffset
++  elif defined(genode):
++    discard
+   else:
+     return timezone
+ 
+diff --git a/lib/pure/xmlparser.nim b/lib/pure/xmlparser.nim
+index 2a2d19dca..4d33946b3 100644
+--- a/lib/pure/xmlparser.nim
++++ b/lib/pure/xmlparser.nim
+@@ -26,10 +26,10 @@ proc raiseInvalidXml(errors: seq[string]) =
+ proc addNode(father, son: XmlNode) =
+   if son != nil: add(father, son)
+ 
+-proc parse(x: var XmlParser, errors: var seq[string]): XmlNode {.gcsafe.}
++proc parse(x: var XmlParser, errors: var seq[string]): XmlNode {.gcsafe, tags: [ReadIOEffect].}
+ 
+ proc untilElementEnd(x: var XmlParser, result: XmlNode,
+-                     errors: var seq[string]) =
++                     errors: var seq[string]) {.tags: [ReadIOEffect].} =
+   while true:
+     case x.kind
+     of xmlElementEnd:
