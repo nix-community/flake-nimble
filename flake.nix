@@ -5,30 +5,16 @@
 
   outputs = { self, nixpkgs }:
     let
-      localSystems = [ "x86_64-linux" ];
-      crossSystems = [ "x86_64-genode" ];
+      systems = [ "x86_64-linux" ];
 
-      forAllLocalSystems = f:
-        nixpkgs.lib.genAttrs localSystems (system:
-          f {
-            inherit system;
-            localSystem = system;
-            crossSystem = system;
-          });
+      forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
 
-      forAllCrossSystems = f:
-        with builtins;
-        let
-          f' = localSystem: crossSystem:
-            let system = localSystem + "-" + crossSystem;
-            in {
-              name = system;
-              value = f { inherit system localSystem crossSystem; };
-            };
-          list = nixpkgs.lib.lists.crossLists f' [ localSystems crossSystems ];
-        in listToAttrs list;
-
-      forAllSystems = f: (forAllLocalSystems f) // (forAllCrossSystems f);
+      # Memoize nixpkgs for different platforms for efficiency.
+      nixpkgsFor = forAllSystems (system:
+        import nixpkgs {
+          inherit system;
+          overlays = [ self.overlay ];
+        });
 
       mkApp = { drv, name ? drv.pname or drv.name, exePath ? "/bin/${name}" }: {
         type = "app";
@@ -36,19 +22,21 @@
       };
 
     in {
-      packages = forAllSystems ({ system, localSystem, crossSystem }:
+      overlay =
+        import ./overlay { nimbleSrc = self.packages.x86_64.nimble.src; };
+
+      packages = forAllSystems (system:
         let
           pkgs = import ./default.nix {
-            buildPackages = self.packages.${localSystem};
-            nixpkgs = nixpkgs.legacyPackages.${system};
+            self = self.packages.${system};
+            nixpkgs = nixpkgsFor.${system};
           };
           blacklist = import ./blacklist.nix;
         in removeAttrs pkgs blacklist);
 
-      defaultPackage =
-        forAllSystems ({ system, ... }: self.packages.${system}.nimble);
+      defaultPackage = forAllSystems (system: self.packages.${system}.nimble);
 
-      apps = forAllSystems ({ system, ... }:
+      apps = forAllSystems (system:
         let
           appThunks = with builtins;
             let
@@ -67,23 +55,20 @@
         in appThunks // {
           nim = mkApp {
             name = "nim";
-            drv = self.packages.${system}.nim;
+            drv = nixpkgsFor.${system}.nim;
           };
           nimble = mkApp {
-            name = "nim";
-            drv = self.packages.${system}.nimble;
+            name = "nimble";
+            drv = nixpkgsFor.${system}.nim;
           };
         });
 
-      defaultApp =
-        forAllLocalSystems ({ system, ... }: self.apps."${system}".nimble);
-
-      devShell = forAllLocalSystems ({ system, ... }:
+      devShell = forAllSystems (system:
         let
           thisSystem = builtins.getAttr system;
-          legacyPackages = thisSystem nixpkgs.legacyPackages;
+          nixpkgs = nixpkgsFor.${system};
           selfPackages = thisSystem self.packages;
-        in with legacyPackages;
+        in with nixpkgs;
         mkShell {
           buildInputs =
             [ selfPackages.nim gnumake nix-prefetch-git nix-prefetch-hg ];

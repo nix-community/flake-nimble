@@ -1,19 +1,9 @@
-{ nixpkgs ? import <nixpkgs> { }, buildPackages }:
+{ self, nixpkgs }:
 
 let
-  nim-unwrapped = nixpkgs.callPackage ./compiler/unwrapped { };
+  inherit (nixpkgs) nim;
 
-  nimble-unwrapped = nixpkgs.callPackage ./nimble { nim = nim-unwrapped; };
-
-  nimStdLib = nixpkgs.callPackage ./compiler/stdlib { nim = nim-unwrapped; };
-
-  nim = nixpkgs.callPackage ./compiler/wrapper {
-    inherit nimStdLib;
-    nim = nim-unwrapped;
-    nimble = nimble-unwrapped;
-  };
-
-  nativeBuildInputs = [ buildPackages.nim ];
+  nativeBuildInputs = [ nim ];
 
   nimbleHelper =
     # Utility for generating Nix metadata from Nimble
@@ -22,7 +12,7 @@ let
       inherit nativeBuildInputs;
     } ''
       export HOME=$NIX_BUILD_TOP
-      nim compile --path:${nimble-unwrapped.lib}/src --out:$out ${
+      nim compile --path:${nim.passthru.nimble.lib}/src --out:$out ${
         ./src
       }/nix_from_nimble.nim
     '';

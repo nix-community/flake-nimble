@@ -30,12 +30,12 @@ nix dev-shell nimble
 
 ## Synchronization
 
-To update the package definitions, enter the local dev-shell and invoke the 
-Makefile:
+To update the package definitions, invoke the Makefile:
 
 ```sh
-$ nix dev-shell
-> make
+make
+# or
+nix run nixpkgs#gnumake -c make
 ```
 
 This will prefetch the repositories of new and updated Nimble packages and 

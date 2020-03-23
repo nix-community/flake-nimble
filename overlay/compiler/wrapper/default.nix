@@ -52,7 +52,10 @@ in stdenv.mkDerivation {
     done
   '';
 
-  passthru = nim.passthru // { inherit (stdenv.cc) libc; };
+  passthru = nim.passthru // {
+    inherit (stdenv.cc) libc;
+    inherit nimble;
+  };
 
   meta = nim.meta // {
     description = nim.meta.description
