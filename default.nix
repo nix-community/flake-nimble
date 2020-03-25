@@ -3,18 +3,17 @@
 let
   inherit (nixpkgs) nim;
 
-  nativeBuildInputs = [ nim ];
-
   nimbleHelper =
     # Utility for generating Nix metadata from Nimble
 
     nixpkgs.buildPackages.runCommand "nimbleHelper" {
-      inherit nativeBuildInputs;
+      nativeBuildInputs = [ nixpkgs.buildPackages.buildPackages.nim ];
     } ''
       export HOME=$NIX_BUILD_TOP
-      nim compile --path:${nim.passthru.nimble.lib}/src --out:$out ${
-        ./src
-      }/nix_from_nimble.nim
+      mkdir -p $out/bin
+      nim compile --path:${nim.passthru.nimble.lib}/src \
+        --out:$out/bin/nimbleHelper \
+        ${./src}/nix_from_nimble.nim
     '';
 
   buildNimble' =
@@ -30,7 +29,7 @@ let
         nixpkgs.buildPackages.runCommand (name + "-pkginfo") {
           preferLocalBuild = true;
           inherit src;
-          inherit nativeBuildInputs;
+          nativeBuildInputs = [ nim nimbleHelper ];
         } ''
           export NIMBLE_DIR=$NIX_BUILD_TOP
           cd $src
@@ -42,7 +41,7 @@ let
               $out/nix-support/hydra-build-products
             exit 0
           fi
-          ${nimbleHelper} info $src > $out/nimble.nix
+          nimbleHelper info $src > $out/nimble.nix
         '';
 
       pkgInfo = import (pkgInfoDrv + "/nimble.nix");
@@ -70,7 +69,7 @@ let
 
           setupHook = ./setup-hook.sh;
 
-          inherit nativeBuildInputs;
+          nativeBuildInputs = [ nim ];
           propagatedBuildInputs = nimbleInputs'
             ++ (map (name: builtins.getAttr name nixpkgs)
               pkgInfo.nimble.foreignDeps);
