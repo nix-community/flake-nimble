@@ -55,6 +55,7 @@ in stdenv.mkDerivation {
   passthru = nim.passthru // {
     inherit (stdenv.cc) libc;
     inherit nimble;
+    backend = if targetPlatform.isGenode or false then "cpp" else "c";
   };
 
   meta = nim.meta // {

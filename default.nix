@@ -79,16 +79,13 @@ let
               libs = filter (pkg: hasAttr "nimble" (pkg.passthru or { }))
                 nimbleInputs';
               libPaths = map (lib: ''--path:"${lib}/src"'') libs;
-            in toString ([ pkgInfo.nimble.backend ] ++ libPaths);
+            in toString ([ nim.passthru.backend ] ++ libPaths);
 
           preHook = ''
             export HOME="$NIX_BUILD_TOP"
           '';
 
           dontConfigure = true;
-          # dontBuild = true;
-          # dontInstall = true;
-          doCheck = true;
 
           buildPhase = ''
             runHook preBuild
@@ -103,11 +100,6 @@ let
             mkdir -p $out
             cp -r ${pkgInfo.nimble.srcDir} $out/src
             runHook postInstall
-          '';
-
-          checkPhase = ''
-            runHook preCheck
-            runHook postCheck
           '';
         });
 
