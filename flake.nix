@@ -25,14 +25,7 @@
       overlay =
         import ./overlay { nimbleSrc = self.packages.x86_64.nimble.src; };
 
-      packages = forAllSystems (system:
-        let
-          pkgs = import ./default.nix {
-            self = self.packages.${system};
-            nixpkgs = nixpkgsFor.${system};
-          };
-          blacklist = import ./blacklist.nix;
-        in removeAttrs pkgs blacklist);
+      packages = forAllSystems (system: nixpkgsFor.${system}.nimblePackages);
 
       defaultPackage = forAllSystems (system: self.packages.${system}.nimble);
 

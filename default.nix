@@ -1,4 +1,4 @@
-{ self, nixpkgs }:
+{ nixpkgs }:
 
 let
   inherit (nixpkgs) nim;
