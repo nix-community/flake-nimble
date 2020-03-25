@@ -28,18 +28,22 @@
 {name="ad";value=./ad.json;}
 {name="adb";value=./adb.json;}
 {name="ajax";value=./ajax.json;}
+{name="akane";value=./akane.json;}
 {name="alea";value=./alea.json;}
 {name="algebra";value=./algebra.json;}
 {name="alignment";value=./alignment.json;}
 {name="allegro5";value=./allegro5.json;}
 {name="allographer";value=./allographer.json;}
 {name="analytics";value=./analytics.json;}
+{name="anime";value=./anime.json;}
+{name="anonimongo";value=./anonimongo.json;}
 {name="anybar";value=./anybar.json;}
 {name="anycase";value=./anycase.json;}
 {name="ao";value=./ao.json;}
 {name="aporia";value=./aporia.json;}
 {name="appdirs";value=./appdirs.json;}
 {name="argon2";value=./argon2.json;}
+{name="argon2_bind";value=./argon2_bind.json;}
 {name="argparse";value=./argparse.json;}
 {name="argument_parser";value=./argument_parser.json;}
 {name="arksys";value=./arksys.json;}
@@ -66,6 +70,7 @@
 {name="aws_sdk";value=./aws_sdk.json;}
 {name="awslambda";value=./awslambda.json;}
 {name="backoff";value=./backoff.json;}
+{name="badgemaker";value=./badgemaker.json;}
 {name="baker";value=./baker.json;}
 {name="barbarus";value=./barbarus.json;}
 {name="barcode";value=./barcode.json;}
@@ -198,6 +203,7 @@
 {name="dbus";value=./dbus.json;}
 {name="decisiontree";value=./decisiontree.json;}
 {name="delaunay";value=./delaunay.json;}
+{name="delight";value=./delight.json;}
 {name="des";value=./des.json;}
 {name="dialogs";value=./dialogs.json;}
 {name="diff";value=./diff.json;}
@@ -225,6 +231,7 @@
 {name="edn";value=./edn.json;}
 {name="egl";value=./egl.json;}
 {name="einheit";value=./einheit.json;}
+{name="eloverblik";value=./eloverblik.json;}
 {name="elvis";value=./elvis.json;}
 {name="emerald";value=./emerald.json;}
 {name="eminim";value=./eminim.json;}
@@ -268,6 +275,7 @@
 {name="fidget";value=./fidget.json;}
 {name="figures";value=./figures.json;}
 {name="fileinput";value=./fileinput.json;}
+{name="filesize";value=./filesize.json;}
 {name="finals";value=./finals.json;}
 {name="finalseg";value=./finalseg.json;}
 {name="findtests";value=./findtests.json;}
@@ -352,6 +360,7 @@
 {name="grp";value=./grp.json;}
 {name="gtk2";value=./gtk2.json;}
 {name="gtkgenui";value=./gtkgenui.json;}
+{name="gungnir";value=./gungnir.json;}
 {name="gurl";value=./gurl.json;}
 {name="gyaric";value=./gyaric.json;}
 {name="hackpad";value=./hackpad.json;}
@@ -434,6 +443,8 @@
 {name="kiwi";value=./kiwi.json;}
 {name="kmer";value=./kmer.json;}
 {name="kmod";value=./kmod.json;}
+{name="kslog";value=./kslog.json;}
+{name="kview";value=./kview.json;}
 {name="kwin";value=./kwin.json;}
 {name="ladder";value=./ladder.json;}
 {name="lapper";value=./lapper.json;}
@@ -444,11 +455,13 @@
 {name="lc";value=./lc.json;}
 {name="lda";value=./lda.json;}
 {name="leveldb";value=./leveldb.json;}
+{name="libarchibi";value=./libarchibi.json;}
 {name="libbacktrace";value=./libbacktrace.json;}
 {name="libclang";value=./libclang.json;}
 {name="libcurl";value=./libcurl.json;}
 {name="libevdev";value=./libevdev.json;}
 {name="libffi";value=./libffi.json;}
+{name="libfswatch";value=./libfswatch.json;}
 {name="libgcrypt";value=./libgcrypt.json;}
 {name="libgit2";value=./libgit2.json;}
 {name="libgraph";value=./libgraph.json;}
@@ -483,6 +496,7 @@
 {name="loadenv";value=./loadenv.json;}
 {name="locale";value=./locale.json;}
 {name="loco";value=./loco.json;}
+{name="loki";value=./loki.json;}
 {name="lolcat";value=./lolcat.json;}
 {name="looper";value=./looper.json;}
 {name="loopfusion";value=./loopfusion.json;}
@@ -491,7 +505,9 @@
 {name="lua";value=./lua.json;}
 {name="ludens";value=./ludens.json;}
 {name="luhncheck";value=./luhncheck.json;}
+{name="luhny";value=./luhny.json;}
 {name="luna";value=./luna.json;}
+{name="macroutils";value=./macroutils.json;}
 {name="magic";value=./magic.json;}
 {name="mangle";value=./mangle.json;}
 {name="manu";value=./manu.json;}
@@ -519,6 +535,7 @@
 {name="miniz";value=./miniz.json;}
 {name="minmaxheap";value=./minmaxheap.json;}
 {name="mmgeoip";value=./mmgeoip.json;}
+{name="mnemonic";value=./mnemonic.json;}
 {name="moduleinit";value=./moduleinit.json;}
 {name="moe";value=./moe.json;}
 {name="mofuw";value=./mofuw.json;}
@@ -527,6 +544,7 @@
 {name="monit";value=./monit.json;}
 {name="monocypher";value=./monocypher.json;}
 {name="morelogging";value=./morelogging.json;}
+{name="mort";value=./mort.json;}
 {name="moustachu";value=./moustachu.json;}
 {name="mpdclient";value=./mpdclient.json;}
 {name="mpeg";value=./mpeg.json;}
@@ -605,11 +623,13 @@
 {name="nimblas";value=./nimblas.json;}
 {name="nimble";value=./nimble.json;}
 {name="nimblegui";value=./nimblegui.json;}
+{name="nimbler";value=./nimbler.json;}
 {name="nimbluez";value=./nimbluez.json;}
 {name="nimbomb";value=./nimbomb.json;}
 {name="nimboost";value=./nimboost.json;}
 {name="nimbox";value=./nimbox.json;}
 {name="nimbpf";value=./nimbpf.json;}
+{name="nimbug";value=./nimbug.json;}
 {name="nimbus";value=./nimbus.json;}
 {name="nimcat";value=./nimcat.json;}
 {name="nimcb";value=./nimcb.json;}
@@ -624,8 +644,10 @@
 {name="nimcx";value=./nimcx.json;}
 {name="nimdeps";value=./nimdeps.json;}
 {name="nimes";value=./nimes.json;}
+{name="nimetry";value=./nimetry.json;}
 {name="nimeverything";value=./nimeverything.json;}
 {name="nimfastText";value=./nimfastText.json;}
+{name="nimfm";value=./nimfm.json;}
 {name="nimfp";value=./nimfp.json;}
 {name="nimfuzz";value=./nimfuzz.json;}
 {name="nimfuzzy";value=./nimfuzzy.json;}
@@ -667,6 +689,7 @@
 {name="nimpb_protoc";value=./nimpb_protoc.json;}
 {name="nimpcre";value=./nimpcre.json;}
 {name="nimpmda";value=./nimpmda.json;}
+{name="nimpress";value=./nimpress.json;}
 {name="nimpy";value=./nimpy.json;}
 {name="nimqml";value=./nimqml.json;}
 {name="nimquery";value=./nimquery.json;}
@@ -689,12 +712,14 @@
 {name="nimssl";value=./nimssl.json;}
 {name="nimstopwatch";value=./nimstopwatch.json;}
 {name="nimsuggest";value=./nimsuggest.json;}
+{name="nimsuite";value=./nimsuite.json;}
 {name="nimsvg";value=./nimsvg.json;}
 {name="nimterlingua";value=./nimterlingua.json;}
 {name="nimterop";value=./nimterop.json;}
 {name="nimtess2";value=./nimtess2.json;}
 {name="nimtomd";value=./nimtomd.json;}
 {name="nimwc";value=./nimwc.json;}
+{name="nimwebp";value=./nimwebp.json;}
 {name="nimx";value=./nimx.json;}
 {name="nimzbar";value=./nimzbar.json;}
 {name="nimzend";value=./nimzend.json;}
@@ -703,12 +728,15 @@
 {name="niup";value=./niup.json;}
 {name="nlopt";value=./nlopt.json;}
 {name="nmiline";value=./nmiline.json;}
+{name="nmqtt";value=./nmqtt.json;}
 {name="noaa";value=./noaa.json;}
 {name="node";value=./node.json;}
 {name="noise";value=./noise.json;}
 {name="nominatim";value=./nominatim.json;}
+{name="nordnet";value=./nordnet.json;}
 {name="norm";value=./norm.json;}
 {name="normalize";value=./normalize.json;}
+{name="norman";value=./norman.json;}
 {name="notetxt";value=./notetxt.json;}
 {name="notifications";value=./notifications.json;}
 {name="notify";value=./notify.json;}
@@ -716,6 +744,7 @@
 {name="npeg";value=./npeg.json;}
 {name="npg";value=./npg.json;}
 {name="nre";value=./nre.json;}
+{name="nregex";value=./nregex.json;}
 {name="nrpl";value=./nrpl.json;}
 {name="nsh";value=./nsh.json;}
 {name="nshout";value=./nshout.json;}
@@ -750,6 +779,7 @@
 {name="orient";value=./orient.json;}
 {name="ormin";value=./ormin.json;}
 {name="os_files";value=./os_files.json;}
+{name="osdialog";value=./osdialog.json;}
 {name="osinfo";value=./osinfo.json;}
 {name="osrm";value=./osrm.json;}
 {name="osureplay";value=./osureplay.json;}
@@ -761,6 +791,10 @@
 {name="package_visible_types";value=./package_visible_types.json;}
 {name="packedjson";value=./packedjson.json;}
 {name="pager";value=./pager.json;}
+{name="paranim";value=./paranim.json;}
+{name="pararules";value=./pararules.json;}
+{name="paratext";value=./paratext.json;}
+{name="paravim";value=./paravim.json;}
 {name="pari";value=./pari.json;}
 {name="parseFixed";value=./parseFixed.json;}
 {name="parseini";value=./parseini.json;}
@@ -793,12 +827,14 @@
 {name="plists";value=./plists.json;}
 {name="plotly";value=./plotly.json;}
 {name="pluginmanager";value=./pluginmanager.json;}
+{name="plugins";value=./plugins.json;}
 {name="plz";value=./plz.json;}
 {name="png";value=./png.json;}
 {name="pnm";value=./pnm.json;}
 {name="polyBool";value=./polyBool.json;}
 {name="polynumeric";value=./polynumeric.json;}
 {name="polypbren";value=./polypbren.json;}
+{name="pomTimer";value=./pomTimer.json;}
 {name="pop3";value=./pop3.json;}
 {name="porter";value=./porter.json;}
 {name="primme";value=./primme.json;}
@@ -806,6 +842,7 @@
 {name="printdebug";value=./printdebug.json;}
 {name="procs";value=./procs.json;}
 {name="progress";value=./progress.json;}
+{name="prologue";value=./prologue.json;}
 {name="prometheus";value=./prometheus.json;}
 {name="prompt";value=./prompt.json;}
 {name="protobuf";value=./protobuf.json;}
@@ -816,6 +853,7 @@
 {name="ptest";value=./ptest.json;}
 {name="ptrace";value=./ptrace.json;}
 {name="pudge";value=./pudge.json;}
+{name="pvim";value=./pvim.json;}
 {name="pwd";value=./pwd.json;}
 {name="pwned";value=./pwned.json;}
 {name="pych";value=./pych.json;}
@@ -829,6 +867,7 @@
 {name="pythonmath";value=./pythonmath.json;}
 {name="pythonpathlib";value=./pythonpathlib.json;}
 {name="q";value=./q.json;}
+{name="qr";value=./qr.json;}
 {name="qrcode";value=./qrcode.json;}
 {name="qrcodegen";value=./qrcodegen.json;}
 {name="qt5_qtsql";value=./qt5_qtsql.json;}
@@ -845,6 +884,7 @@
 {name="rbtree";value=./rbtree.json;}
 {name="rdgui";value=./rdgui.json;}
 {name="react";value=./react.json;}
+{name="react16";value=./react16.json;}
 {name="reactor";value=./reactor.json;}
 {name="reactorfuse";value=./reactorfuse.json;}
 {name="readfq";value=./readfq.json;}
@@ -876,6 +916,7 @@
 {name="rocksdb";value=./rocksdb.json;}
 {name="rodcli";value=./rodcli.json;}
 {name="romans";value=./romans.json;}
+{name="roots";value=./roots.json;}
 {name="rosencrantz";value=./rosencrantz.json;}
 {name="rss";value=./rss.json;}
 {name="rsvg";value=./rsvg.json;}
@@ -897,6 +938,7 @@
 {name="seccomp";value=./seccomp.json;}
 {name="secp256k1";value=./secp256k1.json;}
 {name="sections";value=./sections.json;}
+{name="segmentation";value=./segmentation.json;}
 {name="semver";value=./semver.json;}
 {name="seqmath";value=./seqmath.json;}
 {name="sequester";value=./sequester.json;}
@@ -920,6 +962,7 @@
 {name="shiori";value=./shiori.json;}
 {name="shiori_charset_convert";value=./shiori_charset_convert.json;}
 {name="shioridll";value=./shioridll.json;}
+{name="shizuka";value=./shizuka.json;}
 {name="shlex";value=./shlex.json;}
 {name="shoco";value=./shoco.json;}
 {name="shorturl";value=./shorturl.json;}
@@ -955,6 +998,7 @@
 {name="sndfile";value=./sndfile.json;}
 {name="sndhdr";value=./sndhdr.json;}
 {name="snip";value=./snip.json;}
+{name="socks";value=./socks.json;}
 {name="sodium";value=./sodium.json;}
 {name="sol";value=./sol.json;}
 {name="sonic";value=./sonic.json;}
@@ -978,8 +1022,10 @@
 {name="spurdify";value=./spurdify.json;}
 {name="spwd";value=./spwd.json;}
 {name="sqlbuilder";value=./sqlbuilder.json;}
+{name="sqlite3_abi";value=./sqlite3_abi.json;}
 {name="srt";value=./srt.json;}
 {name="srv";value=./srv.json;}
+{name="sss";value=./sss.json;}
 {name="stacks";value=./stacks.json;}
 {name="staticglfw";value=./staticglfw.json;}
 {name="statsd_client";value=./statsd_client.json;}
@@ -1006,6 +1052,7 @@
 {name="suggest";value=./suggest.json;}
 {name="sunvox";value=./sunvox.json;}
 {name="svdpi";value=./svdpi.json;}
+{name="svgo";value=./svgo.json;}
 {name="swayipc";value=./swayipc.json;}
 {name="sweetanitify";value=./sweetanitify.json;}
 {name="switch_build";value=./switch_build.json;}
@@ -1029,7 +1076,9 @@
 {name="terminaltables";value=./terminaltables.json;}
 {name="termnovel";value=./termnovel.json;}
 {name="termstyle";value=./termstyle.json;}
+{name="testify";value=./testify.json;}
 {name="testrunner";value=./testrunner.json;}
+{name="testutils";value=./testutils.json;}
 {name="texttospeech";value=./texttospeech.json;}
 {name="tf2plug";value=./tf2plug.json;}
 {name="the_nim_alliance";value=./the_nim_alliance.json;}
@@ -1067,6 +1116,7 @@
 {name="treesitter_rust";value=./treesitter_rust.json;}
 {name="treesitter_scala";value=./treesitter_scala.json;}
 {name="treesitter_typescript";value=./treesitter_typescript.json;}
+{name="triplets";value=./triplets.json;}
 {name="tsundoku";value=./tsundoku.json;}
 {name="tsv2json";value=./tsv2json.json;}
 {name="ttmath";value=./ttmath.json;}
@@ -1088,6 +1138,7 @@
 {name="ur";value=./ur.json;}
 {name="urand";value=./urand.json;}
 {name="uri2";value=./uri2.json;}
+{name="uri3";value=./uri3.json;}
 {name="urlshortener";value=./urlshortener.json;}
 {name="usagov";value=./usagov.json;}
 {name="useragents";value=./useragents.json;}
@@ -1125,11 +1176,13 @@
 {name="websocket";value=./websocket.json;}
 {name="webterminal";value=./webterminal.json;}
 {name="webview";value=./webview.json;}
+{name="weightedgraph";value=./weightedgraph.json;}
 {name="whip";value=./whip.json;}
 {name="wiki2text";value=./wiki2text.json;}
 {name="wings";value=./wings.json;}
 {name="winim";value=./winim.json;}
 {name="winregistry";value=./winregistry.json;}
+{name="winserial";value=./winserial.json;}
 {name="winversion";value=./winversion.json;}
 {name="wiringPiNim";value=./wiringPiNim.json;}
 {name="witai";value=./witai.json;}
@@ -1153,9 +1206,12 @@
 {name="xxtea";value=./xxtea.json;}
 {name="yahooweather";value=./yahooweather.json;}
 {name="yaml";value=./yaml.json;}
+{name="yukiko";value=./yukiko.json;}
 {name="z3";value=./z3.json;}
 {name="z3nim";value=./z3nim.json;}
 {name="zero_functional";value=./zero_functional.json;}
+{name="zfblast";value=./zfblast.json;}
+{name="zfcore";value=./zfcore.json;}
 {name="zhsh";value=./zhsh.json;}
 {name="zip";value=./zip.json;}
 {name="zmq";value=./zmq.json;}
