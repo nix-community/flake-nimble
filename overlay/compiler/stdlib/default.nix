@@ -12,7 +12,7 @@ in stdenv.mkDerivation {
   inherit (nim) version src;
   preferLocalBuild = true;
 
-  patches = nim.patches ++ [ ./genode.patch ./foreignDeps.patch ];
+  patches = nim.patches ++ [ ./foreignDeps.patch ];
 
   dontConfigure = true;
   dontBuild = true;

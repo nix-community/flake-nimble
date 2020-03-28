@@ -131,7 +131,6 @@ in buildPackages.stdenv.mkDerivation {
     ./NIM_CONFIG_DIR.patch
     # This patch allows us to override the compiler
     # configuration using a wrapper.
-    ./genode.patch
   ];
 
   enableParallelBuilding = true;
