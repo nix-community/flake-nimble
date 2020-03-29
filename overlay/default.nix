@@ -3,11 +3,11 @@ nimbleSrc:
 final: prev:
 with prev; {
 
-  nim = let nim-unwrapped = callPackage ./compiler/unwrapped { };
+  nim = let nimUnwrapped = callPackage ./compiler/unwrapped { };
   in callPackage ./compiler/wrapper {
-    nim = nim-unwrapped;
-    nimStdLib = callPackage ./compiler/stdlib { nim = nim-unwrapped; };
-    nimble = callPackage ./nimble { nim = nim-unwrapped; };
+    nim = nimUnwrapped;
+    nimStdLib = callPackage ./compiler/stdlib { nim = nimUnwrapped; };
+    nimble = callPackage ./nimble { nim = nimUnwrapped; };
   };
 
   nimblePackages = let

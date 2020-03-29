@@ -1,6 +1,6 @@
 # https://nim-lang.github.io/Nim/packaging.html
 
-{ stdenv, lib, fetchurl, buildPackages }:
+{ stdenv, lib, fetchurl, boehmgc, openssl, pcre, readline, sqlite }:
 
 let
   parseCpu = platform:
@@ -118,7 +118,7 @@ let
 
   version = "1.0.6";
 
-in buildPackages.stdenv.mkDerivation {
+in stdenv.mkDerivation {
   pname = "nim";
   inherit version;
 
@@ -134,16 +134,6 @@ in buildPackages.stdenv.mkDerivation {
   ];
 
   enableParallelBuilding = true;
-
-  NIX_LDFLAGS = [ "-lcrypto" "-lpcre" "-lreadline" "-lgc" "-lsqlite3" ];
-
-  nativeBuildInputs = with buildPackages; [
-    boehmgc
-    openssl
-    pcre
-    readline
-    sqlite
-  ];
 
   dontConfigure = true;
 
@@ -178,6 +168,12 @@ in buildPackages.stdenv.mkDerivation {
 
     runHook postInstall
   '';
+
+  postFixup =
+    let rpath = lib.makeLibraryPath [ boehmgc openssl pcre readline sqlite ];
+    in ''
+      find $out/bin -type f -exec patchelf --set-rpath ${rpath} {} \;
+    '';
 
   passthru = {
     build = nimBuild;

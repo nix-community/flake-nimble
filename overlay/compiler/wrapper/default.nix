@@ -5,17 +5,15 @@
 #
 # This function wraps a Nim compiler to meet these requirements.
 
-{ name ? "", stdenv, lib, makeWrapper, pkgconfig, nim, nimStdLib, nimble }:
+{ stdenv, lib, makeWrapper, nim, nimStdLib, nimble }:
 
-let
-  inherit (stdenv) hostPlatform targetPlatform lib;
-  targetPrefix = targetPlatform.config + "-";
+let inherit (stdenv) hostPlatform targetPlatform lib;
 
 in stdenv.mkDerivation {
   name = "${targetPlatform.config}-${nim.pname}-wrapper-${nim.version}";
   preferLocalBuild = true;
 
-  nativeBuildInputs = [ makeWrapper pkgconfig ];
+  nativeBuildInputs = [ makeWrapper ];
 
   dontUnpack = true;
   dontConfigure = true;
@@ -40,11 +38,11 @@ in stdenv.mkDerivation {
     mkdir -p $out/bin $out/etc/nim
     substituteAll ${./nim.cfg} $out/etc/nim/nim.cfg
 
-    for binpath in ${nim}/bin/nim ${nimble}/bin/nimble; do
+    for binpath in ${nim}/bin/* ${nimble}/bin/nimble; do
       local binname=`basename $binpath`
       makeWrapper $binpath $out/bin/${targetPlatform.config}-$binname \
         --set NIM_CONFIG_PATH "$out/etc/nim" \
-        --prefix PATH : ${lib.makeBinPath [ stdenv.cc nim ]} \
+        --prefix PATH : ${lib.makeBinPath [ stdenv.cc ]}:$out/bin \
         --prefix LD_LIBRARY_PATH : ${
           stdenv.lib.makeLibraryPath [ stdenv.cc.libc ]
         }

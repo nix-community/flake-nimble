@@ -7,13 +7,16 @@ let
     # Utility for generating Nix metadata from Nimble
 
     nixpkgs.buildPackages.runCommand "nimbleHelper" {
-      nativeBuildInputs = [ nixpkgs.buildPackages.buildPackages.nim ];
+      nativeBuildInputs =
+        [ nixpkgs.buildPackages.buildPackages.nim nixpkgs.makeWrapper ];
     } ''
       export HOME=$NIX_BUILD_TOP
       mkdir -p $out/bin
-      nim compile --path:${nim.passthru.nimble.lib}/src \
+      nim compile --path:${nim.passthru.nimble.src}/src \
         --out:$out/bin/nimbleHelper \
         ${./src}/nix_from_nimble.nim
+      wrapProgram $out/bin/nimbleHelper \
+        --prefix PATH : ${nixpkgs.lib.makeBinPath [ nim ]}
     '';
 
   buildNimble' =

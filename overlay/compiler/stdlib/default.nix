@@ -5,8 +5,6 @@
 let
   stdenv = stdenvNoCC;
   inherit (stdenv) hostPlatform targetPlatform lib;
-  targetPrefix = targetPlatform.config + "-";
-
 in stdenv.mkDerivation {
   pname = "nimstdlib";
   inherit (nim) version src;

@@ -66,5 +66,7 @@
           buildInputs =
             [ selfPackages.nim gnumake nix-prefetch-git nix-prefetch-hg ];
         });
+
+      legacyPackages = forAllSystems (system: nixpkgsFor.${system});
     };
 }

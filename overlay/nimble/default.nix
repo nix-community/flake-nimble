@@ -3,7 +3,6 @@
 buildPackages.stdenv.mkDerivation rec {
   pname = "nimble";
   version = "0.11.0";
-  outputs = [ "out" "lib" ];
 
   nativeBuildInputs = [ nim makeWrapper openssl ];
 
@@ -24,8 +23,6 @@ buildPackages.stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  NIX_LDFLAGS = [ "-lcrypto" ];
-
   nimFlags = [ "--cpu:${nim.build.cpu}" "--os:${nim.build.os}" "--nilseqs:on" ];
 
   buildPhase = ''
@@ -41,13 +38,17 @@ buildPackages.stdenv.mkDerivation rec {
     runHook postCheck
   '';
 
-  # Wrap Nimble so it may find Nim and C compilers
   installPhase = ''
     runHook preInstall
     install -D nimble $out/bin/nimble
-    mkdir -p $lib
-    cp -r src $lib/
     runHook postInstall
+  '';
+
+  postFixup = ''
+    rpath=$(patchelf --print-rpath $out/bin/nimble)
+    patchelf \
+      --set-rpath "$rpath:${stdenv.lib.makeLibraryPath [ openssl ]}" \
+      $out/bin/nimble
   '';
 
   meta = with stdenv.lib; {
