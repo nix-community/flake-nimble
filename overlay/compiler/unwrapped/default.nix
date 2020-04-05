@@ -1,6 +1,6 @@
 # https://nim-lang.github.io/Nim/packaging.html
 
-{ stdenv, lib, fetchurl, boehmgc, openssl, pcre, readline, sqlite }:
+{ stdenv, lib, fetchurl, buildPackages }:
 
 let
   parseCpu = platform:
@@ -118,7 +118,7 @@ let
 
   version = "1.2.0";
 
-in stdenv.mkDerivation {
+in buildPackages.stdenv.mkDerivation {
   pname = "nim";
   inherit version;
 
@@ -170,7 +170,7 @@ in stdenv.mkDerivation {
   '';
 
   postFixup =
-    let rpath = lib.makeLibraryPath [ boehmgc openssl pcre readline sqlite ];
+    let rpath = lib.makeLibraryPath (with buildPackages; [ boehmgc openssl pcre readline sqlite ]);
     in ''
       find $out/bin -type f -exec patchelf --set-rpath ${rpath} {} \;
     '';

@@ -47,7 +47,7 @@ buildPackages.stdenv.mkDerivation rec {
   postFixup = ''
     rpath=$(patchelf --print-rpath $out/bin/nimble)
     patchelf \
-      --set-rpath "$rpath:${stdenv.lib.makeLibraryPath [ openssl ]}" \
+      --set-rpath "$rpath:${stdenv.lib.makeLibraryPath [ buildPackages.openssl ]}" \
       $out/bin/nimble
   '';
 

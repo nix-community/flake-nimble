@@ -35,6 +35,7 @@ in stdenv.mkDerivation {
   inherit nimStdLib;
 
   installPhase = ''
+    runHook preInstall
     mkdir -p $out/bin $out/etc/nim
     substituteAll ${./nim.cfg} $out/etc/nim/nim.cfg
 
@@ -48,6 +49,7 @@ in stdenv.mkDerivation {
         }
       ln -s $out/bin/${targetPlatform.config}-$binname $out/bin/$binname
     done
+    runHook postInstall
   '';
 
   passthru = nim.passthru // {
