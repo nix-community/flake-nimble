@@ -169,11 +169,12 @@ in buildPackages.stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  postFixup =
-    let rpath = lib.makeLibraryPath (with buildPackages; [ boehmgc openssl pcre readline sqlite ]);
-    in ''
-      find $out/bin -type f -exec patchelf --set-rpath ${rpath} {} \;
-    '';
+  postFixup = let
+    rpath = lib.makeLibraryPath
+      (with buildPackages; [ boehmgc openssl pcre readline sqlite ]);
+  in ''
+    find $out/bin -type f -exec patchelf --set-rpath ${rpath} {} \;
+  '';
 
   passthru = {
     build = nimBuild;

@@ -5,9 +5,11 @@
 #
 # This function wraps a Nim compiler to meet these requirements.
 
-{ stdenv, lib, makeWrapper, nim, nimStdLib, nimble }:
+{ stdenv, lib, makeWrapper, nimUnwrapped, nimStdLib, nimble }:
 
-let inherit (stdenv) hostPlatform targetPlatform lib;
+let
+  nim = nimUnwrapped;
+  inherit (stdenv) hostPlatform targetPlatform lib;
 
 in stdenv.mkDerivation {
   name = "${targetPlatform.config}-${nim.pname}-wrapper-${nim.version}";

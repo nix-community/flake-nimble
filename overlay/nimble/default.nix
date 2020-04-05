@@ -1,6 +1,7 @@
-{ stdenv, fetchFromGitHub, makeWrapper, nim, openssl, buildPackages }:
+{ stdenv, fetchFromGitHub, makeWrapper, nimUnwrapped, openssl, buildPackages }:
 
-buildPackages.stdenv.mkDerivation rec {
+let nim = nimUnwrapped;
+in buildPackages.stdenv.mkDerivation rec {
   pname = "nimble";
   version = "0.11.0";
 

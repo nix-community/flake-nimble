@@ -1,9 +1,10 @@
 # Derivation for the Nim standard library
 
-{ stdenvNoCC, nim }:
+{ stdenvNoCC, nimUnwrapped }:
 
 let
   stdenv = stdenvNoCC;
+  nim = nimUnwrapped;
   inherit (stdenv) hostPlatform targetPlatform lib;
 in stdenv.mkDerivation {
   pname = "nimstdlib";
