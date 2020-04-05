@@ -116,7 +116,7 @@ let
   nimHost = parsePlatform stdenv.hostPlatform;
   nimTarget = parsePlatform stdenv.targetPlatform;
 
-  version = "1.0.6";
+  version = "1.2.0";
 
 in stdenv.mkDerivation {
   pname = "nim";
@@ -124,7 +124,7 @@ in stdenv.mkDerivation {
 
   src = fetchurl {
     url = "https://nim-lang.org/download/nim-${version}.tar.xz";
-    sha256 = "1cv6bxc7w21455c0pv0r2h64ljyzw266jsk1fsgiiyk2rx8mfkhk";
+    sha256 = "TpRYOjc5ZYIYBeZl4KBfUvthCRZnbtsJFIlBQVY3xXU=";
   };
 
   patches = [
