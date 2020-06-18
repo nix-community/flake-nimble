@@ -37,14 +37,14 @@
               f = name: {
                 inherit name;
                 value = let drv = getAttr name pkgs;
-                in if drv.nimble.bin == [ ] then
+                in if (drv.nimble.bin or [ ]) == [ ] then
                   null
                 else
                   mkApp { inherit name drv; };
               };
               pkgNames = attrNames pkgs;
               mapped = map f pkgNames;
-            in listToAttrs mapped;
+            in listToAttrs (filter ({ name, value }: value != null) mapped);
         in appThunks // {
           nim = mkApp {
             name = "nim";
