@@ -19,7 +19,6 @@ in stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
 
-    mkdir bin
     touch bin/nim
     ./install.sh $TMPDIR
     cp -rv $TMPDIR/nim/lib $out
