@@ -36,11 +36,7 @@
               pkgs = self.packages.${system};
               f = name: {
                 inherit name;
-                value = let drv = getAttr name pkgs;
-                in if (drv.nimble.bin or [ ]) == [ ] then
-                  null
-                else
-                  mkApp { inherit name drv; };
+                value = mkApp { inherit name; drv = getAttr name pkgs; };
               };
               pkgNames = attrNames pkgs;
               mapped = map f pkgNames;

@@ -18,10 +18,10 @@ nix flake add nimble 'github:nix-community/flake-nimble'
 The flake can now be referred to by subsequent `nix` invocations:
 
 ```shell
-nix app nimble#NimTacToe
+nix run nimble#NimTacToe
   # Build and execute a Nimble binary
 
-nix app nimble#nim c foo.nim
+nix run nimble#nim c foo.nim
   # Invoke the Nim compiler
 
 nix dev-shell nimble
