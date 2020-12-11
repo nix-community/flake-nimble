@@ -3,6 +3,10 @@
 let
   inherit (nixpkgs) nim;
 
+  gitNonInteractive =
+    nixpkgs.buildPackages.writeScriptBin "git"
+      "exec ${nixpkgs.git}/bin/git -c credential.helper='' -c credential.helper='!printf quit=1' \"$@\"";
+
   nimbleHelper =
     # Utility for generating Nix metadata from Nimble
     let
@@ -37,7 +41,7 @@ let
         --out:$out/bin/nimbleHelper \
         ${./src}/nix_from_nimble.nim
       wrapProgram $out/bin/nimbleHelper \
-        --prefix PATH : ${nixpkgs.lib.makeBinPath [ nim nixpkgs.nix-prefetch-git ]}
+        --prefix PATH : ${nixpkgs.lib.makeBinPath [ nim gitNonInteractive nixpkgs.nix-prefetch-git ]}
     '';
 
   buildNimble' =
