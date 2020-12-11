@@ -128,6 +128,7 @@ proc generateSources(options: Options) =
       var pkg: Package
       if getPackage(arg, options, pkg):
         pkgList.add pkg
+  randomize()
   shuffle pkgList
     # This could take a while, and the error handling is poor.
     # Shuffle the package list so eventually everything gets done.
