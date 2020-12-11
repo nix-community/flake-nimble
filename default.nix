@@ -41,7 +41,11 @@ let
         --out:$out/bin/nimbleHelper \
         ${./src}/nix_from_nimble.nim
       wrapProgram $out/bin/nimbleHelper \
-        --prefix PATH : ${nixpkgs.lib.makeBinPath [ nim gitNonInteractive nixpkgs.nix-prefetch-git ]}
+        --prefix PATH : ${nixpkgs.lib.makeBinPath [
+          nim gitNonInteractive
+          nixpkgs.nix-prefetch-git
+          nixpkgs.nix-prefetch-hg
+        ]}
     '';
 
   buildNimble' =
