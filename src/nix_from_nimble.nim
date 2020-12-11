@@ -9,7 +9,8 @@ import nimblepkg/common,
   nimblepkg/cli
 
 import std/algorithm, std/json, std/os, std/osproc, std/sequtils, std/streams,
-    std/strutils, std/tables, std/osproc, std/tables, std/random, std/uri
+    std/strutils, std/tables, std/osproc, std/tables, std/random, std/uri,
+    std/monotimes, std/times
 
 proc packageVersions(pkg: Package): OrderedTable[Version, string] =
   let downMethod = pkg.downloadMethod.getDownloadMethod()
@@ -90,12 +91,10 @@ proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
   %*{"homepage": pkg.web, "src": sourcesList(pkg, prev)}
 
 proc createPackageFile(path: string; pkg: Package) =
-  echo "create ", path
   let jsonPkg = generatePackageJson(pkg, newJObject())
   writeFile(path, pretty jsonPkg)
 
 proc updatePackageFile(path: string; pkg: Package) =
-  echo "update ", path
   let jsonPkg = generatePackageJson(pkg, parseFile path)
   writeFile(path, pretty jsonPkg)
 
@@ -117,6 +116,16 @@ proc exit() {.noconv.} =
   close stream
   quit 0
 
+func `$`(d: Duration): string =
+  const units = [(Weeks, "w"), (Days, "d"), (Hours, "h"), (Minutes, "m"), (Seconds, "s")]
+  let parts = d.toParts
+  for unit in units:
+    let n = parts[unit[0]]
+    if n != 0.int64 or result.len != 0:
+      result.add $n & unit[1]
+  if result.len == 0:
+    result = "0s"
+
 proc generateSources(options: Options) =
   setControlCHook(exit)
   let args = options.action.arguments
@@ -134,17 +143,27 @@ proc generateSources(options: Options) =
     # Shuffle the package list so eventually everything gets done.
 
   createDir "packages"
-  for pkg in pkgList:
+  let t0 = getMonoTime()
+  for i, pkg in pkgList:
     if pkg.url == "": continue
     doAssert(pkg.name != "default")
+
+    let elapsedMillis = (getMonoTime() - t0).inMilliseconds.float64
+    let etaMillis = elapsedMillis / float64(i+1) * float64(pkgList.len - i)
+    let eta = $initDuration(milliseconds = etaMillis.int64)
+    let percent = 100*i div pkgList.len + 1
+    let progress = "[" & $percent & "% " & $(i+1) & "/" & $pkgList.len & " ETA~" & eta & "]"
+
     let jsonPath = "packages/" & pkg.name & ".json"
     if existsFile jsonPath:
+      echo progress, " update ", jsonPath
       try:
         updatePackageFile(jsonPath, pkg)
       except:
         echo "failed to update package for ", pkg.name
         echo getCurrentExceptionMsg()
     else:
+      echo progress, " create ", jsonPath
       try: createPackageFile(jsonPath, pkg)
       except:
         echo "failed to create package for ", pkg.name
