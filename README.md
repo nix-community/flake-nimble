@@ -1,28 +1,18 @@
 # Nimble packages Nix flake
 
-This repository contains experimental-grade, auto-generated Nix packages for 
-most [Nimble](https://github.com/nim-lang/nimble) packages.
+This repository contains experimental-grade, auto-generated
+[Nim](https://nim-lang.org/) packages.
 
 ## TODO:
  - automatic testing
- - Back-versioning
+ - back-versioning
+ - regular updates
 
 ## Usage
-
-First add the flake to your registry:
-
-```shell
-nix flake add nimble 'github:nix-community/flake-nimble'
-```
-
-The flake can now be referred to by subsequent `nix` invocations:
 
 ```shell
 nix run nimble#NimTacToe
   # Build and execute a Nimble binary
-
-nix run nimble#nim c foo.nim
-  # Invoke the Nim compiler
 
 nix dev-shell nimble
   # Enter a shell with the Nim and Nimble utilities
