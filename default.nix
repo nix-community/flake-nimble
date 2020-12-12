@@ -37,7 +37,7 @@ let
         --out:$out/bin/nimbleHelper \
         ${./src}/nix_from_nimble.nim
       wrapProgram $out/bin/nimbleHelper \
-        --prefix PATH : ${nixpkgs.lib.makeBinPath [ nim ]}
+        --prefix PATH : ${nixpkgs.lib.makeBinPath [ nim nixpkgs.nix-prefetch-git ]}
     '';
 
   buildNimble' =
@@ -186,6 +186,7 @@ let
     inherit name;
     value = buildNimble ({ inherit name; } // value);
   }) sources) // {
+    inherit nimbleHelper;
     nim = nim // { inherit buildNimble; };
     nimrod = nim;
     # Some Nimble still packages refer to the compiler as "nimrod"

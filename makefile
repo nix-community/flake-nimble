@@ -1,8 +1,5 @@
-packages/default.nix: nix_from_nimble
-	nix app .#nimble update
-	./$< generate
-
-nix_from_nimble: src/nix_from_nimble.nim
-	nix app .#nimble build
+packages/default.nix:
+	nix shell .#nim -c nimble update
+	nix run .#nimbleHelper generate
 
 .PHONY: packages/default.nix
