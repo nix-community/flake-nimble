@@ -5,14 +5,35 @@ let
 
   nimbleHelper =
     # Utility for generating Nix metadata from Nimble
-
-    nixpkgs.buildPackages.runCommand "nimbleHelper" {
+    let
+      nimbleSrc = with nixpkgs;
+        stdenv.mkDerivation rec {
+          pname = "nimble-src";
+          version = "0.11.0";
+          src = fetchFromGitHub {
+            owner = "nim-lang";
+            repo = "nimble";
+            rev = "v" + version;
+            sha256 = "1n8qi10173cbwsai2y346zf3r14hk8qib2qfcfnlx9a8hibrh6rv";
+          };
+          patches = [
+            ./patches/nimble/json.patch
+            ./patches/nimble/subdir.patch
+            ./patches/nimble/tempdir.patch
+            ./patches/nimble/url.patch
+            ./patches/nimble/foreignDeps.patch
+          ];
+          dontConfigure = true;
+          dontBuild = true;
+          installPhase = "cp -r ./ $out";
+        };
+    in nixpkgs.buildPackages.runCommand "nimbleHelper" {
       nativeBuildInputs =
         [ nixpkgs.buildPackages.buildPackages.nim nixpkgs.makeWrapper ];
     } ''
       export HOME=$NIX_BUILD_TOP
       mkdir -p $out/bin
-      nim compile --path:${nim.passthru.nimble.src}/src \
+      nim compile --path:${nimbleSrc}/src \
         --out:$out/bin/nimbleHelper \
         ${./src}/nix_from_nimble.nim
       wrapProgram $out/bin/nimbleHelper \
@@ -81,8 +102,7 @@ let
             let
               libs = filter (pkg: hasAttr "nimble" (pkg.passthru or { }))
                 nimbleInputs';
-              libPaths = map (lib: ''--path:"${lib}/src"'') libs;
-            in toString ([ nim.passthru.backend ] ++ libPaths);
+            in map (lib: ''--path:"${lib}/src"'') libs;
 
           preHook = ''
             export HOME="$NIX_BUILD_TOP"
@@ -93,7 +113,7 @@ let
           buildPhase = ''
             runHook preBuild
             for bin in ${toString pkgInfo.nimble.bin}; do
-              nim $nimFlags --out:$out/bin/$bin ${pkgInfo.nimble.srcDir}/$bin.nim
+              nim compile $nimFlags --out:$out/bin/$bin ${pkgInfo.nimble.srcDir}/$bin.nim
             done
             runHook postBuild
           '';

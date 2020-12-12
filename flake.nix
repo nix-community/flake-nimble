@@ -1,6 +1,4 @@
 {
-  edition = 201909;
-
   description = "Nimble packages";
 
   outputs = { self, nixpkgs }:
@@ -22,12 +20,15 @@
       };
 
     in {
-      overlay =
-        import ./overlay { nimbleSrc = self.packages.x86_64.nimble.src; };
+      overlay = import ./overlay;
+      # Define packages here using an overlay.
+      # This simplifies cross-compilation.
 
       packages = forAllSystems (system: nixpkgsFor.${system}.nimblePackages);
+      # Expose the packages added via the overlay.
 
-      defaultPackage = forAllSystems (system: self.packages.${system}.nimble);
+      defaultPackage = forAllSystems (system: nixpkgsFor.${system}.nim);
+      # Make the Nim compiler from Nixpkgs the default package here.
 
       apps = forAllSystems (system:
         let
@@ -36,7 +37,10 @@
               pkgs = self.packages.${system};
               f = name: {
                 inherit name;
-                value = mkApp { inherit name; drv = getAttr name pkgs; };
+                value = mkApp {
+                  inherit name;
+                  drv = getAttr name pkgs;
+                };
               };
               pkgNames = attrNames pkgs;
               mapped = map f pkgNames;
@@ -62,7 +66,5 @@
           buildInputs =
             [ selfPackages.nim gnumake nix-prefetch-git nix-prefetch-hg ];
         });
-
-      legacyPackages = forAllSystems (system: nixpkgsFor.${system});
     };
 }
