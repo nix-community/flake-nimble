@@ -95,6 +95,19 @@
         }
       },
       {
+        "name": "1.0.10",
+        "value": {
+          "url": "https://github.com/nim-lang/Nim.git",
+          "rev": "0ca09f64cf6ecf2050b58bc26ebc622f856b4dc2",
+          "date": "2020-10-26T14:25:28+01:00",
+          "path": "/nix/store/p5c80ck3pnyf2k9wcnjrp2jyji30v8z6-Nim",
+          "sha256": "17yl2263zq2w16gyi3302w4nvwdisl3lmkpsnmp2f5lsrh7jllf0",
+          "fetchSubmodules": false,
+          "deepClone": false,
+          "leaveDotGit": false
+        }
+      },
+      {
         "name": "1.0.8",
         "value": {
           "url": "https://github.com/nim-lang/Nim.git",
@@ -138,75 +151,12 @@
         }
       },
       {
-        "name": "1.0.10",
-        "value": {
-          "url": "https://github.com/nim-lang/Nim.git",
-          "rev": "0ca09f64cf6ecf2050b58bc26ebc622f856b4dc2",
-          "date": "2020-10-26T14:25:28+01:00",
-          "path": "/nix/store/p5c80ck3pnyf2k9wcnjrp2jyji30v8z6-Nim",
-          "sha256": "17yl2263zq2w16gyi3302w4nvwdisl3lmkpsnmp2f5lsrh7jllf0",
-          "fetchSubmodules": false,
-          "deepClone": false,
-          "leaveDotGit": false
-        }
-      },
-      {
         "name": "1.0.0",
         "value": {
           "url": "https://github.com/nim-lang/Nim.git",
           "rev": "f7a8fc46c0012033917582eb740dc0343c093e35",
           "date": "2019-09-23T19:06:55+02:00",
           "sha256": "1digc1a1ipbcfa9j1jsxpfwpai80fxx6mys5lljbbfn2ykln7xfi",
-          "fetchSubmodules": false
-        }
-      },
-      {
-        "name": "0.9.6",
-        "value": {
-          "url": "https://github.com/nim-lang/Nim.git",
-          "rev": "98751caed47dbdd47642d7e9d181298b4edc8c30",
-          "date": "2014-10-19T20:50:14+02:00",
-          "sha256": "1b2wkmcghbfsad2fsfflpspzlj9drjbagdqx78jc4h3k27mps86a",
-          "fetchSubmodules": false
-        }
-      },
-      {
-        "name": "0.9.4",
-        "value": {
-          "url": "https://github.com/nim-lang/Nim.git",
-          "rev": "687a1b7de4c006750274fb046a10f08d38c22f5a",
-          "date": "2014-04-21T10:10:28+02:00",
-          "sha256": "1wn6dhkqwbsf2g8sykxmck2c99msi424cbzzw76apb0mj52cklwp",
-          "fetchSubmodules": false
-        }
-      },
-      {
-        "name": "0.9.2",
-        "value": {
-          "url": "https://github.com/nim-lang/Nim.git",
-          "rev": "220d35d9e19b0eae9e7cd1f1cac6e77e798dbc72",
-          "date": "2013-05-20T17:32:36+02:00",
-          "sha256": "1lq1qxwkm9g7wsf970axfx0bfpjqinbm8bgx63b2gww8zm1f2f6h",
-          "fetchSubmodules": false
-        }
-      },
-      {
-        "name": "0.9.0",
-        "value": {
-          "url": "https://github.com/nim-lang/Nim.git",
-          "rev": "92b0d640180c02489061eada2cb585f05e61eebc",
-          "date": "2012-09-23T21:57:19+02:00",
-          "sha256": "0kp80bvzqp3x7lwg8m3qs6d9kq3jc8s35pvryshk3a3c3lxj3b06",
-          "fetchSubmodules": false
-        }
-      },
-      {
-        "name": "0.8.14",
-        "value": {
-          "url": "https://github.com/nim-lang/Nim.git",
-          "rev": "32b4192b3f0771af11e9d850046e5f3dd42a9a5f",
-          "date": "2012-02-09T01:18:33+01:00",
-          "sha256": "0jsp0fh44bkkcvvi1bnxdlxmpp6cx528z201srs1c948qksqxpgh",
           "fetchSubmodules": false
         }
       },
@@ -397,6 +347,56 @@
           "rev": "92c873154a36d34ff8e18de6b2d1a0eb1b611860",
           "date": "2014-12-29T10:32:13+01:00",
           "sha256": "0q5xgbkvrqi6srs1j4ri5yy3aary7vc6sdgbiv0l8i0d7hcyjfna",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.9.6",
+        "value": {
+          "url": "https://github.com/nim-lang/Nim.git",
+          "rev": "98751caed47dbdd47642d7e9d181298b4edc8c30",
+          "date": "2014-10-19T20:50:14+02:00",
+          "sha256": "1b2wkmcghbfsad2fsfflpspzlj9drjbagdqx78jc4h3k27mps86a",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.9.4",
+        "value": {
+          "url": "https://github.com/nim-lang/Nim.git",
+          "rev": "687a1b7de4c006750274fb046a10f08d38c22f5a",
+          "date": "2014-04-21T10:10:28+02:00",
+          "sha256": "1wn6dhkqwbsf2g8sykxmck2c99msi424cbzzw76apb0mj52cklwp",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.9.2",
+        "value": {
+          "url": "https://github.com/nim-lang/Nim.git",
+          "rev": "220d35d9e19b0eae9e7cd1f1cac6e77e798dbc72",
+          "date": "2013-05-20T17:32:36+02:00",
+          "sha256": "1lq1qxwkm9g7wsf970axfx0bfpjqinbm8bgx63b2gww8zm1f2f6h",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.9.0",
+        "value": {
+          "url": "https://github.com/nim-lang/Nim.git",
+          "rev": "92b0d640180c02489061eada2cb585f05e61eebc",
+          "date": "2012-09-23T21:57:19+02:00",
+          "sha256": "0kp80bvzqp3x7lwg8m3qs6d9kq3jc8s35pvryshk3a3c3lxj3b06",
+          "fetchSubmodules": false
+        }
+      },
+      {
+        "name": "0.8.14",
+        "value": {
+          "url": "https://github.com/nim-lang/Nim.git",
+          "rev": "32b4192b3f0771af11e9d850046e5f3dd42a9a5f",
+          "date": "2012-02-09T01:18:33+01:00",
+          "sha256": "0jsp0fh44bkkcvvi1bnxdlxmpp6cx528z201srs1c948qksqxpgh",
           "fetchSubmodules": false
         }
       }
