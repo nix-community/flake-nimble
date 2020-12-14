@@ -83,7 +83,13 @@ proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
       , "value": prefetchVersion(pkg)
       })
   proc cmpVer(x, y: JsonNode): int =
-    cmp(x["name"].str, y["name"].str)
+    let
+      xn = x["name"].str
+      yn = y["name"].str
+    if xn == "HEAD" and yn == "HEAD": return 0
+    elif xn == "HEAD": return 1
+    elif yn == "HEAD": return -1
+    cmp(newVersion(xn), newVersion(yn))
   sort(versionList.elems, cmpVer, SortOrder.Descending)
   result["versions"] = versionList
 
