@@ -3,7 +3,7 @@
 
   outputs = { self, nixpkgs }:
     let
-      systems = [ "x86_64-linux" ];
+      systems = [  "aarch64-linux" "x86_64-linux" ];
 
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
 
