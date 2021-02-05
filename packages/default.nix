@@ -43,6 +43,7 @@
 {name="adb";value=./adb.json;}
 {name="adix";value=./adix.json;}
 {name="aglet";value=./aglet.json;}
+{name="ago";value=./ago.json;}
 {name="ajax";value=./ajax.json;}
 {name="akane";value=./akane.json;}
 {name="alea";value=./alea.json;}
@@ -59,12 +60,14 @@
 {name="anonimongo";value=./anonimongo.json;}
 {name="ansiparse";value=./ansiparse.json;}
 {name="ansitohtml";value=./ansitohtml.json;}
+{name="antlr4nim";value=./antlr4nim.json;}
 {name="anybar";value=./anybar.json;}
 {name="anycase";value=./anycase.json;}
 {name="ao";value=./ao.json;}
 {name="aporia";value=./aporia.json;}
 {name="appdirs";value=./appdirs.json;}
 {name="applicates";value=./applicates.json;}
+{name="arduino";value=./arduino.json;}
 {name="argon2";value=./argon2.json;}
 {name="argon2_bind";value=./argon2_bind.json;}
 {name="argparse";value=./argparse.json;}
@@ -115,6 +118,7 @@
 {name="beanstalkd";value=./beanstalkd.json;}
 {name="bearlibterminal";value=./bearlibterminal.json;}
 {name="bearssl";value=./bearssl.json;}
+{name="benchy";value=./benchy.json;}
 {name="bencode";value=./bencode.json;}
 {name="bgfx";value=./bgfx.json;}
 {name="bgfxdotnim";value=./bgfxdotnim.json;}
@@ -294,7 +298,9 @@
 {name="dropbox_filename_sanitizer";value=./dropbox_filename_sanitizer.json;}
 {name="dtoa";value=./dtoa.json;}
 {name="dual";value=./dual.json;}
+{name="ducominer";value=./ducominer.json;}
 {name="duktape";value=./duktape.json;}
+{name="dumpincludes";value=./dumpincludes.json;}
 {name="eachdo";value=./eachdo.json;}
 {name="easings";value=./easings.json;}
 {name="eastasianwidth";value=./eastasianwidth.json;}
@@ -317,6 +323,8 @@
 {name="entoody";value=./entoody.json;}
 {name="envconfig";value=./envconfig.json;}
 {name="epub";value=./epub.json;}
+{name="eris";value=./eris.json;}
+{name="eris_utils";value=./eris_utils.json;}
 {name="espeak";value=./espeak.json;}
 {name="etcd_client";value=./etcd_client.json;}
 {name="eternity";value=./eternity.json;}
@@ -355,6 +363,7 @@
 {name="figures";value=./figures.json;}
 {name="fileinput";value=./fileinput.json;}
 {name="filesize";value=./filesize.json;}
+{name="filetype";value=./filetype.json;}
 {name="finals";value=./finals.json;}
 {name="finalseg";value=./finalseg.json;}
 {name="finder";value=./finder.json;}
@@ -400,6 +409,7 @@
 {name="gatabase";value=./gatabase.json;}
 {name="gcplat";value=./gcplat.json;}
 {name="gdbmc";value=./gdbmc.json;}
+{name="gemini";value=./gemini.json;}
 {name="geminim";value=./geminim.json;}
 {name="gen";value=./gen.json;}
 {name="genieos";value=./genieos.json;}
@@ -453,6 +463,7 @@
 {name="grp";value=./grp.json;}
 {name="gtk2";value=./gtk2.json;}
 {name="gtkgenui";value=./gtkgenui.json;}
+{name="guildenstern";value=./guildenstern.json;}
 {name="gungnir";value=./gungnir.json;}
 {name="gurl";value=./gurl.json;}
 {name="gyaric";value=./gyaric.json;}
@@ -463,6 +474,7 @@
 {name="hashlib";value=./hashlib.json;}
 {name="hasts";value=./hasts.json;}
 {name="hastyscribe";value=./hastyscribe.json;}
+{name="hats";value=./hats.json;}
 {name="hayaa";value=./hayaa.json;}
 {name="hcparse";value=./hcparse.json;}
 {name="hdrawing";value=./hdrawing.json;}
@@ -473,6 +485,7 @@
 {name="hmisc";value=./hmisc.json;}
 {name="hnimast";value=./hnimast.json;}
 {name="horde3d";value=./horde3d.json;}
+{name="host";value=./host.json;}
 {name="hostname";value=./hostname.json;}
 {name="hpack";value=./hpack.json;}
 {name="hparse";value=./hparse.json;}
@@ -726,6 +739,7 @@
 {name="nat_traversal";value=./nat_traversal.json;}
 {name="native_dialogs";value=./native_dialogs.json;}
 {name="natu";value=./natu.json;}
+{name="nauthy";value=./nauthy.json;}
 {name="naw";value=./naw.json;}
 {name="nbaser";value=./nbaser.json;}
 {name="ncurses";value=./ncurses.json;}
@@ -818,10 +832,12 @@
 {name="nimcuda";value=./nimcuda.json;}
 {name="nimcx";value=./nimcx.json;}
 {name="nimdeps";value=./nimdeps.json;}
+{name="nimem";value=./nimem.json;}
 {name="nimes";value=./nimes.json;}
 {name="nimetry";value=./nimetry.json;}
 {name="nimeverything";value=./nimeverything.json;}
 {name="nimfastText";value=./nimfastText.json;}
+{name="nimfcuk";value=./nimfcuk.json;}
 {name="nimfm";value=./nimfm.json;}
 {name="nimfp";value=./nimfp.json;}
 {name="nimfuzz";value=./nimfuzz.json;}
@@ -863,6 +879,7 @@
 {name="nimodpi";value=./nimodpi.json;}
 {name="nimoji";value=./nimoji.json;}
 {name="nimongo";value=./nimongo.json;}
+{name="nimosc";value=./nimosc.json;}
 {name="nimp";value=./nimp.json;}
 {name="nimp5";value=./nimp5.json;}
 {name="nimpari";value=./nimpari.json;}
@@ -921,6 +938,7 @@
 {name="nmiline";value=./nmiline.json;}
 {name="nmqtt";value=./nmqtt.json;}
 {name="noaa";value=./noaa.json;}
+{name="nobject";value=./nobject.json;}
 {name="node";value=./node.json;}
 {name="nodejs";value=./nodejs.json;}
 {name="nodesnim";value=./nodesnim.json;}
@@ -1483,6 +1501,7 @@
 {name="wxpay";value=./wxpay.json;}
 {name="wyhash";value=./wyhash.json;}
 {name="x11";value=./x11.json;}
+{name="xam";value=./xam.json;}
 {name="xcm";value=./xcm.json;}
 {name="xdo";value=./xdo.json;}
 {name="xevloop";value=./xevloop.json;}
