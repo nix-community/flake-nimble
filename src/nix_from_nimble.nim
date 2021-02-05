@@ -32,7 +32,7 @@ proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
         subdir = uri.query[7 .. ^1]
       uri.query = ""
       url = $uri
-    var args = @["--quiet", "--url", url]
+    var args = @["--quiet", "--fetch-submodules", "--url", url]
     if tag != "":
       args.add "--rev"
       args.add tag
