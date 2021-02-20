@@ -12,6 +12,34 @@ import std/algorithm, std/json, std/os, std/osproc, std/sequtils, std/streams,
     std/strutils, std/tables, std/osproc, std/tables, std/random, std/uri,
     std/monotimes, std/times
 
+proc `%`(dep: PkgTuple): JsonNode =
+  %* {"name": dep.name, "range": $dep.ver}
+
+proc `%`(pkg: PackageInfo): JsonNode =
+  result = %* {"author": pkg.author
+    , "backend": pkg.backend
+    , "bin": pkg.bin
+    , "binDir": (if pkg.binDir == "": "." else: pkg.binDir)
+    , "description": pkg.description
+    , "foreignDeps": pkg.foreignDeps
+    , "installDirs": pkg.installDirs
+    , "installExt": pkg.installExt
+    , "installFiles": pkg.installFiles
+    , "license": pkg.license
+    , "requires": pkg.requires
+    , "skipDirs": pkg.skipDirs
+    , "skipExt": pkg.skipExt
+    , "skipFiles": pkg.skipFiles
+    , "specialVersion": pkg.version
+    , "srcDir": (if pkg.srcDir == "": "." else: pkg.srcDir)
+  }
+  var dropKeys = newSeq[string]()
+  for key, val in result.fields.pairs:
+    if val.kind == JArray and val.len == 0:
+      dropKeys.add(key)
+  for key in dropKeys:
+    result.fields.del(key)
+
 proc packageVersions(pkg: Package): OrderedTable[Version, string] =
   let downMethod = pkg.downloadMethod.getDownloadMethod()
   case downMethod
@@ -42,83 +70,89 @@ proc prefetchVersion(pkg: Package; tag = ""): JsonNode =
       options = {poEchoCmd, poUsePath}).parseJson
     if subdir != "":
       result["subdir"] = %* subdir
+    result["method"] = %"git"
   of DownloadMethod.hg:
     result = execProcess(
       "nix-prefetch-hg",
       args = [pkg.url],
       options = {poEchoCmd, poUsePath}).parseJson
+    result["method"] = %"hg"
 
-proc sourcesList(pkg: Package; prev: JsonNode): JsonNode =
+proc sourcesList(pkg: Package; prev: JsonNode; options: Options): JsonNode =
   ## Generate a JSON array of source code versions and digests.
   ## The result is a combination of previously collected
   ## and freshly generated data.
-  result = newJObject()
-  result["method"] = %* pkg.downloadMethod
   var table = initOrderedTable[Version, JsonNode]()
 
-  if prev.contains "src":
-    let src = prev["src"]
-    if src.contains "versions":
-      for e in src["versions"].items:
-        # collect previous versions
-        let version = e["name"].getStr.Version
-        table[version] = e["value"]
+  if prev.contains "versions":
+    for e in prev["versions"].getElems:
+      # collect previous versions
+      let version = e["version"].getStr.Version
+      table[version] = e
 
   for version, tag in pkg.packageVersions:
     # collect current versions
-    if table.contains version:
-      table[version]["url"] = %* pkg.url
-    else:
-      table[version] = prefetchVersion(pkg, tag)
+    var data = table.mgetOrPut(version, newJObject())
+    if not (data.hasKey("nimble") or data.hasKey("source")):
+      data.fields.clear()
+      let source = prefetchVersion(pkg, tag)
+      var pkgPath = source["path"].getStr
+      if source.hasKey "subdir":
+        pkgPath.add('/')
+        pkgPath.add(source["subdir"].getStr)
+      data["nimble"] = %getPkgInfo(pkgPath, options)
+      data["source"] = source
 
-  var versionList = newJArray()
-  for version, value in table:
-    versionList.add( %*
-      {"name": (string)version
-      , "value": value
-      })
-  if versionList.len == 0:
-    versionList.add( %*
-      {"name": "HEAD"
-      , "value": prefetchVersion(pkg)
-      })
+  result = newJArray()
+  for version, value in table.mpairs:
+    value["version"] = %($version)
+    result.add(value)
+  if result.len == 0:
+    let
+      source = prefetchVersion(pkg)
+      nimble = %getPkgInfo(source["path"].getStr, options)
+    result.add( %* {"nimble": nimble, "source": source, "version": "HEAD"})
+    # publishing an unversioned package is a lazy fuckup
   proc cmpVer(x, y: JsonNode): int =
     let
-      xn = x["name"].str
-      yn = y["name"].str
+      xn = x["version"].str
+      yn = y["version"].str
     if xn == "HEAD" and yn == "HEAD": return 0
     elif xn == "HEAD": return 1
     elif yn == "HEAD": return -1
     cmp(newVersion(xn), newVersion(yn))
-  sort(versionList.elems, cmpVer, SortOrder.Descending)
-  result["versions"] = versionList
+  sort(result.elems, cmpVer, SortOrder.Descending)
 
-proc generatePackageJson(pkg: Package; prev: JsonNode): JsonNode =
-  %*{"homepage": pkg.web, "src": sourcesList(pkg, prev)}
+proc generatePackageJson(pkg: Package; prev: JsonNode;
+    options: Options): JsonNode =
+  %*{"homepage": pkg.web, "versions": sourcesList(pkg, prev, options)}
 
-proc createPackageFile(path: string; pkg: Package) =
-  let jsonPkg = generatePackageJson(pkg, newJObject())
-  writeFile(path, pretty jsonPkg)
+proc createPackageFile(path: string; pkg: Package; options: Options) =
+  let jsonPkg = generatePackageJson(pkg, newJObject(), options)
+  if jsonPkg["versions"].len > 0:
+    writeFile(path, $jsonPkg)
 
-proc updatePackageFile(path: string; pkg: Package) =
-  let jsonPkg = generatePackageJson(pkg, parseFile path)
-  writeFile(path, pretty jsonPkg)
+proc updatePackageFile(path: string; pkg: Package; options: Options) =
+  let jsonPkg = generatePackageJson(pkg, parseFile path, options)
+  if jsonPkg["versions"].len > 0:
+    writeFile(path, $jsonPkg)
+  else:
+    removeFile(path)
 
 proc exit() {.noconv.} =
-  var indexList: seq[Value]
+  type Pair = array[2, string]
+  var indexList = newSeq[Pair]()
   for kind, path in walkDir("packages", relative = true):
     if kind == pcFile and path.endsWith ".json":
       var name = path
-      name.removeSuffix ".json";
-      let pair = [("name", name.toNix), ("value", ("./"&path).toPath)].toNix
-      indexList.add(pair)
-  sort(indexList) do (x, y: Value) -> int:
-    cmp(x["name"].str, y["name"].str)
+      name.removeSuffix(".json")
+      indexList.add([toLower(name), toPath("./"&path).path])
+  sort(indexList) do (x, y: Pair) -> int: cmp(x[0], y[0])
   let stream = openFileStream("packages/default.nix", fmWrite)
-  stream.writeLine("[")
+  stream.writeLine("{")
   for pair in indexList:
-    stream.writeLine(pair)
-  stream.writeLine("]")
+    stream.writeLine("  \"$1\" = $2;" % pair)
+  stream.writeLine("}")
   close stream
   quit 0
 
@@ -161,75 +195,25 @@ proc generateSources(options: Options) =
     let progress = "[" & $percent & "% " & $(i+1) & "/" & $pkgList.len & " ETA~" & eta & "]"
 
     let jsonPath = "packages/" & pkg.name & ".json"
-    if existsFile jsonPath:
+    if fileExists jsonPath:
       echo progress, " update ", jsonPath
       try:
-        updatePackageFile(jsonPath, pkg)
+        updatePackageFile(jsonPath, pkg, options)
       except:
         echo "failed to update package for ", pkg.name
         echo getCurrentExceptionMsg()
     else:
       echo progress, " create ", jsonPath
-      try: createPackageFile(jsonPath, pkg)
+      try: createPackageFile(jsonPath, pkg, options)
       except:
         echo "failed to create package for ", pkg.name
         echo getCurrentExceptionMsg()
   exit()
 
-proc toNix(dep: PkgTuple): Value =
-  [ ("name", dep.name.toNix)
-  , ("range", ($dep.ver).toNix)
-  ].toNix
-
-proc generateInfo(options: Options) =
-  let args = options.action.arguments
-  if args.len != 1:
-    echo "a single package directory argument must be passed"
-    quit -1
-  let pkgDir = args[0]
-  cli.setSuppressMessages(true)
-  let p = getPkgInfo(pkgDir, options)
-  let nimbleAttrs =
-    [ ("specialVersion", p.version.toNix)
-    , ("skipDirs", p.skipDirs.toNix)
-    , ("skipFiles", p.skipFiles.toNix)
-    , ("skipExt", p.skipExt.toNix)
-    , ("installDirs", p.installDirs.toNix)
-    , ("installFiles", p.installFiles.toNix)
-    , ("installExt", p.installExt.toNix)
-    , ("requires", p.requires.map(toNix).toNix)
-    , ("bin", p.bin.toNix)
-    , ("binDir", (if p.binDir == "": "." else: p.binDir).toNix)
-    , ("srcDir", (if p.srcDir == "": "." else: p.srcDir).toNix)
-    , ("backend", p.backend.toNix)
-    , ("foreignDeps", p.foreignDeps.toNix)
-  ].toNix
-
-  let attrs =
-    [ ("pname", p.name.toNix)
-    , ("version", p.version.toNix)
-    , ("nimble", nimbleAttrs)
-    , ("meta",
-      [ ("description", p.description.toNix)
-      , ("license", p.license.toNix)
-      ].toNix)
-    ].toNix
-  echo attrs
-
 proc main() =
-  let options = parseCmdLine()
-  case options.action.typ
-  of actionCustom:
-    case options.action.command
-    of "generate":
-      generateSources(options)
-    of "info":
-      generateInfo(options)
-    else:
-      echo "unhandled command ", options.action.command
-      quit -1
-  else:
-    echo "unhandled action ", options.action.typ
-    quit -1
+  var options = parseCmdLine()
+  if options.action.typ != actionCustom:
+    options.action = Action(typ: actionCustom)
+  generateSources(options)
 
 main()

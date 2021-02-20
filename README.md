@@ -11,7 +11,7 @@ This repository contains experimental-grade, auto-generated
 ## Usage
 
 ```shell
-nix run nimble#NimTacToe
+nix run nimble#fugitive
   # Build and execute a Nimble binary
 
 nix dev-shell nimble
@@ -20,22 +20,22 @@ nix dev-shell nimble
 
 ## Synchronization
 
-To update the package definitions, invoke the Makefile:
-
 ```sh
-make
-# or
-nix run nixpkgs#gnumake -c make
+nix run .#packages-updater
+
+# …or to update an invidual package…
+
+nix run .#packages-updater generate foobar
 ```
 
-This will prefetch the repositories of new and updated Nimble packages and 
-record the necessary metadata to fetch the source as a fixed-output derivation. 
-Each package has such a fixed-output that is used as a input to a derivations 
+This will prefetch the repositories of new and updated Nimble packages and
+record the necessary metadata to fetch the source as a fixed-output derivation.
+Each package has such a fixed-output that is used as a input to a derivations
 that produce metadata to (attempt to) build the package.
 
 ## Upstream
 
-Dependencies from Nixpkgs can be declared upstream from the *.nimble file. This 
+Dependencies from Nixpkgs can be declared upstream from the *.nimble file. This
 feature is experimental and still needs to be negotiated with the Nimble team.
 
 ```nim
