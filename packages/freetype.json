@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/jangko/freetype",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/jangko/freetype",
-          "rev": "202ac6ac374b7f5320de68ed31fdae3eee42d7bc",
-          "date": "2017-05-19T21:17:49+07:00",
-          "sha256": "072py3ljh55ni177abi5bxmy9i156p7lv560qwhhk2cbpzd8h1zl",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/jangko/freetype","versions":[{"nimble":{"author":"Andri Lim","backend":"c","binDir":".","description":"FreeType2 library wrapper","installDirs":["freetype"],"license":"MIT","requires":[{"name":"nim","range":">= 0.16.0"}],"specialVersion":"0.1.1","srcDir":"."},"source":{"url":"https://github.com/jangko/freetype","rev":"b41584042aa5fccd82142341e6241af8d4de714e","date":"2020-12-16T20:50:42+07:00","path":"/nix/store/mn0wjbw5g8ifwbvjj8jlciicchd6hcxy-freetype","sha256":"1sdrir30aff8zvsn5b2r2d3b6771dp8ga58xq8z51yla1wlcrqlx","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

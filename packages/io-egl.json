@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nimious/io-egl",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nimious/io-egl.git",
-          "rev": "83439cd11aceb1b76b50f628d80fdd740b1077e3",
-          "date": "2019-06-21T00:29:30-04:00",
-          "sha256": "0aqiw38lfi8q2mxxj4lr4lzi4gdn2ghfs5wxi6z4k8c51fbc3sr8",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nimious/io-egl","versions":[{"nimble":{"author":"Gerke Max Preussner <info@nimio.us>","backend":"c","binDir":".","description":"Bindings for EGL, the native platform interface for rendering APIs","license":"MIT","requires":[{"name":"nimrod","range":"> 0.9.2"},{"name":"x11","range":"any version"}],"specialVersion":"0.1","srcDir":"src"},"source":{"url":"https://github.com/nimious/io-egl.git","rev":"83439cd11aceb1b76b50f628d80fdd740b1077e3","date":"2019-06-21T00:29:30-04:00","path":"/nix/store/kbw723z4cppip0bk49293s9vpg42yh9s-io-egl","sha256":"0aqiw38lfi8q2mxxj4lr4lzi4gdn2ghfs5wxi6z4k8c51fbc3sr8","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

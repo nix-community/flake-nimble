@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/achesak/nim-gitapi",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/achesak/nim-gitapi",
-          "rev": "bad12da29e4793534f7d5c4cf4532a22d8111ec7",
-          "date": "2017-07-22T21:56:08-05:00",
-          "sha256": "1qs4j12864sgkgy527rfqs1c5ysy61qr4z5pa3skr4gi932156fk",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/achesak/nim-gitapi","versions":[{"nimble":{"author":"Adam Chesak","backend":"c","binDir":".","description":"module for working with git version control software","installFiles":["gitapi.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.13"}],"specialVersion":"0.2","srcDir":"."},"source":{"url":"https://github.com/achesak/nim-gitapi","rev":"bad12da29e4793534f7d5c4cf4532a22d8111ec7","date":"2017-07-22T21:56:08-05:00","path":"/nix/store/w0x8chpmfi4nary1xz1lqaksbgi6phnz-nim-gitapi","sha256":"1qs4j12864sgkgy527rfqs1c5ysy61qr4z5pa3skr4gi932156fk","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/PMunch/libkeepass",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/PMunch/libkeepass",
-          "rev": "77772292d18d515e5e9839cc0f31eed30053c7dd",
-          "date": "2019-08-26T10:43:05+02:00",
-          "sha256": "1w7nv39f5c9i29bpan86x2bl2ryzvn730sc542na4rhwijcv36pz",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/PMunch/libkeepass","versions":[{"nimble":{"author":"Peter Munch-Ellingsen","backend":"c","binDir":".","description":"Library for reading KeePass files and decrypt the passwords within it","license":"MIT","requires":[{"name":"nim","range":">= 0.17.2"},{"name":"nimSHA2","range":">= 0.1.1"},{"name":"nimAES","range":">= 0.1.1"},{"name":"zip","range":">= 0.1.1"}],"specialVersion":"0.2.0","srcDir":"src"},"source":{"url":"https://github.com/PMunch/libkeepass","rev":"77772292d18d515e5e9839cc0f31eed30053c7dd","date":"2019-08-26T10:43:05+02:00","path":"/nix/store/r066cf9ssrsmwawkaakf9caidmbqv687-libkeepass","sha256":"1w7nv39f5c9i29bpan86x2bl2ryzvn730sc542na4rhwijcv36pz","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

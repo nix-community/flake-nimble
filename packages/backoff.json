@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/CORDEA/backoff",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.1",
-        "value": {
-          "url": "https://github.com/CORDEA/backoff",
-          "rev": "e1705de060f8c5f3ccd4d0621192ddda37175913",
-          "date": "2018-11-18T15:37:20+09:00",
-          "sha256": "13296v6xqcy58bvznnrb6pvfp61n6mfhmfij628qc8sljb1x8pl9",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/CORDEA/backoff","versions":[{"nimble":{"author":"Yoshihiro Tanaka","backend":"c","binDir":".","description":"Implementation of exponential backoff for nim.","license":"Apache License 2.0","requires":[{"name":"nim","range":">= 0.18.0"}],"specialVersion":"0.1","srcDir":"src"},"source":{"url":"https://github.com/CORDEA/backoff","rev":"e1705de060f8c5f3ccd4d0621192ddda37175913","date":"2018-11-18T15:37:20+09:00","path":"/nix/store/y5gdlc5pjic8rxvm07nqi9jw7y988jyj-backoff","sha256":"13296v6xqcy58bvznnrb6pvfp61n6mfhmfij628qc8sljb1x8pl9","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.1"}]}

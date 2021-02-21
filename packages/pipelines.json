@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/calebwin/pipelines",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.1.0",
-        "value": {
-          "url": "https://github.com/calebwin/pipelines",
-          "rev": "3543e71d4504bd0947e6ca836ab774e328a8bf70",
-          "date": "2019-02-11T09:00:40-08:00",
-          "sha256": "0mxcx4pccf19r2hibh03h2wsfj9qnbkijvx99c40zaw659009qw8",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/calebwin/pipelines","versions":[{"nimble":{"author":"calebwin","backend":"c","bin":["pipelines/pipelines"],"binDir":".","description":"A tiny framework & language for crafting massively parallel data pipelines","installDirs":["pipelines"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.2"},{"name":"python","range":">= 0.0.0"}],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/calebwin/pipelines","rev":"3543e71d4504bd0947e6ca836ab774e328a8bf70","date":"2019-02-11T09:00:40-08:00","path":"/nix/store/mrb3rs98x22qnj63cc2ivndrvd8jdz73-pipelines","sha256":"0mxcx4pccf19r2hibh03h2wsfj9qnbkijvx99c40zaw659009qw8","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.1.0"}]}

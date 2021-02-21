@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-eth",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-eth",
-          "rev": "44400ee5491e6db87b1a7ba1d5ef049a1ce2bce6",
-          "date": "2019-10-29T14:44:26+02:00",
-          "sha256": "1ga52s2yq0i2hrb2gj6jhcfz69wcgr1giky2z8nlzw2z09hjp5s7",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-eth","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Ethereum Common library","installDirs":["eth"],"license":"MIT","requires":[{"name":"nim","range":">= 1.2.0"},{"name":"nimcrypto","range":"any version"},{"name":"stint","range":"any version"},{"name":"secp256k1","range":"any version"},{"name":"rocksdb","range":"any version"},{"name":"chronos","range":"any version"},{"name":"chronicles","range":"any version"},{"name":"stew","range":"any version"},{"name":"nat_traversal","range":"any version"},{"name":"metrics","range":"any version"},{"name":"sqlite3_abi","range":"any version"},{"name":"confutils","range":"any version"},{"name":"testutils","range":"any version"}],"skipDirs":["tests"],"specialVersion":"1.0.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-eth","rev":"e8fbd3a83e17fbb990bcc7912b50934cce47a012","date":"2021-02-17T15:43:05+01:00","path":"/nix/store/4x6wmppqrl3za4x9jdllk90bm3m58wdd-nim-eth","sha256":"0q0xyliq3xkm5z584cmq4lcz4yi56r30n1ab2aiavqk9s23206vx","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nim-lang/lua",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nim-lang/lua",
-          "rev": "ffa21d38172a6f654066f4c2c761d0cb2e915ffa",
-          "date": "2016-07-31T13:24:19+02:00",
-          "sha256": "0j9090vhx39kcic8k2sglda28h0ski5bs7lzcpkdilj97v8v8nzv",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nim-lang/lua","versions":[{"nimble":{"author":"Andreas Rumpf","backend":"c","binDir":".","description":"Wrapper to interface with the Lua interpreter","license":"MIT","requires":[{"name":"nim","range":">= 1.0.0"}],"specialVersion":"1.0","srcDir":"src"},"source":{"url":"https://github.com/nim-lang/lua","rev":"ed117394cef80e1de48055b238ce251645e2e386","date":"2020-04-21T22:17:38+02:00","path":"/nix/store/qw53b3f00a72a6610yix5gpfrd6k6b44-lua","sha256":"11f9zxpcqbqjgi876hlad16kjqx4bm6jjxj8avr0ypm2xsb3y16f","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

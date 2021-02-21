@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/FedericoCeratto/nim-circleci",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/FedericoCeratto/nim-circleci",
-          "rev": "6da50b7f8f60fb3b8c6cad6f003c6278c76e0900",
-          "date": "2016-07-11T23:08:46+01:00",
-          "sha256": "07j9941spkf1yh1ph082dq7rrxyryw862avhs44f8c4ms3xzk4r3",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/FedericoCeratto/nim-circleci","versions":[{"nimble":{"author":"Federico Ceratto","backend":"c","bin":["circleci_client"],"binDir":".","description":"CircleCI API client","installFiles":["circleci_client.nim"],"license":"LGPLv3","requires":[{"name":"nim","range":">= 0.14.2"}],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/FedericoCeratto/nim-circleci","rev":"6da50b7f8f60fb3b8c6cad6f003c6278c76e0900","date":"2016-07-11T23:08:46+01:00","path":"/nix/store/qzvq5i85ik3kpplcrdznchw6lhp2mq6x-nim-circleci","sha256":"07j9941spkf1yh1ph082dq7rrxyryw862avhs44f8c4ms3xzk4r3","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

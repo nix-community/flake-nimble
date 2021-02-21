@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/gokr/sprymicro",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/gokr/sprymicro",
-          "rev": "f4ae830760d0a7fddb79bf80cc595e8239d8b3c4",
-          "date": "2017-12-01T23:06:21+01:00",
-          "sha256": "0xcg1vzycgv10jgmpl9xv62xn3g0lhhlnyzfhnkx7pdh9qbjxxaf",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/gokr/sprymicro","versions":[{"nimble":{"author":"Göran Krampe","backend":"c","bin":["sprymicro","sprymin"],"binDir":".","description":"Small demo Spry interpreters","installFiles":["sprymicro.nim"],"license":"MIT","requires":[{"name":"spryvm","range":"any version"}],"skipExt":["nim","nim"],"specialVersion":"0.0.2","srcDir":"."},"source":{"url":"https://github.com/gokr/sprymicro","rev":"f4ae830760d0a7fddb79bf80cc595e8239d8b3c4","date":"2017-12-01T23:06:21+01:00","path":"/nix/store/j3pbvmpdxkhxzpicaxw7av0yaph07zh7-sprymicro","sha256":"0xcg1vzycgv10jgmpl9xv62xn3g0lhhlnyzfhnkx7pdh9qbjxxaf","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

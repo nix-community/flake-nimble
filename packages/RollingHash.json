@@ -1,18 +1,1 @@
-{
-  "homepage": "https://marcazar.github.io/RollingHash",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/MarcAzar/RollingHash",
-          "rev": "93be628dc5b387ae235ceec0fef0d1914c5d3500",
-          "date": "2019-04-02T15:28:15+03:00",
-          "sha256": "0kwglf5bsf27dmr89xs5szdh5p30rzv0rl99cjxwyayryhbvpsgr",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://marcazar.github.io/RollingHash","versions":[{"nimble":{"author":"Marc Azar","backend":"c","binDir":".","description":"A high performance Nim implementation of a Cyclic Polynomial Hash, aka BuzHash, and Rabin-Karp algorithm.","license":"MIT","requires":[{"name":"nim","range":">= 0.19.2"}],"specialVersion":"0.3.1","srcDir":"src"},"source":{"url":"https://github.com/MarcAzar/RollingHash","rev":"93be628dc5b387ae235ceec0fef0d1914c5d3500","date":"2019-04-02T15:28:15+03:00","path":"/nix/store/j3f28dj1vzd9nbv1mynib5r3a77b14nf-RollingHash","sha256":"0kwglf5bsf27dmr89xs5szdh5p30rzv0rl99cjxwyayryhbvpsgr","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

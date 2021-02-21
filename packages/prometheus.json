@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/dom96/prometheus",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/dom96/prometheus",
-          "rev": "58cfa35c8b523928bfc04be33a362cf2073ea277",
-          "date": "2019-07-27T00:51:32+01:00",
-          "sha256": "0bv07ans9zc4gh14pd3vxfcmfs084kqy2zar85lspsp4h3w0xyr1",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/dom96/prometheus","versions":[{"nimble":{"author":"Dominik Picheta","backend":"c","binDir":".","description":"A prometheus instrumentation library for Nim","license":"MIT","requires":[{"name":"nim","range":">= 0.19.4"}],"specialVersion":"0.1.0","srcDir":"src"},"source":{"url":"https://github.com/dom96/prometheus","rev":"eb4d67c1a84d4bd74cbd7f2a2065b60bcb8bad34","date":"2020-07-23T20:59:50+01:00","path":"/nix/store/m0xnggh718zq7pbxccil4h8asdyygrjs-prometheus","sha256":"1idbpcg8246vxn0ghg7pc93jdx9g8kmrxy0z5qfhqrgfxh9s6n4m","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

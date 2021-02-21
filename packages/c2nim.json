@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nim-lang/c2nim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nim-lang/c2nim",
-          "rev": "57f2445e10beadd1efc1dfd1deaeb2f6177d670e",
-          "date": "2019-10-29T12:23:48+01:00",
-          "sha256": "0xhf0yxjsmzdplll72alvrakg1rhzh5v63wx2r5prjcmqsv0vv9d",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nim-lang/c2nim","versions":[{"nimble":{"author":"Andreas Rumpf","backend":"c","bin":["c2nim"],"binDir":".","description":"c2nim is a tool to translate Ansi C code to Nim.","installFiles":["c2nim.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"}],"skipDirs":["doc"],"skipExt":["nim","nim"],"specialVersion":"0.9.14","srcDir":"."},"source":{"url":"https://github.com/nim-lang/c2nim","rev":"e671a5ce256149514677aa82581319d629492230","date":"2021-02-09T13:46:43+01:00","path":"/nix/store/g1cmbm5lkqhkj1pfmf4qx3658ww1zq5k-c2nim","sha256":"019a7z5mz3w0pdcg2y1n57w864i1wjw55fg1frf7j1ncdvr40gqi","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

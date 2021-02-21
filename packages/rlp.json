@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-rlp",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-rlp",
-          "rev": "1aab36302866ca8f50a98333663a1b9f1f9ff32b",
-          "date": "2019-07-02T17:13:38+02:00",
-          "sha256": "14rc1vhs281a1awdn5ka48spcm27ihqc6mkmh9pbsvz7ya1lk2fg",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-rlp","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","bin":["rlp/bin/rlp_inspect"],"binDir":".","description":"RLP serialization library for Nim","installDirs":["rlp","rlp"],"installFiles":["rlp.nim"],"license":"Apache License 2.0","requires":[{"name":"nim","range":">= 0.17.0"},{"name":"ranges","range":"any version"}],"skipDirs":["tests"],"specialVersion":"1.0.1","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-rlp","rev":"1aab36302866ca8f50a98333663a1b9f1f9ff32b","date":"2019-07-02T17:13:38+02:00","path":"/nix/store/hs6hx7k7cnmq8vfwm98l41gwdrc7cl9k-nim-rlp","sha256":"14rc1vhs281a1awdn5ka48spcm27ihqc6mkmh9pbsvz7ya1lk2fg","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

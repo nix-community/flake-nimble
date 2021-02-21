@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-daemon",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-daemon",
-          "rev": "6d097c04ac81dfa43dfd9e4c20d6bd359f030153",
-          "date": "2019-01-08T10:47:14+01:00",
-          "sha256": "0zxf4fky4ywy224z4pg3jrwiasl9v3zk7ss4dva3jq993cbg9x7k",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-daemon","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Cross-platform process daemonization","installFiles":["daemon.nim"],"license":"Apache License 2.0 or MIT","requires":[{"name":"nim","range":">= 0.18.0"}],"skipDirs":["tests","Nim","nim"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-daemon","rev":"6d097c04ac81dfa43dfd9e4c20d6bd359f030153","date":"2019-01-08T10:47:14+01:00","path":"/nix/store/fx1gic0y2s79q3cqmjzk6c289z52nz9w-nim-daemon","sha256":"0zxf4fky4ywy224z4pg3jrwiasl9v3zk7ss4dva3jq993cbg9x7k","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

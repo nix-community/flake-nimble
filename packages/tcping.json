@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/pdrb/tcping",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "1.0.0",
-        "value": {
-          "url": "https://github.com/pdrb/tcping",
-          "rev": "411f7678da744b68b963dea93d8ce7dd8bb7e46d",
-          "date": "2019-09-25T20:44:28-03:00",
-          "sha256": "129v6pfvncw0mf4kmyyk9swhzw2crnrmwl6r84kicx5d97ghqc34",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/pdrb/tcping","versions":[{"nimble":{"author":"Pedro Buteri Gonring","backend":"c","bin":["tcping"],"binDir":".","description":"Ping hosts using tcp packets","license":"MIT","requires":[{"name":"nim","range":">= 0.20.2"}],"skipExt":["nim"],"specialVersion":"1.0.0","srcDir":"src"},"source":{"url":"https://github.com/pdrb/tcping","rev":"411f7678da744b68b963dea93d8ce7dd8bb7e46d","date":"2019-09-25T20:44:28-03:00","path":"/nix/store/9805l7ciji9hd1b7npixj4pz36s3l7d7-tcping","sha256":"129v6pfvncw0mf4kmyyk9swhzw2crnrmwl6r84kicx5d97ghqc34","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"1.0.0"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/davidgarland/sol",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/davidgarland/sol",
-          "rev": "35c6dcea4d14fc203fbf423ca21aa9bcb5e19d61",
-          "date": "2019-10-08T22:45:02-05:00",
-          "sha256": "1xrhd5jw7m572axdq9c945c3l916rp0nfnv3d02082sx3nq0yni1",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/davidgarland/sol","versions":[{"nimble":{"author":"davidgarland","backend":"c","binDir":".","description":"A portable SIMD-accelerated vector library written in C99 with Nim bindings.","license":"MIT","requires":[{"name":"nim","range":">= 1.2.0"}],"specialVersion":"0.4.0","srcDir":"src"},"source":{"url":"https://github.com/davidgarland/sol","rev":"2611b568b0bb3b888ca59c7bb3c5e61a93102221","date":"2020-08-28T13:22:05-05:00","path":"/nix/store/ha3vqzyd613x174mlv9pk6zab2dlnk7i-sol","sha256":"151cgs3z7qz34md5iyxxqz3q50kg3yi8v341igdcvm3wn0xq21pr","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

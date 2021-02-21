@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/FedeOmoto/llvm",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/FedeOmoto/llvm",
-          "rev": "389448012ebf1b8a577c56247a85580e879a3709",
-          "date": "2015-07-21T14:32:43-03:00",
-          "sha256": "1paabk9q9hgq1g4a55nq1hvzkh1pijlcnwzd3vbm1r1kikgyl8ab",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/FedeOmoto/llvm","versions":[{"nimble":{"author":"Federico Omoto","backend":"c","binDir":".","description":"LLVM wrapper","license":"MIT","requires":[{"name":"nim","range":">= 0.11.2"}],"specialVersion":"3.5","srcDir":"src"},"source":{"url":"https://github.com/FedeOmoto/llvm","rev":"389448012ebf1b8a577c56247a85580e879a3709","date":"2015-07-21T14:32:43-03:00","path":"/nix/store/3kjbyckfly73frkax68zllfcdri4l1r4-llvm","sha256":"1paabk9q9hgq1g4a55nq1hvzkh1pijlcnwzd3vbm1r1kikgyl8ab","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

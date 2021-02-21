@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/yglukhov/coverage",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/yglukhov/coverage",
-          "rev": "4bc8d71e91e84369292b509809f49a702530f7e6",
-          "date": "2019-07-07T13:21:37+03:00",
-          "sha256": "0w8cx5cx04xfcvwyylyiigzq5jbd7czmpwll627xamfrby0a31ss",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/yglukhov/coverage","versions":[{"nimble":{"author":"Yuriy Glukhov","backend":"c","bin":["nimcoverage"],"binDir":".","description":"Code coverage library for Nim","installFiles":["coverageTemplate.html","coverage.nim","coverage.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"},{"name":"nake","range":"any version"}],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/yglukhov/coverage","rev":"fe1c51e8cd235509e700c689b5646b730d3617ff","date":"2019-12-18T07:10:36+02:00","path":"/nix/store/r5qnqg1sfjxw3h8jkhmxlfw96909i105-coverage","sha256":"0ihw4m46a421lrv1ygsfbzcmaxxj5926w577nqggiiz6vninc3n4","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

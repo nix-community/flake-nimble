@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nim-lang/iup",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nim-lang/iup",
-          "rev": "684091e90451b7387dfeeb5eba60c33c61ed90e5",
-          "date": "2018-10-11T22:40:33+02:00",
-          "sha256": "0pqyzlpp8j46z7v90r0k5cg92nbcpkpz8mv6wp77w1hy7sqsaxi1",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nim-lang/iup","versions":[{"nimble":{"author":"Andreas Rumpf","backend":"c","binDir":".","description":"Nim wrapper for IUP","installFiles":["iup.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"}],"specialVersion":"3.0.0","srcDir":"."},"source":{"url":"https://github.com/nim-lang/iup","rev":"dfc63f3167177f617833d3f4db55b505d1022393","date":"2019-11-04T11:39:31+01:00","path":"/nix/store/12r9p0msgm08yyzq448kv8k085v1w2rx-iup","sha256":"116w7fnw9r28bsl4d3bpky917m7y5v73rlzy6wj9jwkljgn8xb52","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

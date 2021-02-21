@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/gokr/spryvm",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/gokr/spryvm",
-          "rev": "432b48d4f55d2578ef6dd9f85387450c221bd9ac",
-          "date": "2019-08-14T23:41:35+02:00",
-          "sha256": "1awiv1ibiz66yx6gf6c323sss66vk5r1wlmc7d7b7zydp01idkd5",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/gokr/spryvm","versions":[{"nimble":{"author":"Göran Krampe","backend":"c","binDir":".","description":"Homoiconic dynamic language interpreter in Nim","installDirs":["spryvm"],"license":"MIT","requires":[{"name":"nim","range":">= 1.2.0"},{"name":"python","range":"any version"},{"name":"ui","range":"any version"},{"name":"snappy","range":"any version"},{"name":"https://github.com/status-im/nim-rocksdb.git","range":"#5b1307cb1f4c85bb72ff781d810fb8c0148b1183"}],"skipDirs":["tests"],"specialVersion":"0.9.3","srcDir":"."},"source":{"url":"https://github.com/gokr/spryvm","rev":"36c2b56bb194902d33de7bcf70d3041703e107ab","date":"2020-06-09T20:15:44+02:00","path":"/nix/store/v3blw8mxafnrd1bay6jzz9ii5c7dcjhy-spryvm","sha256":"136h949szml08pimsv0csczky9ysc1g5ccmvbk9gpa7swzsph41v","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

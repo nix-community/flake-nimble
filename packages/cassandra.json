@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/yglukhov/cassandra",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/yglukhov/cassandra",
-          "rev": "810771007ecba6a090a10ac914fc6418bb087b93",
-          "date": "2017-10-10T15:23:45+03:00",
-          "sha256": "0kz6kmww43c772xjglpac5ws4pmc65agx25jimvmzfydf7ljlqia",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/yglukhov/cassandra","versions":[{"nimble":{"author":"Yuriy Glukhov","backend":"c","binDir":".","description":"Cassandra driver bindings","installDirs":["cassandra"],"installFiles":["cassandra.nim"],"license":"MIT","skipDirs":["tests","genbindings"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/yglukhov/cassandra","rev":"399f60a6fe2473f3e36485617d1d6e275c1b3cbb","date":"2021-01-12T14:53:47+02:00","path":"/nix/store/w3f9hnmr70zrb7i4ysbggmwwm4wrkags-cassandra","sha256":"1ksjg29qvwninw9yvkjakqvsgqa22pbpka4ir1xinzv72c4bx01l","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

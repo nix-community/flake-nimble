@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/jiro4989/edens",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "1.0.0",
-        "value": {
-          "url": "https://github.com/jiro4989/edens",
-          "rev": "19d8574deb4f95f1321bb0ef8295254d1221554a",
-          "date": "2019-11-13T02:00:44+09:00",
-          "sha256": "1gimm93ia67c7mcbiaq53v47zl5gcjvn22b4qpprmx5ci4v6krin",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/jiro4989/edens","versions":[{"nimble":{"author":"jiro4989","backend":"c","bin":["edens"],"binDir":"src","description":"A command to encode / decode text with your dictionary","installFiles":["dict.json"],"license":"MIT","requires":[{"name":"nim","range":">= 1.0.2"},{"name":"cligen","range":">= 0.9.32"}],"specialVersion":"1.0.0","srcDir":"src"},"source":{"url":"https://github.com/jiro4989/edens","rev":"19d8574deb4f95f1321bb0ef8295254d1221554a","date":"2019-11-13T02:00:44+09:00","path":"/nix/store/9lj2vd8iz5p7skkb63d3ai1b79fbg1cf-edens","sha256":"1gimm93ia67c7mcbiaq53v47zl5gcjvn22b4qpprmx5ci4v6krin","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"1.0.0"}]}

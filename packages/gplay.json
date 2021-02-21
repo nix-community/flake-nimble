@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/yglukhov/gplay",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/yglukhov/gplay",
-          "rev": "64c26cb6e4ce1ade9f182d7ffd2b1830af835f93",
-          "date": "2018-10-24T12:03:19+03:00",
-          "sha256": "19cjnbdismlirlqp8c5mfgh38c0y5znbp5263fdvx8pwqim998db",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/yglukhov/gplay","versions":[{"nimble":{"author":"Yuriy Glukhov","backend":"c","bin":["gplay"],"binDir":".","description":"Upload APK to Google Play","installFiles":["gplay.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.0"},{"name":"jwt","range":"any version"},{"name":"cligen","range":"any version"}],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/yglukhov/gplay","rev":"206fcb2efb3476edff26a4b929b2b6ed364c7859","date":"2020-03-17T10:53:21+02:00","path":"/nix/store/pzlw3lps99x6bcvsf3fhdg3q6n8hci87-gplay","sha256":"0g9mx8vysgh1fvidqsjywn6vwwzbyp1q7h4pvy9fhwl09cs07wdk","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

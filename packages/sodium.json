@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/zielmicha/libsodium.nim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/zielmicha/libsodium.nim",
-          "rev": "e1c88906d5958ffe56ee2590d34fdc8b2f3a96f5",
-          "date": "2019-01-01T20:16:26+01:00",
-          "sha256": "1g69wsf5j0scfcjn4pzb4grj2ywmd60r6r8iwmx1rnx021vzkfil",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/zielmicha/libsodium.nim","versions":[{"nimble":{"author":"Michał Zieliński <michal@zielinscy.org.pl>","backend":"c","binDir":".","description":"libsodium wrapper","installDirs":["sodium"],"installFiles":["sodium.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.18.0"}],"skipDirs":["tests"],"specialVersion":"0.2.0","srcDir":"."},"source":{"url":"https://github.com/zielmicha/libsodium.nim","rev":"e1c88906d5958ffe56ee2590d34fdc8b2f3a96f5","date":"2019-01-01T20:16:26+01:00","path":"/nix/store/mbr0xyd5adqd1r30lcn0h32b8pml5aw8-libsodium.nim","sha256":"1ymzrxb0i7fhrzrfbrvpcbbxn7qj0s9sgf2pkraq79gaaghq62z3","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

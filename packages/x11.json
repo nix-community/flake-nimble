@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nim-lang/x11",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nim-lang/x11",
-          "rev": "74cbb2c73be7f4b079b6f4edbadc1d1f00d9af15",
-          "date": "2019-10-15T11:03:10+02:00",
-          "sha256": "05jc1mjvx9ssgsl16fwdl3sbipn1qrpkn3wyn0zlvfswgsdvw3jy",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nim-lang/x11","versions":[{"nimble":{"author":"Andreas Rumpf","backend":"c","binDir":".","description":"Wrapper for X11","installDirs":["x11"],"license":"MIT","requires":[{"name":"nim","range":"> 0.9.2"}],"specialVersion":"1.1","srcDir":"."},"source":{"url":"https://github.com/nim-lang/x11","rev":"2093a4c01360cbb5dd33ab79fd4056e148b53ca1","date":"2021-01-07T09:46:37+01:00","path":"/nix/store/q0y6izq7845xprnw2hd40aal6sk6fp7p-x11","sha256":"0h770z36g2pk49pm5l1hmk9bi7a58w8csd7wqxcwy0bi41g74x6r","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

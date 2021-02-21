@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/geotre/wren",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/geotre/wren",
-          "rev": "42389a0be7ce1aff11a6dbfb2c6be6907ce430c1",
-          "date": "2019-01-18T12:50:25+00:00",
-          "sha256": "0fns41x12kpmswzl1mm5v13w6yib24w1p157nq2jgnxxb3cp1awm",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/geotre/wren","versions":[{"nimble":{"author":"geotre","backend":"c","binDir":".","description":"A nim wrapper for Wren, an embedded scripting language","license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"},{"name":"nimgen","range":">= 0.5.0"}],"specialVersion":"0.2.1","srcDir":"src"},"source":{"url":"https://github.com/geotre/wren","rev":"42389a0be7ce1aff11a6dbfb2c6be6907ce430c1","date":"2019-01-18T12:50:25+00:00","path":"/nix/store/6nxdy0fzflwj523gaf07jvwca5vg0ngv-wren","sha256":"0fns41x12kpmswzl1mm5v13w6yib24w1p157nq2jgnxxb3cp1awm","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

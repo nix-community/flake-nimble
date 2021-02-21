@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/jyapayne/switch-build",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.1.2",
-        "value": {
-          "url": "https://github.com/jyapayne/switch-build",
-          "rev": "8ab57a101c29c759171e25616ea32feb22f65a06",
-          "date": "2018-07-13T21:06:46+09:00",
-          "sha256": "18l14sj8r1aik85dhmaxpzpl7hk17xymj8vnpwxvclq6l699m1sm",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/jyapayne/switch-build","versions":[{"nimble":{"author":"Joey Payne","backend":"c","bin":["switch_build"],"binDir":".","description":"Nintendo Switch library libnx for Nim.","license":"The Unlicense","requires":[{"name":"nim","range":">= 0.18.1"}],"skipExt":["nim"],"specialVersion":"0.1.2","srcDir":"src"},"source":{"url":"https://github.com/jyapayne/switch-build","rev":"8ab57a101c29c759171e25616ea32feb22f65a06","date":"2018-07-13T21:06:46+09:00","path":"/nix/store/cs3yx8yl2b50qymknhn31r1s8jb496a9-switch-build","sha256":"18l14sj8r1aik85dhmaxpzpl7hk17xymj8vnpwxvclq6l699m1sm","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.1.2"}]}

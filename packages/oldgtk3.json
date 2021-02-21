@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/stefansalewski/oldgtk3",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/stefansalewski/oldgtk3",
-          "rev": "587eacb5736f1dc25db28bd739c99275787a5d17",
-          "date": "2019-06-15T09:02:57+02:00",
-          "sha256": "0aqfq34r1k87f4iy54wi5hcwlk7z0axgw8phpn4gnkd32pi8xj31",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/stefansalewski/oldgtk3","versions":[{"nimble":{"author":"Stefan Salewski","backend":"c","binDir":".","description":"Low level bindings for GTK3 related libraries","installDirs":["oldgtk3"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.0"}],"skipDirs":["common","nim-atk","nim-cairo","nim-gdk3","nim-gdk_pixbuf","nim-gio","nim-gir","nim-glib","nim-gobject","nim-gtk3","nim-gtksourceview","nim-pango","nim-rsvg","oldgtk3.bak"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/stefansalewski/oldgtk3","rev":"4e60fd1c4c08241cc22336362fc4f487c633299c","date":"2021-02-15T10:54:21+01:00","path":"/nix/store/89smnika6awbhr46a4xkm9w4h2nng8kf-oldgtk3","sha256":"1z64g4qjdgiy02rh4w316fz3qjfiqaxzhrpji7ak4dmigdaib4kj","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

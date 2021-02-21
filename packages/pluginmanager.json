@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/samdmarshall/plugin-manager",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/samdmarshall/plugin-manager",
-          "rev": "dd9729b8b21c0d7dc1b3f1c136fe1029ce520270",
-          "date": "2017-04-15T17:04:34-04:00",
-          "sha256": "1mmhf5nqilzfjlccsah4wjb2fk6k1ghx41ilxrq7c2bi84pgz8bj",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/samdmarshall/plugin-manager","versions":[{"nimble":{"author":"Samantha Marshall","backend":"c","binDir":".","description":"Simple plugin implementation","license":"BSD 3-Clause","requires":[{"name":"nim","range":">= 0.16.0"}],"skipDirs":["tests"],"specialVersion":"0.1.0","srcDir":"src"},"source":{"url":"https://github.com/samdmarshall/plugin-manager","rev":"dd9729b8b21c0d7dc1b3f1c136fe1029ce520270","date":"2017-04-15T17:04:34-04:00","path":"/nix/store/8r542kqfb2q1wgy8sqh6rmckkh8066qf-plugin-manager","sha256":"1mmhf5nqilzfjlccsah4wjb2fk6k1ghx41ilxrq7c2bi84pgz8bj","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

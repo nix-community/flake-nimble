@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-json-rpc",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-json-rpc",
-          "rev": "ef2e3cea1931fb5aa73cc79a36b677eb2f730a39",
-          "date": "2019-10-11T19:01:11+09:00",
-          "sha256": "19112p95malq0dir3rqq261kbjl0bz5mj7hh92l6l9g7rcw36jmq",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-json-rpc","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Ethereum remote procedure calls","installDirs":["json_rpc"],"license":"Apache License 2.0","requires":[{"name":"nim","range":">= 0.17.3"},{"name":"nimcrypto","range":"any version"},{"name":"stint","range":"any version"},{"name":"chronos","range":"any version"},{"name":"httputils","range":"any version"},{"name":"chronicles","range":"any version"},{"name":"https://github.com/status-im/news","range":"#status"},{"name":"chronicles","range":"any version"},{"name":"json_serialization","range":"any version"}],"skipDirs":["tests"],"specialVersion":"0.0.2","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-json-rpc","rev":"4eb39203ebd391c77d16a1c387dc8a6b7d90bc69","date":"2021-02-15T13:45:51+01:00","path":"/nix/store/h1w3hsb0drhg537gvfaiik3f09vkx2k9-nim-json-rpc","sha256":"0sbz87ysaw6capnanymrqiyaqzpw3ms1n7kp5iymskx9zswmclkv","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

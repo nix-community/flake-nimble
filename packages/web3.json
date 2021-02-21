@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-web3",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-web3",
-          "rev": "37fc46111489bc521731b59f52f42b6327fa7829",
-          "date": "2019-10-30T15:05:44+02:00",
-          "sha256": "0sikdwp632kxwl28iblh8pgsw2ydajbw12whfgsamiimrjl9dkw5",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-web3","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"This is the humble begginings of library similar to web3.[js|py]","installDirs":["web3"],"installFiles":["web3.nim"],"license":"MIT or Apache License 2.0","requires":[{"name":"nim","range":">= 0.18.0"},{"name":"chronicles","range":"any version"},{"name":"chronos","range":"any version"},{"name":"eth","range":"any version"},{"name":"faststreams","range":"any version"},{"name":"json_rpc","range":"any version"},{"name":"json_serialization","range":"any version"},{"name":"nimcrypto","range":"any version"},{"name":"stew","range":"any version"},{"name":"stint","range":"any version"}],"specialVersion":"0.0.1","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-web3","rev":"21b465fcd58460e6018dcb1048254f2514696778","date":"2021-02-03T21:35:17+02:00","path":"/nix/store/wwzj0xf8lfri53h448k5i4x9w9bnhpsz-nim-web3","sha256":"1p13nrmxs28iyz26zivz61cfk8r1by91j3yvmvid0d3r15x5qw8n","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

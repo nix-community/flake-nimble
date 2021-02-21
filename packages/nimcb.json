@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/AdrianV/nimcb",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/AdrianV/nimcb",
-          "rev": "b07815e1f0174da6035e9570f390dd9b833b715a",
-          "date": "2018-09-19T17:36:12+02:00",
-          "sha256": "1m1cyzn2n0xghl2f7gvjvhshard3461b9n48jzdmjypy7vc7gi6s",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/AdrianV/nimcb","versions":[{"nimble":{"author":"Adrian Veith","backend":"c","bin":["nimcb"],"binDir":".","description":"Integrate nim projects in the C++Builder build process","license":"MIT","requires":[{"name":"nim","range":">= 0.18.1"}],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"src"},"source":{"url":"https://github.com/AdrianV/nimcb","rev":"b07815e1f0174da6035e9570f390dd9b833b715a","date":"2018-09-19T17:36:12+02:00","path":"/nix/store/3g26c38xrwwlipmihl2y8vslz7i8xi7s-nimcb","sha256":"1m1cyzn2n0xghl2f7gvjvhshard3461b9n48jzdmjypy7vc7gi6s","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

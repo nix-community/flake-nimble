@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nim-lang/pas2nim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nim-lang/pas2nim",
-          "rev": "cec4c960267e19fb7248f025b776644686da850b",
-          "date": "2015-02-26T17:36:46+01:00",
-          "sha256": "0ssxwhh7rsnpf399mldqw2msyql1w0d8mvd5l2zcxv3bwbrr3fk1",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nim-lang/pas2nim","versions":[{"nimble":{"author":"Andreas Rumpf","backend":"c","bin":["pas2nim"],"binDir":".","description":"pas2nim is a tool to translate Pascal code to Nim.","installFiles":["pas2nim.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.9.4"}],"skipExt":["nim"],"specialVersion":"0.9.6","srcDir":"."},"source":{"url":"https://github.com/nim-lang/pas2nim","rev":"cec4c960267e19fb7248f025b776644686da850b","date":"2015-02-26T17:36:46+01:00","path":"/nix/store/zfi2aqhcs9l5zc4afh3bbbv4l7ygfn7l-pas2nim","sha256":"0ssxwhh7rsnpf399mldqw2msyql1w0d8mvd5l2zcxv3bwbrr3fk1","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nimscale/isa",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nimscale/isa",
-          "rev": "19a58e4e1be29b21300e0c7e324ba74322a075a8",
-          "date": "2017-03-16T22:51:27+01:00",
-          "sha256": "0185vb4q0pi22jp9fx3s8cgz3nf3sh0z10lf21hlwyfma8bjqxb2",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nimscale/isa","versions":[{"nimble":{"author":"nimscale","backend":"c","binDir":".","description":"Nim bindings for ISA-L (Intel Storage Acceleration Library)","installDirs":["isa"],"license":"Apache License","requires":[{"name":"nim","range":">= 0.15.2"},{"name":"collections","range":">= 0.3.1"}],"skipDirs":["examples"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/nimscale/isa","rev":"19a58e4e1be29b21300e0c7e324ba74322a075a8","date":"2017-03-16T22:51:27+01:00","path":"/nix/store/0mpbjdfgcvhsadlkbp0kx76dsdkp6ksr-isa","sha256":"1fl97x18brzliclhvs548dqgx3b2br02k1qirynz5gp8wl701axs","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

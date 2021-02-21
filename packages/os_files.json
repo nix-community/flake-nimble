@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/tormund/os_files",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/tormund/os_files",
-          "rev": "5940ed86624c4ea63e134bc69618c453894d676e",
-          "date": "2019-09-09T15:31:23+03:00",
-          "sha256": "0jrzc6s3yscxdr09mr7fsxnsb66n5mwhzxqzkm9q7r8g3hs2nnfk",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/tormund/os_files","versions":[{"nimble":{"author":"Tormund","backend":"c","binDir":".","description":"Native file dialogs (x11, windows, osx) with extension filters and predefined path.\n    System file icons in any resolution (x11 with theme support, windows, osx).\n    Open file in default application (x11, windows, osx)","installDirs":["os_files"],"license":"MIT","requires":[{"name":"oldgtk3","range":"any version"},{"name":"jsbind","range":"any version"},{"name":"https://github.com/yglukhov/darwin","range":"any version"}],"specialVersion":"0.1.2","srcDir":"."},"source":{"url":"https://github.com/tormund/os_files","rev":"5c154b9f9b81d047938117c00c2579c0c3754d8b","date":"2020-12-24T21:42:31+02:00","path":"/nix/store/rpl1001wdc8kayjkvr70frwyikyp7lh4-os_files","sha256":"12bgjf7dk9wwlpjrs60p0hwwax6vg2j2dbgv7aynawh39l73zj4z","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

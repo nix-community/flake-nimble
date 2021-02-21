@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/numforge/loopfusion",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/numforge/loopfusion",
-          "rev": "99d80117a604272a691bc8e34ad4bb49da34e7c6",
-          "date": "2019-04-26T10:21:44+02:00",
-          "sha256": "0bp4kdrcvzigvmx8scqfk12mplacyfbncgvdcgck6fadpxh63pqf",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/numforge/loopfusion","versions":[{"nimble":{"author":"Mamy André-Ratsimbazafy (Numforge SARL)","backend":"c","binDir":".","description":"Loop efficiently over a variadic number of containers","installFiles":["loopfusion.nim"],"license":"MIT or Apache License 2.0","requires":[{"name":"nim","range":">= 0.18.0"}],"skipDirs":["experimental","build","tests"],"specialVersion":"0.0.1","srcDir":"."},"source":{"url":"https://github.com/numforge/loopfusion","rev":"99d80117a604272a691bc8e34ad4bb49da34e7c6","date":"2019-04-26T10:21:44+02:00","path":"/nix/store/vnvr9kiw5vkfq1bgd8g98xkm3l9bk6dj-loopfusion","sha256":"0bp4kdrcvzigvmx8scqfk12mplacyfbncgvdcgck6fadpxh63pqf","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

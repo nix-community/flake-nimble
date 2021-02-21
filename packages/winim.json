@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/khchen/winim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/khchen/winim",
-          "rev": "d32513a175e495049f481fe2a29a6731158356b3",
-          "date": "2019-09-18T17:34:13+08:00",
-          "sha256": "0zlmq1bavwx0yz9v1q8wlfkifmznhs3azbcmil1cv46bmc0rm6gw",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/khchen/winim","versions":[{"nimble":{"author":"Ward","backend":"c","bin":["winim/winimx"],"binDir":".","description":"Winim - Nim's Windows API and COM Library","installDirs":["winim"],"installFiles":["winim.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 1.0.0"}],"skipDirs":["examples","tests","docs","tcclib"],"skipExt":["nim"],"specialVersion":"3.6.0","srcDir":"."},"source":{"url":"https://github.com/khchen/winim","rev":"bffaf742b4603d1f675b4558d250d5bfeb8b6630","date":"2020-12-18T04:13:44+08:00","path":"/nix/store/mr3j85cdflyb2a2rp1yy71qcyq9q7lyj-winim","sha256":"1vwyx30ds7x9d77scq2vgs24p0mg5vz7rly5iq0p6kb5fpa3rpxa","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/jhbadger/nimbioseq",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/jhbadger/nimbioseq",
-          "rev": "56e663c400443ba13a7f81358a122e70341b44ad",
-          "date": "2018-11-27T12:43:50-05:00",
-          "sha256": "05i3dbi9hhj83gdqhwd9ciqybdgfwglfsvkknm4lpqrzjnd3v9kg",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/jhbadger/nimbioseq","versions":[{"nimble":{"author":"Jonathan Badger","backend":"c","binDir":".","description":"Nim Library for sequence (protein/nucleotide) bioinformatics","license":"BSD-3","requires":[{"name":"nim","range":">= 0.17.2"},{"name":"zip","range":">= 0.2.1"}],"skipFiles":["checkFastq.nim","extractFastx.nim","kmerCount.nim","seqSummary.nim"],"specialVersion":"0.3.20181126","srcDir":"src"},"source":{"url":"https://github.com/jhbadger/nimbioseq","rev":"56e663c400443ba13a7f81358a122e70341b44ad","date":"2018-11-27T12:43:50-05:00","path":"/nix/store/zrn60k66hblpa9wmqv9cyv1mbz9ydc72-nimbioseq","sha256":"05i3dbi9hhj83gdqhwd9ciqybdgfwglfsvkknm4lpqrzjnd3v9kg","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

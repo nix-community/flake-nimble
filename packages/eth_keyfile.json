@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-eth-keyfile",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-eth-keyfile",
-          "rev": "c09de2061d35e3094b4abff4a3b8b6ce644d8ec4",
-          "date": "2019-03-25T19:06:35-06:00",
-          "sha256": "12l5gdms67d4h56j12v3nxch0ca0sgc146ix85dzi8mvvfh3394i",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-eth-keyfile","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Tools for handling the encrypted keyfile format used to store Ethereum private keys","installDirs":["eth_keyfile"],"installFiles":["eth_keyfile.nim"],"license":"Apache License 2.0 or MIT","requires":[{"name":"nim","range":"> 0.18.0"},{"name":"nimcrypto","range":"any version"},{"name":"eth_keys","range":"any version"}],"skipDirs":["tests","Nim","nim"],"specialVersion":"0.1.1","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-eth-keyfile","rev":"c09de2061d35e3094b4abff4a3b8b6ce644d8ec4","date":"2019-03-25T19:06:35-06:00","path":"/nix/store/0anpp16chzc7nc9bbissxxzsin2na5j9-nim-eth-keyfile","sha256":"12l5gdms67d4h56j12v3nxch0ca0sgc146ix85dzi8mvvfh3394i","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

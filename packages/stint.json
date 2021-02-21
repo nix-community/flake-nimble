@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-stint",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-stint",
-          "rev": "25c2604b4b41d1b13f4a2740486507fe5f63086e",
-          "date": "2019-10-25T19:54:41+03:00",
-          "sha256": "0c3dvz77z8zqvqg2cl8yx75wxqcqcvjzrha7xmd85r1a1n9p71f6",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-stint","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Efficient stack-based multiprecision int in Nim","installDirs":["stint"],"installFiles":["stint.nim"],"license":"Apache License 2.0 or MIT","requires":[{"name":"nim","range":">= 0.19"},{"name":"stew","range":"any version"}],"skipDirs":["tests","benchmarks"],"specialVersion":"0.0.1","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-stint","rev":"bae3fc6ee4f36a33849c9dafe5a52b9b6cdf672a","date":"2021-01-07T09:26:03+07:00","path":"/nix/store/6ms7dpgby81awyqyyn692kwh4krky50i-nim-stint","sha256":"1hijfbywla7wfnhh43jkmdwcaizzmw61d2kxljvmspgipddjlrva","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

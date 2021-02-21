@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/jangko/snappy",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/jangko/snappy",
-          "rev": "ff70dfbb47ce782bdbc29598a7beba5267b285f0",
-          "date": "2019-01-10T09:42:27+07:00",
-          "sha256": "0rqii9w0yqs07fb2gw9yvgqsx66f1ds97x9zmzwpfdq1n2w10wrz",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/jangko/snappy","versions":[{"nimble":{"author":"Andri Lim","backend":"c","binDir":".","description":"Nim implementation of snappy compression algorithm","installFiles":["snappy.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"}],"skipDirs":["tests"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/jangko/snappy","rev":"d13e2ccb2acaa4e8dedce4f25e8dbf28e19278a6","date":"2020-05-18T10:50:40+07:00","path":"/nix/store/n3x6ncfnbdhszzpnf1ilr6p4wqc7p9h6-snappy","sha256":"08vbn310mk0a4w2csk95d1b14r6vf4n0msy1sks4xy6aw138bh6p","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/Araq/libcurl",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "1.0.0",
-        "value": {
-          "url": "https://github.com/Araq/libcurl",
-          "rev": "23f3d90e60d7a233b5eb27fb13e57fd198c73697",
-          "date": "2017-04-26T17:55:54+02:00",
-          "sha256": "1yz1lcclmhvji34ccymglzg535b3xfz0x4m12n3n22cxz156j63x",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/Araq/libcurl","versions":[{"nimble":{"author":"Andreas Rumpf, Dominik Picheta","backend":"c","binDir":".","description":"Nim wrapper for libcurl.","installFiles":["libcurl.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"}],"specialVersion":"1.0.0","srcDir":"."},"source":{"url":"https://github.com/Araq/libcurl","rev":"23f3d90e60d7a233b5eb27fb13e57fd198c73697","date":"2017-04-26T17:55:54+02:00","path":"/nix/store/xy82qprm1i3yzj93c7s8wyab1visp9mv-libcurl","sha256":"1yz1lcclmhvji34ccymglzg535b3xfz0x4m12n3n22cxz156j63x","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"1.0.0"}]}

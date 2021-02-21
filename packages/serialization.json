@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-serialization",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-serialization",
-          "rev": "448a03ed4bd5837e18a3c50e10c6e31d25a6c9e5",
-          "date": "2019-09-11T14:09:58-04:00",
-          "sha256": "1f07jz3rzds92mwk8k8vy9nq1r4hl6w5nzphp5gv92jl2wxa0rja",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-serialization","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"A modern and extensible serialization framework for Nim","installDirs":["serialization"],"installFiles":["serialization.nim"],"license":"Apache License 2.0","requires":[{"name":"nim","range":">= 1.2.0"},{"name":"faststreams","range":"any version"},{"name":"stew","range":"any version"}],"skipDirs":["tests"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-serialization","rev":"261de741b73601821cb6e749fc9b4092f1cc5377","date":"2021-02-18T23:08:21+02:00","path":"/nix/store/6513fwbxmxwz9xay01jin3xjn8w55gjf-nim-serialization","sha256":"11y7zzf6mxys0k5vyvq50jr2vynckhm09mn4rmxpyi7gb4qdl2i6","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

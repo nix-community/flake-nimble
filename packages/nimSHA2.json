@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/jangko/nimSHA2",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/jangko/nimSHA2",
-          "rev": "d9c52c519cec69064428f0ba222c7024aa4914a0",
-          "date": "2018-10-18T22:27:14+07:00",
-          "sha256": "1sgagsgak456d0nvvksm72k29kxc0b7dpz9z5nkqryrzzkmrk0bb",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/jangko/nimSHA2","versions":[{"nimble":{"author":"Andri Lim","backend":"c","binDir":".","description":"SHA2 secure hash algorithm - 2 - [224, 256, 384, 512 bits]","installFiles":["nimSHA2.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.11.2"}],"skipDirs":["tests","docs"],"specialVersion":"0.1.1","srcDir":"."},"source":{"url":"https://github.com/jangko/nimSHA2","rev":"ff62850ea765adb86a930b169507a5dd835e6254","date":"2021-01-23T15:02:30+07:00","path":"/nix/store/ch706cyc7bc9wps3p8j2rigwq2g1yibf-nimSHA2","sha256":"17phhmy14nf53n4c2ig5ipcz0qzjdyff5a8qk5hyxykabjq2r40a","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

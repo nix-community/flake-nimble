@@ -1,18 +1,1 @@
-{
-  "homepage": "https://gitlab.com/waylon531/tf2plug",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://gitlab.com/waylon531/tf2plug",
-          "rev": "abacf19cc05bb72b90aff41adcd2a1a9d967ebbc",
-          "date": "2019-07-08T13:49:19-07:00",
-          "sha256": "10pc8j4aqr19xnbvvvfwp9y40mlr4ivngd6rc7z1fq7yjyzszvc4",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://gitlab.com/waylon531/tf2plug","versions":[{"nimble":{"author":"Waylon Cude","backend":"c","bin":["tf2plug"],"binDir":".","description":"A mod manager for TF2","installFiles":["tf2plug.nim"],"license":"GPLv3","requires":[{"name":"nim","range":">= 0.17.0"},{"name":"docopt","range":">= 0.6.5"}],"skipExt":["nim"],"specialVersion":"0.1.3","srcDir":"."},"source":{"url":"https://gitlab.com/waylon531/tf2plug","rev":"abacf19cc05bb72b90aff41adcd2a1a9d967ebbc","date":"2019-07-08T13:49:19-07:00","path":"/nix/store/a26m9p7vnfbw20m6yap6gkpndbmqdcdp-tf2plug","sha256":"10pc8j4aqr19xnbvvvfwp9y40mlr4ivngd6rc7z1fq7yjyzszvc4","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

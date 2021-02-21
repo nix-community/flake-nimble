@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/matkuki/Nim-Impulse-Engine",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/matkuki/Nim-Impulse-Engine",
-          "rev": "c0760cd4f4def8a734bca702fc1a7eba224ed505",
-          "date": "2019-10-06T21:59:21+02:00",
-          "sha256": "149rjr956zy5gc45rh7k5nq20978igr1q4asy4m3liyk6zn104fl",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/matkuki/Nim-Impulse-Engine","versions":[{"nimble":{"author":"Matic Kukovec","backend":"c","bin":["impulse_engine"],"binDir":".","description":"Nim port of a simple 2D physics engine","installFiles":["impulse_engine.nim"],"license":"zlib","requires":[{"name":"nim","range":">= 1.0.0"},{"name":"opengl","range":">= 1.2.3"},{"name":"x11","range":">= 1.0"},{"name":"nimgl","range":">= 1.0.0"}],"skipExt":["nim"],"specialVersion":"1.6.0","srcDir":"."},"source":{"url":"https://github.com/matkuki/Nim-Impulse-Engine","rev":"c0760cd4f4def8a734bca702fc1a7eba224ed505","date":"2019-10-06T21:59:21+02:00","path":"/nix/store/9ls00f00lbls2gxwkwnpcp6yr1340l0l-Nim-Impulse-Engine","sha256":"149rjr956zy5gc45rh7k5nq20978igr1q4asy4m3liyk6zn104fl","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

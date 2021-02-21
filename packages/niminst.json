@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nim-lang/niminst",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nim-lang/niminst",
-          "rev": "f81e1948f090112f37d91f6d2f76b0d07797475c",
-          "date": "2015-11-05T00:36:26+01:00",
-          "sha256": "192b8dwksckyw2wiywn8x123phdb8iz1l6r180wdkmnmijgs5846",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nim-lang/niminst","versions":[{"nimble":{"author":"Andreas Rumpf","backend":"c","binDir":".","description":"Tool to generate installers for Nim","installFiles":["niminst.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.11.0"}],"specialVersion":"1.0.0","srcDir":"."},"source":{"url":"https://github.com/nim-lang/niminst","rev":"b30ea9685f34fce3d827f9fe016a14cb47f405ef","date":"2019-12-02T10:28:17+01:00","path":"/nix/store/1h0f15lg50dmxh681v3lj8gyqjjggksj-niminst","sha256":"0za8i9nh37wrx789j0brf2k44zdyrdicmy9znihi1vc0cxw8wqj8","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

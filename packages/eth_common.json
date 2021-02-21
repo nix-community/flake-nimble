@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-eth-common",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-eth-common",
-          "rev": "f45162ef425220f173e90aebe6efb4094af60148",
-          "date": "2019-03-25T19:07:06-06:00",
-          "sha256": "0cz4w61xmj0jrpwvnkka9khrl19zdf1jhg46m5sdph3673nhrrkq",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-eth-common","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Ethereum Common library","installDirs":["eth_common"],"installFiles":["eth_common.nim"],"license":"MIT","requires":[{"name":"nim","range":"> 0.18.0"},{"name":"rlp","range":"any version"},{"name":"eth_trie","range":"any version"},{"name":"nimcrypto","range":"any version"},{"name":"ranges","range":"any version"},{"name":"stint","range":"any version"},{"name":"byteutils","range":"any version"}],"skipDirs":["tests"],"specialVersion":"1.0.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-eth-common","rev":"f45162ef425220f173e90aebe6efb4094af60148","date":"2019-03-25T19:07:06-06:00","path":"/nix/store/ql7d9cb7misp7n367im8v1bj4hmyj5jr-nim-eth-common","sha256":"0cz4w61xmj0jrpwvnkka9khrl19zdf1jhg46m5sdph3673nhrrkq","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-blscurve",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-blscurve",
-          "rev": "cae83b3a45df51e9fccd8a0ed921a45c2d2fa93f",
-          "date": "2019-09-25T20:40:35+02:00",
-          "sha256": "1f9v8p824g0f043d07hb0bi3dnl0yj5bp6dz1sy240g697nwazhd",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-blscurve","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"BLS381-12 Curve implementation","installDirs":["blscurve"],"installFiles":["blscurve.nim"],"license":"Apache License 2.0","requires":[{"name":"nim","range":">= 1.0.4"},{"name":"nimcrypto","range":"any version"},{"name":"stew","range":"any version"}],"specialVersion":"0.0.1","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-blscurve","rev":"7e8de1e748e75a977ff4ca9aed798fc6f976fc1c","date":"2021-02-03T09:57:10+01:00","path":"/nix/store/h9fq63l5xrbdmbn13lmvnc9g3228l8is-nim-blscurve","sha256":"0bfcarg8h0kmd45kqygarv5rsdg3hgsv916q6bswvhfbqa19d2kl","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

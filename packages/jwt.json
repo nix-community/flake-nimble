@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/yglukhov/nim-jwt",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/yglukhov/nim-jwt.git",
-          "rev": "af1f26c49b0c993fa550a93f3fd50f4b63ba6585",
-          "date": "2019-10-15T20:56:32+03:00",
-          "sha256": "1s0rr7bz2505485mmsch3m3m4fz8dri20bdjd7wlm991zk8vmagd",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/yglukhov/nim-jwt","versions":[{"nimble":{"author":"Yuriy Glukhov","backend":"c","binDir":".","description":"JSON Web Tokens for Nim","installDirs":["jwt"],"installFiles":["jwt.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"},{"name":"bearssl","range":"any version"},{"name":"https://github.com/yglukhov/bearssl_pkey_decoder","range":"any version"}],"specialVersion":"0.2","srcDir":"."},"source":{"url":"https://github.com/yglukhov/nim-jwt.git","rev":"9856aab442ef22965aadfb40928806520b3b99d2","date":"2021-02-12T08:43:41+02:00","path":"/nix/store/6x40kbra29wp41ph2xl65zkhnwgcb8kr-nim-jwt","sha256":"16w0j8g0yamzpjdpzsfgnalr46vcjk2k651vq6m6zia3qanx2ziw","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

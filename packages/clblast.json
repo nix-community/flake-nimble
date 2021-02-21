@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/numforge/nim-clblast",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/numforge/nim-clblast",
-          "rev": "4a602c9135160ffc89f779432acba7e51097e717",
-          "date": "2019-08-28T18:27:57+02:00",
-          "sha256": "1yqvd8m5dglz3z0x5lkpw3gk7j3vfkp0p9wsdawarlyc23zxqa7l",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/numforge/nim-clblast","versions":[{"nimble":{"author":"Mamy André-Ratsimbazafy","backend":"c","binDir":".","description":"A wrapper for CLBlast, an OpenCL BLAS library","license":"Apache License 2.0","requires":[{"name":"nim","range":">= 0.17.2"},{"name":"opencl","range":"any version"}],"specialVersion":"0.0.1","srcDir":"src"},"source":{"url":"https://github.com/numforge/nim-clblast","rev":"4a602c9135160ffc89f779432acba7e51097e717","date":"2019-08-28T18:27:57+02:00","path":"/nix/store/rih57jc6w49gcxn6mfrpk0imhpq0k1cf-nim-clblast","sha256":"1yqvd8m5dglz3z0x5lkpw3gk7j3vfkp0p9wsdawarlyc23zxqa7l","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/PMunch/nimcr",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/PMunch/nimcr",
-          "rev": "5c9f4e963fe9a56790105d3a4041d4bbfdc0503a",
-          "date": "2019-07-23T10:45:59+02:00",
-          "sha256": "0fz1sgbpj2xnf470i03w3smaccv658zi9679bfj6xk80jjna0slp",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/PMunch/nimcr","versions":[{"nimble":{"author":"Peter Munch-Ellingsen","backend":"c","bin":["nimcr"],"binDir":".","description":"Simple program that allows you to use the shebang #!nimcr in your Nim files. It will automatically compile the file to a hidden executable in the same directory as the nim file as long as the file doesn't already exist and is younger than (ie. created after the last modification of) the script file. If it is younger it will simply run the executable saving you from compiling the script each time it is run. The output of the compiler is also ignored if the compilation is succesfull and only the output of the program is used. If the compilation fails the output will be written to stderr and the return code will match that of the compiler.","installFiles":["nimcr.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.16.0"}],"skipDirs":["examples"],"skipExt":["nim","nim"],"specialVersion":"0.3.0","srcDir":"."},"source":{"url":"https://github.com/PMunch/nimcr","rev":"fb5cf611d84e59bc0a6a2feaca93f161b75da53f","date":"2020-03-30T07:14:18+00:00","path":"/nix/store/6yrl8j0xw69cv65rf2bg2fmv51py7qs0-nimcr","sha256":"1yijkrkx0vlcs5dzwmbvqfccq64jaha9p48p5aib6wiigzy186d5","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

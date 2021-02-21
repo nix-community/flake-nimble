@@ -1,18 +1,1 @@
-{
-  "homepage": "http://dpdk.org/",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nimscale/dpdk",
-          "rev": "95cb59863364de548a6519a2638154e6a7910f32",
-          "date": "2017-03-05T11:13:38+08:00",
-          "sha256": "1wnn4zb1qwvspa5al87g4hr17c2s0rdgvzm1jjlkwm6mbb4nprm4",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"http://dpdk.org/","versions":[{"nimble":{"author":"Kean Sum Ooi","backend":"c","binDir":".","description":"Nim bindings to DPDK","installDirs":["dpdk"],"license":"Apache","requires":[{"name":"nim","range":">= 0.16.0"}],"skipDirs":["logs","dpdk-stable-16.07.2"],"skipExt":["a"],"skipFiles":["dpdk-16.07.2.tar.xz","instC_DPDK.sh","uninstC_DPDK.sh"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/nimscale/dpdk","rev":"95cb59863364de548a6519a2638154e6a7910f32","date":"2017-03-05T11:13:38+08:00","path":"/nix/store/bmh5dc5vaxhbinagckmxrkyzlab5w4k5-dpdk","sha256":"1wnn4zb1qwvspa5al87g4hr17c2s0rdgvzm1jjlkwm6mbb4nprm4","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/yglukhov/sound",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/yglukhov/sound.git",
-          "rev": "c0f1f1f291c0c7fa990886b941478f4bf41ada8a",
-          "date": "2018-12-25T11:53:55+02:00",
-          "sha256": "0pvgqjlk7rmf2h4ckbr4m0i80gj35l0gfil43r11757z27xz07xj",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/yglukhov/sound","versions":[{"nimble":{"author":"Yuriy Glukhov","backend":"c","binDir":".","description":"Cross-platform sound mixer","installDirs":["sound"],"license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"},{"name":"jnim","range":"any version"},{"name":"https://github.com/yglukhov/async_http_request","range":"any version"},{"name":"jsbind","range":"any version"},{"name":"https://github.com/yglukhov/android","range":"any version"}],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/yglukhov/sound.git","rev":"6656ab2164401699944eb70259d35106c27b0b4a","date":"2020-12-23T11:57:52+02:00","path":"/nix/store/fp3z411n5y4nxbcyv63d11ld6gsrngpm-sound","sha256":"0fgzwrynnccqqzy5k5b5wxv67ydjl4hk3c825ljc77nbggzckv4a","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

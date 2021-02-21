@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/oswjk/nimpb",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/oswjk/nimpb",
-          "rev": "fd813d1128611c8f3bdcfe36d63e78acce51a48a",
-          "date": "2019-09-24T23:43:09+03:00",
-          "sha256": "14cakgfspmiw7d7zcc8kyd08adnkik3fjgdr6048b9ajsx27rpw7",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/oswjk/nimpb","versions":[{"nimble":{"author":"Oskari Timperi","backend":"c","bin":["nimpb/compiler/nimpb_build"],"binDir":".","description":"protobuf library for Nim","installDirs":["nimpb"],"license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"},{"name":"nimpb_protoc","range":"any version"}],"skipDirs":["examples","tests","protobuf-3.5.1"],"skipExt":["nim"],"specialVersion":"0.2.0","srcDir":"."},"source":{"url":"https://github.com/oswjk/nimpb","rev":"12f0050e46e87deb5c26861633cc9c4e82df1b68","date":"2020-04-22T13:41:46+03:00","path":"/nix/store/scxayrfihjmjhjyvnj4dav1xxa37dirj-nimpb","sha256":"1hq8mdi04qbjg9wg84p06dsylx7as5mh4z4v5s6z4yz5hpd3nm9q","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

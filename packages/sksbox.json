@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/Skrylar/sksbox",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/Skrylar/sksbox",
-          "rev": "d2fd3393c746eed81cadb5a347573e9708a1db37",
-          "date": "2017-12-15T05:05:05+00:00",
-          "sha256": "0740gv4h065lkh2bglgh4di4h7zgcmb5f72a486k7ysnjhmin8pk",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/Skrylar/sksbox","versions":[{"nimble":{"author":"Skrylar","backend":"c","binDir":".","description":"A Nim-native implementation of the sBOX file format.","installFiles":["sksbox.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.2"}],"skipDirs":["examples"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/Skrylar/sksbox","rev":"d2fd3393c746eed81cadb5a347573e9708a1db37","date":"2017-12-15T05:05:05+00:00","path":"/nix/store/d4m23w0c2s9bbyjb24wrgf77c4yn9dnl-sksbox","sha256":"0740gv4h065lkh2bglgh4di4h7zgcmb5f72a486k7ysnjhmin8pk","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

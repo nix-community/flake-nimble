@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/Druage/sling",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/Druage/sling",
-          "rev": "d73bed23a55755b562576d4a8e86f3700409e3cf",
-          "date": "2016-03-06T23:39:18-05:00",
-          "sha256": "0kq7a8lrkm2ajij81idbch86qr1g5512h1ycrmpx0vqiwg28rxy7",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/Druage/sling","versions":[{"nimble":{"author":"Lee Lazarecky","backend":"c","binDir":".","description":"A signal and slot implementation for Nim","installFiles":["sling.nim"],"license":"unlicense","requires":[{"name":"nimrod","range":">= 0.13.0"}],"specialVersion":"0.1","srcDir":"."},"source":{"url":"https://github.com/Druage/sling","rev":"d73bed23a55755b562576d4a8e86f3700409e3cf","date":"2016-03-06T23:39:18-05:00","path":"/nix/store/xg2xyiw66ms2w190y85bn8a725ww0sgc-sling","sha256":"0kq7a8lrkm2ajij81idbch86qr1g5512h1ycrmpx0vqiwg28rxy7","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

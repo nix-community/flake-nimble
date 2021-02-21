@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/alaviss/kmod",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/alaviss/kmod",
-          "rev": "923879e15b087e09e21d23a4f42673ea6cf66260",
-          "date": "2019-06-27T13:25:30+07:00",
-          "sha256": "1dmq6n4563zngh1g5ia37vjmqzy89lyldl0y5w3rk1c3ldjf08rl",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/alaviss/kmod","versions":[{"nimble":{"author":"Leorize","backend":"c","binDir":".","description":"High-level wrapper for Linux's kmod library","license":"ISC","requires":[{"name":"nim","range":">= 0.20.0"},{"name":"nimterop","range":">= 0.1.0"}],"specialVersion":"0.1.0","srcDir":"src"},"source":{"url":"https://github.com/alaviss/kmod","rev":"923879e15b087e09e21d23a4f42673ea6cf66260","date":"2019-06-27T13:25:30+07:00","path":"/nix/store/b3pb8krkhjdigl030d2arjzsxciz68sm-kmod","sha256":"1dmq6n4563zngh1g5ia37vjmqzy89lyldl0y5w3rk1c3ldjf08rl","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-secp256k1",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-secp256k1",
-          "rev": "85b2620a6e4c41eaa4caa378bd70902cff5a1c48",
-          "date": "2019-08-24T05:03:42+02:00",
-          "sha256": "187m16sjiqzi24vyypkyi965pm64hrm63zhjgl48mxq71y9mcxh7",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-secp256k1","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"A wrapper for the libsecp256k1 C library","installDirs":[".","secp256k1_wrapper"],"installFiles":["secp256k1.nim"],"license":"Apache License 2.0","requires":[{"name":"nim","range":">= 1.2.0"},{"name":"stew","range":"any version"},{"name":"nimcrypto","range":"any version"}],"specialVersion":"0.5.1","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-secp256k1","rev":"67ebdfa8014e1c6011f14d7fc5eb341684eb3b32","date":"2021-02-03T21:36:46+02:00","path":"/nix/store/8zzvbw2vpr54332xff4bhmh8id599dp1-nim-secp256k1","sha256":"1aqkfrr58f9zs57aggmxqv05ggnqxnixlj6xplwm67wqjlj4cff4","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

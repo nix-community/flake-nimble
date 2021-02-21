@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/def-/nim-platformer",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/def-/nim-platformer",
-          "rev": "9e79719369ae1722c01b4546a54792a77413c22f",
-          "date": "2019-02-25T13:31:25+01:00",
-          "sha256": "0828rcbh8mascdqmqmphvl39sf1ii454mq8dgjd94f5qpkb4yj3n",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/def-/nim-platformer","versions":[{"nimble":{"author":"Dennis Felsing","backend":"c","bin":["platformer"],"binDir":".","description":"An example 2D platform game with SDL2","installFiles":["platformer.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"},{"name":"sdl2","range":">= 1.1"},{"name":"strfmt","range":">= 0.6"},{"name":"basic2d","range":">= 0.1.0"}],"skipExt":["nim"],"specialVersion":"1.1","srcDir":"."},"source":{"url":"https://github.com/def-/nim-platformer","rev":"9e79719369ae1722c01b4546a54792a77413c22f","date":"2019-02-25T13:31:25+01:00","path":"/nix/store/v9jd4kax8kxkavsi88fzqnc9jhb3akim-nim-platformer","sha256":"0828rcbh8mascdqmqmphvl39sf1ii454mq8dgjd94f5qpkb4yj3n","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

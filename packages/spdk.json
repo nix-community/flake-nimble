@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nimscale/spdk.git",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nimscale/spdk.git",
-          "rev": "608ae8c2c74d166bbc07c6f96d87c1bcb3c5b59f",
-          "date": "2017-08-08T15:51:29+03:00",
-          "sha256": "0bacws0iclckvnjbmxyjhfkn0n78fbvgsv09xsqbjnqgr2kra49i",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nimscale/spdk.git","versions":[{"nimble":{"author":"Nimscale","backend":"c","binDir":".","description":"SDPK bind for nim.","license":"Apache Licence 2.0","requires":[{"name":"nim","range":">= 0.15.3"}],"specialVersion":"16.08","srcDir":"api"},"source":{"url":"https://github.com/nimscale/spdk.git","rev":"608ae8c2c74d166bbc07c6f96d87c1bcb3c5b59f","date":"2017-08-08T15:51:29+03:00","path":"/nix/store/sa978fzk62c29n4gii4a3dzb49k9b3pz-spdk","sha256":"0bacws0iclckvnjbmxyjhfkn0n78fbvgsv09xsqbjnqgr2kra49i","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

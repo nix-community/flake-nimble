@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/johnscillieri/psutil-nim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/juancarlospaco/psutil-nim",
-          "rev": "2990ec0e1666fcd9dc7e28d607306bb8bb1473be",
-          "date": "2019-10-23T08:43:34-04:00",
-          "sha256": "0l3kx1hdv6cwrrxpq4xybcm9nfj0x57hg4yf9s3gkf4vfnbnp9zc",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/johnscillieri/psutil-nim","versions":[{"nimble":{"author":"Juan Carlos, John Scillieri, Nim community","backend":"c","binDir":".","description":"Psutil is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network)","license":"MIT","requires":[{"name":"nim","range":">= 1.2.6"}],"skipDirs":["tests"],"specialVersion":"0.6.0","srcDir":"src"},"source":{"url":"https://github.com/juancarlospaco/psutil-nim","rev":"dc8a0881f1b8626df1026fdecd25fe60e4c67749","date":"2021-02-06T09:01:48-05:00","path":"/nix/store/3ngg60zq2ipnq9iigw9h0kh8v806d1qk-psutil-nim","sha256":"0waz7y5wjh5yg8hqdvg9g6dbqyfz7kxj1m2jimhaf5wwpg0m390v","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

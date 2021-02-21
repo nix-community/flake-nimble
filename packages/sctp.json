@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/metacontainer/sctp.nim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/metacontainer/sctp.nim",
-          "rev": "d207c3ec1485252a25886cde6075cadaeae5d5de",
-          "date": "2019-01-19T20:35:52+01:00",
-          "sha256": "0kn92h609a3qk4xggp9368hk8k513z8p5pg9b1833f7lgr4xmgwn",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/metacontainer/sctp.nim","versions":[{"nimble":{"author":"Michał Zieliński <michal@zielinscy.org.pl>","backend":"c","binDir":".","description":"High-level Nim bindings for userspace SCTP implementation","installDirs":["sctp"],"installFiles":["sctp.nim"],"license":"BSD","requires":[{"name":"nim","range":">= 0.17.3"},{"name":"reactor","range":">= 0.4.6"}],"skipDirs":["tests"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/metacontainer/sctp.nim","rev":"d207c3ec1485252a25886cde6075cadaeae5d5de","date":"2019-01-19T20:35:52+01:00","path":"/nix/store/hvqgp04mcyi9jjpl1vyn8ql1vpzjfrrv-sctp.nim","sha256":"13xlhj2wf85pvh20kpcgbhh70cjmywdiyglypq5a07c52cy18m8a","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

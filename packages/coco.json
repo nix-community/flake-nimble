@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/samuelroy/coco",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/samuelroy/coco",
-          "rev": "24fc6357636ad2919e72c325838a531476fbaaf1",
-          "date": "2018-11-02T08:50:40+01:00",
-          "sha256": "010g07jvy7mz3yfkfzk8ciapi8ylkanxfb7n9f4sc27cjzii3nfa",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/samuelroy/coco","versions":[{"nimble":{"author":"Samuel Roy","backend":"c","bin":["coco"],"binDir":".","description":"Code coverage with line and branch support for Nim","installFiles":["coco.nim","coco.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"},{"name":"cligen","range":"any version"},{"name":"glob","range":"any version"}],"specialVersion":"0.0.3","srcDir":"."},"source":{"url":"https://github.com/samuelroy/coco","rev":"0d7b08c9acfd492db19538aceb71901da9e47def","date":"2020-10-18T11:47:30+02:00","path":"/nix/store/akpcnxj5mfpw697vaxc2wrwra7lbz8dc-coco","sha256":"0qbxi1cgi605q47ykn80qyjjfjpiy2y2w8jmq0hfiigdccq3bz5r","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

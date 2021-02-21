@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/nim-lang/python",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/nim-lang/python",
-          "rev": "b7c3b2c447a69fdb0a974ba149062e52182fda08",
-          "date": "2017-10-22T12:06:16+01:00",
-          "sha256": "0lhinsva3l23l9fm1ysq4qach8rnckvan9kcqv6kdqyz9agjhpjs",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/nim-lang/python","versions":[{"nimble":{"author":"Andreas Rumpf, Matic Kukovec","backend":"c","binDir":".","description":"Wrapper to interface with Python 1/2 interpreter","license":"MIT","requires":[{"name":"nim","range":">= 0.13.0"}],"specialVersion":"1.2","srcDir":"src"},"source":{"url":"https://github.com/nim-lang/python","rev":"b7c3b2c447a69fdb0a974ba149062e52182fda08","date":"2017-10-22T12:06:16+01:00","path":"/nix/store/67m62lb086bngaqmv6r78p48bffmphj6-python","sha256":"0lhinsva3l23l9fm1ysq4qach8rnckvan9kcqv6kdqyz9agjhpjs","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

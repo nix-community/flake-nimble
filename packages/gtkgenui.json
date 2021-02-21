@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/PMunch/gtkgenui",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/PMunch/gtkgenui",
-          "rev": "2b455b56d37c573c93f52336b6e195a219420eed",
-          "date": "2018-10-18T14:14:44+02:00",
-          "sha256": "17hy73pq0zr19na8ls7h6kzihpfail814xx63sncph3wi4ab2jc2",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/PMunch/gtkgenui","versions":[{"nimble":{"author":"Peter Munch-Ellingsen","backend":"c","binDir":".","description":"Genui is a DSL macro for creating graphical user interfaces. This version is for the Gtk toolkit.","license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"},{"name":"gtk2","range":">= 1.0"}],"skipFiles":["example.nim"],"specialVersion":"0.2.0","srcDir":"gtkgenui"},"source":{"url":"https://github.com/PMunch/gtkgenui","rev":"2b455b56d37c573c93f52336b6e195a219420eed","date":"2018-10-18T14:14:44+02:00","path":"/nix/store/7fnhmc5nyzp3pq27k20qxn1lq9jccflk-gtkgenui","sha256":"17hy73pq0zr19na8ls7h6kzihpfail814xx63sncph3wi4ab2jc2","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

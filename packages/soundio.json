@@ -1,18 +1,1 @@
-{
-  "homepage": "",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/ul/soundio",
-          "rev": "01437516682325a503cd31336e36b5ea8977c93e",
-          "date": "2018-08-19T08:54:53+10:00",
-          "sha256": "07zldv7c018pij4yfpf4irsw0qcb527fkcp14k5v321m06njfwhs",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"","versions":[{"nimble":{"author":"Ruslan Prokopchuk","backend":"c","binDir":".","description":"Bindings for libsoundio, a library providing cross-platform audio input and output.","license":"MIT","requires":[{"name":"nim","range":">= 0.18.0"}],"specialVersion":"0.2.0","srcDir":"src"},"source":{"url":"https://github.com/ul/soundio","rev":"ccde07dfa0e4ebf95f9ae1088a087c5ef50ea5ea","date":"2020-04-29T17:04:48+10:00","path":"/nix/store/y37zlbqi6b1dayfqdhmxkj8as92nwa7s-soundio","sha256":"1jvrrmc6j889xd7ar5l9r4k29x0v1qfwngcw938dc0jablzrkjmi","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/Vladar4/avbin",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/Vladar4/avbin",
-          "rev": "d2b6712119660568691a88572209b1f4a8a05032",
-          "date": "2017-12-31T17:06:09+02:00",
-          "sha256": "1lj8skcsr50sqwn8k83sac32gxxkr271brkgqkzlvppraxxca254",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/Vladar4/avbin","versions":[{"nimble":{"author":"Vladar","backend":"c","binDir":".","description":"Wrapper of the AVbin library for the Nim language.","license":"LGPL","requires":[{"name":"nim","range":">= 0.17.0"}],"skipDirs":["docs","examples"],"specialVersion":"10.0","srcDir":"."},"source":{"url":"https://github.com/Vladar4/avbin","rev":"d2b6712119660568691a88572209b1f4a8a05032","date":"2017-12-31T17:06:09+02:00","path":"/nix/store/k5jh714x1j06jl5piimzhihjfh84fp0v-avbin","sha256":"1lj8skcsr50sqwn8k83sac32gxxkr271brkgqkzlvppraxxca254","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

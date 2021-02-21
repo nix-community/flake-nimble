@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/chocobo333/mcmurry",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/chocobo333/mcmurry",
-          "rev": "4cc70887ee1f7139cc42669f2bfee78f07d5bb26",
-          "date": "2019-12-05T17:32:58+09:00",
-          "sha256": "068jbsk0plnxhankqmj1gz3s83fnzz6lvgc65msczj5xjyhcx8df",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/chocobo333/mcmurry","versions":[{"nimble":{"author":"chocobo333","backend":"c","binDir":".","description":"A module for generating lexer/parser.","license":"MIT","requires":[{"name":"nim","range":">= 1.0.4"},{"name":"asciitype","range":"any version"},{"name":"ast_pattern_matching","range":"any version"},{"name":"regex","range":"any version"}],"skipDirs":["tmp"],"specialVersion":"0.3.5","srcDir":"src"},"source":{"url":"https://github.com/chocobo333/mcmurry","rev":"cdf28bd47d8a431722a0a7fb9b75e838922342c2","date":"2019-12-20T10:52:58+09:00","path":"/nix/store/y317dd29bld22d59a0z2qclx5fd52c0n-mcmurry","sha256":"0v1hwrhfrpislr83cxmks2kshgwxrvvzxm2afp32xjryw02q47fc","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

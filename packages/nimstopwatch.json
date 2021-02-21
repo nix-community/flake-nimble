@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/twist-vector/nim-stopwatch",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/twist-vector/nim-stopwatch.git",
-          "rev": "6a06320cecd19ea413415b9c0fb3340a53673d52",
-          "date": "2015-11-24T13:55:45-05:00",
-          "sha256": "0xfha425svl006ji9l1cf0rqvp5dk29vxdm0pn9i2778i05y67yf",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/twist-vector/nim-stopwatch","versions":[{"nimble":{"author":"Tom Krauss","backend":"c","bin":["stopwatch"],"binDir":".","description":"Command line stopwatch written in Nim with split / lap support","license":"Apache2","requires":[{"name":"nim","range":">= 0.12.0"}],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/twist-vector/nim-stopwatch.git","rev":"6a06320cecd19ea413415b9c0fb3340a53673d52","date":"2015-11-24T13:55:45-05:00","path":"/nix/store/3vk51md118b987bp4ihfdahfy2fravwj-nim-stopwatch","sha256":"0xfha425svl006ji9l1cf0rqvp5dk29vxdm0pn9i2778i05y67yf","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

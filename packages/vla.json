@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/bpr/vla",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/bpr/vla",
-          "rev": "541d04be863965170ee0a5317270ca0d26ccc02d",
-          "date": "2017-10-23T14:41:09-07:00",
-          "sha256": "06ibb08jrylrc2qpj11z6aclbrm5l5fxs1h7j84wsa8xwy786hxm",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/bpr/vla","versions":[{"nimble":{"author":"Brian Rogoff","backend":"c","binDir":".","description":"Variable length arrays for Nim","installFiles":["vla.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"}],"skipDirs":["@"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/bpr/vla","rev":"541d04be863965170ee0a5317270ca0d26ccc02d","date":"2017-10-23T14:41:09-07:00","path":"/nix/store/84r0nfy9pzi0v1as1mw3ccy5v84rssdv-vla","sha256":"06ibb08jrylrc2qpj11z6aclbrm5l5fxs1h7j84wsa8xwy786hxm","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

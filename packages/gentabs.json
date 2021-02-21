@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/lcrees/gentabs",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/lcrees/gentabs",
-          "rev": "e6feffbcb2f51c04bf27c9d3a8cb51487582014f",
-          "date": "2017-11-15T11:16:56-07:00",
-          "sha256": "0qgfvkyaqijl7hxxdid4swr9gxkyfvb7f01d0yc6ldvw1lrjl348",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/lcrees/gentabs","versions":[{"nimble":{"author":"lcrees","backend":"c","binDir":".","description":"Efficient hash table that is a key-value mapping (removed from stdlib)","installFiles":["gentabs.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.2"}],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/lcrees/gentabs","rev":"e6feffbcb2f51c04bf27c9d3a8cb51487582014f","date":"2017-11-15T11:16:56-07:00","path":"/nix/store/zs12dhqr4lxdz4ihm3csycysaq9i245g-gentabs","sha256":"0qgfvkyaqijl7hxxdid4swr9gxkyfvb7f01d0yc6ldvw1lrjl348","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

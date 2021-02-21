@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/achesak/nim-grp",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/achesak/nim-grp",
-          "rev": "58672bd0fa68118f638eb5c222513a32ad443a81",
-          "date": "2017-07-23T19:24:05-05:00",
-          "sha256": "08c4plcnlza4j3p1s6kr7wv0h518hav6j445qqslc4267df0rap6",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/achesak/nim-grp","versions":[{"nimble":{"author":"Adam Chesak","backend":"c","binDir":".","description":"module for working with the UNIX group file","installFiles":["grp.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.15"}],"specialVersion":"0.2","srcDir":"."},"source":{"url":"https://github.com/achesak/nim-grp","rev":"58672bd0fa68118f638eb5c222513a32ad443a81","date":"2017-07-23T19:24:05-05:00","path":"/nix/store/m67szk9kvcca4ywwpkdpp5y1rw0s82ib-nim-grp","sha256":"08c4plcnlza4j3p1s6kr7wv0h518hav6j445qqslc4267df0rap6","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

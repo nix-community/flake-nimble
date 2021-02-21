@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/PMunch/SDLGamelib",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/PMunch/SDLGamelib",
-          "rev": "615f3098f6bcb862866c28fddaa9871907f46683",
-          "date": "2018-07-05T16:46:39+02:00",
-          "sha256": "021mrjvb0x1mi2qb42m4yp2vb6l5q9navmja1a8v0r3y81wp6a4q",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/PMunch/SDLGamelib","versions":[{"nimble":{"author":"Peter Munch-Ellingsen","backend":"c","binDir":".","description":"A library of functions to make creating games using Nim and SDL2 easier.\nThis does not intend to be a full blown engine and tries to keep all the components loosly coupled so that individual parts can be used separately.","installDirs":["gamelib"],"license":"MIT","requires":[{"name":"nim","range":">= 0.14.0"},{"name":"sdl2","range":">= 1.1"}],"skipFiles":["alite.html","LICENSE",".gitignore","README.md"],"specialVersion":"0.0.1","srcDir":"."},"source":{"url":"https://github.com/PMunch/SDLGamelib","rev":"615f3098f6bcb862866c28fddaa9871907f46683","date":"2018-07-05T16:46:39+02:00","path":"/nix/store/m3iinv012pgv9rp51jj4niw2kwc75vgz-SDLGamelib","sha256":"021mrjvb0x1mi2qb42m4yp2vb6l5q9navmja1a8v0r3y81wp6a4q","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

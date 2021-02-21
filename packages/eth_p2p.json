@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-eth-p2p",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-eth-p2p",
-          "rev": "4faa0e77dd630a1d80f51810600fe2b57056521d",
-          "date": "2019-03-25T19:05:31-06:00",
-          "sha256": "1wpcz2067yczac8a5vc3w49irmcs4bf42l349r17apff654djp86",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-eth-p2p","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Ethereum P2P library","installDirs":["eth_p2p"],"installFiles":["eth_p2p.nim"],"license":"MIT","requires":[{"name":"nim","range":"> 0.18.0"},{"name":"rlp","range":">= 1.0.1"},{"name":"nimcrypto","range":"any version"},{"name":"secp256k1","range":">= 0.1.0"},{"name":"eth_keys","range":"any version"},{"name":"ranges","range":"any version"},{"name":"stint","range":"any version"},{"name":"byteutils","range":"any version"},{"name":"chronicles","range":"any version"},{"name":"asyncdispatch2","range":"any version"},{"name":"eth_common","range":"any version"},{"name":"snappy","range":"any version"},{"name":"package_visible_types","range":"any version"},{"name":"serialization","range":"any version"},{"name":"json_serialization","range":"any version"}],"skipDirs":["tests","Nim"],"specialVersion":"1.0.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-eth-p2p","rev":"4faa0e77dd630a1d80f51810600fe2b57056521d","date":"2019-03-25T19:05:31-06:00","path":"/nix/store/m59fj8pz3fm8a7xpy2fggyp3jlvl54li-nim-eth-p2p","sha256":"1wpcz2067yczac8a5vc3w49irmcs4bf42l349r17apff654djp86","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

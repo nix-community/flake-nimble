@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/lcrees/libuv",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/lcrees/libuv",
-          "rev": "6eac920e66c54484039808cb440af85e574cbc57",
-          "date": "2017-10-28T22:58:36-06:00",
-          "sha256": "1fs5g7w9zx6nb7g3fmk6yj2c00vwgjx2i7l107zb9makv81yvzmx",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/lcrees/libuv","versions":[{"nimble":{"author":"lcrees","backend":"c","binDir":".","description":"libuv bindings for Nim","installFiles":["libuv.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.2"}],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/lcrees/libuv","rev":"6eac920e66c54484039808cb440af85e574cbc57","date":"2017-10-28T22:58:36-06:00","path":"/nix/store/2xbhnnqrl0ki1kpa0sxmm4dqirn1z0p3-libuv","sha256":"1fs5g7w9zx6nb7g3fmk6yj2c00vwgjx2i7l107zb9makv81yvzmx","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

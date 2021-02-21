@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/genotrance/tissue",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/genotrance/tissue",
-          "rev": "64e1ddd45c5df8d8d4d9355751f37878a5be6df7",
-          "date": "2018-09-14T13:02:07-05:00",
-          "sha256": "1iag9iy5n01c09w16c0p64b0mqv2mbwb5r36avrr1y2731f267sk",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/genotrance/tissue","versions":[{"nimble":{"author":"genotrance","backend":"c","bin":["tissue"],"binDir":".","description":"Test failing snippets from Nim's issues","installFiles":["tissue.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.18.1"}],"skipDirs":["tests"],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/genotrance/tissue","rev":"64e1ddd45c5df8d8d4d9355751f37878a5be6df7","date":"2018-09-14T13:02:07-05:00","path":"/nix/store/6jnl4011i9jfc5j51986bm0dac0xpp0s-tissue","sha256":"1iag9iy5n01c09w16c0p64b0mqv2mbwb5r36avrr1y2731f267sk","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

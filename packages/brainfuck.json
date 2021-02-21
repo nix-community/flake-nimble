@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/def-/nim-brainfuck",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/def-/nim-brainfuck.git",
-          "rev": "62d0175881b3dbd80d1c48eb36aa0050a07c85dc",
-          "date": "2017-12-08T10:44:02+01:00",
-          "sha256": "00z32bxcnx381kf7d8lzybmfddkqab1z0r7p8j1l6hqdhirbbc23",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/def-/nim-brainfuck","versions":[{"nimble":{"author":"Dennis Felsing","backend":"c","bin":["brainfuck"],"binDir":".","description":"A brainfuck interpreter and compiler","license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"},{"name":"docopt","range":">= 0.1.0"}],"skipExt":["nim"],"specialVersion":"1.1","srcDir":"src"},"source":{"url":"https://github.com/def-/nim-brainfuck.git","rev":"62d0175881b3dbd80d1c48eb36aa0050a07c85dc","date":"2017-12-08T10:44:02+01:00","path":"/nix/store/m1ndhy02dgwpgw1m6820rlmsfzmvjrm8-nim-brainfuck","sha256":"00z32bxcnx381kf7d8lzybmfddkqab1z0r7p8j1l6hqdhirbbc23","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

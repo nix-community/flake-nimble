@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/2vg/mofuw",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/2vg/mofuw",
-          "rev": "33e6c1c066129cd87bbf8e7b9b5818540001f71c",
-          "date": "2019-09-18T14:27:28+09:00",
-          "sha256": "0nx2936pgpc671ksa0fr0cnr49xkmwl7gm4f06z1yy01hgarclhc",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/2vg/mofuw","versions":[{"nimble":{"author":"2vg","backend":"c","binDir":".","description":"more faster, ultra performance webserver","license":"MIT","requires":[{"name":"nim","range":">= 0.18.0"},{"name":"https://github.com/2vg/mofuparser","range":"any version"},{"name":"https://github.com/2vg/mofuhttputils","range":"any version"}],"skipDirs":["images"],"specialVersion":"2.0.0","srcDir":"src"},"source":{"url":"https://github.com/2vg/mofuw","rev":"33e6c1c066129cd87bbf8e7b9b5818540001f71c","date":"2019-09-18T14:27:28+09:00","path":"/nix/store/vwib2pfq66hs4jbjab70lj9ncqq08s9b-mofuw","sha256":"0nx2936pgpc671ksa0fr0cnr49xkmwl7gm4f06z1yy01hgarclhc","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

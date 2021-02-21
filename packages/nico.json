@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/ftsf/nico",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/ftsf/nico",
-          "rev": "d76b087aa44b2b04a2079634bca212b23903cb9b",
-          "date": "2019-05-25T19:39:42+10:00",
-          "sha256": "1dcjm9c14nlvfw1nyb906llqc8dl4wrpzv3qpnxh7h7lij8k4qdh",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/ftsf/nico","versions":[{"nimble":{"author":"Jez 'Impbox' Kabanov","backend":"c","bin":["nicoboot"],"binDir":".","description":"Nico Game Engine","installDirs":["exampleApp","nico"],"installFiles":["nico.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 1.4.0"},{"name":"sdl2_nim","range":">= 2.0.10.0"},{"name":"gifenc","range":">= 0.1.0"},{"name":"webaudio","range":">= 0.2.1"},{"name":"html5_canvas","range":">= 0.1.0"},{"name":"ajax","range":">= 0.1.1"},{"name":"nimPNG","range":"any version"}],"skipDirs":["examples","tests","android","tools"],"specialVersion":"0.3.2","srcDir":"."},"source":{"url":"https://github.com/ftsf/nico","rev":"16d640ed16b582ef1c40b4e57a9b422fd2e58868","date":"2021-02-20T22:18:33+11:00","path":"/nix/store/p74lhgldcq8rk7k09a85xqqnaxrmqjyr-nico","sha256":"0n1biimhhl2jk8jzr0ln6ng6f3lqaafsaj4mnmmwxssb55j4l8wc","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

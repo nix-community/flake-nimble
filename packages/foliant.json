@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/foliant-docs/foliant-nim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/foliant-docs/foliant-nim",
-          "rev": "44aecd841e6a00d0632c3a814777a3a6713ffd76",
-          "date": "2016-12-06T15:53:02+04:00",
-          "sha256": "1w4kwrfd7nass77gr74nrddbphxn7cavqw825ncdd9qpwfzcgsnh",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/foliant-docs/foliant-nim","versions":[{"nimble":{"author":"Konstantin Molchanov","backend":"c","bin":["foliant"],"binDir":"bin/linux","description":"Documentation generator that produces pdf and docx from Markdown. Uses Pandoc and LaTeX behind the scenes.","license":"MIT","requires":[{"name":"nim","range":">= 0.15.0"},{"name":"docopt","range":"#head"},{"name":"yaml","range":"any version"}],"skipExt":["nim"],"specialVersion":"0.2.2","srcDir":"src"},"source":{"url":"https://github.com/foliant-docs/foliant-nim","rev":"44aecd841e6a00d0632c3a814777a3a6713ffd76","date":"2016-12-06T15:53:02+04:00","path":"/nix/store/s58grmalc3zf3dxp13d3mc98w5ipsv76-foliant-nim","sha256":"1w4kwrfd7nass77gr74nrddbphxn7cavqw825ncdd9qpwfzcgsnh","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

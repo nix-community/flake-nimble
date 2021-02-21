@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/jiro4989/gameoflife",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/jiro4989/gameoflife",
-          "rev": "03e9b3ff7a83ba01fe523f5cbc4f531f509a9a1d",
-          "date": "2019-07-03T22:26:49+09:00",
-          "sha256": "1pry7lapfxknfxchzkdx7a0c5al3qscdr87qcb5jz8hyddajq05l",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/jiro4989/gameoflife","versions":[{"nimble":{"author":"jiro4989","backend":"c","bin":["gameoflife"],"binDir":"bin","description":"gameoflife is library for Game of Life.","license":"MIT","requires":[{"name":"nim","range":">= 0.19.4"}],"skipExt":["nim"],"specialVersion":"1.1.0","srcDir":"src"},"source":{"url":"https://github.com/jiro4989/gameoflife","rev":"03e9b3ff7a83ba01fe523f5cbc4f531f509a9a1d","date":"2019-07-03T22:26:49+09:00","path":"/nix/store/7d614ah7zgv1g8fg49744fcvqlvpmjwj-gameoflife","sha256":"1pry7lapfxknfxchzkdx7a0c5al3qscdr87qcb5jz8hyddajq05l","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

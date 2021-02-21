@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/ithkuil/redissessions/",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/ithkuil/redissessions/",
-          "rev": "7dbc1cf16017df8a17d301d68573c0dae17b3721",
-          "date": "2016-10-01T21:07:11-07:00",
-          "sha256": "0881cpsx1xvijw42z39ycwrqyirsyfjcf7q8qiv448ivxz764vka",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/ithkuil/redissessions/","versions":[{"nimble":{"author":"Jason Livesay","backend":"c","binDir":".","description":"Redis sessions for jester","installFiles":["redissessions.nim"],"license":"MIT","requires":[{"name":"nimrod","range":">= 0.9.2"},{"name":"jester","range":">= 0.1"}],"specialVersion":"0.2.0","srcDir":"."},"source":{"url":"https://github.com/ithkuil/redissessions/","rev":"7dbc1cf16017df8a17d301d68573c0dae17b3721","date":"2016-10-01T21:07:11-07:00","path":"/nix/store/0r4mm21i8sljadgk0g5s85aza5hw8km0-redissessions","sha256":"0881cpsx1xvijw42z39ycwrqyirsyfjcf7q8qiv448ivxz764vka","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

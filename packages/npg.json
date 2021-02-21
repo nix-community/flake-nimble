@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/rustomax/npg",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.1.0",
-        "value": {
-          "url": "https://github.com/rustomax/npg",
-          "rev": "29eaa380547d2f01bd0ca3c05cb82883b0508aa1",
-          "date": "2019-10-17T20:48:09-07:00",
-          "sha256": "11qjps25y0isp18mz373njfvdkhaxjmzrl9sm5jg7357ak2yq0aa",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/rustomax/npg","versions":[{"nimble":{"author":"Max Skybin","backend":"c","bin":["npg"],"binDir":".","description":"Password generator in Nim","license":"MIT","requires":[{"name":"nim","range":">= 1.4.2"},{"name":"passgen","range":">= 0.2.0"}],"skipExt":["nim"],"specialVersion":"0.2.0","srcDir":"src"},"source":{"url":"https://github.com/rustomax/npg","rev":"23ee913f6829600b61dc0ea98d52f673f083eebe","date":"2021-02-20T16:07:54-05:00","path":"/nix/store/jfr9gmd6l1r18xgsncxsd5mbvjq2djm5-npg","sha256":"14mg7g2g4bsjvcjzl3ckkpxmqlff0c7p9hzf7qd9zc3ziz008vgv","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.2.0"},{"nimble":{"author":"Max Skybin","backend":"c","bin":["npg"],"binDir":".","description":"Password generator in Nim","license":"MIT","requires":[{"name":"nim","range":">= 1.0.0"},{"name":"passgen","range":">= 0.1.0"}],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"src"},"source":{"url":"https://github.com/rustomax/npg","rev":"29eaa380547d2f01bd0ca3c05cb82883b0508aa1","date":"2019-10-17T20:48:09-07:00","path":"/nix/store/bljd1wyn0j4g6zpf57rfzad4bs8hqdhd-npg","sha256":"11qjps25y0isp18mz373njfvdkhaxjmzrl9sm5jg7357ak2yq0aa","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.1.0"}]}

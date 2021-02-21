@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/makingspace/syphus-nim",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.4",
-        "value": {
-          "url": "https://github.com/makingspace/syphus",
-          "rev": "4955582a642da02b2f163aa0c137b6b8428b50f2",
-          "date": "2018-01-29T15:20:45-05:00",
-          "sha256": "1wj49z3rrhk2ic1wjp5ndfx1npbpc6rlda3xms7al1dxbf24mfn2",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/makingspace/syphus-nim","versions":[{"nimble":{"author":"Zach Smith","backend":"c","binDir":".","description":"An implementation of the tabu search heuristic in Nim.","license":"BSD-3","requires":[{"name":"nim","range":">= 0.16.1"}],"skipDirs":["tests"],"specialVersion":"0.4","srcDir":"syphus-nim"},"source":{"url":"https://github.com/makingspace/syphus","rev":"4955582a642da02b2f163aa0c137b6b8428b50f2","date":"2018-01-29T15:20:45-05:00","path":"/nix/store/0czc2szq8jf2alq788pav9aczw42ixzk-syphus","sha256":"1wj49z3rrhk2ic1wjp5ndfx1npbpc6rlda3xms7al1dxbf24mfn2","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.4"}]}

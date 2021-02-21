@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/andreaferretti/lda",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/unicredit/lda",
-          "rev": "eee2501656532caad0a12290dc70022fadd98bca",
-          "date": "2018-05-18T19:17:16+02:00",
-          "sha256": "1gc9bizmg00pm9xrd8qrjcnv30fgn5kg8jkkgxcrapj01aamwzyb",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/andreaferretti/lda","versions":[{"nimble":{"author":"Andrea Ferretti","backend":"c","binDir":".","description":"Latent Dirichlet allocation","installFiles":["lda.nim"],"license":"Apache2","requires":[{"name":"nim","range":">= 0.18.0"}],"skipDirs":["examples","tests"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/andreaferretti/lda","rev":"eee2501656532caad0a12290dc70022fadd98bca","date":"2018-05-18T19:17:16+02:00","path":"/nix/store/6fyimlq47zy1r03vxm07n2ww5zsqfsvx-lda","sha256":"1gc9bizmg00pm9xrd8qrjcnv30fgn5kg8jkkgxcrapj01aamwzyb","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

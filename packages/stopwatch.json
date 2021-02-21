@@ -1,18 +1,1 @@
-{
-  "homepage": "https://gitlab.com/define-private-public/stopwatch",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "3.5",
-        "value": {
-          "url": "https://gitlab.com/define-private-public/stopwatch",
-          "rev": "2a71ab5e44f3b91ceec3a420c26e15962108622f",
-          "date": "2018-09-30T13:43:04-04:00",
-          "sha256": "0skd2w1v274js0d2fc5vh6fppf4wbwaxz8svy6qis29f1v1djy7p",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://gitlab.com/define-private-public/stopwatch","versions":[{"nimble":{"author":"define-private-public","backend":"c","binDir":".","description":"A simple timing library for benchmarking code and other things.","installDirs":["stopwatch"],"installFiles":["stopwatch.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"}],"skipFiles":["tester.nim","tester.html","tester_js.nim","tester_js.html"],"specialVersion":"3.5","srcDir":"."},"source":{"url":"https://gitlab.com/define-private-public/stopwatch","rev":"2a71ab5e44f3b91ceec3a420c26e15962108622f","date":"2018-09-30T13:43:04-04:00","path":"/nix/store/3j5ymdxmw5a08xy49y15x620zj7vn7zm-stopwatch","sha256":"0skd2w1v274js0d2fc5vh6fppf4wbwaxz8svy6qis29f1v1djy7p","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"3.5"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-bncurve",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-bncurve",
-          "rev": "9b8aac56325428548a22d8a7ca7f92faf152fb6f",
-          "date": "2019-08-24T02:09:49+02:00",
-          "sha256": "1cbl2n1i1pq3462vn8kg6z8rq6rgdbykkfzdq14bh7x57n1nia3l",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-bncurve","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Barreto-Naehrig pairing-friendly elliptic curve implementation","installDirs":["bncurve"],"installFiles":["bncurve.nim"],"license":"Apache License 2.0 or MIT","requires":[{"name":"nim","range":"> 0.18.0"},{"name":"nimcrypto","range":"any version"}],"skipDirs":["tests","Nim","nim"],"specialVersion":"1.0.1","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-bncurve","rev":"9b8aac56325428548a22d8a7ca7f92faf152fb6f","date":"2019-08-24T02:09:49+02:00","path":"/nix/store/0cbfahi0x7613v8759y6chjqd5c31dcr-nim-bncurve","sha256":"1cbl2n1i1pq3462vn8kg6z8rq6rgdbykkfzdq14bh7x57n1nia3l","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

@@ -1,18 +1,1 @@
-{
-  "homepage": "https://www.github.com/boydgreenfield/nimrod-bloom",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.1.0",
-        "value": {
-          "url": "https://github.com/boydgreenfield/nimrod-bloom",
-          "rev": "a90c92d5be261ef196fd138be8ef9ebb621ad2a0",
-          "date": "2013-12-08T22:05:44-08:00",
-          "sha256": "0vqhnqf2zrmqvw4jhkww7jdg7n9bfhf194zd06qgp8pazf1g73hj",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://www.github.com/boydgreenfield/nimrod-bloom","versions":[{"nimble":{"author":"Boyd Greenfield","backend":"c","binDir":".","description":"Efficient Bloom filter implementation for Nimrod using MurmurHash3.","installFiles":["bloom.nim"],"license":"MIT","requires":[{"name":"nimrod","range":">= 0.9.2"}],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/boydgreenfield/nimrod-bloom","rev":"a90c92d5be261ef196fd138be8ef9ebb621ad2a0","date":"2013-12-08T22:05:44-08:00","path":"/nix/store/020g4ifipj64gc5261g55w1adaqrr0ql-nimrod-bloom","sha256":"0vqhnqf2zrmqvw4jhkww7jdg7n9bfhf194zd06qgp8pazf1g73hj","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.1.0"}]}

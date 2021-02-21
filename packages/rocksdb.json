@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-rocksdb",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-rocksdb",
-          "rev": "08fec021c0f28f63d1221d40a655078b5b923d1b",
-          "date": "2019-08-24T05:01:23+02:00",
-          "sha256": "10d8yp6l6nl9jyiz2k0hz2w57y21xbw5mslsy9ynrszriyppmwq2",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-rocksdb","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"A wrapper for Facebook's RocksDB, an embeddable, persistent key-value store for fast storage","installDirs":["rocksdb"],"installFiles":["rocksdb.nim"],"license":"Apache License 2.0 or GPLv2","requires":[{"name":"nim","range":">= 1.2.0"},{"name":"stew","range":"any version"},{"name":"tempfile","range":"any version"}],"skipDirs":["examples","tests"],"specialVersion":"0.3.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-rocksdb","rev":"6aab1e0dd674b262f538d12b0458f3e7eb835b19","date":"2020-07-20T14:45:25+02:00","path":"/nix/store/rhg6m3arh4zc1nzkzva691g5xlr01yxr-nim-rocksdb","sha256":"0v324sapzcfx5y54h8xnv8mqvmmghif1n7576cn5kkw4vz4wb117","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

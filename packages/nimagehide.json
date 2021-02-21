@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/MnlPhlp/nimagehide",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/MnlPhlp/nimagehide",
-          "rev": "ade9154a4042b62cf7ed87812de89024b04b24eb",
-          "date": "2019-10-30T16:06:54+01:00",
-          "sha256": "14jhcmg04g6smpnmqc2kzbn2jm94nlfd92gqp4lpx6p9a5d7nyyk",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/MnlPhlp/nimagehide","versions":[{"nimble":{"author":"MnlPhlp","backend":"c","bin":["nimagehide"],"binDir":".","description":"A library to hide data in images. Usable as library or cli tool.","installExt":["nim"],"license":"MIT","requires":[{"name":"nim","range":">= 1.0.0"},{"name":"stb_image","range":">= 2.3"},{"name":"cligen","range":">= 0.9.40"},{"name":"cli_menu","range":">= 0.2.5"}],"specialVersion":"0.2.5","srcDir":"src"},"source":{"url":"https://github.com/MnlPhlp/nimagehide","rev":"1beb5968302420be67719875e138b41ec8330458","date":"2020-01-14T18:07:26+01:00","path":"/nix/store/r0l8lhdhab41shd859ga38aarvhfl0sw-nimagehide","sha256":"1l4iyf04012l8arv0jf1l7i0b9dz80zg70sbigh8vbj4z7j4nhhy","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

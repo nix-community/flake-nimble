@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-keccak-tiny",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-keccak-tiny",
-          "rev": "8e563f3171d30d5b3a8897a71f5e2f8f91fe9c65",
-          "date": "2019-03-31T18:30:48+03:00",
-          "sha256": "1fqxf6j4908idvx9l4nl5spjvm4wj51xi9bwchdy1ll34gh04kqk",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-keccak-tiny","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"A wrapper for the keccak-tiny C library","installDirs":["keccak_tiny"],"installFiles":["keccak_tiny.nim"],"license":"Apache License 2.0","requires":[{"name":"nim","range":">= 0.17.0"},{"name":"ranges","range":"any version"}],"skipDirs":["tests"],"specialVersion":"0.2.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-keccak-tiny","rev":"8e563f3171d30d5b3a8897a71f5e2f8f91fe9c65","date":"2019-03-31T18:30:48+03:00","path":"/nix/store/bkbhd6cm7zwmlmnzxalpnjxasgqd0vv5-nim-keccak-tiny","sha256":"1fqxf6j4908idvx9l4nl5spjvm4wj51xi9bwchdy1ll34gh04kqk","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

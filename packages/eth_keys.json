@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-eth-keys",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-eth-keys",
-          "rev": "b09f5ee894183d8e49c02b0d9c21c617a7d1ce6b",
-          "date": "2019-03-25T19:06:09-06:00",
-          "sha256": "1xsnv4kbmyd1qd9ik5p93s11d4j8719m05f94xaps48995clc2fb",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-eth-keys","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"A reimplementation in pure Nim of eth-keys, the common API for Ethereum key operations.","installDirs":["eth_keys"],"installFiles":["eth_keys.nim"],"license":"Apache License 2.0 or MIT","requires":[{"name":"nim","range":"> 0.18.0"},{"name":"nimcrypto","range":"any version"},{"name":"secp256k1","range":"any version"}],"skipDirs":["src","tests","Nim","old_api"],"specialVersion":"0.0.2","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-eth-keys","rev":"b09f5ee894183d8e49c02b0d9c21c617a7d1ce6b","date":"2019-03-25T19:06:09-06:00","path":"/nix/store/42l49rh5375hxvnsn6cjbkph5y3vhx84-nim-eth-keys","sha256":"1xsnv4kbmyd1qd9ik5p93s11d4j8719m05f94xaps48995clc2fb","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

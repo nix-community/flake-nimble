@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/mikra01/sharedmempool",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/mikra01/sharedmempool",
-          "rev": "3529122d5b4787c00bde37e93031284ba93845d2",
-          "date": "2019-06-09T11:55:14+02:00",
-          "sha256": "01fklzngcjzcsiws8riqk3n07g21l7na2aa0rldlbyjns17s9av5",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/mikra01/sharedmempool","versions":[{"nimble":{"author":"Michael Krauter","backend":"c","binDir":".","description":"sharedmemorypool implementation in Nim","installFiles":["sharedmempool.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.19.0"}],"skipDirs":["tests"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/mikra01/sharedmempool","rev":"3529122d5b4787c00bde37e93031284ba93845d2","date":"2019-06-09T11:55:14+02:00","path":"/nix/store/p1mg3chg5s6s143302zmfcb1833d8bbq-sharedmempool","sha256":"01fklzngcjzcsiws8riqk3n07g21l7na2aa0rldlbyjns17s9av5","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

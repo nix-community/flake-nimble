@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/rustomax/nim-passgen",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.1.0",
-        "value": {
-          "url": "https://github.com/rustomax/nim-passgen",
-          "rev": "0f2447db2db1aca791162268773be04d46bf5056",
-          "date": "2019-09-29T00:03:25-04:00",
-          "sha256": "01i33lh12bam1zkdgav59z5rszxlpb773yccafj71p5i29qwph1j",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/rustomax/nim-passgen","versions":[{"nimble":{"author":"Max Skybin","backend":"c","binDir":".","description":"Password generation library in Nim","license":"MIT","requires":[{"name":"nim","range":">= 1.4.2"},{"name":"nimcrypto","range":">= 0.5.4"}],"specialVersion":"0.2.0","srcDir":"src"},"source":{"url":"https://github.com/rustomax/nim-passgen","rev":"0842adfc441c62cf9b7aa24c0d55c41b39ef50b2","date":"2021-02-20T15:36:49-05:00","path":"/nix/store/1x7dkmkwjixvrnq9cmwlcnlg2bxcxavi-nim-passgen","sha256":"083x4z0ava3cd6r0w69h16vndwfchvlzx313skfx8rhzkp28s6bx","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.2.0"},{"nimble":{"author":"Max Skybin","backend":"c","binDir":".","description":"Password generation library in Nim","license":"MIT","requires":[{"name":"nim","range":">= 0.20.2"},{"name":"urand","range":">= 0.1.0"}],"specialVersion":"0.1.0","srcDir":"src"},"source":{"url":"https://github.com/rustomax/nim-passgen","rev":"0f2447db2db1aca791162268773be04d46bf5056","date":"2019-09-29T00:03:25-04:00","path":"/nix/store/bnfj88r6zcqkn7vhx5igsbf9in1dxsm5-nim-passgen","sha256":"01i33lh12bam1zkdgav59z5rszxlpb773yccafj71p5i29qwph1j","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.1.0"}]}

@@ -1,1535 +1,1432 @@
-[
-{name="AccurateSums";value=./AccurateSums.json;}
-{name="AntTweakBar";value=./AntTweakBar.json;}
-{name="ArrayFireNim";value=./ArrayFireNim.json;}
-{name="AstroNimy";value=./AstroNimy.json;}
-{name="BN";value=./BN.json;}
-{name="BipBuffer";value=./BipBuffer.json;}
-{name="BitVector";value=./BitVector.json;}
-{name="Blackvas";value=./Blackvas.json;}
-{name="DevIL";value=./DevIL.json;}
-{name="Echon";value=./Echon.json;}
-{name="FastKiss";value=./FastKiss.json;}
-{name="Kinto";value=./Kinto.json;}
-{name="LLVM";value=./LLVM.json;}
-{name="MiNiM";value=./MiNiM.json;}
-{name="Neel";value=./Neel.json;}
-{name="NiMPC";value=./NiMPC.json;}
-{name="NimBorg";value=./NimBorg.json;}
-{name="NimDBX";value=./NimDBX.json;}
-{name="NimData";value=./NimData.json;}
-{name="NimMarc";value=./NimMarc.json;}
-{name="NimTacToe";value=./NimTacToe.json;}
-{name="NimpleHTTPServer";value=./NimpleHTTPServer.json;}
-{name="Nimscripter";value=./Nimscripter.json;}
-{name="PPM";value=./PPM.json;}
-{name="Palette";value=./Palette.json;}
-{name="Phosphor";value=./Phosphor.json;}
-{name="PhylogeNi";value=./PhylogeNi.json;}
-{name="QuickJS4nim";value=./QuickJS4nim.json;}
-{name="RC4";value=./RC4.json;}
-{name="Remotery";value=./Remotery.json;}
-{name="RingBuffer";value=./RingBuffer.json;}
-{name="RollingHash";value=./RollingHash.json;}
-{name="SDF";value=./SDF.json;}
-{name="SMBExec";value=./SMBExec.json;}
-{name="StashTable";value=./StashTable.json;}
-{name="Unit";value=./Unit.json;}
-{name="WebGL";value=./WebGL.json;}
-{name="XPLM-Nim";value=./XPLM-Nim.json;}
-{name="Xors3D";value=./Xors3D.json;}
-{name="about";value=./about.json;}
-{name="ad";value=./ad.json;}
-{name="adb";value=./adb.json;}
-{name="adix";value=./adix.json;}
-{name="aglet";value=./aglet.json;}
-{name="ago";value=./ago.json;}
-{name="ajax";value=./ajax.json;}
-{name="akane";value=./akane.json;}
-{name="alea";value=./alea.json;}
-{name="algebra";value=./algebra.json;}
-{name="alignment";value=./alignment.json;}
-{name="allegro5";value=./allegro5.json;}
-{name="allographer";value=./allographer.json;}
-{name="alsa";value=./alsa.json;}
-{name="alut";value=./alut.json;}
-{name="amka";value=./amka.json;}
-{name="amysql";value=./amysql.json;}
-{name="analytics";value=./analytics.json;}
-{name="anime";value=./anime.json;}
-{name="anonimongo";value=./anonimongo.json;}
-{name="ansiparse";value=./ansiparse.json;}
-{name="ansitohtml";value=./ansitohtml.json;}
-{name="antlr4nim";value=./antlr4nim.json;}
-{name="anybar";value=./anybar.json;}
-{name="anycase";value=./anycase.json;}
-{name="ao";value=./ao.json;}
-{name="aporia";value=./aporia.json;}
-{name="appdirs";value=./appdirs.json;}
-{name="applicates";value=./applicates.json;}
-{name="arduino";value=./arduino.json;}
-{name="argon2";value=./argon2.json;}
-{name="argon2_bind";value=./argon2_bind.json;}
-{name="argparse";value=./argparse.json;}
-{name="argument_parser";value=./argument_parser.json;}
-{name="arksys";value=./arksys.json;}
-{name="arraymancer";value=./arraymancer.json;}
-{name="arraymancer_vision";value=./arraymancer_vision.json;}
-{name="arturo";value=./arturo.json;}
-{name="asciigraph";value=./asciigraph.json;}
-{name="asciitables";value=./asciitables.json;}
-{name="asciitext";value=./asciitext.json;}
-{name="asciitype";value=./asciitype.json;}
-{name="assimp";value=./assimp.json;}
-{name="ast_pattern_matching";value=./ast_pattern_matching.json;}
-{name="astar";value=./astar.json;}
-{name="asyncdocker";value=./asyncdocker.json;}
-{name="asyncevents";value=./asyncevents.json;}
-{name="asyncmysql";value=./asyncmysql.json;}
-{name="asyncpg";value=./asyncpg.json;}
-{name="asyncpythonfile";value=./asyncpythonfile.json;}
-{name="asynctest";value=./asynctest.json;}
-{name="asynctools";value=./asynctools.json;}
-{name="atoz";value=./atoz.json;}
-{name="autome";value=./autome.json;}
-{name="autotyper";value=./autotyper.json;}
-{name="avbin";value=./avbin.json;}
-{name="awesome_rmdir";value=./awesome_rmdir.json;}
-{name="awk";value=./awk.json;}
-{name="aws_sdk";value=./aws_sdk.json;}
-{name="awslambda";value=./awslambda.json;}
-{name="azure_translate";value=./azure_translate.json;}
-{name="backoff";value=./backoff.json;}
-{name="badgemaker";value=./badgemaker.json;}
-{name="baker";value=./baker.json;}
-{name="ballena_itcher";value=./ballena_itcher.json;}
-{name="barbarus";value=./barbarus.json;}
-{name="barcode";value=./barcode.json;}
-{name="base32";value=./base32.json;}
-{name="base58";value=./base58.json;}
-{name="base62";value=./base62.json;}
-{name="base64_decoder";value=./base64_decoder.json;}
-{name="basedOn";value=./basedOn.json;}
-{name="basic2d";value=./basic2d.json;}
-{name="basic3d";value=./basic3d.json;}
-{name="battery_widget";value=./battery_widget.json;}
-{name="bcra";value=./bcra.json;}
-{name="bcrypt";value=./bcrypt.json;}
-{name="beanstalkd";value=./beanstalkd.json;}
-{name="bearlibterminal";value=./bearlibterminal.json;}
-{name="bearssl";value=./bearssl.json;}
-{name="benchy";value=./benchy.json;}
-{name="bencode";value=./bencode.json;}
-{name="bgfx";value=./bgfx.json;}
-{name="bgfxdotnim";value=./bgfxdotnim.json;}
-{name="biblioteca_guarrilla";value=./biblioteca_guarrilla.json;}
-{name="bigints";value=./bigints.json;}
-{name="bignum";value=./bignum.json;}
-{name="binance";value=./binance.json;}
-{name="binaryheap";value=./binaryheap.json;}
-{name="binaryparse";value=./binaryparse.json;}
-{name="bingo";value=./bingo.json;}
-{name="binio";value=./binio.json;}
-{name="binstreams";value=./binstreams.json;}
-{name="bio";value=./bio.json;}
-{name="biscuits";value=./biscuits.json;}
-{name="bitarray";value=./bitarray.json;}
-{name="bitset";value=./bitset.json;}
-{name="bitstreams";value=./bitstreams.json;}
-{name="bitty";value=./bitty.json;}
-{name="bitvec";value=./bitvec.json;}
-{name="blackvas_cli";value=./blackvas_cli.json;}
-{name="blake2";value=./blake2.json;}
-{name="bloom";value=./bloom.json;}
-{name="blosc";value=./blosc.json;}
-{name="blscurve";value=./blscurve.json;}
-{name="blurhash";value=./blurhash.json;}
-{name="bluu";value=./bluu.json;}
-{name="bncurve";value=./bncurve.json;}
-{name="boneIO";value=./boneIO.json;}
-{name="bped";value=./bped.json;}
-{name="bpg";value=./bpg.json;}
-{name="brainfuck";value=./brainfuck.json;}
-{name="breeze";value=./breeze.json;}
-{name="bson";value=./bson.json;}
-{name="buffer";value=./buffer.json;}
-{name="bump";value=./bump.json;}
-{name="bumpy";value=./bumpy.json;}
-{name="bytes2human";value=./bytes2human.json;}
-{name="bytesequtils";value=./bytesequtils.json;}
-{name="byteutils";value=./byteutils.json;}
-{name="c2nim";value=./c2nim.json;}
-{name="c4";value=./c4.json;}
-{name="c_alikes";value=./c_alikes.json;}
-{name="cache";value=./cache.json;}
-{name="cairo";value=./cairo.json;}
-{name="cal";value=./cal.json;}
-{name="calendar";value=./calendar.json;}
-{name="calibre";value=./calibre.json;}
-{name="camelize";value=./camelize.json;}
-{name="canonicaljson";value=./canonicaljson.json;}
-{name="capnp";value=./capnp.json;}
-{name="cascade";value=./cascade.json;}
-{name="cassandra";value=./cassandra.json;}
-{name="cassette";value=./cassette.json;}
-{name="cbor";value=./cbor.json;}
-{name="cello";value=./cello.json;}
-{name="chebyshev";value=./chebyshev.json;}
-{name="chipmunk6";value=./chipmunk6.json;}
-{name="chipmunk7_demos";value=./chipmunk7_demos.json;}
-{name="chonker";value=./chonker.json;}
-{name="choosenim";value=./choosenim.json;}
-{name="choosenimgui";value=./choosenimgui.json;}
-{name="chroma";value=./chroma.json;}
-{name="chronicles";value=./chronicles.json;}
-{name="chrono";value=./chrono.json;}
-{name="chronopipe";value=./chronopipe.json;}
-{name="chronos";value=./chronos.json;}
-{name="circleci_client";value=./circleci_client.json;}
-{name="cirru-parser";value=./cirru-parser.json;}
-{name="cirru_parser";value=./cirru_parser.json;}
-{name="cittadino";value=./cittadino.json;}
-{name="clang";value=./clang.json;}
-{name="clapfn";value=./clapfn.json;}
-{name="classes";value=./classes.json;}
-{name="classy";value=./classy.json;}
-{name="clblast";value=./clblast.json;}
-{name="cli_menu";value=./cli_menu.json;}
-{name="clibpp";value=./clibpp.json;}
-{name="cligen";value=./cligen.json;}
-{name="cliptomania";value=./cliptomania.json;}
-{name="closure_compiler";value=./closure_compiler.json;}
-{name="clr";value=./clr.json;}
-{name="cmake";value=./cmake.json;}
-{name="cmark";value=./cmark.json;}
-{name="cmd";value=./cmd.json;}
-{name="cmixer";value=./cmixer.json;}
-{name="cmixer_sdl2";value=./cmixer_sdl2.json;}
-{name="coalesce";value=./coalesce.json;}
-{name="cobs";value=./cobs.json;}
-{name="coco";value=./coco.json;}
-{name="coinbase_pro";value=./coinbase_pro.json;}
-{name="collections";value=./collections.json;}
-{name="colorcol";value=./colorcol.json;}
-{name="colorize";value=./colorize.json;}
-{name="colorizeEcho";value=./colorizeEcho.json;}
-{name="colorsys";value=./colorsys.json;}
-{name="combparser";value=./combparser.json;}
-{name="commandeer";value=./commandeer.json;}
-{name="compactdict";value=./compactdict.json;}
-{name="compiler";value=./compiler.json;}
-{name="complex";value=./complex.json;}
-{name="configparser";value=./configparser.json;}
-{name="confutils";value=./confutils.json;}
-{name="conio";value=./conio.json;}
-{name="constants";value=./constants.json;}
-{name="constructor";value=./constructor.json;}
-{name="consul";value=./consul.json;}
-{name="contra";value=./contra.json;}
-{name="contracts";value=./contracts.json;}
-{name="controlStructures";value=./controlStructures.json;}
-{name="cookiejar";value=./cookiejar.json;}
-{name="couchdb";value=./couchdb.json;}
-{name="coverage";value=./coverage.json;}
-{name="coverartarchive";value=./coverartarchive.json;}
-{name="cppstl";value=./cppstl.json;}
-{name="cpuwhat";value=./cpuwhat.json;}
-{name="crap";value=./crap.json;}
-{name="crc32";value=./crc32.json;}
-{name="criterion";value=./criterion.json;}
-{name="crosscompile";value=./crosscompile.json;}
-{name="csfml";value=./csfml.json;}
-{name="css_html_minify";value=./css_html_minify.json;}
-{name="csv";value=./csv.json;}
-{name="csvql";value=./csvql.json;}
-{name="csvtable";value=./csvtable.json;}
-{name="csvtools";value=./csvtools.json;}
-{name="ctrulib";value=./ctrulib.json;}
-{name="cucumber";value=./cucumber.json;}
-{name="currying";value=./currying.json;}
-{name="d3";value=./d3.json;}
-{name="daemon";value=./daemon.json;}
-{name="daemonim";value=./daemonim.json;}
-{name="daemonize";value=./daemonize.json;}
-{name="dali";value=./dali.json;}
-{name="darwin";value=./darwin.json;}
-{name="dashing";value=./dashing.json;}
-{name="datetime2human";value=./datetime2human.json;}
-{name="datetime_parse";value=./datetime_parse.json;}
-{name="dav1d";value=./dav1d.json;}
-{name="db";value=./db.json;}
-{name="db_clickhouse";value=./db_clickhouse.json;}
-{name="db_presto";value=./db_presto.json;}
-{name="dbg";value=./dbg.json;}
-{name="dbschema";value=./dbschema.json;}
-{name="dbus";value=./dbus.json;}
-{name="decimal";value=./decimal.json;}
-{name="decimal128";value=./decimal128.json;}
-{name="decisiontree";value=./decisiontree.json;}
-{name="deepspeech";value=./deepspeech.json;}
-{name="defines";value=./defines.json;}
-{name="delaunay";value=./delaunay.json;}
-{name="delight";value=./delight.json;}
-{name="denim_ui";value=./denim_ui.json;}
-{name="denim_ui_canvas";value=./denim_ui_canvas.json;}
-{name="des";value=./des.json;}
-{name="deser";value=./deser.json;}
-{name="deser_json";value=./deser_json.json;}
-{name="desim";value=./desim.json;}
-{name="dialogs";value=./dialogs.json;}
-{name="diff";value=./diff.json;}
-{name="diffoutput";value=./diffoutput.json;}
-{name="digitalocean";value=./digitalocean.json;}
-{name="dimscmd";value=./dimscmd.json;}
-{name="dimscord";value=./dimscord.json;}
-{name="directnimrod";value=./directnimrod.json;}
-{name="discord_rpc";value=./discord_rpc.json;}
-{name="discordnim";value=./discordnim.json;}
-{name="dnsclient";value=./dnsclient.json;}
-{name="dnsprotec";value=./dnsprotec.json;}
-{name="dnsprotocol";value=./dnsprotocol.json;}
-{name="dnsstamps";value=./dnsstamps.json;}
-{name="docopt";value=./docopt.json;}
-{name="docx";value=./docx.json;}
-{name="dotenv";value=./dotenv.json;}
-{name="dpdk";value=./dpdk.json;}
-{name="drand48";value=./drand48.json;}
-{name="drawille";value=./drawille.json;}
-{name="dropbox_filename_sanitizer";value=./dropbox_filename_sanitizer.json;}
-{name="dtoa";value=./dtoa.json;}
-{name="dual";value=./dual.json;}
-{name="ducominer";value=./ducominer.json;}
-{name="duktape";value=./duktape.json;}
-{name="dumpincludes";value=./dumpincludes.json;}
-{name="eachdo";value=./eachdo.json;}
-{name="easings";value=./easings.json;}
-{name="eastasianwidth";value=./eastasianwidth.json;}
-{name="easy_bcrypt";value=./easy_bcrypt.json;}
-{name="easymail";value=./easymail.json;}
-{name="ed25519";value=./ed25519.json;}
-{name="edens";value=./edens.json;}
-{name="edlib";value=./edlib.json;}
-{name="edn";value=./edn.json;}
-{name="egl";value=./egl.json;}
-{name="einheit";value=./einheit.json;}
-{name="eloverblik";value=./eloverblik.json;}
-{name="elvis";value=./elvis.json;}
-{name="emerald";value=./emerald.json;}
-{name="eminim";value=./eminim.json;}
-{name="emmy";value=./emmy.json;}
-{name="encode";value=./encode.json;}
-{name="enet";value=./enet.json;}
-{name="ensem";value=./ensem.json;}
-{name="entoody";value=./entoody.json;}
-{name="envconfig";value=./envconfig.json;}
-{name="epub";value=./epub.json;}
-{name="eris";value=./eris.json;}
-{name="eris_utils";value=./eris_utils.json;}
-{name="espeak";value=./espeak.json;}
-{name="etcd_client";value=./etcd_client.json;}
-{name="eternity";value=./eternity.json;}
-{name="eth";value=./eth.json;}
-{name="eth_bloom";value=./eth_bloom.json;}
-{name="eth_common";value=./eth_common.json;}
-{name="eth_keyfile";value=./eth_keyfile.json;}
-{name="eth_keys";value=./eth_keys.json;}
-{name="eth_p2p";value=./eth_p2p.json;}
-{name="eth_trie";value=./eth_trie.json;}
-{name="ethash";value=./ethash.json;}
-{name="euclidean";value=./euclidean.json;}
-{name="euphony";value=./euphony.json;}
-{name="euwren";value=./euwren.json;}
-{name="eventemitter";value=./eventemitter.json;}
-{name="evmc";value=./evmc.json;}
-{name="evmjit";value=./evmjit.json;}
-{name="expat";value=./expat.json;}
-{name="extensions";value=./extensions.json;}
-{name="extmath";value=./extmath.json;}
-{name="fab";value=./fab.json;}
-{name="fae";value=./fae.json;}
-{name="faker";value=./faker.json;}
-{name="falas";value=./falas.json;}
-{name="fancygl";value=./fancygl.json;}
-{name="fastcgi";value=./fastcgi.json;}
-{name="faststack";value=./faststack.json;}
-{name="faststreams";value=./faststreams.json;}
-{name="fasttext";value=./fasttext.json;}
-{name="fastx_reader";value=./fastx_reader.json;}
-{name="feednim";value=./feednim.json;}
-{name="ffbookmarks";value=./ffbookmarks.json;}
-{name="ffpass";value=./ffpass.json;}
-{name="fftw3";value=./fftw3.json;}
-{name="fidget";value=./fidget.json;}
-{name="figures";value=./figures.json;}
-{name="fileinput";value=./fileinput.json;}
-{name="filesize";value=./filesize.json;}
-{name="filetype";value=./filetype.json;}
-{name="finals";value=./finals.json;}
-{name="finalseg";value=./finalseg.json;}
-{name="finder";value=./finder.json;}
-{name="findtests";value=./findtests.json;}
-{name="firejail";value=./firejail.json;}
-{name="fision";value=./fision.json;}
-{name="fixmath";value=./fixmath.json;}
-{name="flatdb";value=./flatdb.json;}
-{name="flatty";value=./flatty.json;}
-{name="fletcher";value=./fletcher.json;}
-{name="flickr_image_bot";value=./flickr_image_bot.json;}
-{name="flippy";value=./flippy.json;}
-{name="fltk";value=./fltk.json;}
-{name="fmod";value=./fmod.json;}
-{name="fnmatch";value=./fnmatch.json;}
-{name="fnv";value=./fnv.json;}
-{name="foliant";value=./foliant.json;}
-{name="fontconfig";value=./fontconfig.json;}
-{name="foreach";value=./foreach.json;}
-{name="forestdb";value=./forestdb.json;}
-{name="fowltek";value=./fowltek.json;}
-{name="fpn";value=./fpn.json;}
-{name="frag";value=./frag.json;}
-{name="fragments";value=./fragments.json;}
-{name="freegeoip";value=./freegeoip.json;}
-{name="freeimage";value=./freeimage.json;}
-{name="freetype";value=./freetype.json;}
-{name="fsm";value=./fsm.json;}
-{name="fsmonitor";value=./fsmonitor.json;}
-{name="fsnotify";value=./fsnotify.json;}
-{name="fswatch";value=./fswatch.json;}
-{name="fugitive";value=./fugitive.json;}
-{name="funchook";value=./funchook.json;}
-{name="fuse";value=./fuse.json;}
-{name="fusion";value=./fusion.json;}
-{name="fuzzy";value=./fuzzy.json;}
-{name="fwrite";value=./fwrite.json;}
-{name="gamelib";value=./gamelib.json;}
-{name="gamelight";value=./gamelight.json;}
-{name="gameoflife";value=./gameoflife.json;}
-{name="gapbuffer";value=./gapbuffer.json;}
-{name="gara";value=./gara.json;}
-{name="gatabase";value=./gatabase.json;}
-{name="gcplat";value=./gcplat.json;}
-{name="gdbmc";value=./gdbmc.json;}
-{name="gemini";value=./gemini.json;}
-{name="geminim";value=./geminim.json;}
-{name="gen";value=./gen.json;}
-{name="genieos";value=./genieos.json;}
-{name="genode";value=./genode.json;}
-{name="genoiser";value=./genoiser.json;}
-{name="gentabs";value=./gentabs.json;}
-{name="geocoding";value=./geocoding.json;}
-{name="geohash";value=./geohash.json;}
-{name="geoip";value=./geoip.json;}
-{name="geometryutils";value=./geometryutils.json;}
-{name="geonames";value=./geonames.json;}
-{name="georefar";value=./georefar.json;}
-{name="gerbil";value=./gerbil.json;}
-{name="getch";value=./getch.json;}
-{name="getmac";value=./getmac.json;}
-{name="getr";value=./getr.json;}
-{name="ggplotnim";value=./ggplotnim.json;}
-{name="gh_nimrod_doc_pages";value=./gh_nimrod_doc_pages.json;}
-{name="gifenc";value=./gifenc.json;}
-{name="gifwriter";value=./gifwriter.json;}
-{name="gimei";value=./gimei.json;}
-{name="ginger";value=./ginger.json;}
-{name="gintro";value=./gintro.json;}
-{name="gitapi";value=./gitapi.json;}
-{name="github";value=./github.json;}
-{name="github_api";value=./github_api.json;}
-{name="github_release";value=./github_release.json;}
-{name="gles";value=./gles.json;}
-{name="glew";value=./glew.json;}
-{name="glfw";value=./glfw.json;}
-{name="glm";value=./glm.json;}
-{name="glob";value=./glob.json;}
-{name="glossolalia";value=./glossolalia.json;}
-{name="gmp";value=./gmp.json;}
-{name="gnuplot";value=./gnuplot.json;}
-{name="gnuplotlib";value=./gnuplotlib.json;}
-{name="gnutls";value=./gnutls.json;}
-{name="godot";value=./godot.json;}
-{name="golden";value=./golden.json;}
-{name="golib";value=./golib.json;}
-{name="googleapi";value=./googleapi.json;}
-{name="googlesearch";value=./googlesearch.json;}
-{name="gplay";value=./gplay.json;}
-{name="gpx";value=./gpx.json;}
-{name="gradient";value=./gradient.json;}
-{name="grafanim";value=./grafanim.json;}
-{name="graphemes";value=./graphemes.json;}
-{name="graphics";value=./graphics.json;}
-{name="gravatar";value=./gravatar.json;}
-{name="grim";value=./grim.json;}
-{name="grp";value=./grp.json;}
-{name="gtk2";value=./gtk2.json;}
-{name="gtkgenui";value=./gtkgenui.json;}
-{name="guildenstern";value=./guildenstern.json;}
-{name="gungnir";value=./gungnir.json;}
-{name="gurl";value=./gurl.json;}
-{name="gyaric";value=./gyaric.json;}
-{name="hackpad";value=./hackpad.json;}
-{name="halonium";value=./halonium.json;}
-{name="haraka";value=./haraka.json;}
-{name="hashids";value=./hashids.json;}
-{name="hashlib";value=./hashlib.json;}
-{name="hasts";value=./hasts.json;}
-{name="hastyscribe";value=./hastyscribe.json;}
-{name="hats";value=./hats.json;}
-{name="hayaa";value=./hayaa.json;}
-{name="hcparse";value=./hcparse.json;}
-{name="hdrawing";value=./hdrawing.json;}
-{name="hex";value=./hex.json;}
-{name="highlight";value=./highlight.json;}
-{name="hldiff";value=./hldiff.json;}
-{name="hmac";value=./hmac.json;}
-{name="hmisc";value=./hmisc.json;}
-{name="hnimast";value=./hnimast.json;}
-{name="horde3d";value=./horde3d.json;}
-{name="host";value=./host.json;}
-{name="hostname";value=./hostname.json;}
-{name="hpack";value=./hpack.json;}
-{name="hparse";value=./hparse.json;}
-{name="hpprint";value=./hpprint.json;}
-{name="hsluv";value=./hsluv.json;}
-{name="html5_canvas";value=./html5_canvas.json;}
-{name="html_tools";value=./html_tools.json;}
-{name="htmlview";value=./htmlview.json;}
-{name="hts";value=./hts.json;}
-{name="htsparse";value=./htsparse.json;}
-{name="httpauth";value=./httpauth.json;}
-{name="httpbeast";value=./httpbeast.json;}
-{name="httpform";value=./httpform.json;}
-{name="httpkit";value=./httpkit.json;}
-{name="httpstat";value=./httpstat.json;}
-{name="httputils";value=./httputils.json;}
-{name="httpx";value=./httpx.json;}
-{name="huenim";value=./huenim.json;}
-{name="huffman";value=./huffman.json;}
-{name="i18n";value=./i18n.json;}
-{name="i3ipc";value=./i3ipc.json;}
-{name="illwill";value=./illwill.json;}
-{name="illwill_unsafe";value=./illwill_unsafe.json;}
-{name="imageman";value=./imageman.json;}
-{name="imap";value=./imap.json;}
-{name="imgcat";value=./imgcat.json;}
-{name="imghdr";value=./imghdr.json;}
-{name="imlib2";value=./imlib2.json;}
-{name="importc_helpers";value=./importc_helpers.json;}
-{name="impulse_engine";value=./impulse_engine.json;}
-{name="influx";value=./influx.json;}
-{name="inim";value=./inim.json;}
-{name="intel_hex";value=./intel_hex.json;}
-{name="interfaced";value=./interfaced.json;}
-{name="inumon";value=./inumon.json;}
-{name="io-egl";value=./io-egl.json;}
-{name="io-gles";value=./io-gles.json;}
-{name="io-isense";value=./io-isense.json;}
-{name="io-myo";value=./io-myo.json;}
-{name="io-oculus";value=./io-oculus.json;}
-{name="io-serialport";value=./io-serialport.json;}
-{name="io-sixense";value=./io-sixense.json;}
-{name="io-spacenav";value=./io-spacenav.json;}
-{name="io-usb";value=./io-usb.json;}
-{name="ioselectors";value=./ioselectors.json;}
-{name="ipsumgenera";value=./ipsumgenera.json;}
-{name="iputils";value=./iputils.json;}
-{name="irc";value=./irc.json;}
-{name="iridium";value=./iridium.json;}
-{name="isa";value=./isa.json;}
-{name="isaac";value=./isaac.json;}
-{name="isense";value=./isense.json;}
-{name="itchio";value=./itchio.json;}
-{name="itertools";value=./itertools.json;}
-{name="iterutils";value=./iterutils.json;}
-{name="itn";value=./itn.json;}
-{name="iup";value=./iup.json;}
-{name="jack";value=./jack.json;}
-{name="jade-nim";value=./jade-nim.json;}
-{name="jdec";value=./jdec.json;}
-{name="jeknil";value=./jeknil.json;}
-{name="jester";value=./jester.json;}
-{name="jestercookiemsgs";value=./jestercookiemsgs.json;}
-{name="jestergeoip";value=./jestergeoip.json;}
-{name="jesterjson";value=./jesterjson.json;}
-{name="jestermongopool";value=./jestermongopool.json;}
-{name="jesterwithplugins";value=./jesterwithplugins.json;}
-{name="jhash";value=./jhash.json;}
-{name="jnim";value=./jnim.json;}
-{name="joyent_http_parser";value=./joyent_http_parser.json;}
-{name="jq";value=./jq.json;}
-{name="jsbind";value=./jsbind.json;}
-{name="jscanvas";value=./jscanvas.json;}
-{name="jser";value=./jser.json;}
-{name="jsmn";value=./jsmn.json;}
-{name="json_builder";value=./json_builder.json;}
-{name="json_rpc";value=./json_rpc.json;}
-{name="json_serialization";value=./json_serialization.json;}
-{name="jsonob";value=./jsonob.json;}
-{name="jsonschema";value=./jsonschema.json;}
-{name="jsony";value=./jsony.json;}
-{name="jstin";value=./jstin.json;}
-{name="jsutils";value=./jsutils.json;}
-{name="jswebsockets";value=./jswebsockets.json;}
-{name="jupyternim";value=./jupyternim.json;}
-{name="jwt";value=./jwt.json;}
-{name="kaitai_struct_nim_runtime";value=./kaitai_struct_nim_runtime.json;}
-{name="karax";value=./karax.json;}
-{name="kdb";value=./kdb.json;}
-{name="kdialog";value=./kdialog.json;}
-{name="keccak_tiny";value=./keccak_tiny.json;}
-{name="kexpr";value=./kexpr.json;}
-{name="keyring";value=./keyring.json;}
-{name="keystone";value=./keystone.json;}
-{name="kissfft";value=./kissfft.json;}
-{name="kiwi";value=./kiwi.json;}
-{name="kmer";value=./kmer.json;}
-{name="kmod";value=./kmod.json;}
-{name="kslog";value=./kslog.json;}
-{name="kview";value=./kview.json;}
-{name="kwin";value=./kwin.json;}
-{name="ladder";value=./ladder.json;}
-{name="lapper";value=./lapper.json;}
-{name="laser";value=./laser.json;}
-{name="lastfm";value=./lastfm.json;}
-{name="latexdsl";value=./latexdsl.json;}
-{name="layonara_nwn";value=./layonara_nwn.json;}
-{name="lazy";value=./lazy.json;}
-{name="lazy_rest";value=./lazy_rest.json;}
-{name="lazyseq";value=./lazyseq.json;}
-{name="lc";value=./lc.json;}
-{name="lda";value=./lda.json;}
-{name="leveldb";value=./leveldb.json;}
-{name="libarchibi";value=./libarchibi.json;}
-{name="libbacktrace";value=./libbacktrace.json;}
-{name="libclang";value=./libclang.json;}
-{name="libcurl";value=./libcurl.json;}
-{name="libevdev";value=./libevdev.json;}
-{name="libffi";value=./libffi.json;}
-{name="libfswatch";value=./libfswatch.json;}
-{name="libgcrypt";value=./libgcrypt.json;}
-{name="libgit2";value=./libgit2.json;}
-{name="libgraph";value=./libgraph.json;}
-{name="libipset";value=./libipset.json;}
-{name="libjwt";value=./libjwt.json;}
-{name="libkeepass";value=./libkeepass.json;}
-{name="libmpdclient";value=./libmpdclient.json;}
-{name="libnetfilter_queue";value=./libnetfilter_queue.json;}
-{name="libnotify";value=./libnotify.json;}
-{name="libnx";value=./libnx.json;}
-{name="libovr";value=./libovr.json;}
-{name="libp2p";value=./libp2p.json;}
-{name="libplist";value=./libplist.json;}
-{name="libravatar";value=./libravatar.json;}
-{name="libsha";value=./libsha.json;}
-{name="libsodium";value=./libsodium.json;}
-{name="libssh";value=./libssh.json;}
-{name="libssh2";value=./libssh2.json;}
-{name="libsvm";value=./libsvm.json;}
-{name="libsvm_legacy";value=./libsvm_legacy.json;}
-{name="libtcod_nim";value=./libtcod_nim.json;}
-{name="libu2f";value=./libu2f.json;}
-{name="libusb";value=./libusb.json;}
-{name="libuv";value=./libuv.json;}
-{name="libvlc";value=./libvlc.json;}
-{name="lilt";value=./lilt.json;}
-{name="linalg";value=./linalg.json;}
-{name="linenoise";value=./linenoise.json;}
-{name="linuxfb";value=./linuxfb.json;}
-{name="list_comprehension";value=./list_comprehension.json;}
-{name="listsv";value=./listsv.json;}
-{name="litestore";value=./litestore.json;}
-{name="lmdb";value=./lmdb.json;}
-{name="loadenv";value=./loadenv.json;}
-{name="locale";value=./locale.json;}
-{name="lockfreequeues";value=./lockfreequeues.json;}
-{name="loco";value=./loco.json;}
-{name="logue";value=./logue.json;}
-{name="loki";value=./loki.json;}
-{name="lolcat";value=./lolcat.json;}
-{name="looper";value=./looper.json;}
-{name="loopfusion";value=./loopfusion.json;}
-{name="lq";value=./lq.json;}
-{name="lrucache";value=./lrucache.json;}
-{name="lscolors";value=./lscolors.json;}
-{name="lua";value=./lua.json;}
-{name="ludens";value=./ludens.json;}
-{name="luhncheck";value=./luhncheck.json;}
-{name="luhny";value=./luhny.json;}
-{name="luna";value=./luna.json;}
-{name="lz77";value=./lz77.json;}
-{name="macroutils";value=./macroutils.json;}
-{name="magic";value=./magic.json;}
-{name="mangle";value=./mangle.json;}
-{name="manu";value=./manu.json;}
-{name="mapbits";value=./mapbits.json;}
-{name="marggers";value=./marggers.json;}
-{name="markdown";value=./markdown.json;}
-{name="markx";value=./markx.json;}
-{name="masterpassword";value=./masterpassword.json;}
-{name="mathexpr";value=./mathexpr.json;}
-{name="matplotnim";value=./matplotnim.json;}
-{name="matsuri";value=./matsuri.json;}
-{name="maybe";value=./maybe.json;}
-{name="maze";value=./maze.json;}
-{name="mccache";value=./mccache.json;}
-{name="mcmurry";value=./mcmurry.json;}
-{name="mcresponse";value=./mcresponse.json;}
-{name="mctranslog";value=./mctranslog.json;}
-{name="mddoc";value=./mddoc.json;}
-{name="mdevolve";value=./mdevolve.json;}
-{name="memo";value=./memo.json;}
-{name="memviews";value=./memviews.json;}
-{name="mentat";value=./mentat.json;}
-{name="meow";value=./meow.json;}
-{name="metar";value=./metar.json;}
-{name="metatools";value=./metatools.json;}
-{name="metric";value=./metric.json;}
-{name="metrics";value=./metrics.json;}
-{name="microasynchttpserver";value=./microasynchttpserver.json;}
-{name="midio_ui";value=./midio_ui.json;}
-{name="midio_ui_canvas";value=./midio_ui_canvas.json;}
-{name="midnight_dynamite";value=./midnight_dynamite.json;}
-{name="migrate";value=./migrate.json;}
-{name="mike";value=./mike.json;}
-{name="mime";value=./mime.json;}
-{name="minhash";value=./minhash.json;}
-{name="minhook";value=./minhook.json;}
-{name="miniblink";value=./miniblink.json;}
-{name="miniz";value=./miniz.json;}
-{name="minmaxheap";value=./minmaxheap.json;}
-{name="miter";value=./miter.json;}
-{name="mmgeoip";value=./mmgeoip.json;}
-{name="mnemonic";value=./mnemonic.json;}
-{name="moduleinit";value=./moduleinit.json;}
-{name="moe";value=./moe.json;}
-{name="mofuw";value=./mofuw.json;}
-{name="mongo";value=./mongo.json;}
-{name="mongopool";value=./mongopool.json;}
-{name="monit";value=./monit.json;}
-{name="monocypher";value=./monocypher.json;}
-{name="morelogging";value=./morelogging.json;}
-{name="mort";value=./mort.json;}
-{name="moustachu";value=./moustachu.json;}
-{name="mpdclient";value=./mpdclient.json;}
-{name="mpeg";value=./mpeg.json;}
-{name="mpfit";value=./mpfit.json;}
-{name="mpwc";value=./mpwc.json;}
-{name="mqtt";value=./mqtt.json;}
-{name="ms";value=./ms.json;}
-{name="msgpack";value=./msgpack.json;}
-{name="msgpack4nim";value=./msgpack4nim.json;}
-{name="mui";value=./mui.json;}
-{name="multicast";value=./multicast.json;}
-{name="murmur";value=./murmur.json;}
-{name="murmur3";value=./murmur3.json;}
-{name="murmurhash";value=./murmurhash.json;}
-{name="mustache";value=./mustache.json;}
-{name="mutableseqs";value=./mutableseqs.json;}
-{name="myo";value=./myo.json;}
-{name="mysqlparser";value=./mysqlparser.json;}
-{name="nake";value=./nake.json;}
-{name="names";value=./names.json;}
-{name="nancy";value=./nancy.json;}
-{name="nanoid";value=./nanoid.json;}
-{name="nanomsg";value=./nanomsg.json;}
-{name="nanovg";value=./nanovg.json;}
-{name="nanovg.nim";value=./nanovg.nim.json;}
-{name="nap";value=./nap.json;}
-{name="nasher";value=./nasher.json;}
-{name="nat_traversal";value=./nat_traversal.json;}
-{name="native_dialogs";value=./native_dialogs.json;}
-{name="natu";value=./natu.json;}
-{name="nauthy";value=./nauthy.json;}
-{name="naw";value=./naw.json;}
-{name="nbaser";value=./nbaser.json;}
-{name="ncurses";value=./ncurses.json;}
-{name="ndb";value=./ndb.json;}
-{name="ndbex";value=./ndbex.json;}
-{name="ndf";value=./ndf.json;}
-{name="ndns";value=./ndns.json;}
-{name="negamax";value=./negamax.json;}
-{name="neo";value=./neo.json;}
-{name="neoid";value=./neoid.json;}
-{name="nerve";value=./nerve.json;}
-{name="nesm";value=./nesm.json;}
-{name="nest";value=./nest.json;}
-{name="nestegg";value=./nestegg.json;}
-{name="netTest";value=./netTest.json;}
-{name="netpbm";value=./netpbm.json;}
-{name="netpipe";value=./netpipe.json;}
-{name="netty";value=./netty.json;}
-{name="neverwinter";value=./neverwinter.json;}
-{name="news";value=./news.json;}
-{name="ngspice";value=./ngspice.json;}
-{name="ngtcp2";value=./ngtcp2.json;}
-{name="ngxcmod";value=./ngxcmod.json;}
-{name="nhsl";value=./nhsl.json;}
-{name="nico";value=./nico.json;}
-{name="nicy";value=./nicy.json;}
-{name="nifty";value=./nifty.json;}
-{name="nigui";value=./nigui.json;}
-{name="niledb";value=./niledb.json;}
-{name="nim-libgd";value=./nim-libgd.json;}
-{name="nim7z";value=./nim7z.json;}
-{name="nimAES";value=./nimAES.json;}
-{name="nimAGG";value=./nimAGG.json;}
-{name="nimBMP";value=./nimBMP.json;}
-{name="nimCEF";value=./nimCEF.json;}
-{name="nimFinLib";value=./nimFinLib.json;}
-{name="nimLUA";value=./nimLUA.json;}
-{name="nimPDF";value=./nimPDF.json;}
-{name="nimPNG";value=./nimPNG.json;}
-{name="nimQBittorrent";value=./nimQBittorrent.json;}
-{name="nimSHA2";value=./nimSHA2.json;}
-{name="nimTiingo";value=./nimTiingo.json;}
-{name="nim_cexc";value=./nim_cexc.json;}
-{name="nim_cjson";value=./nim_cjson.json;}
-{name="nim_curry";value=./nim_curry.json;}
-{name="nim_exodus";value=./nim_exodus.json;}
-{name="nim_midi";value=./nim_midi.json;}
-{name="nim_miniz";value=./nim_miniz.json;}
-{name="nim_sdl2";value=./nim_sdl2.json;}
-{name="nim_searches";value=./nim_searches.json;}
-{name="nim_telegram_bot";value=./nim_telegram_bot.json;}
-{name="nim_tiled";value=./nim_tiled.json;}
-{name="nimactors";value=./nimactors.json;}
-{name="nimage";value=./nimage.json;}
-{name="nimagehide";value=./nimagehide.json;}
-{name="nimalpm";value=./nimalpm.json;}
-{name="nimarchive";value=./nimarchive.json;}
-{name="nimassets";value=./nimassets.json;}
-{name="nimaterial";value=./nimaterial.json;}
-{name="nimates";value=./nimates.json;}
-{name="nimatic";value=./nimatic.json;}
-{name="nimbass";value=./nimbass.json;}
-{name="nimbench";value=./nimbench.json;}
-{name="nimbigwig";value=./nimbigwig.json;}
-{name="nimbioseq";value=./nimbioseq.json;}
-{name="nimbitarray";value=./nimbitarray.json;}
-{name="nimblas";value=./nimblas.json;}
-{name="nimble";value=./nimble.json;}
-{name="nimblegui";value=./nimblegui.json;}
-{name="nimbler";value=./nimbler.json;}
-{name="nimbluez";value=./nimbluez.json;}
-{name="nimbomb";value=./nimbomb.json;}
-{name="nimboost";value=./nimboost.json;}
-{name="nimbox";value=./nimbox.json;}
-{name="nimbpf";value=./nimbpf.json;}
-{name="nimbug";value=./nimbug.json;}
-{name="nimbus";value=./nimbus.json;}
-{name="nimcat";value=./nimcat.json;}
-{name="nimcb";value=./nimcb.json;}
-{name="nimcdl";value=./nimcdl.json;}
-{name="nimcfitsio";value=./nimcfitsio.json;}
-{name="nimchromepath";value=./nimchromepath.json;}
-{name="nimcl";value=./nimcl.json;}
-{name="nimclipboard";value=./nimclipboard.json;}
-{name="nimclutter";value=./nimclutter.json;}
-{name="nimcmaes";value=./nimcmaes.json;}
-{name="nimcoon";value=./nimcoon.json;}
-{name="nimcr";value=./nimcr.json;}
-{name="nimcrypto";value=./nimcrypto.json;}
-{name="nimcuda";value=./nimcuda.json;}
-{name="nimcx";value=./nimcx.json;}
-{name="nimdeps";value=./nimdeps.json;}
-{name="nimem";value=./nimem.json;}
-{name="nimes";value=./nimes.json;}
-{name="nimetry";value=./nimetry.json;}
-{name="nimeverything";value=./nimeverything.json;}
-{name="nimfastText";value=./nimfastText.json;}
-{name="nimfcuk";value=./nimfcuk.json;}
-{name="nimfm";value=./nimfm.json;}
-{name="nimfp";value=./nimfp.json;}
-{name="nimfuzz";value=./nimfuzz.json;}
-{name="nimfuzzy";value=./nimfuzzy.json;}
-{name="nimga";value=./nimga.json;}
-{name="nimgame";value=./nimgame.json;}
-{name="nimgame2";value=./nimgame2.json;}
-{name="nimgen";value=./nimgen.json;}
-{name="nimgit2";value=./nimgit2.json;}
-{name="nimgl";value=./nimgl.json;}
-{name="nimgraphql";value=./nimgraphql.json;}
-{name="nimgraphviz";value=./nimgraphviz.json;}
-{name="nimgui";value=./nimgui.json;}
-{name="nimha";value=./nimha.json;}
-{name="nimhdf5";value=./nimhdf5.json;}
-{name="nimhq";value=./nimhq.json;}
-{name="nimhttpd";value=./nimhttpd.json;}
-{name="nimi3status";value=./nimi3status.json;}
-{name="nimics";value=./nimics.json;}
-{name="niminst";value=./niminst.json;}
-{name="nimish";value=./nimish.json;}
-{name="nimjson";value=./nimjson.json;}
-{name="nimkerberos";value=./nimkerberos.json;}
-{name="nimlapack";value=./nimlapack.json;}
-{name="nimler";value=./nimler.json;}
-{name="nimlevenshtein";value=./nimlevenshtein.json;}
-{name="nimlibxlsxwriter";value=./nimlibxlsxwriter.json;}
-{name="nimline";value=./nimline.json;}
-{name="nimlist";value=./nimlist.json;}
-{name="nimlsp";value=./nimlsp.json;}
-{name="nimly";value=./nimly.json;}
-{name="nimlz4";value=./nimlz4.json;}
-{name="nimmm";value=./nimmm.json;}
-{name="nimmonocypher";value=./nimmonocypher.json;}
-{name="nimna";value=./nimna.json;}
-{name="nimnews";value=./nimnews.json;}
-{name="nimnoise";value=./nimnoise.json;}
-{name="nimobserver";value=./nimobserver.json;}
-{name="nimodpi";value=./nimodpi.json;}
-{name="nimoji";value=./nimoji.json;}
-{name="nimongo";value=./nimongo.json;}
-{name="nimosc";value=./nimosc.json;}
-{name="nimp";value=./nimp.json;}
-{name="nimp5";value=./nimp5.json;}
-{name="nimpari";value=./nimpari.json;}
-{name="nimpass";value=./nimpass.json;}
-{name="nimpb";value=./nimpb.json;}
-{name="nimpb_protoc";value=./nimpb_protoc.json;}
-{name="nimpcre";value=./nimpcre.json;}
-{name="nimpmda";value=./nimpmda.json;}
-{name="nimpress";value=./nimpress.json;}
-{name="nimpy";value=./nimpy.json;}
-{name="nimqml";value=./nimqml.json;}
-{name="nimquery";value=./nimquery.json;}
-{name="nimr";value=./nimr.json;}
-{name="nimrat";value=./nimrat.json;}
-{name="nimrax";value=./nimrax.json;}
-{name="nimraylib_now";value=./nimraylib_now.json;}
-{name="nimrcon";value=./nimrcon.json;}
-{name="nimrdkafka";value=./nimrdkafka.json;}
-{name="nimrod-glfw";value=./nimrod-glfw.json;}
-{name="nimroutine";value=./nimroutine.json;}
-{name="nimrpc";value=./nimrpc.json;}
-{name="nimrpc_milis";value=./nimrpc_milis.json;}
-{name="nimrtlsdr";value=./nimrtlsdr.json;}
-{name="nimrun";value=./nimrun.json;}
-{name="nimshell";value=./nimshell.json;}
-{name="nimsimd";value=./nimsimd.json;}
-{name="nimsl";value=./nimsl.json;}
-{name="nimsnappy";value=./nimsnappy.json;}
-{name="nimsnappyc";value=./nimsnappyc.json;}
-{name="nimspice";value=./nimspice.json;}
-{name="nimssh2";value=./nimssh2.json;}
-{name="nimssl";value=./nimssl.json;}
-{name="nimstopwatch";value=./nimstopwatch.json;}
-{name="nimsuggest";value=./nimsuggest.json;}
-{name="nimsuite";value=./nimsuite.json;}
-{name="nimsvg";value=./nimsvg.json;}
-{name="nimterlingua";value=./nimterlingua.json;}
-{name="nimterop";value=./nimterop.json;}
-{name="nimtess2";value=./nimtess2.json;}
-{name="nimtetris";value=./nimtetris.json;}
-{name="nimtomd";value=./nimtomd.json;}
-{name="nimtraits";value=./nimtraits.json;}
-{name="nimtrs";value=./nimtrs.json;}
-{name="nimvisa";value=./nimvisa.json;}
-{name="nimviz";value=./nimviz.json;}
-{name="nimwc";value=./nimwc.json;}
-{name="nimwebp";value=./nimwebp.json;}
-{name="nimx";value=./nimx.json;}
-{name="nimzbar";value=./nimzbar.json;}
-{name="nimzend";value=./nimzend.json;}
-{name="nio";value=./nio.json;}
-{name="nish";value=./nish.json;}
-{name="niup";value=./niup.json;}
-{name="nlopt";value=./nlopt.json;}
-{name="nmi";value=./nmi.json;}
-{name="nmiline";value=./nmiline.json;}
-{name="nmqtt";value=./nmqtt.json;}
-{name="noaa";value=./noaa.json;}
-{name="nobject";value=./nobject.json;}
-{name="node";value=./node.json;}
-{name="nodejs";value=./nodejs.json;}
-{name="nodesnim";value=./nodesnim.json;}
-{name="noise";value=./noise.json;}
-{name="noisy";value=./noisy.json;}
-{name="nominatim";value=./nominatim.json;}
-{name="nordnet";value=./nordnet.json;}
-{name="norm";value=./norm.json;}
-{name="normalize";value=./normalize.json;}
-{name="norman";value=./norman.json;}
-{name="norx";value=./norx.json;}
-{name="notetxt";value=./notetxt.json;}
-{name="notificatcher";value=./notificatcher.json;}
-{name="notification";value=./notification.json;}
-{name="notifications";value=./notifications.json;}
-{name="notifishower";value=./notifishower.json;}
-{name="notify";value=./notify.json;}
-{name="notmuch";value=./notmuch.json;}
-{name="npeg";value=./npeg.json;}
-{name="npg";value=./npg.json;}
-{name="nre";value=./nre.json;}
-{name="nregex";value=./nregex.json;}
-{name="nrpl";value=./nrpl.json;}
-{name="nsh";value=./nsh.json;}
-{name="nshout";value=./nshout.json;}
-{name="nsu";value=./nsu.json;}
-{name="ntangle";value=./ntangle.json;}
-{name="number_files";value=./number_files.json;}
-{name="numericalnim";value=./numericalnim.json;}
-{name="numnim";value=./numnim.json;}
-{name="nuuid";value=./nuuid.json;}
-{name="nwatchdog";value=./nwatchdog.json;}
-{name="nwnt";value=./nwnt.json;}
-{name="nwt";value=./nwt.json;}
-{name="oaitools";value=./oaitools.json;}
-{name="oauth";value=./oauth.json;}
-{name="oblivion";value=./oblivion.json;}
-{name="oculus";value=./oculus.json;}
-{name="oldgtk3";value=./oldgtk3.json;}
-{name="oldwinapi";value=./oldwinapi.json;}
-{name="omni";value=./omni.json;}
-{name="omnicollider";value=./omnicollider.json;}
-{name="omnilog";value=./omnilog.json;}
-{name="omnimax";value=./omnimax.json;}
-{name="once";value=./once.json;}
-{name="onedrive";value=./onedrive.json;}
-{name="oop_utils";value=./oop_utils.json;}
-{name="open_elevation";value=./open_elevation.json;}
-{name="openal";value=./openal.json;}
-{name="openapi";value=./openapi.json;}
-{name="opencl";value=./opencl.json;}
-{name="opencv";value=./opencv.json;}
-{name="openexchangerates";value=./openexchangerates.json;}
-{name="opengl";value=./opengl.json;}
-{name="openssl_evp";value=./openssl_evp.json;}
-{name="openstreetmap";value=./openstreetmap.json;}
-{name="opentdb";value=./opentdb.json;}
-{name="openweathermap";value=./openweathermap.json;}
-{name="optional_t";value=./optional_t.json;}
-{name="optionals";value=./optionals.json;}
-{name="options";value=./options.json;}
-{name="optionsutils";value=./optionsutils.json;}
-{name="opus";value=./opus.json;}
-{name="opusenc";value=./opusenc.json;}
-{name="orient";value=./orient.json;}
-{name="origin";value=./origin.json;}
-{name="ormin";value=./ormin.json;}
-{name="os_files";value=./os_files.json;}
-{name="osdialog";value=./osdialog.json;}
-{name="oshostname";value=./oshostname.json;}
-{name="osinfo";value=./osinfo.json;}
-{name="osrm";value=./osrm.json;}
-{name="osureplay";value=./osureplay.json;}
-{name="osutil";value=./osutil.json;}
-{name="otp";value=./otp.json;}
-{name="overpass";value=./overpass.json;}
-{name="owo";value=./owo.json;}
-{name="p4ztag_to_json";value=./p4ztag_to_json.json;}
-{name="package_visible_types";value=./package_visible_types.json;}
-{name="packedjson";value=./packedjson.json;}
-{name="packets";value=./packets.json;}
-{name="pager";value=./pager.json;}
-{name="paramidi";value=./paramidi.json;}
-{name="paramidi_soundfonts";value=./paramidi_soundfonts.json;}
-{name="paranim";value=./paranim.json;}
-{name="pararules";value=./pararules.json;}
-{name="parasound";value=./parasound.json;}
-{name="paratext";value=./paratext.json;}
-{name="paravim";value=./paravim.json;}
-{name="pari";value=./pari.json;}
-{name="parseFixed";value=./parseFixed.json;}
-{name="parseini";value=./parseini.json;}
-{name="parselicense";value=./parselicense.json;}
-{name="parsetoml";value=./parsetoml.json;}
-{name="pas2nim";value=./pas2nim.json;}
-{name="passgen";value=./passgen.json;}
-{name="pastebin";value=./pastebin.json;}
-{name="patgraph";value=./patgraph.json;}
-{name="pathname";value=./pathname.json;}
-{name="patty";value=./patty.json;}
-{name="pcap";value=./pcap.json;}
-{name="pcgbasic";value=./pcgbasic.json;}
-{name="pdba";value=./pdba.json;}
-{name="pdcurses";value=./pdcurses.json;}
-{name="perlin";value=./perlin.json;}
-{name="persistent_enums";value=./persistent_enums.json;}
-{name="persvector";value=./persvector.json;}
-{name="pfring";value=./pfring.json;}
-{name="pg";value=./pg.json;}
-{name="pg_util";value=./pg_util.json;}
-{name="pgxcrown";value=./pgxcrown.json;}
-{name="phoon";value=./phoon.json;}
-{name="physfs";value=./physfs.json;}
-{name="picohttpparser";value=./picohttpparser.json;}
-{name="pine";value=./pine.json;}
-{name="pinggraph";value=./pinggraph.json;}
-{name="pipe";value=./pipe.json;}
-{name="pipelines";value=./pipelines.json;}
-{name="pixie";value=./pixie.json;}
-{name="platformer";value=./platformer.json;}
-{name="playground";value=./playground.json;}
-{name="playlists";value=./playlists.json;}
-{name="pledge";value=./pledge.json;}
-{name="plists";value=./plists.json;}
-{name="plotly";value=./plotly.json;}
-{name="pluginmanager";value=./pluginmanager.json;}
-{name="plugins";value=./plugins.json;}
-{name="plz";value=./plz.json;}
-{name="png";value=./png.json;}
-{name="pnm";value=./pnm.json;}
-{name="pokereval";value=./pokereval.json;}
-{name="polyBool";value=./polyBool.json;}
-{name="polynumeric";value=./polynumeric.json;}
-{name="polypbren";value=./polypbren.json;}
-{name="pomTimer";value=./pomTimer.json;}
-{name="pop3";value=./pop3.json;}
-{name="porter";value=./porter.json;}
-{name="primme";value=./primme.json;}
-{name="print";value=./print.json;}
-{name="printdebug";value=./printdebug.json;}
-{name="procs";value=./procs.json;}
-{name="progress";value=./progress.json;}
-{name="prologue";value=./prologue.json;}
-{name="prometheus";value=./prometheus.json;}
-{name="prompt";value=./prompt.json;}
-{name="protobuf";value=./protobuf.json;}
-{name="protobuf_serialization";value=./protobuf_serialization.json;}
-{name="protocoled";value=./protocoled.json;}
-{name="proton";value=./proton.json;}
-{name="proxyproto";value=./proxyproto.json;}
-{name="psutil";value=./psutil.json;}
-{name="psutilim";value=./psutilim.json;}
-{name="ptest";value=./ptest.json;}
-{name="ptrace";value=./ptrace.json;}
-{name="pudge";value=./pudge.json;}
-{name="pvim";value=./pvim.json;}
-{name="pwd";value=./pwd.json;}
-{name="pwned";value=./pwned.json;}
-{name="pych";value=./pych.json;}
-{name="pykot";value=./pykot.json;}
-{name="pylib";value=./pylib.json;}
-{name="pymod";value=./pymod.json;}
-{name="python";value=./python.json;}
-{name="python3";value=./python3.json;}
-{name="pythonfile";value=./pythonfile.json;}
-{name="pythonize";value=./pythonize.json;}
-{name="pythonmath";value=./pythonmath.json;}
-{name="pythonpathlib";value=./pythonpathlib.json;}
-{name="q";value=./q.json;}
-{name="qeu";value=./qeu.json;}
-{name="qr";value=./qr.json;}
-{name="qrcode";value=./qrcode.json;}
-{name="qrcodegen";value=./qrcodegen.json;}
-{name="qt5_qtsql";value=./qt5_qtsql.json;}
-{name="quadtree";value=./quadtree.json;}
-{name="quickcrypt";value=./quickcrypt.json;}
-{name="quickjwt";value=./quickjwt.json;}
-{name="qwertycd";value=./qwertycd.json;}
-{name="rabbit";value=./rabbit.json;}
-{name="rain";value=./rain.json;}
-{name="rainbow";value=./rainbow.json;}
-{name="randgen";value=./randgen.json;}
-{name="random";value=./random.json;}
-{name="random_font_color";value=./random_font_color.json;}
-{name="randpw";value=./randpw.json;}
-{name="ranges";value=./ranges.json;}
-{name="rapid";value=./rapid.json;}
-{name="rbac";value=./rbac.json;}
-{name="rbtree";value=./rbtree.json;}
-{name="rdgui";value=./rdgui.json;}
-{name="react";value=./react.json;}
-{name="react16";value=./react16.json;}
-{name="reactor";value=./reactor.json;}
-{name="reactorfuse";value=./reactorfuse.json;}
-{name="readfq";value=./readfq.json;}
-{name="recaptcha";value=./recaptcha.json;}
-{name="rect";value=./rect.json;}
-{name="rect_packer";value=./rect_packer.json;}
-{name="redis";value=./redis.json;}
-{name="redisclient";value=./redisclient.json;}
-{name="redisparser";value=./redisparser.json;}
-{name="redissessions";value=./redissessions.json;}
-{name="redneck_translator";value=./redneck_translator.json;}
-{name="redpool";value=./redpool.json;}
-{name="redux";value=./redux.json;}
-{name="redux_nim";value=./redux_nim.json;}
-{name="reframe";value=./reframe.json;}
-{name="regex";value=./regex.json;}
-{name="remarker_light";value=./remarker_light.json;}
-{name="rena";value=./rena.json;}
-{name="replim";value=./replim.json;}
-{name="requirementstxt";value=./requirementstxt.json;}
-{name="result";value=./result.json;}
-{name="rethinkdb";value=./rethinkdb.json;}
-{name="retranslator";value=./retranslator.json;}
-{name="rexpaint";value=./rexpaint.json;}
-{name="rfc3339";value=./rfc3339.json;}
-{name="ringDeque";value=./ringDeque.json;}
-{name="ris";value=./ris.json;}
-{name="rlp";value=./rlp.json;}
-{name="rnim";value=./rnim.json;}
-{name="robotparser";value=./robotparser.json;}
-{name="rocksdb";value=./rocksdb.json;}
-{name="rodcli";value=./rodcli.json;}
-{name="romans";value=./romans.json;}
-{name="roots";value=./roots.json;}
-{name="rosencrantz";value=./rosencrantz.json;}
-{name="rss";value=./rss.json;}
-{name="rsvg";value=./rsvg.json;}
-{name="rtree";value=./rtree.json;}
-{name="runeterra_decks";value=./runeterra_decks.json;}
-{name="rx_nim";value=./rx_nim.json;}
-{name="sam";value=./sam.json;}
-{name="sampleTodoList";value=./sampleTodoList.json;}
-{name="samson";value=./samson.json;}
-{name="sass";value=./sass.json;}
-{name="saya";value=./saya.json;}
-{name="scgi";value=./scgi.json;}
-{name="schedules";value=./schedules.json;}
-{name="science";value=./science.json;}
-{name="scnim";value=./scnim.json;}
-{name="scram";value=./scram.json;}
-{name="sctp";value=./sctp.json;}
-{name="sdl1";value=./sdl1.json;}
-{name="sdl2";value=./sdl2.json;}
-{name="sdl2_nim";value=./sdl2_nim.json;}
-{name="sdnotify";value=./sdnotify.json;}
-{name="seccomp";value=./seccomp.json;}
-{name="secp256k1";value=./secp256k1.json;}
-{name="sections";value=./sections.json;}
-{name="segmentation";value=./segmentation.json;}
-{name="semver";value=./semver.json;}
-{name="seqmath";value=./seqmath.json;}
-{name="sequester";value=./sequester.json;}
-{name="sequoia";value=./sequoia.json;}
-{name="sequtils2";value=./sequtils2.json;}
-{name="serial";value=./serial.json;}
-{name="serialization";value=./serialization.json;}
-{name="serializetools";value=./serializetools.json;}
-{name="serialport";value=./serialport.json;}
-{name="seriesdetiempoar";value=./seriesdetiempoar.json;}
-{name="sermon";value=./sermon.json;}
-{name="servy";value=./servy.json;}
-{name="sfml";value=./sfml.json;}
-{name="sha1";value=./sha1.json;}
-{name="sha1ext";value=./sha1ext.json;}
-{name="sha3";value=./sha3.json;}
-{name="shaname";value=./shaname.json;}
-{name="shared";value=./shared.json;}
-{name="sharedmempool";value=./sharedmempool.json;}
-{name="shell";value=./shell.json;}
-{name="shene";value=./shene.json;}
-{name="shimsham";value=./shimsham.json;}
-{name="shiori";value=./shiori.json;}
-{name="shiori_charset_convert";value=./shiori_charset_convert.json;}
-{name="shioridll";value=./shioridll.json;}
-{name="shizuka";value=./shizuka.json;}
-{name="shlex";value=./shlex.json;}
-{name="shmk";value=./shmk.json;}
-{name="shoco";value=./shoco.json;}
-{name="shorturl";value=./shorturl.json;}
-{name="signals";value=./signals.json;}
-{name="sigv4";value=./sigv4.json;}
-{name="sim";value=./sim.json;}
-{name="simdX86";value=./simdX86.json;}
-{name="simhash";value=./simhash.json;}
-{name="simpleAST";value=./simpleAST.json;}
-{name="simple_graph";value=./simple_graph.json;}
-{name="simple_parseopt";value=./simple_parseopt.json;}
-{name="simple_vector";value=./simple_vector.json;}
-{name="simpledecimal";value=./simpledecimal.json;}
-{name="simplediff";value=./simplediff.json;}
-{name="simpleflake";value=./simpleflake.json;}
-{name="simpleot";value=./simpleot.json;}
-{name="simplepng";value=./simplepng.json;}
-{name="siphash";value=./siphash.json;}
-{name="sitmo";value=./sitmo.json;}
-{name="siwin";value=./siwin.json;}
-{name="sixense";value=./sixense.json;}
-{name="skEasing";value=./skEasing.json;}
-{name="skbintext";value=./skbintext.json;}
-{name="ski";value=./ski.json;}
-{name="skinterpolate";value=./skinterpolate.json;}
-{name="sksbox";value=./sksbox.json;}
-{name="skybook";value=./skybook.json;}
-{name="skyhash";value=./skyhash.json;}
-{name="slacklib";value=./slacklib.json;}
-{name="slappy";value=./slappy.json;}
-{name="sliceutils";value=./sliceutils.json;}
-{name="slimdown";value=./slimdown.json;}
-{name="sling";value=./sling.json;}
-{name="smnar";value=./smnar.json;}
-{name="snail";value=./snail.json;}
-{name="snappy";value=./snappy.json;}
-{name="sndfile";value=./sndfile.json;}
-{name="sndhdr";value=./sndhdr.json;}
-{name="snip";value=./snip.json;}
-{name="socks";value=./socks.json;}
-{name="sodium";value=./sodium.json;}
-{name="sol";value=./sol.json;}
-{name="sonic";value=./sonic.json;}
-{name="sophia";value=./sophia.json;}
-{name="sorta";value=./sorta.json;}
-{name="sound";value=./sound.json;}
-{name="soundex";value=./soundex.json;}
-{name="soundio";value=./soundio.json;}
-{name="spacenav";value=./spacenav.json;}
-{name="sparkline";value=./sparkline.json;}
-{name="sparseset";value=./sparseset.json;}
-{name="spdk";value=./spdk.json;}
-{name="spdx_licenses";value=./spdx_licenses.json;}
-{name="sph";value=./sph.json;}
-{name="sphincs";value=./sphincs.json;}
-{name="sphinx";value=./sphinx.json;}
-{name="spills";value=./spills.json;}
-{name="spinner";value=./spinner.json;}
-{name="spinny";value=./spinny.json;}
-{name="spotify";value=./spotify.json;}
-{name="spry";value=./spry.json;}
-{name="sprymicro";value=./sprymicro.json;}
-{name="spryvm";value=./spryvm.json;}
-{name="spurdify";value=./spurdify.json;}
-{name="spwd";value=./spwd.json;}
-{name="sqlbuilder";value=./sqlbuilder.json;}
-{name="sqlite3_abi";value=./sqlite3_abi.json;}
-{name="sqliteral";value=./sqliteral.json;}
-{name="srt";value=./srt.json;}
-{name="srv";value=./srv.json;}
-{name="ssh2";value=./ssh2.json;}
-{name="sss";value=./sss.json;}
-{name="stacks";value=./stacks.json;}
-{name="stage";value=./stage.json;}
-{name="stalinsort";value=./stalinsort.json;}
-{name="staticglfw";value=./staticglfw.json;}
-{name="statsd_client";value=./statsd_client.json;}
-{name="stb_image";value=./stb_image.json;}
-{name="std_shims";value=./std_shims.json;}
-{name="stdext";value=./stdext.json;}
-{name="steam";value=./steam.json;}
-{name="steamworks";value=./steamworks.json;}
-{name="steganography";value=./steganography.json;}
-{name="stew";value=./stew.json;}
-{name="stint";value=./stint.json;}
-{name="stones";value=./stones.json;}
-{name="stopwatch";value=./stopwatch.json;}
-{name="stor";value=./stor.json;}
-{name="strenc";value=./strenc.json;}
-{name="strfmt";value=./strfmt.json;}
-{name="stringinterpolation";value=./stringinterpolation.json;}
-{name="strslice";value=./strslice.json;}
-{name="struct";value=./struct.json;}
-{name="strunicode";value=./strunicode.json;}
-{name="subexes";value=./subexes.json;}
-{name="subfield";value=./subfield.json;}
-{name="subhook";value=./subhook.json;}
-{name="subnet";value=./subnet.json;}
-{name="subviewer";value=./subviewer.json;}
-{name="sue";value=./sue.json;}
-{name="suffer";value=./suffer.json;}
-{name="sugerror";value=./sugerror.json;}
-{name="suggest";value=./suggest.json;}
-{name="sunvox";value=./sunvox.json;}
-{name="supersnappy";value=./supersnappy.json;}
-{name="svdpi";value=./svdpi.json;}
-{name="svgo";value=./svgo.json;}
-{name="swayipc";value=./swayipc.json;}
-{name="sweetanitify";value=./sweetanitify.json;}
-{name="switch_build";value=./switch_build.json;}
-{name="syllables";value=./syllables.json;}
-{name="symbolicnim";value=./symbolicnim.json;}
-{name="synthesis";value=./synthesis.json;}
-{name="syphus";value=./syphus.json;}
-{name="syscall";value=./syscall.json;}
-{name="sysinfo";value=./sysinfo.json;}
-{name="syslog";value=./syslog.json;}
-{name="sysrandom";value=./sysrandom.json;}
-{name="systimes";value=./systimes.json;}
-{name="taglib";value=./taglib.json;}
-{name="tam";value=./tam.json;}
-{name="taps";value=./taps.json;}
-{name="taskqueue";value=./taskqueue.json;}
-{name="tcl";value=./tcl.json;}
-{name="tcping";value=./tcping.json;}
-{name="teafiles";value=./teafiles.json;}
-{name="telebot";value=./telebot.json;}
-{name="telenim";value=./telenim.json;}
-{name="tempdir";value=./tempdir.json;}
-{name="tempfile";value=./tempfile.json;}
-{name="templates";value=./templates.json;}
-{name="tencil";value=./tencil.json;}
-{name="termbox";value=./termbox.json;}
-{name="terminaltables";value=./terminaltables.json;}
-{name="termnovel";value=./termnovel.json;}
-{name="termstyle";value=./termstyle.json;}
-{name="ternary_tree";value=./ternary_tree.json;}
-{name="testify";value=./testify.json;}
-{name="testrunner";value=./testrunner.json;}
-{name="testutils";value=./testutils.json;}
-{name="texttospeech";value=./texttospeech.json;}
-{name="tf2plug";value=./tf2plug.json;}
-{name="the_nim_alliance";value=./the_nim_alliance.json;}
-{name="therapist";value=./therapist.json;}
-{name="threadproxy";value=./threadproxy.json;}
-{name="tiger";value=./tiger.json;}
-{name="til";value=./til.json;}
-{name="tim_sort";value=./tim_sort.json;}
-{name="timecop";value=./timecop.json;}
-{name="timeit";value=./timeit.json;}
-{name="timelog";value=./timelog.json;}
-{name="timerpool";value=./timerpool.json;}
-{name="timerwheel";value=./timerwheel.json;}
-{name="timespec_get";value=./timespec_get.json;}
-{name="timestamp";value=./timestamp.json;}
-{name="timezones";value=./timezones.json;}
-{name="tinamou";value=./tinamou.json;}
-{name="tiny_sqlite";value=./tiny_sqlite.json;}
-{name="tinyfiledialogs";value=./tinyfiledialogs.json;}
-{name="tissue";value=./tissue.json;}
-{name="tmplpro";value=./tmplpro.json;}
-{name="tnim";value=./tnim.json;}
-{name="toml_serialization";value=./toml_serialization.json;}
-{name="tor";value=./tor.json;}
-{name="torch";value=./torch.json;}
-{name="torim";value=./torim.json;}
-{name="torm";value=./torm.json;}
-{name="toxcore";value=./toxcore.json;}
-{name="translation";value=./translation.json;}
-{name="treesitter";value=./treesitter.json;}
-{name="treesitter_agda";value=./treesitter_agda.json;}
-{name="treesitter_bash";value=./treesitter_bash.json;}
-{name="treesitter_c";value=./treesitter_c.json;}
-{name="treesitter_c_sharp";value=./treesitter_c_sharp.json;}
-{name="treesitter_cpp";value=./treesitter_cpp.json;}
-{name="treesitter_css";value=./treesitter_css.json;}
-{name="treesitter_go";value=./treesitter_go.json;}
-{name="treesitter_haskell";value=./treesitter_haskell.json;}
-{name="treesitter_html";value=./treesitter_html.json;}
-{name="treesitter_java";value=./treesitter_java.json;}
-{name="treesitter_javascript";value=./treesitter_javascript.json;}
-{name="treesitter_ocaml";value=./treesitter_ocaml.json;}
-{name="treesitter_php";value=./treesitter_php.json;}
-{name="treesitter_python";value=./treesitter_python.json;}
-{name="treesitter_ruby";value=./treesitter_ruby.json;}
-{name="treesitter_rust";value=./treesitter_rust.json;}
-{name="treesitter_scala";value=./treesitter_scala.json;}
-{name="treesitter_typescript";value=./treesitter_typescript.json;}
-{name="trick";value=./trick.json;}
-{name="triplets";value=./triplets.json;}
-{name="tsundoku";value=./tsundoku.json;}
-{name="tsv2json";value=./tsv2json.json;}
-{name="ttmath";value=./ttmath.json;}
-{name="tuples";value=./tuples.json;}
-{name="turn_based_game";value=./turn_based_game.json;}
-{name="twitter";value=./twitter.json;}
-{name="typelists";value=./typelists.json;}
-{name="typography";value=./typography.json;}
-{name="ui";value=./ui.json;}
-{name="uibuilder";value=./uibuilder.json;}
-{name="ulid";value=./ulid.json;}
-{name="unicode_numbers";value=./unicode_numbers.json;}
-{name="unicodedb";value=./unicodedb.json;}
-{name="unicodeplus";value=./unicodeplus.json;}
-{name="unimcli";value=./unimcli.json;}
-{name="units";value=./units.json;}
-{name="unpack";value=./unpack.json;}
-{name="unsplash";value=./unsplash.json;}
-{name="untar";value=./untar.json;}
-{name="ur";value=./ur.json;}
-{name="urand";value=./urand.json;}
-{name="uri2";value=./uri2.json;}
-{name="uri3";value=./uri3.json;}
-{name="urlly";value=./urlly.json;}
-{name="urlshortener";value=./urlshortener.json;}
-{name="usagov";value=./usagov.json;}
-{name="useragents";value=./useragents.json;}
-{name="usha";value=./usha.json;}
-{name="usigar";value=./usigar.json;}
-{name="ustring";value=./ustring.json;}
-{name="utils";value=./utils.json;}
-{name="uuid";value=./uuid.json;}
-{name="uuids";value=./uuids.json;}
-{name="validateip";value=./validateip.json;}
-{name="validation";value=./validation.json;}
-{name="validator";value=./validator.json;}
-{name="values";value=./values.json;}
-{name="variant";value=./variant.json;}
-{name="variantkey";value=./variantkey.json;}
-{name="vaultclient";value=./vaultclient.json;}
-{name="vec";value=./vec.json;}
-{name="vecio";value=./vecio.json;}
-{name="vecmath";value=./vecmath.json;}
-{name="vector";value=./vector.json;}
-{name="vectors";value=./vectors.json;}
-{name="vidhdr";value=./vidhdr.json;}
-{name="vkapi";value=./vkapi.json;}
-{name="vla";value=./vla.json;}
-{name="vmath";value=./vmath.json;}
-{name="vmprotect";value=./vmprotect.json;}
-{name="vmvc";value=./vmvc.json;}
-{name="vscds";value=./vscds.json;}
-{name="vtable";value=./vtable.json;}
-{name="wAuto";value=./wAuto.json;}
-{name="wChart";value=./wChart.json;}
-{name="wNim";value=./wNim.json;}
-{name="wZeeGrid";value=./wZeeGrid.json;}
-{name="wave";value=./wave.json;}
-{name="weave";value=./weave.json;}
-{name="web3";value=./web3.json;}
-{name="webaudio";value=./webaudio.json;}
-{name="webdavclient";value=./webdavclient.json;}
-{name="webdriver";value=./webdriver.json;}
-{name="webgui";value=./webgui.json;}
-{name="webp";value=./webp.json;}
-{name="webrod";value=./webrod.json;}
-{name="webrtcvad";value=./webrtcvad.json;}
-{name="websocket";value=./websocket.json;}
-{name="websocketx";value=./websocketx.json;}
-{name="webterminal";value=./webterminal.json;}
-{name="webview";value=./webview.json;}
-{name="weightedgraph";value=./weightedgraph.json;}
-{name="wepoll";value=./wepoll.json;}
-{name="whip";value=./whip.json;}
-{name="wiki2text";value=./wiki2text.json;}
-{name="wings";value=./wings.json;}
-{name="winim";value=./winim.json;}
-{name="winregistry";value=./winregistry.json;}
-{name="winserial";value=./winserial.json;}
-{name="winversion";value=./winversion.json;}
-{name="wiringPiNim";value=./wiringPiNim.json;}
-{name="witai";value=./witai.json;}
-{name="with";value=./with.json;}
-{name="woocommerce-api-nim";value=./woocommerce-api-nim.json;}
-{name="word2vec";value=./word2vec.json;}
-{name="wox";value=./wox.json;}
-{name="wpspin";value=./wpspin.json;}
-{name="wren";value=./wren.json;}
-{name="ws";value=./ws.json;}
-{name="wstp";value=./wstp.json;}
-{name="wxnim";value=./wxnim.json;}
-{name="wxpay";value=./wxpay.json;}
-{name="wyhash";value=./wyhash.json;}
-{name="x11";value=./x11.json;}
-{name="xam";value=./xam.json;}
-{name="xcm";value=./xcm.json;}
-{name="xdo";value=./xdo.json;}
-{name="xevloop";value=./xevloop.json;}
-{name="xiaomi";value=./xiaomi.json;}
-{name="xio";value=./xio.json;}
-{name="xlsx";value=./xlsx.json;}
-{name="xml";value=./xml.json;}
-{name="xmldom";value=./xmldom.json;}
-{name="xmldomparser";value=./xmldomparser.json;}
-{name="xmlio";value=./xmlio.json;}
-{name="xmltools";value=./xmltools.json;}
-{name="xpm";value=./xpm.json;}
-{name="xxhash";value=./xxhash.json;}
-{name="xxtea";value=./xxtea.json;}
-{name="yahooweather";value=./yahooweather.json;}
-{name="yaml";value=./yaml.json;}
-{name="yukiko";value=./yukiko.json;}
-{name="z3";value=./z3.json;}
-{name="z3nim";value=./z3nim.json;}
-{name="zero_functional";value=./zero_functional.json;}
-{name="zfblast";value=./zfblast.json;}
-{name="zfcore";value=./zfcore.json;}
-{name="zfplugs";value=./zfplugs.json;}
-{name="zhsh";value=./zhsh.json;}
-{name="zip";value=./zip.json;}
-{name="zippy";value=./zippy.json;}
-{name="zmq";value=./zmq.json;}
-{name="zopflipng";value=./zopflipng.json;}
-{name="zstd";value=./zstd.json;}
-{name="zxcvbn";value=./zxcvbn.json;}
-]
+{
+  "about" = ./about.json;
+  "accuratesums" = ./AccurateSums.json;
+  "adb" = ./adb.json;
+  "adix" = ./adix.json;
+  "aglet" = ./aglet.json;
+  "ago" = ./ago.json;
+  "ajax" = ./ajax.json;
+  "akane" = ./akane.json;
+  "alea" = ./alea.json;
+  "alignment" = ./alignment.json;
+  "allegro5" = ./allegro5.json;
+  "allographer" = ./allographer.json;
+  "alsa" = ./alsa.json;
+  "alut" = ./alut.json;
+  "amka" = ./amka.json;
+  "amysql" = ./amysql.json;
+  "analytics" = ./analytics.json;
+  "anime" = ./anime.json;
+  "anonimongo" = ./anonimongo.json;
+  "ansiparse" = ./ansiparse.json;
+  "ansitohtml" = ./ansitohtml.json;
+  "antlr4nim" = ./antlr4nim.json;
+  "anttweakbar" = ./AntTweakBar.json;
+  "anybar" = ./anybar.json;
+  "anycase" = ./anycase.json;
+  "applicates" = ./applicates.json;
+  "argon2" = ./argon2.json;
+  "argparse" = ./argparse.json;
+  "arksys" = ./arksys.json;
+  "arrayfirenim" = ./ArrayFireNim.json;
+  "arraymancer" = ./arraymancer.json;
+  "arraymancer_vision" = ./arraymancer_vision.json;
+  "asciigraph" = ./asciigraph.json;
+  "asciitables" = ./asciitables.json;
+  "asciitext" = ./asciitext.json;
+  "asciitype" = ./asciitype.json;
+  "assigns" = ./assigns.json;
+  "ast_pattern_matching" = ./ast_pattern_matching.json;
+  "astar" = ./astar.json;
+  "astronimy" = ./AstroNimy.json;
+  "asyncdocker" = ./asyncdocker.json;
+  "asyncevents" = ./asyncevents.json;
+  "asyncmysql" = ./asyncmysql.json;
+  "asyncpg" = ./asyncpg.json;
+  "asyncpythonfile" = ./asyncpythonfile.json;
+  "asynctest" = ./asynctest.json;
+  "asynctools" = ./asynctools.json;
+  "atoz" = ./atoz.json;
+  "autome" = ./autome.json;
+  "autotyper" = ./autotyper.json;
+  "avbin" = ./avbin.json;
+  "awesome_rmdir" = ./awesome_rmdir.json;
+  "awk" = ./awk.json;
+  "aws_sdk" = ./aws_sdk.json;
+  "awslambda" = ./awslambda.json;
+  "azure_translate" = ./azure_translate.json;
+  "backoff" = ./backoff.json;
+  "badgemaker" = ./badgemaker.json;
+  "baker" = ./baker.json;
+  "ballena_itcher" = ./ballena_itcher.json;
+  "barbarus" = ./barbarus.json;
+  "barcode" = ./barcode.json;
+  "base32" = ./base32.json;
+  "base58" = ./base58.json;
+  "base62" = ./base62.json;
+  "base64_decoder" = ./base64_decoder.json;
+  "basedon" = ./basedOn.json;
+  "basic2d" = ./basic2d.json;
+  "basic3d" = ./basic3d.json;
+  "battery_widget" = ./battery_widget.json;
+  "bcra" = ./bcra.json;
+  "bcrypt" = ./bcrypt.json;
+  "beanstalkd" = ./beanstalkd.json;
+  "bearlibterminal" = ./bearlibterminal.json;
+  "bearssl" = ./bearssl.json;
+  "benchy" = ./benchy.json;
+  "bencode" = ./bencode.json;
+  "bgfx" = ./bgfx.json;
+  "bgfxdotnim" = ./bgfxdotnim.json;
+  "biblioteca_guarrilla" = ./biblioteca_guarrilla.json;
+  "bigints" = ./bigints.json;
+  "bignum" = ./bignum.json;
+  "binance" = ./binance.json;
+  "binaryheap" = ./binaryheap.json;
+  "binarylang" = ./binarylang.json;
+  "binaryparse" = ./binaryparse.json;
+  "bingo" = ./bingo.json;
+  "binio" = ./binio.json;
+  "bio" = ./bio.json;
+  "bipbuffer" = ./BipBuffer.json;
+  "biscuits" = ./biscuits.json;
+  "bisect" = ./bisect.json;
+  "bitarray" = ./bitarray.json;
+  "bitset" = ./bitset.json;
+  "bitstreams" = ./bitstreams.json;
+  "bitty" = ./bitty.json;
+  "bitvec" = ./bitvec.json;
+  "bitvector" = ./BitVector.json;
+  "blackvas" = ./Blackvas.json;
+  "blackvas_cli" = ./blackvas_cli.json;
+  "blake2" = ./blake2.json;
+  "bloom" = ./bloom.json;
+  "blosc" = ./blosc.json;
+  "blscurve" = ./blscurve.json;
+  "blurhash" = ./blurhash.json;
+  "bluu" = ./bluu.json;
+  "bncurve" = ./bncurve.json;
+  "boneio" = ./boneIO.json;
+  "bpg" = ./bpg.json;
+  "brainfuck" = ./brainfuck.json;
+  "breeze" = ./breeze.json;
+  "bson" = ./bson.json;
+  "buffer" = ./buffer.json;
+  "bump" = ./bump.json;
+  "bumpy" = ./bumpy.json;
+  "bytes2human" = ./bytes2human.json;
+  "bytesequtils" = ./bytesequtils.json;
+  "byteutils" = ./byteutils.json;
+  "c2nim" = ./c2nim.json;
+  "c4" = ./c4.json;
+  "c_alikes" = ./c_alikes.json;
+  "cache" = ./cache.json;
+  "cairo" = ./cairo.json;
+  "cal" = ./cal.json;
+  "calendar" = ./calendar.json;
+  "calibre" = ./calibre.json;
+  "camelize" = ./camelize.json;
+  "canonicaljson" = ./canonicaljson.json;
+  "capnp" = ./capnp.json;
+  "cascade" = ./cascade.json;
+  "cassandra" = ./cassandra.json;
+  "cassette" = ./cassette.json;
+  "cbor" = ./cbor.json;
+  "cello" = ./cello.json;
+  "changer" = ./changer.json;
+  "chebyshev" = ./chebyshev.json;
+  "chipmunk6" = ./chipmunk6.json;
+  "chipmunk7_demos" = ./chipmunk7_demos.json;
+  "chonker" = ./chonker.json;
+  "choosenim" = ./choosenim.json;
+  "choosenimgui" = ./choosenimgui.json;
+  "chroma" = ./chroma.json;
+  "chronicles" = ./chronicles.json;
+  "chronopipe" = ./chronopipe.json;
+  "chronos" = ./chronos.json;
+  "circleci_client" = ./circleci_client.json;
+  "cirru_parser" = ./cirru_parser.json;
+  "cittadino" = ./cittadino.json;
+  "clang" = ./clang.json;
+  "clapfn" = ./clapfn.json;
+  "classes" = ./classes.json;
+  "classy" = ./classy.json;
+  "clblast" = ./clblast.json;
+  "cli_menu" = ./cli_menu.json;
+  "clibpp" = ./clibpp.json;
+  "cligen" = ./cligen.json;
+  "cliptomania" = ./cliptomania.json;
+  "closure_compiler" = ./closure_compiler.json;
+  "clr" = ./clr.json;
+  "cmake" = ./cmake.json;
+  "cmark" = ./cmark.json;
+  "cmd" = ./cmd.json;
+  "cmixer" = ./cmixer.json;
+  "cmixer_sdl2" = ./cmixer_sdl2.json;
+  "coalesce" = ./coalesce.json;
+  "cobs" = ./cobs.json;
+  "coco" = ./coco.json;
+  "coinbase_pro" = ./coinbase_pro.json;
+  "collections" = ./collections.json;
+  "colorcol" = ./colorcol.json;
+  "colorize" = ./colorize.json;
+  "colorizeecho" = ./colorizeEcho.json;
+  "colorsys" = ./colorsys.json;
+  "combparser" = ./combparser.json;
+  "commandeer" = ./commandeer.json;
+  "compactdict" = ./compactdict.json;
+  "configparser" = ./configparser.json;
+  "confutils" = ./confutils.json;
+  "conio" = ./conio.json;
+  "constants" = ./constants.json;
+  "constructor" = ./constructor.json;
+  "consul" = ./consul.json;
+  "contra" = ./contra.json;
+  "contracts" = ./contracts.json;
+  "controlstructures" = ./controlStructures.json;
+  "cookiejar" = ./cookiejar.json;
+  "couchdb" = ./couchdb.json;
+  "coverage" = ./coverage.json;
+  "coverartarchive" = ./coverartarchive.json;
+  "cppstl" = ./cppstl.json;
+  "cpuwhat" = ./cpuwhat.json;
+  "crap" = ./crap.json;
+  "crc32" = ./crc32.json;
+  "criterion" = ./criterion.json;
+  "crosscompile" = ./crosscompile.json;
+  "csfml" = ./csfml.json;
+  "css_html_minify" = ./css_html_minify.json;
+  "csv" = ./csv.json;
+  "csvql" = ./csvql.json;
+  "csvtable" = ./csvtable.json;
+  "csvtools" = ./csvtools.json;
+  "ctrulib" = ./ctrulib.json;
+  "cucumber" = ./cucumber.json;
+  "currying" = ./currying.json;
+  "d3" = ./d3.json;
+  "daemon" = ./daemon.json;
+  "daemonim" = ./daemonim.json;
+  "daemonize" = ./daemonize.json;
+  "dali" = ./dali.json;
+  "darwin" = ./darwin.json;
+  "dashing" = ./dashing.json;
+  "datetime2human" = ./datetime2human.json;
+  "datetime_parse" = ./datetime_parse.json;
+  "dav1d" = ./dav1d.json;
+  "db" = ./db.json;
+  "db_clickhouse" = ./db_clickhouse.json;
+  "db_presto" = ./db_presto.json;
+  "dbg" = ./dbg.json;
+  "dbschema" = ./dbschema.json;
+  "dbus" = ./dbus.json;
+  "decimal" = ./decimal.json;
+  "decimal128" = ./decimal128.json;
+  "decisiontree" = ./decisiontree.json;
+  "deepspeech" = ./deepspeech.json;
+  "delaunay" = ./delaunay.json;
+  "delight" = ./delight.json;
+  "denim_ui" = ./denim_ui.json;
+  "denim_ui_canvas" = ./denim_ui_canvas.json;
+  "des" = ./des.json;
+  "deser_json" = ./deser_json.json;
+  "desim" = ./desim.json;
+  "devil" = ./DevIL.json;
+  "diff" = ./diff.json;
+  "diffoutput" = ./diffoutput.json;
+  "digitalocean" = ./digitalocean.json;
+  "dimscmd" = ./dimscmd.json;
+  "dimscord" = ./dimscord.json;
+  "directnimrod" = ./directnimrod.json;
+  "discord_rpc" = ./discord_rpc.json;
+  "discordnim" = ./discordnim.json;
+  "dnsclient" = ./dnsclient.json;
+  "dnsprotec" = ./dnsprotec.json;
+  "dnsprotocol" = ./dnsprotocol.json;
+  "dnsstamps" = ./dnsstamps.json;
+  "docopt" = ./docopt.json;
+  "docx" = ./docx.json;
+  "dotenv" = ./dotenv.json;
+  "dpdk" = ./dpdk.json;
+  "drand48" = ./drand48.json;
+  "drawille" = ./drawille.json;
+  "drng" = ./drng.json;
+  "dropbox_filename_sanitizer" = ./dropbox_filename_sanitizer.json;
+  "dtoa" = ./dtoa.json;
+  "dual" = ./dual.json;
+  "ducominer" = ./ducominer.json;
+  "duktape" = ./duktape.json;
+  "dumpincludes" = ./dumpincludes.json;
+  "eachdo" = ./eachdo.json;
+  "easings" = ./easings.json;
+  "eastasianwidth" = ./eastasianwidth.json;
+  "easymail" = ./easymail.json;
+  "echon" = ./Echon.json;
+  "ed25519" = ./ed25519.json;
+  "edens" = ./edens.json;
+  "edlib" = ./edlib.json;
+  "edn" = ./edn.json;
+  "egl" = ./egl.json;
+  "einheit" = ./einheit.json;
+  "elvis" = ./elvis.json;
+  "emerald" = ./emerald.json;
+  "eminim" = ./eminim.json;
+  "encode" = ./encode.json;
+  "enet" = ./enet.json;
+  "ensem" = ./ensem.json;
+  "entoody" = ./entoody.json;
+  "envconfig" = ./envconfig.json;
+  "epub" = ./epub.json;
+  "eris" = ./eris.json;
+  "eris_utils" = ./eris_utils.json;
+  "espeak" = ./espeak.json;
+  "etcd_client" = ./etcd_client.json;
+  "eternity" = ./eternity.json;
+  "eth" = ./eth.json;
+  "eth_bloom" = ./eth_bloom.json;
+  "eth_common" = ./eth_common.json;
+  "eth_keyfile" = ./eth_keyfile.json;
+  "eth_keys" = ./eth_keys.json;
+  "eth_p2p" = ./eth_p2p.json;
+  "eth_trie" = ./eth_trie.json;
+  "ethash" = ./ethash.json;
+  "euclidean" = ./euclidean.json;
+  "euwren" = ./euwren.json;
+  "eventemitter" = ./eventemitter.json;
+  "evmc" = ./evmc.json;
+  "expat" = ./expat.json;
+  "extensions" = ./extensions.json;
+  "fab" = ./fab.json;
+  "faker" = ./faker.json;
+  "fastcgi" = ./fastcgi.json;
+  "fastkiss" = ./FastKiss.json;
+  "faststack" = ./faststack.json;
+  "faststreams" = ./faststreams.json;
+  "fasttext" = ./fasttext.json;
+  "fastx_reader" = ./fastx_reader.json;
+  "feednim" = ./feednim.json;
+  "ffbookmarks" = ./ffbookmarks.json;
+  "ffpass" = ./ffpass.json;
+  "fftw3" = ./fftw3.json;
+  "fidget" = ./fidget.json;
+  "figures" = ./figures.json;
+  "fileinput" = ./fileinput.json;
+  "filesize" = ./filesize.json;
+  "filetype" = ./filetype.json;
+  "finals" = ./finals.json;
+  "finalseg" = ./finalseg.json;
+  "finder" = ./finder.json;
+  "findtests" = ./findtests.json;
+  "firejail" = ./firejail.json;
+  "fixmath" = ./fixmath.json;
+  "flatdb" = ./flatdb.json;
+  "flatty" = ./flatty.json;
+  "fletcher" = ./fletcher.json;
+  "flickr_image_bot" = ./flickr_image_bot.json;
+  "flippy" = ./flippy.json;
+  "fltk" = ./fltk.json;
+  "fmod" = ./fmod.json;
+  "fnmatch" = ./fnmatch.json;
+  "fnv" = ./fnv.json;
+  "foliant" = ./foliant.json;
+  "fontconfig" = ./fontconfig.json;
+  "foreach" = ./foreach.json;
+  "forestdb" = ./forestdb.json;
+  "fowltek" = ./fowltek.json;
+  "fpn" = ./fpn.json;
+  "frag" = ./frag.json;
+  "fragments" = ./fragments.json;
+  "freegeoip" = ./freegeoip.json;
+  "freeimage" = ./freeimage.json;
+  "freetype" = ./freetype.json;
+  "fsm" = ./fsm.json;
+  "fsnotify" = ./fsnotify.json;
+  "fswatch" = ./fswatch.json;
+  "fugitive" = ./fugitive.json;
+  "funchook" = ./funchook.json;
+  "fuse" = ./fuse.json;
+  "fusion" = ./fusion.json;
+  "fuzzy" = ./fuzzy.json;
+  "fwrite" = ./fwrite.json;
+  "gamelib" = ./gamelib.json;
+  "gamelight" = ./gamelight.json;
+  "gameoflife" = ./gameoflife.json;
+  "gapbuffer" = ./gapbuffer.json;
+  "gara" = ./gara.json;
+  "gatabase" = ./gatabase.json;
+  "gcplat" = ./gcplat.json;
+  "gdbmc" = ./gdbmc.json;
+  "gemini" = ./gemini.json;
+  "geminim" = ./geminim.json;
+  "gen" = ./gen.json;
+  "genieos" = ./genieos.json;
+  "genode" = ./genode.json;
+  "genoiser" = ./genoiser.json;
+  "gentabs" = ./gentabs.json;
+  "geoip" = ./geoip.json;
+  "geometryutils" = ./geometryutils.json;
+  "geonames" = ./geonames.json;
+  "georefar" = ./georefar.json;
+  "gerbil" = ./gerbil.json;
+  "getch" = ./getch.json;
+  "getmac" = ./getmac.json;
+  "getr" = ./getr.json;
+  "gh_nimrod_doc_pages" = ./gh_nimrod_doc_pages.json;
+  "gifenc" = ./gifenc.json;
+  "gifwriter" = ./gifwriter.json;
+  "gimei" = ./gimei.json;
+  "ginger" = ./ginger.json;
+  "gintro" = ./gintro.json;
+  "gitapi" = ./gitapi.json;
+  "github" = ./github.json;
+  "github_api" = ./github_api.json;
+  "github_release" = ./github_release.json;
+  "gles" = ./gles.json;
+  "glew" = ./glew.json;
+  "glm" = ./glm.json;
+  "glob" = ./glob.json;
+  "glossolalia" = ./glossolalia.json;
+  "gnuplot" = ./gnuplot.json;
+  "gnuplotlib" = ./gnuplotlib.json;
+  "gnutls" = ./gnutls.json;
+  "godot" = ./godot.json;
+  "golden" = ./golden.json;
+  "golib" = ./golib.json;
+  "googleapi" = ./googleapi.json;
+  "googlesearch" = ./googlesearch.json;
+  "gplay" = ./gplay.json;
+  "gpx" = ./gpx.json;
+  "gradient" = ./gradient.json;
+  "grafanim" = ./grafanim.json;
+  "graphemes" = ./graphemes.json;
+  "graphics" = ./graphics.json;
+  "gravatar" = ./gravatar.json;
+  "grim" = ./grim.json;
+  "grp" = ./grp.json;
+  "gtk2" = ./gtk2.json;
+  "gtkgenui" = ./gtkgenui.json;
+  "guildenstern" = ./guildenstern.json;
+  "gungnir" = ./gungnir.json;
+  "gyaric" = ./gyaric.json;
+  "hackpad" = ./hackpad.json;
+  "halonium" = ./halonium.json;
+  "haraka" = ./haraka.json;
+  "hashids" = ./hashids.json;
+  "hashlib" = ./hashlib.json;
+  "hasts" = ./hasts.json;
+  "hats" = ./hats.json;
+  "hayaa" = ./hayaa.json;
+  "hcparse" = ./hcparse.json;
+  "hdrawing" = ./hdrawing.json;
+  "hex" = ./hex.json;
+  "highlight" = ./highlight.json;
+  "hldiff" = ./hldiff.json;
+  "hmac" = ./hmac.json;
+  "hnimast" = ./hnimast.json;
+  "horde3d" = ./horde3d.json;
+  "host" = ./host.json;
+  "hostname" = ./hostname.json;
+  "hpack" = ./hpack.json;
+  "hpprint" = ./hpprint.json;
+  "hsluv" = ./hsluv.json;
+  "html2karax" = ./html2karax.json;
+  "html5_canvas" = ./html5_canvas.json;
+  "html_tools" = ./html_tools.json;
+  "hts" = ./hts.json;
+  "htsparse" = ./htsparse.json;
+  "httpauth" = ./httpauth.json;
+  "httpbeast" = ./httpbeast.json;
+  "httpform" = ./httpform.json;
+  "httpkit" = ./httpkit.json;
+  "httpstat" = ./httpstat.json;
+  "httputils" = ./httputils.json;
+  "httpx" = ./httpx.json;
+  "huenim" = ./huenim.json;
+  "huffman" = ./huffman.json;
+  "i18n" = ./i18n.json;
+  "i3ipc" = ./i3ipc.json;
+  "illwill" = ./illwill.json;
+  "illwill_unsafe" = ./illwill_unsafe.json;
+  "imageman" = ./imageman.json;
+  "imap" = ./imap.json;
+  "imgcat" = ./imgcat.json;
+  "imghdr" = ./imghdr.json;
+  "imlib2" = ./imlib2.json;
+  "importc_helpers" = ./importc_helpers.json;
+  "impulse_engine" = ./impulse_engine.json;
+  "influx" = ./influx.json;
+  "inim" = ./inim.json;
+  "intel_hex" = ./intel_hex.json;
+  "interfaced" = ./interfaced.json;
+  "inumon" = ./inumon.json;
+  "io-egl" = ./io-egl.json;
+  "io-gles" = ./io-gles.json;
+  "io-myo" = ./io-myo.json;
+  "io-oculus" = ./io-oculus.json;
+  "io-serialport" = ./io-serialport.json;
+  "io-sixense" = ./io-sixense.json;
+  "io-spacenav" = ./io-spacenav.json;
+  "io-usb" = ./io-usb.json;
+  "ioselectors" = ./ioselectors.json;
+  "ipsumgenera" = ./ipsumgenera.json;
+  "iputils" = ./iputils.json;
+  "irc" = ./irc.json;
+  "isa" = ./isa.json;
+  "isaac" = ./isaac.json;
+  "itchio" = ./itchio.json;
+  "itertools" = ./itertools.json;
+  "iterutils" = ./iterutils.json;
+  "itn" = ./itn.json;
+  "iup" = ./iup.json;
+  "jack" = ./jack.json;
+  "jdec" = ./jdec.json;
+  "jeknil" = ./jeknil.json;
+  "jester" = ./jester.json;
+  "jestercookiemsgs" = ./jestercookiemsgs.json;
+  "jestergeoip" = ./jestergeoip.json;
+  "jesterjson" = ./jesterjson.json;
+  "jestermongopool" = ./jestermongopool.json;
+  "jesterwithplugins" = ./jesterwithplugins.json;
+  "jhash" = ./jhash.json;
+  "jnim" = ./jnim.json;
+  "joyent_http_parser" = ./joyent_http_parser.json;
+  "jq" = ./jq.json;
+  "jsbind" = ./jsbind.json;
+  "jscanvas" = ./jscanvas.json;
+  "jser" = ./jser.json;
+  "jsmn" = ./jsmn.json;
+  "json_builder" = ./json_builder.json;
+  "json_rpc" = ./json_rpc.json;
+  "json_serialization" = ./json_serialization.json;
+  "jsonob" = ./jsonob.json;
+  "jsonschema" = ./jsonschema.json;
+  "jsony" = ./jsony.json;
+  "jstin" = ./jstin.json;
+  "jsutils" = ./jsutils.json;
+  "jswebsockets" = ./jswebsockets.json;
+  "jupyternim" = ./jupyternim.json;
+  "jwt" = ./jwt.json;
+  "kaitai_struct_nim_runtime" = ./kaitai_struct_nim_runtime.json;
+  "karax" = ./karax.json;
+  "kdb" = ./kdb.json;
+  "kdialog" = ./kdialog.json;
+  "keccak_tiny" = ./keccak_tiny.json;
+  "kexpr" = ./kexpr.json;
+  "keyring" = ./keyring.json;
+  "keystone" = ./keystone.json;
+  "kinto" = ./Kinto.json;
+  "kissfft" = ./kissfft.json;
+  "kiwi" = ./kiwi.json;
+  "kmer" = ./kmer.json;
+  "kmod" = ./kmod.json;
+  "kslog" = ./kslog.json;
+  "kview" = ./kview.json;
+  "kwin" = ./kwin.json;
+  "ladder" = ./ladder.json;
+  "lapper" = ./lapper.json;
+  "laser" = ./laser.json;
+  "lastfm" = ./lastfm.json;
+  "latexdsl" = ./latexdsl.json;
+  "layonara_nwn" = ./layonara_nwn.json;
+  "lazy" = ./lazy.json;
+  "lazy_rest" = ./lazy_rest.json;
+  "lazyseq" = ./lazyseq.json;
+  "lc" = ./lc.json;
+  "lda" = ./lda.json;
+  "leveldb" = ./leveldb.json;
+  "libarchibi" = ./libarchibi.json;
+  "libbacktrace" = ./libbacktrace.json;
+  "libclang" = ./libclang.json;
+  "libcurl" = ./libcurl.json;
+  "libevdev" = ./libevdev.json;
+  "libffi" = ./libffi.json;
+  "libfswatch" = ./libfswatch.json;
+  "libgcrypt" = ./libgcrypt.json;
+  "libgraph" = ./libgraph.json;
+  "libipset" = ./libipset.json;
+  "libjwt" = ./libjwt.json;
+  "libkeepass" = ./libkeepass.json;
+  "libmpdclient" = ./libmpdclient.json;
+  "libnetfilter_queue" = ./libnetfilter_queue.json;
+  "libnotify" = ./libnotify.json;
+  "libnx" = ./libnx.json;
+  "libovr" = ./libovr.json;
+  "libp2p" = ./libp2p.json;
+  "libplist" = ./libplist.json;
+  "libravatar" = ./libravatar.json;
+  "libsha" = ./libsha.json;
+  "libsodium" = ./libsodium.json;
+  "libssh" = ./libssh.json;
+  "libssh2" = ./libssh2.json;
+  "libsvm" = ./libsvm.json;
+  "libsvm_legacy" = ./libsvm_legacy.json;
+  "libu2f" = ./libu2f.json;
+  "libusb" = ./libusb.json;
+  "libuv" = ./libuv.json;
+  "libvlc" = ./libvlc.json;
+  "linalg" = ./linalg.json;
+  "linenoise" = ./linenoise.json;
+  "linuxfb" = ./linuxfb.json;
+  "listsv" = ./listsv.json;
+  "llvm" = ./LLVM.json;
+  "lmdb" = ./lmdb.json;
+  "loadenv" = ./loadenv.json;
+  "locale" = ./locale.json;
+  "loco" = ./loco.json;
+  "logue" = ./logue.json;
+  "loki" = ./loki.json;
+  "lolcat" = ./lolcat.json;
+  "looper" = ./looper.json;
+  "loopfusion" = ./loopfusion.json;
+  "lq" = ./lq.json;
+  "lrucache" = ./lrucache.json;
+  "lscolors" = ./lscolors.json;
+  "lua" = ./lua.json;
+  "luhncheck" = ./luhncheck.json;
+  "luhny" = ./luhny.json;
+  "luna" = ./luna.json;
+  "lz77" = ./lz77.json;
+  "macroutils" = ./macroutils.json;
+  "magic" = ./magic.json;
+  "manu" = ./manu.json;
+  "mapbits" = ./mapbits.json;
+  "marggers" = ./marggers.json;
+  "markdown" = ./markdown.json;
+  "markx" = ./markx.json;
+  "masterpassword" = ./masterpassword.json;
+  "mathexpr" = ./mathexpr.json;
+  "matplotnim" = ./matplotnim.json;
+  "matsuri" = ./matsuri.json;
+  "maze" = ./maze.json;
+  "mccache" = ./mccache.json;
+  "mcmurry" = ./mcmurry.json;
+  "mcresponse" = ./mcresponse.json;
+  "mctranslog" = ./mctranslog.json;
+  "mddoc" = ./mddoc.json;
+  "mdevolve" = ./mdevolve.json;
+  "memo" = ./memo.json;
+  "memviews" = ./memviews.json;
+  "mentat" = ./mentat.json;
+  "meow" = ./meow.json;
+  "metatools" = ./metatools.json;
+  "metric" = ./metric.json;
+  "metrics" = ./metrics.json;
+  "microasynchttpserver" = ./microasynchttpserver.json;
+  "midnight_dynamite" = ./midnight_dynamite.json;
+  "migrate" = ./migrate.json;
+  "mime" = ./mime.json;
+  "minhash" = ./minhash.json;
+  "minhook" = ./minhook.json;
+  "miniblink" = ./miniblink.json;
+  "miniz" = ./miniz.json;
+  "minmaxheap" = ./minmaxheap.json;
+  "miter" = ./miter.json;
+  "mmgeoip" = ./mmgeoip.json;
+  "mnemonic" = ./mnemonic.json;
+  "moduleinit" = ./moduleinit.json;
+  "mofuw" = ./mofuw.json;
+  "mongo" = ./mongo.json;
+  "mongopool" = ./mongopool.json;
+  "monocypher" = ./monocypher.json;
+  "morelogging" = ./morelogging.json;
+  "mort" = ./mort.json;
+  "mpdclient" = ./mpdclient.json;
+  "mpeg" = ./mpeg.json;
+  "mpfit" = ./mpfit.json;
+  "mpwc" = ./mpwc.json;
+  "mqtt" = ./mqtt.json;
+  "ms" = ./ms.json;
+  "msgpack" = ./msgpack.json;
+  "msgpack4nim" = ./msgpack4nim.json;
+  "mui" = ./mui.json;
+  "multicast" = ./multicast.json;
+  "murmur" = ./murmur.json;
+  "murmurhash" = ./murmurhash.json;
+  "mustache" = ./mustache.json;
+  "mutableseqs" = ./mutableseqs.json;
+  "myo" = ./myo.json;
+  "mysqlparser" = ./mysqlparser.json;
+  "nake" = ./nake.json;
+  "names" = ./names.json;
+  "nancy" = ./nancy.json;
+  "nanoid" = ./nanoid.json;
+  "nanomsg" = ./nanomsg.json;
+  "nanovg" = ./nanovg.json;
+  "nap" = ./nap.json;
+  "nasher" = ./nasher.json;
+  "nat_traversal" = ./nat_traversal.json;
+  "native_dialogs" = ./native_dialogs.json;
+  "natu" = ./natu.json;
+  "nauthy" = ./nauthy.json;
+  "naw" = ./naw.json;
+  "nbaser" = ./nbaser.json;
+  "ncurses" = ./ncurses.json;
+  "ndb" = ./ndb.json;
+  "ndbex" = ./ndbex.json;
+  "ndf" = ./ndf.json;
+  "ndns" = ./ndns.json;
+  "neel" = ./Neel.json;
+  "negamax" = ./negamax.json;
+  "neo" = ./neo.json;
+  "neoid" = ./neoid.json;
+  "nerve" = ./nerve.json;
+  "nesm" = ./nesm.json;
+  "nest" = ./nest.json;
+  "nestegg" = ./nestegg.json;
+  "netpbm" = ./netpbm.json;
+  "nettest" = ./netTest.json;
+  "netty" = ./netty.json;
+  "neverwinter" = ./neverwinter.json;
+  "news" = ./news.json;
+  "ngspice" = ./ngspice.json;
+  "ngtcp2" = ./ngtcp2.json;
+  "ngxcmod" = ./ngxcmod.json;
+  "nhsl" = ./nhsl.json;
+  "nico" = ./nico.json;
+  "nicy" = ./nicy.json;
+  "nigui" = ./nigui.json;
+  "niledb" = ./niledb.json;
+  "nim-libgd" = ./nim-libgd.json;
+  "nim7z" = ./nim7z.json;
+  "nim_cexc" = ./nim_cexc.json;
+  "nim_cjson" = ./nim_cjson.json;
+  "nim_curry" = ./nim_curry.json;
+  "nim_exodus" = ./nim_exodus.json;
+  "nim_midi" = ./nim_midi.json;
+  "nim_miniz" = ./nim_miniz.json;
+  "nim_sdl2" = ./nim_sdl2.json;
+  "nim_searches" = ./nim_searches.json;
+  "nim_tiled" = ./nim_tiled.json;
+  "nimactors" = ./nimactors.json;
+  "nimaes" = ./nimAES.json;
+  "nimage" = ./nimage.json;
+  "nimagehide" = ./nimagehide.json;
+  "nimagg" = ./nimAGG.json;
+  "nimalpm" = ./nimalpm.json;
+  "nimarchive" = ./nimarchive.json;
+  "nimassets" = ./nimassets.json;
+  "nimaterial" = ./nimaterial.json;
+  "nimates" = ./nimates.json;
+  "nimatic" = ./nimatic.json;
+  "nimbass" = ./nimbass.json;
+  "nimbench" = ./nimbench.json;
+  "nimbigwig" = ./nimbigwig.json;
+  "nimbioseq" = ./nimbioseq.json;
+  "nimbitarray" = ./nimbitarray.json;
+  "nimblas" = ./nimblas.json;
+  "nimblegui" = ./nimblegui.json;
+  "nimbler" = ./nimbler.json;
+  "nimbluez" = ./nimbluez.json;
+  "nimbmp" = ./nimBMP.json;
+  "nimbomb" = ./nimbomb.json;
+  "nimboost" = ./nimboost.json;
+  "nimborg" = ./NimBorg.json;
+  "nimbox" = ./nimbox.json;
+  "nimbug" = ./nimbug.json;
+  "nimcat" = ./nimcat.json;
+  "nimcb" = ./nimcb.json;
+  "nimcdl" = ./nimcdl.json;
+  "nimcef" = ./nimCEF.json;
+  "nimcfitsio" = ./nimcfitsio.json;
+  "nimchromepath" = ./nimchromepath.json;
+  "nimclipboard" = ./nimclipboard.json;
+  "nimclutter" = ./nimclutter.json;
+  "nimcmaes" = ./nimcmaes.json;
+  "nimcoon" = ./nimcoon.json;
+  "nimcr" = ./nimcr.json;
+  "nimcrypto" = ./nimcrypto.json;
+  "nimcuda" = ./nimcuda.json;
+  "nimcx" = ./nimcx.json;
+  "nimdata" = ./NimData.json;
+  "nimdbx" = ./NimDBX.json;
+  "nimem" = ./nimem.json;
+  "nimes" = ./nimes.json;
+  "nimeverything" = ./nimeverything.json;
+  "nimfasttext" = ./nimfastText.json;
+  "nimfcuk" = ./nimfcuk.json;
+  "nimfinlib" = ./nimFinLib.json;
+  "nimfm" = ./nimfm.json;
+  "nimfuzz" = ./nimfuzz.json;
+  "nimfuzzy" = ./nimfuzzy.json;
+  "nimga" = ./nimga.json;
+  "nimgame2" = ./nimgame2.json;
+  "nimgen" = ./nimgen.json;
+  "nimgit2" = ./nimgit2.json;
+  "nimgl" = ./nimgl.json;
+  "nimgraphql" = ./nimgraphql.json;
+  "nimgraphviz" = ./nimgraphviz.json;
+  "nimgui" = ./nimgui.json;
+  "nimha" = ./nimha.json;
+  "nimhdf5" = ./nimhdf5.json;
+  "nimhq" = ./nimhq.json;
+  "nimi3status" = ./nimi3status.json;
+  "nimics" = ./nimics.json;
+  "niminst" = ./niminst.json;
+  "nimish" = ./nimish.json;
+  "nimjson" = ./nimjson.json;
+  "nimkerberos" = ./nimkerberos.json;
+  "nimlapack" = ./nimlapack.json;
+  "nimler" = ./nimler.json;
+  "nimlevenshtein" = ./nimlevenshtein.json;
+  "nimlibxlsxwriter" = ./nimlibxlsxwriter.json;
+  "nimline" = ./nimline.json;
+  "nimlist" = ./nimlist.json;
+  "nimlsp" = ./nimlsp.json;
+  "nimlua" = ./nimLUA.json;
+  "nimly" = ./nimly.json;
+  "nimlz4" = ./nimlz4.json;
+  "nimmarc" = ./NimMarc.json;
+  "nimmm" = ./nimmm.json;
+  "nimmonocypher" = ./nimmonocypher.json;
+  "nimna" = ./nimna.json;
+  "nimnoise" = ./nimnoise.json;
+  "nimobserver" = ./nimobserver.json;
+  "nimodpi" = ./nimodpi.json;
+  "nimoji" = ./nimoji.json;
+  "nimongo" = ./nimongo.json;
+  "nimosc" = ./nimosc.json;
+  "nimp" = ./nimp.json;
+  "nimp5" = ./nimp5.json;
+  "nimpari" = ./nimpari.json;
+  "nimpass" = ./nimpass.json;
+  "nimpb" = ./nimpb.json;
+  "nimpb_protoc" = ./nimpb_protoc.json;
+  "nimpc" = ./NiMPC.json;
+  "nimpcre" = ./nimpcre.json;
+  "nimpdf" = ./nimPDF.json;
+  "nimplehttpserver" = ./NimpleHTTPServer.json;
+  "nimpmda" = ./nimpmda.json;
+  "nimpng" = ./nimPNG.json;
+  "nimpress" = ./nimpress.json;
+  "nimpy" = ./nimpy.json;
+  "nimqbittorrent" = ./nimQBittorrent.json;
+  "nimqml" = ./nimqml.json;
+  "nimquery" = ./nimquery.json;
+  "nimr" = ./nimr.json;
+  "nimrat" = ./nimrat.json;
+  "nimrax" = ./nimrax.json;
+  "nimraylib_now" = ./nimraylib_now.json;
+  "nimrcon" = ./nimrcon.json;
+  "nimrdkafka" = ./nimrdkafka.json;
+  "nimrod-glfw" = ./nimrod-glfw.json;
+  "nimrpc" = ./nimrpc.json;
+  "nimrpc_milis" = ./nimrpc_milis.json;
+  "nimrtlsdr" = ./nimrtlsdr.json;
+  "nimrun" = ./nimrun.json;
+  "nimscripter" = ./Nimscripter.json;
+  "nimsha2" = ./nimSHA2.json;
+  "nimshell" = ./nimshell.json;
+  "nimsimd" = ./nimsimd.json;
+  "nimsl" = ./nimsl.json;
+  "nimsnappy" = ./nimsnappy.json;
+  "nimsnappyc" = ./nimsnappyc.json;
+  "nimspice" = ./nimspice.json;
+  "nimssh2" = ./nimssh2.json;
+  "nimssl" = ./nimssl.json;
+  "nimstopwatch" = ./nimstopwatch.json;
+  "nimsuite" = ./nimsuite.json;
+  "nimsvg" = ./nimsvg.json;
+  "nimtactoe" = ./NimTacToe.json;
+  "nimterlingua" = ./nimterlingua.json;
+  "nimtess2" = ./nimtess2.json;
+  "nimtetris" = ./nimtetris.json;
+  "nimtiingo" = ./nimTiingo.json;
+  "nimtomd" = ./nimtomd.json;
+  "nimtraits" = ./nimtraits.json;
+  "nimtrs" = ./nimtrs.json;
+  "nimvisa" = ./nimvisa.json;
+  "nimviz" = ./nimviz.json;
+  "nimwc" = ./nimwc.json;
+  "nimwebp" = ./nimwebp.json;
+  "nimx" = ./nimx.json;
+  "nimzbar" = ./nimzbar.json;
+  "nimzend" = ./nimzend.json;
+  "nio" = ./nio.json;
+  "nish" = ./nish.json;
+  "niup" = ./niup.json;
+  "nlopt" = ./nlopt.json;
+  "nmi" = ./nmi.json;
+  "nmqtt" = ./nmqtt.json;
+  "noaa" = ./noaa.json;
+  "nobject" = ./nobject.json;
+  "node" = ./node.json;
+  "nodejs" = ./nodejs.json;
+  "nodesnim" = ./nodesnim.json;
+  "noise" = ./noise.json;
+  "noisy" = ./noisy.json;
+  "nominatim" = ./nominatim.json;
+  "nordnet" = ./nordnet.json;
+  "norm" = ./norm.json;
+  "normalize" = ./normalize.json;
+  "norman" = ./norman.json;
+  "norx" = ./norx.json;
+  "notetxt" = ./notetxt.json;
+  "notificatcher" = ./notificatcher.json;
+  "notification" = ./notification.json;
+  "notifications" = ./notifications.json;
+  "notifishower" = ./notifishower.json;
+  "notify" = ./notify.json;
+  "notmuch" = ./notmuch.json;
+  "npeg" = ./npeg.json;
+  "npg" = ./npg.json;
+  "nre" = ./nre.json;
+  "nregex" = ./nregex.json;
+  "nrpl" = ./nrpl.json;
+  "nsh" = ./nsh.json;
+  "nshout" = ./nshout.json;
+  "nsu" = ./nsu.json;
+  "ntangle" = ./ntangle.json;
+  "numericalnim" = ./numericalnim.json;
+  "numnim" = ./numnim.json;
+  "nuuid" = ./nuuid.json;
+  "nwatchdog" = ./nwatchdog.json;
+  "nwt" = ./nwt.json;
+  "oaitools" = ./oaitools.json;
+  "oauth" = ./oauth.json;
+  "oblivion" = ./oblivion.json;
+  "oculus" = ./oculus.json;
+  "oldgtk3" = ./oldgtk3.json;
+  "oldwinapi" = ./oldwinapi.json;
+  "omni" = ./omni.json;
+  "omnicollider" = ./omnicollider.json;
+  "omnilog" = ./omnilog.json;
+  "omnimax" = ./omnimax.json;
+  "once" = ./once.json;
+  "onedrive" = ./onedrive.json;
+  "oop_utils" = ./oop_utils.json;
+  "open_elevation" = ./open_elevation.json;
+  "openal" = ./openal.json;
+  "openapi" = ./openapi.json;
+  "opencl" = ./opencl.json;
+  "opencv" = ./opencv.json;
+  "openexchangerates" = ./openexchangerates.json;
+  "opengl" = ./opengl.json;
+  "openssl_evp" = ./openssl_evp.json;
+  "openstreetmap" = ./openstreetmap.json;
+  "opentdb" = ./opentdb.json;
+  "openweathermap" = ./openweathermap.json;
+  "optional_t" = ./optional_t.json;
+  "optionals" = ./optionals.json;
+  "options" = ./options.json;
+  "optionsutils" = ./optionsutils.json;
+  "opus" = ./opus.json;
+  "opusenc" = ./opusenc.json;
+  "ormin" = ./ormin.json;
+  "os_files" = ./os_files.json;
+  "osdialog" = ./osdialog.json;
+  "oshostname" = ./oshostname.json;
+  "osinfo" = ./osinfo.json;
+  "osrm" = ./osrm.json;
+  "osureplay" = ./osureplay.json;
+  "osutil" = ./osutil.json;
+  "otp" = ./otp.json;
+  "overpass" = ./overpass.json;
+  "owo" = ./owo.json;
+  "p4ztag_to_json" = ./p4ztag_to_json.json;
+  "package_visible_types" = ./package_visible_types.json;
+  "packedjson" = ./packedjson.json;
+  "packets" = ./packets.json;
+  "pager" = ./pager.json;
+  "palette" = ./Palette.json;
+  "paramidi" = ./paramidi.json;
+  "paramidi_soundfonts" = ./paramidi_soundfonts.json;
+  "paranim" = ./paranim.json;
+  "pararules" = ./pararules.json;
+  "parasound" = ./parasound.json;
+  "paratext" = ./paratext.json;
+  "paravim" = ./paravim.json;
+  "pari" = ./pari.json;
+  "parsefixed" = ./parseFixed.json;
+  "parseini" = ./parseini.json;
+  "parselicense" = ./parselicense.json;
+  "parsetoml" = ./parsetoml.json;
+  "pas2nim" = ./pas2nim.json;
+  "passgen" = ./passgen.json;
+  "pastebin" = ./pastebin.json;
+  "patgraph" = ./patgraph.json;
+  "pathname" = ./pathname.json;
+  "patty" = ./patty.json;
+  "pcap" = ./pcap.json;
+  "pcgbasic" = ./pcgbasic.json;
+  "pdba" = ./pdba.json;
+  "pdcurses" = ./pdcurses.json;
+  "perlin" = ./perlin.json;
+  "persistent_enums" = ./persistent_enums.json;
+  "persvector" = ./persvector.json;
+  "pfring" = ./pfring.json;
+  "pg" = ./pg.json;
+  "pg_util" = ./pg_util.json;
+  "pgxcrown" = ./pgxcrown.json;
+  "phoon" = ./phoon.json;
+  "phosphor" = ./Phosphor.json;
+  "phylogeni" = ./PhylogeNi.json;
+  "physfs" = ./physfs.json;
+  "picohttpparser" = ./picohttpparser.json;
+  "pine" = ./pine.json;
+  "pinggraph" = ./pinggraph.json;
+  "pipe" = ./pipe.json;
+  "pipelines" = ./pipelines.json;
+  "pixie" = ./pixie.json;
+  "platformer" = ./platformer.json;
+  "playground" = ./playground.json;
+  "playlists" = ./playlists.json;
+  "pledge" = ./pledge.json;
+  "plists" = ./plists.json;
+  "plotly" = ./plotly.json;
+  "pluginmanager" = ./pluginmanager.json;
+  "plugins" = ./plugins.json;
+  "plz" = ./plz.json;
+  "png" = ./png.json;
+  "pnm" = ./pnm.json;
+  "pokereval" = ./pokereval.json;
+  "polybool" = ./polyBool.json;
+  "polynumeric" = ./polynumeric.json;
+  "polypbren" = ./polypbren.json;
+  "pomtimer" = ./pomTimer.json;
+  "pop3" = ./pop3.json;
+  "porter" = ./porter.json;
+  "ppm" = ./PPM.json;
+  "primme" = ./primme.json;
+  "print" = ./print.json;
+  "printdebug" = ./printdebug.json;
+  "procs" = ./procs.json;
+  "progress" = ./progress.json;
+  "prologue" = ./prologue.json;
+  "prometheus" = ./prometheus.json;
+  "prompt" = ./prompt.json;
+  "protobuf" = ./protobuf.json;
+  "protobuf_serialization" = ./protobuf_serialization.json;
+  "protocoled" = ./protocoled.json;
+  "proton" = ./proton.json;
+  "proxyproto" = ./proxyproto.json;
+  "psutil" = ./psutil.json;
+  "ptest" = ./ptest.json;
+  "ptrace" = ./ptrace.json;
+  "pvim" = ./pvim.json;
+  "pwd" = ./pwd.json;
+  "pwned" = ./pwned.json;
+  "pych" = ./pych.json;
+  "pykot" = ./pykot.json;
+  "pylib" = ./pylib.json;
+  "pymod" = ./pymod.json;
+  "python" = ./python.json;
+  "python3" = ./python3.json;
+  "pythonfile" = ./pythonfile.json;
+  "pythonize" = ./pythonize.json;
+  "pythonmath" = ./pythonmath.json;
+  "pythonpathlib" = ./pythonpathlib.json;
+  "q" = ./q.json;
+  "qeu" = ./qeu.json;
+  "qr" = ./qr.json;
+  "qrcode" = ./qrcode.json;
+  "qrcodegen" = ./qrcodegen.json;
+  "qt5_qtsql" = ./qt5_qtsql.json;
+  "quadtree" = ./quadtree.json;
+  "quickcrypt" = ./quickcrypt.json;
+  "quickjs4nim" = ./QuickJS4nim.json;
+  "quickjwt" = ./quickjwt.json;
+  "qwertycd" = ./qwertycd.json;
+  "rabbit" = ./rabbit.json;
+  "rain" = ./rain.json;
+  "rainbow" = ./rainbow.json;
+  "randgen" = ./randgen.json;
+  "random" = ./random.json;
+  "random_font_color" = ./random_font_color.json;
+  "randpw" = ./randpw.json;
+  "ranges" = ./ranges.json;
+  "rapid" = ./rapid.json;
+  "rbac" = ./rbac.json;
+  "rbtree" = ./rbtree.json;
+  "rc4" = ./RC4.json;
+  "rdgui" = ./rdgui.json;
+  "react" = ./react.json;
+  "react16" = ./react16.json;
+  "reactor" = ./reactor.json;
+  "reactorfuse" = ./reactorfuse.json;
+  "readfq" = ./readfq.json;
+  "recaptcha" = ./recaptcha.json;
+  "rect" = ./rect.json;
+  "rect_packer" = ./rect_packer.json;
+  "redis" = ./redis.json;
+  "redisclient" = ./redisclient.json;
+  "redisparser" = ./redisparser.json;
+  "redissessions" = ./redissessions.json;
+  "redpool" = ./redpool.json;
+  "redux" = ./redux.json;
+  "redux_nim" = ./redux_nim.json;
+  "reframe" = ./reframe.json;
+  "regex" = ./regex.json;
+  "remarker_light" = ./remarker_light.json;
+  "remotery" = ./Remotery.json;
+  "rena" = ./rena.json;
+  "replim" = ./replim.json;
+  "requirementstxt" = ./requirementstxt.json;
+  "result" = ./result.json;
+  "rethinkdb" = ./rethinkdb.json;
+  "retranslator" = ./retranslator.json;
+  "rexpaint" = ./rexpaint.json;
+  "rfc3339" = ./rfc3339.json;
+  "ringdeque" = ./ringDeque.json;
+  "ris" = ./ris.json;
+  "rlp" = ./rlp.json;
+  "rnim" = ./rnim.json;
+  "robotparser" = ./robotparser.json;
+  "rocksdb" = ./rocksdb.json;
+  "rodcli" = ./rodcli.json;
+  "rollinghash" = ./RollingHash.json;
+  "romans" = ./romans.json;
+  "roots" = ./roots.json;
+  "rosencrantz" = ./rosencrantz.json;
+  "rss" = ./rss.json;
+  "rsvg" = ./rsvg.json;
+  "rtree" = ./rtree.json;
+  "runeterra_decks" = ./runeterra_decks.json;
+  "rx_nim" = ./rx_nim.json;
+  "sam" = ./sam.json;
+  "sampletodolist" = ./sampleTodoList.json;
+  "sass" = ./sass.json;
+  "schedules" = ./schedules.json;
+  "science" = ./science.json;
+  "scnim" = ./scnim.json;
+  "scram" = ./scram.json;
+  "sctp" = ./sctp.json;
+  "sdf" = ./SDF.json;
+  "sdl1" = ./sdl1.json;
+  "sdl2" = ./sdl2.json;
+  "sdl2_nim" = ./sdl2_nim.json;
+  "sdnotify" = ./sdnotify.json;
+  "seccomp" = ./seccomp.json;
+  "secp256k1" = ./secp256k1.json;
+  "sections" = ./sections.json;
+  "segmentation" = ./segmentation.json;
+  "semver" = ./semver.json;
+  "seqmath" = ./seqmath.json;
+  "sequester" = ./sequester.json;
+  "sequoia" = ./sequoia.json;
+  "sequtils2" = ./sequtils2.json;
+  "serial" = ./serial.json;
+  "serialization" = ./serialization.json;
+  "serializetools" = ./serializetools.json;
+  "serialport" = ./serialport.json;
+  "seriesdetiempoar" = ./seriesdetiempoar.json;
+  "sermon" = ./sermon.json;
+  "servy" = ./servy.json;
+  "sfml" = ./sfml.json;
+  "sha1" = ./sha1.json;
+  "sha3" = ./sha3.json;
+  "shared" = ./shared.json;
+  "sharedmempool" = ./sharedmempool.json;
+  "shell" = ./shell.json;
+  "shene" = ./shene.json;
+  "shiori" = ./shiori.json;
+  "shiori_charset_convert" = ./shiori_charset_convert.json;
+  "shioridll" = ./shioridll.json;
+  "shizuka" = ./shizuka.json;
+  "shlex" = ./shlex.json;
+  "shmk" = ./shmk.json;
+  "shoco" = ./shoco.json;
+  "shorturl" = ./shorturl.json;
+  "signals" = ./signals.json;
+  "sigv4" = ./sigv4.json;
+  "sim" = ./sim.json;
+  "simdx86" = ./simdX86.json;
+  "simhash" = ./simhash.json;
+  "simple_graph" = ./simple_graph.json;
+  "simple_parseopt" = ./simple_parseopt.json;
+  "simple_vector" = ./simple_vector.json;
+  "simpleast" = ./simpleAST.json;
+  "simpledecimal" = ./simpledecimal.json;
+  "simplediff" = ./simplediff.json;
+  "simpleflake" = ./simpleflake.json;
+  "simpleot" = ./simpleot.json;
+  "simplepng" = ./simplepng.json;
+  "siphash" = ./siphash.json;
+  "sitmo" = ./sitmo.json;
+  "siwin" = ./siwin.json;
+  "sixense" = ./sixense.json;
+  "skbintext" = ./skbintext.json;
+  "skeasing" = ./skEasing.json;
+  "ski" = ./ski.json;
+  "skinterpolate" = ./skinterpolate.json;
+  "sksbox" = ./sksbox.json;
+  "skybook" = ./skybook.json;
+  "skyhash" = ./skyhash.json;
+  "slacklib" = ./slacklib.json;
+  "slappy" = ./slappy.json;
+  "sliceutils" = ./sliceutils.json;
+  "slimdown" = ./slimdown.json;
+  "sling" = ./sling.json;
+  "smbexec" = ./SMBExec.json;
+  "smnar" = ./smnar.json;
+  "snail" = ./snail.json;
+  "snappy" = ./snappy.json;
+  "sndfile" = ./sndfile.json;
+  "sndhdr" = ./sndhdr.json;
+  "snip" = ./snip.json;
+  "socks" = ./socks.json;
+  "sodium" = ./sodium.json;
+  "sol" = ./sol.json;
+  "sonic" = ./sonic.json;
+  "sophia" = ./sophia.json;
+  "sorta" = ./sorta.json;
+  "sound" = ./sound.json;
+  "soundex" = ./soundex.json;
+  "soundio" = ./soundio.json;
+  "spacenav" = ./spacenav.json;
+  "spacy" = ./spacy.json;
+  "sparkline" = ./sparkline.json;
+  "sparseset" = ./sparseset.json;
+  "spdk" = ./spdk.json;
+  "spdx_licenses" = ./spdx_licenses.json;
+  "sph" = ./sph.json;
+  "sphincs" = ./sphincs.json;
+  "sphinx" = ./sphinx.json;
+  "spills" = ./spills.json;
+  "spinner" = ./spinner.json;
+  "spinny" = ./spinny.json;
+  "spotify" = ./spotify.json;
+  "spry" = ./spry.json;
+  "sprymicro" = ./sprymicro.json;
+  "spryvm" = ./spryvm.json;
+  "spwd" = ./spwd.json;
+  "sqlbuilder" = ./sqlbuilder.json;
+  "sqlite3_abi" = ./sqlite3_abi.json;
+  "sqliteral" = ./sqliteral.json;
+  "srt" = ./srt.json;
+  "ssh2" = ./ssh2.json;
+  "sss" = ./sss.json;
+  "stacks" = ./stacks.json;
+  "stage" = ./stage.json;
+  "stalinsort" = ./stalinsort.json;
+  "stashtable" = ./StashTable.json;
+  "statsd_client" = ./statsd_client.json;
+  "stb_image" = ./stb_image.json;
+  "std_shims" = ./std_shims.json;
+  "stdext" = ./stdext.json;
+  "steam" = ./steam.json;
+  "steamworks" = ./steamworks.json;
+  "steganography" = ./steganography.json;
+  "stew" = ./stew.json;
+  "stint" = ./stint.json;
+  "stones" = ./stones.json;
+  "stopwatch" = ./stopwatch.json;
+  "stor" = ./stor.json;
+  "strenc" = ./strenc.json;
+  "strfmt" = ./strfmt.json;
+  "stringinterpolation" = ./stringinterpolation.json;
+  "strslice" = ./strslice.json;
+  "struct" = ./struct.json;
+  "strunicode" = ./strunicode.json;
+  "subfield" = ./subfield.json;
+  "subhook" = ./subhook.json;
+  "subnet" = ./subnet.json;
+  "subviewer" = ./subviewer.json;
+  "suffer" = ./suffer.json;
+  "sugerror" = ./sugerror.json;
+  "suggest" = ./suggest.json;
+  "sunvox" = ./sunvox.json;
+  "supersnappy" = ./supersnappy.json;
+  "svdpi" = ./svdpi.json;
+  "svgo" = ./svgo.json;
+  "swayipc" = ./swayipc.json;
+  "switch_build" = ./switch_build.json;
+  "syllables" = ./syllables.json;
+  "symbolicnim" = ./symbolicnim.json;
+  "synthesis" = ./synthesis.json;
+  "syphus" = ./syphus.json;
+  "syscall" = ./syscall.json;
+  "sysinfo" = ./sysinfo.json;
+  "syslog" = ./syslog.json;
+  "sysrandom" = ./sysrandom.json;
+  "systimes" = ./systimes.json;
+  "taglib" = ./taglib.json;
+  "tam" = ./tam.json;
+  "taps" = ./taps.json;
+  "taskqueue" = ./taskqueue.json;
+  "tcl" = ./tcl.json;
+  "tcping" = ./tcping.json;
+  "telebot" = ./telebot.json;
+  "telenim" = ./telenim.json;
+  "tempdir" = ./tempdir.json;
+  "tempfile" = ./tempfile.json;
+  "templates" = ./templates.json;
+  "tencil" = ./tencil.json;
+  "termbox" = ./termbox.json;
+  "terminaltables" = ./terminaltables.json;
+  "termnovel" = ./termnovel.json;
+  "termstyle" = ./termstyle.json;
+  "ternary_tree" = ./ternary_tree.json;
+  "testify" = ./testify.json;
+  "testrunner" = ./testrunner.json;
+  "testutils" = ./testutils.json;
+  "texttospeech" = ./texttospeech.json;
+  "tf2plug" = ./tf2plug.json;
+  "the_nim_alliance" = ./the_nim_alliance.json;
+  "therapist" = ./therapist.json;
+  "threadproxy" = ./threadproxy.json;
+  "tiger" = ./tiger.json;
+  "til" = ./til.json;
+  "tim_sort" = ./tim_sort.json;
+  "timecop" = ./timecop.json;
+  "timeit" = ./timeit.json;
+  "timelog" = ./timelog.json;
+  "timerpool" = ./timerpool.json;
+  "timerwheel" = ./timerwheel.json;
+  "timespec_get" = ./timespec_get.json;
+  "timestamp" = ./timestamp.json;
+  "tinamou" = ./tinamou.json;
+  "tiny_sqlite" = ./tiny_sqlite.json;
+  "tinyfiledialogs" = ./tinyfiledialogs.json;
+  "tissue" = ./tissue.json;
+  "tmplpro" = ./tmplpro.json;
+  "tnim" = ./tnim.json;
+  "toml_serialization" = ./toml_serialization.json;
+  "tor" = ./tor.json;
+  "torch" = ./torch.json;
+  "torim" = ./torim.json;
+  "torm" = ./torm.json;
+  "toxcore" = ./toxcore.json;
+  "treesitter" = ./treesitter.json;
+  "treesitter_agda" = ./treesitter_agda.json;
+  "treesitter_bash" = ./treesitter_bash.json;
+  "treesitter_c" = ./treesitter_c.json;
+  "treesitter_c_sharp" = ./treesitter_c_sharp.json;
+  "treesitter_cpp" = ./treesitter_cpp.json;
+  "treesitter_css" = ./treesitter_css.json;
+  "treesitter_go" = ./treesitter_go.json;
+  "treesitter_haskell" = ./treesitter_haskell.json;
+  "treesitter_html" = ./treesitter_html.json;
+  "treesitter_java" = ./treesitter_java.json;
+  "treesitter_javascript" = ./treesitter_javascript.json;
+  "treesitter_ocaml" = ./treesitter_ocaml.json;
+  "treesitter_php" = ./treesitter_php.json;
+  "treesitter_python" = ./treesitter_python.json;
+  "treesitter_ruby" = ./treesitter_ruby.json;
+  "treesitter_rust" = ./treesitter_rust.json;
+  "treesitter_scala" = ./treesitter_scala.json;
+  "treesitter_typescript" = ./treesitter_typescript.json;
+  "trick" = ./trick.json;
+  "triplets" = ./triplets.json;
+  "tsundoku" = ./tsundoku.json;
+  "tsv2json" = ./tsv2json.json;
+  "ttmath" = ./ttmath.json;
+  "tuples" = ./tuples.json;
+  "turn_based_game" = ./turn_based_game.json;
+  "twitter" = ./twitter.json;
+  "typelists" = ./typelists.json;
+  "typography" = ./typography.json;
+  "ui" = ./ui.json;
+  "uibuilder" = ./uibuilder.json;
+  "ulid" = ./ulid.json;
+  "unicode_numbers" = ./unicode_numbers.json;
+  "unicodedb" = ./unicodedb.json;
+  "unicodeplus" = ./unicodeplus.json;
+  "unit" = ./Unit.json;
+  "units" = ./units.json;
+  "unpack" = ./unpack.json;
+  "unsplash" = ./unsplash.json;
+  "untar" = ./untar.json;
+  "ur" = ./ur.json;
+  "urand" = ./urand.json;
+  "uri2" = ./uri2.json;
+  "uri3" = ./uri3.json;
+  "urlly" = ./urlly.json;
+  "urlshortener" = ./urlshortener.json;
+  "usagov" = ./usagov.json;
+  "useragents" = ./useragents.json;
+  "usha" = ./usha.json;
+  "usigar" = ./usigar.json;
+  "ustring" = ./ustring.json;
+  "utils" = ./utils.json;
+  "uuid" = ./uuid.json;
+  "uuids" = ./uuids.json;
+  "validateip" = ./validateip.json;
+  "validation" = ./validation.json;
+  "validator" = ./validator.json;
+  "values" = ./values.json;
+  "variant" = ./variant.json;
+  "variantkey" = ./variantkey.json;
+  "vaultclient" = ./vaultclient.json;
+  "vec" = ./vec.json;
+  "vecio" = ./vecio.json;
+  "vecmath" = ./vecmath.json;
+  "vector" = ./vector.json;
+  "vectors" = ./vectors.json;
+  "vidhdr" = ./vidhdr.json;
+  "vkapi" = ./vkapi.json;
+  "vla" = ./vla.json;
+  "vmath" = ./vmath.json;
+  "vmprotect" = ./vmprotect.json;
+  "vmvc" = ./vmvc.json;
+  "vscds" = ./vscds.json;
+  "vtable" = ./vtable.json;
+  "wauto" = ./wAuto.json;
+  "wave" = ./wave.json;
+  "wchart" = ./wChart.json;
+  "weave" = ./weave.json;
+  "web3" = ./web3.json;
+  "webaudio" = ./webaudio.json;
+  "webdavclient" = ./webdavclient.json;
+  "webdriver" = ./webdriver.json;
+  "webgl" = ./WebGL.json;
+  "webgui" = ./webgui.json;
+  "webp" = ./webp.json;
+  "webrod" = ./webrod.json;
+  "webrtcvad" = ./webrtcvad.json;
+  "websocket" = ./websocket.json;
+  "websocketx" = ./websocketx.json;
+  "webterminal" = ./webterminal.json;
+  "webview" = ./webview.json;
+  "weightedgraph" = ./weightedgraph.json;
+  "wepoll" = ./wepoll.json;
+  "whip" = ./whip.json;
+  "wiki2text" = ./wiki2text.json;
+  "wings" = ./wings.json;
+  "winim" = ./winim.json;
+  "winregistry" = ./winregistry.json;
+  "winres" = ./winres.json;
+  "winversion" = ./winversion.json;
+  "wiringpinim" = ./wiringPiNim.json;
+  "witai" = ./witai.json;
+  "with" = ./with.json;
+  "wnim" = ./wNim.json;
+  "woocommerce-api-nim" = ./woocommerce-api-nim.json;
+  "word2vec" = ./word2vec.json;
+  "wox" = ./wox.json;
+  "wpspin" = ./wpspin.json;
+  "wren" = ./wren.json;
+  "ws" = ./ws.json;
+  "wstp" = ./wstp.json;
+  "wxnim" = ./wxnim.json;
+  "wxpay" = ./wxpay.json;
+  "wyhash" = ./wyhash.json;
+  "wzeegrid" = ./wZeeGrid.json;
+  "x11" = ./x11.json;
+  "xam" = ./xam.json;
+  "xcm" = ./xcm.json;
+  "xdo" = ./xdo.json;
+  "xevloop" = ./xevloop.json;
+  "xiaomi" = ./xiaomi.json;
+  "xio" = ./xio.json;
+  "xlsx" = ./xlsx.json;
+  "xml" = ./xml.json;
+  "xmlio" = ./xmlio.json;
+  "xmltools" = ./xmltools.json;
+  "xors3d" = ./Xors3D.json;
+  "xplm-nim" = ./XPLM-Nim.json;
+  "xpm" = ./xpm.json;
+  "xxhash" = ./xxhash.json;
+  "xxtea" = ./xxtea.json;
+  "yahooweather" = ./yahooweather.json;
+  "yukiko" = ./yukiko.json;
+  "z3nim" = ./z3nim.json;
+  "zero_functional" = ./zero_functional.json;
+  "zfblast" = ./zfblast.json;
+  "zfcore" = ./zfcore.json;
+  "zfplugs" = ./zfplugs.json;
+  "zhsh" = ./zhsh.json;
+  "zip" = ./zip.json;
+  "zippy" = ./zippy.json;
+  "zmq" = ./zmq.json;
+  "zopflipng" = ./zopflipng.json;
+  "zxcvbn" = ./zxcvbn.json;
+}

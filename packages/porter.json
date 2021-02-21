@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/iourinski/porter",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/iourinski/porter",
-          "rev": "891db099c1be02f3cd2e5cfd58f2cb6cfe76e2c9",
-          "date": "2017-01-20T16:24:46+03:00",
-          "sha256": "19kir33a7dypm48nmz2fpr1pxnnn8f9qjrhp7s3d9xl9g62iqzrw",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/iourinski/porter","versions":[{"nimble":{"author":"dmitri.iourinski","backend":"c","bin":["porter"],"binDir":".","description":"nim implementation of Porter's stemmer, with a possibility to add new languagess","installFiles":["porter.nim"],"license":"MIT","requires":[{"name":"mutableseqs","range":">= 0.1.0"},{"name":"nim","range":">= 0.15.2"}],"skipExt":["nim"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/iourinski/porter","rev":"891db099c1be02f3cd2e5cfd58f2cb6cfe76e2c9","date":"2017-01-20T16:24:46+03:00","path":"/nix/store/6ngi234x7kia7lm1vmrdn9gjaggcqilk-porter","sha256":"19kir33a7dypm48nmz2fpr1pxnnn8f9qjrhp7s3d9xl9g62iqzrw","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

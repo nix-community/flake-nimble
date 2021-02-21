@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-chronos",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-chronos",
-          "rev": "943a961201350c720591c9d90f1975ecd38702fe",
-          "date": "2019-11-01T06:42:32+02:00",
-          "sha256": "0s9ix14rrdkw6ryar4srdg7dbq29jcn98jywh1fybfp4nd2cpc38",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-chronos","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Chronos","installDirs":["chronos"],"installFiles":["chronos.nim"],"license":"Apache License 2.0 or MIT","requires":[{"name":"nim","range":"> 1.2.0"},{"name":"stew","range":"any version"},{"name":"bearssl","range":"any version"},{"name":"httputils","range":"any version"}],"skipDirs":["tests"],"specialVersion":"2.5.2","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-chronos","rev":"d595e0dbc63c56807de9690d67c00b979f6404ca","date":"2021-02-21T04:22:59+02:00","path":"/nix/store/mswxs7xsq28nzjd2l1hpjzn88nggg3fi-nim-chronos","sha256":"1n8bsy5p18dcx8i83dign7i4kdksczpkjk4kkfr71a0h5jka5p55","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

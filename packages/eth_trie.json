@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/status-im/nim-eth-trie",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/status-im/nim-eth-trie",
-          "rev": "d4175803b26540e880aef0e9c0e3df1604a77be9",
-          "date": "2019-03-25T19:04:37-06:00",
-          "sha256": "0h526a1g0j9f39jjmpayfnjcq6z082awyx4sw73dh9jhs3m3n34p",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/status-im/nim-eth-trie","versions":[{"nimble":{"author":"Status Research & Development GmbH","backend":"c","binDir":".","description":"Merkle Patricia Tries as specified by Ethereum","installDirs":["eth_trie"],"installFiles":["eth_trie.nim"],"license":"Apache License 2.0","requires":[{"name":"nim","range":">= 0.18.1"},{"name":"rlp","range":"any version"},{"name":"nimcrypto","range":"any version"},{"name":"ranges","range":"any version"},{"name":"rocksdb","range":"any version"}],"skipDirs":["tests"],"specialVersion":"1.0.0","srcDir":"."},"source":{"url":"https://github.com/status-im/nim-eth-trie","rev":"d4175803b26540e880aef0e9c0e3df1604a77be9","date":"2019-03-25T19:04:37-06:00","path":"/nix/store/0zpwbsjhpcnpkrv4hcjg6s3nl71hr1zs-nim-eth-trie","sha256":"0h526a1g0j9f39jjmpayfnjcq6z082awyx4sw73dh9jhs3m3n34p","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

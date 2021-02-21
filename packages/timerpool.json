@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/mikra01/timerpool",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/mikra01/timerpool/",
-          "rev": "ced168d0e29651a93daa45673bd944b085e9253e",
-          "date": "2019-06-09T11:49:14+02:00",
-          "sha256": "148dcis45f2livqfln3gyl2kmx942y2q9wdvvgqjfcizmvj4zz6q",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/mikra01/timerpool","versions":[{"nimble":{"author":"Michael Krauter","backend":"c","binDir":".","description":"single thread Timerpool implementation in Nim for event purpose","installFiles":["timerpool.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.0"}],"skipDirs":["tests"],"specialVersion":"0.1.0","srcDir":"."},"source":{"url":"https://github.com/mikra01/timerpool/","rev":"7e42cd224442b787c628abb7fe6daeed5005e8b3","date":"2020-05-09T17:02:17+02:00","path":"/nix/store/njph8sk144rw1jyi2ryxqm9rj83ma6i4-timerpool","sha256":"1969dzc56qp7imydld8ffc68z0f35nqz39qv2flvj1hi4s8czkcz","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

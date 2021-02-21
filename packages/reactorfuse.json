@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/zielmicha/reactorfuse",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/zielmicha/reactorfuse",
-          "rev": "5da2c220339a1aedbf56b48c3f26c0c1adcb943e",
-          "date": "2017-02-19T22:52:56+01:00",
-          "sha256": "0libpzp43lspanj8ywzcrazfnvzx722rvwgx1i8g4ygm4qvxajcl",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/zielmicha/reactorfuse","versions":[{"nimble":{"author":"Michał Zieliński <michal@zielinscy.org.pl>","backend":"c","binDir":".","description":"Filesystem in userspace (FUSE) support for reactor.nim","installDirs":["reactorfuse"],"installFiles":["reactorfuse.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.15.0"},{"name":"reactor","range":">= 0.3.2"}],"specialVersion":"0.0.1","srcDir":"."},"source":{"url":"https://github.com/zielmicha/reactorfuse","rev":"5da2c220339a1aedbf56b48c3f26c0c1adcb943e","date":"2017-02-19T22:52:56+01:00","path":"/nix/store/6dhqr4wbpwcm5z5vzz3npjgmscxawhlm-reactorfuse","sha256":"0libpzp43lspanj8ywzcrazfnvzx722rvwgx1i8g4ygm4qvxajcl","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

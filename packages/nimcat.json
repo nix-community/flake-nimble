@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/shakna-israel/nimcat",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "HEAD",
-        "value": {
-          "url": "https://github.com/shakna-israel/nimcat",
-          "rev": "fe85ddb490b33cdabbb1de37e894a6e6b8792b49",
-          "date": "2015-12-12T10:44:52+11:00",
-          "sha256": "06zsd89bqxpqiqg6pqw0f8qr9gbk0c9pbdapyl9z5qkpy76ihx8g",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/shakna-israel/nimcat","versions":[{"nimble":{"author":"James Milne","backend":"c","bin":["nimcat"],"binDir":".","description":"An implementation of cat","installFiles":["nimcat.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.10.0"}],"skipDirs":["bins"],"skipExt":["nim"],"specialVersion":"0.0.0","srcDir":"."},"source":{"url":"https://github.com/shakna-israel/nimcat","rev":"fe85ddb490b33cdabbb1de37e894a6e6b8792b49","date":"2015-12-12T10:44:52+11:00","path":"/nix/store/dax5yvsp221d5r7qav1nfz1yb0v6zraq-nimcat","sha256":"06zsd89bqxpqiqg6pqw0f8qr9gbk0c9pbdapyl9z5qkpy76ihx8g","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"HEAD"}]}

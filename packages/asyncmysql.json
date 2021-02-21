@@ -1,18 +1,1 @@
-{
-  "homepage": "https://github.com/tulayang/asyncmysql",
-  "src": {
-    "method": "git",
-    "versions": [
-      {
-        "name": "0.4.3",
-        "value": {
-          "url": "https://github.com/tulayang/asyncmysql",
-          "rev": "c58b738bc94e717d176d0cff6dc0b7e992c15583",
-          "date": "2017-11-04T11:10:58+08:00",
-          "sha256": "12z62gf11gw7x4g0lpwrf4jdc0ngxyckvl9ysy7fp277qznjz2s9",
-          "fetchSubmodules": false
-        }
-      }
-    ]
-  }
-}
+{"homepage":"https://github.com/tulayang/asyncmysql","versions":[{"nimble":{"author":"Wang Tong","backend":"c","binDir":".","description":"Asynchronous MySQL connector written in pure Nim.","installDirs":["asyncmysql"],"installFiles":["asyncmysql.nim"],"license":"MIT","requires":[{"name":"nim","range":">= 0.17.0"},{"name":"mysqlparser","range":">= 0.1.0"}],"skipFiles":["TODO.md"],"specialVersion":"0.4.3","srcDir":"."},"source":{"url":"https://github.com/tulayang/asyncmysql","rev":"c58b738bc94e717d176d0cff6dc0b7e992c15583","date":"2017-11-04T11:10:58+08:00","path":"/nix/store/7bdra9brkg8859la6lpxva5mxymckkx2-asyncmysql","sha256":"12z62gf11gw7x4g0lpwrf4jdc0ngxyckvl9ysy7fp277qznjz2s9","fetchSubmodules":true,"deepClone":false,"leaveDotGit":false,"method":"git"},"version":"0.4.3"}]}
