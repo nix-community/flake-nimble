@@ -146,6 +146,7 @@
   "chronos" = ./chronos.json;
   "circleci_client" = ./circleci_client.json;
   "cirru_parser" = ./cirru_parser.json;
+  "cirru_writer" = ./cirru_writer.json;
   "cittadino" = ./cittadino.json;
   "clang" = ./clang.json;
   "clapfn" = ./clapfn.json;
@@ -571,6 +572,7 @@
   "lmdb" = ./lmdb.json;
   "loadenv" = ./loadenv.json;
   "locale" = ./locale.json;
+  "lockfreequeues" = ./lockfreequeues.json;
   "loco" = ./loco.json;
   "logue" = ./logue.json;
   "loki" = ./loki.json;
