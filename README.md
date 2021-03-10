@@ -21,11 +21,11 @@ nix dev-shell nimble
 ## Synchronization
 
 ```sh
-nix run .#packages-updater
+nix run .#package-updater
 
 # …or to update an invidual package…
 
-nix run .#packages-updater generate foobar
+nix run .#package-updater generate foobar
 ```
 
 This will prefetch the repositories of new and updated Nimble packages and
