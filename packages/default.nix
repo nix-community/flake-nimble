@@ -271,6 +271,7 @@
   "elvis" = ./elvis.json;
   "emerald" = ./emerald.json;
   "eminim" = ./eminim.json;
+  "emmy" = ./emmy.json;
   "encode" = ./encode.json;
   "enet" = ./enet.json;
   "ensem" = ./ensem.json;
@@ -829,6 +830,7 @@
   "nimsvg" = ./nimsvg.json;
   "nimtactoe" = ./NimTacToe.json;
   "nimterlingua" = ./nimterlingua.json;
+  "nimterop" = ./nimterop.json;
   "nimtess2" = ./nimtess2.json;
   "nimtetris" = ./nimtetris.json;
   "nimtiingo" = ./nimTiingo.json;
@@ -1222,6 +1224,7 @@
   "subhook" = ./subhook.json;
   "subnet" = ./subnet.json;
   "subviewer" = ./subviewer.json;
+  "sue" = ./sue.json;
   "suffer" = ./suffer.json;
   "sugerror" = ./sugerror.json;
   "suggest" = ./suggest.json;
@@ -1246,6 +1249,7 @@
   "taskqueue" = ./taskqueue.json;
   "tcl" = ./tcl.json;
   "tcping" = ./tcping.json;
+  "teafiles" = ./teafiles.json;
   "telebot" = ./telebot.json;
   "telenim" = ./telenim.json;
   "tempdir" = ./tempdir.json;
@@ -1430,5 +1434,6 @@
   "zippy" = ./zippy.json;
   "zmq" = ./zmq.json;
   "zopflipng" = ./zopflipng.json;
+  "zstd" = ./zstd.json;
   "zxcvbn" = ./zxcvbn.json;
 }
