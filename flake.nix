@@ -18,8 +18,13 @@
       # Define packages here using an overlay.
       # This simplifies cross-compilation.
 
-      packages = forAllSystems (system: nixpkgsFor.${system}.nimblePackages);
-      # Expose the packages added via the overlay.
+      packages =
+        # Expose the packages added via the overlay.
+        forAllSystems (system:
+          removeAttrs nixpkgsFor.${system}.nimblePackages [
+            "extend"
+            "__unfix__"
+          ]);
 
       defaultPackage = forAllSystems (system: nixpkgsFor.${system}.nim);
       # Make the Nim compiler from Nixpkgs the default package here.
