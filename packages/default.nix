@@ -20,6 +20,7 @@
   "anonimongo" = ./anonimongo.json;
   "ansiparse" = ./ansiparse.json;
   "ansitohtml" = ./ansitohtml.json;
+  "ansiwave" = ./ansiwave.json;
   "antlr4nim" = ./antlr4nim.json;
   "anttweakbar" = ./AntTweakBar.json;
   "anybar" = ./anybar.json;
@@ -27,6 +28,8 @@
   "applicates" = ./applicates.json;
   "argon2" = ./argon2.json;
   "argparse" = ./argparse.json;
+  "argument_parser" = ./argument_parser.json;
+  "aria" = ./aria.json;
   "arksys" = ./arksys.json;
   "arrayfirenim" = ./ArrayFireNim.json;
   "arraymancer" = ./arraymancer.json;
@@ -47,7 +50,9 @@
   "asynctest" = ./asynctest.json;
   "asynctools" = ./asynctools.json;
   "atoz" = ./atoz.json;
+  "aur" = ./aur.json;
   "autome" = ./autome.json;
+  "autonim" = ./autonim.json;
   "autotyper" = ./autotyper.json;
   "avbin" = ./avbin.json;
   "awesome_rmdir" = ./awesome_rmdir.json;
@@ -68,6 +73,7 @@
   "basedon" = ./basedOn.json;
   "basic2d" = ./basic2d.json;
   "basic3d" = ./basic3d.json;
+  "batchsend" = ./batchsend.json;
   "battery_widget" = ./battery_widget.json;
   "bcra" = ./bcra.json;
   "bcrypt" = ./bcrypt.json;
@@ -88,6 +94,7 @@
   "bingo" = ./bingo.json;
   "binio" = ./binio.json;
   "bio" = ./bio.json;
+  "bionim" = ./bionim.json;
   "bipbuffer" = ./BipBuffer.json;
   "biscuits" = ./biscuits.json;
   "bisect" = ./bisect.json;
@@ -135,6 +142,7 @@
   "cello" = ./cello.json;
   "changer" = ./changer.json;
   "chebyshev" = ./chebyshev.json;
+  "checkpack" = ./checkpack.json;
   "chipmunk6" = ./chipmunk6.json;
   "chipmunk7_demos" = ./chipmunk7_demos.json;
   "chonker" = ./chonker.json;
@@ -145,6 +153,7 @@
   "chronopipe" = ./chronopipe.json;
   "chronos" = ./chronos.json;
   "circleci_client" = ./circleci_client.json;
+  "cirru_edn" = ./cirru_edn.json;
   "cirru_parser" = ./cirru_parser.json;
   "cirru_writer" = ./cirru_writer.json;
   "cittadino" = ./cittadino.json;
@@ -198,6 +207,7 @@
   "csfml" = ./csfml.json;
   "css_html_minify" = ./css_html_minify.json;
   "csv" = ./csv.json;
+  "csv2dbsrc" = ./csv2dbsrc.json;
   "csvql" = ./csvql.json;
   "csvtable" = ./csvtable.json;
   "csvtools" = ./csvtools.json;
@@ -227,6 +237,7 @@
   "delaunay" = ./delaunay.json;
   "delight" = ./delight.json;
   "denim_ui" = ./denim_ui.json;
+  "denim_ui_cairo" = ./denim_ui_cairo.json;
   "denim_ui_canvas" = ./denim_ui_canvas.json;
   "des" = ./des.json;
   "deser_json" = ./deser_json.json;
@@ -307,6 +318,7 @@
   "fastx_reader" = ./fastx_reader.json;
   "feednim" = ./feednim.json;
   "ffbookmarks" = ./ffbookmarks.json;
+  "ffmpeg" = ./ffmpeg.json;
   "ffpass" = ./ffpass.json;
   "fftw3" = ./fftw3.json;
   "fidget" = ./fidget.json;
@@ -401,9 +413,11 @@
   "grafanim" = ./grafanim.json;
   "graphemes" = ./graphemes.json;
   "graphics" = ./graphics.json;
+  "graphql" = ./graphql.json;
   "gravatar" = ./gravatar.json;
   "grim" = ./grim.json;
   "grp" = ./grp.json;
+  "gsl" = ./gsl.json;
   "gtk2" = ./gtk2.json;
   "gtkgenui" = ./gtkgenui.json;
   "guildenstern" = ./guildenstern.json;
@@ -424,6 +438,7 @@
   "hldiff" = ./hldiff.json;
   "hmac" = ./hmac.json;
   "hnimast" = ./hnimast.json;
+  "holst" = ./holst.json;
   "horde3d" = ./horde3d.json;
   "host" = ./host.json;
   "hostname" = ./hostname.json;
@@ -446,6 +461,7 @@
   "huffman" = ./huffman.json;
   "i18n" = ./i18n.json;
   "i3ipc" = ./i3ipc.json;
+  "icon" = ./icon.json;
   "illwill" = ./illwill.json;
   "illwill_unsafe" = ./illwill_unsafe.json;
   "imageman" = ./imageman.json;
@@ -459,6 +475,7 @@
   "inim" = ./inim.json;
   "intel_hex" = ./intel_hex.json;
   "interfaced" = ./interfaced.json;
+  "intervalsets" = ./intervalsets.json;
   "inumon" = ./inumon.json;
   "io-egl" = ./io-egl.json;
   "io-gles" = ./io-gles.json;
@@ -496,6 +513,7 @@
   "jscanvas" = ./jscanvas.json;
   "jser" = ./jser.json;
   "jsmn" = ./jsmn.json;
+  "json2xml" = ./json2xml.json;
   "json_builder" = ./json_builder.json;
   "json_rpc" = ./json_rpc.json;
   "json_serialization" = ./json_serialization.json;
@@ -555,6 +573,7 @@
   "libp2p" = ./libp2p.json;
   "libplist" = ./libplist.json;
   "libravatar" = ./libravatar.json;
+  "libsaedea" = ./libsaedea.json;
   "libsha" = ./libsha.json;
   "libsodium" = ./libsodium.json;
   "libssh" = ./libssh.json;
@@ -610,13 +629,16 @@
   "memviews" = ./memviews.json;
   "mentat" = ./mentat.json;
   "meow" = ./meow.json;
+  "meta" = ./meta.json;
   "metatools" = ./metatools.json;
   "metric" = ./metric.json;
   "metrics" = ./metrics.json;
   "microasynchttpserver" = ./microasynchttpserver.json;
   "midnight_dynamite" = ./midnight_dynamite.json;
   "migrate" = ./migrate.json;
+  "mike" = ./mike.json;
   "mime" = ./mime.json;
+  "minecraft_server_status" = ./minecraft_server_status.json;
   "minhash" = ./minhash.json;
   "minhook" = ./minhook.json;
   "miniblink" = ./miniblink.json;
@@ -629,9 +651,11 @@
   "mofuw" = ./mofuw.json;
   "mongo" = ./mongo.json;
   "mongopool" = ./mongopool.json;
+  "mongrel2" = ./mongrel2.json;
   "monocypher" = ./monocypher.json;
   "morelogging" = ./morelogging.json;
   "mort" = ./mort.json;
+  "moss_nim" = ./moss_nim.json;
   "mpdclient" = ./mpdclient.json;
   "mpeg" = ./mpeg.json;
   "mpfit" = ./mpfit.json;
@@ -672,13 +696,16 @@
   "neo" = ./neo.json;
   "neoid" = ./neoid.json;
   "nerve" = ./nerve.json;
+  "nery" = ./nery.json;
   "nesm" = ./nesm.json;
+  "nesper" = ./nesper.json;
   "nest" = ./nest.json;
   "nestegg" = ./nestegg.json;
   "netpbm" = ./netpbm.json;
   "nettest" = ./netTest.json;
   "netty" = ./netty.json;
   "neverwinter" = ./neverwinter.json;
+  "newfix" = ./newfix.json;
   "news" = ./news.json;
   "ngspice" = ./ngspice.json;
   "ngtcp2" = ./ngtcp2.json;
@@ -689,6 +716,7 @@
   "nigui" = ./nigui.json;
   "niledb" = ./niledb.json;
   "nim-libgd" = ./nim-libgd.json;
+  "nim0" = ./nim0.json;
   "nim7z" = ./nim7z.json;
   "nim_cexc" = ./nim_cexc.json;
   "nim_cjson" = ./nim_cjson.json;
@@ -747,6 +775,7 @@
   "nimfasttext" = ./nimfastText.json;
   "nimfcuk" = ./nimfcuk.json;
   "nimfinlib" = ./nimFinLib.json;
+  "nimflux" = ./nimflux.json;
   "nimfm" = ./nimfm.json;
   "nimfuzz" = ./nimfuzz.json;
   "nimfuzzy" = ./nimfuzzy.json;
@@ -755,6 +784,7 @@
   "nimgen" = ./nimgen.json;
   "nimgit2" = ./nimgit2.json;
   "nimgl" = ./nimgl.json;
+  "nimgram" = ./nimgram.json;
   "nimgraphql" = ./nimgraphql.json;
   "nimgraphviz" = ./nimgraphviz.json;
   "nimgui" = ./nimgui.json;
@@ -762,10 +792,13 @@
   "nimhdf5" = ./nimhdf5.json;
   "nimhq" = ./nimhq.json;
   "nimi3status" = ./nimi3status.json;
+  "nimib" = ./nimib.json;
   "nimics" = ./nimics.json;
   "niminst" = ./niminst.json;
   "nimish" = ./nimish.json;
+  "nimjl" = ./nimjl.json;
   "nimjson" = ./nimjson.json;
+  "nimkalc" = ./nimkalc.json;
   "nimkerberos" = ./nimkerberos.json;
   "nimlapack" = ./nimlapack.json;
   "nimler" = ./nimler.json;
@@ -844,10 +877,12 @@
   "nimx" = ./nimx.json;
   "nimzbar" = ./nimzbar.json;
   "nimzend" = ./nimzend.json;
+  "nint128" = ./nint128.json;
   "nio" = ./nio.json;
   "nish" = ./nish.json;
   "niup" = ./niup.json;
   "nlopt" = ./nlopt.json;
+  "nmark" = ./nmark.json;
   "nmi" = ./nmi.json;
   "nmqtt" = ./nmqtt.json;
   "noaa" = ./noaa.json;
@@ -872,6 +907,7 @@
   "notmuch" = ./notmuch.json;
   "npeg" = ./npeg.json;
   "npg" = ./npg.json;
+  "nptr" = ./nptr.json;
   "nre" = ./nre.json;
   "nregex" = ./nregex.json;
   "nrpl" = ./nrpl.json;
@@ -896,6 +932,7 @@
   "omnimax" = ./omnimax.json;
   "once" = ./once.json;
   "onedrive" = ./onedrive.json;
+  "onnxruntime" = ./onnxruntime.json;
   "oop_utils" = ./oop_utils.json;
   "open_elevation" = ./open_elevation.json;
   "openal" = ./openal.json;
@@ -940,6 +977,7 @@
   "paravim" = ./paravim.json;
   "pari" = ./pari.json;
   "parsefixed" = ./parseFixed.json;
+  "parsegemini" = ./parsegemini.json;
   "parseini" = ./parseini.json;
   "parselicense" = ./parselicense.json;
   "parsetoml" = ./parsetoml.json;
@@ -1005,6 +1043,7 @@
   "psutil" = ./psutil.json;
   "ptest" = ./ptest.json;
   "ptrace" = ./ptrace.json;
+  "puppy" = ./puppy.json;
   "pvim" = ./pvim.json;
   "pwd" = ./pwd.json;
   "pwned" = ./pwned.json;
@@ -1025,6 +1064,7 @@
   "qrcodegen" = ./qrcodegen.json;
   "qt5_qtsql" = ./qt5_qtsql.json;
   "quadtree" = ./quadtree.json;
+  "questionable" = ./questionable.json;
   "quickcrypt" = ./quickcrypt.json;
   "quickjs4nim" = ./QuickJS4nim.json;
   "quickjwt" = ./quickjwt.json;
@@ -1041,6 +1081,7 @@
   "rbac" = ./rbac.json;
   "rbtree" = ./rbtree.json;
   "rc4" = ./RC4.json;
+  "rcedit" = ./rcedit.json;
   "rdgui" = ./rdgui.json;
   "react" = ./react.json;
   "react16" = ./react16.json;
@@ -1076,6 +1117,7 @@
   "robotparser" = ./robotparser.json;
   "rocksdb" = ./rocksdb.json;
   "rodcli" = ./rodcli.json;
+  "rodster" = ./rodster.json;
   "rollinghash" = ./RollingHash.json;
   "romans" = ./romans.json;
   "roots" = ./roots.json;
@@ -1091,6 +1133,7 @@
   "schedules" = ./schedules.json;
   "science" = ./science.json;
   "scnim" = ./scnim.json;
+  "scorper" = ./scorper.json;
   "scram" = ./scram.json;
   "sctp" = ./sctp.json;
   "sdf" = ./SDF.json;
@@ -1176,6 +1219,7 @@
   "soundex" = ./soundex.json;
   "soundio" = ./soundio.json;
   "spacenav" = ./spacenav.json;
+  "spacenimtraders" = ./spacenimtraders.json;
   "spacy" = ./spacy.json;
   "sparkline" = ./sparkline.json;
   "sparseset" = ./sparseset.json;
@@ -1211,9 +1255,11 @@
   "steganography" = ./steganography.json;
   "stew" = ./stew.json;
   "stint" = ./stint.json;
+  "stomp" = ./stomp.json;
   "stones" = ./stones.json;
   "stopwatch" = ./stopwatch.json;
   "stor" = ./stor.json;
+  "streamfix" = ./streamfix.json;
   "strenc" = ./strenc.json;
   "strfmt" = ./strfmt.json;
   "stringinterpolation" = ./stringinterpolation.json;
@@ -1230,6 +1276,7 @@
   "suggest" = ./suggest.json;
   "sunvox" = ./sunvox.json;
   "supersnappy" = ./supersnappy.json;
+  "suru" = ./suru.json;
   "svdpi" = ./svdpi.json;
   "svgo" = ./svgo.json;
   "swayipc" = ./swayipc.json;
@@ -1260,6 +1307,7 @@
   "terminaltables" = ./terminaltables.json;
   "termnovel" = ./termnovel.json;
   "termstyle" = ./termstyle.json;
+  "termui" = ./termui.json;
   "ternary_tree" = ./ternary_tree.json;
   "testify" = ./testify.json;
   "testrunner" = ./testrunner.json;
@@ -1284,6 +1332,7 @@
   "tinyfiledialogs" = ./tinyfiledialogs.json;
   "tissue" = ./tissue.json;
   "tmplpro" = ./tmplpro.json;
+  "tnetstring" = ./tnetstring.json;
   "tnim" = ./tnim.json;
   "toml_serialization" = ./toml_serialization.json;
   "tor" = ./tor.json;
@@ -1317,6 +1366,7 @@
   "ttmath" = ./ttmath.json;
   "tuples" = ./tuples.json;
   "turn_based_game" = ./turn_based_game.json;
+  "tweens" = ./tweens.json;
   "twitter" = ./twitter.json;
   "typelists" = ./typelists.json;
   "typography" = ./typography.json;
@@ -1328,9 +1378,11 @@
   "unicodeplus" = ./unicodeplus.json;
   "unit" = ./Unit.json;
   "units" = ./units.json;
+  "unittest2" = ./unittest2.json;
   "unpack" = ./unpack.json;
   "unsplash" = ./unsplash.json;
   "untar" = ./untar.json;
+  "upraises" = ./upraises.json;
   "ur" = ./ur.json;
   "urand" = ./urand.json;
   "uri2" = ./uri2.json;
@@ -1408,9 +1460,11 @@
   "wzeegrid" = ./wZeeGrid.json;
   "x11" = ./x11.json;
   "xam" = ./xam.json;
+  "xcb" = ./xcb.json;
   "xcm" = ./xcm.json;
   "xdo" = ./xdo.json;
   "xevloop" = ./xevloop.json;
+  "xgboost.nim" = ./xgboost.nim.json;
   "xiaomi" = ./xiaomi.json;
   "xio" = ./xio.json;
   "xlsx" = ./xlsx.json;
