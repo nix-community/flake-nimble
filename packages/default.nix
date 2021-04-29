@@ -442,6 +442,7 @@
   "horde3d" = ./horde3d.json;
   "host" = ./host.json;
   "hostname" = ./hostname.json;
+  "hottext" = ./hottext.json;
   "hpack" = ./hpack.json;
   "hpprint" = ./hpprint.json;
   "hsluv" = ./hsluv.json;

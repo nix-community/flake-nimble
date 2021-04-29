@@ -35,17 +35,6 @@ record the necessary metadata to fetch the source as a fixed-output derivation.
 Each package has such a fixed-output that is used as a input to a derivations
 that produce metadata to (attempt to) build the package.
 
-## Upstream
+## Overrides
 
-Dependencies from Nixpkgs can be declared upstream from the *.nimble file. This
-feature is experimental and still needs to be negotiated with the Nimble team.
-
-```nim
-# toxcore.nimble
-...
-
-import distros
-if detectOs(NixOS): # true for NixOS or any Nix shell
-  foreignDep "libtoxcore"
-  foreignDep "pkgconfig"
-```
+Arguments to the Nim package builder may be added to the [./overrides.nix] file.

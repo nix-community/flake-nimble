@@ -68,7 +68,10 @@ let
       autoPkgs =
         # Read the package list and expand to all package versions
         with builtins;
-        lib.attrsets.mapAttrs (name: jsonFile:
+        let
+          prefetches = import ./packages;
+          overrides = import ./overrides.nix final;
+        in lib.attrsets.mapAttrs (name: jsonFile:
           let args = fromJSON (readFile jsonFile);
           in if length (args.versions or [ ]) < 1 then
             abort "${name} has no versions available: ${toJSON args}"
@@ -88,7 +91,7 @@ let
                 filter ({ name, range }: !hasAttr name nimblePackages)
                 (latest.nimble.requires or [ ]);
 
-            in buildNimble {
+            in buildNimble ({
               pname = replaceStrings [ "." ] [ "_" ] name;
               inherit (latest) nimble;
               version = if latest.version == "HEAD" then
@@ -115,7 +118,7 @@ let
                 else
                   false;
               };
-            }) (import ./packages);
+            } // (overrides.${name} or { }))) prefetches;
 
     in autoPkgs // {
       nim = nim // { inherit buildNimble; };
