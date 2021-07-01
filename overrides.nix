@@ -4,4 +4,5 @@ pkgs: {
   opusenc.propagatedBuildInputs = with pkgs; [ libopus libopusenc pkgconfig ];
   sdl2.propagatedBuildInputs = with pkgs; [ SDL2 ];
   toxcore.propagatedBuildInputs = with pkgs; [ libtoxcore ];
+  inim.patches = [ ./patches/inim.patch ];
 }

@@ -1,0 +1,13 @@
+diff --git a/src/inim.nim b/src/inim.nim
+index ecac318..7fb200f 100644
+--- a/src/inim.nim
++++ b/src/inim.nim
+@@ -39,6 +39,8 @@ const
+   ]
+   # preloaded code into user's session
+   EmbeddedCode = staticRead("inimpkg/embedded.nim")
++
++let
+   ConfigDir = getConfigDir() / "inim"
+   RcFilePath = ConfigDir / "inim.ini"
+ 
