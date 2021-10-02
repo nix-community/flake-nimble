@@ -9,62 +9,6 @@ let
 
   f = nimblePackages:
     let
-      buildNimble =
-        # Build a package by inspecting the package sources and
-        # matching dependencies to other packages. Failure to
-        # generate a package produces a derivation marked broken
-        # rather than an evaluation error.
-        { pname, version, nimble ? { }, nimbleInputs ? { }, meta ? { }, ...
-        }@attrs:
-        with builtins;
-        let
-          nimbleBin = nimble.bin or [ ];
-          nimbleSrcDir = nimble.srcDir or "src";
-          # Build function to use if evaluation succeeds
-
-          nimbleInputs' =
-            map ({ name, range }: getAttr name (nimblePackages // nimbleInputs))
-            (nimble.requires or [ ]);
-
-        in nixpkgs.stdenv.mkDerivation ({
-          inherit pname version;
-          passthru = { inherit nimble; };
-
-          setupHook = ./setup-hook.sh;
-
-          nativeBuildInputs = [ nim ];
-          propagatedBuildInputs = nimbleInputs'
-            ++ (map (name: getAttr name nixpkgs) (nimble.foreignDeps or [ ]));
-
-          nimFlags = map (lib: ''--path:"${lib}/src"'')
-            (filter (pkg: hasAttr "nimble" (pkg.passthru or { }))
-              nimbleInputs');
-
-          preHook = ''
-            export HOME="$NIX_BUILD_TOP"
-          '';
-
-          dontConfigure = true;
-
-          buildPhase = ''
-            runHook preBuild
-            for bin in ${toString nimbleBin}; do
-              nim compile $nimFlags ${nimbleSrcDir}/$bin
-            done
-            runHook postBuild
-          '';
-
-          installPhase = ''
-            runHook preInstall
-            mkdir -p $out
-            cp -r ${nimble.srcDir or "src"} $out/src
-            for bin in ${toString (nimble.bin or [ ])}; do
-              install -Dt $out/bin ${nimbleSrcDir}/$bin
-            done
-            runHook postInstall
-          '';
-        } // (removeAttrs attrs [ "nimble" ]));
-
       autoPkgs =
         # Read the package list and expand to all package versions
         with builtins;
@@ -91,9 +35,8 @@ let
                 filter ({ name, range }: !hasAttr name nimblePackages)
                 (latest.nimble.requires or [ ]);
 
-            in buildNimble ({
+            in prev.nimPackages.buildNimPackage ({
               pname = replaceStrings [ "." ] [ "_" ] name;
-              inherit (latest) nimble;
               version = if latest.version == "HEAD" then
                 substring 0 10 latest.source.date
               else
@@ -103,6 +46,13 @@ let
                 "${src'}/${latest.source.subdir}"
               else
                 src';
+
+              passthru = { inherit (latest) nimble; };
+
+              propagatedBuildInputs =
+                map ({ name, range }: nimblePackages.${name} or null)
+                (latest.nimble.requires or [ ]);
+
               meta = {
                 inherit (latest.nimble) description;
                 inherit (args) homepage;
@@ -110,18 +60,11 @@ let
                   homepage = [ ];
                   spdxId = latest.nimble.license;
                 };
-                broken = if missingDependencies != [ ] then
-                  trace "${name} has a missing dependency: ${
-                    lib.strings.concatMapStringsSep ", "
-                    ({ name, range }: "${name} ${range}") missingDependencies
-                  }" true
-                else
-                  false;
               };
             } // (overrides.${name} or { }))) prefetches;
 
     in autoPkgs // {
-      nim = nim // { inherit buildNimble; };
+      inherit nim;
       nimrod = nim;
       # Some Nimble still packages refer to the compiler as "nimrod"
 
