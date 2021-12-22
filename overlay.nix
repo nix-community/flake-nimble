@@ -95,7 +95,7 @@ let
         in nixpkgs.buildPackages.runCommand "package-updater" {
           nativeBuildInputs =
             [ nixpkgs.buildPackages.buildPackages.nim nixpkgs.makeWrapper ];
-          nimFlags = [ "--path:${nimbleSrc}/src" ];
+          nimFlags = [ "--path:${nimbleSrc}/src" "-d:ssl" ];
         } ''
           export HOME=$NIX_BUILD_TOP
           mkdir -p $out/bin
