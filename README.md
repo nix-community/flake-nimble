@@ -6,7 +6,6 @@ This repository contains experimental-grade, auto-generated
 ## TODO:
  - automatic testing
  - back-versioning
- - regular updates
 
 ## Usage
 
