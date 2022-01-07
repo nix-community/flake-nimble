@@ -4,31 +4,24 @@
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/release-21.11";
 
   outputs = { self, nixpkgs }:
-    let
-      systems = [ "aarch64-linux" "x86_64-linux" "x86_64-darwin" ];
-
-      forAllSystems = nixpkgs.lib.genAttrs systems;
-
-      nixpkgsFor = forAllSystems (system:
-        import nixpkgs {
-          inherit system;
-          overlays = [ self.overlay ];
-        });
-
+    let inherit (nixpkgs) lib;
     in {
       overlay = import ./overlay.nix;
       # Define packages here using an overlay.
       # This simplifies cross-compilation.
 
+      legacyPackages =
+        lib.attrsets.mapAttrs (system: pkgs: pkgs.extend self.overlay)
+        nixpkgs.legacyPackages;
+
       packages =
         # Expose the packages added via the overlay.
-        forAllSystems (system:
-          removeAttrs nixpkgsFor.${system}.nimblePackages [
-            "extend"
-            "__unfix__"
-          ]);
+        lib.attrsets.mapAttrs
+        (system: pkgs: removeAttrs pkgs.nimblePackages [ "extend" "__unfix__" ])
+        self.legacyPackages;
 
-      defaultPackage = forAllSystems (system: nixpkgsFor.${system}.nim);
+      defaultPackage = lib.attrsets.mapAttrs (system: builtins.getAttr "nim")
+        self.legacyPackages;
       # Make the Nim compiler from Nixpkgs the default package here.
     };
 }
