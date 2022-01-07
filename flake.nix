@@ -28,5 +28,5 @@
 
       defaultPackage = forAllSystems (system: nixpkgsFor.${system}.nim);
       # Make the Nim compiler from Nixpkgs the default package here.
-    };
+    }
 }

@@ -34,7 +34,6 @@ let
               missingDependencies =
                 filter ({ name, range }: !hasAttr name nimblePackages)
                 (latest.nimble.requires or [ ]);
-
             in prev.nimPackages.buildNimPackage ({
               pname = replaceStrings [ "." ] [ "_" ] name;
               version = if latest.version == "HEAD" then
@@ -95,7 +94,7 @@ let
         in nixpkgs.buildPackages.runCommand "package-updater" {
           nativeBuildInputs =
             [ nixpkgs.buildPackages.buildPackages.nim nixpkgs.makeWrapper ];
-          nimFlags = [ "--path:${nimbleSrc}/src" ];
+          nimFlags = [ "--path:${nimbleSrc}/src" "-d:ssl" ];
         } ''
           export HOME=$NIX_BUILD_TOP
           mkdir -p $out/bin
