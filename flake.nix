@@ -1,8 +1,6 @@
 {
   description = "Nimble packages";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/release-21.11";
-
   outputs = { self, nixpkgs }:
     let inherit (nixpkgs) lib;
     in {

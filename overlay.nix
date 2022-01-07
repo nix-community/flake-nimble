@@ -48,6 +48,8 @@ in {
               else
                 src';
 
+              doCheck = true;
+
               passthru = { inherit (latest) nimble; };
 
               propagatedBuildInputs =
