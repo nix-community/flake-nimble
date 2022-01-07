@@ -1,6 +1,8 @@
 {
   description = "Nimble packages";
 
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/release-21.11";
+
   outputs = { self, nixpkgs }:
     let
       systems = [ "aarch64-linux" "x86_64-linux" "x86_64-darwin" ];
