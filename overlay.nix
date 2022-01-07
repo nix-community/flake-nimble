@@ -7,7 +7,8 @@ let
   gitNonInteractive = nixpkgs.buildPackages.writeScriptBin "git"
     "exec ${nixpkgs.git}/bin/git -c credential.helper='' -c credential.helper='!printf quit=1' \"$@\"";
 
-  f = nimblePackages:
+in {
+  nimPackages = prev.nimPackages.overrideScope' (final': prev':
     let
       autoPkgs =
         # Read the package list and expand to all package versions
@@ -32,7 +33,7 @@ let
               }.${latest.source.method};
 
               missingDependencies =
-                filter ({ name, range }: !hasAttr name nimblePackages)
+                filter ({ name, range }: !hasAttr name final')
                 (latest.nimble.requires or [ ]);
 
             in prev.nimPackages.buildNimPackage ({
@@ -50,7 +51,7 @@ let
               passthru = { inherit (latest) nimble; };
 
               propagatedBuildInputs =
-                map ({ name, range }: nimblePackages.${name} or null)
+                map ({ name, range }: final'.${name} or null)
                 (latest.nimble.requires or [ ]);
 
               meta = {
@@ -112,6 +113,6 @@ let
               ]
             }
         '';
-    };
+    });
 
-in { nimblePackages = lib.makeExtensible f; }
+}

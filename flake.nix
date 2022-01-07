@@ -16,9 +16,9 @@
 
       packages =
         # Expose the packages added via the overlay.
-        lib.attrsets.mapAttrs
-        (system: pkgs: removeAttrs pkgs.nimblePackages [ "extend" "__unfix__" ])
-        self.legacyPackages;
+        lib.attrsets.mapAttrs (system: pkgs:
+          (lib.attrsets.filterAttrs (name: lib.attrsets.isDerivation))
+          pkgs.nimPackages) self.legacyPackages;
 
       defaultPackage = lib.attrsets.mapAttrs (system: builtins.getAttr "nim")
         self.legacyPackages;
