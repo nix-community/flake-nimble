@@ -1,10 +1,29 @@
-pkgs: {
-  opusenc.propagatedBuildInputs = with pkgs; [ libopus libopusenc pkgconfig ];
-  sdl2.propagatedBuildInputs = with pkgs; [ SDL2 ];
-  tkrzw = with pkgs; {
+pkgs: with pkgs; {
+  alsa.propagatedBuildInputs = [ alsa-lib ];
+  assimp.propagatedBuildInputs = [ assimp ];
+  cairo.propagatedBuildInputs = [ cairo ];
+  inim = {
+    patches = [ ./patches/inim.patch ];
+    doCheck = false;
+  };
+  ncurses.propagatedBuildInputs = [ ncurses ];
+  lmdb.propagatedBuildInputs = [ lmdb ];
+  opusenc.propagatedBuildInputs = [ libopus libopusenc pkgconfig ];
+  rocksdb.propagatedBuildInputs = [ rocksdb ];
+  sdl2.propagatedBuildInputs = [ SDL2 ];
+  tkrzw = {
     propagatedBuildInputs = [ tkrzw ];
     nativeBuildInputs = [ pkg-config ];
   };
-  toxcore.propagatedBuildInputs = with pkgs; [ libtoxcore ];
-  inim.patches = [ ./patches/inim.patch ];
+  toxcore = {
+    propagatedBuildInputs = [ libtoxcore ];
+    propagatedNativeBuildInputs = [ pkg-config ];
+  };
+  ui = {
+    propagatedBuildInputs = [ libui ];
+    propagatedNativeBuildInputs = [ pkg-config ];
+    postPatch = ''
+      echo {.passL: r\"$(pkg-config --libs libui)\".} >> ui/rawui.nim
+    '';
+  };
 }
