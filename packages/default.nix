@@ -72,6 +72,7 @@
   "badgemaker" = ./badgemaker.json;
   "baker" = ./baker.json;
   "ballena_itcher" = ./ballena_itcher.json;
+  "ballpark" = ./ballpark.json;
   "barbarus" = ./barbarus.json;
   "barcode" = ./barcode.json;
   "base32" = ./base32.json;
@@ -217,6 +218,7 @@
   "contractabi" = ./contractabi.json;
   "contracts" = ./contracts.json;
   "controlstructures" = ./controlStructures.json;
+  "conventional_semver" = ./conventional_semver.json;
   "cookiejar" = ./cookiejar.json;
   "couchdb" = ./couchdb.json;
   "coverage" = ./coverage.json;
@@ -802,6 +804,7 @@
   "nim-libgd" = ./nim-libgd.json;
   "nim-locale" = ./nim-locale.json;
   "nim-nanomsg" = ./nim-nanomsg.json;
+  "nim-snappy" = ./nim-snappy.json;
   "nim-sndfile" = ./nim-sndfile.json;
   "nim0" = ./nim0.json;
   "nim7z" = ./nim7z.json;
@@ -1486,6 +1489,7 @@
   "tnim" = ./tnim.json;
   "todoist" = ./todoist.json;
   "tokarax" = ./tokarax.json;
+  "tome" = ./tome.json;
   "toml_serialization" = ./toml_serialization.json;
   "tor" = ./tor.json;
   "torch" = ./torch.json;
@@ -1549,6 +1553,7 @@
   "usha" = ./usha.json;
   "usigar" = ./usigar.json;
   "ustring" = ./ustring.json;
+  "utf8tests" = ./utf8tests.json;
   "utils" = ./utils.json;
   "uuid" = ./uuid.json;
   "uuids" = ./uuids.json;
@@ -1630,6 +1635,7 @@
   "xidoc" = ./xidoc.json;
   "xio" = ./xio.json;
   "xlsx" = ./xlsx.json;
+  "xlsxio" = ./xlsxio.json;
   "xml" = ./xml.json;
   "xmlio" = ./xmlio.json;
   "xmltools" = ./xmltools.json;
@@ -1657,4 +1663,5 @@
   "zopflipng" = ./zopflipng.json;
   "zstd" = ./zstd.json;
   "zxcvbn" = ./zxcvbn.json;
+  "zxcvbnim" = ./zxcvbnim.json;
 }
