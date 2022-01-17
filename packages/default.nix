@@ -46,6 +46,7 @@
   "assigns" = ./assigns.json;
   "ast_pattern_matching" = ./ast_pattern_matching.json;
   "astar" = ./astar.json;
+  "astdot" = ./astdot.json;
   "astronimy" = ./AstroNimy.json;
   "asyncanything" = ./asyncanything.json;
   "asyncdocker" = ./asyncdocker.json;
@@ -462,6 +463,7 @@
   "googlesearch" = ./googlesearch.json;
   "gplay" = ./gplay.json;
   "gpx" = ./gpx.json;
+  "grab" = ./grab.json;
   "gradient" = ./gradient.json;
   "grafanim" = ./grafanim.json;
   "graphemes" = ./graphemes.json;
@@ -900,6 +902,7 @@
   "nimjson" = ./nimjson.json;
   "nimkalc" = ./nimkalc.json;
   "nimkerberos" = ./nimkerberos.json;
+  "nimkov" = ./nimkov.json;
   "nimlapack" = ./nimlapack.json;
   "nimler" = ./nimler.json;
   "nimlevenshtein" = ./nimlevenshtein.json;
