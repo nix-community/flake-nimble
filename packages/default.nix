@@ -46,6 +46,7 @@
   "assigns" = ./assigns.json;
   "ast_pattern_matching" = ./ast_pattern_matching.json;
   "astar" = ./astar.json;
+  "astdot" = ./astdot.json;
   "astronimy" = ./AstroNimy.json;
   "asyncanything" = ./asyncanything.json;
   "asyncdocker" = ./asyncdocker.json;
@@ -72,6 +73,7 @@
   "badgemaker" = ./badgemaker.json;
   "baker" = ./baker.json;
   "ballena_itcher" = ./ballena_itcher.json;
+  "ballpark" = ./ballpark.json;
   "barbarus" = ./barbarus.json;
   "barcode" = ./barcode.json;
   "base32" = ./base32.json;
@@ -217,6 +219,7 @@
   "contractabi" = ./contractabi.json;
   "contracts" = ./contracts.json;
   "controlstructures" = ./controlStructures.json;
+  "conventional_semver" = ./conventional_semver.json;
   "cookiejar" = ./cookiejar.json;
   "couchdb" = ./couchdb.json;
   "coverage" = ./coverage.json;
@@ -460,6 +463,7 @@
   "googlesearch" = ./googlesearch.json;
   "gplay" = ./gplay.json;
   "gpx" = ./gpx.json;
+  "grab" = ./grab.json;
   "gradient" = ./gradient.json;
   "grafanim" = ./grafanim.json;
   "graphemes" = ./graphemes.json;
@@ -802,6 +806,7 @@
   "nim-libgd" = ./nim-libgd.json;
   "nim-locale" = ./nim-locale.json;
   "nim-nanomsg" = ./nim-nanomsg.json;
+  "nim-snappy" = ./nim-snappy.json;
   "nim-sndfile" = ./nim-sndfile.json;
   "nim0" = ./nim0.json;
   "nim7z" = ./nim7z.json;
@@ -897,6 +902,7 @@
   "nimjson" = ./nimjson.json;
   "nimkalc" = ./nimkalc.json;
   "nimkerberos" = ./nimkerberos.json;
+  "nimkov" = ./nimkov.json;
   "nimlapack" = ./nimlapack.json;
   "nimler" = ./nimler.json;
   "nimlevenshtein" = ./nimlevenshtein.json;
@@ -1288,6 +1294,7 @@
   "serialport" = ./serialport.json;
   "seriesdetiempoar" = ./seriesdetiempoar.json;
   "sermon" = ./sermon.json;
+  "servclip" = ./servclip.json;
   "servy" = ./servy.json;
   "sfml" = ./sfml.json;
   "sha1" = ./sha1.json;
@@ -1486,6 +1493,7 @@
   "tnim" = ./tnim.json;
   "todoist" = ./todoist.json;
   "tokarax" = ./tokarax.json;
+  "tome" = ./tome.json;
   "toml_serialization" = ./toml_serialization.json;
   "tor" = ./tor.json;
   "torch" = ./torch.json;
@@ -1549,6 +1557,7 @@
   "usha" = ./usha.json;
   "usigar" = ./usigar.json;
   "ustring" = ./ustring.json;
+  "utf8tests" = ./utf8tests.json;
   "utils" = ./utils.json;
   "uuid" = ./uuid.json;
   "uuids" = ./uuids.json;
@@ -1630,6 +1639,7 @@
   "xidoc" = ./xidoc.json;
   "xio" = ./xio.json;
   "xlsx" = ./xlsx.json;
+  "xlsxio" = ./xlsxio.json;
   "xml" = ./xml.json;
   "xmlio" = ./xmlio.json;
   "xmltools" = ./xmltools.json;
@@ -1657,4 +1667,5 @@
   "zopflipng" = ./zopflipng.json;
   "zstd" = ./zstd.json;
   "zxcvbn" = ./zxcvbn.json;
+  "zxcvbnim" = ./zxcvbnim.json;
 }
