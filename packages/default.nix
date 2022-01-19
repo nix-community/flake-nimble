@@ -1294,6 +1294,7 @@
   "serialport" = ./serialport.json;
   "seriesdetiempoar" = ./seriesdetiempoar.json;
   "sermon" = ./sermon.json;
+  "servclip" = ./servclip.json;
   "servy" = ./servy.json;
   "sfml" = ./sfml.json;
   "sha1" = ./sha1.json;
