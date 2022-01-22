@@ -17,7 +17,7 @@ nix dev-shell nimble
   # Enter a shell with the Nim and Nimble utilities
 ```
 
-For an example of how to refer to Nim packages when building a Nix package you could have a look at [this flake](https://git.sr.ht/~ehmry/upload_bot/tree/master/item/flake.nix)
+For an example of how to refer to Nim packages when building a Nix package you could have a look at [this flake](https://codeberg.org/eris/nix-eris/src/branch/master/flake.nix).
 
 ## Synchronization
 
