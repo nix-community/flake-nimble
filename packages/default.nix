@@ -1339,6 +1339,7 @@
   "skyhash" = ./skyhash.json;
   "slacklib" = ./slacklib.json;
   "slappy" = ./slappy.json;
+  "slicerator" = ./slicerator.json;
   "sliceutils" = ./sliceutils.json;
   "slimdown" = ./slimdown.json;
   "sling" = ./sling.json;
