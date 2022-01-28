@@ -675,6 +675,7 @@
   "looper" = ./looper.json;
   "loopfusion" = ./loopfusion.json;
   "lq" = ./lq.json;
+  "lrparser" = ./lrparser.json;
   "lrucache" = ./lrucache.json;
   "lscolors" = ./lscolors.json;
   "lua" = ./lua.json;
@@ -1486,6 +1487,7 @@
   "tinamou" = ./tinamou.json;
   "tiny_sqlite" = ./tiny_sqlite.json;
   "tinyfiledialogs" = ./tinyfiledialogs.json;
+  "tinypool" = ./tinypool.json;
   "tissue" = ./tissue.json;
   "tkrzw" = ./tkrzw.json;
   "tm_client" = ./tm_client.json;
