@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "Userspace SCTP bindings",
-  "doc": null,
-  "license": "BSD",
-  "method": "git",
-  "name": "sctp",
-  "tags": [
-    "sctp",
-    "networking",
-    "userspace"
-  ],
-  "url": "https://github.com/metacontainer/sctp.nim",
-  "web": "https://github.com/metacontainer/sctp.nim"
-}
+{"name":"sctp","url":"https://github.com/metacontainer/sctp.nim","method":"git","tags":[],"description":"Userspace SCTP bindings","license":"BSD","web":"https://github.com/metacontainer/sctp.nim","refs":["refs/heads/master"],"heads":[{"name":"sctp","version":"0.1.0","author":"Michał Zieliński <michal@zielinscy.org.pl>","desc":"High-level Nim bindings for userspace SCTP implementation","license":"BSD","skipDirs":["tests"],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.17.3","ver":{"kind":"verEqLater","ver":"0.17.3"}},{"name":"reactor","str":">= 0.4.6","ver":{"kind":"verEqLater","ver":"0.4.6"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

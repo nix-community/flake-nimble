@@ -1,12 +1,12 @@
 {
-  description = ''
-    daemonizer for Unix, Linux and OS X
-  '';
-  inputs.src-daemonim.url = "https://github.com/bung87/daemon";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''daemonizer for Unix, Linux and OS X'';
+  inputs."daemonim-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

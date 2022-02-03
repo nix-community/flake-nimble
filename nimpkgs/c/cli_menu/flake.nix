@@ -1,12 +1,12 @@
 {
-  description = ''
-    A library to create interactive commandline menus without writing boilerplate code.
-  '';
-  inputs.src-cli_menu.url = "https://github.com/MnlPhlp/cli_menu";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A library to create interactive commandline menus without writing boilerplate code.'';
+  inputs."cli_menu-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

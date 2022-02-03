@@ -1,0 +1,17 @@
+{
+  description = ''Calibre Database Lib for Nim'';
+  inputs.src-calibre-master.flake = false;
+  inputs.src-calibre-master.type = "github";
+  inputs.src-calibre-master.owner = "juancarlospaco";
+  inputs.src-calibre-master.repo = "nim-calibre";
+  inputs.src-calibre-master.ref = "refs/heads/master";
+  
+  outputs = { self, nixpkgs, src-calibre-master, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-calibre-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-calibre-master"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

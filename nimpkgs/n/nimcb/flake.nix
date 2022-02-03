@@ -1,12 +1,12 @@
 {
-  description = ''
-    Integrate nim projects in the C++Builder build process
-  '';
-  inputs.src-nimcb.url = "https://github.com/AdrianV/nimcb";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Integrate nim projects in the C++Builder build process'';
+  inputs."nimcb-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

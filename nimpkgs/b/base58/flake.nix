@@ -1,12 +1,13 @@
 {
-  description = ''
-    Base58 encoders and decoders for Bitcoin and CryptoNote addresses.
-  '';
-  inputs.src-base58.url = "https://git.sr.ht/~ehmry/nim_base58";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Base58 encoders and decoders for Bitcoin and CryptoNote addresses.'';
+  inputs."base58-master".url = "path:./master";
+  inputs."base58-v0_1_0".url = "path:./v0_1_0";
+  inputs."base58-v0_1_1".url = "path:./v0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Record and replay your HTTP sessions!
-  '';
-  inputs.src-cassette.url = "https://github.com/LemonBoy/cassette";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Record and replay your HTTP sessions!'';
+  inputs."cassette-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

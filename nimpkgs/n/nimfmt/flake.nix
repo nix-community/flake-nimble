@@ -1,12 +1,12 @@
 {
-  description = ''
-    Configurable Nim code linter / formatter / style checker with heuristics
-  '';
-  inputs.src-nimfmt.url = "https://github.com/FedericoCeratto/nimfmt";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Configurable Nim code linter / formatter / style checker with heuristics'';
+  inputs."nimfmt-master".url = "path:./master";
+  inputs."nimfmt-0_2_0".url = "path:./0_2_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Determine if a useragent can access a URL using robots.txt
-  '';
-  inputs.src-robotparser.url = "https://github.com/achesak/nim-robotparser";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Determine if a useragent can access a URL using robots.txt'';
+  inputs."robotparser-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

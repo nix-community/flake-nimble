@@ -1,12 +1,12 @@
 {
-  description = ''
-    RPC implementation for Nim based on msgpack4nim
-  '';
-  inputs.src-nimrpc_milis.url = "https://github.com/milisarge/nimrpc_milis";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''RPC implementation for Nim based on msgpack4nim'';
+  inputs."nimrpc_milis-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

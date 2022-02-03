@@ -1,12 +1,12 @@
 {
-  description = ''
-    A Mini Server Framework for Nim language
-  '';
-  inputs.src-nio.url = "https://github.com/KayraG/nio";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A Mini Server Framework for Nim language'';
+  inputs."nio-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

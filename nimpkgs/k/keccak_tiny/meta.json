@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "A wrapper for the keccak-tiny C library",
-  "doc": null,
-  "license": "Apache License 2.0",
-  "method": "git",
-  "name": "keccak_tiny",
-  "tags": [
-    "library",
-    "sha3",
-    "keccak",
-    "cryptography"
-  ],
-  "url": "https://github.com/status-im/nim-keccak-tiny",
-  "web": "https://github.com/status-im/nim-keccak-tiny"
-}
+{"name":"keccak_tiny","url":"https://github.com/status-im/nim-keccak-tiny","method":"git","tags":[],"description":"A wrapper for the keccak-tiny C library","license":"Apache License 2.0","web":"https://github.com/status-im/nim-keccak-tiny","refs":["refs/heads/fix-c99-ci","refs/heads/master"],"heads":[{"name":"keccak_tiny","version":"0.2.0","author":"Status Research & Development GmbH","desc":"A wrapper for the keccak-tiny C library","license":"Apache License 2.0","skipDirs":["tests"],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.17.0","ver":{"kind":"verEqLater","ver":"0.17.0"}},{"name":"ranges","str":"any version","ver":{"kind":"verAny"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

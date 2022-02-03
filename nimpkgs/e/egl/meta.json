@@ -1,18 +1,1 @@
-{
-  "alias": null,
-  "description": "Bindings for EGL, the native platform interface for rendering APIs.",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "egl",
-  "tags": [
-    "binding",
-    "khronos",
-    "egl",
-    "opengl",
-    "opengl es",
-    "openvg"
-  ],
-  "url": "https://github.com/nimious/egl.git",
-  "web": "https://github.com/nimious/egl"
-}
+{"name":"egl","url":"https://github.com/nimious/egl.git","method":"git","tags":[],"description":"Bindings for EGL, the native platform interface for rendering APIs.","license":"MIT","web":"https://github.com/nimious/egl","refs":["refs/heads/master"],"heads":[{"name":"egl","version":"0.1","author":"Gerke Max Preussner <info@nimio.us>","desc":"Bindings for EGL, the native platform interface for rendering APIs","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nimrod","str":"> 0.9.2","ver":{"kind":"verLater","ver":"0.9.2"}},{"name":"x11","str":"any version","ver":{"kind":"verAny"}}],"bin":[],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

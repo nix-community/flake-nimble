@@ -1,12 +1,12 @@
 {
-  description = ''
-    A module for generating lexer/parser.
-  '';
-  inputs.src-mcmurry.url = "https://github.com/chocobo333/mcmurry";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A module for generating lexer/parser.'';
+  inputs."mcmurry-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

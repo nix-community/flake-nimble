@@ -1,12 +1,12 @@
 {
-  description = ''
-    Bring a gettext-like internationalisation module to Nim
-  '';
-  inputs.src-i18n.url = "https://github.com/Parashurama/nim-i18n";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Bring a gettext-like internationalisation module to Nim'';
+  inputs."i18n-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

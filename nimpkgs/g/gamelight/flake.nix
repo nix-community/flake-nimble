@@ -1,12 +1,12 @@
 {
-  description = ''
-    A set of simple modules for writing a JavaScript 2D game.
-  '';
-  inputs.src-gamelight.url = "https://github.com/dom96/gamelight";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A set of simple modules for writing a JavaScript 2D game.'';
+  inputs."gamelight-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,14 @@
 {
-  description = ''
-    Implementation of Unix crypt with support for Crypt-MD5, Crypt-SHA256 and Crypt-SHA512
-  '';
-  inputs.src-nimcrypt.url = "https://github.com/napalu/nimcrypt";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Implementation of Unix crypt with support for Crypt-MD5, Crypt-SHA256 and Crypt-SHA512'';
+  inputs."nimcrypt-main".url = "path:./main";
+  inputs."nimcrypt-v0_0_6".url = "path:./v0_0_6";
+  inputs."nimcrypt-v0_0_7".url = "path:./v0_0_7";
+  inputs."nimcrypt-v0_0_8".url = "path:./v0_0_8";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-     Websocket server and client implementation
-  '';
-  inputs.src-websock.url = "https://github.com/status-im/nim-websock";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = '' Websocket server and client implementation'';
+  inputs."websock-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

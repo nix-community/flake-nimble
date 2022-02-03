@@ -1,0 +1,17 @@
+{
+  description = ''Very simple browser Javascript TTY web terminal'';
+  inputs.src-webterminal-master.flake = false;
+  inputs.src-webterminal-master.type = "github";
+  inputs.src-webterminal-master.owner = "JohnAD";
+  inputs.src-webterminal-master.repo = "webterminal";
+  inputs.src-webterminal-master.ref = "refs/heads/master";
+  
+  outputs = { self, nixpkgs, src-webterminal-master, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-webterminal-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-webterminal-master"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

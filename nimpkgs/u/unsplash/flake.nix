@@ -1,12 +1,12 @@
 {
-  description = ''
-    Unsplash API Client for Nim
-  '';
-  inputs.src-unsplash.url = "https://github.com/juancarlospaco/nim-unsplash";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Unsplash API Client for Nim'';
+  inputs."unsplash-master".url = "path:./master";
+  inputs."unsplash-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

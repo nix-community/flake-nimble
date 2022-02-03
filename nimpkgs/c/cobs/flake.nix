@@ -1,12 +1,12 @@
 {
-  description = ''
-    Consistent Overhead Byte Stuffing for Nim
-  '';
-  inputs.src-cobs.url = "https://github.com/keyme/nim_cobs";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Consistent Overhead Byte Stuffing for Nim'';
+  inputs."cobs-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

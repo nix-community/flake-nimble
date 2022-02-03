@@ -1,12 +1,12 @@
 {
-  description = ''
-    Converts ANSI colour codes to HTML span tags with style tags
-  '';
-  inputs.src-ansitohtml.url = "https://github.com/PMunch/ansitohtml";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Converts ANSI colour codes to HTML span tags with style tags'';
+  inputs."ansitohtml-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

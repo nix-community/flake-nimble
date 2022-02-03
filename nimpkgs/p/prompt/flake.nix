@@ -1,12 +1,12 @@
 {
-  description = ''
-    Feature-rich readline replacement
-  '';
-  inputs.src-prompt.url = "https://github.com/surf1nb1rd/nim-prompt";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Feature-rich readline replacement'';
+  inputs."prompt-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

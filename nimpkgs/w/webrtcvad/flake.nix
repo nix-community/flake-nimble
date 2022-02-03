@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim bindings for the WEBRTC VAD(voice actitvity Detection)
-  '';
-  inputs.src-webrtcvad.url = "https://gitlab.com/eagledot/nim-webrtcvad";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim bindings for the WEBRTC VAD(voice actitvity Detection)'';
+  inputs."webrtcvad-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

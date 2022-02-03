@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "A Protocol Buffers library for Nim",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "nimpb",
-  "tags": [
-    "serialization",
-    "protocol-buffers",
-    "protobuf",
-    "library"
-  ],
-  "url": "https://github.com/oswjk/nimpb",
-  "web": "https://github.com/oswjk/nimpb"
-}
+{"name":"nimpb","url":"https://github.com/oswjk/nimpb","method":"git","tags":[],"description":"A Protocol Buffers library for Nim","license":"MIT","web":"https://github.com/oswjk/nimpb","refs":["refs/heads/fixes-for-nim-0.19","refs/heads/json-parsing","refs/heads/master","refs/heads/travis"],"heads":[{"name":"nimpb","version":"0.2.0","author":"Oskari Timperi","desc":"protobuf library for Nim","license":"MIT","skipDirs":["examples","tests","protobuf-3.5.1"],"skipFiles":[],"skipExt":["nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.19.0","ver":{"kind":"verEqLater","ver":"0.19.0"}},{"name":"nimpb_protoc","str":"any version","ver":{"kind":"verAny"}}],"bin":["nimpb/compiler/nimpb_build"],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

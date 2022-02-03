@@ -1,17 +1,1 @@
-{
-  "alias": null,
-  "description": "NES emulator using SDL2, also compiles to JavaScript with emscripten.",
-  "doc": null,
-  "license": "MPL",
-  "method": "git",
-  "name": "nimes",
-  "tags": [
-    "emulator",
-    "nes",
-    "game",
-    "sdl",
-    "javascript"
-  ],
-  "url": "https://github.com/def-/nimes",
-  "web": "https://github.com/def-/nimes"
-}
+{"name":"nimes","url":"https://github.com/def-/nimes","method":"git","tags":[],"description":"NES emulator using SDL2, also compiles to JavaScript with emscripten.","license":"MPL","web":"https://github.com/def-/nimes","refs":["refs/heads/master","refs/heads/serializer"],"heads":[{"name":"nimes","version":"0.1","author":"Dennis Felsing","desc":"NimES: NES Emulator in Nim","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":["nim","nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.12.0","ver":{"kind":"verEqLater","ver":"0.12.0"}},{"name":"sdl2","str":">= 1.0","ver":{"kind":"verEqLater","ver":"1.0"}}],"bin":["nimes"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

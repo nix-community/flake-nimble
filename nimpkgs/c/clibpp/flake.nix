@@ -1,12 +1,12 @@
 {
-  description = ''
-    Easy way to 'Mock' C++ interface
-  '';
-  inputs.src-clibpp.url = "https://github.com/onionhammer/clibpp.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Easy way to 'Mock' C++ interface'';
+  inputs."clibpp-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

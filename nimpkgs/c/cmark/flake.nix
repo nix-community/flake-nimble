@@ -1,12 +1,12 @@
 {
-  description = ''
-    libcmark wrapper for Nim
-  '';
-  inputs.src-cmark.url = "https://github.com/zengxs/nim-cmark";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''libcmark wrapper for Nim'';
+  inputs."cmark-master".url = "path:./master";
+  inputs."cmark-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

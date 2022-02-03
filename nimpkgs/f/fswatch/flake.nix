@@ -1,12 +1,12 @@
 {
-  description = ''
-    Wrapper for the fswatch library.
-  '';
-  inputs.src-fswatch.url = "https://github.com/FedericoCeratto/nim-fswatch";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Wrapper for the fswatch library.'';
+  inputs."fswatch-master".url = "path:./master";
+  inputs."fswatch-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

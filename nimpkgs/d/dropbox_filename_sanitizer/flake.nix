@@ -1,12 +1,13 @@
 {
-  description = ''
-    Tool to clean up filenames shared on Dropbox
-  '';
-  inputs.src-dropbox_filename_sanitizer.url = "https://github.com/Araq/dropbox_filename_sanitizer/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Tool to clean up filenames shared on Dropbox'';
+  inputs."dropbox_filename_sanitizer-master".url = "path:./master";
+  inputs."dropbox_filename_sanitizer-v0_2_1".url = "path:./v0_2_1";
+  inputs."dropbox_filename_sanitizer-v0_4_0".url = "path:./v0_4_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

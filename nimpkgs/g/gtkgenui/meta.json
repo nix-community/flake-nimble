@@ -1,14 +1,1 @@
-{
-  "alias": null,
-  "description": "This module provides the genui macro for the Gtk2 toolkit. Genui is a way to specify graphical interfaces in a hierarchical way to more clearly show the structure of the interface as well as simplifying the code.",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "gtkgenui",
-  "tags": [
-    "gtk2",
-    "utility"
-  ],
-  "url": "https://github.com/PMunch/gtkgenui",
-  "web": "https://github.com/PMunch/gtkgenui"
-}
+{"name":"gtkgenui","url":"https://github.com/PMunch/gtkgenui","method":"git","tags":[],"description":"This module provides the genui macro for the Gtk2 toolkit. Genui is a way to specify graphical interfaces in a hierarchical way to more clearly show the structure of the interface as well as simplifying the code.","license":"MIT","web":"https://github.com/PMunch/gtkgenui","refs":["refs/heads/0.19.0","refs/heads/master"],"heads":[{"name":"gtkgenui","version":"0.2.0","author":"Peter Munch-Ellingsen","desc":"Genui is a DSL macro for creating graphical user interfaces. This version is for the Gtk toolkit.","license":"MIT","skipDirs":[],"skipFiles":["example.nim"],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.19.0","ver":{"kind":"verEqLater","ver":"0.19.0"}},{"name":"gtk2","str":">= 1.0","ver":{"kind":"verEqLater","ver":"1.0"}}],"bin":[],"binDir":"","srcDir":"gtkgenui","backend":"c","ref":"refs/heads/master"}]}

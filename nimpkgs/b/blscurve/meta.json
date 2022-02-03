@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "Nim implementation of  Barreto-Lynn-Scott (BLS) curve BLS12-381.",
-  "doc": null,
-  "license": "Apache License 2.0",
-  "method": "git",
-  "name": "blscurve",
-  "tags": [
-    "library",
-    "cryptography",
-    "bls",
-    "aggregated-signatures"
-  ],
-  "url": "https://github.com/status-im/nim-blscurve",
-  "web": "https://github.com/status-im/nim-blscurve"
-}
+{"name":"blscurve","url":"https://github.com/status-im/nim-blscurve","method":"git","tags":[],"description":"Nim implementation of  Barreto-Lynn-Scott (BLS) curve BLS12-381.","license":"Apache License 2.0","web":"https://github.com/status-im/nim-blscurve","refs":["refs/heads/blst-v0.3.3","refs/heads/ci_multi_nim","refs/heads/endomorphism-accel","refs/heads/latest-incubator","refs/heads/master","refs/heads/more-benches","refs/heads/parallel-batched-verif","refs/heads/proper_backend","refs/heads/security-improvement","refs/heads/travis-arm-ppc"],"heads":[{"name":"blscurve","version":"0.0.1","author":"Status Research & Development GmbH","desc":"BLS381-12 Curve implementation","license":"Apache License 2.0","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":["blscurve","vendor"],"installFiles":["blscurve.nim"],"installExt":[],"requires":[{"name":"nim","str":">= 1.0.4","ver":{"kind":"verEqLater","ver":"1.0.4"}},{"name":"nimcrypto","str":"any version","ver":{"kind":"verAny"}},{"name":"stew","str":"any version","ver":{"kind":"verAny"}},{"name":"https://github.com/status-im/nim-taskpools.git","str":"any version","ver":{"kind":"verAny"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Thin interface for libFuzzer, an in-process, coverage-guided, evolutionary fuzzing engine.
-  '';
-  inputs.src-libfuzzer.url = "https://github.com/planetis-m/libfuzzer";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Thin interface for libFuzzer, an in-process, coverage-guided, evolutionary fuzzing engine.'';
+  inputs."libfuzzer-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

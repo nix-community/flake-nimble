@@ -1,12 +1,12 @@
 {
-  description = ''
-    A Nim package to convert filesizes into other units, and turns filesizes into human readable strings.
-  '';
-  inputs.src-filesize.url = "https://github.com/sergiotapia/filesize";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A Nim package to convert filesizes into other units, and turns filesizes into human readable strings.'';
+  inputs."filesize-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

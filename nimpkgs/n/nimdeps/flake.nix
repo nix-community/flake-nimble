@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim library to bundle dependency files into executable
-  '';
-  inputs.src-nimdeps.url = "https://github.com/genotrance/nimdeps";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim library to bundle dependency files into executable'';
+  inputs."nimdeps-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

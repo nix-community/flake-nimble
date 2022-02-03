@@ -1,12 +1,12 @@
 {
-  description = ''
-    Handler framework for the Mongrel2 web server.
-  '';
-  inputs.src-mongrel2.url = "https://github.com/mahlonsmith/nim-mongrel2";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Handler framework for the Mongrel2 web server.'';
+  inputs."mongrel2-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

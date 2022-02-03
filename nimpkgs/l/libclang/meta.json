@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "wrapper for libclang (the C-interface of the clang LLVM frontend)",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "libclang",
-  "tags": [
-    "wrapper",
-    "bindings",
-    "clang"
-  ],
-  "url": "https://github.com/cowboy-coders/nim-libclang.git",
-  "web": "https://github.com/cowboy-coders/nim-libclang"
-}
+{"name":"libclang","url":"https://github.com/cowboy-coders/nim-libclang.git","method":"git","tags":[],"description":"wrapper for libclang (the C-interface of the clang LLVM frontend)","license":"MIT","web":"https://github.com/cowboy-coders/nim-libclang","refs":["refs/heads/master"],"heads":[{"name":"libclang","version":"0.1.0","author":"Will Szumski","desc":"Bindings for libclang","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nimrod","str":">= 0.9.4","ver":{"kind":"verEqLater","ver":"0.9.4"}}],"bin":[],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

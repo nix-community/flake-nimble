@@ -1,12 +1,12 @@
 {
-  description = ''
-    Table implemented as optimized sorted hashed dictionary of {array[char]: Option[T]}, same size as OrderedTable
-  '';
-  inputs.src-dik.url = "https://github.com/juancarlospaco/dik";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Table implemented as optimized sorted hashed dictionary of {array[char]: Option[T]}, same size as OrderedTable'';
+  
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

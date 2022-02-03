@@ -1,12 +1,13 @@
 {
-  description = ''
-    A library for working with the CFG configuration format
-  '';
-  inputs.src-config.url = "https://github.com/vsajip/nim-cfg-lib";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A library for working with the CFG configuration format'';
+  inputs."config-main".url = "path:./main";
+  inputs."config-0_1_0".url = "path:./0_1_0";
+  inputs."config-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

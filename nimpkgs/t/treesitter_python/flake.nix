@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim wrapper for Python language support within tree-sitter
-  '';
-  inputs.src-treesitter_python.url = "https://github.com/genotrance/nimtreesitter?subdir=treesitter_python";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim wrapper for Python language support within tree-sitter'';
+  
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

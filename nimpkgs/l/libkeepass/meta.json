@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "Library for reading KeePass files and decrypt the passwords within it",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "libkeepass",
-  "tags": [
-    "keepass",
-    "password",
-    "library"
-  ],
-  "url": "https://github.com/PMunch/libkeepass",
-  "web": "https://github.com/PMunch/libkeepass"
-}
+{"name":"libkeepass","url":"https://github.com/PMunch/libkeepass","method":"git","tags":[],"description":"Library for reading KeePass files and decrypt the passwords within it","license":"MIT","web":"https://github.com/PMunch/libkeepass","refs":["refs/heads/master"],"heads":[{"name":"libkeepass","version":"0.2.0","author":"Peter Munch-Ellingsen","desc":"Library for reading KeePass files and decrypt the passwords within it","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.17.2","ver":{"kind":"verEqLater","ver":"0.17.2"}},{"name":"nimSHA2","str":">= 0.1.1","ver":{"kind":"verEqLater","ver":"0.1.1"}},{"name":"nimAES","str":">= 0.1.1","ver":{"kind":"verEqLater","ver":"0.1.1"}},{"name":"zip","str":">= 0.1.1","ver":{"kind":"verEqLater","ver":"0.1.1"}}],"bin":[],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

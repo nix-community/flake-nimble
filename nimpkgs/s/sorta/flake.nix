@@ -1,12 +1,12 @@
 {
-  description = ''
-    Sorted Tables for Nim, based on B-Trees
-  '';
-  inputs.src-sorta.url = "https://github.com/narimiran/sorta";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Sorted Tables for Nim, based on B-Trees'';
+  inputs."sorta-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

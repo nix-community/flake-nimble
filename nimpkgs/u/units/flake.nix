@@ -1,12 +1,12 @@
 {
-  description = ''
-     Statically-typed quantity units.
-  '';
-  inputs.src-units.url = "https://github.com/Udiknedormin/NimUnits";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = '' Statically-typed quantity units.'';
+  inputs."units-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Small library for working with vectors
-  '';
-  inputs.src-prettyvec.url = "https://github.com/prettybauble/prettyvec";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Small library for working with vectors'';
+  inputs."prettyvec-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

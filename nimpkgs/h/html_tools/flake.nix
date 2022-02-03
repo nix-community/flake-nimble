@@ -1,12 +1,12 @@
 {
-  description = ''
-    HTML5 Tools for Nim, all Templates, No CSS, No Libs, No JS Framework
-  '';
-  inputs.src-html_tools.url = "https://github.com/juancarlospaco/nim-html-tools";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''HTML5 Tools for Nim, all Templates, No CSS, No Libs, No JS Framework'';
+  inputs."html_tools-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

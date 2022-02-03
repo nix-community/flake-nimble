@@ -1,12 +1,12 @@
 {
-  description = ''
-    Basic tweening library for Nim
-  '';
-  inputs.src-tweens.url = "https://github.com/RainbowAsteroids/tweens";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Basic tweening library for Nim'';
+  inputs."tweens-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

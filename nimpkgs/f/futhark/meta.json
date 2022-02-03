@@ -1,18 +1,1 @@
-{
-  "alias": null,
-  "description": "Zero-wrapping C imports in Nim",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "futhark",
-  "tags": [
-    "library",
-    "c",
-    "c2nim",
-    "interop",
-    "language",
-    "code"
-  ],
-  "url": "https://github.com/PMunch/futhark",
-  "web": "https://github.com/PMunch/futhark"
-}
+{"name":"futhark","url":"https://github.com/PMunch/futhark","method":"git","tags":[{"name":"futhark","version":"0.3.0","author":"PMunch","desc":"A package which uses libclang to parse C headers into Nim files for easy interop","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nim","str":">= 1.4.8","ver":{"kind":"verEqLater","ver":"1.4.8"}},{"name":"https://github.com/PMunch/libclang-nim","str":"#head","ver":{"kind":"verSpecial","spe":"#head"}},{"name":"termstyle","str":"any version","ver":{"kind":"verAny"}},{"name":"macroutils","str":"any version","ver":{"kind":"verAny"}}],"bin":["opir"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/tags/v0.3.0"},{"name":"futhark","version":"0.3.1","author":"PMunch","desc":"A package which uses libclang to parse C headers into Nim files for easy interop","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nim","str":">= 1.4.8","ver":{"kind":"verEqLater","ver":"1.4.8"}},{"name":"https://github.com/PMunch/libclang-nim","str":"#head","ver":{"kind":"verSpecial","spe":"#head"}},{"name":"termstyle","str":"any version","ver":{"kind":"verAny"}},{"name":"macroutils","str":"any version","ver":{"kind":"verAny"}}],"bin":["opir"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/tags/v0.3.1"}],"description":"Zero-wrapping C imports in Nim","license":"MIT","web":"https://github.com/PMunch/futhark","refs":["refs/heads/master","refs/heads/packedargs","refs/heads/packedjson","refs/heads/readmesample","refs/heads/renamecb","refs/tags/v0.3.0","refs/tags/v0.3.1"],"heads":[{"name":"futhark","version":"0.3.1","author":"PMunch","desc":"A package which uses libclang to parse C headers into Nim files for easy interop","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nim","str":">= 1.4.8","ver":{"kind":"verEqLater","ver":"1.4.8"}},{"name":"https://github.com/PMunch/libclang-nim","str":"#head","ver":{"kind":"verSpecial","spe":"#head"}},{"name":"termstyle","str":"any version","ver":{"kind":"verAny"}},{"name":"macroutils","str":"any version","ver":{"kind":"verAny"}}],"bin":["opir"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

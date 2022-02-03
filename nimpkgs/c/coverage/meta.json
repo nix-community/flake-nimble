@@ -1,14 +1,1 @@
-{
-  "alias": null,
-  "description": "Code coverage library",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "coverage",
-  "tags": [
-    "code",
-    "coverage"
-  ],
-  "url": "https://github.com/yglukhov/coverage",
-  "web": "https://github.com/yglukhov/coverage"
-}
+{"name":"coverage","url":"https://github.com/yglukhov/coverage","method":"git","tags":[],"description":"Code coverage library","license":"MIT","web":"https://github.com/yglukhov/coverage","refs":["refs/heads/master"],"heads":[{"name":"coverage","version":"0.1.0","author":"Yuriy Glukhov","desc":"Code coverage library for Nim","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":["coverageTemplate.html","coverage.nim"],"installExt":[],"requires":[{"name":"nim","str":">= 0.10.0","ver":{"kind":"verEqLater","ver":"0.10.0"}},{"name":"nake","str":"any version","ver":{"kind":"verAny"}}],"bin":["nimcoverage"],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

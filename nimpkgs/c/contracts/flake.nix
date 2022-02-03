@@ -1,12 +1,12 @@
 {
-  description = ''
-    Design by Contract (DbC) library with minimal runtime.
-  '';
-  inputs.src-contracts.url = "https://github.com/Udiknedormin/NimContracts";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Design by Contract (DbC) library with minimal runtime.'';
+  inputs."contracts-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

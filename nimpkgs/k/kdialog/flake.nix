@@ -1,12 +1,12 @@
 {
-  description = ''
-    KDialog Qt5 Wrapper, easy API, KISS design
-  '';
-  inputs.src-kdialog.url = "https://github.com/juancarlospaco/nim-kdialog";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''KDialog Qt5 Wrapper, easy API, KISS design'';
+  inputs."kdialog-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

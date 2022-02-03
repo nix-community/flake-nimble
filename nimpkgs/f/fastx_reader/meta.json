@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "FastQ and Fasta readers for NIM",
-  "doc": null,
-  "license": "LGPL-3.0",
-  "method": "git",
-  "name": "fastx_reader",
-  "tags": [
-    "bioinformatics,",
-    "fasta,",
-    "fastq"
-  ],
-  "url": "https://github.com/ahcm/fastx_reader",
-  "web": "https://github.com/ahcm/fastx_reader"
-}
+{"name":"fastx_reader","url":"https://github.com/ahcm/fastx_reader","method":"git","tags":[],"description":"FastQ and Fasta readers for NIM","license":"LGPL-3.0","web":"https://github.com/ahcm/fastx_reader","refs":["refs/heads/master"],"heads":[{"name":"fastx_reader","version":"0.1.0","author":"Andreas Hauser","desc":"FastQ and Fasta readers for NIM","license":"LGPL-3.0","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nim","str":">= 0.20.0","ver":{"kind":"verEqLater","ver":"0.20.0"}}],"bin":["fastx_reader"],"binDir":"bin","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Chipmunk7 demos for Nim
-  '';
-  inputs.src-chipmunk7_demos.url = "https://github.com/matkuki/chipmunk7_demos/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Chipmunk7 demos for Nim'';
+  inputs."chipmunk7_demos-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

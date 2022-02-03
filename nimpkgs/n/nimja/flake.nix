@@ -1,12 +1,12 @@
 {
-  description = ''
-    typed and compiled template engine inspired by jinja2, twig and onionhammer/nim-templates for Nim
-  '';
-  inputs.src-nimja.url = "https://github.com/enthus1ast/nimja";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''typed and compiled template engine inspired by jinja2, twig and onionhammer/nim-templates for Nim'';
+  inputs."nimja-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

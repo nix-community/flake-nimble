@@ -1,12 +1,12 @@
 {
-  description = ''
-    Parsing and serializing for the TNetstring format.
-  '';
-  inputs.src-tnetstring.url = "https://github.com/mahlonsmith/nim-tnetstring";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Parsing and serializing for the TNetstring format.'';
+  inputs."tnetstring-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

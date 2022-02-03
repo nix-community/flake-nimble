@@ -1,12 +1,12 @@
 {
-  description = ''
-    Simple vector library for nim-lang.
-  '';
-  inputs.src-simple_vector.url = "https://github.com/Ephiiz/simple_vector";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Simple vector library for nim-lang.'';
+  inputs."simple_vector-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

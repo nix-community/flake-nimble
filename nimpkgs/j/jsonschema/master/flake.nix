@@ -1,0 +1,25 @@
+{
+  description = ''JSON schema validation and creation.'';
+  inputs.src-jsonschema-master.flake = false;
+  inputs.src-jsonschema-master.type = "github";
+  inputs.src-jsonschema-master.owner = "PMunch";
+  inputs.src-jsonschema-master.repo = "jsonschema";
+  inputs.src-jsonschema-master.ref = "refs/heads/master";
+  
+  
+  inputs."ast_pattern_matching".url = "path:../../../a/ast_pattern_matching";
+  inputs."ast_pattern_matching".type = "github";
+  inputs."ast_pattern_matching".owner = "riinr";
+  inputs."ast_pattern_matching".repo = "flake-nimble";
+  inputs."ast_pattern_matching".ref = "flake-pinning";
+  inputs."ast_pattern_matching".dir = "nimpkgs/a/ast_pattern_matching";
+
+  outputs = { self, nixpkgs, src-jsonschema-master, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-jsonschema-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-jsonschema-master"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

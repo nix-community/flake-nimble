@@ -1,12 +1,12 @@
 {
-  description = ''
-    Bindings to the Keystone Assembler.
-  '';
-  inputs.src-keystone.url = "https://github.com/6A/Keystone.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Bindings to the Keystone Assembler.'';
+  inputs."keystone-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

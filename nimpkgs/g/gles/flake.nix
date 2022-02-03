@@ -1,12 +1,12 @@
 {
-  description = ''
-    Bindings for OpenGL ES, the embedded 3D graphics library.
-  '';
-  inputs.src-gles.url = "https://github.com/nimious/gles.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Bindings for OpenGL ES, the embedded 3D graphics library.'';
+  inputs."gles-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

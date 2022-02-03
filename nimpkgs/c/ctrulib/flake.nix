@@ -1,12 +1,12 @@
 {
-  description = ''
-    ctrulib wrapper
-  '';
-  inputs.src-ctrulib.url = "https://github.com/skyforce77/ctrulib-nim.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''ctrulib wrapper'';
+  inputs."ctrulib-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

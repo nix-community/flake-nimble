@@ -1,12 +1,12 @@
 {
-  description = ''
-    Central Bank of Argentina Gov API Client with debtor corporations info
-  '';
-  inputs.src-bcra.url = "https://github.com/juancarlospaco/nim-bcra";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Central Bank of Argentina Gov API Client with debtor corporations info'';
+  inputs."bcra-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

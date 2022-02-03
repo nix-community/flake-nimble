@@ -1,12 +1,12 @@
 {
-  description = ''
-    Definitions of various data structures used in the Ethereum eco-system
-  '';
-  inputs.src-eth_common.url = "https://github.com/status-im/nim-eth-common";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Definitions of various data structures used in the Ethereum eco-system'';
+  inputs."eth_common-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

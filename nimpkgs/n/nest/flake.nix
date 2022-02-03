@@ -1,12 +1,13 @@
 {
-  description = ''
-    RESTful URI router
-  '';
-  inputs.src-nest.url = "https://github.com/kedean/nest.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''RESTful URI router'';
+  inputs."nest-develop".url = "path:./develop";
+  inputs."nest-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

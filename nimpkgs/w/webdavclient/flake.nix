@@ -1,12 +1,12 @@
 {
-  description = ''
-    WebDAV Client for Nim
-  '';
-  inputs.src-webdavclient.url = "https://github.com/beshrkayali/webdavclient";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''WebDAV Client for Nim'';
+  inputs."webdavclient-master".url = "path:./master";
+  inputs."webdavclient-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

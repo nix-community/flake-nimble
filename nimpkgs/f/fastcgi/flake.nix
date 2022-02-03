@@ -1,12 +1,12 @@
 {
-  description = ''
-    FastCGI library for Nim
-  '';
-  inputs.src-fastcgi.url = "https://github.com/ba0f3/fastcgi.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''FastCGI library for Nim'';
+  inputs."fastcgi-master".url = "path:./master";
+  inputs."fastcgi-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

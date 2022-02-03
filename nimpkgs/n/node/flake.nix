@@ -1,12 +1,12 @@
 {
-  description = ''
-    Library for async programming and communication. This Library uses a future/promise, non-blocking I/O model based on libuv.
-  '';
-  inputs.src-node.url = "https://github.com/tulayang/nimnode";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Library for async programming and communication. This Library uses a future/promise, non-blocking I/O model based on libuv.'';
+  inputs."node-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

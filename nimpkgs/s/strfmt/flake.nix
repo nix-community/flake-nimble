@@ -1,12 +1,12 @@
 {
-  description = ''
-    A string formatting library inspired by Python's `format`.
-  '';
-  inputs.src-strfmt.url = "https://github.com/bio-nim/nim-strfmt";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A string formatting library inspired by Python's `format`.'';
+  inputs."strfmt-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

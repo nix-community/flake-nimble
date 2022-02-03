@@ -1,12 +1,12 @@
 {
-  description = ''
-    POP3 client library
-  '';
-  inputs.src-pop3.url = "https://github.com/FedericoCeratto/nim-pop3";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''POP3 client library'';
+  inputs."pop3-master".url = "path:./master";
+  inputs."pop3-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

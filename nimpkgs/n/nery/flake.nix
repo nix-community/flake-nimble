@@ -1,12 +1,12 @@
 {
-  description = ''
-    A simple library to create queries in Nim.
-  '';
-  inputs.src-nery.url = "https://github.com/David-Kunz/Nery";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A simple library to create queries in Nim.'';
+  inputs."nery-main".url = "path:./main";
+  inputs."nery-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

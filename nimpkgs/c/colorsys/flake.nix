@@ -1,12 +1,12 @@
 {
-  description = ''
-    Convert between RGB, YIQ, HLS, and HSV color systems.
-  '';
-  inputs.src-colorsys.url = "https://github.com/achesak/nim-colorsys";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Convert between RGB, YIQ, HLS, and HSV color systems.'';
+  inputs."colorsys-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

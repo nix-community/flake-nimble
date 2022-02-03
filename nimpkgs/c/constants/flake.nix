@@ -1,12 +1,12 @@
 {
-  description = ''
-    Mathematical numerical named static constants useful for different disciplines
-  '';
-  inputs.src-constants.url = "https://github.com/juancarlospaco/nim-constants";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Mathematical numerical named static constants useful for different disciplines'';
+  inputs."constants-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

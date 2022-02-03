@@ -1,12 +1,13 @@
 {
-  description = ''
-    Base32 library for Nim
-  '';
-  inputs.src-base32.url = "https://github.com/OpenSystemsLab/base32.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Base32 library for Nim'';
+  inputs."base32-master".url = "path:./master";
+  inputs."base32-0_1_2".url = "path:./0_1_2";
+  inputs."base32-0_1_3".url = "path:./0_1_3";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Updated psutil module from https://github.com/johnscillieri/psutil-nim
-  '';
-  inputs.src-psutilim.url = "https://github.com/KittyTechnoProgrammer/psutilim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Updated psutil module from https://github.com/johnscillieri/psutil-nim'';
+  
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

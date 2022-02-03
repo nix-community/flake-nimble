@@ -1,12 +1,12 @@
 {
-  description = ''
-    High-level wrapper for Linux's kmod library
-  '';
-  inputs.src-kmod.url = "https://github.com/alaviss/kmod";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''High-level wrapper for Linux's kmod library'';
+  inputs."kmod-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

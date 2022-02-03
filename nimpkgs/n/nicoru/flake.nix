@@ -1,12 +1,13 @@
 {
-  description = ''
-    A container runtime written in Nim
-  '';
-  inputs.src-nicoru.url = "https://github.com/fox0430/nicoru";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A container runtime written in Nim'';
+  inputs."nicoru-develop".url = "path:./develop";
+  inputs."nicoru-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

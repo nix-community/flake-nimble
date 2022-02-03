@@ -1,12 +1,12 @@
 {
-  description = ''
-    Coinbase pro client for Nim
-  '';
-  inputs.src-coinbase_pro.url = "https://github.com/inv2004/coinbase-pro-nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Coinbase pro client for Nim'';
+  inputs."coinbase_pro-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

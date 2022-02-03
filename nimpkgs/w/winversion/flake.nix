@@ -1,12 +1,12 @@
 {
-  description = ''
-    This package allows you to determine the running version of the Windows operating system.
-  '';
-  inputs.src-winversion.url = "https://github.com/rockcavera/winversion";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''This package allows you to determine the running version of the Windows operating system.'';
+  inputs."winversion-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

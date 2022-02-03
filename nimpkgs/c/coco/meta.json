@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "Code coverage CLI + library for Nim using LCOV",
-  "doc": "https://samuelroy.github.io/coco/",
-  "license": "MIT",
-  "method": "git",
-  "name": "coco",
-  "tags": [
-    "code",
-    "coverage",
-    "test"
-  ],
-  "url": "https://github.com/samuelroy/coco",
-  "web": "https://github.com/samuelroy/coco"
-}
+{"name":"coco","url":"https://github.com/samuelroy/coco","method":"git","tags":[],"description":"Code coverage CLI + library for Nim using LCOV","license":"MIT","web":"https://github.com/samuelroy/coco","doc":"https://samuelroy.github.io/coco/","refs":["refs/heads/master"],"heads":[{"name":"coco","version":"0.0.3","author":"Samuel Roy","desc":"Code coverage with line and branch support for Nim","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":["coco.nim"],"installExt":[],"requires":[{"name":"nim","str":">= 0.19.0","ver":{"kind":"verEqLater","ver":"0.19.0"}},{"name":"cligen","str":"any version","ver":{"kind":"verAny"}},{"name":"glob","str":"any version","ver":{"kind":"verAny"}}],"bin":["coco"],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Asynchronous MySQL connector written in pure Nim
-  '';
-  inputs.src-asyncmysql.url = "https://github.com/tulayang/asyncmysql";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Asynchronous MySQL connector written in pure Nim'';
+  inputs."asyncmysql-master".url = "path:./master";
+  inputs."asyncmysql-0_4_3".url = "path:./0_4_3";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

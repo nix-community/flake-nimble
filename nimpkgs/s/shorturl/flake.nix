@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim module for generating URL identifiers for Tiny URL and bit.ly-like URLs
-  '';
-  inputs.src-shorturl.url = "https://github.com/achesak/nim-shorturl";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim module for generating URL identifiers for Tiny URL and bit.ly-like URLs'';
+  inputs."shorturl-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

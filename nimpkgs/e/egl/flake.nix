@@ -1,12 +1,12 @@
 {
-  description = ''
-    Bindings for EGL, the native platform interface for rendering APIs.
-  '';
-  inputs.src-egl.url = "https://github.com/nimious/egl.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Bindings for EGL, the native platform interface for rendering APIs.'';
+  inputs."egl-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

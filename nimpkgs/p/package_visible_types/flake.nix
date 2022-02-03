@@ -1,12 +1,12 @@
 {
-  description = ''
-    A hacky helper lib for authoring Nim packages with package-level visiblity
-  '';
-  inputs.src-package_visible_types.url = "https://github.com/zah/nim-package-visible-types";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A hacky helper lib for authoring Nim packages with package-level visiblity'';
+  inputs."package_visible_types-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

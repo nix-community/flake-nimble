@@ -1,0 +1,17 @@
+{
+  description = ''Nim bindings for mozilla's DeepSpeech model.'';
+  inputs.src-deepspeech-v0_7_0.flake = false;
+  inputs.src-deepspeech-v0_7_0.type = "gitlab";
+  inputs.src-deepspeech-v0_7_0.owner = "eagledot";
+  inputs.src-deepspeech-v0_7_0.repo = "nim-deepspeech";
+  inputs.src-deepspeech-v0_7_0.ref = "refs/tags/v0.7.0";
+  
+  outputs = { self, nixpkgs, src-deepspeech-v0_7_0, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-deepspeech-v0_7_0;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-deepspeech-v0_7_0"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

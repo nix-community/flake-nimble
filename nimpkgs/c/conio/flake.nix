@@ -1,12 +1,12 @@
 {
-  description = ''
-    .NET-inspired lightweight terminal library
-  '';
-  inputs.src-conio.url = "https://github.com/guevara-chan/conio";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''.NET-inspired lightweight terminal library'';
+  inputs."conio-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

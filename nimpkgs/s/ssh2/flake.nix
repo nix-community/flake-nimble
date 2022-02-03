@@ -1,12 +1,13 @@
 {
-  description = ''
-    SSH, SCP and SFTP client for Nim
-  '';
-  inputs.src-ssh2.url = "https://github.com/ba0f3/ssh2.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''SSH, SCP and SFTP client for Nim'';
+  inputs."ssh2-master".url = "path:./master";
+  inputs."ssh2-0_1_0".url = "path:./0_1_0";
+  inputs."ssh2-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

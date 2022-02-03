@@ -1,12 +1,12 @@
 {
-  description = ''
-    The Nim wrapper for tracemoe.
-  '';
-  inputs.src-anime.url = "https://github.com/ethosa/anime";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''The Nim wrapper for tracemoe.'';
+  inputs."anime-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

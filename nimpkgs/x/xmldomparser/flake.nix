@@ -1,12 +1,12 @@
 {
-  description = ''
-    Parses an XML Document into a XML DOM Document representation.
-  '';
-  inputs.src-xmldomparser.url = "https://github.com/nim-lang/graveyard?subdir=xmldomparser";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Parses an XML Document into a XML DOM Document representation.'';
+  
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

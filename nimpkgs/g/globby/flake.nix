@@ -1,12 +1,12 @@
 {
-  description = ''
-    Glob pattern matching for Nim.
-  '';
-  inputs.src-globby.url = "https://github.com/treeform/globby";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Glob pattern matching for Nim.'';
+  inputs."globby-master".url = "path:./master";
+  inputs."globby-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

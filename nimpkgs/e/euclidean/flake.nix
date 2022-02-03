@@ -1,12 +1,12 @@
 {
-  description = ''
-    Euclidean Division & Euclidean Modulo
-  '';
-  inputs.src-euclidean.url = "https://github.com/juancarlospaco/nim-euclidean";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Euclidean Division & Euclidean Modulo'';
+  inputs."euclidean-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

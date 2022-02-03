@@ -1,15 +1,19 @@
 {
-  imports = [ ./nim-pkgs-config.nix ];
-  nim-pkgs = builtins.fromJSON (builtins.readFile ./packages.json);
-
   files.cmds.nimble-unwrapped = true;
   files.cmds.nim-unwrapped = true;
   files.cmds.yj = true;
+  files.cmds.jq = true;
   files.cmds.git = true;
-  files.alias.pkgs-list = ''
-    curl https://raw.githubusercontent.com/nim-lang/packages/master/packages.json
+  files.cmds.mercurial = true;
+  files.alias.update-pkg-of-name = ''
+    curl -s "https://raw.githubusercontent.com/nim-lang/packages/master/packages.json"|jq '.[]|select(.name == "'$1'")'|./updatePkg.nims
   '';
-  files.alias.update-pkgs-json = ''
-    pkgs-list > $(git rev-parse --show-toplevel)/nimpkgs/packages.json
+  files.alias.clean-head-cache = ''
+    rm -f ../**/master/meta.json
+    rm -f ../**/main/meta.json
+    rm -f ../**/unstable/meta.json
+    rm -f ../**/develop/meta.json
+    rm -f ../**/staging/meta.json
   '';
+  files.alias.clean-cache = ''rm -f ../**/meta.json'';
 }

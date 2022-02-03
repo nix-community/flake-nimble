@@ -1,12 +1,12 @@
 {
-  description = ''
-    Obsolete - please use libusb instead!
-  '';
-  inputs.src-io-usb.url = "https://github.com/nimious/io-usb.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Obsolete - please use libusb instead!'';
+  inputs."io-usb-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

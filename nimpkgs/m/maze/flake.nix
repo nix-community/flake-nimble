@@ -1,12 +1,12 @@
 {
-  description = ''
-    A command and library to generate mazes
-  '';
-  inputs.src-maze.url = "https://github.com/jiro4989/maze";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A command and library to generate mazes'';
+  inputs."maze-master".url = "path:./master";
+  inputs."maze-1_0_0".url = "path:./1_0_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

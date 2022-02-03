@@ -1,12 +1,12 @@
 {
-  description = ''
-    This is a xlsxio wrapper done Nim in mind.
-  '';
-  inputs.src-xlsxio.url = "https://github.com/jiiihpeeh/xlsxio-nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''This is a xlsxio wrapper done Nim in mind.'';
+  inputs."xlsxio-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

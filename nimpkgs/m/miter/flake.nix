@@ -1,12 +1,13 @@
 {
-  description = ''
-    Ratio calculator on your terminal
-  '';
-  inputs.src-miter.url = "https://github.com/rafmst/miter";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Ratio calculator on your terminal'';
+  inputs."miter-master".url = "path:./master";
+  inputs."miter-0_1_0".url = "path:./0_1_0";
+  inputs."miter-0_2_0".url = "path:./0_2_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

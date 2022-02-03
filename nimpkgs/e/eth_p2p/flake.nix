@@ -1,12 +1,12 @@
 {
-  description = ''
-    Deprecated implementation of the Ethereum suite of P2P protocols (now part of the 'eth' package)
-  '';
-  inputs.src-eth_p2p.url = "https://github.com/status-im/nim-eth-p2p";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Deprecated implementation of the Ethereum suite of P2P protocols (now part of the 'eth' package)'';
+  inputs."eth_p2p-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

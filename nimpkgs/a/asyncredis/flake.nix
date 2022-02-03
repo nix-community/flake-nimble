@@ -1,12 +1,12 @@
 {
-  description = ''
-    Pure Nim asyncronous driver for Redis DB
-  '';
-  inputs.src-asyncredis.url = "https://github.com/Q-Master/redis.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Pure Nim asyncronous driver for Redis DB'';
+  inputs."asyncredis-master".url = "path:./master";
+  inputs."asyncredis-v0_8".url = "path:./v0_8";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

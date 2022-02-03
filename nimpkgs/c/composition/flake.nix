@@ -1,12 +1,12 @@
 {
-  description = ''
-    Composition pattern with event handling library in Nim
-  '';
-  inputs.src-composition.url = "https://github.com/DavidMeagher1/composition";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Composition pattern with event handling library in Nim'';
+  inputs."composition-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

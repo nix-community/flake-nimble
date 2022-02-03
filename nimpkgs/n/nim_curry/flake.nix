@@ -1,12 +1,12 @@
 {
-  description = ''
-    Provides a macro to curry function
-  '';
-  inputs.src-nim_curry.url = "https://github.com/zer0-star/nim-curry";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Provides a macro to curry function'';
+  inputs."nim_curry-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

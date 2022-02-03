@@ -1,12 +1,13 @@
 {
-  description = ''
-    libp2p implementation in Nim
-  '';
-  inputs.src-libp2p.url = "https://github.com/status-im/nim-libp2p";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''libp2p implementation in Nim'';
+  inputs."libp2p-master".url = "path:./master";
+  inputs."libp2p-unstable".url = "path:./unstable";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

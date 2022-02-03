@@ -1,12 +1,12 @@
 {
-  description = ''
-    Genetic Algorithm Library for Nim.
-  '';
-  inputs.src-nimga.url = "https://github.com/toshikiohnogi/nimga";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Genetic Algorithm Library for Nim.'';
+  inputs."nimga-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

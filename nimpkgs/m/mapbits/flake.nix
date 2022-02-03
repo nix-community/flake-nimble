@@ -1,12 +1,12 @@
 {
-  description = ''
-    Access bit mapped portions of bytes in binary data as int variables
-  '';
-  inputs.src-mapbits.url = "https://github.com/jlp765/mapbits";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Access bit mapped portions of bytes in binary data as int variables'';
+  inputs."mapbits-master".url = "path:./master";
+  inputs."mapbits-1_0".url = "path:./1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

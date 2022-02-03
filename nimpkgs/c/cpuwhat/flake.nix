@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim utilities for advanced CPU operations: CPU identification, bindings to assorted intrinsics
-  '';
-  inputs.src-cpuwhat.url = "https://github.com/awr1/cpuwhat";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim utilities for advanced CPU operations: CPU identification, bindings to assorted intrinsics'';
+  inputs."cpuwhat-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

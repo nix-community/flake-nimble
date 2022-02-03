@@ -1,12 +1,12 @@
 {
-  description = ''
-    SipHash, a pseudorandom function optimized for short messages.
-  '';
-  inputs.src-siphash.url = "https://git.sr.ht/~ehmry/nim_siphash";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''SipHash, a pseudorandom function optimized for short messages.'';
+  inputs."siphash-master".url = "path:./master";
+  inputs."siphash-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

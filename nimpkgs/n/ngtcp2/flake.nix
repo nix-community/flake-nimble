@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim wrapper around the ngtcp2 library
-  '';
-  inputs.src-ngtcp2.url = "https://github.com/status-im/nim-ngtcp2";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim wrapper around the ngtcp2 library'';
+  inputs."ngtcp2-main".url = "path:./main";
+  inputs."ngtcp2-0_32_0".url = "path:./0_32_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

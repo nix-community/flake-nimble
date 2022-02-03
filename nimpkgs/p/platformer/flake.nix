@@ -1,12 +1,12 @@
 {
-  description = ''
-    Writing a 2D Platform Game in Nim with SDL2
-  '';
-  inputs.src-platformer.url = "https://github.com/def-/nim-platformer";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Writing a 2D Platform Game in Nim with SDL2'';
+  inputs."platformer-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

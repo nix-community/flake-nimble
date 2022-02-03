@@ -1,12 +1,12 @@
 {
-  description = ''
-    Simple Graph Library
-  '';
-  inputs.src-simple_graph.url = "https://github.com/erhlee-bird/simple_graph";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Simple Graph Library'';
+  inputs."simple_graph-master".url = "path:./master";
+  inputs."simple_graph-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

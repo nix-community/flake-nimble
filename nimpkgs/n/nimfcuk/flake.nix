@@ -1,12 +1,12 @@
 {
-  description = ''
-    A brainfuck interpreter & compiler implemented in nim
-  '';
-  inputs.src-nimfcuk.url = "https://github.com/2KAbhishek/nimfcuk";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A brainfuck interpreter & compiler implemented in nim'';
+  inputs."nimfcuk-main".url = "path:./main";
+  inputs."nimfcuk-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

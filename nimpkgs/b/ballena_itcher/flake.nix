@@ -1,12 +1,12 @@
 {
-  description = ''
-    Flash ISO images to SD cards & USB drives, safely and easily.
-  '';
-  inputs.src-ballena_itcher.url = "https://github.com/juancarlospaco/ballena-itcher";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Flash ISO images to SD cards & USB drives, safely and easily.'';
+  inputs."ballena_itcher-master".url = "path:./master";
+  inputs."ballena_itcher-0_0_1".url = "path:./0_0_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

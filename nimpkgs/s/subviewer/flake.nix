@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim module for parsing SubViewer subtitle files
-  '';
-  inputs.src-subviewer.url = "https://github.com/achesak/nim-subviewer";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim module for parsing SubViewer subtitle files'';
+  inputs."subviewer-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

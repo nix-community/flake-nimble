@@ -1,12 +1,12 @@
 {
-  description = ''
-    wrapper for communicating with InfluxDB over the REST interface
-  '';
-  inputs.src-influx.url = "https://github.com/samdmarshall/influx.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''wrapper for communicating with InfluxDB over the REST interface'';
+  inputs."influx-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

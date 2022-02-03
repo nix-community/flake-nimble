@@ -1,12 +1,12 @@
 {
-  description = ''
-    Secure Hash Algorithm - 2, [224, 256, 384, and 512 bits]
-  '';
-  inputs.src-nimSHA2.url = "https://github.com/jangko/nimSHA2";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Secure Hash Algorithm - 2, [224, 256, 384, and 512 bits]'';
+  inputs."nimSHA2-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

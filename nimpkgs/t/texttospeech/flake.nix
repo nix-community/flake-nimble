@@ -1,12 +1,12 @@
 {
-  description = ''
-    A client for the Google Cloud Text to Speech API.
-  '';
-  inputs.src-texttospeech.url = "https://github.com/dom96/texttospeech";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A client for the Google Cloud Text to Speech API.'';
+  inputs."texttospeech-master".url = "path:./master";
+  inputs."texttospeech-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,17 +1,1 @@
-{
-  "alias": null,
-  "description": "Nico game engine",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "nico",
-  "tags": [
-    "pico-8",
-    "game",
-    "library",
-    "ludum",
-    "dare"
-  ],
-  "url": "https://github.com/ftsf/nico",
-  "web": "https://github.com/ftsf/nico"
-}
+{"name":"nico","url":"https://github.com/ftsf/nico","method":"git","tags":[],"description":"Nico game engine","license":"MIT","web":"https://github.com/ftsf/nico","refs":["refs/heads/combinedjs","refs/heads/fix-screenshot","refs/heads/fixNimPNGPalette","refs/heads/hexmap","refs/heads/js","refs/heads/main","refs/heads/nicoscripter","refs/heads/nim0.20.0","refs/heads/removeJS","refs/heads/synth","refs/heads/v0.3"],"heads":[{"name":"nico","version":"0.4.9","author":"Jez 'Impbox' Kabanov","desc":"Nico Game Engine","license":"MIT","skipDirs":["examples","tests","android","tools"],"skipFiles":[],"skipExt":[],"installDirs":["exampleApp"],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nim","str":">= 1.4.0","ver":{"kind":"verEqLater","ver":"1.4.0"}},{"name":"sdl2_nim","str":">= 2.0.14.2","ver":{"kind":"verEqLater","ver":"2.0.14.2"}},{"name":"gifenc","str":">= 0.1.0","ver":{"kind":"verEqLater","ver":"0.1.0"}},{"name":"nimPNG","str":">= 0.3.1","ver":{"kind":"verEqLater","ver":"0.3.1"}},{"name":"zippy","str":">= 0.5.9","ver":{"kind":"verEqLater","ver":"0.5.9"}}],"bin":["nicosynth","nicoboot","nicoandroid"],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/main"}]}

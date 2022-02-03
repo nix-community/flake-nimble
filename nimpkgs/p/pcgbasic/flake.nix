@@ -1,12 +1,12 @@
 {
-  description = ''
-    Permuted Congruential Generator (PCG) Random Number Generation (RNG) for Nim.
-  '';
-  inputs.src-pcgbasic.url = "https://github.com/rockcavera/pcgbasic";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Permuted Congruential Generator (PCG) Random Number Generation (RNG) for Nim.'';
+  inputs."pcgbasic-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

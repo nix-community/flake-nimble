@@ -1,12 +1,12 @@
 {
-  description = ''
-    A correctly-rounded arbitrary precision decimal floating point arithmetic library
-  '';
-  inputs.src-decimal.url = "https://github.com/inv2004/nim-decimal";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A correctly-rounded arbitrary precision decimal floating point arithmetic library'';
+  inputs."decimal-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

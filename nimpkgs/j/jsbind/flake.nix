@@ -1,12 +1,12 @@
 {
-  description = ''
-    Define bindings to JavaScript and Emscripten
-  '';
-  inputs.src-jsbind.url = "https://github.com/yglukhov/jsbind";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Define bindings to JavaScript and Emscripten'';
+  inputs."jsbind-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

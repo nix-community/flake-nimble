@@ -1,12 +1,12 @@
 {
-  description = ''
-    experiment to build a jinja like template parser
-  '';
-  inputs.src-nwt.url = "https://github.com/enthus1ast/nimWebTemplates";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''experiment to build a jinja like template parser'';
+  inputs."nwt-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Generalized linear models in Nim.
-  '';
-  inputs.src-linear_models.url = "https://github.com/ayman-albaz/linear-models";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Generalized linear models in Nim.'';
+  inputs."linear_models-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

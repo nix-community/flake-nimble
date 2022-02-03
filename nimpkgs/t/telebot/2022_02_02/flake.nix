@@ -1,0 +1,17 @@
+{
+  description = ''Async Telegram Bot API Client'';
+  inputs.src-telebot-2022_02_02.flake = false;
+  inputs.src-telebot-2022_02_02.type = "github";
+  inputs.src-telebot-2022_02_02.owner = "ba0f3";
+  inputs.src-telebot-2022_02_02.repo = "telebot.nim";
+  inputs.src-telebot-2022_02_02.ref = "refs/tags/2022.02.02";
+  
+  outputs = { self, nixpkgs, src-telebot-2022_02_02, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-telebot-2022_02_02;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-telebot-2022_02_02"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

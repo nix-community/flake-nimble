@@ -1,12 +1,12 @@
 {
-  description = ''
-    cross-platform file watcher with database
-  '';
-  inputs.src-watch_for_files.url = "https://github.com/hamidb80/watch_for_files";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''cross-platform file watcher with database'';
+  inputs."watch_for_files-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

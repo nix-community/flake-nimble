@@ -1,12 +1,12 @@
 {
-  description = ''
-    A wrapper for NCurses
-  '';
-  inputs.src-ncurses.url = "https://github.com/walkre-niboshi/nim-ncurses";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A wrapper for NCurses'';
+  inputs."ncurses-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

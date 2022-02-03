@@ -1,12 +1,12 @@
 {
-  description = ''
-    Retrieve info about a location from an IP address
-  '';
-  inputs.src-freegeoip.url = "https://github.com/achesak/nim-freegeoip";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Retrieve info about a location from an IP address'';
+  inputs."freegeoip-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

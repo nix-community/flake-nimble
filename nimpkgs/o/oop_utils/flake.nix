@@ -1,12 +1,12 @@
 {
-  description = ''
-    Macro for building OOP class hierarchies based on closure methods.
-  '';
-  inputs.src-oop_utils.url = "https://github.com/bluenote10/oop_utils";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Macro for building OOP class hierarchies based on closure methods.'';
+  inputs."oop_utils-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    libssh FFI bindings
-  '';
-  inputs.src-libssh.url = "https://github.com/dariolah/libssh-nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''libssh FFI bindings'';
+  inputs."libssh-master".url = "path:./master";
+  inputs."libssh-0_90_0".url = "path:./0_90_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

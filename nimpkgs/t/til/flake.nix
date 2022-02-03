@@ -1,12 +1,14 @@
 {
-  description = ''
-    til-tool: Today I Learned tool
-  '';
-  inputs.src-til.url = "https://github.com/danielecook/til-tool";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''til-tool: Today I Learned tool'';
+  inputs."til-master".url = "path:./master";
+  inputs."til-v0_0_1".url = "path:./v0_0_1";
+  inputs."til-v0_0_2".url = "path:./v0_0_2";
+  inputs."til-v0_0_3".url = "path:./v0_0_3";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

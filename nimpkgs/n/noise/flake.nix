@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim implementation of linenoise command line editor
-  '';
-  inputs.src-noise.url = "https://github.com/jangko/nim-noise";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim implementation of linenoise command line editor'';
+  inputs."noise-master".url = "path:./master";
+  inputs."noise-v0_1_14".url = "path:./v0_1_14";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

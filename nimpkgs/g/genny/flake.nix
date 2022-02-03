@@ -1,12 +1,12 @@
 {
-  description = ''
-    Generate a shared library and bindings for many languages.
-  '';
-  inputs.src-genny.url = "https://github.com/treeform/genny";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Generate a shared library and bindings for many languages.'';
+  inputs."genny-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

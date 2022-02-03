@@ -1,0 +1,42 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "src-compiler-v1_6_2": "src-compiler-v1_6_2"
+      }
+    },
+    "src-compiler-v1_6_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639671905,
+        "narHash": "sha256-qN+A+q0fnhUTiq8mRGSFQyQrc3Z97BZyBTZOgFjp4hI=",
+        "owner": "nim-lang",
+        "repo": "Nim",
+        "rev": "9084d9bc02bcd983b81a4c76a05f27b9ce2707dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.6.2",
+        "repo": "Nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

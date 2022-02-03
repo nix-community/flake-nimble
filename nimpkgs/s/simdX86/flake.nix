@@ -1,12 +1,12 @@
 {
-  description = ''
-    Wrappers for X86 SIMD intrinsics
-  '';
-  inputs.src-simdX86.url = "https://github.com/nimlibs/simdX86";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Wrappers for X86 SIMD intrinsics'';
+  inputs."simdX86-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

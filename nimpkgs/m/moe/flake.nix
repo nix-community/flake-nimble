@@ -1,12 +1,54 @@
 {
-  description = ''
-    A command lined based text editor inspired by vi/vim
-  '';
-  inputs.src-moe.url = "https://github.com/fox0430/moe";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A command lined based text editor inspired by vi/vim'';
+  inputs."moe-develop".url = "path:./develop";
+  inputs."moe-master".url = "path:./master";
+  inputs."moe-v0_0_1".url = "path:./v0_0_1";
+  inputs."moe-v0_0_2".url = "path:./v0_0_2";
+  inputs."moe-v0_0_3".url = "path:./v0_0_3";
+  inputs."moe-v0_0_35".url = "path:./v0_0_35";
+  inputs."moe-v0_0_40".url = "path:./v0_0_40";
+  inputs."moe-v0_0_50".url = "path:./v0_0_50";
+  inputs."moe-v0_0_60".url = "path:./v0_0_60";
+  inputs."moe-v0_0_61".url = "path:./v0_0_61";
+  inputs."moe-v0_0_70".url = "path:./v0_0_70";
+  inputs."moe-v0_0_80".url = "path:./v0_0_80";
+  inputs."moe-v0_0_81".url = "path:./v0_0_81";
+  inputs."moe-v0_0_82".url = "path:./v0_0_82";
+  inputs."moe-v0_0_83".url = "path:./v0_0_83";
+  inputs."moe-v0_0_84".url = "path:./v0_0_84";
+  inputs."moe-v0_0_90".url = "path:./v0_0_90";
+  inputs."moe-v0_1_0".url = "path:./v0_1_0";
+  inputs."moe-v0_1_1".url = "path:./v0_1_1";
+  inputs."moe-v0_1_2".url = "path:./v0_1_2";
+  inputs."moe-v0_1_3".url = "path:./v0_1_3";
+  inputs."moe-v0_1_4".url = "path:./v0_1_4";
+  inputs."moe-v0_1_5".url = "path:./v0_1_5";
+  inputs."moe-v0_1_6".url = "path:./v0_1_6";
+  inputs."moe-v0_1_7".url = "path:./v0_1_7";
+  inputs."moe-v0_1_8".url = "path:./v0_1_8";
+  inputs."moe-v0_1_9".url = "path:./v0_1_9";
+  inputs."moe-v0_2_0".url = "path:./v0_2_0";
+  inputs."moe-v0_2_0_1".url = "path:./v0_2_0_1";
+  inputs."moe-v0_2_0_2".url = "path:./v0_2_0_2";
+  inputs."moe-v0_2_1".url = "path:./v0_2_1";
+  inputs."moe-v0_2_2".url = "path:./v0_2_2";
+  inputs."moe-v0_2_2_1".url = "path:./v0_2_2_1";
+  inputs."moe-v0_2_3".url = "path:./v0_2_3";
+  inputs."moe-v0_2_3_1".url = "path:./v0_2_3_1";
+  inputs."moe-v0_2_4".url = "path:./v0_2_4";
+  inputs."moe-v0_2_4_1".url = "path:./v0_2_4_1";
+  inputs."moe-v0_2_5_0".url = "path:./v0_2_5_0";
+  inputs."moe-v0_2_5_1".url = "path:./v0_2_5_1";
+  inputs."moe-v0_2_6_0".url = "path:./v0_2_6_0";
+  inputs."moe-v0_2_6_1".url = "path:./v0_2_6_1";
+  inputs."moe-v0_2_7_0".url = "path:./v0_2_7_0";
+  inputs."moe-v0_2_8_0".url = "path:./v0_2_8_0";
+  inputs."moe-v0_3_0".url = "path:./v0_3_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,13 +1,1 @@
-{
-  "alias": null,
-  "description": "Deprecated RLP serialization library for Nim (now part of the 'eth' module)",
-  "doc": null,
-  "license": "Apache License 2.0",
-  "method": "git",
-  "name": "rlp",
-  "tags": [
-    "deprecated"
-  ],
-  "url": "https://github.com/status-im/nim-rlp",
-  "web": "https://github.com/status-im/nim-rlp"
-}
+{"name":"rlp","url":"https://github.com/status-im/nim-rlp","method":"git","tags":[],"description":"Deprecated RLP serialization library for Nim (now part of the 'eth' module)","license":"Apache License 2.0","web":"https://github.com/status-im/nim-rlp","refs":["refs/heads/emptyrlp","refs/heads/gcsafe-globals","refs/heads/les-branch-changes","refs/heads/master","refs/heads/wip-return-seq"],"heads":[{"name":"rlp","version":"1.0.1","author":"Status Research & Development GmbH","desc":"RLP serialization library for Nim","license":"Apache License 2.0","skipDirs":["tests"],"skipFiles":[],"skipExt":[],"installDirs":["rlp"],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.17.0","ver":{"kind":"verEqLater","ver":"0.17.0"}},{"name":"ranges","str":"any version","ver":{"kind":"verAny"}}],"bin":["rlp/bin/rlp_inspect"],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

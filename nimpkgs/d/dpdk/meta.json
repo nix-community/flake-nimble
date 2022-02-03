@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "Library for fast packet processing",
-  "doc": null,
-  "license": "Apache License 2.0",
-  "method": "git",
-  "name": "dpdk",
-  "tags": [
-    "library",
-    "dpdk",
-    "packet",
-    "processing"
-  ],
-  "url": "https://github.com/nimscale/dpdk",
-  "web": "http://dpdk.org/"
-}
+{"name":"dpdk","url":"https://github.com/nimscale/dpdk","method":"git","tags":[],"description":"Library for fast packet processing","license":"Apache License 2.0","web":"http://dpdk.org/","refs":["refs/heads/dpdk_bug_fix","refs/heads/master"],"heads":[{"name":"dpdk","version":"0.1.0","author":"Kean Sum Ooi","desc":"Nim bindings to DPDK","license":"Apache","skipDirs":["logs","dpdk-stable-16.07.2"],"skipFiles":["dpdk-16.07.2.tar.xz","instC_DPDK.sh","uninstC_DPDK.sh"],"skipExt":["a"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.16.0","ver":{"kind":"verEqLater","ver":"0.16.0"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

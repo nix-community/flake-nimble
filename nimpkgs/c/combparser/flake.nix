@@ -1,12 +1,12 @@
 {
-  description = ''
-    A parser combinator library for easy generation of complex parsers
-  '';
-  inputs.src-combparser.url = "https://github.com/PMunch/combparser";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A parser combinator library for easy generation of complex parsers'';
+  inputs."combparser-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

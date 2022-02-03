@@ -1,12 +1,12 @@
 {
-  description = ''
-    FIX Protocol optimized parser (Financial Information eXchange)
-  '';
-  inputs.src-newfix.url = "https://github.com/inv2004/newfix";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''FIX Protocol optimized parser (Financial Information eXchange)'';
+  inputs."newfix-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

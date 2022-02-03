@@ -1,12 +1,13 @@
 {
-  description = ''
-    libgcrypt wrapper
-  '';
-  inputs.src-libgcrypt.url = "https://github.com/FedericoCeratto/nim-libgcrypt";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''libgcrypt wrapper'';
+  inputs."libgcrypt-master".url = "path:./master";
+  inputs."libgcrypt-0_0_1".url = "path:./0_0_1";
+  inputs."libgcrypt-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

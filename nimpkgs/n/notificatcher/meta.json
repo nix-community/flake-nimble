@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "Small program to grab notifications from freedesktop and output them according to a format",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "notificatcher",
-  "tags": [
-    "binary",
-    "freedesktop",
-    "notifications",
-    "dbus"
-  ],
-  "url": "https://github.com/PMunch/notificatcher",
-  "web": "https://github.com/PMunch/notificatcher"
-}
+{"name":"notificatcher","url":"https://github.com/PMunch/notificatcher","method":"git","tags":[{"name":"notificatcher","version":"0.2.0","author":"PMunch","desc":"Small program to read freedesktop notifications and format them as strings","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":["nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 1.2.6","ver":{"kind":"verEqLater","ver":"1.2.6"}},{"name":"dbus","str":"any version","ver":{"kind":"verAny"}},{"name":"https://github.com/PMunch/docopt.nim","str":"#dispatch","ver":{"kind":"verSpecial","spe":"#dispatch"}}],"bin":["notificatcher"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/tags/v0.2.0"},{"name":"notificatcher","version":"0.3.0","author":"PMunch","desc":"Small program to read freedesktop notifications and format them as strings","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":["nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 1.2.6","ver":{"kind":"verEqLater","ver":"1.2.6"}},{"name":"dbus","str":"any version","ver":{"kind":"verAny"}},{"name":"https://github.com/PMunch/docopt.nim","str":"#dispatch","ver":{"kind":"verSpecial","spe":"#dispatch"}}],"bin":["notificatcher"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/tags/v0.3.0"}],"description":"Small program to grab notifications from freedesktop and output them according to a format","license":"MIT","web":"https://github.com/PMunch/notificatcher","refs":["refs/heads/master","refs/tags/v0.2.0","refs/tags/v0.3.0"],"heads":[{"name":"notificatcher","version":"0.3.0","author":"PMunch","desc":"Small program to read freedesktop notifications and format them as strings","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":["nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 1.2.6","ver":{"kind":"verEqLater","ver":"1.2.6"}},{"name":"dbus","str":"any version","ver":{"kind":"verAny"}},{"name":"https://github.com/PMunch/docopt.nim","str":"#dispatch","ver":{"kind":"verSpecial","spe":"#dispatch"}}],"bin":["notificatcher"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

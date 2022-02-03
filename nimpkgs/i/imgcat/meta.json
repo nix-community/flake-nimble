@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "See pictures in your console",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "imgcat",
-  "tags": [
-    "hybrid",
-    "crossplatform",
-    "terminal",
-    "images"
-  ],
-  "url": "https://github.com/not-lum/imgcat",
-  "web": "https://github.com/not-lum/imgcat"
-}
+{"name":"imgcat","url":"https://github.com/not-lum/imgcat","method":"git","tags":[],"description":"See pictures in your console","license":"MIT","web":"https://github.com/not-lum/imgcat","refs":["refs/heads/master"],"heads":[{"name":"imgcat","version":"0.2.0","author":"not-lum","desc":"See pictures in your console","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nim","str":">= 1.0.0","ver":{"kind":"verEqLater","ver":"1.0.0"}},{"name":"imageman","str":"0.8.2","ver":{"kind":"verEq","ver":"0.8.2"}},{"name":"argparse","str":"2.0.0","ver":{"kind":"verEq","ver":"2.0.0"}}],"bin":["imgcat"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

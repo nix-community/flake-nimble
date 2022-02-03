@@ -1,12 +1,12 @@
 {
-  description = ''
-    gameoflife is library for Game of Life.
-  '';
-  inputs.src-gameoflife.url = "https://github.com/jiro4989/gameoflife";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''gameoflife is library for Game of Life.'';
+  inputs."gameoflife-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Game Library in Nim with SDL2
-  '';
-  inputs.src-tinamou.url = "https://github.com/Double-oxygeN/tinamou";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Game Library in Nim with SDL2'';
+  inputs."tinamou-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

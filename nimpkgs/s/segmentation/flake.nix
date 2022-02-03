@@ -1,12 +1,13 @@
 {
-  description = ''
-    Unicode text segmentation tr29
-  '';
-  inputs.src-segmentation.url = "https://github.com/nitely/nim-segmentation";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Unicode text segmentation tr29'';
+  inputs."segmentation-master".url = "path:./master";
+  inputs."segmentation-v0_0_1".url = "path:./v0_0_1";
+  inputs."segmentation-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "Wrapper for OpenSSL's EVP interface",
-  "doc": null,
-  "license": "OpenSSL and SSLeay",
-  "method": "git",
-  "name": "openssl_evp",
-  "tags": [
-    "library",
-    "crypto",
-    "openssl"
-  ],
-  "url": "https://github.com/cowboy-coders/nim-openssl-evp",
-  "web": "https://github.com/cowboy-coders/nim-openssl-evp"
-}
+{"name":"openssl_evp","url":"https://github.com/cowboy-coders/nim-openssl-evp","method":"git","tags":[],"description":"Wrapper for OpenSSL's EVP interface","license":"OpenSSL and SSLeay","web":"https://github.com/cowboy-coders/nim-openssl-evp","refs":["refs/heads/fix/windows","refs/heads/master"],"heads":[{"name":"openssl_evp","version":"0.1.2","author":"Will Szumski","desc":"Wrapper for OpenSSL's EVP interface","license":"OpenSSL License and SSLeay License","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nimrod","str":">= 0.9.4","ver":{"kind":"verEqLater","ver":"0.9.4"}}],"bin":[],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

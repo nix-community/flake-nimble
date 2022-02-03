@@ -1,12 +1,13 @@
 {
-  description = ''
-    A thin SQLite wrapper with proper type safety
-  '';
-  inputs.src-tiny_sqlite.url = "https://github.com/GULPF/tiny_sqlite";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A thin SQLite wrapper with proper type safety'';
+  inputs."tiny_sqlite-master".url = "path:./master";
+  inputs."tiny_sqlite-v0_1_1".url = "path:./v0_1_1";
+  inputs."tiny_sqlite-v0_1_2".url = "path:./v0_1_2";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

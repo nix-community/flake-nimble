@@ -1,12 +1,12 @@
 {
-  description = ''
-    wrapper for the sendmail command
-  '';
-  inputs.src-easymail.url = "https://github.com/coocheenin/easymail";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''wrapper for the sendmail command'';
+  inputs."easymail-master".url = "path:./master";
+  inputs."easymail-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

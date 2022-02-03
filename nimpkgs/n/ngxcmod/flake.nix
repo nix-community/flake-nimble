@@ -1,12 +1,12 @@
 {
-  description = ''
-    High level wrapper for build nginx module w/ nginx-c-function
-  '';
-  inputs.src-ngxcmod.url = "https://github.com/ba0f3/ngxcmod.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''High level wrapper for build nginx module w/ nginx-c-function'';
+  inputs."ngxcmod-master".url = "path:./master";
+  inputs."ngxcmod-0_1_2".url = "path:./0_1_2";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

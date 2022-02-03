@@ -1,17 +1,1 @@
-{
-  "alias": null,
-  "description": "The Storage Performance Development Kit(SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications.",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "spdk",
-  "tags": [
-    "library",
-    "SSD",
-    "NVME",
-    "io",
-    "storage"
-  ],
-  "url": "https://github.com/nimscale/spdk.git",
-  "web": "https://github.com/nimscale/spdk.git"
-}
+{"name":"spdk","url":"https://github.com/nimscale/spdk.git","method":"git","tags":[],"description":"The Storage Performance Development Kit(SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications.","license":"MIT","web":"https://github.com/nimscale/spdk.git","refs":["refs/heads/master"],"heads":[{"name":"spdk","version":"16.08","author":"Nimscale","desc":"SDPK bind for nim.","license":"Apache Licence 2.0","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.15.3","ver":{"kind":"verEqLater","ver":"0.15.3"}}],"bin":[],"binDir":"","srcDir":"api","backend":"c","ref":"refs/heads/master"}]}

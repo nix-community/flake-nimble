@@ -1,12 +1,12 @@
 {
-  description = ''
-    Wrapper for AutoIt v3.3.14.2
-  '';
-  inputs.src-autonim.url = "https://github.com/Guevara-chan/AutoNim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Wrapper for AutoIt v3.3.14.2'';
+  inputs."autonim-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

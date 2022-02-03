@@ -1,12 +1,13 @@
 {
-  description = ''
-    Sequoia PGP wrapper for Nim
-  '';
-  inputs.src-sequoia.url = "https://github.com/ba0f3/sequoia.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Sequoia PGP wrapper for Nim'';
+  inputs."sequoia-master".url = "path:./master";
+  inputs."sequoia-0_1_0".url = "path:./0_1_0";
+  inputs."sequoia-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

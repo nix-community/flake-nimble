@@ -1,18 +1,1 @@
-{
-  "alias": null,
-  "description": "A brainfuck interpreter and compiler",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "brainfuck",
-  "tags": [
-    "library",
-    "binary",
-    "app",
-    "interpreter",
-    "compiler",
-    "language"
-  ],
-  "url": "https://github.com/def-/nim-brainfuck.git",
-  "web": "https://github.com/def-/nim-brainfuck"
-}
+{"name":"brainfuck","url":"https://github.com/def-/nim-brainfuck.git","method":"git","tags":[],"description":"A brainfuck interpreter and compiler","license":"MIT","web":"https://github.com/def-/nim-brainfuck","refs":["refs/heads/master"],"heads":[{"name":"brainfuck","version":"1.1","author":"Dennis Felsing","desc":"A brainfuck interpreter and compiler","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":["nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.10.0","ver":{"kind":"verEqLater","ver":"0.10.0"}},{"name":"docopt","str":">= 0.1.0","ver":{"kind":"verEqLater","ver":"0.1.0"}}],"bin":["brainfuck"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "REST API framework for Nim language",
-  "doc": null,
-  "license": "Apache License 2.0",
-  "method": "git",
-  "name": "presto",
-  "tags": [
-    "http",
-    "rest",
-    "server",
-    "client"
-  ],
-  "url": "https://github.com/status-im/nim-presto",
-  "web": "https://github.com/status-im/nim-presto"
-}
+{"name":"presto","url":"https://github.com/status-im/nim-presto","method":"git","tags":[],"description":"REST API framework for Nim language","license":"Apache License 2.0","web":"https://github.com/status-im/nim-presto","refs":["refs/heads/accept-handlers","refs/heads/allow-api-macro-in-generics","refs/heads/comma-arrays","refs/heads/custom-response","refs/heads/fix-assert-error","refs/heads/fix-chronicles-error","refs/heads/fix-exception-leak","refs/heads/fix-resterror-issue","refs/heads/fix-warnings","refs/heads/fix-windows-ci","refs/heads/master","refs/heads/more-debug-helpers","refs/heads/presto-engine","refs/heads/raw-api","refs/heads/redirect","refs/heads/rest-client","refs/heads/upgrade-ci"],"heads":[{"name":"presto","version":"0.0.4","author":"Status Research & Development GmbH","desc":"REST API implementation","license":"MIT","skipDirs":["tests","examples"],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 1.2.0","ver":{"kind":"verEqLater","ver":"1.2.0"}},{"name":"chronos","str":">= 3.0.9","ver":{"kind":"verEqLater","ver":"3.0.9"}},{"name":"chronicles","str":"any version","ver":{"kind":"verAny"}},{"name":"stew","str":"any version","ver":{"kind":"verAny"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

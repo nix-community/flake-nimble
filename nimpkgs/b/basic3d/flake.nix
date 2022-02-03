@@ -1,12 +1,12 @@
 {
-  description = ''
-    Deprecated module for vector/matrices operations.
-  '';
-  inputs.src-basic3d.url = "https://github.com/nim-lang/basic3d";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Deprecated module for vector/matrices operations.'';
+  inputs."basic3d-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    colorizeEcho is a package which colorize echo message on Windows command prompt.
-  '';
-  inputs.src-colorizeEcho.url = "https://github.com/s3pt3mb3r/colorizeEcho";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''colorizeEcho is a package which colorize echo message on Windows command prompt.'';
+  inputs."colorizeEcho-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

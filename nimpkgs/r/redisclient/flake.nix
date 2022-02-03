@@ -1,12 +1,12 @@
 {
-  description = ''
-    Redis client for Nim
-  '';
-  inputs.src-redisclient.url = "https://github.com/xmonader/nim-redisclient";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Redis client for Nim'';
+  inputs."redisclient-master".url = "path:./master";
+  inputs."redisclient-0_1_1".url = "path:./0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

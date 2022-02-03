@@ -1,12 +1,12 @@
 {
-  description = ''
-    MaxMind GeoIP library
-  '';
-  inputs.src-mmgeoip.url = "https://github.com/FedericoCeratto/nim-mmgeoip";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''MaxMind GeoIP library'';
+  inputs."mmgeoip-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

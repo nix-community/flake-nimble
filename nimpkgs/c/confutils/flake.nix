@@ -1,12 +1,12 @@
 {
-  description = ''
-    Simplified handling of command line options and config files
-  '';
-  inputs.src-confutils.url = "https://github.com/status-im/nim-confutils";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Simplified handling of command line options and config files'';
+  inputs."confutils-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

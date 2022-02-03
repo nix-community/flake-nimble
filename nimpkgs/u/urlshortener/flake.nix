@@ -1,12 +1,12 @@
 {
-  description = ''
-    A URL shortener cli app. using bit.ly
-  '';
-  inputs.src-urlshortener.url = "https://github.com/jabbalaci/UrlShortener";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A URL shortener cli app. using bit.ly'';
+  inputs."urlshortener-master".url = "path:./master";
+  inputs."urlshortener-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

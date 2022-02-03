@@ -1,0 +1,17 @@
+{
+  description = ''Nimterop makes C/C++ interop within Nim seamless'';
+  inputs.src-nimterop-v0_6_11.flake = false;
+  inputs.src-nimterop-v0_6_11.type = "github";
+  inputs.src-nimterop-v0_6_11.owner = "genotrance";
+  inputs.src-nimterop-v0_6_11.repo = "nimterop";
+  inputs.src-nimterop-v0_6_11.ref = "refs/tags/v0.6.11";
+  
+  outputs = { self, nixpkgs, src-nimterop-v0_6_11, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-nimterop-v0_6_11;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimterop-v0_6_11"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

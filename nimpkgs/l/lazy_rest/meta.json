@@ -1,17 +1,1 @@
-{
-  "alias": null,
-  "description": "Simple reST HTML generation with some extras.",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "lazy_rest",
-  "tags": [
-    "library",
-    "rst",
-    "rest",
-    "text",
-    "html"
-  ],
-  "url": "https://github.com/Araq/lazy_rest",
-  "web": "https://github.com/Araq/lazy_rest"
-}
+{"name":"lazy_rest","url":"https://github.com/Araq/lazy_rest","method":"git","tags":[{"name":"lazy_rest","version":"0.2.0","author":"Grzegorz Adam Hankiewicz","desc":"Simple rst (reStructuredText) HTML generation from Nimrod or C with some extras","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":["docs","external","lazy_rest_pkg","resources"],"installFiles":["nakefile.nim","LICENSE.rst","README.rst","lazy_rest.nim","lazy_rest_badger.nim","lazy_rest_badger.nimrod.cfg","lazy_rest_c_api.nim"],"installExt":[],"requires":[{"name":"nake","str":">= 1.2","ver":{"kind":"verEqLater","ver":"1.2"}},{"name":"argument_parser","str":">= 0.2","ver":{"kind":"verEqLater","ver":"0.2"}},{"name":"https://github.com/gradha/badger_bits.git","str":"any version","ver":{"kind":"verAny"}}],"bin":["lazy_rest_badger.exe"],"binDir":"","srcDir":"","backend":"c","ref":"refs/tags/v0.2.0"},{"name":"lazy_rest","version":"0.2.2","author":"Grzegorz Adam Hankiewicz","desc":"Simple rst (reStructuredText) HTML generation from Nimrod or C with some extras","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":["resources","docs","lazy_rest_pkg"],"installFiles":["nakefile.nim","LICENSE.rst","README.rst","lazy_rest.nim","lazy_rest_badger.nim","lazy_rest_badger.nimrod.cfg","lazy_rest_c_api.nim"],"installExt":[],"requires":[{"name":"nake","str":">= 1.2","ver":{"kind":"verEqLater","ver":"1.2"}},{"name":"argument_parser","str":">= 0.2","ver":{"kind":"verEqLater","ver":"0.2"}},{"name":"https://github.com/gradha/badger_bits.git","str":">= 0.2.2","ver":{"kind":"verEqLater","ver":"0.2.2"}}],"bin":["lazy_rest_badger.exe"],"binDir":"","srcDir":"","backend":"c","ref":"refs/tags/v0.2.2"}],"description":"Simple reST HTML generation with some extras.","license":"MIT","web":"https://github.com/Araq/lazy_rest","refs":["refs/heads/master","refs/heads/stable","refs/tags/v0.2.0","refs/tags/v0.2.2"],"heads":[{"name":"lazy_rest","version":"0.2.3","author":"Grzegorz Adam Hankiewicz","desc":"Simple rst (reStructuredText) HTML generation from Nimrod or C with some extras","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":["resources","docs","lazy_rest_pkg"],"installFiles":["nakefile.nim","LICENSE.rst","README.rst","lazy_rest.nim","lazy_rest_badger.nim","lazy_rest_badger.nimrod.cfg","lazy_rest_c_api.nim"],"installExt":[],"requires":[{"name":"nake","str":">= 1.2","ver":{"kind":"verEqLater","ver":"1.2"}},{"name":"argument_parser","str":">= 0.2","ver":{"kind":"verEqLater","ver":"0.2"}},{"name":"https://github.com/gradha/badger_bits.git","str":">= 0.2.2","ver":{"kind":"verEqLater","ver":"0.2.2"}}],"bin":["lazy_rest_badger.exe"],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

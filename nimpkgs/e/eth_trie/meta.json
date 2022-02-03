@@ -1,13 +1,1 @@
-{
-  "alias": null,
-  "description": "Merkle Patricia Tries as specified by Ethereum (deprecated, now part of the 'eth' package)",
-  "doc": null,
-  "license": "Apache License 2.0",
-  "method": "git",
-  "name": "eth_trie",
-  "tags": [
-    "deprecated"
-  ],
-  "url": "https://github.com/status-im/nim-eth-trie",
-  "web": "https://github.com/status-im/nim-eth-trie"
-}
+{"name":"eth_trie","url":"https://github.com/status-im/nim-eth-trie","method":"git","tags":[],"description":"Merkle Patricia Tries as specified by Ethereum (deprecated, now part of the 'eth' package)","license":"Apache License 2.0","web":"https://github.com/status-im/nim-eth-trie","refs":["refs/heads/emptyrlp","refs/heads/master","refs/heads/module-renames","refs/heads/refactor-rlp","refs/heads/transactions"],"heads":[{"name":"eth_trie","version":"1.0.0","author":"Status Research & Development GmbH","desc":"Merkle Patricia Tries as specified by Ethereum","license":"Apache License 2.0","skipDirs":["tests"],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.18.1","ver":{"kind":"verEqLater","ver":"0.18.1"}},{"name":"rlp","str":"any version","ver":{"kind":"verAny"}},{"name":"nimcrypto","str":"any version","ver":{"kind":"verAny"}},{"name":"ranges","str":"any version","ver":{"kind":"verAny"}},{"name":"rocksdb","str":"any version","ver":{"kind":"verAny"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

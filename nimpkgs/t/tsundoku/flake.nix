@@ -1,12 +1,12 @@
 {
-  description = ''
-    Simple and lightweight OPDS ebook server
-  '';
-  inputs.src-tsundoku.url = "https://github.com/FedericoCeratto/tsundoku";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Simple and lightweight OPDS ebook server'';
+  inputs."tsundoku-master".url = "path:./master";
+  inputs."tsundoku-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

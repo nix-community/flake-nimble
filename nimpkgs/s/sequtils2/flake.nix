@@ -1,12 +1,13 @@
 {
-  description = ''
-    Additional functions for sequences that are not present in sequtils
-  '';
-  inputs.src-sequtils2.url = "https://github.com/Michedev/sequtils2";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Additional functions for sequences that are not present in sequtils'';
+  inputs."sequtils2-master".url = "path:./master";
+  inputs."sequtils2-1_0_0".url = "path:./1_0_0";
+  inputs."sequtils2-1_1_0".url = "path:./1_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

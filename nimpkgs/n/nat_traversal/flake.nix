@@ -1,12 +1,12 @@
 {
-  description = ''
-    miniupnpc and libnatpmp wrapper
-  '';
-  inputs.src-nat_traversal.url = "https://github.com/status-im/nim-nat-traversal";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''miniupnpc and libnatpmp wrapper'';
+  inputs."nat_traversal-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

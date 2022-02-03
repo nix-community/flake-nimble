@@ -1,12 +1,12 @@
 {
-  description = ''
-    Generate and parse Mac OS X .plist files in Nim.
-  '';
-  inputs.src-plists.url = "https://github.com/yglukhov/plists";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Generate and parse Mac OS X .plist files in Nim.'';
+  inputs."plists-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

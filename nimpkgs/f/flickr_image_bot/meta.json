@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "Twitter bot for fetching flickr images with tags",
-  "doc": null,
-  "license": "GPL-3.0",
-  "method": "git",
-  "name": "flickr_image_bot",
-  "tags": [
-    "twitter",
-    "twitter-bot",
-    "flickr"
-  ],
-  "url": "https://github.com/snus-kin/flickr-image-bot",
-  "web": "https://github.com/snus-kin/flickr-image-bot"
-}
+{"name":"flickr_image_bot","url":"https://github.com/snus-kin/flickr-image-bot","method":"git","tags":[],"description":"Twitter bot for fetching flickr images with tags","license":"GPL-3.0","web":"https://github.com/snus-kin/flickr-image-bot","refs":["refs/heads/master"],"heads":[{"name":"flickr_image_bot","version":"0.1.0","author":"snus-kin","desc":"Twitter bot for fetching flickr images with tags","license":"GPL-3.0","skipDirs":[],"skipFiles":[],"skipExt":["nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.19.2","ver":{"kind":"verEqLater","ver":"0.19.2"}},{"name":"https://github.com/snus-kin/twitter.nim","str":"any version","ver":{"kind":"verAny"}}],"bin":["flickr_image_bot"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

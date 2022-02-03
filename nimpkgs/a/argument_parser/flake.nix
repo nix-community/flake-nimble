@@ -1,12 +1,12 @@
 {
-  description = ''
-    Provides a complex command-line parser
-  '';
-  inputs.src-argument_parser.url = "https://github.com/Xe/argument_parser/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Provides a complex command-line parser'';
+  inputs."argument_parser-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

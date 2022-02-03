@@ -1,12 +1,12 @@
 {
-  description = ''
-    proc to join (and leave) a multicast group
-  '';
-  inputs.src-multicast.url = "https://github.com/enthus1ast/nimMulticast";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''proc to join (and leave) a multicast group'';
+  inputs."multicast-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

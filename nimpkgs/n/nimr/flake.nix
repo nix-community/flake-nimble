@@ -1,12 +1,12 @@
 {
-  description = ''
-    Helper to run nim code like a script
-  '';
-  inputs.src-nimr.url = "https://github.com/Jeff-Ciesielski/nimr";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Helper to run nim code like a script'';
+  inputs."nimr-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

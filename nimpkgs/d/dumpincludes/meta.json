@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "See where your exe size comes from.",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "dumpincludes",
-  "tags": [
-    "imports",
-    "includes",
-    "perf",
-    "exe"
-  ],
-  "url": "https://github.com/treeform/dumpincludes",
-  "web": "https://github.com/treeform/dumpincludes"
-}
+{"name":"dumpincludes","url":"https://github.com/treeform/dumpincludes","method":"git","tags":[],"description":"See where your exe size comes from.","license":"MIT","web":"https://github.com/treeform/dumpincludes","refs":["refs/heads/master"],"heads":[{"name":"dumpincludes","version":"0.0.1","author":"Andre von Houck","desc":"See where your exe size comes from.","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":["nim"],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 1.2.2","ver":{"kind":"verEqLater","ver":"1.2.2"}},{"name":"cligen","str":">= 1.3.2","ver":{"kind":"verEqLater","ver":"1.3.2"}}],"bin":["dumpincludes"],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

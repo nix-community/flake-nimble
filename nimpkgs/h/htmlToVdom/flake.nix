@@ -1,12 +1,12 @@
 {
-  description = ''
-    Karax extension to convert html in string form to embeddable Karax vdom
-  '';
-  inputs.src-htmlToVdom.url = "https://github.com/C-NERD/htmlToVdom";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Karax extension to convert html in string form to embeddable Karax vdom'';
+  inputs."htmlToVdom-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

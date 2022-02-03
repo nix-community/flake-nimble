@@ -1,17 +1,1 @@
-{
-  "alias": null,
-  "description": "Protobuf implementation compatible with the nim-serialization framework.",
-  "doc": null,
-  "license": "Apache License 2.0",
-  "method": "git",
-  "name": "protobuf_serialization",
-  "tags": [
-    "library",
-    "protobuf",
-    "serialization",
-    "proto2",
-    "proto3"
-  ],
-  "url": "https://github.com/status-im/nim-protobuf-serialization",
-  "web": "https://github.com/status-im/nim-protobuf-serialization"
-}
+{"name":"protobuf_serialization","url":"https://github.com/status-im/nim-protobuf-serialization","method":"git","tags":[],"description":"Protobuf implementation compatible with the nim-serialization framework.","license":"Apache License 2.0","web":"https://github.com/status-im/nim-protobuf-serialization","refs":["refs/heads/flavors","refs/heads/github_action","refs/heads/master"],"heads":[{"name":"protobuf_serialization","version":"0.2.0","author":"Joey Yakimowich-Payne","desc":"Protobuf implementation compatible with the nim-serialization framework.","license":"MIT","skipDirs":["tests"],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 1.2.0","ver":{"kind":"verEqLater","ver":"1.2.0"}},{"name":"stew","str":"any version","ver":{"kind":"verAny"}},{"name":"faststreams","str":"any version","ver":{"kind":"verAny"}},{"name":"serialization","str":"any version","ver":{"kind":"verAny"}},{"name":"combparser","str":"any version","ver":{"kind":"verAny"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

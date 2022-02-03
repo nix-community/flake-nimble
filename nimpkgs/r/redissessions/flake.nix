@@ -1,12 +1,12 @@
 {
-  description = ''
-    Redis-backed sessions for jester
-  '';
-  inputs.src-redissessions.url = "https://github.com/ithkuil/redissessions/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Redis-backed sessions for jester'';
+  inputs."redissessions-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

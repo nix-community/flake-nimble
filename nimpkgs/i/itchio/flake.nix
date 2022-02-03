@@ -1,12 +1,12 @@
 {
-  description = ''
-    itch.io API Client for Nim
-  '';
-  inputs.src-itchio.url = "https://github.com/juancarlospaco/nim-itchio";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''itch.io API Client for Nim'';
+  inputs."itchio-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

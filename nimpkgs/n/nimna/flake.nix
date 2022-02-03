@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nucleic acid folding and design.
-  '';
-  inputs.src-nimna.url = "https://github.com/mjendrusch/nimna";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nucleic acid folding and design.'';
+  inputs."nimna-master".url = "path:./master";
+  inputs."nimna-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

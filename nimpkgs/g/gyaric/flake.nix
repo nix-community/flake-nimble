@@ -1,12 +1,14 @@
 {
-  description = ''
-    gyaric is a module to encode/decode text to unreadable gyaru's text.
-  '';
-  inputs.src-gyaric.url = "https://github.com/jiro4989/gyaric";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''gyaric is a module to encode/decode text to unreadable gyaru's text.'';
+  inputs."gyaric-master".url = "path:./master";
+  inputs."gyaric-v1_0_0".url = "path:./v1_0_0";
+  inputs."gyaric-v1_0_1".url = "path:./v1_0_1";
+  inputs."gyaric-v1_0_2".url = "path:./v1_0_2";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

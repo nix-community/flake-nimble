@@ -1,12 +1,12 @@
 {
-  description = ''
-    ffmpeg.nim is the Nim binding for FFMpeg(4.3.2).
-  '';
-  inputs.src-ffmpeg.url = "https://github.com/momeemt/ffmpeg.nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''ffmpeg.nim is the Nim binding for FFMpeg(4.3.2).'';
+  inputs."ffmpeg-master".url = "path:./master";
+  inputs."ffmpeg-0_3_11".url = "path:./0_3_11";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

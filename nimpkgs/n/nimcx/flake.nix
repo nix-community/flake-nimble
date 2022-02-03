@@ -1,12 +1,12 @@
 {
-  description = ''
-    Color and utilities library for linux terminal.
-  '';
-  inputs.src-nimcx.url = "https://github.com/qqtop/nimcx";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Color and utilities library for linux terminal.'';
+  inputs."nimcx-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    A simple gap buffer implementation
-  '';
-  inputs.src-gapbuffer.url = "https://notabug.org/vktec/nim-gapbuffer.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A simple gap buffer implementation'';
+  inputs."gapbuffer-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

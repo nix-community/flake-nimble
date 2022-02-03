@@ -1,12 +1,12 @@
 {
-  description = ''
-    Pack rects into bigger rect
-  '';
-  inputs.src-rect_packer.url = "https://github.com/yglukhov/rect_packer";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Pack rects into bigger rect'';
+  inputs."rect_packer-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

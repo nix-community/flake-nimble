@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim port of a simple 2D physics engine
-  '';
-  inputs.src-impulse_engine.url = "https://github.com/matkuki/Nim-Impulse-Engine";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim port of a simple 2D physics engine'';
+  inputs."impulse_engine-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

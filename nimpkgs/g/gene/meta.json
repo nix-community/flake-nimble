@@ -1,16 +1,1 @@
-{
-  "alias": null,
-  "description": "Gene - a general purpose language",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "gene",
-  "tags": [
-    "lisp",
-    "language",
-    "interpreter",
-    "gene"
-  ],
-  "url": "https://github.com/gcao/gene-new",
-  "web": "https://github.com/gcao/gene-new"
-}
+{"name":"gene","url":"https://github.com/gcao/gene-new","method":"git","tags":[],"description":"Gene - a general purpose language","license":"MIT","web":"https://github.com/gcao/gene-new","refs":["refs/heads/async","refs/heads/change-char-parsing","refs/heads/decorator","refs/heads/exception","refs/heads/exp/compile","refs/heads/exp/complex_symbol","refs/heads/exp/gene-invoker","refs/heads/exp/native","refs/heads/exp/noise-based-repl","refs/heads/exp/oop/prop_args","refs/heads/exp/op_shortcuts","refs/heads/exp/pattern_matching","refs/heads/exp/quote-as-template","refs/heads/exp/remove-cast","refs/heads/exp/trace","refs/heads/hot-reload","refs/heads/http","refs/heads/master","refs/heads/module","refs/heads/native","refs/heads/nim-1.6-issue","refs/heads/nim-1.6-issue2","refs/heads/ns/member_missing","refs/heads/oop","refs/heads/optimize/core-types","refs/heads/optimize/evaluators-array","refs/heads/optimize/frame-cache","refs/heads/optimize/mutable-exprs","refs/heads/optimize/scope","refs/heads/optimize/scope+mutable-exprs","refs/heads/optimize/scope-cache","refs/heads/package","refs/heads/refactor/data_to_children","refs/heads/refactor/expr","refs/heads/refactor/invoker-to-evaluator","refs/heads/refactor/quote-unquote","refs/heads/regex","refs/heads/repl-on-noise","refs/heads/selector","refs/heads/template"],"heads":[{"name":"gene","version":"0.1.0","author":"Guoliang Cao","desc":"Gene - a general purpose language","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["nim"],"requires":[{"name":"nim","str":">= 1.0.0","ver":{"kind":"verEqLater","ver":"1.0.0"}}],"bin":["gene"],"binDir":"bin","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

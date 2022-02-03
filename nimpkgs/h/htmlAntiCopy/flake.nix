@@ -1,12 +1,12 @@
 {
-  description = ''
-    Block copy of any text in HTML
-  '';
-  inputs.src-htmlAntiCopy.url = "https://github.com/thisago/htmlAntiCopy";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Block copy of any text in HTML'';
+  inputs."htmlAntiCopy-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

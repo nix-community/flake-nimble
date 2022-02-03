@@ -1,12 +1,12 @@
 {
-  description = ''
-    Wrapper for libsvm.
-  '';
-  inputs.src-libsvm_legacy.url = "https://github.com/nim-lang/libsvm_legacy";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Wrapper for libsvm.'';
+  inputs."libsvm_legacy-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

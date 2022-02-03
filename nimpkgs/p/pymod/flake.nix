@@ -1,12 +1,12 @@
 {
-  description = ''
-    Auto-generate a Python module that wraps a Nim module.
-  '';
-  inputs.src-pymod.url = "https://github.com/jboy/nim-pymod";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Auto-generate a Python module that wraps a Nim module.'';
+  inputs."pymod-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

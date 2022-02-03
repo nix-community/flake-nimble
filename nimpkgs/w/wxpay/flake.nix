@@ -1,12 +1,12 @@
 {
-  description = ''
-    A wechat payment sdk for nim.
-  '';
-  inputs.src-wxpay.url = "https://github.com/lihf8515/wxpay";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A wechat payment sdk for nim.'';
+  inputs."wxpay-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

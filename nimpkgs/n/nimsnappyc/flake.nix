@@ -1,12 +1,12 @@
 {
-  description = ''
-    Wrapper for the Snappy-C compression library
-  '';
-  inputs.src-nimsnappyc.url = "https://github.com/NimCompression/nimsnappyc";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Wrapper for the Snappy-C compression library'';
+  inputs."nimsnappyc-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

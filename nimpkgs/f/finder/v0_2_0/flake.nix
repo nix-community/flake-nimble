@@ -1,0 +1,25 @@
+{
+  description = ''fs memory zip finder implement in Nim'';
+  inputs.src-finder-v0_2_0.flake = false;
+  inputs.src-finder-v0_2_0.type = "github";
+  inputs.src-finder-v0_2_0.owner = "bung87";
+  inputs.src-finder-v0_2_0.repo = "finder";
+  inputs.src-finder-v0_2_0.ref = "refs/tags/v0.2.0";
+  
+  
+  inputs."zippy".url = "path:../../../z/zippy";
+  inputs."zippy".type = "github";
+  inputs."zippy".owner = "riinr";
+  inputs."zippy".repo = "flake-nimble";
+  inputs."zippy".ref = "flake-pinning";
+  inputs."zippy".dir = "nimpkgs/z/zippy";
+
+  outputs = { self, nixpkgs, src-finder-v0_2_0, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-finder-v0_2_0;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-finder-v0_2_0"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

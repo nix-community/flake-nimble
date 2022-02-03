@@ -1,12 +1,12 @@
 {
-  description = ''
-    Lazy evaluated sequences
-  '';
-  inputs.src-lazyseq.url = "https://github.com/markspanbroek/nim-lazyseq";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Lazy evaluated sequences'';
+  inputs."lazyseq-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

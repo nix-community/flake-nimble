@@ -1,12 +1,12 @@
 {
-  description = ''
-    New atomics, thread primitives, channels and atomic refcounting for --gc:arc/orc.
-  '';
-  inputs.src-threading.url = "https://github.com/nim-lang/threading";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''New atomics, thread primitives, channels and atomic refcounting for --gc:arc/orc.'';
+  inputs."threading-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

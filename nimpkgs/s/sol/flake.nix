@@ -1,12 +1,12 @@
 {
-  description = ''
-    A SIMD-accelerated vector library written in C99 with Nim bindings.
-  '';
-  inputs.src-sol.url = "https://github.com/davidgarland/sol";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A SIMD-accelerated vector library written in C99 with Nim bindings.'';
+  inputs."sol-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

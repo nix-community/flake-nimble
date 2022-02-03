@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim bindings for GLFW library.
-  '';
-  inputs.src-nimrod-glfw.url = "https://github.com/rafaelvasco/nimrod-glfw/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim bindings for GLFW library.'';
+  inputs."nimrod-glfw-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

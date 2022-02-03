@@ -1,12 +1,13 @@
 {
-  description = ''
-    Integrator framework for Molecular Dynamic evolutions
-  '';
-  inputs.src-mdevolve.url = "https://github.com/jxy/MDevolve";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Integrator framework for Molecular Dynamic evolutions'';
+  inputs."mdevolve-master".url = "path:./master";
+  inputs."mdevolve-v0_1_1".url = "path:./v0_1_1";
+  inputs."mdevolve-v1_0_0".url = "path:./v1_0_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

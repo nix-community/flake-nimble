@@ -1,12 +1,13 @@
 {
-  description = ''
-    libffi wrapper for Nim.
-  '';
-  inputs.src-libffi.url = "https://github.com/Araq/libffi";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''libffi wrapper for Nim.'';
+  inputs."libffi-master".url = "path:./master";
+  inputs."libffi-1_0_3".url = "path:./1_0_3";
+  inputs."libffi-1_0_4".url = "path:./1_0_4";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

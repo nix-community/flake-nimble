@@ -1,12 +1,13 @@
 {
-  description = ''
-    A Nim wrapper for the Spotify Web API
-  '';
-  inputs.src-spotify.url = "https://github.com/CORDEA/spotify";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A Nim wrapper for the Spotify Web API'';
+  inputs."spotify-master".url = "path:./master";
+  inputs."spotify-v0_1".url = "path:./v0_1";
+  inputs."spotify-v0_1_1".url = "path:./v0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

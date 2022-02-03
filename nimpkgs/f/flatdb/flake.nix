@@ -1,12 +1,12 @@
 {
-  description = ''
-    small/tiny, flatfile, jsonl based, inprogress database for nim
-  '';
-  inputs.src-flatdb.url = "https://github.com/enthus1ast/flatdb";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''small/tiny, flatfile, jsonl based, inprogress database for nim'';
+  inputs."flatdb-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

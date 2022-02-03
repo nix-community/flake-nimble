@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim structs to work with Kdb in type-safe manner and low-level Nim to Kdb bindings
-  '';
-  inputs.src-kdb.url = "https://github.com/inv2004/kdb_nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim structs to work with Kdb in type-safe manner and low-level Nim to Kdb bindings'';
+  inputs."kdb-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

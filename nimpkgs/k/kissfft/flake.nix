@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim binding for KissFFT Fast Fourier Transform library
-  '';
-  inputs.src-kissfft.url = "https://github.com/m13253/nim-kissfft";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim binding for KissFFT Fast Fourier Transform library'';
+  inputs."kissfft-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

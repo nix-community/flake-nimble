@@ -1,12 +1,12 @@
 {
-  description = ''
-    glue code generator to bind Nim and Lua together using Nim's powerful macro
-  '';
-  inputs.src-nimLUA.url = "https://github.com/jangko/nimLUA";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''glue code generator to bind Nim and Lua together using Nim's powerful macro'';
+  inputs."nimLUA-master".url = "path:./master";
+  inputs."nimLUA-v0_3_8".url = "path:./v0_3_8";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    The Blackvas CLI
-  '';
-  inputs.src-blackvas_cli.url = "https://github.com/momeemt/BlackvasCli";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''The Blackvas CLI'';
+  inputs."blackvas_cli-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

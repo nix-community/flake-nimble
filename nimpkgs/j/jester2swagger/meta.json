@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "Converts a file with Jester routes to Swagger JSON which can be imported in Postman.",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "jester2swagger",
-  "tags": [
-    "jester",
-    "swagger",
-    "postman"
-  ],
-  "url": "https://github.com/ThomasTJdev/jester2swagger",
-  "web": "https://github.com/ThomasTJdev/jester2swagger"
-}
+{"name":"jester2swagger","url":"https://github.com/ThomasTJdev/jester2swagger","method":"git","tags":[],"description":"Converts a file with Jester routes to Swagger JSON which can be imported in Postman.","license":"MIT","web":"https://github.com/ThomasTJdev/jester2swagger","refs":["refs/heads/main"],"heads":[{"name":"jester2swagger","version":"0.1.0","author":"ThomasTJdev","desc":"Generate Swagger JSON from Jester-routes","license":"MIT","skipDirs":[],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":["jester2swagger"],"requires":[{"name":"nim","str":">= 1.4.8","ver":{"kind":"verEqLater","ver":"1.4.8"}},{"name":"cligen","str":">= 1.5.3","ver":{"kind":"verEqLater","ver":"1.5.3"}}],"bin":["jester2swagger"],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/main"}]}

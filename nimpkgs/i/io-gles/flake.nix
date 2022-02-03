@@ -1,12 +1,12 @@
 {
-  description = ''
-    Obsolete - please use gles instead!
-  '';
-  inputs.src-io-gles.url = "https://github.com/nimious/io-gles.git";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Obsolete - please use gles instead!'';
+  inputs."io-gles-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

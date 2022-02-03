@@ -1,12 +1,12 @@
 {
-  description = ''
-    Export Nim functions to sqlite3
-  '';
-  inputs.src-exporttosqlite3.url = "https://github.com/niklaskorz/nim-exporttosqlite3";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Export Nim functions to sqlite3'';
+  inputs."exporttosqlite3-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

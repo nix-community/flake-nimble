@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "Nim Library for sequence (protein/nucleotide) bioinformatics",
-  "doc": null,
-  "license": "BSD-3",
-  "method": "git",
-  "name": "nimbioseq",
-  "tags": [
-    "bioinformatics",
-    "fasta",
-    "fastq"
-  ],
-  "url": "https://github.com/jhbadger/nimbioseq",
-  "web": "https://github.com/jhbadger/nimbioseq"
-}
+{"name":"nimbioseq","url":"https://github.com/jhbadger/nimbioseq","method":"git","tags":[],"description":"Nim Library for sequence (protein/nucleotide) bioinformatics","license":"BSD-3","web":"https://github.com/jhbadger/nimbioseq","refs":["refs/heads/master"],"heads":[{"name":"nimbioseq","version":"0.3.20181126","author":"Jonathan Badger","desc":"Nim Library for sequence (protein/nucleotide) bioinformatics","license":"BSD-3","skipDirs":[],"skipFiles":["checkFastq.nim","extractFastx.nim","kmerCount.nim","seqSummary.nim"],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.17.2","ver":{"kind":"verEqLater","ver":"0.17.2"}},{"name":"zip","str":">= 0.2.1","ver":{"kind":"verEqLater","ver":"0.2.1"}}],"bin":[],"binDir":"","srcDir":"src","backend":"c","ref":"refs/heads/master"}]}

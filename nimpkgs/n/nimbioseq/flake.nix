@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim Library for sequence (protein/nucleotide) bioinformatics
-  '';
-  inputs.src-nimbioseq.url = "https://github.com/jhbadger/nimbioseq";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim Library for sequence (protein/nucleotide) bioinformatics'';
+  inputs."nimbioseq-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

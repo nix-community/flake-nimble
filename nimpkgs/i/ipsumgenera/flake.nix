@@ -1,12 +1,12 @@
 {
-  description = ''
-    Static blog generator ala Jekyll.
-  '';
-  inputs.src-ipsumgenera.url = "https://github.com/dom96/ipsumgenera";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Static blog generator ala Jekyll.'';
+  inputs."ipsumgenera-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

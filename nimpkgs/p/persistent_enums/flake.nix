@@ -1,12 +1,12 @@
 {
-  description = ''
-    Define enums which values preserve their binary representation upon inserting or reordering
-  '';
-  inputs.src-persistent_enums.url = "https://github.com/yglukhov/persistent_enums";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Define enums which values preserve their binary representation upon inserting or reordering'';
+  inputs."persistent_enums-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

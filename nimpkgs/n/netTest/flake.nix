@@ -1,12 +1,12 @@
 {
-  description = ''
-    Connection Test for Nim Web Applications
-  '';
-  inputs.src-netTest.url = "https://github.com/blmvxer/netTest";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Connection Test for Nim Web Applications'';
+  inputs."netTest-main".url = "path:./main";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

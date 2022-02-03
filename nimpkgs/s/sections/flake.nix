@@ -1,12 +1,12 @@
 {
-  description = ''
-    `Section` macro with BDD aliases for testing
-  '';
-  inputs.src-sections.url = "https://github.com/c0ffeeartc/nim-sections";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''`Section` macro with BDD aliases for testing'';
+  inputs."sections-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

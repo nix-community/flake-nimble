@@ -1,12 +1,12 @@
 {
-  description = ''
-    threadsafe timerpool implementation for event purpose
-  '';
-  inputs.src-timerpool.url = "https://github.com/mikra01/timerpool/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''threadsafe timerpool implementation for event purpose'';
+  inputs."timerpool-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Create files of the desired size
-  '';
-  inputs.src-fwrite.url = "https://github.com/pdrb/nim-fwrite";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Create files of the desired size'';
+  inputs."fwrite-master".url = "path:./master";
+  inputs."fwrite-v1_0_0".url = "path:./v1_0_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

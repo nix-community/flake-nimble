@@ -1,15 +1,1 @@
-{
-  "alias": null,
-  "description": "High-level libsodium bindings",
-  "doc": null,
-  "license": "MIT",
-  "method": "git",
-  "name": "sodium",
-  "tags": [
-    "crypto",
-    "security",
-    "sodium"
-  ],
-  "url": "https://github.com/zielmicha/libsodium.nim",
-  "web": "https://github.com/zielmicha/libsodium.nim"
-}
+{"name":"sodium","url":"https://github.com/zielmicha/libsodium.nim","method":"git","tags":[],"description":"High-level libsodium bindings","license":"MIT","web":"https://github.com/zielmicha/libsodium.nim","refs":["refs/heads/master"],"heads":[{"name":"sodium","version":"0.2.0","author":"Michał Zieliński <michal@zielinscy.org.pl>","desc":"libsodium wrapper","license":"MIT","skipDirs":["tests"],"skipFiles":[],"skipExt":[],"installDirs":[],"installFiles":[],"installExt":[],"requires":[{"name":"nim","str":">= 0.18.0","ver":{"kind":"verEqLater","ver":"0.18.0"}}],"bin":[],"binDir":"","srcDir":"","backend":"c","ref":"refs/heads/master"}]}

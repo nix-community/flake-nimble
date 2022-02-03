@@ -1,12 +1,12 @@
 {
-  description = ''
-    Low level wrapper for the fontconfig library.
-  '';
-  inputs.src-fontconfig.url = "https://github.com/Parashurama/fontconfig";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Low level wrapper for the fontconfig library.'';
+  inputs."fontconfig-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

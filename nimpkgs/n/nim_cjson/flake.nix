@@ -1,12 +1,12 @@
 {
-  description = ''
-    cjson wrapper for Nim
-  '';
-  inputs.src-nim_cjson.url = "https://github.com/muxueqz/nim_cjson";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''cjson wrapper for Nim'';
+  inputs."nim_cjson-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

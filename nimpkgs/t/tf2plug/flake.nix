@@ -1,12 +1,12 @@
 {
-  description = ''
-    A mod manager for TF2
-  '';
-  inputs.src-tf2plug.url = "https://gitlab.com/waylon531/tf2plug";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A mod manager for TF2'';
+  inputs."tf2plug-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

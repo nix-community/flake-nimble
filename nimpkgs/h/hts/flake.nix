@@ -1,12 +1,52 @@
 {
-  description = ''
-    htslib wrapper for nim
-  '';
-  inputs.src-hts.url = "https://github.com/brentp/hts-nim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''htslib wrapper for nim'';
+  inputs."hts-master".url = "path:./master";
+  inputs."hts-v0_1_7".url = "path:./v0_1_7";
+  inputs."hts-v0_1_8".url = "path:./v0_1_8";
+  inputs."hts-v0_1_9".url = "path:./v0_1_9";
+  inputs."hts-v0_2_11".url = "path:./v0_2_11";
+  inputs."hts-v0_2_12".url = "path:./v0_2_12";
+  inputs."hts-v0_2_13".url = "path:./v0_2_13";
+  inputs."hts-v0_2_14".url = "path:./v0_2_14";
+  inputs."hts-v0_2_15".url = "path:./v0_2_15";
+  inputs."hts-v0_2_16".url = "path:./v0_2_16";
+  inputs."hts-v0_2_17".url = "path:./v0_2_17";
+  inputs."hts-v0_2_18".url = "path:./v0_2_18";
+  inputs."hts-v0_2_19".url = "path:./v0_2_19";
+  inputs."hts-v0_2_2".url = "path:./v0_2_2";
+  inputs."hts-v0_2_20".url = "path:./v0_2_20";
+  inputs."hts-v0_2_21".url = "path:./v0_2_21";
+  inputs."hts-v0_2_22".url = "path:./v0_2_22";
+  inputs."hts-v0_2_23".url = "path:./v0_2_23";
+  inputs."hts-v0_2_5".url = "path:./v0_2_5";
+  inputs."hts-v0_2_7".url = "path:./v0_2_7";
+  inputs."hts-v0_2_8".url = "path:./v0_2_8";
+  inputs."hts-v0_3_0".url = "path:./v0_3_0";
+  inputs."hts-v0_3_10".url = "path:./v0_3_10";
+  inputs."hts-v0_3_11".url = "path:./v0_3_11";
+  inputs."hts-v0_3_12".url = "path:./v0_3_12";
+  inputs."hts-v0_3_13".url = "path:./v0_3_13";
+  inputs."hts-v0_3_14".url = "path:./v0_3_14";
+  inputs."hts-v0_3_15".url = "path:./v0_3_15";
+  inputs."hts-v0_3_16".url = "path:./v0_3_16";
+  inputs."hts-v0_3_17".url = "path:./v0_3_17";
+  inputs."hts-v0_3_18".url = "path:./v0_3_18";
+  inputs."hts-v0_3_19".url = "path:./v0_3_19";
+  inputs."hts-v0_3_2".url = "path:./v0_3_2";
+  inputs."hts-v0_3_20".url = "path:./v0_3_20";
+  inputs."hts-v0_3_21".url = "path:./v0_3_21";
+  inputs."hts-v0_3_3".url = "path:./v0_3_3";
+  inputs."hts-v0_3_4".url = "path:./v0_3_4";
+  inputs."hts-v0_3_5".url = "path:./v0_3_5";
+  inputs."hts-v0_3_6".url = "path:./v0_3_6";
+  inputs."hts-v0_3_7".url = "path:./v0_3_7";
+  inputs."hts-v0_3_8".url = "path:./v0_3_8";
+  inputs."hts-v0_3_9".url = "path:./v0_3_9";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

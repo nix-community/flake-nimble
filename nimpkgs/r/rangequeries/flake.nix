@@ -1,12 +1,12 @@
 {
-  description = ''
-    An implementation of Range Queries in Nim
-  '';
-  inputs.src-rangequeries.url = "https://github.com/vanyle/RangeQueriesNim";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''An implementation of Range Queries in Nim'';
+  inputs."rangequeries-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,0 +1,17 @@
+{
+  description = ''ptrace wrapper for Nim'';
+  inputs.src-ptrace-master.flake = false;
+  inputs.src-ptrace-master.type = "github";
+  inputs.src-ptrace-master.owner = "ba0f3";
+  inputs.src-ptrace-master.repo = "ptrace.nim";
+  inputs.src-ptrace-master.ref = "refs/heads/master";
+  
+  outputs = { self, nixpkgs, src-ptrace-master, ...}@deps:
+    let lib = import ./lib.nix;
+    in lib.mkRefOutput {
+      inherit self nixpkgs ;
+      src = src-ptrace-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ptrace-master"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    };
+}

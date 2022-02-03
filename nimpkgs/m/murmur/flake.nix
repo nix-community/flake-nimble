@@ -1,12 +1,12 @@
 {
-  description = ''
-    MurmurHash in pure Nim.
-  '';
-  inputs.src-murmur.url = "https://github.com/olahol/nimrod-murmur/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''MurmurHash in pure Nim.'';
+  inputs."murmur-master".url = "path:./master";
+  inputs."murmur-v0_1_0".url = "path:./v0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

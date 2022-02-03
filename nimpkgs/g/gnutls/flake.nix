@@ -1,12 +1,12 @@
 {
-  description = ''
-    GnuTLS wrapper
-  '';
-  inputs.src-gnutls.url = "https://github.com/FedericoCeratto/nim-gnutls";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''GnuTLS wrapper'';
+  inputs."gnutls-master".url = "path:./master";
+  inputs."gnutls-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

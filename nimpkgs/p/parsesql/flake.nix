@@ -1,12 +1,12 @@
 {
-  description = ''
-    The parsesql module implements a high performance SQL file parser. It parses PostgreSQL syntax and the SQL ANSI standard.
-  '';
-  inputs.src-parsesql.url = "https://github.com/bung87/parsesql";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''The parsesql module implements a high performance SQL file parser. It parses PostgreSQL syntax and the SQL ANSI standard.'';
+  inputs."parsesql-master".url = "path:./master";
+  inputs."parsesql-v0_1_1".url = "path:./v0_1_1";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

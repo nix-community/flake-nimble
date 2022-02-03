@@ -1,12 +1,12 @@
 {
-  description = ''
-    Nim wrapper of the Sophia key/value store
-  '';
-  inputs.src-sophia.url = "https://github.com/gokr/nim-sophia";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Nim wrapper of the Sophia key/value store'';
+  inputs."sophia-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

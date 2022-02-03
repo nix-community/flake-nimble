@@ -1,12 +1,12 @@
 {
-  description = ''
-    A small program to make Nim shebang-able without the overhead of compiling each time
-  '';
-  inputs.src-nimcr.url = "https://github.com/PMunch/nimcr";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''A small program to make Nim shebang-able without the overhead of compiling each time'';
+  inputs."nimcr-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

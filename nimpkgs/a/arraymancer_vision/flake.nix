@@ -1,12 +1,12 @@
 {
-  description = ''
-    Image transformation and visualization utilities for arraymancer
-  '';
-  inputs.src-arraymancer_vision.url = "https://github.com/edubart/arraymancer-vision";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Image transformation and visualization utilities for arraymancer'';
+  inputs."arraymancer_vision-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

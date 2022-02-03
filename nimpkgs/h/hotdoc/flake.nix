@@ -1,12 +1,12 @@
 {
-  description = ''
-    Single Page Documentation Generator
-  '';
-  inputs.src-hotdoc.url = "https://github.com/willyboar/hotdoc";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Single Page Documentation Generator'';
+  inputs."hotdoc-main".url = "path:./main";
+  inputs."hotdoc-0_1_0".url = "path:./0_1_0";
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

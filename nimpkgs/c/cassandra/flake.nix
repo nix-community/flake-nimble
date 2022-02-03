@@ -1,12 +1,12 @@
 {
-  description = ''
-    Bindings to Cassandra DB driver
-  '';
-  inputs.src-cassandra.url = "https://github.com/yglukhov/cassandra";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Bindings to Cassandra DB driver'';
+  inputs."cassandra-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

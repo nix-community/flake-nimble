@@ -1,12 +1,12 @@
 {
-  description = ''
-    terminal ascii tables for nim
-  '';
-  inputs.src-asciitables.url = "https://github.com/xmonader/nim-asciitables";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''terminal ascii tables for nim'';
+  inputs."asciitables-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,12 @@
 {
-  description = ''
-    Bluesoft Cosmos extractor
-  '';
-  inputs.src-bluesoftcosmos.url = "https://gitlab.com/lurlo/bluesoftcosmos";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Bluesoft Cosmos extractor'';
+  inputs."bluesoftcosmos-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

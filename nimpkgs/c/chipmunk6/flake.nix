@@ -1,12 +1,12 @@
 {
-  description = ''
-    Bindings for Chipmunk2D 6.x physics library
-  '';
-  inputs.src-chipmunk6.url = "https://github.com/fowlmouth/nimrod-chipmunk/";
-  outputs = inputs:
-    let lib = import ../../nim-pkgs-drvs.nix;
-    in lib.mkOutput {
-      inherit inputs;
-      meta = ./meta.json;
+  description = ''Bindings for Chipmunk2D 6.x physics library'';
+  inputs."chipmunk6-master".url = "path:./master";
+  
+  outputs = { self, nixpkgs, ...}@inputs:
+    let lib = import ./lib.nix;
+    in lib.mkProjectOutput {
+      inherit self nixpkgs;
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }
