@@ -1266,6 +1266,7 @@
   "sampletodolist" = ./sampleTodoList.json;
   "sass" = ./sass.json;
   "sayhissatsuwaza" = ./sayhissatsuwaza.json;
+  "sbttl" = ./sbttl.json;
   "schedules" = ./schedules.json;
   "science" = ./science.json;
   "scinim" = ./scinim.json;
@@ -1503,6 +1504,7 @@
   "torim" = ./torim.json;
   "torm" = ./torm.json;
   "toxcore" = ./toxcore.json;
+  "tradingview" = ./tradingview.json;
   "treesitter" = ./treesitter.json;
   "treesitter_agda" = ./treesitter_agda.json;
   "treesitter_bash" = ./treesitter_bash.json;
