@@ -445,6 +445,7 @@
   "github" = ./github.json;
   "github_api" = ./github_api.json;
   "github_release" = ./github_release.json;
+  "glbits" = ./glbits.json;
   "gles" = ./gles.json;
   "glew" = ./glew.json;
   "glm" = ./glm.json;
@@ -1143,6 +1144,7 @@
   "pnm" = ./pnm.json;
   "pokereval" = ./pokereval.json;
   "polybool" = ./polyBool.json;
+  "polymorph" = ./polymorph.json;
   "polynumeric" = ./polynumeric.json;
   "polypbren" = ./polypbren.json;
   "pomtimer" = ./pomTimer.json;
@@ -1209,6 +1211,7 @@
   "rangequeries" = ./rangequeries.json;
   "ranges" = ./ranges.json;
   "rapid" = ./rapid.json;
+  "ratel" = ./ratel.json;
   "rbac" = ./rbac.json;
   "rbtree" = ./rbtree.json;
   "rc4" = ./RC4.json;
