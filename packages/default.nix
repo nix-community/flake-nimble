@@ -59,6 +59,7 @@
   "asyncthreadpool" = ./asyncthreadpool.json;
   "asynctools" = ./asynctools.json;
   "atoz" = ./atoz.json;
+  "audius" = ./audius.json;
   "aur" = ./aur.json;
   "autome" = ./autome.json;
   "autonim" = ./autonim.json;
