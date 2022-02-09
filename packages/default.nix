@@ -792,6 +792,7 @@
   "netpbm" = ./netpbm.json;
   "nettest" = ./netTest.json;
   "netty" = ./netty.json;
+  "networkutils" = ./networkutils.json;
   "neverwinter" = ./neverwinter.json;
   "newfix" = ./newfix.json;
   "news" = ./news.json;
