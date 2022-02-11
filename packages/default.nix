@@ -607,6 +607,7 @@
   "kinto" = ./Kinto.json;
   "kissfft" = ./kissfft.json;
   "kiwi" = ./kiwi.json;
+  "klymene" = ./klymene.json;
   "kmer" = ./kmer.json;
   "kmod" = ./kmod.json;
   "kombinator" = ./kombinator.json;
@@ -707,6 +708,7 @@
   "mcu_utils" = ./mcu_utils.json;
   "mddoc" = ./mddoc.json;
   "mdevolve" = ./mdevolve.json;
+  "mdlldk" = ./mdlldk.json;
   "memlib" = ./memlib.json;
   "memo" = ./memo.json;
   "memviews" = ./memviews.json;
@@ -1034,6 +1036,7 @@
   "nuuid" = ./nuuid.json;
   "nwatchdog" = ./nwatchdog.json;
   "nwt" = ./nwt.json;
+  "nyml" = ./nyml.json;
   "oaitools" = ./oaitools.json;
   "oauth" = ./oauth.json;
   "objc_runtime" = ./objc_runtime.json;
@@ -1570,6 +1573,7 @@
   "utf8tests" = ./utf8tests.json;
   "utils" = ./utils.json;
   "uuid" = ./uuid.json;
+  "uuid4" = ./uuid4.json;
   "uuids" = ./uuids.json;
   "validateip" = ./validateip.json;
   "validation" = ./validation.json;
