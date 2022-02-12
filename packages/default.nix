@@ -1543,6 +1543,7 @@
   "twitter" = ./twitter.json;
   "typelists" = ./typelists.json;
   "typography" = ./typography.json;
+  "uap" = ./uap.json;
   "ui" = ./ui.json;
   "uibuilder" = ./uibuilder.json;
   "ulid" = ./ulid.json;
@@ -1596,6 +1597,7 @@
   "vscds" = ./vscds.json;
   "vtable" = ./vtable.json;
   "watch_for_files" = ./watch_for_files.json;
+  "watchout" = ./watchout.json;
   "wauto" = ./wAuto.json;
   "wave" = ./wave.json;
   "wavecore" = ./wavecore.json;
