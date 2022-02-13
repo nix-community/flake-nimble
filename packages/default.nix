@@ -288,6 +288,7 @@
   "distances" = ./distances.json;
   "distorm3" = ./distorm3.json;
   "distributions" = ./distributions.json;
+  "dnd" = ./dnd.json;
   "dnsclient" = ./dnsclient.json;
   "dnsprotec" = ./dnsprotec.json;
   "dnsprotocol" = ./dnsprotocol.json;
@@ -1596,6 +1597,7 @@
   "vmvc" = ./vmvc.json;
   "vscds" = ./vscds.json;
   "vtable" = ./vtable.json;
+  "w8crc" = ./w8crc.json;
   "watch_for_files" = ./watch_for_files.json;
   "watchout" = ./watchout.json;
   "wauto" = ./wAuto.json;
