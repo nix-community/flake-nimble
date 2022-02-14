@@ -36,6 +36,7 @@
   inputs."compiler-v1_2_12".url = "path:./v1_2_12";
   inputs."compiler-v1_2_14".url = "path:./v1_2_14";
   inputs."compiler-v1_2_16".url = "path:./v1_2_16";
+  inputs."compiler-v1_2_18".url = "path:./v1_2_18";
   inputs."compiler-v1_2_2".url = "path:./v1_2_2";
   inputs."compiler-v1_2_4".url = "path:./v1_2_4";
   inputs."compiler-v1_2_6".url = "path:./v1_2_6";
@@ -47,6 +48,7 @@
   inputs."compiler-v1_4_8".url = "path:./v1_4_8";
   inputs."compiler-v1_6_0".url = "path:./v1_6_0";
   inputs."compiler-v1_6_2".url = "path:./v1_6_2";
+  inputs."compiler-v1_6_4".url = "path:./v1_6_4";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

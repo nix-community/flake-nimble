@@ -3,6 +3,7 @@
   inputs."nlopt-master".url = "path:./master";
   inputs."nlopt-v0_3_0".url = "path:./v0_3_0";
   inputs."nlopt-v0_3_1".url = "path:./v0_3_1";
+  inputs."nlopt-v0_3_2".url = "path:./v0_3_2";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

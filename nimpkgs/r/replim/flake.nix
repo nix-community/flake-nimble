@@ -1,6 +1,6 @@
 {
   description = ''most quick REPL of nim'';
-  
+  inputs."replim-master".url = "path:./master";
   
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;

@@ -29,6 +29,7 @@
   inputs."allographer-v0_19_1".url = "path:./v0_19_1";
   inputs."allographer-v0_19_2".url = "path:./v0_19_2";
   inputs."allographer-v0_20_0".url = "path:./v0_20_0";
+  inputs."allographer-v0_21_0".url = "path:./v0_21_0";
   inputs."allographer-v0_7_0".url = "path:./v0_7_0";
   inputs."allographer-v0_7_1".url = "path:./v0_7_1";
   inputs."allographer-v0_7_2".url = "path:./v0_7_2";

@@ -14,6 +14,7 @@
   inputs."shell-v0_4_1".url = "path:./v0_4_1";
   inputs."shell-v0_4_2".url = "path:./v0_4_2";
   inputs."shell-v0_4_3".url = "path:./v0_4_3";
+  inputs."shell-v0_4_4".url = "path:./v0_4_4";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

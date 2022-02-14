@@ -58,6 +58,7 @@
   inputs."gintro-v0_9_4".url = "path:./v0_9_4";
   inputs."gintro-v0_9_5".url = "path:./v0_9_5";
   inputs."gintro-v0_9_6".url = "path:./v0_9_6";
+  inputs."gintro-v0_9_7".url = "path:./v0_9_7";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

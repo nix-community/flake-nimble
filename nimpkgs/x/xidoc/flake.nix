@@ -18,6 +18,7 @@
   inputs."xidoc-2021_11_8".url = "path:./2021_11_8";
   inputs."xidoc-2021_12_19".url = "path:./2021_12_19";
   inputs."xidoc-2022_1_30".url = "path:./2022_1_30";
+  inputs."xidoc-2022_2_6".url = "path:./2022_2_6";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

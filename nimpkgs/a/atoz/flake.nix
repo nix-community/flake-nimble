@@ -48,6 +48,8 @@
   inputs."atoz-2622_0_0".url = "path:./2622_0_0";
   inputs."atoz-2626_0_0".url = "path:./2626_0_0";
   inputs."atoz-2626_1_0".url = "path:./2626_1_0";
+  inputs."atoz-2626_3_0".url = "path:./2626_3_0";
+  inputs."atoz-2626_4_0".url = "path:./2626_4_0";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

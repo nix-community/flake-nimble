@@ -23,6 +23,7 @@
   inputs."notcurses-v3_0_3".url = "path:./v3_0_3";
   inputs."notcurses-v3_0_4".url = "path:./v3_0_4";
   inputs."notcurses-v3_0_5".url = "path:./v3_0_5";
+  inputs."notcurses-v3_0_6".url = "path:./v3_0_6";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

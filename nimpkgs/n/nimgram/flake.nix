@@ -1,7 +1,7 @@
 {
   description = ''MTProto client written in Nim'';
   inputs."nimgram-master".url = "path:./master";
-  
+  inputs."nimgram-v0_1_0".url = "path:./v0_1_0";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

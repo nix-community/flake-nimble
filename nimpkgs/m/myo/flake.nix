@@ -1,6 +1,6 @@
 {
   description = ''Bindings for the Thalmic Labs Myo gesture control armband SDK.'';
-  
+  inputs."myo-master".url = "path:./master";
   
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;

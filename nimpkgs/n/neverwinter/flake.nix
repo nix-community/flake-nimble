@@ -26,6 +26,7 @@
   inputs."neverwinter-1_5_2".url = "path:./1_5_2";
   inputs."neverwinter-1_5_3".url = "path:./1_5_3";
   inputs."neverwinter-1_5_4".url = "path:./1_5_4";
+  inputs."neverwinter-1_5_5".url = "path:./1_5_5";
   inputs."neverwinter-v1_0_0".url = "path:./v1_0_0";
   inputs."neverwinter-v1_0_1".url = "path:./v1_0_1";
   inputs."neverwinter-v1_1_0".url = "path:./v1_1_0";

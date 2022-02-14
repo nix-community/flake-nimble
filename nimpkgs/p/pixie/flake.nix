@@ -47,6 +47,8 @@
   inputs."pixie-3_1_1".url = "path:./3_1_1";
   inputs."pixie-3_1_2".url = "path:./3_1_2";
   inputs."pixie-3_1_3".url = "path:./3_1_3";
+  inputs."pixie-3_1_4".url = "path:./3_1_4";
+  inputs."pixie-4_0_0".url = "path:./4_0_0";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

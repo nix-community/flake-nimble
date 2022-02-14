@@ -2,7 +2,7 @@
   description = ''Pure library for matching file paths against Unix style glob patterns.'';
   inputs.src-glob-master.flake = false;
   inputs.src-glob-master.type = "github";
-  inputs.src-glob-master.owner = "citycide";
+  inputs.src-glob-master.owner = "haltcase";
   inputs.src-glob-master.repo = "glob";
   inputs.src-glob-master.ref = "refs/heads/master";
   

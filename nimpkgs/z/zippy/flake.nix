@@ -59,6 +59,8 @@
   inputs."zippy-0_9_3".url = "path:./0_9_3";
   inputs."zippy-0_9_4".url = "path:./0_9_4";
   inputs."zippy-0_9_5".url = "path:./0_9_5";
+  inputs."zippy-0_9_6".url = "path:./0_9_6";
+  inputs."zippy-0_9_7".url = "path:./0_9_7";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

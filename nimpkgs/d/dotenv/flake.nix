@@ -1,6 +1,8 @@
 {
   description = ''Loads environment variables from `.env`.'';
-  inputs."dotenv-master".url = "path:./master";
+  inputs."dotenv-main".url = "path:./main";
+  inputs."dotenv-2_0_0".url = "path:./2_0_0";
+  inputs."dotenv-2_0_1".url = "path:./2_0_1";
   inputs."dotenv-v1_0_0".url = "path:./v1_0_0";
   inputs."dotenv-v1_0_3".url = "path:./v1_0_3";
   inputs."dotenv-v1_0_4".url = "path:./v1_0_4";

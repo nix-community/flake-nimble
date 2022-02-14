@@ -94,6 +94,10 @@
   inputs."ansiwave-1_4_1".url = "path:./1_4_1";
   inputs."ansiwave-1_4_2".url = "path:./1_4_2";
   inputs."ansiwave-1_4_3".url = "path:./1_4_3";
+  inputs."ansiwave-1_5_0".url = "path:./1_5_0";
+  inputs."ansiwave-1_5_0-linux".url = "path:./1_5_0-linux";
+  inputs."ansiwave-1_5_0-macos".url = "path:./1_5_0-macos";
+  inputs."ansiwave-1_5_0-windows".url = "path:./1_5_0-windows";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

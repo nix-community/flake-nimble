@@ -19,6 +19,7 @@
   inputs."wavecore-0_4_1".url = "path:./0_4_1";
   inputs."wavecore-0_4_2".url = "path:./0_4_2";
   inputs."wavecore-0_4_3".url = "path:./0_4_3";
+  inputs."wavecore-0_5_0".url = "path:./0_5_0";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

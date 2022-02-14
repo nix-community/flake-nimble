@@ -11,6 +11,7 @@
   inputs."flatty-0_2_1".url = "path:./0_2_1";
   inputs."flatty-0_2_2".url = "path:./0_2_2";
   inputs."flatty-0_2_3".url = "path:./0_2_3";
+  inputs."flatty-0_2_4".url = "path:./0_2_4";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

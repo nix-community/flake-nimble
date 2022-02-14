@@ -2,7 +2,7 @@
   description = ''Simple command line tool to make git more intuitive, along with useful GitHub addons.'';
   inputs.src-fugitive-v0_11_0.flake = false;
   inputs.src-fugitive-v0_11_0.type = "github";
-  inputs.src-fugitive-v0_11_0.owner = "citycide";
+  inputs.src-fugitive-v0_11_0.owner = "haltcase";
   inputs.src-fugitive-v0_11_0.repo = "fugitive";
   inputs.src-fugitive-v0_11_0.ref = "refs/tags/v0.11.0";
   

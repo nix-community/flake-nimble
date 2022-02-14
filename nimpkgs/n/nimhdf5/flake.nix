@@ -29,6 +29,8 @@
   inputs."nimhdf5-v0_4_1".url = "path:./v0_4_1";
   inputs."nimhdf5-v0_4_2".url = "path:./v0_4_2";
   inputs."nimhdf5-v0_4_3".url = "path:./v0_4_3";
+  inputs."nimhdf5-v0_4_4".url = "path:./v0_4_4";
+  inputs."nimhdf5-v0_4_5".url = "path:./v0_4_5";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

@@ -9,6 +9,7 @@
   inputs."nanovg-v0_3_0".url = "path:./v0_3_0";
   inputs."nanovg-v0_3_1".url = "path:./v0_3_1";
   inputs."nanovg-v0_3_2".url = "path:./v0_3_2";
+  inputs."nanovg-v0_3_3".url = "path:./v0_3_3";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

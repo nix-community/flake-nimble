@@ -7,6 +7,7 @@
   inputs."contractabi-0_3_0".url = "path:./0_3_0";
   inputs."contractabi-0_4_0".url = "path:./0_4_0";
   inputs."contractabi-0_4_1".url = "path:./0_4_1";
+  inputs."contractabi-0_4_2".url = "path:./0_4_2";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

@@ -8,6 +8,7 @@
   inputs."nesm-v0_3_2".url = "path:./v0_3_2";
   inputs."nesm-v0_4_0".url = "path:./v0_4_0";
   inputs."nesm-v0_4_1".url = "path:./v0_4_1";
+  inputs."nesm-v0_4_10".url = "path:./v0_4_10";
   inputs."nesm-v0_4_2".url = "path:./v0_4_2";
   inputs."nesm-v0_4_3".url = "path:./v0_4_3";
   inputs."nesm-v0_4_4".url = "path:./v0_4_4";
@@ -15,6 +16,7 @@
   inputs."nesm-v0_4_6".url = "path:./v0_4_6";
   inputs."nesm-v0_4_7".url = "path:./v0_4_7";
   inputs."nesm-v0_4_8".url = "path:./v0_4_8";
+  inputs."nesm-v0_4_9".url = "path:./v0_4_9";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

@@ -12,6 +12,7 @@
   inputs."guildenstern-4_0_0".url = "path:./4_0_0";
   inputs."guildenstern-4_0_0-rc1".url = "path:./4_0_0-rc1";
   inputs."guildenstern-5_0_0".url = "path:./5_0_0";
+  inputs."guildenstern-5_1_0".url = "path:./5_1_0";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {

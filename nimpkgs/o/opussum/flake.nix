@@ -11,6 +11,7 @@
   inputs."opussum-0_5_0".url = "path:./0_5_0";
   inputs."opussum-0_5_1".url = "path:./0_5_1";
   inputs."opussum-0_6_0".url = "path:./0_6_0";
+  inputs."opussum-0_6_1".url = "path:./0_6_1";
   outputs = { self, nixpkgs, ...}@inputs:
     let lib = import ./lib.nix;
     in lib.mkProjectOutput {
