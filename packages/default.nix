@@ -1486,6 +1486,7 @@
   "tic80" = ./tic80.json;
   "tiger" = ./tiger.json;
   "til" = ./til.json;
+  "tim" = ./tim.json;
   "tim_sort" = ./tim_sort.json;
   "timecop" = ./timecop.json;
   "timeit" = ./timeit.json;
