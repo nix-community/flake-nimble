@@ -1090,6 +1090,7 @@
   "owoifynim" = ./owoifynim.json;
   "p4ztag_to_json" = ./p4ztag_to_json.json;
   "package_visible_types" = ./package_visible_types.json;
+  "packedargs" = ./packedArgs.json;
   "packedjson" = ./packedjson.json;
   "packets" = ./packets.json;
   "pager" = ./pager.json;
