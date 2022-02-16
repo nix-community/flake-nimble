@@ -818,6 +818,7 @@
   "nim0" = ./nim0.json;
   "nim7z" = ./nim7z.json;
   "nim_cexc" = ./nim_cexc.json;
+  "nim_chacha20_poly1305" = ./nim_chacha20_poly1305.json;
   "nim_cjson" = ./nim_cjson.json;
   "nim_curry" = ./nim_curry.json;
   "nim_exodus" = ./nim_exodus.json;
