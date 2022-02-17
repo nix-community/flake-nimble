@@ -7,7 +7,6 @@
   inputs.src-jsbind-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/yglukhov/wasmrt".url = "path:../../../h/https://github.com/yglukhov/wasmrt";
   inputs."https://github.com/yglukhov/wasmrt".type = "github";
   inputs."https://github.com/yglukhov/wasmrt".owner = "riinr";
   inputs."https://github.com/yglukhov/wasmrt".repo = "flake-nimble";

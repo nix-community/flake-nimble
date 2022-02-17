@@ -7,7 +7,6 @@
   inputs.src-wox-master.ref = "refs/heads/master";
   
   
-  inputs."unicodeplus".url = "path:../../../u/unicodeplus";
   inputs."unicodeplus".type = "github";
   inputs."unicodeplus".owner = "riinr";
   inputs."unicodeplus".repo = "flake-nimble";

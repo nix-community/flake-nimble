@@ -7,7 +7,6 @@
   inputs.src-pdcurses-master.ref = "refs/heads/master";
   
   
-  inputs."oldwinapi".url = "path:../../../o/oldwinapi";
   inputs."oldwinapi".type = "github";
   inputs."oldwinapi".owner = "riinr";
   inputs."oldwinapi".repo = "flake-nimble";

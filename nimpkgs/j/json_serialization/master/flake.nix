@@ -7,7 +7,6 @@
   inputs.src-json_serialization-master.ref = "refs/heads/master";
   
   
-  inputs."serialization".url = "path:../../../s/serialization";
   inputs."serialization".type = "github";
   inputs."serialization".owner = "riinr";
   inputs."serialization".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."serialization".dir = "nimpkgs/s/serialization";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";

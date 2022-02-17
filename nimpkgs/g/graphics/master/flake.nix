@@ -7,7 +7,6 @@
   inputs.src-graphics-master.ref = "refs/heads/master";
   
   
-  inputs."sdl1".url = "path:../../../s/sdl1";
   inputs."sdl1".type = "github";
   inputs."sdl1".owner = "riinr";
   inputs."sdl1".repo = "flake-nimble";

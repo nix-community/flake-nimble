@@ -7,7 +7,6 @@
   inputs.src-xidoc-master.ref = "refs/heads/master";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";

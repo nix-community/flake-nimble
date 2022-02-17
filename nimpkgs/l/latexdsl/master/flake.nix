@@ -7,7 +7,6 @@
   inputs.src-latexdsl-master.ref = "refs/heads/master";
   
   
-  inputs."datamancer".url = "path:../../../d/datamancer";
   inputs."datamancer".type = "github";
   inputs."datamancer".owner = "riinr";
   inputs."datamancer".repo = "flake-nimble";

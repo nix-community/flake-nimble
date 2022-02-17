@@ -7,7 +7,6 @@
   inputs.src-litestore-v1_0_2.ref = "refs/tags/v1.0.2";
   
   
-  inputs."nimrod".url = "path:../../../n/nimrod";
   inputs."nimrod".type = "github";
   inputs."nimrod".owner = "riinr";
   inputs."nimrod".repo = "flake-nimble";

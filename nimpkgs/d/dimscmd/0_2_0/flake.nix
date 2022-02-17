@@ -7,7 +7,6 @@
   inputs.src-dimscmd-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."dimscord".url = "path:../../../d/dimscord";
   inputs."dimscord".type = "github";
   inputs."dimscord".owner = "riinr";
   inputs."dimscord".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimhdf5-v0_4_4.ref = "refs/tags/v0.4.4";
   
   
-  inputs."https://github.com/vindaar/seqmath".url = "path:../../../h/https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type = "github";
   inputs."https://github.com/vindaar/seqmath".owner = "riinr";
   inputs."https://github.com/vindaar/seqmath".repo = "flake-nimble";

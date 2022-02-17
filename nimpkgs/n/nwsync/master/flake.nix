@@ -7,7 +7,6 @@
   inputs.src-nwsync-master.ref = "refs/heads/master";
   
   
-  inputs."neverwinter".url = "path:../../../n/neverwinter";
   inputs."neverwinter".type = "github";
   inputs."neverwinter".owner = "riinr";
   inputs."neverwinter".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."neverwinter".dir = "nimpkgs/n/neverwinter";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

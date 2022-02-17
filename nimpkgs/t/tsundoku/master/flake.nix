@@ -7,7 +7,6 @@
   inputs.src-tsundoku-master.ref = "refs/heads/master";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";

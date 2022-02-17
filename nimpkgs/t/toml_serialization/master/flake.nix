@@ -7,7 +7,6 @@
   inputs.src-toml_serialization-master.ref = "refs/heads/master";
   
   
-  inputs."serialization".url = "path:../../../s/serialization";
   inputs."serialization".type = "github";
   inputs."serialization".owner = "riinr";
   inputs."serialization".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."serialization".dir = "nimpkgs/s/serialization";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."https://github.com/status-im/nim-unittest2".url = "path:../../../h/https://github.com/status-im/nim-unittest2";
   inputs."https://github.com/status-im/nim-unittest2".type = "github";
   inputs."https://github.com/status-im/nim-unittest2".owner = "riinr";
   inputs."https://github.com/status-im/nim-unittest2".repo = "flake-nimble";

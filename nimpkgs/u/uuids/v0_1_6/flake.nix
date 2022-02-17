@@ -7,7 +7,6 @@
   inputs.src-uuids-v0_1_6.ref = "refs/tags/v0.1.6";
   
   
-  inputs."isaac".url = "path:../../../i/isaac";
   inputs."isaac".type = "github";
   inputs."isaac".owner = "riinr";
   inputs."isaac".repo = "flake-nimble";

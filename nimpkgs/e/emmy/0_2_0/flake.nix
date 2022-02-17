@@ -7,7 +7,6 @@
   inputs.src-emmy-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."neo".url = "path:../../../n/neo";
   inputs."neo".type = "github";
   inputs."neo".owner = "riinr";
   inputs."neo".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."neo".dir = "nimpkgs/n/neo";
 
   
-  inputs."bigints".url = "path:../../../b/bigints";
   inputs."bigints".type = "github";
   inputs."bigints".owner = "riinr";
   inputs."bigints".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."bigints".dir = "nimpkgs/b/bigints";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";

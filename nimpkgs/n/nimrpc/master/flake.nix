@@ -7,7 +7,6 @@
   inputs.src-nimrpc-master.ref = "refs/heads/master";
   
   
-  inputs."msgpack4nim".url = "path:../../../m/msgpack4nim";
   inputs."msgpack4nim".type = "github";
   inputs."msgpack4nim".owner = "riinr";
   inputs."msgpack4nim".repo = "flake-nimble";

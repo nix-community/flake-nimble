@@ -7,7 +7,6 @@
   inputs.src-nimshell-v0_0_1.ref = "refs/tags/v0.0.1";
   
   
-  inputs."monad".url = "path:../../../m/monad";
   inputs."monad".type = "github";
   inputs."monad".owner = "riinr";
   inputs."monad".repo = "flake-nimble";

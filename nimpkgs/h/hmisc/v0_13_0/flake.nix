@@ -7,7 +7,6 @@
   inputs.src-hmisc-v0_13_0.ref = "refs/tags/v0.13.0";
   
   
-  inputs."https://github.com/nim-lang/fusion.git".url = "path:../../../h/https://github.com/nim-lang/fusion.git";
   inputs."https://github.com/nim-lang/fusion.git".type = "github";
   inputs."https://github.com/nim-lang/fusion.git".owner = "riinr";
   inputs."https://github.com/nim-lang/fusion.git".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/nim-lang/fusion.git".dir = "nimpkgs/h/https://github.com/nim-lang/fusion.git";
 
   
-  inputs."benchy".url = "path:../../../b/benchy";
   inputs."benchy".type = "github";
   inputs."benchy".owner = "riinr";
   inputs."benchy".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."benchy".dir = "nimpkgs/b/benchy";
 
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."jsony".dir = "nimpkgs/j/jsony";
 
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";

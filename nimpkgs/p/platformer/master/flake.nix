@@ -7,7 +7,6 @@
   inputs.src-platformer-master.ref = "refs/heads/master";
   
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
   
-  inputs."strfmt".url = "path:../../../s/strfmt";
   inputs."strfmt".type = "github";
   inputs."strfmt".owner = "riinr";
   inputs."strfmt".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."strfmt".dir = "nimpkgs/s/strfmt";
 
   
-  inputs."basic2d".url = "path:../../../b/basic2d";
   inputs."basic2d".type = "github";
   inputs."basic2d".owner = "riinr";
   inputs."basic2d".repo = "flake-nimble";

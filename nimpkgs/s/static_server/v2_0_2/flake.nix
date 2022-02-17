@@ -7,7 +7,6 @@
   inputs.src-static_server-v2_0_2.ref = "refs/tags/v2.0.2";
   
   
-  inputs."https://github.com/bung87/finder".url = "path:../../../h/https://github.com/bung87/finder";
   inputs."https://github.com/bung87/finder".type = "github";
   inputs."https://github.com/bung87/finder".owner = "riinr";
   inputs."https://github.com/bung87/finder".repo = "flake-nimble";

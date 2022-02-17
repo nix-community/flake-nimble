@@ -7,7 +7,6 @@
   inputs.src-gh_nimrod_doc_pages-v0_2_4.ref = "refs/tags/v0.2.4";
   
   
-  inputs."midnight_dynamite".url = "path:../../../m/midnight_dynamite";
   inputs."midnight_dynamite".type = "github";
   inputs."midnight_dynamite".owner = "riinr";
   inputs."midnight_dynamite".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."midnight_dynamite".dir = "nimpkgs/m/midnight_dynamite";
 
   
-  inputs."argument_parser".url = "path:../../../a/argument_parser";
   inputs."argument_parser".type = "github";
   inputs."argument_parser".owner = "riinr";
   inputs."argument_parser".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."argument_parser".dir = "nimpkgs/a/argument_parser";
 
   
-  inputs."https://github.com/gradha/badger_bits.git".url = "path:../../../h/https://github.com/gradha/badger_bits.git";
   inputs."https://github.com/gradha/badger_bits.git".type = "github";
   inputs."https://github.com/gradha/badger_bits.git".owner = "riinr";
   inputs."https://github.com/gradha/badger_bits.git".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."https://github.com/gradha/badger_bits.git".dir = "nimpkgs/h/https://github.com/gradha/badger_bits.git";
 
   
-  inputs."lazy_rest".url = "path:../../../l/lazy_rest";
   inputs."lazy_rest".type = "github";
   inputs."lazy_rest".owner = "riinr";
   inputs."lazy_rest".repo = "flake-nimble";

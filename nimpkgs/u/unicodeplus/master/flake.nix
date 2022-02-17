@@ -7,7 +7,6 @@
   inputs.src-unicodeplus-master.ref = "refs/heads/master";
   
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
 
   
-  inputs."segmentation".url = "path:../../../s/segmentation";
   inputs."segmentation".type = "github";
   inputs."segmentation".owner = "riinr";
   inputs."segmentation".repo = "flake-nimble";

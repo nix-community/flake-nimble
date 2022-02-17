@@ -7,7 +7,6 @@
   inputs.src-nimclutter-master.ref = "refs/heads/master";
   
   
-  inputs."oldgtk3".url = "path:../../../o/oldgtk3";
   inputs."oldgtk3".type = "github";
   inputs."oldgtk3".owner = "riinr";
   inputs."oldgtk3".repo = "flake-nimble";

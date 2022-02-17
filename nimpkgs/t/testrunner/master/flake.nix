@@ -7,7 +7,6 @@
   inputs.src-testrunner-master.ref = "refs/heads/master";
   
   
-  inputs."libnotify".url = "path:../../../l/libnotify";
   inputs."libnotify".type = "github";
   inputs."libnotify".owner = "riinr";
   inputs."libnotify".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."libnotify".dir = "nimpkgs/l/libnotify";
 
   
-  inputs."fswatch".url = "path:../../../f/fswatch";
   inputs."fswatch".type = "github";
   inputs."fswatch".owner = "riinr";
   inputs."fswatch".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-serialization-master.ref = "refs/heads/master";
   
   
-  inputs."faststreams".url = "path:../../../f/faststreams";
   inputs."faststreams".type = "github";
   inputs."faststreams".owner = "riinr";
   inputs."faststreams".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."faststreams".dir = "nimpkgs/f/faststreams";
 
   
-  inputs."unittest2".url = "path:../../../u/unittest2";
   inputs."unittest2".type = "github";
   inputs."unittest2".owner = "riinr";
   inputs."unittest2".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."unittest2".dir = "nimpkgs/u/unittest2";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";

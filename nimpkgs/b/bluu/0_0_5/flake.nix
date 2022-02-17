@@ -7,7 +7,6 @@
   inputs.src-bluu-0_0_5.ref = "refs/tags/0.0.5";
   
   
-  inputs."https://github.com/disruptek/rest.git".url = "path:../../../h/https://github.com/disruptek/rest.git";
   inputs."https://github.com/disruptek/rest.git".type = "github";
   inputs."https://github.com/disruptek/rest.git".owner = "riinr";
   inputs."https://github.com/disruptek/rest.git".repo = "flake-nimble";

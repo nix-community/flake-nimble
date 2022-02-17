@@ -7,7 +7,6 @@
   inputs.src-nimdenter-2022_1_7.ref = "refs/tags/2022.1.7";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

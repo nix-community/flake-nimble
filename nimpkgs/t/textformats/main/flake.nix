@@ -7,7 +7,6 @@
   inputs.src-textformats-main.ref = "refs/heads/main";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."yaml".url = "path:../../../y/yaml";
   inputs."yaml".type = "github";
   inputs."yaml".owner = "riinr";
   inputs."yaml".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."yaml".dir = "nimpkgs/y/yaml";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."nimpy".url = "path:../../../n/nimpy";
   inputs."nimpy".type = "github";
   inputs."nimpy".owner = "riinr";
   inputs."nimpy".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-asyncredis-v0_8.ref = "refs/tags/v0.8";
   
   
-  inputs."ptr_math".url = "path:../../../p/ptr_math";
   inputs."ptr_math".type = "github";
   inputs."ptr_math".owner = "riinr";
   inputs."ptr_math".repo = "flake-nimble";

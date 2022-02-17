@@ -7,7 +7,6 @@
   inputs.src-duckduckgo-master.ref = "refs/heads/master";
   
   
-  inputs."scraper".url = "path:../../../s/scraper";
   inputs."scraper".type = "github";
   inputs."scraper".owner = "riinr";
   inputs."scraper".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."scraper".dir = "nimpkgs/s/scraper";
 
   
-  inputs."https://gitlab.com/lurlo/useragent".url = "path:../../../h/https://gitlab.com/lurlo/useragent";
   inputs."https://gitlab.com/lurlo/useragent".type = "github";
   inputs."https://gitlab.com/lurlo/useragent".owner = "riinr";
   inputs."https://gitlab.com/lurlo/useragent".repo = "flake-nimble";

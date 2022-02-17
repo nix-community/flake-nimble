@@ -7,7 +7,6 @@
   inputs.src-wings-v0_0_5-alpha.ref = "refs/tags/v0.0.5-alpha";
   
   
-  inputs."stones".url = "path:../../../s/stones";
   inputs."stones".type = "github";
   inputs."stones".owner = "riinr";
   inputs."stones".repo = "flake-nimble";

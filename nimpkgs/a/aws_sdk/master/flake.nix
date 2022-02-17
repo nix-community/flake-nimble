@@ -7,7 +7,6 @@
   inputs.src-aws_sdk-master.ref = "refs/heads/master";
   
   
-  inputs."stringinterpolation".url = "path:../../../s/stringinterpolation";
   inputs."stringinterpolation".type = "github";
   inputs."stringinterpolation".owner = "riinr";
   inputs."stringinterpolation".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stringinterpolation".dir = "nimpkgs/s/stringinterpolation";
 
   
-  inputs."sph".url = "path:../../../s/sph";
   inputs."sph".type = "github";
   inputs."sph".owner = "riinr";
   inputs."sph".repo = "flake-nimble";

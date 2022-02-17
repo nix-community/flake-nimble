@@ -7,7 +7,6 @@
   inputs.src-packets-master.ref = "refs/heads/master";
   
   
-  inputs."packedjson".url = "path:../../../p/packedjson";
   inputs."packedjson".type = "github";
   inputs."packedjson".owner = "riinr";
   inputs."packedjson".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."packedjson".dir = "nimpkgs/p/packedjson";
 
   
-  inputs."crc32".url = "path:../../../c/crc32";
   inputs."crc32".type = "github";
   inputs."crc32".owner = "riinr";
   inputs."crc32".repo = "flake-nimble";

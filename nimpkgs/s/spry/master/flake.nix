@@ -7,7 +7,6 @@
   inputs.src-spry-master.ref = "refs/heads/master";
   
   
-  inputs."spryvm".url = "path:../../../s/spryvm";
   inputs."spryvm".type = "github";
   inputs."spryvm".owner = "riinr";
   inputs."spryvm".repo = "flake-nimble";

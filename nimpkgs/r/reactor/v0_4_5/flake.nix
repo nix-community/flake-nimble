@@ -7,7 +7,6 @@
   inputs.src-reactor-v0_4_5.ref = "refs/tags/v0.4.5";
   
   
-  inputs."collections".url = "path:../../../c/collections";
   inputs."collections".type = "github";
   inputs."collections".owner = "riinr";
   inputs."collections".repo = "flake-nimble";

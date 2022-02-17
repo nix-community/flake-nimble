@@ -7,7 +7,6 @@
   inputs.src-retranslator-0_3_2.ref = "refs/tags/0.3.2";
   
   
-  inputs."nre".url = "path:../../../n/nre";
   inputs."nre".type = "github";
   inputs."nre".owner = "riinr";
   inputs."nre".repo = "flake-nimble";

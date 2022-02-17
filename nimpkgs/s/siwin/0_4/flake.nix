@@ -7,7 +7,6 @@
   inputs.src-siwin-0_4.ref = "refs/tags/0.4";
   
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";

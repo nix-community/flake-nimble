@@ -7,7 +7,6 @@
   inputs.src-perlin-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."random".url = "path:../../../r/random";
   inputs."random".type = "github";
   inputs."random".owner = "riinr";
   inputs."random".repo = "flake-nimble";

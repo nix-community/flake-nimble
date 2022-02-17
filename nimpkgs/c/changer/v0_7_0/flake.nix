@@ -7,7 +7,6 @@
   inputs.src-changer-v0_7_0.ref = "refs/tags/v0.7.0";
   
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."argparse".dir = "nimpkgs/a/argparse";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."parsetoml".url = "path:../../../p/parsetoml";
   inputs."parsetoml".type = "github";
   inputs."parsetoml".owner = "riinr";
   inputs."parsetoml".repo = "flake-nimble";

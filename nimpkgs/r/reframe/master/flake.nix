@@ -7,7 +7,6 @@
   inputs.src-reframe-master.ref = "refs/heads/master";
   
   
-  inputs."edn".url = "path:../../../e/edn";
   inputs."edn".type = "github";
   inputs."edn".owner = "riinr";
   inputs."edn".repo = "flake-nimble";

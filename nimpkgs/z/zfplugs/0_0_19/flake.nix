@@ -7,7 +7,6 @@
   inputs.src-zfplugs-0_0_19.ref = "refs/tags/0.0.19";
   
   
-  inputs."zfcore".url = "path:../../../z/zfcore";
   inputs."zfcore".type = "github";
   inputs."zfcore".owner = "riinr";
   inputs."zfcore".repo = "flake-nimble";

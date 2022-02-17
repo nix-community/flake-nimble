@@ -7,7 +7,6 @@
   inputs.src-hnimast-master.ref = "refs/heads/master";
   
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";

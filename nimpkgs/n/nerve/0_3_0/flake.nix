@@ -7,7 +7,6 @@
   inputs.src-nerve-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";

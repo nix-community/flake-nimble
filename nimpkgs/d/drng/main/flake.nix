@@ -7,7 +7,6 @@
   inputs.src-drng-main.ref = "refs/heads/main";
   
   
-  inputs."cpuwhat".url = "path:../../../c/cpuwhat";
   inputs."cpuwhat".type = "github";
   inputs."cpuwhat".owner = "riinr";
   inputs."cpuwhat".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-libsvm-master.ref = "refs/heads/master";
   
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";

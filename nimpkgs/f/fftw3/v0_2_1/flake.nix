@@ -7,7 +7,6 @@
   inputs.src-fftw3-v0_2_1.ref = "refs/tags/v0.2.1";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-atoz-master.ref = "refs/heads/master";
   
   
-  inputs."sigv4".url = "path:../../../s/sigv4";
   inputs."sigv4".type = "github";
   inputs."sigv4".owner = "riinr";
   inputs."sigv4".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sigv4".dir = "nimpkgs/s/sigv4";
 
   
-  inputs."https://github.com/disruptek/rest".url = "path:../../../h/https://github.com/disruptek/rest";
   inputs."https://github.com/disruptek/rest".type = "github";
   inputs."https://github.com/disruptek/rest".owner = "riinr";
   inputs."https://github.com/disruptek/rest".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."https://github.com/disruptek/rest".dir = "nimpkgs/h/https://github.com/disruptek/rest";
 
   
-  inputs."https://github.com/disruptek/openapi".url = "path:../../../h/https://github.com/disruptek/openapi";
   inputs."https://github.com/disruptek/openapi".type = "github";
   inputs."https://github.com/disruptek/openapi".owner = "riinr";
   inputs."https://github.com/disruptek/openapi".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."https://github.com/disruptek/openapi".dir = "nimpkgs/h/https://github.com/disruptek/openapi";
 
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-bitarray-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."nimrod".url = "path:../../../n/nimrod";
   inputs."nimrod".type = "github";
   inputs."nimrod".owner = "riinr";
   inputs."nimrod".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-linear_models-master.ref = "refs/heads/master";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."distributions".url = "path:../../../d/distributions";
   inputs."distributions".type = "github";
   inputs."distributions".owner = "riinr";
   inputs."distributions".repo = "flake-nimble";

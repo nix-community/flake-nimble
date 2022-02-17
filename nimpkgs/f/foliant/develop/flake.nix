@@ -7,7 +7,6 @@
   inputs.src-foliant-develop.ref = "refs/heads/develop";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
   
-  inputs."yaml".url = "path:../../../y/yaml";
   inputs."yaml".type = "github";
   inputs."yaml".owner = "riinr";
   inputs."yaml".repo = "flake-nimble";

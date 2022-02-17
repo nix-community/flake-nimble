@@ -7,7 +7,6 @@
   inputs.src-nerve-master.ref = "refs/heads/master";
   
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-microparsec-v0_1-alpha.ref = "refs/tags/v0.1-alpha";
   
   
-  inputs."result".url = "path:../../../r/result";
   inputs."result".type = "github";
   inputs."result".owner = "riinr";
   inputs."result".repo = "flake-nimble";

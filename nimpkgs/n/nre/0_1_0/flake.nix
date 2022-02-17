@@ -7,7 +7,6 @@
   inputs.src-nre-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."optional_t".url = "path:../../../o/optional_t";
   inputs."optional_t".type = "github";
   inputs."optional_t".owner = "riinr";
   inputs."optional_t".repo = "flake-nimble";

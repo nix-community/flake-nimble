@@ -7,7 +7,6 @@
   inputs.src-snail-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."nimblas".url = "path:../../../n/nimblas";
   inputs."nimblas".type = "github";
   inputs."nimblas".owner = "riinr";
   inputs."nimblas".repo = "flake-nimble";

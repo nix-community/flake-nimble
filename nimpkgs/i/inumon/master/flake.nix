@@ -7,7 +7,6 @@
   inputs.src-inumon-master.ref = "refs/heads/master";
   
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."nigui".url = "path:../../../n/nigui";
   inputs."nigui".type = "github";
   inputs."nigui".owner = "riinr";
   inputs."nigui".repo = "flake-nimble";

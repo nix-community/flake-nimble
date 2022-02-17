@@ -7,7 +7,6 @@
   inputs.src-xmltools-v0_0_2.ref = "refs/tags/v0.0.2";
   
   
-  inputs."nimfp".url = "path:../../../n/nimfp";
   inputs."nimfp".type = "github";
   inputs."nimfp".owner = "riinr";
   inputs."nimfp".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-grim-v0_3_1.ref = "refs/tags/v0.3.1";
   
   
-  inputs."yaml".url = "path:../../../y/yaml";
   inputs."yaml".type = "github";
   inputs."yaml".owner = "riinr";
   inputs."yaml".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."yaml".dir = "nimpkgs/y/yaml";
 
   
-  inputs."zero_functional".url = "path:../../../z/zero_functional";
   inputs."zero_functional".type = "github";
   inputs."zero_functional".owner = "riinr";
   inputs."zero_functional".repo = "flake-nimble";

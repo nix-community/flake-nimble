@@ -7,7 +7,6 @@
   inputs.src-jestermongopool-v1_0_1.ref = "refs/tags/v1.0.1";
   
   
-  inputs."jesterwithplugins".url = "path:../../../j/jesterwithplugins";
   inputs."jesterwithplugins".type = "github";
   inputs."jesterwithplugins".owner = "riinr";
   inputs."jesterwithplugins".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
 
   
-  inputs."mongopool".url = "path:../../../m/mongopool";
   inputs."mongopool".type = "github";
   inputs."mongopool".owner = "riinr";
   inputs."mongopool".repo = "flake-nimble";

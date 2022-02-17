@@ -7,7 +7,6 @@
   inputs.src-notificatcher-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."dbus".url = "path:../../../d/dbus";
   inputs."dbus".type = "github";
   inputs."dbus".owner = "riinr";
   inputs."dbus".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."dbus".dir = "nimpkgs/d/dbus";
 
   
-  inputs."https://github.com/pmunch/docopt.nim".url = "path:../../../h/https://github.com/pmunch/docopt.nim";
   inputs."https://github.com/pmunch/docopt.nim".type = "github";
   inputs."https://github.com/pmunch/docopt.nim".owner = "riinr";
   inputs."https://github.com/pmunch/docopt.nim".repo = "flake-nimble";

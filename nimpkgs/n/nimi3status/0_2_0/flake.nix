@@ -7,7 +7,6 @@
   inputs.src-nimi3status-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."colorsys".url = "path:../../../c/colorsys";
   inputs."colorsys".type = "github";
   inputs."colorsys".owner = "riinr";
   inputs."colorsys".repo = "flake-nimble";

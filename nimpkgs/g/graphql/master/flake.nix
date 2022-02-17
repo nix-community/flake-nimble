@@ -7,7 +7,6 @@
   inputs.src-graphql-master.ref = "refs/heads/master";
   
   
-  inputs."faststreams".url = "path:../../../f/faststreams";
   inputs."faststreams".type = "github";
   inputs."faststreams".owner = "riinr";
   inputs."faststreams".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."faststreams".dir = "nimpkgs/f/faststreams";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."json_serialization".url = "path:../../../j/json_serialization";
   inputs."json_serialization".type = "github";
   inputs."json_serialization".owner = "riinr";
   inputs."json_serialization".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."json_serialization".dir = "nimpkgs/j/json_serialization";
 
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."chronicles".dir = "nimpkgs/c/chronicles";
 
   
-  inputs."https://github.com/status-im/nim-zlib".url = "path:../../../h/https://github.com/status-im/nim-zlib";
   inputs."https://github.com/status-im/nim-zlib".type = "github";
   inputs."https://github.com/status-im/nim-zlib".owner = "riinr";
   inputs."https://github.com/status-im/nim-zlib".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."https://github.com/status-im/nim-zlib".dir = "nimpkgs/h/https://github.com/status-im/nim-zlib";
 
   
-  inputs."https://github.com/status-im/nim-unittest2".url = "path:../../../h/https://github.com/status-im/nim-unittest2";
   inputs."https://github.com/status-im/nim-unittest2".type = "github";
   inputs."https://github.com/status-im/nim-unittest2".owner = "riinr";
   inputs."https://github.com/status-im/nim-unittest2".repo = "flake-nimble";

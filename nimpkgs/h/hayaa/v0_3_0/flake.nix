@@ -7,7 +7,6 @@
   inputs.src-hayaa-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."illwill".url = "path:../../../i/illwill";
   inputs."illwill".type = "github";
   inputs."illwill".owner = "riinr";
   inputs."illwill".repo = "flake-nimble";

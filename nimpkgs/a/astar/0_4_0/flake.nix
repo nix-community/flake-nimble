@@ -7,7 +7,6 @@
   inputs.src-astar-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."binaryheap".url = "path:../../../b/binaryheap";
   inputs."binaryheap".type = "github";
   inputs."binaryheap".owner = "riinr";
   inputs."binaryheap".repo = "flake-nimble";

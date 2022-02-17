@@ -7,7 +7,6 @@
   inputs.src-microparsec-master.ref = "refs/heads/master";
   
   
-  inputs."result".url = "path:../../../r/result";
   inputs."result".type = "github";
   inputs."result".owner = "riinr";
   inputs."result".repo = "flake-nimble";

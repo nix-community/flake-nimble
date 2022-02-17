@@ -7,7 +7,6 @@
   inputs.src-strunicode-master.ref = "refs/heads/master";
   
   
-  inputs."normalize".url = "path:../../../n/normalize";
   inputs."normalize".type = "github";
   inputs."normalize".owner = "riinr";
   inputs."normalize".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."normalize".dir = "nimpkgs/n/normalize";
 
   
-  inputs."graphemes".url = "path:../../../g/graphemes";
   inputs."graphemes".type = "github";
   inputs."graphemes".owner = "riinr";
   inputs."graphemes".repo = "flake-nimble";

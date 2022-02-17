@@ -7,7 +7,6 @@
   inputs.src-ioselectors-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."wepoll".url = "path:../../../w/wepoll";
   inputs."wepoll".type = "github";
   inputs."wepoll".owner = "riinr";
   inputs."wepoll".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."wepoll".dir = "nimpkgs/w/wepoll";
 
   
-  inputs."timerwheel".url = "path:../../../t/timerwheel";
   inputs."timerwheel".type = "github";
   inputs."timerwheel".owner = "riinr";
   inputs."timerwheel".repo = "flake-nimble";

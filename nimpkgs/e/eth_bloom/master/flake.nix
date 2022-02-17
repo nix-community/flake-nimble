@@ -7,7 +7,6 @@
   inputs.src-eth_bloom-master.ref = "refs/heads/master";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";

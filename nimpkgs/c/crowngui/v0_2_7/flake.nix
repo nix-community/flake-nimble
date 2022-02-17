@@ -7,7 +7,6 @@
   inputs.src-crowngui-v0_2_7.ref = "refs/tags/v0.2.7";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."xlsx".url = "path:../../../x/xlsx";
   inputs."xlsx".type = "github";
   inputs."xlsx".owner = "riinr";
   inputs."xlsx".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."xlsx".dir = "nimpkgs/x/xlsx";
 
   
-  inputs."http://github.com/bung87/static_server".url = "path:../../../h/http://github.com/bung87/static_server";
   inputs."http://github.com/bung87/static_server".type = "github";
   inputs."http://github.com/bung87/static_server".owner = "riinr";
   inputs."http://github.com/bung87/static_server".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."http://github.com/bung87/static_server".dir = "nimpkgs/h/http://github.com/bung87/static_server";
 
   
-  inputs."jsonschema".url = "path:../../../j/jsonschema";
   inputs."jsonschema".type = "github";
   inputs."jsonschema".owner = "riinr";
   inputs."jsonschema".repo = "flake-nimble";

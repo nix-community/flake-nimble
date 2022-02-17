@@ -7,7 +7,6 @@
   inputs.src-moe-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."ncurses".url = "path:../../../n/ncurses";
   inputs."ncurses".type = "github";
   inputs."ncurses".owner = "riinr";
   inputs."ncurses".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ncurses".dir = "nimpkgs/n/ncurses";
 
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
 
   
-  inputs."parsetoml".url = "path:../../../p/parsetoml";
   inputs."parsetoml".type = "github";
   inputs."parsetoml".owner = "riinr";
   inputs."parsetoml".repo = "flake-nimble";

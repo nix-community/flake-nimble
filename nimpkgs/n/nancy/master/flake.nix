@@ -7,7 +7,6 @@
   inputs.src-nancy-master.ref = "refs/heads/master";
   
   
-  inputs."ansiparse".url = "path:../../../a/ansiparse";
   inputs."ansiparse".type = "github";
   inputs."ansiparse".owner = "riinr";
   inputs."ansiparse".repo = "flake-nimble";

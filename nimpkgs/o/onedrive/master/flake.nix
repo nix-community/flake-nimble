@@ -7,7 +7,6 @@
   inputs.src-onedrive-master.ref = "refs/heads/master";
   
   
-  inputs."packedjson".url = "path:../../../p/packedjson";
   inputs."packedjson".type = "github";
   inputs."packedjson".owner = "riinr";
   inputs."packedjson".repo = "flake-nimble";

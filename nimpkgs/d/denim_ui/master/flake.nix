@@ -7,7 +7,6 @@
   inputs.src-denim_ui-master.ref = "refs/heads/master";
   
   
-  inputs."itertools".url = "path:../../../i/itertools";
   inputs."itertools".type = "github";
   inputs."itertools".owner = "riinr";
   inputs."itertools".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."itertools".dir = "nimpkgs/i/itertools";
 
   
-  inputs."macroutils".url = "path:../../../m/macroutils";
   inputs."macroutils".type = "github";
   inputs."macroutils".owner = "riinr";
   inputs."macroutils".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."macroutils".dir = "nimpkgs/m/macroutils";
 
   
-  inputs."rx_nim".url = "path:../../../r/rx_nim";
   inputs."rx_nim".type = "github";
   inputs."rx_nim".owner = "riinr";
   inputs."rx_nim".repo = "flake-nimble";

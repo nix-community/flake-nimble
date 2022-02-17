@@ -7,7 +7,6 @@
   inputs.src-niledb-v1_0_0.ref = "refs/tags/v1.0.0";
   
   
-  inputs."serializetools".url = "path:../../../s/serializetools";
   inputs."serializetools".type = "github";
   inputs."serializetools".owner = "riinr";
   inputs."serializetools".repo = "flake-nimble";

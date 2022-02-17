@@ -7,7 +7,6 @@
   inputs.src-analytics-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
   
-  inputs."osinfo".url = "path:../../../o/osinfo";
   inputs."osinfo".type = "github";
   inputs."osinfo".owner = "riinr";
   inputs."osinfo".repo = "flake-nimble";

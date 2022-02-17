@@ -7,7 +7,6 @@
   inputs.src-fidget-v0_2_1.ref = "refs/tags/v0.2.1";
   
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."typography".url = "path:../../../t/typography";
   inputs."typography".type = "github";
   inputs."typography".owner = "riinr";
   inputs."typography".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."typography".dir = "nimpkgs/t/typography";
 
   
-  inputs."flippy".url = "path:../../../f/flippy";
   inputs."flippy".type = "github";
   inputs."flippy".owner = "riinr";
   inputs."flippy".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."flippy".dir = "nimpkgs/f/flippy";
 
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."vmath".dir = "nimpkgs/v/vmath";
 
   
-  inputs."print".url = "path:../../../p/print";
   inputs."print".type = "github";
   inputs."print".owner = "riinr";
   inputs."print".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."print".dir = "nimpkgs/p/print";
 
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
   
-  inputs."snappy".url = "path:../../../s/snappy";
   inputs."snappy".type = "github";
   inputs."snappy".owner = "riinr";
   inputs."snappy".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."snappy".dir = "nimpkgs/s/snappy";
 
   
-  inputs."html5_canvas".url = "path:../../../h/html5_canvas";
   inputs."html5_canvas".type = "github";
   inputs."html5_canvas".owner = "riinr";
   inputs."html5_canvas".repo = "flake-nimble";
@@ -71,7 +63,6 @@
   inputs."html5_canvas".dir = "nimpkgs/h/html5_canvas";
 
   
-  inputs."https://github.com/treeform/staticglfw".url = "path:../../../h/https://github.com/treeform/staticglfw";
   inputs."https://github.com/treeform/staticglfw".type = "github";
   inputs."https://github.com/treeform/staticglfw".owner = "riinr";
   inputs."https://github.com/treeform/staticglfw".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimbus-master.ref = "refs/heads/master";
   
   
-  inputs."bncurve".url = "path:../../../b/bncurve";
   inputs."bncurve".type = "github";
   inputs."bncurve".owner = "riinr";
   inputs."bncurve".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."bncurve".dir = "nimpkgs/b/bncurve";
 
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."chronicles".dir = "nimpkgs/c/chronicles";
 
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."eth".url = "path:../../../e/eth";
   inputs."eth".type = "github";
   inputs."eth".owner = "riinr";
   inputs."eth".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."eth".dir = "nimpkgs/e/eth";
 
   
-  inputs."json_rpc".url = "path:../../../j/json_rpc";
   inputs."json_rpc".type = "github";
   inputs."json_rpc".owner = "riinr";
   inputs."json_rpc".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."json_rpc".dir = "nimpkgs/j/json_rpc";
 
   
-  inputs."libbacktrace".url = "path:../../../l/libbacktrace";
   inputs."libbacktrace".type = "github";
   inputs."libbacktrace".owner = "riinr";
   inputs."libbacktrace".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."libbacktrace".dir = "nimpkgs/l/libbacktrace";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -71,7 +63,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";

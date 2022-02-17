@@ -7,7 +7,6 @@
   inputs.src-nimly-v0_2_1.ref = "refs/tags/v0.2.1";
   
   
-  inputs."patty".url = "path:../../../p/patty";
   inputs."patty".type = "github";
   inputs."patty".owner = "riinr";
   inputs."patty".repo = "flake-nimble";

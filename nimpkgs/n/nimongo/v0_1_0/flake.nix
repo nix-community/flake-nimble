@@ -7,7 +7,6 @@
   inputs.src-nimongo-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."scram".url = "path:../../../s/scram";
   inputs."scram".type = "github";
   inputs."scram".owner = "riinr";
   inputs."scram".repo = "flake-nimble";

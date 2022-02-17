@@ -7,7 +7,6 @@
   inputs.src-mcmurry-master.ref = "refs/heads/master";
   
   
-  inputs."asciitype".url = "path:../../../a/asciitype";
   inputs."asciitype".type = "github";
   inputs."asciitype".owner = "riinr";
   inputs."asciitype".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."asciitype".dir = "nimpkgs/a/asciitype";
 
   
-  inputs."ast_pattern_matching".url = "path:../../../a/ast_pattern_matching";
   inputs."ast_pattern_matching".type = "github";
   inputs."ast_pattern_matching".owner = "riinr";
   inputs."ast_pattern_matching".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."ast_pattern_matching".dir = "nimpkgs/a/ast_pattern_matching";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

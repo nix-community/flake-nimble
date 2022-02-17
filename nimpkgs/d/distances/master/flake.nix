@@ -7,7 +7,6 @@
   inputs.src-distances-master.ref = "refs/heads/master";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."neo".url = "path:../../../n/neo";
   inputs."neo".type = "github";
   inputs."neo".owner = "riinr";
   inputs."neo".repo = "flake-nimble";

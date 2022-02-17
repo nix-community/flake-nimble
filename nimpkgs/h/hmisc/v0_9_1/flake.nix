@@ -7,7 +7,6 @@
   inputs.src-hmisc-v0_9_1.ref = "refs/tags/v0.9.1";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-sound-master.ref = "refs/heads/master";
   
   
-  inputs."jnim".url = "path:../../../j/jnim";
   inputs."jnim".type = "github";
   inputs."jnim".owner = "riinr";
   inputs."jnim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jnim".dir = "nimpkgs/j/jnim";
 
   
-  inputs."https://github.com/yglukhov/async_http_request".url = "path:../../../h/https://github.com/yglukhov/async_http_request";
   inputs."https://github.com/yglukhov/async_http_request".type = "github";
   inputs."https://github.com/yglukhov/async_http_request".owner = "riinr";
   inputs."https://github.com/yglukhov/async_http_request".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."https://github.com/yglukhov/async_http_request".dir = "nimpkgs/h/https://github.com/yglukhov/async_http_request";
 
   
-  inputs."jsbind".url = "path:../../../j/jsbind";
   inputs."jsbind".type = "github";
   inputs."jsbind".owner = "riinr";
   inputs."jsbind".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."jsbind".dir = "nimpkgs/j/jsbind";
 
   
-  inputs."https://github.com/yglukhov/android".url = "path:../../../h/https://github.com/yglukhov/android";
   inputs."https://github.com/yglukhov/android".type = "github";
   inputs."https://github.com/yglukhov/android".owner = "riinr";
   inputs."https://github.com/yglukhov/android".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-rocksdb-master.ref = "refs/heads/master";
   
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."tempfile".url = "path:../../../t/tempfile";
   inputs."tempfile".type = "github";
   inputs."tempfile".owner = "riinr";
   inputs."tempfile".repo = "flake-nimble";

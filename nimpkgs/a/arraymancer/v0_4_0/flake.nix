@@ -7,7 +7,6 @@
   inputs.src-arraymancer-v0_4_0.ref = "refs/tags/v0.4.0";
   
   
-  inputs."nimblas".url = "path:../../../n/nimblas";
   inputs."nimblas".type = "github";
   inputs."nimblas".owner = "riinr";
   inputs."nimblas".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimblas".dir = "nimpkgs/n/nimblas";
 
   
-  inputs."nimlapack".url = "path:../../../n/nimlapack";
   inputs."nimlapack".type = "github";
   inputs."nimlapack".owner = "riinr";
   inputs."nimlapack".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimlapack".dir = "nimpkgs/n/nimlapack";
 
   
-  inputs."nimcuda".url = "path:../../../n/nimcuda";
   inputs."nimcuda".type = "github";
   inputs."nimcuda".owner = "riinr";
   inputs."nimcuda".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."nimcuda".dir = "nimpkgs/n/nimcuda";
 
   
-  inputs."nimcl".url = "path:../../../n/nimcl";
   inputs."nimcl".type = "github";
   inputs."nimcl".owner = "riinr";
   inputs."nimcl".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."nimcl".dir = "nimpkgs/n/nimcl";
 
   
-  inputs."clblast".url = "path:../../../c/clblast";
   inputs."clblast".type = "github";
   inputs."clblast".owner = "riinr";
   inputs."clblast".repo = "flake-nimble";

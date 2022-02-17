@@ -7,7 +7,6 @@
   inputs.src-trick-0_1_2.ref = "refs/tags/0.1.2";
   
   
-  inputs."nimpng".url = "path:../../../n/nimpng";
   inputs."nimpng".type = "github";
   inputs."nimpng".owner = "riinr";
   inputs."nimpng".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-fftw3-master.ref = "refs/heads/master";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."weave".url = "path:../../../w/weave";
   inputs."weave".type = "github";
   inputs."weave".owner = "riinr";
   inputs."weave".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."weave".dir = "nimpkgs/w/weave";
 
   
-  inputs."zippy".url = "path:../../../z/zippy";
   inputs."zippy".type = "github";
   inputs."zippy".owner = "riinr";
   inputs."zippy".repo = "flake-nimble";

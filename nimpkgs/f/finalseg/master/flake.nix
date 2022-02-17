@@ -7,7 +7,6 @@
   inputs.src-finalseg-master.ref = "refs/heads/master";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

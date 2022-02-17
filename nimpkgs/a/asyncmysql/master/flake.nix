@@ -7,7 +7,6 @@
   inputs.src-asyncmysql-master.ref = "refs/heads/master";
   
   
-  inputs."mysqlparser".url = "path:../../../m/mysqlparser";
   inputs."mysqlparser".type = "github";
   inputs."mysqlparser".owner = "riinr";
   inputs."mysqlparser".repo = "flake-nimble";

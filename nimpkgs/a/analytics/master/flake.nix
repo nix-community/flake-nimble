@@ -7,7 +7,6 @@
   inputs.src-analytics-master.ref = "refs/heads/master";
   
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
   
-  inputs."osinfo".url = "path:../../../o/osinfo";
   inputs."osinfo".type = "github";
   inputs."osinfo".owner = "riinr";
   inputs."osinfo".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."osinfo".dir = "nimpkgs/o/osinfo";
 
   
-  inputs."puppy".url = "path:../../../p/puppy";
   inputs."puppy".type = "github";
   inputs."puppy".owner = "riinr";
   inputs."puppy".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-mentat-master.ref = "refs/heads/master";
   
   
-  inputs."science".url = "path:../../../s/science";
   inputs."science".type = "github";
   inputs."science".owner = "riinr";
   inputs."science".repo = "flake-nimble";

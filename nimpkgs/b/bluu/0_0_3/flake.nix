@@ -7,7 +7,6 @@
   inputs.src-bluu-0_0_3.ref = "refs/tags/0.0.3";
   
   
-  inputs."openapi".url = "path:../../../o/openapi";
   inputs."openapi".type = "github";
   inputs."openapi".owner = "riinr";
   inputs."openapi".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."openapi".dir = "nimpkgs/o/openapi";
 
   
-  inputs."https://github.com/disruptek/rest.git".url = "path:../../../h/https://github.com/disruptek/rest.git";
   inputs."https://github.com/disruptek/rest.git".type = "github";
   inputs."https://github.com/disruptek/rest.git".owner = "riinr";
   inputs."https://github.com/disruptek/rest.git".repo = "flake-nimble";

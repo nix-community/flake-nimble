@@ -7,7 +7,6 @@
   inputs.src-chronicles-v0_10_0.ref = "refs/tags/v0.10.0";
   
   
-  inputs."testutils".url = "path:../../../t/testutils";
   inputs."testutils".type = "github";
   inputs."testutils".owner = "riinr";
   inputs."testutils".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."testutils".dir = "nimpkgs/t/testutils";
 
   
-  inputs."json_serialization".url = "path:../../../j/json_serialization";
   inputs."json_serialization".type = "github";
   inputs."json_serialization".owner = "riinr";
   inputs."json_serialization".repo = "flake-nimble";

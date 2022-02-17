@@ -7,7 +7,6 @@
   inputs.src-ulid-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."random".url = "path:../../../r/random";
   inputs."random".type = "github";
   inputs."random".owner = "riinr";
   inputs."random".repo = "flake-nimble";

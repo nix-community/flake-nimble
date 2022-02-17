@@ -7,7 +7,6 @@
   inputs.src-amysql-v0_7_5.ref = "refs/tags/v0.7.5";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."zstd".url = "path:../../../z/zstd";
   inputs."zstd".type = "github";
   inputs."zstd".owner = "riinr";
   inputs."zstd".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."zstd".dir = "nimpkgs/z/zstd";
 
   
-  inputs."urlly".url = "path:../../../u/urlly";
   inputs."urlly".type = "github";
   inputs."urlly".owner = "riinr";
   inputs."urlly".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."urlly".dir = "nimpkgs/u/urlly";
 
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";

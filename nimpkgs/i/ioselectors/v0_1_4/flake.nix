@@ -7,7 +7,6 @@
   inputs.src-ioselectors-v0_1_4.ref = "refs/tags/v0.1.4";
   
   
-  inputs."timerwheel".url = "path:../../../t/timerwheel";
   inputs."timerwheel".type = "github";
   inputs."timerwheel".owner = "riinr";
   inputs."timerwheel".repo = "flake-nimble";

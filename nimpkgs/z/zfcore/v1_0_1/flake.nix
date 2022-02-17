@@ -7,7 +7,6 @@
   inputs.src-zfcore-v1_0_1.ref = "refs/tags/v1.0.1";
   
   
-  inputs."uri3".url = "path:../../../u/uri3";
   inputs."uri3".type = "github";
   inputs."uri3".owner = "riinr";
   inputs."uri3".repo = "flake-nimble";

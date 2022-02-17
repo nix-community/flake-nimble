@@ -7,7 +7,6 @@
   inputs.src-cbor-master.ref = "refs/heads/master";
   
   
-  inputs."bigints".url = "path:../../../b/bigints";
   inputs."bigints".type = "github";
   inputs."bigints".owner = "riinr";
   inputs."bigints".repo = "flake-nimble";

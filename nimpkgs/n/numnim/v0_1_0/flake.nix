@@ -7,7 +7,6 @@
   inputs.src-numnim-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."nimblas".url = "path:../../../n/nimblas";
   inputs."nimblas".type = "github";
   inputs."nimblas".owner = "riinr";
   inputs."nimblas".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimblas".dir = "nimpkgs/n/nimblas";
 
   
-  inputs."nimlapack".url = "path:../../../n/nimlapack";
   inputs."nimlapack".type = "github";
   inputs."nimlapack".owner = "riinr";
   inputs."nimlapack".repo = "flake-nimble";

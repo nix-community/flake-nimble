@@ -7,7 +7,6 @@
   inputs.src-eth_trie-master.ref = "refs/heads/master";
   
   
-  inputs."rlp".url = "path:../../../r/rlp";
   inputs."rlp".type = "github";
   inputs."rlp".owner = "riinr";
   inputs."rlp".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."rlp".dir = "nimpkgs/r/rlp";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."ranges".url = "path:../../../r/ranges";
   inputs."ranges".type = "github";
   inputs."ranges".owner = "riinr";
   inputs."ranges".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."ranges".dir = "nimpkgs/r/ranges";
 
   
-  inputs."rocksdb".url = "path:../../../r/rocksdb";
   inputs."rocksdb".type = "github";
   inputs."rocksdb".owner = "riinr";
   inputs."rocksdb".repo = "flake-nimble";

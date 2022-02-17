@@ -7,7 +7,6 @@
   inputs.src-buffer-master.ref = "refs/heads/master";
   
   
-  inputs."struct".url = "path:../../../s/struct";
   inputs."struct".type = "github";
   inputs."struct".owner = "riinr";
   inputs."struct".repo = "flake-nimble";

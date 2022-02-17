@@ -7,7 +7,6 @@
   inputs.src-isocodes-1_1_5.ref = "refs/tags/1.1.5";
   
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";

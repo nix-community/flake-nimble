@@ -7,7 +7,6 @@
   inputs.src-kdb-master.ref = "refs/heads/master";
   
   
-  inputs."terminaltables".url = "path:../../../t/terminaltables";
   inputs."terminaltables".type = "github";
   inputs."terminaltables".owner = "riinr";
   inputs."terminaltables".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."terminaltables".dir = "nimpkgs/t/terminaltables";
 
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";

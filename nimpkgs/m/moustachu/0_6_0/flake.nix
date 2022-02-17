@@ -7,7 +7,6 @@
   inputs.src-moustachu-0_6_0.ref = "refs/tags/0.6.0";
   
   
-  inputs."commandeer".url = "path:../../../c/commandeer";
   inputs."commandeer".type = "github";
   inputs."commandeer".owner = "riinr";
   inputs."commandeer".repo = "flake-nimble";

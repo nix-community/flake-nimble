@@ -7,7 +7,6 @@
   inputs.src-ytextractor-master.ref = "refs/heads/master";
   
   
-  inputs."ajax".url = "path:../../../a/ajax";
   inputs."ajax".type = "github";
   inputs."ajax".owner = "riinr";
   inputs."ajax".repo = "flake-nimble";

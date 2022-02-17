@@ -7,7 +7,6 @@
   inputs.src-nimfm-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."nimlapack".url = "path:../../../n/nimlapack";
   inputs."nimlapack".type = "github";
   inputs."nimlapack".owner = "riinr";
   inputs."nimlapack".repo = "flake-nimble";

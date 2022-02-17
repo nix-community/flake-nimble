@@ -7,7 +7,6 @@
   inputs.src-glob-v0_9_0-doc.ref = "refs/tags/v0.9.0-doc";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

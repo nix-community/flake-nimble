@@ -7,7 +7,6 @@
   inputs.src-nimlsp-v0_4_0.ref = "refs/tags/v0.4.0";
   
   
-  inputs."jsonschema".url = "path:../../../j/jsonschema";
   inputs."jsonschema".type = "github";
   inputs."jsonschema".owner = "riinr";
   inputs."jsonschema".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nerve-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."httpbeast".url = "path:../../../h/httpbeast";
   inputs."httpbeast".type = "github";
   inputs."httpbeast".owner = "riinr";
   inputs."httpbeast".repo = "flake-nimble";

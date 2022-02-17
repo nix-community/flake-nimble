@@ -7,7 +7,6 @@
   inputs.src-denim_ui_canvas-master.ref = "refs/heads/master";
   
   
-  inputs."denim_ui".url = "path:../../../d/denim_ui";
   inputs."denim_ui".type = "github";
   inputs."denim_ui".owner = "riinr";
   inputs."denim_ui".repo = "flake-nimble";

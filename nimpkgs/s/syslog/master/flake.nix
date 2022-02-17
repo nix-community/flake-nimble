@@ -7,7 +7,6 @@
   inputs.src-syslog-master.ref = "refs/heads/master";
   
   
-  inputs."nake".url = "path:../../../n/nake";
   inputs."nake".type = "github";
   inputs."nake".owner = "riinr";
   inputs."nake".repo = "flake-nimble";

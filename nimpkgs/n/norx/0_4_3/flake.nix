@@ -7,7 +7,6 @@
   inputs.src-norx-0_4_3.ref = "refs/tags/0.4.3";
   
   
-  inputs."https://github.com/yglukhov/android".url = "path:../../../h/https://github.com/yglukhov/android";
   inputs."https://github.com/yglukhov/android".type = "github";
   inputs."https://github.com/yglukhov/android".owner = "riinr";
   inputs."https://github.com/yglukhov/android".repo = "flake-nimble";

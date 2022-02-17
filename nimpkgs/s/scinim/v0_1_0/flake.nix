@@ -7,7 +7,6 @@
   inputs.src-scinim-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."polynumeric".url = "path:../../../p/polynumeric";
   inputs."polynumeric".type = "github";
   inputs."polynumeric".owner = "riinr";
   inputs."polynumeric".repo = "flake-nimble";

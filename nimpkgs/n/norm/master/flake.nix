@@ -7,7 +7,6 @@
   inputs.src-norm-master.ref = "refs/heads/master";
   
   
-  inputs."ndb".url = "path:../../../n/ndb";
   inputs."ndb".type = "github";
   inputs."ndb".owner = "riinr";
   inputs."ndb".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-hparse-v0_2_4.ref = "refs/tags/v0.2.4";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."hmisc".dir = "nimpkgs/h/hmisc";
 
   
-  inputs."hasts".url = "path:../../../h/hasts";
   inputs."hasts".type = "github";
   inputs."hasts".owner = "riinr";
   inputs."hasts".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."hasts".dir = "nimpkgs/h/hasts";
 
   
-  inputs."hpprint".url = "path:../../../h/hpprint";
   inputs."hpprint".type = "github";
   inputs."hpprint".owner = "riinr";
   inputs."hpprint".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimagehide-master.ref = "refs/heads/master";
   
   
-  inputs."stb_image".url = "path:../../../s/stb_image";
   inputs."stb_image".type = "github";
   inputs."stb_image".owner = "riinr";
   inputs."stb_image".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stb_image".dir = "nimpkgs/s/stb_image";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."cli_menu".url = "path:../../../c/cli_menu";
   inputs."cli_menu".type = "github";
   inputs."cli_menu".owner = "riinr";
   inputs."cli_menu".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-iputils-master.ref = "refs/heads/master";
   
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-ad-master.ref = "refs/heads/master";
   
   
-  inputs."bignum".url = "path:../../../b/bignum";
   inputs."bignum".type = "github";
   inputs."bignum".owner = "riinr";
   inputs."bignum".repo = "flake-nimble";

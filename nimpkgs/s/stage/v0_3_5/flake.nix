@@ -7,7 +7,6 @@
   inputs.src-stage-v0_3_5.ref = "refs/tags/v0.3.5";
   
   
-  inputs."shell".url = "path:../../../s/shell";
   inputs."shell".type = "github";
   inputs."shell".owner = "riinr";
   inputs."shell".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."shell".dir = "nimpkgs/s/shell";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

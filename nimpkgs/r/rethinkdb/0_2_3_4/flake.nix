@@ -7,7 +7,6 @@
   inputs.src-rethinkdb-0_2_3_4.ref = "refs/tags/0.2.3.4";
   
   
-  inputs."struct".url = "path:../../../s/struct";
   inputs."struct".type = "github";
   inputs."struct".owner = "riinr";
   inputs."struct".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."struct".dir = "nimpkgs/s/struct";
 
   
-  inputs."scram".url = "path:../../../s/scram";
   inputs."scram".type = "github";
   inputs."scram".owner = "riinr";
   inputs."scram".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimtetris-v1_1_0.ref = "refs/tags/v1.1.0";
   
   
-  inputs."illwill".url = "path:../../../i/illwill";
   inputs."illwill".type = "github";
   inputs."illwill".owner = "riinr";
   inputs."illwill".repo = "flake-nimble";

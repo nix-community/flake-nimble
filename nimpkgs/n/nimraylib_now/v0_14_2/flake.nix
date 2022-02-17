@@ -7,7 +7,6 @@
   inputs.src-nimraylib_now-v0_14_2.ref = "refs/tags/v0.14.2";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-awsSTS-main.ref = "refs/heads/main";
   
   
-  inputs."sigv4".url = "path:../../../s/sigv4";
   inputs."sigv4".type = "github";
   inputs."sigv4".owner = "riinr";
   inputs."sigv4".repo = "flake-nimble";

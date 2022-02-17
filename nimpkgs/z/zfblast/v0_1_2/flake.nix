@@ -7,7 +7,6 @@
   inputs.src-zfblast-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."uri3".url = "path:../../../u/uri3";
   inputs."uri3".type = "github";
   inputs."uri3".owner = "riinr";
   inputs."uri3".repo = "flake-nimble";

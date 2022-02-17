@@ -7,7 +7,6 @@
   inputs.src-denim_ui_cairo-master.ref = "refs/heads/master";
   
   
-  inputs."denim_ui".url = "path:../../../d/denim_ui";
   inputs."denim_ui".type = "github";
   inputs."denim_ui".owner = "riinr";
   inputs."denim_ui".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."denim_ui".dir = "nimpkgs/d/denim_ui";
 
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
   
-  inputs."cairo".url = "path:../../../c/cairo";
   inputs."cairo".type = "github";
   inputs."cairo".owner = "riinr";
   inputs."cairo".repo = "flake-nimble";

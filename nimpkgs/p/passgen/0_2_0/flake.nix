@@ -7,7 +7,6 @@
   inputs.src-passgen-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";

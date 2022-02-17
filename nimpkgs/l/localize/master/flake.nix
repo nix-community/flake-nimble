@@ -7,7 +7,6 @@
   inputs.src-localize-master.ref = "refs/heads/master";
   
   
-  inputs."fusion".url = "path:../../../f/fusion";
   inputs."fusion".type = "github";
   inputs."fusion".owner = "riinr";
   inputs."fusion".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nwt-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/enthus1ast/nimcommandparser".url = "path:../../../h/https://github.com/enthus1ast/nimcommandparser";
   inputs."https://github.com/enthus1ast/nimcommandparser".type = "github";
   inputs."https://github.com/enthus1ast/nimcommandparser".owner = "riinr";
   inputs."https://github.com/enthus1ast/nimcommandparser".repo = "flake-nimble";

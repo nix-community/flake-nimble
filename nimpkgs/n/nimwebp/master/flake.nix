@@ -7,7 +7,6 @@
   inputs.src-nimwebp-master.ref = "refs/heads/master";
   
   
-  inputs."nimpng".url = "path:../../../n/nimpng";
   inputs."nimpng".type = "github";
   inputs."nimpng".owner = "riinr";
   inputs."nimpng".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimpng".dir = "nimpkgs/n/nimpng";
 
   
-  inputs."https://github.com/yglukhov/clurp".url = "path:../../../h/https://github.com/yglukhov/clurp";
   inputs."https://github.com/yglukhov/clurp".type = "github";
   inputs."https://github.com/yglukhov/clurp".owner = "riinr";
   inputs."https://github.com/yglukhov/clurp".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-atoz-2533_0_1.ref = "refs/tags/2533.0.1";
   
   
-  inputs."openapi".url = "path:../../../o/openapi";
   inputs."openapi".type = "github";
   inputs."openapi".owner = "riinr";
   inputs."openapi".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."openapi".dir = "nimpkgs/o/openapi";
 
   
-  inputs."sigv4".url = "path:../../../s/sigv4";
   inputs."sigv4".type = "github";
   inputs."sigv4".owner = "riinr";
   inputs."sigv4".repo = "flake-nimble";

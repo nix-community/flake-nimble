@@ -7,7 +7,6 @@
   inputs.src-sigv4-1_0_8.ref = "refs/tags/1.0.8";
   
   
-  inputs."https://github.com/jangko/nimsha2".url = "path:../../../h/https://github.com/jangko/nimsha2";
   inputs."https://github.com/jangko/nimsha2".type = "github";
   inputs."https://github.com/jangko/nimsha2".owner = "riinr";
   inputs."https://github.com/jangko/nimsha2".repo = "flake-nimble";

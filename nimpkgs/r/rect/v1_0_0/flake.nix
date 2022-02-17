@@ -7,7 +7,6 @@
   inputs.src-rect-v1_0_0.ref = "refs/tags/v1.0.0";
   
   
-  inputs."eastasianwidth".url = "path:../../../e/eastasianwidth";
   inputs."eastasianwidth".type = "github";
   inputs."eastasianwidth".owner = "riinr";
   inputs."eastasianwidth".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

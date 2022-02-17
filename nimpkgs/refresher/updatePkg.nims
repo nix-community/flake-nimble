@@ -181,7 +181,6 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
         continue
       yield fmt"""
 
-  inputs."{depName}".url = "path:../../../{initial}/{depName}";
   inputs."{depName}".type = "github";
   inputs."{depName}".owner = "riinr";
   inputs."{depName}".repo = "flake-nimble";

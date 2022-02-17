@@ -7,7 +7,6 @@
   inputs.src-nimterop-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-html_tools-master.ref = "refs/heads/master";
   
   
-  inputs."contra".url = "path:../../../c/contra";
   inputs."contra".type = "github";
   inputs."contra".owner = "riinr";
   inputs."contra".repo = "flake-nimble";

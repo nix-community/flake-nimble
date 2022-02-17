@@ -7,7 +7,6 @@
   inputs.src-nicoru-develop.ref = "refs/heads/develop";
   
   
-  inputs."https://github.com/def-/nim-syscall".url = "path:../../../h/https://github.com/def-/nim-syscall";
   inputs."https://github.com/def-/nim-syscall".type = "github";
   inputs."https://github.com/def-/nim-syscall".owner = "riinr";
   inputs."https://github.com/def-/nim-syscall".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/def-/nim-syscall".dir = "nimpkgs/h/https://github.com/def-/nim-syscall";
 
   
-  inputs."seccomp".url = "path:../../../s/seccomp";
   inputs."seccomp".type = "github";
   inputs."seccomp".owner = "riinr";
   inputs."seccomp".repo = "flake-nimble";

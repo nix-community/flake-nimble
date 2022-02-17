@@ -7,7 +7,6 @@
   inputs.src-windy-master.ref = "refs/heads/master";
   
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-eloverblik-v0_0_5.ref = "refs/tags/v0.0.5";
   
   
-  inputs."nmqtt".url = "path:../../../n/nmqtt";
   inputs."nmqtt".type = "github";
   inputs."nmqtt".owner = "riinr";
   inputs."nmqtt".repo = "flake-nimble";

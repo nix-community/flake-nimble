@@ -7,7 +7,6 @@
   inputs.src-dav1d-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/capocasa/nimterop".url = "path:../../../h/https://github.com/capocasa/nimterop";
   inputs."https://github.com/capocasa/nimterop".type = "github";
   inputs."https://github.com/capocasa/nimterop".owner = "riinr";
   inputs."https://github.com/capocasa/nimterop".repo = "flake-nimble";

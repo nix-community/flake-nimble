@@ -7,7 +7,6 @@
   inputs.src-blackvas_cli-master.ref = "refs/heads/master";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";

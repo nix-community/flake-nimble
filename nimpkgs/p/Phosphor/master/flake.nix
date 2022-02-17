@@ -7,7 +7,6 @@
   inputs.src-Phosphor-master.ref = "refs/heads/master";
   
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";

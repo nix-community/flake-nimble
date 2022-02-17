@@ -7,7 +7,6 @@
   inputs.src-statistical_tests-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."distributions".url = "path:../../../d/distributions";
   inputs."distributions".type = "github";
   inputs."distributions".owner = "riinr";
   inputs."distributions".repo = "flake-nimble";

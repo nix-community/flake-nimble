@@ -7,7 +7,6 @@
   inputs.src-protobuf_serialization-master.ref = "refs/heads/master";
   
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."faststreams".url = "path:../../../f/faststreams";
   inputs."faststreams".type = "github";
   inputs."faststreams".owner = "riinr";
   inputs."faststreams".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."faststreams".dir = "nimpkgs/f/faststreams";
 
   
-  inputs."serialization".url = "path:../../../s/serialization";
   inputs."serialization".type = "github";
   inputs."serialization".owner = "riinr";
   inputs."serialization".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."serialization".dir = "nimpkgs/s/serialization";
 
   
-  inputs."combparser".url = "path:../../../c/combparser";
   inputs."combparser".type = "github";
   inputs."combparser".owner = "riinr";
   inputs."combparser".repo = "flake-nimble";

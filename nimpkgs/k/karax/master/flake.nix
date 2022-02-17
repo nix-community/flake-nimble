@@ -7,7 +7,6 @@
   inputs.src-karax-master.ref = "refs/heads/master";
   
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ws".dir = "nimpkgs/w/ws";
 
   
-  inputs."dotenv".url = "path:../../../d/dotenv";
   inputs."dotenv".type = "github";
   inputs."dotenv".owner = "riinr";
   inputs."dotenv".repo = "flake-nimble";

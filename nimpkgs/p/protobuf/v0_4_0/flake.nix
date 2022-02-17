@@ -7,7 +7,6 @@
   inputs.src-protobuf-v0_4_0.ref = "refs/tags/v0.4.0";
   
   
-  inputs."combparser".url = "path:../../../c/combparser";
   inputs."combparser".type = "github";
   inputs."combparser".owner = "riinr";
   inputs."combparser".repo = "flake-nimble";

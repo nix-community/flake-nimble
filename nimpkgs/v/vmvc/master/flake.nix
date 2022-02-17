@@ -7,7 +7,6 @@
   inputs.src-vmvc-master.ref = "refs/heads/master";
   
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

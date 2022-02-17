@@ -7,7 +7,6 @@
   inputs.src-oauth-v0_4_1.ref = "refs/tags/v0.4.1";
   
   
-  inputs."sha1".url = "path:../../../s/sha1";
   inputs."sha1".type = "github";
   inputs."sha1".owner = "riinr";
   inputs."sha1".repo = "flake-nimble";

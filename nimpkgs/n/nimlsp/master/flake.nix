@@ -7,7 +7,6 @@
   inputs.src-nimlsp-master.ref = "refs/heads/master";
   
   
-  inputs."jsonschema".url = "path:../../../j/jsonschema";
   inputs."jsonschema".type = "github";
   inputs."jsonschema".owner = "riinr";
   inputs."jsonschema".repo = "flake-nimble";

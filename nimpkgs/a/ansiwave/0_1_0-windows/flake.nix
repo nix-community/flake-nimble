@@ -7,7 +7,6 @@
   inputs.src-ansiwave-0_1_0-windows.ref = "refs/tags/0.1.0-windows";
   
   
-  inputs."pararules".url = "path:../../../p/pararules";
   inputs."pararules".type = "github";
   inputs."pararules".owner = "riinr";
   inputs."pararules".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."pararules".dir = "nimpkgs/p/pararules";
 
   
-  inputs."paramidi".url = "path:../../../p/paramidi";
   inputs."paramidi".type = "github";
   inputs."paramidi".owner = "riinr";
   inputs."paramidi".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."paramidi".dir = "nimpkgs/p/paramidi";
 
   
-  inputs."paramidi_soundfonts".url = "path:../../../p/paramidi_soundfonts";
   inputs."paramidi_soundfonts".type = "github";
   inputs."paramidi_soundfonts".owner = "riinr";
   inputs."paramidi_soundfonts".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."paramidi_soundfonts".dir = "nimpkgs/p/paramidi_soundfonts";
 
   
-  inputs."parasound".url = "path:../../../p/parasound";
   inputs."parasound".type = "github";
   inputs."parasound".owner = "riinr";
   inputs."parasound".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."parasound".dir = "nimpkgs/p/parasound";
 
   
-  inputs."illwill".url = "path:../../../i/illwill";
   inputs."illwill".type = "github";
   inputs."illwill".owner = "riinr";
   inputs."illwill".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."illwill".dir = "nimpkgs/i/illwill";
 
   
-  inputs."zippy".url = "path:../../../z/zippy";
   inputs."zippy".type = "github";
   inputs."zippy".owner = "riinr";
   inputs."zippy".repo = "flake-nimble";

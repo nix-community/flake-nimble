@@ -7,7 +7,6 @@
   inputs.src-packedArgs-main.ref = "refs/heads/main";
   
   
-  inputs."macroplus".url = "path:../../../m/macroplus";
   inputs."macroplus".type = "github";
   inputs."macroplus".owner = "riinr";
   inputs."macroplus".repo = "flake-nimble";

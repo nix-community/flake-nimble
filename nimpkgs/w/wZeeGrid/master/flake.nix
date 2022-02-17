@@ -7,7 +7,6 @@
   inputs.src-wZeeGrid-master.ref = "refs/heads/master";
   
   
-  inputs."wnim".url = "path:../../../w/wnim";
   inputs."wnim".type = "github";
   inputs."wnim".owner = "riinr";
   inputs."wnim".repo = "flake-nimble";

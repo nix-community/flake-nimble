@@ -7,7 +7,6 @@
   inputs.src-nmqtt-v1_0_0.ref = "refs/tags/v1.0.0";
   
   
-  inputs."bcrypt".url = "path:../../../b/bcrypt";
   inputs."bcrypt".type = "github";
   inputs."bcrypt".owner = "riinr";
   inputs."bcrypt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."bcrypt".dir = "nimpkgs/b/bcrypt";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

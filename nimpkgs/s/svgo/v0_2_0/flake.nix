@@ -7,7 +7,6 @@
   inputs.src-svgo-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

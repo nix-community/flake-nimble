@@ -7,7 +7,6 @@
   inputs.src-delight-master.ref = "refs/heads/master";
   
   
-  inputs."glm".url = "path:../../../g/glm";
   inputs."glm".type = "github";
   inputs."glm".owner = "riinr";
   inputs."glm".repo = "flake-nimble";

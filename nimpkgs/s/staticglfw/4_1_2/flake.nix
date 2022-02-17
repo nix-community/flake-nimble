@@ -7,7 +7,6 @@
   inputs.src-staticglfw-4_1_2.ref = "refs/tags/4.1.2";
   
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";

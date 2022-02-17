@@ -7,7 +7,6 @@
   inputs.src-impulse_engine-master.ref = "refs/heads/master";
   
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."x11".dir = "nimpkgs/x/x11";
 
   
-  inputs."nim-glfw".url = "path:../../../n/nim-glfw";
   inputs."nim-glfw".type = "github";
   inputs."nim-glfw".owner = "riinr";
   inputs."nim-glfw".repo = "flake-nimble";

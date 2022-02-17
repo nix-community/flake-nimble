@@ -7,7 +7,6 @@
   inputs.src-notification-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."https://github.com/solitudesf/nim-dbus".url = "path:../../../h/https://github.com/solitudesf/nim-dbus";
   inputs."https://github.com/solitudesf/nim-dbus".type = "github";
   inputs."https://github.com/solitudesf/nim-dbus".owner = "riinr";
   inputs."https://github.com/solitudesf/nim-dbus".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/solitudesf/nim-dbus".dir = "nimpkgs/h/https://github.com/solitudesf/nim-dbus";
 
   
-  inputs."imageman".url = "path:../../../i/imageman";
   inputs."imageman".type = "github";
   inputs."imageman".owner = "riinr";
   inputs."imageman".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-genieos-master.ref = "refs/heads/master";
   
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";

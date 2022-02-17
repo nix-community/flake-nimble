@@ -7,7 +7,6 @@
   inputs.src-ginger-v0_2_5.ref = "refs/tags/v0.2.5";
   
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."https://github.com/vindaar/seqmath".url = "path:../../../h/https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type = "github";
   inputs."https://github.com/vindaar/seqmath".owner = "riinr";
   inputs."https://github.com/vindaar/seqmath".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."https://github.com/vindaar/seqmath".dir = "nimpkgs/h/https://github.com/vindaar/seqmath";
 
   
-  inputs."cairo".url = "path:../../../c/cairo";
   inputs."cairo".type = "github";
   inputs."cairo".owner = "riinr";
   inputs."cairo".repo = "flake-nimble";

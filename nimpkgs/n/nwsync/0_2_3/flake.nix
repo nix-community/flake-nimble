@@ -7,7 +7,6 @@
   inputs.src-nwsync-0_2_3.ref = "refs/tags/0.2.3";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."zip".dir = "nimpkgs/z/zip";
 
   
-  inputs."neverwinter".url = "path:../../../n/neverwinter";
   inputs."neverwinter".type = "github";
   inputs."neverwinter".owner = "riinr";
   inputs."neverwinter".repo = "flake-nimble";

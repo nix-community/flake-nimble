@@ -7,7 +7,6 @@
   inputs.src-googlesearch-master.ref = "refs/heads/master";
   
   
-  inputs."nimquery".url = "path:../../../n/nimquery";
   inputs."nimquery".type = "github";
   inputs."nimquery".owner = "riinr";
   inputs."nimquery".repo = "flake-nimble";

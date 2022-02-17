@@ -7,7 +7,6 @@
   inputs.src-taskqueue-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."timestamp".url = "path:../../../t/timestamp";
   inputs."timestamp".type = "github";
   inputs."timestamp".owner = "riinr";
   inputs."timestamp".repo = "flake-nimble";

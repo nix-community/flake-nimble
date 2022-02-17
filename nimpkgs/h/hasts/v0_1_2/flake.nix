@@ -7,7 +7,6 @@
   inputs.src-hasts-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";

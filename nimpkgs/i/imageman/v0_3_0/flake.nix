@@ -7,7 +7,6 @@
   inputs.src-imageman-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."stb_image".url = "path:../../../s/stb_image";
   inputs."stb_image".type = "github";
   inputs."stb_image".owner = "riinr";
   inputs."stb_image".repo = "flake-nimble";

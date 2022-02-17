@@ -7,7 +7,6 @@
   inputs.src-asyncredis-master.ref = "refs/heads/master";
   
   
-  inputs."ptr_math".url = "path:../../../p/ptr_math";
   inputs."ptr_math".type = "github";
   inputs."ptr_math".owner = "riinr";
   inputs."ptr_math".repo = "flake-nimble";

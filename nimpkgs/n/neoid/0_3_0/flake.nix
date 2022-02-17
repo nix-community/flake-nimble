@@ -7,7 +7,6 @@
   inputs.src-neoid-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."random".url = "path:../../../r/random";
   inputs."random".type = "github";
   inputs."random".owner = "riinr";
   inputs."random".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."random".dir = "nimpkgs/r/random";
 
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";

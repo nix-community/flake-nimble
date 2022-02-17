@@ -7,7 +7,6 @@
   inputs.src-netty-master.ref = "refs/heads/master";
   
   
-  inputs."flatty".url = "path:../../../f/flatty";
   inputs."flatty".type = "github";
   inputs."flatty".owner = "riinr";
   inputs."flatty".repo = "flake-nimble";

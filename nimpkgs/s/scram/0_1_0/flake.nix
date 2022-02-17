@@ -7,7 +7,6 @@
   inputs.src-scram-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."hmac".url = "path:../../../h/hmac";
   inputs."hmac".type = "github";
   inputs."hmac".owner = "riinr";
   inputs."hmac".repo = "flake-nimble";

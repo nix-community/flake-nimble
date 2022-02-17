@@ -7,7 +7,6 @@
   inputs.src-uibuilder-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."ui".url = "path:../../../u/ui";
   inputs."ui".type = "github";
   inputs."ui".owner = "riinr";
   inputs."ui".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ui".dir = "nimpkgs/u/ui";
 
   
-  inputs."q".url = "path:../../../q/q";
   inputs."q".type = "github";
   inputs."q".owner = "riinr";
   inputs."q".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-finder-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-suber-0_9_9.ref = "refs/tags/0.9.9";
   
   
-  inputs."stashtable".url = "path:../../../s/stashtable";
   inputs."stashtable".type = "github";
   inputs."stashtable".owner = "riinr";
   inputs."stashtable".repo = "flake-nimble";

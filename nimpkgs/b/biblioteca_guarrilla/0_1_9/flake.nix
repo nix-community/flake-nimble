@@ -7,7 +7,6 @@
   inputs.src-biblioteca_guarrilla-0_1_9.ref = "refs/tags/0.1.9";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jester".dir = "nimpkgs/j/jester";
 
   
-  inputs."webp".url = "path:../../../w/webp";
   inputs."webp".type = "github";
   inputs."webp".owner = "riinr";
   inputs."webp".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."webp".dir = "nimpkgs/w/webp";
 
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

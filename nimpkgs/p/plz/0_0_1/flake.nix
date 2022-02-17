@@ -7,7 +7,6 @@
   inputs.src-plz-0_0_1.ref = "refs/tags/0.0.1";
   
   
-  inputs."requirementstxt".url = "path:../../../r/requirementstxt";
   inputs."requirementstxt".type = "github";
   inputs."requirementstxt".owner = "riinr";
   inputs."requirementstxt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."requirementstxt".dir = "nimpkgs/r/requirementstxt";
 
   
-  inputs."libarchibi".url = "path:../../../l/libarchibi";
   inputs."libarchibi".type = "github";
   inputs."libarchibi".owner = "riinr";
   inputs."libarchibi".repo = "flake-nimble";

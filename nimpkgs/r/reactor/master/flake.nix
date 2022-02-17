@@ -7,7 +7,6 @@
   inputs.src-reactor-master.ref = "refs/heads/master";
   
   
-  inputs."collections".url = "path:../../../c/collections";
   inputs."collections".type = "github";
   inputs."collections".owner = "riinr";
   inputs."collections".repo = "flake-nimble";

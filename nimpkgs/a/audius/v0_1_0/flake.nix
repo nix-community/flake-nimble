@@ -7,7 +7,6 @@
   inputs.src-audius-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";

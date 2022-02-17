@@ -7,7 +7,6 @@
   inputs.src-ad-0_7_1.ref = "refs/tags/0.7.1";
   
   
-  inputs."bignum".url = "path:../../../b/bignum";
   inputs."bignum".type = "github";
   inputs."bignum".owner = "riinr";
   inputs."bignum".repo = "flake-nimble";

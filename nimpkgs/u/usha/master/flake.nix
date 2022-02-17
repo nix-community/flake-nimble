@@ -7,7 +7,6 @@
   inputs.src-usha-master.ref = "refs/heads/master";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

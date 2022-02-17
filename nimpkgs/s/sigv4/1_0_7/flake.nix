@@ -7,7 +7,6 @@
   inputs.src-sigv4-1_0_7.ref = "refs/tags/1.0.7";
   
   
-  inputs."https://github.com/disruptek/nimcrypto".url = "path:../../../h/https://github.com/disruptek/nimcrypto";
   inputs."https://github.com/disruptek/nimcrypto".type = "github";
   inputs."https://github.com/disruptek/nimcrypto".owner = "riinr";
   inputs."https://github.com/disruptek/nimcrypto".repo = "flake-nimble";

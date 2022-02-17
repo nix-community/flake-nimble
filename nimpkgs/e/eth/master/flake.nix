@@ -7,7 +7,6 @@
   inputs.src-eth-master.ref = "refs/heads/master";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."stint".dir = "nimpkgs/s/stint";
 
   
-  inputs."secp256k1".url = "path:../../../s/secp256k1";
   inputs."secp256k1".type = "github";
   inputs."secp256k1".owner = "riinr";
   inputs."secp256k1".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."secp256k1".dir = "nimpkgs/s/secp256k1";
 
   
-  inputs."rocksdb".url = "path:../../../r/rocksdb";
   inputs."rocksdb".type = "github";
   inputs."rocksdb".owner = "riinr";
   inputs."rocksdb".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."rocksdb".dir = "nimpkgs/r/rocksdb";
 
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."chronicles".dir = "nimpkgs/c/chronicles";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."nat_traversal".url = "path:../../../n/nat_traversal";
   inputs."nat_traversal".type = "github";
   inputs."nat_traversal".owner = "riinr";
   inputs."nat_traversal".repo = "flake-nimble";
@@ -71,7 +63,6 @@
   inputs."nat_traversal".dir = "nimpkgs/n/nat_traversal";
 
   
-  inputs."metrics".url = "path:../../../m/metrics";
   inputs."metrics".type = "github";
   inputs."metrics".owner = "riinr";
   inputs."metrics".repo = "flake-nimble";
@@ -79,7 +70,6 @@
   inputs."metrics".dir = "nimpkgs/m/metrics";
 
   
-  inputs."sqlite3_abi".url = "path:../../../s/sqlite3_abi";
   inputs."sqlite3_abi".type = "github";
   inputs."sqlite3_abi".owner = "riinr";
   inputs."sqlite3_abi".repo = "flake-nimble";
@@ -87,7 +77,6 @@
   inputs."sqlite3_abi".dir = "nimpkgs/s/sqlite3_abi";
 
   
-  inputs."confutils".url = "path:../../../c/confutils";
   inputs."confutils".type = "github";
   inputs."confutils".owner = "riinr";
   inputs."confutils".repo = "flake-nimble";
@@ -95,7 +84,6 @@
   inputs."confutils".dir = "nimpkgs/c/confutils";
 
   
-  inputs."testutils".url = "path:../../../t/testutils";
   inputs."testutils".type = "github";
   inputs."testutils".owner = "riinr";
   inputs."testutils".repo = "flake-nimble";
@@ -103,7 +91,6 @@
   inputs."testutils".dir = "nimpkgs/t/testutils";
 
   
-  inputs."unittest2".url = "path:../../../u/unittest2";
   inputs."unittest2".type = "github";
   inputs."unittest2".owner = "riinr";
   inputs."unittest2".repo = "flake-nimble";

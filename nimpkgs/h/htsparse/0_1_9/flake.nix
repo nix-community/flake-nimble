@@ -7,7 +7,6 @@
   inputs.src-htsparse-0_1_9.ref = "refs/tags/0.1.9";
   
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";

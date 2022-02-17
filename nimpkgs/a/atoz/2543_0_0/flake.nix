@@ -7,7 +7,6 @@
   inputs.src-atoz-2543_0_0.ref = "refs/tags/2543.0.0";
   
   
-  inputs."openapi".url = "path:../../../o/openapi";
   inputs."openapi".type = "github";
   inputs."openapi".owner = "riinr";
   inputs."openapi".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."openapi".dir = "nimpkgs/o/openapi";
 
   
-  inputs."sigv4".url = "path:../../../s/sigv4";
   inputs."sigv4".type = "github";
   inputs."sigv4".owner = "riinr";
   inputs."sigv4".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."sigv4".dir = "nimpkgs/s/sigv4";
 
   
-  inputs."https://github.com/disruptek/rest.git".url = "path:../../../h/https://github.com/disruptek/rest.git";
   inputs."https://github.com/disruptek/rest.git".type = "github";
   inputs."https://github.com/disruptek/rest.git".owner = "riinr";
   inputs."https://github.com/disruptek/rest.git".repo = "flake-nimble";

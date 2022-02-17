@@ -7,7 +7,6 @@
   inputs.src-syndicate-1_1_0.ref = "refs/tags/1.1.0";
   
   
-  inputs."nimsha2".url = "path:../../../n/nimsha2";
   inputs."nimsha2".type = "github";
   inputs."nimsha2".owner = "riinr";
   inputs."nimsha2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
 
   
-  inputs."preserves".url = "path:../../../p/preserves";
   inputs."preserves".type = "github";
   inputs."preserves".owner = "riinr";
   inputs."preserves".repo = "flake-nimble";

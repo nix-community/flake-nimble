@@ -7,7 +7,6 @@
   inputs.src-astdot-main.ref = "refs/heads/main";
   
   
-  inputs."strings".url = "path:../../../s/strings";
   inputs."strings".type = "github";
   inputs."strings".owner = "riinr";
   inputs."strings".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."strings".dir = "nimpkgs/s/strings";
 
   
-  inputs."clapfn".url = "path:../../../c/clapfn";
   inputs."clapfn".type = "github";
   inputs."clapfn".owner = "riinr";
   inputs."clapfn".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."clapfn".dir = "nimpkgs/c/clapfn";
 
   
-  inputs."nimgraphviz".url = "path:../../../n/nimgraphviz";
   inputs."nimgraphviz".type = "github";
   inputs."nimgraphviz".owner = "riinr";
   inputs."nimgraphviz".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-egl-master.ref = "refs/heads/master";
   
   
-  inputs."nimrod".url = "path:../../../n/nimrod";
   inputs."nimrod".type = "github";
   inputs."nimrod".owner = "riinr";
   inputs."nimrod".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimrod".dir = "nimpkgs/n/nimrod";
 
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";

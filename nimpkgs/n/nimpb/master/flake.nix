@@ -7,7 +7,6 @@
   inputs.src-nimpb-master.ref = "refs/heads/master";
   
   
-  inputs."nimpb_protoc".url = "path:../../../n/nimpb_protoc";
   inputs."nimpb_protoc".type = "github";
   inputs."nimpb_protoc".owner = "riinr";
   inputs."nimpb_protoc".repo = "flake-nimble";

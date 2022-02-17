@@ -7,7 +7,6 @@
   inputs.src-mpwc-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."masterpassword".url = "path:../../../m/masterpassword";
   inputs."masterpassword".type = "github";
   inputs."masterpassword".owner = "riinr";
   inputs."masterpassword".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."masterpassword".dir = "nimpkgs/m/masterpassword";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

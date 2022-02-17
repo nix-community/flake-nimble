@@ -7,7 +7,6 @@
   inputs.src-surfing-ver_0_1_0.ref = "refs/tags/ver.0.1.0";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

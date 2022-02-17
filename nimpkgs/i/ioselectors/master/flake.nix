@@ -7,7 +7,6 @@
   inputs.src-ioselectors-master.ref = "refs/heads/master";
   
   
-  inputs."wepoll".url = "path:../../../w/wepoll";
   inputs."wepoll".type = "github";
   inputs."wepoll".owner = "riinr";
   inputs."wepoll".repo = "flake-nimble";

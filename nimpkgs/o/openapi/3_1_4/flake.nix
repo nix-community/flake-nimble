@@ -7,7 +7,6 @@
   inputs.src-openapi-3_1_4.ref = "refs/tags/3.1.4";
   
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
   
-  inputs."foreach".url = "path:../../../f/foreach";
   inputs."foreach".type = "github";
   inputs."foreach".owner = "riinr";
   inputs."foreach".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."foreach".dir = "nimpkgs/f/foreach";
 
   
-  inputs."https://github.com/disruptek/rest.git".url = "path:../../../h/https://github.com/disruptek/rest.git";
   inputs."https://github.com/disruptek/rest.git".type = "github";
   inputs."https://github.com/disruptek/rest.git".owner = "riinr";
   inputs."https://github.com/disruptek/rest.git".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-pomTimer-master.ref = "refs/heads/master";
   
   
-  inputs."progress".url = "path:../../../p/progress";
   inputs."progress".type = "github";
   inputs."progress".owner = "riinr";
   inputs."progress".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."progress".dir = "nimpkgs/p/progress";
 
   
-  inputs."notify".url = "path:../../../n/notify";
   inputs."notify".type = "github";
   inputs."notify".owner = "riinr";
   inputs."notify".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nesper-0_5_0.ref = "refs/tags/0.5.0";
   
   
-  inputs."msgpack4nim".url = "path:../../../m/msgpack4nim";
   inputs."msgpack4nim".type = "github";
   inputs."msgpack4nim".owner = "riinr";
   inputs."msgpack4nim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."msgpack4nim".dir = "nimpkgs/m/msgpack4nim";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";

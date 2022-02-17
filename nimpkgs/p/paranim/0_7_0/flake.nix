@@ -7,7 +7,6 @@
   inputs.src-paranim-0_7_0.ref = "refs/tags/0.7.0";
   
   
-  inputs."nimgl".url = "path:../../../n/nimgl";
   inputs."nimgl".type = "github";
   inputs."nimgl".owner = "riinr";
   inputs."nimgl".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimgl".dir = "nimpkgs/n/nimgl";
 
   
-  inputs."glm".url = "path:../../../g/glm";
   inputs."glm".type = "github";
   inputs."glm".owner = "riinr";
   inputs."glm".repo = "flake-nimble";

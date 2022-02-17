@@ -7,7 +7,6 @@
   inputs.src-deser-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."https://github.com/gabbhack/anycase-fork".url = "path:../../../h/https://github.com/gabbhack/anycase-fork";
   inputs."https://github.com/gabbhack/anycase-fork".type = "github";
   inputs."https://github.com/gabbhack/anycase-fork".owner = "riinr";
   inputs."https://github.com/gabbhack/anycase-fork".repo = "flake-nimble";

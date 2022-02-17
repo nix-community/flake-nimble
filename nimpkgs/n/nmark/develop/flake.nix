@@ -7,7 +7,6 @@
   inputs.src-nmark-develop.ref = "refs/heads/develop";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

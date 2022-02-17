@@ -7,7 +7,6 @@
   inputs.src-coco-master.ref = "refs/heads/master";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."glob".url = "path:../../../g/glob";
   inputs."glob".type = "github";
   inputs."glob".owner = "riinr";
   inputs."glob".repo = "flake-nimble";

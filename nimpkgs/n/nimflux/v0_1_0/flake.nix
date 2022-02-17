@@ -7,7 +7,6 @@
   inputs.src-nimflux-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."coverage".url = "path:../../../c/coverage";
   inputs."coverage".type = "github";
   inputs."coverage".owner = "riinr";
   inputs."coverage".repo = "flake-nimble";

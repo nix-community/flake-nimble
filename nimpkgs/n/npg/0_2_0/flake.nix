@@ -7,7 +7,6 @@
   inputs.src-npg-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."passgen".url = "path:../../../p/passgen";
   inputs."passgen".type = "github";
   inputs."passgen".owner = "riinr";
   inputs."passgen".repo = "flake-nimble";

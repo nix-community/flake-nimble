@@ -7,7 +7,6 @@
   inputs.src-nimtesseract-master.ref = "refs/heads/master";
   
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";

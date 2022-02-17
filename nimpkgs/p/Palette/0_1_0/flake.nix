@@ -7,7 +7,6 @@
   inputs.src-Palette-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."nigui".url = "path:../../../n/nigui";
   inputs."nigui".type = "github";
   inputs."nigui".owner = "riinr";
   inputs."nigui".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nigui".dir = "nimpkgs/n/nigui";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

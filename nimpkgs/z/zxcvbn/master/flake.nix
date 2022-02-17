@@ -7,7 +7,6 @@
   inputs.src-zxcvbn-master.ref = "refs/heads/master";
   
   
-  inputs."testutils".url = "path:../../../t/testutils";
   inputs."testutils".type = "github";
   inputs."testutils".owner = "riinr";
   inputs."testutils".repo = "flake-nimble";

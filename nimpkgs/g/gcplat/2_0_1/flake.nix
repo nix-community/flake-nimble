@@ -7,7 +7,6 @@
   inputs.src-gcplat-2_0_1.ref = "refs/tags/2.0.1";
   
   
-  inputs."openapi".url = "path:../../../o/openapi";
   inputs."openapi".type = "github";
   inputs."openapi".owner = "riinr";
   inputs."openapi".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."openapi".dir = "nimpkgs/o/openapi";
 
   
-  inputs."https://github.com/yglukhov/nim-jwt.git".url = "path:../../../h/https://github.com/yglukhov/nim-jwt.git";
   inputs."https://github.com/yglukhov/nim-jwt.git".type = "github";
   inputs."https://github.com/yglukhov/nim-jwt.git".owner = "riinr";
   inputs."https://github.com/yglukhov/nim-jwt.git".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."https://github.com/yglukhov/nim-jwt.git".dir = "nimpkgs/h/https://github.com/yglukhov/nim-jwt.git";
 
   
-  inputs."https://github.com/disruptek/rest.git".url = "path:../../../h/https://github.com/disruptek/rest.git";
   inputs."https://github.com/disruptek/rest.git".type = "github";
   inputs."https://github.com/disruptek/rest.git".owner = "riinr";
   inputs."https://github.com/disruptek/rest.git".repo = "flake-nimble";

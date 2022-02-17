@@ -7,7 +7,6 @@
   inputs.src-fftw3-v0_4_3.ref = "refs/tags/v0.4.3";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."weave".url = "path:../../../w/weave";
   inputs."weave".type = "github";
   inputs."weave".owner = "riinr";
   inputs."weave".repo = "flake-nimble";

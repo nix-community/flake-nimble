@@ -7,7 +7,6 @@
   inputs.src-spacy-0_0_2.ref = "refs/tags/0.0.2";
   
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."vmath".dir = "nimpkgs/v/vmath";
 
   
-  inputs."bumpy".url = "path:../../../b/bumpy";
   inputs."bumpy".type = "github";
   inputs."bumpy".owner = "riinr";
   inputs."bumpy".repo = "flake-nimble";

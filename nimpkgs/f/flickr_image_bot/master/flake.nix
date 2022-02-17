@@ -7,7 +7,6 @@
   inputs.src-flickr_image_bot-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/snus-kin/twitter.nim".url = "path:../../../h/https://github.com/snus-kin/twitter.nim";
   inputs."https://github.com/snus-kin/twitter.nim".type = "github";
   inputs."https://github.com/snus-kin/twitter.nim".owner = "riinr";
   inputs."https://github.com/snus-kin/twitter.nim".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimaterial-master.ref = "refs/heads/master";
   
   
-  inputs."palette".url = "path:../../../p/palette";
   inputs."palette".type = "github";
   inputs."palette".owner = "riinr";
   inputs."palette".repo = "flake-nimble";

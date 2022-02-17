@@ -7,7 +7,6 @@
   inputs.src-keccak_tiny-master.ref = "refs/heads/master";
   
   
-  inputs."ranges".url = "path:../../../r/ranges";
   inputs."ranges".type = "github";
   inputs."ranges".owner = "riinr";
   inputs."ranges".repo = "flake-nimble";

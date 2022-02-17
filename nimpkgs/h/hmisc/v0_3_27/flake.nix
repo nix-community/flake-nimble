@@ -7,7 +7,6 @@
   inputs.src-hmisc-v0_3_27.ref = "refs/tags/v0.3.27";
   
   
-  inputs."with".url = "path:../../../w/with";
   inputs."with".type = "github";
   inputs."with".owner = "riinr";
   inputs."with".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."with".dir = "nimpkgs/w/with";
 
   
-  inputs."shell".url = "path:../../../s/shell";
   inputs."shell".type = "github";
   inputs."shell".owner = "riinr";
   inputs."shell".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."shell".dir = "nimpkgs/s/shell";
 
   
-  inputs."macroutils".url = "path:../../../m/macroutils";
   inputs."macroutils".type = "github";
   inputs."macroutils".owner = "riinr";
   inputs."macroutils".repo = "flake-nimble";

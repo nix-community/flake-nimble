@@ -7,7 +7,6 @@
   inputs.src-zfdbms-v0_0_7.ref = "refs/tags/v0.0.7";
   
   
-  inputs."stdext".url = "path:../../../s/stdext";
   inputs."stdext".type = "github";
   inputs."stdext".owner = "riinr";
   inputs."stdext".repo = "flake-nimble";

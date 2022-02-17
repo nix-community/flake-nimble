@@ -7,7 +7,6 @@
   inputs.src-allographer-v0_8_0.ref = "refs/tags/v0.8.0";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."progress".url = "path:../../../p/progress";
   inputs."progress".type = "github";
   inputs."progress".owner = "riinr";
   inputs."progress".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-weave-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."synthesis".url = "path:../../../s/synthesis";
   inputs."synthesis".type = "github";
   inputs."synthesis".owner = "riinr";
   inputs."synthesis".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimblegui-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."uibuilder".url = "path:../../../u/uibuilder";
   inputs."uibuilder".type = "github";
   inputs."uibuilder".owner = "riinr";
   inputs."uibuilder".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."uibuilder".dir = "nimpkgs/u/uibuilder";
 
   
-  inputs."ui".url = "path:../../../u/ui";
   inputs."ui".type = "github";
   inputs."ui".owner = "riinr";
   inputs."ui".repo = "flake-nimble";

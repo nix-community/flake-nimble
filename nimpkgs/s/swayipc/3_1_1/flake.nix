@@ -7,7 +7,6 @@
   inputs.src-swayipc-3_1_1.ref = "refs/tags/3.1.1";
   
   
-  inputs."nesm".url = "path:../../../n/nesm";
   inputs."nesm".type = "github";
   inputs."nesm".owner = "riinr";
   inputs."nesm".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nesm".dir = "nimpkgs/n/nesm";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

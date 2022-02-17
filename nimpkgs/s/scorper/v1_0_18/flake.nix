@@ -7,7 +7,6 @@
   inputs.src-scorper-v1_0_18.ref = "refs/tags/v1.0.18";
   
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
   
-  inputs."zippy".url = "path:../../../z/zippy";
   inputs."zippy".type = "github";
   inputs."zippy".owner = "riinr";
   inputs."zippy".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."zippy".dir = "nimpkgs/z/zippy";
 
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."jsony".dir = "nimpkgs/j/jsony";
 
   
-  inputs."result".url = "path:../../../r/result";
   inputs."result".type = "github";
   inputs."result".owner = "riinr";
   inputs."result".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."result".dir = "nimpkgs/r/result";
 
   
-  inputs."asynctest".url = "path:../../../a/asynctest";
   inputs."asynctest".type = "github";
   inputs."asynctest".owner = "riinr";
   inputs."asynctest".repo = "flake-nimble";

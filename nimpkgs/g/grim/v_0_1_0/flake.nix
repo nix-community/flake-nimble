@@ -7,7 +7,6 @@
   inputs.src-grim-v_0_1_0.ref = "refs/tags/v.0.1.0";
   
   
-  inputs."yaml".url = "path:../../../y/yaml";
   inputs."yaml".type = "github";
   inputs."yaml".owner = "riinr";
   inputs."yaml".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-prologue-v0_4_0.ref = "refs/tags/v0.4.0";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."cookiejar".url = "path:../../../c/cookiejar";
   inputs."cookiejar".type = "github";
   inputs."cookiejar".owner = "riinr";
   inputs."cookiejar".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."cookiejar".dir = "nimpkgs/c/cookiejar";
 
   
-  inputs."httpx".url = "path:../../../h/httpx";
   inputs."httpx".type = "github";
   inputs."httpx".owner = "riinr";
   inputs."httpx".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."httpx".dir = "nimpkgs/h/httpx";
 
   
-  inputs."logue".url = "path:../../../l/logue";
   inputs."logue".type = "github";
   inputs."logue".owner = "riinr";
   inputs."logue".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimfp-master.ref = "refs/heads/master";
   
   
-  inputs."nimboost".url = "path:../../../n/nimboost";
   inputs."nimboost".type = "github";
   inputs."nimboost".owner = "riinr";
   inputs."nimboost".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimboost".dir = "nimpkgs/n/nimboost";
 
   
-  inputs."classy".url = "path:../../../c/classy";
   inputs."classy".type = "github";
   inputs."classy".owner = "riinr";
   inputs."classy".repo = "flake-nimble";

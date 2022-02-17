@@ -7,7 +7,6 @@
   inputs.src-aglet-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."glm".url = "path:../../../g/glm";
   inputs."glm".type = "github";
   inputs."glm".owner = "riinr";
   inputs."glm".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."glm".dir = "nimpkgs/g/glm";
 
   
-  inputs."https://github.com/nimgl/glfw".url = "path:../../../h/https://github.com/nimgl/glfw";
   inputs."https://github.com/nimgl/glfw".type = "github";
   inputs."https://github.com/nimgl/glfw".owner = "riinr";
   inputs."https://github.com/nimgl/glfw".repo = "flake-nimble";

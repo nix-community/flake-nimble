@@ -7,7 +7,6 @@
   inputs.src-nwnt-v1_2_1.ref = "refs/tags/v1.2.1";
   
   
-  inputs."neverwinter".url = "path:../../../n/neverwinter";
   inputs."neverwinter".type = "github";
   inputs."neverwinter".owner = "riinr";
   inputs."neverwinter".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."neverwinter".dir = "nimpkgs/n/neverwinter";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

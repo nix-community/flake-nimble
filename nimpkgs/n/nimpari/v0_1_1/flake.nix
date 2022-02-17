@@ -7,7 +7,6 @@
   inputs.src-nimpari-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";

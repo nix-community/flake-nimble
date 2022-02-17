@@ -7,7 +7,6 @@
   inputs.src-wnim-master.ref = "refs/heads/master";
   
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."winim".dir = "nimpkgs/w/winim";
 
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
   
-  inputs."memlib".url = "path:../../../m/memlib";
   inputs."memlib".type = "github";
   inputs."memlib".owner = "riinr";
   inputs."memlib".repo = "flake-nimble";

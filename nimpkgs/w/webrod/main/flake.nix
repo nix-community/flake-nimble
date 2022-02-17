@@ -7,7 +7,6 @@
   inputs.src-webrod-main.ref = "refs/heads/main";
   
   
-  inputs."xam".url = "path:../../../x/xam";
   inputs."xam".type = "github";
   inputs."xam".owner = "riinr";
   inputs."xam".repo = "flake-nimble";

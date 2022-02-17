@@ -7,7 +7,6 @@
   inputs.src-openapi-1_0_0.ref = "refs/tags/1.0.0";
   
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";

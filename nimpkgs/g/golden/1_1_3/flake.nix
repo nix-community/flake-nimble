@@ -7,7 +7,6 @@
   inputs.src-golden-1_1_3.ref = "refs/tags/1.1.3";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."foreach".url = "path:../../../f/foreach";
   inputs."foreach".type = "github";
   inputs."foreach".owner = "riinr";
   inputs."foreach".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."foreach".dir = "nimpkgs/f/foreach";
 
   
-  inputs."http://github.com/genotrance/nimgit2.git".url = "path:../../../h/http://github.com/genotrance/nimgit2.git";
   inputs."http://github.com/genotrance/nimgit2.git".type = "github";
   inputs."http://github.com/genotrance/nimgit2.git".owner = "riinr";
   inputs."http://github.com/genotrance/nimgit2.git".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-jestercookiemsgs-v1_0_1.ref = "refs/tags/v1.0.1";
   
   
-  inputs."jesterwithplugins".url = "path:../../../j/jesterwithplugins";
   inputs."jesterwithplugins".type = "github";
   inputs."jesterwithplugins".owner = "riinr";
   inputs."jesterwithplugins".repo = "flake-nimble";

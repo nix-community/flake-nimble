@@ -7,7 +7,6 @@
   inputs.src-scram-master.ref = "refs/heads/master";
   
   
-  inputs."hmac".url = "path:../../../h/hmac";
   inputs."hmac".type = "github";
   inputs."hmac".owner = "riinr";
   inputs."hmac".repo = "flake-nimble";

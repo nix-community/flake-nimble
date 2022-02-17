@@ -7,7 +7,6 @@
   inputs.src-emmy-master.ref = "refs/heads/master";
   
   
-  inputs."bigints".url = "path:../../../b/bigints";
   inputs."bigints".type = "github";
   inputs."bigints".owner = "riinr";
   inputs."bigints".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."bigints".dir = "nimpkgs/b/bigints";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-futhark-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/pmunch/libclang-nim".url = "path:../../../h/https://github.com/pmunch/libclang-nim";
   inputs."https://github.com/pmunch/libclang-nim".type = "github";
   inputs."https://github.com/pmunch/libclang-nim".owner = "riinr";
   inputs."https://github.com/pmunch/libclang-nim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/pmunch/libclang-nim".dir = "nimpkgs/h/https://github.com/pmunch/libclang-nim";
 
   
-  inputs."termstyle".url = "path:../../../t/termstyle";
   inputs."termstyle".type = "github";
   inputs."termstyle".owner = "riinr";
   inputs."termstyle".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."termstyle".dir = "nimpkgs/t/termstyle";
 
   
-  inputs."macroutils".url = "path:../../../m/macroutils";
   inputs."macroutils".type = "github";
   inputs."macroutils".owner = "riinr";
   inputs."macroutils".repo = "flake-nimble";

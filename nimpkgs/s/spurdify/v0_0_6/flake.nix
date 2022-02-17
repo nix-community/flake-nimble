@@ -7,7 +7,6 @@
   inputs.src-spurdify-v0_0_6.ref = "refs/tags/v0.0.6";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

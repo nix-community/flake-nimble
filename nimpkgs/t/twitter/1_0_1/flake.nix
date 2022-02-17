@@ -7,7 +7,6 @@
   inputs.src-twitter-1_0_1.ref = "refs/tags/1.0.1";
   
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
   
-  inputs."hmac".url = "path:../../../h/hmac";
   inputs."hmac".type = "github";
   inputs."hmac".owner = "riinr";
   inputs."hmac".repo = "flake-nimble";

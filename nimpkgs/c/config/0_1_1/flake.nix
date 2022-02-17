@@ -7,7 +7,6 @@
   inputs.src-config-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."nre".url = "path:../../../n/nre";
   inputs."nre".type = "github";
   inputs."nre".owner = "riinr";
   inputs."nre".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nre".dir = "nimpkgs/n/nre";
 
   
-  inputs."timezones".url = "path:../../../t/timezones";
   inputs."timezones".type = "github";
   inputs."timezones".owner = "riinr";
   inputs."timezones".repo = "flake-nimble";

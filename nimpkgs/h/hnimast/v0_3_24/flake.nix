@@ -7,7 +7,6 @@
   inputs.src-hnimast-v0_3_24.ref = "refs/tags/v0.3.24";
   
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."hmisc".dir = "nimpkgs/h/hmisc";
 
   
-  inputs."macroutils".url = "path:../../../m/macroutils";
   inputs."macroutils".type = "github";
   inputs."macroutils".owner = "riinr";
   inputs."macroutils".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."macroutils".dir = "nimpkgs/m/macroutils";
 
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."compiler".dir = "nimpkgs/c/compiler";
 
   
-  inputs."nimble".url = "path:../../../n/nimble";
   inputs."nimble".type = "github";
   inputs."nimble".owner = "riinr";
   inputs."nimble".repo = "flake-nimble";

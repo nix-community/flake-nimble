@@ -7,7 +7,6 @@
   inputs.src-norm-1_0_17.ref = "refs/tags/1.0.17";
   
   
-  inputs."ndb".url = "path:../../../n/ndb";
   inputs."ndb".type = "github";
   inputs."ndb".owner = "riinr";
   inputs."ndb".repo = "flake-nimble";

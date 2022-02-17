@@ -7,7 +7,6 @@
   inputs.src-norm-1_0_0.ref = "refs/tags/1.0.0";
   
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimsl-v0_3_2.ref = "refs/tags/v0.3.2";
   
   
-  inputs."variant".url = "path:../../../v/variant";
   inputs."variant".type = "github";
   inputs."variant".owner = "riinr";
   inputs."variant".repo = "flake-nimble";

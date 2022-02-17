@@ -7,7 +7,6 @@
   inputs.src-polymers-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/rlipsc/polymorph".url = "path:../../../h/https://github.com/rlipsc/polymorph";
   inputs."https://github.com/rlipsc/polymorph".type = "github";
   inputs."https://github.com/rlipsc/polymorph".owner = "riinr";
   inputs."https://github.com/rlipsc/polymorph".repo = "flake-nimble";

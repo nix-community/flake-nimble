@@ -7,7 +7,6 @@
   inputs.src-telebot-1_0_0.ref = "refs/tags/1.0.0";
   
   
-  inputs."sam".url = "path:../../../s/sam";
   inputs."sam".type = "github";
   inputs."sam".owner = "riinr";
   inputs."sam".repo = "flake-nimble";

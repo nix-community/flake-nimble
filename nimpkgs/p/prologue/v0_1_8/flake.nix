@@ -7,7 +7,6 @@
   inputs.src-prologue-v0_1_8.ref = "refs/tags/v0.1.8";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."karax".url = "path:../../../k/karax";
   inputs."karax".type = "github";
   inputs."karax".owner = "riinr";
   inputs."karax".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."karax".dir = "nimpkgs/k/karax";
 
   
-  inputs."https://github.com/planety/cookies".url = "path:../../../h/https://github.com/planety/cookies";
   inputs."https://github.com/planety/cookies".type = "github";
   inputs."https://github.com/planety/cookies".owner = "riinr";
   inputs."https://github.com/planety/cookies".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."https://github.com/planety/cookies".dir = "nimpkgs/h/https://github.com/planety/cookies";
 
   
-  inputs."httpbeast".url = "path:../../../h/httpbeast";
   inputs."httpbeast".type = "github";
   inputs."httpbeast".owner = "riinr";
   inputs."httpbeast".repo = "flake-nimble";

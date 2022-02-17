@@ -7,7 +7,6 @@
   inputs.src-feta-0_0_17.ref = "refs/tags/0.0.17";
   
   
-  inputs."mime".url = "path:../../../m/mime";
   inputs."mime".type = "github";
   inputs."mime".owner = "riinr";
   inputs."mime".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."mime".dir = "nimpkgs/m/mime";
 
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."jester".dir = "nimpkgs/j/jester";
 
   
-  inputs."googleapi".url = "path:../../../g/googleapi";
   inputs."googleapi".type = "github";
   inputs."googleapi".owner = "riinr";
   inputs."googleapi".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."googleapi".dir = "nimpkgs/g/googleapi";
 
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-eris-0_7_1.ref = "refs/tags/0.7.1";
   
   
-  inputs."base32".url = "path:../../../b/base32";
   inputs."base32".type = "github";
   inputs."base32".owner = "riinr";
   inputs."base32".repo = "flake-nimble";

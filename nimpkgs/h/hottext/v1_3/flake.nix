@@ -7,7 +7,6 @@
   inputs.src-hottext-v1_3.ref = "refs/tags/v1.3";
   
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
   
-  inputs."typography".url = "path:../../../t/typography";
   inputs."typography".type = "github";
   inputs."typography".owner = "riinr";
   inputs."typography".repo = "flake-nimble";

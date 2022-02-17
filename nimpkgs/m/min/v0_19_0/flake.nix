@@ -7,7 +7,6 @@
   inputs.src-min-v0_19_0.ref = "refs/tags/v0.19.0";
   
   
-  inputs."nifty".url = "path:../../../n/nifty";
   inputs."nifty".type = "github";
   inputs."nifty".owner = "riinr";
   inputs."nifty".repo = "flake-nimble";

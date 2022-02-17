@@ -7,7 +7,6 @@
   inputs.src-mike-master.ref = "refs/heads/master";
   
   
-  inputs."httpx".url = "path:../../../h/httpx";
   inputs."httpx".type = "github";
   inputs."httpx".owner = "riinr";
   inputs."httpx".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."httpx".dir = "nimpkgs/h/httpx";
 
   
-  inputs."websocketx".url = "path:../../../w/websocketx";
   inputs."websocketx".type = "github";
   inputs."websocketx".owner = "riinr";
   inputs."websocketx".repo = "flake-nimble";

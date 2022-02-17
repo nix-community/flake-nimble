@@ -7,7 +7,6 @@
   inputs.src-sermon-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";

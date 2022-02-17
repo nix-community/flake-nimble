@@ -7,7 +7,6 @@
   inputs.src-mongopool-v1_0_1.ref = "refs/tags/v1.0.1";
   
   
-  inputs."bson".url = "path:../../../b/bson";
   inputs."bson".type = "github";
   inputs."bson".owner = "riinr";
   inputs."bson".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."bson".dir = "nimpkgs/b/bson";
 
   
-  inputs."scram".url = "path:../../../s/scram";
   inputs."scram".type = "github";
   inputs."scram".owner = "riinr";
   inputs."scram".repo = "flake-nimble";

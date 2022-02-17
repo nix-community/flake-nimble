@@ -7,7 +7,6 @@
   inputs.src-keyring-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."https://github.com/iffy/nim-dbus.git".url = "path:../../../h/https://github.com/iffy/nim-dbus.git";
   inputs."https://github.com/iffy/nim-dbus.git".type = "github";
   inputs."https://github.com/iffy/nim-dbus.git".owner = "riinr";
   inputs."https://github.com/iffy/nim-dbus.git".repo = "flake-nimble";

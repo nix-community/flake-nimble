@@ -7,7 +7,6 @@
   inputs.src-epub-master.ref = "refs/heads/master";
   
   
-  inputs."nim>=".url = "path:../../../n/nim>=";
   inputs."nim>=".type = "github";
   inputs."nim>=".owner = "riinr";
   inputs."nim>=".repo = "flake-nimble";

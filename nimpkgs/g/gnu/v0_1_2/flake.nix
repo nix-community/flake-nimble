@@ -7,7 +7,6 @@
   inputs.src-gnu-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."godot".url = "path:../../../g/godot";
   inputs."godot".type = "github";
   inputs."godot".owner = "riinr";
   inputs."godot".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."godot".dir = "nimpkgs/g/godot";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

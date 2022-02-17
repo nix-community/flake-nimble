@@ -7,7 +7,6 @@
   inputs.src-alea-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."random".url = "path:../../../r/random";
   inputs."random".type = "github";
   inputs."random".owner = "riinr";
   inputs."random".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-googlesearch-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."nimquery".url = "path:../../../n/nimquery";
   inputs."nimquery".type = "github";
   inputs."nimquery".owner = "riinr";
   inputs."nimquery".repo = "flake-nimble";

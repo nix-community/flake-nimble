@@ -7,7 +7,6 @@
   inputs.src-eth_keys-master.ref = "refs/heads/master";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."secp256k1".url = "path:../../../s/secp256k1";
   inputs."secp256k1".type = "github";
   inputs."secp256k1".owner = "riinr";
   inputs."secp256k1".repo = "flake-nimble";

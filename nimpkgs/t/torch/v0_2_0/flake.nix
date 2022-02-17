@@ -7,7 +7,6 @@
   inputs.src-torch-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."fragments".url = "path:../../../f/fragments";
   inputs."fragments".type = "github";
   inputs."fragments".owner = "riinr";
   inputs."fragments".repo = "flake-nimble";

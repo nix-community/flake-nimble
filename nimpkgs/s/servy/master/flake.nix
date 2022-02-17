@@ -7,7 +7,6 @@
   inputs.src-servy-master.ref = "refs/heads/master";
   
   
-  inputs."terminaltables".url = "path:../../../t/terminaltables";
   inputs."terminaltables".type = "github";
   inputs."terminaltables".owner = "riinr";
   inputs."terminaltables".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."terminaltables".dir = "nimpkgs/t/terminaltables";
 
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";

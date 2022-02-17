@@ -7,7 +7,6 @@
   inputs.src-allographer-v0_20_0.ref = "refs/tags/v0.20.0";
   
   
-  inputs."dotenv".url = "path:../../../d/dotenv";
   inputs."dotenv".type = "github";
   inputs."dotenv".owner = "riinr";
   inputs."dotenv".repo = "flake-nimble";

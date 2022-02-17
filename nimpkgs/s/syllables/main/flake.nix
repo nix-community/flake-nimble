@@ -7,7 +7,6 @@
   inputs.src-syllables-main.ref = "refs/heads/main";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."https://github.com/disruptek/testes".url = "path:../../../h/https://github.com/disruptek/testes";
   inputs."https://github.com/disruptek/testes".type = "github";
   inputs."https://github.com/disruptek/testes".owner = "riinr";
   inputs."https://github.com/disruptek/testes".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-bionim-0_0_4.ref = "refs/tags/0.0.4";
   
   
-  inputs."phylogeni".url = "path:../../../p/phylogeni";
   inputs."phylogeni".type = "github";
   inputs."phylogeni".owner = "riinr";
   inputs."phylogeni".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."phylogeni".dir = "nimpkgs/p/phylogeni";
 
   
-  inputs."bio_seq".url = "path:../../../b/bio_seq";
   inputs."bio_seq".type = "github";
   inputs."bio_seq".owner = "riinr";
   inputs."bio_seq".repo = "flake-nimble";

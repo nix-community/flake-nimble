@@ -7,7 +7,6 @@
   inputs.src-simhash-master.ref = "refs/heads/master";
   
   
-  inputs."lc".url = "path:../../../l/lc";
   inputs."lc".type = "github";
   inputs."lc".owner = "riinr";
   inputs."lc".repo = "flake-nimble";

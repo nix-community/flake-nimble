@@ -7,7 +7,6 @@
   inputs.src-gerbil-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."argparse".dir = "nimpkgs/a/argparse";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."jester".dir = "nimpkgs/j/jester";
 
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."markdown".dir = "nimpkgs/m/markdown";
 
   
-  inputs."mustache".url = "path:../../../m/mustache";
   inputs."mustache".type = "github";
   inputs."mustache".owner = "riinr";
   inputs."mustache".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."mustache".dir = "nimpkgs/m/mustache";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";

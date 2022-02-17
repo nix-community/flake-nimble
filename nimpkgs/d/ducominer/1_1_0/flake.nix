@@ -7,7 +7,6 @@
   inputs.src-ducominer-1_1_0.ref = "refs/tags/1.1.0";
   
   
-  inputs."hashlib".url = "path:../../../h/hashlib";
   inputs."hashlib".type = "github";
   inputs."hashlib".owner = "riinr";
   inputs."hashlib".repo = "flake-nimble";

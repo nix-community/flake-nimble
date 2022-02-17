@@ -7,7 +7,6 @@
   inputs.src-subfield-master.ref = "refs/heads/master";
   
   
-  inputs."einheit".url = "path:../../../e/einheit";
   inputs."einheit".type = "github";
   inputs."einheit".owner = "riinr";
   inputs."einheit".repo = "flake-nimble";

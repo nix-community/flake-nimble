@@ -7,7 +7,6 @@
   inputs.src-contractabi-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stint".dir = "nimpkgs/s/stint";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."questionable".url = "path:../../../q/questionable";
   inputs."questionable".type = "github";
   inputs."questionable".owner = "riinr";
   inputs."questionable".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."questionable".dir = "nimpkgs/q/questionable";
 
   
-  inputs."upraises".url = "path:../../../u/upraises";
   inputs."upraises".type = "github";
   inputs."upraises".owner = "riinr";
   inputs."upraises".repo = "flake-nimble";

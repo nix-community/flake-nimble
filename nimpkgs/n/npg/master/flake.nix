@@ -7,7 +7,6 @@
   inputs.src-npg-master.ref = "refs/heads/master";
   
   
-  inputs."passgen".url = "path:../../../p/passgen";
   inputs."passgen".type = "github";
   inputs."passgen".owner = "riinr";
   inputs."passgen".repo = "flake-nimble";

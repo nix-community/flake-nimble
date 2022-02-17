@@ -7,7 +7,6 @@
   inputs.src-clr-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-dnd-master.ref = "refs/heads/master";
   
   
-  inputs."gintro".url = "path:../../../g/gintro";
   inputs."gintro".type = "github";
   inputs."gintro".owner = "riinr";
   inputs."gintro".repo = "flake-nimble";

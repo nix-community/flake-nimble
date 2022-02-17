@@ -7,7 +7,6 @@
   inputs.src-fidget-0_7_3.ref = "refs/tags/0.7.3";
   
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."typography".url = "path:../../../t/typography";
   inputs."typography".type = "github";
   inputs."typography".owner = "riinr";
   inputs."typography".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."typography".dir = "nimpkgs/t/typography";
 
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."pixie".dir = "nimpkgs/p/pixie";
 
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."vmath".dir = "nimpkgs/v/vmath";
 
   
-  inputs."print".url = "path:../../../p/print";
   inputs."print".type = "github";
   inputs."print".owner = "riinr";
   inputs."print".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."print".dir = "nimpkgs/p/print";
 
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
   
-  inputs."html5_canvas".url = "path:../../../h/html5_canvas";
   inputs."html5_canvas".type = "github";
   inputs."html5_canvas".owner = "riinr";
   inputs."html5_canvas".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."html5_canvas".dir = "nimpkgs/h/html5_canvas";
 
   
-  inputs."staticglfw".url = "path:../../../s/staticglfw";
   inputs."staticglfw".type = "github";
   inputs."staticglfw".owner = "riinr";
   inputs."staticglfw".repo = "flake-nimble";
@@ -71,7 +63,6 @@
   inputs."staticglfw".dir = "nimpkgs/s/staticglfw";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -79,7 +70,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."supersnappy".url = "path:../../../s/supersnappy";
   inputs."supersnappy".type = "github";
   inputs."supersnappy".owner = "riinr";
   inputs."supersnappy".repo = "flake-nimble";
@@ -87,7 +77,6 @@
   inputs."supersnappy".dir = "nimpkgs/s/supersnappy";
 
   
-  inputs."bumpy".url = "path:../../../b/bumpy";
   inputs."bumpy".type = "github";
   inputs."bumpy".owner = "riinr";
   inputs."bumpy".repo = "flake-nimble";

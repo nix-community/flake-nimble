@@ -7,7 +7,6 @@
   inputs.src-mongrel2-master.ref = "refs/heads/master";
   
   
-  inputs."tnetstring".url = "path:../../../t/tnetstring";
   inputs."tnetstring".type = "github";
   inputs."tnetstring".owner = "riinr";
   inputs."tnetstring".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."tnetstring".dir = "nimpkgs/t/tnetstring";
 
   
-  inputs."zmq".url = "path:../../../z/zmq";
   inputs."zmq".type = "github";
   inputs."zmq".owner = "riinr";
   inputs."zmq".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-envconfig-v1_0_1.ref = "refs/tags/v1.0.1";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

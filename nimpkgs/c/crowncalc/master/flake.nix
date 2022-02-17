@@ -7,7 +7,6 @@
   inputs.src-crowncalc-master.ref = "refs/heads/master";
   
   
-  inputs."noise".url = "path:../../../n/noise";
   inputs."noise".type = "github";
   inputs."noise".owner = "riinr";
   inputs."noise".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."noise".dir = "nimpkgs/n/noise";
 
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";

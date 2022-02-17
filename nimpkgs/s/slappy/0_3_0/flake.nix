@@ -7,7 +7,6 @@
   inputs.src-slappy-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."openal".url = "path:../../../o/openal";
   inputs."openal".type = "github";
   inputs."openal".owner = "riinr";
   inputs."openal".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."openal".dir = "nimpkgs/o/openal";
 
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";

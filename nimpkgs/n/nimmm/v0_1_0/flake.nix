@@ -7,7 +7,6 @@
   inputs.src-nimmm-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."noise".url = "path:../../../n/noise";
   inputs."noise".type = "github";
   inputs."noise".owner = "riinr";
   inputs."noise".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."noise".dir = "nimpkgs/n/noise";
 
   
-  inputs."nimbox".url = "path:../../../n/nimbox";
   inputs."nimbox".type = "github";
   inputs."nimbox".owner = "riinr";
   inputs."nimbox".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimbox".dir = "nimpkgs/n/nimbox";
 
   
-  inputs."lscolors".url = "path:../../../l/lscolors";
   inputs."lscolors".type = "github";
   inputs."lscolors".owner = "riinr";
   inputs."lscolors".repo = "flake-nimble";

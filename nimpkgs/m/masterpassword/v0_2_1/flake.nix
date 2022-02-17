@@ -7,7 +7,6 @@
   inputs.src-masterpassword-v0_2_1.ref = "refs/tags/v0.2.1";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";

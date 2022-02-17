@@ -7,7 +7,6 @@
   inputs.src-hpprint-v0_2_13.ref = "refs/tags/v0.2.13";
   
   
-  inputs."hdrawing".url = "path:../../../h/hdrawing";
   inputs."hdrawing".type = "github";
   inputs."hdrawing".owner = "riinr";
   inputs."hdrawing".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."hdrawing".dir = "nimpkgs/h/hdrawing";
 
   
-  inputs."hnimast".url = "path:../../../h/hnimast";
   inputs."hnimast".type = "github";
   inputs."hnimast".owner = "riinr";
   inputs."hnimast".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."hnimast".dir = "nimpkgs/h/hnimast";
 
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";

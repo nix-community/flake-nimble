@@ -7,7 +7,6 @@
   inputs.src-glew-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/jyapayne/nimterop".url = "path:../../../h/https://github.com/jyapayne/nimterop";
   inputs."https://github.com/jyapayne/nimterop".type = "github";
   inputs."https://github.com/jyapayne/nimterop".owner = "riinr";
   inputs."https://github.com/jyapayne/nimterop".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/jyapayne/nimterop".dir = "nimpkgs/h/https://github.com/jyapayne/nimterop";
 
   
-  inputs."https://github.com/jyapayne/nim-glfw".url = "path:../../../h/https://github.com/jyapayne/nim-glfw";
   inputs."https://github.com/jyapayne/nim-glfw".type = "github";
   inputs."https://github.com/jyapayne/nim-glfw".owner = "riinr";
   inputs."https://github.com/jyapayne/nim-glfw".repo = "flake-nimble";

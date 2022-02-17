@@ -7,7 +7,6 @@
   inputs.src-gamelight-master.ref = "refs/heads/master";
   
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."typography".url = "path:../../../t/typography";
   inputs."typography".type = "github";
   inputs."typography".owner = "riinr";
   inputs."typography".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."typography".dir = "nimpkgs/t/typography";
 
   
-  inputs."flippy".url = "path:../../../f/flippy";
   inputs."flippy".type = "github";
   inputs."flippy".owner = "riinr";
   inputs."flippy".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-bumpy-1_0_0.ref = "refs/tags/1.0.0";
   
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";

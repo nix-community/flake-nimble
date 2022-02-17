@@ -7,7 +7,6 @@
   inputs.src-pine-master.ref = "refs/heads/master";
   
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."markdown".dir = "nimpkgs/m/markdown";
 
   
-  inputs."rainbow".url = "path:../../../r/rainbow";
   inputs."rainbow".type = "github";
   inputs."rainbow".owner = "riinr";
   inputs."rainbow".repo = "flake-nimble";

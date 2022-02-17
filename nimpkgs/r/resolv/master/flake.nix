@@ -7,7 +7,6 @@
   inputs.src-resolv-master.ref = "refs/heads/master";
   
   
-  inputs."dnsprotocol".url = "path:../../../d/dnsprotocol";
   inputs."dnsprotocol".type = "github";
   inputs."dnsprotocol".owner = "riinr";
   inputs."dnsprotocol".repo = "flake-nimble";

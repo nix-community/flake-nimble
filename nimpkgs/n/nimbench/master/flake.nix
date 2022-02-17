@@ -7,7 +7,6 @@
   inputs.src-nimbench-master.ref = "refs/heads/master";
   
   
-  inputs."strfmt".url = "path:../../../s/strfmt";
   inputs."strfmt".type = "github";
   inputs."strfmt".owner = "riinr";
   inputs."strfmt".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-astar-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."binaryheap".url = "path:../../../b/binaryheap";
   inputs."binaryheap".type = "github";
   inputs."binaryheap".owner = "riinr";
   inputs."binaryheap".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."binaryheap".dir = "nimpkgs/b/binaryheap";
 
   
-  inputs."optional_t".url = "path:../../../o/optional_t";
   inputs."optional_t".type = "github";
   inputs."optional_t".owner = "riinr";
   inputs."optional_t".repo = "flake-nimble";

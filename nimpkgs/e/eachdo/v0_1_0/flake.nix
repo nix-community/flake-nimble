@@ -7,7 +7,6 @@
   inputs.src-eachdo-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-gen-0_8_0.ref = "refs/tags/0.8.0";
   
   
-  inputs."progress".url = "path:../../../p/progress";
   inputs."progress".type = "github";
   inputs."progress".owner = "riinr";
   inputs."progress".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."progress".dir = "nimpkgs/p/progress";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
   
-  inputs."fab".url = "path:../../../f/fab";
   inputs."fab".type = "github";
   inputs."fab".owner = "riinr";
   inputs."fab".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimtrs-master.ref = "refs/heads/master";
   
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."hmisc".dir = "nimpkgs/h/hmisc";
 
   
-  inputs."hdrawing".url = "path:../../../h/hdrawing";
   inputs."hdrawing".type = "github";
   inputs."hdrawing".owner = "riinr";
   inputs."hdrawing".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."hdrawing".dir = "nimpkgs/h/hdrawing";
 
   
-  inputs."hpprint".url = "path:../../../h/hpprint";
   inputs."hpprint".type = "github";
   inputs."hpprint".owner = "riinr";
   inputs."hpprint".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."hpprint".dir = "nimpkgs/h/hpprint";
 
   
-  inputs."hnimast".url = "path:../../../h/hnimast";
   inputs."hnimast".type = "github";
   inputs."hnimast".owner = "riinr";
   inputs."hnimast".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-node-master.ref = "refs/heads/master";
   
   
-  inputs."httpkit".url = "path:../../../h/httpkit";
   inputs."httpkit".type = "github";
   inputs."httpkit".owner = "riinr";
   inputs."httpkit".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-preserves-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."bigints".url = "path:../../../b/bigints";
   inputs."bigints".type = "github";
   inputs."bigints".owner = "riinr";
   inputs."bigints".repo = "flake-nimble";

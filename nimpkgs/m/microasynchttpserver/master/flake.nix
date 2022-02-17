@@ -7,7 +7,6 @@
   inputs.src-microasynchttpserver-master.ref = "refs/heads/master";
   
   
-  inputs."picohttpparser".url = "path:../../../p/picohttpparser";
   inputs."picohttpparser".type = "github";
   inputs."picohttpparser".owner = "riinr";
   inputs."picohttpparser".repo = "flake-nimble";

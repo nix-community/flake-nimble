@@ -7,7 +7,6 @@
   inputs.src-opengl-v1_2_2.ref = "refs/tags/v1.2.2";
   
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";

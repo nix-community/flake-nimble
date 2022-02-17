@@ -7,7 +7,6 @@
   inputs.src-chrono-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

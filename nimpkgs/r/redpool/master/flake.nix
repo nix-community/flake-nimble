@@ -7,7 +7,6 @@
   inputs.src-redpool-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/zedeus/redis".url = "path:../../../h/https://github.com/zedeus/redis";
   inputs."https://github.com/zedeus/redis".type = "github";
   inputs."https://github.com/zedeus/redis".owner = "riinr";
   inputs."https://github.com/zedeus/redis".repo = "flake-nimble";

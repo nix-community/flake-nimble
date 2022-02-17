@@ -7,7 +7,6 @@
   inputs.src-redisclient-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."redisparser".url = "path:../../../r/redisparser";
   inputs."redisparser".type = "github";
   inputs."redisparser".owner = "riinr";
   inputs."redisparser".repo = "flake-nimble";

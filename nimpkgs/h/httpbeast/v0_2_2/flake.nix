@@ -7,7 +7,6 @@
   inputs.src-httpbeast-v0_2_2.ref = "refs/tags/v0.2.2";
   
   
-  inputs."https://github.com/timotheecour/asynctools".url = "path:../../../h/https://github.com/timotheecour/asynctools";
   inputs."https://github.com/timotheecour/asynctools".type = "github";
   inputs."https://github.com/timotheecour/asynctools".owner = "riinr";
   inputs."https://github.com/timotheecour/asynctools".repo = "flake-nimble";

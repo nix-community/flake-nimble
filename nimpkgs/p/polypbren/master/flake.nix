@@ -7,7 +7,6 @@
   inputs.src-polypbren-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/yglukhov/threadpools".url = "path:../../../h/https://github.com/yglukhov/threadpools";
   inputs."https://github.com/yglukhov/threadpools".type = "github";
   inputs."https://github.com/yglukhov/threadpools".owner = "riinr";
   inputs."https://github.com/yglukhov/threadpools".repo = "flake-nimble";

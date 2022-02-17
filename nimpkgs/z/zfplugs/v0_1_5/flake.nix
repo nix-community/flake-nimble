@@ -7,7 +7,6 @@
   inputs.src-zfplugs-v0_1_5.ref = "refs/tags/v0.1.5";
   
   
-  inputs."zfcore".url = "path:../../../z/zfcore";
   inputs."zfcore".type = "github";
   inputs."zfcore".owner = "riinr";
   inputs."zfcore".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."zfcore".dir = "nimpkgs/z/zfcore";
 
   
-  inputs."moustachu".url = "path:../../../m/moustachu";
   inputs."moustachu".type = "github";
   inputs."moustachu".owner = "riinr";
   inputs."moustachu".repo = "flake-nimble";

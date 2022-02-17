@@ -7,7 +7,6 @@
   inputs.src-jnim-v0_2_3.ref = "refs/tags/v0.2.3";
   
   
-  inputs."nimfp".url = "path:../../../n/nimfp";
   inputs."nimfp".type = "github";
   inputs."nimfp".owner = "riinr";
   inputs."nimfp".repo = "flake-nimble";

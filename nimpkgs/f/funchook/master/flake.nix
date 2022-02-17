@@ -7,7 +7,6 @@
   inputs.src-funchook-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/ba0f3/distorm3.nim".url = "path:../../../h/https://github.com/ba0f3/distorm3.nim";
   inputs."https://github.com/ba0f3/distorm3.nim".type = "github";
   inputs."https://github.com/ba0f3/distorm3.nim".owner = "riinr";
   inputs."https://github.com/ba0f3/distorm3.nim".repo = "flake-nimble";

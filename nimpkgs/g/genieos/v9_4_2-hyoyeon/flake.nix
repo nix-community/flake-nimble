@@ -7,7 +7,6 @@
   inputs.src-genieos-v9_4_2-hyoyeon.ref = "refs/tags/v9.4.2-hyoyeon";
   
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";

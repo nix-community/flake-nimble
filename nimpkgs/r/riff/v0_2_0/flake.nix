@@ -7,7 +7,6 @@
   inputs.src-riff-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."binstreams".url = "path:../../../b/binstreams";
   inputs."binstreams".type = "github";
   inputs."binstreams".owner = "riinr";
   inputs."binstreams".repo = "flake-nimble";

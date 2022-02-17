@@ -7,7 +7,6 @@
   inputs.src-wpspin-master.ref = "refs/heads/master";
   
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";

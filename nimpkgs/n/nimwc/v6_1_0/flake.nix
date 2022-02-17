@@ -7,7 +7,6 @@
   inputs.src-nimwc-v6_1_0.ref = "refs/tags/v6.1.0";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jester".dir = "nimpkgs/j/jester";
 
   
-  inputs."bcrypt".url = "path:../../../b/bcrypt";
   inputs."bcrypt".type = "github";
   inputs."bcrypt".owner = "riinr";
   inputs."bcrypt".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."bcrypt".dir = "nimpkgs/b/bcrypt";
 
   
-  inputs."contra".url = "path:../../../c/contra";
   inputs."contra".type = "github";
   inputs."contra".owner = "riinr";
   inputs."contra".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."contra".dir = "nimpkgs/c/contra";
 
   
-  inputs."datetime2human".url = "path:../../../d/datetime2human";
   inputs."datetime2human".type = "github";
   inputs."datetime2human".owner = "riinr";
   inputs."datetime2human".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."datetime2human".dir = "nimpkgs/d/datetime2human";
 
   
-  inputs."firejail".url = "path:../../../f/firejail";
   inputs."firejail".type = "github";
   inputs."firejail".owner = "riinr";
   inputs."firejail".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."firejail".dir = "nimpkgs/f/firejail";
 
   
-  inputs."libravatar".url = "path:../../../l/libravatar";
   inputs."libravatar".type = "github";
   inputs."libravatar".owner = "riinr";
   inputs."libravatar".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."libravatar".dir = "nimpkgs/l/libravatar";
 
   
-  inputs."otp".url = "path:../../../o/otp";
   inputs."otp".type = "github";
   inputs."otp".owner = "riinr";
   inputs."otp".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."otp".dir = "nimpkgs/o/otp";
 
   
-  inputs."recaptcha".url = "path:../../../r/recaptcha";
   inputs."recaptcha".type = "github";
   inputs."recaptcha".owner = "riinr";
   inputs."recaptcha".repo = "flake-nimble";
@@ -71,7 +63,6 @@
   inputs."recaptcha".dir = "nimpkgs/r/recaptcha";
 
   
-  inputs."webp".url = "path:../../../w/webp";
   inputs."webp".type = "github";
   inputs."webp".owner = "riinr";
   inputs."webp".repo = "flake-nimble";
@@ -79,7 +70,6 @@
   inputs."webp".dir = "nimpkgs/w/webp";
 
   
-  inputs."packedjson".url = "path:../../../p/packedjson";
   inputs."packedjson".type = "github";
   inputs."packedjson".owner = "riinr";
   inputs."packedjson".repo = "flake-nimble";

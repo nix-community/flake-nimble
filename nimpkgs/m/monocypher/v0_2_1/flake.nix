@@ -7,7 +7,6 @@
   inputs.src-monocypher-v0_2_1.ref = "refs/tags/v0.2.1";
   
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
   
-  inputs."sysrandom".url = "path:../../../s/sysrandom";
   inputs."sysrandom".type = "github";
   inputs."sysrandom".owner = "riinr";
   inputs."sysrandom".repo = "flake-nimble";

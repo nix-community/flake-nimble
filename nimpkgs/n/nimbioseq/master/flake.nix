@@ -7,7 +7,6 @@
   inputs.src-nimbioseq-master.ref = "refs/heads/master";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-gtk2-master.ref = "refs/heads/master";
   
   
-  inputs."cairo".url = "path:../../../c/cairo";
   inputs."cairo".type = "github";
   inputs."cairo".owner = "riinr";
   inputs."cairo".repo = "flake-nimble";

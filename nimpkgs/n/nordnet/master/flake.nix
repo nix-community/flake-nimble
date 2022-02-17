@@ -7,7 +7,6 @@
   inputs.src-nordnet-master.ref = "refs/heads/master";
   
   
-  inputs."nmqtt".url = "path:../../../n/nmqtt";
   inputs."nmqtt".type = "github";
   inputs."nmqtt".owner = "riinr";
   inputs."nmqtt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nmqtt".dir = "nimpkgs/n/nmqtt";
 
   
-  inputs."q".url = "path:../../../q/q";
   inputs."q".type = "github";
   inputs."q".owner = "riinr";
   inputs."q".repo = "flake-nimble";

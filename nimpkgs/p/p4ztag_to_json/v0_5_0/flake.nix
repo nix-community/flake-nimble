@@ -7,7 +7,6 @@
   inputs.src-p4ztag_to_json-v0_5_0.ref = "refs/tags/v0.5.0";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

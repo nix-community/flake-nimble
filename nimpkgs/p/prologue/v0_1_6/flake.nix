@@ -7,7 +7,6 @@
   inputs.src-prologue-v0_1_6.ref = "refs/tags/v0.1.6";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."httpbeast".url = "path:../../../h/httpbeast";
   inputs."httpbeast".type = "github";
   inputs."httpbeast".owner = "riinr";
   inputs."httpbeast".repo = "flake-nimble";

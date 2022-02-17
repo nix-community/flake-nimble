@@ -7,7 +7,6 @@
   inputs.src-ntangle-v0_4_2.ref = "refs/tags/v0.4.2";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-choosenimgui-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."webgui".url = "path:../../../w/webgui";
   inputs."webgui".type = "github";
   inputs."webgui".owner = "riinr";
   inputs."webgui".repo = "flake-nimble";

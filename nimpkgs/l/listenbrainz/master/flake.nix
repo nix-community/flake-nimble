@@ -7,7 +7,6 @@
   inputs.src-listenbrainz-master.ref = "refs/heads/master";
   
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jsony".dir = "nimpkgs/j/jsony";
 
   
-  inputs."nodejs".url = "path:../../../n/nodejs";
   inputs."nodejs".type = "github";
   inputs."nodejs".owner = "riinr";
   inputs."nodejs".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nodejs".dir = "nimpkgs/n/nodejs";
 
   
-  inputs."https://github.com/alaviss/union".url = "path:../../../h/https://github.com/alaviss/union";
   inputs."https://github.com/alaviss/union".type = "github";
   inputs."https://github.com/alaviss/union".owner = "riinr";
   inputs."https://github.com/alaviss/union".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."https://github.com/alaviss/union".dir = "nimpkgs/h/https://github.com/alaviss/union";
 
   
-  inputs."https://github.com/tandy-1000/uniony".url = "path:../../../h/https://github.com/tandy-1000/uniony";
   inputs."https://github.com/tandy-1000/uniony".type = "github";
   inputs."https://github.com/tandy-1000/uniony".owner = "riinr";
   inputs."https://github.com/tandy-1000/uniony".repo = "flake-nimble";

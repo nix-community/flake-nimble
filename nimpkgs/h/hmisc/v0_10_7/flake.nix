@@ -7,7 +7,6 @@
   inputs.src-hmisc-v0_10_7.ref = "refs/tags/v0.10.7";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."fusion".url = "path:../../../f/fusion";
   inputs."fusion".type = "github";
   inputs."fusion".owner = "riinr";
   inputs."fusion".repo = "flake-nimble";

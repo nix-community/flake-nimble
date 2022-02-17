@@ -7,7 +7,6 @@
   inputs.src-httpauth-master.ref = "refs/heads/master";
   
   
-  inputs."libsodium".url = "path:../../../l/libsodium";
   inputs."libsodium".type = "github";
   inputs."libsodium".owner = "riinr";
   inputs."libsodium".repo = "flake-nimble";

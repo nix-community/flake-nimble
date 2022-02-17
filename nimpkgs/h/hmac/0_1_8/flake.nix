@@ -7,7 +7,6 @@
   inputs.src-hmac-0_1_8.ref = "refs/tags/0.1.8";
   
   
-  inputs."nimsha2".url = "path:../../../n/nimsha2";
   inputs."nimsha2".type = "github";
   inputs."nimsha2".owner = "riinr";
   inputs."nimsha2".repo = "flake-nimble";

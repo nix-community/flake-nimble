@@ -7,7 +7,6 @@
   inputs.src-nimothello-master.ref = "refs/heads/master";
   
   
-  inputs."illwill".url = "path:../../../i/illwill";
   inputs."illwill".type = "github";
   inputs."illwill".owner = "riinr";
   inputs."illwill".repo = "flake-nimble";

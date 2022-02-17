@@ -7,7 +7,6 @@
   inputs.src-nodesnim-nightly-0_4_2a.ref = "refs/tags/nightly-0.4.2a";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";

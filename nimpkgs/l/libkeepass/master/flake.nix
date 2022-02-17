@@ -7,7 +7,6 @@
   inputs.src-libkeepass-master.ref = "refs/heads/master";
   
   
-  inputs."nimsha2".url = "path:../../../n/nimsha2";
   inputs."nimsha2".type = "github";
   inputs."nimsha2".owner = "riinr";
   inputs."nimsha2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
 
   
-  inputs."nimaes".url = "path:../../../n/nimaes";
   inputs."nimaes".type = "github";
   inputs."nimaes".owner = "riinr";
   inputs."nimaes".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimaes".dir = "nimpkgs/n/nimaes";
 
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

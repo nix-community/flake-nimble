@@ -7,7 +7,6 @@
   inputs.src-sigv4-1_3_0.ref = "refs/tags/1.3.0";
   
   
-  inputs."https://github.com/jangko/nimsha2".url = "path:../../../h/https://github.com/jangko/nimsha2";
   inputs."https://github.com/jangko/nimsha2".type = "github";
   inputs."https://github.com/jangko/nimsha2".owner = "riinr";
   inputs."https://github.com/jangko/nimsha2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/jangko/nimsha2".dir = "nimpkgs/h/https://github.com/jangko/nimsha2";
 
   
-  inputs."https://github.com/disruptek/balls".url = "path:../../../h/https://github.com/disruptek/balls";
   inputs."https://github.com/disruptek/balls".type = "github";
   inputs."https://github.com/disruptek/balls".owner = "riinr";
   inputs."https://github.com/disruptek/balls".repo = "flake-nimble";

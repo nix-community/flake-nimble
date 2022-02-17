@@ -7,7 +7,6 @@
   inputs.src-isocodes-master.ref = "refs/heads/master";
   
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimfcuk-main.ref = "refs/heads/main";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

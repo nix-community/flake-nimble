@@ -7,7 +7,6 @@
   inputs.src-sdl2_nim-master.ref = "refs/heads/master";
   
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."winim".dir = "nimpkgs/w/winim";
 
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";

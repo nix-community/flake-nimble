@@ -7,7 +7,6 @@
   inputs.src-getmac-master.ref = "refs/heads/master";
   
   
-  inputs."optionsutils".url = "path:../../../o/optionsutils";
   inputs."optionsutils".type = "github";
   inputs."optionsutils".owner = "riinr";
   inputs."optionsutils".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-keyring-v0_2_2.ref = "refs/tags/v0.2.2";
   
   
-  inputs."dbus".url = "path:../../../d/dbus";
   inputs."dbus".type = "github";
   inputs."dbus".owner = "riinr";
   inputs."dbus".repo = "flake-nimble";

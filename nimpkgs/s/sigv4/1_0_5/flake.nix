@@ -7,7 +7,6 @@
   inputs.src-sigv4-1_0_5.ref = "refs/tags/1.0.5";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";

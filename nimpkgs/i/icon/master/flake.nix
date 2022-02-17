@@ -7,7 +7,6 @@
   inputs.src-icon-master.ref = "refs/heads/master";
   
   
-  inputs."nimpng".url = "path:../../../n/nimpng";
   inputs."nimpng".type = "github";
   inputs."nimpng".owner = "riinr";
   inputs."nimpng".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimpng".dir = "nimpkgs/n/nimpng";
 
   
-  inputs."struct".url = "path:../../../s/struct";
   inputs."struct".type = "github";
   inputs."struct".owner = "riinr";
   inputs."struct".repo = "flake-nimble";

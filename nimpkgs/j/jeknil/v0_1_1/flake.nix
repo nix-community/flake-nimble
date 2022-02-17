@@ -7,7 +7,6 @@
   inputs.src-jeknil-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";

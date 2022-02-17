@@ -7,7 +7,6 @@
   inputs.src-tsundoku-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";

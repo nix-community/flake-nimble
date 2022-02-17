@@ -7,7 +7,6 @@
   inputs.src-regex-v0_6_3.ref = "refs/tags/v0.6.3";
   
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
 
   
-  inputs."unicodeplus".url = "path:../../../u/unicodeplus";
   inputs."unicodeplus".type = "github";
   inputs."unicodeplus".owner = "riinr";
   inputs."unicodeplus".repo = "flake-nimble";

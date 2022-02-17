@@ -7,7 +7,6 @@
   inputs.src-paravim-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."paranim".url = "path:../../../p/paranim";
   inputs."paranim".type = "github";
   inputs."paranim".owner = "riinr";
   inputs."paranim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."paranim".dir = "nimpkgs/p/paranim";
 
   
-  inputs."pararules".url = "path:../../../p/pararules";
   inputs."pararules".type = "github";
   inputs."pararules".owner = "riinr";
   inputs."pararules".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."pararules".dir = "nimpkgs/p/pararules";
 
   
-  inputs."paratext".url = "path:../../../p/paratext";
   inputs."paratext".type = "github";
   inputs."paratext".owner = "riinr";
   inputs."paratext".repo = "flake-nimble";

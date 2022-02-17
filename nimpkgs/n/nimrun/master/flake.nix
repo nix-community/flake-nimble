@@ -7,7 +7,6 @@
   inputs.src-nimrun-master.ref = "refs/heads/master";
   
   
-  inputs."tempfile".url = "path:../../../t/tempfile";
   inputs."tempfile".type = "github";
   inputs."tempfile".owner = "riinr";
   inputs."tempfile".repo = "flake-nimble";

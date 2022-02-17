@@ -7,7 +7,6 @@
   inputs.src-deser_json-master.ref = "refs/heads/master";
   
   
-  inputs."faststreams".url = "path:../../../f/faststreams";
   inputs."faststreams".type = "github";
   inputs."faststreams".owner = "riinr";
   inputs."faststreams".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."faststreams".dir = "nimpkgs/f/faststreams";
 
   
-  inputs."deser".url = "path:../../../d/deser";
   inputs."deser".type = "github";
   inputs."deser".owner = "riinr";
   inputs."deser".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-expander-main.ref = "refs/heads/main";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

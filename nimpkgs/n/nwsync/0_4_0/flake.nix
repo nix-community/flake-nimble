@@ -7,7 +7,6 @@
   inputs.src-nwsync-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."neverwinter".url = "path:../../../n/neverwinter";
   inputs."neverwinter".type = "github";
   inputs."neverwinter".owner = "riinr";
   inputs."neverwinter".repo = "flake-nimble";

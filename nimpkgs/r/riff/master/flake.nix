@@ -7,7 +7,6 @@
   inputs.src-riff-master.ref = "refs/heads/master";
   
   
-  inputs."binstreams".url = "path:../../../b/binstreams";
   inputs."binstreams".type = "github";
   inputs."binstreams".owner = "riinr";
   inputs."binstreams".repo = "flake-nimble";

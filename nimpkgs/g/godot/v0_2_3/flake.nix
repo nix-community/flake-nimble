@@ -7,7 +7,6 @@
   inputs.src-godot-v0_2_3.ref = "refs/tags/v0.2.3";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";

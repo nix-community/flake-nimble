@@ -7,7 +7,6 @@
   inputs.src-jesterjson-master.ref = "refs/heads/master";
   
   
-  inputs."jesterwithplugins".url = "path:../../../j/jesterwithplugins";
   inputs."jesterwithplugins".type = "github";
   inputs."jesterwithplugins".owner = "riinr";
   inputs."jesterwithplugins".repo = "flake-nimble";

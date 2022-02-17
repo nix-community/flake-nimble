@@ -7,7 +7,6 @@
   inputs.src-morelogging-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

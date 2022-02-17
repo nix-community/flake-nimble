@@ -7,7 +7,6 @@
   inputs.src-typography-0_7_4.ref = "refs/tags/0.7.4";
   
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."pixie".dir = "nimpkgs/p/pixie";
 
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."vmath".dir = "nimpkgs/v/vmath";
 
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."print".url = "path:../../../p/print";
   inputs."print".type = "github";
   inputs."print".owner = "riinr";
   inputs."print".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."print".dir = "nimpkgs/p/print";
 
   
-  inputs."bumpy".url = "path:../../../b/bumpy";
   inputs."bumpy".type = "github";
   inputs."bumpy".owner = "riinr";
   inputs."bumpy".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."bumpy".dir = "nimpkgs/b/bumpy";
 
   
-  inputs."flatty".url = "path:../../../f/flatty";
   inputs."flatty".type = "github";
   inputs."flatty".owner = "riinr";
   inputs."flatty".repo = "flake-nimble";

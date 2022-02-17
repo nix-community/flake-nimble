@@ -7,7 +7,6 @@
   inputs.src-blscurve-master.ref = "refs/heads/master";
   
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."https://github.com/status-im/nim-taskpools.git".url = "path:../../../h/https://github.com/status-im/nim-taskpools.git";
   inputs."https://github.com/status-im/nim-taskpools.git".type = "github";
   inputs."https://github.com/status-im/nim-taskpools.git".owner = "riinr";
   inputs."https://github.com/status-im/nim-taskpools.git".repo = "flake-nimble";

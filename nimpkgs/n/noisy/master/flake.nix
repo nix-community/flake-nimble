@@ -7,7 +7,6 @@
   inputs.src-noisy-master.ref = "refs/heads/master";
   
   
-  inputs."nimsimd".url = "path:../../../n/nimsimd";
   inputs."nimsimd".type = "github";
   inputs."nimsimd".owner = "riinr";
   inputs."nimsimd".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-gigi-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."puppy".url = "path:../../../p/puppy";
   inputs."puppy".type = "github";
   inputs."puppy".owner = "riinr";
   inputs."puppy".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-blurhash-master.ref = "refs/heads/master";
   
   
-  inputs."imageman".url = "path:../../../i/imageman";
   inputs."imageman".type = "github";
   inputs."imageman".owner = "riinr";
   inputs."imageman".repo = "flake-nimble";

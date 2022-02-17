@@ -7,7 +7,6 @@
   inputs.src-vscds-master.ref = "refs/heads/master";
   
   
-  inputs."nimlevenshtein".url = "path:../../../n/nimlevenshtein";
   inputs."nimlevenshtein".type = "github";
   inputs."nimlevenshtein".owner = "riinr";
   inputs."nimlevenshtein".repo = "flake-nimble";

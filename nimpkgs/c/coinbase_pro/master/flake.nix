@@ -7,7 +7,6 @@
   inputs.src-coinbase_pro-master.ref = "refs/heads/master";
   
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ws".dir = "nimpkgs/w/ws";
 
   
-  inputs."decimal".url = "path:../../../d/decimal";
   inputs."decimal".type = "github";
   inputs."decimal".owner = "riinr";
   inputs."decimal".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."decimal".dir = "nimpkgs/d/decimal";
 
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";

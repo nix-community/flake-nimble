@@ -7,7 +7,6 @@
   inputs.src-hexclock-master.ref = "refs/heads/master";
   
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-genoiser-master.ref = "refs/heads/master";
   
   
-  inputs."hts".url = "path:../../../h/hts";
   inputs."hts".type = "github";
   inputs."hts".owner = "riinr";
   inputs."hts".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."hts".dir = "nimpkgs/h/hts";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
   
-  inputs."kexpr".url = "path:../../../k/kexpr";
   inputs."kexpr".type = "github";
   inputs."kexpr".owner = "riinr";
   inputs."kexpr".repo = "flake-nimble";

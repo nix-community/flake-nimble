@@ -7,7 +7,6 @@
   inputs.src-choosenim-v0_7_5-20201029-edc69bd.ref = "refs/tags/v0.7.5-20201029-edc69bd";
   
   
-  inputs."nimble".url = "path:../../../n/nimble";
   inputs."nimble".type = "github";
   inputs."nimble".owner = "riinr";
   inputs."nimble".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimble".dir = "nimpkgs/n/nimble";
 
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
   
-  inputs."nimarchive".url = "path:../../../n/nimarchive";
   inputs."nimarchive".type = "github";
   inputs."nimarchive".owner = "riinr";
   inputs."nimarchive".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."nimarchive".dir = "nimpkgs/n/nimarchive";
 
   
-  inputs."analytics".url = "path:../../../a/analytics";
   inputs."analytics".type = "github";
   inputs."analytics".owner = "riinr";
   inputs."analytics".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."analytics".dir = "nimpkgs/a/analytics";
 
   
-  inputs."osinfo".url = "path:../../../o/osinfo";
   inputs."osinfo".type = "github";
   inputs."osinfo".owner = "riinr";
   inputs."osinfo".repo = "flake-nimble";

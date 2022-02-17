@@ -7,7 +7,6 @@
   inputs.src-asyncredis-v0_8_1.ref = "refs/tags/v0.8.1";
   
   
-  inputs."https://github.com/q-master/networkutils.nim.git".url = "path:../../../h/https://github.com/q-master/networkutils.nim.git";
   inputs."https://github.com/q-master/networkutils.nim.git".type = "github";
   inputs."https://github.com/q-master/networkutils.nim.git".owner = "riinr";
   inputs."https://github.com/q-master/networkutils.nim.git".repo = "flake-nimble";

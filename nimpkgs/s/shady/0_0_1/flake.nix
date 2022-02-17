@@ -7,7 +7,6 @@
   inputs.src-shady-0_0_1.ref = "refs/tags/0.0.1";
   
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."vmath".dir = "nimpkgs/v/vmath";
 
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";

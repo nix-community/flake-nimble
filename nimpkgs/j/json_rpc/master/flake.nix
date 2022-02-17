@@ -7,7 +7,6 @@
   inputs.src-json_rpc-master.ref = "refs/heads/master";
   
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."stint".dir = "nimpkgs/s/stint";
 
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."httputils".url = "path:../../../h/httputils";
   inputs."httputils".type = "github";
   inputs."httputils".owner = "riinr";
   inputs."httputils".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."httputils".dir = "nimpkgs/h/httputils";
 
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."chronicles".dir = "nimpkgs/c/chronicles";
 
   
-  inputs."https://github.com/status-im/news".url = "path:../../../h/https://github.com/status-im/news";
   inputs."https://github.com/status-im/news".type = "github";
   inputs."https://github.com/status-im/news".owner = "riinr";
   inputs."https://github.com/status-im/news".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."https://github.com/status-im/news".dir = "nimpkgs/h/https://github.com/status-im/news";
 
   
-  inputs."websock".url = "path:../../../w/websock";
   inputs."websock".type = "github";
   inputs."websock".owner = "riinr";
   inputs."websock".repo = "flake-nimble";
@@ -71,7 +63,6 @@
   inputs."websock".dir = "nimpkgs/w/websock";
 
   
-  inputs."json_serialization".url = "path:../../../j/json_serialization";
   inputs."json_serialization".type = "github";
   inputs."json_serialization".owner = "riinr";
   inputs."json_serialization".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-timecop-master.ref = "refs/heads/master";
   
   
-  inputs."subhook".url = "path:../../../s/subhook";
   inputs."subhook".type = "github";
   inputs."subhook".owner = "riinr";
   inputs."subhook".repo = "flake-nimble";

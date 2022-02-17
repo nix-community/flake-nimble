@@ -7,7 +7,6 @@
   inputs.src-neverwinter-1_4_4.ref = "refs/tags/1.4.4";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

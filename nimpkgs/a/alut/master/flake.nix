@@ -7,7 +7,6 @@
   inputs.src-alut-master.ref = "refs/heads/master";
   
   
-  inputs."openal".url = "path:../../../o/openal";
   inputs."openal".type = "github";
   inputs."openal".owner = "riinr";
   inputs."openal".repo = "flake-nimble";

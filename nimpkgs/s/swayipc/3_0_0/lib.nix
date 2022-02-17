@@ -15,53 +15,12 @@ let
   mkRefOutput = { self, nixpkgs, src, deps, meta }:
   let 
     pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    bins = meta.bin or [];
-    cpBin = bin: "cp -r $out/${bin} $outputBin/";
-    installBins = builtins.concatStringsSep "\n" (map cpBin bins);
-    binDirs = if (meta.binDir or "") != "" then [ meta.binDir ] else [];
-    cpBinDir = binDir: "cp -r $out/${binDir}/* $outputBin/";
-    installBinDirs = builtins.concatStringsSep "\n" (map cpBinDir binDirs);
-    installDirs = meta.installDirs or [];
-    installFiles = meta.installFiles or [];
-    hasBins = builtins.length(bins ++ binDirs ++ installDirs ++ installFiles) > 0;
-    buildBins = if hasBins then 
-    ''
-      mkdir -p $outputBin
-      cd $out
-      echo nim compile \
-        -d:release -d:ssl \
-        --out:$outputBin/bin/ \
-        --path:${deps.cligen.defaultPackage.x86_64-linux}/src
-        ${meta.srcDir}/${builtins.head bins}
-      cd -
-    ''
-    else '' '';
-    outputs = if hasBins then ["dev" "out" "bin"] else ["dev" "out"];
   in {
-    defaultPackage.x86_64-linux = pkgs.stdenv.mkDerivation {
-      inherit src outputs;
+    defaultPackage.x86_64-linux = pkgs.nimPackages.buildNimPackage {
+      inherit src;
       pname = meta.name;
-      nativeBuildInputs = [ pkgs.nim pkgs.nimble-unwrapped ];
-      meta.description = meta.desc or meta.description or "";
-      version = meta.version or
-        (builtins.replaceStr ["refs/.+/"] [""] meta.ref);
-      buildPhase = ''
-        mkdir -p nixsource
-        find -maxdepth 1 \
-          -not -name '.' \
-          -not -name '..' \
-          -not -name 'nixsource' \
-          -exec mv {} 'nixsource' \;
-        mkdir -p $out
-        mkdir -p $outputDev
-        cp -r nixsource/* $out/
-        ${buildBins}
-      '';
-      installPhase = ''
-        cp -r nixsource/* $outputDev/
-        ${installBins}
-        ${installBinDirs}
-      '';
+      meta.description = meta.desc or meta.description or "nim package ${meta.name}";
+      version = meta.version or (builtins.replaceStr ["refs/.+/"] [""] meta.ref);
     };
     meta = meta;
   };

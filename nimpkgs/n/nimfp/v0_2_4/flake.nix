@@ -7,7 +7,6 @@
   inputs.src-nimfp-v0_2_4.ref = "refs/tags/v0.2.4";
   
   
-  inputs."nimboost".url = "path:../../../n/nimboost";
   inputs."nimboost".type = "github";
   inputs."nimboost".owner = "riinr";
   inputs."nimboost".repo = "flake-nimble";

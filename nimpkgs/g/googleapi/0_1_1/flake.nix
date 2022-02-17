@@ -7,7 +7,6 @@
   inputs.src-googleapi-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."quickjwt".url = "path:../../../q/quickjwt";
   inputs."quickjwt".type = "github";
   inputs."quickjwt".owner = "riinr";
   inputs."quickjwt".repo = "flake-nimble";

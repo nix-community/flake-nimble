@@ -7,7 +7,6 @@
   inputs.src-nimibook-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."nimib".url = "path:../../../n/nimib";
   inputs."nimib".type = "github";
   inputs."nimib".owner = "riinr";
   inputs."nimib".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimib".dir = "nimpkgs/n/nimib";
 
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";

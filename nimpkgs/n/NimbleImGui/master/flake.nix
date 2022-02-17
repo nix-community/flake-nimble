@@ -7,7 +7,6 @@
   inputs.src-NimbleImGui-master.ref = "refs/heads/master";
   
   
-  inputs."nimgl".url = "path:../../../n/nimgl";
   inputs."nimgl".type = "github";
   inputs."nimgl".owner = "riinr";
   inputs."nimgl".repo = "flake-nimble";

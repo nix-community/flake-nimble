@@ -7,7 +7,6 @@
   inputs.src-norm-2_3_2.ref = "refs/tags/2.3.2";
   
   
-  inputs."ndb".url = "path:../../../n/ndb";
   inputs."ndb".type = "github";
   inputs."ndb".owner = "riinr";
   inputs."ndb".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ndb".dir = "nimpkgs/n/ndb";
 
   
-  inputs."nimibook".url = "path:../../../n/nimibook";
   inputs."nimibook".type = "github";
   inputs."nimibook".owner = "riinr";
   inputs."nimibook".repo = "flake-nimble";

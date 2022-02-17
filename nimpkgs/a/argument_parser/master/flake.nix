@@ -7,7 +7,6 @@
   inputs.src-argument_parser-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/xe/badger_bits.git".url = "path:../../../h/https://github.com/xe/badger_bits.git";
   inputs."https://github.com/xe/badger_bits.git".type = "github";
   inputs."https://github.com/xe/badger_bits.git".owner = "riinr";
   inputs."https://github.com/xe/badger_bits.git".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/xe/badger_bits.git".dir = "nimpkgs/h/https://github.com/xe/badger_bits.git";
 
   
-  inputs."nake".url = "path:../../../n/nake";
   inputs."nake".type = "github";
   inputs."nake".owner = "riinr";
   inputs."nake".repo = "flake-nimble";

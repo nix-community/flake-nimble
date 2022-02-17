@@ -7,7 +7,6 @@
   inputs.src-astar-master.ref = "refs/heads/master";
   
   
-  inputs."binaryheap".url = "path:../../../b/binaryheap";
   inputs."binaryheap".type = "github";
   inputs."binaryheap".owner = "riinr";
   inputs."binaryheap".repo = "flake-nimble";

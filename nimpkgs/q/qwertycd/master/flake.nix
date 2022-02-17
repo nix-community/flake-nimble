@@ -7,7 +7,6 @@
   inputs.src-qwertycd-master.ref = "refs/heads/master";
   
   
-  inputs."illwill".url = "path:../../../i/illwill";
   inputs."illwill".type = "github";
   inputs."illwill".owner = "riinr";
   inputs."illwill".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."illwill".dir = "nimpkgs/i/illwill";
 
   
-  inputs."parsetoml".url = "path:../../../p/parsetoml";
   inputs."parsetoml".type = "github";
   inputs."parsetoml".owner = "riinr";
   inputs."parsetoml".repo = "flake-nimble";

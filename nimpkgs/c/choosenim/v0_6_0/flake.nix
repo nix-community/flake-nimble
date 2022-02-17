@@ -7,7 +7,6 @@
   inputs.src-choosenim-v0_6_0.ref = "refs/tags/v0.6.0";
   
   
-  inputs."nimble".url = "path:../../../n/nimble";
   inputs."nimble".type = "github";
   inputs."nimble".owner = "riinr";
   inputs."nimble".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimble".dir = "nimpkgs/n/nimble";
 
   
-  inputs."nimarchive".url = "path:../../../n/nimarchive";
   inputs."nimarchive".type = "github";
   inputs."nimarchive".owner = "riinr";
   inputs."nimarchive".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimarchive".dir = "nimpkgs/n/nimarchive";
 
   
-  inputs."libcurl".url = "path:../../../l/libcurl";
   inputs."libcurl".type = "github";
   inputs."libcurl".owner = "riinr";
   inputs."libcurl".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."libcurl".dir = "nimpkgs/l/libcurl";
 
   
-  inputs."analytics".url = "path:../../../a/analytics";
   inputs."analytics".type = "github";
   inputs."analytics".owner = "riinr";
   inputs."analytics".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."analytics".dir = "nimpkgs/a/analytics";
 
   
-  inputs."osinfo".url = "path:../../../o/osinfo";
   inputs."osinfo".type = "github";
   inputs."osinfo".owner = "riinr";
   inputs."osinfo".repo = "flake-nimble";

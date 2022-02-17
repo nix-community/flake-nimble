@@ -7,7 +7,6 @@
   inputs.src-websocketx-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ws".dir = "nimpkgs/w/ws";
 
   
-  inputs."httpx".url = "path:../../../h/httpx";
   inputs."httpx".type = "github";
   inputs."httpx".owner = "riinr";
   inputs."httpx".repo = "flake-nimble";

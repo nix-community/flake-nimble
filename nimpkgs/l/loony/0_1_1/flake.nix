@@ -7,7 +7,6 @@
   inputs.src-loony-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."https://github.com/disruptek/balls".url = "path:../../../h/https://github.com/disruptek/balls";
   inputs."https://github.com/disruptek/balls".type = "github";
   inputs."https://github.com/disruptek/balls".owner = "riinr";
   inputs."https://github.com/disruptek/balls".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/disruptek/balls".dir = "nimpkgs/h/https://github.com/disruptek/balls";
 
   
-  inputs."https://github.com/disruptek/cps".url = "path:../../../h/https://github.com/disruptek/cps";
   inputs."https://github.com/disruptek/cps".type = "github";
   inputs."https://github.com/disruptek/cps".owner = "riinr";
   inputs."https://github.com/disruptek/cps".repo = "flake-nimble";

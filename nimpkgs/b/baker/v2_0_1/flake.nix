@@ -7,7 +7,6 @@
   inputs.src-baker-v2_0_1.ref = "refs/tags/v2.0.1";
   
   
-  inputs."proton".url = "path:../../../p/proton";
   inputs."proton".type = "github";
   inputs."proton".owner = "riinr";
   inputs."proton".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."proton".dir = "nimpkgs/p/proton";
 
   
-  inputs."https://github.com/docopt/docopt.nim".url = "path:../../../h/https://github.com/docopt/docopt.nim";
   inputs."https://github.com/docopt/docopt.nim".type = "github";
   inputs."https://github.com/docopt/docopt.nim".owner = "riinr";
   inputs."https://github.com/docopt/docopt.nim".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."https://github.com/docopt/docopt.nim".dir = "nimpkgs/h/https://github.com/docopt/docopt.nim";
 
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."markdown".dir = "nimpkgs/m/markdown";
 
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."zip".dir = "nimpkgs/z/zip";
 
   
-  inputs."timezones".url = "path:../../../t/timezones";
   inputs."timezones".type = "github";
   inputs."timezones".owner = "riinr";
   inputs."timezones".repo = "flake-nimble";

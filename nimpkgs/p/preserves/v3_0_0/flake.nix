@@ -7,7 +7,6 @@
   inputs.src-preserves-v3_0_0.ref = "refs/tags/v3.0.0";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."compiler".dir = "nimpkgs/c/compiler";
 
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";

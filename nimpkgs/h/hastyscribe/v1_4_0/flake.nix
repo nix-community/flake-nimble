@@ -7,7 +7,6 @@
   inputs.src-hastyscribe-v1_4_0.ref = "refs/tags/v1.4.0";
   
   
-  inputs."nimrod".url = "path:../../../n/nimrod";
   inputs."nimrod".type = "github";
   inputs."nimrod".owner = "riinr";
   inputs."nimrod".repo = "flake-nimble";

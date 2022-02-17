@@ -7,7 +7,6 @@
   inputs.src-uibuilder-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."ui".url = "path:../../../u/ui";
   inputs."ui".type = "github";
   inputs."ui".owner = "riinr";
   inputs."ui".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ui".dir = "nimpkgs/u/ui";
 
   
-  inputs."https://github.com/ba0f3/xml.nim@".url = "path:../../../h/https://github.com/ba0f3/xml.nim@";
   inputs."https://github.com/ba0f3/xml.nim@".type = "github";
   inputs."https://github.com/ba0f3/xml.nim@".owner = "riinr";
   inputs."https://github.com/ba0f3/xml.nim@".repo = "flake-nimble";

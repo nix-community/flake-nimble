@@ -7,7 +7,6 @@
   inputs.src-awk-master.ref = "refs/heads/master";
   
   
-  inputs."nre".url = "path:../../../n/nre";
   inputs."nre".type = "github";
   inputs."nre".owner = "riinr";
   inputs."nre".repo = "flake-nimble";

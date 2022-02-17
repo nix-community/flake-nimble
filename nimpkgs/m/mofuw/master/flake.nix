@@ -7,7 +7,6 @@
   inputs.src-mofuw-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/2vg/mofuparser".url = "path:../../../h/https://github.com/2vg/mofuparser";
   inputs."https://github.com/2vg/mofuparser".type = "github";
   inputs."https://github.com/2vg/mofuparser".owner = "riinr";
   inputs."https://github.com/2vg/mofuparser".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/2vg/mofuparser".dir = "nimpkgs/h/https://github.com/2vg/mofuparser";
 
   
-  inputs."https://github.com/2vg/mofuhttputils".url = "path:../../../h/https://github.com/2vg/mofuhttputils";
   inputs."https://github.com/2vg/mofuhttputils".type = "github";
   inputs."https://github.com/2vg/mofuhttputils".owner = "riinr";
   inputs."https://github.com/2vg/mofuhttputils".repo = "flake-nimble";

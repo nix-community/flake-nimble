@@ -7,7 +7,6 @@
   inputs.src-quickcrypt-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."nimaes".url = "path:../../../n/nimaes";
   inputs."nimaes".type = "github";
   inputs."nimaes".owner = "riinr";
   inputs."nimaes".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimaes".dir = "nimpkgs/n/nimaes";
 
   
-  inputs."neoid".url = "path:../../../n/neoid";
   inputs."neoid".type = "github";
   inputs."neoid".owner = "riinr";
   inputs."neoid".repo = "flake-nimble";

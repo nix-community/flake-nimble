@@ -7,7 +7,6 @@
   inputs.src-nimi3status-master.ref = "refs/heads/master";
   
   
-  inputs."colorsys".url = "path:../../../c/colorsys";
   inputs."colorsys".type = "github";
   inputs."colorsys".owner = "riinr";
   inputs."colorsys".repo = "flake-nimble";

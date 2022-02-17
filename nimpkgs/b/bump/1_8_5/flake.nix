@@ -7,7 +7,6 @@
   inputs.src-bump-1_8_5.ref = "refs/tags/1.8.5";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

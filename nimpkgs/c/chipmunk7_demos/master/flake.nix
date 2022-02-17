@@ -7,7 +7,6 @@
   inputs.src-chipmunk7_demos-master.ref = "refs/heads/master";
   
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";

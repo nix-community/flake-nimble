@@ -7,7 +7,6 @@
   inputs.src-moe-v0_2_8_0.ref = "refs/tags/v0.2.8.0";
   
   
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".url = "path:../../../h/https://github.com/walkre-niboshi/nim-ncurses";
   inputs."https://github.com/walkre-niboshi/nim-ncurses".type = "github";
   inputs."https://github.com/walkre-niboshi/nim-ncurses".owner = "riinr";
   inputs."https://github.com/walkre-niboshi/nim-ncurses".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/walkre-niboshi/nim-ncurses".dir = "nimpkgs/h/https://github.com/walkre-niboshi/nim-ncurses";
 
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
 
   
-  inputs."parsetoml".url = "path:../../../p/parsetoml";
   inputs."parsetoml".type = "github";
   inputs."parsetoml".owner = "riinr";
   inputs."parsetoml".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-jester-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."httpbeast".url = "path:../../../h/httpbeast";
   inputs."httpbeast".type = "github";
   inputs."httpbeast".owner = "riinr";
   inputs."httpbeast".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
 
   
-  inputs."asynctools".url = "path:../../../a/asynctools";
   inputs."asynctools".type = "github";
   inputs."asynctools".owner = "riinr";
   inputs."asynctools".repo = "flake-nimble";

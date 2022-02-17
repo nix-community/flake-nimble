@@ -7,7 +7,6 @@
   inputs.src-rdgui-master.ref = "refs/heads/master";
   
   
-  inputs."rapid".url = "path:../../../r/rapid";
   inputs."rapid".type = "github";
   inputs."rapid".owner = "riinr";
   inputs."rapid".repo = "flake-nimble";

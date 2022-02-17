@@ -7,7 +7,6 @@
   inputs.src-nimkerberos-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."nimgen".url = "path:../../../n/nimgen";
   inputs."nimgen".type = "github";
   inputs."nimgen".owner = "riinr";
   inputs."nimgen".repo = "flake-nimble";

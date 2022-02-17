@@ -7,7 +7,6 @@
   inputs.src-spotify-master.ref = "refs/heads/master";
   
   
-  inputs."oauth".url = "path:../../../o/oauth";
   inputs."oauth".type = "github";
   inputs."oauth".owner = "riinr";
   inputs."oauth".repo = "flake-nimble";

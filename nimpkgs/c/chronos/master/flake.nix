@@ -7,7 +7,6 @@
   inputs.src-chronos-master.ref = "refs/heads/master";
   
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."bearssl".url = "path:../../../b/bearssl";
   inputs."bearssl".type = "github";
   inputs."bearssl".owner = "riinr";
   inputs."bearssl".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."bearssl".dir = "nimpkgs/b/bearssl";
 
   
-  inputs."httputils".url = "path:../../../h/httputils";
   inputs."httputils".type = "github";
   inputs."httputils".owner = "riinr";
   inputs."httputils".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."httputils".dir = "nimpkgs/h/httputils";
 
   
-  inputs."https://github.com/status-im/nim-unittest2.git".url = "path:../../../h/https://github.com/status-im/nim-unittest2.git";
   inputs."https://github.com/status-im/nim-unittest2.git".type = "github";
   inputs."https://github.com/status-im/nim-unittest2.git".owner = "riinr";
   inputs."https://github.com/status-im/nim-unittest2.git".repo = "flake-nimble";

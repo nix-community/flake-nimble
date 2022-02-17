@@ -7,7 +7,6 @@
   inputs.src-binarylang-v0_5_0.ref = "refs/tags/v0.5.0";
   
   
-  inputs."bitstreams".url = "path:../../../b/bitstreams";
   inputs."bitstreams".type = "github";
   inputs."bitstreams".owner = "riinr";
   inputs."bitstreams".repo = "flake-nimble";

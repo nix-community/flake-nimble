@@ -7,7 +7,6 @@
   inputs.src-nimjl-master.ref = "refs/heads/master";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";

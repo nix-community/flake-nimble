@@ -7,7 +7,6 @@
   inputs.src-notcurses-v3_0_3.ref = "refs/tags/v3.0.3";
   
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";

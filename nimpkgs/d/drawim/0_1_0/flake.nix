@@ -7,7 +7,6 @@
   inputs.src-drawim-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."staticglfw".url = "path:../../../s/staticglfw";
   inputs."staticglfw".type = "github";
   inputs."staticglfw".owner = "riinr";
   inputs."staticglfw".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."staticglfw".dir = "nimpkgs/s/staticglfw";
 
   
-  inputs."jscanvas".url = "path:../../../j/jscanvas";
   inputs."jscanvas".type = "github";
   inputs."jscanvas".owner = "riinr";
   inputs."jscanvas".repo = "flake-nimble";

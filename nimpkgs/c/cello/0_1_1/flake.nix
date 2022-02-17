@@ -7,7 +7,6 @@
   inputs.src-cello-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."spills".url = "path:../../../s/spills";
   inputs."spills".type = "github";
   inputs."spills".owner = "riinr";
   inputs."spills".repo = "flake-nimble";

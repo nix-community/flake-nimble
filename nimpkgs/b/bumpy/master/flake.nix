@@ -7,7 +7,6 @@
   inputs.src-bumpy-master.ref = "refs/heads/master";
   
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";

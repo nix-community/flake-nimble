@@ -7,7 +7,6 @@
   inputs.src-cittadino-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/subsetpark/nim-stomp.git".url = "path:../../../h/https://github.com/subsetpark/nim-stomp.git";
   inputs."https://github.com/subsetpark/nim-stomp.git".type = "github";
   inputs."https://github.com/subsetpark/nim-stomp.git".owner = "riinr";
   inputs."https://github.com/subsetpark/nim-stomp.git".repo = "flake-nimble";

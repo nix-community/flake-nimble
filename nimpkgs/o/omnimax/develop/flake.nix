@@ -7,7 +7,6 @@
   inputs.src-omnimax-develop.ref = "refs/heads/develop";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."omni".url = "path:../../../o/omni";
   inputs."omni".type = "github";
   inputs."omni".owner = "riinr";
   inputs."omni".repo = "flake-nimble";

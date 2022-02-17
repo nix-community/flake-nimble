@@ -7,7 +7,6 @@
   inputs.src-cbor-v0_8_1.ref = "refs/tags/v0.8.1";
   
   
-  inputs."bigints".url = "path:../../../b/bigints";
   inputs."bigints".type = "github";
   inputs."bigints".owner = "riinr";
   inputs."bigints".repo = "flake-nimble";

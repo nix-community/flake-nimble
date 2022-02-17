@@ -7,7 +7,6 @@
   inputs.src-negamax-v0_0_1.ref = "refs/tags/v0.0.1";
   
   
-  inputs."turn_based_game".url = "path:../../../t/turn_based_game";
   inputs."turn_based_game".type = "github";
   inputs."turn_based_game".owner = "riinr";
   inputs."turn_based_game".repo = "flake-nimble";

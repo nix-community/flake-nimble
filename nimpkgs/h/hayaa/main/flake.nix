@@ -7,7 +7,6 @@
   inputs.src-hayaa-main.ref = "refs/heads/main";
   
   
-  inputs."illwill".url = "path:../../../i/illwill";
   inputs."illwill".type = "github";
   inputs."illwill".owner = "riinr";
   inputs."illwill".repo = "flake-nimble";

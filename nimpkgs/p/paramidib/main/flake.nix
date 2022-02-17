@@ -7,7 +7,6 @@
   inputs.src-paramidib-main.ref = "refs/heads/main";
   
   
-  inputs."paramidi".url = "path:../../../p/paramidi";
   inputs."paramidi".type = "github";
   inputs."paramidi".owner = "riinr";
   inputs."paramidi".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."paramidi".dir = "nimpkgs/p/paramidi";
 
   
-  inputs."paramidi_soundfonts".url = "path:../../../p/paramidi_soundfonts";
   inputs."paramidi_soundfonts".type = "github";
   inputs."paramidi_soundfonts".owner = "riinr";
   inputs."paramidi_soundfonts".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."paramidi_soundfonts".dir = "nimpkgs/p/paramidi_soundfonts";
 
   
-  inputs."parasound".url = "path:../../../p/parasound";
   inputs."parasound".type = "github";
   inputs."parasound".owner = "riinr";
   inputs."parasound".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-kview-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."karax".url = "path:../../../k/karax";
   inputs."karax".type = "github";
   inputs."karax".owner = "riinr";
   inputs."karax".repo = "flake-nimble";

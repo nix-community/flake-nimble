@@ -7,7 +7,6 @@
   inputs.src-httpx-v0_1_6.ref = "refs/tags/v0.1.6";
   
   
-  inputs."ioselectors".url = "path:../../../i/ioselectors";
   inputs."ioselectors".type = "github";
   inputs."ioselectors".owner = "riinr";
   inputs."ioselectors".repo = "flake-nimble";

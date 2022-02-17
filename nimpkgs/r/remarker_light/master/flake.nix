@@ -7,7 +7,6 @@
   inputs.src-remarker_light-master.ref = "refs/heads/master";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jester".dir = "nimpkgs/j/jester";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-bump-1_8_26.ref = "refs/tags/1.8.26";
   
   
-  inputs."https://github.com/disruptek/cutelog".url = "path:../../../h/https://github.com/disruptek/cutelog";
   inputs."https://github.com/disruptek/cutelog".type = "github";
   inputs."https://github.com/disruptek/cutelog".owner = "riinr";
   inputs."https://github.com/disruptek/cutelog".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/disruptek/cutelog".dir = "nimpkgs/h/https://github.com/disruptek/cutelog";
 
   
-  inputs."https://github.com/disruptek/testes".url = "path:../../../h/https://github.com/disruptek/testes";
   inputs."https://github.com/disruptek/testes".type = "github";
   inputs."https://github.com/disruptek/testes".owner = "riinr";
   inputs."https://github.com/disruptek/testes".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."https://github.com/disruptek/testes".dir = "nimpkgs/h/https://github.com/disruptek/testes";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

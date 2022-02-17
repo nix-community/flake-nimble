@@ -7,7 +7,6 @@
   inputs.src-distributions-master.ref = "refs/heads/master";
   
   
-  inputs."special_functions".url = "path:../../../s/special_functions";
   inputs."special_functions".type = "github";
   inputs."special_functions".owner = "riinr";
   inputs."special_functions".repo = "flake-nimble";

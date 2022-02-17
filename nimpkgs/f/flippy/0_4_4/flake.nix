@@ -7,7 +7,6 @@
   inputs.src-flippy-0_4_4.ref = "refs/tags/0.4.4";
   
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."vmath".dir = "nimpkgs/v/vmath";
 
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."print".url = "path:../../../p/print";
   inputs."print".type = "github";
   inputs."print".owner = "riinr";
   inputs."print".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."print".dir = "nimpkgs/p/print";
 
   
-  inputs."nimpng".url = "path:../../../n/nimpng";
   inputs."nimpng".type = "github";
   inputs."nimpng".owner = "riinr";
   inputs."nimpng".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."nimpng".dir = "nimpkgs/n/nimpng";
 
   
-  inputs."snappy".url = "path:../../../s/snappy";
   inputs."snappy".type = "github";
   inputs."snappy".owner = "riinr";
   inputs."snappy".repo = "flake-nimble";

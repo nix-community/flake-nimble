@@ -7,7 +7,6 @@
   inputs.src-nimscripter-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/disruptek/assume".url = "path:../../../h/https://github.com/disruptek/assume";
   inputs."https://github.com/disruptek/assume".type = "github";
   inputs."https://github.com/disruptek/assume".owner = "riinr";
   inputs."https://github.com/disruptek/assume".repo = "flake-nimble";

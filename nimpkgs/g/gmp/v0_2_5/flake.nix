@@ -7,7 +7,6 @@
   inputs.src-gmp-v0_2_5.ref = "refs/tags/v0.2.5";
   
   
-  inputs."nimrod".url = "path:../../../n/nimrod";
   inputs."nimrod".type = "github";
   inputs."nimrod".owner = "riinr";
   inputs."nimrod".repo = "flake-nimble";

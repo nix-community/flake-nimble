@@ -7,7 +7,6 @@
   inputs.src-eris_utils-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."eris".url = "path:../../../e/eris";
   inputs."eris".type = "github";
   inputs."eris".owner = "riinr";
   inputs."eris".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."eris".dir = "nimpkgs/e/eris";
 
   
-  inputs."tkrzw".url = "path:../../../t/tkrzw";
   inputs."tkrzw".type = "github";
   inputs."tkrzw".owner = "riinr";
   inputs."tkrzw".repo = "flake-nimble";

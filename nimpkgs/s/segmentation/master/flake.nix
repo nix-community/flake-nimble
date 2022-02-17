@@ -7,7 +7,6 @@
   inputs.src-segmentation-master.ref = "refs/heads/master";
   
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";

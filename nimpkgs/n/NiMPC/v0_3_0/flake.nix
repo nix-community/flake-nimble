@@ -7,7 +7,6 @@
   inputs.src-NiMPC-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."sysrandom".url = "path:../../../s/sysrandom";
   inputs."sysrandom".type = "github";
   inputs."sysrandom".owner = "riinr";
   inputs."sysrandom".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sysrandom".dir = "nimpkgs/s/sysrandom";
 
   
-  inputs."simpleot".url = "path:../../../s/simpleot";
   inputs."simpleot".type = "github";
   inputs."simpleot".owner = "riinr";
   inputs."simpleot".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."simpleot".dir = "nimpkgs/s/simpleot";
 
   
-  inputs."monocypher".url = "path:../../../m/monocypher";
   inputs."monocypher".type = "github";
   inputs."monocypher".owner = "riinr";
   inputs."monocypher".repo = "flake-nimble";

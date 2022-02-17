@@ -7,7 +7,6 @@
   inputs.src-zxcvbnim-main.ref = "refs/heads/main";
   
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jsony".dir = "nimpkgs/j/jsony";
 
   
-  inputs."supersnappy".url = "path:../../../s/supersnappy";
   inputs."supersnappy".type = "github";
   inputs."supersnappy".owner = "riinr";
   inputs."supersnappy".repo = "flake-nimble";

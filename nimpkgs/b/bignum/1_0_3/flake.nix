@@ -7,7 +7,6 @@
   inputs.src-bignum-1_0_3.ref = "refs/tags/1.0.3";
   
   
-  inputs."gmp".url = "path:../../../g/gmp";
   inputs."gmp".type = "github";
   inputs."gmp".owner = "riinr";
   inputs."gmp".repo = "flake-nimble";

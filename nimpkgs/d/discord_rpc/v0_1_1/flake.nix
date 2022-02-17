@@ -7,7 +7,6 @@
   inputs.src-discord_rpc-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."uuids".url = "path:../../../u/uuids";
   inputs."uuids".type = "github";
   inputs."uuids".owner = "riinr";
   inputs."uuids".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
   
-  inputs."packedjson".url = "path:../../../p/packedjson";
   inputs."packedjson".type = "github";
   inputs."packedjson".owner = "riinr";
   inputs."packedjson".repo = "flake-nimble";

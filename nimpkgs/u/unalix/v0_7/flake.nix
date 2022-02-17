@@ -7,7 +7,6 @@
   inputs.src-unalix-v0_7.ref = "refs/tags/v0.7";
   
   
-  inputs."htmlunescape".url = "path:../../../h/htmlunescape";
   inputs."htmlunescape".type = "github";
   inputs."htmlunescape".owner = "riinr";
   inputs."htmlunescape".repo = "flake-nimble";

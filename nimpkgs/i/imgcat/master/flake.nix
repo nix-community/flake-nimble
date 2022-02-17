@@ -7,7 +7,6 @@
   inputs.src-imgcat-master.ref = "refs/heads/master";
   
   
-  inputs."imageman".url = "path:../../../i/imageman";
   inputs."imageman".type = "github";
   inputs."imageman".owner = "riinr";
   inputs."imageman".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."imageman".dir = "nimpkgs/i/imageman";
 
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";

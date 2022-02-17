@@ -7,7 +7,6 @@
   inputs.src-faststreams-master.ref = "refs/heads/master";
   
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."testutils".url = "path:../../../t/testutils";
   inputs."testutils".type = "github";
   inputs."testutils".owner = "riinr";
   inputs."testutils".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."testutils".dir = "nimpkgs/t/testutils";
 
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."unittest2".url = "path:../../../u/unittest2";
   inputs."unittest2".type = "github";
   inputs."unittest2".owner = "riinr";
   inputs."unittest2".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nasher-0_12_2.ref = "refs/tags/0.12.2";
   
   
-  inputs."neverwinter".url = "path:../../../n/neverwinter";
   inputs."neverwinter".type = "github";
   inputs."neverwinter".owner = "riinr";
   inputs."neverwinter".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."neverwinter".dir = "nimpkgs/n/neverwinter";
 
   
-  inputs."glob".url = "path:../../../g/glob";
   inputs."glob".type = "github";
   inputs."glob".owner = "riinr";
   inputs."glob".repo = "flake-nimble";

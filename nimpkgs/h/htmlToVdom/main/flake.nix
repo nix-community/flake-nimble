@@ -7,7 +7,6 @@
   inputs.src-htmlToVdom-main.ref = "refs/heads/main";
   
   
-  inputs."karax".url = "path:../../../k/karax";
   inputs."karax".type = "github";
   inputs."karax".owner = "riinr";
   inputs."karax".repo = "flake-nimble";

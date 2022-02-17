@@ -7,7 +7,6 @@
   inputs.src-composition-main.ref = "refs/heads/main";
   
   
-  inputs."macrosex".url = "path:../../../m/macrosex";
   inputs."macrosex".type = "github";
   inputs."macrosex".owner = "riinr";
   inputs."macrosex".repo = "flake-nimble";

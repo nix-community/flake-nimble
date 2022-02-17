@@ -7,7 +7,6 @@
   inputs.src-nimtesseract-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";

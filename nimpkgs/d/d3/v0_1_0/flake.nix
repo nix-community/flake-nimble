@@ -7,7 +7,6 @@
   inputs.src-d3-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."jsbind".url = "path:../../../j/jsbind";
   inputs."jsbind".type = "github";
   inputs."jsbind".owner = "riinr";
   inputs."jsbind".repo = "flake-nimble";

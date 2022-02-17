@@ -7,7 +7,6 @@
   inputs.src-termnovel-1_0_0.ref = "refs/tags/1.0.0";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."markdown".dir = "nimpkgs/m/markdown";
 
   
-  inputs."nimquery".url = "path:../../../n/nimquery";
   inputs."nimquery".type = "github";
   inputs."nimquery".owner = "riinr";
   inputs."nimquery".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."nimquery".dir = "nimpkgs/n/nimquery";
 
   
-  inputs."eastasianwidth".url = "path:../../../e/eastasianwidth";
   inputs."eastasianwidth".type = "github";
   inputs."eastasianwidth".owner = "riinr";
   inputs."eastasianwidth".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
 
   
-  inputs."alignment".url = "path:../../../a/alignment";
   inputs."alignment".type = "github";
   inputs."alignment".owner = "riinr";
   inputs."alignment".repo = "flake-nimble";

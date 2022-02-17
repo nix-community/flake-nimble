@@ -7,7 +7,6 @@
   inputs.src-niml-0_1_5.ref = "refs/tags/0.1.5";
   
   
-  inputs."fusion".url = "path:../../../f/fusion";
   inputs."fusion".type = "github";
   inputs."fusion".owner = "riinr";
   inputs."fusion".repo = "flake-nimble";

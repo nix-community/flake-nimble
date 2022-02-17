@@ -7,7 +7,6 @@
   inputs.src-nimly-master.ref = "refs/heads/master";
   
   
-  inputs."patty".url = "path:../../../p/patty";
   inputs."patty".type = "github";
   inputs."patty".owner = "riinr";
   inputs."patty".repo = "flake-nimble";

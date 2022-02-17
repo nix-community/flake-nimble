@@ -7,7 +7,6 @@
   inputs.src-nimfmt-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-arraymancer_vision-master.ref = "refs/heads/master";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."stb_image".url = "path:../../../s/stb_image";
   inputs."stb_image".type = "github";
   inputs."stb_image".owner = "riinr";
   inputs."stb_image".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimcl-0_1_3.ref = "refs/tags/0.1.3";
   
   
-  inputs."opencl".url = "path:../../../o/opencl";
   inputs."opencl".type = "github";
   inputs."opencl".owner = "riinr";
   inputs."opencl".repo = "flake-nimble";

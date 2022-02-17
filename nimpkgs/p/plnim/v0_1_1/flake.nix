@@ -7,7 +7,6 @@
   inputs.src-plnim-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."pgxcrown".url = "path:../../../p/pgxcrown";
   inputs."pgxcrown".type = "github";
   inputs."pgxcrown".owner = "riinr";
   inputs."pgxcrown".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimgame2-v0_6_1.ref = "refs/tags/v0.6.1";
   
   
-  inputs."sdl2_nim".url = "path:../../../s/sdl2_nim";
   inputs."sdl2_nim".type = "github";
   inputs."sdl2_nim".owner = "riinr";
   inputs."sdl2_nim".repo = "flake-nimble";

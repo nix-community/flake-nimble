@@ -7,7 +7,6 @@
   inputs.src-ballpark-main.ref = "refs/heads/main";
   
   
-  inputs."fsnotify".url = "path:../../../f/fsnotify";
   inputs."fsnotify".type = "github";
   inputs."fsnotify".owner = "riinr";
   inputs."fsnotify".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-pvim-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."paravim".url = "path:../../../p/paravim";
   inputs."paravim".type = "github";
   inputs."paravim".owner = "riinr";
   inputs."paravim".repo = "flake-nimble";

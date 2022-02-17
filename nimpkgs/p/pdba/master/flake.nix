@@ -7,7 +7,6 @@
   inputs.src-pdba-master.ref = "refs/heads/master";
   
   
-  inputs."yaml".url = "path:../../../y/yaml";
   inputs."yaml".type = "github";
   inputs."yaml".owner = "riinr";
   inputs."yaml".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."yaml".dir = "nimpkgs/y/yaml";
 
   
-  inputs."ndb".url = "path:../../../n/ndb";
   inputs."ndb".type = "github";
   inputs."ndb".owner = "riinr";
   inputs."ndb".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-suber-main.ref = "refs/heads/main";
   
   
-  inputs."stashtable".url = "path:../../../s/stashtable";
   inputs."stashtable".type = "github";
   inputs."stashtable".owner = "riinr";
   inputs."stashtable".repo = "flake-nimble";

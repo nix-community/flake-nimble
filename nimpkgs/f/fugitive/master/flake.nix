@@ -7,7 +7,6 @@
   inputs.src-fugitive-master.ref = "refs/heads/master";
   
   
-  inputs."gara".url = "path:../../../g/gara";
   inputs."gara".type = "github";
   inputs."gara".owner = "riinr";
   inputs."gara".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."gara".dir = "nimpkgs/g/gara";
 
   
-  inputs."tempfile".url = "path:../../../t/tempfile";
   inputs."tempfile".type = "github";
   inputs."tempfile".owner = "riinr";
   inputs."tempfile".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."tempfile".dir = "nimpkgs/t/tempfile";
 
   
-  inputs."unpack".url = "path:../../../u/unpack";
   inputs."unpack".type = "github";
   inputs."unpack".owner = "riinr";
   inputs."unpack".repo = "flake-nimble";

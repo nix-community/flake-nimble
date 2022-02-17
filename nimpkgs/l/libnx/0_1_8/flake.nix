@@ -7,7 +7,6 @@
   inputs.src-libnx-0_1_8.ref = "refs/tags/0.1.8";
   
   
-  inputs."https://github.com/genotrance/nimgen".url = "path:../../../h/https://github.com/genotrance/nimgen";
   inputs."https://github.com/genotrance/nimgen".type = "github";
   inputs."https://github.com/genotrance/nimgen".owner = "riinr";
   inputs."https://github.com/genotrance/nimgen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/genotrance/nimgen".dir = "nimpkgs/h/https://github.com/genotrance/nimgen";
 
   
-  inputs."switch-build".url = "path:../../../s/switch-build";
   inputs."switch-build".type = "github";
   inputs."switch-build".owner = "riinr";
   inputs."switch-build".repo = "flake-nimble";

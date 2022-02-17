@@ -7,7 +7,6 @@
   inputs.src-sayhissatsuwaza-master.ref = "refs/heads/master";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

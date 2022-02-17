@@ -7,7 +7,6 @@
   inputs.src-nimib-v0_2_1.ref = "refs/tags/v0.2.1";
   
   
-  inputs."tempfile".url = "path:../../../t/tempfile";
   inputs."tempfile".type = "github";
   inputs."tempfile".owner = "riinr";
   inputs."tempfile".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."tempfile".dir = "nimpkgs/t/tempfile";
 
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."markdown".dir = "nimpkgs/m/markdown";
 
   
-  inputs."mustache".url = "path:../../../m/mustache";
   inputs."mustache".type = "github";
   inputs."mustache".owner = "riinr";
   inputs."mustache".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."mustache".dir = "nimpkgs/m/mustache";
 
   
-  inputs."toml_serialization".url = "path:../../../t/toml_serialization";
   inputs."toml_serialization".type = "github";
   inputs."toml_serialization".owner = "riinr";
   inputs."toml_serialization".repo = "flake-nimble";

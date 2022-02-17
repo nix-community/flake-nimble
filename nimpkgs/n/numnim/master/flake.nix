@@ -7,7 +7,6 @@
   inputs.src-numnim-master.ref = "refs/heads/master";
   
   
-  inputs."nimblas".url = "path:../../../n/nimblas";
   inputs."nimblas".type = "github";
   inputs."nimblas".owner = "riinr";
   inputs."nimblas".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimblas".dir = "nimpkgs/n/nimblas";
 
   
-  inputs."nimlapack".url = "path:../../../n/nimlapack";
   inputs."nimlapack".type = "github";
   inputs."nimlapack".owner = "riinr";
   inputs."nimlapack".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimlapack".dir = "nimpkgs/n/nimlapack";
 
   
-  inputs."nimpy".url = "path:../../../n/nimpy";
   inputs."nimpy".type = "github";
   inputs."nimpy".owner = "riinr";
   inputs."nimpy".repo = "flake-nimble";

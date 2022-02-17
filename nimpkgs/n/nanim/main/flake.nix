@@ -7,7 +7,6 @@
   inputs.src-nanim-main.ref = "refs/heads/main";
   
   
-  inputs."staticglfw".url = "path:../../../s/staticglfw";
   inputs."staticglfw".type = "github";
   inputs."staticglfw".owner = "riinr";
   inputs."staticglfw".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."staticglfw".dir = "nimpkgs/s/staticglfw";
 
   
-  inputs."glm".url = "path:../../../g/glm";
   inputs."glm".type = "github";
   inputs."glm".owner = "riinr";
   inputs."glm".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."glm".dir = "nimpkgs/g/glm";
 
   
-  inputs."nanovg".url = "path:../../../n/nanovg";
   inputs."nanovg".type = "github";
   inputs."nanovg".owner = "riinr";
   inputs."nanovg".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."nanovg".dir = "nimpkgs/n/nanovg";
 
   
-  inputs."rainbow".url = "path:../../../r/rainbow";
   inputs."rainbow".type = "github";
   inputs."rainbow".owner = "riinr";
   inputs."rainbow".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."rainbow".dir = "nimpkgs/r/rainbow";
 
   
-  inputs."stb_image".url = "path:../../../s/stb_image";
   inputs."stb_image".type = "github";
   inputs."stb_image".owner = "riinr";
   inputs."stb_image".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-pipelines-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."python".url = "path:../../../p/python";
   inputs."python".type = "github";
   inputs."python".owner = "riinr";
   inputs."python".repo = "flake-nimble";

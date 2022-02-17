@@ -7,7 +7,6 @@
   inputs.src-moe-v0_0_3.ref = "refs/tags/v0.0.3";
   
   
-  inputs."ncurses".url = "path:../../../n/ncurses";
   inputs."ncurses".type = "github";
   inputs."ncurses".owner = "riinr";
   inputs."ncurses".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."ncurses".dir = "nimpkgs/n/ncurses";
 
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";

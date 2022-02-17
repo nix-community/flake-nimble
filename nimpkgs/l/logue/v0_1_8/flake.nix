@@ -7,7 +7,6 @@
   inputs.src-logue-v0_1_8.ref = "refs/tags/v0.1.8";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

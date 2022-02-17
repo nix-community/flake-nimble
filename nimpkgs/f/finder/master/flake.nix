@@ -7,7 +7,6 @@
   inputs.src-finder-master.ref = "refs/heads/master";
   
   
-  inputs."zippy".url = "path:../../../z/zippy";
   inputs."zippy".type = "github";
   inputs."zippy".owner = "riinr";
   inputs."zippy".repo = "flake-nimble";

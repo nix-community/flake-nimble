@@ -7,7 +7,6 @@
   inputs.src-nimblegui-v0_2_1.ref = "refs/tags/v0.2.1";
   
   
-  inputs."webgui".url = "path:../../../w/webgui";
   inputs."webgui".type = "github";
   inputs."webgui".owner = "riinr";
   inputs."webgui".repo = "flake-nimble";

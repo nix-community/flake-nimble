@@ -7,7 +7,6 @@
   inputs.src-github_release-v0_1_1-alpha.ref = "refs/tags/v0.1.1-alpha";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

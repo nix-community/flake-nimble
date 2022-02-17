@@ -7,7 +7,6 @@
   inputs.src-timecop-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."subhook".url = "path:../../../s/subhook";
   inputs."subhook".type = "github";
   inputs."subhook".owner = "riinr";
   inputs."subhook".repo = "flake-nimble";

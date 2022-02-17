@@ -7,7 +7,6 @@
   inputs.src-SMBExec-master.ref = "refs/heads/master";
   
   
-  inputs."hashlib".url = "path:../../../h/hashlib";
   inputs."hashlib".type = "github";
   inputs."hashlib".owner = "riinr";
   inputs."hashlib".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."hashlib".dir = "nimpkgs/h/hashlib";
 
   
-  inputs."hmac".url = "path:../../../h/hmac";
   inputs."hmac".type = "github";
   inputs."hmac".owner = "riinr";
   inputs."hmac".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."hmac".dir = "nimpkgs/h/hmac";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

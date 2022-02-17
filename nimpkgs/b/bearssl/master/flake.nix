@@ -7,7 +7,6 @@
   inputs.src-bearssl-master.ref = "refs/heads/master";
   
   
-  inputs."unittest2".url = "path:../../../u/unittest2";
   inputs."unittest2".type = "github";
   inputs."unittest2".owner = "riinr";
   inputs."unittest2".repo = "flake-nimble";

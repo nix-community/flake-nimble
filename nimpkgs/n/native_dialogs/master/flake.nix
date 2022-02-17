@@ -7,7 +7,6 @@
   inputs.src-native_dialogs-master.ref = "refs/heads/master";
   
   
-  inputs."oldwinapi".url = "path:../../../o/oldwinapi";
   inputs."oldwinapi".type = "github";
   inputs."oldwinapi".owner = "riinr";
   inputs."oldwinapi".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."oldwinapi".dir = "nimpkgs/o/oldwinapi";
 
   
-  inputs."gtk2".url = "path:../../../g/gtk2";
   inputs."gtk2".type = "github";
   inputs."gtk2".owner = "riinr";
   inputs."gtk2".repo = "flake-nimble";

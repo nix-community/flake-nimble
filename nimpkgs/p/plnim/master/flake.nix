@@ -7,7 +7,6 @@
   inputs.src-plnim-master.ref = "refs/heads/master";
   
   
-  inputs."pgxcrown".url = "path:../../../p/pgxcrown";
   inputs."pgxcrown".type = "github";
   inputs."pgxcrown".owner = "riinr";
   inputs."pgxcrown".repo = "flake-nimble";

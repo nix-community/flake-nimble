@@ -7,7 +7,6 @@
   inputs.src-memviews-master.ref = "refs/heads/master";
   
   
-  inputs."c_alikes".url = "path:../../../c/c_alikes";
   inputs."c_alikes".type = "github";
   inputs."c_alikes".owner = "riinr";
   inputs."c_alikes".repo = "flake-nimble";

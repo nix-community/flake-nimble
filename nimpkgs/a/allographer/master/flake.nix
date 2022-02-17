@@ -7,7 +7,6 @@
   inputs.src-allographer-master.ref = "refs/heads/master";
   
   
-  inputs."dotenv".url = "path:../../../d/dotenv";
   inputs."dotenv".type = "github";
   inputs."dotenv".owner = "riinr";
   inputs."dotenv".repo = "flake-nimble";

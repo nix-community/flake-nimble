@@ -7,7 +7,6 @@
   inputs.src-about-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

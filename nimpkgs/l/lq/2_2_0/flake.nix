@@ -7,7 +7,6 @@
   inputs.src-lq-2_2_0.ref = "refs/tags/2.2.0";
   
   
-  inputs."nap".url = "path:../../../n/nap";
   inputs."nap".type = "github";
   inputs."nap".owner = "riinr";
   inputs."nap".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nap".dir = "nimpkgs/n/nap";
 
   
-  inputs."parsetoml".url = "path:../../../p/parsetoml";
   inputs."parsetoml".type = "github";
   inputs."parsetoml".owner = "riinr";
   inputs."parsetoml".repo = "flake-nimble";

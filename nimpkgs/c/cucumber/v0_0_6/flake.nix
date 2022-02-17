@@ -7,7 +7,6 @@
   inputs.src-cucumber-v0_0_6.ref = "refs/tags/v0.0.6";
   
   
-  inputs."nre".url = "path:../../../n/nre";
   inputs."nre".type = "github";
   inputs."nre".owner = "riinr";
   inputs."nre".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nre".dir = "nimpkgs/n/nre";
 
   
-  inputs."commandeer".url = "path:../../../c/commandeer";
   inputs."commandeer".type = "github";
   inputs."commandeer".owner = "riinr";
   inputs."commandeer".repo = "flake-nimble";

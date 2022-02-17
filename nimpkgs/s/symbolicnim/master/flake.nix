@@ -7,7 +7,6 @@
   inputs.src-symbolicnim-master.ref = "refs/heads/master";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."terminaltables".url = "path:../../../t/terminaltables";
   inputs."terminaltables".type = "github";
   inputs."terminaltables".owner = "riinr";
   inputs."terminaltables".repo = "flake-nimble";

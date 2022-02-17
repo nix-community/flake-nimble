@@ -7,7 +7,6 @@
   inputs.src-docopt-v0_6_8.ref = "refs/tags/v0.6.8";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

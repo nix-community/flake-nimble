@@ -7,7 +7,6 @@
   inputs.src-cittadino-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."stomp".url = "path:../../../s/stomp";
   inputs."stomp".type = "github";
   inputs."stomp".owner = "riinr";
   inputs."stomp".repo = "flake-nimble";

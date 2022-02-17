@@ -7,7 +7,6 @@
   inputs.src-wpspin-0_5_1.ref = "refs/tags/0.5.1";
   
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";

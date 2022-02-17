@@ -7,7 +7,6 @@
   inputs.src-docx-v0_1_4.ref = "refs/tags/v0.1.4";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

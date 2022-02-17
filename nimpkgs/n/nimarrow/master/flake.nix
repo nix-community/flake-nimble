@@ -7,7 +7,6 @@
   inputs.src-nimarrow-master.ref = "refs/heads/master";
   
   
-  inputs."nimarrow_glib".url = "path:../../../n/nimarrow_glib";
   inputs."nimarrow_glib".type = "github";
   inputs."nimarrow_glib".owner = "riinr";
   inputs."nimarrow_glib".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nicoru-main.ref = "refs/heads/main";
   
   
-  inputs."https://github.com/def-/nim-syscall".url = "path:../../../h/https://github.com/def-/nim-syscall";
   inputs."https://github.com/def-/nim-syscall".type = "github";
   inputs."https://github.com/def-/nim-syscall".owner = "riinr";
   inputs."https://github.com/def-/nim-syscall".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimwc-v3_3_0.ref = "refs/tags/v3.3.0";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jester".dir = "nimpkgs/j/jester";
 
   
-  inputs."recaptcha".url = "path:../../../r/recaptcha";
   inputs."recaptcha".type = "github";
   inputs."recaptcha".owner = "riinr";
   inputs."recaptcha".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."recaptcha".dir = "nimpkgs/r/recaptcha";
 
   
-  inputs."bcrypt".url = "path:../../../b/bcrypt";
   inputs."bcrypt".type = "github";
   inputs."bcrypt".owner = "riinr";
   inputs."bcrypt".repo = "flake-nimble";

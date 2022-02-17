@@ -7,7 +7,6 @@
   inputs.src-openapi-2_0_1.ref = "refs/tags/2.0.1";
   
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
   
-  inputs."foreach".url = "path:../../../f/foreach";
   inputs."foreach".type = "github";
   inputs."foreach".owner = "riinr";
   inputs."foreach".repo = "flake-nimble";

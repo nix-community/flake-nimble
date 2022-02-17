@@ -7,7 +7,6 @@
   inputs.src-imageman-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."nimpng".url = "path:../../../n/nimpng";
   inputs."nimpng".type = "github";
   inputs."nimpng".owner = "riinr";
   inputs."nimpng".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-plists-master.ref = "refs/heads/master";
   
   
-  inputs."darwin".url = "path:../../../d/darwin";
   inputs."darwin".type = "github";
   inputs."darwin".owner = "riinr";
   inputs."darwin".repo = "flake-nimble";

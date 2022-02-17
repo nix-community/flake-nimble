@@ -7,7 +7,6 @@
   inputs.src-notification-master.ref = "refs/heads/master";
   
   
-  inputs."dbus".url = "path:../../../d/dbus";
   inputs."dbus".type = "github";
   inputs."dbus".owner = "riinr";
   inputs."dbus".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."dbus".dir = "nimpkgs/d/dbus";
 
   
-  inputs."imageman".url = "path:../../../i/imageman";
   inputs."imageman".type = "github";
   inputs."imageman".owner = "riinr";
   inputs."imageman".repo = "flake-nimble";

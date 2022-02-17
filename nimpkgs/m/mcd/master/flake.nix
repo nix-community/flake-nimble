@@ -7,7 +7,6 @@
   inputs.src-mcd-master.ref = "refs/heads/master";
   
   
-  inputs."parsetoml".url = "path:../../../p/parsetoml";
   inputs."parsetoml".type = "github";
   inputs."parsetoml".owner = "riinr";
   inputs."parsetoml".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."colorizeecho".url = "path:../../../c/colorizeecho";
   inputs."colorizeecho".type = "github";
   inputs."colorizeecho".owner = "riinr";
   inputs."colorizeecho".repo = "flake-nimble";

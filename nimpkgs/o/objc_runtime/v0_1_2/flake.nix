@@ -7,7 +7,6 @@
   inputs.src-objc_runtime-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."https://github.com/yglukhov/darwin".url = "path:../../../h/https://github.com/yglukhov/darwin";
   inputs."https://github.com/yglukhov/darwin".type = "github";
   inputs."https://github.com/yglukhov/darwin".owner = "riinr";
   inputs."https://github.com/yglukhov/darwin".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/yglukhov/darwin".dir = "nimpkgs/h/https://github.com/yglukhov/darwin";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

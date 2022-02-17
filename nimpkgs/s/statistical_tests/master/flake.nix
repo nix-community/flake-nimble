@@ -7,7 +7,6 @@
   inputs.src-statistical_tests-master.ref = "refs/heads/master";
   
   
-  inputs."distributions".url = "path:../../../d/distributions";
   inputs."distributions".type = "github";
   inputs."distributions".owner = "riinr";
   inputs."distributions".repo = "flake-nimble";

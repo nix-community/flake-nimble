@@ -7,7 +7,6 @@
   inputs.src-nimem-master.ref = "refs/heads/master";
   
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."winim".dir = "nimpkgs/w/winim";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

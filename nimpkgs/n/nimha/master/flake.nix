@@ -7,7 +7,6 @@
   inputs.src-nimha-master.ref = "refs/heads/master";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jester".dir = "nimpkgs/j/jester";
 
   
-  inputs."httpbeast".url = "path:../../../h/httpbeast";
   inputs."httpbeast".type = "github";
   inputs."httpbeast".owner = "riinr";
   inputs."httpbeast".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
 
   
-  inputs."recaptcha".url = "path:../../../r/recaptcha";
   inputs."recaptcha".type = "github";
   inputs."recaptcha".owner = "riinr";
   inputs."recaptcha".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."recaptcha".dir = "nimpkgs/r/recaptcha";
 
   
-  inputs."bcrypt".url = "path:../../../b/bcrypt";
   inputs."bcrypt".type = "github";
   inputs."bcrypt".owner = "riinr";
   inputs."bcrypt".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."bcrypt".dir = "nimpkgs/b/bcrypt";
 
   
-  inputs."multicast".url = "path:../../../m/multicast";
   inputs."multicast".type = "github";
   inputs."multicast".owner = "riinr";
   inputs."multicast".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."multicast".dir = "nimpkgs/m/multicast";
 
   
-  inputs."websocket".url = "path:../../../w/websocket";
   inputs."websocket".type = "github";
   inputs."websocket".owner = "riinr";
   inputs."websocket".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."websocket".dir = "nimpkgs/w/websocket";
 
   
-  inputs."wiringpinim".url = "path:../../../w/wiringpinim";
   inputs."wiringpinim".type = "github";
   inputs."wiringpinim".owner = "riinr";
   inputs."wiringpinim".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."wiringpinim".dir = "nimpkgs/w/wiringpinim";
 
   
-  inputs."xiaomi".url = "path:../../../x/xiaomi";
   inputs."xiaomi".type = "github";
   inputs."xiaomi".owner = "riinr";
   inputs."xiaomi".repo = "flake-nimble";

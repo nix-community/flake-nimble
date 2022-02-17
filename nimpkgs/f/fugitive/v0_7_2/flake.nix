@@ -7,7 +7,6 @@
   inputs.src-fugitive-v0_7_2.ref = "refs/tags/v0.7.2";
   
   
-  inputs."tempfile".url = "path:../../../t/tempfile";
   inputs."tempfile".type = "github";
   inputs."tempfile".owner = "riinr";
   inputs."tempfile".repo = "flake-nimble";

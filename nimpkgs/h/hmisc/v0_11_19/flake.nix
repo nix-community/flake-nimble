@@ -7,7 +7,6 @@
   inputs.src-hmisc-v0_11_19.ref = "refs/tags/v0.11.19";
   
   
-  inputs."fusion".url = "path:../../../f/fusion";
   inputs."fusion".type = "github";
   inputs."fusion".owner = "riinr";
   inputs."fusion".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."fusion".dir = "nimpkgs/f/fusion";
 
   
-  inputs."benchy".url = "path:../../../b/benchy";
   inputs."benchy".type = "github";
   inputs."benchy".owner = "riinr";
   inputs."benchy".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."benchy".dir = "nimpkgs/b/benchy";
 
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";

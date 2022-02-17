@@ -7,7 +7,6 @@
   inputs.src-tome-main.ref = "refs/heads/main";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."zip".dir = "nimpkgs/z/zip";
 
   
-  inputs."untar".url = "path:../../../u/untar";
   inputs."untar".type = "github";
   inputs."untar".owner = "riinr";
   inputs."untar".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-jwt-master.ref = "refs/heads/master";
   
   
-  inputs."bearssl".url = "path:../../../b/bearssl";
   inputs."bearssl".type = "github";
   inputs."bearssl".owner = "riinr";
   inputs."bearssl".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."bearssl".dir = "nimpkgs/b/bearssl";
 
   
-  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".url = "path:../../../h/https://github.com/yglukhov/bearssl_pkey_decoder";
   inputs."https://github.com/yglukhov/bearssl_pkey_decoder".type = "github";
   inputs."https://github.com/yglukhov/bearssl_pkey_decoder".owner = "riinr";
   inputs."https://github.com/yglukhov/bearssl_pkey_decoder".repo = "flake-nimble";

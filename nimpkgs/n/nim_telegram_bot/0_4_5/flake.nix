@@ -7,7 +7,6 @@
   inputs.src-nim_telegram_bot-0_4_5.ref = "refs/tags/0.4.5";
   
   
-  inputs."openexchangerates".url = "path:../../../o/openexchangerates";
   inputs."openexchangerates".type = "github";
   inputs."openexchangerates".owner = "riinr";
   inputs."openexchangerates".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."openexchangerates".dir = "nimpkgs/o/openexchangerates";
 
   
-  inputs."telebot".url = "path:../../../t/telebot";
   inputs."telebot".type = "github";
   inputs."telebot".owner = "riinr";
   inputs."telebot".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."telebot".dir = "nimpkgs/t/telebot";
 
   
-  inputs."nimpy".url = "path:../../../n/nimpy";
   inputs."nimpy".type = "github";
   inputs."nimpy".owner = "riinr";
   inputs."nimpy".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."nimpy".dir = "nimpkgs/n/nimpy";
 
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

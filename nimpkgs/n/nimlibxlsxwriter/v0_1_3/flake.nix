@@ -7,7 +7,6 @@
   inputs.src-nimlibxlsxwriter-v0_1_3.ref = "refs/tags/v0.1.3";
   
   
-  inputs."nimgen".url = "path:../../../n/nimgen";
   inputs."nimgen".type = "github";
   inputs."nimgen".owner = "riinr";
   inputs."nimgen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimgen".dir = "nimpkgs/n/nimgen";
 
   
-  inputs."c2nim".url = "path:../../../c/c2nim";
   inputs."c2nim".type = "github";
   inputs."c2nim".owner = "riinr";
   inputs."c2nim".repo = "flake-nimble";

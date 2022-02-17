@@ -7,7 +7,6 @@
   inputs.src-xcm-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."https://github.com/solitudesf/x11".url = "path:../../../h/https://github.com/solitudesf/x11";
   inputs."https://github.com/solitudesf/x11".type = "github";
   inputs."https://github.com/solitudesf/x11".owner = "riinr";
   inputs."https://github.com/solitudesf/x11".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/solitudesf/x11".dir = "nimpkgs/h/https://github.com/solitudesf/x11";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

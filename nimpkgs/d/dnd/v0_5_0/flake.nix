@@ -7,7 +7,6 @@
   inputs.src-dnd-v0_5_0.ref = "refs/tags/v0.5.0";
   
   
-  inputs."gintro".url = "path:../../../g/gintro";
   inputs."gintro".type = "github";
   inputs."gintro".owner = "riinr";
   inputs."gintro".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-oaitools-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."xmltools".url = "path:../../../x/xmltools";
   inputs."xmltools".type = "github";
   inputs."xmltools".owner = "riinr";
   inputs."xmltools".repo = "flake-nimble";

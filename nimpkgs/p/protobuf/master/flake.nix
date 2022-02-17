@@ -7,7 +7,6 @@
   inputs.src-protobuf-master.ref = "refs/heads/master";
   
   
-  inputs."combparser".url = "path:../../../c/combparser";
   inputs."combparser".type = "github";
   inputs."combparser".owner = "riinr";
   inputs."combparser".repo = "flake-nimble";

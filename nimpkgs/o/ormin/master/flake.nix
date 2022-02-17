@@ -7,7 +7,6 @@
   inputs.src-ormin-master.ref = "refs/heads/master";
   
   
-  inputs."websocket".url = "path:../../../w/websocket";
   inputs."websocket".type = "github";
   inputs."websocket".owner = "riinr";
   inputs."websocket".repo = "flake-nimble";

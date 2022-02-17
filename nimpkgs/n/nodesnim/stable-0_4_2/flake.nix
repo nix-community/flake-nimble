@@ -7,7 +7,6 @@
   inputs.src-nodesnim-stable-0_4_2.ref = "refs/tags/stable-0.4.2";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";

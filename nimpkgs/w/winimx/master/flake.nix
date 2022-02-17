@@ -7,7 +7,6 @@
   inputs.src-winimx-master.ref = "refs/heads/master";
   
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."winim".dir = "nimpkgs/w/winim";
 
   
-  inputs."zippy".url = "path:../../../z/zippy";
   inputs."zippy".type = "github";
   inputs."zippy".owner = "riinr";
   inputs."zippy".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."zippy".dir = "nimpkgs/z/zippy";
 
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";

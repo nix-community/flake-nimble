@@ -7,7 +7,6 @@
   inputs.src-norman-1_0_1.ref = "refs/tags/1.0.1";
   
   
-  inputs."norm".url = "path:../../../n/norm";
   inputs."norm".type = "github";
   inputs."norm".owner = "riinr";
   inputs."norm".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."norm".dir = "nimpkgs/n/norm";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

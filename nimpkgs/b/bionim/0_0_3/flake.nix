@@ -7,7 +7,6 @@
   inputs.src-bionim-0_0_3.ref = "refs/tags/0.0.3";
   
   
-  inputs."phylogeni".url = "path:../../../p/phylogeni";
   inputs."phylogeni".type = "github";
   inputs."phylogeni".owner = "riinr";
   inputs."phylogeni".repo = "flake-nimble";

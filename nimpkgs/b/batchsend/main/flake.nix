@@ -7,7 +7,6 @@
   inputs.src-batchsend-main.ref = "refs/heads/main";
   
   
-  inputs."nimpy".url = "path:../../../n/nimpy";
   inputs."nimpy".type = "github";
   inputs."nimpy".owner = "riinr";
   inputs."nimpy".repo = "flake-nimble";

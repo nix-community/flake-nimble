@@ -7,7 +7,6 @@
   inputs.src-jsonschema-master.ref = "refs/heads/master";
   
   
-  inputs."ast_pattern_matching".url = "path:../../../a/ast_pattern_matching";
   inputs."ast_pattern_matching".type = "github";
   inputs."ast_pattern_matching".owner = "riinr";
   inputs."ast_pattern_matching".repo = "flake-nimble";

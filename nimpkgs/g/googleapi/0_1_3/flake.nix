@@ -7,7 +7,6 @@
   inputs.src-googleapi-0_1_3.ref = "refs/tags/0.1.3";
   
   
-  inputs."jwt".url = "path:../../../j/jwt";
   inputs."jwt".type = "github";
   inputs."jwt".owner = "riinr";
   inputs."jwt".repo = "flake-nimble";

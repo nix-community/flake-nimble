@@ -7,7 +7,6 @@
   inputs.src-tam-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."nimquery".url = "path:../../../n/nimquery";
   inputs."nimquery".type = "github";
   inputs."nimquery".owner = "riinr";
   inputs."nimquery".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimquery".dir = "nimpkgs/n/nimquery";
 
   
-  inputs."tiny_sqlite".url = "path:../../../t/tiny_sqlite";
   inputs."tiny_sqlite".type = "github";
   inputs."tiny_sqlite".owner = "riinr";
   inputs."tiny_sqlite".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-sam-0_1_15.ref = "refs/tags/0.1.15";
   
   
-  inputs."jsmn".url = "path:../../../j/jsmn";
   inputs."jsmn".type = "github";
   inputs."jsmn".owner = "riinr";
   inputs."jsmn".repo = "flake-nimble";

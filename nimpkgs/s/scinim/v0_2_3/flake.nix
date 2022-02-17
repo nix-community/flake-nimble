@@ -7,7 +7,6 @@
   inputs.src-scinim-v0_2_3.ref = "refs/tags/v0.2.3";
   
   
-  inputs."fusion".url = "path:../../../f/fusion";
   inputs."fusion".type = "github";
   inputs."fusion".owner = "riinr";
   inputs."fusion".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."fusion".dir = "nimpkgs/f/fusion";
 
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."polynumeric".url = "path:../../../p/polynumeric";
   inputs."polynumeric".type = "github";
   inputs."polynumeric".owner = "riinr";
   inputs."polynumeric".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."polynumeric".dir = "nimpkgs/p/polynumeric";
 
   
-  inputs."nimpy".url = "path:../../../n/nimpy";
   inputs."nimpy".type = "github";
   inputs."nimpy".owner = "riinr";
   inputs."nimpy".repo = "flake-nimble";

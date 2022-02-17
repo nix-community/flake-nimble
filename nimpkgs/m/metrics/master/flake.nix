@@ -7,7 +7,6 @@
   inputs.src-metrics-master.ref = "refs/heads/master";
   
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";

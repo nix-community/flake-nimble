@@ -7,7 +7,6 @@
   inputs.src-nanoid-master.ref = "refs/heads/master";
   
   
-  inputs."random".url = "path:../../../r/random";
   inputs."random".type = "github";
   inputs."random".owner = "riinr";
   inputs."random".repo = "flake-nimble";

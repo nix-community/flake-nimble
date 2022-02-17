@@ -7,7 +7,6 @@
   inputs.src-usha-0_2.ref = "refs/tags/0.2";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

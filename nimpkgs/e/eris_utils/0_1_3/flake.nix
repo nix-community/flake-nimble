@@ -7,7 +7,6 @@
   inputs.src-eris_utils-0_1_3.ref = "refs/tags/0.1.3";
   
   
-  inputs."eris".url = "path:../../../e/eris";
   inputs."eris".type = "github";
   inputs."eris".owner = "riinr";
   inputs."eris".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-OTP-master.ref = "refs/heads/master";
   
   
-  inputs."hmac".url = "path:../../../h/hmac";
   inputs."hmac".type = "github";
   inputs."hmac".owner = "riinr";
   inputs."hmac".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."hmac".dir = "nimpkgs/h/hmac";
 
   
-  inputs."base32".url = "path:../../../b/base32";
   inputs."base32".type = "github";
   inputs."base32".owner = "riinr";
   inputs."base32".repo = "flake-nimble";

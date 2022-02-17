@@ -7,7 +7,6 @@
   inputs.src-spryvm-master.ref = "refs/heads/master";
   
   
-  inputs."python".url = "path:../../../p/python";
   inputs."python".type = "github";
   inputs."python".owner = "riinr";
   inputs."python".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."python".dir = "nimpkgs/p/python";
 
   
-  inputs."ui".url = "path:../../../u/ui";
   inputs."ui".type = "github";
   inputs."ui".owner = "riinr";
   inputs."ui".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."ui".dir = "nimpkgs/u/ui";
 
   
-  inputs."snappy".url = "path:../../../s/snappy";
   inputs."snappy".type = "github";
   inputs."snappy".owner = "riinr";
   inputs."snappy".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."snappy".dir = "nimpkgs/s/snappy";
 
   
-  inputs."https://github.com/status-im/nim-rocksdb.git".url = "path:../../../h/https://github.com/status-im/nim-rocksdb.git";
   inputs."https://github.com/status-im/nim-rocksdb.git".type = "github";
   inputs."https://github.com/status-im/nim-rocksdb.git".owner = "riinr";
   inputs."https://github.com/status-im/nim-rocksdb.git".repo = "flake-nimble";

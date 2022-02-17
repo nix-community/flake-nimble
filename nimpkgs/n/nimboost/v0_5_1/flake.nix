@@ -7,7 +7,6 @@
   inputs.src-nimboost-v0_5_1.ref = "refs/tags/v0.5.1";
   
   
-  inputs."patty".url = "path:../../../p/patty";
   inputs."patty".type = "github";
   inputs."patty".owner = "riinr";
   inputs."patty".repo = "flake-nimble";

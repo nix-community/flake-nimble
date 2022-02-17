@@ -7,7 +7,6 @@
   inputs.src-websock-main.ref = "refs/heads/main";
   
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."httputils".url = "path:../../../h/httputils";
   inputs."httputils".type = "github";
   inputs."httputils".owner = "riinr";
   inputs."httputils".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."httputils".dir = "nimpkgs/h/httputils";
 
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."chronicles".dir = "nimpkgs/c/chronicles";
 
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."stew".dir = "nimpkgs/s/stew";
 
   
-  inputs."asynctest".url = "path:../../../a/asynctest";
   inputs."asynctest".type = "github";
   inputs."asynctest".owner = "riinr";
   inputs."asynctest".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."asynctest".dir = "nimpkgs/a/asynctest";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."bearssl".url = "path:../../../b/bearssl";
   inputs."bearssl".type = "github";
   inputs."bearssl".owner = "riinr";
   inputs."bearssl".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."bearssl".dir = "nimpkgs/b/bearssl";
 
   
-  inputs."zlib".url = "path:../../../z/zlib";
   inputs."zlib".type = "github";
   inputs."zlib".owner = "riinr";
   inputs."zlib".repo = "flake-nimble";

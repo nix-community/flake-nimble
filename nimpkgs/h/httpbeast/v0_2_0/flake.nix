@@ -7,7 +7,6 @@
   inputs.src-httpbeast-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."asynctools".url = "path:../../../a/asynctools";
   inputs."asynctools".type = "github";
   inputs."asynctools".owner = "riinr";
   inputs."asynctools".repo = "flake-nimble";

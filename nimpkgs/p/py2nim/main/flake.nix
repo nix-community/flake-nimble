@@ -7,7 +7,6 @@
   inputs.src-py2nim-main.ref = "refs/heads/main";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."compiler".dir = "nimpkgs/c/compiler";
 
   
-  inputs."nimscripter".url = "path:../../../n/nimscripter";
   inputs."nimscripter".type = "github";
   inputs."nimscripter".owner = "riinr";
   inputs."nimscripter".repo = "flake-nimble";

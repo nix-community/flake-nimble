@@ -7,7 +7,6 @@
   inputs.src-hmac-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."nimsha2".url = "path:../../../n/nimsha2";
   inputs."nimsha2".type = "github";
   inputs."nimsha2".owner = "riinr";
   inputs."nimsha2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
 
   
-  inputs."sha1".url = "path:../../../s/sha1";
   inputs."sha1".type = "github";
   inputs."sha1".owner = "riinr";
   inputs."sha1".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."sha1".dir = "nimpkgs/s/sha1";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";

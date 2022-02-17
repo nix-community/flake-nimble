@@ -7,7 +7,6 @@
   inputs.src-nimPDF-master.ref = "refs/heads/master";
   
   
-  inputs."nimbmp".url = "path:../../../n/nimbmp";
   inputs."nimbmp".type = "github";
   inputs."nimbmp".owner = "riinr";
   inputs."nimbmp".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimbmp".dir = "nimpkgs/n/nimbmp";
 
   
-  inputs."nimpng".url = "path:../../../n/nimpng";
   inputs."nimpng".type = "github";
   inputs."nimpng".owner = "riinr";
   inputs."nimpng".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimpng".dir = "nimpkgs/n/nimpng";
 
   
-  inputs."nimsha2".url = "path:../../../n/nimsha2";
   inputs."nimsha2".type = "github";
   inputs."nimsha2".owner = "riinr";
   inputs."nimsha2".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
 
   
-  inputs."nimaes".url = "path:../../../n/nimaes";
   inputs."nimaes".type = "github";
   inputs."nimaes".owner = "riinr";
   inputs."nimaes".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."nimaes".dir = "nimpkgs/n/nimaes";
 
   
-  inputs."stb_image".url = "path:../../../s/stb_image";
   inputs."stb_image".type = "github";
   inputs."stb_image".owner = "riinr";
   inputs."stb_image".repo = "flake-nimble";

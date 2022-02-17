@@ -7,7 +7,6 @@
   inputs.src-alignment-v1_1_1.ref = "refs/tags/v1.1.1";
   
   
-  inputs."eastasianwidth".url = "path:../../../e/eastasianwidth";
   inputs."eastasianwidth".type = "github";
   inputs."eastasianwidth".owner = "riinr";
   inputs."eastasianwidth".repo = "flake-nimble";

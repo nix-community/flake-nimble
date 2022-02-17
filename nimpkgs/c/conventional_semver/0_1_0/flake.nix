@@ -7,7 +7,6 @@
   inputs.src-conventional_semver-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."semver".url = "path:../../../s/semver";
   inputs."semver".type = "github";
   inputs."semver".owner = "riinr";
   inputs."semver".repo = "flake-nimble";

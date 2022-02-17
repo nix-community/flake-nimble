@@ -7,7 +7,6 @@
   inputs.src-pythonize-master.ref = "refs/heads/master";
   
   
-  inputs."python".url = "path:../../../p/python";
   inputs."python".type = "github";
   inputs."python".owner = "riinr";
   inputs."python".repo = "flake-nimble";

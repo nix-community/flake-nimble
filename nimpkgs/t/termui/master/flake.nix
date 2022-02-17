@@ -7,7 +7,6 @@
   inputs.src-termui-master.ref = "refs/heads/master";
   
   
-  inputs."classes".url = "path:../../../c/classes";
   inputs."classes".type = "github";
   inputs."classes".owner = "riinr";
   inputs."classes".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."classes".dir = "nimpkgs/c/classes";
 
   
-  inputs."elvis".url = "path:../../../e/elvis";
   inputs."elvis".type = "github";
   inputs."elvis".owner = "riinr";
   inputs."elvis".repo = "flake-nimble";

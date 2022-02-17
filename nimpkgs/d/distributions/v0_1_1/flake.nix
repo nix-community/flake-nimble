@@ -7,7 +7,6 @@
   inputs.src-distributions-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."special_functions".url = "path:../../../s/special_functions";
   inputs."special_functions".type = "github";
   inputs."special_functions".owner = "riinr";
   inputs."special_functions".repo = "flake-nimble";

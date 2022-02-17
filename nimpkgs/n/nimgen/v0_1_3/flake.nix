@@ -7,7 +7,6 @@
   inputs.src-nimgen-v0_1_3.ref = "refs/tags/v0.1.3";
   
   
-  inputs."c2nim".url = "path:../../../c/c2nim";
   inputs."c2nim".type = "github";
   inputs."c2nim".owner = "riinr";
   inputs."c2nim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."c2nim".dir = "nimpkgs/c/c2nim";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";

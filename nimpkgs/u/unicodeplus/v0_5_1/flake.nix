@@ -7,7 +7,6 @@
   inputs.src-unicodeplus-v0_5_1.ref = "refs/tags/v0.5.1";
   
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-puppy-1_5_0.ref = "refs/tags/1.5.0";
   
   
-  inputs."urlly".url = "path:../../../u/urlly";
   inputs."urlly".type = "github";
   inputs."urlly".owner = "riinr";
   inputs."urlly".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."urlly".dir = "nimpkgs/u/urlly";
 
   
-  inputs."libcurl".url = "path:../../../l/libcurl";
   inputs."libcurl".type = "github";
   inputs."libcurl".owner = "riinr";
   inputs."libcurl".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."libcurl".dir = "nimpkgs/l/libcurl";
 
   
-  inputs."zippy".url = "path:../../../z/zippy";
   inputs."zippy".type = "github";
   inputs."zippy".owner = "riinr";
   inputs."zippy".repo = "flake-nimble";

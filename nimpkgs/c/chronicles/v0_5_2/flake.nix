@@ -7,7 +7,6 @@
   inputs.src-chronicles-v0_5_2.ref = "refs/tags/v0.5.2";
   
   
-  inputs."json_serialization".url = "path:../../../j/json_serialization";
   inputs."json_serialization".type = "github";
   inputs."json_serialization".owner = "riinr";
   inputs."json_serialization".repo = "flake-nimble";

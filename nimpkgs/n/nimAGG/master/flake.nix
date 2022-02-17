@@ -7,7 +7,6 @@
   inputs.src-nimAGG-master.ref = "refs/heads/master";
   
   
-  inputs."sdl2_nim".url = "path:../../../s/sdl2_nim";
   inputs."sdl2_nim".type = "github";
   inputs."sdl2_nim".owner = "riinr";
   inputs."sdl2_nim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sdl2_nim".dir = "nimpkgs/s/sdl2_nim";
 
   
-  inputs."nimbmp".url = "path:../../../n/nimbmp";
   inputs."nimbmp".type = "github";
   inputs."nimbmp".owner = "riinr";
   inputs."nimbmp".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimbmp".dir = "nimpkgs/n/nimbmp";
 
   
-  inputs."freetype".url = "path:../../../f/freetype";
   inputs."freetype".type = "github";
   inputs."freetype".owner = "riinr";
   inputs."freetype".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."freetype".dir = "nimpkgs/f/freetype";
 
   
-  inputs."polybool".url = "path:../../../p/polybool";
   inputs."polybool".type = "github";
   inputs."polybool".owner = "riinr";
   inputs."polybool".repo = "flake-nimble";

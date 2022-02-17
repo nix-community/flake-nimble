@@ -7,7 +7,6 @@
   inputs.src-aglet-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
   
-  inputs."glm".url = "path:../../../g/glm";
   inputs."glm".type = "github";
   inputs."glm".owner = "riinr";
   inputs."glm".repo = "flake-nimble";

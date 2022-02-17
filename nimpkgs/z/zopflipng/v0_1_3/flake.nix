@@ -7,7 +7,6 @@
   inputs.src-zopflipng-v0_1_3.ref = "refs/tags/v0.1.3";
   
   
-  inputs."nimpng".url = "path:../../../n/nimpng";
   inputs."nimpng".type = "github";
   inputs."nimpng".owner = "riinr";
   inputs."nimpng".repo = "flake-nimble";

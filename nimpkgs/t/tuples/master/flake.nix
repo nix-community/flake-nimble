@@ -7,7 +7,6 @@
   inputs.src-tuples-master.ref = "refs/heads/master";
   
   
-  inputs."nimrod".url = "path:../../../n/nimrod";
   inputs."nimrod".type = "github";
   inputs."nimrod".owner = "riinr";
   inputs."nimrod".repo = "flake-nimble";

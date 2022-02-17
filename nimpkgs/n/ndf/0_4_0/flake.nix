@@ -7,7 +7,6 @@
   inputs.src-ndf-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
   
-  inputs."murmurhash".url = "path:../../../m/murmurhash";
   inputs."murmurhash".type = "github";
   inputs."murmurhash".owner = "riinr";
   inputs."murmurhash".repo = "flake-nimble";

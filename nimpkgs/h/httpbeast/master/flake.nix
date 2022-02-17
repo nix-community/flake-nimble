@@ -7,7 +7,6 @@
   inputs.src-httpbeast-master.ref = "refs/heads/master";
   
   
-  inputs."asynctools".url = "path:../../../a/asynctools";
   inputs."asynctools".type = "github";
   inputs."asynctools".owner = "riinr";
   inputs."asynctools".repo = "flake-nimble";

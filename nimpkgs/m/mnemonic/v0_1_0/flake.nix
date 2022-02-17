@@ -7,7 +7,6 @@
   inputs.src-mnemonic-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."nimsha2".url = "path:../../../n/nimsha2";
   inputs."nimsha2".type = "github";
   inputs."nimsha2".owner = "riinr";
   inputs."nimsha2".repo = "flake-nimble";

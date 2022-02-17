@@ -7,7 +7,6 @@
   inputs.src-taskqueue-master.ref = "refs/heads/master";
   
   
-  inputs."timestamp".url = "path:../../../t/timestamp";
   inputs."timestamp".type = "github";
   inputs."timestamp".owner = "riinr";
   inputs."timestamp".repo = "flake-nimble";

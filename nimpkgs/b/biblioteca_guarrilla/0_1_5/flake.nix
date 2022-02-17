@@ -7,7 +7,6 @@
   inputs.src-biblioteca_guarrilla-0_1_5.ref = "refs/tags/0.1.5";
   
   
-  inputs."webp".url = "path:../../../w/webp";
   inputs."webp".type = "github";
   inputs."webp".owner = "riinr";
   inputs."webp".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."webp".dir = "nimpkgs/w/webp";
 
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

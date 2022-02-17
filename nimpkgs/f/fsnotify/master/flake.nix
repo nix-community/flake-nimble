@@ -7,7 +7,6 @@
   inputs.src-fsnotify-master.ref = "refs/heads/master";
   
   
-  inputs."timerwheel".url = "path:../../../t/timerwheel";
   inputs."timerwheel".type = "github";
   inputs."timerwheel".owner = "riinr";
   inputs."timerwheel".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."timerwheel".dir = "nimpkgs/t/timerwheel";
 
   
-  inputs."xio".url = "path:../../../x/xio";
   inputs."xio".type = "github";
   inputs."xio".owner = "riinr";
   inputs."xio".repo = "flake-nimble";

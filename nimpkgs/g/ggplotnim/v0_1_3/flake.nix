@@ -7,7 +7,6 @@
   inputs.src-ggplotnim-v0_1_3.ref = "refs/tags/v0.1.3";
   
   
-  inputs."https://github.com/vindaar/seqmath".url = "path:../../../h/https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type = "github";
   inputs."https://github.com/vindaar/seqmath".owner = "riinr";
   inputs."https://github.com/vindaar/seqmath".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/vindaar/seqmath".dir = "nimpkgs/h/https://github.com/vindaar/seqmath";
 
   
-  inputs."https://github.com/vindaar/ginger".url = "path:../../../h/https://github.com/vindaar/ginger";
   inputs."https://github.com/vindaar/ginger".type = "github";
   inputs."https://github.com/vindaar/ginger".owner = "riinr";
   inputs."https://github.com/vindaar/ginger".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."https://github.com/vindaar/ginger".dir = "nimpkgs/h/https://github.com/vindaar/ginger";
 
   
-  inputs."persvector".url = "path:../../../p/persvector";
   inputs."persvector".type = "github";
   inputs."persvector".owner = "riinr";
   inputs."persvector".repo = "flake-nimble";

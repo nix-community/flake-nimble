@@ -7,7 +7,6 @@
   inputs.src-passgen-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."urand".url = "path:../../../u/urand";
   inputs."urand".type = "github";
   inputs."urand".owner = "riinr";
   inputs."urand".repo = "flake-nimble";

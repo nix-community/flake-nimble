@@ -7,7 +7,6 @@
   inputs.src-dnsprotocol-main.ref = "refs/heads/main";
   
   
-  inputs."stew".url = "path:../../../s/stew";
   inputs."stew".type = "github";
   inputs."stew".owner = "riinr";
   inputs."stew".repo = "flake-nimble";

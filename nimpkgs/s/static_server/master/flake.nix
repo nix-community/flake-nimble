@@ -7,7 +7,6 @@
   inputs.src-static_server-master.ref = "refs/heads/master";
   
   
-  inputs."finder".url = "path:../../../f/finder";
   inputs."finder".type = "github";
   inputs."finder".owner = "riinr";
   inputs."finder".repo = "flake-nimble";

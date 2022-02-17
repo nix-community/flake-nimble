@@ -7,7 +7,6 @@
   inputs.src-nimlsp-v0_3_2.ref = "refs/tags/v0.3.2";
   
   
-  inputs."astpatternmatching".url = "path:../../../a/astpatternmatching";
   inputs."astpatternmatching".type = "github";
   inputs."astpatternmatching".owner = "riinr";
   inputs."astpatternmatching".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."astpatternmatching".dir = "nimpkgs/a/astpatternmatching";
 
   
-  inputs."jsonschema".url = "path:../../../j/jsonschema";
   inputs."jsonschema".type = "github";
   inputs."jsonschema".owner = "riinr";
   inputs."jsonschema".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-rapid-master.ref = "refs/heads/master";
   
   
-  inputs."aglet".url = "path:../../../a/aglet";
   inputs."aglet".type = "github";
   inputs."aglet".owner = "riinr";
   inputs."aglet".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."aglet".dir = "nimpkgs/a/aglet";
 
   
-  inputs."stbimage".url = "path:../../../s/stbimage";
   inputs."stbimage".type = "github";
   inputs."stbimage".owner = "riinr";
   inputs."stbimage".repo = "flake-nimble";

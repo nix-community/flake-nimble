@@ -7,7 +7,6 @@
   inputs.src-mctranslog-master.ref = "refs/heads/master";
   
   
-  inputs."mcresponse".url = "path:../../../m/mcresponse";
   inputs."mcresponse".type = "github";
   inputs."mcresponse".owner = "riinr";
   inputs."mcresponse".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."mcresponse".dir = "nimpkgs/m/mcresponse";
 
   
-  inputs."mcdb".url = "path:../../../m/mcdb";
   inputs."mcdb".type = "github";
   inputs."mcdb".owner = "riinr";
   inputs."mcdb".repo = "flake-nimble";

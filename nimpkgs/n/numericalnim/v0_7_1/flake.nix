@@ -7,7 +7,6 @@
   inputs.src-numericalnim-v0_7_1.ref = "refs/tags/v0.7.1";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."https://github.com/hugogranstrom/cdt".url = "path:../../../h/https://github.com/hugogranstrom/cdt";
   inputs."https://github.com/hugogranstrom/cdt".type = "github";
   inputs."https://github.com/hugogranstrom/cdt".owner = "riinr";
   inputs."https://github.com/hugogranstrom/cdt".repo = "flake-nimble";

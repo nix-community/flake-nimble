@@ -7,7 +7,6 @@
   inputs.src-cirru_edn-v0_3_2.ref = "refs/tags/v0.3.2";
   
   
-  inputs."cirru-parser".url = "path:../../../c/cirru-parser";
   inputs."cirru-parser".type = "github";
   inputs."cirru-parser".owner = "riinr";
   inputs."cirru-parser".repo = "flake-nimble";

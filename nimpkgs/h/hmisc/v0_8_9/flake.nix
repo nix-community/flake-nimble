@@ -7,7 +7,6 @@
   inputs.src-hmisc-v0_8_9.ref = "refs/tags/v0.8.9";
   
   
-  inputs."sorta".url = "path:../../../s/sorta";
   inputs."sorta".type = "github";
   inputs."sorta".owner = "riinr";
   inputs."sorta".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sorta".dir = "nimpkgs/s/sorta";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

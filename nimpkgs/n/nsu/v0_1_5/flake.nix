@@ -7,7 +7,6 @@
   inputs.src-nsu-v0_1_5.ref = "refs/tags/v0.1.5";
   
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."x11".dir = "nimpkgs/x/x11";
 
   
-  inputs."oldwinapi".url = "path:../../../o/oldwinapi";
   inputs."oldwinapi".type = "github";
   inputs."oldwinapi".owner = "riinr";
   inputs."oldwinapi".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."oldwinapi".dir = "nimpkgs/o/oldwinapi";
 
   
-  inputs."png".url = "path:../../../p/png";
   inputs."png".type = "github";
   inputs."png".owner = "riinr";
   inputs."png".repo = "flake-nimble";

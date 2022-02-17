@@ -7,7 +7,6 @@
   inputs.src-prologue-v0_3_2.ref = "refs/tags/v0.3.2";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."karax".url = "path:../../../k/karax";
   inputs."karax".type = "github";
   inputs."karax".owner = "riinr";
   inputs."karax".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."karax".dir = "nimpkgs/k/karax";
 
   
-  inputs."cookies".url = "path:../../../c/cookies";
   inputs."cookies".type = "github";
   inputs."cookies".owner = "riinr";
   inputs."cookies".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."cookies".dir = "nimpkgs/c/cookies";
 
   
-  inputs."https://github.com/xflywind/httpx".url = "path:../../../h/https://github.com/xflywind/httpx";
   inputs."https://github.com/xflywind/httpx".type = "github";
   inputs."https://github.com/xflywind/httpx".owner = "riinr";
   inputs."https://github.com/xflywind/httpx".repo = "flake-nimble";

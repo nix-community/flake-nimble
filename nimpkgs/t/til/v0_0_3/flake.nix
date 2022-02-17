@@ -7,7 +7,6 @@
   inputs.src-til-v0_0_3.ref = "refs/tags/v0.0.3";
   
   
-  inputs."colorize".url = "path:../../../c/colorize";
   inputs."colorize".type = "github";
   inputs."colorize".owner = "riinr";
   inputs."colorize".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."colorize".dir = "nimpkgs/c/colorize";
 
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nimassets-master.ref = "refs/heads/master";
   
   
-  inputs."zstd".url = "path:../../../z/zstd";
   inputs."zstd".type = "github";
   inputs."zstd".owner = "riinr";
   inputs."zstd".repo = "flake-nimble";

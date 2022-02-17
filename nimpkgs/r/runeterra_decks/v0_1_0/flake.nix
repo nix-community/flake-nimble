@@ -7,7 +7,6 @@
   inputs.src-runeterra_decks-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."base32".url = "path:../../../b/base32";
   inputs."base32".type = "github";
   inputs."base32".owner = "riinr";
   inputs."base32".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-plz-init.ref = "refs/tags/init";
   
   
-  inputs."nimarchive".url = "path:../../../n/nimarchive";
   inputs."nimarchive".type = "github";
   inputs."nimarchive".owner = "riinr";
   inputs."nimarchive".repo = "flake-nimble";

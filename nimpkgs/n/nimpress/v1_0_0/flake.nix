@@ -7,7 +7,6 @@
   inputs.src-nimpress-v1_0_0.ref = "refs/tags/v1.0.0";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
   
-  inputs."hts".url = "path:../../../h/hts";
   inputs."hts".type = "github";
   inputs."hts".owner = "riinr";
   inputs."hts".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."hts".dir = "nimpkgs/h/hts";
 
   
-  inputs."lapper".url = "path:../../../l/lapper";
   inputs."lapper".type = "github";
   inputs."lapper".owner = "riinr";
   inputs."lapper".repo = "flake-nimble";

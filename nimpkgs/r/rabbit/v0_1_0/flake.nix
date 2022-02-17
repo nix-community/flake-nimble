@@ -7,7 +7,6 @@
   inputs.src-rabbit-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-ngspice-master.ref = "refs/heads/master";
   
   
-  inputs."sorta".url = "path:../../../s/sorta";
   inputs."sorta".type = "github";
   inputs."sorta".owner = "riinr";
   inputs."sorta".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."sorta".dir = "nimpkgs/s/sorta";
 
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";

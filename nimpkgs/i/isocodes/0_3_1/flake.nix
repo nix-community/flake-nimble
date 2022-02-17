@@ -7,7 +7,6 @@
   inputs.src-isocodes-0_3_1.ref = "refs/tags/0.3.1";
   
   
-  inputs."jsony".url = "path:../../../j/jsony";
   inputs."jsony".type = "github";
   inputs."jsony".owner = "riinr";
   inputs."jsony".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jsony".dir = "nimpkgs/j/jsony";
 
   
-  inputs."https://github.com/disruptek/bump".url = "path:../../../h/https://github.com/disruptek/bump";
   inputs."https://github.com/disruptek/bump".type = "github";
   inputs."https://github.com/disruptek/bump".owner = "riinr";
   inputs."https://github.com/disruptek/bump".repo = "flake-nimble";

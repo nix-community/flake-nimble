@@ -7,7 +7,6 @@
   inputs.src-duktape-master.ref = "refs/heads/master";
   
   
-  inputs."nimgen".url = "path:../../../n/nimgen";
   inputs."nimgen".type = "github";
   inputs."nimgen".owner = "riinr";
   inputs."nimgen".repo = "flake-nimble";

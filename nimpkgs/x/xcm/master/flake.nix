@@ -7,7 +7,6 @@
   inputs.src-xcm-master.ref = "refs/heads/master";
   
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."x11".dir = "nimpkgs/x/x11";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

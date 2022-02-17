@@ -7,7 +7,6 @@
   inputs.src-meow-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-cirru_edn-v0_4_4.ref = "refs/tags/v0.4.4";
   
   
-  inputs."cirru_parser".url = "path:../../../c/cirru_parser";
   inputs."cirru_parser".type = "github";
   inputs."cirru_parser".owner = "riinr";
   inputs."cirru_parser".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cirru_parser".dir = "nimpkgs/c/cirru_parser";
 
   
-  inputs."https://github.com/cirru/writer.nim".url = "path:../../../h/https://github.com/cirru/writer.nim";
   inputs."https://github.com/cirru/writer.nim".type = "github";
   inputs."https://github.com/cirru/writer.nim".owner = "riinr";
   inputs."https://github.com/cirru/writer.nim".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-telebot-0_3_3.ref = "refs/tags/0.3.3";
   
   
-  inputs."asyncevents".url = "path:../../../a/asyncevents";
   inputs."asyncevents".type = "github";
   inputs."asyncevents".owner = "riinr";
   inputs."asyncevents".repo = "flake-nimble";

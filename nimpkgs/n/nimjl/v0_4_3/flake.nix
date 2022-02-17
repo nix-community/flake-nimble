@@ -7,7 +7,6 @@
   inputs.src-nimjl-v0_4_3.ref = "refs/tags/v0.4.3";
   
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-gplay-master.ref = "refs/heads/master";
   
   
-  inputs."jwt".url = "path:../../../j/jwt";
   inputs."jwt".type = "github";
   inputs."jwt".owner = "riinr";
   inputs."jwt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."jwt".dir = "nimpkgs/j/jwt";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-xlsx-v0_4_0.ref = "refs/tags/v0.4.0";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

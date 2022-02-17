@@ -7,7 +7,6 @@
   inputs.src-syslog-0_0_5.ref = "refs/tags/0.0.5";
   
   
-  inputs."nake".url = "path:../../../n/nake";
   inputs."nake".type = "github";
   inputs."nake".owner = "riinr";
   inputs."nake".repo = "flake-nimble";

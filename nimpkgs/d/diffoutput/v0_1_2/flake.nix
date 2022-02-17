@@ -7,7 +7,6 @@
   inputs.src-diffoutput-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."diff".url = "path:../../../d/diff";
   inputs."diff".type = "github";
   inputs."diff".owner = "riinr";
   inputs."diff".repo = "flake-nimble";

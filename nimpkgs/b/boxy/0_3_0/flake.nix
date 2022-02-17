@@ -7,7 +7,6 @@
   inputs.src-boxy-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."pixie".dir = "nimpkgs/p/pixie";
 
   
-  inputs."vmath".url = "path:../../../v/vmath";
   inputs."vmath".type = "github";
   inputs."vmath".owner = "riinr";
   inputs."vmath".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."vmath".dir = "nimpkgs/v/vmath";
 
   
-  inputs."opengl".url = "path:../../../o/opengl";
   inputs."opengl".type = "github";
   inputs."opengl".owner = "riinr";
   inputs."opengl".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
   
-  inputs."bitty".url = "path:../../../b/bitty";
   inputs."bitty".type = "github";
   inputs."bitty".owner = "riinr";
   inputs."bitty".repo = "flake-nimble";

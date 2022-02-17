@@ -7,7 +7,6 @@
   inputs.src-datetime_parse-master.ref = "refs/heads/master";
   
   
-  inputs."timezones".url = "path:../../../t/timezones";
   inputs."timezones".type = "github";
   inputs."timezones".owner = "riinr";
   inputs."timezones".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-nsu-master.ref = "refs/heads/master";
   
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."x11".dir = "nimpkgs/x/x11";
 
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."winim".dir = "nimpkgs/w/winim";
 
   
-  inputs."flippy".url = "path:../../../f/flippy";
   inputs."flippy".type = "github";
   inputs."flippy".owner = "riinr";
   inputs."flippy".repo = "flake-nimble";

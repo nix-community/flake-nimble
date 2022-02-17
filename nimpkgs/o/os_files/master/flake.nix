@@ -7,7 +7,6 @@
   inputs.src-os_files-master.ref = "refs/heads/master";
   
   
-  inputs."oldgtk3".url = "path:../../../o/oldgtk3";
   inputs."oldgtk3".type = "github";
   inputs."oldgtk3".owner = "riinr";
   inputs."oldgtk3".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."oldgtk3".dir = "nimpkgs/o/oldgtk3";
 
   
-  inputs."jsbind".url = "path:../../../j/jsbind";
   inputs."jsbind".type = "github";
   inputs."jsbind".owner = "riinr";
   inputs."jsbind".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."jsbind".dir = "nimpkgs/j/jsbind";
 
   
-  inputs."https://github.com/yglukhov/darwin".url = "path:../../../h/https://github.com/yglukhov/darwin";
   inputs."https://github.com/yglukhov/darwin".type = "github";
   inputs."https://github.com/yglukhov/darwin".owner = "riinr";
   inputs."https://github.com/yglukhov/darwin".repo = "flake-nimble";

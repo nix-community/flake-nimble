@@ -7,7 +7,6 @@
   inputs.src-matplotnim-v0_1_0.ref = "refs/tags/v0.1.0";
   
   
-  inputs."tempfile".url = "path:../../../t/tempfile";
   inputs."tempfile".type = "github";
   inputs."tempfile".owner = "riinr";
   inputs."tempfile".repo = "flake-nimble";

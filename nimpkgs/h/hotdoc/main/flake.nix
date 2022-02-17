@@ -7,7 +7,6 @@
   inputs.src-hotdoc-main.ref = "refs/heads/main";
   
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
   
-  inputs."karax".url = "path:../../../k/karax";
   inputs."karax".type = "github";
   inputs."karax".owner = "riinr";
   inputs."karax".repo = "flake-nimble";

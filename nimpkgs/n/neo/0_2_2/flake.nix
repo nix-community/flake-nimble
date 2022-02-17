@@ -7,7 +7,6 @@
   inputs.src-neo-0_2_2.ref = "refs/tags/0.2.2";
   
   
-  inputs."nimblas".url = "path:../../../n/nimblas";
   inputs."nimblas".type = "github";
   inputs."nimblas".owner = "riinr";
   inputs."nimblas".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimblas".dir = "nimpkgs/n/nimblas";
 
   
-  inputs."nimcuda".url = "path:../../../n/nimcuda";
   inputs."nimcuda".type = "github";
   inputs."nimcuda".owner = "riinr";
   inputs."nimcuda".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcuda".dir = "nimpkgs/n/nimcuda";
 
   
-  inputs."nimlapack".url = "path:../../../n/nimlapack";
   inputs."nimlapack".type = "github";
   inputs."nimlapack".owner = "riinr";
   inputs."nimlapack".repo = "flake-nimble";

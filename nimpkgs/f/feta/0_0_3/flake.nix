@@ -7,7 +7,6 @@
   inputs.src-feta-0_0_3.ref = "refs/tags/0.0.3";
   
   
-  inputs."mime".url = "path:../../../m/mime";
   inputs."mime".type = "github";
   inputs."mime".owner = "riinr";
   inputs."mime".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."mime".dir = "nimpkgs/m/mime";
 
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";

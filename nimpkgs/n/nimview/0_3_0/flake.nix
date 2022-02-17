@@ -7,7 +7,6 @@
   inputs.src-nimview-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."nimpy".url = "path:../../../n/nimpy";
   inputs."nimpy".type = "github";
   inputs."nimpy".owner = "riinr";
   inputs."nimpy".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."nimpy".dir = "nimpkgs/n/nimpy";
 
   
-  inputs."nake".url = "path:../../../n/nake";
   inputs."nake".type = "github";
   inputs."nake".owner = "riinr";
   inputs."nake".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nake".dir = "nimpkgs/n/nake";
 
   
-  inputs."ws".url = "path:../../../w/ws";
   inputs."ws".type = "github";
   inputs."ws".owner = "riinr";
   inputs."ws".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-aglet-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/liquid600pgm/nim-glm".url = "path:../../../h/https://github.com/liquid600pgm/nim-glm";
   inputs."https://github.com/liquid600pgm/nim-glm".type = "github";
   inputs."https://github.com/liquid600pgm/nim-glm".owner = "riinr";
   inputs."https://github.com/liquid600pgm/nim-glm".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."https://github.com/liquid600pgm/nim-glm".dir = "nimpkgs/h/https://github.com/liquid600pgm/nim-glm";
 
   
-  inputs."https://github.com/nimgl/glfw".url = "path:../../../h/https://github.com/nimgl/glfw";
   inputs."https://github.com/nimgl/glfw".type = "github";
   inputs."https://github.com/nimgl/glfw".owner = "riinr";
   inputs."https://github.com/nimgl/glfw".repo = "flake-nimble";

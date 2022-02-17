@@ -7,7 +7,6 @@
   inputs.src-fnv-0_1_0.ref = "refs/tags/0.1.0";
   
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";

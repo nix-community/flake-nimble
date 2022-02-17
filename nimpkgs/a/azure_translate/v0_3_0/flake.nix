@@ -7,7 +7,6 @@
   inputs.src-azure_translate-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."nuuid".url = "path:../../../n/nuuid";
   inputs."nuuid".type = "github";
   inputs."nuuid".owner = "riinr";
   inputs."nuuid".repo = "flake-nimble";

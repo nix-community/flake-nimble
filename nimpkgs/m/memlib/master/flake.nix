@@ -7,7 +7,6 @@
   inputs.src-memlib-master.ref = "refs/heads/master";
   
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."winim".dir = "nimpkgs/w/winim";
 
   
-  inputs."minhook".url = "path:../../../m/minhook";
   inputs."minhook".type = "github";
   inputs."minhook".owner = "riinr";
   inputs."minhook".repo = "flake-nimble";

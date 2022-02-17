@@ -7,7 +7,6 @@
   inputs.src-testutils-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."https://github.com/status-im/nim-unittest2.git".url = "path:../../../h/https://github.com/status-im/nim-unittest2.git";
   inputs."https://github.com/status-im/nim-unittest2.git".type = "github";
   inputs."https://github.com/status-im/nim-unittest2.git".owner = "riinr";
   inputs."https://github.com/status-im/nim-unittest2.git".repo = "flake-nimble";

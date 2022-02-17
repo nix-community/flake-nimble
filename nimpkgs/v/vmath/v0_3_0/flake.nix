@@ -7,7 +7,6 @@
   inputs.src-vmath-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
-  inputs."mddoc".url = "path:../../../m/mddoc";
   inputs."mddoc".type = "github";
   inputs."mddoc".owner = "riinr";
   inputs."mddoc".repo = "flake-nimble";

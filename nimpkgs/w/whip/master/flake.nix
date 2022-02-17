@@ -7,7 +7,6 @@
   inputs.src-whip-master.ref = "refs/heads/master";
   
   
-  inputs."packedjson".url = "path:../../../p/packedjson";
   inputs."packedjson".type = "github";
   inputs."packedjson".owner = "riinr";
   inputs."packedjson".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."packedjson".dir = "nimpkgs/p/packedjson";
 
   
-  inputs."nest".url = "path:../../../n/nest";
   inputs."nest".type = "github";
   inputs."nest".owner = "riinr";
   inputs."nest".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nest".dir = "nimpkgs/n/nest";
 
   
-  inputs."httpbeast".url = "path:../../../h/httpbeast";
   inputs."httpbeast".type = "github";
   inputs."httpbeast".owner = "riinr";
   inputs."httpbeast".repo = "flake-nimble";

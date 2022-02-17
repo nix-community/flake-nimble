@@ -7,7 +7,6 @@
   inputs.src-nimatic-master.ref = "refs/heads/master";
   
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";

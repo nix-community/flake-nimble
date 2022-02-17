@@ -7,7 +7,6 @@
   inputs.src-weave-master.ref = "refs/heads/master";
   
   
-  inputs."synthesis".url = "path:../../../s/synthesis";
   inputs."synthesis".type = "github";
   inputs."synthesis".owner = "riinr";
   inputs."synthesis".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-guildenstern-0_7.ref = "refs/tags/0.7";
   
   
-  inputs."weave".url = "path:../../../w/weave";
   inputs."weave".type = "github";
   inputs."weave".owner = "riinr";
   inputs."weave".repo = "flake-nimble";

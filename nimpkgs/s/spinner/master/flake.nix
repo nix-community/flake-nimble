@@ -7,7 +7,6 @@
   inputs.src-spinner-master.ref = "refs/heads/master";
   
   
-  inputs."fidget".url = "path:../../../f/fidget";
   inputs."fidget".type = "github";
   inputs."fidget".owner = "riinr";
   inputs."fidget".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."fidget".dir = "nimpkgs/f/fidget";
 
   
-  inputs."gradient".url = "path:../../../g/gradient";
   inputs."gradient".type = "github";
   inputs."gradient".owner = "riinr";
   inputs."gradient".repo = "flake-nimble";

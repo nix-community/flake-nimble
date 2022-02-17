@@ -7,7 +7,6 @@
   inputs.src-conventional_semver-master.ref = "refs/heads/master";
   
   
-  inputs."semver".url = "path:../../../s/semver";
   inputs."semver".type = "github";
   inputs."semver".owner = "riinr";
   inputs."semver".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."semver".dir = "nimpkgs/s/semver";
 
   
-  inputs."simpleparseopt".url = "path:../../../s/simpleparseopt";
   inputs."simpleparseopt".type = "github";
   inputs."simpleparseopt".owner = "riinr";
   inputs."simpleparseopt".repo = "flake-nimble";

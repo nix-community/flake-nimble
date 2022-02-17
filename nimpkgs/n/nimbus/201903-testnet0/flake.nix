@@ -7,7 +7,6 @@
   inputs.src-nimbus-201903-testnet0.ref = "refs/tags/201903-testnet0";
   
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."chronicles".dir = "nimpkgs/c/chronicles";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."stint".dir = "nimpkgs/s/stint";
 
   
-  inputs."json_rpc".url = "path:../../../j/json_rpc";
   inputs."json_rpc".type = "github";
   inputs."json_rpc".owner = "riinr";
   inputs."json_rpc".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."json_rpc".dir = "nimpkgs/j/json_rpc";
 
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."bncurve".url = "path:../../../b/bncurve";
   inputs."bncurve".type = "github";
   inputs."bncurve".owner = "riinr";
   inputs."bncurve".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."bncurve".dir = "nimpkgs/b/bncurve";
 
   
-  inputs."eth".url = "path:../../../e/eth";
   inputs."eth".type = "github";
   inputs."eth".owner = "riinr";
   inputs."eth".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."eth".dir = "nimpkgs/e/eth";
 
   
-  inputs."std_shims".url = "path:../../../s/std_shims";
   inputs."std_shims".type = "github";
   inputs."std_shims".owner = "riinr";
   inputs."std_shims".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-skybook-1_0_3.ref = "refs/tags/1.0.3";
   
   
-  inputs."jester".url = "path:../../../j/jester";
   inputs."jester".type = "github";
   inputs."jester".owner = "riinr";
   inputs."jester".repo = "flake-nimble";

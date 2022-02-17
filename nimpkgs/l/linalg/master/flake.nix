@@ -7,7 +7,6 @@
   inputs.src-linalg-master.ref = "refs/heads/master";
   
   
-  inputs."nimblas".url = "path:../../../n/nimblas";
   inputs."nimblas".type = "github";
   inputs."nimblas".owner = "riinr";
   inputs."nimblas".repo = "flake-nimble";

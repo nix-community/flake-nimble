@@ -7,7 +7,6 @@
   inputs.src-dialogs-v1_1_1.ref = "refs/tags/v1.1.1";
   
   
-  inputs."gtk2".url = "path:../../../g/gtk2";
   inputs."gtk2".type = "github";
   inputs."gtk2".owner = "riinr";
   inputs."gtk2".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-zfcore-v1_1_7.ref = "refs/tags/v1.1.7";
   
   
-  inputs."zfblast".url = "path:../../../z/zfblast";
   inputs."zfblast".type = "github";
   inputs."zfblast".owner = "riinr";
   inputs."zfblast".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."zfblast".dir = "nimpkgs/z/zfblast";
 
   
-  inputs."uri3".url = "path:../../../u/uri3";
   inputs."uri3".type = "github";
   inputs."uri3".owner = "riinr";
   inputs."uri3".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."uri3".dir = "nimpkgs/u/uri3";
 
   
-  inputs."stdext".url = "path:../../../s/stdext";
   inputs."stdext".type = "github";
   inputs."stdext".owner = "riinr";
   inputs."stdext".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."stdext".dir = "nimpkgs/s/stdext";
 
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

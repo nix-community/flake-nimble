@@ -7,7 +7,6 @@
   inputs.src-reactorfuse-master.ref = "refs/heads/master";
   
   
-  inputs."reactor".url = "path:../../../r/reactor";
   inputs."reactor".type = "github";
   inputs."reactor".owner = "riinr";
   inputs."reactor".repo = "flake-nimble";

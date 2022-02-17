@@ -7,7 +7,6 @@
   inputs.src-hcparse-v0_1_2.ref = "refs/tags/v0.1.2";
   
   
-  inputs."hnimast".url = "path:../../../h/hnimast";
   inputs."hnimast".type = "github";
   inputs."hnimast".owner = "riinr";
   inputs."hnimast".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."hnimast".dir = "nimpkgs/h/hnimast";
 
   
-  inputs."hmisc".url = "path:../../../h/hmisc";
   inputs."hmisc".type = "github";
   inputs."hmisc".owner = "riinr";
   inputs."hmisc".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."hmisc".dir = "nimpkgs/h/hmisc";
 
   
-  inputs."hpprint".url = "path:../../../h/hpprint";
   inputs."hpprint".type = "github";
   inputs."hpprint".owner = "riinr";
   inputs."hpprint".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."hpprint".dir = "nimpkgs/h/hpprint";
 
   
-  inputs."nimtraits".url = "path:../../../n/nimtraits";
   inputs."nimtraits".type = "github";
   inputs."nimtraits".owner = "riinr";
   inputs."nimtraits".repo = "flake-nimble";

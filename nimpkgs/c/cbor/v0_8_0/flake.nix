@@ -7,7 +7,6 @@
   inputs.src-cbor-v0_8_0.ref = "refs/tags/v0.8.0";
   
   
-  inputs."bignum".url = "path:../../../b/bignum";
   inputs."bignum".type = "github";
   inputs."bignum".owner = "riinr";
   inputs."bignum".repo = "flake-nimble";

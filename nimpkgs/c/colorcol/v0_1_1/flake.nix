@@ -7,7 +7,6 @@
   inputs.src-colorcol-v0_1_1.ref = "refs/tags/v0.1.1";
   
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";

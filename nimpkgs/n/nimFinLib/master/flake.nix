@@ -7,7 +7,6 @@
   inputs.src-nimFinLib-master.ref = "refs/heads/master";
   
   
-  inputs."https://github.com/qqtop/nimcx".url = "path:../../../h/https://github.com/qqtop/nimcx";
   inputs."https://github.com/qqtop/nimcx".type = "github";
   inputs."https://github.com/qqtop/nimcx".owner = "riinr";
   inputs."https://github.com/qqtop/nimcx".repo = "flake-nimble";

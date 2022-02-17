@@ -7,7 +7,6 @@
   inputs.src-xmlio-v0_1_8.ref = "refs/tags/v0.1.8";
   
   
-  inputs."vtable".url = "path:../../../v/vtable";
   inputs."vtable".type = "github";
   inputs."vtable".owner = "riinr";
   inputs."vtable".repo = "flake-nimble";

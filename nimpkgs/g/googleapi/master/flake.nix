@@ -7,7 +7,6 @@
   inputs.src-googleapi-master.ref = "refs/heads/master";
   
   
-  inputs."jwt".url = "path:../../../j/jwt";
   inputs."jwt".type = "github";
   inputs."jwt".owner = "riinr";
   inputs."jwt".repo = "flake-nimble";

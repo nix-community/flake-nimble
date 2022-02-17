@@ -7,7 +7,6 @@
   inputs.src-nimdata-master.ref = "refs/heads/master";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."zip".dir = "nimpkgs/z/zip";
 
   
-  inputs."plotly".url = "path:../../../p/plotly";
   inputs."plotly".type = "github";
   inputs."plotly".owner = "riinr";
   inputs."plotly".repo = "flake-nimble";

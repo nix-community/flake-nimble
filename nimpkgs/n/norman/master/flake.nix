@@ -7,7 +7,6 @@
   inputs.src-norman-master.ref = "refs/heads/master";
   
   
-  inputs."norm".url = "path:../../../n/norm";
   inputs."norm".type = "github";
   inputs."norm".owner = "riinr";
   inputs."norm".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."norm".dir = "nimpkgs/n/norm";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."dotenv".url = "path:../../../d/dotenv";
   inputs."dotenv".type = "github";
   inputs."dotenv".owner = "riinr";
   inputs."dotenv".repo = "flake-nimble";

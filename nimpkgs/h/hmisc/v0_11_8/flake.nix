@@ -7,7 +7,6 @@
   inputs.src-hmisc-v0_11_8.ref = "refs/tags/v0.11.8";
   
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."fusion".url = "path:../../../f/fusion";
   inputs."fusion".type = "github";
   inputs."fusion".owner = "riinr";
   inputs."fusion".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."fusion".dir = "nimpkgs/f/fusion";
 
   
-  inputs."benchy".url = "path:../../../b/benchy";
   inputs."benchy".type = "github";
   inputs."benchy".owner = "riinr";
   inputs."benchy".repo = "flake-nimble";

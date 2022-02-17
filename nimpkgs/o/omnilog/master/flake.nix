@@ -7,7 +7,6 @@
   inputs.src-omnilog-master.ref = "refs/heads/master";
   
   
-  inputs."values".url = "path:../../../v/values";
   inputs."values".type = "github";
   inputs."values".owner = "riinr";
   inputs."values".repo = "flake-nimble";

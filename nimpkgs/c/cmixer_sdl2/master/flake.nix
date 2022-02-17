@@ -7,7 +7,6 @@
   inputs.src-cmixer_sdl2-master.ref = "refs/heads/master";
   
   
-  inputs."cmixer".url = "path:../../../c/cmixer";
   inputs."cmixer".type = "github";
   inputs."cmixer".owner = "riinr";
   inputs."cmixer".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."cmixer".dir = "nimpkgs/c/cmixer";
 
   
-  inputs."sdl2".url = "path:../../../s/sdl2";
   inputs."sdl2".type = "github";
   inputs."sdl2".owner = "riinr";
   inputs."sdl2".repo = "flake-nimble";

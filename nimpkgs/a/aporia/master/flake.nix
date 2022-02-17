@@ -7,7 +7,6 @@
   inputs.src-aporia-master.ref = "refs/heads/master";
   
   
-  inputs."gtk2".url = "path:../../../g/gtk2";
   inputs."gtk2".type = "github";
   inputs."gtk2".owner = "riinr";
   inputs."gtk2".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."gtk2".dir = "nimpkgs/g/gtk2";
 
   
-  inputs."dialogs".url = "path:../../../d/dialogs";
   inputs."dialogs".type = "github";
   inputs."dialogs".owner = "riinr";
   inputs."dialogs".repo = "flake-nimble";

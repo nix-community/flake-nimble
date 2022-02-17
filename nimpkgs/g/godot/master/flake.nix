@@ -7,7 +7,6 @@
   inputs.src-godot-master.ref = "refs/heads/master";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";

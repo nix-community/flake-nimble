@@ -7,7 +7,6 @@
   inputs.src-preserves-v1_0_0.ref = "refs/tags/v1.0.0";
   
   
-  inputs."compiler".url = "path:../../../c/compiler";
   inputs."compiler".type = "github";
   inputs."compiler".owner = "riinr";
   inputs."compiler".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."compiler".dir = "nimpkgs/c/compiler";
 
   
-  inputs."bigints".url = "path:../../../b/bigints";
   inputs."bigints".type = "github";
   inputs."bigints".owner = "riinr";
   inputs."bigints".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."bigints".dir = "nimpkgs/b/bigints";
 
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";

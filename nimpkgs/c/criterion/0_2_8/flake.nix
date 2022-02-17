@@ -7,7 +7,6 @@
   inputs.src-criterion-0_2_8.ref = "refs/tags/0.2.8";
   
   
-  inputs."https://github.com/disruptek/balls".url = "path:../../../h/https://github.com/disruptek/balls";
   inputs."https://github.com/disruptek/balls".type = "github";
   inputs."https://github.com/disruptek/balls".owner = "riinr";
   inputs."https://github.com/disruptek/balls".repo = "flake-nimble";

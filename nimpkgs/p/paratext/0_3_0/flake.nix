@@ -7,7 +7,6 @@
   inputs.src-paratext-0_3_0.ref = "refs/tags/0.3.0";
   
   
-  inputs."paranim".url = "path:../../../p/paranim";
   inputs."paranim".type = "github";
   inputs."paranim".owner = "riinr";
   inputs."paranim".repo = "flake-nimble";

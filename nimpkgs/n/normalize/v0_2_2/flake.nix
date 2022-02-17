@@ -7,7 +7,6 @@
   inputs.src-normalize-v0_2_2.ref = "refs/tags/v0.2.2";
   
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";

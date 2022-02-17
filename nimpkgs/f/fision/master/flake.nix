@@ -7,7 +7,6 @@
   inputs.src-fision-master.ref = "refs/heads/master";
   
   
-  inputs."argparse".url = "path:../../../a/argparse";
   inputs."argparse".type = "github";
   inputs."argparse".owner = "riinr";
   inputs."argparse".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."argparse".dir = "nimpkgs/a/argparse";
 
   
-  inputs."arraymancer".url = "path:../../../a/arraymancer";
   inputs."arraymancer".type = "github";
   inputs."arraymancer".owner = "riinr";
   inputs."arraymancer".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
 
   
-  inputs."asyncthreadpool".url = "path:../../../a/asyncthreadpool";
   inputs."asyncthreadpool".type = "github";
   inputs."asyncthreadpool".owner = "riinr";
   inputs."asyncthreadpool".repo = "flake-nimble";
@@ -31,7 +28,6 @@
   inputs."asyncthreadpool".dir = "nimpkgs/a/asyncthreadpool";
 
   
-  inputs."awk".url = "path:../../../a/awk";
   inputs."awk".type = "github";
   inputs."awk".owner = "riinr";
   inputs."awk".repo = "flake-nimble";
@@ -39,7 +35,6 @@
   inputs."awk".dir = "nimpkgs/a/awk";
 
   
-  inputs."binaryheap".url = "path:../../../b/binaryheap";
   inputs."binaryheap".type = "github";
   inputs."binaryheap".owner = "riinr";
   inputs."binaryheap".repo = "flake-nimble";
@@ -47,7 +42,6 @@
   inputs."binaryheap".dir = "nimpkgs/b/binaryheap";
 
   
-  inputs."bipbuffer".url = "path:../../../b/bipbuffer";
   inputs."bipbuffer".type = "github";
   inputs."bipbuffer".owner = "riinr";
   inputs."bipbuffer".repo = "flake-nimble";
@@ -55,7 +49,6 @@
   inputs."bipbuffer".dir = "nimpkgs/b/bipbuffer";
 
   
-  inputs."bncurve".url = "path:../../../b/bncurve";
   inputs."bncurve".type = "github";
   inputs."bncurve".owner = "riinr";
   inputs."bncurve".repo = "flake-nimble";
@@ -63,7 +56,6 @@
   inputs."bncurve".dir = "nimpkgs/b/bncurve";
 
   
-  inputs."brainfuck".url = "path:../../../b/brainfuck";
   inputs."brainfuck".type = "github";
   inputs."brainfuck".owner = "riinr";
   inputs."brainfuck".repo = "flake-nimble";
@@ -71,7 +63,6 @@
   inputs."brainfuck".dir = "nimpkgs/b/brainfuck";
 
   
-  inputs."bump".url = "path:../../../b/bump";
   inputs."bump".type = "github";
   inputs."bump".owner = "riinr";
   inputs."bump".repo = "flake-nimble";
@@ -79,7 +70,6 @@
   inputs."bump".dir = "nimpkgs/b/bump";
 
   
-  inputs."c2nim".url = "path:../../../c/c2nim";
   inputs."c2nim".type = "github";
   inputs."c2nim".owner = "riinr";
   inputs."c2nim".repo = "flake-nimble";
@@ -87,7 +77,6 @@
   inputs."c2nim".dir = "nimpkgs/c/c2nim";
 
   
-  inputs."cascade".url = "path:../../../c/cascade";
   inputs."cascade".type = "github";
   inputs."cascade".owner = "riinr";
   inputs."cascade".repo = "flake-nimble";
@@ -95,7 +84,6 @@
   inputs."cascade".dir = "nimpkgs/c/cascade";
 
   
-  inputs."cello".url = "path:../../../c/cello";
   inputs."cello".type = "github";
   inputs."cello".owner = "riinr";
   inputs."cello".repo = "flake-nimble";
@@ -103,7 +91,6 @@
   inputs."cello".dir = "nimpkgs/c/cello";
 
   
-  inputs."chroma".url = "path:../../../c/chroma";
   inputs."chroma".type = "github";
   inputs."chroma".owner = "riinr";
   inputs."chroma".repo = "flake-nimble";
@@ -111,7 +98,6 @@
   inputs."chroma".dir = "nimpkgs/c/chroma";
 
   
-  inputs."chronicles".url = "path:../../../c/chronicles";
   inputs."chronicles".type = "github";
   inputs."chronicles".owner = "riinr";
   inputs."chronicles".repo = "flake-nimble";
@@ -119,7 +105,6 @@
   inputs."chronicles".dir = "nimpkgs/c/chronicles";
 
   
-  inputs."chronos".url = "path:../../../c/chronos";
   inputs."chronos".type = "github";
   inputs."chronos".owner = "riinr";
   inputs."chronos".repo = "flake-nimble";
@@ -127,7 +112,6 @@
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
   
-  inputs."cligen".url = "path:../../../c/cligen";
   inputs."cligen".type = "github";
   inputs."cligen".owner = "riinr";
   inputs."cligen".repo = "flake-nimble";
@@ -135,7 +119,6 @@
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
   
-  inputs."combparser".url = "path:../../../c/combparser";
   inputs."combparser".type = "github";
   inputs."combparser".owner = "riinr";
   inputs."combparser".repo = "flake-nimble";
@@ -143,7 +126,6 @@
   inputs."combparser".dir = "nimpkgs/c/combparser";
 
   
-  inputs."compactdict".url = "path:../../../c/compactdict";
   inputs."compactdict".type = "github";
   inputs."compactdict".owner = "riinr";
   inputs."compactdict".repo = "flake-nimble";
@@ -151,7 +133,6 @@
   inputs."compactdict".dir = "nimpkgs/c/compactdict";
 
   
-  inputs."dashing".url = "path:../../../d/dashing";
   inputs."dashing".type = "github";
   inputs."dashing".owner = "riinr";
   inputs."dashing".repo = "flake-nimble";
@@ -159,7 +140,6 @@
   inputs."dashing".dir = "nimpkgs/d/dashing";
 
   
-  inputs."datamancer".url = "path:../../../d/datamancer";
   inputs."datamancer".type = "github";
   inputs."datamancer".owner = "riinr";
   inputs."datamancer".repo = "flake-nimble";
@@ -167,7 +147,6 @@
   inputs."datamancer".dir = "nimpkgs/d/datamancer";
 
   
-  inputs."delaunay".url = "path:../../../d/delaunay";
   inputs."delaunay".type = "github";
   inputs."delaunay".owner = "riinr";
   inputs."delaunay".repo = "flake-nimble";
@@ -175,7 +154,6 @@
   inputs."delaunay".dir = "nimpkgs/d/delaunay";
 
   
-  inputs."docopt".url = "path:../../../d/docopt";
   inputs."docopt".type = "github";
   inputs."docopt".owner = "riinr";
   inputs."docopt".repo = "flake-nimble";
@@ -183,7 +161,6 @@
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
   
-  inputs."easygl".url = "path:../../../e/easygl";
   inputs."easygl".type = "github";
   inputs."easygl".owner = "riinr";
   inputs."easygl".repo = "flake-nimble";
@@ -191,7 +168,6 @@
   inputs."easygl".dir = "nimpkgs/e/easygl";
 
   
-  inputs."elvis".url = "path:../../../e/elvis";
   inputs."elvis".type = "github";
   inputs."elvis".owner = "riinr";
   inputs."elvis".repo = "flake-nimble";
@@ -199,7 +175,6 @@
   inputs."elvis".dir = "nimpkgs/e/elvis";
 
   
-  inputs."fidget".url = "path:../../../f/fidget";
   inputs."fidget".type = "github";
   inputs."fidget".owner = "riinr";
   inputs."fidget".repo = "flake-nimble";
@@ -207,7 +182,6 @@
   inputs."fidget".dir = "nimpkgs/f/fidget";
 
   
-  inputs."fusion".url = "path:../../../f/fusion";
   inputs."fusion".type = "github";
   inputs."fusion".owner = "riinr";
   inputs."fusion".repo = "flake-nimble";
@@ -215,7 +189,6 @@
   inputs."fusion".dir = "nimpkgs/f/fusion";
 
   
-  inputs."gara".url = "path:../../../g/gara";
   inputs."gara".type = "github";
   inputs."gara".owner = "riinr";
   inputs."gara".repo = "flake-nimble";
@@ -223,7 +196,6 @@
   inputs."gara".dir = "nimpkgs/g/gara";
 
   
-  inputs."ggplotnim".url = "path:../../../g/ggplotnim";
   inputs."ggplotnim".type = "github";
   inputs."ggplotnim".owner = "riinr";
   inputs."ggplotnim".repo = "flake-nimble";
@@ -231,7 +203,6 @@
   inputs."ggplotnim".dir = "nimpkgs/g/ggplotnim";
 
   
-  inputs."glob".url = "path:../../../g/glob";
   inputs."glob".type = "github";
   inputs."glob".owner = "riinr";
   inputs."glob".repo = "flake-nimble";
@@ -239,7 +210,6 @@
   inputs."glob".dir = "nimpkgs/g/glob";
 
   
-  inputs."gnuplot".url = "path:../../../g/gnuplot";
   inputs."gnuplot".type = "github";
   inputs."gnuplot".owner = "riinr";
   inputs."gnuplot".repo = "flake-nimble";
@@ -247,7 +217,6 @@
   inputs."gnuplot".dir = "nimpkgs/g/gnuplot";
 
   
-  inputs."hts".url = "path:../../../h/hts";
   inputs."hts".type = "github";
   inputs."hts".owner = "riinr";
   inputs."hts".repo = "flake-nimble";
@@ -255,7 +224,6 @@
   inputs."hts".dir = "nimpkgs/h/hts";
 
   
-  inputs."httpauth".url = "path:../../../h/httpauth";
   inputs."httpauth".type = "github";
   inputs."httpauth".owner = "riinr";
   inputs."httpauth".repo = "flake-nimble";
@@ -263,7 +231,6 @@
   inputs."httpauth".dir = "nimpkgs/h/httpauth";
 
   
-  inputs."illwill".url = "path:../../../i/illwill";
   inputs."illwill".type = "github";
   inputs."illwill".owner = "riinr";
   inputs."illwill".repo = "flake-nimble";
@@ -271,7 +238,6 @@
   inputs."illwill".dir = "nimpkgs/i/illwill";
 
   
-  inputs."inim".url = "path:../../../i/inim";
   inputs."inim".type = "github";
   inputs."inim".owner = "riinr";
   inputs."inim".repo = "flake-nimble";
@@ -279,7 +245,6 @@
   inputs."inim".dir = "nimpkgs/i/inim";
 
   
-  inputs."itertools".url = "path:../../../i/itertools";
   inputs."itertools".type = "github";
   inputs."itertools".owner = "riinr";
   inputs."itertools".repo = "flake-nimble";
@@ -287,7 +252,6 @@
   inputs."itertools".dir = "nimpkgs/i/itertools";
 
   
-  inputs."iterutils".url = "path:../../../i/iterutils";
   inputs."iterutils".type = "github";
   inputs."iterutils".owner = "riinr";
   inputs."iterutils".repo = "flake-nimble";
@@ -295,7 +259,6 @@
   inputs."iterutils".dir = "nimpkgs/i/iterutils";
 
   
-  inputs."jstin".url = "path:../../../j/jstin";
   inputs."jstin".type = "github";
   inputs."jstin".owner = "riinr";
   inputs."jstin".repo = "flake-nimble";
@@ -303,7 +266,6 @@
   inputs."jstin".dir = "nimpkgs/j/jstin";
 
   
-  inputs."karax".url = "path:../../../k/karax";
   inputs."karax".type = "github";
   inputs."karax".owner = "riinr";
   inputs."karax".repo = "flake-nimble";
@@ -311,7 +273,6 @@
   inputs."karax".dir = "nimpkgs/k/karax";
 
   
-  inputs."lockfreequeues".url = "path:../../../l/lockfreequeues";
   inputs."lockfreequeues".type = "github";
   inputs."lockfreequeues".owner = "riinr";
   inputs."lockfreequeues".repo = "flake-nimble";
@@ -319,7 +280,6 @@
   inputs."lockfreequeues".dir = "nimpkgs/l/lockfreequeues";
 
   
-  inputs."loopfusion".url = "path:../../../l/loopfusion";
   inputs."loopfusion".type = "github";
   inputs."loopfusion".owner = "riinr";
   inputs."loopfusion".repo = "flake-nimble";
@@ -327,7 +287,6 @@
   inputs."loopfusion".dir = "nimpkgs/l/loopfusion";
 
   
-  inputs."macroutils".url = "path:../../../m/macroutils";
   inputs."macroutils".type = "github";
   inputs."macroutils".owner = "riinr";
   inputs."macroutils".repo = "flake-nimble";
@@ -335,7 +294,6 @@
   inputs."macroutils".dir = "nimpkgs/m/macroutils";
 
   
-  inputs."manu".url = "path:../../../m/manu";
   inputs."manu".type = "github";
   inputs."manu".owner = "riinr";
   inputs."manu".repo = "flake-nimble";
@@ -343,7 +301,6 @@
   inputs."manu".dir = "nimpkgs/m/manu";
 
   
-  inputs."markdown".url = "path:../../../m/markdown";
   inputs."markdown".type = "github";
   inputs."markdown".owner = "riinr";
   inputs."markdown".repo = "flake-nimble";
@@ -351,7 +308,6 @@
   inputs."markdown".dir = "nimpkgs/m/markdown";
 
   
-  inputs."memo".url = "path:../../../m/memo";
   inputs."memo".type = "github";
   inputs."memo".owner = "riinr";
   inputs."memo".repo = "flake-nimble";
@@ -359,7 +315,6 @@
   inputs."memo".dir = "nimpkgs/m/memo";
 
   
-  inputs."msgpack4nim".url = "path:../../../m/msgpack4nim";
   inputs."msgpack4nim".type = "github";
   inputs."msgpack4nim".owner = "riinr";
   inputs."msgpack4nim".repo = "flake-nimble";
@@ -367,7 +322,6 @@
   inputs."msgpack4nim".dir = "nimpkgs/m/msgpack4nim";
 
   
-  inputs."nake".url = "path:../../../n/nake";
   inputs."nake".type = "github";
   inputs."nake".owner = "riinr";
   inputs."nake".repo = "flake-nimble";
@@ -375,7 +329,6 @@
   inputs."nake".dir = "nimpkgs/n/nake";
 
   
-  inputs."neo".url = "path:../../../n/neo";
   inputs."neo".type = "github";
   inputs."neo".owner = "riinr";
   inputs."neo".repo = "flake-nimble";
@@ -383,7 +336,6 @@
   inputs."neo".dir = "nimpkgs/n/neo";
 
   
-  inputs."nesm".url = "path:../../../n/nesm";
   inputs."nesm".type = "github";
   inputs."nesm".owner = "riinr";
   inputs."nesm".repo = "flake-nimble";
@@ -391,7 +343,6 @@
   inputs."nesm".dir = "nimpkgs/n/nesm";
 
   
-  inputs."netty".url = "path:../../../n/netty";
   inputs."netty".type = "github";
   inputs."netty".owner = "riinr";
   inputs."netty".repo = "flake-nimble";
@@ -399,7 +350,6 @@
   inputs."netty".dir = "nimpkgs/n/netty";
 
   
-  inputs."nicy".url = "path:../../../n/nicy";
   inputs."nicy".type = "github";
   inputs."nicy".owner = "riinr";
   inputs."nicy".repo = "flake-nimble";
@@ -407,7 +357,6 @@
   inputs."nicy".dir = "nimpkgs/n/nicy";
 
   
-  inputs."nigui".url = "path:../../../n/nigui";
   inputs."nigui".type = "github";
   inputs."nigui".owner = "riinr";
   inputs."nigui".repo = "flake-nimble";
@@ -415,7 +364,6 @@
   inputs."nigui".dir = "nimpkgs/n/nigui";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";
@@ -423,7 +371,6 @@
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
   
-  inputs."nimdata".url = "path:../../../n/nimdata";
   inputs."nimdata".type = "github";
   inputs."nimdata".owner = "riinr";
   inputs."nimdata".repo = "flake-nimble";
@@ -431,7 +378,6 @@
   inputs."nimdata".dir = "nimpkgs/n/nimdata";
 
   
-  inputs."nimes".url = "path:../../../n/nimes";
   inputs."nimes".type = "github";
   inputs."nimes".owner = "riinr";
   inputs."nimes".repo = "flake-nimble";
@@ -439,7 +385,6 @@
   inputs."nimes".dir = "nimpkgs/n/nimes";
 
   
-  inputs."nimfp".url = "path:../../../n/nimfp";
   inputs."nimfp".type = "github";
   inputs."nimfp".owner = "riinr";
   inputs."nimfp".repo = "flake-nimble";
@@ -447,7 +392,6 @@
   inputs."nimfp".dir = "nimpkgs/n/nimfp";
 
   
-  inputs."nimgame2".url = "path:../../../n/nimgame2";
   inputs."nimgame2".type = "github";
   inputs."nimgame2".owner = "riinr";
   inputs."nimgame2".repo = "flake-nimble";
@@ -455,7 +399,6 @@
   inputs."nimgame2".dir = "nimpkgs/n/nimgame2";
 
   
-  inputs."nimgen".url = "path:../../../n/nimgen";
   inputs."nimgen".type = "github";
   inputs."nimgen".owner = "riinr";
   inputs."nimgen".repo = "flake-nimble";
@@ -463,7 +406,6 @@
   inputs."nimgen".dir = "nimpkgs/n/nimgen";
 
   
-  inputs."nimlsp".url = "path:../../../n/nimlsp";
   inputs."nimlsp".type = "github";
   inputs."nimlsp".owner = "riinr";
   inputs."nimlsp".repo = "flake-nimble";
@@ -471,7 +413,6 @@
   inputs."nimlsp".dir = "nimpkgs/n/nimlsp";
 
   
-  inputs."nimly".url = "path:../../../n/nimly";
   inputs."nimly".type = "github";
   inputs."nimly".owner = "riinr";
   inputs."nimly".repo = "flake-nimble";
@@ -479,7 +420,6 @@
   inputs."nimly".dir = "nimpkgs/n/nimly";
 
   
-  inputs."nimpy".url = "path:../../../n/nimpy";
   inputs."nimpy".type = "github";
   inputs."nimpy".owner = "riinr";
   inputs."nimpy".repo = "flake-nimble";
@@ -487,7 +427,6 @@
   inputs."nimpy".dir = "nimpkgs/n/nimpy";
 
   
-  inputs."nimquery".url = "path:../../../n/nimquery";
   inputs."nimquery".type = "github";
   inputs."nimquery".owner = "riinr";
   inputs."nimquery".repo = "flake-nimble";
@@ -495,7 +434,6 @@
   inputs."nimquery".dir = "nimpkgs/n/nimquery";
 
   
-  inputs."nimsl".url = "path:../../../n/nimsl";
   inputs."nimsl".type = "github";
   inputs."nimsl".owner = "riinr";
   inputs."nimsl".repo = "flake-nimble";
@@ -503,7 +441,6 @@
   inputs."nimsl".dir = "nimpkgs/n/nimsl";
 
   
-  inputs."nimsvg".url = "path:../../../n/nimsvg";
   inputs."nimsvg".type = "github";
   inputs."nimsvg".owner = "riinr";
   inputs."nimsvg".repo = "flake-nimble";
@@ -511,7 +448,6 @@
   inputs."nimsvg".dir = "nimpkgs/n/nimsvg";
 
   
-  inputs."nimterop".url = "path:../../../n/nimterop";
   inputs."nimterop".type = "github";
   inputs."nimterop".owner = "riinr";
   inputs."nimterop".repo = "flake-nimble";
@@ -519,7 +455,6 @@
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
   
-  inputs."nimwc".url = "path:../../../n/nimwc";
   inputs."nimwc".type = "github";
   inputs."nimwc".owner = "riinr";
   inputs."nimwc".repo = "flake-nimble";
@@ -527,7 +462,6 @@
   inputs."nimwc".dir = "nimpkgs/n/nimwc";
 
   
-  inputs."nitter".url = "path:../../../n/nitter";
   inputs."nitter".type = "github";
   inputs."nitter".owner = "riinr";
   inputs."nitter".repo = "flake-nimble";
@@ -535,7 +469,6 @@
   inputs."nitter".dir = "nimpkgs/n/nitter";
 
   
-  inputs."norm".url = "path:../../../n/norm";
   inputs."norm".type = "github";
   inputs."norm".owner = "riinr";
   inputs."norm".repo = "flake-nimble";
@@ -543,7 +476,6 @@
   inputs."norm".dir = "nimpkgs/n/norm";
 
   
-  inputs."npeg".url = "path:../../../n/npeg";
   inputs."npeg".type = "github";
   inputs."npeg".owner = "riinr";
   inputs."npeg".repo = "flake-nimble";
@@ -551,7 +483,6 @@
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
   
-  inputs."numericalnim".url = "path:../../../n/numericalnim";
   inputs."numericalnim".type = "github";
   inputs."numericalnim".owner = "riinr";
   inputs."numericalnim".repo = "flake-nimble";
@@ -559,7 +490,6 @@
   inputs."numericalnim".dir = "nimpkgs/n/numericalnim";
 
   
-  inputs."optionsutils".url = "path:../../../o/optionsutils";
   inputs."optionsutils".type = "github";
   inputs."optionsutils".owner = "riinr";
   inputs."optionsutils".repo = "flake-nimble";
@@ -567,7 +497,6 @@
   inputs."optionsutils".dir = "nimpkgs/o/optionsutils";
 
   
-  inputs."ormin".url = "path:../../../o/ormin";
   inputs."ormin".type = "github";
   inputs."ormin".owner = "riinr";
   inputs."ormin".repo = "flake-nimble";
@@ -575,7 +504,6 @@
   inputs."ormin".dir = "nimpkgs/o/ormin";
 
   
-  inputs."parsetoml".url = "path:../../../p/parsetoml";
   inputs."parsetoml".type = "github";
   inputs."parsetoml".owner = "riinr";
   inputs."parsetoml".repo = "flake-nimble";
@@ -583,7 +511,6 @@
   inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
 
   
-  inputs."patty".url = "path:../../../p/patty";
   inputs."patty".type = "github";
   inputs."patty".owner = "riinr";
   inputs."patty".repo = "flake-nimble";
@@ -591,7 +518,6 @@
   inputs."patty".dir = "nimpkgs/p/patty";
 
   
-  inputs."pixie".url = "path:../../../p/pixie";
   inputs."pixie".type = "github";
   inputs."pixie".owner = "riinr";
   inputs."pixie".repo = "flake-nimble";
@@ -599,7 +525,6 @@
   inputs."pixie".dir = "nimpkgs/p/pixie";
 
   
-  inputs."plotly".url = "path:../../../p/plotly";
   inputs."plotly".type = "github";
   inputs."plotly".owner = "riinr";
   inputs."plotly".repo = "flake-nimble";
@@ -607,7 +532,6 @@
   inputs."plotly".dir = "nimpkgs/p/plotly";
 
   
-  inputs."pnm".url = "path:../../../p/pnm";
   inputs."pnm".type = "github";
   inputs."pnm".owner = "riinr";
   inputs."pnm".repo = "flake-nimble";
@@ -615,7 +539,6 @@
   inputs."pnm".dir = "nimpkgs/p/pnm";
 
   
-  inputs."polypbren".url = "path:../../../p/polypbren";
   inputs."polypbren".type = "github";
   inputs."polypbren".owner = "riinr";
   inputs."polypbren".repo = "flake-nimble";
@@ -623,7 +546,6 @@
   inputs."polypbren".dir = "nimpkgs/p/polypbren";
 
   
-  inputs."prologue".url = "path:../../../p/prologue";
   inputs."prologue".type = "github";
   inputs."prologue".owner = "riinr";
   inputs."prologue".repo = "flake-nimble";
@@ -631,7 +553,6 @@
   inputs."prologue".dir = "nimpkgs/p/prologue";
 
   
-  inputs."protobuf".url = "path:../../../p/protobuf";
   inputs."protobuf".type = "github";
   inputs."protobuf".owner = "riinr";
   inputs."protobuf".repo = "flake-nimble";
@@ -639,7 +560,6 @@
   inputs."protobuf".dir = "nimpkgs/p/protobuf";
 
   
-  inputs."pylib".url = "path:../../../p/pylib";
   inputs."pylib".type = "github";
   inputs."pylib".owner = "riinr";
   inputs."pylib".repo = "flake-nimble";
@@ -647,7 +567,6 @@
   inputs."pylib".dir = "nimpkgs/p/pylib";
 
   
-  inputs."rbtree".url = "path:../../../r/rbtree";
   inputs."rbtree".type = "github";
   inputs."rbtree".owner = "riinr";
   inputs."rbtree".repo = "flake-nimble";
@@ -655,7 +574,6 @@
   inputs."rbtree".dir = "nimpkgs/r/rbtree";
 
   
-  inputs."react".url = "path:../../../r/react";
   inputs."react".type = "github";
   inputs."react".owner = "riinr";
   inputs."react".repo = "flake-nimble";
@@ -663,7 +581,6 @@
   inputs."react".dir = "nimpkgs/r/react";
 
   
-  inputs."regex".url = "path:../../../r/regex";
   inputs."regex".type = "github";
   inputs."regex".owner = "riinr";
   inputs."regex".repo = "flake-nimble";
@@ -671,7 +588,6 @@
   inputs."regex".dir = "nimpkgs/r/regex";
 
   
-  inputs."result".url = "path:../../../r/result";
   inputs."result".type = "github";
   inputs."result".owner = "riinr";
   inputs."result".repo = "flake-nimble";
@@ -679,7 +595,6 @@
   inputs."result".dir = "nimpkgs/r/result";
 
   
-  inputs."rollinghash".url = "path:../../../r/rollinghash";
   inputs."rollinghash".type = "github";
   inputs."rollinghash".owner = "riinr";
   inputs."rollinghash".repo = "flake-nimble";
@@ -687,7 +602,6 @@
   inputs."rollinghash".dir = "nimpkgs/r/rollinghash";
 
   
-  inputs."rosencrantz".url = "path:../../../r/rosencrantz";
   inputs."rosencrantz".type = "github";
   inputs."rosencrantz".owner = "riinr";
   inputs."rosencrantz".repo = "flake-nimble";
@@ -695,7 +609,6 @@
   inputs."rosencrantz".dir = "nimpkgs/r/rosencrantz";
 
   
-  inputs."sdl1".url = "path:../../../s/sdl1";
   inputs."sdl1".type = "github";
   inputs."sdl1".owner = "riinr";
   inputs."sdl1".repo = "flake-nimble";
@@ -703,7 +616,6 @@
   inputs."sdl1".dir = "nimpkgs/s/sdl1";
 
   
-  inputs."sdl2_nim".url = "path:../../../s/sdl2_nim";
   inputs."sdl2_nim".type = "github";
   inputs."sdl2_nim".owner = "riinr";
   inputs."sdl2_nim".repo = "flake-nimble";
@@ -711,7 +623,6 @@
   inputs."sdl2_nim".dir = "nimpkgs/s/sdl2_nim";
 
   
-  inputs."sigv4".url = "path:../../../s/sigv4";
   inputs."sigv4".type = "github";
   inputs."sigv4".owner = "riinr";
   inputs."sigv4".repo = "flake-nimble";
@@ -719,7 +630,6 @@
   inputs."sigv4".dir = "nimpkgs/s/sigv4";
 
   
-  inputs."sim".url = "path:../../../s/sim";
   inputs."sim".type = "github";
   inputs."sim".owner = "riinr";
   inputs."sim".repo = "flake-nimble";
@@ -727,7 +637,6 @@
   inputs."sim".dir = "nimpkgs/s/sim";
 
   
-  inputs."stint".url = "path:../../../s/stint";
   inputs."stint".type = "github";
   inputs."stint".owner = "riinr";
   inputs."stint".repo = "flake-nimble";
@@ -735,7 +644,6 @@
   inputs."stint".dir = "nimpkgs/s/stint";
 
   
-  inputs."strslice".url = "path:../../../s/strslice";
   inputs."strslice".type = "github";
   inputs."strslice".owner = "riinr";
   inputs."strslice".repo = "flake-nimble";
@@ -743,7 +651,6 @@
   inputs."strslice".dir = "nimpkgs/s/strslice";
 
   
-  inputs."strunicode".url = "path:../../../s/strunicode";
   inputs."strunicode".type = "github";
   inputs."strunicode".owner = "riinr";
   inputs."strunicode".repo = "flake-nimble";
@@ -751,7 +658,6 @@
   inputs."strunicode".dir = "nimpkgs/s/strunicode";
 
   
-  inputs."supersnappy".url = "path:../../../s/supersnappy";
   inputs."supersnappy".type = "github";
   inputs."supersnappy".owner = "riinr";
   inputs."supersnappy".repo = "flake-nimble";
@@ -759,7 +665,6 @@
   inputs."supersnappy".dir = "nimpkgs/s/supersnappy";
 
   
-  inputs."synthesis".url = "path:../../../s/synthesis";
   inputs."synthesis".type = "github";
   inputs."synthesis".owner = "riinr";
   inputs."synthesis".repo = "flake-nimble";
@@ -767,7 +672,6 @@
   inputs."synthesis".dir = "nimpkgs/s/synthesis";
 
   
-  inputs."telebot".url = "path:../../../t/telebot";
   inputs."telebot".type = "github";
   inputs."telebot".owner = "riinr";
   inputs."telebot".repo = "flake-nimble";
@@ -775,7 +679,6 @@
   inputs."telebot".dir = "nimpkgs/t/telebot";
 
   
-  inputs."tempdir".url = "path:../../../t/tempdir";
   inputs."tempdir".type = "github";
   inputs."tempdir".owner = "riinr";
   inputs."tempdir".repo = "flake-nimble";
@@ -783,7 +686,6 @@
   inputs."tempdir".dir = "nimpkgs/t/tempdir";
 
   
-  inputs."templates".url = "path:../../../t/templates";
   inputs."templates".type = "github";
   inputs."templates".owner = "riinr";
   inputs."templates".repo = "flake-nimble";
@@ -791,7 +693,6 @@
   inputs."templates".dir = "nimpkgs/t/templates";
 
   
-  inputs."terminaltables".url = "path:../../../t/terminaltables";
   inputs."terminaltables".type = "github";
   inputs."terminaltables".owner = "riinr";
   inputs."terminaltables".repo = "flake-nimble";
@@ -799,7 +700,6 @@
   inputs."terminaltables".dir = "nimpkgs/t/terminaltables";
 
   
-  inputs."termstyle".url = "path:../../../t/termstyle";
   inputs."termstyle".type = "github";
   inputs."termstyle".owner = "riinr";
   inputs."termstyle".repo = "flake-nimble";
@@ -807,7 +707,6 @@
   inputs."termstyle".dir = "nimpkgs/t/termstyle";
 
   
-  inputs."timeit".url = "path:../../../t/timeit";
   inputs."timeit".type = "github";
   inputs."timeit".owner = "riinr";
   inputs."timeit".repo = "flake-nimble";
@@ -815,7 +714,6 @@
   inputs."timeit".dir = "nimpkgs/t/timeit";
 
   
-  inputs."timezones".url = "path:../../../t/timezones";
   inputs."timezones".type = "github";
   inputs."timezones".owner = "riinr";
   inputs."timezones".repo = "flake-nimble";
@@ -823,7 +721,6 @@
   inputs."timezones".dir = "nimpkgs/t/timezones";
 
   
-  inputs."tiny_sqlite".url = "path:../../../t/tiny_sqlite";
   inputs."tiny_sqlite".type = "github";
   inputs."tiny_sqlite".owner = "riinr";
   inputs."tiny_sqlite".repo = "flake-nimble";
@@ -831,7 +728,6 @@
   inputs."tiny_sqlite".dir = "nimpkgs/t/tiny_sqlite";
 
   
-  inputs."unicodedb".url = "path:../../../u/unicodedb";
   inputs."unicodedb".type = "github";
   inputs."unicodedb".owner = "riinr";
   inputs."unicodedb".repo = "flake-nimble";
@@ -839,7 +735,6 @@
   inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
 
   
-  inputs."unicodeplus".url = "path:../../../u/unicodeplus";
   inputs."unicodeplus".type = "github";
   inputs."unicodeplus".owner = "riinr";
   inputs."unicodeplus".repo = "flake-nimble";
@@ -847,7 +742,6 @@
   inputs."unicodeplus".dir = "nimpkgs/u/unicodeplus";
 
   
-  inputs."unpack".url = "path:../../../u/unpack";
   inputs."unpack".type = "github";
   inputs."unpack".owner = "riinr";
   inputs."unpack".repo = "flake-nimble";
@@ -855,7 +749,6 @@
   inputs."unpack".dir = "nimpkgs/u/unpack";
 
   
-  inputs."weave".url = "path:../../../w/weave";
   inputs."weave".type = "github";
   inputs."weave".owner = "riinr";
   inputs."weave".repo = "flake-nimble";
@@ -863,7 +756,6 @@
   inputs."weave".dir = "nimpkgs/w/weave";
 
   
-  inputs."websocket".url = "path:../../../w/websocket";
   inputs."websocket".type = "github";
   inputs."websocket".owner = "riinr";
   inputs."websocket".repo = "flake-nimble";
@@ -871,7 +763,6 @@
   inputs."websocket".dir = "nimpkgs/w/websocket";
 
   
-  inputs."winim".url = "path:../../../w/winim";
   inputs."winim".type = "github";
   inputs."winim".owner = "riinr";
   inputs."winim".repo = "flake-nimble";
@@ -879,7 +770,6 @@
   inputs."winim".dir = "nimpkgs/w/winim";
 
   
-  inputs."yaml".url = "path:../../../y/yaml";
   inputs."yaml".type = "github";
   inputs."yaml".owner = "riinr";
   inputs."yaml".repo = "flake-nimble";
@@ -887,7 +777,6 @@
   inputs."yaml".dir = "nimpkgs/y/yaml";
 
   
-  inputs."zero_functional".url = "path:../../../z/zero_functional";
   inputs."zero_functional".type = "github";
   inputs."zero_functional".owner = "riinr";
   inputs."zero_functional".repo = "flake-nimble";
@@ -895,7 +784,6 @@
   inputs."zero_functional".dir = "nimpkgs/z/zero_functional";
 
   
-  inputs."zippy".url = "path:../../../z/zippy";
   inputs."zippy".type = "github";
   inputs."zippy".owner = "riinr";
   inputs."zippy".repo = "flake-nimble";

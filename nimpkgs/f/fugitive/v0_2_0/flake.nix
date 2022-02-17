@@ -7,7 +7,6 @@
   inputs.src-fugitive-v0_2_0.ref = "refs/tags/v0.2.0";
   
   
-  inputs."colorize".url = "path:../../../c/colorize";
   inputs."colorize".type = "github";
   inputs."colorize".owner = "riinr";
   inputs."colorize".repo = "flake-nimble";

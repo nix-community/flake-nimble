@@ -7,7 +7,6 @@
   inputs.src-bio_seq-v_0_0_7.ref = "refs/tags/v.0.0.7";
   
   
-  inputs."zip".url = "path:../../../z/zip";
   inputs."zip".type = "github";
   inputs."zip".owner = "riinr";
   inputs."zip".repo = "flake-nimble";

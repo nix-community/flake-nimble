@@ -7,7 +7,6 @@
   inputs.src-siwin-v0_3.ref = "refs/tags/v0.3";
   
   
-  inputs."with".url = "path:../../../w/with";
   inputs."with".type = "github";
   inputs."with".owner = "riinr";
   inputs."with".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."with".dir = "nimpkgs/w/with";
 
   
-  inputs."x11".url = "path:../../../x/x11";
   inputs."x11".type = "github";
   inputs."x11".owner = "riinr";
   inputs."x11".repo = "flake-nimble";

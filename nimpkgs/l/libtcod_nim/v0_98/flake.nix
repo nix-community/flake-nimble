@@ -7,7 +7,6 @@
   inputs.src-libtcod_nim-v0_98.ref = "refs/tags/v0.98";
   
   
-  inputs."sdl1".url = "path:../../../s/sdl1";
   inputs."sdl1".type = "github";
   inputs."sdl1".owner = "riinr";
   inputs."sdl1".repo = "flake-nimble";

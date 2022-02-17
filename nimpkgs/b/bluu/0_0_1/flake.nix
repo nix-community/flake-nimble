@@ -7,7 +7,6 @@
   inputs.src-bluu-0_0_1.ref = "refs/tags/0.0.1";
   
   
-  inputs."openapi".url = "path:../../../o/openapi";
   inputs."openapi".type = "github";
   inputs."openapi".owner = "riinr";
   inputs."openapi".repo = "flake-nimble";

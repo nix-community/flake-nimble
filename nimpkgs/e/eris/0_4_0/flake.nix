@@ -7,7 +7,6 @@
   inputs.src-eris-0_4_0.ref = "refs/tags/0.4.0";
   
   
-  inputs."base32".url = "path:../../../b/base32";
   inputs."base32".type = "github";
   inputs."base32".owner = "riinr";
   inputs."base32".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."base32".dir = "nimpkgs/b/base32";
 
   
-  inputs."taps".url = "path:../../../t/taps";
   inputs."taps".type = "github";
   inputs."taps".owner = "riinr";
   inputs."taps".repo = "flake-nimble";
@@ -23,7 +21,6 @@
   inputs."taps".dir = "nimpkgs/t/taps";
 
   
-  inputs."tkrzw".url = "path:../../../t/tkrzw";
   inputs."tkrzw".type = "github";
   inputs."tkrzw".owner = "riinr";
   inputs."tkrzw".repo = "flake-nimble";

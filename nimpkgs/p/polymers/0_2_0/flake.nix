@@ -7,7 +7,6 @@
   inputs.src-Polymers-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."polymorph".url = "path:../../../p/polymorph";
   inputs."polymorph".type = "github";
   inputs."polymorph".owner = "riinr";
   inputs."polymorph".repo = "flake-nimble";

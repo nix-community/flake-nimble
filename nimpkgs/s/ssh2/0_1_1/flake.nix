@@ -7,7 +7,6 @@
   inputs.src-ssh2-0_1_1.ref = "refs/tags/0.1.1";
   
   
-  inputs."libssh2".url = "path:../../../l/libssh2";
   inputs."libssh2".type = "github";
   inputs."libssh2".owner = "riinr";
   inputs."libssh2".repo = "flake-nimble";

@@ -7,7 +7,6 @@
   inputs.src-netty-0_2_0.ref = "refs/tags/0.2.0";
   
   
-  inputs."snappy".url = "path:../../../s/snappy";
   inputs."snappy".type = "github";
   inputs."snappy".owner = "riinr";
   inputs."snappy".repo = "flake-nimble";

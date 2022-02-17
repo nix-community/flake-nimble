@@ -7,7 +7,6 @@
   inputs.src-xiaomi-master.ref = "refs/heads/master";
   
   
-  inputs."multicast".url = "path:../../../m/multicast";
   inputs."multicast".type = "github";
   inputs."multicast".owner = "riinr";
   inputs."multicast".repo = "flake-nimble";
@@ -15,7 +14,6 @@
   inputs."multicast".dir = "nimpkgs/m/multicast";
 
   
-  inputs."nimcrypto".url = "path:../../../n/nimcrypto";
   inputs."nimcrypto".type = "github";
   inputs."nimcrypto".owner = "riinr";
   inputs."nimcrypto".repo = "flake-nimble";

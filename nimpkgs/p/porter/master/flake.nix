@@ -7,7 +7,6 @@
   inputs.src-porter-master.ref = "refs/heads/master";
   
   
-  inputs."mutableseqs".url = "path:../../../m/mutableseqs";
   inputs."mutableseqs".type = "github";
   inputs."mutableseqs".owner = "riinr";
   inputs."mutableseqs".repo = "flake-nimble";

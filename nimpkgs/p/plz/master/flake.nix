@@ -7,7 +7,6 @@
   inputs.src-plz-master.ref = "refs/heads/master";
   
   
-  inputs."requirementstxt".url = "path:../../../r/requirementstxt";
   inputs."requirementstxt".type = "github";
   inputs."requirementstxt".owner = "riinr";
   inputs."requirementstxt".repo = "flake-nimble";
