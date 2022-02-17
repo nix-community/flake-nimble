@@ -1086,6 +1086,7 @@
   "osureplay" = ./osureplay.json;
   "osutil" = ./osutil.json;
   "otp" = ./otp.json;
+  "otplib" = ./otplib.json;
   "overpass" = ./overpass.json;
   "owo" = ./owo.json;
   "owoifynim" = ./owoifynim.json;
