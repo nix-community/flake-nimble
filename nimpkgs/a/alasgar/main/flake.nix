@@ -1,5 +1,10 @@
 {
   description = ''Game Engine'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-alasgar-main.flake = false;
   inputs.src-alasgar-main.type = "github";
   inputs.src-alasgar-main.owner = "abisxir";
@@ -55,12 +60,12 @@
   inputs."https://github.com/yglukhov/darwin".ref = "flake-pinning";
   inputs."https://github.com/yglukhov/darwin".dir = "nimpkgs/h/https://github.com/yglukhov/darwin";
 
-  outputs = { self, nixpkgs, src-alasgar-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-alasgar-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-alasgar-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-alasgar-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-alasgar-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

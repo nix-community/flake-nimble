@@ -1,5 +1,10 @@
 {
   description = ''A tensor (multidimensional array) library for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-arraymancer-master.flake = false;
   inputs.src-arraymancer-master.type = "github";
   inputs.src-arraymancer-master.owner = "mratsim";
@@ -62,12 +67,12 @@
   inputs."untar".ref = "flake-pinning";
   inputs."untar".dir = "nimpkgs/u/untar";
 
-  outputs = { self, nixpkgs, src-arraymancer-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-arraymancer-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-arraymancer-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-arraymancer-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-arraymancer-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

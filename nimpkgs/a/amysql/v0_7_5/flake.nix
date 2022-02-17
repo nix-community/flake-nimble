@@ -1,5 +1,10 @@
 {
   description = ''Async MySQL Connector write in pure Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-amysql-v0_7_5.flake = false;
   inputs.src-amysql-v0_7_5.type = "github";
   inputs.src-amysql-v0_7_5.owner = "bung87";
@@ -41,12 +46,12 @@
   inputs."chronos".ref = "flake-pinning";
   inputs."chronos".dir = "nimpkgs/c/chronos";
 
-  outputs = { self, nixpkgs, src-amysql-v0_7_5, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-amysql-v0_7_5, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-amysql-v0_7_5;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-amysql-v0_7_5"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-amysql-v0_7_5"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

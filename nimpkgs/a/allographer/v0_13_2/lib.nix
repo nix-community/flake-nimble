@@ -1,16 +1,8 @@
 let
   systems = [ "aarch64-linux" "x86_64-linux" ];
   mkProjectOutput = { self, nixpkgs, refs, meta }:
-  let 
-    buildNimPackage = nixpkgs.legacyPackages.x86_64-linux;
-    defaultPackage = refs."${meta.name}-master" or 
-      refs."${meta.name}-main" or 
-      refs."${meta.name}-unstable" or 
-      refs."${meta.name}-develop" or null;
-  in {
-    defaultPackage.x86_64-linux = defaultPackage.defaultPackage.x86_64-linux;
-    packages.x86_64-linux = builtins.mapAttrs (name: value: value.defaultPackage.x86_64-linux) refs;
-    meta = meta;
+  {
+    inherit meta;
   };
   mkRefOutput = { self, nixpkgs, src, deps, meta }:
   let 
@@ -20,7 +12,7 @@ let
       inherit src;
       pname = meta.name;
       meta.description = meta.desc or meta.description or "nim package ${meta.name}";
-      version = meta.version or (builtins.replaceStr ["refs/.+/"] [""] meta.ref);
+      version = meta.version or (builtins.replaceStr ["refs/.+/(vV)*"] [""] meta.ref);
     };
     meta = meta;
   };

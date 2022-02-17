@@ -1,5 +1,10 @@
 {
   description = ''Amazon Web Services (AWS) APIs'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-atoz-2614_0_0.flake = false;
   inputs.src-atoz-2614_0_0.type = "github";
   inputs.src-atoz-2614_0_0.owner = "disruptek";
@@ -34,12 +39,12 @@
   inputs."npeg".ref = "flake-pinning";
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
-  outputs = { self, nixpkgs, src-atoz-2614_0_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-atoz-2614_0_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-atoz-2614_0_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-atoz-2614_0_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-atoz-2614_0_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

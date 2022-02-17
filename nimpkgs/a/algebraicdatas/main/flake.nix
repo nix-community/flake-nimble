@@ -1,5 +1,10 @@
 {
   description = ''This module provides the feature of algebraic data type and its associated method'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-algebraicdatas-main.flake = false;
   inputs.src-algebraicdatas-main.type = "github";
   inputs.src-algebraicdatas-main.owner = "chocobo333";
@@ -27,12 +32,12 @@
   inputs."optionsutils".ref = "flake-pinning";
   inputs."optionsutils".dir = "nimpkgs/o/optionsutils";
 
-  outputs = { self, nixpkgs, src-algebraicdatas-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-algebraicdatas-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-algebraicdatas-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-algebraicdatas-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-algebraicdatas-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Converts ANSI colour codes to HTML span tags with style tags'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ansitohtml-master.flake = false;
   inputs.src-ansitohtml-master.type = "github";
   inputs.src-ansitohtml-master.owner = "PMunch";
@@ -13,12 +18,12 @@
   inputs."ansiparse".ref = "flake-pinning";
   inputs."ansiparse".dir = "nimpkgs/a/ansiparse";
 
-  outputs = { self, nixpkgs, src-ansitohtml-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ansitohtml-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ansitohtml-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ansitohtml-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ansitohtml-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

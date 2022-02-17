@@ -1,5 +1,10 @@
 {
   description = ''ANSI art + MIDI music editor'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ansiwave-0_6_0-macos.flake = false;
   inputs.src-ansiwave-0_6_0-macos.type = "github";
   inputs.src-ansiwave-0_6_0-macos.owner = "ansiwave";
@@ -55,12 +60,12 @@
   inputs."stb_image".ref = "flake-pinning";
   inputs."stb_image".dir = "nimpkgs/s/stb_image";
 
-  outputs = { self, nixpkgs, src-ansiwave-0_6_0-macos, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ansiwave-0_6_0-macos, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ansiwave-0_6_0-macos;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ansiwave-0_6_0-macos"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ansiwave-0_6_0-macos"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

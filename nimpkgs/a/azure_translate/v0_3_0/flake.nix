@@ -1,5 +1,10 @@
 {
   description = ''Nim Library for Azure Cognitive Services Translate'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-azure_translate-v0_3_0.flake = false;
   inputs.src-azure_translate-v0_3_0.type = "github";
   inputs.src-azure_translate-v0_3_0.owner = "williamhatcher";
@@ -13,12 +18,12 @@
   inputs."nuuid".ref = "flake-pinning";
   inputs."nuuid".dir = "nimpkgs/n/nuuid";
 
-  outputs = { self, nixpkgs, src-azure_translate-v0_3_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-azure_translate-v0_3_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-azure_translate-v0_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-azure_translate-v0_3_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-azure_translate-v0_3_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''A Nim IDE.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-aporia-master.flake = false;
   inputs.src-aporia-master.type = "github";
   inputs.src-aporia-master.owner = "nim-lang";
@@ -20,12 +25,12 @@
   inputs."dialogs".ref = "flake-pinning";
   inputs."dialogs".dir = "nimpkgs/d/dialogs";
 
-  outputs = { self, nixpkgs, src-aporia-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-aporia-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-aporia-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-aporia-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-aporia-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

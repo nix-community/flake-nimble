@@ -1,5 +1,10 @@
 {
   description = ''Amazon Simple Storage Service (AWS S3) basic API support.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-awsS3-main.flake = false;
   inputs.src-awsS3-main.type = "github";
   inputs.src-awsS3-main.owner = "ThomasTJdev";
@@ -20,12 +25,12 @@
   inputs."awssts".ref = "flake-pinning";
   inputs."awssts".dir = "nimpkgs/a/awssts";
 
-  outputs = { self, nixpkgs, src-awsS3-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-awsS3-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-awsS3-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-awsS3-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-awsS3-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

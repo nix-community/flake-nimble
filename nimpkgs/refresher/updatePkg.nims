@@ -14,6 +14,8 @@ proc isHead(x: string): bool =
     x.endsWith("/develop")
   )
 
+const GIT_CMD = """git -c credential.helper='' -c credential.helper='!printf quit=1'"""
+
 proc isKey(x: string): auto =
   return proc (refInfo: JsonNode): bool =
     refInfo.hasKey x
@@ -23,7 +25,7 @@ proc getRefs(url: JsonNode): seq[string] =
     removeUnwanted = "|grep -v gh-pages|grep -v '{}'"
     removeHash = "|cut -f 2"
     gitCfg = "-c credential.helper='!printf quit=1'"
-    lsRemote = fmt"git ls-remote --head --tags "
+    lsRemote = fmt"{GIT_CMD} ls-remote --head --tags "
     listTags = fmt"{lsRemote} {url} {removeUnwanted} {removeHash}"
   gorge(listTags).split("\n")
 
@@ -102,37 +104,52 @@ proc fetchInfo(pkg: JsonNode): auto =
       "license": pkg["license"],
     }
 
-iterator projectInputs(refs: JsonNode): string =
+iterator projectInputs(refs: JsonNode; flakeDir: string): string =
   for refInfo in refs.items:
     let 
       gitRef = refInfo.refName
       name = refInfo["name"].getStr
-    yield fmt"""inputs."{name}-{gitRef}".url = "path:./{gitRef}";"""
+    yield fmt"""
+  inputs."{name}-{gitRef}".type = "github";
+  inputs."{name}-{gitRef}".owner = "riinr";
+  inputs."{name}-{gitRef}".repo = "flake-nimble";
+  inputs."{name}-{gitRef}".ref = "flake-pinning";
+  inputs."{name}-{gitRef}".dir = "nimpkgs/{flakeDir}/{gitRef}";
+"""
+
+proc nimPkgsLibInput(): string =
+  """
+  inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";"""
 
 proc projectFlake(pkg: JsonNode): auto =
   let 
     name = pkg["name"].getStr
     nameLo = pkg["name"].getStr.toLower
-    flakeDir = fmt"../{nameLo[0]}/{name}"
+    flakeDir = fmt"{nameLo[0]}/{name}"
     description = pkg["description"].getStr
-    heads = pkg["heads"].projectInputs.toSeq.join "\n  "
-    tags = pkg["tags"].projectInputs.toSeq.join "\n  "
+    heads = pkg["heads"].projectInputs(flakeDir).toSeq.join "\n  "
+    tags = pkg["tags"].projectInputs(flakeDir).toSeq.join "\n  "
     flakeContent = fmt"""{{
   description = ''{description}'';
+  {nimPkgsLibInput()}
   {heads}
   {tags}
-  outputs = {{ self, nixpkgs, ...}}@inputs:
-    let lib = import ./lib.nix;
+  outputs = {{ self, nixpkgs, flakeNimbleLib, ...}}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {{
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     }};
 }}"""
-  mkdir flakeDir
-  writeFile(fmt"{flakeDir}/flake.nix", flakeContent)
-  writeFile(fmt"{flakeDir}/meta.json", $pkg)
-  exec(fmt"cp ../lib.nix {flakeDir}/lib.nix")
+  mkdir fmt"../flakeDir"
+  writeFile(fmt"../{flakeDir}/flake.nix", flakeContent)
+  writeFile(fmt"../{flakeDir}/meta.json", $pkg)
+  exec(fmt"cp ../lib.nix ../{flakeDir}/lib.nix")
 
 proc inputInfo(refInfo: JsonNode, url: string): JsonNode =
   let nimbleUrls = (%* {
@@ -203,13 +220,14 @@ proc refsFlake(pkg: JsonNode): auto =
       itName = fmt"src-{name}-{flakeName}"
       flakeContent = fmt"""{{
   description = ''{description}'';
+  {nimPkgsLibInput()}
 {inputs}
-  outputs = {{ self, nixpkgs, {itName}, ...}}@deps:
-    let lib = import ./lib.nix;
+  outputs = {{ self, nixpkgs, flakeNimbleLib, {itName}, ...}}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {{
       inherit self nixpkgs ;
       src = {itName};
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "{itName}"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "{itName}"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     }};
 }}"""
@@ -218,7 +236,7 @@ proc refsFlake(pkg: JsonNode): auto =
     writeFile(fmt"{flakeDir}/meta.json", $refInfo)
     exec(fmt"cp ../lib.nix {flakeDir}/lib.nix")
 
-let pkg = parseJson readAllFromStdin()
+let pkg = readAllFromStdin().parseJson
 let refs = pkg["url"].getRefs
 pkg["refs"] = %* refs
 pkg["tags"] = %* refs.filter(isTag).map(fetchInfo pkg).filter("name".isKey)

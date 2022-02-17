@@ -1,5 +1,10 @@
 {
   description = ''Prints a dot graph of a nim ast dumped using the `dumpTree` macro.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-astdot-main.flake = false;
   inputs.src-astdot-main.type = "github";
   inputs.src-astdot-main.owner = "Rekihyt";
@@ -27,12 +32,12 @@
   inputs."nimgraphviz".ref = "flake-pinning";
   inputs."nimgraphviz".dir = "nimpkgs/n/nimgraphviz";
 
-  outputs = { self, nixpkgs, src-astdot-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-astdot-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-astdot-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-astdot-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-astdot-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

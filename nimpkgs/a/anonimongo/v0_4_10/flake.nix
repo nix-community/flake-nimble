@@ -1,5 +1,10 @@
 {
   description = ''ANOther pure NIm MONGO driver.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-anonimongo-v0_4_10.flake = false;
   inputs.src-anonimongo-v0_4_10.type = "github";
   inputs.src-anonimongo-v0_4_10.owner = "mashingan";
@@ -34,12 +39,12 @@
   inputs."dnsclient".ref = "flake-pinning";
   inputs."dnsclient".dir = "nimpkgs/d/dnsclient";
 
-  outputs = { self, nixpkgs, src-anonimongo-v0_4_10, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-anonimongo-v0_4_10, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-anonimongo-v0_4_10;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-anonimongo-v0_4_10"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-anonimongo-v0_4_10"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

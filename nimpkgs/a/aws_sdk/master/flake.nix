@@ -1,5 +1,10 @@
 {
   description = ''Library for interacting with Amazon Web Services (AWS)'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-aws_sdk-master.flake = false;
   inputs.src-aws_sdk-master.type = "github";
   inputs.src-aws_sdk-master.owner = "aidansteele";
@@ -20,12 +25,12 @@
   inputs."sph".ref = "flake-pinning";
   inputs."sph".dir = "nimpkgs/s/sph";
 
-  outputs = { self, nixpkgs, src-aws_sdk-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-aws_sdk-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-aws_sdk-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-aws_sdk-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-aws_sdk-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }
