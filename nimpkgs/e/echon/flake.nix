@@ -5,17 +5,17 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."Echon-master".type = "github";
-  inputs."Echon-master".owner = "riinr";
-  inputs."Echon-master".repo = "flake-nimble";
-  inputs."Echon-master".ref = "flake-pinning";
-  inputs."Echon-master".dir = "nimpkgs/e/Echon/master";
+    inputs."echon-master".type = "github";
+  inputs."echon-master".owner = "riinr";
+  inputs."echon-master".repo = "flake-nimble";
+  inputs."echon-master".ref = "flake-pinning";
+  inputs."echon-master".dir = "nimpkgs/e/echon/master";
 
-    inputs."Echon-1_0_0".type = "github";
-  inputs."Echon-1_0_0".owner = "riinr";
-  inputs."Echon-1_0_0".repo = "flake-nimble";
-  inputs."Echon-1_0_0".ref = "flake-pinning";
-  inputs."Echon-1_0_0".dir = "nimpkgs/e/Echon/1_0_0";
+    inputs."echon-1_0_0".type = "github";
+  inputs."echon-1_0_0".owner = "riinr";
+  inputs."echon-1_0_0".repo = "flake-nimble";
+  inputs."echon-1_0_0".ref = "flake-pinning";
+  inputs."echon-1_0_0".dir = "nimpkgs/e/echon/1_0_0";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

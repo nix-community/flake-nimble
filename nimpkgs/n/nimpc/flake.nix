@@ -5,41 +5,41 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."NiMPC-master".type = "github";
-  inputs."NiMPC-master".owner = "riinr";
-  inputs."NiMPC-master".repo = "flake-nimble";
-  inputs."NiMPC-master".ref = "flake-pinning";
-  inputs."NiMPC-master".dir = "nimpkgs/n/NiMPC/master";
+    inputs."nimpc-master".type = "github";
+  inputs."nimpc-master".owner = "riinr";
+  inputs."nimpc-master".repo = "flake-nimble";
+  inputs."nimpc-master".ref = "flake-pinning";
+  inputs."nimpc-master".dir = "nimpkgs/n/nimpc/master";
 
-    inputs."NiMPC-v0_1_0".type = "github";
-  inputs."NiMPC-v0_1_0".owner = "riinr";
-  inputs."NiMPC-v0_1_0".repo = "flake-nimble";
-  inputs."NiMPC-v0_1_0".ref = "flake-pinning";
-  inputs."NiMPC-v0_1_0".dir = "nimpkgs/n/NiMPC/v0_1_0";
+    inputs."nimpc-v0_1_0".type = "github";
+  inputs."nimpc-v0_1_0".owner = "riinr";
+  inputs."nimpc-v0_1_0".repo = "flake-nimble";
+  inputs."nimpc-v0_1_0".ref = "flake-pinning";
+  inputs."nimpc-v0_1_0".dir = "nimpkgs/n/nimpc/v0_1_0";
 
-    inputs."NiMPC-v0_2_0".type = "github";
-  inputs."NiMPC-v0_2_0".owner = "riinr";
-  inputs."NiMPC-v0_2_0".repo = "flake-nimble";
-  inputs."NiMPC-v0_2_0".ref = "flake-pinning";
-  inputs."NiMPC-v0_2_0".dir = "nimpkgs/n/NiMPC/v0_2_0";
+    inputs."nimpc-v0_2_0".type = "github";
+  inputs."nimpc-v0_2_0".owner = "riinr";
+  inputs."nimpc-v0_2_0".repo = "flake-nimble";
+  inputs."nimpc-v0_2_0".ref = "flake-pinning";
+  inputs."nimpc-v0_2_0".dir = "nimpkgs/n/nimpc/v0_2_0";
 
-    inputs."NiMPC-v0_3_0".type = "github";
-  inputs."NiMPC-v0_3_0".owner = "riinr";
-  inputs."NiMPC-v0_3_0".repo = "flake-nimble";
-  inputs."NiMPC-v0_3_0".ref = "flake-pinning";
-  inputs."NiMPC-v0_3_0".dir = "nimpkgs/n/NiMPC/v0_3_0";
+    inputs."nimpc-v0_3_0".type = "github";
+  inputs."nimpc-v0_3_0".owner = "riinr";
+  inputs."nimpc-v0_3_0".repo = "flake-nimble";
+  inputs."nimpc-v0_3_0".ref = "flake-pinning";
+  inputs."nimpc-v0_3_0".dir = "nimpkgs/n/nimpc/v0_3_0";
 
-    inputs."NiMPC-v0_4_0".type = "github";
-  inputs."NiMPC-v0_4_0".owner = "riinr";
-  inputs."NiMPC-v0_4_0".repo = "flake-nimble";
-  inputs."NiMPC-v0_4_0".ref = "flake-pinning";
-  inputs."NiMPC-v0_4_0".dir = "nimpkgs/n/NiMPC/v0_4_0";
+    inputs."nimpc-v0_4_0".type = "github";
+  inputs."nimpc-v0_4_0".owner = "riinr";
+  inputs."nimpc-v0_4_0".repo = "flake-nimble";
+  inputs."nimpc-v0_4_0".ref = "flake-pinning";
+  inputs."nimpc-v0_4_0".dir = "nimpkgs/n/nimpc/v0_4_0";
 
-    inputs."NiMPC-v0_4_1".type = "github";
-  inputs."NiMPC-v0_4_1".owner = "riinr";
-  inputs."NiMPC-v0_4_1".repo = "flake-nimble";
-  inputs."NiMPC-v0_4_1".ref = "flake-pinning";
-  inputs."NiMPC-v0_4_1".dir = "nimpkgs/n/NiMPC/v0_4_1";
+    inputs."nimpc-v0_4_1".type = "github";
+  inputs."nimpc-v0_4_1".owner = "riinr";
+  inputs."nimpc-v0_4_1".repo = "flake-nimble";
+  inputs."nimpc-v0_4_1".ref = "flake-pinning";
+  inputs."nimpc-v0_4_1".dir = "nimpkgs/n/nimpc/v0_4_1";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

@@ -9,7 +9,7 @@
   inputs."nimscripter-master".owner = "riinr";
   inputs."nimscripter-master".repo = "flake-nimble";
   inputs."nimscripter-master".ref = "flake-pinning";
-  inputs."nimscripter-master".dir = "nimpkgs/n/Nimscripter/master";
+  inputs."nimscripter-master".dir = "nimpkgs/n/nimscripter/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

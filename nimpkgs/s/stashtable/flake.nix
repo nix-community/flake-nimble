@@ -9,31 +9,31 @@
   inputs."stashtable-master".owner = "riinr";
   inputs."stashtable-master".repo = "flake-nimble";
   inputs."stashtable-master".ref = "flake-pinning";
-  inputs."stashtable-master".dir = "nimpkgs/s/StashTable/master";
+  inputs."stashtable-master".dir = "nimpkgs/s/stashtable/master";
 
     inputs."stashtable-1_0_0".type = "github";
   inputs."stashtable-1_0_0".owner = "riinr";
   inputs."stashtable-1_0_0".repo = "flake-nimble";
   inputs."stashtable-1_0_0".ref = "flake-pinning";
-  inputs."stashtable-1_0_0".dir = "nimpkgs/s/StashTable/1_0_0";
+  inputs."stashtable-1_0_0".dir = "nimpkgs/s/stashtable/1_0_0";
 
     inputs."stashtable-1_1_0".type = "github";
   inputs."stashtable-1_1_0".owner = "riinr";
   inputs."stashtable-1_1_0".repo = "flake-nimble";
   inputs."stashtable-1_1_0".ref = "flake-pinning";
-  inputs."stashtable-1_1_0".dir = "nimpkgs/s/StashTable/1_1_0";
+  inputs."stashtable-1_1_0".dir = "nimpkgs/s/stashtable/1_1_0";
 
     inputs."stashtable-1_2_0".type = "github";
   inputs."stashtable-1_2_0".owner = "riinr";
   inputs."stashtable-1_2_0".repo = "flake-nimble";
   inputs."stashtable-1_2_0".ref = "flake-pinning";
-  inputs."stashtable-1_2_0".dir = "nimpkgs/s/StashTable/1_2_0";
+  inputs."stashtable-1_2_0".dir = "nimpkgs/s/stashtable/1_2_0";
 
     inputs."stashtable-1_2_1".type = "github";
   inputs."stashtable-1_2_1".owner = "riinr";
   inputs."stashtable-1_2_1".repo = "flake-nimble";
   inputs."stashtable-1_2_1".ref = "flake-pinning";
-  inputs."stashtable-1_2_1".dir = "nimpkgs/s/StashTable/1_2_1";
+  inputs."stashtable-1_2_1".dir = "nimpkgs/s/stashtable/1_2_1";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

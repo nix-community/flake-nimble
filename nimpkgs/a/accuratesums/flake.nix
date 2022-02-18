@@ -9,7 +9,7 @@
   inputs."AccurateSums-master".owner = "riinr";
   inputs."AccurateSums-master".repo = "flake-nimble";
   inputs."AccurateSums-master".ref = "flake-pinning";
-  inputs."AccurateSums-master".dir = "nimpkgs/a/AccurateSums/master";
+  inputs."AccurateSums-master".dir = "nimpkgs/a/accuratesums/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

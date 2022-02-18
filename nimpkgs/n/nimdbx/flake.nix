@@ -9,7 +9,7 @@
   inputs."nimdbx-main".owner = "riinr";
   inputs."nimdbx-main".repo = "flake-nimble";
   inputs."nimdbx-main".ref = "flake-pinning";
-  inputs."nimdbx-main".dir = "nimpkgs/n/NimDBX/main";
+  inputs."nimdbx-main".dir = "nimpkgs/n/nimdbx/main";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

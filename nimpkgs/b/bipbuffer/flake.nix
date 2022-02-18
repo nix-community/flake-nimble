@@ -9,7 +9,7 @@
   inputs."bipbuffer-master".owner = "riinr";
   inputs."bipbuffer-master".repo = "flake-nimble";
   inputs."bipbuffer-master".ref = "flake-pinning";
-  inputs."bipbuffer-master".dir = "nimpkgs/b/BipBuffer/master";
+  inputs."bipbuffer-master".dir = "nimpkgs/b/bipbuffer/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

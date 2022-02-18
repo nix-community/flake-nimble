@@ -5,17 +5,17 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."AntTweakBar-master".type = "github";
-  inputs."AntTweakBar-master".owner = "riinr";
-  inputs."AntTweakBar-master".repo = "flake-nimble";
-  inputs."AntTweakBar-master".ref = "flake-pinning";
-  inputs."AntTweakBar-master".dir = "nimpkgs/a/AntTweakBar/master";
+    inputs."anttweakbar-master".type = "github";
+  inputs."anttweakbar-master".owner = "riinr";
+  inputs."anttweakbar-master".repo = "flake-nimble";
+  inputs."anttweakbar-master".ref = "flake-pinning";
+  inputs."anttweakbar-master".dir = "nimpkgs/a/anttweakbar/master";
 
-    inputs."AntTweakBar-v1_0_2".type = "github";
-  inputs."AntTweakBar-v1_0_2".owner = "riinr";
-  inputs."AntTweakBar-v1_0_2".repo = "flake-nimble";
-  inputs."AntTweakBar-v1_0_2".ref = "flake-pinning";
-  inputs."AntTweakBar-v1_0_2".dir = "nimpkgs/a/AntTweakBar/v1_0_2";
+    inputs."anttweakbar-v1_0_2".type = "github";
+  inputs."anttweakbar-v1_0_2".owner = "riinr";
+  inputs."anttweakbar-v1_0_2".repo = "flake-nimble";
+  inputs."anttweakbar-v1_0_2".ref = "flake-pinning";
+  inputs."anttweakbar-v1_0_2".dir = "nimpkgs/a/anttweakbar/v1_0_2";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

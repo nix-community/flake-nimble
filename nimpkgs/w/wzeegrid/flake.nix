@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."wZeeGrid-master".type = "github";
-  inputs."wZeeGrid-master".owner = "riinr";
-  inputs."wZeeGrid-master".repo = "flake-nimble";
-  inputs."wZeeGrid-master".ref = "flake-pinning";
-  inputs."wZeeGrid-master".dir = "nimpkgs/w/wZeeGrid/master";
+    inputs."wzeegrid-master".type = "github";
+  inputs."wzeegrid-master".owner = "riinr";
+  inputs."wzeegrid-master".repo = "flake-nimble";
+  inputs."wzeegrid-master".ref = "flake-pinning";
+  inputs."wzeegrid-master".dir = "nimpkgs/w/wzeegrid/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

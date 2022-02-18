@@ -108,7 +108,7 @@ iterator projectInputs(refs: JsonNode; flakeDir: string): string =
   for refInfo in refs.items:
     let 
       gitRef = refInfo.refName
-      name = refInfo["name"].getStr
+      name = refInfo["name"].getStr.toLower
     yield fmt"""
   inputs."{name}-{gitRef}".type = "github";
   inputs."{name}-{gitRef}".owner = "riinr";

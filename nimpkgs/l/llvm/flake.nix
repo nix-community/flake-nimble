@@ -9,7 +9,7 @@
   inputs."llvm-master".owner = "riinr";
   inputs."llvm-master".repo = "flake-nimble";
   inputs."llvm-master".ref = "flake-pinning";
-  inputs."llvm-master".dir = "nimpkgs/l/LLVM/master";
+  inputs."llvm-master".dir = "nimpkgs/l/llvm/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

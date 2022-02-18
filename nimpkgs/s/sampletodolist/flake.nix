@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."sampleTodoList-master".type = "github";
-  inputs."sampleTodoList-master".owner = "riinr";
-  inputs."sampleTodoList-master".repo = "flake-nimble";
-  inputs."sampleTodoList-master".ref = "flake-pinning";
-  inputs."sampleTodoList-master".dir = "nimpkgs/s/sampleTodoList/master";
+    inputs."sampletodolist-master".type = "github";
+  inputs."sampletodolist-master".owner = "riinr";
+  inputs."sampletodolist-master".repo = "flake-nimble";
+  inputs."sampletodolist-master".ref = "flake-pinning";
+  inputs."sampletodolist-master".dir = "nimpkgs/s/sampletodolist/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."SMBExec-master".type = "github";
-  inputs."SMBExec-master".owner = "riinr";
-  inputs."SMBExec-master".repo = "flake-nimble";
-  inputs."SMBExec-master".ref = "flake-pinning";
-  inputs."SMBExec-master".dir = "nimpkgs/s/SMBExec/master";
+    inputs."smbexec-master".type = "github";
+  inputs."smbexec-master".owner = "riinr";
+  inputs."smbexec-master".repo = "flake-nimble";
+  inputs."smbexec-master".ref = "flake-pinning";
+  inputs."smbexec-master".dir = "nimpkgs/s/smbexec/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

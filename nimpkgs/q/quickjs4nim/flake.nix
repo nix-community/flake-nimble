@@ -9,7 +9,7 @@
   inputs."quickjs4nim-master".owner = "riinr";
   inputs."quickjs4nim-master".repo = "flake-nimble";
   inputs."quickjs4nim-master".ref = "flake-pinning";
-  inputs."quickjs4nim-master".dir = "nimpkgs/q/QuickJS4nim/master";
+  inputs."quickjs4nim-master".dir = "nimpkgs/q/quickjs4nim/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

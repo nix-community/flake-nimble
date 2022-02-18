@@ -5,17 +5,17 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."nimLUA-master".type = "github";
-  inputs."nimLUA-master".owner = "riinr";
-  inputs."nimLUA-master".repo = "flake-nimble";
-  inputs."nimLUA-master".ref = "flake-pinning";
-  inputs."nimLUA-master".dir = "nimpkgs/n/nimLUA/master";
+    inputs."nimlua-master".type = "github";
+  inputs."nimlua-master".owner = "riinr";
+  inputs."nimlua-master".repo = "flake-nimble";
+  inputs."nimlua-master".ref = "flake-pinning";
+  inputs."nimlua-master".dir = "nimpkgs/n/nimlua/master";
 
-    inputs."nimLUA-v0_3_8".type = "github";
-  inputs."nimLUA-v0_3_8".owner = "riinr";
-  inputs."nimLUA-v0_3_8".repo = "flake-nimble";
-  inputs."nimLUA-v0_3_8".ref = "flake-pinning";
-  inputs."nimLUA-v0_3_8".dir = "nimpkgs/n/nimLUA/v0_3_8";
+    inputs."nimlua-v0_3_8".type = "github";
+  inputs."nimlua-v0_3_8".owner = "riinr";
+  inputs."nimlua-v0_3_8".repo = "flake-nimble";
+  inputs."nimlua-v0_3_8".ref = "flake-pinning";
+  inputs."nimlua-v0_3_8".dir = "nimpkgs/n/nimlua/v0_3_8";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

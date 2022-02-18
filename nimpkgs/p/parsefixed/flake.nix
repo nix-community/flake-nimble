@@ -9,13 +9,13 @@
   inputs."parsefixed-master".owner = "riinr";
   inputs."parsefixed-master".repo = "flake-nimble";
   inputs."parsefixed-master".ref = "flake-pinning";
-  inputs."parsefixed-master".dir = "nimpkgs/p/parseFixed/master";
+  inputs."parsefixed-master".dir = "nimpkgs/p/parsefixed/master";
 
     inputs."parsefixed-0_1_2".type = "github";
   inputs."parsefixed-0_1_2".owner = "riinr";
   inputs."parsefixed-0_1_2".repo = "flake-nimble";
   inputs."parsefixed-0_1_2".ref = "flake-pinning";
-  inputs."parsefixed-0_1_2".dir = "nimpkgs/p/parseFixed/0_1_2";
+  inputs."parsefixed-0_1_2".dir = "nimpkgs/p/parsefixed/0_1_2";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."boneIO-master".type = "github";
-  inputs."boneIO-master".owner = "riinr";
-  inputs."boneIO-master".repo = "flake-nimble";
-  inputs."boneIO-master".ref = "flake-pinning";
-  inputs."boneIO-master".dir = "nimpkgs/b/boneIO/master";
+    inputs."boneio-master".type = "github";
+  inputs."boneio-master".owner = "riinr";
+  inputs."boneio-master".repo = "flake-nimble";
+  inputs."boneio-master".ref = "flake-pinning";
+  inputs."boneio-master".dir = "nimpkgs/b/boneio/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."nimPDF-master".type = "github";
-  inputs."nimPDF-master".owner = "riinr";
-  inputs."nimPDF-master".repo = "flake-nimble";
-  inputs."nimPDF-master".ref = "flake-pinning";
-  inputs."nimPDF-master".dir = "nimpkgs/n/nimPDF/master";
+    inputs."nimpdf-master".type = "github";
+  inputs."nimpdf-master".owner = "riinr";
+  inputs."nimpdf-master".repo = "flake-nimble";
+  inputs."nimpdf-master".ref = "flake-pinning";
+  inputs."nimpdf-master".dir = "nimpkgs/n/nimpdf/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

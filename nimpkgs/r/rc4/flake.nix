@@ -9,7 +9,7 @@
   inputs."RC4-master".owner = "riinr";
   inputs."RC4-master".repo = "flake-nimble";
   inputs."RC4-master".ref = "flake-pinning";
-  inputs."RC4-master".dir = "nimpkgs/r/RC4/master";
+  inputs."RC4-master".dir = "nimpkgs/r/rc4/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -9,7 +9,7 @@
   inputs."Remotery-master".owner = "riinr";
   inputs."Remotery-master".repo = "flake-nimble";
   inputs."Remotery-master".ref = "flake-pinning";
-  inputs."Remotery-master".dir = "nimpkgs/r/Remotery/master";
+  inputs."Remotery-master".dir = "nimpkgs/r/remotery/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

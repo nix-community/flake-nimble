@@ -5,23 +5,23 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."Blackvas-master".type = "github";
-  inputs."Blackvas-master".owner = "riinr";
-  inputs."Blackvas-master".repo = "flake-nimble";
-  inputs."Blackvas-master".ref = "flake-pinning";
-  inputs."Blackvas-master".dir = "nimpkgs/b/Blackvas/master";
+    inputs."blackvas-master".type = "github";
+  inputs."blackvas-master".owner = "riinr";
+  inputs."blackvas-master".repo = "flake-nimble";
+  inputs."blackvas-master".ref = "flake-pinning";
+  inputs."blackvas-master".dir = "nimpkgs/b/blackvas/master";
 
-    inputs."Blackvas-0_1_0".type = "github";
-  inputs."Blackvas-0_1_0".owner = "riinr";
-  inputs."Blackvas-0_1_0".repo = "flake-nimble";
-  inputs."Blackvas-0_1_0".ref = "flake-pinning";
-  inputs."Blackvas-0_1_0".dir = "nimpkgs/b/Blackvas/0_1_0";
+    inputs."blackvas-0_1_0".type = "github";
+  inputs."blackvas-0_1_0".owner = "riinr";
+  inputs."blackvas-0_1_0".repo = "flake-nimble";
+  inputs."blackvas-0_1_0".ref = "flake-pinning";
+  inputs."blackvas-0_1_0".dir = "nimpkgs/b/blackvas/0_1_0";
 
-    inputs."Blackvas-0_2_0".type = "github";
-  inputs."Blackvas-0_2_0".owner = "riinr";
-  inputs."Blackvas-0_2_0".repo = "flake-nimble";
-  inputs."Blackvas-0_2_0".ref = "flake-pinning";
-  inputs."Blackvas-0_2_0".dir = "nimpkgs/b/Blackvas/0_2_0";
+    inputs."blackvas-0_2_0".type = "github";
+  inputs."blackvas-0_2_0".owner = "riinr";
+  inputs."blackvas-0_2_0".repo = "flake-nimble";
+  inputs."blackvas-0_2_0".ref = "flake-pinning";
+  inputs."blackvas-0_2_0".dir = "nimpkgs/b/blackvas/0_2_0";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

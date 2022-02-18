@@ -9,7 +9,7 @@
   inputs."fastkiss-master".owner = "riinr";
   inputs."fastkiss-master".repo = "flake-nimble";
   inputs."fastkiss-master".ref = "flake-pinning";
-  inputs."fastkiss-master".dir = "nimpkgs/f/FastKiss/master";
+  inputs."fastkiss-master".dir = "nimpkgs/f/fastkiss/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

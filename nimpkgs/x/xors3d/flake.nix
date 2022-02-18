@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."Xors3D-master".type = "github";
-  inputs."Xors3D-master".owner = "riinr";
-  inputs."Xors3D-master".repo = "flake-nimble";
-  inputs."Xors3D-master".ref = "flake-pinning";
-  inputs."Xors3D-master".dir = "nimpkgs/x/Xors3D/master";
+    inputs."xors3d-master".type = "github";
+  inputs."xors3d-master".owner = "riinr";
+  inputs."xors3d-master".repo = "flake-nimble";
+  inputs."xors3d-master".ref = "flake-pinning";
+  inputs."xors3d-master".dir = "nimpkgs/x/xors3d/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

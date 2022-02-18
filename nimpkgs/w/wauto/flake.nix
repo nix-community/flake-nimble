@@ -9,7 +9,7 @@
   inputs."wauto-master".owner = "riinr";
   inputs."wauto-master".repo = "flake-nimble";
   inputs."wauto-master".ref = "flake-pinning";
-  inputs."wauto-master".dir = "nimpkgs/w/wAuto/master";
+  inputs."wauto-master".dir = "nimpkgs/w/wauto/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

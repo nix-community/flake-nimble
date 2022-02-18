@@ -5,23 +5,23 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."nimfastText-master".type = "github";
-  inputs."nimfastText-master".owner = "riinr";
-  inputs."nimfastText-master".repo = "flake-nimble";
-  inputs."nimfastText-master".ref = "flake-pinning";
-  inputs."nimfastText-master".dir = "nimpkgs/n/nimfastText/master";
+    inputs."nimfasttext-master".type = "github";
+  inputs."nimfasttext-master".owner = "riinr";
+  inputs."nimfasttext-master".repo = "flake-nimble";
+  inputs."nimfasttext-master".ref = "flake-pinning";
+  inputs."nimfasttext-master".dir = "nimpkgs/n/nimfasttext/master";
 
-    inputs."nimfastText-v0_1_0".type = "github";
-  inputs."nimfastText-v0_1_0".owner = "riinr";
-  inputs."nimfastText-v0_1_0".repo = "flake-nimble";
-  inputs."nimfastText-v0_1_0".ref = "flake-pinning";
-  inputs."nimfastText-v0_1_0".dir = "nimpkgs/n/nimfastText/v0_1_0";
+    inputs."nimfasttext-v0_1_0".type = "github";
+  inputs."nimfasttext-v0_1_0".owner = "riinr";
+  inputs."nimfasttext-v0_1_0".repo = "flake-nimble";
+  inputs."nimfasttext-v0_1_0".ref = "flake-pinning";
+  inputs."nimfasttext-v0_1_0".dir = "nimpkgs/n/nimfasttext/v0_1_0";
 
-    inputs."nimfastText-v0_1_2".type = "github";
-  inputs."nimfastText-v0_1_2".owner = "riinr";
-  inputs."nimfastText-v0_1_2".repo = "flake-nimble";
-  inputs."nimfastText-v0_1_2".ref = "flake-pinning";
-  inputs."nimfastText-v0_1_2".dir = "nimpkgs/n/nimfastText/v0_1_2";
+    inputs."nimfasttext-v0_1_2".type = "github";
+  inputs."nimfasttext-v0_1_2".owner = "riinr";
+  inputs."nimfasttext-v0_1_2".repo = "flake-nimble";
+  inputs."nimfasttext-v0_1_2".ref = "flake-pinning";
+  inputs."nimfasttext-v0_1_2".dir = "nimpkgs/n/nimfasttext/v0_1_2";
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

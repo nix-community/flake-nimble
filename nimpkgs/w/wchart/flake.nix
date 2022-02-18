@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."wChart-master".type = "github";
-  inputs."wChart-master".owner = "riinr";
-  inputs."wChart-master".repo = "flake-nimble";
-  inputs."wChart-master".ref = "flake-pinning";
-  inputs."wChart-master".dir = "nimpkgs/w/wChart/master";
+    inputs."wchart-master".type = "github";
+  inputs."wchart-master".owner = "riinr";
+  inputs."wchart-master".repo = "flake-nimble";
+  inputs."wchart-master".ref = "flake-pinning";
+  inputs."wchart-master".dir = "nimpkgs/w/wchart/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

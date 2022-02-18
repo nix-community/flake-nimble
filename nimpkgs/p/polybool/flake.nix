@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."polyBool-master".type = "github";
-  inputs."polyBool-master".owner = "riinr";
-  inputs."polyBool-master".repo = "flake-nimble";
-  inputs."polyBool-master".ref = "flake-pinning";
-  inputs."polyBool-master".dir = "nimpkgs/p/polyBool/master";
+    inputs."polybool-master".type = "github";
+  inputs."polybool-master".owner = "riinr";
+  inputs."polybool-master".repo = "flake-nimble";
+  inputs."polybool-master".ref = "flake-pinning";
+  inputs."polybool-master".dir = "nimpkgs/p/polybool/master";
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
