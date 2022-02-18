@@ -1,0 +1,632 @@
+{
+  "nodes": {
+    "devshell": {
+      "locked": {
+        "lastModified": 1637575296,
+        "narHash": "sha256-ZY8YR5u8aglZPe27+AJMnPTG6645WuavB+w0xmhTarw=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "0e56ef21ba1a717169953122c7415fa6a8cd2618",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
+    "dsf": {
+      "inputs": {
+        "devshell": "devshell",
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "nmd": "nmd"
+      },
+      "locked": {
+        "lastModified": 1638814194,
+        "narHash": "sha256-bu50va1cwXK3vIV+gfvZ+HyCaNjguMnyW6YO3JwwamA=",
+        "owner": "cruel-intentions",
+        "repo": "devshell-files",
+        "rev": "69645ba41f4e1c3ec05be222fcd8bddc6e61e129",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cruel-intentions",
+        "repo": "devshell-files",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1638122382,
+        "narHash": "sha256-sQzZzAbvKEqN9s0bzWuYmRaA03v40gaJ4+iL1LXjaeI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "74f7e4319258e287b0f9cb95426c9853b282730b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "dsf": "dsf",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1645140452,
+        "narHash": "sha256-JauW9TS/qvOCn3g0+lm2r5+UBOImHEVkQSqMFEBr6b0=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "f0f4ed74f9cfe3c9adaf41cac59955e4487a0219",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mongrel2-master": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3",
+        "src-mongrel2-master": "src-mongrel2-master",
+        "tnetstring": "tnetstring",
+        "zmq": "zmq"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mongrel2/master",
+        "lastModified": 1645140452,
+        "narHash": "sha256-JauW9TS/qvOCn3g0+lm2r5+UBOImHEVkQSqMFEBr6b0=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "f0f4ed74f9cfe3c9adaf41cac59955e4487a0219",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mongrel2/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1638323471,
+        "narHash": "sha256-+yzUWBODQTVa2RffUnih8FFu93eUJOO67V0jUDH5MiA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c30bbcfae7a5cbe44ba4311e51d3ce24b5c84e1b",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_10": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_11": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_12": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_13": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_14": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_6": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_7": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_8": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_9": {
+      "locked": {
+        "lastModified": 1641839853,
+        "narHash": "sha256-PS5kQCEDhEYZdBxKibluhXaVOrSvssNvwjxkztSkzBE=",
+        "path": "/nix/store/p2ljzylmh4m71akfxcfhng9acdsz0xki-source",
+        "rev": "f0c39f6d838343edb0b1f8e1be9dd6dffe1b21b2",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nmd": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637239786,
+        "narHash": "sha256-l2KsnY537mz0blZdqALZKrWXn9PD39CpvotgPnxyIP4=",
+        "owner": "rycee",
+        "repo": "nmd",
+        "rev": "527245ff605bde88c2dd2ddae21c6479bb7cf8aa",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "rycee",
+        "repo": "nmd",
+        "type": "gitlab"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mongrel2-master": "mongrel2-master",
+        "nixpkgs": "nixpkgs_14"
+      }
+    },
+    "src-mongrel2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635368236,
+        "narHash": "sha256-zMzHms2LH39SgucQJmOj/oxoWad80lzgb/umJtsV1vU=",
+        "owner": "mahlonsmith",
+        "repo": "nim-mongrel2",
+        "rev": "8ffc30acceb67888d5724a633239a192dba1c034",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mahlonsmith",
+        "ref": "refs/heads/master",
+        "repo": "nim-mongrel2",
+        "type": "github"
+      }
+    },
+    "src-tnetstring-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635354591,
+        "narHash": "sha256-4W2XNQ4EtT54NKUDpFxvYGRlLuuHshplilEjcS+bUy8=",
+        "owner": "mahlonsmith",
+        "repo": "nim-tnetstring",
+        "rev": "1ef54e538df3103e8bb4ed61264a8aac2c66e42a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mahlonsmith",
+        "ref": "refs/heads/master",
+        "repo": "nim-tnetstring",
+        "type": "github"
+      }
+    },
+    "src-tnetstring-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635354591,
+        "narHash": "sha256-4W2XNQ4EtT54NKUDpFxvYGRlLuuHshplilEjcS+bUy8=",
+        "owner": "mahlonsmith",
+        "repo": "nim-tnetstring",
+        "rev": "1ef54e538df3103e8bb4ed61264a8aac2c66e42a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mahlonsmith",
+        "ref": "refs/heads/master",
+        "repo": "nim-tnetstring",
+        "type": "github"
+      }
+    },
+    "src-zmq-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541343194,
+        "narHash": "sha256-Dyy1YtPdz6Edcuri7pljR6qIaaDjAaTkuCV/XVnvzsc=",
+        "owner": "nim-lang",
+        "repo": "nim-zmq",
+        "rev": "a14129c36e579aa9d4434054625c2258748f4c60",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "nim-zmq",
+        "type": "github"
+      }
+    },
+    "src-zmq-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588100230,
+        "narHash": "sha256-RQPs87IsM1WKuVnLvAgHoJS5mjlBiOlFkzKffLjt5+M=",
+        "owner": "nim-lang",
+        "repo": "nim-zmq",
+        "rev": "261fa7043acdd3bed142e0c586609d9a198b33d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "nim-zmq",
+        "type": "github"
+      }
+    },
+    "src-zmq-v0_3_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601575201,
+        "narHash": "sha256-abN8VWSt4TpSuzmi505XhvU5d0kpWXpCKOHMsrd4PHU=",
+        "owner": "nim-lang",
+        "repo": "nim-zmq",
+        "rev": "f650fce6d25503a7bf45319573751120456c0847",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v0.3.4",
+        "repo": "nim-zmq",
+        "type": "github"
+      }
+    },
+    "src-zmq-v1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1616524036,
+        "narHash": "sha256-86+P/NW0pZVv/03+m7kMGB0fyPE2Co+WfR0ex6aFckQ=",
+        "owner": "nim-lang",
+        "repo": "nim-zmq",
+        "rev": "5daedf04f2a25c12c847ae0db1ce01afe4bc6c32",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.0.1",
+        "repo": "nim-zmq",
+        "type": "github"
+      }
+    },
+    "src-zmq-v1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628675943,
+        "narHash": "sha256-kBrMFW835pVP2K1qVkmBHde6INe+djqjRZHN+Zh3CXw=",
+        "owner": "nim-lang",
+        "repo": "nim-zmq",
+        "rev": "fd98938cba827e3e199f4e6b687e0d634d1d57db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "nim-zmq",
+        "type": "github"
+      }
+    },
+    "src-zmq-v1_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629491723,
+        "narHash": "sha256-oV5kN9kMYCGao6iMblm/fZng4FQr6MnVEzxvEJN6Ds8=",
+        "owner": "nim-lang",
+        "repo": "nim-zmq",
+        "rev": "d9c13f7a598915ccaaba23d719afbcfcc5ec7ab7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.2.1",
+        "repo": "nim-zmq",
+        "type": "github"
+      }
+    },
+    "tnetstring": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4",
+        "tnetstring-master": "tnetstring-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/tnetstring",
+        "lastModified": 1645140452,
+        "narHash": "sha256-JauW9TS/qvOCn3g0+lm2r5+UBOImHEVkQSqMFEBr6b0=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "f0f4ed74f9cfe3c9adaf41cac59955e4487a0219",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/tnetstring",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "tnetstring-master": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5",
+        "src-tnetstring-master": "src-tnetstring-master"
+      },
+      "locked": {
+        "narHash": "sha256-gQ5x35u1HVUFFgIaOMILIoA4GNaBnxK0K5op8o4V2GE=",
+        "path": "./master",
+        "type": "path"
+      },
+      "original": {
+        "path": "./master",
+        "type": "path"
+      }
+    },
+    "zmq": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_6",
+        "zmq-master": "zmq-master",
+        "zmq-v0_2_2": "zmq-v0_2_2",
+        "zmq-v0_3_1": "zmq-v0_3_1",
+        "zmq-v0_3_4": "zmq-v0_3_4",
+        "zmq-v1_0_1": "zmq-v1_0_1",
+        "zmq-v1_2_0": "zmq-v1_2_0",
+        "zmq-v1_2_1": "zmq-v1_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/z/zmq",
+        "lastModified": 1645140452,
+        "narHash": "sha256-JauW9TS/qvOCn3g0+lm2r5+UBOImHEVkQSqMFEBr6b0=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "f0f4ed74f9cfe3c9adaf41cac59955e4487a0219",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/z/zmq",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "zmq-master": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_7",
+        "src-tnetstring-master": "src-tnetstring-master_2"
+      },
+      "locked": {
+        "narHash": "sha256-gQ5x35u1HVUFFgIaOMILIoA4GNaBnxK0K5op8o4V2GE=",
+        "path": "./master",
+        "type": "path"
+      },
+      "original": {
+        "path": "./master",
+        "type": "path"
+      }
+    },
+    "zmq-v0_2_2": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_8",
+        "src-zmq-v0_2_2": "src-zmq-v0_2_2"
+      },
+      "locked": {
+        "narHash": "sha256-AmMpad4PPmVtFOmeMg4aypVvZTiXbIPz3tSrKQgyzqg=",
+        "path": "./v0_2_2",
+        "type": "path"
+      },
+      "original": {
+        "path": "./v0_2_2",
+        "type": "path"
+      }
+    },
+    "zmq-v0_3_1": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_9",
+        "src-zmq-v0_3_1": "src-zmq-v0_3_1"
+      },
+      "locked": {
+        "narHash": "sha256-A3gVRelAy9yagetqV1Ju7gBdtg8wPDexqtfsc0kigY8=",
+        "path": "./v0_3_1",
+        "type": "path"
+      },
+      "original": {
+        "path": "./v0_3_1",
+        "type": "path"
+      }
+    },
+    "zmq-v0_3_4": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_10",
+        "src-zmq-v0_3_4": "src-zmq-v0_3_4"
+      },
+      "locked": {
+        "narHash": "sha256-vX01jDyRiF4FFvjjUwf2nCbdbJydDYyuTFUjESbYx5Y=",
+        "path": "./v0_3_4",
+        "type": "path"
+      },
+      "original": {
+        "path": "./v0_3_4",
+        "type": "path"
+      }
+    },
+    "zmq-v1_0_1": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_11",
+        "src-zmq-v1_0_1": "src-zmq-v1_0_1"
+      },
+      "locked": {
+        "narHash": "sha256-nJ+wSreon8e9MPUGc8KUXqcEvYaHl72gl6XMH9qJ6Yw=",
+        "path": "./v1_0_1",
+        "type": "path"
+      },
+      "original": {
+        "path": "./v1_0_1",
+        "type": "path"
+      }
+    },
+    "zmq-v1_2_0": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_12",
+        "src-zmq-v1_2_0": "src-zmq-v1_2_0"
+      },
+      "locked": {
+        "narHash": "sha256-j8AGIjNUMin39RYpYBZxcMNtgeqiV33jL9Imu+sSJ5s=",
+        "path": "./v1_2_0",
+        "type": "path"
+      },
+      "original": {
+        "path": "./v1_2_0",
+        "type": "path"
+      }
+    },
+    "zmq-v1_2_1": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_13",
+        "src-zmq-v1_2_1": "src-zmq-v1_2_1"
+      },
+      "locked": {
+        "narHash": "sha256-OMlRoy0qLCjjL9JfMV6tO2G5omDN/vzoGskaeHguRW0=",
+        "path": "./v1_2_1",
+        "type": "path"
+      },
+      "original": {
+        "path": "./v1_2_1",
+        "type": "path"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

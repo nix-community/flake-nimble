@@ -79,7 +79,7 @@ proc fetchInfo(pkg: JsonNode): auto =
       urls =  pkg.staticUrl gitRef
       tmpDir = fmt"/tmp/nimpkgs/{nameLo}/{gitRef}"
       flakeName = refName(%*{ "ref": gitRef })
-      flakeDir = fmt"../{nameLo[0]}/{name}/{flakeName}"
+      flakeDir = fmt"../{nameLo[0]}/{nameLo}/{flakeName}"
     if fileExists(fmt"{flakeDir}/meta.json"):
       echo(fmt"Cache {flakeDir}/meta.json")
       return readFile(fmt"{flakeDir}/meta.json").parseJson
@@ -129,7 +129,7 @@ proc projectFlake(pkg: JsonNode): auto =
   let 
     name = pkg["name"].getStr
     nameLo = pkg["name"].getStr.toLower
-    flakeDir = fmt"{nameLo[0]}/{name}"
+    flakeDir = fmt"{nameLo[0]}/{nameLo}"
     description = pkg["description"].getStr
     heads = pkg["heads"].projectInputs(flakeDir).toSeq.join "\n  "
     tags = pkg["tags"].projectInputs(flakeDir).toSeq.join "\n  "
@@ -214,7 +214,7 @@ proc refsFlake(pkg: JsonNode): auto =
   for refInfo in refs:
     let 
       flakeName = refInfo.refName
-      flakeDir = fmt"../{nameLo[0]}/{name}/{flakeName}"
+      flakeDir = fmt"../{nameLo[0]}/{nameLo}/{flakeName}"
       inputs = refInfo.refInputs(url).toSeq.join "\n  "
       itName = fmt"src-{name}-{flakeName}"
       flakeContent = fmt"""{{
