@@ -39,7 +39,7 @@
   inputs."zfcore-v1_0_11".owner = "riinr";
   inputs."zfcore-v1_0_11".repo = "flake-nimble";
   inputs."zfcore-v1_0_11".ref = "flake-pinning";
-  inputs."zfcore-v1_0_11".dir = "nimpkgs/z/zfcore/v1_0_11";
+  inputs."zfcore-v1_0_11".dir = "nimpkgs/z/zfcore/V1_0_11";
 
     inputs."zfcore-v1_0_1".type = "github";
   inputs."zfcore-v1_0_1".owner = "riinr";
