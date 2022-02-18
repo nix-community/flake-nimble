@@ -8,7 +8,7 @@
   inputs.src-feta-0_0_9.flake = false;
   inputs.src-feta-0_0_9.type = "github";
   inputs.src-feta-0_0_9.owner = "FlorianRauls";
-  inputs.src-feta-0_0_9.repo = "office-DSL-thesis";
+  inputs.src-feta-0_0_9.repo = "office-dsl-thesis";
   inputs.src-feta-0_0_9.ref = "refs/tags/0.0.9";
   
   

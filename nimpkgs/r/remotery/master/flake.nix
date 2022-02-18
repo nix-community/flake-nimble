@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-Remotery-master.flake = false;
-  inputs.src-Remotery-master.type = "github";
-  inputs.src-Remotery-master.owner = "Halsys";
-  inputs.src-Remotery-master.repo = "Nim-Remotery";
-  inputs.src-Remotery-master.ref = "refs/heads/master";
+  inputs.src-remotery-master.flake = false;
+  inputs.src-remotery-master.type = "github";
+  inputs.src-remotery-master.owner = "Halsys";
+  inputs.src-remotery-master.repo = "nim-Remotery";
+  inputs.src-remotery-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-Remotery-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-remotery-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-Remotery-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Remotery-master"];
+      src = src-remotery-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-remotery-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

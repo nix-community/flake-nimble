@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-numToWord-master.flake = false;
-  inputs.src-numToWord-master.type = "github";
-  inputs.src-numToWord-master.owner = "thisago";
-  inputs.src-numToWord-master.repo = "numToWord";
-  inputs.src-numToWord-master.ref = "refs/heads/master";
+  inputs.src-numtoword-master.flake = false;
+  inputs.src-numtoword-master.type = "github";
+  inputs.src-numtoword-master.owner = "thisago";
+  inputs.src-numtoword-master.repo = "numToWord";
+  inputs.src-numtoword-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-numToWord-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-numtoword-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-numToWord-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-numToWord-master"];
+      src = src-numtoword-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-numtoword-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

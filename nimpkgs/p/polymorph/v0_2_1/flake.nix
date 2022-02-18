@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-Polymorph-v0_2_1.flake = false;
-  inputs.src-Polymorph-v0_2_1.type = "github";
-  inputs.src-Polymorph-v0_2_1.owner = "rlipsc";
-  inputs.src-Polymorph-v0_2_1.repo = "polymorph";
-  inputs.src-Polymorph-v0_2_1.ref = "refs/tags/v0.2.1";
+  inputs.src-polymorph-v0_2_1.flake = false;
+  inputs.src-polymorph-v0_2_1.type = "github";
+  inputs.src-polymorph-v0_2_1.owner = "rlipsc";
+  inputs.src-polymorph-v0_2_1.repo = "polymorph";
+  inputs.src-polymorph-v0_2_1.ref = "refs/tags/v0.2.1";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-polymorph-v0_2_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

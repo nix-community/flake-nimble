@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-Palette-0_1_0.flake = false;
-  inputs.src-Palette-0_1_0.type = "github";
-  inputs.src-Palette-0_1_0.owner = "momeemt";
-  inputs.src-Palette-0_1_0.repo = "Palette";
-  inputs.src-Palette-0_1_0.ref = "refs/tags/0.1.0";
+  inputs.src-palette-0_1_0.flake = false;
+  inputs.src-palette-0_1_0.type = "github";
+  inputs.src-palette-0_1_0.owner = "momeemt";
+  inputs.src-palette-0_1_0.repo = "Palette";
+  inputs.src-palette-0_1_0.ref = "refs/tags/0.1.0";
   
   
   inputs."nigui".type = "github";
@@ -25,12 +25,12 @@
   inputs."cligen".ref = "flake-pinning";
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-Palette-0_1_0, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-palette-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-Palette-0_1_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Palette-0_1_0"];
+      src = src-palette-0_1_0;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-palette-0_1_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

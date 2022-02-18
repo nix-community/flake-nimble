@@ -8,7 +8,7 @@
   inputs.src-unalix-v0_7.flake = false;
   inputs.src-unalix-v0_7.type = "github";
   inputs.src-unalix-v0_7.owner = "AmanoTeam";
-  inputs.src-unalix-v0_7.repo = "Unalix-nim";
+  inputs.src-unalix-v0_7.repo = "unalix-nim";
   inputs.src-unalix-v0_7.ref = "refs/tags/v0.7";
   
   

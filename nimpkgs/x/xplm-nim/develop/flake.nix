@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-XPLM-Nim-develop.flake = false;
-  inputs.src-XPLM-Nim-develop.type = "github";
-  inputs.src-XPLM-Nim-develop.owner = "jpoirier";
-  inputs.src-XPLM-Nim-develop.repo = "XPLM-Nim";
-  inputs.src-XPLM-Nim-develop.ref = "refs/heads/develop";
+  inputs.src-xplm-nim-develop.flake = false;
+  inputs.src-xplm-nim-develop.type = "github";
+  inputs.src-xplm-nim-develop.owner = "jpoirier";
+  inputs.src-xplm-nim-develop.repo = "xplm-Nim";
+  inputs.src-xplm-nim-develop.ref = "refs/heads/develop";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-XPLM-Nim-develop, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-xplm-nim-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-XPLM-Nim-develop;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-XPLM-Nim-develop"];
+      src = src-xplm-nim-develop;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-xplm-nim-develop"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

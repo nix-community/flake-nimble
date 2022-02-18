@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-Phosphor-master.flake = false;
-  inputs.src-Phosphor-master.type = "github";
-  inputs.src-Phosphor-master.owner = "barcharcraz";
-  inputs.src-Phosphor-master.repo = "Phosphor";
-  inputs.src-Phosphor-master.ref = "refs/heads/master";
+  inputs.src-phosphor-master.flake = false;
+  inputs.src-phosphor-master.type = "github";
+  inputs.src-phosphor-master.owner = "barcharcraz";
+  inputs.src-phosphor-master.repo = "Phosphor";
+  inputs.src-phosphor-master.ref = "refs/heads/master";
   
   
   inputs."opengl".type = "github";
@@ -18,12 +18,12 @@
   inputs."opengl".ref = "flake-pinning";
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-Phosphor-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-phosphor-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-Phosphor-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Phosphor-master"];
+      src = src-phosphor-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-phosphor-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

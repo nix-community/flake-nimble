@@ -11,12 +11,12 @@
   inputs.src-webgl-master.repo = "webgl";
   inputs.src-webgl-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-WebGL-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-webgl-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-WebGL-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-WebGL-master"];
+      src = src-webgl-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-webgl-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

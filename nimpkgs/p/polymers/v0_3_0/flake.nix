@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-Polymers-v0_3_0.flake = false;
-  inputs.src-Polymers-v0_3_0.type = "github";
-  inputs.src-Polymers-v0_3_0.owner = "rlipsc";
-  inputs.src-Polymers-v0_3_0.repo = "polymers";
-  inputs.src-Polymers-v0_3_0.ref = "refs/tags/v0.3.0";
+  inputs.src-polymers-v0_3_0.flake = false;
+  inputs.src-polymers-v0_3_0.type = "github";
+  inputs.src-polymers-v0_3_0.owner = "rlipsc";
+  inputs.src-polymers-v0_3_0.repo = "polymers";
+  inputs.src-polymers-v0_3_0.ref = "refs/tags/v0.3.0";
   
   
   inputs."https://github.com/rlipsc/polymorph".type = "github";

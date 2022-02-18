@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-boneIO-master.flake = false;
-  inputs.src-boneIO-master.type = "github";
-  inputs.src-boneIO-master.owner = "xyz32";
-  inputs.src-boneIO-master.repo = "boneIO";
-  inputs.src-boneIO-master.ref = "refs/heads/master";
+  inputs.src-boneio-master.flake = false;
+  inputs.src-boneio-master.type = "github";
+  inputs.src-boneio-master.owner = "xyz32";
+  inputs.src-boneio-master.repo = "boneIO";
+  inputs.src-boneio-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-boneIO-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-boneio-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-boneIO-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-boneIO-master"];
+      src = src-boneio-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-boneio-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

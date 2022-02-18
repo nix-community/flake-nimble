@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-argon2_bind-v0_1_1.flake = false;
   inputs.src-argon2_bind-v0_1_1.type = "github";
-  inputs.src-argon2_bind-v0_1_1.owner = "D-Nice";
+  inputs.src-argon2_bind-v0_1_1.owner = "d-Nice";
   inputs.src-argon2_bind-v0_1_1.repo = "argon2_bind";
   inputs.src-argon2_bind-v0_1_1.ref = "refs/tags/v0.1.1";
   

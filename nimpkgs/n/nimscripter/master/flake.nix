@@ -18,12 +18,12 @@
   inputs."https://github.com/disruptek/assume".ref = "flake-pinning";
   inputs."https://github.com/disruptek/assume".dir = "nimpkgs/h/https://github.com/disruptek/assume";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-Nimscripter-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimscripter-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-Nimscripter-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Nimscripter-master"];
+      src = src-nimscripter-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimscripter-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

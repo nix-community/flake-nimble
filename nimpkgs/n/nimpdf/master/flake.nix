@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-nimPDF-master.flake = false;
-  inputs.src-nimPDF-master.type = "github";
-  inputs.src-nimPDF-master.owner = "jangko";
-  inputs.src-nimPDF-master.repo = "nimpdf";
-  inputs.src-nimPDF-master.ref = "refs/heads/master";
+  inputs.src-nimpdf-master.flake = false;
+  inputs.src-nimpdf-master.type = "github";
+  inputs.src-nimpdf-master.owner = "jangko";
+  inputs.src-nimpdf-master.repo = "nimpdf";
+  inputs.src-nimpdf-master.ref = "refs/heads/master";
   
   
   inputs."nimbmp".type = "github";
@@ -46,12 +46,12 @@
   inputs."stb_image".ref = "flake-pinning";
   inputs."stb_image".dir = "nimpkgs/s/stb_image";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nimPDF-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimpdf-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-nimPDF-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimPDF-master"];
+      src = src-nimpdf-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimpdf-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

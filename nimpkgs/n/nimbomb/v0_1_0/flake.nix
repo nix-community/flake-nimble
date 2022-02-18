@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimbomb-v0_1_0.flake = false;
   inputs.src-nimbomb-v0_1_0.type = "github";
-  inputs.src-nimbomb-v0_1_0.owner = "Tyler-Yocolano";
+  inputs.src-nimbomb-v0_1_0.owner = "tyler-Yocolano";
   inputs.src-nimbomb-v0_1_0.repo = "nimbomb";
   inputs.src-nimbomb-v0_1_0.ref = "refs/tags/v0.1.0";
   

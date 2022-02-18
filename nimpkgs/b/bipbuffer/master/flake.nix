@@ -11,12 +11,12 @@
   inputs.src-bipbuffer-master.repo = "BipBuffer";
   inputs.src-bipbuffer-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-BipBuffer-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-bipbuffer-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-BipBuffer-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-BipBuffer-master"];
+      src = src-bipbuffer-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-bipbuffer-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

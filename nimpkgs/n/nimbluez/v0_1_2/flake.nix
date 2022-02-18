@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimbluez-v0_1_2.flake = false;
   inputs.src-nimbluez-v0_1_2.type = "github";
-  inputs.src-nimbluez-v0_1_2.owner = "Electric-Blue";
+  inputs.src-nimbluez-v0_1_2.owner = "electric-Blue";
   inputs.src-nimbluez-v0_1_2.repo = "NimBluez";
   inputs.src-nimbluez-v0_1_2.ref = "refs/tags/v0.1.2";
   

@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-polyBool-master.flake = false;
-  inputs.src-polyBool-master.type = "github";
-  inputs.src-polyBool-master.owner = "jangko";
-  inputs.src-polyBool-master.repo = "polyBool";
-  inputs.src-polyBool-master.ref = "refs/heads/master";
+  inputs.src-polybool-master.flake = false;
+  inputs.src-polybool-master.type = "github";
+  inputs.src-polybool-master.owner = "jangko";
+  inputs.src-polybool-master.repo = "polyBool";
+  inputs.src-polybool-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-polyBool-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-polybool-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-polyBool-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-polyBool-master"];
+      src = src-polybool-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-polybool-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

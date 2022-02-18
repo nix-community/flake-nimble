@@ -8,7 +8,7 @@
   inputs.src-bearlibterminal-master.flake = false;
   inputs.src-bearlibterminal-master.type = "github";
   inputs.src-bearlibterminal-master.owner = "irskep";
-  inputs.src-bearlibterminal-master.repo = "BearLibTerminal-Nim";
+  inputs.src-bearlibterminal-master.repo = "bearlibterminal-Nim";
   inputs.src-bearlibterminal-master.ref = "refs/heads/master";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-bearlibterminal-master, ...}@deps:

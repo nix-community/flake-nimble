@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-SMBExec-master.flake = false;
-  inputs.src-SMBExec-master.type = "github";
-  inputs.src-SMBExec-master.owner = "elddy";
-  inputs.src-SMBExec-master.repo = "SMB-Nim";
-  inputs.src-SMBExec-master.ref = "refs/heads/master";
+  inputs.src-smbexec-master.flake = false;
+  inputs.src-smbexec-master.type = "github";
+  inputs.src-smbexec-master.owner = "elddy";
+  inputs.src-smbexec-master.repo = "smb-Nim";
+  inputs.src-smbexec-master.ref = "refs/heads/master";
   
   
   inputs."hashlib".type = "github";
@@ -32,12 +32,12 @@
   inputs."regex".ref = "flake-pinning";
   inputs."regex".dir = "nimpkgs/r/regex";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-SMBExec-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-smbexec-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-SMBExec-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-SMBExec-master"];
+      src = src-smbexec-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-smbexec-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

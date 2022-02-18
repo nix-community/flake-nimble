@@ -8,7 +8,7 @@
   inputs.src-mailcow-main.flake = false;
   inputs.src-mailcow-main.type = "github";
   inputs.src-mailcow-main.owner = "Vaipex";
-  inputs.src-mailcow-main.repo = "Mailcow-API";
+  inputs.src-mailcow-main.repo = "mailcow-API";
   inputs.src-mailcow-main.ref = "refs/heads/main";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-mailcow-main, ...}@deps:

@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-asyncredis-v0_8.flake = false;
   inputs.src-asyncredis-v0_8.type = "github";
-  inputs.src-asyncredis-v0_8.owner = "Q-Master";
+  inputs.src-asyncredis-v0_8.owner = "q-Master";
   inputs.src-asyncredis-v0_8.repo = "redis.nim";
   inputs.src-asyncredis-v0_8.ref = "refs/tags/v0.8";
   

@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-NiMPC-v0_4_1.flake = false;
-  inputs.src-NiMPC-v0_4_1.type = "github";
-  inputs.src-NiMPC-v0_4_1.owner = "markspanbroek";
-  inputs.src-NiMPC-v0_4_1.repo = "nimpc";
-  inputs.src-NiMPC-v0_4_1.ref = "refs/tags/v0.4.1";
+  inputs.src-nimpc-v0_4_1.flake = false;
+  inputs.src-nimpc-v0_4_1.type = "github";
+  inputs.src-nimpc-v0_4_1.owner = "markspanbroek";
+  inputs.src-nimpc-v0_4_1.repo = "nimpc";
+  inputs.src-nimpc-v0_4_1.ref = "refs/tags/v0.4.1";
   
   
   inputs."sysrandom".type = "github";
@@ -32,12 +32,12 @@
   inputs."monocypher".ref = "flake-pinning";
   inputs."monocypher".dir = "nimpkgs/m/monocypher";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-NiMPC-v0_4_1, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimpc-v0_4_1, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-NiMPC-v0_4_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-NiMPC-v0_4_1"];
+      src = src-nimpc-v0_4_1;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimpc-v0_4_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

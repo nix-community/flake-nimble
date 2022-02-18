@@ -8,7 +8,7 @@
   inputs.src-unalix-v0_3.flake = false;
   inputs.src-unalix-v0_3.type = "github";
   inputs.src-unalix-v0_3.owner = "AmanoTeam";
-  inputs.src-unalix-v0_3.repo = "Unalix-nim";
+  inputs.src-unalix-v0_3.repo = "unalix-nim";
   inputs.src-unalix-v0_3.ref = "refs/tags/v0.3";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-unalix-v0_3, ...}@deps:

@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-controlStructures-master.flake = false;
-  inputs.src-controlStructures-master.type = "github";
-  inputs.src-controlStructures-master.owner = "TakeYourFreedom";
-  inputs.src-controlStructures-master.repo = "Additional-Control-Structures-for-Nim";
-  inputs.src-controlStructures-master.ref = "refs/heads/master";
+  inputs.src-controlstructures-master.flake = false;
+  inputs.src-controlstructures-master.type = "github";
+  inputs.src-controlstructures-master.owner = "TakeYourFreedom";
+  inputs.src-controlstructures-master.repo = "additional-control-structures-for-Nim";
+  inputs.src-controlstructures-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-controlStructures-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-controlstructures-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-controlStructures-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-controlStructures-master"];
+      src = src-controlstructures-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-controlstructures-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

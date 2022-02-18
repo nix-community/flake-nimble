@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-NimTacToe-master.flake = false;
-  inputs.src-NimTacToe-master.type = "github";
-  inputs.src-NimTacToe-master.owner = "JesterOrNot";
-  inputs.src-NimTacToe-master.repo = "Nim-Tac-Toe";
-  inputs.src-NimTacToe-master.ref = "refs/heads/master";
+  inputs.src-nimtactoe-master.flake = false;
+  inputs.src-nimtactoe-master.type = "github";
+  inputs.src-nimtactoe-master.owner = "JesterOrNot";
+  inputs.src-nimtactoe-master.repo = "nim-tac-Toe";
+  inputs.src-nimtactoe-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-NimTacToe-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimtactoe-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-NimTacToe-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-NimTacToe-master"];
+      src = src-nimtactoe-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimtactoe-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

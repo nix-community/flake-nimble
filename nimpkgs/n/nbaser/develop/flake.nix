@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nbaser-develop.flake = false;
   inputs.src-nbaser-develop.type = "github";
-  inputs.src-nbaser-develop.owner = "D-Nice";
+  inputs.src-nbaser-develop.owner = "d-Nice";
   inputs.src-nbaser-develop.repo = "nbaser";
   inputs.src-nbaser-develop.ref = "refs/heads/develop";
   

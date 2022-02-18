@@ -11,12 +11,12 @@
   inputs.src-quickjs4nim-master.repo = "quickjs4nim";
   inputs.src-quickjs4nim-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-QuickJS4nim-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-quickjs4nim-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-QuickJS4nim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-QuickJS4nim-master"];
+      src = src-quickjs4nim-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-quickjs4nim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

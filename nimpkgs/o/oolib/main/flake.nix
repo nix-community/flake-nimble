@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-oolib-main.flake = false;
   inputs.src-oolib-main.type = "github";
-  inputs.src-oolib-main.owner = "Glasses-Neo";
+  inputs.src-oolib-main.owner = "glasses-Neo";
   inputs.src-oolib-main.repo = "OOlib";
   inputs.src-oolib-main.ref = "refs/heads/main";
   

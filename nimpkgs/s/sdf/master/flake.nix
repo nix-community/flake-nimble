@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-SDF-master.flake = false;
-  inputs.src-SDF-master.type = "github";
-  inputs.src-SDF-master.owner = "Halsys";
-  inputs.src-SDF-master.repo = "SDF.nim";
-  inputs.src-SDF-master.ref = "refs/heads/master";
+  inputs.src-sdf-master.flake = false;
+  inputs.src-sdf-master.type = "github";
+  inputs.src-sdf-master.owner = "Halsys";
+  inputs.src-sdf-master.repo = "SDF.nim";
+  inputs.src-sdf-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-SDF-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-sdf-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-SDF-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-SDF-master"];
+      src = src-sdf-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-sdf-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

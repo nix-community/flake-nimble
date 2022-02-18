@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-ringDeque-master.flake = false;
-  inputs.src-ringDeque-master.type = "github";
-  inputs.src-ringDeque-master.owner = "technicallyagd";
-  inputs.src-ringDeque-master.repo = "ringDeque";
-  inputs.src-ringDeque-master.ref = "refs/heads/master";
+  inputs.src-ringdeque-master.flake = false;
+  inputs.src-ringdeque-master.type = "github";
+  inputs.src-ringdeque-master.owner = "technicallyagd";
+  inputs.src-ringdeque-master.repo = "ringDeque";
+  inputs.src-ringdeque-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-ringDeque-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ringdeque-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-ringDeque-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ringDeque-master"];
+      src = src-ringdeque-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ringdeque-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

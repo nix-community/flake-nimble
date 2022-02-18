@@ -5,18 +5,18 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-RollingHash-master.flake = false;
-  inputs.src-RollingHash-master.type = "github";
-  inputs.src-RollingHash-master.owner = "MarcAzar";
-  inputs.src-RollingHash-master.repo = "RollingHash";
-  inputs.src-RollingHash-master.ref = "refs/heads/master";
+  inputs.src-rollinghash-master.flake = false;
+  inputs.src-rollinghash-master.type = "github";
+  inputs.src-rollinghash-master.owner = "MarcAzar";
+  inputs.src-rollinghash-master.repo = "RollingHash";
+  inputs.src-rollinghash-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-RollingHash-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-rollinghash-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-RollingHash-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-RollingHash-master"];
+      src = src-rollinghash-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-rollinghash-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

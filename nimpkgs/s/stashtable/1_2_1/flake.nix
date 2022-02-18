@@ -11,12 +11,12 @@
   inputs.src-stashtable-1_2_1.repo = "StashTable";
   inputs.src-stashtable-1_2_1.ref = "refs/tags/1.2.1";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-StashTable-1_2_1, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-stashtable-1_2_1, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-StashTable-1_2_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-StashTable-1_2_1"];
+      src = src-stashtable-1_2_1;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-stashtable-1_2_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

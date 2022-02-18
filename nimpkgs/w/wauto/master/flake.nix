@@ -32,12 +32,12 @@
   inputs."npeg".ref = "flake-pinning";
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-wAuto-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-wauto-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-wAuto-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wAuto-master"];
+      src = src-wauto-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wauto-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-awsS3-v1_0_0.flake = false;
-  inputs.src-awsS3-v1_0_0.type = "github";
-  inputs.src-awsS3-v1_0_0.owner = "ThomasTJdev";
-  inputs.src-awsS3-v1_0_0.repo = "nim_awsS3";
-  inputs.src-awsS3-v1_0_0.ref = "refs/tags/v1.0.0";
+  inputs.src-awss3-v1_0_0.flake = false;
+  inputs.src-awss3-v1_0_0.type = "github";
+  inputs.src-awss3-v1_0_0.owner = "ThomasTJdev";
+  inputs.src-awss3-v1_0_0.repo = "nim_awsS3";
+  inputs.src-awss3-v1_0_0.ref = "refs/tags/v1.0.0";
   
   
   inputs."sigv4".type = "github";
@@ -25,12 +25,12 @@
   inputs."awssts".ref = "flake-pinning";
   inputs."awssts".dir = "nimpkgs/a/awssts";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-awsS3-v1_0_0, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-awss3-v1_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-awsS3-v1_0_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-awsS3-v1_0_0"];
+      src = src-awss3-v1_0_0;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-awss3-v1_0_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

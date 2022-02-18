@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-OTP-master.flake = false;
-  inputs.src-OTP-master.type = "github";
-  inputs.src-OTP-master.owner = "OpenSystemsLab";
-  inputs.src-OTP-master.repo = "otp.nim";
-  inputs.src-OTP-master.ref = "refs/heads/master";
+  inputs.src-otp-master.flake = false;
+  inputs.src-otp-master.type = "github";
+  inputs.src-otp-master.owner = "OpenSystemsLab";
+  inputs.src-otp-master.repo = "otp.nim";
+  inputs.src-otp-master.ref = "refs/heads/master";
   
   
   inputs."hmac".type = "github";

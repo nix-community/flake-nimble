@@ -32,12 +32,12 @@
   inputs."memlib".ref = "flake-pinning";
   inputs."memlib".dir = "nimpkgs/m/memlib";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-wNim-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-wnim-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-wNim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wNim-master"];
+      src = src-wnim-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wnim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-NimbleImGui-master.flake = false;
-  inputs.src-NimbleImGui-master.type = "github";
-  inputs.src-NimbleImGui-master.owner = "qb-0";
-  inputs.src-NimbleImGui-master.repo = "NimbleImGui";
-  inputs.src-NimbleImGui-master.ref = "refs/heads/master";
+  inputs.src-nimbleimgui-master.flake = false;
+  inputs.src-nimbleimgui-master.type = "github";
+  inputs.src-nimbleimgui-master.owner = "qb-0";
+  inputs.src-nimbleimgui-master.repo = "NimbleImGui";
+  inputs.src-nimbleimgui-master.ref = "refs/heads/master";
   
   
   inputs."nimgl".type = "github";
@@ -18,12 +18,12 @@
   inputs."nimgl".ref = "flake-pinning";
   inputs."nimgl".dir = "nimpkgs/n/nimgl";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-NimbleImGui-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimbleimgui-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-NimbleImGui-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-NimbleImGui-master"];
+      src = src-nimbleimgui-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimbleimgui-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

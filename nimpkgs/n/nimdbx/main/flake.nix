@@ -18,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-NimDBX-main, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimdbx-main, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-NimDBX-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-NimDBX-main"];
+      src = src-nimdbx-main;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimdbx-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

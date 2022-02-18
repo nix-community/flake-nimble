@@ -11,12 +11,12 @@
   inputs.src-llvm-master.repo = "llvm";
   inputs.src-llvm-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-LLVM-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-llvm-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-LLVM-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-LLVM-master"];
+      src = src-llvm-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-llvm-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

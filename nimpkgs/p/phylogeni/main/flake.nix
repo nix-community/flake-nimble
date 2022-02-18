@@ -11,12 +11,12 @@
   inputs.src-phylogeni-main.repo = "PhylogeNi";
   inputs.src-phylogeni-main.ref = "refs/heads/main";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-PhylogeNi-main, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-phylogeni-main, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-PhylogeNi-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-PhylogeNi-main"];
+      src = src-phylogeni-main;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-phylogeni-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

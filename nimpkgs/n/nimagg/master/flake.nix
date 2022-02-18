@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-nimAGG-master.flake = false;
-  inputs.src-nimAGG-master.type = "github";
-  inputs.src-nimAGG-master.owner = "jangko";
-  inputs.src-nimAGG-master.repo = "nimAGG";
-  inputs.src-nimAGG-master.ref = "refs/heads/master";
+  inputs.src-nimagg-master.flake = false;
+  inputs.src-nimagg-master.type = "github";
+  inputs.src-nimagg-master.owner = "jangko";
+  inputs.src-nimagg-master.repo = "nimAGG";
+  inputs.src-nimagg-master.ref = "refs/heads/master";
   
   
   inputs."sdl2_nim".type = "github";
@@ -39,12 +39,12 @@
   inputs."polybool".ref = "flake-pinning";
   inputs."polybool".dir = "nimpkgs/p/polybool";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nimAGG-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimagg-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-nimAGG-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimAGG-master"];
+      src = src-nimagg-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimagg-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

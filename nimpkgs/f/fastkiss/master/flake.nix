@@ -18,12 +18,12 @@
   inputs."regex".ref = "flake-pinning";
   inputs."regex".dir = "nimpkgs/r/regex";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-FastKiss-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-fastkiss-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-FastKiss-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-FastKiss-master"];
+      src = src-fastkiss-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-fastkiss-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

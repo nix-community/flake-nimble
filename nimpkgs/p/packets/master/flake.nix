@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-packets-master.flake = false;
   inputs.src-packets-master.type = "github";
-  inputs.src-packets-master.owner = "Q-Master";
+  inputs.src-packets-master.owner = "q-Master";
   inputs.src-packets-master.repo = "packets.nim";
   inputs.src-packets-master.ref = "refs/heads/master";
   

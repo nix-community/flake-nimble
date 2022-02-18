@@ -11,12 +11,12 @@
   inputs.src-parsefixed-master.repo = "parsefixed";
   inputs.src-parsefixed-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-parseFixed-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-parsefixed-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-parseFixed-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-parseFixed-master"];
+      src = src-parsefixed-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-parsefixed-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

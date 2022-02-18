@@ -25,12 +25,12 @@
   inputs."ws".ref = "flake-pinning";
   inputs."ws".dir = "nimpkgs/w/ws";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-Neel-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-neel-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-Neel-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Neel-master"];
+      src = src-neel-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-neel-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

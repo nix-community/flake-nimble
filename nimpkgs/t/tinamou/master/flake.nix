@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-tinamou-master.flake = false;
   inputs.src-tinamou-master.type = "github";
-  inputs.src-tinamou-master.owner = "Double-oxygeN";
+  inputs.src-tinamou-master.owner = "double-oxygeN";
   inputs.src-tinamou-master.repo = "tinamou";
   inputs.src-tinamou-master.ref = "refs/heads/master";
   

@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimr-master.flake = false;
   inputs.src-nimr-master.type = "github";
-  inputs.src-nimr-master.owner = "Jeff-Ciesielski";
+  inputs.src-nimr-master.owner = "jeff-Ciesielski";
   inputs.src-nimr-master.repo = "nimr";
   inputs.src-nimr-master.ref = "refs/heads/master";
   

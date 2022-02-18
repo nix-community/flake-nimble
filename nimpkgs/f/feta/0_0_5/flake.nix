@@ -8,7 +8,7 @@
   inputs.src-feta-0_0_5.flake = false;
   inputs.src-feta-0_0_5.type = "github";
   inputs.src-feta-0_0_5.owner = "FlorianRauls";
-  inputs.src-feta-0_0_5.repo = "office-DSL-thesis";
+  inputs.src-feta-0_0_5.repo = "office-dsl-thesis";
   inputs.src-feta-0_0_5.ref = "refs/tags/0.0.5";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-feta-0_0_5, ...}@deps:

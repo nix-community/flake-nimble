@@ -25,12 +25,12 @@
   inputs."plotly".ref = "flake-pinning";
   inputs."plotly".dir = "nimpkgs/p/plotly";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-NimData-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimdata-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-NimData-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-NimData-master"];
+      src = src-nimdata-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimdata-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

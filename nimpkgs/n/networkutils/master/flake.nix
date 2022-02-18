@@ -7,7 +7,7 @@
   inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-networkutils-master.flake = false;
   inputs.src-networkutils-master.type = "github";
-  inputs.src-networkutils-master.owner = "Q-Master";
+  inputs.src-networkutils-master.owner = "q-Master";
   inputs.src-networkutils-master.repo = "networkutils.nim";
   inputs.src-networkutils-master.ref = "refs/heads/master";
   

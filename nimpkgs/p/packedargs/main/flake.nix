@@ -5,11 +5,11 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-packedArgs-main.flake = false;
-  inputs.src-packedArgs-main.type = "github";
-  inputs.src-packedArgs-main.owner = "hamidb80";
-  inputs.src-packedArgs-main.repo = "packedArgs";
-  inputs.src-packedArgs-main.ref = "refs/heads/main";
+  inputs.src-packedargs-main.flake = false;
+  inputs.src-packedargs-main.type = "github";
+  inputs.src-packedargs-main.owner = "hamidb80";
+  inputs.src-packedargs-main.repo = "packedArgs";
+  inputs.src-packedargs-main.ref = "refs/heads/main";
   
   
   inputs."macroplus".type = "github";
@@ -18,12 +18,12 @@
   inputs."macroplus".ref = "flake-pinning";
   inputs."macroplus".dir = "nimpkgs/m/macroplus";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-packedArgs-main, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-packedargs-main, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-packedArgs-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-packedArgs-main"];
+      src = src-packedargs-main;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-packedargs-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }
