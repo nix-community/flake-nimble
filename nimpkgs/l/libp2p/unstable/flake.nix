@@ -1,5 +1,10 @@
 {
   description = ''libp2p implementation in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-libp2p-unstable.flake = false;
   inputs.src-libp2p-unstable.type = "github";
   inputs.src-libp2p-unstable.owner = "status-im";
@@ -69,12 +74,12 @@
   inputs."websock".ref = "flake-pinning";
   inputs."websock".dir = "nimpkgs/w/websock";
 
-  outputs = { self, nixpkgs, src-libp2p-unstable, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-libp2p-unstable, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-libp2p-unstable;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-libp2p-unstable"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-libp2p-unstable"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

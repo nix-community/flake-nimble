@@ -1,5 +1,10 @@
 {
   description = ''Max wrapper for omni.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-omnimax-develop.flake = false;
   inputs.src-omnimax-develop.type = "github";
   inputs.src-omnimax-develop.owner = "vitreo12";
@@ -20,12 +25,12 @@
   inputs."omni".ref = "flake-pinning";
   inputs."omni".dir = "nimpkgs/o/omni";
 
-  outputs = { self, nixpkgs, src-omnimax-develop, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-omnimax-develop, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-omnimax-develop;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-omnimax-develop"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-omnimax-develop"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

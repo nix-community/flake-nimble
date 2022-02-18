@@ -1,5 +1,10 @@
 {
   description = ''Linear algebra for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-linalg-master.flake = false;
   inputs.src-linalg-master.type = "github";
   inputs.src-linalg-master.owner = "andreaferretti";
@@ -13,12 +18,12 @@
   inputs."nimblas".ref = "flake-pinning";
   inputs."nimblas".dir = "nimpkgs/n/nimblas";
 
-  outputs = { self, nixpkgs, src-linalg-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-linalg-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-linalg-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-linalg-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-linalg-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

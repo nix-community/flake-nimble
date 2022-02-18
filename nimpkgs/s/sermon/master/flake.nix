@@ -1,5 +1,10 @@
 {
   description = ''Monitor the state and memory of processes and URL response.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-sermon-master.flake = false;
   inputs.src-sermon-master.type = "github";
   inputs.src-sermon-master.owner = "ThomasTJdev";
@@ -13,12 +18,12 @@
   inputs."jester".ref = "flake-pinning";
   inputs."jester".dir = "nimpkgs/j/jester";
 
-  outputs = { self, nixpkgs, src-sermon-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-sermon-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-sermon-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-sermon-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-sermon-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

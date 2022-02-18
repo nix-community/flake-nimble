@@ -1,5 +1,10 @@
 {
   description = ''High level xml library for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-xmltools-v0_0_3.flake = false;
   inputs.src-xmltools-v0_0_3.type = "github";
   inputs.src-xmltools-v0_0_3.owner = "vegansk";
@@ -13,12 +18,12 @@
   inputs."nimfp".ref = "flake-pinning";
   inputs."nimfp".dir = "nimpkgs/n/nimfp";
 
-  outputs = { self, nixpkgs, src-xmltools-v0_0_3, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-xmltools-v0_0_3, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-xmltools-v0_0_3;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-xmltools-v0_0_3"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-xmltools-v0_0_3"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

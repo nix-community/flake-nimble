@@ -1,5 +1,10 @@
 {
   description = ''UI building with Gnome's Glade'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-uibuilder-master.flake = false;
   inputs.src-uibuilder-master.type = "github";
   inputs.src-uibuilder-master.owner = "ba0f3";
@@ -20,12 +25,12 @@
   inputs."xml".ref = "flake-pinning";
   inputs."xml".dir = "nimpkgs/x/xml";
 
-  outputs = { self, nixpkgs, src-uibuilder-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-uibuilder-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-uibuilder-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-uibuilder-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-uibuilder-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

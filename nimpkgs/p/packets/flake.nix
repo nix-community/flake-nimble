@@ -1,12 +1,22 @@
 {
   description = ''Declarative packets system for serializing/deserializing and marshalling'';
-  inputs."packets-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."packets-master".type = "github";
+  inputs."packets-master".owner = "riinr";
+  inputs."packets-master".repo = "flake-nimble";
+  inputs."packets-master".ref = "flake-pinning";
+  inputs."packets-master".dir = "nimpkgs/p/packets/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

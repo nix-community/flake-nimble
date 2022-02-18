@@ -1,5 +1,10 @@
 {
   description = ''JSON schema validation and creation.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-jsonschema-master.flake = false;
   inputs.src-jsonschema-master.type = "github";
   inputs.src-jsonschema-master.owner = "PMunch";
@@ -13,12 +18,12 @@
   inputs."ast_pattern_matching".ref = "flake-pinning";
   inputs."ast_pattern_matching".dir = "nimpkgs/a/ast_pattern_matching";
 
-  outputs = { self, nixpkgs, src-jsonschema-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-jsonschema-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-jsonschema-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-jsonschema-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-jsonschema-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

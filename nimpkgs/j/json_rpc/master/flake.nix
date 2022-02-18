@@ -1,5 +1,10 @@
 {
   description = ''Nim library for implementing JSON-RPC clients and servers'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-json_rpc-master.flake = false;
   inputs.src-json_rpc-master.type = "github";
   inputs.src-json_rpc-master.owner = "status-im";
@@ -69,12 +74,12 @@
   inputs."json_serialization".ref = "flake-pinning";
   inputs."json_serialization".dir = "nimpkgs/j/json_serialization";
 
-  outputs = { self, nixpkgs, src-json_rpc-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-json_rpc-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-json_rpc-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-json_rpc-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-json_rpc-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

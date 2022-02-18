@@ -1,5 +1,10 @@
 {
   description = ''Karax extension to convert html in string form to embeddable Karax vdom'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-htmlToVdom-main.flake = false;
   inputs.src-htmlToVdom-main.type = "github";
   inputs.src-htmlToVdom-main.owner = "C-NERD";
@@ -13,12 +18,12 @@
   inputs."karax".ref = "flake-pinning";
   inputs."karax".dir = "nimpkgs/k/karax";
 
-  outputs = { self, nixpkgs, src-htmlToVdom-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-htmlToVdom-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-htmlToVdom-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-htmlToVdom-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-htmlToVdom-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

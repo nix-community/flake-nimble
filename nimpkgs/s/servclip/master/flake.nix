@@ -1,5 +1,10 @@
 {
   description = ''Manage your clipboard remotely'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-servclip-master.flake = false;
   inputs.src-servclip-master.type = "gitlab";
   inputs.src-servclip-master.owner = "lurlo";
@@ -27,12 +32,12 @@
   inputs."bluesoftcosmos".ref = "flake-pinning";
   inputs."bluesoftcosmos".dir = "nimpkgs/b/bluesoftcosmos";
 
-  outputs = { self, nixpkgs, src-servclip-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-servclip-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-servclip-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-servclip-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-servclip-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

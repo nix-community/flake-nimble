@@ -1,5 +1,10 @@
 {
   description = ''Application to detect which commit generates malicious code detection by antivirus software.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-mcd-master.flake = false;
   inputs.src-mcd-master.type = "gitlab";
   inputs.src-mcd-master.owner = "malicious-commit-detector";
@@ -27,12 +32,12 @@
   inputs."colorizeecho".ref = "flake-pinning";
   inputs."colorizeecho".dir = "nimpkgs/c/colorizeecho";
 
-  outputs = { self, nixpkgs, src-mcd-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-mcd-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-mcd-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-mcd-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-mcd-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

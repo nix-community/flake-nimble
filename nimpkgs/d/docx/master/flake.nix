@@ -1,5 +1,10 @@
 {
   description = ''A simple docx reader.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-docx-master.flake = false;
   inputs.src-docx-master.type = "github";
   inputs.src-docx-master.owner = "xflywind";
@@ -13,12 +18,12 @@
   inputs."zip".ref = "flake-pinning";
   inputs."zip".dir = "nimpkgs/z/zip";
 
-  outputs = { self, nixpkgs, src-docx-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-docx-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-docx-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-docx-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-docx-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

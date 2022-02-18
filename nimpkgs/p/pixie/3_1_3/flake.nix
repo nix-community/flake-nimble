@@ -1,5 +1,10 @@
 {
   description = ''Full-featured 2d graphics library for Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-pixie-3_1_3.flake = false;
   inputs.src-pixie-3_1_3.type = "github";
   inputs.src-pixie-3_1_3.owner = "treeform";
@@ -48,12 +53,12 @@
   inputs."bumpy".ref = "flake-pinning";
   inputs."bumpy".dir = "nimpkgs/b/bumpy";
 
-  outputs = { self, nixpkgs, src-pixie-3_1_3, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-pixie-3_1_3, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-pixie-3_1_3;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-pixie-3_1_3"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-pixie-3_1_3"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

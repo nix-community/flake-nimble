@@ -1,17 +1,22 @@
 {
   description = ''SDL 1.2 wrapper for Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-sdl1-master.flake = false;
   inputs.src-sdl1-master.type = "github";
   inputs.src-sdl1-master.owner = "nim-lang";
   inputs.src-sdl1-master.repo = "sdl1";
   inputs.src-sdl1-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, src-sdl1-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-sdl1-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-sdl1-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-sdl1-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-sdl1-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

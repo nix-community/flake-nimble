@@ -1,5 +1,10 @@
 {
   description = ''A fast, multithreaded miner for DuinoCoin'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ducominer-main.flake = false;
   inputs.src-ducominer-main.type = "github";
   inputs.src-ducominer-main.owner = "its5Q";
@@ -13,12 +18,12 @@
   inputs."nimcrypto".ref = "flake-pinning";
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
-  outputs = { self, nixpkgs, src-ducominer-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ducominer-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ducominer-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ducominer-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ducominer-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''A simple task runner. Run tasks and watch file changes with custom paths.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-monit-master.flake = false;
   inputs.src-monit-master.type = "github";
   inputs.src-monit-master.owner = "jiro4989";
@@ -20,12 +25,12 @@
   inputs."cligen".ref = "flake-pinning";
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
-  outputs = { self, nixpkgs, src-monit-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-monit-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-monit-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-monit-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-monit-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

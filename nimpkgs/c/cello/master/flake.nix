@@ -1,5 +1,10 @@
 {
   description = ''String algorithms with succinct data structures'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-cello-master.flake = false;
   inputs.src-cello-master.type = "github";
   inputs.src-cello-master.owner = "andreaferretti";
@@ -13,12 +18,12 @@
   inputs."spills".ref = "flake-pinning";
   inputs."spills".dir = "nimpkgs/s/spills";
 
-  outputs = { self, nixpkgs, src-cello-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-cello-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-cello-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-cello-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-cello-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

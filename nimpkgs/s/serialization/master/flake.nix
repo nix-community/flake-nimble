@@ -1,5 +1,10 @@
 {
   description = ''A modern and extensible serialization framework for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-serialization-master.flake = false;
   inputs.src-serialization-master.type = "github";
   inputs.src-serialization-master.owner = "status-im";
@@ -27,12 +32,12 @@
   inputs."stew".ref = "flake-pinning";
   inputs."stew".dir = "nimpkgs/s/stew";
 
-  outputs = { self, nixpkgs, src-serialization-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-serialization-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-serialization-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-serialization-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-serialization-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

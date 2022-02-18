@@ -1,5 +1,10 @@
 {
   description = ''Nim / Python / C library to run webview with HTML/JS as UI'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimview-main.flake = false;
   inputs.src-nimview-main.type = "github";
   inputs.src-nimview-main.owner = "marcomq";
@@ -27,12 +32,12 @@
   inputs."ws".ref = "flake-pinning";
   inputs."ws".dir = "nimpkgs/w/ws";
 
-  outputs = { self, nixpkgs, src-nimview-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimview-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimview-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimview-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimview-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

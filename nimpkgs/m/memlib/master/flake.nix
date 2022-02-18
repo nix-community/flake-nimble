@@ -1,5 +1,10 @@
 {
   description = ''Load Windows DLL from memory'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-memlib-master.flake = false;
   inputs.src-memlib-master.type = "github";
   inputs.src-memlib-master.owner = "khchen";
@@ -20,12 +25,12 @@
   inputs."minhook".ref = "flake-pinning";
   inputs."minhook".dir = "nimpkgs/m/minhook";
 
-  outputs = { self, nixpkgs, src-memlib-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-memlib-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-memlib-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-memlib-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-memlib-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

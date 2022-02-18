@@ -1,5 +1,10 @@
 {
   description = ''A 2D|3D game engine'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-frag-master.flake = false;
   inputs.src-frag-master.type = "github";
   inputs.src-frag-master.owner = "fragworks";
@@ -90,12 +95,12 @@
   inputs."https://github.com/zacharycarter/nimassimp.git".ref = "flake-pinning";
   inputs."https://github.com/zacharycarter/nimassimp.git".dir = "nimpkgs/h/https://github.com/zacharycarter/nimassimp.git";
 
-  outputs = { self, nixpkgs, src-frag-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-frag-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-frag-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-frag-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-frag-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

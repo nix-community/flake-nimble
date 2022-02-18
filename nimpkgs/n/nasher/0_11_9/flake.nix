@@ -1,5 +1,10 @@
 {
   description = ''A build tool for Neverwinter Nights projects'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nasher-0_11_9.flake = false;
   inputs.src-nasher-0_11_9.type = "github";
   inputs.src-nasher-0_11_9.owner = "squattingmonk";
@@ -20,12 +25,12 @@
   inputs."glob".ref = "flake-pinning";
   inputs."glob".dir = "nimpkgs/g/glob";
 
-  outputs = { self, nixpkgs, src-nasher-0_11_9, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nasher-0_11_9, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nasher-0_11_9;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nasher-0_11_9"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nasher-0_11_9"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

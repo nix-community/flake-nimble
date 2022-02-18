@@ -1,5 +1,10 @@
 {
   description = ''Cross-platform GUI framework'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimx-master.flake = false;
   inputs.src-nimx-master.type = "github";
   inputs.src-nimx-master.owner = "yglukhov";
@@ -132,12 +137,12 @@
   inputs."nimwebp".ref = "flake-pinning";
   inputs."nimwebp".dir = "nimpkgs/n/nimwebp";
 
-  outputs = { self, nixpkgs, src-nimx-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimx-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimx-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimx-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimx-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

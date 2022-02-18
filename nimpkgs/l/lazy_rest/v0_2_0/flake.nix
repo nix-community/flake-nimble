@@ -1,5 +1,10 @@
 {
   description = ''Simple reST HTML generation with some extras.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-lazy_rest-v0_2_0.flake = false;
   inputs.src-lazy_rest-v0_2_0.type = "github";
   inputs.src-lazy_rest-v0_2_0.owner = "Araq";
@@ -27,12 +32,12 @@
   inputs."https://github.com/gradha/badger_bits.git".ref = "flake-pinning";
   inputs."https://github.com/gradha/badger_bits.git".dir = "nimpkgs/h/https://github.com/gradha/badger_bits.git";
 
-  outputs = { self, nixpkgs, src-lazy_rest-v0_2_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-lazy_rest-v0_2_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-lazy_rest-v0_2_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-lazy_rest-v0_2_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-lazy_rest-v0_2_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

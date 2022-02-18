@@ -1,5 +1,10 @@
 {
   description = ''Lock-free threadsafe MPMC with high throughput'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-loony-0_1_2.flake = false;
   inputs.src-loony-0_1_2.type = "github";
   inputs.src-loony-0_1_2.owner = "shayanhabibi";
@@ -20,12 +25,12 @@
   inputs."https://github.com/disruptek/cps".ref = "flake-pinning";
   inputs."https://github.com/disruptek/cps".dir = "nimpkgs/h/https://github.com/disruptek/cps";
 
-  outputs = { self, nixpkgs, src-loony-0_1_2, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-loony-0_1_2, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-loony-0_1_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-loony-0_1_2"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-loony-0_1_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

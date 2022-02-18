@@ -1,5 +1,10 @@
 {
   description = ''Definitions of various data structures used in the Ethereum eco-system'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-eth_common-master.flake = false;
   inputs.src-eth_common-master.type = "github";
   inputs.src-eth_common-master.owner = "status-im";
@@ -48,12 +53,12 @@
   inputs."byteutils".ref = "flake-pinning";
   inputs."byteutils".dir = "nimpkgs/b/byteutils";
 
-  outputs = { self, nixpkgs, src-eth_common-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-eth_common-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-eth_common-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-eth_common-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eth_common-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

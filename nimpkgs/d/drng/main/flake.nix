@@ -1,5 +1,10 @@
 {
   description = ''Provides access to the rdrand and rdseed instructions. Based on Intel's DRNG Library (libdrng)'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-drng-main.flake = false;
   inputs.src-drng-main.type = "github";
   inputs.src-drng-main.owner = "rockcavera";
@@ -13,12 +18,12 @@
   inputs."cpuwhat".ref = "flake-pinning";
   inputs."cpuwhat".dir = "nimpkgs/c/cpuwhat";
 
-  outputs = { self, nixpkgs, src-drng-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-drng-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-drng-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-drng-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-drng-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Implementation of Unix crypt with support for Crypt-MD5, Crypt-SHA256 and Crypt-SHA512'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimcrypt-main.flake = false;
   inputs.src-nimcrypt-main.type = "github";
   inputs.src-nimcrypt-main.owner = "napalu";
@@ -13,12 +18,12 @@
   inputs."nimcrypto".ref = "flake-pinning";
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
-  outputs = { self, nixpkgs, src-nimcrypt-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimcrypt-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimcrypt-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimcrypt-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimcrypt-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

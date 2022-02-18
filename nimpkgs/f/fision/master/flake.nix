@@ -1,5 +1,10 @@
 {
   description = ''important_packages with 0 dependencies and all unittests passing'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-fision-master.flake = false;
   inputs.src-fision-master.type = "github";
   inputs.src-fision-master.owner = "juancarlospaco";
@@ -790,12 +795,12 @@
   inputs."zippy".ref = "flake-pinning";
   inputs."zippy".dir = "nimpkgs/z/zippy";
 
-  outputs = { self, nixpkgs, src-fision-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-fision-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-fision-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-fision-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-fision-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

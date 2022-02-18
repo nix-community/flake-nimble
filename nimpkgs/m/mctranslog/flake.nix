@@ -1,12 +1,27 @@
 {
   description = ''mctranslog - Transaction Log Package'';
-  inputs."mctranslog-master".url = "path:./master";
-  inputs."mctranslog-v0_1_4".url = "path:./v0_1_4";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."mctranslog-master".type = "github";
+  inputs."mctranslog-master".owner = "riinr";
+  inputs."mctranslog-master".repo = "flake-nimble";
+  inputs."mctranslog-master".ref = "flake-pinning";
+  inputs."mctranslog-master".dir = "nimpkgs/m/mctranslog/master";
+
+    inputs."mctranslog-v0_1_4".type = "github";
+  inputs."mctranslog-v0_1_4".owner = "riinr";
+  inputs."mctranslog-v0_1_4".repo = "flake-nimble";
+  inputs."mctranslog-v0_1_4".ref = "flake-pinning";
+  inputs."mctranslog-v0_1_4".dir = "nimpkgs/m/mctranslog/v0_1_4";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

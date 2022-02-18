@@ -1,5 +1,10 @@
 {
   description = ''Hi Fidelity Rendering Engine'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimAGG-master.flake = false;
   inputs.src-nimAGG-master.type = "github";
   inputs.src-nimAGG-master.owner = "jangko";
@@ -34,12 +39,12 @@
   inputs."polybool".ref = "flake-pinning";
   inputs."polybool".dir = "nimpkgs/p/polybool";
 
-  outputs = { self, nixpkgs, src-nimAGG-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimAGG-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimAGG-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimAGG-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimAGG-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

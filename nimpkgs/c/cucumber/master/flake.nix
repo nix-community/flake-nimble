@@ -1,5 +1,10 @@
 {
   description = ''implements the cucumber BDD framework in the nim language'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-cucumber-master.flake = false;
   inputs.src-cucumber-master.type = "github";
   inputs.src-cucumber-master.owner = "shaunc";
@@ -27,12 +32,12 @@
   inputs."tempfile".ref = "flake-pinning";
   inputs."tempfile".dir = "nimpkgs/t/tempfile";
 
-  outputs = { self, nixpkgs, src-cucumber-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-cucumber-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-cucumber-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-cucumber-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-cucumber-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''A simple PubSub framework using STOMP.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-cittadino-master.flake = false;
   inputs.src-cittadino-master.type = "github";
   inputs.src-cittadino-master.owner = "makingspace";
@@ -13,12 +18,12 @@
   inputs."https://github.com/subsetpark/nim-stomp.git".ref = "flake-pinning";
   inputs."https://github.com/subsetpark/nim-stomp.git".dir = "nimpkgs/h/https://github.com/subsetpark/nim-stomp.git";
 
-  outputs = { self, nixpkgs, src-cittadino-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-cittadino-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-cittadino-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-cittadino-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-cittadino-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

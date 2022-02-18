@@ -1,5 +1,10 @@
 {
   description = ''A Jester web plugin that gets a pooled MongoDB connection for each web query.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-jestermongopool-v1_0_1.flake = false;
   inputs.src-jestermongopool-v1_0_1.type = "github";
   inputs.src-jestermongopool-v1_0_1.owner = "JohnAD";
@@ -20,12 +25,12 @@
   inputs."mongopool".ref = "flake-pinning";
   inputs."mongopool".dir = "nimpkgs/m/mongopool";
 
-  outputs = { self, nixpkgs, src-jestermongopool-v1_0_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-jestermongopool-v1_0_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-jestermongopool-v1_0_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-jestermongopool-v1_0_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-jestermongopool-v1_0_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

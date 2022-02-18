@@ -1,5 +1,10 @@
 {
   description = ''A command lined based text editor inspired by vi/vim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-moe-develop.flake = false;
   inputs.src-moe-develop.type = "github";
   inputs.src-moe-develop.owner = "fox0430";
@@ -27,12 +32,12 @@
   inputs."parsetoml".ref = "flake-pinning";
   inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
 
-  outputs = { self, nixpkgs, src-moe-develop, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-moe-develop, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-moe-develop;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-moe-develop"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-moe-develop"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

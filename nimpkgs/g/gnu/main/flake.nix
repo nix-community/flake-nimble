@@ -1,5 +1,10 @@
 {
   description = ''Godot-Nim Utility - Godot gamedev with Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-gnu-main.flake = false;
   inputs.src-gnu-main.type = "github";
   inputs.src-gnu-main.owner = "tonogram";
@@ -20,12 +25,12 @@
   inputs."cligen".ref = "flake-pinning";
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
-  outputs = { self, nixpkgs, src-gnu-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-gnu-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-gnu-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-gnu-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-gnu-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

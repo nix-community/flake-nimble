@@ -1,5 +1,10 @@
 {
   description = ''A port of ggplot2 for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ggplotnim-v0_4_9.flake = false;
   inputs.src-ggplotnim-v0_4_9.type = "github";
   inputs.src-ggplotnim-v0_4_9.owner = "Vindaar";
@@ -55,12 +60,12 @@
   inputs."https://github.com/scinim/scinim".ref = "flake-pinning";
   inputs."https://github.com/scinim/scinim".dir = "nimpkgs/h/https://github.com/scinim/scinim";
 
-  outputs = { self, nixpkgs, src-ggplotnim-v0_4_9, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ggplotnim-v0_4_9, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ggplotnim-v0_4_9;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ggplotnim-v0_4_9"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ggplotnim-v0_4_9"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

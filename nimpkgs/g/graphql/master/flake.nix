@@ -1,5 +1,10 @@
 {
   description = ''GraphQL parser, server and client implementation'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-graphql-master.flake = false;
   inputs.src-graphql-master.type = "github";
   inputs.src-graphql-master.owner = "status-im";
@@ -48,12 +53,12 @@
   inputs."https://github.com/status-im/nim-unittest2".ref = "flake-pinning";
   inputs."https://github.com/status-im/nim-unittest2".dir = "nimpkgs/h/https://github.com/status-im/nim-unittest2";
 
-  outputs = { self, nixpkgs, src-graphql-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-graphql-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-graphql-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-graphql-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-graphql-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

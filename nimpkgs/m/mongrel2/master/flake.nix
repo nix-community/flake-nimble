@@ -1,5 +1,10 @@
 {
   description = ''Handler framework for the Mongrel2 web server.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-mongrel2-master.flake = false;
   inputs.src-mongrel2-master.type = "github";
   inputs.src-mongrel2-master.owner = "mahlonsmith";
@@ -20,12 +25,12 @@
   inputs."zmq".ref = "flake-pinning";
   inputs."zmq".dir = "nimpkgs/z/zmq";
 
-  outputs = { self, nixpkgs, src-mongrel2-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-mongrel2-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-mongrel2-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-mongrel2-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-mongrel2-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

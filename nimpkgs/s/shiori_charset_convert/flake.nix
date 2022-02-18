@@ -1,12 +1,27 @@
 {
   description = ''The SHIORI Message charset convert utility'';
-  inputs."shiori_charset_convert-master".url = "path:./master";
-  inputs."shiori_charset_convert-v1_0_0".url = "path:./v1_0_0";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."shiori_charset_convert-master".type = "github";
+  inputs."shiori_charset_convert-master".owner = "riinr";
+  inputs."shiori_charset_convert-master".repo = "flake-nimble";
+  inputs."shiori_charset_convert-master".ref = "flake-pinning";
+  inputs."shiori_charset_convert-master".dir = "nimpkgs/s/shiori_charset_convert/master";
+
+    inputs."shiori_charset_convert-v1_0_0".type = "github";
+  inputs."shiori_charset_convert-v1_0_0".owner = "riinr";
+  inputs."shiori_charset_convert-v1_0_0".repo = "flake-nimble";
+  inputs."shiori_charset_convert-v1_0_0".ref = "flake-pinning";
+  inputs."shiori_charset_convert-v1_0_0".dir = "nimpkgs/s/shiori_charset_convert/v1_0_0";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

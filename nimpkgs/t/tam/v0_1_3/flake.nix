@@ -1,5 +1,10 @@
 {
   description = ''Tales of Maj'Eyal addon manager'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-tam-v0_1_3.flake = false;
   inputs.src-tam-v0_1_3.type = "github";
   inputs.src-tam-v0_1_3.owner = "SolitudeSF";
@@ -27,12 +32,12 @@
   inputs."tiny_sqlite".ref = "flake-pinning";
   inputs."tiny_sqlite".dir = "nimpkgs/t/tiny_sqlite";
 
-  outputs = { self, nixpkgs, src-tam-v0_1_3, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-tam-v0_1_3, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-tam-v0_1_3;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-tam-v0_1_3"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-tam-v0_1_3"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

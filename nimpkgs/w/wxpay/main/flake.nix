@@ -1,5 +1,10 @@
 {
   description = ''A wechat payment sdk for nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-wxpay-main.flake = false;
   inputs.src-wxpay-main.type = "github";
   inputs.src-wxpay-main.owner = "lihf8515";
@@ -13,12 +18,12 @@
   inputs."hmac".ref = "flake-pinning";
   inputs."hmac".dir = "nimpkgs/h/hmac";
 
-  outputs = { self, nixpkgs, src-wxpay-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-wxpay-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-wxpay-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-wxpay-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wxpay-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Various Layonara related functions for NWN Development'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-layonara_nwn-master.flake = false;
   inputs.src-layonara_nwn-master.type = "github";
   inputs.src-layonara_nwn-master.owner = "plenarius";
@@ -27,12 +32,12 @@
   inputs."docopt".ref = "flake-pinning";
   inputs."docopt".dir = "nimpkgs/d/docopt";
 
-  outputs = { self, nixpkgs, src-layonara_nwn-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-layonara_nwn-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-layonara_nwn-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-layonara_nwn-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-layonara_nwn-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Nim term rewriting system'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimtrs-master.flake = false;
   inputs.src-nimtrs-master.type = "github";
   inputs.src-nimtrs-master.owner = "haxscramper";
@@ -34,12 +39,12 @@
   inputs."hnimast".ref = "flake-pinning";
   inputs."hnimast".dir = "nimpkgs/h/hnimast";
 
-  outputs = { self, nixpkgs, src-nimtrs-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimtrs-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimtrs-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimtrs-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimtrs-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Fast and just works JSON-Binding for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-sam-0_1_15.flake = false;
   inputs.src-sam-0_1_15.type = "github";
   inputs.src-sam-0_1_15.owner = "OpenSystemsLab";
@@ -13,12 +18,12 @@
   inputs."jsmn".ref = "flake-pinning";
   inputs."jsmn".dir = "nimpkgs/j/jsmn";
 
-  outputs = { self, nixpkgs, src-sam-0_1_15, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-sam-0_1_15, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-sam-0_1_15;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-sam-0_1_15"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-sam-0_1_15"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

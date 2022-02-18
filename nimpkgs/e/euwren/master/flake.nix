@@ -1,5 +1,10 @@
 {
   description = ''High-level Wren wrapper'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-euwren-master.flake = false;
   inputs.src-euwren-master.type = "github";
   inputs.src-euwren-master.owner = "liquid600pgm";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-euwren-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-euwren-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-euwren-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-euwren-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-euwren-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

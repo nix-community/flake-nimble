@@ -1,5 +1,10 @@
 {
   description = ''Fonts, Typesetting and Rasterization.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-typography-0_7_1.flake = false;
   inputs.src-typography-0_7_1.type = "github";
   inputs.src-typography-0_7_1.owner = "treeform";
@@ -41,12 +46,12 @@
   inputs."bumpy".ref = "flake-pinning";
   inputs."bumpy".dir = "nimpkgs/b/bumpy";
 
-  outputs = { self, nixpkgs, src-typography-0_7_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-typography-0_7_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-typography-0_7_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-typography-0_7_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-typography-0_7_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

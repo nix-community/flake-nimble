@@ -1,5 +1,10 @@
 {
   description = ''A library to hide data in images. Usable as library or cli tool.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimagehide-master.flake = false;
   inputs.src-nimagehide-master.type = "github";
   inputs.src-nimagehide-master.owner = "MnlPhlp";
@@ -27,12 +32,12 @@
   inputs."cli_menu".ref = "flake-pinning";
   inputs."cli_menu".dir = "nimpkgs/c/cli_menu";
 
-  outputs = { self, nixpkgs, src-nimagehide-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimagehide-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimagehide-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimagehide-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimagehide-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

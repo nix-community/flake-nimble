@@ -1,5 +1,10 @@
 {
   description = ''Preserves data model and serialization format'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-preserves-v1_1_0.flake = false;
   inputs.src-preserves-v1_1_0.type = "other";
   inputs.src-preserves-v1_1_0.owner = "~ehmry";
@@ -27,12 +32,12 @@
   inputs."npeg".ref = "flake-pinning";
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
-  outputs = { self, nixpkgs, src-preserves-v1_1_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-preserves-v1_1_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-preserves-v1_1_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-preserves-v1_1_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-preserves-v1_1_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

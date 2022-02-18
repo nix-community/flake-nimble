@@ -1,17 +1,22 @@
 {
   description = ''Nimble package manager'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimble-master.flake = false;
   inputs.src-nimble-master.type = "github";
   inputs.src-nimble-master.owner = "nim-lang";
   inputs.src-nimble-master.repo = "nimble";
   inputs.src-nimble-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, src-nimble-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimble-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimble-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimble-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimble-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

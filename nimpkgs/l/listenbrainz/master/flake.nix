@@ -1,5 +1,10 @@
 {
   description = ''Low-level multisync bindings to the ListenBrainz web API.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-listenbrainz-master.flake = false;
   inputs.src-listenbrainz-master.type = "gitlab";
   inputs.src-listenbrainz-master.owner = "tandy1000";
@@ -34,12 +39,12 @@
   inputs."https://github.com/tandy-1000/uniony".ref = "flake-pinning";
   inputs."https://github.com/tandy-1000/uniony".dir = "nimpkgs/h/https://github.com/tandy-1000/uniony";
 
-  outputs = { self, nixpkgs, src-listenbrainz-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-listenbrainz-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-listenbrainz-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-listenbrainz-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-listenbrainz-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

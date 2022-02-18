@@ -1,5 +1,10 @@
 {
   description = ''Nim bindings for Godot Engine'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-godot-v0_6_5.flake = false;
   inputs.src-godot-v0_6_5.type = "github";
   inputs.src-godot-v0_6_5.owner = "pragmagic";
@@ -13,12 +18,12 @@
   inputs."compiler".ref = "flake-pinning";
   inputs."compiler".dir = "nimpkgs/c/compiler";
 
-  outputs = { self, nixpkgs, src-godot-v0_6_5, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-godot-v0_6_5, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-godot-v0_6_5;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-godot-v0_6_5"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-godot-v0_6_5"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

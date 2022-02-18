@@ -1,5 +1,10 @@
 {
   description = ''Indie assembler/linker for Android's Dalvik VM .dex & .apk files'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-dali-master.flake = false;
   inputs.src-dali-master.type = "github";
   inputs.src-dali-master.owner = "akavel";
@@ -13,12 +18,12 @@
   inputs."patty".ref = "flake-pinning";
   inputs."patty".dir = "nimpkgs/p/patty";
 
-  outputs = { self, nixpkgs, src-dali-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-dali-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-dali-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-dali-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-dali-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

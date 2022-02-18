@@ -1,5 +1,10 @@
 {
   description = ''a benchmark tool'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-golden-2_5_2.flake = false;
   inputs.src-golden-2_5_2.type = "github";
   inputs.src-golden-2_5_2.owner = "disruptek";
@@ -55,12 +60,12 @@
   inputs."nimgit2".ref = "flake-pinning";
   inputs."nimgit2".dir = "nimpkgs/n/nimgit2";
 
-  outputs = { self, nixpkgs, src-golden-2_5_2, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-golden-2_5_2, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-golden-2_5_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-golden-2_5_2"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-golden-2_5_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

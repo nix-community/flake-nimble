@@ -1,5 +1,10 @@
 {
   description = ''An Ethereum 2.0 Sharding Client for Resource-Restricted Devices'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimbus-201903-testnet0.flake = false;
   inputs.src-nimbus-201903-testnet0.type = "github";
   inputs.src-nimbus-201903-testnet0.owner = "status-im";
@@ -62,12 +67,12 @@
   inputs."std_shims".ref = "flake-pinning";
   inputs."std_shims".dir = "nimpkgs/s/std_shims";
 
-  outputs = { self, nixpkgs, src-nimbus-201903-testnet0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimbus-201903-testnet0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimbus-201903-testnet0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimbus-201903-testnet0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimbus-201903-testnet0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

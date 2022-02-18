@@ -1,5 +1,10 @@
 {
   description = ''A simple terminal tetris in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimtetris-v0_3_1.flake = false;
   inputs.src-nimtetris-v0_3_1.type = "github";
   inputs.src-nimtetris-v0_3_1.owner = "jiro4989";
@@ -13,12 +18,12 @@
   inputs."illwill".ref = "flake-pinning";
   inputs."illwill".dir = "nimpkgs/i/illwill";
 
-  outputs = { self, nixpkgs, src-nimtetris-v0_3_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimtetris-v0_3_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimtetris-v0_3_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimtetris-v0_3_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimtetris-v0_3_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

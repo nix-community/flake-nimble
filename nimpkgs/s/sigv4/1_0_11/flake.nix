@@ -1,5 +1,10 @@
 {
   description = ''Amazon Web Services Signature Version 4'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-sigv4-1_0_11.flake = false;
   inputs.src-sigv4-1_0_11.type = "github";
   inputs.src-sigv4-1_0_11.owner = "disruptek";
@@ -20,12 +25,12 @@
   inputs."https://github.com/disruptek/testes".ref = "flake-pinning";
   inputs."https://github.com/disruptek/testes".dir = "nimpkgs/h/https://github.com/disruptek/testes";
 
-  outputs = { self, nixpkgs, src-sigv4-1_0_11, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-sigv4-1_0_11, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-sigv4-1_0_11;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-sigv4-1_0_11"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-sigv4-1_0_11"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

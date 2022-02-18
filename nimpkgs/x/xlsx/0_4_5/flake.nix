@@ -1,5 +1,10 @@
 {
   description = ''Read and parse Excel files'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-xlsx-0_4_5.flake = false;
   inputs.src-xlsx-0_4_5.type = "github";
   inputs.src-xlsx-0_4_5.owner = "xflywind";
@@ -13,12 +18,12 @@
   inputs."zip".ref = "flake-pinning";
   inputs."zip".dir = "nimpkgs/z/zip";
 
-  outputs = { self, nixpkgs, src-xlsx-0_4_5, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-xlsx-0_4_5, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-xlsx-0_4_5;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-xlsx-0_4_5"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-xlsx-0_4_5"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

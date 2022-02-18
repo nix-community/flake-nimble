@@ -1,5 +1,10 @@
 {
   description = ''A Nim wrapper for Python's matplotlib'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-matplotnim-master.flake = false;
   inputs.src-matplotnim-master.type = "github";
   inputs.src-matplotnim-master.owner = "ruivieira";
@@ -20,12 +25,12 @@
   inputs."nimpy".ref = "flake-pinning";
   inputs."nimpy".dir = "nimpkgs/n/nimpy";
 
-  outputs = { self, nixpkgs, src-matplotnim-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-matplotnim-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-matplotnim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-matplotnim-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-matplotnim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

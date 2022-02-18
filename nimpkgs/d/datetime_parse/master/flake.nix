@@ -1,5 +1,10 @@
 {
   description = ''parse datetime from various resources'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-datetime_parse-master.flake = false;
   inputs.src-datetime_parse-master.type = "github";
   inputs.src-datetime_parse-master.owner = "bung87";
@@ -13,12 +18,12 @@
   inputs."timezones".ref = "flake-pinning";
   inputs."timezones".dir = "nimpkgs/t/timezones";
 
-  outputs = { self, nixpkgs, src-datetime_parse-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-datetime_parse-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-datetime_parse-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-datetime_parse-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-datetime_parse-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

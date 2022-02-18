@@ -1,5 +1,10 @@
 {
   description = ''libgraphqlparser wrapper for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimgraphql-master.flake = false;
   inputs.src-nimgraphql-master.type = "github";
   inputs.src-nimgraphql-master.owner = "genotrance";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-nimgraphql-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimgraphql-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimgraphql-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimgraphql-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimgraphql-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

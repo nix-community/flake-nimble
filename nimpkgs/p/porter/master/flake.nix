@@ -1,5 +1,10 @@
 {
   description = ''Simple extensible implementation of Porter stemmer algorithm'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-porter-master.flake = false;
   inputs.src-porter-master.type = "github";
   inputs.src-porter-master.owner = "iourinski";
@@ -13,12 +18,12 @@
   inputs."mutableseqs".ref = "flake-pinning";
   inputs."mutableseqs".dir = "nimpkgs/m/mutableseqs";
 
-  outputs = { self, nixpkgs, src-porter-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-porter-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-porter-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-porter-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-porter-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

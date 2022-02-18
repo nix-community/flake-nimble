@@ -1,5 +1,10 @@
 {
   description = ''Sampling profiler that finds hot paths in your code.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hottie-master.flake = false;
   inputs.src-hottie-master.type = "github";
   inputs.src-hottie-master.owner = "treeform";
@@ -20,12 +25,12 @@
   inputs."ptrace".ref = "flake-pinning";
   inputs."ptrace".dir = "nimpkgs/p/ptrace";
 
-  outputs = { self, nixpkgs, src-hottie-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hottie-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hottie-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hottie-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hottie-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Nim implementation of  Barreto-Lynn-Scott (BLS) curve BLS12-381.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-blscurve-master.flake = false;
   inputs.src-blscurve-master.type = "github";
   inputs.src-blscurve-master.owner = "status-im";
@@ -27,12 +32,12 @@
   inputs."https://github.com/status-im/nim-taskpools.git".ref = "flake-pinning";
   inputs."https://github.com/status-im/nim-taskpools.git".dir = "nimpkgs/h/https://github.com/status-im/nim-taskpools.git";
 
-  outputs = { self, nixpkgs, src-blscurve-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-blscurve-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-blscurve-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-blscurve-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-blscurve-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

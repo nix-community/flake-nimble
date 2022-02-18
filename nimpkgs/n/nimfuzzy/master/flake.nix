@@ -1,5 +1,10 @@
 {
   description = ''Fuzzy search wrapper for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimfuzzy-master.flake = false;
   inputs.src-nimfuzzy-master.type = "github";
   inputs.src-nimfuzzy-master.owner = "genotrance";
@@ -13,12 +18,12 @@
   inputs."nimgen".ref = "flake-pinning";
   inputs."nimgen".dir = "nimpkgs/n/nimgen";
 
-  outputs = { self, nixpkgs, src-nimfuzzy-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimfuzzy-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimfuzzy-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimfuzzy-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimfuzzy-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

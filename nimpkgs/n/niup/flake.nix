@@ -1,31 +1,141 @@
 {
   description = ''IUP FFI bindings'';
-  inputs."niup-master".url = "path:./master";
-  inputs."niup-3_27_0".url = "path:./3_27_0";
-  inputs."niup-3_27_1".url = "path:./3_27_1";
-  inputs."niup-3_27_2".url = "path:./3_27_2";
-  inputs."niup-3_27_3".url = "path:./3_27_3";
-  inputs."niup-3_27_4".url = "path:./3_27_4";
-  inputs."niup-3_27_5".url = "path:./3_27_5";
-  inputs."niup-3_27_6".url = "path:./3_27_6";
-  inputs."niup-3_27_7".url = "path:./3_27_7";
-  inputs."niup-3_27_8".url = "path:./3_27_8";
-  inputs."niup-3_28_0".url = "path:./3_28_0";
-  inputs."niup-3_28_1".url = "path:./3_28_1";
-  inputs."niup-3_28_2".url = "path:./3_28_2";
-  inputs."niup-3_29_0".url = "path:./3_29_0";
-  inputs."niup-3_29_1".url = "path:./3_29_1";
-  inputs."niup-3_30_0".url = "path:./3_30_0";
-  inputs."niup-3_30_1".url = "path:./3_30_1";
-  inputs."niup-3_30_2".url = "path:./3_30_2";
-  inputs."niup-v3_30_5".url = "path:./v3_30_5";
-  inputs."niup-v3_30_6".url = "path:./v3_30_6";
-  inputs."niup-v3_30_7".url = "path:./v3_30_7";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."niup-master".type = "github";
+  inputs."niup-master".owner = "riinr";
+  inputs."niup-master".repo = "flake-nimble";
+  inputs."niup-master".ref = "flake-pinning";
+  inputs."niup-master".dir = "nimpkgs/n/niup/master";
+
+    inputs."niup-3_27_0".type = "github";
+  inputs."niup-3_27_0".owner = "riinr";
+  inputs."niup-3_27_0".repo = "flake-nimble";
+  inputs."niup-3_27_0".ref = "flake-pinning";
+  inputs."niup-3_27_0".dir = "nimpkgs/n/niup/3_27_0";
+
+    inputs."niup-3_27_1".type = "github";
+  inputs."niup-3_27_1".owner = "riinr";
+  inputs."niup-3_27_1".repo = "flake-nimble";
+  inputs."niup-3_27_1".ref = "flake-pinning";
+  inputs."niup-3_27_1".dir = "nimpkgs/n/niup/3_27_1";
+
+    inputs."niup-3_27_2".type = "github";
+  inputs."niup-3_27_2".owner = "riinr";
+  inputs."niup-3_27_2".repo = "flake-nimble";
+  inputs."niup-3_27_2".ref = "flake-pinning";
+  inputs."niup-3_27_2".dir = "nimpkgs/n/niup/3_27_2";
+
+    inputs."niup-3_27_3".type = "github";
+  inputs."niup-3_27_3".owner = "riinr";
+  inputs."niup-3_27_3".repo = "flake-nimble";
+  inputs."niup-3_27_3".ref = "flake-pinning";
+  inputs."niup-3_27_3".dir = "nimpkgs/n/niup/3_27_3";
+
+    inputs."niup-3_27_4".type = "github";
+  inputs."niup-3_27_4".owner = "riinr";
+  inputs."niup-3_27_4".repo = "flake-nimble";
+  inputs."niup-3_27_4".ref = "flake-pinning";
+  inputs."niup-3_27_4".dir = "nimpkgs/n/niup/3_27_4";
+
+    inputs."niup-3_27_5".type = "github";
+  inputs."niup-3_27_5".owner = "riinr";
+  inputs."niup-3_27_5".repo = "flake-nimble";
+  inputs."niup-3_27_5".ref = "flake-pinning";
+  inputs."niup-3_27_5".dir = "nimpkgs/n/niup/3_27_5";
+
+    inputs."niup-3_27_6".type = "github";
+  inputs."niup-3_27_6".owner = "riinr";
+  inputs."niup-3_27_6".repo = "flake-nimble";
+  inputs."niup-3_27_6".ref = "flake-pinning";
+  inputs."niup-3_27_6".dir = "nimpkgs/n/niup/3_27_6";
+
+    inputs."niup-3_27_7".type = "github";
+  inputs."niup-3_27_7".owner = "riinr";
+  inputs."niup-3_27_7".repo = "flake-nimble";
+  inputs."niup-3_27_7".ref = "flake-pinning";
+  inputs."niup-3_27_7".dir = "nimpkgs/n/niup/3_27_7";
+
+    inputs."niup-3_27_8".type = "github";
+  inputs."niup-3_27_8".owner = "riinr";
+  inputs."niup-3_27_8".repo = "flake-nimble";
+  inputs."niup-3_27_8".ref = "flake-pinning";
+  inputs."niup-3_27_8".dir = "nimpkgs/n/niup/3_27_8";
+
+    inputs."niup-3_28_0".type = "github";
+  inputs."niup-3_28_0".owner = "riinr";
+  inputs."niup-3_28_0".repo = "flake-nimble";
+  inputs."niup-3_28_0".ref = "flake-pinning";
+  inputs."niup-3_28_0".dir = "nimpkgs/n/niup/3_28_0";
+
+    inputs."niup-3_28_1".type = "github";
+  inputs."niup-3_28_1".owner = "riinr";
+  inputs."niup-3_28_1".repo = "flake-nimble";
+  inputs."niup-3_28_1".ref = "flake-pinning";
+  inputs."niup-3_28_1".dir = "nimpkgs/n/niup/3_28_1";
+
+    inputs."niup-3_28_2".type = "github";
+  inputs."niup-3_28_2".owner = "riinr";
+  inputs."niup-3_28_2".repo = "flake-nimble";
+  inputs."niup-3_28_2".ref = "flake-pinning";
+  inputs."niup-3_28_2".dir = "nimpkgs/n/niup/3_28_2";
+
+    inputs."niup-3_29_0".type = "github";
+  inputs."niup-3_29_0".owner = "riinr";
+  inputs."niup-3_29_0".repo = "flake-nimble";
+  inputs."niup-3_29_0".ref = "flake-pinning";
+  inputs."niup-3_29_0".dir = "nimpkgs/n/niup/3_29_0";
+
+    inputs."niup-3_29_1".type = "github";
+  inputs."niup-3_29_1".owner = "riinr";
+  inputs."niup-3_29_1".repo = "flake-nimble";
+  inputs."niup-3_29_1".ref = "flake-pinning";
+  inputs."niup-3_29_1".dir = "nimpkgs/n/niup/3_29_1";
+
+    inputs."niup-3_30_0".type = "github";
+  inputs."niup-3_30_0".owner = "riinr";
+  inputs."niup-3_30_0".repo = "flake-nimble";
+  inputs."niup-3_30_0".ref = "flake-pinning";
+  inputs."niup-3_30_0".dir = "nimpkgs/n/niup/3_30_0";
+
+    inputs."niup-3_30_1".type = "github";
+  inputs."niup-3_30_1".owner = "riinr";
+  inputs."niup-3_30_1".repo = "flake-nimble";
+  inputs."niup-3_30_1".ref = "flake-pinning";
+  inputs."niup-3_30_1".dir = "nimpkgs/n/niup/3_30_1";
+
+    inputs."niup-3_30_2".type = "github";
+  inputs."niup-3_30_2".owner = "riinr";
+  inputs."niup-3_30_2".repo = "flake-nimble";
+  inputs."niup-3_30_2".ref = "flake-pinning";
+  inputs."niup-3_30_2".dir = "nimpkgs/n/niup/3_30_2";
+
+    inputs."niup-v3_30_5".type = "github";
+  inputs."niup-v3_30_5".owner = "riinr";
+  inputs."niup-v3_30_5".repo = "flake-nimble";
+  inputs."niup-v3_30_5".ref = "flake-pinning";
+  inputs."niup-v3_30_5".dir = "nimpkgs/n/niup/v3_30_5";
+
+    inputs."niup-v3_30_6".type = "github";
+  inputs."niup-v3_30_6".owner = "riinr";
+  inputs."niup-v3_30_6".repo = "flake-nimble";
+  inputs."niup-v3_30_6".ref = "flake-pinning";
+  inputs."niup-v3_30_6".dir = "nimpkgs/n/niup/v3_30_6";
+
+    inputs."niup-v3_30_7".type = "github";
+  inputs."niup-v3_30_7".owner = "riinr";
+  inputs."niup-v3_30_7".repo = "flake-nimble";
+  inputs."niup-v3_30_7".ref = "flake-pinning";
+  inputs."niup-v3_30_7".dir = "nimpkgs/n/niup/v3_30_7";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

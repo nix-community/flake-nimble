@@ -1,5 +1,10 @@
 {
   description = ''A low-level Nim wrapper for Notcurses: blingful TUIs and character graphics'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-notcurses-v3_0_5.flake = false;
   inputs.src-notcurses-v3_0_5.type = "github";
   inputs.src-notcurses-v3_0_5.owner = "michaelsbradleyjr";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-notcurses-v3_0_5, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-notcurses-v3_0_5, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-notcurses-v3_0_5;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-notcurses-v3_0_5"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-notcurses-v3_0_5"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Chipmunk7 demos for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-chipmunk7_demos-master.flake = false;
   inputs.src-chipmunk7_demos-master.type = "github";
   inputs.src-chipmunk7_demos-master.owner = "matkuki";
@@ -20,12 +25,12 @@
   inputs."opengl".ref = "flake-pinning";
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
-  outputs = { self, nixpkgs, src-chipmunk7_demos-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-chipmunk7_demos-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-chipmunk7_demos-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-chipmunk7_demos-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-chipmunk7_demos-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

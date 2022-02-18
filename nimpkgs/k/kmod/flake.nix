@@ -1,12 +1,22 @@
 {
   description = ''High-level wrapper for Linux's kmod library'';
-  inputs."kmod-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."kmod-master".type = "github";
+  inputs."kmod-master".owner = "riinr";
+  inputs."kmod-master".repo = "flake-nimble";
+  inputs."kmod-master".ref = "flake-pinning";
+  inputs."kmod-master".dir = "nimpkgs/k/kmod/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

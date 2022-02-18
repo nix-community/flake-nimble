@@ -1,5 +1,10 @@
 {
   description = ''A website management tool. Run the file and access your webpage.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimwc-v5_5_1.flake = false;
   inputs.src-nimwc-v5_5_1.type = "github";
   inputs.src-nimwc-v5_5_1.owner = "ThomasTJdev";
@@ -69,12 +74,12 @@
   inputs."webp".ref = "flake-pinning";
   inputs."webp".dir = "nimpkgs/w/webp";
 
-  outputs = { self, nixpkgs, src-nimwc-v5_5_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimwc-v5_5_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimwc-v5_5_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimwc-v5_5_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimwc-v5_5_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

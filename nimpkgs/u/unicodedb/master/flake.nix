@@ -1,17 +1,22 @@
 {
   description = ''Unicode Character Database (UCD) access for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-unicodedb-master.flake = false;
   inputs.src-unicodedb-master.type = "github";
   inputs.src-unicodedb-master.owner = "nitely";
   inputs.src-unicodedb-master.repo = "nim-unicodedb";
   inputs.src-unicodedb-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, src-unicodedb-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-unicodedb-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-unicodedb-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-unicodedb-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-unicodedb-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

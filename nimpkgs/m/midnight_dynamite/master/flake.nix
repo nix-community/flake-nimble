@@ -1,5 +1,10 @@
 {
   description = ''Wrapper for the markdown rendering hoedown library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-midnight_dynamite-master.flake = false;
   inputs.src-midnight_dynamite-master.type = "github";
   inputs.src-midnight_dynamite-master.owner = "Araq";
@@ -27,12 +32,12 @@
   inputs."argument_parser".ref = "flake-pinning";
   inputs."argument_parser".dir = "nimpkgs/a/argument_parser";
 
-  outputs = { self, nixpkgs, src-midnight_dynamite-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-midnight_dynamite-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-midnight_dynamite-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-midnight_dynamite-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-midnight_dynamite-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

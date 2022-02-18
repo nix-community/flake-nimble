@@ -1,25 +1,105 @@
 {
   description = ''Salted Challenge Response Authentication Mechanism (SCRAM) '';
-  inputs."scram-master".url = "path:./master";
-  inputs."scram-0_1_0".url = "path:./0_1_0";
-  inputs."scram-0_1_1".url = "path:./0_1_1";
-  inputs."scram-0_1_10".url = "path:./0_1_10";
-  inputs."scram-0_1_11".url = "path:./0_1_11";
-  inputs."scram-0_1_12".url = "path:./0_1_12";
-  inputs."scram-0_1_13".url = "path:./0_1_13";
-  inputs."scram-0_1_2".url = "path:./0_1_2";
-  inputs."scram-0_1_3".url = "path:./0_1_3";
-  inputs."scram-0_1_4".url = "path:./0_1_4";
-  inputs."scram-0_1_5".url = "path:./0_1_5";
-  inputs."scram-0_1_6".url = "path:./0_1_6";
-  inputs."scram-0_1_7".url = "path:./0_1_7";
-  inputs."scram-0_1_8".url = "path:./0_1_8";
-  inputs."scram-0_1_9".url = "path:./0_1_9";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."scram-master".type = "github";
+  inputs."scram-master".owner = "riinr";
+  inputs."scram-master".repo = "flake-nimble";
+  inputs."scram-master".ref = "flake-pinning";
+  inputs."scram-master".dir = "nimpkgs/s/scram/master";
+
+    inputs."scram-0_1_0".type = "github";
+  inputs."scram-0_1_0".owner = "riinr";
+  inputs."scram-0_1_0".repo = "flake-nimble";
+  inputs."scram-0_1_0".ref = "flake-pinning";
+  inputs."scram-0_1_0".dir = "nimpkgs/s/scram/0_1_0";
+
+    inputs."scram-0_1_1".type = "github";
+  inputs."scram-0_1_1".owner = "riinr";
+  inputs."scram-0_1_1".repo = "flake-nimble";
+  inputs."scram-0_1_1".ref = "flake-pinning";
+  inputs."scram-0_1_1".dir = "nimpkgs/s/scram/0_1_1";
+
+    inputs."scram-0_1_10".type = "github";
+  inputs."scram-0_1_10".owner = "riinr";
+  inputs."scram-0_1_10".repo = "flake-nimble";
+  inputs."scram-0_1_10".ref = "flake-pinning";
+  inputs."scram-0_1_10".dir = "nimpkgs/s/scram/0_1_10";
+
+    inputs."scram-0_1_11".type = "github";
+  inputs."scram-0_1_11".owner = "riinr";
+  inputs."scram-0_1_11".repo = "flake-nimble";
+  inputs."scram-0_1_11".ref = "flake-pinning";
+  inputs."scram-0_1_11".dir = "nimpkgs/s/scram/0_1_11";
+
+    inputs."scram-0_1_12".type = "github";
+  inputs."scram-0_1_12".owner = "riinr";
+  inputs."scram-0_1_12".repo = "flake-nimble";
+  inputs."scram-0_1_12".ref = "flake-pinning";
+  inputs."scram-0_1_12".dir = "nimpkgs/s/scram/0_1_12";
+
+    inputs."scram-0_1_13".type = "github";
+  inputs."scram-0_1_13".owner = "riinr";
+  inputs."scram-0_1_13".repo = "flake-nimble";
+  inputs."scram-0_1_13".ref = "flake-pinning";
+  inputs."scram-0_1_13".dir = "nimpkgs/s/scram/0_1_13";
+
+    inputs."scram-0_1_2".type = "github";
+  inputs."scram-0_1_2".owner = "riinr";
+  inputs."scram-0_1_2".repo = "flake-nimble";
+  inputs."scram-0_1_2".ref = "flake-pinning";
+  inputs."scram-0_1_2".dir = "nimpkgs/s/scram/0_1_2";
+
+    inputs."scram-0_1_3".type = "github";
+  inputs."scram-0_1_3".owner = "riinr";
+  inputs."scram-0_1_3".repo = "flake-nimble";
+  inputs."scram-0_1_3".ref = "flake-pinning";
+  inputs."scram-0_1_3".dir = "nimpkgs/s/scram/0_1_3";
+
+    inputs."scram-0_1_4".type = "github";
+  inputs."scram-0_1_4".owner = "riinr";
+  inputs."scram-0_1_4".repo = "flake-nimble";
+  inputs."scram-0_1_4".ref = "flake-pinning";
+  inputs."scram-0_1_4".dir = "nimpkgs/s/scram/0_1_4";
+
+    inputs."scram-0_1_5".type = "github";
+  inputs."scram-0_1_5".owner = "riinr";
+  inputs."scram-0_1_5".repo = "flake-nimble";
+  inputs."scram-0_1_5".ref = "flake-pinning";
+  inputs."scram-0_1_5".dir = "nimpkgs/s/scram/0_1_5";
+
+    inputs."scram-0_1_6".type = "github";
+  inputs."scram-0_1_6".owner = "riinr";
+  inputs."scram-0_1_6".repo = "flake-nimble";
+  inputs."scram-0_1_6".ref = "flake-pinning";
+  inputs."scram-0_1_6".dir = "nimpkgs/s/scram/0_1_6";
+
+    inputs."scram-0_1_7".type = "github";
+  inputs."scram-0_1_7".owner = "riinr";
+  inputs."scram-0_1_7".repo = "flake-nimble";
+  inputs."scram-0_1_7".ref = "flake-pinning";
+  inputs."scram-0_1_7".dir = "nimpkgs/s/scram/0_1_7";
+
+    inputs."scram-0_1_8".type = "github";
+  inputs."scram-0_1_8".owner = "riinr";
+  inputs."scram-0_1_8".repo = "flake-nimble";
+  inputs."scram-0_1_8".ref = "flake-pinning";
+  inputs."scram-0_1_8".dir = "nimpkgs/s/scram/0_1_8";
+
+    inputs."scram-0_1_9".type = "github";
+  inputs."scram-0_1_9".owner = "riinr";
+  inputs."scram-0_1_9".repo = "flake-nimble";
+  inputs."scram-0_1_9".ref = "flake-pinning";
+  inputs."scram-0_1_9".dir = "nimpkgs/s/scram/0_1_9";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

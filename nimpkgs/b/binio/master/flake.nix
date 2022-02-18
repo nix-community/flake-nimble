@@ -1,5 +1,10 @@
 {
   description = ''Package for packing and unpacking byte data'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-binio-master.flake = false;
   inputs.src-binio-master.type = "github";
   inputs.src-binio-master.owner = "Riderfighter";
@@ -13,12 +18,12 @@
   inputs."struct".ref = "flake-pinning";
   inputs."struct".dir = "nimpkgs/s/struct";
 
-  outputs = { self, nixpkgs, src-binio-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-binio-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-binio-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-binio-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-binio-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

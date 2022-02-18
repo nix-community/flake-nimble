@@ -1,5 +1,10 @@
 {
   description = ''RPC implementation for Nim based on msgpack4nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimrpc-master.flake = false;
   inputs.src-nimrpc-master.type = "github";
   inputs.src-nimrpc-master.owner = "rogercloud";
@@ -13,12 +18,12 @@
   inputs."msgpack4nim".ref = "flake-pinning";
   inputs."msgpack4nim".dir = "nimpkgs/m/msgpack4nim";
 
-  outputs = { self, nixpkgs, src-nimrpc-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimrpc-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimrpc-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimrpc-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimrpc-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

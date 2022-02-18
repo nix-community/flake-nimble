@@ -1,5 +1,10 @@
 {
   description = ''Color management utility for X'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-xcm-master.flake = false;
   inputs.src-xcm-master.type = "github";
   inputs.src-xcm-master.owner = "SolitudeSF";
@@ -20,12 +25,12 @@
   inputs."cligen".ref = "flake-pinning";
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
-  outputs = { self, nixpkgs, src-xcm-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-xcm-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-xcm-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-xcm-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-xcm-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

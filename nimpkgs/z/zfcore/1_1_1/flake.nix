@@ -1,5 +1,10 @@
 {
   description = ''zfcore is high performance asynchttpserver and web framework for nim lang'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-zfcore-1_1_1.flake = false;
   inputs.src-zfcore-1_1_1.type = "github";
   inputs.src-zfcore-1_1_1.owner = "zendbit";
@@ -27,12 +32,12 @@
   inputs."stdext".ref = "flake-pinning";
   inputs."stdext".dir = "nimpkgs/s/stdext";
 
-  outputs = { self, nixpkgs, src-zfcore-1_1_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-zfcore-1_1_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-zfcore-1_1_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-zfcore-1_1_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-zfcore-1_1_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

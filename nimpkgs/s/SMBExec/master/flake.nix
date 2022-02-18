@@ -1,5 +1,10 @@
 {
   description = ''Nim-SMBExec - SMBExec implementation in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-SMBExec-master.flake = false;
   inputs.src-SMBExec-master.type = "github";
   inputs.src-SMBExec-master.owner = "elddy";
@@ -27,12 +32,12 @@
   inputs."regex".ref = "flake-pinning";
   inputs."regex".dir = "nimpkgs/r/regex";
 
-  outputs = { self, nixpkgs, src-SMBExec-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-SMBExec-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-SMBExec-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-SMBExec-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-SMBExec-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

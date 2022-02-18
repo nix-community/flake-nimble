@@ -1,13 +1,33 @@
 {
   description = ''Syslog module.'';
-  inputs."syslog-master".url = "path:./master";
-  inputs."syslog-0_0_3".url = "path:./0_0_3";
-  inputs."syslog-0_0_5".url = "path:./0_0_5";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."syslog-master".type = "github";
+  inputs."syslog-master".owner = "riinr";
+  inputs."syslog-master".repo = "flake-nimble";
+  inputs."syslog-master".ref = "flake-pinning";
+  inputs."syslog-master".dir = "nimpkgs/s/syslog/master";
+
+    inputs."syslog-0_0_3".type = "github";
+  inputs."syslog-0_0_3".owner = "riinr";
+  inputs."syslog-0_0_3".repo = "flake-nimble";
+  inputs."syslog-0_0_3".ref = "flake-pinning";
+  inputs."syslog-0_0_3".dir = "nimpkgs/s/syslog/0_0_3";
+
+    inputs."syslog-0_0_5".type = "github";
+  inputs."syslog-0_0_5".owner = "riinr";
+  inputs."syslog-0_0_5".repo = "flake-nimble";
+  inputs."syslog-0_0_5".ref = "flake-pinning";
+  inputs."syslog-0_0_5".dir = "nimpkgs/s/syslog/0_0_5";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

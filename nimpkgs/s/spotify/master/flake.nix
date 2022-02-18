@@ -1,5 +1,10 @@
 {
   description = ''A Nim wrapper for the Spotify Web API'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-spotify-master.flake = false;
   inputs.src-spotify-master.type = "github";
   inputs.src-spotify-master.owner = "CORDEA";
@@ -13,12 +18,12 @@
   inputs."oauth".ref = "flake-pinning";
   inputs."oauth".dir = "nimpkgs/o/oauth";
 
-  outputs = { self, nixpkgs, src-spotify-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-spotify-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-spotify-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-spotify-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-spotify-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

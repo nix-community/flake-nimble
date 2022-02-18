@@ -1,5 +1,10 @@
 {
   description = ''Feature-rich readline replacement'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-prompt-master.flake = false;
   inputs.src-prompt-master.type = "github";
   inputs.src-prompt-master.owner = "surf1nb1rd";
@@ -13,12 +18,12 @@
   inputs."unicodedb".ref = "flake-pinning";
   inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
 
-  outputs = { self, nixpkgs, src-prompt-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-prompt-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-prompt-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-prompt-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-prompt-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

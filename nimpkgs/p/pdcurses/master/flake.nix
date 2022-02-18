@@ -1,5 +1,10 @@
 {
   description = ''Nim wrapper for PDCurses'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-pdcurses-master.flake = false;
   inputs.src-pdcurses-master.type = "github";
   inputs.src-pdcurses-master.owner = "lcrees";
@@ -13,12 +18,12 @@
   inputs."oldwinapi".ref = "flake-pinning";
   inputs."oldwinapi".dir = "nimpkgs/o/oldwinapi";
 
-  outputs = { self, nixpkgs, src-pdcurses-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-pdcurses-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-pdcurses-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-pdcurses-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-pdcurses-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Code coverage library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-coverage-master.flake = false;
   inputs.src-coverage-master.type = "github";
   inputs.src-coverage-master.owner = "yglukhov";
@@ -13,12 +18,12 @@
   inputs."nake".ref = "flake-pinning";
   inputs."nake".dir = "nimpkgs/n/nake";
 
-  outputs = { self, nixpkgs, src-coverage-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-coverage-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-coverage-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-coverage-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-coverage-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,12 +1,22 @@
 {
   description = ''Nim library with python-like functions and operators'';
-  inputs."pylib-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."pylib-master".type = "github";
+  inputs."pylib-master".owner = "riinr";
+  inputs."pylib-master".repo = "flake-nimble";
+  inputs."pylib-master".ref = "flake-pinning";
+  inputs."pylib-master".dir = "nimpkgs/p/pylib/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''A command that to read novel on terminal'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-termnovel-master.flake = false;
   inputs.src-termnovel-master.type = "github";
   inputs.src-termnovel-master.owner = "jiro4989";
@@ -41,12 +46,12 @@
   inputs."alignment".ref = "flake-pinning";
   inputs."alignment".dir = "nimpkgs/a/alignment";
 
-  outputs = { self, nixpkgs, src-termnovel-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-termnovel-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-termnovel-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-termnovel-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-termnovel-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

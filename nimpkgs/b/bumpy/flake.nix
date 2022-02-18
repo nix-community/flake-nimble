@@ -1,18 +1,63 @@
 {
   description = ''2d collision library for Nim.'';
-  inputs."bumpy-master".url = "path:./master";
-  inputs."bumpy-0_1_0".url = "path:./0_1_0";
-  inputs."bumpy-0_2_0".url = "path:./0_2_0";
-  inputs."bumpy-0_2_1".url = "path:./0_2_1";
-  inputs."bumpy-1_0_0".url = "path:./1_0_0";
-  inputs."bumpy-1_0_1".url = "path:./1_0_1";
-  inputs."bumpy-1_0_2".url = "path:./1_0_2";
-  inputs."bumpy-1_0_3".url = "path:./1_0_3";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."bumpy-master".type = "github";
+  inputs."bumpy-master".owner = "riinr";
+  inputs."bumpy-master".repo = "flake-nimble";
+  inputs."bumpy-master".ref = "flake-pinning";
+  inputs."bumpy-master".dir = "nimpkgs/b/bumpy/master";
+
+    inputs."bumpy-0_1_0".type = "github";
+  inputs."bumpy-0_1_0".owner = "riinr";
+  inputs."bumpy-0_1_0".repo = "flake-nimble";
+  inputs."bumpy-0_1_0".ref = "flake-pinning";
+  inputs."bumpy-0_1_0".dir = "nimpkgs/b/bumpy/0_1_0";
+
+    inputs."bumpy-0_2_0".type = "github";
+  inputs."bumpy-0_2_0".owner = "riinr";
+  inputs."bumpy-0_2_0".repo = "flake-nimble";
+  inputs."bumpy-0_2_0".ref = "flake-pinning";
+  inputs."bumpy-0_2_0".dir = "nimpkgs/b/bumpy/0_2_0";
+
+    inputs."bumpy-0_2_1".type = "github";
+  inputs."bumpy-0_2_1".owner = "riinr";
+  inputs."bumpy-0_2_1".repo = "flake-nimble";
+  inputs."bumpy-0_2_1".ref = "flake-pinning";
+  inputs."bumpy-0_2_1".dir = "nimpkgs/b/bumpy/0_2_1";
+
+    inputs."bumpy-1_0_0".type = "github";
+  inputs."bumpy-1_0_0".owner = "riinr";
+  inputs."bumpy-1_0_0".repo = "flake-nimble";
+  inputs."bumpy-1_0_0".ref = "flake-pinning";
+  inputs."bumpy-1_0_0".dir = "nimpkgs/b/bumpy/1_0_0";
+
+    inputs."bumpy-1_0_1".type = "github";
+  inputs."bumpy-1_0_1".owner = "riinr";
+  inputs."bumpy-1_0_1".repo = "flake-nimble";
+  inputs."bumpy-1_0_1".ref = "flake-pinning";
+  inputs."bumpy-1_0_1".dir = "nimpkgs/b/bumpy/1_0_1";
+
+    inputs."bumpy-1_0_2".type = "github";
+  inputs."bumpy-1_0_2".owner = "riinr";
+  inputs."bumpy-1_0_2".repo = "flake-nimble";
+  inputs."bumpy-1_0_2".ref = "flake-pinning";
+  inputs."bumpy-1_0_2".dir = "nimpkgs/b/bumpy/1_0_2";
+
+    inputs."bumpy-1_0_3".type = "github";
+  inputs."bumpy-1_0_3".owner = "riinr";
+  inputs."bumpy-1_0_3".repo = "flake-nimble";
+  inputs."bumpy-1_0_3".ref = "flake-pinning";
+  inputs."bumpy-1_0_3".dir = "nimpkgs/b/bumpy/1_0_3";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

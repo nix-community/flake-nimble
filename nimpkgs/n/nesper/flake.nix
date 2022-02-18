@@ -1,17 +1,57 @@
 {
   description = ''Nim wrappers for ESP-IDF (ESP32)'';
-  inputs."nesper-master".url = "path:./master";
-  inputs."nesper-0_5_0".url = "path:./0_5_0";
-  inputs."nesper-v0_2_0".url = "path:./v0_2_0";
-  inputs."nesper-v0_3_0".url = "path:./v0_3_0";
-  inputs."nesper-v0_4_0".url = "path:./v0_4_0";
-  inputs."nesper-v0_4_1".url = "path:./v0_4_1";
-  inputs."nesper-v0_6_0".url = "path:./v0_6_0";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."nesper-master".type = "github";
+  inputs."nesper-master".owner = "riinr";
+  inputs."nesper-master".repo = "flake-nimble";
+  inputs."nesper-master".ref = "flake-pinning";
+  inputs."nesper-master".dir = "nimpkgs/n/nesper/master";
+
+    inputs."nesper-0_5_0".type = "github";
+  inputs."nesper-0_5_0".owner = "riinr";
+  inputs."nesper-0_5_0".repo = "flake-nimble";
+  inputs."nesper-0_5_0".ref = "flake-pinning";
+  inputs."nesper-0_5_0".dir = "nimpkgs/n/nesper/0_5_0";
+
+    inputs."nesper-v0_2_0".type = "github";
+  inputs."nesper-v0_2_0".owner = "riinr";
+  inputs."nesper-v0_2_0".repo = "flake-nimble";
+  inputs."nesper-v0_2_0".ref = "flake-pinning";
+  inputs."nesper-v0_2_0".dir = "nimpkgs/n/nesper/v0_2_0";
+
+    inputs."nesper-v0_3_0".type = "github";
+  inputs."nesper-v0_3_0".owner = "riinr";
+  inputs."nesper-v0_3_0".repo = "flake-nimble";
+  inputs."nesper-v0_3_0".ref = "flake-pinning";
+  inputs."nesper-v0_3_0".dir = "nimpkgs/n/nesper/v0_3_0";
+
+    inputs."nesper-v0_4_0".type = "github";
+  inputs."nesper-v0_4_0".owner = "riinr";
+  inputs."nesper-v0_4_0".repo = "flake-nimble";
+  inputs."nesper-v0_4_0".ref = "flake-pinning";
+  inputs."nesper-v0_4_0".dir = "nimpkgs/n/nesper/v0_4_0";
+
+    inputs."nesper-v0_4_1".type = "github";
+  inputs."nesper-v0_4_1".owner = "riinr";
+  inputs."nesper-v0_4_1".repo = "flake-nimble";
+  inputs."nesper-v0_4_1".ref = "flake-pinning";
+  inputs."nesper-v0_4_1".dir = "nimpkgs/n/nesper/v0_4_1";
+
+    inputs."nesper-v0_6_0".type = "github";
+  inputs."nesper-v0_6_0".owner = "riinr";
+  inputs."nesper-v0_6_0".repo = "flake-nimble";
+  inputs."nesper-v0_6_0".ref = "flake-pinning";
+  inputs."nesper-v0_6_0".dir = "nimpkgs/n/nesper/v0_6_0";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''apache arrow bindings for nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimarrow-v0_1_1.flake = false;
   inputs.src-nimarrow-v0_1_1.type = "github";
   inputs.src-nimarrow-v0_1_1.owner = "emef";
@@ -13,12 +18,12 @@
   inputs."nimarrow_glib".ref = "flake-pinning";
   inputs."nimarrow_glib".dir = "nimpkgs/n/nimarrow_glib";
 
-  outputs = { self, nixpkgs, src-nimarrow-v0_1_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimarrow-v0_1_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimarrow-v0_1_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimarrow-v0_1_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimarrow-v0_1_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Protobuf implementation compatible with the nim-serialization framework.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-protobuf_serialization-master.flake = false;
   inputs.src-protobuf_serialization-master.type = "github";
   inputs.src-protobuf_serialization-master.owner = "status-im";
@@ -34,12 +39,12 @@
   inputs."combparser".ref = "flake-pinning";
   inputs."combparser".dir = "nimpkgs/c/combparser";
 
-  outputs = { self, nixpkgs, src-protobuf_serialization-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-protobuf_serialization-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-protobuf_serialization-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-protobuf_serialization-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-protobuf_serialization-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

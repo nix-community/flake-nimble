@@ -1,12 +1,22 @@
 {
   description = ''Easy and fast generator for valid json in nim'';
-  inputs."json_builder-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."json_builder-master".type = "github";
+  inputs."json_builder-master".owner = "riinr";
+  inputs."json_builder-master".repo = "flake-nimble";
+  inputs."json_builder-master".ref = "flake-pinning";
+  inputs."json_builder-master".dir = "nimpkgs/j/json_builder/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''A library for factorization machines in Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimfm-master.flake = false;
   inputs.src-nimfm-master.type = "github";
   inputs.src-nimfm-master.owner = "neonnnnn";
@@ -20,12 +25,12 @@
   inputs."nimlapack".ref = "flake-pinning";
   inputs."nimlapack".dir = "nimpkgs/n/nimlapack";
 
-  outputs = { self, nixpkgs, src-nimfm-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimfm-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimfm-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimfm-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimfm-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

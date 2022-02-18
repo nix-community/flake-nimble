@@ -1,5 +1,10 @@
 {
   description = ''A Grid (R) like package in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ginger-master.flake = false;
   inputs.src-ginger-master.type = "github";
   inputs.src-ginger-master.owner = "Vindaar";
@@ -41,12 +46,12 @@
   inputs."shell".ref = "flake-pinning";
   inputs."shell".dir = "nimpkgs/s/shell";
 
-  outputs = { self, nixpkgs, src-ginger-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ginger-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ginger-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ginger-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ginger-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

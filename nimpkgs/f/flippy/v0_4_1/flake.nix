@@ -1,5 +1,10 @@
 {
   description = ''Flippy is a simple 2d image and drawing library.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-flippy-v0_4_1.flake = false;
   inputs.src-flippy-v0_4_1.type = "github";
   inputs.src-flippy-v0_4_1.owner = "treeform";
@@ -34,12 +39,12 @@
   inputs."nimpng".ref = "flake-pinning";
   inputs."nimpng".dir = "nimpkgs/n/nimpng";
 
-  outputs = { self, nixpkgs, src-flippy-v0_4_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-flippy-v0_4_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-flippy-v0_4_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-flippy-v0_4_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-flippy-v0_4_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

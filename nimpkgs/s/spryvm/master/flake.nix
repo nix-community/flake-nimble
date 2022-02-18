@@ -1,5 +1,10 @@
 {
   description = ''Homoiconic dynamic language interpreter in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-spryvm-master.flake = false;
   inputs.src-spryvm-master.type = "github";
   inputs.src-spryvm-master.owner = "gokr";
@@ -34,12 +39,12 @@
   inputs."https://github.com/status-im/nim-rocksdb.git".ref = "flake-pinning";
   inputs."https://github.com/status-im/nim-rocksdb.git".dir = "nimpkgs/h/https://github.com/status-im/nim-rocksdb.git";
 
-  outputs = { self, nixpkgs, src-spryvm-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-spryvm-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-spryvm-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-spryvm-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-spryvm-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

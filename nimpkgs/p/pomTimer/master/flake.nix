@@ -1,5 +1,10 @@
 {
   description = ''A simple pomodoro timer for the comandline with cli-output and notifications.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-pomTimer-master.flake = false;
   inputs.src-pomTimer-master.type = "github";
   inputs.src-pomTimer-master.owner = "MnlPhlp";
@@ -20,12 +25,12 @@
   inputs."notify".ref = "flake-pinning";
   inputs."notify".dir = "nimpkgs/n/notify";
 
-  outputs = { self, nixpkgs, src-pomTimer-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-pomTimer-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-pomTimer-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-pomTimer-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-pomTimer-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

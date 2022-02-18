@@ -1,5 +1,10 @@
 {
   description = ''A port of ggplot2 for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ggplotnim-v0_3_21.flake = false;
   inputs.src-ggplotnim-v0_3_21.type = "github";
   inputs.src-ggplotnim-v0_3_21.owner = "Vindaar";
@@ -48,12 +53,12 @@
   inputs."webview".ref = "flake-pinning";
   inputs."webview".dir = "nimpkgs/w/webview";
 
-  outputs = { self, nixpkgs, src-ggplotnim-v0_3_21, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ggplotnim-v0_3_21, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ggplotnim-v0_3_21;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ggplotnim-v0_3_21"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ggplotnim-v0_3_21"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

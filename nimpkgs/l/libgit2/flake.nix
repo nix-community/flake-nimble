@@ -1,12 +1,22 @@
 {
   description = ''Libgit2 low level wrapper'';
-  inputs."libgit2-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."libgit2-master".type = "github";
+  inputs."libgit2-master".owner = "riinr";
+  inputs."libgit2-master".repo = "flake-nimble";
+  inputs."libgit2-master".ref = "flake-pinning";
+  inputs."libgit2-master".dir = "nimpkgs/l/libgit2/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

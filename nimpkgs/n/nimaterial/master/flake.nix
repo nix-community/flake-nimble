@@ -1,5 +1,10 @@
 {
   description = ''nimaterial is a CSS output library based on material design.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimaterial-master.flake = false;
   inputs.src-nimaterial-master.type = "github";
   inputs.src-nimaterial-master.owner = "momeemt";
@@ -13,12 +18,12 @@
   inputs."palette".ref = "flake-pinning";
   inputs."palette".dir = "nimpkgs/p/palette";
 
-  outputs = { self, nixpkgs, src-nimaterial-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimaterial-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimaterial-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimaterial-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimaterial-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

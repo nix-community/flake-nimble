@@ -1,5 +1,10 @@
 {
   description = ''2D GPU rendering with a tiling atlas.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-boxy-master.flake = false;
   inputs.src-boxy-master.type = "github";
   inputs.src-boxy-master.owner = "treeform";
@@ -34,12 +39,12 @@
   inputs."bitty".ref = "flake-pinning";
   inputs."bitty".dir = "nimpkgs/b/bitty";
 
-  outputs = { self, nixpkgs, src-boxy-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-boxy-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-boxy-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-boxy-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-boxy-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

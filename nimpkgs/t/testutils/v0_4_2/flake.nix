@@ -1,5 +1,10 @@
 {
   description = ''A comprehensive toolkit for all your testing needs'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-testutils-v0_4_2.flake = false;
   inputs.src-testutils-v0_4_2.type = "github";
   inputs.src-testutils-v0_4_2.owner = "status-im";
@@ -13,12 +18,12 @@
   inputs."https://github.com/status-im/nim-unittest2.git".ref = "flake-pinning";
   inputs."https://github.com/status-im/nim-unittest2.git".dir = "nimpkgs/h/https://github.com/status-im/nim-unittest2.git";
 
-  outputs = { self, nixpkgs, src-testutils-v0_4_2, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-testutils-v0_4_2, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-testutils-v0_4_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-testutils-v0_4_2"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-testutils-v0_4_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

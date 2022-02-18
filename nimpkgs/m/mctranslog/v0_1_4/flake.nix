@@ -1,5 +1,10 @@
 {
   description = ''mctranslog - Transaction Log Package'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-mctranslog-v0_1_4.flake = false;
   inputs.src-mctranslog-v0_1_4.type = "github";
   inputs.src-mctranslog-v0_1_4.owner = "abbeymart";
@@ -20,12 +25,12 @@
   inputs."mcdb".ref = "flake-pinning";
   inputs."mcdb".dir = "nimpkgs/m/mcdb";
 
-  outputs = { self, nixpkgs, src-mctranslog-v0_1_4, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-mctranslog-v0_1_4, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-mctranslog-v0_1_4;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-mctranslog-v0_1_4"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-mctranslog-v0_1_4"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

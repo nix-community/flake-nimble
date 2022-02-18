@@ -1,5 +1,10 @@
 {
   description = ''A deprecated reimplementation in pure Nim of eth-keys, the common API for Ethereum key operations (now part of the 'eth' package).'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-eth_keys-master.flake = false;
   inputs.src-eth_keys-master.type = "github";
   inputs.src-eth_keys-master.owner = "status-im";
@@ -20,12 +25,12 @@
   inputs."secp256k1".ref = "flake-pinning";
   inputs."secp256k1".dir = "nimpkgs/s/secp256k1";
 
-  outputs = { self, nixpkgs, src-eth_keys-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-eth_keys-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-eth_keys-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-eth_keys-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eth_keys-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

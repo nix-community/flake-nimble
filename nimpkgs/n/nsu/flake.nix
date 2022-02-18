@@ -1,13 +1,33 @@
 {
   description = ''Simple screenshot library & cli tool made in Nim'';
-  inputs."nsu-master".url = "path:./master";
-  inputs."nsu-v0_1_4".url = "path:./v0_1_4";
-  inputs."nsu-v0_1_5".url = "path:./v0_1_5";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."nsu-master".type = "github";
+  inputs."nsu-master".owner = "riinr";
+  inputs."nsu-master".repo = "flake-nimble";
+  inputs."nsu-master".ref = "flake-pinning";
+  inputs."nsu-master".dir = "nimpkgs/n/nsu/master";
+
+    inputs."nsu-v0_1_4".type = "github";
+  inputs."nsu-v0_1_4".owner = "riinr";
+  inputs."nsu-v0_1_4".repo = "flake-nimble";
+  inputs."nsu-v0_1_4".ref = "flake-pinning";
+  inputs."nsu-v0_1_4".dir = "nimpkgs/n/nsu/v0_1_4";
+
+    inputs."nsu-v0_1_5".type = "github";
+  inputs."nsu-v0_1_5".owner = "riinr";
+  inputs."nsu-v0_1_5".repo = "flake-nimble";
+  inputs."nsu-v0_1_5".ref = "flake-pinning";
+  inputs."nsu-v0_1_5".dir = "nimpkgs/n/nsu/v0_1_5";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

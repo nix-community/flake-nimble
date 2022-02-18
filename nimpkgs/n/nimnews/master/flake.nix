@@ -1,5 +1,10 @@
 {
   description = ''Immature Newsgroup NNTP server using SQLite as backend'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimnews-master.flake = false;
   inputs.src-nimnews-master.type = "github";
   inputs.src-nimnews-master.owner = "mildred";
@@ -69,12 +74,12 @@
   inputs."asynctools".ref = "flake-pinning";
   inputs."asynctools".dir = "nimpkgs/a/asynctools";
 
-  outputs = { self, nixpkgs, src-nimnews-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimnews-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimnews-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimnews-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimnews-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

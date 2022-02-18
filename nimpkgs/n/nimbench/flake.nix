@@ -1,14 +1,39 @@
 {
   description = ''Micro benchmarking tool to measure speed of code, with the goal of optimizing it.'';
-  inputs."nimbench-master".url = "path:./master";
-  inputs."nimbench-v0_1_1".url = "path:./v0_1_1";
-  inputs."nimbench-v0_2_0".url = "path:./v0_2_0";
-  inputs."nimbench-v0_2_1".url = "path:./v0_2_1";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."nimbench-master".type = "github";
+  inputs."nimbench-master".owner = "riinr";
+  inputs."nimbench-master".repo = "flake-nimble";
+  inputs."nimbench-master".ref = "flake-pinning";
+  inputs."nimbench-master".dir = "nimpkgs/n/nimbench/master";
+
+    inputs."nimbench-v0_1_1".type = "github";
+  inputs."nimbench-v0_1_1".owner = "riinr";
+  inputs."nimbench-v0_1_1".repo = "flake-nimble";
+  inputs."nimbench-v0_1_1".ref = "flake-pinning";
+  inputs."nimbench-v0_1_1".dir = "nimpkgs/n/nimbench/v0_1_1";
+
+    inputs."nimbench-v0_2_0".type = "github";
+  inputs."nimbench-v0_2_0".owner = "riinr";
+  inputs."nimbench-v0_2_0".repo = "flake-nimble";
+  inputs."nimbench-v0_2_0".ref = "flake-pinning";
+  inputs."nimbench-v0_2_0".dir = "nimpkgs/n/nimbench/v0_2_0";
+
+    inputs."nimbench-v0_2_1".type = "github";
+  inputs."nimbench-v0_2_1".owner = "riinr";
+  inputs."nimbench-v0_2_1".repo = "flake-nimble";
+  inputs."nimbench-v0_2_1".ref = "flake-pinning";
+  inputs."nimbench-v0_2_1".dir = "nimpkgs/n/nimbench/v0_2_1";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

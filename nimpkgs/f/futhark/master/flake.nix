@@ -1,5 +1,10 @@
 {
   description = ''Zero-wrapping C imports in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-futhark-master.flake = false;
   inputs.src-futhark-master.type = "github";
   inputs.src-futhark-master.owner = "PMunch";
@@ -27,12 +32,12 @@
   inputs."macroutils".ref = "flake-pinning";
   inputs."macroutils".dir = "nimpkgs/m/macroutils";
 
-  outputs = { self, nixpkgs, src-futhark-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-futhark-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-futhark-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-futhark-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-futhark-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

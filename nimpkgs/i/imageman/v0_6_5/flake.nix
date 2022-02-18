@@ -1,5 +1,10 @@
 {
   description = ''Image manipulation library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-imageman-v0_6_5.flake = false;
   inputs.src-imageman-v0_6_5.type = "github";
   inputs.src-imageman-v0_6_5.owner = "SolitudeSF";
@@ -13,12 +18,12 @@
   inputs."stb_image".ref = "flake-pinning";
   inputs."stb_image".dir = "nimpkgs/s/stb_image";
 
-  outputs = { self, nixpkgs, src-imageman-v0_6_5, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-imageman-v0_6_5, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-imageman-v0_6_5;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-imageman-v0_6_5"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-imageman-v0_6_5"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

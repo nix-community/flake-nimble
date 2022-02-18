@@ -146,10 +146,9 @@ proc projectFlake(pkg: JsonNode): auto =
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     }};
 }}"""
-  mkdir fmt"../flakeDir"
+  mkdir fmt"../{flakeDir}"
   writeFile(fmt"../{flakeDir}/flake.nix", flakeContent)
   writeFile(fmt"../{flakeDir}/meta.json", $pkg)
-  exec(fmt"cp ../lib.nix ../{flakeDir}/lib.nix")
 
 proc inputInfo(refInfo: JsonNode, url: string): JsonNode =
   let nimbleUrls = (%* {

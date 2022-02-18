@@ -1,12 +1,22 @@
 {
   description = ''HTML5 Tools for Nim, all Templates, No CSS, No Libs, No JS Framework'';
-  inputs."html_tools-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."html_tools-master".type = "github";
+  inputs."html_tools-master".owner = "riinr";
+  inputs."html_tools-master".repo = "flake-nimble";
+  inputs."html_tools-master".ref = "flake-pinning";
+  inputs."html_tools-master".dir = "nimpkgs/h/html_tools/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

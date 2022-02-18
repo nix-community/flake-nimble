@@ -1,5 +1,10 @@
 {
   description = ''nimib 🐳 - nim 👑 driven ⛵ publishing ✍'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimib-v0_2_1.flake = false;
   inputs.src-nimib-v0_2_1.type = "github";
   inputs.src-nimib-v0_2_1.owner = "pietroppeter";
@@ -34,12 +39,12 @@
   inputs."toml_serialization".ref = "flake-pinning";
   inputs."toml_serialization".dir = "nimpkgs/t/toml_serialization";
 
-  outputs = { self, nixpkgs, src-nimib-v0_2_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimib-v0_2_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimib-v0_2_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimib-v0_2_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimib-v0_2_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,13 +1,33 @@
 {
   description = ''An amateur radio tool to get you a ballpark estimate of where a given Maidenhead grid square is.'';
-  inputs."ballpark-main".url = "path:./main";
-  inputs."ballpark-v1_0_0".url = "path:./v1_0_0";
-  inputs."ballpark-v1_0_1".url = "path:./v1_0_1";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."ballpark-main".type = "github";
+  inputs."ballpark-main".owner = "riinr";
+  inputs."ballpark-main".repo = "flake-nimble";
+  inputs."ballpark-main".ref = "flake-pinning";
+  inputs."ballpark-main".dir = "nimpkgs/b/ballpark/main";
+
+    inputs."ballpark-v1_0_0".type = "github";
+  inputs."ballpark-v1_0_0".owner = "riinr";
+  inputs."ballpark-v1_0_0".repo = "flake-nimble";
+  inputs."ballpark-v1_0_0".ref = "flake-pinning";
+  inputs."ballpark-v1_0_0".dir = "nimpkgs/b/ballpark/v1_0_0";
+
+    inputs."ballpark-v1_0_1".type = "github";
+  inputs."ballpark-v1_0_1".owner = "riinr";
+  inputs."ballpark-v1_0_1".repo = "flake-nimble";
+  inputs."ballpark-v1_0_1".ref = "flake-pinning";
+  inputs."ballpark-v1_0_1".dir = "nimpkgs/b/ballpark/v1_0_1";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Nim's Windows GUI Framework.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-wnim-master.flake = false;
   inputs.src-wnim-master.type = "github";
   inputs.src-wnim-master.owner = "khchen";
@@ -27,12 +32,12 @@
   inputs."memlib".ref = "flake-pinning";
   inputs."memlib".dir = "nimpkgs/m/memlib";
 
-  outputs = { self, nixpkgs, src-wNim-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-wNim-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-wNim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-wNim-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wNim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

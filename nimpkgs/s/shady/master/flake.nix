@@ -1,5 +1,10 @@
 {
   description = ''Nim to GPU shader language compiler and supporting utilities.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-shady-master.flake = false;
   inputs.src-shady-master.type = "github";
   inputs.src-shady-master.owner = "treeform";
@@ -20,12 +25,12 @@
   inputs."pixie".ref = "flake-pinning";
   inputs."pixie".dir = "nimpkgs/p/pixie";
 
-  outputs = { self, nixpkgs, src-shady-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-shady-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-shady-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-shady-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-shady-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

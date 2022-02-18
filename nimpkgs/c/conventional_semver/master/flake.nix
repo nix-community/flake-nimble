@@ -1,5 +1,10 @@
 {
   description = ''Calculate the next semver version given the git log and previous version'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-conventional_semver-master.flake = false;
   inputs.src-conventional_semver-master.type = "gitlab";
   inputs.src-conventional_semver-master.owner = "SimplyZ";
@@ -20,12 +25,12 @@
   inputs."simpleparseopt".ref = "flake-pinning";
   inputs."simpleparseopt".dir = "nimpkgs/s/simpleparseopt";
 
-  outputs = { self, nixpkgs, src-conventional_semver-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-conventional_semver-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-conventional_semver-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-conventional_semver-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-conventional_semver-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

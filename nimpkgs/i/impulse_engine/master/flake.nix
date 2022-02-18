@@ -1,5 +1,10 @@
 {
   description = ''Nim port of a simple 2D physics engine'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-impulse_engine-master.flake = false;
   inputs.src-impulse_engine-master.type = "github";
   inputs.src-impulse_engine-master.owner = "matkuki";
@@ -27,12 +32,12 @@
   inputs."nim-glfw".ref = "flake-pinning";
   inputs."nim-glfw".dir = "nimpkgs/n/nim-glfw";
 
-  outputs = { self, nixpkgs, src-impulse_engine-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-impulse_engine-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-impulse_engine-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-impulse_engine-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-impulse_engine-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

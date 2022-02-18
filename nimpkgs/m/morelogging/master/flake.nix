@@ -1,5 +1,10 @@
 {
   description = ''Logging library with support for async IO, multithreading, Journald.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-morelogging-master.flake = false;
   inputs.src-morelogging-master.type = "github";
   inputs.src-morelogging-master.owner = "FedericoCeratto";
@@ -13,12 +18,12 @@
   inputs."zip".ref = "flake-pinning";
   inputs."zip".dir = "nimpkgs/z/zip";
 
-  outputs = { self, nixpkgs, src-morelogging-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-morelogging-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-morelogging-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-morelogging-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-morelogging-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

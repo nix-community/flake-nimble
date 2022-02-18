@@ -1,5 +1,10 @@
 {
   description = ''Nearly zero-overhead input/output streams for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-faststreams-master.flake = false;
   inputs.src-faststreams-master.type = "github";
   inputs.src-faststreams-master.owner = "status-im";
@@ -34,12 +39,12 @@
   inputs."unittest2".ref = "flake-pinning";
   inputs."unittest2".dir = "nimpkgs/u/unittest2";
 
-  outputs = { self, nixpkgs, src-faststreams-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-faststreams-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-faststreams-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-faststreams-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-faststreams-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

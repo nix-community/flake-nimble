@@ -1,5 +1,10 @@
 {
   description = ''Py2Nim is a tool to translate Python code to Nim. The output is human-readable Nim code, meant to be tweaked by hand after the translation process.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-py2nim-v0_1_0.flake = false;
   inputs.src-py2nim-v0_1_0.type = "github";
   inputs.src-py2nim-v0_1_0.owner = "Niminem";
@@ -20,12 +25,12 @@
   inputs."nimscripter".ref = "flake-pinning";
   inputs."nimscripter".dir = "nimpkgs/n/nimscripter";
 
-  outputs = { self, nixpkgs, src-py2nim-v0_1_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-py2nim-v0_1_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-py2nim-v0_1_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-py2nim-v0_1_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-py2nim-v0_1_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

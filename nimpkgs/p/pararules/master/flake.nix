@@ -1,17 +1,22 @@
 {
   description = ''A rules engine'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-pararules-master.flake = false;
   inputs.src-pararules-master.type = "github";
   inputs.src-pararules-master.owner = "paranim";
   inputs.src-pararules-master.repo = "pararules";
   inputs.src-pararules-master.ref = "refs/heads/master";
   
-  outputs = { self, nixpkgs, src-pararules-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-pararules-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-pararules-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-pararules-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-pararules-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

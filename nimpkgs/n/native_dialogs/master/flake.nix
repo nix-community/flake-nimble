@@ -1,5 +1,10 @@
 {
   description = ''Implements framework-agnostic native operating system dialogs calls'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-native_dialogs-master.flake = false;
   inputs.src-native_dialogs-master.type = "github";
   inputs.src-native_dialogs-master.owner = "SSPkrolik";
@@ -20,12 +25,12 @@
   inputs."gtk2".ref = "flake-pinning";
   inputs."gtk2".dir = "nimpkgs/g/gtk2";
 
-  outputs = { self, nixpkgs, src-native_dialogs-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-native_dialogs-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-native_dialogs-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-native_dialogs-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-native_dialogs-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Statistical tests in Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-statistical_tests-master.flake = false;
   inputs.src-statistical_tests-master.type = "github";
   inputs.src-statistical_tests-master.owner = "ayman-albaz";
@@ -13,12 +18,12 @@
   inputs."distributions".ref = "flake-pinning";
   inputs."distributions".dir = "nimpkgs/d/distributions";
 
-  outputs = { self, nixpkgs, src-statistical_tests-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-statistical_tests-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-statistical_tests-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-statistical_tests-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-statistical_tests-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

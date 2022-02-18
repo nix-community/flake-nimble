@@ -1,5 +1,10 @@
 {
   description = ''HTTP Authentication and Authorization'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-httpauth-0_3_0.flake = false;
   inputs.src-httpauth-0_3_0.type = "github";
   inputs.src-httpauth-0_3_0.owner = "FedericoCeratto";
@@ -13,12 +18,12 @@
   inputs."libsodium".ref = "flake-pinning";
   inputs."libsodium".dir = "nimpkgs/l/libsodium";
 
-  outputs = { self, nixpkgs, src-httpauth-0_3_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-httpauth-0_3_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-httpauth-0_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-httpauth-0_3_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-httpauth-0_3_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

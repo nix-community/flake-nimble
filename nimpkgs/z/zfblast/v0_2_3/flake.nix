@@ -1,5 +1,10 @@
 {
   description = ''High performance http server (https://tools.ietf.org/html/rfc2616) with persistent connection for nim language.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-zfblast-v0_2_3.flake = false;
   inputs.src-zfblast-v0_2_3.type = "github";
   inputs.src-zfblast-v0_2_3.owner = "zendbit";
@@ -20,12 +25,12 @@
   inputs."sha1".ref = "flake-pinning";
   inputs."sha1".dir = "nimpkgs/s/sha1";
 
-  outputs = { self, nixpkgs, src-zfblast-v0_2_3, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-zfblast-v0_2_3, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-zfblast-v0_2_3;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-zfblast-v0_2_3"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-zfblast-v0_2_3"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

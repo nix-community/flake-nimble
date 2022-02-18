@@ -1,5 +1,10 @@
 {
   description = ''Generates a GitHub documentation website for Nim projects.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-gh_nimrod_doc_pages-master.flake = false;
   inputs.src-gh_nimrod_doc_pages-master.type = "github";
   inputs.src-gh_nimrod_doc_pages-master.owner = "Araq";
@@ -34,12 +39,12 @@
   inputs."lazy_rest".ref = "flake-pinning";
   inputs."lazy_rest".dir = "nimpkgs/l/lazy_rest";
 
-  outputs = { self, nixpkgs, src-gh_nimrod_doc_pages-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-gh_nimrod_doc_pages-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-gh_nimrod_doc_pages-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-gh_nimrod_doc_pages-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-gh_nimrod_doc_pages-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

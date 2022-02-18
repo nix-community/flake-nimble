@@ -1,5 +1,10 @@
 {
   description = ''AST for various languages'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hasts-v0_1_6.flake = false;
   inputs.src-hasts-v0_1_6.type = "github";
   inputs.src-hasts-v0_1_6.owner = "haxscramper";
@@ -13,12 +18,12 @@
   inputs."hmisc".ref = "flake-pinning";
   inputs."hmisc".dir = "nimpkgs/h/hmisc";
 
-  outputs = { self, nixpkgs, src-hasts-v0_1_6, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hasts-v0_1_6, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hasts-v0_1_6;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hasts-v0_1_6"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hasts-v0_1_6"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

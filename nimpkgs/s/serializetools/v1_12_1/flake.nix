@@ -1,17 +1,22 @@
 {
   description = ''Support for serialization of objects'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-serializetools-v1_12_1.flake = false;
   inputs.src-serializetools-v1_12_1.type = "github";
   inputs.src-serializetools-v1_12_1.owner = "JeffersonLab";
   inputs.src-serializetools-v1_12_1.repo = "serializetools";
   inputs.src-serializetools-v1_12_1.ref = "refs/tags/v1.12.1";
   
-  outputs = { self, nixpkgs, src-serializetools-v1_12_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-serializetools-v1_12_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-serializetools-v1_12_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-serializetools-v1_12_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-serializetools-v1_12_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

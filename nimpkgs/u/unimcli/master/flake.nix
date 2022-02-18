@@ -1,5 +1,10 @@
 {
   description = ''User-friendly nimcli.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-unimcli-master.flake = false;
   inputs.src-unimcli-master.type = "github";
   inputs.src-unimcli-master.owner = "unimorg";
@@ -20,12 +25,12 @@
   inputs."nimble".ref = "flake-pinning";
   inputs."nimble".dir = "nimpkgs/n/nimble";
 
-  outputs = { self, nixpkgs, src-unimcli-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-unimcli-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-unimcli-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-unimcli-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-unimcli-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

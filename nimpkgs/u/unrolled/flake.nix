@@ -1,12 +1,27 @@
 {
   description = ''Unroll for-loops at compile-time.'';
-  inputs."unrolled-master".url = "path:./master";
-  inputs."unrolled-v0_1-alpha".url = "path:./v0_1-alpha";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."unrolled-master".type = "github";
+  inputs."unrolled-master".owner = "riinr";
+  inputs."unrolled-master".repo = "flake-nimble";
+  inputs."unrolled-master".ref = "flake-pinning";
+  inputs."unrolled-master".dir = "nimpkgs/u/unrolled/master";
+
+    inputs."unrolled-v0_1-alpha".type = "github";
+  inputs."unrolled-v0_1-alpha".owner = "riinr";
+  inputs."unrolled-v0_1-alpha".repo = "flake-nimble";
+  inputs."unrolled-v0_1-alpha".ref = "flake-pinning";
+  inputs."unrolled-v0_1-alpha".dir = "nimpkgs/u/unrolled/v0_1-alpha";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

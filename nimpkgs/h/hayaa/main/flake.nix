@@ -1,5 +1,10 @@
 {
   description = ''Conway's Game of Life implemented in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hayaa-main.flake = false;
   inputs.src-hayaa-main.type = "github";
   inputs.src-hayaa-main.owner = "angus-lherrou";
@@ -13,12 +18,12 @@
   inputs."illwill".ref = "flake-pinning";
   inputs."illwill".dir = "nimpkgs/i/illwill";
 
-  outputs = { self, nixpkgs, src-hayaa-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hayaa-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hayaa-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hayaa-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hayaa-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

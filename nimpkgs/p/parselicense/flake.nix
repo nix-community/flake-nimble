@@ -1,12 +1,22 @@
 {
   description = ''Parse Standard SPDX Licenses from string to Enum'';
-  inputs."parselicense-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."parselicense-master".type = "github";
+  inputs."parselicense-master".owner = "riinr";
+  inputs."parselicense-master".repo = "flake-nimble";
+  inputs."parselicense-master".ref = "flake-pinning";
+  inputs."parselicense-master".dir = "nimpkgs/p/parselicense/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

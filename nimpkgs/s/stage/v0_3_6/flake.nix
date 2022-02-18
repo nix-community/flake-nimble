@@ -1,5 +1,10 @@
 {
   description = ''nim tasks apply to git hooks'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-stage-v0_3_6.flake = false;
   inputs.src-stage-v0_3_6.type = "github";
   inputs.src-stage-v0_3_6.owner = "bung87";
@@ -20,12 +25,12 @@
   inputs."cligen".ref = "flake-pinning";
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
-  outputs = { self, nixpkgs, src-stage-v0_3_6, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-stage-v0_3_6, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-stage-v0_3_6;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-stage-v0_3_6"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-stage-v0_3_6"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

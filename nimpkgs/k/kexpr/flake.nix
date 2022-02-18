@@ -1,12 +1,27 @@
 {
   description = ''wrapper for kexpr math expression evaluation library'';
-  inputs."kexpr-master".url = "path:./master";
-  inputs."kexpr-v0_0_2".url = "path:./v0_0_2";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."kexpr-master".type = "github";
+  inputs."kexpr-master".owner = "riinr";
+  inputs."kexpr-master".repo = "flake-nimble";
+  inputs."kexpr-master".ref = "flake-pinning";
+  inputs."kexpr-master".dir = "nimpkgs/k/kexpr/master";
+
+    inputs."kexpr-v0_0_2".type = "github";
+  inputs."kexpr-v0_0_2".owner = "riinr";
+  inputs."kexpr-v0_0_2".repo = "flake-nimble";
+  inputs."kexpr-v0_0_2".ref = "flake-pinning";
+  inputs."kexpr-v0_0_2".dir = "nimpkgs/k/kexpr/v0_0_2";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

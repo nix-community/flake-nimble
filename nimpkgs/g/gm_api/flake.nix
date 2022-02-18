@@ -1,12 +1,22 @@
 {
   description = ''Bindings for Greasemonkey API and an userscript header generator'';
-  inputs."gm_api-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."gm_api-master".type = "github";
+  inputs."gm_api-master".owner = "riinr";
+  inputs."gm_api-master".repo = "flake-nimble";
+  inputs."gm_api-master".ref = "flake-pinning";
+  inputs."gm_api-master".dir = "nimpkgs/g/gm_api/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

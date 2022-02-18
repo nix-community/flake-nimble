@@ -1,5 +1,10 @@
 {
   description = ''A Jester web plugin that allows easy message passing between pages using a browser cookie.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-jestercookiemsgs-master.flake = false;
   inputs.src-jestercookiemsgs-master.type = "github";
   inputs.src-jestercookiemsgs-master.owner = "JohnAD";
@@ -13,12 +18,12 @@
   inputs."jesterwithplugins".ref = "flake-pinning";
   inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
 
-  outputs = { self, nixpkgs, src-jestercookiemsgs-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-jestercookiemsgs-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-jestercookiemsgs-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-jestercookiemsgs-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-jestercookiemsgs-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

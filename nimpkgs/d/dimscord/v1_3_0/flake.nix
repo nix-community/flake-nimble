@@ -1,5 +1,10 @@
 {
   description = ''A Discord Bot & REST Library.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-dimscord-v1_3_0.flake = false;
   inputs.src-dimscord-v1_3_0.type = "github";
   inputs.src-dimscord-v1_3_0.owner = "krisppurg";
@@ -41,12 +46,12 @@
   inputs."flatty".ref = "flake-pinning";
   inputs."flatty".dir = "nimpkgs/f/flatty";
 
-  outputs = { self, nixpkgs, src-dimscord-v1_3_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-dimscord-v1_3_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-dimscord-v1_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-dimscord-v1_3_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-dimscord-v1_3_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

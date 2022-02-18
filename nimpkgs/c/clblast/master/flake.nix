@@ -1,5 +1,10 @@
 {
   description = ''Wrapper for CLBlast, an OpenCL BLAS library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-clblast-master.flake = false;
   inputs.src-clblast-master.type = "github";
   inputs.src-clblast-master.owner = "numforge";
@@ -13,12 +18,12 @@
   inputs."opencl".ref = "flake-pinning";
   inputs."opencl".dir = "nimpkgs/o/opencl";
 
-  outputs = { self, nixpkgs, src-clblast-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-clblast-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-clblast-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-clblast-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-clblast-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''An embedded text editor for paranim games'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-paravim-master.flake = false;
   inputs.src-paravim-master.type = "github";
   inputs.src-paravim-master.owner = "paranim";
@@ -34,12 +39,12 @@
   inputs."illwill".ref = "flake-pinning";
   inputs."illwill".dir = "nimpkgs/i/illwill";
 
-  outputs = { self, nixpkgs, src-paravim-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-paravim-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-paravim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-paravim-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-paravim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

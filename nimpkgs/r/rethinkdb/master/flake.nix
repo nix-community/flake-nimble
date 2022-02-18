@@ -1,5 +1,10 @@
 {
   description = ''RethinkDB driver for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-rethinkdb-master.flake = false;
   inputs.src-rethinkdb-master.type = "github";
   inputs.src-rethinkdb-master.owner = "OpenSystemsLab";
@@ -20,12 +25,12 @@
   inputs."scram".ref = "flake-pinning";
   inputs."scram".dir = "nimpkgs/s/scram";
 
-  outputs = { self, nixpkgs, src-rethinkdb-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-rethinkdb-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-rethinkdb-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-rethinkdb-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-rethinkdb-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

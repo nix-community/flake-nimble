@@ -1,5 +1,10 @@
 {
   description = ''A container runtime written in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nicoru-develop.flake = false;
   inputs.src-nicoru-develop.type = "github";
   inputs.src-nicoru-develop.owner = "fox0430";
@@ -20,12 +25,12 @@
   inputs."seccomp".ref = "flake-pinning";
   inputs."seccomp".dir = "nimpkgs/s/seccomp";
 
-  outputs = { self, nixpkgs, src-nicoru-develop, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nicoru-develop, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nicoru-develop;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nicoru-develop"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nicoru-develop"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

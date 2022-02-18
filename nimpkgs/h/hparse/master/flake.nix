@@ -1,5 +1,10 @@
 {
   description = ''Text parsing utilities'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hparse-master.flake = false;
   inputs.src-hparse-master.type = "github";
   inputs.src-hparse-master.owner = "haxscramper";
@@ -34,12 +39,12 @@
   inputs."hnimast".ref = "flake-pinning";
   inputs."hnimast".dir = "nimpkgs/h/hnimast";
 
-  outputs = { self, nixpkgs, src-hparse-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hparse-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hparse-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hparse-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hparse-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

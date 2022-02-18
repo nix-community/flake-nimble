@@ -1,5 +1,10 @@
 {
   description = ''Pub/Sub engine'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-suber-0_9_9.flake = false;
   inputs.src-suber-0_9_9.type = "github";
   inputs.src-suber-0_9_9.owner = "olliNiinivaara";
@@ -13,12 +18,12 @@
   inputs."stashtable".ref = "flake-pinning";
   inputs."stashtable".dir = "nimpkgs/s/stashtable";
 
-  outputs = { self, nixpkgs, src-suber-0_9_9, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-suber-0_9_9, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-suber-0_9_9;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-suber-0_9_9"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-suber-0_9_9"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

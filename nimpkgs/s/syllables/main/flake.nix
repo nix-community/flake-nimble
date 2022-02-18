@@ -1,5 +1,10 @@
 {
   description = ''Syllable estimation for Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-syllables-main.flake = false;
   inputs.src-syllables-main.type = "github";
   inputs.src-syllables-main.owner = "tonogram";
@@ -20,12 +25,12 @@
   inputs."https://github.com/disruptek/testes".ref = "flake-pinning";
   inputs."https://github.com/disruptek/testes".dir = "nimpkgs/h/https://github.com/disruptek/testes";
 
-  outputs = { self, nixpkgs, src-syllables-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-syllables-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-syllables-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-syllables-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-syllables-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

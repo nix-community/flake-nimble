@@ -1,5 +1,10 @@
 {
   description = ''CMake for Nimble'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-cmake-master.flake = false;
   inputs.src-cmake-master.type = "github";
   inputs.src-cmake-master.owner = "genotrance";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-cmake-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-cmake-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-cmake-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-cmake-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-cmake-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

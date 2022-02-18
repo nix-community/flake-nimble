@@ -1,5 +1,10 @@
 {
   description = ''Nim implementation of NanoID, a tiny, secure, URL-friendly, unique string ID generator. Works with Linux and Windows!'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-neoid-0_3_1.flake = false;
   inputs.src-neoid-0_3_1.type = "github";
   inputs.src-neoid-0_3_1.owner = "theAkito";
@@ -20,12 +25,12 @@
   inputs."winim".ref = "flake-pinning";
   inputs."winim".dir = "nimpkgs/w/winim";
 
-  outputs = { self, nixpkgs, src-neoid-0_3_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-neoid-0_3_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-neoid-0_3_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-neoid-0_3_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-neoid-0_3_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

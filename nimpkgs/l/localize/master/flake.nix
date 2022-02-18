@@ -1,5 +1,10 @@
 {
   description = ''Compile time localization for applications'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-localize-master.flake = false;
   inputs.src-localize-master.type = "github";
   inputs.src-localize-master.owner = "levovix0";
@@ -13,12 +18,12 @@
   inputs."fusion".ref = "flake-pinning";
   inputs."fusion".dir = "nimpkgs/f/fusion";
 
-  outputs = { self, nixpkgs, src-localize-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-localize-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-localize-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-localize-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-localize-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

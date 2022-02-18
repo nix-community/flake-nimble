@@ -1,5 +1,10 @@
 {
   description = ''Web Technologies based Crossplatform GUI Framework'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-crowngui-master.flake = false;
   inputs.src-crowngui-master.type = "github";
   inputs.src-crowngui-master.owner = "bung87";
@@ -48,12 +53,12 @@
   inputs."darwin".ref = "flake-pinning";
   inputs."darwin".dir = "nimpkgs/d/darwin";
 
-  outputs = { self, nixpkgs, src-crowngui-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-crowngui-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-crowngui-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-crowngui-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-crowngui-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

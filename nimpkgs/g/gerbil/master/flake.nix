@@ -1,5 +1,10 @@
 {
   description = ''A dynamic website generator'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-gerbil-master.flake = false;
   inputs.src-gerbil-master.type = "github";
   inputs.src-gerbil-master.owner = "jasonprogrammer";
@@ -62,12 +67,12 @@
   inputs."uuids".ref = "flake-pinning";
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
-  outputs = { self, nixpkgs, src-gerbil-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-gerbil-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-gerbil-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-gerbil-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-gerbil-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Simple UI components for the terminal.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-termui-master.flake = false;
   inputs.src-termui-master.type = "github";
   inputs.src-termui-master.owner = "jjv360";
@@ -20,12 +25,12 @@
   inputs."elvis".ref = "flake-pinning";
   inputs."elvis".dir = "nimpkgs/e/elvis";
 
-  outputs = { self, nixpkgs, src-termui-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-termui-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-termui-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-termui-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-termui-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

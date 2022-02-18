@@ -1,5 +1,10 @@
 {
   description = ''Utilities for the Encoding for Robust Immutable Storage (ERIS)'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-eris_utils-0_1_1.flake = false;
   inputs.src-eris_utils-0_1_1.type = "other";
   inputs.src-eris_utils-0_1_1.owner = "~ehmry";
@@ -13,12 +18,12 @@
   inputs."eris".ref = "flake-pinning";
   inputs."eris".dir = "nimpkgs/e/eris";
 
-  outputs = { self, nixpkgs, src-eris_utils-0_1_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-eris_utils-0_1_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-eris_utils-0_1_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-eris_utils-0_1_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eris_utils-0_1_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

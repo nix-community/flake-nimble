@@ -1,5 +1,10 @@
 {
   description = ''DataFrame API enabling fast out-of-core data analytics'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimdata-master.flake = false;
   inputs.src-nimdata-master.type = "github";
   inputs.src-nimdata-master.owner = "bluenote10";
@@ -20,12 +25,12 @@
   inputs."plotly".ref = "flake-pinning";
   inputs."plotly".dir = "nimpkgs/p/plotly";
 
-  outputs = { self, nixpkgs, src-NimData-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-NimData-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-NimData-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-NimData-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-NimData-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

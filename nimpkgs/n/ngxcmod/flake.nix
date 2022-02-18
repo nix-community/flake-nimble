@@ -1,12 +1,27 @@
 {
   description = ''High level wrapper for build nginx module w/ nginx-c-function'';
-  inputs."ngxcmod-master".url = "path:./master";
-  inputs."ngxcmod-0_1_2".url = "path:./0_1_2";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."ngxcmod-master".type = "github";
+  inputs."ngxcmod-master".owner = "riinr";
+  inputs."ngxcmod-master".repo = "flake-nimble";
+  inputs."ngxcmod-master".ref = "flake-pinning";
+  inputs."ngxcmod-master".dir = "nimpkgs/n/ngxcmod/master";
+
+    inputs."ngxcmod-0_1_2".type = "github";
+  inputs."ngxcmod-0_1_2".owner = "riinr";
+  inputs."ngxcmod-0_1_2".repo = "flake-nimble";
+  inputs."ngxcmod-0_1_2".ref = "flake-pinning";
+  inputs."ngxcmod-0_1_2".dir = "nimpkgs/n/ngxcmod/0_1_2";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

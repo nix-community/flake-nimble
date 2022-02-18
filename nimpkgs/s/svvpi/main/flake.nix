@@ -1,5 +1,10 @@
 {
   description = ''Wrapper for SystemVerilog VPI headers vpi_user.h and sv_vpi_user.h'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-svvpi-main.flake = false;
   inputs.src-svvpi-main.type = "github";
   inputs.src-svvpi-main.owner = "kaushalmodi";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-svvpi-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-svvpi-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-svvpi-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-svvpi-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-svvpi-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

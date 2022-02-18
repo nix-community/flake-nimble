@@ -1,5 +1,10 @@
 {
   description = ''Directory listing tool'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-lq-master.flake = false;
   inputs.src-lq-master.type = "github";
   inputs.src-lq-master.owner = "madprops";
@@ -20,12 +25,12 @@
   inputs."parsetoml".ref = "flake-pinning";
   inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
 
-  outputs = { self, nixpkgs, src-lq-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-lq-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-lq-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-lq-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-lq-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

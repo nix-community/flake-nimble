@@ -1,5 +1,10 @@
 {
   description = ''Flexible TOML serialization [not] relying on run-time type information'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-toml_serialization-master.flake = false;
   inputs.src-toml_serialization-master.type = "github";
   inputs.src-toml_serialization-master.owner = "status-im";
@@ -27,12 +32,12 @@
   inputs."https://github.com/status-im/nim-unittest2".ref = "flake-pinning";
   inputs."https://github.com/status-im/nim-unittest2".dir = "nimpkgs/h/https://github.com/status-im/nim-unittest2";
 
-  outputs = { self, nixpkgs, src-toml_serialization-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-toml_serialization-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-toml_serialization-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-toml_serialization-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-toml_serialization-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

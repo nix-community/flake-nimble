@@ -1,5 +1,10 @@
 {
   description = ''C2nim helper to simplify and automate wrapping C libraries'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimgen-v0_5_1.flake = false;
   inputs.src-nimgen-v0_5_1.type = "github";
   inputs.src-nimgen-v0_5_1.owner = "genotrance";
@@ -20,12 +25,12 @@
   inputs."regex".ref = "flake-pinning";
   inputs."regex".dir = "nimpkgs/r/regex";
 
-  outputs = { self, nixpkgs, src-nimgen-v0_5_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimgen-v0_5_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimgen-v0_5_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimgen-v0_5_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimgen-v0_5_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

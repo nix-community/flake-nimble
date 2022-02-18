@@ -1,5 +1,10 @@
 {
   description = ''Another micro web framework.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-prologue-v0_1_6.flake = false;
   inputs.src-prologue-v0_1_6.type = "github";
   inputs.src-prologue-v0_1_6.owner = "planety";
@@ -27,12 +32,12 @@
   inputs."httpbeast".ref = "flake-pinning";
   inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
 
-  outputs = { self, nixpkgs, src-prologue-v0_1_6, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-prologue-v0_1_6, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-prologue-v0_1_6;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-prologue-v0_1_6"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-prologue-v0_1_6"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

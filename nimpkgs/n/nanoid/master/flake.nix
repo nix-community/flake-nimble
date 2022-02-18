@@ -1,5 +1,10 @@
 {
   description = ''The Nim implementation of NanoID'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nanoid-master.flake = false;
   inputs.src-nanoid-master.type = "github";
   inputs.src-nanoid-master.owner = "icyphox";
@@ -13,12 +18,12 @@
   inputs."random".ref = "flake-pinning";
   inputs."random".dir = "nimpkgs/r/random";
 
-  outputs = { self, nixpkgs, src-nanoid-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nanoid-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nanoid-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nanoid-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nanoid-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

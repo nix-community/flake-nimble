@@ -1,5 +1,10 @@
 {
   description = ''functions to tracks for genomics data files'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-genoiser-v0_2_5.flake = false;
   inputs.src-genoiser-v0_2_5.type = "github";
   inputs.src-genoiser-v0_2_5.owner = "brentp";
@@ -27,12 +32,12 @@
   inputs."kexpr".ref = "flake-pinning";
   inputs."kexpr".dir = "nimpkgs/k/kexpr";
 
-  outputs = { self, nixpkgs, src-genoiser-v0_2_5, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-genoiser-v0_2_5, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-genoiser-v0_2_5;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-genoiser-v0_2_5"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-genoiser-v0_2_5"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

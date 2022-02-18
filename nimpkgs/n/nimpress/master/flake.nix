@@ -1,5 +1,10 @@
 {
   description = ''Fast and simple calculation of polygenic scores'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimpress-master.flake = false;
   inputs.src-nimpress-master.type = "github";
   inputs.src-nimpress-master.owner = "mpinese";
@@ -27,12 +32,12 @@
   inputs."lapper".ref = "flake-pinning";
   inputs."lapper".dir = "nimpkgs/l/lapper";
 
-  outputs = { self, nixpkgs, src-nimpress-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimpress-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimpress-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimpress-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimpress-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

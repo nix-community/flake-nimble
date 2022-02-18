@@ -1,13 +1,33 @@
 {
   description = ''Cross platform system information.'';
-  inputs."sysinfo-master".url = "path:./master";
-  inputs."sysinfo-v0_1_0".url = "path:./v0_1_0";
-  inputs."sysinfo-v0_2_1".url = "path:./v0_2_1";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."sysinfo-master".type = "github";
+  inputs."sysinfo-master".owner = "riinr";
+  inputs."sysinfo-master".repo = "flake-nimble";
+  inputs."sysinfo-master".ref = "flake-pinning";
+  inputs."sysinfo-master".dir = "nimpkgs/s/sysinfo/master";
+
+    inputs."sysinfo-v0_1_0".type = "github";
+  inputs."sysinfo-v0_1_0".owner = "riinr";
+  inputs."sysinfo-v0_1_0".repo = "flake-nimble";
+  inputs."sysinfo-v0_1_0".ref = "flake-pinning";
+  inputs."sysinfo-v0_1_0".dir = "nimpkgs/s/sysinfo/v0_1_0";
+
+    inputs."sysinfo-v0_2_1".type = "github";
+  inputs."sysinfo-v0_2_1".owner = "riinr";
+  inputs."sysinfo-v0_2_1".repo = "flake-nimble";
+  inputs."sysinfo-v0_2_1".ref = "flake-pinning";
+  inputs."sysinfo-v0_2_1".dir = "nimpkgs/s/sysinfo/v0_2_1";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

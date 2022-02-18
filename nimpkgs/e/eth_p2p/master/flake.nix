@@ -1,5 +1,10 @@
 {
   description = ''Deprecated implementation of the Ethereum suite of P2P protocols (now part of the 'eth' package)'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-eth_p2p-master.flake = false;
   inputs.src-eth_p2p-master.type = "github";
   inputs.src-eth_p2p-master.owner = "status-im";
@@ -104,12 +109,12 @@
   inputs."json_serialization".ref = "flake-pinning";
   inputs."json_serialization".dir = "nimpkgs/j/json_serialization";
 
-  outputs = { self, nixpkgs, src-eth_p2p-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-eth_p2p-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-eth_p2p-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-eth_p2p-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eth_p2p-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

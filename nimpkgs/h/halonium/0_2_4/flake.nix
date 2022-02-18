@@ -1,5 +1,10 @@
 {
   description = ''A browser automation library written in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-halonium-0_2_4.flake = false;
   inputs.src-halonium-0_2_4.type = "github";
   inputs.src-halonium-0_2_4.owner = "halonium";
@@ -34,12 +39,12 @@
   inputs."fusion".ref = "flake-pinning";
   inputs."fusion".dir = "nimpkgs/f/fusion";
 
-  outputs = { self, nixpkgs, src-halonium-0_2_4, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-halonium-0_2_4, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-halonium-0_2_4;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-halonium-0_2_4"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-halonium-0_2_4"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

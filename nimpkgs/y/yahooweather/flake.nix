@@ -1,12 +1,22 @@
 {
   description = ''Yahoo! Weather API wrapper'';
-  inputs."yahooweather-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."yahooweather-master".type = "github";
+  inputs."yahooweather-master".owner = "riinr";
+  inputs."yahooweather-master".repo = "flake-nimble";
+  inputs."yahooweather-master".ref = "flake-pinning";
+  inputs."yahooweather-master".dir = "nimpkgs/y/yahooweather/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

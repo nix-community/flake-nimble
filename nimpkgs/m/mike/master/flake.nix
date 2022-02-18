@@ -1,5 +1,10 @@
 {
   description = ''A very simple micro web framework'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-mike-master.flake = false;
   inputs.src-mike-master.type = "github";
   inputs.src-mike-master.owner = "ire4ever1190";
@@ -20,12 +25,12 @@
   inputs."websocketx".ref = "flake-pinning";
   inputs."websocketx".dir = "nimpkgs/w/websocketx";
 
-  outputs = { self, nixpkgs, src-mike-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-mike-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-mike-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-mike-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-mike-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

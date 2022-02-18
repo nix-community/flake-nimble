@@ -1,5 +1,10 @@
 {
   description = ''Nim interface to plotly'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-plotly-v0_3_0.flake = false;
   inputs.src-plotly-v0_3_0.type = "github";
   inputs.src-plotly-v0_3_0.owner = "SciNim";
@@ -34,12 +39,12 @@
   inputs."ws".ref = "flake-pinning";
   inputs."ws".dir = "nimpkgs/w/ws";
 
-  outputs = { self, nixpkgs, src-plotly-v0_3_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-plotly-v0_3_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-plotly-v0_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-plotly-v0_3_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-plotly-v0_3_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

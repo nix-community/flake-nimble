@@ -1,5 +1,10 @@
 {
   description = ''Module for working with EPUB e-book files'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-epub-master.flake = false;
   inputs.src-epub-master.type = "github";
   inputs.src-epub-master.owner = "achesak";
@@ -13,12 +18,12 @@
   inputs."nim>=".ref = "flake-pinning";
   inputs."nim>=".dir = "nimpkgs/n/nim>=";
 
-  outputs = { self, nixpkgs, src-epub-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-epub-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-epub-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-epub-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-epub-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

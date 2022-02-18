@@ -1,5 +1,10 @@
 {
   description = ''A wrapper for the libsecp256k1 C library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-secp256k1-master.flake = false;
   inputs.src-secp256k1-master.type = "github";
   inputs.src-secp256k1-master.owner = "status-im";
@@ -20,12 +25,12 @@
   inputs."nimcrypto".ref = "flake-pinning";
   inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
 
-  outputs = { self, nixpkgs, src-secp256k1-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-secp256k1-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-secp256k1-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-secp256k1-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-secp256k1-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

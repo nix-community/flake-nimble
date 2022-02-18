@@ -1,13 +1,33 @@
 {
   description = ''High precision and high performance task scheduler '';
-  inputs."taskqueue-master".url = "path:./master";
-  inputs."taskqueue-0_1_0".url = "path:./0_1_0";
-  inputs."taskqueue-0_1_1".url = "path:./0_1_1";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."taskqueue-master".type = "github";
+  inputs."taskqueue-master".owner = "riinr";
+  inputs."taskqueue-master".repo = "flake-nimble";
+  inputs."taskqueue-master".ref = "flake-pinning";
+  inputs."taskqueue-master".dir = "nimpkgs/t/taskqueue/master";
+
+    inputs."taskqueue-0_1_0".type = "github";
+  inputs."taskqueue-0_1_0".owner = "riinr";
+  inputs."taskqueue-0_1_0".repo = "flake-nimble";
+  inputs."taskqueue-0_1_0".ref = "flake-pinning";
+  inputs."taskqueue-0_1_0".dir = "nimpkgs/t/taskqueue/0_1_0";
+
+    inputs."taskqueue-0_1_1".type = "github";
+  inputs."taskqueue-0_1_1".owner = "riinr";
+  inputs."taskqueue-0_1_1".repo = "flake-nimble";
+  inputs."taskqueue-0_1_1".ref = "flake-pinning";
+  inputs."taskqueue-0_1_1".dir = "nimpkgs/t/taskqueue/0_1_1";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

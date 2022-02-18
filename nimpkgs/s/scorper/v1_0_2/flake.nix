@@ -1,5 +1,10 @@
 {
   description = ''micro and elegant web framework'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-scorper-v1_0_2.flake = false;
   inputs.src-scorper-v1_0_2.type = "github";
   inputs.src-scorper-v1_0_2.owner = "bung87";
@@ -34,12 +39,12 @@
   inputs."zippy".ref = "flake-pinning";
   inputs."zippy".dir = "nimpkgs/z/zippy";
 
-  outputs = { self, nixpkgs, src-scorper-v1_0_2, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-scorper-v1_0_2, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-scorper-v1_0_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-scorper-v1_0_2"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-scorper-v1_0_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

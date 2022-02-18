@@ -1,5 +1,10 @@
 {
   description = ''Common utilities for implementing HTTP servers'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-httputils-master.flake = false;
   inputs.src-httputils-master.type = "github";
   inputs.src-httputils-master.owner = "status-im";
@@ -20,12 +25,12 @@
   inputs."unittest2".ref = "flake-pinning";
   inputs."unittest2".dir = "nimpkgs/u/unittest2";
 
-  outputs = { self, nixpkgs, src-httputils-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-httputils-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-httputils-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-httputils-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-httputils-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

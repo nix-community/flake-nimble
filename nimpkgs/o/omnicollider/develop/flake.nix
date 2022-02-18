@@ -1,5 +1,10 @@
 {
   description = ''SuperCollider wrapper for omni.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-omnicollider-develop.flake = false;
   inputs.src-omnicollider-develop.type = "github";
   inputs.src-omnicollider-develop.owner = "vitreo12";
@@ -20,12 +25,12 @@
   inputs."omni".ref = "flake-pinning";
   inputs."omni".dir = "nimpkgs/o/omni";
 
-  outputs = { self, nixpkgs, src-omnicollider-develop, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-omnicollider-develop, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-omnicollider-develop;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-omnicollider-develop"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-omnicollider-develop"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

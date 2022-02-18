@@ -1,5 +1,10 @@
 {
   description = ''Simple library to draw stuff on a window'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-drawim-0_1_2.flake = false;
   inputs.src-drawim-0_1_2.type = "github";
   inputs.src-drawim-0_1_2.owner = "GabrielLasso";
@@ -27,12 +32,12 @@
   inputs."jscanvas".ref = "flake-pinning";
   inputs."jscanvas".dir = "nimpkgs/j/jscanvas";
 
-  outputs = { self, nixpkgs, src-drawim-0_1_2, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-drawim-0_1_2, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-drawim-0_1_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-drawim-0_1_2"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-drawim-0_1_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

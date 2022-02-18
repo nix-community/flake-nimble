@@ -1,5 +1,10 @@
 {
   description = ''A nimterop wrapper for the opus audio decoder'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-opus-master.flake = false;
   inputs.src-opus-master.type = "github";
   inputs.src-opus-master.owner = "capocasa";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-opus-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-opus-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-opus-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-opus-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-opus-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

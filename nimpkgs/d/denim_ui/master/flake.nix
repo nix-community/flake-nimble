@@ -1,5 +1,10 @@
 {
   description = ''The Denim UI library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-denim_ui-master.flake = false;
   inputs.src-denim_ui-master.type = "github";
   inputs.src-denim_ui-master.owner = "nortero-code";
@@ -27,12 +32,12 @@
   inputs."rx_nim".ref = "flake-pinning";
   inputs."rx_nim".dir = "nimpkgs/r/rx_nim";
 
-  outputs = { self, nixpkgs, src-denim_ui-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-denim_ui-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-denim_ui-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-denim_ui-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-denim_ui-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

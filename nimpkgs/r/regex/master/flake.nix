@@ -1,5 +1,10 @@
 {
   description = ''Linear time regex matching'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-regex-master.flake = false;
   inputs.src-regex-master.type = "github";
   inputs.src-regex-master.owner = "nitely";
@@ -13,12 +18,12 @@
   inputs."unicodedb".ref = "flake-pinning";
   inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
 
-  outputs = { self, nixpkgs, src-regex-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-regex-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-regex-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-regex-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-regex-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

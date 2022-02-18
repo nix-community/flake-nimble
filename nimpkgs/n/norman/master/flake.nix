@@ -1,5 +1,10 @@
 {
   description = ''Migration manager for Norm.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-norman-master.flake = false;
   inputs.src-norman-master.type = "github";
   inputs.src-norman-master.owner = "moigagoo";
@@ -27,12 +32,12 @@
   inputs."dotenv".ref = "flake-pinning";
   inputs."dotenv".dir = "nimpkgs/d/dotenv";
 
-  outputs = { self, nixpkgs, src-norman-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-norman-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-norman-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-norman-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-norman-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

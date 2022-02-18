@@ -1,5 +1,10 @@
 {
   description = ''Whip is high performance web application server based on httpbeast a nest for redix tree based routing with some extra opmtizations.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-whip-0_2.flake = false;
   inputs.src-whip-0_2.type = "github";
   inputs.src-whip-0_2.owner = "mattaylor";
@@ -27,12 +32,12 @@
   inputs."httpbeast".ref = "flake-pinning";
   inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
 
-  outputs = { self, nixpkgs, src-whip-0_2, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-whip-0_2, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-whip-0_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-whip-0_2"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-whip-0_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

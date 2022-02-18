@@ -1,5 +1,10 @@
 {
   description = ''Mustache templating for Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-moustachu-master.flake = false;
   inputs.src-moustachu-master.type = "github";
   inputs.src-moustachu-master.owner = "fenekku";
@@ -13,12 +18,12 @@
   inputs."commandeer".ref = "flake-pinning";
   inputs."commandeer".dir = "nimpkgs/c/commandeer";
 
-  outputs = { self, nixpkgs, src-moustachu-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-moustachu-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-moustachu-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-moustachu-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-moustachu-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Nim structs to work with Kdb in type-safe manner and low-level Nim to Kdb bindings'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-kdb-master.flake = false;
   inputs.src-kdb-master.type = "github";
   inputs.src-kdb-master.owner = "inv2004";
@@ -20,12 +25,12 @@
   inputs."uuids".ref = "flake-pinning";
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
-  outputs = { self, nixpkgs, src-kdb-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-kdb-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-kdb-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-kdb-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-kdb-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

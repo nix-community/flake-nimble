@@ -1,5 +1,10 @@
 {
   description = ''A collection of numerical methods written in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-numericalnim-master.flake = false;
   inputs.src-numericalnim-master.type = "github";
   inputs.src-numericalnim-master.owner = "SciNim";
@@ -20,12 +25,12 @@
   inputs."https://github.com/hugogranstrom/cdt".ref = "flake-pinning";
   inputs."https://github.com/hugogranstrom/cdt".dir = "nimpkgs/h/https://github.com/hugogranstrom/cdt";
 
-  outputs = { self, nixpkgs, src-numericalnim-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-numericalnim-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-numericalnim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-numericalnim-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-numericalnim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

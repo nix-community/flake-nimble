@@ -1,5 +1,10 @@
 {
   description = ''Convert Helix Version Control / Perforce (p4) -ztag output to JSON'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-p4ztag_to_json-v0_9_3.flake = false;
   inputs.src-p4ztag_to_json-v0_9_3.type = "github";
   inputs.src-p4ztag_to_json-v0_9_3.owner = "kaushalmodi";
@@ -13,12 +18,12 @@
   inputs."regex".ref = "flake-pinning";
   inputs."regex".dir = "nimpkgs/r/regex";
 
-  outputs = { self, nixpkgs, src-p4ztag_to_json-v0_9_3, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-p4ztag_to_json-v0_9_3, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-p4ztag_to_json-v0_9_3;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-p4ztag_to_json-v0_9_3"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-p4ztag_to_json-v0_9_3"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

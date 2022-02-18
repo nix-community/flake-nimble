@@ -1,5 +1,10 @@
 {
   description = ''A Jester web plugin that embeds key information into a JSON object.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-jesterjson-master.flake = false;
   inputs.src-jesterjson-master.type = "github";
   inputs.src-jesterjson-master.owner = "JohnAD";
@@ -13,12 +18,12 @@
   inputs."jesterwithplugins".ref = "flake-pinning";
   inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
 
-  outputs = { self, nixpkgs, src-jesterjson-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-jesterjson-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-jesterjson-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-jesterjson-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-jesterjson-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

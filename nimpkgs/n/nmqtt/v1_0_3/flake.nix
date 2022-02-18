@@ -1,5 +1,10 @@
 {
   description = ''Native MQTT client library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nmqtt-v1_0_3.flake = false;
   inputs.src-nmqtt-v1_0_3.type = "github";
   inputs.src-nmqtt-v1_0_3.owner = "zevv";
@@ -20,12 +25,12 @@
   inputs."bcrypt".ref = "flake-pinning";
   inputs."bcrypt".dir = "nimpkgs/b/bcrypt";
 
-  outputs = { self, nixpkgs, src-nmqtt-v1_0_3, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nmqtt-v1_0_3, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nmqtt-v1_0_3;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nmqtt-v1_0_3"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nmqtt-v1_0_3"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

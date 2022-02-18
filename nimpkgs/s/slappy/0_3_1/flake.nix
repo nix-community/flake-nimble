@@ -1,5 +1,10 @@
 {
   description = ''A 3d sound API for nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-slappy-0_3_1.flake = false;
   inputs.src-slappy-0_3_1.type = "github";
   inputs.src-slappy-0_3_1.owner = "treeform";
@@ -27,12 +32,12 @@
   inputs."supersnappy".ref = "flake-pinning";
   inputs."supersnappy".dir = "nimpkgs/s/supersnappy";
 
-  outputs = { self, nixpkgs, src-slappy-0_3_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-slappy-0_3_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-slappy-0_3_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-slappy-0_3_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-slappy-0_3_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

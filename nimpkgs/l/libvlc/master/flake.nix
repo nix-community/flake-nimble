@@ -1,5 +1,10 @@
 {
   description = ''libvlc bindings for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-libvlc-master.flake = false;
   inputs.src-libvlc-master.type = "github";
   inputs.src-libvlc-master.owner = "Yardanico";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-libvlc-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-libvlc-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-libvlc-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-libvlc-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-libvlc-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

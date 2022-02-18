@@ -1,5 +1,10 @@
 {
   description = ''Wrapper for OpenSSL's EVP interface'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-openssl_evp-master.flake = false;
   inputs.src-openssl_evp-master.type = "github";
   inputs.src-openssl_evp-master.owner = "cowboy-coders";
@@ -13,12 +18,12 @@
   inputs."nimrod".ref = "flake-pinning";
   inputs."nimrod".dir = "nimpkgs/n/nimrod";
 
-  outputs = { self, nixpkgs, src-openssl_evp-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-openssl_evp-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-openssl_evp-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-openssl_evp-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-openssl_evp-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

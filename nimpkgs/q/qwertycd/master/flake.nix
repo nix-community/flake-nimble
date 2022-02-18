@@ -1,5 +1,10 @@
 {
   description = ''Terminal UI based cd command'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-qwertycd-master.flake = false;
   inputs.src-qwertycd-master.type = "github";
   inputs.src-qwertycd-master.owner = "minefuto";
@@ -20,12 +25,12 @@
   inputs."parsetoml".ref = "flake-pinning";
   inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
 
-  outputs = { self, nixpkgs, src-qwertycd-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-qwertycd-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-qwertycd-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-qwertycd-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-qwertycd-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

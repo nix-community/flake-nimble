@@ -1,5 +1,10 @@
 {
   description = ''NES emulator using SDL2, also compiles to JavaScript with emscripten.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimes-master.flake = false;
   inputs.src-nimes-master.type = "github";
   inputs.src-nimes-master.owner = "def-";
@@ -13,12 +18,12 @@
   inputs."sdl2".ref = "flake-pinning";
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
-  outputs = { self, nixpkgs, src-nimes-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimes-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimes-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimes-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimes-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

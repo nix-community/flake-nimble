@@ -1,5 +1,10 @@
 {
   description = ''HMAC-SHA1 and HMAC-MD5 hashing in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hmac-0_1_7.flake = false;
   inputs.src-hmac-0_1_7.type = "github";
   inputs.src-hmac-0_1_7.owner = "OpenSystemsLab";
@@ -20,12 +25,12 @@
   inputs."sha1".ref = "flake-pinning";
   inputs."sha1".dir = "nimpkgs/s/sha1";
 
-  outputs = { self, nixpkgs, src-hmac-0_1_7, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hmac-0_1_7, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hmac-0_1_7;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hmac-0_1_7"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hmac-0_1_7"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

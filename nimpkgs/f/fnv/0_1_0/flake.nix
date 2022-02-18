@@ -1,5 +1,10 @@
 {
   description = ''FNV-1 and FNV-1a non-cryptographic hash functions (documentation hosted at: http://ryuk.ooo/nimdocs/fnv/fnv.html)'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-fnv-0_1_0.flake = false;
   inputs.src-fnv-0_1_0.type = "gitlab";
   inputs.src-fnv-0_1_0.owner = "ryukoposting";
@@ -13,12 +18,12 @@
   inputs."stint".ref = "flake-pinning";
   inputs."stint".dir = "nimpkgs/s/stint";
 
-  outputs = { self, nixpkgs, src-fnv-0_1_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-fnv-0_1_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-fnv-0_1_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-fnv-0_1_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-fnv-0_1_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

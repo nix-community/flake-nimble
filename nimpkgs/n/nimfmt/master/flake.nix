@@ -1,5 +1,10 @@
 {
   description = ''Configurable Nim code linter / formatter / style checker with heuristics'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimfmt-master.flake = false;
   inputs.src-nimfmt-master.type = "github";
   inputs.src-nimfmt-master.owner = "FedericoCeratto";
@@ -13,12 +18,12 @@
   inputs."compiler".ref = "flake-pinning";
   inputs."compiler".dir = "nimpkgs/c/compiler";
 
-  outputs = { self, nixpkgs, src-nimfmt-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimfmt-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimfmt-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimfmt-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimfmt-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

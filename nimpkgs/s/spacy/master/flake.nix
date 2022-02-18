@@ -1,5 +1,10 @@
 {
   description = ''Spatial data structures for Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-spacy-master.flake = false;
   inputs.src-spacy-master.type = "github";
   inputs.src-spacy-master.owner = "treeform";
@@ -20,12 +25,12 @@
   inputs."bumpy".ref = "flake-pinning";
   inputs."bumpy".dir = "nimpkgs/b/bumpy";
 
-  outputs = { self, nixpkgs, src-spacy-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-spacy-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-spacy-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-spacy-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-spacy-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

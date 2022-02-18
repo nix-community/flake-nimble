@@ -1,5 +1,10 @@
 {
   description = ''A deprecated library for handling Ethereum private keys and wallets (now part of the 'eth' package)'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-eth_keyfile-master.flake = false;
   inputs.src-eth_keyfile-master.type = "github";
   inputs.src-eth_keyfile-master.owner = "status-im";
@@ -20,12 +25,12 @@
   inputs."eth_keys".ref = "flake-pinning";
   inputs."eth_keys".dir = "nimpkgs/e/eth_keys";
 
-  outputs = { self, nixpkgs, src-eth_keyfile-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-eth_keyfile-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-eth_keyfile-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-eth_keyfile-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eth_keyfile-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

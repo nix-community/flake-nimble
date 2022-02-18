@@ -1,5 +1,10 @@
 {
   description = ''Library for reading KeePass files and decrypt the passwords within it'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-libkeepass-master.flake = false;
   inputs.src-libkeepass-master.type = "github";
   inputs.src-libkeepass-master.owner = "PMunch";
@@ -27,12 +32,12 @@
   inputs."zip".ref = "flake-pinning";
   inputs."zip".dir = "nimpkgs/z/zip";
 
-  outputs = { self, nixpkgs, src-libkeepass-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-libkeepass-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-libkeepass-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-libkeepass-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-libkeepass-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

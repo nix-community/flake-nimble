@@ -1,5 +1,10 @@
 {
   description = ''A Jupyter kernel for nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-jupyternim-master.flake = false;
   inputs.src-jupyternim-master.type = "github";
   inputs.src-jupyternim-master.owner = "stisa";
@@ -34,12 +39,12 @@
   inputs."nimpng".ref = "flake-pinning";
   inputs."nimpng".dir = "nimpkgs/n/nimpng";
 
-  outputs = { self, nixpkgs, src-jupyternim-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-jupyternim-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-jupyternim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-jupyternim-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-jupyternim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

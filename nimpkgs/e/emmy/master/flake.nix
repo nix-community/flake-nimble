@@ -1,5 +1,10 @@
 {
   description = ''Algebraic structures and related operations for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-emmy-master.flake = false;
   inputs.src-emmy-master.type = "github";
   inputs.src-emmy-master.owner = "andreaferretti";
@@ -20,12 +25,12 @@
   inputs."stint".ref = "flake-pinning";
   inputs."stint".dir = "nimpkgs/s/stint";
 
-  outputs = { self, nixpkgs, src-emmy-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-emmy-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-emmy-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-emmy-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-emmy-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

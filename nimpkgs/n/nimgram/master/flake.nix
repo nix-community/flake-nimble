@@ -1,5 +1,10 @@
 {
   description = ''MTProto client written in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimgram-master.flake = false;
   inputs.src-nimgram-master.type = "github";
   inputs.src-nimgram-master.owner = "nimgram";
@@ -41,12 +46,12 @@
   inputs."https://github.com/dadadani/nim-random".ref = "flake-pinning";
   inputs."https://github.com/dadadani/nim-random".dir = "nimpkgs/h/https://github.com/dadadani/nim-random";
 
-  outputs = { self, nixpkgs, src-nimgram-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimgram-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimgram-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimgram-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimgram-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

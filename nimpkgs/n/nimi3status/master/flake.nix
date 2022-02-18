@@ -1,5 +1,10 @@
 {
   description = ''Lightweight i3 status bar.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimi3status-master.flake = false;
   inputs.src-nimi3status-master.type = "github";
   inputs.src-nimi3status-master.owner = "FedericoCeratto";
@@ -13,12 +18,12 @@
   inputs."colorsys".ref = "flake-pinning";
   inputs."colorsys".dir = "nimpkgs/c/colorsys";
 
-  outputs = { self, nixpkgs, src-nimi3status-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimi3status-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimi3status-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimi3status-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimi3status-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

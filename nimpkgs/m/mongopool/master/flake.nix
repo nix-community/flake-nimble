@@ -1,5 +1,10 @@
 {
   description = ''MongoDb pooled driver'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-mongopool-master.flake = false;
   inputs.src-mongopool-master.type = "github";
   inputs.src-mongopool-master.owner = "JohnAD";
@@ -20,12 +25,12 @@
   inputs."scram".ref = "flake-pinning";
   inputs."scram".dir = "nimpkgs/s/scram";
 
-  outputs = { self, nixpkgs, src-mongopool-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-mongopool-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-mongopool-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-mongopool-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-mongopool-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

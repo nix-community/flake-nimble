@@ -1,5 +1,10 @@
 {
   description = ''A Jester web plugin that determines geographic information for each web request via API. Uses sqlite3 for a cache.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-jestergeoip-master.flake = false;
   inputs.src-jestergeoip-master.type = "github";
   inputs.src-jestergeoip-master.owner = "JohnAD";
@@ -13,12 +18,12 @@
   inputs."jesterwithplugins".ref = "flake-pinning";
   inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
 
-  outputs = { self, nixpkgs, src-jestergeoip-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-jestergeoip-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-jestergeoip-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-jestergeoip-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-jestergeoip-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

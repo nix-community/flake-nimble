@@ -1,5 +1,10 @@
 {
   description = ''Static GLFW for nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-staticglfw-master.flake = false;
   inputs.src-staticglfw-master.type = "github";
   inputs.src-staticglfw-master.owner = "treeform";
@@ -13,12 +18,12 @@
   inputs."opengl".ref = "flake-pinning";
   inputs."opengl".dir = "nimpkgs/o/opengl";
 
-  outputs = { self, nixpkgs, src-staticglfw-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-staticglfw-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-staticglfw-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-staticglfw-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-staticglfw-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

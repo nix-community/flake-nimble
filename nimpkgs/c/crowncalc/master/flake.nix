@@ -1,5 +1,10 @@
 {
   description = ''Basic calculator in Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-crowncalc-master.flake = false;
   inputs.src-crowncalc-master.type = "github";
   inputs.src-crowncalc-master.owner = "RainbowAsteroids";
@@ -20,12 +25,12 @@
   inputs."sdl2".ref = "flake-pinning";
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
-  outputs = { self, nixpkgs, src-crowncalc-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-crowncalc-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-crowncalc-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-crowncalc-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-crowncalc-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

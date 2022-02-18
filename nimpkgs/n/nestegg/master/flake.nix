@@ -1,5 +1,10 @@
 {
   description = ''A nimterop wrapper for the nestegg portable webm video demuxer'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nestegg-master.flake = false;
   inputs.src-nestegg-master.type = "github";
   inputs.src-nestegg-master.owner = "capocasa";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-nestegg-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nestegg-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nestegg-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nestegg-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nestegg-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

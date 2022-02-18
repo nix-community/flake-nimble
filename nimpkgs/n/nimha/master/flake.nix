@@ -1,5 +1,10 @@
 {
   description = ''Nim Home Assistant (NimHA) is a hub for combining multiple home automation devices and automating jobs'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimha-master.flake = false;
   inputs.src-nimha-master.type = "github";
   inputs.src-nimha-master.owner = "ThomasTJdev";
@@ -62,12 +67,12 @@
   inputs."xiaomi".ref = "flake-pinning";
   inputs."xiaomi".dir = "nimpkgs/x/xiaomi";
 
-  outputs = { self, nixpkgs, src-nimha-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimha-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimha-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimha-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimha-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

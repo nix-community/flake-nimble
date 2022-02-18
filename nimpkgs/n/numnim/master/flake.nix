@@ -1,5 +1,10 @@
 {
   description = ''A numpy like ndarray and dataframe library for nim-lang.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-numnim-master.flake = false;
   inputs.src-numnim-master.type = "github";
   inputs.src-numnim-master.owner = "YesDrX";
@@ -27,12 +32,12 @@
   inputs."nimpy".ref = "flake-pinning";
   inputs."nimpy".dir = "nimpkgs/n/nimpy";
 
-  outputs = { self, nixpkgs, src-numnim-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-numnim-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-numnim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-numnim-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-numnim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

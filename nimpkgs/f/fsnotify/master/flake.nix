@@ -1,5 +1,10 @@
 {
   description = ''A file system monitor in Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-fsnotify-master.flake = false;
   inputs.src-fsnotify-master.type = "github";
   inputs.src-fsnotify-master.owner = "xflywind";
@@ -20,12 +25,12 @@
   inputs."xio".ref = "flake-pinning";
   inputs."xio".dir = "nimpkgs/x/xio";
 
-  outputs = { self, nixpkgs, src-fsnotify-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-fsnotify-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-fsnotify-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-fsnotify-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-fsnotify-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

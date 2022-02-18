@@ -1,5 +1,10 @@
 {
   description = ''Cross-platform sound mixer library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-sound-master.flake = false;
   inputs.src-sound-master.type = "github";
   inputs.src-sound-master.owner = "yglukhov";
@@ -34,12 +39,12 @@
   inputs."https://github.com/yglukhov/android".ref = "flake-pinning";
   inputs."https://github.com/yglukhov/android".dir = "nimpkgs/h/https://github.com/yglukhov/android";
 
-  outputs = { self, nixpkgs, src-sound-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-sound-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-sound-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-sound-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-sound-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

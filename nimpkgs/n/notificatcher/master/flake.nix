@@ -1,5 +1,10 @@
 {
   description = ''Small program to grab notifications from freedesktop and output them according to a format'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-notificatcher-master.flake = false;
   inputs.src-notificatcher-master.type = "github";
   inputs.src-notificatcher-master.owner = "PMunch";
@@ -20,12 +25,12 @@
   inputs."https://github.com/pmunch/docopt.nim".ref = "flake-pinning";
   inputs."https://github.com/pmunch/docopt.nim".dir = "nimpkgs/h/https://github.com/pmunch/docopt.nim";
 
-  outputs = { self, nixpkgs, src-notificatcher-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-notificatcher-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-notificatcher-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-notificatcher-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-notificatcher-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

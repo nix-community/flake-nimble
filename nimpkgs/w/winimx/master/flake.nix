@@ -1,5 +1,10 @@
 {
   description = ''Winim minified code generator'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-winimx-master.flake = false;
   inputs.src-winimx-master.type = "github";
   inputs.src-winimx-master.owner = "khchen";
@@ -27,12 +32,12 @@
   inputs."jsony".ref = "flake-pinning";
   inputs."jsony".dir = "nimpkgs/j/jsony";
 
-  outputs = { self, nixpkgs, src-winimx-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-winimx-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-winimx-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-winimx-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-winimx-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

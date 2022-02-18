@@ -1,5 +1,10 @@
 {
   description = ''Wrapper around the GMP bindings for the Nim language.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-bignum-master.flake = false;
   inputs.src-bignum-master.type = "github";
   inputs.src-bignum-master.owner = "SciNim";
@@ -13,12 +18,12 @@
   inputs."gmp".ref = "flake-pinning";
   inputs."gmp".dir = "nimpkgs/g/gmp";
 
-  outputs = { self, nixpkgs, src-bignum-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-bignum-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-bignum-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-bignum-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-bignum-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''mofuw is *MO*re *F*aster, *U*ltra *W*ebserver'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-mofuw-master.flake = false;
   inputs.src-mofuw-master.type = "github";
   inputs.src-mofuw-master.owner = "2vg";
@@ -20,12 +25,12 @@
   inputs."https://github.com/2vg/mofuhttputils".ref = "flake-pinning";
   inputs."https://github.com/2vg/mofuhttputils".dir = "nimpkgs/h/https://github.com/2vg/mofuhttputils";
 
-  outputs = { self, nixpkgs, src-mofuw-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-mofuw-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-mofuw-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-mofuw-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-mofuw-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

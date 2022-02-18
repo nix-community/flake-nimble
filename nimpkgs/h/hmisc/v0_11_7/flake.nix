@@ -1,5 +1,10 @@
 {
   description = ''Collection of helper utilities'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hmisc-v0_11_7.flake = false;
   inputs.src-hmisc-v0_11_7.type = "github";
   inputs.src-hmisc-v0_11_7.owner = "haxscramper";
@@ -27,12 +32,12 @@
   inputs."benchy".ref = "flake-pinning";
   inputs."benchy".dir = "nimpkgs/b/benchy";
 
-  outputs = { self, nixpkgs, src-hmisc-v0_11_7, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hmisc-v0_11_7, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hmisc-v0_11_7;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hmisc-v0_11_7"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hmisc-v0_11_7"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

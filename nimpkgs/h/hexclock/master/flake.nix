@@ -1,5 +1,10 @@
 {
   description = ''Hex clock made in SDL and Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hexclock-master.flake = false;
   inputs.src-hexclock-master.type = "github";
   inputs.src-hexclock-master.owner = "RainbowAsteroids";
@@ -13,12 +18,12 @@
   inputs."sdl2".ref = "flake-pinning";
   inputs."sdl2".dir = "nimpkgs/s/sdl2";
 
-  outputs = { self, nixpkgs, src-hexclock-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hexclock-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hexclock-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hexclock-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hexclock-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

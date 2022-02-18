@@ -1,5 +1,10 @@
 {
   description = ''The Nim toolchain installer.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-choosenim-v0_7_0-20201017.flake = false;
   inputs.src-choosenim-v0_7_0-20201017.type = "github";
   inputs.src-choosenim-v0_7_0-20201017.owner = "dom96";
@@ -48,12 +53,12 @@
   inputs."osinfo".ref = "flake-pinning";
   inputs."osinfo".dir = "nimpkgs/o/osinfo";
 
-  outputs = { self, nixpkgs, src-choosenim-v0_7_0-20201017, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-choosenim-v0_7_0-20201017, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-choosenim-v0_7_0-20201017;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-choosenim-v0_7_0-20201017"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-choosenim-v0_7_0-20201017"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

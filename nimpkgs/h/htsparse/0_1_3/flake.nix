@@ -1,5 +1,10 @@
 {
   description = ''Nim wrappers for tree-sitter parser grammars'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-htsparse-0_1_3.flake = false;
   inputs.src-htsparse-0_1_3.type = "github";
   inputs.src-htsparse-0_1_3.owner = "haxscramper";
@@ -20,12 +25,12 @@
   inputs."hparse".ref = "flake-pinning";
   inputs."hparse".dir = "nimpkgs/h/hparse";
 
-  outputs = { self, nixpkgs, src-htsparse-0_1_3, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-htsparse-0_1_3, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-htsparse-0_1_3;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-htsparse-0_1_3"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-htsparse-0_1_3"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''A Nim library for making lightweight Electron-like HTML/JS GUI apps, with full access to Nim capabilities.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-neel-0_2_0.flake = false;
   inputs.src-neel-0_2_0.type = "github";
   inputs.src-neel-0_2_0.owner = "Niminem";
@@ -20,12 +25,12 @@
   inputs."ws".ref = "flake-pinning";
   inputs."ws".dir = "nimpkgs/w/ws";
 
-  outputs = { self, nixpkgs, src-Neel-0_2_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-Neel-0_2_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-Neel-0_2_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-Neel-0_2_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Neel-0_2_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

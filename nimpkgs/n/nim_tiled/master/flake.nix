@@ -1,5 +1,10 @@
 {
   description = ''Tiled map loader for the Nim programming language'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nim_tiled-master.flake = false;
   inputs.src-nim_tiled-master.type = "github";
   inputs.src-nim_tiled-master.owner = "SkyVault";
@@ -13,12 +18,12 @@
   inputs."zippy".ref = "flake-pinning";
   inputs."zippy".dir = "nimpkgs/z/zippy";
 
-  outputs = { self, nixpkgs, src-nim_tiled-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nim_tiled-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nim_tiled-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nim_tiled-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nim_tiled-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

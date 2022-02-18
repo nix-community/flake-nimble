@@ -1,12 +1,22 @@
 {
   description = ''Nim macros to aid in object construction including event programming, and constructors.'';
-  inputs."constructor-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."constructor-master".type = "github";
+  inputs."constructor-master".owner = "riinr";
+  inputs."constructor-master".repo = "flake-nimble";
+  inputs."constructor-master".ref = "flake-pinning";
+  inputs."constructor-master".dir = "nimpkgs/c/constructor/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

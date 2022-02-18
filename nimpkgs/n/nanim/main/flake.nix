@@ -1,5 +1,10 @@
 {
   description = ''Create smooth GPU-accelerated animations that can be previewed live or rendered to videos.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nanim-main.flake = false;
   inputs.src-nanim-main.type = "github";
   inputs.src-nanim-main.owner = "ErikWDev";
@@ -41,12 +46,12 @@
   inputs."stb_image".ref = "flake-pinning";
   inputs."stb_image".dir = "nimpkgs/s/stb_image";
 
-  outputs = { self, nixpkgs, src-nanim-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nanim-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nanim-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nanim-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nanim-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

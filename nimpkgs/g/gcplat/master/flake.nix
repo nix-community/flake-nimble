@@ -1,5 +1,10 @@
 {
   description = ''Google Cloud Platform (GCP) APIs'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-gcplat-master.flake = false;
   inputs.src-gcplat-master.type = "github";
   inputs.src-gcplat-master.owner = "disruptek";
@@ -34,12 +39,12 @@
   inputs."npeg".ref = "flake-pinning";
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
-  outputs = { self, nixpkgs, src-gcplat-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-gcplat-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-gcplat-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-gcplat-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-gcplat-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

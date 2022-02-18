@@ -1,5 +1,10 @@
 {
   description = ''Crossplatform (x11, windows, osx) native file dialogs; sytem file/folder icons in any resolution; open file with default application'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-os_files-master.flake = false;
   inputs.src-os_files-master.type = "github";
   inputs.src-os_files-master.owner = "tormund";
@@ -27,12 +32,12 @@
   inputs."https://github.com/yglukhov/darwin".ref = "flake-pinning";
   inputs."https://github.com/yglukhov/darwin".dir = "nimpkgs/h/https://github.com/yglukhov/darwin";
 
-  outputs = { self, nixpkgs, src-os_files-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-os_files-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-os_files-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-os_files-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-os_files-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

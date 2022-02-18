@@ -1,5 +1,10 @@
 {
   description = ''Fast persistent key-value store, based on libmdbx'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimdbx-main.flake = false;
   inputs.src-nimdbx-main.type = "github";
   inputs.src-nimdbx-main.owner = "snej";
@@ -13,12 +18,12 @@
   inputs."nimterop".ref = "flake-pinning";
   inputs."nimterop".dir = "nimpkgs/n/nimterop";
 
-  outputs = { self, nixpkgs, src-NimDBX-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-NimDBX-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-NimDBX-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-NimDBX-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-NimDBX-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

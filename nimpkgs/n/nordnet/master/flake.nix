@@ -1,5 +1,10 @@
 {
   description = ''Scraping API for www.nordnet.dk ready to integrate with Home Assistant (Hassio)'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nordnet-master.flake = false;
   inputs.src-nordnet-master.type = "github";
   inputs.src-nordnet-master.owner = "ThomasTJdev";
@@ -20,12 +25,12 @@
   inputs."q".ref = "flake-pinning";
   inputs."q".dir = "nimpkgs/q/q";
 
-  outputs = { self, nixpkgs, src-nordnet-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nordnet-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nordnet-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nordnet-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nordnet-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

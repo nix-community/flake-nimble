@@ -1,5 +1,10 @@
 {
   description = ''Figma based UI library for nim, with HTML and OpenGL backends.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-fidget-0_7_8.flake = false;
   inputs.src-fidget-0_7_8.type = "github";
   inputs.src-fidget-0_7_8.owner = "treeform";
@@ -62,12 +67,12 @@
   inputs."supersnappy".ref = "flake-pinning";
   inputs."supersnappy".dir = "nimpkgs/s/supersnappy";
 
-  outputs = { self, nixpkgs, src-fidget-0_7_8, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-fidget-0_7_8, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-fidget-0_7_8;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-fidget-0_7_8"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-fidget-0_7_8"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''A natural language library.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-tome-main.flake = false;
   inputs.src-tome-main.type = "github";
   inputs.src-tome-main.owner = "dizzyliam";
@@ -20,12 +25,12 @@
   inputs."untar".ref = "flake-pinning";
   inputs."untar".dir = "nimpkgs/u/untar";
 
-  outputs = { self, nixpkgs, src-tome-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-tome-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-tome-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-tome-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-tome-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

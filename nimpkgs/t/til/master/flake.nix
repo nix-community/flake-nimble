@@ -1,5 +1,10 @@
 {
   description = ''til-tool: Today I Learned tool'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-til-master.flake = false;
   inputs.src-til-master.type = "github";
   inputs.src-til-master.owner = "danielecook";
@@ -20,12 +25,12 @@
   inputs."argparse".ref = "flake-pinning";
   inputs."argparse".dir = "nimpkgs/a/argparse";
 
-  outputs = { self, nixpkgs, src-til-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-til-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-til-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-til-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-til-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

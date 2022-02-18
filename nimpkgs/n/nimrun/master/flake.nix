@@ -1,5 +1,10 @@
 {
   description = ''Shebang frontend for running nim code as scripts. Does not require .nim extensions.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimrun-master.flake = false;
   inputs.src-nimrun-master.type = "github";
   inputs.src-nimrun-master.owner = "lee-b";
@@ -13,12 +18,12 @@
   inputs."tempfile".ref = "flake-pinning";
   inputs."tempfile".dir = "nimpkgs/t/tempfile";
 
-  outputs = { self, nixpkgs, src-nimrun-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimrun-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimrun-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimrun-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimrun-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

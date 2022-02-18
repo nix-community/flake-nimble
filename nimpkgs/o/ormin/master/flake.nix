@@ -1,5 +1,10 @@
 {
   description = ''Prepared SQL statement generator. A lightweight ORM.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ormin-master.flake = false;
   inputs.src-ormin-master.type = "github";
   inputs.src-ormin-master.owner = "Araq";
@@ -13,12 +18,12 @@
   inputs."websocket".ref = "flake-pinning";
   inputs."websocket".dir = "nimpkgs/w/websocket";
 
-  outputs = { self, nixpkgs, src-ormin-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ormin-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ormin-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ormin-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ormin-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

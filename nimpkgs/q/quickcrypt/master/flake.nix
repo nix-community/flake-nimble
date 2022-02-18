@@ -1,5 +1,10 @@
 {
   description = ''A library for quickly and easily encrypting strings & files. User-friendly and highly compatible.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-quickcrypt-master.flake = false;
   inputs.src-quickcrypt-master.type = "github";
   inputs.src-quickcrypt-master.owner = "theAkito";
@@ -20,12 +25,12 @@
   inputs."neoid".ref = "flake-pinning";
   inputs."neoid".dir = "nimpkgs/n/neoid";
 
-  outputs = { self, nixpkgs, src-quickcrypt-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-quickcrypt-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-quickcrypt-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-quickcrypt-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-quickcrypt-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

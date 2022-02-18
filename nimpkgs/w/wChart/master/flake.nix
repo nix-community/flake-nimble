@@ -1,5 +1,10 @@
 {
   description = ''Chart plugin for wNim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-wChart-master.flake = false;
   inputs.src-wChart-master.type = "github";
   inputs.src-wChart-master.owner = "bunkford";
@@ -13,12 +18,12 @@
   inputs."wnim".ref = "flake-pinning";
   inputs."wnim".dir = "nimpkgs/w/wnim";
 
-  outputs = { self, nixpkgs, src-wChart-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-wChart-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-wChart-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-wChart-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wChart-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

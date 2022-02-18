@@ -1,5 +1,10 @@
 {
   description = ''High-level and low-level wrapper for OpenGL'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-opengl-master.flake = false;
   inputs.src-opengl-master.type = "github";
   inputs.src-opengl-master.owner = "nim-lang";
@@ -13,12 +18,12 @@
   inputs."x11".ref = "flake-pinning";
   inputs."x11".dir = "nimpkgs/x/x11";
 
-  outputs = { self, nixpkgs, src-opengl-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-opengl-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-opengl-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-opengl-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-opengl-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

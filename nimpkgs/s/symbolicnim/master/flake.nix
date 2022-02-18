@@ -1,5 +1,10 @@
 {
   description = ''A symbolic library written purely in Nim with the ability to compile expressions into efficient functions.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-symbolicnim-master.flake = false;
   inputs.src-symbolicnim-master.type = "github";
   inputs.src-symbolicnim-master.owner = "HugoGranstrom";
@@ -20,12 +25,12 @@
   inputs."terminaltables".ref = "flake-pinning";
   inputs."terminaltables".dir = "nimpkgs/t/terminaltables";
 
-  outputs = { self, nixpkgs, src-symbolicnim-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-symbolicnim-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-symbolicnim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-symbolicnim-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-symbolicnim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

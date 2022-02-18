@@ -1,5 +1,10 @@
 {
   description = ''Google Play APK Uploader'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-gplay-master.flake = false;
   inputs.src-gplay-master.type = "github";
   inputs.src-gplay-master.owner = "yglukhov";
@@ -20,12 +25,12 @@
   inputs."cligen".ref = "flake-pinning";
   inputs."cligen".dir = "nimpkgs/c/cligen";
 
-  outputs = { self, nixpkgs, src-gplay-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-gplay-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-gplay-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-gplay-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-gplay-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

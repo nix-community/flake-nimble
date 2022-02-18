@@ -1,5 +1,10 @@
 {
   description = ''Micro benchmarking tool to measure speed of code, with the goal of optimizing it.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimbench-v0_1_1.flake = false;
   inputs.src-nimbench-v0_1_1.type = "github";
   inputs.src-nimbench-v0_1_1.owner = "ivankoster";
@@ -13,12 +18,12 @@
   inputs."strfmt".ref = "flake-pinning";
   inputs."strfmt".dir = "nimpkgs/s/strfmt";
 
-  outputs = { self, nixpkgs, src-nimbench-v0_1_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimbench-v0_1_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimbench-v0_1_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimbench-v0_1_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimbench-v0_1_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Brainly data extractor'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-brainlyextractor-master.flake = false;
   inputs.src-brainlyextractor-master.type = "gitlab";
   inputs.src-brainlyextractor-master.owner = "lurlo";
@@ -20,12 +25,12 @@
   inputs."https://gitlab.com/lurlo/useragent".ref = "flake-pinning";
   inputs."https://gitlab.com/lurlo/useragent".dir = "nimpkgs/h/https://gitlab.com/lurlo/useragent";
 
-  outputs = { self, nixpkgs, src-brainlyextractor-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-brainlyextractor-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-brainlyextractor-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-brainlyextractor-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-brainlyextractor-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

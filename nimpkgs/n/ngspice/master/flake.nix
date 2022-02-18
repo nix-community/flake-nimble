@@ -1,5 +1,10 @@
 {
   description = ''Analog electronic circuit simiulator library'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-ngspice-master.flake = false;
   inputs.src-ngspice-master.type = "github";
   inputs.src-ngspice-master.owner = "haxscramper";
@@ -20,12 +25,12 @@
   inputs."hmisc".ref = "flake-pinning";
   inputs."hmisc".dir = "nimpkgs/h/hmisc";
 
-  outputs = { self, nixpkgs, src-ngspice-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-ngspice-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-ngspice-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-ngspice-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ngspice-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

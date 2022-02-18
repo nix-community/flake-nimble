@@ -1,17 +1,22 @@
 {
   description = ''pnm is library for PNM (Portable AnyMap).'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-pnm-develop.flake = false;
   inputs.src-pnm-develop.type = "github";
   inputs.src-pnm-develop.owner = "jiro4989";
   inputs.src-pnm-develop.repo = "pnm";
   inputs.src-pnm-develop.ref = "refs/heads/develop";
   
-  outputs = { self, nixpkgs, src-pnm-develop, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-pnm-develop, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-pnm-develop;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-pnm-develop"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-pnm-develop"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

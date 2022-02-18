@@ -1,5 +1,10 @@
 {
   description = ''Test runner with file monitoring and desktop notification capabilities'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-testrunner-master.flake = false;
   inputs.src-testrunner-master.type = "github";
   inputs.src-testrunner-master.owner = "FedericoCeratto";
@@ -20,12 +25,12 @@
   inputs."fswatch".ref = "flake-pinning";
   inputs."fswatch".dir = "nimpkgs/f/fswatch";
 
-  outputs = { self, nixpkgs, src-testrunner-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-testrunner-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-testrunner-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-testrunner-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-testrunner-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

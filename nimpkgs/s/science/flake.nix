@@ -1,12 +1,27 @@
 {
   description = ''A library for scientific computations in pure Nim'';
-  inputs."science-master".url = "path:./master";
-  inputs."science-v0_2_2".url = "path:./v0_2_2";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."science-master".type = "github";
+  inputs."science-master".owner = "riinr";
+  inputs."science-master".repo = "flake-nimble";
+  inputs."science-master".ref = "flake-pinning";
+  inputs."science-master".dir = "nimpkgs/s/science/master";
+
+    inputs."science-v0_2_2".type = "github";
+  inputs."science-v0_2_2".owner = "riinr";
+  inputs."science-v0_2_2".repo = "flake-nimble";
+  inputs."science-v0_2_2".ref = "flake-pinning";
+  inputs."science-v0_2_2".dir = "nimpkgs/s/science/v0_2_2";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

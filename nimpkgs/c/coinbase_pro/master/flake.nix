@@ -1,5 +1,10 @@
 {
   description = ''Coinbase pro client for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-coinbase_pro-master.flake = false;
   inputs.src-coinbase_pro-master.type = "github";
   inputs.src-coinbase_pro-master.owner = "inv2004";
@@ -27,12 +32,12 @@
   inputs."uuids".ref = "flake-pinning";
   inputs."uuids".dir = "nimpkgs/u/uuids";
 
-  outputs = { self, nixpkgs, src-coinbase_pro-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-coinbase_pro-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-coinbase_pro-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-coinbase_pro-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-coinbase_pro-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

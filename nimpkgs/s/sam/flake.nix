@@ -1,26 +1,111 @@
 {
   description = ''Fast and just works JSON-Binding for Nim'';
-  inputs."sam-master".url = "path:./master";
-  inputs."sam-0_1_11".url = "path:./0_1_11";
-  inputs."sam-0_1_12".url = "path:./0_1_12";
-  inputs."sam-0_1_13".url = "path:./0_1_13";
-  inputs."sam-0_1_14".url = "path:./0_1_14";
-  inputs."sam-0_1_15".url = "path:./0_1_15";
-  inputs."sam-0_1_16".url = "path:./0_1_16";
-  inputs."sam-0_1_17".url = "path:./0_1_17";
-  inputs."sam-0_1_2_1".url = "path:./0_1_2_1";
-  inputs."sam-0_1_3".url = "path:./0_1_3";
-  inputs."sam-0_1_4".url = "path:./0_1_4";
-  inputs."sam-0_1_5".url = "path:./0_1_5";
-  inputs."sam-0_1_6".url = "path:./0_1_6";
-  inputs."sam-0_1_7".url = "path:./0_1_7";
-  inputs."sam-0_1_8".url = "path:./0_1_8";
-  inputs."sam-0_1_9".url = "path:./0_1_9";
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."sam-master".type = "github";
+  inputs."sam-master".owner = "riinr";
+  inputs."sam-master".repo = "flake-nimble";
+  inputs."sam-master".ref = "flake-pinning";
+  inputs."sam-master".dir = "nimpkgs/s/sam/master";
+
+    inputs."sam-0_1_11".type = "github";
+  inputs."sam-0_1_11".owner = "riinr";
+  inputs."sam-0_1_11".repo = "flake-nimble";
+  inputs."sam-0_1_11".ref = "flake-pinning";
+  inputs."sam-0_1_11".dir = "nimpkgs/s/sam/0_1_11";
+
+    inputs."sam-0_1_12".type = "github";
+  inputs."sam-0_1_12".owner = "riinr";
+  inputs."sam-0_1_12".repo = "flake-nimble";
+  inputs."sam-0_1_12".ref = "flake-pinning";
+  inputs."sam-0_1_12".dir = "nimpkgs/s/sam/0_1_12";
+
+    inputs."sam-0_1_13".type = "github";
+  inputs."sam-0_1_13".owner = "riinr";
+  inputs."sam-0_1_13".repo = "flake-nimble";
+  inputs."sam-0_1_13".ref = "flake-pinning";
+  inputs."sam-0_1_13".dir = "nimpkgs/s/sam/0_1_13";
+
+    inputs."sam-0_1_14".type = "github";
+  inputs."sam-0_1_14".owner = "riinr";
+  inputs."sam-0_1_14".repo = "flake-nimble";
+  inputs."sam-0_1_14".ref = "flake-pinning";
+  inputs."sam-0_1_14".dir = "nimpkgs/s/sam/0_1_14";
+
+    inputs."sam-0_1_15".type = "github";
+  inputs."sam-0_1_15".owner = "riinr";
+  inputs."sam-0_1_15".repo = "flake-nimble";
+  inputs."sam-0_1_15".ref = "flake-pinning";
+  inputs."sam-0_1_15".dir = "nimpkgs/s/sam/0_1_15";
+
+    inputs."sam-0_1_16".type = "github";
+  inputs."sam-0_1_16".owner = "riinr";
+  inputs."sam-0_1_16".repo = "flake-nimble";
+  inputs."sam-0_1_16".ref = "flake-pinning";
+  inputs."sam-0_1_16".dir = "nimpkgs/s/sam/0_1_16";
+
+    inputs."sam-0_1_17".type = "github";
+  inputs."sam-0_1_17".owner = "riinr";
+  inputs."sam-0_1_17".repo = "flake-nimble";
+  inputs."sam-0_1_17".ref = "flake-pinning";
+  inputs."sam-0_1_17".dir = "nimpkgs/s/sam/0_1_17";
+
+    inputs."sam-0_1_2_1".type = "github";
+  inputs."sam-0_1_2_1".owner = "riinr";
+  inputs."sam-0_1_2_1".repo = "flake-nimble";
+  inputs."sam-0_1_2_1".ref = "flake-pinning";
+  inputs."sam-0_1_2_1".dir = "nimpkgs/s/sam/0_1_2_1";
+
+    inputs."sam-0_1_3".type = "github";
+  inputs."sam-0_1_3".owner = "riinr";
+  inputs."sam-0_1_3".repo = "flake-nimble";
+  inputs."sam-0_1_3".ref = "flake-pinning";
+  inputs."sam-0_1_3".dir = "nimpkgs/s/sam/0_1_3";
+
+    inputs."sam-0_1_4".type = "github";
+  inputs."sam-0_1_4".owner = "riinr";
+  inputs."sam-0_1_4".repo = "flake-nimble";
+  inputs."sam-0_1_4".ref = "flake-pinning";
+  inputs."sam-0_1_4".dir = "nimpkgs/s/sam/0_1_4";
+
+    inputs."sam-0_1_5".type = "github";
+  inputs."sam-0_1_5".owner = "riinr";
+  inputs."sam-0_1_5".repo = "flake-nimble";
+  inputs."sam-0_1_5".ref = "flake-pinning";
+  inputs."sam-0_1_5".dir = "nimpkgs/s/sam/0_1_5";
+
+    inputs."sam-0_1_6".type = "github";
+  inputs."sam-0_1_6".owner = "riinr";
+  inputs."sam-0_1_6".repo = "flake-nimble";
+  inputs."sam-0_1_6".ref = "flake-pinning";
+  inputs."sam-0_1_6".dir = "nimpkgs/s/sam/0_1_6";
+
+    inputs."sam-0_1_7".type = "github";
+  inputs."sam-0_1_7".owner = "riinr";
+  inputs."sam-0_1_7".repo = "flake-nimble";
+  inputs."sam-0_1_7".ref = "flake-pinning";
+  inputs."sam-0_1_7".dir = "nimpkgs/s/sam/0_1_7";
+
+    inputs."sam-0_1_8".type = "github";
+  inputs."sam-0_1_8".owner = "riinr";
+  inputs."sam-0_1_8".repo = "flake-nimble";
+  inputs."sam-0_1_8".ref = "flake-pinning";
+  inputs."sam-0_1_8".dir = "nimpkgs/s/sam/0_1_8";
+
+    inputs."sam-0_1_9".type = "github";
+  inputs."sam-0_1_9".owner = "riinr";
+  inputs."sam-0_1_9".repo = "flake-nimble";
+  inputs."sam-0_1_9".ref = "flake-pinning";
+  inputs."sam-0_1_9".dir = "nimpkgs/s/sam/0_1_9";
+
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

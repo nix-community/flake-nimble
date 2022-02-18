@@ -1,5 +1,10 @@
 {
   description = ''<VS Code Data Swapper> Easily swap between multiple data folders.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-vscds-master.flake = false;
   inputs.src-vscds-master.type = "github";
   inputs.src-vscds-master.owner = "doongjohn";
@@ -13,12 +18,12 @@
   inputs."nimlevenshtein".ref = "flake-pinning";
   inputs."nimlevenshtein".dir = "nimpkgs/n/nimlevenshtein";
 
-  outputs = { self, nixpkgs, src-vscds-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-vscds-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-vscds-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-vscds-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-vscds-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

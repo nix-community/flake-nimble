@@ -1,12 +1,22 @@
 {
   description = ''Nim bindings for https://github.com/zserge/webview, a cross platform single header webview library'';
-  inputs."webview-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."webview-master".type = "github";
+  inputs."webview-master".owner = "riinr";
+  inputs."webview-master".repo = "flake-nimble";
+  inputs."webview-master".ref = "flake-pinning";
+  inputs."webview-master".dir = "nimpkgs/w/webview/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

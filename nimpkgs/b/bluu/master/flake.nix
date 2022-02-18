@@ -1,5 +1,10 @@
 {
   description = ''Microsoft Azure Cloud Computing Platform and Services (MAC) APIs'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-bluu-master.flake = false;
   inputs.src-bluu-master.type = "github";
   inputs.src-bluu-master.owner = "disruptek";
@@ -27,12 +32,12 @@
   inputs."npeg".ref = "flake-pinning";
   inputs."npeg".dir = "nimpkgs/n/npeg";
 
-  outputs = { self, nixpkgs, src-bluu-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-bluu-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-bluu-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-bluu-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-bluu-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

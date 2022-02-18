@@ -1,12 +1,22 @@
 {
   description = ''small/tiny, flatfile, jsonl based, inprogress database for nim'';
-  inputs."flatdb-master".url = "path:./master";
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+    inputs."flatdb-master".type = "github";
+  inputs."flatdb-master".owner = "riinr";
+  inputs."flatdb-master".repo = "flake-nimble";
+  inputs."flatdb-master".ref = "flake-pinning";
+  inputs."flatdb-master".dir = "nimpkgs/f/flatdb/master";
+
   
-  outputs = { self, nixpkgs, ...}@inputs:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+    let lib = flakeNimbleLib.lib;
     in lib.mkProjectOutput {
       inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs"];
+      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

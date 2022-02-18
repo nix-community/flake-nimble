@@ -1,5 +1,10 @@
 {
   description = ''Boilerplate generator for Jester web framework'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-gen-0_8_0.flake = false;
   inputs.src-gen-0_8_0.type = "github";
   inputs.src-gen-0_8_0.owner = "Adeohluwa";
@@ -27,12 +32,12 @@
   inputs."fab".ref = "flake-pinning";
   inputs."fab".dir = "nimpkgs/f/fab";
 
-  outputs = { self, nixpkgs, src-gen-0_8_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-gen-0_8_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-gen-0_8_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-gen-0_8_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-gen-0_8_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

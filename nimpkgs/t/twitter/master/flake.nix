@@ -1,5 +1,10 @@
 {
   description = ''Low-level twitter API wrapper library for Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-twitter-master.flake = false;
   inputs.src-twitter-master.type = "github";
   inputs.src-twitter-master.owner = "snus-kin";
@@ -20,12 +25,12 @@
   inputs."hmac".ref = "flake-pinning";
   inputs."hmac".dir = "nimpkgs/h/hmac";
 
-  outputs = { self, nixpkgs, src-twitter-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-twitter-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-twitter-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-twitter-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-twitter-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

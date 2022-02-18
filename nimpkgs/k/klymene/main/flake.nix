@@ -1,5 +1,10 @@
 {
   description = ''Create beautiful command line interfaces in Nim. Based on docopt.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-klymene-main.flake = false;
   inputs.src-klymene-main.type = "github";
   inputs.src-klymene-main.owner = "georgelemon";
@@ -27,12 +32,12 @@
   inputs."illwill".ref = "flake-pinning";
   inputs."illwill".dir = "nimpkgs/i/illwill";
 
-  outputs = { self, nixpkgs, src-klymene-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-klymene-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-klymene-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-klymene-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-klymene-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

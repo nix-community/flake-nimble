@@ -1,5 +1,10 @@
 {
   description = ''Writing a 2D Platform Game in Nim with SDL2'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-platformer-master.flake = false;
   inputs.src-platformer-master.type = "github";
   inputs.src-platformer-master.owner = "def-";
@@ -27,12 +32,12 @@
   inputs."basic2d".ref = "flake-pinning";
   inputs."basic2d".dir = "nimpkgs/b/basic2d";
 
-  outputs = { self, nixpkgs, src-platformer-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-platformer-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-platformer-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-platformer-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-platformer-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

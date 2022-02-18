@@ -1,5 +1,10 @@
 {
   description = ''Nim implementation of user-agent parser'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-uap-master.flake = false;
   inputs.src-uap-master.type = "gitlab";
   inputs.src-uap-master.owner = "artemklevtsov";
@@ -20,12 +25,12 @@
   inputs."yaml".ref = "flake-pinning";
   inputs."yaml".dir = "nimpkgs/y/yaml";
 
-  outputs = { self, nixpkgs, src-uap-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-uap-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-uap-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-uap-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-uap-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

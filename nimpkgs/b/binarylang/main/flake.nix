@@ -1,5 +1,10 @@
 {
   description = ''Binary parser/encoder DSL'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-binarylang-main.flake = false;
   inputs.src-binarylang-main.type = "github";
   inputs.src-binarylang-main.owner = "sealmove";
@@ -13,12 +18,12 @@
   inputs."bitstreams".ref = "flake-pinning";
   inputs."bitstreams".dir = "nimpkgs/b/bitstreams";
 
-  outputs = { self, nixpkgs, src-binarylang-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-binarylang-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-binarylang-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-binarylang-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-binarylang-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

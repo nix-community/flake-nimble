@@ -1,5 +1,10 @@
 {
   description = ''Hackathon Web Scratchpad for teaching Nim on events using Wifi with limited or no Internet'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-hackpad-master.flake = false;
   inputs.src-hackpad-master.type = "github";
   inputs.src-hackpad-master.owner = "juancarlospaco";
@@ -20,12 +25,12 @@
   inputs."zip".ref = "flake-pinning";
   inputs."zip".dir = "nimpkgs/z/zip";
 
-  outputs = { self, nixpkgs, src-hackpad-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-hackpad-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-hackpad-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-hackpad-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hackpad-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -1,5 +1,10 @@
 {
   description = ''Shaders in Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimsl-v0_2_1.flake = false;
   inputs.src-nimsl-v0_2_1.type = "github";
   inputs.src-nimsl-v0_2_1.owner = "yglukhov";
@@ -13,12 +18,12 @@
   inputs."variant".ref = "flake-pinning";
   inputs."variant".dir = "nimpkgs/v/variant";
 
-  outputs = { self, nixpkgs, src-nimsl-v0_2_1, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimsl-v0_2_1, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimsl-v0_2_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimsl-v0_2_1"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimsl-v0_2_1"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

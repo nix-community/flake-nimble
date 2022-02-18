@@ -1,5 +1,10 @@
 {
   description = ''A high-level image I/O and manipulation library for Nim.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-inumon-master.flake = false;
   inputs.src-inumon-master.type = "github";
   inputs.src-inumon-master.owner = "dizzyliam";
@@ -27,12 +32,12 @@
   inputs."nigui".ref = "flake-pinning";
   inputs."nigui".dir = "nimpkgs/n/nigui";
 
-  outputs = { self, nixpkgs, src-inumon-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-inumon-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-inumon-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-inumon-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-inumon-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

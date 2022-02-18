@@ -1,5 +1,10 @@
 {
   description = ''Easy specification of text formats for structured data'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-textformats-main.flake = false;
   inputs.src-textformats-main.type = "github";
   inputs.src-textformats-main.owner = "ggonnella";
@@ -34,12 +39,12 @@
   inputs."nimpy".ref = "flake-pinning";
   inputs."nimpy".dir = "nimpkgs/n/nimpy";
 
-  outputs = { self, nixpkgs, src-textformats-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-textformats-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-textformats-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-textformats-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-textformats-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

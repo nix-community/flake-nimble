@@ -1,5 +1,10 @@
 {
   description = ''For karax html preview.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-kview-master.flake = false;
   inputs.src-kview-master.type = "github";
   inputs.src-kview-master.owner = "planety";
@@ -13,12 +18,12 @@
   inputs."karax".ref = "flake-pinning";
   inputs."karax".dir = "nimpkgs/k/karax";
 
-  outputs = { self, nixpkgs, src-kview-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-kview-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-kview-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-kview-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-kview-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

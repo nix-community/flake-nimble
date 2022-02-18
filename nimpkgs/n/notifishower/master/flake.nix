@@ -1,5 +1,10 @@
 {
   description = ''Small program to draw notifications on the screen in a highly customisable way'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-notifishower-master.flake = false;
   inputs.src-notifishower-master.type = "github";
   inputs.src-notifishower-master.owner = "PMunch";
@@ -41,12 +46,12 @@
   inputs."termstyle".ref = "flake-pinning";
   inputs."termstyle".dir = "nimpkgs/t/termstyle";
 
-  outputs = { self, nixpkgs, src-notifishower-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-notifishower-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-notifishower-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-notifishower-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-notifishower-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

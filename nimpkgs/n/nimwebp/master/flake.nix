@@ -1,5 +1,10 @@
 {
   description = ''Webp encoder and decoder bindings for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-nimwebp-master.flake = false;
   inputs.src-nimwebp-master.type = "github";
   inputs.src-nimwebp-master.owner = "tormund";
@@ -20,12 +25,12 @@
   inputs."https://github.com/yglukhov/clurp".ref = "flake-pinning";
   inputs."https://github.com/yglukhov/clurp".dir = "nimpkgs/h/https://github.com/yglukhov/clurp";
 
-  outputs = { self, nixpkgs, src-nimwebp-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimwebp-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-nimwebp-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-nimwebp-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimwebp-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

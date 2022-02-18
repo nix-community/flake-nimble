@@ -1,5 +1,10 @@
 {
   description = ''paramidi with nimib'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-paramidib-main.flake = false;
   inputs.src-paramidib-main.type = "github";
   inputs.src-paramidib-main.owner = "pietroppeter";
@@ -27,12 +32,12 @@
   inputs."parasound".ref = "flake-pinning";
   inputs."parasound".dir = "nimpkgs/p/parasound";
 
-  outputs = { self, nixpkgs, src-paramidib-main, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-paramidib-main, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-paramidib-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-paramidib-main"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-paramidib-main"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

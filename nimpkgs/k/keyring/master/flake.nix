@@ -1,5 +1,10 @@
 {
   description = ''Cross-platform access to OS keychain'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-keyring-master.flake = false;
   inputs.src-keyring-master.type = "github";
   inputs.src-keyring-master.owner = "iffy";
@@ -13,12 +18,12 @@
   inputs."dbus".ref = "flake-pinning";
   inputs."dbus".dir = "nimpkgs/d/dbus";
 
-  outputs = { self, nixpkgs, src-keyring-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-keyring-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-keyring-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-keyring-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-keyring-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

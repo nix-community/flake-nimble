@@ -1,5 +1,10 @@
 {
   description = ''a down to earth webframework in nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-servy-master.flake = false;
   inputs.src-servy-master.type = "github";
   inputs.src-servy-master.owner = "xmonader";
@@ -20,12 +25,12 @@
   inputs."ws".ref = "flake-pinning";
   inputs."ws".dir = "nimpkgs/w/ws";
 
-  outputs = { self, nixpkgs, src-servy-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-servy-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-servy-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-servy-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-servy-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

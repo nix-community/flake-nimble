@@ -1,5 +1,10 @@
 {
   description = ''A domain-specific for general purpose office automation. The language is embedded in Nim and allows for quick and easy integration of different office software environments.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-feta-0_0_13.flake = false;
   inputs.src-feta-0_0_13.type = "github";
   inputs.src-feta-0_0_13.owner = "FlorianRauls";
@@ -34,12 +39,12 @@
   inputs."ws".ref = "flake-pinning";
   inputs."ws".dir = "nimpkgs/w/ws";
 
-  outputs = { self, nixpkgs, src-feta-0_0_13, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-feta-0_0_13, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-feta-0_0_13;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-feta-0_0_13"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-feta-0_0_13"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

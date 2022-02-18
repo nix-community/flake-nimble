@@ -1,5 +1,10 @@
 {
   description = ''Generate icon files from PNG files.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-icon-master.flake = false;
   inputs.src-icon-master.type = "github";
   inputs.src-icon-master.owner = "bung87";
@@ -20,12 +25,12 @@
   inputs."struct".ref = "flake-pinning";
   inputs."struct".dir = "nimpkgs/s/struct";
 
-  outputs = { self, nixpkgs, src-icon-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-icon-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-icon-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-icon-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-icon-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

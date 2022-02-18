@@ -1,5 +1,10 @@
 {
   description = ''Fetch url resources via HTTP and HTTPS.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-puppy-1_5_0.flake = false;
   inputs.src-puppy-1_5_0.type = "github";
   inputs.src-puppy-1_5_0.owner = "treeform";
@@ -27,12 +32,12 @@
   inputs."zippy".ref = "flake-pinning";
   inputs."zippy".dir = "nimpkgs/z/zippy";
 
-  outputs = { self, nixpkgs, src-puppy-1_5_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-puppy-1_5_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-puppy-1_5_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-puppy-1_5_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-puppy-1_5_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

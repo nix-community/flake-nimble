@@ -1,5 +1,10 @@
 {
   description = ''Pure library for matching file paths against Unix style glob patterns.'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-glob-master.flake = false;
   inputs.src-glob-master.type = "github";
   inputs.src-glob-master.owner = "haltcase";
@@ -13,12 +18,12 @@
   inputs."regex".ref = "flake-pinning";
   inputs."regex".dir = "nimpkgs/r/regex";
 
-  outputs = { self, nixpkgs, src-glob-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-glob-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-glob-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-glob-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-glob-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

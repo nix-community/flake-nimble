@@ -1,5 +1,10 @@
 {
   description = ''Too awesome procs to be included in nimrod.os module'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-genieos-v9_4_2-hyoyeon.flake = false;
   inputs.src-genieos-v9_4_2-hyoyeon.type = "github";
   inputs.src-genieos-v9_4_2-hyoyeon.owner = "Araq";
@@ -13,12 +18,12 @@
   inputs."x11".ref = "flake-pinning";
   inputs."x11".dir = "nimpkgs/x/x11";
 
-  outputs = { self, nixpkgs, src-genieos-v9_4_2-hyoyeon, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-genieos-v9_4_2-hyoyeon, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-genieos-v9_4_2-hyoyeon;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-genieos-v9_4_2-hyoyeon"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-genieos-v9_4_2-hyoyeon"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

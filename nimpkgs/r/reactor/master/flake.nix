@@ -1,5 +1,10 @@
 {
   description = ''Asynchronous networking engine for Nim'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-reactor-master.flake = false;
   inputs.src-reactor-master.type = "github";
   inputs.src-reactor-master.owner = "zielmicha";
@@ -13,12 +18,12 @@
   inputs."collections".ref = "flake-pinning";
   inputs."collections".dir = "nimpkgs/c/collections";
 
-  outputs = { self, nixpkgs, src-reactor-master, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-reactor-master, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-reactor-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-reactor-master"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-reactor-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

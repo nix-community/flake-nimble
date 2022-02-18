@@ -1,5 +1,10 @@
 {
   description = ''Client and server database and networking utils'';
+    inputs.flakeNimbleLib.type = "github";
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.repo = "flake-nimble";
+  inputs.flakeNimbleLib.ref = "flake-pinning";
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
   inputs.src-wavecore-0_5_0.flake = false;
   inputs.src-wavecore-0_5_0.type = "github";
   inputs.src-wavecore-0_5_0.owner = "ansiwave";
@@ -48,12 +53,12 @@
   inputs."threading".ref = "flake-pinning";
   inputs."threading".dir = "nimpkgs/t/threading";
 
-  outputs = { self, nixpkgs, src-wavecore-0_5_0, ...}@deps:
-    let lib = import ./lib.nix;
+  outputs = { self, nixpkgs, flakeNimbleLib, src-wavecore-0_5_0, ...}@deps:
+    let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-wavecore-0_5_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "src-wavecore-0_5_0"];
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wavecore-0_5_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }
