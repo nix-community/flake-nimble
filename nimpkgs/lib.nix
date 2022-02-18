@@ -3,10 +3,12 @@ let
   mkProjectOutput = { self, nixpkgs, refs, meta }:
   let 
     buildNimPackage = nixpkgs.legacyPackages.x86_64-linux;
-    defaultPackage = refs."${meta.name}-master" or 
+    defaultPackage = 
+      refs."${meta.name}-master" or 
       refs."${meta.name}-main" or 
       refs."${meta.name}-unstable" or 
-      refs."${meta.name}-develop" or null;
+      refs."${meta.name}-develop" or
+      builtins.trace (builtins.attrNames refs) null;
   in {
     defaultPackage.x86_64-linux = defaultPackage.defaultPackage.x86_64-linux;
     packages.x86_64-linux = builtins.mapAttrs (name: value: value.defaultPackage.x86_64-linux) refs;
