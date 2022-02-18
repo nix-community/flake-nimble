@@ -2,12 +2,14 @@ let
   systems = [ "aarch64-linux" "x86_64-linux" ];
   mkProjectOutput = { self, nixpkgs, refs, meta }:
   let 
+    lib = nixpkgs.lib;
     buildNimPackage = nixpkgs.legacyPackages.x86_64-linux;
+    lowerName = lib.toLower meta.name; 
     defaultPackage = 
-      refs."${meta.name}-master" or 
-      refs."${meta.name}-main" or 
-      refs."${meta.name}-unstable" or 
-      refs."${meta.name}-develop" or
+      refs."${lowerName}-master" or 
+      refs."${lowerName}-main" or 
+      refs."${lowerName}-unstable" or 
+      refs."${lowerName}-develop" or
       builtins.trace (builtins.attrNames refs) null;
   in {
     defaultPackage.x86_64-linux = defaultPackage.defaultPackage.x86_64-linux;
