@@ -10,7 +10,7 @@ let
       refs."${lowerName}-main" or 
       refs."${lowerName}-unstable" or 
       refs."${lowerName}-develop" or
-      builtins.trace (builtins.attrNames refs) null;
+      (builtins.trace (builtins.attrNames refs) null);
   in {
     defaultPackage.x86_64-linux = defaultPackage.defaultPackage.x86_64-linux;
     packages.x86_64-linux = builtins.mapAttrs (name: value: value.defaultPackage.x86_64-linux) refs;
