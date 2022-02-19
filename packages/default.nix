@@ -295,6 +295,7 @@
   "dnsstamps" = ./dnsstamps.json;
   "docopt" = ./docopt.json;
   "docx" = ./docx.json;
+  "dogapi" = ./dogapi.json;
   "dotenv" = ./dotenv.json;
   "dpdk" = ./dpdk.json;
   "drand48" = ./drand48.json;
@@ -1325,6 +1326,7 @@
   "shlex" = ./shlex.json;
   "shmk" = ./shmk.json;
   "shoco" = ./shoco.json;
+  "shorteststring" = ./shorteststring.json;
   "shorturl" = ./shorturl.json;
   "signals" = ./signals.json;
   "sigv4" = ./sigv4.json;
