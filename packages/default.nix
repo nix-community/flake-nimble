@@ -1512,6 +1512,7 @@
   "tnim" = ./tnim.json;
   "todoist" = ./todoist.json;
   "tokarax" = ./tokarax.json;
+  "toktok" = ./toktok.json;
   "tome" = ./tome.json;
   "toml_serialization" = ./toml_serialization.json;
   "tor" = ./tor.json;
