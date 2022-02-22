@@ -189,6 +189,7 @@
   "cligen" = ./cligen.json;
   "cliptomania" = ./cliptomania.json;
   "closure_compiler" = ./closure_compiler.json;
+  "cloudbet" = ./cloudbet.json;
   "clr" = ./clr.json;
   "cmake" = ./cmake.json;
   "cmark" = ./cmark.json;
@@ -1590,6 +1591,7 @@
   "values" = ./values.json;
   "variant" = ./variant.json;
   "variantkey" = ./variantkey.json;
+  "variantsugar" = ./variantsugar.json;
   "vaultclient" = ./vaultclient.json;
   "vec" = ./vec.json;
   "vecio" = ./vecio.json;
