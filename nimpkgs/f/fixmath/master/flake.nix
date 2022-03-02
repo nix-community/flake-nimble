@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-fixmath-master.flake = false;
   inputs.src-fixmath-master.type = "github";
-  inputs.src-fixmath-master.owner = "jeff-Ciesielski";
+  inputs.src-fixmath-master.owner = "Jeff-Ciesielski";
   inputs.src-fixmath-master.repo = "fixmath";
   inputs.src-fixmath-master.ref = "refs/heads/master";
+  inputs.src-fixmath-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-fixmath-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

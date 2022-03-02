@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."dnsstamps-master".type = "github";
   inputs."dnsstamps-master".owner = "riinr";
   inputs."dnsstamps-master".repo = "flake-nimble";
   inputs."dnsstamps-master".ref = "flake-pinning";
   inputs."dnsstamps-master".dir = "nimpkgs/d/dnsstamps/master";
+  inputs."dnsstamps-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dnsstamps-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."dnsstamps-0_1_0".type = "github";
   inputs."dnsstamps-0_1_0".owner = "riinr";
   inputs."dnsstamps-0_1_0".repo = "flake-nimble";
   inputs."dnsstamps-0_1_0".ref = "flake-pinning";
   inputs."dnsstamps-0_1_0".dir = "nimpkgs/d/dnsstamps/0_1_0";
+  inputs."dnsstamps-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dnsstamps-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

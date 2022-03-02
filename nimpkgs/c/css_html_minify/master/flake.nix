@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-css_html_minify-master.flake = false;
   inputs.src-css_html_minify-master.type = "github";
   inputs.src-css_html_minify-master.owner = "juancarlospaco";
   inputs.src-css_html_minify-master.repo = "nim-css-html-minify";
   inputs.src-css_html_minify-master.ref = "refs/heads/master";
+  inputs.src-css_html_minify-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-css_html_minify-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

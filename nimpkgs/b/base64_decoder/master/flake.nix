@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-base64_decoder-master.flake = false;
   inputs.src-base64_decoder-master.type = "github";
   inputs.src-base64_decoder-master.owner = "momeemt";
   inputs.src-base64_decoder-master.repo = "base64_cui";
   inputs.src-base64_decoder-master.ref = "refs/heads/master";
+  inputs.src-base64_decoder-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-base64_decoder-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

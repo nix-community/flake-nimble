@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-arturo-v0_9_77.flake = false;
   inputs.src-arturo-v0_9_77.type = "github";
   inputs.src-arturo-v0_9_77.owner = "arturo-lang";
   inputs.src-arturo-v0_9_77.repo = "arturo";
   inputs.src-arturo-v0_9_77.ref = "refs/tags/v0.9.77";
+  inputs.src-arturo-v0_9_77.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-arturo-v0_9_77, ...}@deps:
     let lib = flakeNimbleLib.lib;

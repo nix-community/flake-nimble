@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-argon2_bind-develop.flake = false;
   inputs.src-argon2_bind-develop.type = "github";
-  inputs.src-argon2_bind-develop.owner = "d-Nice";
+  inputs.src-argon2_bind-develop.owner = "D-Nice";
   inputs.src-argon2_bind-develop.repo = "argon2_bind";
   inputs.src-argon2_bind-develop.ref = "refs/heads/develop";
+  inputs.src-argon2_bind-develop.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-argon2_bind-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."euclidean-master".type = "github";
   inputs."euclidean-master".owner = "riinr";
   inputs."euclidean-master".repo = "flake-nimble";
   inputs."euclidean-master".ref = "flake-pinning";
   inputs."euclidean-master".dir = "nimpkgs/e/euclidean/master";
+  inputs."euclidean-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."euclidean-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

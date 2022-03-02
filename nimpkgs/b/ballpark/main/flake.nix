@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-ballpark-main.flake = false;
   inputs.src-ballpark-main.type = "github";
   inputs.src-ballpark-main.owner = "Mihara";
   inputs.src-ballpark-main.repo = "ballpark";
   inputs.src-ballpark-main.ref = "refs/heads/main";
+  inputs.src-ballpark-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."fsnotify".type = "github";
-  inputs."fsnotify".owner = "riinr";
-  inputs."fsnotify".repo = "flake-nimble";
-  inputs."fsnotify".ref = "flake-pinning";
-  inputs."fsnotify".dir = "nimpkgs/f/fsnotify";
+  # inputs."fsnotify".type = "github";
+  # inputs."fsnotify".owner = "riinr";
+  # inputs."fsnotify".repo = "flake-nimble";
+  # inputs."fsnotify".ref = "flake-pinning";
+  # inputs."fsnotify".dir = "nimpkgs/f/fsnotify";
+  # inputs."fsnotify".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."fsnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ballpark-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

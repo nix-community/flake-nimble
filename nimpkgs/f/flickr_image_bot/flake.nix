@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."flickr_image_bot-master".type = "github";
   inputs."flickr_image_bot-master".owner = "riinr";
   inputs."flickr_image_bot-master".repo = "flake-nimble";
   inputs."flickr_image_bot-master".ref = "flake-pinning";
   inputs."flickr_image_bot-master".dir = "nimpkgs/f/flickr_image_bot/master";
+  inputs."flickr_image_bot-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."flickr_image_bot-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

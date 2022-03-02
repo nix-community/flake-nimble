@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-cirru_edn-v0_3_8.flake = false;
   inputs.src-cirru_edn-v0_3_8.type = "github";
   inputs.src-cirru_edn-v0_3_8.owner = "Cirru";
   inputs.src-cirru_edn-v0_3_8.repo = "cirru-edn.nim";
   inputs.src-cirru_edn-v0_3_8.ref = "refs/tags/v0.3.8";
+  inputs.src-cirru_edn-v0_3_8.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."cirru_parser".type = "github";
-  inputs."cirru_parser".owner = "riinr";
-  inputs."cirru_parser".repo = "flake-nimble";
-  inputs."cirru_parser".ref = "flake-pinning";
-  inputs."cirru_parser".dir = "nimpkgs/c/cirru_parser";
+  # inputs."cirru_parser".type = "github";
+  # inputs."cirru_parser".owner = "riinr";
+  # inputs."cirru_parser".repo = "flake-nimble";
+  # inputs."cirru_parser".ref = "flake-pinning";
+  # inputs."cirru_parser".dir = "nimpkgs/c/cirru_parser";
+  # inputs."cirru_parser".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."cirru_parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."https://github.com/cirru/writer.nim".type = "github";
-  inputs."https://github.com/cirru/writer.nim".owner = "riinr";
-  inputs."https://github.com/cirru/writer.nim".repo = "flake-nimble";
-  inputs."https://github.com/cirru/writer.nim".ref = "flake-pinning";
-  inputs."https://github.com/cirru/writer.nim".dir = "nimpkgs/h/https://github.com/cirru/writer.nim";
+  # inputs."https://github.com/cirru/writer.nim".type = "github";
+  # inputs."https://github.com/cirru/writer.nim".owner = "riinr";
+  # inputs."https://github.com/cirru/writer.nim".repo = "flake-nimble";
+  # inputs."https://github.com/cirru/writer.nim".ref = "flake-pinning";
+  # inputs."https://github.com/cirru/writer.nim".dir = "nimpkgs/h/https://github.com/cirru/writer.nim";
+  # inputs."https://github.com/cirru/writer.nim".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."https://github.com/cirru/writer.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cirru_edn-v0_3_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

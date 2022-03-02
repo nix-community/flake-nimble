@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-eris_utils-0_3_0.flake = false;
   inputs.src-eris_utils-0_3_0.type = "other";
   inputs.src-eris_utils-0_3_0.owner = "~ehmry";
   inputs.src-eris_utils-0_3_0.repo = "eris_utils";
   inputs.src-eris_utils-0_3_0.ref = "refs/tags/0.3.0";
+  inputs.src-eris_utils-0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."eris".type = "github";
-  inputs."eris".owner = "riinr";
-  inputs."eris".repo = "flake-nimble";
-  inputs."eris".ref = "flake-pinning";
-  inputs."eris".dir = "nimpkgs/e/eris";
+  # inputs."eris".type = "github";
+  # inputs."eris".owner = "riinr";
+  # inputs."eris".repo = "flake-nimble";
+  # inputs."eris".ref = "flake-pinning";
+  # inputs."eris".dir = "nimpkgs/e/eris";
+  # inputs."eris".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."eris".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."tkrzw".type = "github";
-  inputs."tkrzw".owner = "riinr";
-  inputs."tkrzw".repo = "flake-nimble";
-  inputs."tkrzw".ref = "flake-pinning";
-  inputs."tkrzw".dir = "nimpkgs/t/tkrzw";
+  # inputs."tkrzw".type = "github";
+  # inputs."tkrzw".owner = "riinr";
+  # inputs."tkrzw".repo = "flake-nimble";
+  # inputs."tkrzw".ref = "flake-pinning";
+  # inputs."tkrzw".dir = "nimpkgs/t/tkrzw";
+  # inputs."tkrzw".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."tkrzw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-eris_utils-0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-extmath-master.flake = false;
   inputs.src-extmath-master.type = "github";
   inputs.src-extmath-master.owner = "achesak";
   inputs.src-extmath-master.repo = "extmath.nim";
   inputs.src-extmath-master.ref = "refs/heads/master";
+  inputs.src-extmath-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-extmath-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

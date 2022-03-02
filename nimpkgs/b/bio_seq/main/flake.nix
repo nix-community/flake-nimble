@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-bio_seq-main.flake = false;
   inputs.src-bio_seq-main.type = "github";
   inputs.src-bio_seq-main.owner = "kerrycobb";
   inputs.src-bio_seq-main.repo = "BioSeq";
   inputs.src-bio_seq-main.ref = "refs/heads/main";
+  inputs.src-bio_seq-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-bio_seq-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

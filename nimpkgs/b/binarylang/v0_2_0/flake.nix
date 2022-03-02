@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-binarylang-v0_2_0.flake = false;
   inputs.src-binarylang-v0_2_0.type = "github";
   inputs.src-binarylang-v0_2_0.owner = "sealmove";
   inputs.src-binarylang-v0_2_0.repo = "binarylang";
   inputs.src-binarylang-v0_2_0.ref = "refs/tags/v0.2.0";
+  inputs.src-binarylang-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."bitstreams".type = "github";
-  inputs."bitstreams".owner = "riinr";
-  inputs."bitstreams".repo = "flake-nimble";
-  inputs."bitstreams".ref = "flake-pinning";
-  inputs."bitstreams".dir = "nimpkgs/b/bitstreams";
+  # inputs."bitstreams".type = "github";
+  # inputs."bitstreams".owner = "riinr";
+  # inputs."bitstreams".repo = "flake-nimble";
+  # inputs."bitstreams".ref = "flake-pinning";
+  # inputs."bitstreams".dir = "nimpkgs/b/bitstreams";
+  # inputs."bitstreams".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."bitstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-binarylang-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

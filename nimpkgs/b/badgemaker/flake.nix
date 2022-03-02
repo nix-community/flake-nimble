@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."badgemaker-master".type = "github";
   inputs."badgemaker-master".owner = "riinr";
   inputs."badgemaker-master".repo = "flake-nimble";
   inputs."badgemaker-master".ref = "flake-pinning";
   inputs."badgemaker-master".dir = "nimpkgs/b/badgemaker/master";
+  inputs."badgemaker-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."badgemaker-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

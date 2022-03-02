@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-compiler-v0_11_0.flake = false;
   inputs.src-compiler-v0_11_0.type = "github";
   inputs.src-compiler-v0_11_0.owner = "nim-lang";
   inputs.src-compiler-v0_11_0.repo = "Nim";
   inputs.src-compiler-v0_11_0.ref = "refs/tags/v0.11.0";
+  inputs.src-compiler-v0_11_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-compiler-v0_11_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

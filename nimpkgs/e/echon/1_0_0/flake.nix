@@ -5,18 +5,20 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-echon-1_0_0.flake = false;
-  inputs.src-echon-1_0_0.type = "github";
-  inputs.src-echon-1_0_0.owner = "eXodiquas";
-  inputs.src-echon-1_0_0.repo = "Echon";
-  inputs.src-echon-1_0_0.ref = "refs/tags/1.0.0";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-Echon-1_0_0.flake = false;
+  inputs.src-Echon-1_0_0.type = "github";
+  inputs.src-Echon-1_0_0.owner = "eXodiquas";
+  inputs.src-Echon-1_0_0.repo = "Echon";
+  inputs.src-Echon-1_0_0.ref = "refs/tags/1.0.0";
+  inputs.src-Echon-1_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-echon-1_0_0, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-Echon-1_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-echon-1_0_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-echon-1_0_0"];
+      src = src-Echon-1_0_0;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Echon-1_0_0"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

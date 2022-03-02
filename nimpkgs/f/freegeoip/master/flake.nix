@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-freegeoip-master.flake = false;
   inputs.src-freegeoip-master.type = "github";
   inputs.src-freegeoip-master.owner = "achesak";
   inputs.src-freegeoip-master.repo = "nim-freegeoip";
   inputs.src-freegeoip-master.ref = "refs/heads/master";
+  inputs.src-freegeoip-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-freegeoip-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

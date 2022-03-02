@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dropbox_filename_sanitizer-v0_4_0.flake = false;
   inputs.src-dropbox_filename_sanitizer-v0_4_0.type = "github";
   inputs.src-dropbox_filename_sanitizer-v0_4_0.owner = "Araq";
   inputs.src-dropbox_filename_sanitizer-v0_4_0.repo = "dropbox_filename_sanitizer";
   inputs.src-dropbox_filename_sanitizer-v0_4_0.ref = "refs/tags/v0.4.0";
+  inputs.src-dropbox_filename_sanitizer-v0_4_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-dropbox_filename_sanitizer-v0_4_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-db_clickhouse-master.flake = false;
   inputs.src-db_clickhouse-master.type = "github";
   inputs.src-db_clickhouse-master.owner = "leonardoce";
   inputs.src-db_clickhouse-master.repo = "nim-clickhouse";
   inputs.src-db_clickhouse-master.ref = "refs/heads/master";
+  inputs.src-db_clickhouse-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-db_clickhouse-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

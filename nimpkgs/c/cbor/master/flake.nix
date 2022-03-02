@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-cbor-master.flake = false;
   inputs.src-cbor-master.type = "other";
   inputs.src-cbor-master.owner = "~ehmry";
   inputs.src-cbor-master.repo = "nim_cbor";
   inputs.src-cbor-master.ref = "refs/heads/master";
+  inputs.src-cbor-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."bigints".type = "github";
-  inputs."bigints".owner = "riinr";
-  inputs."bigints".repo = "flake-nimble";
-  inputs."bigints".ref = "flake-pinning";
-  inputs."bigints".dir = "nimpkgs/b/bigints";
+  # inputs."bigints".type = "github";
+  # inputs."bigints".owner = "riinr";
+  # inputs."bigints".repo = "flake-nimble";
+  # inputs."bigints".ref = "flake-pinning";
+  # inputs."bigints".dir = "nimpkgs/b/bigints";
+  # inputs."bigints".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."bigints".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cbor-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

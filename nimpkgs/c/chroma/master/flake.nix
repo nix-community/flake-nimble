@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-chroma-master.flake = false;
   inputs.src-chroma-master.type = "github";
   inputs.src-chroma-master.owner = "treeform";
   inputs.src-chroma-master.repo = "chroma";
   inputs.src-chroma-master.ref = "refs/heads/master";
+  inputs.src-chroma-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-chroma-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

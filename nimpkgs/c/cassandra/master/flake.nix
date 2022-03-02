@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-cassandra-master.flake = false;
   inputs.src-cassandra-master.type = "github";
   inputs.src-cassandra-master.owner = "yglukhov";
   inputs.src-cassandra-master.repo = "cassandra";
   inputs.src-cassandra-master.ref = "refs/heads/master";
+  inputs.src-cassandra-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-cassandra-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

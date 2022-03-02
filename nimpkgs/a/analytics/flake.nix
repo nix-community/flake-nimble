@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."analytics-master".type = "github";
   inputs."analytics-master".owner = "riinr";
   inputs."analytics-master".repo = "flake-nimble";
   inputs."analytics-master".ref = "flake-pinning";
   inputs."analytics-master".dir = "nimpkgs/a/analytics/master";
+  inputs."analytics-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."analytics-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."analytics-v0_2_0".type = "github";
   inputs."analytics-v0_2_0".owner = "riinr";
   inputs."analytics-v0_2_0".repo = "flake-nimble";
   inputs."analytics-v0_2_0".ref = "flake-pinning";
   inputs."analytics-v0_2_0".dir = "nimpkgs/a/analytics/v0_2_0";
+  inputs."analytics-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."analytics-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."analytics-v0_3_0".type = "github";
   inputs."analytics-v0_3_0".owner = "riinr";
   inputs."analytics-v0_3_0".repo = "flake-nimble";
   inputs."analytics-v0_3_0".ref = "flake-pinning";
   inputs."analytics-v0_3_0".dir = "nimpkgs/a/analytics/v0_3_0";
+  inputs."analytics-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."analytics-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

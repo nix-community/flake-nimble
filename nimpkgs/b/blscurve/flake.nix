@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."blscurve-master".type = "github";
   inputs."blscurve-master".owner = "riinr";
   inputs."blscurve-master".repo = "flake-nimble";
   inputs."blscurve-master".ref = "flake-pinning";
   inputs."blscurve-master".dir = "nimpkgs/b/blscurve/master";
+  inputs."blscurve-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."blscurve-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."AccurateSums-master".type = "github";
-  inputs."AccurateSums-master".owner = "riinr";
-  inputs."AccurateSums-master".repo = "flake-nimble";
-  inputs."AccurateSums-master".ref = "flake-pinning";
-  inputs."AccurateSums-master".dir = "nimpkgs/a/accuratesums/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+    inputs."accuratesums-master".type = "github";
+  inputs."accuratesums-master".owner = "riinr";
+  inputs."accuratesums-master".repo = "flake-nimble";
+  inputs."accuratesums-master".ref = "flake-pinning";
+  inputs."accuratesums-master".dir = "nimpkgs/a/accuratesums/master";
+  inputs."accuratesums-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."accuratesums-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

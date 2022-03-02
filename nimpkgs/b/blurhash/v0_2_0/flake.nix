@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-blurhash-v0_2_0.flake = false;
   inputs.src-blurhash-v0_2_0.type = "github";
   inputs.src-blurhash-v0_2_0.owner = "SolitudeSF";
   inputs.src-blurhash-v0_2_0.repo = "blurhash";
   inputs.src-blurhash-v0_2_0.ref = "refs/tags/v0.2.0";
+  inputs.src-blurhash-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."imageman".type = "github";
-  inputs."imageman".owner = "riinr";
-  inputs."imageman".repo = "flake-nimble";
-  inputs."imageman".ref = "flake-pinning";
-  inputs."imageman".dir = "nimpkgs/i/imageman";
+  # inputs."imageman".type = "github";
+  # inputs."imageman".owner = "riinr";
+  # inputs."imageman".repo = "flake-nimble";
+  # inputs."imageman".ref = "flake-pinning";
+  # inputs."imageman".dir = "nimpkgs/i/imageman";
+  # inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-blurhash-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

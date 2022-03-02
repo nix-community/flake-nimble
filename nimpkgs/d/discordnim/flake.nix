@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."discordnim-develop".type = "github";
   inputs."discordnim-develop".owner = "riinr";
   inputs."discordnim-develop".repo = "flake-nimble";
   inputs."discordnim-develop".ref = "flake-pinning";
   inputs."discordnim-develop".dir = "nimpkgs/d/discordnim/develop";
+  inputs."discordnim-develop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."discordnim-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."discordnim-master".type = "github";
   inputs."discordnim-master".owner = "riinr";
   inputs."discordnim-master".repo = "flake-nimble";
   inputs."discordnim-master".ref = "flake-pinning";
   inputs."discordnim-master".dir = "nimpkgs/d/discordnim/master";
+  inputs."discordnim-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."discordnim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

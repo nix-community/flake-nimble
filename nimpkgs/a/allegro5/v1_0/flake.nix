@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-allegro5-v1_0.flake = false;
   inputs.src-allegro5-v1_0.type = "github";
   inputs.src-allegro5-v1_0.owner = "fowlmouth";
   inputs.src-allegro5-v1_0.repo = "allegro5";
   inputs.src-allegro5-v1_0.ref = "refs/tags/v1.0";
+  inputs.src-allegro5-v1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-allegro5-v1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

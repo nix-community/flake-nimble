@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."base64_decoder-master".type = "github";
   inputs."base64_decoder-master".owner = "riinr";
   inputs."base64_decoder-master".repo = "flake-nimble";
   inputs."base64_decoder-master".ref = "flake-pinning";
   inputs."base64_decoder-master".dir = "nimpkgs/b/base64_decoder/master";
+  inputs."base64_decoder-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."base64_decoder-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

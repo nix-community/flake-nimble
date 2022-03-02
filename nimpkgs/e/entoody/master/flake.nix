@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-entoody-master.flake = false;
   inputs.src-entoody-master.type = "bitbucket";
   inputs.src-entoody-master.owner = "fowlmouth";
   inputs.src-entoody-master.repo = "entoody";
   inputs.src-entoody-master.ref = "refs/heads/master";
+  inputs.src-entoody-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-entoody-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

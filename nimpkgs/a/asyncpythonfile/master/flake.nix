@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-asyncpythonfile-master.flake = false;
   inputs.src-asyncpythonfile-master.type = "github";
   inputs.src-asyncpythonfile-master.owner = "fallingduck";
   inputs.src-asyncpythonfile-master.repo = "asyncpythonfile-nim";
   inputs.src-asyncpythonfile-master.ref = "refs/heads/master";
+  inputs.src-asyncpythonfile-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-asyncpythonfile-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

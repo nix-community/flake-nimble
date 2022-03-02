@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-eastasianwidth-master.flake = false;
   inputs.src-eastasianwidth-master.type = "github";
   inputs.src-eastasianwidth-master.owner = "jiro4989";
   inputs.src-eastasianwidth-master.repo = "eastasianwidth";
   inputs.src-eastasianwidth-master.ref = "refs/heads/master";
+  inputs.src-eastasianwidth-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-eastasianwidth-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

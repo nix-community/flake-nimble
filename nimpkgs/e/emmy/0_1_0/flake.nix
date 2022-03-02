@@ -5,32 +5,40 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-emmy-0_1_0.flake = false;
   inputs.src-emmy-0_1_0.type = "github";
   inputs.src-emmy-0_1_0.owner = "andreaferretti";
   inputs.src-emmy-0_1_0.repo = "emmy";
   inputs.src-emmy-0_1_0.ref = "refs/tags/0.1.0";
+  inputs.src-emmy-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."neo".type = "github";
-  inputs."neo".owner = "riinr";
-  inputs."neo".repo = "flake-nimble";
-  inputs."neo".ref = "flake-pinning";
-  inputs."neo".dir = "nimpkgs/n/neo";
+  # inputs."neo".type = "github";
+  # inputs."neo".owner = "riinr";
+  # inputs."neo".repo = "flake-nimble";
+  # inputs."neo".ref = "flake-pinning";
+  # inputs."neo".dir = "nimpkgs/n/neo";
+  # inputs."neo".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."neo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."bigints".type = "github";
-  inputs."bigints".owner = "riinr";
-  inputs."bigints".repo = "flake-nimble";
-  inputs."bigints".ref = "flake-pinning";
-  inputs."bigints".dir = "nimpkgs/b/bigints";
+  # inputs."bigints".type = "github";
+  # inputs."bigints".owner = "riinr";
+  # inputs."bigints".repo = "flake-nimble";
+  # inputs."bigints".ref = "flake-pinning";
+  # inputs."bigints".dir = "nimpkgs/b/bigints";
+  # inputs."bigints".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."bigints".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."stint".type = "github";
-  inputs."stint".owner = "riinr";
-  inputs."stint".repo = "flake-nimble";
-  inputs."stint".ref = "flake-pinning";
-  inputs."stint".dir = "nimpkgs/s/stint";
+  # inputs."stint".type = "github";
+  # inputs."stint".owner = "riinr";
+  # inputs."stint".repo = "flake-nimble";
+  # inputs."stint".ref = "flake-pinning";
+  # inputs."stint".dir = "nimpkgs/s/stint";
+  # inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-emmy-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

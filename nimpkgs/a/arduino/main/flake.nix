@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-arduino-main.flake = false;
   inputs.src-arduino-main.type = "github";
   inputs.src-arduino-main.owner = "markspanbroek";
   inputs.src-arduino-main.repo = "nim-arduino";
   inputs.src-arduino-main.ref = "refs/heads/main";
+  inputs.src-arduino-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-arduino-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

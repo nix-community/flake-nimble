@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dimscmd-1_3_1.flake = false;
   inputs.src-dimscmd-1_3_1.type = "github";
   inputs.src-dimscmd-1_3_1.owner = "ire4ever1190";
   inputs.src-dimscmd-1_3_1.repo = "dimscordCommandHandler";
   inputs.src-dimscmd-1_3_1.ref = "refs/tags/1.3.1";
+  inputs.src-dimscmd-1_3_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."https://github.com/krisppurg/dimscord".type = "github";
-  inputs."https://github.com/krisppurg/dimscord".owner = "riinr";
-  inputs."https://github.com/krisppurg/dimscord".repo = "flake-nimble";
-  inputs."https://github.com/krisppurg/dimscord".ref = "flake-pinning";
-  inputs."https://github.com/krisppurg/dimscord".dir = "nimpkgs/h/https://github.com/krisppurg/dimscord";
+  # inputs."https://github.com/krisppurg/dimscord".type = "github";
+  # inputs."https://github.com/krisppurg/dimscord".owner = "riinr";
+  # inputs."https://github.com/krisppurg/dimscord".repo = "flake-nimble";
+  # inputs."https://github.com/krisppurg/dimscord".ref = "flake-pinning";
+  # inputs."https://github.com/krisppurg/dimscord".dir = "nimpkgs/h/https://github.com/krisppurg/dimscord";
+  # inputs."https://github.com/krisppurg/dimscord".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."https://github.com/krisppurg/dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dimscmd-1_3_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

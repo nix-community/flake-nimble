@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-flatty-master.flake = false;
   inputs.src-flatty-master.type = "github";
   inputs.src-flatty-master.owner = "treeform";
   inputs.src-flatty-master.repo = "flatty";
   inputs.src-flatty-master.ref = "refs/heads/master";
+  inputs.src-flatty-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-flatty-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

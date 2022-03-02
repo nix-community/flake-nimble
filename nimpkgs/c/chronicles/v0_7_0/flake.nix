@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-chronicles-v0_7_0.flake = false;
   inputs.src-chronicles-v0_7_0.type = "github";
   inputs.src-chronicles-v0_7_0.owner = "status-im";
   inputs.src-chronicles-v0_7_0.repo = "nim-chronicles";
   inputs.src-chronicles-v0_7_0.ref = "refs/tags/v0.7.0";
+  inputs.src-chronicles-v0_7_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."json_serialization".type = "github";
-  inputs."json_serialization".owner = "riinr";
-  inputs."json_serialization".repo = "flake-nimble";
-  inputs."json_serialization".ref = "flake-pinning";
-  inputs."json_serialization".dir = "nimpkgs/j/json_serialization";
+  # inputs."json_serialization".type = "github";
+  # inputs."json_serialization".owner = "riinr";
+  # inputs."json_serialization".repo = "flake-nimble";
+  # inputs."json_serialization".ref = "flake-pinning";
+  # inputs."json_serialization".dir = "nimpkgs/j/json_serialization";
+  # inputs."json_serialization".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."json_serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-chronicles-v0_7_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

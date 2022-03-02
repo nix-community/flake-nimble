@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-blackvas_cli-master.flake = false;
   inputs.src-blackvas_cli-master.type = "github";
   inputs.src-blackvas_cli-master.owner = "momeemt";
   inputs.src-blackvas_cli-master.repo = "BlackvasCli";
   inputs.src-blackvas_cli-master.ref = "refs/heads/master";
+  inputs.src-blackvas_cli-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."cligen".type = "github";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".repo = "flake-nimble";
-  inputs."cligen".ref = "flake-pinning";
-  inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".type = "github";
+  # inputs."cligen".owner = "riinr";
+  # inputs."cligen".repo = "flake-nimble";
+  # inputs."cligen".ref = "flake-pinning";
+  # inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."jester".type = "github";
-  inputs."jester".owner = "riinr";
-  inputs."jester".repo = "flake-nimble";
-  inputs."jester".ref = "flake-pinning";
-  inputs."jester".dir = "nimpkgs/j/jester";
+  # inputs."jester".type = "github";
+  # inputs."jester".owner = "riinr";
+  # inputs."jester".repo = "flake-nimble";
+  # inputs."jester".ref = "flake-pinning";
+  # inputs."jester".dir = "nimpkgs/j/jester";
+  # inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-blackvas_cli-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

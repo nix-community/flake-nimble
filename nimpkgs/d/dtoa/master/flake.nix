@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dtoa-master.flake = false;
   inputs.src-dtoa-master.type = "github";
   inputs.src-dtoa-master.owner = "LemonBoy";
   inputs.src-dtoa-master.repo = "dtoa.nim";
   inputs.src-dtoa-master.ref = "refs/heads/master";
+  inputs.src-dtoa-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-dtoa-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

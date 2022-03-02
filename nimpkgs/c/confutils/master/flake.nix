@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-confutils-master.flake = false;
   inputs.src-confutils-master.type = "github";
   inputs.src-confutils-master.owner = "status-im";
   inputs.src-confutils-master.repo = "nim-confutils";
   inputs.src-confutils-master.ref = "refs/heads/master";
+  inputs.src-confutils-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stew".type = "github";
-  inputs."stew".owner = "riinr";
-  inputs."stew".repo = "flake-nimble";
-  inputs."stew".ref = "flake-pinning";
-  inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".type = "github";
+  # inputs."stew".owner = "riinr";
+  # inputs."stew".repo = "flake-nimble";
+  # inputs."stew".ref = "flake-pinning";
+  # inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-confutils-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-beanstalkd-master.flake = false;
   inputs.src-beanstalkd-master.type = "github";
   inputs.src-beanstalkd-master.owner = "tormaroe";
   inputs.src-beanstalkd-master.repo = "beanstalkd.nim";
   inputs.src-beanstalkd-master.ref = "refs/heads/master";
+  inputs.src-beanstalkd-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-beanstalkd-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

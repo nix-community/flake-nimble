@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dnsprotocol-main.flake = false;
   inputs.src-dnsprotocol-main.type = "github";
   inputs.src-dnsprotocol-main.owner = "rockcavera";
   inputs.src-dnsprotocol-main.repo = "nim-dnsprotocol";
   inputs.src-dnsprotocol-main.ref = "refs/heads/main";
+  inputs.src-dnsprotocol-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stew".type = "github";
-  inputs."stew".owner = "riinr";
-  inputs."stew".repo = "flake-nimble";
-  inputs."stew".ref = "flake-pinning";
-  inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".type = "github";
+  # inputs."stew".owner = "riinr";
+  # inputs."stew".repo = "flake-nimble";
+  # inputs."stew".ref = "flake-pinning";
+  # inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dnsprotocol-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

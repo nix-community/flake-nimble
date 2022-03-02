@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-alsa-master.flake = false;
   inputs.src-alsa-master.type = "gitlab";
   inputs.src-alsa-master.owner = "eagledot";
   inputs.src-alsa-master.repo = "nim-alsa";
   inputs.src-alsa-master.ref = "refs/heads/master";
+  inputs.src-alsa-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-alsa-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

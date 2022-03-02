@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-allographer-v0_12_3.flake = false;
   inputs.src-allographer-v0_12_3.type = "github";
   inputs.src-allographer-v0_12_3.owner = "itsumura-h";
   inputs.src-allographer-v0_12_3.repo = "nim-allographer";
   inputs.src-allographer-v0_12_3.ref = "refs/tags/v0.12.3";
+  inputs.src-allographer-v0_12_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."cligen".type = "github";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".repo = "flake-nimble";
-  inputs."cligen".ref = "flake-pinning";
-  inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".type = "github";
+  # inputs."cligen".owner = "riinr";
+  # inputs."cligen".repo = "flake-nimble";
+  # inputs."cligen".ref = "flake-pinning";
+  # inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."progress".type = "github";
-  inputs."progress".owner = "riinr";
-  inputs."progress".repo = "flake-nimble";
-  inputs."progress".ref = "flake-pinning";
-  inputs."progress".dir = "nimpkgs/p/progress";
+  # inputs."progress".type = "github";
+  # inputs."progress".owner = "riinr";
+  # inputs."progress".repo = "flake-nimble";
+  # inputs."progress".ref = "flake-pinning";
+  # inputs."progress".dir = "nimpkgs/p/progress";
+  # inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-allographer-v0_12_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

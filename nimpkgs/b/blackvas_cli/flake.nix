@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."blackvas_cli-master".type = "github";
   inputs."blackvas_cli-master".owner = "riinr";
   inputs."blackvas_cli-master".repo = "flake-nimble";
   inputs."blackvas_cli-master".ref = "flake-pinning";
   inputs."blackvas_cli-master".dir = "nimpkgs/b/blackvas_cli/master";
+  inputs."blackvas_cli-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."blackvas_cli-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

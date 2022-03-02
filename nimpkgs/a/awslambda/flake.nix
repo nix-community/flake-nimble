@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."awslambda-master".type = "github";
   inputs."awslambda-master".owner = "riinr";
   inputs."awslambda-master".repo = "flake-nimble";
   inputs."awslambda-master".ref = "flake-pinning";
   inputs."awslambda-master".dir = "nimpkgs/a/awslambda/master";
+  inputs."awslambda-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."awslambda-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."exporttosqlite3-main".type = "github";
   inputs."exporttosqlite3-main".owner = "riinr";
   inputs."exporttosqlite3-main".repo = "flake-nimble";
   inputs."exporttosqlite3-main".ref = "flake-pinning";
   inputs."exporttosqlite3-main".dir = "nimpkgs/e/exporttosqlite3/main";
+  inputs."exporttosqlite3-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."exporttosqlite3-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

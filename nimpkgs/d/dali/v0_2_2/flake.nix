@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dali-v0_2_2.flake = false;
   inputs.src-dali-v0_2_2.type = "github";
   inputs.src-dali-v0_2_2.owner = "akavel";
   inputs.src-dali-v0_2_2.repo = "dali";
   inputs.src-dali-v0_2_2.ref = "refs/tags/v0.2.2";
+  inputs.src-dali-v0_2_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."patty".type = "github";
-  inputs."patty".owner = "riinr";
-  inputs."patty".repo = "flake-nimble";
-  inputs."patty".ref = "flake-pinning";
-  inputs."patty".dir = "nimpkgs/p/patty";
+  # inputs."patty".type = "github";
+  # inputs."patty".owner = "riinr";
+  # inputs."patty".repo = "flake-nimble";
+  # inputs."patty".ref = "flake-pinning";
+  # inputs."patty".dir = "nimpkgs/p/patty";
+  # inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dali-v0_2_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

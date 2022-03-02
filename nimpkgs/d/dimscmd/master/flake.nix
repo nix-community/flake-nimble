@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dimscmd-master.flake = false;
   inputs.src-dimscmd-master.type = "github";
   inputs.src-dimscmd-master.owner = "ire4ever1190";
   inputs.src-dimscmd-master.repo = "dimscordCommandHandler";
   inputs.src-dimscmd-master.ref = "refs/heads/master";
+  inputs.src-dimscmd-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."dimscord".type = "github";
-  inputs."dimscord".owner = "riinr";
-  inputs."dimscord".repo = "flake-nimble";
-  inputs."dimscord".ref = "flake-pinning";
-  inputs."dimscord".dir = "nimpkgs/d/dimscord";
+  # inputs."dimscord".type = "github";
+  # inputs."dimscord".owner = "riinr";
+  # inputs."dimscord".repo = "flake-nimble";
+  # inputs."dimscord".ref = "flake-pinning";
+  # inputs."dimscord".dir = "nimpkgs/d/dimscord";
+  # inputs."dimscord".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dimscmd-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

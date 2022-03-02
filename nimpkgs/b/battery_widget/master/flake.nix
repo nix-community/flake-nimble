@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-battery_widget-master.flake = false;
   inputs.src-battery_widget-master.type = "github";
   inputs.src-battery_widget-master.owner = "Cu7ious";
   inputs.src-battery_widget-master.repo = "nim-battery-widget";
   inputs.src-battery_widget-master.ref = "refs/heads/master";
+  inputs.src-battery_widget-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-battery_widget-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

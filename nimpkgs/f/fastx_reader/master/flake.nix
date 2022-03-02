@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-fastx_reader-master.flake = false;
   inputs.src-fastx_reader-master.type = "github";
   inputs.src-fastx_reader-master.owner = "ahcm";
   inputs.src-fastx_reader-master.repo = "fastx_reader";
   inputs.src-fastx_reader-master.ref = "refs/heads/master";
+  inputs.src-fastx_reader-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-fastx_reader-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

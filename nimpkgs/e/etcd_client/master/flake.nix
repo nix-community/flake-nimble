@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-etcd_client-master.flake = false;
   inputs.src-etcd_client-master.type = "github";
   inputs.src-etcd_client-master.owner = "FedericoCeratto";
   inputs.src-etcd_client-master.repo = "nim-etcd-client";
   inputs.src-etcd_client-master.ref = "refs/heads/master";
+  inputs.src-etcd_client-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-etcd_client-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

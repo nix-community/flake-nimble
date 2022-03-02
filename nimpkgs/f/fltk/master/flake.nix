@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-fltk-master.flake = false;
   inputs.src-fltk-master.type = "github";
   inputs.src-fltk-master.owner = "Skrylar";
   inputs.src-fltk-master.repo = "nfltk";
   inputs.src-fltk-master.ref = "refs/heads/master";
+  inputs.src-fltk-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-fltk-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

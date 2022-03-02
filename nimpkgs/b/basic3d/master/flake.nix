@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-basic3d-master.flake = false;
   inputs.src-basic3d-master.type = "github";
   inputs.src-basic3d-master.owner = "nim-lang";
   inputs.src-basic3d-master.repo = "basic3d";
   inputs.src-basic3d-master.ref = "refs/heads/master";
+  inputs.src-basic3d-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-basic3d-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

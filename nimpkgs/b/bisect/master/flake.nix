@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-bisect-master.flake = false;
   inputs.src-bisect-master.type = "github";
   inputs.src-bisect-master.owner = "berquist";
   inputs.src-bisect-master.repo = "bisect";
   inputs.src-bisect-master.ref = "refs/heads/master";
+  inputs.src-bisect-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-bisect-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-cittadino-0_1_0.flake = false;
   inputs.src-cittadino-0_1_0.type = "github";
   inputs.src-cittadino-0_1_0.owner = "makingspace";
   inputs.src-cittadino-0_1_0.repo = "cittadino";
   inputs.src-cittadino-0_1_0.ref = "refs/tags/0.1.0";
+  inputs.src-cittadino-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stomp".type = "github";
-  inputs."stomp".owner = "riinr";
-  inputs."stomp".repo = "flake-nimble";
-  inputs."stomp".ref = "flake-pinning";
-  inputs."stomp".dir = "nimpkgs/s/stomp";
+  # inputs."stomp".type = "github";
+  # inputs."stomp".owner = "riinr";
+  # inputs."stomp".repo = "flake-nimble";
+  # inputs."stomp".ref = "flake-pinning";
+  # inputs."stomp".dir = "nimpkgs/s/stomp";
+  # inputs."stomp".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cittadino-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

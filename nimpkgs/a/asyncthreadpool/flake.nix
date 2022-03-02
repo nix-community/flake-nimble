@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."asyncthreadpool-main".type = "github";
   inputs."asyncthreadpool-main".owner = "riinr";
   inputs."asyncthreadpool-main".repo = "flake-nimble";
   inputs."asyncthreadpool-main".ref = "flake-pinning";
   inputs."asyncthreadpool-main".dir = "nimpkgs/a/asyncthreadpool/main";
+  inputs."asyncthreadpool-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."asyncthreadpool-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

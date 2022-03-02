@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-chrono-master.flake = false;
   inputs.src-chrono-master.type = "github";
   inputs.src-chrono-master.owner = "treeform";
   inputs.src-chrono-master.repo = "chrono";
   inputs.src-chrono-master.ref = "refs/heads/master";
+  inputs.src-chrono-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-chrono-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-astar-0_4_0.flake = false;
   inputs.src-astar-0_4_0.type = "github";
   inputs.src-astar-0_4_0.owner = "Nycto";
   inputs.src-astar-0_4_0.repo = "AStarNim";
   inputs.src-astar-0_4_0.ref = "refs/tags/0.4.0";
+  inputs.src-astar-0_4_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."binaryheap".type = "github";
-  inputs."binaryheap".owner = "riinr";
-  inputs."binaryheap".repo = "flake-nimble";
-  inputs."binaryheap".ref = "flake-pinning";
-  inputs."binaryheap".dir = "nimpkgs/b/binaryheap";
+  # inputs."binaryheap".type = "github";
+  # inputs."binaryheap".owner = "riinr";
+  # inputs."binaryheap".repo = "flake-nimble";
+  # inputs."binaryheap".ref = "flake-pinning";
+  # inputs."binaryheap".dir = "nimpkgs/b/binaryheap";
+  # inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-astar-0_4_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-conio-master.flake = false;
   inputs.src-conio-master.type = "github";
   inputs.src-conio-master.owner = "guevara-chan";
   inputs.src-conio-master.repo = "conio";
   inputs.src-conio-master.ref = "refs/heads/master";
+  inputs.src-conio-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-conio-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

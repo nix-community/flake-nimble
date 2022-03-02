@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-audius-v0_1_2.flake = false;
   inputs.src-audius-v0_1_2.type = "github";
   inputs.src-audius-v0_1_2.owner = "ceebeel";
   inputs.src-audius-v0_1_2.repo = "audius";
   inputs.src-audius-v0_1_2.ref = "refs/tags/v0.1.2";
+  inputs.src-audius-v0_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."jsony".type = "github";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".repo = "flake-nimble";
-  inputs."jsony".ref = "flake-pinning";
-  inputs."jsony".dir = "nimpkgs/j/jsony";
+  # inputs."jsony".type = "github";
+  # inputs."jsony".owner = "riinr";
+  # inputs."jsony".repo = "flake-nimble";
+  # inputs."jsony".ref = "flake-pinning";
+  # inputs."jsony".dir = "nimpkgs/j/jsony";
+  # inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-audius-v0_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

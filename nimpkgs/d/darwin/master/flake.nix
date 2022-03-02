@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-darwin-master.flake = false;
   inputs.src-darwin-master.type = "github";
   inputs.src-darwin-master.owner = "yglukhov";
   inputs.src-darwin-master.repo = "darwin";
   inputs.src-darwin-master.ref = "refs/heads/master";
+  inputs.src-darwin-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-darwin-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

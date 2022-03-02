@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."algebraicdatas-main".type = "github";
   inputs."algebraicdatas-main".owner = "riinr";
   inputs."algebraicdatas-main".repo = "flake-nimble";
   inputs."algebraicdatas-main".ref = "flake-pinning";
   inputs."algebraicdatas-main".dir = "nimpkgs/a/algebraicdatas/main";
+  inputs."algebraicdatas-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."algebraicdatas-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dnsprotec-master.flake = false;
   inputs.src-dnsprotec-master.type = "github";
   inputs.src-dnsprotec-master.owner = "juancarlospaco";
   inputs.src-dnsprotec-master.repo = "nim-dnsprotec";
   inputs.src-dnsprotec-master.ref = "refs/heads/master";
+  inputs.src-dnsprotec-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-dnsprotec-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."binaryparse-master".type = "github";
   inputs."binaryparse-master".owner = "riinr";
   inputs."binaryparse-master".repo = "flake-nimble";
   inputs."binaryparse-master".ref = "flake-pinning";
   inputs."binaryparse-master".dir = "nimpkgs/b/binaryparse/master";
+  inputs."binaryparse-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."binaryparse-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."binaryparse-v0_2_4".type = "github";
   inputs."binaryparse-v0_2_4".owner = "riinr";
   inputs."binaryparse-v0_2_4".repo = "flake-nimble";
   inputs."binaryparse-v0_2_4".ref = "flake-pinning";
   inputs."binaryparse-v0_2_4".dir = "nimpkgs/b/binaryparse/v0_2_4";
+  inputs."binaryparse-v0_2_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."binaryparse-v0_2_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

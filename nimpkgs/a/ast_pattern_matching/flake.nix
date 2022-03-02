@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."ast_pattern_matching-master".type = "github";
   inputs."ast_pattern_matching-master".owner = "riinr";
   inputs."ast_pattern_matching-master".repo = "flake-nimble";
   inputs."ast_pattern_matching-master".ref = "flake-pinning";
   inputs."ast_pattern_matching-master".dir = "nimpkgs/a/ast_pattern_matching/master";
+  inputs."ast_pattern_matching-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ast_pattern_matching-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

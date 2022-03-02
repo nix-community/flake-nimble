@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-asyncredis-v0_8.flake = false;
   inputs.src-asyncredis-v0_8.type = "github";
-  inputs.src-asyncredis-v0_8.owner = "q-Master";
+  inputs.src-asyncredis-v0_8.owner = "Q-Master";
   inputs.src-asyncredis-v0_8.repo = "redis.nim";
   inputs.src-asyncredis-v0_8.ref = "refs/tags/v0.8";
+  inputs.src-asyncredis-v0_8.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."ptr_math".type = "github";
-  inputs."ptr_math".owner = "riinr";
-  inputs."ptr_math".repo = "flake-nimble";
-  inputs."ptr_math".ref = "flake-pinning";
-  inputs."ptr_math".dir = "nimpkgs/p/ptr_math";
+  # inputs."ptr_math".type = "github";
+  # inputs."ptr_math".owner = "riinr";
+  # inputs."ptr_math".repo = "flake-nimble";
+  # inputs."ptr_math".ref = "flake-pinning";
+  # inputs."ptr_math".dir = "nimpkgs/p/ptr_math";
+  # inputs."ptr_math".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."ptr_math".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-asyncredis-v0_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

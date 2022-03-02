@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-frida-master.flake = false;
   inputs.src-frida-master.type = "github";
   inputs.src-frida-master.owner = "ba0f3";
   inputs.src-frida-master.repo = "frida.nim";
   inputs.src-frida-master.ref = "refs/heads/master";
+  inputs.src-frida-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-frida-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

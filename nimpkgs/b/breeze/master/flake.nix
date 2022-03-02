@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-breeze-master.flake = false;
   inputs.src-breeze-master.type = "github";
   inputs.src-breeze-master.owner = "alehander42";
   inputs.src-breeze-master.repo = "breeze";
   inputs.src-breeze-master.ref = "refs/heads/master";
+  inputs.src-breeze-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-breeze-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

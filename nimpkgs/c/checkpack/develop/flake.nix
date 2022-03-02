@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-checkpack-develop.flake = false;
   inputs.src-checkpack-develop.type = "gitlab";
   inputs.src-checkpack-develop.owner = "EchoPouet";
   inputs.src-checkpack-develop.repo = "checkpack";
   inputs.src-checkpack-develop.ref = "refs/heads/develop";
+  inputs.src-checkpack-develop.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-checkpack-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-cookiejar-master.flake = false;
   inputs.src-cookiejar-master.type = "github";
   inputs.src-cookiejar-master.owner = "planety";
   inputs.src-cookiejar-master.repo = "cookiejar";
   inputs.src-cookiejar-master.ref = "refs/heads/master";
+  inputs.src-cookiejar-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-cookiejar-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

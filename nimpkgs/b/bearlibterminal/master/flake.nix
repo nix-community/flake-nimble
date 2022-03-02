@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-bearlibterminal-master.flake = false;
   inputs.src-bearlibterminal-master.type = "github";
   inputs.src-bearlibterminal-master.owner = "irskep";
-  inputs.src-bearlibterminal-master.repo = "bearlibterminal-Nim";
+  inputs.src-bearlibterminal-master.repo = "BearLibTerminal-Nim";
   inputs.src-bearlibterminal-master.ref = "refs/heads/master";
+  inputs.src-bearlibterminal-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-bearlibterminal-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-composition-main.flake = false;
   inputs.src-composition-main.type = "github";
   inputs.src-composition-main.owner = "DavidMeagher1";
   inputs.src-composition-main.repo = "composition";
   inputs.src-composition-main.ref = "refs/heads/main";
+  inputs.src-composition-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."macrosex".type = "github";
-  inputs."macrosex".owner = "riinr";
-  inputs."macrosex".repo = "flake-nimble";
-  inputs."macrosex".ref = "flake-pinning";
-  inputs."macrosex".dir = "nimpkgs/m/macrosex";
+  # inputs."macrosex".type = "github";
+  # inputs."macrosex".owner = "riinr";
+  # inputs."macrosex".repo = "flake-nimble";
+  # inputs."macrosex".ref = "flake-pinning";
+  # inputs."macrosex".dir = "nimpkgs/m/macrosex";
+  # inputs."macrosex".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."macrosex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-composition-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

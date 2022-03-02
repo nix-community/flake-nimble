@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."brainlyextractor-master".type = "github";
   inputs."brainlyextractor-master".owner = "riinr";
   inputs."brainlyextractor-master".repo = "flake-nimble";
   inputs."brainlyextractor-master".ref = "flake-pinning";
   inputs."brainlyextractor-master".dir = "nimpkgs/b/brainlyextractor/master";
+  inputs."brainlyextractor-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."brainlyextractor-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."crosscompile-master".type = "github";
   inputs."crosscompile-master".owner = "riinr";
   inputs."crosscompile-master".repo = "flake-nimble";
   inputs."crosscompile-master".ref = "flake-pinning";
   inputs."crosscompile-master".dir = "nimpkgs/c/crosscompile/master";
+  inputs."crosscompile-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."crosscompile-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

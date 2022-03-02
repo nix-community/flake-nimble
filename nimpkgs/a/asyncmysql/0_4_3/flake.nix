@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-asyncmysql-0_4_3.flake = false;
   inputs.src-asyncmysql-0_4_3.type = "github";
   inputs.src-asyncmysql-0_4_3.owner = "tulayang";
   inputs.src-asyncmysql-0_4_3.repo = "asyncmysql";
   inputs.src-asyncmysql-0_4_3.ref = "refs/tags/0.4.3";
+  inputs.src-asyncmysql-0_4_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."mysqlparser".type = "github";
-  inputs."mysqlparser".owner = "riinr";
-  inputs."mysqlparser".repo = "flake-nimble";
-  inputs."mysqlparser".ref = "flake-pinning";
-  inputs."mysqlparser".dir = "nimpkgs/m/mysqlparser";
+  # inputs."mysqlparser".type = "github";
+  # inputs."mysqlparser".owner = "riinr";
+  # inputs."mysqlparser".repo = "flake-nimble";
+  # inputs."mysqlparser".ref = "flake-pinning";
+  # inputs."mysqlparser".dir = "nimpkgs/m/mysqlparser";
+  # inputs."mysqlparser".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."mysqlparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-asyncmysql-0_4_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

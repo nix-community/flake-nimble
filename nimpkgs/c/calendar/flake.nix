@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."calendar-master".type = "github";
   inputs."calendar-master".owner = "riinr";
   inputs."calendar-master".repo = "flake-nimble";
   inputs."calendar-master".ref = "flake-pinning";
   inputs."calendar-master".dir = "nimpkgs/c/calendar/master";
+  inputs."calendar-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."calendar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-camelize-master.flake = false;
   inputs.src-camelize-master.type = "github";
   inputs.src-camelize-master.owner = "kixixixixi";
   inputs.src-camelize-master.repo = "camelize";
   inputs.src-camelize-master.ref = "refs/heads/master";
+  inputs.src-camelize-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-camelize-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

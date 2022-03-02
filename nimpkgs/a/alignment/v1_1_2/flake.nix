@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-alignment-v1_1_2.flake = false;
   inputs.src-alignment-v1_1_2.type = "github";
   inputs.src-alignment-v1_1_2.owner = "jiro4989";
   inputs.src-alignment-v1_1_2.repo = "alignment";
   inputs.src-alignment-v1_1_2.ref = "refs/tags/v1.1.2";
+  inputs.src-alignment-v1_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."eastasianwidth".type = "github";
-  inputs."eastasianwidth".owner = "riinr";
-  inputs."eastasianwidth".repo = "flake-nimble";
-  inputs."eastasianwidth".ref = "flake-pinning";
-  inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
+  # inputs."eastasianwidth".type = "github";
+  # inputs."eastasianwidth".owner = "riinr";
+  # inputs."eastasianwidth".repo = "flake-nimble";
+  # inputs."eastasianwidth".ref = "flake-pinning";
+  # inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
+  # inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-alignment-v1_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

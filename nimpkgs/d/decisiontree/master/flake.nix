@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-decisiontree-master.flake = false;
   inputs.src-decisiontree-master.type = "github";
   inputs.src-decisiontree-master.owner = "Michedev";
   inputs.src-decisiontree-master.repo = "DecisionTreeNim";
   inputs.src-decisiontree-master.ref = "refs/heads/master";
+  inputs.src-decisiontree-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-decisiontree-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

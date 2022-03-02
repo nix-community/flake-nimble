@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-duktape-master.flake = false;
   inputs.src-duktape-master.type = "github";
   inputs.src-duktape-master.owner = "manguluka";
   inputs.src-duktape-master.repo = "duktape-nim";
   inputs.src-duktape-master.ref = "refs/heads/master";
+  inputs.src-duktape-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimgen".type = "github";
-  inputs."nimgen".owner = "riinr";
-  inputs."nimgen".repo = "flake-nimble";
-  inputs."nimgen".ref = "flake-pinning";
-  inputs."nimgen".dir = "nimpkgs/n/nimgen";
+  # inputs."nimgen".type = "github";
+  # inputs."nimgen".owner = "riinr";
+  # inputs."nimgen".repo = "flake-nimble";
+  # inputs."nimgen".ref = "flake-pinning";
+  # inputs."nimgen".dir = "nimpkgs/n/nimgen";
+  # inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-duktape-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

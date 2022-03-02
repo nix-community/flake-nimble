@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."dashing-master".type = "github";
   inputs."dashing-master".owner = "riinr";
   inputs."dashing-master".repo = "flake-nimble";
   inputs."dashing-master".ref = "flake-pinning";
   inputs."dashing-master".dir = "nimpkgs/d/dashing/master";
+  inputs."dashing-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dashing-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."dashing-0_1_1".type = "github";
   inputs."dashing-0_1_1".owner = "riinr";
   inputs."dashing-0_1_1".repo = "flake-nimble";
   inputs."dashing-0_1_1".ref = "flake-pinning";
   inputs."dashing-0_1_1".dir = "nimpkgs/d/dashing/0_1_1";
+  inputs."dashing-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dashing-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

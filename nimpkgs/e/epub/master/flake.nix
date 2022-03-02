@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-epub-master.flake = false;
   inputs.src-epub-master.type = "github";
   inputs.src-epub-master.owner = "achesak";
   inputs.src-epub-master.repo = "nim-epub";
   inputs.src-epub-master.ref = "refs/heads/master";
+  inputs.src-epub-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nim>=".type = "github";
-  inputs."nim>=".owner = "riinr";
-  inputs."nim>=".repo = "flake-nimble";
-  inputs."nim>=".ref = "flake-pinning";
-  inputs."nim>=".dir = "nimpkgs/n/nim>=";
+  # inputs."nim>=".type = "github";
+  # inputs."nim>=".owner = "riinr";
+  # inputs."nim>=".repo = "flake-nimble";
+  # inputs."nim>=".ref = "flake-pinning";
+  # inputs."nim>=".dir = "nimpkgs/n/nim>=";
+  # inputs."nim>=".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nim>=".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-epub-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-criterion-master.flake = false;
   inputs.src-criterion-master.type = "github";
   inputs.src-criterion-master.owner = "disruptek";
   inputs.src-criterion-master.repo = "criterion";
   inputs.src-criterion-master.ref = "refs/heads/master";
+  inputs.src-criterion-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."https://github.com/disruptek/balls".type = "github";
-  inputs."https://github.com/disruptek/balls".owner = "riinr";
-  inputs."https://github.com/disruptek/balls".repo = "flake-nimble";
-  inputs."https://github.com/disruptek/balls".ref = "flake-pinning";
-  inputs."https://github.com/disruptek/balls".dir = "nimpkgs/h/https://github.com/disruptek/balls";
+  # inputs."https://github.com/disruptek/balls".type = "github";
+  # inputs."https://github.com/disruptek/balls".owner = "riinr";
+  # inputs."https://github.com/disruptek/balls".repo = "flake-nimble";
+  # inputs."https://github.com/disruptek/balls".ref = "flake-pinning";
+  # inputs."https://github.com/disruptek/balls".dir = "nimpkgs/h/https://github.com/disruptek/balls";
+  # inputs."https://github.com/disruptek/balls".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."https://github.com/disruptek/balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-criterion-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

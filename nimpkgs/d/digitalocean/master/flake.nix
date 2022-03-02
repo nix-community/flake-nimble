@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-digitalocean-master.flake = false;
   inputs.src-digitalocean-master.type = "github";
   inputs.src-digitalocean-master.owner = "treeform";
   inputs.src-digitalocean-master.repo = "digitalocean";
   inputs.src-digitalocean-master.ref = "refs/heads/master";
+  inputs.src-digitalocean-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-digitalocean-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

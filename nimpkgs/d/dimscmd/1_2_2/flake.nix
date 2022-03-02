@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-dimscmd-1_2_2.flake = false;
   inputs.src-dimscmd-1_2_2.type = "github";
   inputs.src-dimscmd-1_2_2.owner = "ire4ever1190";
   inputs.src-dimscmd-1_2_2.repo = "dimscordCommandHandler";
   inputs.src-dimscmd-1_2_2.ref = "refs/tags/1.2.2";
+  inputs.src-dimscmd-1_2_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."dimscord".type = "github";
-  inputs."dimscord".owner = "riinr";
-  inputs."dimscord".repo = "flake-nimble";
-  inputs."dimscord".ref = "flake-pinning";
-  inputs."dimscord".dir = "nimpkgs/d/dimscord";
+  # inputs."dimscord".type = "github";
+  # inputs."dimscord".owner = "riinr";
+  # inputs."dimscord".repo = "flake-nimble";
+  # inputs."dimscord".ref = "flake-pinning";
+  # inputs."dimscord".dir = "nimpkgs/d/dimscord";
+  # inputs."dimscord".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dimscmd-1_2_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

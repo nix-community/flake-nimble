@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."compactdict-master".type = "github";
   inputs."compactdict-master".owner = "riinr";
   inputs."compactdict-master".repo = "flake-nimble";
   inputs."compactdict-master".ref = "flake-pinning";
   inputs."compactdict-master".dir = "nimpkgs/c/compactdict/master";
+  inputs."compactdict-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."compactdict-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

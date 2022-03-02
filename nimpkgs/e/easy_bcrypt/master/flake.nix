@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-easy_bcrypt-master.flake = false;
   inputs.src-easy_bcrypt-master.type = "github";
   inputs.src-easy_bcrypt-master.owner = "Akito13";
   inputs.src-easy_bcrypt-master.repo = "easy-bcrypt";
   inputs.src-easy_bcrypt-master.ref = "refs/heads/master";
+  inputs.src-easy_bcrypt-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-easy_bcrypt-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

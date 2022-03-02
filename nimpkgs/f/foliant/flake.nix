@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."foliant-develop".type = "github";
   inputs."foliant-develop".owner = "riinr";
   inputs."foliant-develop".repo = "flake-nimble";
   inputs."foliant-develop".ref = "flake-pinning";
   inputs."foliant-develop".dir = "nimpkgs/f/foliant/develop";
+  inputs."foliant-develop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."foliant-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."foliant-master".type = "github";
   inputs."foliant-master".owner = "riinr";
   inputs."foliant-master".repo = "flake-nimble";
   inputs."foliant-master".ref = "flake-pinning";
   inputs."foliant-master".dir = "nimpkgs/f/foliant/master";
+  inputs."foliant-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."foliant-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

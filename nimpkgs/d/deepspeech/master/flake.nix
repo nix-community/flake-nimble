@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-deepspeech-master.flake = false;
   inputs.src-deepspeech-master.type = "gitlab";
   inputs.src-deepspeech-master.owner = "eagledot";
   inputs.src-deepspeech-master.repo = "nim-deepspeech";
   inputs.src-deepspeech-master.ref = "refs/heads/master";
+  inputs.src-deepspeech-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-deepspeech-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

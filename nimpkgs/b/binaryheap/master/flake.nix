@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-binaryheap-master.flake = false;
   inputs.src-binaryheap-master.type = "github";
   inputs.src-binaryheap-master.owner = "bluenote10";
   inputs.src-binaryheap-master.repo = "nim-heap";
   inputs.src-binaryheap-master.ref = "refs/heads/master";
+  inputs.src-binaryheap-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-binaryheap-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

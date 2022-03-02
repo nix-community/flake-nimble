@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."aws_sdk-master".type = "github";
   inputs."aws_sdk-master".owner = "riinr";
   inputs."aws_sdk-master".repo = "flake-nimble";
   inputs."aws_sdk-master".ref = "flake-pinning";
   inputs."aws_sdk-master".dir = "nimpkgs/a/aws_sdk/master";
+  inputs."aws_sdk-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."aws_sdk-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

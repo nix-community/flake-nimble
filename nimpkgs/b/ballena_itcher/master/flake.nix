@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-ballena_itcher-master.flake = false;
   inputs.src-ballena_itcher-master.type = "github";
   inputs.src-ballena_itcher-master.owner = "juancarlospaco";
   inputs.src-ballena_itcher-master.repo = "ballena-itcher";
   inputs.src-ballena_itcher-master.ref = "refs/heads/master";
+  inputs.src-ballena_itcher-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-ballena_itcher-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

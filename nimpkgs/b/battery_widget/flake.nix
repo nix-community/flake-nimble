@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."battery_widget-master".type = "github";
   inputs."battery_widget-master".owner = "riinr";
   inputs."battery_widget-master".repo = "flake-nimble";
   inputs."battery_widget-master".ref = "flake-pinning";
   inputs."battery_widget-master".dir = "nimpkgs/b/battery_widget/master";
+  inputs."battery_widget-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."battery_widget-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

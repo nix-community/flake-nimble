@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-compactdict-master.flake = false;
   inputs.src-compactdict-master.type = "github";
   inputs.src-compactdict-master.owner = "LemonBoy";
   inputs.src-compactdict-master.repo = "compactdict";
   inputs.src-compactdict-master.ref = "refs/heads/master";
+  inputs.src-compactdict-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-compactdict-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
