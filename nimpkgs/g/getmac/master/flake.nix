@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-getmac-master.flake = false;
   inputs.src-getmac-master.type = "github";
   inputs.src-getmac-master.owner = "PMunch";
   inputs.src-getmac-master.repo = "getmac";
   inputs.src-getmac-master.ref = "refs/heads/master";
+  inputs.src-getmac-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."optionsutils".type = "github";
-  inputs."optionsutils".owner = "riinr";
-  inputs."optionsutils".repo = "flake-nimble";
-  inputs."optionsutils".ref = "flake-pinning";
-  inputs."optionsutils".dir = "nimpkgs/o/optionsutils";
+  # inputs."optionsutils".type = "github";
+  # inputs."optionsutils".owner = "riinr";
+  # inputs."optionsutils".repo = "flake-nimble";
+  # inputs."optionsutils".ref = "flake-pinning";
+  # inputs."optionsutils".dir = "nimpkgs/o/optionsutils";
+  # inputs."optionsutils".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."optionsutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-getmac-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

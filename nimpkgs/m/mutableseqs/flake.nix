@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."mutableseqs-master".type = "github";
   inputs."mutableseqs-master".owner = "riinr";
   inputs."mutableseqs-master".repo = "flake-nimble";
   inputs."mutableseqs-master".ref = "flake-pinning";
   inputs."mutableseqs-master".dir = "nimpkgs/m/mutableseqs/master";
+  inputs."mutableseqs-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mutableseqs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

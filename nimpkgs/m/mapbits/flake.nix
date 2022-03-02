@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."mapbits-master".type = "github";
   inputs."mapbits-master".owner = "riinr";
   inputs."mapbits-master".repo = "flake-nimble";
   inputs."mapbits-master".ref = "flake-pinning";
   inputs."mapbits-master".dir = "nimpkgs/m/mapbits/master";
+  inputs."mapbits-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mapbits-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."mapbits-1_0".type = "github";
   inputs."mapbits-1_0".owner = "riinr";
   inputs."mapbits-1_0".repo = "flake-nimble";
   inputs."mapbits-1_0".ref = "flake-pinning";
   inputs."mapbits-1_0".dir = "nimpkgs/m/mapbits/1_0";
+  inputs."mapbits-1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mapbits-1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

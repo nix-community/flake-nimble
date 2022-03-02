@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-termbox-master.flake = false;
   inputs.src-termbox-master.type = "github";
   inputs.src-termbox-master.owner = "fowlmouth";
   inputs.src-termbox-master.repo = "nim-termbox";
   inputs.src-termbox-master.ref = "refs/heads/master";
+  inputs.src-termbox-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-termbox-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-threadproxy-master.flake = false;
   inputs.src-threadproxy-master.type = "github";
   inputs.src-threadproxy-master.owner = "jackhftang";
   inputs.src-threadproxy-master.repo = "threadproxy.nim";
   inputs.src-threadproxy-master.ref = "refs/heads/master";
+  inputs.src-threadproxy-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-threadproxy-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

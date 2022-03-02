@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimlsp-master.flake = false;
   inputs.src-nimlsp-master.type = "github";
   inputs.src-nimlsp-master.owner = "PMunch";
   inputs.src-nimlsp-master.repo = "nimlsp";
   inputs.src-nimlsp-master.ref = "refs/heads/master";
+  inputs.src-nimlsp-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."jsonschema".type = "github";
-  inputs."jsonschema".owner = "riinr";
-  inputs."jsonschema".repo = "flake-nimble";
-  inputs."jsonschema".ref = "flake-pinning";
-  inputs."jsonschema".dir = "nimpkgs/j/jsonschema";
+  # inputs."jsonschema".type = "github";
+  # inputs."jsonschema".owner = "riinr";
+  # inputs."jsonschema".repo = "flake-nimble";
+  # inputs."jsonschema".ref = "flake-pinning";
+  # inputs."jsonschema".dir = "nimpkgs/j/jsonschema";
+  # inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimlsp-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

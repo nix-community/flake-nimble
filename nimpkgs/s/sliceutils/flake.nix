@@ -5,53 +5,78 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."sliceutils-master".type = "github";
   inputs."sliceutils-master".owner = "riinr";
   inputs."sliceutils-master".repo = "flake-nimble";
   inputs."sliceutils-master".ref = "flake-pinning";
   inputs."sliceutils-master".dir = "nimpkgs/s/sliceutils/master";
+  inputs."sliceutils-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sliceutils-0_1_0".type = "github";
   inputs."sliceutils-0_1_0".owner = "riinr";
   inputs."sliceutils-0_1_0".repo = "flake-nimble";
   inputs."sliceutils-0_1_0".ref = "flake-pinning";
   inputs."sliceutils-0_1_0".dir = "nimpkgs/s/sliceutils/0_1_0";
+  inputs."sliceutils-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sliceutils-v0_1_0".type = "github";
   inputs."sliceutils-v0_1_0".owner = "riinr";
   inputs."sliceutils-v0_1_0".repo = "flake-nimble";
   inputs."sliceutils-v0_1_0".ref = "flake-pinning";
   inputs."sliceutils-v0_1_0".dir = "nimpkgs/s/sliceutils/v0_1_0";
+  inputs."sliceutils-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sliceutils-v0_1_1".type = "github";
   inputs."sliceutils-v0_1_1".owner = "riinr";
   inputs."sliceutils-v0_1_1".repo = "flake-nimble";
   inputs."sliceutils-v0_1_1".ref = "flake-pinning";
   inputs."sliceutils-v0_1_1".dir = "nimpkgs/s/sliceutils/v0_1_1";
+  inputs."sliceutils-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sliceutils-v0_1_12".type = "github";
   inputs."sliceutils-v0_1_12".owner = "riinr";
   inputs."sliceutils-v0_1_12".repo = "flake-nimble";
   inputs."sliceutils-v0_1_12".ref = "flake-pinning";
   inputs."sliceutils-v0_1_12".dir = "nimpkgs/s/sliceutils/v0_1_12";
+  inputs."sliceutils-v0_1_12".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-v0_1_12".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sliceutils-v0_1_2".type = "github";
   inputs."sliceutils-v0_1_2".owner = "riinr";
   inputs."sliceutils-v0_1_2".repo = "flake-nimble";
   inputs."sliceutils-v0_1_2".ref = "flake-pinning";
   inputs."sliceutils-v0_1_2".dir = "nimpkgs/s/sliceutils/v0_1_2";
+  inputs."sliceutils-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sliceutils-v0_2_0".type = "github";
   inputs."sliceutils-v0_2_0".owner = "riinr";
   inputs."sliceutils-v0_2_0".repo = "flake-nimble";
   inputs."sliceutils-v0_2_0".ref = "flake-pinning";
   inputs."sliceutils-v0_2_0".dir = "nimpkgs/s/sliceutils/v0_2_0";
+  inputs."sliceutils-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sliceutils-v0_2_1".type = "github";
   inputs."sliceutils-v0_2_1".owner = "riinr";
   inputs."sliceutils-v0_2_1".repo = "flake-nimble";
   inputs."sliceutils-v0_2_1".ref = "flake-pinning";
   inputs."sliceutils-v0_2_1".dir = "nimpkgs/s/sliceutils/v0_2_1";
+  inputs."sliceutils-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sliceutils-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

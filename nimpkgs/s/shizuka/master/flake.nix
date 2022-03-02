@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-shizuka-master.flake = false;
   inputs.src-shizuka-master.type = "github";
   inputs.src-shizuka-master.owner = "ethosa";
   inputs.src-shizuka-master.repo = "shizuka";
   inputs.src-shizuka-master.ref = "refs/heads/master";
+  inputs.src-shizuka-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-shizuka-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."linenoise-master".type = "github";
   inputs."linenoise-master".owner = "riinr";
   inputs."linenoise-master".repo = "flake-nimble";
   inputs."linenoise-master".ref = "flake-pinning";
   inputs."linenoise-master".dir = "nimpkgs/l/linenoise/master";
+  inputs."linenoise-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."linenoise-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."linenoise-v0_1_0".type = "github";
   inputs."linenoise-v0_1_0".owner = "riinr";
   inputs."linenoise-v0_1_0".repo = "flake-nimble";
   inputs."linenoise-v0_1_0".ref = "flake-pinning";
   inputs."linenoise-v0_1_0".dir = "nimpkgs/l/linenoise/v0_1_0";
+  inputs."linenoise-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."linenoise-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

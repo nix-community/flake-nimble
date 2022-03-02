@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-testutils-0_4_0.flake = false;
   inputs.src-testutils-0_4_0.type = "github";
   inputs.src-testutils-0_4_0.owner = "status-im";
   inputs.src-testutils-0_4_0.repo = "nim-testutils";
   inputs.src-testutils-0_4_0.ref = "refs/tags/0.4.0";
+  inputs.src-testutils-0_4_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."https://github.com/status-im/nim-unittest2.git".type = "github";
-  inputs."https://github.com/status-im/nim-unittest2.git".owner = "riinr";
-  inputs."https://github.com/status-im/nim-unittest2.git".repo = "flake-nimble";
-  inputs."https://github.com/status-im/nim-unittest2.git".ref = "flake-pinning";
-  inputs."https://github.com/status-im/nim-unittest2.git".dir = "nimpkgs/h/https://github.com/status-im/nim-unittest2.git";
+  # inputs."https://github.com/status-im/nim-unittest2.git".type = "github";
+  # inputs."https://github.com/status-im/nim-unittest2.git".owner = "riinr";
+  # inputs."https://github.com/status-im/nim-unittest2.git".repo = "flake-nimble";
+  # inputs."https://github.com/status-im/nim-unittest2.git".ref = "flake-pinning";
+  # inputs."https://github.com/status-im/nim-unittest2.git".dir = "nimpkgs/h/https://github.com/status-im/nim-unittest2.git";
+  # inputs."https://github.com/status-im/nim-unittest2.git".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."https://github.com/status-im/nim-unittest2.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-testutils-0_4_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

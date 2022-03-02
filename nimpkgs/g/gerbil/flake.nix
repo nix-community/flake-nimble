@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."gerbil-master".type = "github";
   inputs."gerbil-master".owner = "riinr";
   inputs."gerbil-master".repo = "flake-nimble";
   inputs."gerbil-master".ref = "flake-pinning";
   inputs."gerbil-master".dir = "nimpkgs/g/gerbil/master";
+  inputs."gerbil-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gerbil-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."gerbil-v0_1_0".type = "github";
   inputs."gerbil-v0_1_0".owner = "riinr";
   inputs."gerbil-v0_1_0".repo = "flake-nimble";
   inputs."gerbil-v0_1_0".ref = "flake-pinning";
   inputs."gerbil-v0_1_0".dir = "nimpkgs/g/gerbil/v0_1_0";
+  inputs."gerbil-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gerbil-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."gerbil-v0_1_1".type = "github";
   inputs."gerbil-v0_1_1".owner = "riinr";
   inputs."gerbil-v0_1_1".repo = "flake-nimble";
   inputs."gerbil-v0_1_1".ref = "flake-pinning";
   inputs."gerbil-v0_1_1".dir = "nimpkgs/g/gerbil/v0_1_1";
+  inputs."gerbil-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gerbil-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

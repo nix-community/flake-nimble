@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimcrypt-v0_0_7.flake = false;
   inputs.src-nimcrypt-v0_0_7.type = "github";
   inputs.src-nimcrypt-v0_0_7.owner = "napalu";
   inputs.src-nimcrypt-v0_0_7.repo = "nimcrypt";
   inputs.src-nimcrypt-v0_0_7.ref = "refs/tags/v0.0.7";
+  inputs.src-nimcrypt-v0_0_7.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimcrypto".type = "github";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".repo = "flake-nimble";
-  inputs."nimcrypto".ref = "flake-pinning";
-  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".type = "github";
+  # inputs."nimcrypto".owner = "riinr";
+  # inputs."nimcrypto".repo = "flake-nimble";
+  # inputs."nimcrypto".ref = "flake-pinning";
+  # inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimcrypt-v0_0_7, ...}@deps:
     let lib = flakeNimbleLib.lib;

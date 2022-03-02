@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."tissue-master".type = "github";
   inputs."tissue-master".owner = "riinr";
   inputs."tissue-master".repo = "flake-nimble";
   inputs."tissue-master".ref = "flake-pinning";
   inputs."tissue-master".dir = "nimpkgs/t/tissue/master";
+  inputs."tissue-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tissue-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

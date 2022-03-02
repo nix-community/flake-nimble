@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-zfdbms-v0_0_3.flake = false;
   inputs.src-zfdbms-v0_0_3.type = "github";
   inputs.src-zfdbms-v0_0_3.owner = "zendbit";
   inputs.src-zfdbms-v0_0_3.repo = "nim.zfdbms";
   inputs.src-zfdbms-v0_0_3.ref = "refs/tags/v0.0.3";
+  inputs.src-zfdbms-v0_0_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stdext".type = "github";
-  inputs."stdext".owner = "riinr";
-  inputs."stdext".repo = "flake-nimble";
-  inputs."stdext".ref = "flake-pinning";
-  inputs."stdext".dir = "nimpkgs/s/stdext";
+  # inputs."stdext".type = "github";
+  # inputs."stdext".owner = "riinr";
+  # inputs."stdext".repo = "flake-nimble";
+  # inputs."stdext".ref = "flake-pinning";
+  # inputs."stdext".dir = "nimpkgs/s/stdext";
+  # inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-zfdbms-v0_0_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

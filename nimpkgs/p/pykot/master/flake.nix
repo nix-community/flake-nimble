@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-pykot-master.flake = false;
   inputs.src-pykot-master.type = "github";
   inputs.src-pykot-master.owner = "jabbalaci";
   inputs.src-pykot-master.repo = "nimpykot";
   inputs.src-pykot-master.ref = "refs/heads/master";
+  inputs.src-pykot-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-pykot-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

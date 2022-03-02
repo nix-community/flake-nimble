@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-vmath-v0_3_0.flake = false;
   inputs.src-vmath-v0_3_0.type = "github";
   inputs.src-vmath-v0_3_0.owner = "treeform";
   inputs.src-vmath-v0_3_0.repo = "vmath";
   inputs.src-vmath-v0_3_0.ref = "refs/tags/v0.3.0";
+  inputs.src-vmath-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."mddoc".type = "github";
-  inputs."mddoc".owner = "riinr";
-  inputs."mddoc".repo = "flake-nimble";
-  inputs."mddoc".ref = "flake-pinning";
-  inputs."mddoc".dir = "nimpkgs/m/mddoc";
+  # inputs."mddoc".type = "github";
+  # inputs."mddoc".owner = "riinr";
+  # inputs."mddoc".repo = "flake-nimble";
+  # inputs."mddoc".ref = "flake-pinning";
+  # inputs."mddoc".dir = "nimpkgs/m/mddoc";
+  # inputs."mddoc".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."mddoc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-vmath-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

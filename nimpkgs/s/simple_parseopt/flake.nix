@@ -5,41 +5,60 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."simple_parseopt-master".type = "github";
   inputs."simple_parseopt-master".owner = "riinr";
   inputs."simple_parseopt-master".repo = "flake-nimble";
   inputs."simple_parseopt-master".ref = "flake-pinning";
   inputs."simple_parseopt-master".dir = "nimpkgs/s/simple_parseopt/master";
+  inputs."simple_parseopt-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."simple_parseopt-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."simple_parseopt-v1_0_10".type = "github";
   inputs."simple_parseopt-v1_0_10".owner = "riinr";
   inputs."simple_parseopt-v1_0_10".repo = "flake-nimble";
   inputs."simple_parseopt-v1_0_10".ref = "flake-pinning";
   inputs."simple_parseopt-v1_0_10".dir = "nimpkgs/s/simple_parseopt/v1_0_10";
+  inputs."simple_parseopt-v1_0_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."simple_parseopt-v1_0_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."simple_parseopt-v1_0_8".type = "github";
   inputs."simple_parseopt-v1_0_8".owner = "riinr";
   inputs."simple_parseopt-v1_0_8".repo = "flake-nimble";
   inputs."simple_parseopt-v1_0_8".ref = "flake-pinning";
   inputs."simple_parseopt-v1_0_8".dir = "nimpkgs/s/simple_parseopt/v1_0_8";
+  inputs."simple_parseopt-v1_0_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."simple_parseopt-v1_0_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."simple_parseopt-v1_0_9".type = "github";
   inputs."simple_parseopt-v1_0_9".owner = "riinr";
   inputs."simple_parseopt-v1_0_9".repo = "flake-nimble";
   inputs."simple_parseopt-v1_0_9".ref = "flake-pinning";
   inputs."simple_parseopt-v1_0_9".dir = "nimpkgs/s/simple_parseopt/v1_0_9";
+  inputs."simple_parseopt-v1_0_9".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."simple_parseopt-v1_0_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."simple_parseopt-v1_1_0".type = "github";
   inputs."simple_parseopt-v1_1_0".owner = "riinr";
   inputs."simple_parseopt-v1_1_0".repo = "flake-nimble";
   inputs."simple_parseopt-v1_1_0".ref = "flake-pinning";
   inputs."simple_parseopt-v1_1_0".dir = "nimpkgs/s/simple_parseopt/v1_1_0";
+  inputs."simple_parseopt-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."simple_parseopt-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."simple_parseopt-v1_1_1".type = "github";
   inputs."simple_parseopt-v1_1_1".owner = "riinr";
   inputs."simple_parseopt-v1_1_1".repo = "flake-nimble";
   inputs."simple_parseopt-v1_1_1".ref = "flake-pinning";
   inputs."simple_parseopt-v1_1_1".dir = "nimpkgs/s/simple_parseopt/v1_1_1";
+  inputs."simple_parseopt-v1_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."simple_parseopt-v1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

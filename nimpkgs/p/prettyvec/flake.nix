@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."prettyvec-main".type = "github";
   inputs."prettyvec-main".owner = "riinr";
   inputs."prettyvec-main".repo = "flake-nimble";
   inputs."prettyvec-main".ref = "flake-pinning";
   inputs."prettyvec-main".dir = "nimpkgs/p/prettyvec/main";
+  inputs."prettyvec-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."prettyvec-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."physfs-master".type = "github";
   inputs."physfs-master".owner = "riinr";
   inputs."physfs-master".repo = "flake-nimble";
   inputs."physfs-master".ref = "flake-pinning";
   inputs."physfs-master".dir = "nimpkgs/p/physfs/master";
+  inputs."physfs-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."physfs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."gamelib-master".type = "github";
   inputs."gamelib-master".owner = "riinr";
   inputs."gamelib-master".repo = "flake-nimble";
   inputs."gamelib-master".ref = "flake-pinning";
   inputs."gamelib-master".dir = "nimpkgs/g/gamelib/master";
+  inputs."gamelib-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gamelib-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

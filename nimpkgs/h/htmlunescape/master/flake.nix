@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-htmlunescape-master.flake = false;
   inputs.src-htmlunescape-master.type = "github";
   inputs.src-htmlunescape-master.owner = "AmanoTeam";
   inputs.src-htmlunescape-master.repo = "htmlunescape";
   inputs.src-htmlunescape-master.ref = "refs/heads/master";
+  inputs.src-htmlunescape-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-htmlunescape-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

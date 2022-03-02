@@ -5,46 +5,58 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-typography-0_7_0.flake = false;
   inputs.src-typography-0_7_0.type = "github";
   inputs.src-typography-0_7_0.owner = "treeform";
   inputs.src-typography-0_7_0.repo = "typography";
   inputs.src-typography-0_7_0.ref = "refs/tags/0.7.0";
+  inputs.src-typography-0_7_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."pixie".type = "github";
-  inputs."pixie".owner = "riinr";
-  inputs."pixie".repo = "flake-nimble";
-  inputs."pixie".ref = "flake-pinning";
-  inputs."pixie".dir = "nimpkgs/p/pixie";
+  # inputs."pixie".type = "github";
+  # inputs."pixie".owner = "riinr";
+  # inputs."pixie".repo = "flake-nimble";
+  # inputs."pixie".ref = "flake-pinning";
+  # inputs."pixie".dir = "nimpkgs/p/pixie";
+  # inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."vmath".type = "github";
-  inputs."vmath".owner = "riinr";
-  inputs."vmath".repo = "flake-nimble";
-  inputs."vmath".ref = "flake-pinning";
-  inputs."vmath".dir = "nimpkgs/v/vmath";
+  # inputs."vmath".type = "github";
+  # inputs."vmath".owner = "riinr";
+  # inputs."vmath".repo = "flake-nimble";
+  # inputs."vmath".ref = "flake-pinning";
+  # inputs."vmath".dir = "nimpkgs/v/vmath";
+  # inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."chroma".type = "github";
-  inputs."chroma".owner = "riinr";
-  inputs."chroma".repo = "flake-nimble";
-  inputs."chroma".ref = "flake-pinning";
-  inputs."chroma".dir = "nimpkgs/c/chroma";
+  # inputs."chroma".type = "github";
+  # inputs."chroma".owner = "riinr";
+  # inputs."chroma".repo = "flake-nimble";
+  # inputs."chroma".ref = "flake-pinning";
+  # inputs."chroma".dir = "nimpkgs/c/chroma";
+  # inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."print".type = "github";
-  inputs."print".owner = "riinr";
-  inputs."print".repo = "flake-nimble";
-  inputs."print".ref = "flake-pinning";
-  inputs."print".dir = "nimpkgs/p/print";
+  # inputs."print".type = "github";
+  # inputs."print".owner = "riinr";
+  # inputs."print".repo = "flake-nimble";
+  # inputs."print".ref = "flake-pinning";
+  # inputs."print".dir = "nimpkgs/p/print";
+  # inputs."print".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."print".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."bumpy".type = "github";
-  inputs."bumpy".owner = "riinr";
-  inputs."bumpy".repo = "flake-nimble";
-  inputs."bumpy".ref = "flake-pinning";
-  inputs."bumpy".dir = "nimpkgs/b/bumpy";
+  # inputs."bumpy".type = "github";
+  # inputs."bumpy".owner = "riinr";
+  # inputs."bumpy".repo = "flake-nimble";
+  # inputs."bumpy".ref = "flake-pinning";
+  # inputs."bumpy".dir = "nimpkgs/b/bumpy";
+  # inputs."bumpy".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."bumpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-typography-0_7_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

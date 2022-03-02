@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-saya-master.flake = false;
   inputs.src-saya-master.type = "github";
   inputs.src-saya-master.owner = "Ethosa";
   inputs.src-saya-master.repo = "saya_nim";
   inputs.src-saya-master.ref = "refs/heads/master";
+  inputs.src-saya-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-saya-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

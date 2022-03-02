@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-notcurses-v3_0_2.flake = false;
   inputs.src-notcurses-v3_0_2.type = "github";
   inputs.src-notcurses-v3_0_2.owner = "michaelsbradleyjr";
   inputs.src-notcurses-v3_0_2.repo = "nim-notcurses";
   inputs.src-notcurses-v3_0_2.ref = "refs/tags/v3.0.2";
+  inputs.src-notcurses-v3_0_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimterop".type = "github";
-  inputs."nimterop".owner = "riinr";
-  inputs."nimterop".repo = "flake-nimble";
-  inputs."nimterop".ref = "flake-pinning";
-  inputs."nimterop".dir = "nimpkgs/n/nimterop";
+  # inputs."nimterop".type = "github";
+  # inputs."nimterop".owner = "riinr";
+  # inputs."nimterop".repo = "flake-nimble";
+  # inputs."nimterop".ref = "flake-pinning";
+  # inputs."nimterop".dir = "nimpkgs/n/nimterop";
+  # inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-notcurses-v3_0_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

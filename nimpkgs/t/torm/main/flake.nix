@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-torm-main.flake = false;
   inputs.src-torm-main.type = "github";
   inputs.src-torm-main.owner = "enimatek-nl";
   inputs.src-torm-main.repo = "torm";
   inputs.src-torm-main.ref = "refs/heads/main";
+  inputs.src-torm-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-torm-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

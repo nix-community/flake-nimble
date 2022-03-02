@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-geohash-master.flake = false;
   inputs.src-geohash-master.type = "github";
   inputs.src-geohash-master.owner = "twist-vector";
   inputs.src-geohash-master.repo = "nim-geohash";
   inputs.src-geohash-master.ref = "refs/heads/master";
+  inputs.src-geohash-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-geohash-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

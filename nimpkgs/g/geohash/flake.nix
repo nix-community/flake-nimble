@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."geohash-master".type = "github";
   inputs."geohash-master".owner = "riinr";
   inputs."geohash-master".repo = "flake-nimble";
   inputs."geohash-master".ref = "flake-pinning";
   inputs."geohash-master".dir = "nimpkgs/g/geohash/master";
+  inputs."geohash-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."geohash-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

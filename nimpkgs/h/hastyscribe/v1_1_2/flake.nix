@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-hastyscribe-v1_1_2.flake = false;
   inputs.src-hastyscribe-v1_1_2.type = "github";
   inputs.src-hastyscribe-v1_1_2.owner = "h3rald";
   inputs.src-hastyscribe-v1_1_2.repo = "hastyscribe";
   inputs.src-hastyscribe-v1_1_2.ref = "refs/tags/v1.1.2";
+  inputs.src-hastyscribe-v1_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimrod".type = "github";
-  inputs."nimrod".owner = "riinr";
-  inputs."nimrod".repo = "flake-nimble";
-  inputs."nimrod".ref = "flake-pinning";
-  inputs."nimrod".dir = "nimpkgs/n/nimrod";
+  # inputs."nimrod".type = "github";
+  # inputs."nimrod".owner = "riinr";
+  # inputs."nimrod".repo = "flake-nimble";
+  # inputs."nimrod".ref = "flake-pinning";
+  # inputs."nimrod".dir = "nimpkgs/n/nimrod";
+  # inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-hastyscribe-v1_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

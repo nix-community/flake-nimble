@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-linalg-master.flake = false;
   inputs.src-linalg-master.type = "github";
   inputs.src-linalg-master.owner = "andreaferretti";
   inputs.src-linalg-master.repo = "linear-algebra";
   inputs.src-linalg-master.ref = "refs/heads/master";
+  inputs.src-linalg-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimblas".type = "github";
-  inputs."nimblas".owner = "riinr";
-  inputs."nimblas".repo = "flake-nimble";
-  inputs."nimblas".ref = "flake-pinning";
-  inputs."nimblas".dir = "nimpkgs/n/nimblas";
+  # inputs."nimblas".type = "github";
+  # inputs."nimblas".owner = "riinr";
+  # inputs."nimblas".repo = "flake-nimble";
+  # inputs."nimblas".ref = "flake-pinning";
+  # inputs."nimblas".dir = "nimpkgs/n/nimblas";
+  # inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-linalg-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

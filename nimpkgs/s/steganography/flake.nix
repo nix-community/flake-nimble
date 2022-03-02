@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."steganography-master".type = "github";
   inputs."steganography-master".owner = "riinr";
   inputs."steganography-master".repo = "flake-nimble";
   inputs."steganography-master".ref = "flake-pinning";
   inputs."steganography-master".dir = "nimpkgs/s/steganography/master";
+  inputs."steganography-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."steganography-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

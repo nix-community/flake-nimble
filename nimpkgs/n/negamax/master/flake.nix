@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-negamax-master.flake = false;
   inputs.src-negamax-master.type = "github";
   inputs.src-negamax-master.owner = "JohnAD";
   inputs.src-negamax-master.repo = "negamax";
   inputs.src-negamax-master.ref = "refs/heads/master";
+  inputs.src-negamax-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."turn_based_game".type = "github";
-  inputs."turn_based_game".owner = "riinr";
-  inputs."turn_based_game".repo = "flake-nimble";
-  inputs."turn_based_game".ref = "flake-pinning";
-  inputs."turn_based_game".dir = "nimpkgs/t/turn_based_game";
+  # inputs."turn_based_game".type = "github";
+  # inputs."turn_based_game".owner = "riinr";
+  # inputs."turn_based_game".repo = "flake-nimble";
+  # inputs."turn_based_game".ref = "flake-pinning";
+  # inputs."turn_based_game".dir = "nimpkgs/t/turn_based_game";
+  # inputs."turn_based_game".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."turn_based_game".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-negamax-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

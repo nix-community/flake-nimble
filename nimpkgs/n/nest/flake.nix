@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."nest-develop".type = "github";
   inputs."nest-develop".owner = "riinr";
   inputs."nest-develop".repo = "flake-nimble";
   inputs."nest-develop".ref = "flake-pinning";
   inputs."nest-develop".dir = "nimpkgs/n/nest/develop";
+  inputs."nest-develop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nest-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."nest-master".type = "github";
   inputs."nest-master".owner = "riinr";
   inputs."nest-master".repo = "flake-nimble";
   inputs."nest-master".ref = "flake-pinning";
   inputs."nest-master".dir = "nimpkgs/n/nest/master";
+  inputs."nest-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nest-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

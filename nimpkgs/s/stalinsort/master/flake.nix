@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-stalinsort-master.flake = false;
   inputs.src-stalinsort-master.type = "github";
   inputs.src-stalinsort-master.owner = "tonogram";
   inputs.src-stalinsort-master.repo = "stalinsort";
   inputs.src-stalinsort-master.ref = "refs/heads/master";
+  inputs.src-stalinsort-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-stalinsort-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

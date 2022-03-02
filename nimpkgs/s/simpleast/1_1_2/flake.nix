@@ -5,18 +5,20 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-simpleast-1_1_2.flake = false;
-  inputs.src-simpleast-1_1_2.type = "github";
-  inputs.src-simpleast-1_1_2.owner = "lguzzon-NIM";
-  inputs.src-simpleast-1_1_2.repo = "simpleAST";
-  inputs.src-simpleast-1_1_2.ref = "refs/tags/1.1.2";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-simpleAST-1_1_2.flake = false;
+  inputs.src-simpleAST-1_1_2.type = "github";
+  inputs.src-simpleAST-1_1_2.owner = "lguzzon-NIM";
+  inputs.src-simpleAST-1_1_2.repo = "simpleAST";
+  inputs.src-simpleAST-1_1_2.ref = "refs/tags/1.1.2";
+  inputs.src-simpleAST-1_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-simpleast-1_1_2, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-simpleAST-1_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-simpleast-1_1_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-simpleast-1_1_2"];
+      src = src-simpleAST-1_1_2;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-simpleAST-1_1_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-googlesearch-master.flake = false;
   inputs.src-googlesearch-master.type = "github";
   inputs.src-googlesearch-master.owner = "xyb";
   inputs.src-googlesearch-master.repo = "googlesearch.nim";
   inputs.src-googlesearch-master.ref = "refs/heads/master";
+  inputs.src-googlesearch-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimquery".type = "github";
-  inputs."nimquery".owner = "riinr";
-  inputs."nimquery".repo = "flake-nimble";
-  inputs."nimquery".ref = "flake-pinning";
-  inputs."nimquery".dir = "nimpkgs/n/nimquery";
+  # inputs."nimquery".type = "github";
+  # inputs."nimquery".owner = "riinr";
+  # inputs."nimquery".repo = "flake-nimble";
+  # inputs."nimquery".ref = "flake-pinning";
+  # inputs."nimquery".dir = "nimpkgs/n/nimquery";
+  # inputs."nimquery".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimquery".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-googlesearch-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

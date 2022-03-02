@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-norman-1_0_1.flake = false;
   inputs.src-norman-1_0_1.type = "github";
   inputs.src-norman-1_0_1.owner = "moigagoo";
   inputs.src-norman-1_0_1.repo = "norman";
   inputs.src-norman-1_0_1.ref = "refs/tags/1.0.1";
+  inputs.src-norman-1_0_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."norm".type = "github";
-  inputs."norm".owner = "riinr";
-  inputs."norm".repo = "flake-nimble";
-  inputs."norm".ref = "flake-pinning";
-  inputs."norm".dir = "nimpkgs/n/norm";
+  # inputs."norm".type = "github";
+  # inputs."norm".owner = "riinr";
+  # inputs."norm".repo = "flake-nimble";
+  # inputs."norm".ref = "flake-pinning";
+  # inputs."norm".dir = "nimpkgs/n/norm";
+  # inputs."norm".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."norm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."cligen".type = "github";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".repo = "flake-nimble";
-  inputs."cligen".ref = "flake-pinning";
-  inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".type = "github";
+  # inputs."cligen".owner = "riinr";
+  # inputs."cligen".repo = "flake-nimble";
+  # inputs."cligen".ref = "flake-pinning";
+  # inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-norman-1_0_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-murmurhash-master.flake = false;
   inputs.src-murmurhash-master.type = "github";
   inputs.src-murmurhash-master.owner = "cwpearson";
   inputs.src-murmurhash-master.repo = "nim-murmurhash";
   inputs.src-murmurhash-master.ref = "refs/heads/master";
+  inputs.src-murmurhash-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-murmurhash-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

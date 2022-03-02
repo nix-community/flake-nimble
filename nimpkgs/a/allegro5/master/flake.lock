@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-allegro5-master": "src-allegro5-master"
+      }
+    },
+    "src-allegro5-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1425555679,
+        "narHash": "sha256-MBlRz++k+r08nzlYepCNI/aplDVe4won+llgyYLP6f4=",
+        "owner": "fowlmouth",
+        "repo": "allegro5",
+        "rev": "61083998d02abc03e6fc0ac1e08525aa171c8585",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fowlmouth",
+        "ref": "refs/heads/master",
+        "repo": "allegro5",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

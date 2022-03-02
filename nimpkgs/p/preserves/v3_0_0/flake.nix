@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-preserves-v3_0_0.flake = false;
   inputs.src-preserves-v3_0_0.type = "other";
   inputs.src-preserves-v3_0_0.owner = "~ehmry";
   inputs.src-preserves-v3_0_0.repo = "preserves-nim";
   inputs.src-preserves-v3_0_0.ref = "refs/tags/v3.0.0";
+  inputs.src-preserves-v3_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."compiler".type = "github";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".repo = "flake-nimble";
-  inputs."compiler".ref = "flake-pinning";
-  inputs."compiler".dir = "nimpkgs/c/compiler";
+  # inputs."compiler".type = "github";
+  # inputs."compiler".owner = "riinr";
+  # inputs."compiler".repo = "flake-nimble";
+  # inputs."compiler".ref = "flake-pinning";
+  # inputs."compiler".dir = "nimpkgs/c/compiler";
+  # inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."npeg".type = "github";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".repo = "flake-nimble";
-  inputs."npeg".ref = "flake-pinning";
-  inputs."npeg".dir = "nimpkgs/n/npeg";
+  # inputs."npeg".type = "github";
+  # inputs."npeg".owner = "riinr";
+  # inputs."npeg".repo = "flake-nimble";
+  # inputs."npeg".ref = "flake-pinning";
+  # inputs."npeg".dir = "nimpkgs/n/npeg";
+  # inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-preserves-v3_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

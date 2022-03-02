@@ -5,29 +5,42 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."sha1ext-develop".type = "github";
   inputs."sha1ext-develop".owner = "riinr";
   inputs."sha1ext-develop".repo = "flake-nimble";
   inputs."sha1ext-develop".ref = "flake-pinning";
   inputs."sha1ext-develop".dir = "nimpkgs/s/sha1ext/develop";
+  inputs."sha1ext-develop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sha1ext-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sha1ext-master".type = "github";
   inputs."sha1ext-master".owner = "riinr";
   inputs."sha1ext-master".repo = "flake-nimble";
   inputs."sha1ext-master".ref = "flake-pinning";
   inputs."sha1ext-master".dir = "nimpkgs/s/sha1ext/master";
+  inputs."sha1ext-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sha1ext-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sha1ext-v0_1".type = "github";
   inputs."sha1ext-v0_1".owner = "riinr";
   inputs."sha1ext-v0_1".repo = "flake-nimble";
   inputs."sha1ext-v0_1".ref = "flake-pinning";
   inputs."sha1ext-v0_1".dir = "nimpkgs/s/sha1ext/v0_1";
+  inputs."sha1ext-v0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sha1ext-v0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sha1ext-v0_1_1".type = "github";
   inputs."sha1ext-v0_1_1".owner = "riinr";
   inputs."sha1ext-v0_1_1".repo = "flake-nimble";
   inputs."sha1ext-v0_1_1".ref = "flake-pinning";
   inputs."sha1ext-v0_1_1".dir = "nimpkgs/s/sha1ext/v0_1_1";
+  inputs."sha1ext-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sha1ext-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

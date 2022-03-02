@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-ansiwave-1_2_6-linux": "src-ansiwave-1_2_6-linux"
+      }
+    },
+    "src-ansiwave-1_2_6-linux": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641239092,
+        "narHash": "sha256-Fw2sYjOFQJoHknv2EUz+4YmNWjcO2aPG0D99dsLwi04=",
+        "owner": "ansiwave",
+        "repo": "ansiwave",
+        "rev": "815457aa3d5224d2d7953b04fc593581543210c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/1.2.6-linux",
+        "repo": "ansiwave",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

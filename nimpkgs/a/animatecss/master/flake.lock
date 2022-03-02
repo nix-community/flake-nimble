@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-animatecss-master": "src-animatecss-master"
+      }
+    },
+    "src-animatecss-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636379493,
+        "narHash": "sha256-vHDMRLyFzpqLVzsgkm92PXOCA9QHG3FmuB5wXzQJd/c=",
+        "owner": "thisago",
+        "repo": "animatecss",
+        "rev": "7d03f0d2465d48f99a8270a53dc027197e68e85e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "animatecss",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

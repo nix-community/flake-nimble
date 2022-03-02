@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-strfmt-master.flake = false;
   inputs.src-strfmt-master.type = "github";
   inputs.src-strfmt-master.owner = "bio-nim";
   inputs.src-strfmt-master.repo = "nim-strfmt";
   inputs.src-strfmt-master.ref = "refs/heads/master";
+  inputs.src-strfmt-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-strfmt-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-gravatar-master.flake = false;
   inputs.src-gravatar-master.type = "github";
   inputs.src-gravatar-master.owner = "achesak";
   inputs.src-gravatar-master.repo = "nim-gravatar";
   inputs.src-gravatar-master.ref = "refs/heads/master";
+  inputs.src-gravatar-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-gravatar-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-glob-v0_3_1.flake = false;
   inputs.src-glob-v0_3_1.type = "github";
   inputs.src-glob-v0_3_1.owner = "haltcase";
   inputs.src-glob-v0_3_1.repo = "glob";
   inputs.src-glob-v0_3_1.ref = "refs/tags/v0.3.1";
+  inputs.src-glob-v0_3_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."regex".type = "github";
-  inputs."regex".owner = "riinr";
-  inputs."regex".repo = "flake-nimble";
-  inputs."regex".ref = "flake-pinning";
-  inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".type = "github";
+  # inputs."regex".owner = "riinr";
+  # inputs."regex".repo = "flake-nimble";
+  # inputs."regex".ref = "flake-pinning";
+  # inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-glob-v0_3_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

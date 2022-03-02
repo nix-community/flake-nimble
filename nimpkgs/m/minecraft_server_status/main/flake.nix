@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-minecraft_server_status-main.flake = false;
   inputs.src-minecraft_server_status-main.type = "github";
   inputs.src-minecraft_server_status-main.owner = "GabrielLasso";
   inputs.src-minecraft_server_status-main.repo = "minecraft_server_status";
   inputs.src-minecraft_server_status-main.ref = "refs/heads/main";
+  inputs.src-minecraft_server_status-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-minecraft_server_status-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

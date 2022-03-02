@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nery-main.flake = false;
   inputs.src-nery-main.type = "github";
-  inputs.src-nery-main.owner = "david-Kunz";
+  inputs.src-nery-main.owner = "David-Kunz";
   inputs.src-nery-main.repo = "Nery";
   inputs.src-nery-main.ref = "refs/heads/main";
+  inputs.src-nery-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."fusion".type = "github";
-  inputs."fusion".owner = "riinr";
-  inputs."fusion".repo = "flake-nimble";
-  inputs."fusion".ref = "flake-pinning";
-  inputs."fusion".dir = "nimpkgs/f/fusion";
+  # inputs."fusion".type = "github";
+  # inputs."fusion".owner = "riinr";
+  # inputs."fusion".repo = "flake-nimble";
+  # inputs."fusion".ref = "flake-pinning";
+  # inputs."fusion".dir = "nimpkgs/f/fusion";
+  # inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nery-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

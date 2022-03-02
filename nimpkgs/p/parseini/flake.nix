@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."parseini-master".type = "github";
   inputs."parseini-master".owner = "riinr";
   inputs."parseini-master".repo = "flake-nimble";
   inputs."parseini-master".ref = "flake-pinning";
   inputs."parseini-master".dir = "nimpkgs/p/parseini/master";
+  inputs."parseini-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."parseini-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."parseini-0_1_0".type = "github";
   inputs."parseini-0_1_0".owner = "riinr";
   inputs."parseini-0_1_0".repo = "flake-nimble";
   inputs."parseini-0_1_0".ref = "flake-pinning";
   inputs."parseini-0_1_0".dir = "nimpkgs/p/parseini/0_1_0";
+  inputs."parseini-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."parseini-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."parseini-0_2_0".type = "github";
   inputs."parseini-0_2_0".owner = "riinr";
   inputs."parseini-0_2_0".repo = "flake-nimble";
   inputs."parseini-0_2_0".ref = "flake-pinning";
   inputs."parseini-0_2_0".dir = "nimpkgs/p/parseini/0_2_0";
+  inputs."parseini-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."parseini-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

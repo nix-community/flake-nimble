@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-laser-master.flake = false;
-  inputs.src-laser-master.type = "github";
-  inputs.src-laser-master.owner = "numforge";
-  inputs.src-laser-master.repo = "laser";
-  inputs.src-laser-master.ref = "refs/heads/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-Laser-master.flake = false;
+  inputs.src-Laser-master.type = "github";
+  inputs.src-Laser-master.owner = "numforge";
+  inputs.src-Laser-master.repo = "laser";
+  inputs.src-Laser-master.ref = "refs/heads/master";
+  inputs.src-Laser-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-laser-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,20 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-nimqbittorrent-master.flake = false;
-  inputs.src-nimqbittorrent-master.type = "github";
-  inputs.src-nimqbittorrent-master.owner = "faulander";
-  inputs.src-nimqbittorrent-master.repo = "nimQBittorrent";
-  inputs.src-nimqbittorrent-master.ref = "refs/heads/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-nimQBittorrent-master.flake = false;
+  inputs.src-nimQBittorrent-master.type = "github";
+  inputs.src-nimQBittorrent-master.owner = "faulander";
+  inputs.src-nimQBittorrent-master.repo = "nimQBittorrent";
+  inputs.src-nimQBittorrent-master.ref = "refs/heads/master";
+  inputs.src-nimQBittorrent-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nimqbittorrent-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-nimQBittorrent-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-nimqbittorrent-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimqbittorrent-master"];
+      src = src-nimQBittorrent-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimQBittorrent-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

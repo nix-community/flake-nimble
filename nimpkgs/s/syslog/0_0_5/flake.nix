@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-syslog-0_0_5.flake = false;
   inputs.src-syslog-0_0_5.type = "github";
   inputs.src-syslog-0_0_5.owner = "FedericoCeratto";
   inputs.src-syslog-0_0_5.repo = "nim-syslog";
   inputs.src-syslog-0_0_5.ref = "refs/tags/0.0.5";
+  inputs.src-syslog-0_0_5.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nake".type = "github";
-  inputs."nake".owner = "riinr";
-  inputs."nake".repo = "flake-nimble";
-  inputs."nake".ref = "flake-pinning";
-  inputs."nake".dir = "nimpkgs/n/nake";
+  # inputs."nake".type = "github";
+  # inputs."nake".owner = "riinr";
+  # inputs."nake".repo = "flake-nimble";
+  # inputs."nake".ref = "flake-pinning";
+  # inputs."nake".dir = "nimpkgs/n/nake";
+  # inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-syslog-0_0_5, ...}@deps:
     let lib = flakeNimbleLib.lib;

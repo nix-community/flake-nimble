@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-lazy-master.flake = false;
   inputs.src-lazy-master.type = "github";
   inputs.src-lazy-master.owner = "petermora";
   inputs.src-lazy-master.repo = "nimLazy";
   inputs.src-lazy-master.ref = "refs/heads/master";
+  inputs.src-lazy-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-lazy-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

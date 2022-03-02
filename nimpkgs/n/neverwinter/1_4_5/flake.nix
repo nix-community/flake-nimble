@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-neverwinter-1_4_5.flake = false;
   inputs.src-neverwinter-1_4_5.type = "github";
   inputs.src-neverwinter-1_4_5.owner = "niv";
   inputs.src-neverwinter-1_4_5.repo = "neverwinter.nim";
   inputs.src-neverwinter-1_4_5.ref = "refs/tags/1.4.5";
+  inputs.src-neverwinter-1_4_5.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."docopt".type = "github";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".repo = "flake-nimble";
-  inputs."docopt".ref = "flake-pinning";
-  inputs."docopt".dir = "nimpkgs/d/docopt";
+  # inputs."docopt".type = "github";
+  # inputs."docopt".owner = "riinr";
+  # inputs."docopt".repo = "flake-nimble";
+  # inputs."docopt".ref = "flake-pinning";
+  # inputs."docopt".dir = "nimpkgs/d/docopt";
+  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-neverwinter-1_4_5, ...}@deps:
     let lib = flakeNimbleLib.lib;

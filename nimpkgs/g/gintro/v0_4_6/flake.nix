@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-gintro-v0_4_6.flake = false;
   inputs.src-gintro-v0_4_6.type = "github";
   inputs.src-gintro-v0_4_6.owner = "stefansalewski";
   inputs.src-gintro-v0_4_6.repo = "gintro";
   inputs.src-gintro-v0_4_6.ref = "refs/tags/v0.4.6";
+  inputs.src-gintro-v0_4_6.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-gintro-v0_4_6, ...}@deps:
     let lib = flakeNimbleLib.lib;

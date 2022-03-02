@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."validateip-master".type = "github";
   inputs."validateip-master".owner = "riinr";
   inputs."validateip-master".repo = "flake-nimble";
   inputs."validateip-master".ref = "flake-pinning";
   inputs."validateip-master".dir = "nimpkgs/v/validateip/master";
+  inputs."validateip-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."validateip-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."validateip-0_1_0".type = "github";
   inputs."validateip-0_1_0".owner = "riinr";
   inputs."validateip-0_1_0".repo = "flake-nimble";
   inputs."validateip-0_1_0".ref = "flake-pinning";
   inputs."validateip-0_1_0".dir = "nimpkgs/v/validateip/0_1_0";
+  inputs."validateip-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."validateip-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."validateip-0_1_1".type = "github";
   inputs."validateip-0_1_1".owner = "riinr";
   inputs."validateip-0_1_1".repo = "flake-nimble";
   inputs."validateip-0_1_1".ref = "flake-pinning";
   inputs."validateip-0_1_1".dir = "nimpkgs/v/validateip/0_1_1";
+  inputs."validateip-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."validateip-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

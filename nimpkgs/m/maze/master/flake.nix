@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-maze-master.flake = false;
   inputs.src-maze-master.type = "github";
   inputs.src-maze-master.owner = "jiro4989";
   inputs.src-maze-master.repo = "maze";
   inputs.src-maze-master.ref = "refs/heads/master";
+  inputs.src-maze-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-maze-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

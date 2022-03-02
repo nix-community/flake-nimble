@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-stringinterpolation-master.flake = false;
   inputs.src-stringinterpolation-master.type = "github";
   inputs.src-stringinterpolation-master.owner = "bluenote10";
   inputs.src-stringinterpolation-master.repo = "nim-stringinterpolation";
   inputs.src-stringinterpolation-master.ref = "refs/heads/master";
+  inputs.src-stringinterpolation-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-stringinterpolation-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

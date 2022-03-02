@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-vmath-master.flake = false;
   inputs.src-vmath-master.type = "github";
   inputs.src-vmath-master.owner = "treeform";
   inputs.src-vmath-master.repo = "vmath";
   inputs.src-vmath-master.ref = "refs/heads/master";
+  inputs.src-vmath-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-vmath-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

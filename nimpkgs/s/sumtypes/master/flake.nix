@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-sumtypes-master.flake = false;
   inputs.src-sumtypes-master.type = "github";
   inputs.src-sumtypes-master.owner = "beef331";
   inputs.src-sumtypes-master.repo = "sumtypes";
   inputs.src-sumtypes-master.ref = "refs/heads/master";
+  inputs.src-sumtypes-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-sumtypes-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

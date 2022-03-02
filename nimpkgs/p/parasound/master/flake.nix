@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-parasound-master.flake = false;
   inputs.src-parasound-master.type = "github";
   inputs.src-parasound-master.owner = "paranim";
   inputs.src-parasound-master.repo = "parasound";
   inputs.src-parasound-master.ref = "refs/heads/master";
+  inputs.src-parasound-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-parasound-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

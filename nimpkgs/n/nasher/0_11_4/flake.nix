@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nasher-0_11_4.flake = false;
   inputs.src-nasher-0_11_4.type = "github";
   inputs.src-nasher-0_11_4.owner = "squattingmonk";
   inputs.src-nasher-0_11_4.repo = "nasher.nim";
   inputs.src-nasher-0_11_4.ref = "refs/tags/0.11.4";
+  inputs.src-nasher-0_11_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."neverwinter".type = "github";
-  inputs."neverwinter".owner = "riinr";
-  inputs."neverwinter".repo = "flake-nimble";
-  inputs."neverwinter".ref = "flake-pinning";
-  inputs."neverwinter".dir = "nimpkgs/n/neverwinter";
+  # inputs."neverwinter".type = "github";
+  # inputs."neverwinter".owner = "riinr";
+  # inputs."neverwinter".repo = "flake-nimble";
+  # inputs."neverwinter".ref = "flake-pinning";
+  # inputs."neverwinter".dir = "nimpkgs/n/neverwinter";
+  # inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."glob".type = "github";
-  inputs."glob".owner = "riinr";
-  inputs."glob".repo = "flake-nimble";
-  inputs."glob".ref = "flake-pinning";
-  inputs."glob".dir = "nimpkgs/g/glob";
+  # inputs."glob".type = "github";
+  # inputs."glob".owner = "riinr";
+  # inputs."glob".repo = "flake-nimble";
+  # inputs."glob".ref = "flake-pinning";
+  # inputs."glob".dir = "nimpkgs/g/glob";
+  # inputs."glob".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."glob".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nasher-0_11_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

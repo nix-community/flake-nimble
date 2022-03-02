@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."yahooweather-master".type = "github";
   inputs."yahooweather-master".owner = "riinr";
   inputs."yahooweather-master".repo = "flake-nimble";
   inputs."yahooweather-master".ref = "flake-pinning";
   inputs."yahooweather-master".dir = "nimpkgs/y/yahooweather/master";
+  inputs."yahooweather-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."yahooweather-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-secp256k1-master.flake = false;
   inputs.src-secp256k1-master.type = "github";
   inputs.src-secp256k1-master.owner = "status-im";
   inputs.src-secp256k1-master.repo = "nim-secp256k1";
   inputs.src-secp256k1-master.ref = "refs/heads/master";
+  inputs.src-secp256k1-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stew".type = "github";
-  inputs."stew".owner = "riinr";
-  inputs."stew".repo = "flake-nimble";
-  inputs."stew".ref = "flake-pinning";
-  inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".type = "github";
+  # inputs."stew".owner = "riinr";
+  # inputs."stew".repo = "flake-nimble";
+  # inputs."stew".ref = "flake-pinning";
+  # inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."nimcrypto".type = "github";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".repo = "flake-nimble";
-  inputs."nimcrypto".ref = "flake-pinning";
-  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".type = "github";
+  # inputs."nimcrypto".owner = "riinr";
+  # inputs."nimcrypto".repo = "flake-nimble";
+  # inputs."nimcrypto".ref = "flake-pinning";
+  # inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-secp256k1-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

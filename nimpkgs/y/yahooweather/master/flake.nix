@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-yahooweather-master.flake = false;
   inputs.src-yahooweather-master.type = "github";
   inputs.src-yahooweather-master.owner = "achesak";
   inputs.src-yahooweather-master.repo = "nim-yahooweather";
   inputs.src-yahooweather-master.ref = "refs/heads/master";
+  inputs.src-yahooweather-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-yahooweather-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

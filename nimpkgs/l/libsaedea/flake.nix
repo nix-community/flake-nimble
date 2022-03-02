@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."libsaedea-master".type = "github";
   inputs."libsaedea-master".owner = "riinr";
   inputs."libsaedea-master".repo = "flake-nimble";
   inputs."libsaedea-master".ref = "flake-pinning";
   inputs."libsaedea-master".dir = "nimpkgs/l/libsaedea/master";
+  inputs."libsaedea-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libsaedea-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

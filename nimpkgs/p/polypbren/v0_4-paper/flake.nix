@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-polypbren-v0_4-paper.flake = false;
   inputs.src-polypbren-v0_4-paper.type = "github";
   inputs.src-polypbren-v0_4-paper.owner = "guibar64";
   inputs.src-polypbren-v0_4-paper.repo = "polypbren";
   inputs.src-polypbren-v0_4-paper.ref = "refs/tags/v0.4-paper";
+  inputs.src-polypbren-v0_4-paper.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-polypbren-v0_4-paper, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-haraka-master.flake = false;
   inputs.src-haraka-master.type = "other";
   inputs.src-haraka-master.owner = "~ehmry";
   inputs.src-haraka-master.repo = "nim_haraka";
   inputs.src-haraka-master.ref = "refs/heads/master";
+  inputs.src-haraka-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-haraka-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

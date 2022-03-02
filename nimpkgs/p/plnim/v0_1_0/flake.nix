@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-plnim-v0_1_0.flake = false;
   inputs.src-plnim-v0_1_0.type = "github";
   inputs.src-plnim-v0_1_0.owner = "luisacosta828";
   inputs.src-plnim-v0_1_0.repo = "plnim";
   inputs.src-plnim-v0_1_0.ref = "refs/tags/v0.1.0";
+  inputs.src-plnim-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."pgxcrown".type = "github";
-  inputs."pgxcrown".owner = "riinr";
-  inputs."pgxcrown".repo = "flake-nimble";
-  inputs."pgxcrown".ref = "flake-pinning";
-  inputs."pgxcrown".dir = "nimpkgs/p/pgxcrown";
+  # inputs."pgxcrown".type = "github";
+  # inputs."pgxcrown".owner = "riinr";
+  # inputs."pgxcrown".repo = "flake-nimble";
+  # inputs."pgxcrown".ref = "flake-pinning";
+  # inputs."pgxcrown".dir = "nimpkgs/p/pgxcrown";
+  # inputs."pgxcrown".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."pgxcrown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-plnim-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

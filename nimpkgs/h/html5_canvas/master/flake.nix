@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-html5_canvas-master.flake = false;
   inputs.src-html5_canvas-master.type = "gitlab";
   inputs.src-html5_canvas-master.owner = "define-private-public";
-  inputs.src-html5_canvas-master.repo = "html5-canvas-Nim";
+  inputs.src-html5_canvas-master.repo = "HTML5-Canvas-Nim";
   inputs.src-html5_canvas-master.ref = "refs/heads/master";
+  inputs.src-html5_canvas-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-html5_canvas-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

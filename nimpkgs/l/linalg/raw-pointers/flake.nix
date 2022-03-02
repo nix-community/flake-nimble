@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-linalg-raw-pointers.flake = false;
   inputs.src-linalg-raw-pointers.type = "github";
   inputs.src-linalg-raw-pointers.owner = "andreaferretti";
   inputs.src-linalg-raw-pointers.repo = "linear-algebra";
   inputs.src-linalg-raw-pointers.ref = "refs/tags/raw-pointers";
+  inputs.src-linalg-raw-pointers.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-linalg-raw-pointers, ...}@deps:
     let lib = flakeNimbleLib.lib;

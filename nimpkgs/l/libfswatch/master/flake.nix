@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-libfswatch-master.flake = false;
   inputs.src-libfswatch-master.type = "github";
   inputs.src-libfswatch-master.owner = "paul-nameless";
   inputs.src-libfswatch-master.repo = "nim-fswatch";
   inputs.src-libfswatch-master.ref = "refs/heads/master";
+  inputs.src-libfswatch-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-libfswatch-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

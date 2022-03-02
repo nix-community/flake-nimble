@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-unalix-v0_7.flake = false;
   inputs.src-unalix-v0_7.type = "github";
   inputs.src-unalix-v0_7.owner = "AmanoTeam";
-  inputs.src-unalix-v0_7.repo = "unalix-nim";
+  inputs.src-unalix-v0_7.repo = "Unalix-nim";
   inputs.src-unalix-v0_7.ref = "refs/tags/v0.7";
+  inputs.src-unalix-v0_7.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."htmlunescape".type = "github";
-  inputs."htmlunescape".owner = "riinr";
-  inputs."htmlunescape".repo = "flake-nimble";
-  inputs."htmlunescape".ref = "flake-pinning";
-  inputs."htmlunescape".dir = "nimpkgs/h/htmlunescape";
+  # inputs."htmlunescape".type = "github";
+  # inputs."htmlunescape".owner = "riinr";
+  # inputs."htmlunescape".repo = "flake-nimble";
+  # inputs."htmlunescape".ref = "flake-pinning";
+  # inputs."htmlunescape".dir = "nimpkgs/h/htmlunescape";
+  # inputs."htmlunescape".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."htmlunescape".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-unalix-v0_7, ...}@deps:
     let lib = flakeNimbleLib.lib;

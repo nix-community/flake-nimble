@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-zfplugs-v0_0_5.flake = false;
   inputs.src-zfplugs-v0_0_5.type = "github";
   inputs.src-zfplugs-v0_0_5.owner = "zendbit";
   inputs.src-zfplugs-v0_0_5.repo = "nim.zfplugs";
   inputs.src-zfplugs-v0_0_5.ref = "refs/tags/v0.0.5";
+  inputs.src-zfplugs-v0_0_5.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."zfcore".type = "github";
-  inputs."zfcore".owner = "riinr";
-  inputs."zfcore".repo = "flake-nimble";
-  inputs."zfcore".ref = "flake-pinning";
-  inputs."zfcore".dir = "nimpkgs/z/zfcore";
+  # inputs."zfcore".type = "github";
+  # inputs."zfcore".owner = "riinr";
+  # inputs."zfcore".repo = "flake-nimble";
+  # inputs."zfcore".ref = "flake-pinning";
+  # inputs."zfcore".dir = "nimpkgs/z/zfcore";
+  # inputs."zfcore".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."zfcore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-zfplugs-v0_0_5, ...}@deps:
     let lib = flakeNimbleLib.lib;

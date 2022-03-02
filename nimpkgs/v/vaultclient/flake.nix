@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."vaultclient-master".type = "github";
   inputs."vaultclient-master".owner = "riinr";
   inputs."vaultclient-master".repo = "flake-nimble";
   inputs."vaultclient-master".ref = "flake-pinning";
   inputs."vaultclient-master".dir = "nimpkgs/v/vaultclient/master";
+  inputs."vaultclient-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vaultclient-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."vaultclient-0_1_0".type = "github";
   inputs."vaultclient-0_1_0".owner = "riinr";
   inputs."vaultclient-0_1_0".repo = "flake-nimble";
   inputs."vaultclient-0_1_0".ref = "flake-pinning";
   inputs."vaultclient-0_1_0".dir = "nimpkgs/v/vaultclient/0_1_0";
+  inputs."vaultclient-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vaultclient-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."vaultclient-0_1_1".type = "github";
   inputs."vaultclient-0_1_1".owner = "riinr";
   inputs."vaultclient-0_1_1".repo = "flake-nimble";
   inputs."vaultclient-0_1_1".ref = "flake-pinning";
   inputs."vaultclient-0_1_1".dir = "nimpkgs/v/vaultclient/0_1_1";
+  inputs."vaultclient-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vaultclient-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

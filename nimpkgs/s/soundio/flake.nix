@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."soundio-master".type = "github";
   inputs."soundio-master".owner = "riinr";
   inputs."soundio-master".repo = "flake-nimble";
   inputs."soundio-master".ref = "flake-pinning";
   inputs."soundio-master".dir = "nimpkgs/s/soundio/master";
+  inputs."soundio-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."soundio-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nanoid-v0_1_0.flake = false;
   inputs.src-nanoid-v0_1_0.type = "github";
   inputs.src-nanoid-v0_1_0.owner = "icyphox";
   inputs.src-nanoid-v0_1_0.repo = "nanoid.nim";
   inputs.src-nanoid-v0_1_0.ref = "refs/tags/v0.1.0";
+  inputs.src-nanoid-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."random".type = "github";
-  inputs."random".owner = "riinr";
-  inputs."random".repo = "flake-nimble";
-  inputs."random".ref = "flake-pinning";
-  inputs."random".dir = "nimpkgs/r/random";
+  # inputs."random".type = "github";
+  # inputs."random".owner = "riinr";
+  # inputs."random".repo = "flake-nimble";
+  # inputs."random".ref = "flake-pinning";
+  # inputs."random".dir = "nimpkgs/r/random";
+  # inputs."random".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nanoid-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

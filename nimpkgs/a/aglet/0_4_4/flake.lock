@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-aglet-0_4_4": "src-aglet-0_4_4"
+      }
+    },
+    "src-aglet-0_4_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604598167,
+        "narHash": "sha256-SlyeCt+hXxvUrnZHqbzeWViB98ap27V5r7bdfq1ZMfw=",
+        "owner": "liquid600pgm",
+        "repo": "aglet",
+        "rev": "8f8469a50b633d263bd7eaa3c974e06a3bcd963f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "liquid600pgm",
+        "ref": "refs/tags/0.4.4",
+        "repo": "aglet",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

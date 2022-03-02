@@ -5,32 +5,38 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-pomtimer-master.flake = false;
-  inputs.src-pomtimer-master.type = "github";
-  inputs.src-pomtimer-master.owner = "MnlPhlp";
-  inputs.src-pomtimer-master.repo = "pomTimer";
-  inputs.src-pomtimer-master.ref = "refs/heads/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-pomTimer-master.flake = false;
+  inputs.src-pomTimer-master.type = "github";
+  inputs.src-pomTimer-master.owner = "MnlPhlp";
+  inputs.src-pomTimer-master.repo = "pomTimer";
+  inputs.src-pomTimer-master.ref = "refs/heads/master";
+  inputs.src-pomTimer-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."progress".type = "github";
-  inputs."progress".owner = "riinr";
-  inputs."progress".repo = "flake-nimble";
-  inputs."progress".ref = "flake-pinning";
-  inputs."progress".dir = "nimpkgs/p/progress";
+  # inputs."progress".type = "github";
+  # inputs."progress".owner = "riinr";
+  # inputs."progress".repo = "flake-nimble";
+  # inputs."progress".ref = "flake-pinning";
+  # inputs."progress".dir = "nimpkgs/p/progress";
+  # inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."notify".type = "github";
-  inputs."notify".owner = "riinr";
-  inputs."notify".repo = "flake-nimble";
-  inputs."notify".ref = "flake-pinning";
-  inputs."notify".dir = "nimpkgs/n/notify";
+  # inputs."notify".type = "github";
+  # inputs."notify".owner = "riinr";
+  # inputs."notify".repo = "flake-nimble";
+  # inputs."notify".ref = "flake-pinning";
+  # inputs."notify".dir = "nimpkgs/n/notify";
+  # inputs."notify".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."notify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
-  outputs = { self, nixpkgs, flakeNimbleLib, src-pomtimer-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-pomTimer-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-pomtimer-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-pomtimer-master"];
+      src = src-pomTimer-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-pomTimer-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

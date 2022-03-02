@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-anonimongo-v0_3_0": "src-anonimongo-v0_3_0"
+      }
+    },
+    "src-anonimongo-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596948483,
+        "narHash": "sha256-BsLbo/zVwpIjmSUa7o58P2EYr2UnSxzwiqx8BooveQQ=",
+        "owner": "mashingan",
+        "repo": "anonimongo",
+        "rev": "a48ef30729345afd6333a3c22477456c4d05db5e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mashingan",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "anonimongo",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

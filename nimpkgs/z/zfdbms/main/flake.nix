@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-zfdbms-main.flake = false;
   inputs.src-zfdbms-main.type = "github";
   inputs.src-zfdbms-main.owner = "zendbit";
   inputs.src-zfdbms-main.repo = "nim.zfdbms";
   inputs.src-zfdbms-main.ref = "refs/heads/main";
+  inputs.src-zfdbms-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stdext".type = "github";
-  inputs."stdext".owner = "riinr";
-  inputs."stdext".repo = "flake-nimble";
-  inputs."stdext".ref = "flake-pinning";
-  inputs."stdext".dir = "nimpkgs/s/stdext";
+  # inputs."stdext".type = "github";
+  # inputs."stdext".owner = "riinr";
+  # inputs."stdext".repo = "flake-nimble";
+  # inputs."stdext".ref = "flake-pinning";
+  # inputs."stdext".dir = "nimpkgs/s/stdext";
+  # inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-zfdbms-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

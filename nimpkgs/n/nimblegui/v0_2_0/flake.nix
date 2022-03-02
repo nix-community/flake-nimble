@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimblegui-v0_2_0.flake = false;
   inputs.src-nimblegui-v0_2_0.type = "github";
   inputs.src-nimblegui-v0_2_0.owner = "ThomasTJdev";
   inputs.src-nimblegui-v0_2_0.repo = "nim_nimble_gui";
   inputs.src-nimblegui-v0_2_0.ref = "refs/tags/v0.2.0";
+  inputs.src-nimblegui-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."webgui".type = "github";
-  inputs."webgui".owner = "riinr";
-  inputs."webgui".repo = "flake-nimble";
-  inputs."webgui".ref = "flake-pinning";
-  inputs."webgui".dir = "nimpkgs/w/webgui";
+  # inputs."webgui".type = "github";
+  # inputs."webgui".owner = "riinr";
+  # inputs."webgui".repo = "flake-nimble";
+  # inputs."webgui".ref = "flake-pinning";
+  # inputs."webgui".dir = "nimpkgs/w/webgui";
+  # inputs."webgui".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."webgui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimblegui-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

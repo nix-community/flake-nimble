@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-migrate-master.flake = false;
   inputs.src-migrate-master.type = "github";
   inputs.src-migrate-master.owner = "euantorano";
   inputs.src-migrate-master.repo = "migrate.nim";
   inputs.src-migrate-master.ref = "refs/heads/master";
+  inputs.src-migrate-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."docopt".type = "github";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".repo = "flake-nimble";
-  inputs."docopt".ref = "flake-pinning";
-  inputs."docopt".dir = "nimpkgs/d/docopt";
+  # inputs."docopt".type = "github";
+  # inputs."docopt".owner = "riinr";
+  # inputs."docopt".repo = "flake-nimble";
+  # inputs."docopt".ref = "flake-pinning";
+  # inputs."docopt".dir = "nimpkgs/d/docopt";
+  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-migrate-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

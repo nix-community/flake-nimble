@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."skinterpolate-master".type = "github";
   inputs."skinterpolate-master".owner = "riinr";
   inputs."skinterpolate-master".repo = "flake-nimble";
   inputs."skinterpolate-master".ref = "flake-pinning";
   inputs."skinterpolate-master".dir = "nimpkgs/s/skinterpolate/master";
+  inputs."skinterpolate-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."skinterpolate-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

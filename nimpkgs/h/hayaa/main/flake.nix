@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-hayaa-main.flake = false;
   inputs.src-hayaa-main.type = "github";
   inputs.src-hayaa-main.owner = "angus-lherrou";
   inputs.src-hayaa-main.repo = "hayaa";
   inputs.src-hayaa-main.ref = "refs/heads/main";
+  inputs.src-hayaa-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."illwill".type = "github";
-  inputs."illwill".owner = "riinr";
-  inputs."illwill".repo = "flake-nimble";
-  inputs."illwill".ref = "flake-pinning";
-  inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".type = "github";
+  # inputs."illwill".owner = "riinr";
+  # inputs."illwill".repo = "flake-nimble";
+  # inputs."illwill".ref = "flake-pinning";
+  # inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-hayaa-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

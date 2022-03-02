@@ -5,32 +5,40 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-prologue-v0_1_6.flake = false;
   inputs.src-prologue-v0_1_6.type = "github";
   inputs.src-prologue-v0_1_6.owner = "planety";
   inputs.src-prologue-v0_1_6.repo = "Prologue";
   inputs.src-prologue-v0_1_6.ref = "refs/tags/v0.1.6";
+  inputs.src-prologue-v0_1_6.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."regex".type = "github";
-  inputs."regex".owner = "riinr";
-  inputs."regex".repo = "flake-nimble";
-  inputs."regex".ref = "flake-pinning";
-  inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".type = "github";
+  # inputs."regex".owner = "riinr";
+  # inputs."regex".repo = "flake-nimble";
+  # inputs."regex".ref = "flake-pinning";
+  # inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."nimcrypto".type = "github";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".repo = "flake-nimble";
-  inputs."nimcrypto".ref = "flake-pinning";
-  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".type = "github";
+  # inputs."nimcrypto".owner = "riinr";
+  # inputs."nimcrypto".repo = "flake-nimble";
+  # inputs."nimcrypto".ref = "flake-pinning";
+  # inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."httpbeast".type = "github";
-  inputs."httpbeast".owner = "riinr";
-  inputs."httpbeast".repo = "flake-nimble";
-  inputs."httpbeast".ref = "flake-pinning";
-  inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
+  # inputs."httpbeast".type = "github";
+  # inputs."httpbeast".owner = "riinr";
+  # inputs."httpbeast".repo = "flake-nimble";
+  # inputs."httpbeast".ref = "flake-pinning";
+  # inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
+  # inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-prologue-v0_1_6, ...}@deps:
     let lib = flakeNimbleLib.lib;

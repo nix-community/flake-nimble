@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."geonames-master".type = "github";
   inputs."geonames-master".owner = "riinr";
   inputs."geonames-master".repo = "flake-nimble";
   inputs."geonames-master".ref = "flake-pinning";
   inputs."geonames-master".dir = "nimpkgs/g/geonames/master";
+  inputs."geonames-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."geonames-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-scram-0_1_2.flake = false;
   inputs.src-scram-0_1_2.type = "github";
   inputs.src-scram-0_1_2.owner = "rgv151";
   inputs.src-scram-0_1_2.repo = "scram";
   inputs.src-scram-0_1_2.ref = "refs/tags/0.1.2";
+  inputs.src-scram-0_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."hmac".type = "github";
-  inputs."hmac".owner = "riinr";
-  inputs."hmac".repo = "flake-nimble";
-  inputs."hmac".ref = "flake-pinning";
-  inputs."hmac".dir = "nimpkgs/h/hmac";
+  # inputs."hmac".type = "github";
+  # inputs."hmac".owner = "riinr";
+  # inputs."hmac".repo = "flake-nimble";
+  # inputs."hmac".ref = "flake-pinning";
+  # inputs."hmac".dir = "nimpkgs/h/hmac";
+  # inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-scram-0_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

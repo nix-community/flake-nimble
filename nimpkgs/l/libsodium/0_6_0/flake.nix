@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-libsodium-0_6_0.flake = false;
   inputs.src-libsodium-0_6_0.type = "github";
   inputs.src-libsodium-0_6_0.owner = "FedericoCeratto";
   inputs.src-libsodium-0_6_0.repo = "nim-libsodium";
   inputs.src-libsodium-0_6_0.ref = "refs/tags/0.6.0";
+  inputs.src-libsodium-0_6_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-libsodium-0_6_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

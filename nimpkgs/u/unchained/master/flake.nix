@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-unchained-master.flake = false;
   inputs.src-unchained-master.type = "github";
   inputs.src-unchained-master.owner = "SciNim";
   inputs.src-unchained-master.repo = "unchained";
   inputs.src-unchained-master.ref = "refs/heads/master";
+  inputs.src-unchained-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-unchained-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-fugitive-v0_3_0.flake = false;
   inputs.src-fugitive-v0_3_0.type = "github";
   inputs.src-fugitive-v0_3_0.owner = "haltcase";
   inputs.src-fugitive-v0_3_0.repo = "fugitive";
   inputs.src-fugitive-v0_3_0.ref = "refs/tags/v0.3.0";
+  inputs.src-fugitive-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."tempfile".type = "github";
-  inputs."tempfile".owner = "riinr";
-  inputs."tempfile".repo = "flake-nimble";
-  inputs."tempfile".ref = "flake-pinning";
-  inputs."tempfile".dir = "nimpkgs/t/tempfile";
+  # inputs."tempfile".type = "github";
+  # inputs."tempfile".owner = "riinr";
+  # inputs."tempfile".repo = "flake-nimble";
+  # inputs."tempfile".ref = "flake-pinning";
+  # inputs."tempfile".dir = "nimpkgs/t/tempfile";
+  # inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-fugitive-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-mailcow-main.flake = false;
   inputs.src-mailcow-main.type = "github";
   inputs.src-mailcow-main.owner = "Vaipex";
-  inputs.src-mailcow-main.repo = "mailcow-API";
+  inputs.src-mailcow-main.repo = "Mailcow-API";
   inputs.src-mailcow-main.ref = "refs/heads/main";
+  inputs.src-mailcow-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-mailcow-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-akane-v0_1_3": "src-akane-v0_1_3"
+      }
+    },
+    "src-akane-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591282428,
+        "narHash": "sha256-PLeGgJDuOTS0PPtroin38uEGzgXRgMOR+Pgtu/+XA50=",
+        "owner": "ethosa",
+        "repo": "akane",
+        "rev": "be44d64471692490fce43f4cfe8e7d8391c4e412",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "akane",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

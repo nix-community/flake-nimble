@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-anime-master": "src-anime-master"
+      }
+    },
+    "src-anime-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582017042,
+        "narHash": "sha256-ovXIwb29P99TGpILqw9+1KKQwGazO4qdVQjlbTZMNi8=",
+        "owner": "ethosa",
+        "repo": "anime",
+        "rev": "c53f7da1a00303ba7acf189cdf267f8fadaecffc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/heads/master",
+        "repo": "anime",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

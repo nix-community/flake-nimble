@@ -5,29 +5,42 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."sysrandom-master".type = "github";
   inputs."sysrandom-master".owner = "riinr";
   inputs."sysrandom-master".repo = "flake-nimble";
   inputs."sysrandom-master".ref = "flake-pinning";
   inputs."sysrandom-master".dir = "nimpkgs/s/sysrandom/master";
+  inputs."sysrandom-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sysrandom-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sysrandom-v0_1_0".type = "github";
   inputs."sysrandom-v0_1_0".owner = "riinr";
   inputs."sysrandom-v0_1_0".repo = "flake-nimble";
   inputs."sysrandom-v0_1_0".ref = "flake-pinning";
   inputs."sysrandom-v0_1_0".dir = "nimpkgs/s/sysrandom/v0_1_0";
+  inputs."sysrandom-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sysrandom-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sysrandom-v1_0_0".type = "github";
   inputs."sysrandom-v1_0_0".owner = "riinr";
   inputs."sysrandom-v1_0_0".repo = "flake-nimble";
   inputs."sysrandom-v1_0_0".ref = "flake-pinning";
   inputs."sysrandom-v1_0_0".dir = "nimpkgs/s/sysrandom/v1_0_0";
+  inputs."sysrandom-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sysrandom-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sysrandom-v1_1_0".type = "github";
   inputs."sysrandom-v1_1_0".owner = "riinr";
   inputs."sysrandom-v1_1_0".repo = "flake-nimble";
   inputs."sysrandom-v1_1_0".ref = "flake-pinning";
   inputs."sysrandom-v1_1_0".dir = "nimpkgs/s/sysrandom/v1_1_0";
+  inputs."sysrandom-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sysrandom-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

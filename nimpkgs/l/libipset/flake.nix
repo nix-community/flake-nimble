@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."libipset-master".type = "github";
   inputs."libipset-master".owner = "riinr";
   inputs."libipset-master".repo = "flake-nimble";
   inputs."libipset-master".ref = "flake-pinning";
   inputs."libipset-master".dir = "nimpkgs/l/libipset/master";
+  inputs."libipset-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libipset-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."libipset-0_0_1".type = "github";
   inputs."libipset-0_0_1".owner = "riinr";
   inputs."libipset-0_0_1".repo = "flake-nimble";
   inputs."libipset-0_0_1".ref = "flake-pinning";
   inputs."libipset-0_0_1".dir = "nimpkgs/l/libipset/0_0_1";
+  inputs."libipset-0_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libipset-0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."libipset-0_0_2".type = "github";
   inputs."libipset-0_0_2".owner = "riinr";
   inputs."libipset-0_0_2".repo = "flake-nimble";
   inputs."libipset-0_0_2".ref = "flake-pinning";
   inputs."libipset-0_0_2".dir = "nimpkgs/l/libipset/0_0_2";
+  inputs."libipset-0_0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libipset-0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

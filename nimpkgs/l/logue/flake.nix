@@ -5,53 +5,78 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."logue-master".type = "github";
   inputs."logue-master".owner = "riinr";
   inputs."logue-master".repo = "flake-nimble";
   inputs."logue-master".ref = "flake-pinning";
   inputs."logue-master".dir = "nimpkgs/l/logue/master";
+  inputs."logue-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."logue-v0_1_0".type = "github";
   inputs."logue-v0_1_0".owner = "riinr";
   inputs."logue-v0_1_0".repo = "flake-nimble";
   inputs."logue-v0_1_0".ref = "flake-pinning";
   inputs."logue-v0_1_0".dir = "nimpkgs/l/logue/v0_1_0";
+  inputs."logue-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."logue-v0_1_2".type = "github";
   inputs."logue-v0_1_2".owner = "riinr";
   inputs."logue-v0_1_2".repo = "flake-nimble";
   inputs."logue-v0_1_2".ref = "flake-pinning";
   inputs."logue-v0_1_2".dir = "nimpkgs/l/logue/v0_1_2";
+  inputs."logue-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."logue-v0_1_6".type = "github";
   inputs."logue-v0_1_6".owner = "riinr";
   inputs."logue-v0_1_6".repo = "flake-nimble";
   inputs."logue-v0_1_6".ref = "flake-pinning";
   inputs."logue-v0_1_6".dir = "nimpkgs/l/logue/v0_1_6";
+  inputs."logue-v0_1_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-v0_1_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."logue-v0_1_8".type = "github";
   inputs."logue-v0_1_8".owner = "riinr";
   inputs."logue-v0_1_8".repo = "flake-nimble";
   inputs."logue-v0_1_8".ref = "flake-pinning";
   inputs."logue-v0_1_8".dir = "nimpkgs/l/logue/v0_1_8";
+  inputs."logue-v0_1_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-v0_1_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."logue-v0_2_0".type = "github";
   inputs."logue-v0_2_0".owner = "riinr";
   inputs."logue-v0_2_0".repo = "flake-nimble";
   inputs."logue-v0_2_0".ref = "flake-pinning";
   inputs."logue-v0_2_0".dir = "nimpkgs/l/logue/v0_2_0";
+  inputs."logue-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."logue-v0_2_2".type = "github";
   inputs."logue-v0_2_2".owner = "riinr";
   inputs."logue-v0_2_2".repo = "flake-nimble";
   inputs."logue-v0_2_2".ref = "flake-pinning";
   inputs."logue-v0_2_2".dir = "nimpkgs/l/logue/v0_2_2";
+  inputs."logue-v0_2_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-v0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."logue-v0_2_4".type = "github";
   inputs."logue-v0_2_4".owner = "riinr";
   inputs."logue-v0_2_4".repo = "flake-nimble";
   inputs."logue-v0_2_4".ref = "flake-pinning";
   inputs."logue-v0_2_4".dir = "nimpkgs/l/logue/v0_2_4";
+  inputs."logue-v0_2_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logue-v0_2_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

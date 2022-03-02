@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-tsundoku-v0_1_0.flake = false;
   inputs.src-tsundoku-v0_1_0.type = "github";
   inputs.src-tsundoku-v0_1_0.owner = "FedericoCeratto";
   inputs.src-tsundoku-v0_1_0.repo = "tsundoku";
   inputs.src-tsundoku-v0_1_0.ref = "refs/tags/v0.1.0";
+  inputs.src-tsundoku-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."jester".type = "github";
-  inputs."jester".owner = "riinr";
-  inputs."jester".repo = "flake-nimble";
-  inputs."jester".ref = "flake-pinning";
-  inputs."jester".dir = "nimpkgs/j/jester";
+  # inputs."jester".type = "github";
+  # inputs."jester".owner = "riinr";
+  # inputs."jester".repo = "flake-nimble";
+  # inputs."jester".ref = "flake-pinning";
+  # inputs."jester".dir = "nimpkgs/j/jester";
+  # inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-tsundoku-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

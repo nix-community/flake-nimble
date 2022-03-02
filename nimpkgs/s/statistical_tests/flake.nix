@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."statistical_tests-master".type = "github";
   inputs."statistical_tests-master".owner = "riinr";
   inputs."statistical_tests-master".repo = "flake-nimble";
   inputs."statistical_tests-master".ref = "flake-pinning";
   inputs."statistical_tests-master".dir = "nimpkgs/s/statistical_tests/master";
+  inputs."statistical_tests-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."statistical_tests-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."statistical_tests-v0_1_0".type = "github";
   inputs."statistical_tests-v0_1_0".owner = "riinr";
   inputs."statistical_tests-v0_1_0".repo = "flake-nimble";
   inputs."statistical_tests-v0_1_0".ref = "flake-pinning";
   inputs."statistical_tests-v0_1_0".dir = "nimpkgs/s/statistical_tests/v0_1_0";
+  inputs."statistical_tests-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."statistical_tests-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

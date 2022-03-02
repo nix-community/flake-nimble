@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-tinamou-master.flake = false;
   inputs.src-tinamou-master.type = "github";
-  inputs.src-tinamou-master.owner = "double-oxygeN";
+  inputs.src-tinamou-master.owner = "Double-oxygeN";
   inputs.src-tinamou-master.repo = "tinamou";
   inputs.src-tinamou-master.ref = "refs/heads/master";
+  inputs.src-tinamou-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."sdl2".type = "github";
-  inputs."sdl2".owner = "riinr";
-  inputs."sdl2".repo = "flake-nimble";
-  inputs."sdl2".ref = "flake-pinning";
-  inputs."sdl2".dir = "nimpkgs/s/sdl2";
+  # inputs."sdl2".type = "github";
+  # inputs."sdl2".owner = "riinr";
+  # inputs."sdl2".repo = "flake-nimble";
+  # inputs."sdl2".ref = "flake-pinning";
+  # inputs."sdl2".dir = "nimpkgs/s/sdl2";
+  # inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-tinamou-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

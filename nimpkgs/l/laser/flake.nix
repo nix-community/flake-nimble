@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."Laser-master".type = "github";
-  inputs."Laser-master".owner = "riinr";
-  inputs."Laser-master".repo = "flake-nimble";
-  inputs."Laser-master".ref = "flake-pinning";
-  inputs."Laser-master".dir = "nimpkgs/l/laser/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+    inputs."laser-master".type = "github";
+  inputs."laser-master".owner = "riinr";
+  inputs."laser-master".repo = "flake-nimble";
+  inputs."laser-master".ref = "flake-pinning";
+  inputs."laser-master".dir = "nimpkgs/l/laser/master";
+  inputs."laser-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."laser-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

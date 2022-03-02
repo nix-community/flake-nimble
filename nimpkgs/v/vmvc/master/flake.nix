@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-vmvc-master.flake = false;
   inputs.src-vmvc-master.type = "github";
   inputs.src-vmvc-master.owner = "kobi2187";
   inputs.src-vmvc-master.repo = "vmvc";
   inputs.src-vmvc-master.ref = "refs/heads/master";
+  inputs.src-vmvc-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."uuids".type = "github";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".repo = "flake-nimble";
-  inputs."uuids".ref = "flake-pinning";
-  inputs."uuids".dir = "nimpkgs/u/uuids";
+  # inputs."uuids".type = "github";
+  # inputs."uuids".owner = "riinr";
+  # inputs."uuids".repo = "flake-nimble";
+  # inputs."uuids".ref = "flake-pinning";
+  # inputs."uuids".dir = "nimpkgs/u/uuids";
+  # inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."regex".type = "github";
-  inputs."regex".owner = "riinr";
-  inputs."regex".repo = "flake-nimble";
-  inputs."regex".ref = "flake-pinning";
-  inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".type = "github";
+  # inputs."regex".owner = "riinr";
+  # inputs."regex".repo = "flake-nimble";
+  # inputs."regex".ref = "flake-pinning";
+  # inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-vmvc-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

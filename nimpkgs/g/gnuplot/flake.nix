@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."gnuplot-master".type = "github";
   inputs."gnuplot-master".owner = "riinr";
   inputs."gnuplot-master".repo = "flake-nimble";
   inputs."gnuplot-master".ref = "flake-pinning";
   inputs."gnuplot-master".dir = "nimpkgs/g/gnuplot/master";
+  inputs."gnuplot-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gnuplot-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

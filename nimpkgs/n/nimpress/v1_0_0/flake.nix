@@ -5,32 +5,40 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimpress-v1_0_0.flake = false;
   inputs.src-nimpress-v1_0_0.type = "github";
   inputs.src-nimpress-v1_0_0.owner = "mpinese";
   inputs.src-nimpress-v1_0_0.repo = "nimpress";
   inputs.src-nimpress-v1_0_0.ref = "refs/tags/v1.0.0";
+  inputs.src-nimpress-v1_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."docopt".type = "github";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".repo = "flake-nimble";
-  inputs."docopt".ref = "flake-pinning";
-  inputs."docopt".dir = "nimpkgs/d/docopt";
+  # inputs."docopt".type = "github";
+  # inputs."docopt".owner = "riinr";
+  # inputs."docopt".repo = "flake-nimble";
+  # inputs."docopt".ref = "flake-pinning";
+  # inputs."docopt".dir = "nimpkgs/d/docopt";
+  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."hts".type = "github";
-  inputs."hts".owner = "riinr";
-  inputs."hts".repo = "flake-nimble";
-  inputs."hts".ref = "flake-pinning";
-  inputs."hts".dir = "nimpkgs/h/hts";
+  # inputs."hts".type = "github";
+  # inputs."hts".owner = "riinr";
+  # inputs."hts".repo = "flake-nimble";
+  # inputs."hts".ref = "flake-pinning";
+  # inputs."hts".dir = "nimpkgs/h/hts";
+  # inputs."hts".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."hts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."lapper".type = "github";
-  inputs."lapper".owner = "riinr";
-  inputs."lapper".repo = "flake-nimble";
-  inputs."lapper".ref = "flake-pinning";
-  inputs."lapper".dir = "nimpkgs/l/lapper";
+  # inputs."lapper".type = "github";
+  # inputs."lapper".owner = "riinr";
+  # inputs."lapper".repo = "flake-nimble";
+  # inputs."lapper".ref = "flake-pinning";
+  # inputs."lapper".dir = "nimpkgs/l/lapper";
+  # inputs."lapper".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."lapper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimpress-v1_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

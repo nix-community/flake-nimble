@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-gapbuffer-master.flake = false;
   inputs.src-gapbuffer-master.type = "other";
   inputs.src-gapbuffer-master.owner = "vktec";
   inputs.src-gapbuffer-master.repo = "nim-gapbuffer";
   inputs.src-gapbuffer-master.ref = "refs/heads/master";
+  inputs.src-gapbuffer-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-gapbuffer-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

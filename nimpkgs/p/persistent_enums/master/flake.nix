@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-persistent_enums-master.flake = false;
   inputs.src-persistent_enums-master.type = "github";
   inputs.src-persistent_enums-master.owner = "yglukhov";
   inputs.src-persistent_enums-master.repo = "persistent_enums";
   inputs.src-persistent_enums-master.ref = "refs/heads/master";
+  inputs.src-persistent_enums-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-persistent_enums-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

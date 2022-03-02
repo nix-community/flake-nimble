@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."linear_models-master".type = "github";
   inputs."linear_models-master".owner = "riinr";
   inputs."linear_models-master".repo = "flake-nimble";
   inputs."linear_models-master".ref = "flake-pinning";
   inputs."linear_models-master".dir = "nimpkgs/l/linear_models/master";
+  inputs."linear_models-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."linear_models-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-stopwatch-master.flake = false;
   inputs.src-stopwatch-master.type = "gitlab";
   inputs.src-stopwatch-master.owner = "define-private-public";
   inputs.src-stopwatch-master.repo = "stopwatch";
   inputs.src-stopwatch-master.ref = "refs/heads/master";
+  inputs.src-stopwatch-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-stopwatch-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

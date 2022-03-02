@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-slicerator-master.flake = false;
   inputs.src-slicerator-master.type = "github";
   inputs.src-slicerator-master.owner = "beef331";
   inputs.src-slicerator-master.repo = "slicerator";
   inputs.src-slicerator-master.ref = "refs/heads/master";
+  inputs.src-slicerator-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-slicerator-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

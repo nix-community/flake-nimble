@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-vecio-master.flake = false;
   inputs.src-vecio-master.type = "github";
   inputs.src-vecio-master.owner = "emekoi";
   inputs.src-vecio-master.repo = "vecio.nim";
   inputs.src-vecio-master.ref = "refs/heads/master";
+  inputs.src-vecio-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-vecio-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

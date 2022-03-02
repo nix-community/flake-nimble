@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."sdnotify-master".type = "github";
   inputs."sdnotify-master".owner = "riinr";
   inputs."sdnotify-master".repo = "flake-nimble";
   inputs."sdnotify-master".ref = "flake-pinning";
   inputs."sdnotify-master".dir = "nimpkgs/s/sdnotify/master";
+  inputs."sdnotify-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sdnotify-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

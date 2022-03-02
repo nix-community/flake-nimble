@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimactors-master.flake = false;
   inputs.src-nimactors-master.type = "github";
   inputs.src-nimactors-master.owner = "vegansk";
   inputs.src-nimactors-master.repo = "nimactors";
   inputs.src-nimactors-master.ref = "refs/heads/master";
+  inputs.src-nimactors-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimfp".type = "github";
-  inputs."nimfp".owner = "riinr";
-  inputs."nimfp".repo = "flake-nimble";
-  inputs."nimfp".ref = "flake-pinning";
-  inputs."nimfp".dir = "nimpkgs/n/nimfp";
+  # inputs."nimfp".type = "github";
+  # inputs."nimfp".owner = "riinr";
+  # inputs."nimfp".repo = "flake-nimble";
+  # inputs."nimfp".ref = "flake-pinning";
+  # inputs."nimfp".dir = "nimpkgs/n/nimfp";
+  # inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."nimboost".type = "github";
-  inputs."nimboost".owner = "riinr";
-  inputs."nimboost".repo = "flake-nimble";
-  inputs."nimboost".ref = "flake-pinning";
-  inputs."nimboost".dir = "nimpkgs/n/nimboost";
+  # inputs."nimboost".type = "github";
+  # inputs."nimboost".owner = "riinr";
+  # inputs."nimboost".repo = "flake-nimble";
+  # inputs."nimboost".ref = "flake-pinning";
+  # inputs."nimboost".dir = "nimpkgs/n/nimboost";
+  # inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimactors-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

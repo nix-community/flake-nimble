@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-gnuplotlib-v2_5_0.flake = false;
   inputs.src-gnuplotlib-v2_5_0.type = "github";
   inputs.src-gnuplotlib-v2_5_0.owner = "planetis-m";
   inputs.src-gnuplotlib-v2_5_0.repo = "gnuplotlib";
   inputs.src-gnuplotlib-v2_5_0.ref = "refs/tags/v2.5.0";
+  inputs.src-gnuplotlib-v2_5_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-gnuplotlib-v2_5_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

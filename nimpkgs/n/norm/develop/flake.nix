@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-norm-develop.flake = false;
   inputs.src-norm-develop.type = "github";
   inputs.src-norm-develop.owner = "moigagoo";
   inputs.src-norm-develop.repo = "norm";
   inputs.src-norm-develop.ref = "refs/heads/develop";
+  inputs.src-norm-develop.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."ndb".type = "github";
-  inputs."ndb".owner = "riinr";
-  inputs."ndb".repo = "flake-nimble";
-  inputs."ndb".ref = "flake-pinning";
-  inputs."ndb".dir = "nimpkgs/n/ndb";
+  # inputs."ndb".type = "github";
+  # inputs."ndb".owner = "riinr";
+  # inputs."ndb".repo = "flake-nimble";
+  # inputs."ndb".ref = "flake-pinning";
+  # inputs."ndb".dir = "nimpkgs/n/ndb";
+  # inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-norm-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;

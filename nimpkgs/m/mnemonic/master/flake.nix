@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-mnemonic-master.flake = false;
   inputs.src-mnemonic-master.type = "github";
   inputs.src-mnemonic-master.owner = "markspanbroek";
   inputs.src-mnemonic-master.repo = "mnemonic";
   inputs.src-mnemonic-master.ref = "refs/heads/master";
+  inputs.src-mnemonic-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimsha2".type = "github";
-  inputs."nimsha2".owner = "riinr";
-  inputs."nimsha2".repo = "flake-nimble";
-  inputs."nimsha2".ref = "flake-pinning";
-  inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
+  # inputs."nimsha2".type = "github";
+  # inputs."nimsha2".owner = "riinr";
+  # inputs."nimsha2".repo = "flake-nimble";
+  # inputs."nimsha2".ref = "flake-pinning";
+  # inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
+  # inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mnemonic-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-shioridll-master.flake = false;
   inputs.src-shioridll-master.type = "github";
   inputs.src-shioridll-master.owner = "Narazaka";
   inputs.src-shioridll-master.repo = "shioridll-nim";
   inputs.src-shioridll-master.ref = "refs/heads/master";
+  inputs.src-shioridll-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-shioridll-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

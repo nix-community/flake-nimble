@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-mpdclient-master.flake = false;
   inputs.src-mpdclient-master.type = "github";
   inputs.src-mpdclient-master.owner = "SolitudeSF";
   inputs.src-mpdclient-master.repo = "mpdclient";
   inputs.src-mpdclient-master.ref = "refs/heads/master";
+  inputs.src-mpdclient-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-mpdclient-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

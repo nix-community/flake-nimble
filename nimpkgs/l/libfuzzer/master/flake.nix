@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-libfuzzer-master.flake = false;
   inputs.src-libfuzzer-master.type = "github";
   inputs.src-libfuzzer-master.owner = "planetis-m";
   inputs.src-libfuzzer-master.repo = "libfuzzer";
   inputs.src-libfuzzer-master.ref = "refs/heads/master";
+  inputs.src-libfuzzer-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-libfuzzer-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

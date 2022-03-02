@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-mysqlparser-master.flake = false;
   inputs.src-mysqlparser-master.type = "github";
   inputs.src-mysqlparser-master.owner = "tulayang";
   inputs.src-mysqlparser-master.repo = "mysqlparser";
   inputs.src-mysqlparser-master.ref = "refs/heads/master";
+  inputs.src-mysqlparser-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-mysqlparser-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

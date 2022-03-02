@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-pvim-0_11_0.flake = false;
   inputs.src-pvim-0_11_0.type = "github";
   inputs.src-pvim-0_11_0.owner = "paranim";
   inputs.src-pvim-0_11_0.repo = "pvim";
   inputs.src-pvim-0_11_0.ref = "refs/tags/0.11.0";
+  inputs.src-pvim-0_11_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."paravim".type = "github";
-  inputs."paravim".owner = "riinr";
-  inputs."paravim".repo = "flake-nimble";
-  inputs."paravim".ref = "flake-pinning";
-  inputs."paravim".dir = "nimpkgs/p/paravim";
+  # inputs."paravim".type = "github";
+  # inputs."paravim".owner = "riinr";
+  # inputs."paravim".repo = "flake-nimble";
+  # inputs."paravim".ref = "flake-pinning";
+  # inputs."paravim".dir = "nimpkgs/p/paravim";
+  # inputs."paravim".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."paravim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-pvim-0_11_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

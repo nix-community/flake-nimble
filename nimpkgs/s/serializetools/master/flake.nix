@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-serializetools-master.flake = false;
   inputs.src-serializetools-master.type = "github";
   inputs.src-serializetools-master.owner = "JeffersonLab";
   inputs.src-serializetools-master.repo = "serializetools";
   inputs.src-serializetools-master.ref = "refs/heads/master";
+  inputs.src-serializetools-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-serializetools-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

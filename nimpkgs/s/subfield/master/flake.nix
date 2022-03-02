@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-subfield-master.flake = false;
   inputs.src-subfield-master.type = "github";
   inputs.src-subfield-master.owner = "jyapayne";
   inputs.src-subfield-master.repo = "subfield";
   inputs.src-subfield-master.ref = "refs/heads/master";
+  inputs.src-subfield-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."einheit".type = "github";
-  inputs."einheit".owner = "riinr";
-  inputs."einheit".repo = "flake-nimble";
-  inputs."einheit".ref = "flake-pinning";
-  inputs."einheit".dir = "nimpkgs/e/einheit";
+  # inputs."einheit".type = "github";
+  # inputs."einheit".owner = "riinr";
+  # inputs."einheit".repo = "flake-nimble";
+  # inputs."einheit".ref = "flake-pinning";
+  # inputs."einheit".dir = "nimpkgs/e/einheit";
+  # inputs."einheit".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."einheit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-subfield-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

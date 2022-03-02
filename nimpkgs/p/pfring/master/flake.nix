@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-pfring-master.flake = false;
   inputs.src-pfring-master.type = "github";
   inputs.src-pfring-master.owner = "ba0f3";
   inputs.src-pfring-master.repo = "pfring.nim";
   inputs.src-pfring-master.ref = "refs/heads/master";
+  inputs.src-pfring-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-pfring-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

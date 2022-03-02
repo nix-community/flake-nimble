@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-masterpassword-v0_2_0.flake = false;
   inputs.src-masterpassword-v0_2_0.type = "github";
   inputs.src-masterpassword-v0_2_0.owner = "SolitudeSF";
   inputs.src-masterpassword-v0_2_0.repo = "masterpassword";
   inputs.src-masterpassword-v0_2_0.ref = "refs/tags/v0.2.0";
+  inputs.src-masterpassword-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimcrypto".type = "github";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".repo = "flake-nimble";
-  inputs."nimcrypto".ref = "flake-pinning";
-  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".type = "github";
+  # inputs."nimcrypto".owner = "riinr";
+  # inputs."nimcrypto".repo = "flake-nimble";
+  # inputs."nimcrypto".ref = "flake-pinning";
+  # inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  # inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-masterpassword-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

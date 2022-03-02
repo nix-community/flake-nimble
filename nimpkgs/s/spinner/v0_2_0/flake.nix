@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-spinner-v0_2_0.flake = false;
   inputs.src-spinner-v0_2_0.type = "github";
   inputs.src-spinner-v0_2_0.owner = "tonogram";
   inputs.src-spinner-v0_2_0.repo = "spinner";
   inputs.src-spinner-v0_2_0.ref = "refs/tags/v0.2.0";
+  inputs.src-spinner-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."fidget".type = "github";
-  inputs."fidget".owner = "riinr";
-  inputs."fidget".repo = "flake-nimble";
-  inputs."fidget".ref = "flake-pinning";
-  inputs."fidget".dir = "nimpkgs/f/fidget";
+  # inputs."fidget".type = "github";
+  # inputs."fidget".owner = "riinr";
+  # inputs."fidget".repo = "flake-nimble";
+  # inputs."fidget".ref = "flake-pinning";
+  # inputs."fidget".dir = "nimpkgs/f/fidget";
+  # inputs."fidget".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."fidget".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."gradient".type = "github";
-  inputs."gradient".owner = "riinr";
-  inputs."gradient".repo = "flake-nimble";
-  inputs."gradient".ref = "flake-pinning";
-  inputs."gradient".dir = "nimpkgs/g/gradient";
+  # inputs."gradient".type = "github";
+  # inputs."gradient".owner = "riinr";
+  # inputs."gradient".repo = "flake-nimble";
+  # inputs."gradient".ref = "flake-pinning";
+  # inputs."gradient".dir = "nimpkgs/g/gradient";
+  # inputs."gradient".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."gradient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-spinner-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

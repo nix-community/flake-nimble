@@ -5,46 +5,58 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-ggplotnim-v0_4_3.flake = false;
   inputs.src-ggplotnim-v0_4_3.type = "github";
   inputs.src-ggplotnim-v0_4_3.owner = "Vindaar";
   inputs.src-ggplotnim-v0_4_3.repo = "ggplotnim";
   inputs.src-ggplotnim-v0_4_3.ref = "refs/tags/v0.4.3";
+  inputs.src-ggplotnim-v0_4_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."https://github.com/vindaar/seqmath".type = "github";
-  inputs."https://github.com/vindaar/seqmath".owner = "riinr";
-  inputs."https://github.com/vindaar/seqmath".repo = "flake-nimble";
-  inputs."https://github.com/vindaar/seqmath".ref = "flake-pinning";
-  inputs."https://github.com/vindaar/seqmath".dir = "nimpkgs/h/https://github.com/vindaar/seqmath";
+  # inputs."https://github.com/vindaar/seqmath".type = "github";
+  # inputs."https://github.com/vindaar/seqmath".owner = "riinr";
+  # inputs."https://github.com/vindaar/seqmath".repo = "flake-nimble";
+  # inputs."https://github.com/vindaar/seqmath".ref = "flake-pinning";
+  # inputs."https://github.com/vindaar/seqmath".dir = "nimpkgs/h/https://github.com/vindaar/seqmath";
+  # inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."ginger".type = "github";
-  inputs."ginger".owner = "riinr";
-  inputs."ginger".repo = "flake-nimble";
-  inputs."ginger".ref = "flake-pinning";
-  inputs."ginger".dir = "nimpkgs/g/ginger";
+  # inputs."ginger".type = "github";
+  # inputs."ginger".owner = "riinr";
+  # inputs."ginger".repo = "flake-nimble";
+  # inputs."ginger".ref = "flake-pinning";
+  # inputs."ginger".dir = "nimpkgs/g/ginger";
+  # inputs."ginger".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."ginger".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."datamancer".type = "github";
-  inputs."datamancer".owner = "riinr";
-  inputs."datamancer".repo = "flake-nimble";
-  inputs."datamancer".ref = "flake-pinning";
-  inputs."datamancer".dir = "nimpkgs/d/datamancer";
+  # inputs."datamancer".type = "github";
+  # inputs."datamancer".owner = "riinr";
+  # inputs."datamancer".repo = "flake-nimble";
+  # inputs."datamancer".ref = "flake-pinning";
+  # inputs."datamancer".dir = "nimpkgs/d/datamancer";
+  # inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."shell".type = "github";
-  inputs."shell".owner = "riinr";
-  inputs."shell".repo = "flake-nimble";
-  inputs."shell".ref = "flake-pinning";
-  inputs."shell".dir = "nimpkgs/s/shell";
+  # inputs."shell".type = "github";
+  # inputs."shell".owner = "riinr";
+  # inputs."shell".repo = "flake-nimble";
+  # inputs."shell".ref = "flake-pinning";
+  # inputs."shell".dir = "nimpkgs/s/shell";
+  # inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."webview".type = "github";
-  inputs."webview".owner = "riinr";
-  inputs."webview".repo = "flake-nimble";
-  inputs."webview".ref = "flake-pinning";
-  inputs."webview".dir = "nimpkgs/w/webview";
+  # inputs."webview".type = "github";
+  # inputs."webview".owner = "riinr";
+  # inputs."webview".repo = "flake-nimble";
+  # inputs."webview".ref = "flake-pinning";
+  # inputs."webview".dir = "nimpkgs/w/webview";
+  # inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ggplotnim-v0_4_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

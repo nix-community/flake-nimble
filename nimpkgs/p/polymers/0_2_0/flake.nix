@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-polymers-0_2_0.flake = false;
-  inputs.src-polymers-0_2_0.type = "github";
-  inputs.src-polymers-0_2_0.owner = "rlipsc";
-  inputs.src-polymers-0_2_0.repo = "polymers";
-  inputs.src-polymers-0_2_0.ref = "refs/tags/0.2.0";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-Polymers-0_2_0.flake = false;
+  inputs.src-Polymers-0_2_0.type = "github";
+  inputs.src-Polymers-0_2_0.owner = "rlipsc";
+  inputs.src-Polymers-0_2_0.repo = "polymers";
+  inputs.src-Polymers-0_2_0.ref = "refs/tags/0.2.0";
+  inputs.src-Polymers-0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."polymorph".type = "github";
-  inputs."polymorph".owner = "riinr";
-  inputs."polymorph".repo = "flake-nimble";
-  inputs."polymorph".ref = "flake-pinning";
-  inputs."polymorph".dir = "nimpkgs/p/polymorph";
+  # inputs."polymorph".type = "github";
+  # inputs."polymorph".owner = "riinr";
+  # inputs."polymorph".repo = "flake-nimble";
+  # inputs."polymorph".ref = "flake-pinning";
+  # inputs."polymorph".dir = "nimpkgs/p/polymorph";
+  # inputs."polymorph".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-polymers-0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

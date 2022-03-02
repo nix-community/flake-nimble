@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nim_chacha20_poly1305-master.flake = false;
   inputs.src-nim_chacha20_poly1305-master.type = "github";
   inputs.src-nim_chacha20_poly1305-master.owner = "lantos-lgtm";
   inputs.src-nim_chacha20_poly1305-master.repo = "nim_chacha20_poly1305";
   inputs.src-nim_chacha20_poly1305-master.ref = "refs/heads/master";
+  inputs.src-nim_chacha20_poly1305-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stint".type = "github";
-  inputs."stint".owner = "riinr";
-  inputs."stint".repo = "flake-nimble";
-  inputs."stint".ref = "flake-pinning";
-  inputs."stint".dir = "nimpkgs/s/stint";
+  # inputs."stint".type = "github";
+  # inputs."stint".owner = "riinr";
+  # inputs."stint".repo = "flake-nimble";
+  # inputs."stint".ref = "flake-pinning";
+  # inputs."stint".dir = "nimpkgs/s/stint";
+  # inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nim_chacha20_poly1305-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

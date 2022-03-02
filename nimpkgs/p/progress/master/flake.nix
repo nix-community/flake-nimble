@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-progress-master.flake = false;
   inputs.src-progress-master.type = "github";
   inputs.src-progress-master.owner = "euantorano";
   inputs.src-progress-master.repo = "progress.nim";
   inputs.src-progress-master.ref = "refs/heads/master";
+  inputs.src-progress-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-progress-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

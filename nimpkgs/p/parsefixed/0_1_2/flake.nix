@@ -5,18 +5,20 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-parsefixed-0_1_2.flake = false;
   inputs.src-parsefixed-0_1_2.type = "github";
   inputs.src-parsefixed-0_1_2.owner = "jlp765";
   inputs.src-parsefixed-0_1_2.repo = "parsefixed";
   inputs.src-parsefixed-0_1_2.ref = "refs/tags/0.1.2";
+  inputs.src-parsefixed-0_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-parsefixed-0_1_2, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-parseFixed-0_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-parsefixed-0_1_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-parsefixed-0_1_2"];
+      src = src-parseFixed-0_1_2;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-parseFixed-0_1_2"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

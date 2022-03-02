@@ -5,18 +5,20 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-htmlanticopy-master.flake = false;
-  inputs.src-htmlanticopy-master.type = "github";
-  inputs.src-htmlanticopy-master.owner = "thisago";
-  inputs.src-htmlanticopy-master.repo = "htmlAntiCopy";
-  inputs.src-htmlanticopy-master.ref = "refs/heads/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-htmlAntiCopy-master.flake = false;
+  inputs.src-htmlAntiCopy-master.type = "github";
+  inputs.src-htmlAntiCopy-master.owner = "thisago";
+  inputs.src-htmlAntiCopy-master.repo = "htmlAntiCopy";
+  inputs.src-htmlAntiCopy-master.ref = "refs/heads/master";
+  inputs.src-htmlAntiCopy-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-htmlanticopy-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-htmlAntiCopy-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-htmlanticopy-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-htmlanticopy-master"];
+      src = src-htmlAntiCopy-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-htmlAntiCopy-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

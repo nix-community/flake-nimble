@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimarrow-master.flake = false;
   inputs.src-nimarrow-master.type = "github";
   inputs.src-nimarrow-master.owner = "emef";
   inputs.src-nimarrow-master.repo = "nimarrow";
   inputs.src-nimarrow-master.ref = "refs/heads/master";
+  inputs.src-nimarrow-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimarrow_glib".type = "github";
-  inputs."nimarrow_glib".owner = "riinr";
-  inputs."nimarrow_glib".repo = "flake-nimble";
-  inputs."nimarrow_glib".ref = "flake-pinning";
-  inputs."nimarrow_glib".dir = "nimpkgs/n/nimarrow_glib";
+  # inputs."nimarrow_glib".type = "github";
+  # inputs."nimarrow_glib".owner = "riinr";
+  # inputs."nimarrow_glib".repo = "flake-nimble";
+  # inputs."nimarrow_glib".ref = "flake-pinning";
+  # inputs."nimarrow_glib".dir = "nimpkgs/n/nimarrow_glib";
+  # inputs."nimarrow_glib".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimarrow_glib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimarrow-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

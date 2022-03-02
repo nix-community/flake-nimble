@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-httpx-v0_1_4.flake = false;
   inputs.src-httpx-v0_1_4.type = "github";
   inputs.src-httpx-v0_1_4.owner = "xflywind";
   inputs.src-httpx-v0_1_4.repo = "httpx";
   inputs.src-httpx-v0_1_4.ref = "refs/tags/v0.1.4";
+  inputs.src-httpx-v0_1_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."ioselectors".type = "github";
-  inputs."ioselectors".owner = "riinr";
-  inputs."ioselectors".repo = "flake-nimble";
-  inputs."ioselectors".ref = "flake-pinning";
-  inputs."ioselectors".dir = "nimpkgs/i/ioselectors";
+  # inputs."ioselectors".type = "github";
+  # inputs."ioselectors".owner = "riinr";
+  # inputs."ioselectors".repo = "flake-nimble";
+  # inputs."ioselectors".ref = "flake-pinning";
+  # inputs."ioselectors".dir = "nimpkgs/i/ioselectors";
+  # inputs."ioselectors".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."ioselectors".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-httpx-v0_1_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

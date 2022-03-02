@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-microasynchttpserver-master.flake = false;
   inputs.src-microasynchttpserver-master.type = "github";
   inputs.src-microasynchttpserver-master.owner = "philip-wernersbach";
   inputs.src-microasynchttpserver-master.repo = "microasynchttpserver";
   inputs.src-microasynchttpserver-master.ref = "refs/heads/master";
+  inputs.src-microasynchttpserver-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."picohttpparser".type = "github";
-  inputs."picohttpparser".owner = "riinr";
-  inputs."picohttpparser".repo = "flake-nimble";
-  inputs."picohttpparser".ref = "flake-pinning";
-  inputs."picohttpparser".dir = "nimpkgs/p/picohttpparser";
+  # inputs."picohttpparser".type = "github";
+  # inputs."picohttpparser".owner = "riinr";
+  # inputs."picohttpparser".repo = "flake-nimble";
+  # inputs."picohttpparser".ref = "flake-pinning";
+  # inputs."picohttpparser".dir = "nimpkgs/p/picohttpparser";
+  # inputs."picohttpparser".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."picohttpparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-microasynchttpserver-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

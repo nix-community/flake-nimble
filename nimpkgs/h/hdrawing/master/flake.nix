@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-hdrawing-master.flake = false;
   inputs.src-hdrawing-master.type = "github";
   inputs.src-hdrawing-master.owner = "haxscramper";
   inputs.src-hdrawing-master.repo = "hdrawing";
   inputs.src-hdrawing-master.ref = "refs/heads/master";
+  inputs.src-hdrawing-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."hmisc".type = "github";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".repo = "flake-nimble";
-  inputs."hmisc".ref = "flake-pinning";
-  inputs."hmisc".dir = "nimpkgs/h/hmisc";
+  # inputs."hmisc".type = "github";
+  # inputs."hmisc".owner = "riinr";
+  # inputs."hmisc".repo = "flake-nimble";
+  # inputs."hmisc".ref = "flake-pinning";
+  # inputs."hmisc".dir = "nimpkgs/h/hmisc";
+  # inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-hdrawing-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

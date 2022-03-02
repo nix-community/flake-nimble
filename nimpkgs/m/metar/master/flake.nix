@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-metar-master.flake = false;
   inputs.src-metar-master.type = "github";
   inputs.src-metar-master.owner = "flenniken";
   inputs.src-metar-master.repo = "metar";
   inputs.src-metar-master.ref = "refs/heads/master";
+  inputs.src-metar-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-metar-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

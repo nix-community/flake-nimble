@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-googleapi-master.flake = false;
   inputs.src-googleapi-master.type = "github";
   inputs.src-googleapi-master.owner = "treeform";
   inputs.src-googleapi-master.repo = "googleapi";
   inputs.src-googleapi-master.ref = "refs/heads/master";
+  inputs.src-googleapi-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."jwt".type = "github";
-  inputs."jwt".owner = "riinr";
-  inputs."jwt".repo = "flake-nimble";
-  inputs."jwt".ref = "flake-pinning";
-  inputs."jwt".dir = "nimpkgs/j/jwt";
+  # inputs."jwt".type = "github";
+  # inputs."jwt".owner = "riinr";
+  # inputs."jwt".repo = "flake-nimble";
+  # inputs."jwt".ref = "flake-pinning";
+  # inputs."jwt".dir = "nimpkgs/j/jwt";
+  # inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-googleapi-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

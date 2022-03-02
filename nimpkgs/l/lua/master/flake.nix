@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-lua-master.flake = false;
   inputs.src-lua-master.type = "github";
   inputs.src-lua-master.owner = "nim-lang";
   inputs.src-lua-master.repo = "lua";
   inputs.src-lua-master.ref = "refs/heads/master";
+  inputs.src-lua-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-lua-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

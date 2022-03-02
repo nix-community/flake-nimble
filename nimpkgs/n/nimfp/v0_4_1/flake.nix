@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimfp-v0_4_1.flake = false;
   inputs.src-nimfp-v0_4_1.type = "github";
   inputs.src-nimfp-v0_4_1.owner = "vegansk";
   inputs.src-nimfp-v0_4_1.repo = "nimfp";
   inputs.src-nimfp-v0_4_1.ref = "refs/tags/v0.4.1";
+  inputs.src-nimfp-v0_4_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimboost".type = "github";
-  inputs."nimboost".owner = "riinr";
-  inputs."nimboost".repo = "flake-nimble";
-  inputs."nimboost".ref = "flake-pinning";
-  inputs."nimboost".dir = "nimpkgs/n/nimboost";
+  # inputs."nimboost".type = "github";
+  # inputs."nimboost".owner = "riinr";
+  # inputs."nimboost".repo = "flake-nimble";
+  # inputs."nimboost".ref = "flake-pinning";
+  # inputs."nimboost".dir = "nimpkgs/n/nimboost";
+  # inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."classy".type = "github";
-  inputs."classy".owner = "riinr";
-  inputs."classy".repo = "flake-nimble";
-  inputs."classy".ref = "flake-pinning";
-  inputs."classy".dir = "nimpkgs/c/classy";
+  # inputs."classy".type = "github";
+  # inputs."classy".owner = "riinr";
+  # inputs."classy".repo = "flake-nimble";
+  # inputs."classy".ref = "flake-pinning";
+  # inputs."classy".dir = "nimpkgs/c/classy";
+  # inputs."classy".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."classy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimfp-v0_4_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

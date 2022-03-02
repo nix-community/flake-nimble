@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-patgraph-master.flake = false;
   inputs.src-patgraph-master.type = "github";
   inputs.src-patgraph-master.owner = "planetis-m";
   inputs.src-patgraph-master.repo = "patgraph";
   inputs.src-patgraph-master.ref = "refs/heads/master";
+  inputs.src-patgraph-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-patgraph-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

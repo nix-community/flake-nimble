@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-skinterpolate-master.flake = false;
   inputs.src-skinterpolate-master.type = "github";
   inputs.src-skinterpolate-master.owner = "Skrylar";
   inputs.src-skinterpolate-master.repo = "skInterpolate";
   inputs.src-skinterpolate-master.ref = "refs/heads/master";
+  inputs.src-skinterpolate-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-skinterpolate-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

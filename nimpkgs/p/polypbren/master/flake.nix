@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-polypbren-master.flake = false;
   inputs.src-polypbren-master.type = "github";
   inputs.src-polypbren-master.owner = "guibar64";
   inputs.src-polypbren-master.repo = "polypbren";
   inputs.src-polypbren-master.ref = "refs/heads/master";
+  inputs.src-polypbren-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."https://github.com/yglukhov/threadpools".type = "github";
-  inputs."https://github.com/yglukhov/threadpools".owner = "riinr";
-  inputs."https://github.com/yglukhov/threadpools".repo = "flake-nimble";
-  inputs."https://github.com/yglukhov/threadpools".ref = "flake-pinning";
-  inputs."https://github.com/yglukhov/threadpools".dir = "nimpkgs/h/https://github.com/yglukhov/threadpools";
+  # inputs."https://github.com/yglukhov/threadpools".type = "github";
+  # inputs."https://github.com/yglukhov/threadpools".owner = "riinr";
+  # inputs."https://github.com/yglukhov/threadpools".repo = "flake-nimble";
+  # inputs."https://github.com/yglukhov/threadpools".ref = "flake-pinning";
+  # inputs."https://github.com/yglukhov/threadpools".dir = "nimpkgs/h/https://github.com/yglukhov/threadpools";
+  # inputs."https://github.com/yglukhov/threadpools".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."https://github.com/yglukhov/threadpools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-polypbren-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

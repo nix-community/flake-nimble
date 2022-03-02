@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-z3nim-master.flake = false;
   inputs.src-z3nim-master.type = "github";
-  inputs.src-z3nim-master.owner = "double-oxygeN";
+  inputs.src-z3nim-master.owner = "Double-oxygeN";
   inputs.src-z3nim-master.repo = "z3nim";
   inputs.src-z3nim-master.ref = "refs/heads/master";
+  inputs.src-z3nim-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-z3nim-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

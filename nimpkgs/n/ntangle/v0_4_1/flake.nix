@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-ntangle-v0_4_1.flake = false;
   inputs.src-ntangle-v0_4_1.type = "github";
   inputs.src-ntangle-v0_4_1.owner = "OrgTangle";
   inputs.src-ntangle-v0_4_1.repo = "ntangle";
   inputs.src-ntangle-v0_4_1.ref = "refs/tags/v0.4.1";
+  inputs.src-ntangle-v0_4_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."cligen".type = "github";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".repo = "flake-nimble";
-  inputs."cligen".ref = "flake-pinning";
-  inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".type = "github";
+  # inputs."cligen".owner = "riinr";
+  # inputs."cligen".repo = "flake-nimble";
+  # inputs."cligen".ref = "flake-pinning";
+  # inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ntangle-v0_4_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

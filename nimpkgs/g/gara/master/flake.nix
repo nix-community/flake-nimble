@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-gara-master.flake = false;
   inputs.src-gara-master.type = "github";
   inputs.src-gara-master.owner = "alehander42";
   inputs.src-gara-master.repo = "gara";
   inputs.src-gara-master.ref = "refs/heads/master";
+  inputs.src-gara-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-gara-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

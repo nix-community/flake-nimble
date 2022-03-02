@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."vidhdr-master".type = "github";
   inputs."vidhdr-master".owner = "riinr";
   inputs."vidhdr-master".repo = "flake-nimble";
   inputs."vidhdr-master".ref = "flake-pinning";
   inputs."vidhdr-master".dir = "nimpkgs/v/vidhdr/master";
+  inputs."vidhdr-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vidhdr-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

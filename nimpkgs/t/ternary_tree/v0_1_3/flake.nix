@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-ternary_tree-v0_1_3.flake = false;
   inputs.src-ternary_tree-v0_1_3.type = "github";
   inputs.src-ternary_tree-v0_1_3.owner = "calcit-lang";
   inputs.src-ternary_tree-v0_1_3.repo = "ternary-tree";
   inputs.src-ternary_tree-v0_1_3.ref = "refs/tags/v0.1.3";
+  inputs.src-ternary_tree-v0_1_3.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-ternary_tree-v0_1_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-gyaric-master.flake = false;
   inputs.src-gyaric-master.type = "github";
   inputs.src-gyaric-master.owner = "jiro4989";
   inputs.src-gyaric-master.repo = "gyaric";
   inputs.src-gyaric-master.ref = "refs/heads/master";
+  inputs.src-gyaric-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-gyaric-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

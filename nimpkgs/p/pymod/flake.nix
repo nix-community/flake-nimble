@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."pymod-master".type = "github";
   inputs."pymod-master".owner = "riinr";
   inputs."pymod-master".repo = "flake-nimble";
   inputs."pymod-master".ref = "flake-pinning";
   inputs."pymod-master".dir = "nimpkgs/p/pymod/master";
+  inputs."pymod-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pymod-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

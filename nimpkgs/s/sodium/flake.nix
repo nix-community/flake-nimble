@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."sodium-master".type = "github";
   inputs."sodium-master".owner = "riinr";
   inputs."sodium-master".repo = "flake-nimble";
   inputs."sodium-master".ref = "flake-pinning";
   inputs."sodium-master".dir = "nimpkgs/s/sodium/master";
+  inputs."sodium-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sodium-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-steamworks-master.flake = false;
   inputs.src-steamworks-master.type = "github";
   inputs.src-steamworks-master.owner = "treeform";
   inputs.src-steamworks-master.repo = "steamworks";
   inputs.src-steamworks-master.ref = "refs/heads/master";
+  inputs.src-steamworks-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-steamworks-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

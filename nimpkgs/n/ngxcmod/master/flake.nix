@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-ngxcmod-master.flake = false;
   inputs.src-ngxcmod-master.type = "github";
   inputs.src-ngxcmod-master.owner = "ba0f3";
   inputs.src-ngxcmod-master.repo = "ngxcmod.nim";
   inputs.src-ngxcmod-master.ref = "refs/heads/master";
+  inputs.src-ngxcmod-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-ngxcmod-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimrdkafka-master.flake = false;
   inputs.src-nimrdkafka-master.type = "github";
   inputs.src-nimrdkafka-master.owner = "dfdeshom";
   inputs.src-nimrdkafka-master.repo = "nimrdkafka";
   inputs.src-nimrdkafka-master.ref = "refs/heads/master";
+  inputs.src-nimrdkafka-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimrdkafka-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

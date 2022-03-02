@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-alasgar-main": "src-alasgar-main"
+      }
+    },
+    "src-alasgar-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638291911,
+        "narHash": "sha256-kCL3BB5/tv2t8HzZdL90C1pZ/1JUGrX5tvtVjY1wS+4=",
+        "owner": "abisxir",
+        "repo": "alasgar",
+        "rev": "1ca0f342c7b87737863b07dd424a2757cd23ce1b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "abisxir",
+        "ref": "refs/heads/main",
+        "repo": "alasgar",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

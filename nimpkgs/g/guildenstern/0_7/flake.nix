@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-guildenstern-0_7.flake = false;
   inputs.src-guildenstern-0_7.type = "github";
   inputs.src-guildenstern-0_7.owner = "olliNiinivaara";
   inputs.src-guildenstern-0_7.repo = "GuildenStern";
   inputs.src-guildenstern-0_7.ref = "refs/tags/0.7";
+  inputs.src-guildenstern-0_7.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."weave".type = "github";
-  inputs."weave".owner = "riinr";
-  inputs."weave".repo = "flake-nimble";
-  inputs."weave".ref = "flake-pinning";
-  inputs."weave".dir = "nimpkgs/w/weave";
+  # inputs."weave".type = "github";
+  # inputs."weave".owner = "riinr";
+  # inputs."weave".repo = "flake-nimble";
+  # inputs."weave".ref = "flake-pinning";
+  # inputs."weave".dir = "nimpkgs/w/weave";
+  # inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-guildenstern-0_7, ...}@deps:
     let lib = flakeNimbleLib.lib;

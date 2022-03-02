@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-tinypool-master.flake = false;
   inputs.src-tinypool-master.type = "github";
   inputs.src-tinypool-master.owner = "PhilippMDoerner";
   inputs.src-tinypool-master.repo = "TinyPool";
   inputs.src-tinypool-master.ref = "refs/heads/master";
+  inputs.src-tinypool-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-tinypool-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

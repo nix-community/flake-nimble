@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-polymorph-master.flake = false;
   inputs.src-polymorph-master.type = "github";
   inputs.src-polymorph-master.owner = "rlipsc";
   inputs.src-polymorph-master.repo = "polymorph";
   inputs.src-polymorph-master.ref = "refs/heads/master";
+  inputs.src-polymorph-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-polymorph-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

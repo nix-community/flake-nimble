@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-unsplash-master.flake = false;
   inputs.src-unsplash-master.type = "github";
   inputs.src-unsplash-master.owner = "juancarlospaco";
   inputs.src-unsplash-master.repo = "nim-unsplash";
   inputs.src-unsplash-master.ref = "refs/heads/master";
+  inputs.src-unsplash-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-unsplash-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

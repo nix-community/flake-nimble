@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nregex-v0_0_2.flake = false;
   inputs.src-nregex-v0_0_2.type = "github";
   inputs.src-nregex-v0_0_2.owner = "nitely";
   inputs.src-nregex-v0_0_2.repo = "nregex";
   inputs.src-nregex-v0_0_2.ref = "refs/tags/v0.0.2";
+  inputs.src-nregex-v0_0_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."unicodedb".type = "github";
-  inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".repo = "flake-nimble";
-  inputs."unicodedb".ref = "flake-pinning";
-  inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  # inputs."unicodedb".type = "github";
+  # inputs."unicodedb".owner = "riinr";
+  # inputs."unicodedb".repo = "flake-nimble";
+  # inputs."unicodedb".ref = "flake-pinning";
+  # inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  # inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."unicodeplus".type = "github";
-  inputs."unicodeplus".owner = "riinr";
-  inputs."unicodeplus".repo = "flake-nimble";
-  inputs."unicodeplus".ref = "flake-pinning";
-  inputs."unicodeplus".dir = "nimpkgs/u/unicodeplus";
+  # inputs."unicodeplus".type = "github";
+  # inputs."unicodeplus".owner = "riinr";
+  # inputs."unicodeplus".repo = "flake-nimble";
+  # inputs."unicodeplus".ref = "flake-pinning";
+  # inputs."unicodeplus".dir = "nimpkgs/u/unicodeplus";
+  # inputs."unicodeplus".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."unicodeplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nregex-v0_0_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

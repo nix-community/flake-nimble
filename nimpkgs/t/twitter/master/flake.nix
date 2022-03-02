@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-twitter-master.flake = false;
   inputs.src-twitter-master.type = "github";
   inputs.src-twitter-master.owner = "snus-kin";
   inputs.src-twitter-master.repo = "twitter.nim";
   inputs.src-twitter-master.ref = "refs/heads/master";
+  inputs.src-twitter-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."uuids".type = "github";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".repo = "flake-nimble";
-  inputs."uuids".ref = "flake-pinning";
-  inputs."uuids".dir = "nimpkgs/u/uuids";
+  # inputs."uuids".type = "github";
+  # inputs."uuids".owner = "riinr";
+  # inputs."uuids".repo = "flake-nimble";
+  # inputs."uuids".ref = "flake-pinning";
+  # inputs."uuids".dir = "nimpkgs/u/uuids";
+  # inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."hmac".type = "github";
-  inputs."hmac".owner = "riinr";
-  inputs."hmac".repo = "flake-nimble";
-  inputs."hmac".ref = "flake-pinning";
-  inputs."hmac".dir = "nimpkgs/h/hmac";
+  # inputs."hmac".type = "github";
+  # inputs."hmac".owner = "riinr";
+  # inputs."hmac".repo = "flake-nimble";
+  # inputs."hmac".ref = "flake-pinning";
+  # inputs."hmac".dir = "nimpkgs/h/hmac";
+  # inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-twitter-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

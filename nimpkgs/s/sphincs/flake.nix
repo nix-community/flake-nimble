@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."sphincs-master".type = "github";
   inputs."sphincs-master".owner = "riinr";
   inputs."sphincs-master".repo = "flake-nimble";
   inputs."sphincs-master".ref = "flake-pinning";
   inputs."sphincs-master".dir = "nimpkgs/s/sphincs/master";
+  inputs."sphincs-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sphincs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sphincs-v0_1_0".type = "github";
   inputs."sphincs-v0_1_0".owner = "riinr";
   inputs."sphincs-v0_1_0".repo = "flake-nimble";
   inputs."sphincs-v0_1_0".ref = "flake-pinning";
   inputs."sphincs-v0_1_0".dir = "nimpkgs/s/sphincs/v0_1_0";
+  inputs."sphincs-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sphincs-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."sphincs-v0_1_1".type = "github";
   inputs."sphincs-v0_1_1".owner = "riinr";
   inputs."sphincs-v0_1_1".repo = "flake-nimble";
   inputs."sphincs-v0_1_1".ref = "flake-pinning";
   inputs."sphincs-v0_1_1".dir = "nimpkgs/s/sphincs/v0_1_1";
+  inputs."sphincs-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sphincs-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

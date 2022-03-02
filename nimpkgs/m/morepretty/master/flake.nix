@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-morepretty-master.flake = false;
   inputs.src-morepretty-master.type = "github";
   inputs.src-morepretty-master.owner = "treeform";
   inputs.src-morepretty-master.repo = "morepretty";
   inputs.src-morepretty-master.ref = "refs/heads/master";
+  inputs.src-morepretty-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-morepretty-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

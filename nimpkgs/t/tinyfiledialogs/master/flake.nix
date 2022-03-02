@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-tinyfiledialogs-master.flake = false;
   inputs.src-tinyfiledialogs-master.type = "github";
   inputs.src-tinyfiledialogs-master.owner = "juancarlospaco";
   inputs.src-tinyfiledialogs-master.repo = "nim-tinyfiledialogs";
   inputs.src-tinyfiledialogs-master.ref = "refs/heads/master";
+  inputs.src-tinyfiledialogs-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-tinyfiledialogs-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-htsparse-0_1_1.flake = false;
   inputs.src-htsparse-0_1_1.type = "github";
   inputs.src-htsparse-0_1_1.owner = "haxscramper";
   inputs.src-htsparse-0_1_1.repo = "htsparse";
   inputs.src-htsparse-0_1_1.ref = "refs/tags/0.1.1";
+  inputs.src-htsparse-0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."hmisc".type = "github";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".repo = "flake-nimble";
-  inputs."hmisc".ref = "flake-pinning";
-  inputs."hmisc".dir = "nimpkgs/h/hmisc";
+  # inputs."hmisc".type = "github";
+  # inputs."hmisc".owner = "riinr";
+  # inputs."hmisc".repo = "flake-nimble";
+  # inputs."hmisc".ref = "flake-pinning";
+  # inputs."hmisc".dir = "nimpkgs/h/hmisc";
+  # inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."hparse".type = "github";
-  inputs."hparse".owner = "riinr";
-  inputs."hparse".repo = "flake-nimble";
-  inputs."hparse".ref = "flake-pinning";
-  inputs."hparse".dir = "nimpkgs/h/hparse";
+  # inputs."hparse".type = "github";
+  # inputs."hparse".owner = "riinr";
+  # inputs."hparse".repo = "flake-nimble";
+  # inputs."hparse".ref = "flake-pinning";
+  # inputs."hparse".dir = "nimpkgs/h/hparse";
+  # inputs."hparse".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."hparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-htsparse-0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

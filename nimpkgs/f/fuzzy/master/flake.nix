@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-fuzzy-master.flake = false;
   inputs.src-fuzzy-master.type = "github";
   inputs.src-fuzzy-master.owner = "pigmej";
   inputs.src-fuzzy-master.repo = "fuzzy";
   inputs.src-fuzzy-master.ref = "refs/heads/master";
+  inputs.src-fuzzy-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-fuzzy-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

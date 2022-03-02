@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."hackpad-master".type = "github";
   inputs."hackpad-master".owner = "riinr";
   inputs."hackpad-master".repo = "flake-nimble";
   inputs."hackpad-master".ref = "flake-pinning";
   inputs."hackpad-master".dir = "nimpkgs/h/hackpad/master";
+  inputs."hackpad-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hackpad-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-torim-master.flake = false;
   inputs.src-torim-master.type = "github";
   inputs.src-torim-master.owner = "KittyTechnoProgrammer";
   inputs.src-torim-master.repo = "torim";
   inputs.src-torim-master.ref = "refs/heads/master";
+  inputs.src-torim-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-torim-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

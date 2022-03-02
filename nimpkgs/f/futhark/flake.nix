@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."futhark-master".type = "github";
   inputs."futhark-master".owner = "riinr";
   inputs."futhark-master".repo = "flake-nimble";
   inputs."futhark-master".ref = "flake-pinning";
   inputs."futhark-master".dir = "nimpkgs/f/futhark/master";
+  inputs."futhark-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."futhark-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."futhark-v0_3_0".type = "github";
   inputs."futhark-v0_3_0".owner = "riinr";
   inputs."futhark-v0_3_0".repo = "flake-nimble";
   inputs."futhark-v0_3_0".ref = "flake-pinning";
   inputs."futhark-v0_3_0".dir = "nimpkgs/f/futhark/v0_3_0";
+  inputs."futhark-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."futhark-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."futhark-v0_3_1".type = "github";
   inputs."futhark-v0_3_1".owner = "riinr";
   inputs."futhark-v0_3_1".repo = "flake-nimble";
   inputs."futhark-v0_3_1".ref = "flake-pinning";
   inputs."futhark-v0_3_1".dir = "nimpkgs/f/futhark/v0_3_1";
+  inputs."futhark-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."futhark-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

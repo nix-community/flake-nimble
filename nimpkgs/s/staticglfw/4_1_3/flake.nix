@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-staticglfw-4_1_3.flake = false;
   inputs.src-staticglfw-4_1_3.type = "github";
   inputs.src-staticglfw-4_1_3.owner = "treeform";
   inputs.src-staticglfw-4_1_3.repo = "staticglfw";
   inputs.src-staticglfw-4_1_3.ref = "refs/tags/4.1.3";
+  inputs.src-staticglfw-4_1_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."opengl".type = "github";
-  inputs."opengl".owner = "riinr";
-  inputs."opengl".repo = "flake-nimble";
-  inputs."opengl".ref = "flake-pinning";
-  inputs."opengl".dir = "nimpkgs/o/opengl";
+  # inputs."opengl".type = "github";
+  # inputs."opengl".owner = "riinr";
+  # inputs."opengl".repo = "flake-nimble";
+  # inputs."opengl".ref = "flake-pinning";
+  # inputs."opengl".dir = "nimpkgs/o/opengl";
+  # inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-staticglfw-4_1_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

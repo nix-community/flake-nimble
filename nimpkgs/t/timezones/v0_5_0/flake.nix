@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-timezones-v0_5_0.flake = false;
   inputs.src-timezones-v0_5_0.type = "github";
   inputs.src-timezones-v0_5_0.owner = "GULPF";
   inputs.src-timezones-v0_5_0.repo = "timezones";
   inputs.src-timezones-v0_5_0.ref = "refs/tags/v0.5.0";
+  inputs.src-timezones-v0_5_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-timezones-v0_5_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646204725,
+        "narHash": "sha256-ci/bfYI80rfwzEbASruA3zQn4kBBnShM3uijzqCGZ/k=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "fed0ad698da72655fca7ddabfae687275086ecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-allographer-v0_15_1": "src-allographer-v0_15_1"
+      }
+    },
+    "src-allographer-v0_15_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614852173,
+        "narHash": "sha256-naxGD5A/x4aRFIhhK4esWG3Tk8bgQm1mlD5jN7WLNMI=",
+        "owner": "itsumura-h",
+        "repo": "nim-allographer",
+        "rev": "007c2277724a16c22bc4e95d21119b0f715e9f5b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "itsumura-h",
+        "ref": "refs/tags/v0.15.1",
+        "repo": "nim-allographer",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-torch-v0_1_19.flake = false;
   inputs.src-torch-v0_1_19.type = "github";
   inputs.src-torch-v0_1_19.owner = "fragcolor-xyz";
   inputs.src-torch-v0_1_19.repo = "nimtorch";
   inputs.src-torch-v0_1_19.ref = "refs/tags/v0.1.19";
+  inputs.src-torch-v0_1_19.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."fragments".type = "github";
-  inputs."fragments".owner = "riinr";
-  inputs."fragments".repo = "flake-nimble";
-  inputs."fragments".ref = "flake-pinning";
-  inputs."fragments".dir = "nimpkgs/f/fragments";
+  # inputs."fragments".type = "github";
+  # inputs."fragments".owner = "riinr";
+  # inputs."fragments".repo = "flake-nimble";
+  # inputs."fragments".ref = "flake-pinning";
+  # inputs."fragments".dir = "nimpkgs/f/fragments";
+  # inputs."fragments".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."fragments".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-torch-v0_1_19, ...}@deps:
     let lib = flakeNimbleLib.lib;

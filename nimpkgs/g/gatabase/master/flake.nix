@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-gatabase-master.flake = false;
   inputs.src-gatabase-master.type = "github";
   inputs.src-gatabase-master.owner = "juancarlospaco";
   inputs.src-gatabase-master.repo = "nim-gatabase";
   inputs.src-gatabase-master.ref = "refs/heads/master";
+  inputs.src-gatabase-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-gatabase-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."murmurhash-master".type = "github";
   inputs."murmurhash-master".owner = "riinr";
   inputs."murmurhash-master".repo = "flake-nimble";
   inputs."murmurhash-master".ref = "flake-pinning";
   inputs."murmurhash-master".dir = "nimpkgs/m/murmurhash/master";
+  inputs."murmurhash-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."murmurhash-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."murmurhash-0_3_0".type = "github";
   inputs."murmurhash-0_3_0".owner = "riinr";
   inputs."murmurhash-0_3_0".repo = "flake-nimble";
   inputs."murmurhash-0_3_0".ref = "flake-pinning";
   inputs."murmurhash-0_3_0".dir = "nimpkgs/m/murmurhash/0_3_0";
+  inputs."murmurhash-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."murmurhash-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."murmurhash-0_4_0".type = "github";
   inputs."murmurhash-0_4_0".owner = "riinr";
   inputs."murmurhash-0_4_0".repo = "flake-nimble";
   inputs."murmurhash-0_4_0".ref = "flake-pinning";
   inputs."murmurhash-0_4_0".dir = "nimpkgs/m/murmurhash/0_4_0";
+  inputs."murmurhash-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."murmurhash-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

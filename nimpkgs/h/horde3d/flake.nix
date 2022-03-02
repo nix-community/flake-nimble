@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."horde3d-master".type = "github";
   inputs."horde3d-master".owner = "riinr";
   inputs."horde3d-master".repo = "flake-nimble";
   inputs."horde3d-master".ref = "flake-pinning";
   inputs."horde3d-master".dir = "nimpkgs/h/horde3d/master";
+  inputs."horde3d-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."horde3d-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

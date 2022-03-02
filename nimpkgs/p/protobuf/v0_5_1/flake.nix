@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-protobuf-v0_5_1.flake = false;
   inputs.src-protobuf-v0_5_1.type = "github";
   inputs.src-protobuf-v0_5_1.owner = "PMunch";
   inputs.src-protobuf-v0_5_1.repo = "protobuf-nim";
   inputs.src-protobuf-v0_5_1.ref = "refs/tags/v0.5.1";
+  inputs.src-protobuf-v0_5_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."combparser".type = "github";
-  inputs."combparser".owner = "riinr";
-  inputs."combparser".repo = "flake-nimble";
-  inputs."combparser".ref = "flake-pinning";
-  inputs."combparser".dir = "nimpkgs/c/combparser";
+  # inputs."combparser".type = "github";
+  # inputs."combparser".owner = "riinr";
+  # inputs."combparser".repo = "flake-nimble";
+  # inputs."combparser".ref = "flake-pinning";
+  # inputs."combparser".dir = "nimpkgs/c/combparser";
+  # inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-protobuf-v0_5_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

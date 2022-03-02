@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-neverwinter-1_2_8.flake = false;
   inputs.src-neverwinter-1_2_8.type = "github";
   inputs.src-neverwinter-1_2_8.owner = "niv";
   inputs.src-neverwinter-1_2_8.repo = "neverwinter.nim";
   inputs.src-neverwinter-1_2_8.ref = "refs/tags/1.2.8";
+  inputs.src-neverwinter-1_2_8.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-neverwinter-1_2_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

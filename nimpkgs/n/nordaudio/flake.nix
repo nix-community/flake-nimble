@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."nordaudio-main".type = "github";
   inputs."nordaudio-main".owner = "riinr";
   inputs."nordaudio-main".repo = "flake-nimble";
   inputs."nordaudio-main".ref = "flake-pinning";
   inputs."nordaudio-main".dir = "nimpkgs/n/nordaudio/main";
+  inputs."nordaudio-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nordaudio-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."htmlunescape-master".type = "github";
   inputs."htmlunescape-master".owner = "riinr";
   inputs."htmlunescape-master".repo = "flake-nimble";
   inputs."htmlunescape-master".ref = "flake-pinning";
   inputs."htmlunescape-master".dir = "nimpkgs/h/htmlunescape/master";
+  inputs."htmlunescape-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."htmlunescape-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."htmlunescape-v0_1".type = "github";
   inputs."htmlunescape-v0_1".owner = "riinr";
   inputs."htmlunescape-v0_1".repo = "flake-nimble";
   inputs."htmlunescape-v0_1".ref = "flake-pinning";
   inputs."htmlunescape-v0_1".dir = "nimpkgs/h/htmlunescape/v0_1";
+  inputs."htmlunescape-v0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."htmlunescape-v0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."htmlunescape-v0_2".type = "github";
   inputs."htmlunescape-v0_2".owner = "riinr";
   inputs."htmlunescape-v0_2".repo = "flake-nimble";
   inputs."htmlunescape-v0_2".ref = "flake-pinning";
   inputs."htmlunescape-v0_2".dir = "nimpkgs/h/htmlunescape/v0_2";
+  inputs."htmlunescape-v0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."htmlunescape-v0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

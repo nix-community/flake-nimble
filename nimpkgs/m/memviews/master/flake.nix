@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-memviews-master.flake = false;
   inputs.src-memviews-master.type = "github";
   inputs.src-memviews-master.owner = "ReneSac";
   inputs.src-memviews-master.repo = "memviews";
   inputs.src-memviews-master.ref = "refs/heads/master";
+  inputs.src-memviews-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."c_alikes".type = "github";
-  inputs."c_alikes".owner = "riinr";
-  inputs."c_alikes".repo = "flake-nimble";
-  inputs."c_alikes".ref = "flake-pinning";
-  inputs."c_alikes".dir = "nimpkgs/c/c_alikes";
+  # inputs."c_alikes".type = "github";
+  # inputs."c_alikes".owner = "riinr";
+  # inputs."c_alikes".repo = "flake-nimble";
+  # inputs."c_alikes".ref = "flake-pinning";
+  # inputs."c_alikes".dir = "nimpkgs/c/c_alikes";
+  # inputs."c_alikes".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."c_alikes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-memviews-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

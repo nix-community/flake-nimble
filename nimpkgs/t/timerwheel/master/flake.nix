@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-timerwheel-master.flake = false;
   inputs.src-timerwheel-master.type = "github";
   inputs.src-timerwheel-master.owner = "xflywind";
   inputs.src-timerwheel-master.repo = "timerwheel";
   inputs.src-timerwheel-master.ref = "refs/heads/master";
+  inputs.src-timerwheel-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-timerwheel-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

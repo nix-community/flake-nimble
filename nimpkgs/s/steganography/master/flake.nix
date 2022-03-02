@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-steganography-master.flake = false;
   inputs.src-steganography-master.type = "github";
   inputs.src-steganography-master.owner = "treeform";
   inputs.src-steganography-master.repo = "steganography";
   inputs.src-steganography-master.ref = "refs/heads/master";
+  inputs.src-steganography-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."pixie".type = "github";
-  inputs."pixie".owner = "riinr";
-  inputs."pixie".repo = "flake-nimble";
-  inputs."pixie".ref = "flake-pinning";
-  inputs."pixie".dir = "nimpkgs/p/pixie";
+  # inputs."pixie".type = "github";
+  # inputs."pixie".owner = "riinr";
+  # inputs."pixie".repo = "flake-nimble";
+  # inputs."pixie".ref = "flake-pinning";
+  # inputs."pixie".dir = "nimpkgs/p/pixie";
+  # inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-steganography-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

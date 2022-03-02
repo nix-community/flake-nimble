@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-urlshortener-master.flake = false;
   inputs.src-urlshortener-master.type = "github";
   inputs.src-urlshortener-master.owner = "jabbalaci";
   inputs.src-urlshortener-master.repo = "UrlShortener";
   inputs.src-urlshortener-master.ref = "refs/heads/master";
+  inputs.src-urlshortener-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-urlshortener-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

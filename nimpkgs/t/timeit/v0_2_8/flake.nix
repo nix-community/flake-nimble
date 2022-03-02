@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-timeit-v0_2_8.flake = false;
   inputs.src-timeit-v0_2_8.type = "github";
   inputs.src-timeit-v0_2_8.owner = "xflywind";
   inputs.src-timeit-v0_2_8.repo = "timeit";
   inputs.src-timeit-v0_2_8.ref = "refs/tags/v0.2.8";
+  inputs.src-timeit-v0_2_8.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-timeit-v0_2_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

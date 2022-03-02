@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-npg-0_1_0.flake = false;
   inputs.src-npg-0_1_0.type = "github";
   inputs.src-npg-0_1_0.owner = "rustomax";
   inputs.src-npg-0_1_0.repo = "npg";
   inputs.src-npg-0_1_0.ref = "refs/tags/0.1.0";
+  inputs.src-npg-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."passgen".type = "github";
-  inputs."passgen".owner = "riinr";
-  inputs."passgen".repo = "flake-nimble";
-  inputs."passgen".ref = "flake-pinning";
-  inputs."passgen".dir = "nimpkgs/p/passgen";
+  # inputs."passgen".type = "github";
+  # inputs."passgen".owner = "riinr";
+  # inputs."passgen".repo = "flake-nimble";
+  # inputs."passgen".ref = "flake-pinning";
+  # inputs."passgen".dir = "nimpkgs/p/passgen";
+  # inputs."passgen".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."passgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-npg-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-subhook-master.flake = false;
   inputs.src-subhook-master.type = "github";
   inputs.src-subhook-master.owner = "ba0f3";
   inputs.src-subhook-master.repo = "subhook.nim";
   inputs.src-subhook-master.ref = "refs/heads/master";
+  inputs.src-subhook-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-subhook-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

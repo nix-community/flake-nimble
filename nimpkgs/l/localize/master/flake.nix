@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-localize-master.flake = false;
   inputs.src-localize-master.type = "github";
   inputs.src-localize-master.owner = "levovix0";
   inputs.src-localize-master.repo = "localize";
   inputs.src-localize-master.ref = "refs/heads/master";
+  inputs.src-localize-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."fusion".type = "github";
-  inputs."fusion".owner = "riinr";
-  inputs."fusion".repo = "flake-nimble";
-  inputs."fusion".ref = "flake-pinning";
-  inputs."fusion".dir = "nimpkgs/f/fusion";
+  # inputs."fusion".type = "github";
+  # inputs."fusion".owner = "riinr";
+  # inputs."fusion".repo = "flake-nimble";
+  # inputs."fusion".ref = "flake-pinning";
+  # inputs."fusion".dir = "nimpkgs/f/fusion";
+  # inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-localize-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

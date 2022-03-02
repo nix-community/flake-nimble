@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-py2nim-v0_1_0.flake = false;
   inputs.src-py2nim-v0_1_0.type = "github";
   inputs.src-py2nim-v0_1_0.owner = "Niminem";
   inputs.src-py2nim-v0_1_0.repo = "Py2Nim";
   inputs.src-py2nim-v0_1_0.ref = "refs/tags/v0.1.0";
+  inputs.src-py2nim-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."compiler".type = "github";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".repo = "flake-nimble";
-  inputs."compiler".ref = "flake-pinning";
-  inputs."compiler".dir = "nimpkgs/c/compiler";
+  # inputs."compiler".type = "github";
+  # inputs."compiler".owner = "riinr";
+  # inputs."compiler".repo = "flake-nimble";
+  # inputs."compiler".ref = "flake-pinning";
+  # inputs."compiler".dir = "nimpkgs/c/compiler";
+  # inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."nimscripter".type = "github";
-  inputs."nimscripter".owner = "riinr";
-  inputs."nimscripter".repo = "flake-nimble";
-  inputs."nimscripter".ref = "flake-pinning";
-  inputs."nimscripter".dir = "nimpkgs/n/nimscripter";
+  # inputs."nimscripter".type = "github";
+  # inputs."nimscripter".owner = "riinr";
+  # inputs."nimscripter".repo = "flake-nimble";
+  # inputs."nimscripter".ref = "flake-pinning";
+  # inputs."nimscripter".dir = "nimpkgs/n/nimscripter";
+  # inputs."nimscripter".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimscripter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-py2nim-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

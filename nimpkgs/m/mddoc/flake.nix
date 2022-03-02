@@ -5,41 +5,60 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."mddoc-master".type = "github";
   inputs."mddoc-master".owner = "riinr";
   inputs."mddoc-master".repo = "flake-nimble";
   inputs."mddoc-master".ref = "flake-pinning";
   inputs."mddoc-master".dir = "nimpkgs/m/mddoc/master";
+  inputs."mddoc-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mddoc-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."mddoc-0_0_1".type = "github";
   inputs."mddoc-0_0_1".owner = "riinr";
   inputs."mddoc-0_0_1".repo = "flake-nimble";
   inputs."mddoc-0_0_1".ref = "flake-pinning";
   inputs."mddoc-0_0_1".dir = "nimpkgs/m/mddoc/0_0_1";
+  inputs."mddoc-0_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mddoc-0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."mddoc-0_0_2".type = "github";
   inputs."mddoc-0_0_2".owner = "riinr";
   inputs."mddoc-0_0_2".repo = "flake-nimble";
   inputs."mddoc-0_0_2".ref = "flake-pinning";
   inputs."mddoc-0_0_2".dir = "nimpkgs/m/mddoc/0_0_2";
+  inputs."mddoc-0_0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mddoc-0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."mddoc-0_0_3".type = "github";
   inputs."mddoc-0_0_3".owner = "riinr";
   inputs."mddoc-0_0_3".repo = "flake-nimble";
   inputs."mddoc-0_0_3".ref = "flake-pinning";
   inputs."mddoc-0_0_3".dir = "nimpkgs/m/mddoc/0_0_3";
+  inputs."mddoc-0_0_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mddoc-0_0_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."mddoc-0_0_4".type = "github";
   inputs."mddoc-0_0_4".owner = "riinr";
   inputs."mddoc-0_0_4".repo = "flake-nimble";
   inputs."mddoc-0_0_4".ref = "flake-pinning";
   inputs."mddoc-0_0_4".dir = "nimpkgs/m/mddoc/0_0_4";
+  inputs."mddoc-0_0_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mddoc-0_0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."mddoc-v0_0_4".type = "github";
   inputs."mddoc-v0_0_4".owner = "riinr";
   inputs."mddoc-v0_0_4".repo = "flake-nimble";
   inputs."mddoc-v0_0_4".ref = "flake-pinning";
   inputs."mddoc-v0_0_4".dir = "nimpkgs/m/mddoc/v0_0_4";
+  inputs."mddoc-v0_0_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mddoc-v0_0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

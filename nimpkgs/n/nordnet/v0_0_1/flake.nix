@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nordnet-v0_0_1.flake = false;
   inputs.src-nordnet-v0_0_1.type = "github";
   inputs.src-nordnet-v0_0_1.owner = "ThomasTJdev";
   inputs.src-nordnet-v0_0_1.repo = "nim_nordnet_api";
   inputs.src-nordnet-v0_0_1.ref = "refs/tags/v0.0.1";
+  inputs.src-nordnet-v0_0_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nmqtt".type = "github";
-  inputs."nmqtt".owner = "riinr";
-  inputs."nmqtt".repo = "flake-nimble";
-  inputs."nmqtt".ref = "flake-pinning";
-  inputs."nmqtt".dir = "nimpkgs/n/nmqtt";
+  # inputs."nmqtt".type = "github";
+  # inputs."nmqtt".owner = "riinr";
+  # inputs."nmqtt".repo = "flake-nimble";
+  # inputs."nmqtt".ref = "flake-pinning";
+  # inputs."nmqtt".dir = "nimpkgs/n/nmqtt";
+  # inputs."nmqtt".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nmqtt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."q".type = "github";
-  inputs."q".owner = "riinr";
-  inputs."q".repo = "flake-nimble";
-  inputs."q".ref = "flake-pinning";
-  inputs."q".dir = "nimpkgs/q/q";
+  # inputs."q".type = "github";
+  # inputs."q".owner = "riinr";
+  # inputs."q".repo = "flake-nimble";
+  # inputs."q".ref = "flake-pinning";
+  # inputs."q".dir = "nimpkgs/q/q";
+  # inputs."q".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."q".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nordnet-v0_0_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

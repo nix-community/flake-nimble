@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-nimtetris-v0_3_1.flake = false;
   inputs.src-nimtetris-v0_3_1.type = "github";
   inputs.src-nimtetris-v0_3_1.owner = "jiro4989";
   inputs.src-nimtetris-v0_3_1.repo = "nimtetris";
   inputs.src-nimtetris-v0_3_1.ref = "refs/tags/v0.3.1";
+  inputs.src-nimtetris-v0_3_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."illwill".type = "github";
-  inputs."illwill".owner = "riinr";
-  inputs."illwill".repo = "flake-nimble";
-  inputs."illwill".ref = "flake-pinning";
-  inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".type = "github";
+  # inputs."illwill".owner = "riinr";
+  # inputs."illwill".repo = "flake-nimble";
+  # inputs."illwill".ref = "flake-pinning";
+  # inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimtetris-v0_3_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

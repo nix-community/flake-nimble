@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-vscds-master.flake = false;
   inputs.src-vscds-master.type = "github";
   inputs.src-vscds-master.owner = "doongjohn";
   inputs.src-vscds-master.repo = "vscds";
   inputs.src-vscds-master.ref = "refs/heads/master";
+  inputs.src-vscds-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimlevenshtein".type = "github";
-  inputs."nimlevenshtein".owner = "riinr";
-  inputs."nimlevenshtein".repo = "flake-nimble";
-  inputs."nimlevenshtein".ref = "flake-pinning";
-  inputs."nimlevenshtein".dir = "nimpkgs/n/nimlevenshtein";
+  # inputs."nimlevenshtein".type = "github";
+  # inputs."nimlevenshtein".owner = "riinr";
+  # inputs."nimlevenshtein".repo = "flake-nimble";
+  # inputs."nimlevenshtein".ref = "flake-pinning";
+  # inputs."nimlevenshtein".dir = "nimpkgs/n/nimlevenshtein";
+  # inputs."nimlevenshtein".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimlevenshtein".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-vscds-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

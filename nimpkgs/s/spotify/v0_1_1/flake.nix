@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-spotify-v0_1_1.flake = false;
   inputs.src-spotify-v0_1_1.type = "github";
   inputs.src-spotify-v0_1_1.owner = "CORDEA";
   inputs.src-spotify-v0_1_1.repo = "spotify";
   inputs.src-spotify-v0_1_1.ref = "refs/tags/v0.1.1";
+  inputs.src-spotify-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."oauth".type = "github";
-  inputs."oauth".owner = "riinr";
-  inputs."oauth".repo = "flake-nimble";
-  inputs."oauth".ref = "flake-pinning";
-  inputs."oauth".dir = "nimpkgs/o/oauth";
+  # inputs."oauth".type = "github";
+  # inputs."oauth".owner = "riinr";
+  # inputs."oauth".repo = "flake-nimble";
+  # inputs."oauth".ref = "flake-pinning";
+  # inputs."oauth".dir = "nimpkgs/o/oauth";
+  # inputs."oauth".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."oauth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-spotify-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

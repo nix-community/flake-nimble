@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."trick-master".type = "github";
   inputs."trick-master".owner = "riinr";
   inputs."trick-master".repo = "flake-nimble";
   inputs."trick-master".ref = "flake-pinning";
   inputs."trick-master".dir = "nimpkgs/t/trick/master";
+  inputs."trick-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."trick-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."trick-0_1_1".type = "github";
   inputs."trick-0_1_1".owner = "riinr";
   inputs."trick-0_1_1".repo = "flake-nimble";
   inputs."trick-0_1_1".ref = "flake-pinning";
   inputs."trick-0_1_1".dir = "nimpkgs/t/trick/0_1_1";
+  inputs."trick-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."trick-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."trick-0_1_2".type = "github";
   inputs."trick-0_1_2".owner = "riinr";
   inputs."trick-0_1_2".repo = "flake-nimble";
   inputs."trick-0_1_2".ref = "flake-pinning";
   inputs."trick-0_1_2".dir = "nimpkgs/t/trick/0_1_2";
+  inputs."trick-0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."trick-0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;
