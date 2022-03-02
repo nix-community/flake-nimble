@@ -5,47 +5,69 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."webgui-master".type = "github";
   inputs."webgui-master".owner = "riinr";
   inputs."webgui-master".repo = "flake-nimble";
   inputs."webgui-master".ref = "flake-pinning";
   inputs."webgui-master".dir = "nimpkgs/w/webgui/master";
+  inputs."webgui-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."webgui-0_2_0".type = "github";
   inputs."webgui-0_2_0".owner = "riinr";
   inputs."webgui-0_2_0".repo = "flake-nimble";
   inputs."webgui-0_2_0".ref = "flake-pinning";
   inputs."webgui-0_2_0".dir = "nimpkgs/w/webgui/0_2_0";
+  inputs."webgui-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."webgui-0_4_0".type = "github";
   inputs."webgui-0_4_0".owner = "riinr";
   inputs."webgui-0_4_0".repo = "flake-nimble";
   inputs."webgui-0_4_0".ref = "flake-pinning";
   inputs."webgui-0_4_0".dir = "nimpkgs/w/webgui/0_4_0";
+  inputs."webgui-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."webgui-0_5_0".type = "github";
   inputs."webgui-0_5_0".owner = "riinr";
   inputs."webgui-0_5_0".repo = "flake-nimble";
   inputs."webgui-0_5_0".ref = "flake-pinning";
   inputs."webgui-0_5_0".dir = "nimpkgs/w/webgui/0_5_0";
+  inputs."webgui-0_5_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui-0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."webgui-0_6_0".type = "github";
   inputs."webgui-0_6_0".owner = "riinr";
   inputs."webgui-0_6_0".repo = "flake-nimble";
   inputs."webgui-0_6_0".ref = "flake-pinning";
   inputs."webgui-0_6_0".dir = "nimpkgs/w/webgui/0_6_0";
+  inputs."webgui-0_6_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui-0_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."webgui-0_8_0".type = "github";
   inputs."webgui-0_8_0".owner = "riinr";
   inputs."webgui-0_8_0".repo = "flake-nimble";
   inputs."webgui-0_8_0".ref = "flake-pinning";
   inputs."webgui-0_8_0".dir = "nimpkgs/w/webgui/0_8_0";
+  inputs."webgui-0_8_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui-0_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."webgui-0_9_0".type = "github";
   inputs."webgui-0_9_0".owner = "riinr";
   inputs."webgui-0_9_0".repo = "flake-nimble";
   inputs."webgui-0_9_0".ref = "flake-pinning";
   inputs."webgui-0_9_0".dir = "nimpkgs/w/webgui/0_9_0";
+  inputs."webgui-0_9_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui-0_9_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

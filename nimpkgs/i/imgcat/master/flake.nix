@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-imgcat-master.flake = false;
   inputs.src-imgcat-master.type = "github";
   inputs.src-imgcat-master.owner = "not-lum";
   inputs.src-imgcat-master.repo = "imgcat";
   inputs.src-imgcat-master.ref = "refs/heads/master";
+  inputs.src-imgcat-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."imageman".type = "github";
-  inputs."imageman".owner = "riinr";
-  inputs."imageman".repo = "flake-nimble";
-  inputs."imageman".ref = "flake-pinning";
-  inputs."imageman".dir = "nimpkgs/i/imageman";
+  # inputs."imageman".type = "github";
+  # inputs."imageman".owner = "riinr";
+  # inputs."imageman".repo = "flake-nimble";
+  # inputs."imageman".ref = "flake-pinning";
+  # inputs."imageman".dir = "nimpkgs/i/imageman";
+  # inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."argparse".type = "github";
-  inputs."argparse".owner = "riinr";
-  inputs."argparse".repo = "flake-nimble";
-  inputs."argparse".ref = "flake-pinning";
-  inputs."argparse".dir = "nimpkgs/a/argparse";
+  # inputs."argparse".type = "github";
+  # inputs."argparse".owner = "riinr";
+  # inputs."argparse".repo = "flake-nimble";
+  # inputs."argparse".ref = "flake-pinning";
+  # inputs."argparse".dir = "nimpkgs/a/argparse";
+  # inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-imgcat-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

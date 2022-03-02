@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."io-oculus-master".type = "github";
   inputs."io-oculus-master".owner = "riinr";
   inputs."io-oculus-master".repo = "flake-nimble";
   inputs."io-oculus-master".ref = "flake-pinning";
   inputs."io-oculus-master".dir = "nimpkgs/i/io-oculus/master";
+  inputs."io-oculus-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."io-oculus-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

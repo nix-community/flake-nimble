@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-retranslator-0_0_6.flake = false;
   inputs.src-retranslator-0_0_6.type = "github";
   inputs.src-retranslator-0_0_6.owner = "linksplatform";
   inputs.src-retranslator-0_0_6.repo = "RegularExpressions.Transformer";
   inputs.src-retranslator-0_0_6.ref = "refs/tags/0.0.6";
+  inputs.src-retranslator-0_0_6.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nre".type = "github";
-  inputs."nre".owner = "riinr";
-  inputs."nre".repo = "flake-nimble";
-  inputs."nre".ref = "flake-pinning";
-  inputs."nre".dir = "nimpkgs/n/nre";
+  # inputs."nre".type = "github";
+  # inputs."nre".owner = "riinr";
+  # inputs."nre".repo = "flake-nimble";
+  # inputs."nre".ref = "flake-pinning";
+  # inputs."nre".dir = "nimpkgs/n/nre";
+  # inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-retranslator-0_0_6, ...}@deps:
     let lib = flakeNimbleLib.lib;

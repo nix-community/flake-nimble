@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-kmod-master.flake = false;
   inputs.src-kmod-master.type = "github";
   inputs.src-kmod-master.owner = "alaviss";
   inputs.src-kmod-master.repo = "kmod";
   inputs.src-kmod-master.ref = "refs/heads/master";
+  inputs.src-kmod-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimterop".type = "github";
-  inputs."nimterop".owner = "riinr";
-  inputs."nimterop".repo = "flake-nimble";
-  inputs."nimterop".ref = "flake-pinning";
-  inputs."nimterop".dir = "nimpkgs/n/nimterop";
+  # inputs."nimterop".type = "github";
+  # inputs."nimterop".owner = "riinr";
+  # inputs."nimterop".repo = "flake-nimble";
+  # inputs."nimterop".ref = "flake-pinning";
+  # inputs."nimterop".dir = "nimpkgs/n/nimterop";
+  # inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-kmod-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

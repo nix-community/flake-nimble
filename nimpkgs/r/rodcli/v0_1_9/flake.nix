@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-rodcli-v0_1_9.flake = false;
   inputs.src-rodcli-v0_1_9.type = "github";
   inputs.src-rodcli-v0_1_9.owner = "jabbalaci";
   inputs.src-rodcli-v0_1_9.repo = "NimCliHelper";
   inputs.src-rodcli-v0_1_9.ref = "refs/tags/v0.1.9";
+  inputs.src-rodcli-v0_1_9.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-rodcli-v0_1_9, ...}@deps:
     let lib = flakeNimbleLib.lib;

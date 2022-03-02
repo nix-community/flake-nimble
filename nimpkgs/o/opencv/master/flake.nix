@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-opencv-master.flake = false;
   inputs.src-opencv-master.type = "github";
   inputs.src-opencv-master.owner = "dom96";
   inputs.src-opencv-master.repo = "nim-opencv";
   inputs.src-opencv-master.ref = "refs/heads/master";
+  inputs.src-opencv-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-opencv-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

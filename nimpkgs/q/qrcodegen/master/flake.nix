@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-qrcodegen-master.flake = false;
   inputs.src-qrcodegen-master.type = "github";
   inputs.src-qrcodegen-master.owner = "bunkford";
   inputs.src-qrcodegen-master.repo = "qrcodegen";
   inputs.src-qrcodegen-master.ref = "refs/heads/master";
+  inputs.src-qrcodegen-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-qrcodegen-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

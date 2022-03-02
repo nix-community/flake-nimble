@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-winregistry-v0_1_8.flake = false;
   inputs.src-winregistry-v0_1_8.type = "github";
   inputs.src-winregistry-v0_1_8.owner = "miere43";
   inputs.src-winregistry-v0_1_8.repo = "nim-registry";
   inputs.src-winregistry-v0_1_8.ref = "refs/tags/v0.1.8";
+  inputs.src-winregistry-v0_1_8.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-winregistry-v0_1_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

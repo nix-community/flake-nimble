@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."jestermongopool-master".type = "github";
   inputs."jestermongopool-master".owner = "riinr";
   inputs."jestermongopool-master".repo = "flake-nimble";
   inputs."jestermongopool-master".ref = "flake-pinning";
   inputs."jestermongopool-master".dir = "nimpkgs/j/jestermongopool/master";
+  inputs."jestermongopool-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jestermongopool-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."jestermongopool-v1_0_1".type = "github";
   inputs."jestermongopool-v1_0_1".owner = "riinr";
   inputs."jestermongopool-v1_0_1".repo = "flake-nimble";
   inputs."jestermongopool-v1_0_1".ref = "flake-pinning";
   inputs."jestermongopool-v1_0_1".dir = "nimpkgs/j/jestermongopool/v1_0_1";
+  inputs."jestermongopool-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jestermongopool-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

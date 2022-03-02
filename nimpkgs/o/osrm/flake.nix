@@ -5,17 +5,24 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."osrm-master".type = "github";
   inputs."osrm-master".owner = "riinr";
   inputs."osrm-master".repo = "flake-nimble";
   inputs."osrm-master".ref = "flake-pinning";
   inputs."osrm-master".dir = "nimpkgs/o/osrm/master";
+  inputs."osrm-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."osrm-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."osrm-0_1_5".type = "github";
   inputs."osrm-0_1_5".owner = "riinr";
   inputs."osrm-0_1_5".repo = "flake-nimble";
   inputs."osrm-0_1_5".ref = "flake-pinning";
   inputs."osrm-0_1_5".dir = "nimpkgs/o/osrm/0_1_5";
+  inputs."osrm-0_1_5".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."osrm-0_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

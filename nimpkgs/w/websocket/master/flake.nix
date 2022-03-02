@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-websocket-master.flake = false;
   inputs.src-websocket-master.type = "github";
   inputs.src-websocket-master.owner = "niv";
   inputs.src-websocket-master.repo = "websocket.nim";
   inputs.src-websocket-master.ref = "refs/heads/master";
+  inputs.src-websocket-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-websocket-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

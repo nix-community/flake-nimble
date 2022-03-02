@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."onedrive-master".type = "github";
   inputs."onedrive-master".owner = "riinr";
   inputs."onedrive-master".repo = "flake-nimble";
   inputs."onedrive-master".ref = "flake-pinning";
   inputs."onedrive-master".dir = "nimpkgs/o/onedrive/master";
+  inputs."onedrive-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."onedrive-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

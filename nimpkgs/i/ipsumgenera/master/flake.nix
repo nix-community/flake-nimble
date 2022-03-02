@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-ipsumgenera-master.flake = false;
   inputs.src-ipsumgenera-master.type = "github";
   inputs.src-ipsumgenera-master.owner = "dom96";
   inputs.src-ipsumgenera-master.repo = "ipsumgenera";
   inputs.src-ipsumgenera-master.ref = "refs/heads/master";
+  inputs.src-ipsumgenera-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-ipsumgenera-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-wpspin-master.flake = false;
   inputs.src-wpspin-master.type = "github";
   inputs.src-wpspin-master.owner = "drygdryg";
   inputs.src-wpspin-master.repo = "wpspin-nim";
   inputs.src-wpspin-master.ref = "refs/heads/master";
+  inputs.src-wpspin-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."argparse".type = "github";
-  inputs."argparse".owner = "riinr";
-  inputs."argparse".repo = "flake-nimble";
-  inputs."argparse".ref = "flake-pinning";
-  inputs."argparse".dir = "nimpkgs/a/argparse";
+  # inputs."argparse".type = "github";
+  # inputs."argparse".owner = "riinr";
+  # inputs."argparse".repo = "flake-nimble";
+  # inputs."argparse".ref = "flake-pinning";
+  # inputs."argparse".dir = "nimpkgs/a/argparse";
+  # inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-wpspin-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

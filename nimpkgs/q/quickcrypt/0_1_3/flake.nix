@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-quickcrypt-0_1_3.flake = false;
   inputs.src-quickcrypt-0_1_3.type = "github";
   inputs.src-quickcrypt-0_1_3.owner = "theAkito";
   inputs.src-quickcrypt-0_1_3.repo = "nim-quickcrypt";
   inputs.src-quickcrypt-0_1_3.ref = "refs/tags/0.1.3";
+  inputs.src-quickcrypt-0_1_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."nimaes".type = "github";
-  inputs."nimaes".owner = "riinr";
-  inputs."nimaes".repo = "flake-nimble";
-  inputs."nimaes".ref = "flake-pinning";
-  inputs."nimaes".dir = "nimpkgs/n/nimaes";
+  # inputs."nimaes".type = "github";
+  # inputs."nimaes".owner = "riinr";
+  # inputs."nimaes".repo = "flake-nimble";
+  # inputs."nimaes".ref = "flake-pinning";
+  # inputs."nimaes".dir = "nimpkgs/n/nimaes";
+  # inputs."nimaes".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."nimaes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."neoid".type = "github";
-  inputs."neoid".owner = "riinr";
-  inputs."neoid".repo = "flake-nimble";
-  inputs."neoid".ref = "flake-pinning";
-  inputs."neoid".dir = "nimpkgs/n/neoid";
+  # inputs."neoid".type = "github";
+  # inputs."neoid".owner = "riinr";
+  # inputs."neoid".repo = "flake-nimble";
+  # inputs."neoid".ref = "flake-pinning";
+  # inputs."neoid".dir = "nimpkgs/n/neoid";
+  # inputs."neoid".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."neoid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-quickcrypt-0_1_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

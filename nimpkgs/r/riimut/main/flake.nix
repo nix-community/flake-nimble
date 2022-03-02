@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-riimut-main.flake = false;
   inputs.src-riimut-main.type = "github";
   inputs.src-riimut-main.owner = "stscoundrel";
   inputs.src-riimut-main.repo = "riimut-nim";
   inputs.src-riimut-main.ref = "refs/heads/main";
+  inputs.src-riimut-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-riimut-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

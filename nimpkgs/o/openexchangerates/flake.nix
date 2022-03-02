@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."openexchangerates-master".type = "github";
   inputs."openexchangerates-master".owner = "riinr";
   inputs."openexchangerates-master".repo = "flake-nimble";
   inputs."openexchangerates-master".ref = "flake-pinning";
   inputs."openexchangerates-master".dir = "nimpkgs/o/openexchangerates/master";
+  inputs."openexchangerates-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openexchangerates-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

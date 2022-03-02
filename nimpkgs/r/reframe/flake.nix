@@ -5,47 +5,69 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."reframe-master".type = "github";
   inputs."reframe-master".owner = "riinr";
   inputs."reframe-master".repo = "flake-nimble";
   inputs."reframe-master".ref = "flake-pinning";
   inputs."reframe-master".dir = "nimpkgs/r/reframe/master";
+  inputs."reframe-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."reframe-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."reframe-0_1_0".type = "github";
   inputs."reframe-0_1_0".owner = "riinr";
   inputs."reframe-0_1_0".repo = "flake-nimble";
   inputs."reframe-0_1_0".ref = "flake-pinning";
   inputs."reframe-0_1_0".dir = "nimpkgs/r/reframe/0_1_0";
+  inputs."reframe-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."reframe-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."reframe-0_2_0".type = "github";
   inputs."reframe-0_2_0".owner = "riinr";
   inputs."reframe-0_2_0".repo = "flake-nimble";
   inputs."reframe-0_2_0".ref = "flake-pinning";
   inputs."reframe-0_2_0".dir = "nimpkgs/r/reframe/0_2_0";
+  inputs."reframe-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."reframe-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."reframe-0_3_0".type = "github";
   inputs."reframe-0_3_0".owner = "riinr";
   inputs."reframe-0_3_0".repo = "flake-nimble";
   inputs."reframe-0_3_0".ref = "flake-pinning";
   inputs."reframe-0_3_0".dir = "nimpkgs/r/reframe/0_3_0";
+  inputs."reframe-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."reframe-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."reframe-0_3_1".type = "github";
   inputs."reframe-0_3_1".owner = "riinr";
   inputs."reframe-0_3_1".repo = "flake-nimble";
   inputs."reframe-0_3_1".ref = "flake-pinning";
   inputs."reframe-0_3_1".dir = "nimpkgs/r/reframe/0_3_1";
+  inputs."reframe-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."reframe-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."reframe-0_4_0".type = "github";
   inputs."reframe-0_4_0".owner = "riinr";
   inputs."reframe-0_4_0".repo = "flake-nimble";
   inputs."reframe-0_4_0".ref = "flake-pinning";
   inputs."reframe-0_4_0".dir = "nimpkgs/r/reframe/0_4_0";
+  inputs."reframe-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."reframe-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."reframe-0_4_1".type = "github";
   inputs."reframe-0_4_1".owner = "riinr";
   inputs."reframe-0_4_1".repo = "flake-nimble";
   inputs."reframe-0_4_1".ref = "flake-pinning";
   inputs."reframe-0_4_1".dir = "nimpkgs/r/reframe/0_4_1";
+  inputs."reframe-0_4_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."reframe-0_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

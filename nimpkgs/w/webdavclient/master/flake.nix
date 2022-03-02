@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-webdavclient-master.flake = false;
   inputs.src-webdavclient-master.type = "github";
   inputs.src-webdavclient-master.owner = "beshrkayali";
   inputs.src-webdavclient-master.repo = "webdavclient";
   inputs.src-webdavclient-master.ref = "refs/heads/master";
+  inputs.src-webdavclient-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-webdavclient-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

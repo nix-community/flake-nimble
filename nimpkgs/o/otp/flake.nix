@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-    inputs."OTP-master".type = "github";
-  inputs."OTP-master".owner = "riinr";
-  inputs."OTP-master".repo = "flake-nimble";
-  inputs."OTP-master".ref = "flake-pinning";
-  inputs."OTP-master".dir = "nimpkgs/o/otp/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+    inputs."otp-master".type = "github";
+  inputs."otp-master".owner = "riinr";
+  inputs."otp-master".repo = "flake-nimble";
+  inputs."otp-master".ref = "flake-pinning";
+  inputs."otp-master".dir = "nimpkgs/o/otp/master";
+  inputs."otp-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."otp-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

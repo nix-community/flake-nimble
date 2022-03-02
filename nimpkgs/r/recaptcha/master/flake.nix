@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-recaptcha-master.flake = false;
   inputs.src-recaptcha-master.type = "github";
   inputs.src-recaptcha-master.owner = "euantorano";
   inputs.src-recaptcha-master.repo = "recaptcha.nim";
   inputs.src-recaptcha-master.ref = "refs/heads/master";
+  inputs.src-recaptcha-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-recaptcha-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

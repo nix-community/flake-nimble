@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."qrcode-master".type = "github";
   inputs."qrcode-master".owner = "riinr";
   inputs."qrcode-master".repo = "flake-nimble";
   inputs."qrcode-master".ref = "flake-pinning";
   inputs."qrcode-master".dir = "nimpkgs/q/qrcode/master";
+  inputs."qrcode-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."qrcode-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

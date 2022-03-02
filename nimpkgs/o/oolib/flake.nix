@@ -5,47 +5,69 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."oolib-develop".type = "github";
   inputs."oolib-develop".owner = "riinr";
   inputs."oolib-develop".repo = "flake-nimble";
   inputs."oolib-develop".ref = "flake-pinning";
   inputs."oolib-develop".dir = "nimpkgs/o/oolib/develop";
+  inputs."oolib-develop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."oolib-main".type = "github";
   inputs."oolib-main".owner = "riinr";
   inputs."oolib-main".repo = "flake-nimble";
   inputs."oolib-main".ref = "flake-pinning";
   inputs."oolib-main".dir = "nimpkgs/o/oolib/main";
+  inputs."oolib-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."oolib-0_1_0".type = "github";
   inputs."oolib-0_1_0".owner = "riinr";
   inputs."oolib-0_1_0".repo = "flake-nimble";
   inputs."oolib-0_1_0".ref = "flake-pinning";
   inputs."oolib-0_1_0".dir = "nimpkgs/o/oolib/0_1_0";
+  inputs."oolib-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."oolib-0_2_0".type = "github";
   inputs."oolib-0_2_0".owner = "riinr";
   inputs."oolib-0_2_0".repo = "flake-nimble";
   inputs."oolib-0_2_0".ref = "flake-pinning";
   inputs."oolib-0_2_0".dir = "nimpkgs/o/oolib/0_2_0";
+  inputs."oolib-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."oolib-0_2_1".type = "github";
   inputs."oolib-0_2_1".owner = "riinr";
   inputs."oolib-0_2_1".repo = "flake-nimble";
   inputs."oolib-0_2_1".ref = "flake-pinning";
   inputs."oolib-0_2_1".dir = "nimpkgs/o/oolib/0_2_1";
+  inputs."oolib-0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."oolib-0_2_2".type = "github";
   inputs."oolib-0_2_2".owner = "riinr";
   inputs."oolib-0_2_2".repo = "flake-nimble";
   inputs."oolib-0_2_2".ref = "flake-pinning";
   inputs."oolib-0_2_2".dir = "nimpkgs/o/oolib/0_2_2";
+  inputs."oolib-0_2_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."oolib-0_3_0".type = "github";
   inputs."oolib-0_3_0".owner = "riinr";
   inputs."oolib-0_3_0".repo = "flake-nimble";
   inputs."oolib-0_3_0".ref = "flake-pinning";
   inputs."oolib-0_3_0".dir = "nimpkgs/o/oolib/0_3_0";
+  inputs."oolib-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."onnxruntime-main".type = "github";
   inputs."onnxruntime-main".owner = "riinr";
   inputs."onnxruntime-main".repo = "flake-nimble";
   inputs."onnxruntime-main".ref = "flake-pinning";
   inputs."onnxruntime-main".dir = "nimpkgs/o/onnxruntime/main";
+  inputs."onnxruntime-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."onnxruntime-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

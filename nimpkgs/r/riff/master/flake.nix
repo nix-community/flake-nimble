@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-riff-master.flake = false;
   inputs.src-riff-master.type = "github";
   inputs.src-riff-master.owner = "johnnovak";
   inputs.src-riff-master.repo = "nim-riff";
   inputs.src-riff-master.ref = "refs/heads/master";
+  inputs.src-riff-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."binstreams".type = "github";
-  inputs."binstreams".owner = "riinr";
-  inputs."binstreams".repo = "flake-nimble";
-  inputs."binstreams".ref = "flake-pinning";
-  inputs."binstreams".dir = "nimpkgs/b/binstreams";
+  # inputs."binstreams".type = "github";
+  # inputs."binstreams".owner = "riinr";
+  # inputs."binstreams".repo = "flake-nimble";
+  # inputs."binstreams".ref = "flake-pinning";
+  # inputs."binstreams".dir = "nimpkgs/b/binstreams";
+  # inputs."binstreams".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."binstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-riff-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

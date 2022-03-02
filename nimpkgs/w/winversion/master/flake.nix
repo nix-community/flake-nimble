@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-winversion-master.flake = false;
   inputs.src-winversion-master.type = "github";
   inputs.src-winversion-master.owner = "rockcavera";
   inputs.src-winversion-master.repo = "winversion";
   inputs.src-winversion-master.ref = "refs/heads/master";
+  inputs.src-winversion-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-winversion-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

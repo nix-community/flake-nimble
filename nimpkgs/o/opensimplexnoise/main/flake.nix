@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-opensimplexnoise-main.flake = false;
   inputs.src-opensimplexnoise-main.type = "github";
   inputs.src-opensimplexnoise-main.owner = "betofloresbaca";
   inputs.src-opensimplexnoise-main.repo = "nim-opensimplexnoise";
   inputs.src-opensimplexnoise-main.ref = "refs/heads/main";
+  inputs.src-opensimplexnoise-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-opensimplexnoise-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

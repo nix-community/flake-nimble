@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-keyring-master.flake = false;
   inputs.src-keyring-master.type = "github";
   inputs.src-keyring-master.owner = "iffy";
   inputs.src-keyring-master.repo = "nim-keyring";
   inputs.src-keyring-master.ref = "refs/heads/master";
+  inputs.src-keyring-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."dbus".type = "github";
-  inputs."dbus".owner = "riinr";
-  inputs."dbus".repo = "flake-nimble";
-  inputs."dbus".ref = "flake-pinning";
-  inputs."dbus".dir = "nimpkgs/d/dbus";
+  # inputs."dbus".type = "github";
+  # inputs."dbus".owner = "riinr";
+  # inputs."dbus".repo = "flake-nimble";
+  # inputs."dbus".ref = "flake-pinning";
+  # inputs."dbus".dir = "nimpkgs/d/dbus";
+  # inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-keyring-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-omnimax-0_2_2.flake = false;
   inputs.src-omnimax-0_2_2.type = "github";
   inputs.src-omnimax-0_2_2.owner = "vitreo12";
   inputs.src-omnimax-0_2_2.repo = "omnimax";
   inputs.src-omnimax-0_2_2.ref = "refs/tags/0.2.2";
+  inputs.src-omnimax-0_2_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."cligen".type = "github";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".repo = "flake-nimble";
-  inputs."cligen".ref = "flake-pinning";
-  inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".type = "github";
+  # inputs."cligen".owner = "riinr";
+  # inputs."cligen".repo = "flake-nimble";
+  # inputs."cligen".ref = "flake-pinning";
+  # inputs."cligen".dir = "nimpkgs/c/cligen";
+  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."omni".type = "github";
-  inputs."omni".owner = "riinr";
-  inputs."omni".repo = "flake-nimble";
-  inputs."omni".ref = "flake-pinning";
-  inputs."omni".dir = "nimpkgs/o/omni";
+  # inputs."omni".type = "github";
+  # inputs."omni".owner = "riinr";
+  # inputs."omni".repo = "flake-nimble";
+  # inputs."omni".ref = "flake-pinning";
+  # inputs."omni".dir = "nimpkgs/o/omni";
+  # inputs."omni".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."omni".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-omnimax-0_2_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

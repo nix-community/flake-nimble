@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-jesterwithplugins-v0_3_0.flake = false;
   inputs.src-jesterwithplugins-v0_3_0.type = "github";
   inputs.src-jesterwithplugins-v0_3_0.owner = "JohnAD";
   inputs.src-jesterwithplugins-v0_3_0.repo = "jesterwithplugins";
   inputs.src-jesterwithplugins-v0_3_0.ref = "refs/tags/v0.3.0";
+  inputs.src-jesterwithplugins-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-jesterwithplugins-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

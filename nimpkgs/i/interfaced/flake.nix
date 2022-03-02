@@ -5,23 +5,33 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."interfaced-master".type = "github";
   inputs."interfaced-master".owner = "riinr";
   inputs."interfaced-master".repo = "flake-nimble";
   inputs."interfaced-master".ref = "flake-pinning";
   inputs."interfaced-master".dir = "nimpkgs/i/interfaced/master";
+  inputs."interfaced-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."interfaced-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."interfaced-0_1_0".type = "github";
   inputs."interfaced-0_1_0".owner = "riinr";
   inputs."interfaced-0_1_0".repo = "flake-nimble";
   inputs."interfaced-0_1_0".ref = "flake-pinning";
   inputs."interfaced-0_1_0".dir = "nimpkgs/i/interfaced/0_1_0";
+  inputs."interfaced-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."interfaced-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."interfaced-0_2_0".type = "github";
   inputs."interfaced-0_2_0".owner = "riinr";
   inputs."interfaced-0_2_0".repo = "flake-nimble";
   inputs."interfaced-0_2_0".ref = "flake-pinning";
   inputs."interfaced-0_2_0".dir = "nimpkgs/i/interfaced/0_2_0";
+  inputs."interfaced-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."interfaced-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

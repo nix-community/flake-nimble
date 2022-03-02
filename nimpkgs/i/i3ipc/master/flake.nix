@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-i3ipc-master.flake = false;
   inputs.src-i3ipc-master.type = "github";
   inputs.src-i3ipc-master.owner = "FedericoCeratto";
   inputs.src-i3ipc-master.repo = "nim-i3ipc";
   inputs.src-i3ipc-master.ref = "refs/heads/master";
+  inputs.src-i3ipc-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-i3ipc-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

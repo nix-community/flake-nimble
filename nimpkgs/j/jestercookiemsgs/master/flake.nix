@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-jestercookiemsgs-master.flake = false;
   inputs.src-jestercookiemsgs-master.type = "github";
   inputs.src-jestercookiemsgs-master.owner = "JohnAD";
   inputs.src-jestercookiemsgs-master.repo = "jestercookiemsgs";
   inputs.src-jestercookiemsgs-master.ref = "refs/heads/master";
+  inputs.src-jestercookiemsgs-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."jesterwithplugins".type = "github";
-  inputs."jesterwithplugins".owner = "riinr";
-  inputs."jesterwithplugins".repo = "flake-nimble";
-  inputs."jesterwithplugins".ref = "flake-pinning";
-  inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
+  # inputs."jesterwithplugins".type = "github";
+  # inputs."jesterwithplugins".owner = "riinr";
+  # inputs."jesterwithplugins".repo = "flake-nimble";
+  # inputs."jesterwithplugins".ref = "flake-pinning";
+  # inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
+  # inputs."jesterwithplugins".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jesterwithplugins".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-jestercookiemsgs-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

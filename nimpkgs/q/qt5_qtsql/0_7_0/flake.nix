@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-qt5_qtsql-0_7_0.flake = false;
   inputs.src-qt5_qtsql-0_7_0.type = "github";
   inputs.src-qt5_qtsql-0_7_0.owner = "philip-wernersbach";
   inputs.src-qt5_qtsql-0_7_0.repo = "nim-qt5_qtsql";
   inputs.src-qt5_qtsql-0_7_0.ref = "refs/tags/0.7.0";
+  inputs.src-qt5_qtsql-0_7_0.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-qt5_qtsql-0_7_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

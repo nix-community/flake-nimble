@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-oolib-main.flake = false;
   inputs.src-oolib-main.type = "github";
-  inputs.src-oolib-main.owner = "glasses-Neo";
+  inputs.src-oolib-main.owner = "Glasses-Neo";
   inputs.src-oolib-main.repo = "OOlib";
   inputs.src-oolib-main.ref = "refs/heads/main";
+  inputs.src-oolib-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-oolib-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

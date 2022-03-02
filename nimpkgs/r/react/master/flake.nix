@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-react-master.flake = false;
   inputs.src-react-master.type = "github";
   inputs.src-react-master.owner = "andreaferretti";
   inputs.src-react-master.repo = "react.nim";
   inputs.src-react-master.ref = "refs/heads/master";
+  inputs.src-react-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-react-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

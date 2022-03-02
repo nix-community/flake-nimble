@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-rcedit-master.flake = false;
   inputs.src-rcedit-master.type = "github";
   inputs.src-rcedit-master.owner = "bung87";
   inputs.src-rcedit-master.repo = "rcedit";
   inputs.src-rcedit-master.ref = "refs/heads/master";
+  inputs.src-rcedit-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-rcedit-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

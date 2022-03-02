@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-iridium-master.flake = false;
   inputs.src-iridium-master.type = "github";
   inputs.src-iridium-master.owner = "KingDarBoja";
   inputs.src-iridium-master.repo = "Iridium";
   inputs.src-iridium-master.ref = "refs/heads/master";
+  inputs.src-iridium-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-iridium-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

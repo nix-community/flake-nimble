@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."winserial-master".type = "github";
   inputs."winserial-master".owner = "riinr";
   inputs."winserial-master".repo = "flake-nimble";
   inputs."winserial-master".ref = "flake-pinning";
   inputs."winserial-master".dir = "nimpkgs/w/winserial/master";
+  inputs."winserial-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."winserial-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-quadtree-master.flake = false;
   inputs.src-quadtree-master.type = "github";
   inputs.src-quadtree-master.owner = "Nycto";
   inputs.src-quadtree-master.repo = "QuadtreeNim";
   inputs.src-quadtree-master.ref = "refs/heads/master";
+  inputs.src-quadtree-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-quadtree-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."random_font_color-master".type = "github";
   inputs."random_font_color-master".owner = "riinr";
   inputs."random_font_color-master".repo = "flake-nimble";
   inputs."random_font_color-master".ref = "flake-pinning";
   inputs."random_font_color-master".dir = "nimpkgs/r/random_font_color/master";
+  inputs."random_font_color-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."random_font_color-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

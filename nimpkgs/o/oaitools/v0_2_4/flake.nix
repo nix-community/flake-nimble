@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-oaitools-v0_2_4.flake = false;
   inputs.src-oaitools-v0_2_4.type = "github";
   inputs.src-oaitools-v0_2_4.owner = "markpbaggett";
   inputs.src-oaitools-v0_2_4.repo = "oaitools.nim";
   inputs.src-oaitools-v0_2_4.ref = "refs/tags/v0.2.4";
+  inputs.src-oaitools-v0_2_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."xmltools".type = "github";
-  inputs."xmltools".owner = "riinr";
-  inputs."xmltools".repo = "flake-nimble";
-  inputs."xmltools".ref = "flake-pinning";
-  inputs."xmltools".dir = "nimpkgs/x/xmltools";
+  # inputs."xmltools".type = "github";
+  # inputs."xmltools".owner = "riinr";
+  # inputs."xmltools".repo = "flake-nimble";
+  # inputs."xmltools".ref = "flake-pinning";
+  # inputs."xmltools".dir = "nimpkgs/x/xmltools";
+  # inputs."xmltools".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."xmltools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-oaitools-v0_2_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

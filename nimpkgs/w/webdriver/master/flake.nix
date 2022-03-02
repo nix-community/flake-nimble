@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-webdriver-master.flake = false;
   inputs.src-webdriver-master.type = "github";
   inputs.src-webdriver-master.owner = "dom96";
   inputs.src-webdriver-master.repo = "webdriver";
   inputs.src-webdriver-master.ref = "refs/heads/master";
+  inputs.src-webdriver-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-webdriver-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

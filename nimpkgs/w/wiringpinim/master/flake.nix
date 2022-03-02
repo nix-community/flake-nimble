@@ -5,18 +5,20 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
-  inputs.src-wiringpinim-master.flake = false;
-  inputs.src-wiringpinim-master.type = "github";
-  inputs.src-wiringpinim-master.owner = "ThomasTJdev";
-  inputs.src-wiringpinim-master.repo = "nim_wiringPiNim";
-  inputs.src-wiringpinim-master.ref = "refs/heads/master";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-wiringPiNim-master.flake = false;
+  inputs.src-wiringPiNim-master.type = "github";
+  inputs.src-wiringPiNim-master.owner = "ThomasTJdev";
+  inputs.src-wiringPiNim-master.repo = "nim_wiringPiNim";
+  inputs.src-wiringPiNim-master.ref = "refs/heads/master";
+  inputs.src-wiringPiNim-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-wiringpinim-master, ...}@deps:
+  outputs = { self, nixpkgs, flakeNimbleLib, src-wiringPiNim-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {
       inherit self nixpkgs ;
-      src = src-wiringpinim-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wiringpinim-master"];
+      src = src-wiringPiNim-master;
+      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-wiringPiNim-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
 }

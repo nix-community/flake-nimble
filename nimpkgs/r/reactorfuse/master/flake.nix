@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-reactorfuse-master.flake = false;
   inputs.src-reactorfuse-master.type = "github";
   inputs.src-reactorfuse-master.owner = "zielmicha";
   inputs.src-reactorfuse-master.repo = "reactorfuse";
   inputs.src-reactorfuse-master.ref = "refs/heads/master";
+  inputs.src-reactorfuse-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."reactor".type = "github";
-  inputs."reactor".owner = "riinr";
-  inputs."reactor".repo = "flake-nimble";
-  inputs."reactor".ref = "flake-pinning";
-  inputs."reactor".dir = "nimpkgs/r/reactor";
+  # inputs."reactor".type = "github";
+  # inputs."reactor".owner = "riinr";
+  # inputs."reactor".repo = "flake-nimble";
+  # inputs."reactor".ref = "flake-pinning";
+  # inputs."reactor".dir = "nimpkgs/r/reactor";
+  # inputs."reactor".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."reactor".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-reactorfuse-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

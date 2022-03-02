@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-jdec-master.flake = false;
   inputs.src-jdec-master.type = "github";
   inputs.src-jdec-master.owner = "diegogub";
   inputs.src-jdec-master.repo = "jdec";
   inputs.src-jdec-master.ref = "refs/heads/master";
+  inputs.src-jdec-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-jdec-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

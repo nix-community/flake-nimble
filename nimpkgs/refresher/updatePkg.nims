@@ -115,6 +115,9 @@ iterator projectInputs(refs: JsonNode; flakeDir: string): string =
   inputs."{name}-{gitRef}".repo = "flake-nimble";
   inputs."{name}-{gitRef}".ref = "flake-pinning";
   inputs."{name}-{gitRef}".dir = "nimpkgs/{flakeDir}/{gitRef}";
+  inputs."{name}-{gitRef}".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."{name}-{gitRef}".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 """
 
 proc nimPkgsLibInput(): string =
@@ -123,7 +126,8 @@ proc nimPkgsLibInput(): string =
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";"""
+  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";"""
 
 proc projectFlake(pkg: JsonNode): auto =
   let 
@@ -187,6 +191,7 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
   inputs.{itName}.owner = "{inputInfo["owner"].getStr()}";
   inputs.{itName}.repo = "{inputInfo["repo"].getStr}";
   inputs.{itName}.ref = "{inputInfo["ref"].getStr}";
+  inputs.{itName}.inputs.nixpkgs.follows = "nixpkgs";
   """
   if refInfo.hasKey "requires":
     for dep in refInfo["requires"].items:
@@ -197,11 +202,13 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
         continue
       yield fmt"""
 
-  inputs."{depName}".type = "github";
-  inputs."{depName}".owner = "riinr";
-  inputs."{depName}".repo = "flake-nimble";
-  inputs."{depName}".ref = "flake-pinning";
-  inputs."{depName}".dir = "nimpkgs/{initial}/{depName}";
+  # inputs."{depName}".type = "github";
+  # inputs."{depName}".owner = "riinr";
+  # inputs."{depName}".repo = "flake-nimble";
+  # inputs."{depName}".ref = "flake-pinning";
+  # inputs."{depName}".dir = "nimpkgs/{initial}/{depName}";
+  # inputs."{depName}".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."{depName}".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 """
 
 proc refsFlake(pkg: JsonNode): auto =

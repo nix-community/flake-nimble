@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-openal-master.flake = false;
   inputs.src-openal-master.type = "github";
   inputs.src-openal-master.owner = "treeform";
   inputs.src-openal-master.repo = "openal";
   inputs.src-openal-master.ref = "refs/heads/master";
+  inputs.src-openal-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-openal-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

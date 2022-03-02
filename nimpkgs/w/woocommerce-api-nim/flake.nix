@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."woocommerce-api-nim-master".type = "github";
   inputs."woocommerce-api-nim-master".owner = "riinr";
   inputs."woocommerce-api-nim-master".repo = "flake-nimble";
   inputs."woocommerce-api-nim-master".ref = "flake-pinning";
   inputs."woocommerce-api-nim-master".dir = "nimpkgs/w/woocommerce-api-nim/master";
+  inputs."woocommerce-api-nim-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."woocommerce-api-nim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

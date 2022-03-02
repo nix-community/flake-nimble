@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-jsony-master.flake = false;
   inputs.src-jsony-master.type = "github";
   inputs.src-jsony-master.owner = "treeform";
   inputs.src-jsony-master.repo = "jsony";
   inputs.src-jsony-master.ref = "refs/heads/master";
+  inputs.src-jsony-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-jsony-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-jeknil-master.flake = false;
   inputs.src-jeknil-master.type = "github";
   inputs.src-jeknil-master.owner = "tonogram";
   inputs.src-jeknil-master.repo = "jeknil";
   inputs.src-jeknil-master.ref = "refs/heads/master";
+  inputs.src-jeknil-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."markdown".type = "github";
-  inputs."markdown".owner = "riinr";
-  inputs."markdown".repo = "flake-nimble";
-  inputs."markdown".ref = "flake-pinning";
-  inputs."markdown".dir = "nimpkgs/m/markdown";
+  # inputs."markdown".type = "github";
+  # inputs."markdown".owner = "riinr";
+  # inputs."markdown".repo = "flake-nimble";
+  # inputs."markdown".ref = "flake-pinning";
+  # inputs."markdown".dir = "nimpkgs/m/markdown";
+  # inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-jeknil-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

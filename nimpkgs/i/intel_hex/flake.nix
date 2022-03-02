@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."intel_hex-master".type = "github";
   inputs."intel_hex-master".owner = "riinr";
   inputs."intel_hex-master".repo = "flake-nimble";
   inputs."intel_hex-master".ref = "flake-pinning";
   inputs."intel_hex-master".dir = "nimpkgs/i/intel_hex/master";
+  inputs."intel_hex-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."intel_hex-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

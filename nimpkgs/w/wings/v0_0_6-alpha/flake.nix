@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-wings-v0_0_6-alpha.flake = false;
   inputs.src-wings-v0_0_6-alpha.type = "github";
   inputs.src-wings-v0_0_6-alpha.owner = "binhonglee";
   inputs.src-wings-v0_0_6-alpha.repo = "wings";
   inputs.src-wings-v0_0_6-alpha.ref = "refs/tags/v0.0.6-alpha";
+  inputs.src-wings-v0_0_6-alpha.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stones".type = "github";
-  inputs."stones".owner = "riinr";
-  inputs."stones".repo = "flake-nimble";
-  inputs."stones".ref = "flake-pinning";
-  inputs."stones".dir = "nimpkgs/s/stones";
+  # inputs."stones".type = "github";
+  # inputs."stones".owner = "riinr";
+  # inputs."stones".repo = "flake-nimble";
+  # inputs."stones".ref = "flake-pinning";
+  # inputs."stones".dir = "nimpkgs/s/stones";
+  # inputs."stones".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-wings-v0_0_6-alpha, ...}@deps:
     let lib = flakeNimbleLib.lib;

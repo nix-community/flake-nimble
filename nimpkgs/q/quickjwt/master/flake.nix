@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-quickjwt-master.flake = false;
   inputs.src-quickjwt-master.type = "github";
   inputs.src-quickjwt-master.owner = "treeform";
   inputs.src-quickjwt-master.repo = "quickjwt";
   inputs.src-quickjwt-master.ref = "refs/heads/master";
+  inputs.src-quickjwt-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-quickjwt-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

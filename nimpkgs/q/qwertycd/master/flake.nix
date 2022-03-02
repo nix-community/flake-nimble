@@ -5,25 +5,31 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-qwertycd-master.flake = false;
   inputs.src-qwertycd-master.type = "github";
   inputs.src-qwertycd-master.owner = "minefuto";
   inputs.src-qwertycd-master.repo = "qwertycd";
   inputs.src-qwertycd-master.ref = "refs/heads/master";
+  inputs.src-qwertycd-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."illwill".type = "github";
-  inputs."illwill".owner = "riinr";
-  inputs."illwill".repo = "flake-nimble";
-  inputs."illwill".ref = "flake-pinning";
-  inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".type = "github";
+  # inputs."illwill".owner = "riinr";
+  # inputs."illwill".repo = "flake-nimble";
+  # inputs."illwill".ref = "flake-pinning";
+  # inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."parsetoml".type = "github";
-  inputs."parsetoml".owner = "riinr";
-  inputs."parsetoml".repo = "flake-nimble";
-  inputs."parsetoml".ref = "flake-pinning";
-  inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
+  # inputs."parsetoml".type = "github";
+  # inputs."parsetoml".owner = "riinr";
+  # inputs."parsetoml".repo = "flake-nimble";
+  # inputs."parsetoml".ref = "flake-pinning";
+  # inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
+  # inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-qwertycd-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-runeterra_decks-v0_2_3.flake = false;
   inputs.src-runeterra_decks-v0_2_3.type = "github";
   inputs.src-runeterra_decks-v0_2_3.owner = "SolitudeSF";
   inputs.src-runeterra_decks-v0_2_3.repo = "runeterra_decks";
   inputs.src-runeterra_decks-v0_2_3.ref = "refs/tags/v0.2.3";
+  inputs.src-runeterra_decks-v0_2_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."base32".type = "github";
-  inputs."base32".owner = "riinr";
-  inputs."base32".repo = "flake-nimble";
-  inputs."base32".ref = "flake-pinning";
-  inputs."base32".dir = "nimpkgs/b/base32";
+  # inputs."base32".type = "github";
+  # inputs."base32".owner = "riinr";
+  # inputs."base32".repo = "flake-nimble";
+  # inputs."base32".ref = "flake-pinning";
+  # inputs."base32".dir = "nimpkgs/b/base32";
+  # inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-runeterra_decks-v0_2_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

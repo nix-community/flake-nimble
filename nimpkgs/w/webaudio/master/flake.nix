@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-webaudio-master.flake = false;
   inputs.src-webaudio-master.type = "github";
   inputs.src-webaudio-master.owner = "ftsf";
   inputs.src-webaudio-master.repo = "nim-webaudio";
   inputs.src-webaudio-master.ref = "refs/heads/master";
+  inputs.src-webaudio-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-webaudio-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

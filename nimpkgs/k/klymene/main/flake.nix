@@ -5,32 +5,40 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-klymene-main.flake = false;
   inputs.src-klymene-main.type = "github";
   inputs.src-klymene-main.owner = "georgelemon";
   inputs.src-klymene-main.repo = "clymene";
   inputs.src-klymene-main.ref = "refs/heads/main";
+  inputs.src-klymene-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."regex".type = "github";
-  inputs."regex".owner = "riinr";
-  inputs."regex".repo = "flake-nimble";
-  inputs."regex".ref = "flake-pinning";
-  inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".type = "github";
+  # inputs."regex".owner = "riinr";
+  # inputs."regex".repo = "flake-nimble";
+  # inputs."regex".ref = "flake-pinning";
+  # inputs."regex".dir = "nimpkgs/r/regex";
+  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."unicodedb".type = "github";
-  inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".repo = "flake-nimble";
-  inputs."unicodedb".ref = "flake-pinning";
-  inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  # inputs."unicodedb".type = "github";
+  # inputs."unicodedb".owner = "riinr";
+  # inputs."unicodedb".repo = "flake-nimble";
+  # inputs."unicodedb".ref = "flake-pinning";
+  # inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  # inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  inputs."illwill".type = "github";
-  inputs."illwill".owner = "riinr";
-  inputs."illwill".repo = "flake-nimble";
-  inputs."illwill".ref = "flake-pinning";
-  inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".type = "github";
+  # inputs."illwill".owner = "riinr";
+  # inputs."illwill".repo = "flake-nimble";
+  # inputs."illwill".ref = "flake-pinning";
+  # inputs."illwill".dir = "nimpkgs/i/illwill";
+  # inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-klymene-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

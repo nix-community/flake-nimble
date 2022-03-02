@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-iputils-v0_2_0.flake = false;
   inputs.src-iputils-v0_2_0.type = "github";
   inputs.src-iputils-v0_2_0.owner = "rockcavera";
   inputs.src-iputils-v0_2_0.repo = "nim-iputils";
   inputs.src-iputils-v0_2_0.ref = "refs/tags/v0.2.0";
+  inputs.src-iputils-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."stew".type = "github";
-  inputs."stew".owner = "riinr";
-  inputs."stew".repo = "flake-nimble";
-  inputs."stew".ref = "flake-pinning";
-  inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".type = "github";
+  # inputs."stew".owner = "riinr";
+  # inputs."stew".repo = "flake-nimble";
+  # inputs."stew".ref = "flake-pinning";
+  # inputs."stew".dir = "nimpkgs/s/stew";
+  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-iputils-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

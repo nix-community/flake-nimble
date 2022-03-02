@@ -5,29 +5,42 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."jhash-master".type = "github";
   inputs."jhash-master".owner = "riinr";
   inputs."jhash-master".repo = "flake-nimble";
   inputs."jhash-master".ref = "flake-pinning";
   inputs."jhash-master".dir = "nimpkgs/j/jhash/master";
+  inputs."jhash-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jhash-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."jhash-v0_1_0".type = "github";
   inputs."jhash-v0_1_0".owner = "riinr";
   inputs."jhash-v0_1_0".repo = "flake-nimble";
   inputs."jhash-v0_1_0".ref = "flake-pinning";
   inputs."jhash-v0_1_0".dir = "nimpkgs/j/jhash/v0_1_0";
+  inputs."jhash-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jhash-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."jhash-v0_1_1".type = "github";
   inputs."jhash-v0_1_1".owner = "riinr";
   inputs."jhash-v0_1_1".repo = "flake-nimble";
   inputs."jhash-v0_1_1".ref = "flake-pinning";
   inputs."jhash-v0_1_1".dir = "nimpkgs/j/jhash/v0_1_1";
+  inputs."jhash-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jhash-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
     inputs."jhash-v0_1_2".type = "github";
   inputs."jhash-v0_1_2".owner = "riinr";
   inputs."jhash-v0_1_2".repo = "flake-nimble";
   inputs."jhash-v0_1_2".ref = "flake-pinning";
   inputs."jhash-v0_1_2".dir = "nimpkgs/j/jhash/v0_1_2";
+  inputs."jhash-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jhash-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

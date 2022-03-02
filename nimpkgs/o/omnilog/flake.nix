@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."omnilog-master".type = "github";
   inputs."omnilog-master".owner = "riinr";
   inputs."omnilog-master".repo = "flake-nimble";
   inputs."omnilog-master".ref = "flake-pinning";
   inputs."omnilog-master".dir = "nimpkgs/o/omnilog/master";
+  inputs."omnilog-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."omnilog-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

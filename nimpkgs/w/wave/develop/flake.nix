@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-wave-develop.flake = false;
   inputs.src-wave-develop.type = "github";
   inputs.src-wave-develop.owner = "jiro4989";
   inputs.src-wave-develop.repo = "wave";
   inputs.src-wave-develop.ref = "refs/heads/develop";
+  inputs.src-wave-develop.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-wave-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;

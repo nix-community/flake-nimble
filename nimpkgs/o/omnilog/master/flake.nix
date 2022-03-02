@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-omnilog-master.flake = false;
   inputs.src-omnilog-master.type = "github";
   inputs.src-omnilog-master.owner = "nim-appkit";
   inputs.src-omnilog-master.repo = "omnilog";
   inputs.src-omnilog-master.ref = "refs/heads/master";
+  inputs.src-omnilog-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."values".type = "github";
-  inputs."values".owner = "riinr";
-  inputs."values".repo = "flake-nimble";
-  inputs."values".ref = "flake-pinning";
-  inputs."values".dir = "nimpkgs/v/values";
+  # inputs."values".type = "github";
+  # inputs."values".owner = "riinr";
+  # inputs."values".repo = "flake-nimble";
+  # inputs."values".ref = "flake-pinning";
+  # inputs."values".dir = "nimpkgs/v/values";
+  # inputs."values".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."values".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-omnilog-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

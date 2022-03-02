@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-jestergeoip-master.flake = false;
   inputs.src-jestergeoip-master.type = "github";
   inputs.src-jestergeoip-master.owner = "JohnAD";
   inputs.src-jestergeoip-master.repo = "jestergeoip";
   inputs.src-jestergeoip-master.ref = "refs/heads/master";
+  inputs.src-jestergeoip-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."jesterwithplugins".type = "github";
-  inputs."jesterwithplugins".owner = "riinr";
-  inputs."jesterwithplugins".repo = "flake-nimble";
-  inputs."jesterwithplugins".ref = "flake-pinning";
-  inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
+  # inputs."jesterwithplugins".type = "github";
+  # inputs."jesterwithplugins".owner = "riinr";
+  # inputs."jesterwithplugins".repo = "flake-nimble";
+  # inputs."jesterwithplugins".ref = "flake-pinning";
+  # inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
+  # inputs."jesterwithplugins".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jesterwithplugins".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-jestergeoip-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

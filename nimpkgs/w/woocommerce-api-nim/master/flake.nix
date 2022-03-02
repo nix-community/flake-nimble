@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-woocommerce-api-nim-master.flake = false;
   inputs.src-woocommerce-api-nim-master.type = "github";
   inputs.src-woocommerce-api-nim-master.owner = "mrhdias";
   inputs.src-woocommerce-api-nim-master.repo = "woocommerce-api-nim";
   inputs.src-woocommerce-api-nim-master.ref = "refs/heads/master";
+  inputs.src-woocommerce-api-nim-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-woocommerce-api-nim-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-watchout-main.flake = false;
   inputs.src-watchout-main.type = "github";
   inputs.src-watchout-main.owner = "openpeep";
   inputs.src-watchout-main.repo = "watchout";
   inputs.src-watchout-main.ref = "refs/heads/main";
+  inputs.src-watchout-main.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-watchout-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

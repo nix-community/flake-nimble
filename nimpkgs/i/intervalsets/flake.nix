@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."intervalsets-master".type = "github";
   inputs."intervalsets-master".owner = "riinr";
   inputs."intervalsets-master".repo = "flake-nimble";
   inputs."intervalsets-master".ref = "flake-pinning";
   inputs."intervalsets-master".dir = "nimpkgs/i/intervalsets/master";
+  inputs."intervalsets-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."intervalsets-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

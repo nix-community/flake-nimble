@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."openweathermap-master".type = "github";
   inputs."openweathermap-master".owner = "riinr";
   inputs."openweathermap-master".repo = "flake-nimble";
   inputs."openweathermap-master".ref = "flake-pinning";
   inputs."openweathermap-master".dir = "nimpkgs/o/openweathermap/master";
+  inputs."openweathermap-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openweathermap-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

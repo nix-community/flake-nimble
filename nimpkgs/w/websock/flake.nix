@@ -5,11 +5,15 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
     inputs."websock-main".type = "github";
   inputs."websock-main".owner = "riinr";
   inputs."websock-main".repo = "flake-nimble";
   inputs."websock-main".ref = "flake-pinning";
   inputs."websock-main".dir = "nimpkgs/w/websock/main";
+  inputs."websock-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."websock-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+
 
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:

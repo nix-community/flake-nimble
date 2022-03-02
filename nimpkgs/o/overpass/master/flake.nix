@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-overpass-master.flake = false;
   inputs.src-overpass-master.type = "github";
   inputs.src-overpass-master.owner = "juancarlospaco";
   inputs.src-overpass-master.repo = "nim-overpass";
   inputs.src-overpass-master.ref = "refs/heads/master";
+  inputs.src-overpass-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-overpass-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

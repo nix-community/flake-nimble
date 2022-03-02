@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-isocodes-1_4_1.flake = false;
   inputs.src-isocodes-1_4_1.type = "github";
   inputs.src-isocodes-1_4_1.owner = "kraptor";
   inputs.src-isocodes-1_4_1.repo = "isocodes";
   inputs.src-isocodes-1_4_1.ref = "refs/tags/1.4.1";
+  inputs.src-isocodes-1_4_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."jsony".type = "github";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".repo = "flake-nimble";
-  inputs."jsony".ref = "flake-pinning";
-  inputs."jsony".dir = "nimpkgs/j/jsony";
+  # inputs."jsony".type = "github";
+  # inputs."jsony".owner = "riinr";
+  # inputs."jsony".repo = "flake-nimble";
+  # inputs."jsony".ref = "flake-pinning";
+  # inputs."jsony".dir = "nimpkgs/j/jsony";
+  # inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-isocodes-1_4_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

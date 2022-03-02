@@ -5,11 +5,13 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-openweathermap-master.flake = false;
   inputs.src-openweathermap-master.type = "github";
   inputs.src-openweathermap-master.owner = "juancarlospaco";
   inputs.src-openweathermap-master.repo = "nim-openweathermap";
   inputs.src-openweathermap-master.ref = "refs/heads/master";
+  inputs.src-openweathermap-master.inputs.nixpkgs.follows = "nixpkgs";
   
   outputs = { self, nixpkgs, flakeNimbleLib, src-openweathermap-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
