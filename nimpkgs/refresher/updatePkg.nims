@@ -124,9 +124,8 @@ proc nimPkgsLibInput(): string =
   """
   inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";"""
 
 proc projectFlake(pkg: JsonNode): auto =
@@ -240,7 +239,6 @@ proc refsFlake(pkg: JsonNode): auto =
     mkdir flakeDir
     writeFile(fmt"{flakeDir}/flake.nix", flakeContent)
     writeFile(fmt"{flakeDir}/meta.json", $refInfo)
-    exec(fmt"cp ../lib.nix {flakeDir}/lib.nix")
 
 let pkg = readAllFromStdin().parseJson
 let refs = pkg["url"].getRefs

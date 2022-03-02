@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/",
+        "lastModified": 1646258224,
+        "narHash": "sha256-wh7dMDKgKGhMzbHQ8WsS8Lsg98lTVjs0vxpsx84buvo=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d974b5e24ea97114036fc7992de5abec26ccb9c7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-aporia-v0_4_2": "src-aporia-v0_4_2"
+      }
+    },
+    "src-aporia-v0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1521491484,
+        "narHash": "sha256-5XFTp+2nv4ViFJLLCHXIfUwPgOIQWmR9hssN5hSgmyE=",
+        "owner": "nim-lang",
+        "repo": "Aporia",
+        "rev": "3273cb144172deb2dae615191b30a62093c365ee",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v0.4.2",
+        "repo": "Aporia",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
