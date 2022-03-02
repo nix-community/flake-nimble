@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-xmlio-v0_1_6.flake = false;
   inputs.src-xmlio-v0_1_6.type = "github";
   inputs.src-xmlio-v0_1_6.owner = "codehz";
   inputs.src-xmlio-v0_1_6.repo = "xmlio";
   inputs.src-xmlio-v0_1_6.ref = "refs/tags/v0.1.6";
+  inputs.src-xmlio-v0_1_6.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."vtable".type = "github";
-  inputs."vtable".owner = "riinr";
-  inputs."vtable".repo = "flake-nimble";
-  inputs."vtable".ref = "flake-pinning";
-  inputs."vtable".dir = "nimpkgs/v/vtable";
+  # inputs."vtable".type = "github";
+  # inputs."vtable".owner = "riinr";
+  # inputs."vtable".repo = "flake-nimble";
+  # inputs."vtable".ref = "flake-pinning";
+  # inputs."vtable".dir = "nimpkgs/v/vtable";
+  # inputs."vtable".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."vtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-xmlio-v0_1_6, ...}@deps:
     let lib = flakeNimbleLib.lib;

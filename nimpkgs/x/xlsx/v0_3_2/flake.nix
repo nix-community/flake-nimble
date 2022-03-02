@@ -5,18 +5,22 @@
   inputs.flakeNimbleLib.repo = "flake-nimble";
   inputs.flakeNimbleLib.ref = "flake-pinning";
   inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.src-xlsx-v0_3_2.flake = false;
   inputs.src-xlsx-v0_3_2.type = "github";
   inputs.src-xlsx-v0_3_2.owner = "xflywind";
   inputs.src-xlsx-v0_3_2.repo = "xlsx";
   inputs.src-xlsx-v0_3_2.ref = "refs/tags/v0.3.2";
+  inputs.src-xlsx-v0_3_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  inputs."zip".type = "github";
-  inputs."zip".owner = "riinr";
-  inputs."zip".repo = "flake-nimble";
-  inputs."zip".ref = "flake-pinning";
-  inputs."zip".dir = "nimpkgs/z/zip";
+  # inputs."zip".type = "github";
+  # inputs."zip".owner = "riinr";
+  # inputs."zip".repo = "flake-nimble";
+  # inputs."zip".ref = "flake-pinning";
+  # inputs."zip".dir = "nimpkgs/z/zip";
+  # inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
+  # inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-xlsx-v0_3_2, ...}@deps:
     let lib = flakeNimbleLib.lib;
