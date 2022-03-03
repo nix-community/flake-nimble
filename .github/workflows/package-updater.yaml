@@ -3,7 +3,7 @@ name: package-updater
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 12 * *"
+    - cron: "0 0 * * *"
   push:
   pull_request:
 
