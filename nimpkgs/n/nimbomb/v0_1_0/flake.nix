@@ -2,11 +2,10 @@
   description = ''A GiantBomb-wiki wrapper for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimbomb-v0_1_0.flake = false;
+    inputs.src-nimbomb-v0_1_0.flake = false;
   inputs.src-nimbomb-v0_1_0.type = "github";
   inputs.src-nimbomb-v0_1_0.owner = "Tyler-Yocolano";
   inputs.src-nimbomb-v0_1_0.repo = "nimbomb";

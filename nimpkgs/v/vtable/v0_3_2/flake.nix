@@ -2,11 +2,10 @@
   description = ''Implement dynamic dispatch through vtable, should works for dynlib.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-vtable-v0_3_2.flake = false;
+    inputs.src-vtable-v0_3_2.flake = false;
   inputs.src-vtable-v0_3_2.type = "github";
   inputs.src-vtable-v0_3_2.owner = "codehz";
   inputs.src-vtable-v0_3_2.repo = "nim-vtable";

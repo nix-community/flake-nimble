@@ -2,11 +2,10 @@
   description = ''A small but practical concatenative programming language and shell.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-min-v0_2_0.flake = false;
+    inputs.src-min-v0_2_0.flake = false;
   inputs.src-min-v0_2_0.type = "github";
   inputs.src-min-v0_2_0.owner = "h3rald";
   inputs.src-min-v0_2_0.repo = "min";

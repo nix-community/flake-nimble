@@ -2,11 +2,10 @@
   description = ''A low-level Nim wrapper for Notcurses: blingful TUIs and character graphics'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-notcurses-v3_0_5.flake = false;
+    inputs.src-notcurses-v3_0_5.flake = false;
   inputs.src-notcurses-v3_0_5.type = "github";
   inputs.src-notcurses-v3_0_5.owner = "michaelsbradleyjr";
   inputs.src-notcurses-v3_0_5.repo = "nim-notcurses";

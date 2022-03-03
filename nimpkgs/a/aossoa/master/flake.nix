@@ -2,11 +2,10 @@
   description = ''Use a Structure of Arrays like an Array of Structures'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-aossoa-master.flake = false;
+    inputs.src-aossoa-master.flake = false;
   inputs.src-aossoa-master.type = "github";
   inputs.src-aossoa-master.owner = "guibar64";
   inputs.src-aossoa-master.repo = "aossoa";

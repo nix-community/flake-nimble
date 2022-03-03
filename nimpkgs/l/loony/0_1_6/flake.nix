@@ -2,11 +2,10 @@
   description = ''Lock-free threadsafe MPMC with high throughput'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-loony-0_1_6.flake = false;
+    inputs.src-loony-0_1_6.flake = false;
   inputs.src-loony-0_1_6.type = "github";
   inputs.src-loony-0_1_6.owner = "shayanhabibi";
   inputs.src-loony-0_1_6.repo = "loony";

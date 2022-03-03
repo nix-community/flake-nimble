@@ -2,11 +2,10 @@
   description = ''github-release package'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-github_release-v0_1_0-alpha.flake = false;
+    inputs.src-github_release-v0_1_0-alpha.flake = false;
   inputs.src-github_release-v0_1_0-alpha.type = "github";
   inputs.src-github_release-v0_1_0-alpha.owner = "kdheepak";
   inputs.src-github_release-v0_1_0-alpha.repo = "github-release";

@@ -2,11 +2,10 @@
   description = ''Secure Hash Algorithm - 2, [224, 256, 384, and 512 bits]'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimSHA2-master.flake = false;
+    inputs.src-nimSHA2-master.flake = false;
   inputs.src-nimSHA2-master.type = "github";
   inputs.src-nimSHA2-master.owner = "jangko";
   inputs.src-nimSHA2-master.repo = "nimSHA2";

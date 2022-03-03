@@ -2,11 +2,10 @@
   description = ''Read and parse Excel files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-xlsx-0_4_5.flake = false;
+    inputs.src-xlsx-0_4_5.flake = false;
   inputs.src-xlsx-0_4_5.type = "github";
   inputs.src-xlsx-0_4_5.owner = "xflywind";
   inputs.src-xlsx-0_4_5.repo = "xlsx";

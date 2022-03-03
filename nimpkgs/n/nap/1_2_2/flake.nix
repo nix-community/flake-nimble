@@ -2,11 +2,10 @@
   description = ''Argument parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nap-1_2_2.flake = false;
+    inputs.src-nap-1_2_2.flake = false;
   inputs.src-nap-1_2_2.type = "github";
   inputs.src-nap-1_2_2.owner = "madprops";
   inputs.src-nap-1_2_2.repo = "nap";

@@ -2,11 +2,10 @@
   description = ''Create SVG-files with QR-codes from strings.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-qr-master.flake = false;
+    inputs.src-qr-master.flake = false;
   inputs.src-qr-master.type = "github";
   inputs.src-qr-master.owner = "ThomasTJdev";
   inputs.src-qr-master.repo = "nim_qr";

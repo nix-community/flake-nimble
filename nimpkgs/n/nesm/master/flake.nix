@@ -2,11 +2,10 @@
   description = ''A macro for generating [de]serializers for given objects'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nesm-master.flake = false;
+    inputs.src-nesm-master.flake = false;
   inputs.src-nesm-master.type = "gitlab";
   inputs.src-nesm-master.owner = "xomachine";
   inputs.src-nesm-master.repo = "NESM";

@@ -2,11 +2,10 @@
   description = ''Flexible JSON manshal/unmarshal library for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jdec-v0_1_0.flake = false;
+    inputs.src-jdec-v0_1_0.flake = false;
   inputs.src-jdec-v0_1_0.type = "github";
   inputs.src-jdec-v0_1_0.owner = "diegogub";
   inputs.src-jdec-v0_1_0.repo = "jdec";

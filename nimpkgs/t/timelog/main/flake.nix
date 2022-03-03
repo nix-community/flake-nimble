@@ -2,11 +2,10 @@
   description = ''Simple nimble package to log monotic timings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-timelog-main.flake = false;
+    inputs.src-timelog-main.flake = false;
   inputs.src-timelog-main.type = "github";
   inputs.src-timelog-main.owner = "Clonkk";
   inputs.src-timelog-main.repo = "timelog";

@@ -2,11 +2,10 @@
   description = ''A Nim IDE.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-aporia-master.flake = false;
+    inputs.src-aporia-master.flake = false;
   inputs.src-aporia-master.type = "github";
   inputs.src-aporia-master.owner = "nim-lang";
   inputs.src-aporia-master.repo = "Aporia";

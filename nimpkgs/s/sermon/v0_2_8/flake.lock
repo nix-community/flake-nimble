@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-sermon-v0_2_8": "src-sermon-v0_2_8"
+      }
+    },
+    "src-sermon-v0_2_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1553009769,
+        "narHash": "sha256-5d83I1GrQ9LvWGzKAJzjd6lIo86evoClMq7pl57dEo4=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_sermon",
+        "rev": "4443a0acd2ab3b2741d06028b75e38ae0ff2f360",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.2.8",
+        "repo": "nim_sermon",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

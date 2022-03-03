@@ -2,11 +2,10 @@
   description = ''Functional operations for iterators and slices, similar to sequtils'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-iterutils-master.flake = false;
+    inputs.src-iterutils-master.flake = false;
   inputs.src-iterutils-master.type = "github";
   inputs.src-iterutils-master.owner = "def-";
   inputs.src-iterutils-master.repo = "iterutils";

@@ -2,11 +2,10 @@
   description = ''Various networking utils'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-networkutils-master.flake = false;
+    inputs.src-networkutils-master.flake = false;
   inputs.src-networkutils-master.type = "github";
   inputs.src-networkutils-master.owner = "Q-Master";
   inputs.src-networkutils-master.repo = "networkutils.nim";

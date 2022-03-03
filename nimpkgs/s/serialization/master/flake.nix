@@ -2,11 +2,10 @@
   description = ''A modern and extensible serialization framework for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-serialization-master.flake = false;
+    inputs.src-serialization-master.flake = false;
   inputs.src-serialization-master.type = "github";
   inputs.src-serialization-master.owner = "status-im";
   inputs.src-serialization-master.repo = "nim-serialization";

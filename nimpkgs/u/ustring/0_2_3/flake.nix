@@ -2,11 +2,10 @@
   description = ''utf-8 string'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ustring-0_2_3.flake = false;
+    inputs.src-ustring-0_2_3.flake = false;
   inputs.src-ustring-0_2_3.type = "github";
   inputs.src-ustring-0_2_3.owner = "rokups";
   inputs.src-ustring-0_2_3.repo = "nim-ustring";

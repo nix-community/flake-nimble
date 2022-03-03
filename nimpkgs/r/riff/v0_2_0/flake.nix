@@ -2,11 +2,10 @@
   description = ''RIFF file handling for Nim '';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-riff-v0_2_0.flake = false;
+    inputs.src-riff-v0_2_0.flake = false;
   inputs.src-riff-v0_2_0.type = "github";
   inputs.src-riff-v0_2_0.owner = "johnnovak";
   inputs.src-riff-v0_2_0.repo = "nim-riff";

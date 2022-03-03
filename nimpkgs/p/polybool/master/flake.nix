@@ -2,11 +2,10 @@
   description = ''Polygon Clipper Library (Martinez Algorithm)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-polyBool-master.flake = false;
+    inputs.src-polyBool-master.flake = false;
   inputs.src-polyBool-master.type = "github";
   inputs.src-polyBool-master.owner = "jangko";
   inputs.src-polyBool-master.repo = "polyBool";

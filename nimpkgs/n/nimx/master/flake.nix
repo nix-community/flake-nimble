@@ -2,11 +2,10 @@
   description = ''Cross-platform GUI framework'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimx-master.flake = false;
+    inputs.src-nimx-master.flake = false;
   inputs.src-nimx-master.type = "github";
   inputs.src-nimx-master.owner = "yglukhov";
   inputs.src-nimx-master.repo = "nimx";

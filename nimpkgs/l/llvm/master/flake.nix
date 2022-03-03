@@ -2,11 +2,10 @@
   description = ''LLVM bindings for the Nim language.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-llvm-master.flake = false;
+    inputs.src-llvm-master.flake = false;
   inputs.src-llvm-master.type = "github";
   inputs.src-llvm-master.owner = "FedeOmoto";
   inputs.src-llvm-master.repo = "llvm";

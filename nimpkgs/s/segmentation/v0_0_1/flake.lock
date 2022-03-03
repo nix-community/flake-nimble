@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-segmentation-v0_0_1": "src-segmentation-v0_0_1"
+      }
+    },
+    "src-segmentation-v0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1581776477,
+        "narHash": "sha256-vFOviPoTDOjKCytRP0wuD7Hu208TKCulvM5FnRoN+f4=",
+        "owner": "nitely",
+        "repo": "nim-segmentation",
+        "rev": "7c8d9b7cd63bc385c97a5c5212157d69ba5b9e49",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nitely",
+        "ref": "refs/tags/v0.0.1",
+        "repo": "nim-segmentation",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

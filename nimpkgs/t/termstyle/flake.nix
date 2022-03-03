@@ -2,19 +2,10 @@
   description = ''Easy to use styles for terminal output'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."termstyle-master".type = "github";
-  inputs."termstyle-master".owner = "riinr";
-  inputs."termstyle-master".repo = "flake-nimble";
-  inputs."termstyle-master".ref = "flake-pinning";
-  inputs."termstyle-master".dir = "nimpkgs/t/termstyle/master";
-  inputs."termstyle-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."termstyle-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
+  
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
     let lib = flakeNimbleLib.lib;

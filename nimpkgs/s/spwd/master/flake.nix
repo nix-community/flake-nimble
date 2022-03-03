@@ -2,11 +2,10 @@
   description = ''Nim port of Python's spwd module for working with the UNIX shadow password file'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-spwd-master.flake = false;
+    inputs.src-spwd-master.flake = false;
   inputs.src-spwd-master.type = "github";
   inputs.src-spwd-master.owner = "achesak";
   inputs.src-spwd-master.repo = "nim-spwd";

@@ -2,11 +2,10 @@
   description = ''Prepared SQL statement generator. A lightweight ORM.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ormin-master.flake = false;
+    inputs.src-ormin-master.flake = false;
   inputs.src-ormin-master.type = "github";
   inputs.src-ormin-master.owner = "Araq";
   inputs.src-ormin-master.repo = "ormin";

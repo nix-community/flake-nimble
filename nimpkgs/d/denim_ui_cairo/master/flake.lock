@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-denim_ui_cairo-master": "src-denim_ui_cairo-master"
+      }
+    },
+    "src-denim_ui_cairo-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624393600,
+        "narHash": "sha256-beg7UE0GDBrcv7Bh+nxHreqhPKv4RqueVkmOtmDy9bM=",
+        "owner": "nortero-code",
+        "repo": "midio-ui-cairo",
+        "rev": "892d103d513bb2c32c4a4e572c78f136f9a9784c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nortero-code",
+        "ref": "refs/heads/master",
+        "repo": "midio-ui-cairo",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

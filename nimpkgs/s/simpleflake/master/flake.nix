@@ -2,11 +2,10 @@
   description = ''Simpleflake for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-simpleflake-master.flake = false;
+    inputs.src-simpleflake-master.flake = false;
   inputs.src-simpleflake-master.type = "github";
   inputs.src-simpleflake-master.owner = "aisk";
   inputs.src-simpleflake-master.repo = "simpleflake.nim";

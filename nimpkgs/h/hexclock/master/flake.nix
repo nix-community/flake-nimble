@@ -2,11 +2,10 @@
   description = ''Hex clock made in SDL and Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hexclock-master.flake = false;
+    inputs.src-hexclock-master.flake = false;
   inputs.src-hexclock-master.type = "github";
   inputs.src-hexclock-master.owner = "RainbowAsteroids";
   inputs.src-hexclock-master.repo = "hexclock";

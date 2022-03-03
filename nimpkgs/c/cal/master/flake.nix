@@ -2,11 +2,10 @@
   description = ''A simple interactive calculator'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cal-master.flake = false;
+    inputs.src-cal-master.flake = false;
   inputs.src-cal-master.type = "github";
   inputs.src-cal-master.owner = "xflywind";
   inputs.src-cal-master.repo = "cal";

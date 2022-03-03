@@ -2,11 +2,10 @@
   description = ''Nancy - Nim fancy ANSI tables'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nancy-master.flake = false;
+    inputs.src-nancy-master.flake = false;
   inputs.src-nancy-master.type = "github";
   inputs.src-nancy-master.owner = "PMunch";
   inputs.src-nancy-master.repo = "nancy";

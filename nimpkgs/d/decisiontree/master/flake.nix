@@ -2,11 +2,10 @@
   description = ''Decision tree and Random forest CART implementation in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-decisiontree-master.flake = false;
+    inputs.src-decisiontree-master.flake = false;
   inputs.src-decisiontree-master.type = "github";
   inputs.src-decisiontree-master.owner = "Michedev";
   inputs.src-decisiontree-master.repo = "DecisionTreeNim";

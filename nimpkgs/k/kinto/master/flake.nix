@@ -2,11 +2,10 @@
   description = ''Kinto Client for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-Kinto-master.flake = false;
+    inputs.src-Kinto-master.flake = false;
   inputs.src-Kinto-master.type = "github";
   inputs.src-Kinto-master.owner = "OpenSystemsLab";
   inputs.src-Kinto-master.repo = "kinto.nim";

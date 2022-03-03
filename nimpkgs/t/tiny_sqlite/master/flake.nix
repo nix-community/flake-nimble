@@ -2,11 +2,10 @@
   description = ''A thin SQLite wrapper with proper type safety'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tiny_sqlite-master.flake = false;
+    inputs.src-tiny_sqlite-master.flake = false;
   inputs.src-tiny_sqlite-master.type = "github";
   inputs.src-tiny_sqlite-master.owner = "GULPF";
   inputs.src-tiny_sqlite-master.repo = "tiny_sqlite";

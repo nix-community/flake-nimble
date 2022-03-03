@@ -2,11 +2,10 @@
   description = ''A simple wrapper providing a convenient reentrant interface for the bcrypt password hashing algorithm.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-easy_bcrypt-2_0_2.flake = false;
+    inputs.src-easy_bcrypt-2_0_2.flake = false;
   inputs.src-easy_bcrypt-2_0_2.type = "github";
   inputs.src-easy_bcrypt-2_0_2.owner = "Akito13";
   inputs.src-easy_bcrypt-2_0_2.repo = "easy-bcrypt";

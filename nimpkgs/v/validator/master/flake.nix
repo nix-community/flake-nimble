@@ -2,11 +2,10 @@
   description = ''Functions for string validation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-validator-master.flake = false;
+    inputs.src-validator-master.flake = false;
   inputs.src-validator-master.type = "github";
   inputs.src-validator-master.owner = "Adeohluwa";
   inputs.src-validator-master.repo = "validator";

@@ -2,11 +2,10 @@
   description = ''Simple package for query HTML/XML elements using a CSS3 or jQuery-like selector syntax'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-q-master.flake = false;
+    inputs.src-q-master.flake = false;
   inputs.src-q-master.type = "github";
   inputs.src-q-master.owner = "OpenSystemsLab";
   inputs.src-q-master.repo = "q.nim";

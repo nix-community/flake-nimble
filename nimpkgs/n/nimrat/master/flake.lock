@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nimrat-master": "src-nimrat-master"
+      }
+    },
+    "src-nimrat-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1424321576,
+        "narHash": "sha256-LFOXXm9kuh+gYaGIOUklI5vTCfm1t11i6O/tHVHRIko=",
+        "owner": "apense",
+        "repo": "nimrat",
+        "rev": "d515d0dec6f9c246b0fa236ad1c21738d80c0ddc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apense",
+        "ref": "refs/heads/master",
+        "repo": "nimrat",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

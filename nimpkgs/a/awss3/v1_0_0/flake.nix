@@ -2,11 +2,10 @@
   description = ''Amazon Simple Storage Service (AWS S3) basic API support.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-awsS3-v1_0_0.flake = false;
+    inputs.src-awsS3-v1_0_0.flake = false;
   inputs.src-awsS3-v1_0_0.type = "github";
   inputs.src-awsS3-v1_0_0.owner = "ThomasTJdev";
   inputs.src-awsS3-v1_0_0.repo = "nim_awsS3";

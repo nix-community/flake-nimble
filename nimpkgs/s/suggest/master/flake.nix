@@ -2,11 +2,10 @@
   description = ''mmap-persistent SymSpell spell checking algorithm'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-suggest-master.flake = false;
+    inputs.src-suggest-master.flake = false;
   inputs.src-suggest-master.type = "github";
   inputs.src-suggest-master.owner = "c-blake";
   inputs.src-suggest-master.repo = "suggest";

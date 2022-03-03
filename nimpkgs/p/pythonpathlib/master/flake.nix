@@ -2,11 +2,10 @@
   description = ''Module for working with paths that is as similar as possible to Python's pathlib'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pythonpathlib-master.flake = false;
+    inputs.src-pythonpathlib-master.flake = false;
   inputs.src-pythonpathlib-master.type = "github";
   inputs.src-pythonpathlib-master.owner = "achesak";
   inputs.src-pythonpathlib-master.repo = "nim-pythonpathlib";

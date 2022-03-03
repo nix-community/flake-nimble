@@ -2,11 +2,10 @@
   description = ''Wrapper to interface with Python interpreter'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-python-master.flake = false;
+    inputs.src-python-master.flake = false;
   inputs.src-python-master.type = "github";
   inputs.src-python-master.owner = "nim-lang";
   inputs.src-python-master.repo = "python";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-xlsxio-main": "src-xlsxio-main"
+      }
+    },
+    "src-xlsxio-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641481207,
+        "narHash": "sha256-JlFcOnyBYaRk7Hi93nLdTYqxMvyQy9amjFGa+FY9jC4=",
+        "owner": "jiiihpeeh",
+        "repo": "xlsxio-nim",
+        "rev": "3791eae61832d8fdae88ea4759cc88d75c0a125c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jiiihpeeh",
+        "ref": "refs/heads/main",
+        "repo": "xlsxio-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

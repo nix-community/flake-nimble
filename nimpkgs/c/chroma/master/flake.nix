@@ -2,11 +2,10 @@
   description = ''Everything you want to do with colors.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-chroma-master.flake = false;
+    inputs.src-chroma-master.flake = false;
   inputs.src-chroma-master.type = "github";
   inputs.src-chroma-master.owner = "treeform";
   inputs.src-chroma-master.repo = "chroma";

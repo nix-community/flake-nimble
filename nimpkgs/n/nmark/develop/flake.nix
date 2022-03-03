@@ -2,11 +2,10 @@
   description = ''fast markdown parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nmark-develop.flake = false;
+    inputs.src-nmark-develop.flake = false;
   inputs.src-nmark-develop.type = "github";
   inputs.src-nmark-develop.owner = "kyoheiu";
   inputs.src-nmark-develop.repo = "nmark";

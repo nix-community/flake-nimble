@@ -2,11 +2,10 @@
   description = ''c2nim is a tool to translate Ansi C code to Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-c2nim-master.flake = false;
+    inputs.src-c2nim-master.flake = false;
   inputs.src-c2nim-master.type = "github";
   inputs.src-c2nim-master.owner = "nim-lang";
   inputs.src-c2nim-master.repo = "c2nim";

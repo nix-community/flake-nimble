@@ -2,11 +2,10 @@
   description = ''wrapper for the GNU multiple precision arithmetic library (GMP)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gmp-v0_2_3.flake = false;
+    inputs.src-gmp-v0_2_3.flake = false;
   inputs.src-gmp-v0_2_3.type = "github";
   inputs.src-gmp-v0_2_3.owner = "subsetpark";
   inputs.src-gmp-v0_2_3.repo = "nim-gmp";

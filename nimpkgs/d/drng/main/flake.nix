@@ -2,11 +2,10 @@
   description = ''Provides access to the rdrand and rdseed instructions. Based on Intel's DRNG Library (libdrng)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-drng-main.flake = false;
+    inputs.src-drng-main.flake = false;
   inputs.src-drng-main.type = "github";
   inputs.src-drng-main.owner = "rockcavera";
   inputs.src-drng-main.repo = "nim-drng";

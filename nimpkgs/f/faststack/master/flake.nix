@@ -2,11 +2,10 @@
   description = ''Dynamically resizable data structure optimized for fast iteration.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-faststack-master.flake = false;
+    inputs.src-faststack-master.flake = false;
   inputs.src-faststack-master.type = "github";
   inputs.src-faststack-master.owner = "Vladar4";
   inputs.src-faststack-master.repo = "FastStack";

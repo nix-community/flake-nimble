@@ -2,11 +2,10 @@
   description = ''BLAS for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimblas-master.flake = false;
+    inputs.src-nimblas-master.flake = false;
   inputs.src-nimblas-master.type = "github";
   inputs.src-nimblas-master.owner = "andreaferretti";
   inputs.src-nimblas-master.repo = "nimblas";

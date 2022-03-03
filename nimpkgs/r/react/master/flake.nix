@@ -2,11 +2,10 @@
   description = ''React.js bindings for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-react-master.flake = false;
+    inputs.src-react-master.flake = false;
   inputs.src-react-master.type = "github";
   inputs.src-react-master.owner = "andreaferretti";
   inputs.src-react-master.repo = "react.nim";

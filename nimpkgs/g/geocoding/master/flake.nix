@@ -2,11 +2,10 @@
   description = ''A simple library for Google Maps Geocoding API'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-geocoding-master.flake = false;
+    inputs.src-geocoding-master.flake = false;
   inputs.src-geocoding-master.type = "github";
   inputs.src-geocoding-master.owner = "saratchandra92";
   inputs.src-geocoding-master.repo = "nim-geocoding";

@@ -2,11 +2,10 @@
   description = ''Commandant is a simple to use library for parsing command line arguments. Commandant is ideal for writing terminal applications, with  support for flags, options, subcommands, and custom exit options.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-commandant-0_2_0.flake = false;
+    inputs.src-commandant-0_2_0.flake = false;
   inputs.src-commandant-0_2_0.type = "github";
   inputs.src-commandant-0_2_0.owner = "casey-SK";
   inputs.src-commandant-0_2_0.repo = "commandant";

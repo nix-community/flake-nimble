@@ -2,11 +2,10 @@
   description = ''A post-modern, "multi-dimensional" configurable ls/file lister'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-lc-master.flake = false;
+    inputs.src-lc-master.flake = false;
   inputs.src-lc-master.type = "github";
   inputs.src-lc-master.owner = "c-blake";
   inputs.src-lc-master.repo = "lc";

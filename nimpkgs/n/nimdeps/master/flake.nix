@@ -2,11 +2,10 @@
   description = ''Nim library to bundle dependency files into executable'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimdeps-master.flake = false;
+    inputs.src-nimdeps-master.flake = false;
   inputs.src-nimdeps-master.type = "github";
   inputs.src-nimdeps-master.owner = "genotrance";
   inputs.src-nimdeps-master.repo = "nimdeps";

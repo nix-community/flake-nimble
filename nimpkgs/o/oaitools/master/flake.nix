@@ -2,11 +2,10 @@
   description = ''A high-level OAI-PMH library.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-oaitools-master.flake = false;
+    inputs.src-oaitools-master.flake = false;
   inputs.src-oaitools-master.type = "github";
   inputs.src-oaitools-master.owner = "markpbaggett";
   inputs.src-oaitools-master.repo = "oaitools.nim";

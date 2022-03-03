@@ -2,11 +2,10 @@
   description = ''Pure library for matching file paths against Unix style glob patterns.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-glob-v0_9_0.flake = false;
+    inputs.src-glob-v0_9_0.flake = false;
   inputs.src-glob-v0_9_0.type = "github";
   inputs.src-glob-v0_9_0.owner = "haltcase";
   inputs.src-glob-v0_9_0.repo = "glob";

@@ -2,11 +2,10 @@
   description = ''A very simple micro web framework'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mike-master.flake = false;
+    inputs.src-mike-master.flake = false;
   inputs.src-mike-master.type = "github";
   inputs.src-mike-master.owner = "ire4ever1190";
   inputs.src-mike-master.repo = "mike";

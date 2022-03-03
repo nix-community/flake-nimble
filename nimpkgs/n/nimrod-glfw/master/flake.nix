@@ -2,11 +2,10 @@
   description = ''Nim bindings for GLFW library.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimrod-glfw-master.flake = false;
+    inputs.src-nimrod-glfw-master.flake = false;
   inputs.src-nimrod-glfw-master.type = "github";
   inputs.src-nimrod-glfw-master.owner = "rafaelvasco";
   inputs.src-nimrod-glfw-master.repo = "nimrod-glfw";

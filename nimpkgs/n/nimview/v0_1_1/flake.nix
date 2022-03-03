@@ -2,11 +2,10 @@
   description = ''Nim / Python / C library to run webview with HTML/JS as UI'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimview-v0_1_1.flake = false;
+    inputs.src-nimview-v0_1_1.flake = false;
   inputs.src-nimview-v0_1_1.type = "github";
   inputs.src-nimview-v0_1_1.owner = "marcomq";
   inputs.src-nimview-v0_1_1.repo = "nimview";

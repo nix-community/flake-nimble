@@ -2,11 +2,10 @@
   description = ''Application to detect which commit generates malicious code detection by antivirus software.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mcd-0_3_2.flake = false;
+    inputs.src-mcd-0_3_2.flake = false;
   inputs.src-mcd-0_3_2.type = "gitlab";
   inputs.src-mcd-0_3_2.owner = "malicious-commit-detector";
   inputs.src-mcd-0_3_2.repo = "mcd";

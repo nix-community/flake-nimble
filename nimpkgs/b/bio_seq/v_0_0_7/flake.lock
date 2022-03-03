@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-bio_seq-v_0_0_7": "src-bio_seq-v_0_0_7"
+      }
+    },
+    "src-bio_seq-v_0_0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631708069,
+        "narHash": "sha256-41RayiqYbrS0Ei//ABrfreazys2QbAhAtphph454iDQ=",
+        "owner": "kerrycobb",
+        "repo": "BioSeq",
+        "rev": "b48e9893b42c2fa73b77fc9d64d8ddcb1996b584",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kerrycobb",
+        "ref": "refs/tags/v.0.0.7",
+        "repo": "BioSeq",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

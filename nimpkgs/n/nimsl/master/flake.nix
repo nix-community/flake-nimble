@@ -2,11 +2,10 @@
   description = ''Shaders in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimsl-master.flake = false;
+    inputs.src-nimsl-master.flake = false;
   inputs.src-nimsl-master.type = "github";
   inputs.src-nimsl-master.owner = "yglukhov";
   inputs.src-nimsl-master.repo = "nimsl";

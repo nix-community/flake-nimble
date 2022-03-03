@@ -2,11 +2,10 @@
   description = ''FNV-1 and FNV-1a non-cryptographic hash functions (documentation hosted at: http://ryuk.ooo/nimdocs/fnv/fnv.html)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fnv-0_1_0.flake = false;
+    inputs.src-fnv-0_1_0.flake = false;
   inputs.src-fnv-0_1_0.type = "gitlab";
   inputs.src-fnv-0_1_0.owner = "ryukoposting";
   inputs.src-fnv-0_1_0.repo = "nim-fnv";

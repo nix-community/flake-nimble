@@ -2,11 +2,10 @@
   description = ''MurmurHash in pure Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-murmur-master.flake = false;
+    inputs.src-murmur-master.flake = false;
   inputs.src-murmur-master.type = "github";
   inputs.src-murmur-master.owner = "olahol";
   inputs.src-murmur-master.repo = "nimrod-murmur";

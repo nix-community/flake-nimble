@@ -2,11 +2,10 @@
   description = ''A simple RPN calculator'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ad-0_7_2.flake = false;
+    inputs.src-ad-0_7_2.flake = false;
   inputs.src-ad-0_7_2.type = "github";
   inputs.src-ad-0_7_2.owner = "subsetpark";
   inputs.src-ad-0_7_2.repo = "ad";

@@ -2,11 +2,10 @@
   description = ''Iterator package aimed at more ergonomic and efficient iterators.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-slicerator-master.flake = false;
+    inputs.src-slicerator-master.flake = false;
   inputs.src-slicerator-master.type = "github";
   inputs.src-slicerator-master.owner = "beef331";
   inputs.src-slicerator-master.repo = "slicerator";

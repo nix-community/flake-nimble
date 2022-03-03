@@ -2,11 +2,10 @@
   description = ''Trait system for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimtraits-v0_1_3.flake = false;
+    inputs.src-nimtraits-v0_1_3.flake = false;
   inputs.src-nimtraits-v0_1_3.type = "github";
   inputs.src-nimtraits-v0_1_3.owner = "haxscramper";
   inputs.src-nimtraits-v0_1_3.repo = "nimtraits";

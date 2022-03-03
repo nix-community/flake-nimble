@@ -2,11 +2,10 @@
   description = ''Tool to download dogs images'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dogapi_cli-v1_0_0.flake = false;
+    inputs.src-dogapi_cli-v1_0_0.flake = false;
   inputs.src-dogapi_cli-v1_0_0.type = "github";
   inputs.src-dogapi_cli-v1_0_0.owner = "thexxiv";
   inputs.src-dogapi_cli-v1_0_0.repo = "dogapi-cli";

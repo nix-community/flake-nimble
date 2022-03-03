@@ -2,11 +2,10 @@
   description = ''Disk-based sequences'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-spills-0_1_1.flake = false;
+    inputs.src-spills-0_1_1.flake = false;
   inputs.src-spills-0_1_1.type = "github";
   inputs.src-spills-0_1_1.owner = "andreaferretti";
   inputs.src-spills-0_1_1.repo = "spills";

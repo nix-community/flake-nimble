@@ -2,11 +2,10 @@
   description = ''Read and write midi files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nim_midi-master.flake = false;
+    inputs.src-nim_midi-master.flake = false;
   inputs.src-nim_midi-master.type = "github";
   inputs.src-nim_midi-master.owner = "jerous86";
   inputs.src-nim_midi-master.repo = "nim_midi";

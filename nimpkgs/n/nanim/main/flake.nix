@@ -2,11 +2,10 @@
   description = ''Create smooth GPU-accelerated animations that can be previewed live or rendered to videos.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nanim-main.flake = false;
+    inputs.src-nanim-main.flake = false;
   inputs.src-nanim-main.type = "github";
   inputs.src-nanim-main.owner = "ErikWDev";
   inputs.src-nanim-main.repo = "nanim";

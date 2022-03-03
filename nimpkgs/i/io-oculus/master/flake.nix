@@ -2,11 +2,10 @@
   description = ''Obsolete - please use oculus instead!'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-io-oculus-master.flake = false;
+    inputs.src-io-oculus-master.flake = false;
   inputs.src-io-oculus-master.type = "github";
   inputs.src-io-oculus-master.owner = "nimious";
   inputs.src-io-oculus-master.repo = "io-oculus";

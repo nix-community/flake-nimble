@@ -2,11 +2,10 @@
   description = ''Nim wrapper for libtess2'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimtess2-master.flake = false;
+    inputs.src-nimtess2-master.flake = false;
   inputs.src-nimtess2-master.type = "github";
   inputs.src-nimtess2-master.owner = "genotrance";
   inputs.src-nimtess2-master.repo = "nimtess2";

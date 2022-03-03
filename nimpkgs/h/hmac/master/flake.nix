@@ -2,11 +2,10 @@
   description = ''HMAC-SHA1 and HMAC-MD5 hashing in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hmac-master.flake = false;
+    inputs.src-hmac-master.flake = false;
   inputs.src-hmac-master.type = "github";
   inputs.src-hmac-master.owner = "OpenSystemsLab";
   inputs.src-hmac-master.repo = "hmac.nim";

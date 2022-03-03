@@ -2,11 +2,10 @@
   description = ''A Funge-98 interpreter written in nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimfunge98-1_0_1.flake = false;
+    inputs.src-nimfunge98-1_0_1.flake = false;
   inputs.src-nimfunge98-1_0_1.type = "other";
   inputs.src-nimfunge98-1_0_1.owner = "adyxax";
   inputs.src-nimfunge98-1_0_1.repo = "nimfunge98";

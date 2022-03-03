@@ -2,11 +2,10 @@
   description = ''Nim implementation of NanoID, a tiny, secure, URL-friendly, unique string ID generator. Works with Linux and Windows!'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-neoid-v0_1_0.flake = false;
+    inputs.src-neoid-v0_1_0.flake = false;
   inputs.src-neoid-v0_1_0.type = "github";
   inputs.src-neoid-v0_1_0.owner = "theAkito";
   inputs.src-neoid-v0_1_0.repo = "nim-neoid";

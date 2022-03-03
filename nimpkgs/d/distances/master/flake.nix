@@ -2,11 +2,10 @@
   description = ''Distances is a high performance Nim library for calculating distances.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-distances-master.flake = false;
+    inputs.src-distances-master.flake = false;
   inputs.src-distances-master.type = "github";
   inputs.src-distances-master.owner = "ayman-albaz";
   inputs.src-distances-master.repo = "distances";

@@ -2,11 +2,10 @@
   description = ''A Nim mini DSL to execute shell commands'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-shell-v0_4_3.flake = false;
+    inputs.src-shell-v0_4_3.flake = false;
   inputs.src-shell-v0_4_3.type = "github";
   inputs.src-shell-v0_4_3.owner = "Vindaar";
   inputs.src-shell-v0_4_3.repo = "shell";

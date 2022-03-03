@@ -2,11 +2,10 @@
   description = ''Library for converting sequences to strings. Also has PHP-inspired explode and implode procs.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sequester-master.flake = false;
+    inputs.src-sequester-master.flake = false;
   inputs.src-sequester-master.type = "github";
   inputs.src-sequester-master.owner = "fallingduck";
   inputs.src-sequester-master.repo = "sequester";

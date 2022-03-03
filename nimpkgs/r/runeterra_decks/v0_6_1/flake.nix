@@ -2,11 +2,10 @@
   description = ''Legends of Runeterra deck/card code encoder/decoder'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-runeterra_decks-v0_6_1.flake = false;
+    inputs.src-runeterra_decks-v0_6_1.flake = false;
   inputs.src-runeterra_decks-v0_6_1.type = "github";
   inputs.src-runeterra_decks-v0_6_1.owner = "SolitudeSF";
   inputs.src-runeterra_decks-v0_6_1.repo = "runeterra_decks";

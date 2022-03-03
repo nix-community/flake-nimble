@@ -2,11 +2,10 @@
   description = ''A db_sqlite fork with a proper typing'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ndb-v0_19_7.flake = false;
+    inputs.src-ndb-v0_19_7.flake = false;
   inputs.src-ndb-v0_19_7.type = "github";
   inputs.src-ndb-v0_19_7.owner = "xzfc";
   inputs.src-ndb-v0_19_7.repo = "ndb.nim";

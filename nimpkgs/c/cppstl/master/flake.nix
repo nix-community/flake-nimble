@@ -2,11 +2,10 @@
   description = ''Bindings for the C++ Standard Template Library (STL)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cppstl-master.flake = false;
+    inputs.src-cppstl-master.flake = false;
   inputs.src-cppstl-master.type = "github";
   inputs.src-cppstl-master.owner = "BigEpsilon";
   inputs.src-cppstl-master.repo = "nim-cppstl";

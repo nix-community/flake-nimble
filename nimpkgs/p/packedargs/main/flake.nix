@@ -2,11 +2,10 @@
   description = ''a convention mainly created for `createThread` proc'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-packedArgs-main.flake = false;
+    inputs.src-packedArgs-main.flake = false;
   inputs.src-packedArgs-main.type = "github";
   inputs.src-packedArgs-main.owner = "hamidb80";
   inputs.src-packedArgs-main.repo = "packedArgs";

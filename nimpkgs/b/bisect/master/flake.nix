@@ -2,11 +2,10 @@
   description = ''Bisection algorithms ported from Python'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bisect-master.flake = false;
+    inputs.src-bisect-master.flake = false;
   inputs.src-bisect-master.type = "github";
   inputs.src-bisect-master.owner = "berquist";
   inputs.src-bisect-master.repo = "bisect";

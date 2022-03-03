@@ -2,11 +2,10 @@
   description = ''A high level SQLite API for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sqliteral-1_2_0.flake = false;
+    inputs.src-sqliteral-1_2_0.flake = false;
   inputs.src-sqliteral-1_2_0.type = "github";
   inputs.src-sqliteral-1_2_0.owner = "olliNiinivaara";
   inputs.src-sqliteral-1_2_0.repo = "SQLiteral";

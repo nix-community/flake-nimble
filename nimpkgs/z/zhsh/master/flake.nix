@@ -2,11 +2,10 @@
   description = ''This module is a port of the Java implementation of the Zhang-Shasha algorithm for tree edit distance'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-zhsh-master.flake = false;
+    inputs.src-zhsh-master.flake = false;
   inputs.src-zhsh-master.type = "github";
   inputs.src-zhsh-master.owner = "PMunch";
   inputs.src-zhsh-master.repo = "zhangshasha";

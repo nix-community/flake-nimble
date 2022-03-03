@@ -2,11 +2,10 @@
   description = ''Hashing/Digest collection in pure Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ShimSham-0_3_4.flake = false;
+    inputs.src-ShimSham-0_3_4.flake = false;
   inputs.src-ShimSham-0_3_4.type = "github";
   inputs.src-ShimSham-0_3_4.owner = "apense";
   inputs.src-ShimSham-0_3_4.repo = "shimsham";

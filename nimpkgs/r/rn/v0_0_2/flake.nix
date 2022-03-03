@@ -2,11 +2,10 @@
   description = ''minimal, performant mass file renamer'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rn-v0_0_2.flake = false;
+    inputs.src-rn-v0_0_2.flake = false;
   inputs.src-rn-v0_0_2.type = "github";
   inputs.src-rn-v0_0_2.owner = "xioren";
   inputs.src-rn-v0_0_2.repo = "rn";

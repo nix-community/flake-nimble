@@ -2,11 +2,10 @@
   description = ''Library for displaying notifications on the desktop'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-notifications-v0_1_0.flake = false;
+    inputs.src-notifications-v0_1_0.flake = false;
   inputs.src-notifications-v0_1_0.type = "github";
   inputs.src-notifications-v0_1_0.owner = "dom96";
   inputs.src-notifications-v0_1_0.repo = "notifications";

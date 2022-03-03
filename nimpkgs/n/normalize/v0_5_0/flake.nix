@@ -2,11 +2,10 @@
   description = ''Unicode normalization forms (tr15)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-normalize-v0_5_0.flake = false;
+    inputs.src-normalize-v0_5_0.flake = false;
   inputs.src-normalize-v0_5_0.type = "github";
   inputs.src-normalize-v0_5_0.owner = "nitely";
   inputs.src-normalize-v0_5_0.repo = "nim-normalize";

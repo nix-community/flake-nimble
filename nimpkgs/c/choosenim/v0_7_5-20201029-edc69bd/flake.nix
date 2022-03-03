@@ -2,11 +2,10 @@
   description = ''The Nim toolchain installer.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-choosenim-v0_7_5-20201029-edc69bd.flake = false;
+    inputs.src-choosenim-v0_7_5-20201029-edc69bd.flake = false;
   inputs.src-choosenim-v0_7_5-20201029-edc69bd.type = "github";
   inputs.src-choosenim-v0_7_5-20201029-edc69bd.owner = "dom96";
   inputs.src-choosenim-v0_7_5-20201029-edc69bd.repo = "choosenim";

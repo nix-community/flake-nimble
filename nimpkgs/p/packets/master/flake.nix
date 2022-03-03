@@ -2,11 +2,10 @@
   description = ''Declarative packets system for serializing/deserializing and marshalling'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-packets-master.flake = false;
+    inputs.src-packets-master.flake = false;
   inputs.src-packets-master.type = "github";
   inputs.src-packets-master.owner = "Q-Master";
   inputs.src-packets-master.repo = "packets.nim";

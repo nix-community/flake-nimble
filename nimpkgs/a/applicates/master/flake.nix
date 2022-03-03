@@ -2,11 +2,10 @@
   description = ''"pointers" to cached AST that instantiate routines when called'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-applicates-master.flake = false;
+    inputs.src-applicates-master.flake = false;
   inputs.src-applicates-master.type = "github";
   inputs.src-applicates-master.owner = "metagn";
   inputs.src-applicates-master.repo = "applicates";

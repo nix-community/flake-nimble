@@ -2,11 +2,10 @@
   description = ''Pure Nim stack implementation based on sequences.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-stacks-master.flake = false;
+    inputs.src-stacks-master.flake = false;
   inputs.src-stacks-master.type = "github";
   inputs.src-stacks-master.owner = "rustomax";
   inputs.src-stacks-master.repo = "nim-stacks";

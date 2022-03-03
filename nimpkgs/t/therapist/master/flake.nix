@@ -2,11 +2,10 @@
   description = ''Type-safe commandline parsing with minimal magic'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-therapist-master.flake = false;
+    inputs.src-therapist-master.flake = false;
   inputs.src-therapist-master.type = "bitbucket";
   inputs.src-therapist-master.owner = "maxgrenderjones";
   inputs.src-therapist-master.repo = "therapist";

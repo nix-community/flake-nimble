@@ -2,11 +2,10 @@
   description = ''A compact dictionary implementation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-compactdict-master.flake = false;
+    inputs.src-compactdict-master.flake = false;
   inputs.src-compactdict-master.type = "github";
   inputs.src-compactdict-master.owner = "LemonBoy";
   inputs.src-compactdict-master.repo = "compactdict";

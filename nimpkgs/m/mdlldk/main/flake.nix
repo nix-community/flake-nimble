@@ -2,11 +2,10 @@
   description = ''Dynamic-link libraries (DLLs) Development Kit for mIRC.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mdlldk-main.flake = false;
+    inputs.src-mdlldk-main.flake = false;
   inputs.src-mdlldk-main.type = "github";
   inputs.src-mdlldk-main.owner = "rockcavera";
   inputs.src-mdlldk-main.repo = "nim-mdlldk";

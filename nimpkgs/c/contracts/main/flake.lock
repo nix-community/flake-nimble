@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-contracts-main": "src-contracts-main"
+      }
+    },
+    "src-contracts-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630711146,
+        "narHash": "sha256-xPqfrbnFM8e31c/kSuYDDi2Zd56U2b+NkaFjUK/HhFQ=",
+        "owner": "Udiknedormin",
+        "repo": "NimContracts",
+        "rev": "8abc0c372176f7e6361bd7f23ced3adc80fd8cc5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Udiknedormin",
+        "ref": "refs/heads/main",
+        "repo": "NimContracts",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

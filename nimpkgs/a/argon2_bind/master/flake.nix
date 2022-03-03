@@ -2,11 +2,10 @@
   description = ''Bindings to the high-level Argon2 C API'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-argon2_bind-master.flake = false;
+    inputs.src-argon2_bind-master.flake = false;
   inputs.src-argon2_bind-master.type = "github";
   inputs.src-argon2_bind-master.owner = "D-Nice";
   inputs.src-argon2_bind-master.repo = "argon2_bind";

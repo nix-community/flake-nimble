@@ -2,11 +2,10 @@
   description = ''A Jester web plugin that allows easy message passing between pages using a browser cookie.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jestercookiemsgs-master.flake = false;
+    inputs.src-jestercookiemsgs-master.flake = false;
   inputs.src-jestercookiemsgs-master.type = "github";
   inputs.src-jestercookiemsgs-master.owner = "JohnAD";
   inputs.src-jestercookiemsgs-master.repo = "jestercookiemsgs";

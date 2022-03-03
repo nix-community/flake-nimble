@@ -2,11 +2,10 @@
   description = ''til-tool: Today I Learned tool'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-til-v0_0_3.flake = false;
+    inputs.src-til-v0_0_3.flake = false;
   inputs.src-til-v0_0_3.type = "github";
   inputs.src-til-v0_0_3.owner = "danielecook";
   inputs.src-til-v0_0_3.repo = "til-tool";

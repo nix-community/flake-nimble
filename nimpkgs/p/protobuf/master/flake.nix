@@ -2,11 +2,10 @@
   description = ''Protobuf implementation in pure Nim that leverages the power of the macro system to not depend on any external tools'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-protobuf-master.flake = false;
+    inputs.src-protobuf-master.flake = false;
   inputs.src-protobuf-master.type = "github";
   inputs.src-protobuf-master.owner = "PMunch";
   inputs.src-protobuf-master.repo = "protobuf-nim";

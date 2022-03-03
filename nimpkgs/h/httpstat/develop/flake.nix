@@ -2,11 +2,10 @@
   description = ''curl statistics made simple '';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-httpstat-develop.flake = false;
+    inputs.src-httpstat-develop.flake = false;
   inputs.src-httpstat-develop.type = "github";
   inputs.src-httpstat-develop.owner = "ucpr";
   inputs.src-httpstat-develop.repo = "httpstat";

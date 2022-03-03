@@ -2,11 +2,10 @@
   description = ''Obsolete - please use sixense instead!'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-io-sixense-master.flake = false;
+    inputs.src-io-sixense-master.flake = false;
   inputs.src-io-sixense-master.type = "github";
   inputs.src-io-sixense-master.owner = "nimious";
   inputs.src-io-sixense-master.repo = "io-sixense";

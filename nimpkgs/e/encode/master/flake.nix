@@ -2,11 +2,10 @@
   description = ''Encode/decode utf8 utf16 and utf32.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-encode-master.flake = false;
+    inputs.src-encode-master.flake = false;
   inputs.src-encode-master.type = "github";
   inputs.src-encode-master.owner = "treeform";
   inputs.src-encode-master.repo = "encode";

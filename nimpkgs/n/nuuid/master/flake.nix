@@ -2,11 +2,10 @@
   description = ''A Nim source only UUID generator'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nuuid-master.flake = false;
+    inputs.src-nuuid-master.flake = false;
   inputs.src-nuuid-master.type = "github";
   inputs.src-nuuid-master.owner = "yglukhov";
   inputs.src-nuuid-master.repo = "nim-only-uuid";

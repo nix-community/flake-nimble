@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-genieos-v9_4_0-tiffany": "src-genieos-v9_4_0-tiffany"
+      }
+    },
+    "src-genieos-v9_4_0-tiffany": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1399325708,
+        "narHash": "sha256-HPZ0XUtgeifc+OUIB1fZaEpTF7LLcfVlWPiLRT/0hiw=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "226905a20104a1be0a8dbb0e1e2a3c46c66a0238",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v9.4.0-tiffany",
+        "repo": "genieos",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

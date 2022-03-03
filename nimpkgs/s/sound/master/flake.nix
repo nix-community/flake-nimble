@@ -2,11 +2,10 @@
   description = ''Cross-platform sound mixer library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sound-master.flake = false;
+    inputs.src-sound-master.flake = false;
   inputs.src-sound-master.type = "github";
   inputs.src-sound-master.owner = "yglukhov";
   inputs.src-sound-master.repo = "sound";

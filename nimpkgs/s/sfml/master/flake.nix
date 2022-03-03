@@ -2,11 +2,10 @@
   description = ''High level OpenGL-based Game Library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sfml-master.flake = false;
+    inputs.src-sfml-master.flake = false;
   inputs.src-sfml-master.type = "github";
   inputs.src-sfml-master.owner = "fowlmouth";
   inputs.src-sfml-master.repo = "nimrod-sfml";

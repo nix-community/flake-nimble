@@ -2,11 +2,10 @@
   description = ''Manage CSV files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-csvtools-0_1_0.flake = false;
+    inputs.src-csvtools-0_1_0.flake = false;
   inputs.src-csvtools-0_1_0.type = "github";
   inputs.src-csvtools-0_1_0.owner = "andreaferretti";
   inputs.src-csvtools-0_1_0.repo = "csvtools";

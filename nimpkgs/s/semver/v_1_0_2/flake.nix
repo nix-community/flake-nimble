@@ -2,11 +2,10 @@
   description = ''Semantic versioning parser for Nim. Allows the parsing of version strings into objects and the comparing of version objects.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-semver-v_1_0_2.flake = false;
+    inputs.src-semver-v_1_0_2.flake = false;
   inputs.src-semver-v_1_0_2.type = "github";
   inputs.src-semver-v_1_0_2.owner = "euantorano";
   inputs.src-semver-v_1_0_2.repo = "semver.nim";

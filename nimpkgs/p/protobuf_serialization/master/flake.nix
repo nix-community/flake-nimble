@@ -2,11 +2,10 @@
   description = ''Protobuf implementation compatible with the nim-serialization framework.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-protobuf_serialization-master.flake = false;
+    inputs.src-protobuf_serialization-master.flake = false;
   inputs.src-protobuf_serialization-master.type = "github";
   inputs.src-protobuf_serialization-master.owner = "status-im";
   inputs.src-protobuf_serialization-master.repo = "nim-protobuf-serialization";

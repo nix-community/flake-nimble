@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nimQBittorrent-master": "src-nimQBittorrent-master"
+      }
+    },
+    "src-nimQBittorrent-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587658137,
+        "narHash": "sha256-hMmM1ZXu6wPSpVeIqWMYkCcl0MESnzk+M5Av+EM0v54=",
+        "owner": "faulander",
+        "repo": "nimQBittorrent",
+        "rev": "9829f19d5ef8a3d1c070381db245d8434e22d467",
+        "type": "github"
+      },
+      "original": {
+        "owner": "faulander",
+        "ref": "refs/heads/master",
+        "repo": "nimQBittorrent",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

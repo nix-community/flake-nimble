@@ -2,11 +2,10 @@
   description = ''htslib wrapper for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hts-master.flake = false;
+    inputs.src-hts-master.flake = false;
   inputs.src-hts-master.type = "github";
   inputs.src-hts-master.owner = "brentp";
   inputs.src-hts-master.repo = "hts-nim";

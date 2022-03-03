@@ -2,11 +2,10 @@
   description = ''A 2D|3D game engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-frag-master.flake = false;
+    inputs.src-frag-master.flake = false;
   inputs.src-frag-master.type = "github";
   inputs.src-frag-master.owner = "fragworks";
   inputs.src-frag-master.repo = "frag";

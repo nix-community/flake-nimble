@@ -2,11 +2,10 @@
   description = ''Steamworks SDK API for shipping games on Steam.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-steamworks-master.flake = false;
+    inputs.src-steamworks-master.flake = false;
   inputs.src-steamworks-master.type = "github";
   inputs.src-steamworks-master.owner = "treeform";
   inputs.src-steamworks-master.repo = "steamworks";

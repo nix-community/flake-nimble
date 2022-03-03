@@ -2,11 +2,10 @@
   description = ''Simple 'with' macro for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-with-master.flake = false;
+    inputs.src-with-master.flake = false;
   inputs.src-with-master.type = "github";
   inputs.src-with-master.owner = "zevv";
   inputs.src-with-master.repo = "with";

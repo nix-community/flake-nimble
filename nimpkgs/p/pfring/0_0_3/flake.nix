@@ -2,11 +2,10 @@
   description = ''PF_RING wrapper for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pfring-0_0_3.flake = false;
+    inputs.src-pfring-0_0_3.flake = false;
   inputs.src-pfring-0_0_3.type = "github";
   inputs.src-pfring-0_0_3.owner = "ba0f3";
   inputs.src-pfring-0_0_3.repo = "pfring.nim";

@@ -2,11 +2,10 @@
   description = ''Fast and just works JSON-Binding for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sam-master.flake = false;
+    inputs.src-sam-master.flake = false;
   inputs.src-sam-master.type = "github";
   inputs.src-sam-master.owner = "OpenSystemsLab";
   inputs.src-sam-master.repo = "sam.nim";

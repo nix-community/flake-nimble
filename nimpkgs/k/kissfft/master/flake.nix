@@ -2,11 +2,10 @@
   description = ''Nim binding for KissFFT Fast Fourier Transform library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-kissfft-master.flake = false;
+    inputs.src-kissfft-master.flake = false;
   inputs.src-kissfft-master.type = "github";
   inputs.src-kissfft-master.owner = "m13253";
   inputs.src-kissfft-master.repo = "nim-kissfft";

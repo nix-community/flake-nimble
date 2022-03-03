@@ -2,11 +2,10 @@
   description = ''Check minecraft server status'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-minecraft_server_status-0_1_1.flake = false;
+    inputs.src-minecraft_server_status-0_1_1.flake = false;
   inputs.src-minecraft_server_status-0_1_1.type = "github";
   inputs.src-minecraft_server_status-0_1_1.owner = "GabrielLasso";
   inputs.src-minecraft_server_status-0_1_1.repo = "minecraft_server_status";

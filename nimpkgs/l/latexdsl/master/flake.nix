@@ -2,11 +2,10 @@
   description = ''A DSL to generate LaTeX from Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-latexdsl-master.flake = false;
+    inputs.src-latexdsl-master.flake = false;
   inputs.src-latexdsl-master.type = "github";
   inputs.src-latexdsl-master.owner = "Vindaar";
   inputs.src-latexdsl-master.repo = "LatexDSL";

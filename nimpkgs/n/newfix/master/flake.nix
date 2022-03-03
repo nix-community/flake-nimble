@@ -2,11 +2,10 @@
   description = ''FIX Protocol optimized parser (Financial Information eXchange)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-newfix-master.flake = false;
+    inputs.src-newfix-master.flake = false;
   inputs.src-newfix-master.type = "github";
   inputs.src-newfix-master.owner = "inv2004";
   inputs.src-newfix-master.repo = "newfix";

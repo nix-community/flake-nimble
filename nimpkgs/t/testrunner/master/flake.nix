@@ -2,11 +2,10 @@
   description = ''Test runner with file monitoring and desktop notification capabilities'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-testrunner-master.flake = false;
+    inputs.src-testrunner-master.flake = false;
   inputs.src-testrunner-master.type = "github";
   inputs.src-testrunner-master.owner = "FedericoCeratto";
   inputs.src-testrunner-master.repo = "nim-testrunner";

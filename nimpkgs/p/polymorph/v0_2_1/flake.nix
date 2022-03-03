@@ -2,11 +2,10 @@
   description = ''An entity-component-system with a focus on compile time optimisation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-Polymorph-v0_2_1.flake = false;
+    inputs.src-Polymorph-v0_2_1.flake = false;
   inputs.src-Polymorph-v0_2_1.type = "github";
   inputs.src-Polymorph-v0_2_1.owner = "rlipsc";
   inputs.src-Polymorph-v0_2_1.repo = "polymorph";

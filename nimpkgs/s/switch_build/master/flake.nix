@@ -2,11 +2,10 @@
   description = ''An easy way to build homebrew files for the Nintendo Switch'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-switch_build-master.flake = false;
+    inputs.src-switch_build-master.flake = false;
   inputs.src-switch_build-master.type = "github";
   inputs.src-switch_build-master.owner = "jyapayne";
   inputs.src-switch_build-master.repo = "switch-build";

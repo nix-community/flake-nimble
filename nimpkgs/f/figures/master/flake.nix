@@ -2,11 +2,10 @@
   description = ''unicode symbols'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-figures-master.flake = false;
+    inputs.src-figures-master.flake = false;
   inputs.src-figures-master.type = "github";
   inputs.src-figures-master.owner = "lmariscal";
   inputs.src-figures-master.repo = "figures";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-turn_based_game-v1_1_3": "src-turn_based_game-v1_1_3"
+      }
+    },
+    "src-turn_based_game-v1_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1530414107,
+        "narHash": "sha256-W1vFBtWTwrQ45GwLXR/9XH4VmE/zs8jM+CPzGlYDvmE=",
+        "owner": "JohnAD",
+        "repo": "turn_based_game",
+        "rev": "f02dd941502a9121515b6e71e19cbc067d6a9a30",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v1.1.3",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

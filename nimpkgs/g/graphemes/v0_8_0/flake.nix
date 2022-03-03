@@ -2,11 +2,10 @@
   description = ''Grapheme aware string handling (Unicode tr29)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-graphemes-v0_8_0.flake = false;
+    inputs.src-graphemes-v0_8_0.flake = false;
   inputs.src-graphemes-v0_8_0.type = "github";
   inputs.src-graphemes-v0_8_0.owner = "nitely";
   inputs.src-graphemes-v0_8_0.repo = "nim-graphemes";

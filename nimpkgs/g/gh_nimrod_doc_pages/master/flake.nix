@@ -2,11 +2,10 @@
   description = ''Generates a GitHub documentation website for Nim projects.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gh_nimrod_doc_pages-master.flake = false;
+    inputs.src-gh_nimrod_doc_pages-master.flake = false;
   inputs.src-gh_nimrod_doc_pages-master.type = "github";
   inputs.src-gh_nimrod_doc_pages-master.owner = "Araq";
   inputs.src-gh_nimrod_doc_pages-master.repo = "gh_nimrod_doc_pages";

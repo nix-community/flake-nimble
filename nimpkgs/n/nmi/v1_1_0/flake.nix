@@ -2,11 +2,10 @@
   description = ''nmi display animations aimed to correct users who accidentally enter nmi instead of nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nmi-v1_1_0.flake = false;
+    inputs.src-nmi-v1_1_0.flake = false;
   inputs.src-nmi-v1_1_0.type = "github";
   inputs.src-nmi-v1_1_0.owner = "jiro4989";
   inputs.src-nmi-v1_1_0.repo = "nmi";

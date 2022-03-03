@@ -2,11 +2,10 @@
   description = ''An efficient packet parser for MySQL Client/Server Protocol. Help you to write Mysql communication in either BLOCKIONG-IO or NON-BLOCKING-IO.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mysqlparser-master.flake = false;
+    inputs.src-mysqlparser-master.flake = false;
   inputs.src-mysqlparser-master.type = "github";
   inputs.src-mysqlparser-master.owner = "tulayang";
   inputs.src-mysqlparser-master.repo = "mysqlparser";

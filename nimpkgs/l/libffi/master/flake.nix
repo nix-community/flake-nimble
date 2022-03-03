@@ -2,11 +2,10 @@
   description = ''libffi wrapper for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libffi-master.flake = false;
+    inputs.src-libffi-master.flake = false;
   inputs.src-libffi-master.type = "github";
   inputs.src-libffi-master.owner = "Araq";
   inputs.src-libffi-master.repo = "libffi";

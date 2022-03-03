@@ -2,11 +2,10 @@
   description = ''A Nim implementation of the Stalin Sort algorithm.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-stalinsort-v0_3_2.flake = false;
+    inputs.src-stalinsort-v0_3_2.flake = false;
   inputs.src-stalinsort-v0_3_2.type = "github";
   inputs.src-stalinsort-v0_3_2.owner = "tonogram";
   inputs.src-stalinsort-v0_3_2.repo = "stalinsort";

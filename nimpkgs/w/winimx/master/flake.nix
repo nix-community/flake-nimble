@@ -2,11 +2,10 @@
   description = ''Winim minified code generator'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-winimx-master.flake = false;
+    inputs.src-winimx-master.flake = false;
   inputs.src-winimx-master.type = "github";
   inputs.src-winimx-master.owner = "khchen";
   inputs.src-winimx-master.repo = "winimx";

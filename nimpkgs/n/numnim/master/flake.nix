@@ -2,11 +2,10 @@
   description = ''A numpy like ndarray and dataframe library for nim-lang.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-numnim-master.flake = false;
+    inputs.src-numnim-master.flake = false;
   inputs.src-numnim-master.type = "github";
   inputs.src-numnim-master.owner = "YesDrX";
   inputs.src-numnim-master.repo = "numnim";

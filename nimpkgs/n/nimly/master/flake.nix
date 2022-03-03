@@ -2,11 +2,10 @@
   description = ''Lexer Generator and Parser Generator as a Macro Library in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimly-master.flake = false;
+    inputs.src-nimly-master.flake = false;
   inputs.src-nimly-master.type = "github";
   inputs.src-nimly-master.owner = "loloicci";
   inputs.src-nimly-master.repo = "nimly";

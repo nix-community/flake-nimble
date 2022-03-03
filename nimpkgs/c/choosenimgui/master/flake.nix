@@ -2,11 +2,10 @@
   description = ''A simple GUI for choosenim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-choosenimgui-master.flake = false;
+    inputs.src-choosenimgui-master.flake = false;
   inputs.src-choosenimgui-master.type = "github";
   inputs.src-choosenimgui-master.owner = "ThomasTJdev";
   inputs.src-choosenimgui-master.repo = "choosenim_gui";

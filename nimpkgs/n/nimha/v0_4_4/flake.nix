@@ -2,11 +2,10 @@
   description = ''Nim Home Assistant (NimHA) is a hub for combining multiple home automation devices and automating jobs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimha-v0_4_4.flake = false;
+    inputs.src-nimha-v0_4_4.flake = false;
   inputs.src-nimha-v0_4_4.type = "github";
   inputs.src-nimha-v0_4_4.owner = "ThomasTJdev";
   inputs.src-nimha-v0_4_4.repo = "nim_homeassistant";

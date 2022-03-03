@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-odsreader-v0_3_0": "src-odsreader-v0_3_0"
+      }
+    },
+    "src-odsreader-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636574668,
+        "narHash": "sha256-1a/y4v0jcFAFt3Yta9p2dKeFDAcHf3G0tXPuzsRwHew=",
+        "owner": "dariolah",
+        "repo": "odsreader",
+        "rev": "c0cda028e57dad87072b34e171791eb4a144dbf7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dariolah",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "odsreader",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

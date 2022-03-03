@@ -2,11 +2,10 @@
   description = ''A library providing zero-cost chaining for functional abstractions in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-zero_functional-v0_0_2.flake = false;
+    inputs.src-zero_functional-v0_0_2.flake = false;
   inputs.src-zero_functional-v0_0_2.type = "github";
   inputs.src-zero_functional-v0_0_2.owner = "zero-functional";
   inputs.src-zero_functional-v0_0_2.repo = "zero-functional";

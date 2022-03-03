@@ -2,11 +2,10 @@
   description = ''Expat wrapper for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-expat-master.flake = false;
+    inputs.src-expat-master.flake = false;
   inputs.src-expat-master.type = "github";
   inputs.src-expat-master.owner = "nim-lang";
   inputs.src-expat-master.repo = "expat";

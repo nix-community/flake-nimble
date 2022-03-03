@@ -2,11 +2,10 @@
   description = ''Compiler package providing the compiler sources as a library.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-compiler-v1_2_12.flake = false;
+    inputs.src-compiler-v1_2_12.flake = false;
   inputs.src-compiler-v1_2_12.type = "github";
   inputs.src-compiler-v1_2_12.owner = "nim-lang";
   inputs.src-compiler-v1_2_12.repo = "Nim";

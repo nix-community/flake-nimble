@@ -2,11 +2,10 @@
   description = ''A library for scientific computations in pure Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-science-master.flake = false;
+    inputs.src-science-master.flake = false;
   inputs.src-science-master.type = "github";
   inputs.src-science-master.owner = "ruivieira";
   inputs.src-science-master.repo = "nim-science";

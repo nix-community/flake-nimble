@@ -2,11 +2,10 @@
   description = ''Full-featured CRC library for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-w8crc-master.flake = false;
+    inputs.src-w8crc-master.flake = false;
   inputs.src-w8crc-master.type = "github";
   inputs.src-w8crc-master.owner = "sumatoshi";
   inputs.src-w8crc-master.repo = "w8crc";

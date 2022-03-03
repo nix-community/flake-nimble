@@ -2,11 +2,10 @@
   description = ''A nim wrapper for ArrayFire'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ArrayFireNim-master.flake = false;
+    inputs.src-ArrayFireNim-master.flake = false;
   inputs.src-ArrayFireNim-master.type = "github";
   inputs.src-ArrayFireNim-master.owner = "bitstormGER";
   inputs.src-ArrayFireNim-master.repo = "ArrayFire-Nim";

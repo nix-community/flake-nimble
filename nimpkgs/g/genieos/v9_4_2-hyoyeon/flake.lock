@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-genieos-v9_4_2-hyoyeon": "src-genieos-v9_4_2-hyoyeon"
+      }
+    },
+    "src-genieos-v9_4_2-hyoyeon": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1422053632,
+        "narHash": "sha256-vGp3quMC6NKG2RaCBvIpvxD/mPdM4tC17/EpOxtIkH4=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "9801bcf42d1a0266f0395b7b38a429ad937e32ab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v9.4.2-hyoyeon",
+        "repo": "genieos",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

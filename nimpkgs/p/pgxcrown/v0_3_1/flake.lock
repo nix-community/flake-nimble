@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-pgxcrown-v0_3_1": "src-pgxcrown-v0_3_1"
+      }
+    },
+    "src-pgxcrown-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1619625463,
+        "narHash": "sha256-DRDMZ5SM/FV/2GCRaIGX5u5fKvYs/4oke79PUReEM74=",
+        "owner": "luisacosta828",
+        "repo": "pgxcrown",
+        "rev": "2964a431a24c430a1d3f1887af4218b31caff90c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "luisacosta828",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "pgxcrown",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

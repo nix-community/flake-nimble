@@ -2,11 +2,10 @@
   description = ''soundex algorithm'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-soundex-master.flake = false;
+    inputs.src-soundex-master.flake = false;
   inputs.src-soundex-master.type = "github";
   inputs.src-soundex-master.owner = "Kashiwara0205";
   inputs.src-soundex-master.repo = "soundex";

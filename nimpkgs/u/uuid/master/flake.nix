@@ -2,11 +2,10 @@
   description = ''UUID wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-uuid-master.flake = false;
+    inputs.src-uuid-master.flake = false;
   inputs.src-uuid-master.type = "github";
   inputs.src-uuid-master.owner = "idlewan";
   inputs.src-uuid-master.repo = "nim-uuid";

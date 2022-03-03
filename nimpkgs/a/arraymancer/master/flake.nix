@@ -2,11 +2,10 @@
   description = ''A tensor (multidimensional array) library for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-arraymancer-master.flake = false;
+    inputs.src-arraymancer-master.flake = false;
   inputs.src-arraymancer-master.type = "github";
   inputs.src-arraymancer-master.owner = "mratsim";
   inputs.src-arraymancer-master.repo = "Arraymancer";

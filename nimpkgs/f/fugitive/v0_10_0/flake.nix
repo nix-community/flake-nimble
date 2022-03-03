@@ -2,11 +2,10 @@
   description = ''Simple command line tool to make git more intuitive, along with useful GitHub addons.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fugitive-v0_10_0.flake = false;
+    inputs.src-fugitive-v0_10_0.flake = false;
   inputs.src-fugitive-v0_10_0.type = "github";
   inputs.src-fugitive-v0_10_0.owner = "haltcase";
   inputs.src-fugitive-v0_10_0.repo = "fugitive";

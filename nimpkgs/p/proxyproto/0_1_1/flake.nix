@@ -2,11 +2,10 @@
   description = ''PROXY Protocol enabler for aged programs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-proxyproto-0_1_1.flake = false;
+    inputs.src-proxyproto-0_1_1.flake = false;
   inputs.src-proxyproto-0_1_1.type = "github";
   inputs.src-proxyproto-0_1_1.owner = "ba0f3";
   inputs.src-proxyproto-0_1_1.repo = "libproxy.nim";

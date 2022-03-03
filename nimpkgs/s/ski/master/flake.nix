@@ -2,11 +2,10 @@
   description = ''ski is library for SKI combinator.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ski-master.flake = false;
+    inputs.src-ski-master.flake = false;
   inputs.src-ski-master.type = "github";
   inputs.src-ski-master.owner = "jiro4989";
   inputs.src-ski-master.repo = "ski";

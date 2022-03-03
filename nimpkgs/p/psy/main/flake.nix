@@ -2,11 +2,10 @@
   description = ''A fast, multi-threading and disk space efficient package manager for PHP development and production environments'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-psy-main.flake = false;
+    inputs.src-psy-main.flake = false;
   inputs.src-psy-main.type = "github";
   inputs.src-psy-main.owner = "psypac";
   inputs.src-psy-main.repo = "psypac";

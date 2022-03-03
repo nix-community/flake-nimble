@@ -2,11 +2,10 @@
   description = ''An amateur radio tool to get you a ballpark estimate of where a given Maidenhead grid square is.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ballpark-main.flake = false;
+    inputs.src-ballpark-main.flake = false;
   inputs.src-ballpark-main.type = "github";
   inputs.src-ballpark-main.owner = "Mihara";
   inputs.src-ballpark-main.repo = "ballpark";

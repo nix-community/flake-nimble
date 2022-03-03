@@ -2,11 +2,10 @@
   description = ''A symbolic library written purely in Nim with the ability to compile expressions into efficient functions.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-symbolicnim-v0_2_0.flake = false;
+    inputs.src-symbolicnim-v0_2_0.flake = false;
   inputs.src-symbolicnim-v0_2_0.type = "github";
   inputs.src-symbolicnim-v0_2_0.owner = "HugoGranstrom";
   inputs.src-symbolicnim-v0_2_0.repo = "symbolicnim";

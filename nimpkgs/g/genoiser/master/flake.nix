@@ -2,11 +2,10 @@
   description = ''functions to tracks for genomics data files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-genoiser-master.flake = false;
+    inputs.src-genoiser-master.flake = false;
   inputs.src-genoiser-master.type = "github";
   inputs.src-genoiser-master.owner = "brentp";
   inputs.src-genoiser-master.repo = "genoiser";

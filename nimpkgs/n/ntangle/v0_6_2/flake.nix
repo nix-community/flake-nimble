@@ -2,11 +2,10 @@
   description = ''Command-line utility for Tangling of Org mode documents'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ntangle-v0_6_2.flake = false;
+    inputs.src-ntangle-v0_6_2.flake = false;
   inputs.src-ntangle-v0_6_2.type = "github";
   inputs.src-ntangle-v0_6_2.owner = "OrgTangle";
   inputs.src-ntangle-v0_6_2.repo = "ntangle";

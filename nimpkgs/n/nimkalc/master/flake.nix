@@ -2,11 +2,10 @@
   description = ''An advanced parsing library for mathematical expressions and equations'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimkalc-master.flake = false;
+    inputs.src-nimkalc-master.flake = false;
   inputs.src-nimkalc-master.type = "github";
   inputs.src-nimkalc-master.owner = "nocturn9x";
   inputs.src-nimkalc-master.repo = "nimkalc";

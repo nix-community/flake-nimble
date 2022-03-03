@@ -2,11 +2,10 @@
   description = ''A dead code locator for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mort-master.flake = false;
+    inputs.src-mort-master.flake = false;
   inputs.src-mort-master.type = "github";
   inputs.src-mort-master.owner = "jyapayne";
   inputs.src-mort-master.repo = "mort";

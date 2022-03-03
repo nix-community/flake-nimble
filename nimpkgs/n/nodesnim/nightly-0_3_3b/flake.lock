@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nodesnim-nightly-0_3_3b": "src-nodesnim-nightly-0_3_3b"
+      }
+    },
+    "src-nodesnim-nightly-0_3_3b": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633848052,
+        "narHash": "sha256-P9xuzac3Jo3tou6mFEIe56uWSKK4KY/NtsP1WR7BjEM=",
+        "owner": "Ethosa",
+        "repo": "nodesnim",
+        "rev": "60d61da4787dc1404d5d4e52336bd21c788e3f67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Ethosa",
+        "ref": "refs/tags/nightly-0.3.3b",
+        "repo": "nodesnim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

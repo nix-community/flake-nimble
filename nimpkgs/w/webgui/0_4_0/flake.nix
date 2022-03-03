@@ -2,11 +2,10 @@
   description = ''Web Technologies based Crossplatform GUI, modified wrapper for modified webview.h'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-webgui-0_4_0.flake = false;
+    inputs.src-webgui-0_4_0.flake = false;
   inputs.src-webgui-0_4_0.type = "github";
   inputs.src-webgui-0_4_0.owner = "juancarlospaco";
   inputs.src-webgui-0_4_0.repo = "webgui";

@@ -2,11 +2,10 @@
   description = ''Parsing and serializing for the TNetstring format.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tnetstring-master.flake = false;
+    inputs.src-tnetstring-master.flake = false;
   inputs.src-tnetstring-master.type = "github";
   inputs.src-tnetstring-master.owner = "mahlonsmith";
   inputs.src-tnetstring-master.repo = "nim-tnetstring";

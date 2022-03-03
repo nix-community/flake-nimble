@@ -2,11 +2,10 @@
   description = ''OpenAL Utility Toolkit (ALUT)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-alut-master.flake = false;
+    inputs.src-alut-master.flake = false;
   inputs.src-alut-master.type = "github";
   inputs.src-alut-master.owner = "rmt";
   inputs.src-alut-master.repo = "alut";

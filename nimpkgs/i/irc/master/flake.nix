@@ -2,11 +2,10 @@
   description = ''Implements a simple IRC client.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-irc-master.flake = false;
+    inputs.src-irc-master.flake = false;
   inputs.src-irc-master.type = "github";
   inputs.src-irc-master.owner = "nim-lang";
   inputs.src-irc-master.repo = "irc";

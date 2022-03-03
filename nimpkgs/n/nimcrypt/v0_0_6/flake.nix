@@ -2,11 +2,10 @@
   description = ''Implementation of Unix crypt with support for Crypt-MD5, Crypt-SHA256 and Crypt-SHA512'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimcrypt-v0_0_6.flake = false;
+    inputs.src-nimcrypt-v0_0_6.flake = false;
   inputs.src-nimcrypt-v0_0_6.type = "github";
   inputs.src-nimcrypt-v0_0_6.owner = "napalu";
   inputs.src-nimcrypt-v0_0_6.repo = "nimcrypt";

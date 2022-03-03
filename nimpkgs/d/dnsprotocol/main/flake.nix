@@ -2,11 +2,10 @@
   description = ''Domain Name System (DNS) protocol for Nim programming language'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dnsprotocol-main.flake = false;
+    inputs.src-dnsprotocol-main.flake = false;
   inputs.src-dnsprotocol-main.type = "github";
   inputs.src-dnsprotocol-main.owner = "rockcavera";
   inputs.src-dnsprotocol-main.repo = "nim-dnsprotocol";

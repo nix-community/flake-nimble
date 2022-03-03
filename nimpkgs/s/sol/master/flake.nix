@@ -2,11 +2,10 @@
   description = ''A SIMD-accelerated vector library written in C99 with Nim bindings.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sol-master.flake = false;
+    inputs.src-sol-master.flake = false;
   inputs.src-sol-master.type = "github";
   inputs.src-sol-master.owner = "davidgarland";
   inputs.src-sol-master.repo = "sol";

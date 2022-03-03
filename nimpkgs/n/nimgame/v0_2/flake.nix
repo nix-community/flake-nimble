@@ -2,11 +2,10 @@
   description = ''A simple 2D game engine for Nim language. Deprecated, use nimgame2 instead.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimgame-v0_2.flake = false;
+    inputs.src-nimgame-v0_2.flake = false;
   inputs.src-nimgame-v0_2.type = "github";
   inputs.src-nimgame-v0_2.owner = "Vladar4";
   inputs.src-nimgame-v0_2.repo = "nimgame";

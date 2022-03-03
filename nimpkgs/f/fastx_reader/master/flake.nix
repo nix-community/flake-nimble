@@ -2,11 +2,10 @@
   description = ''FastQ and Fasta readers for NIM'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fastx_reader-master.flake = false;
+    inputs.src-fastx_reader-master.flake = false;
   inputs.src-fastx_reader-master.type = "github";
   inputs.src-fastx_reader-master.owner = "ahcm";
   inputs.src-fastx_reader-master.repo = "fastx_reader";

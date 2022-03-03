@@ -2,11 +2,10 @@
   description = ''Wrapper for gtk2, a feature rich toolkit for creating graphical user interfaces'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gtk2-master.flake = false;
+    inputs.src-gtk2-master.flake = false;
   inputs.src-gtk2-master.type = "github";
   inputs.src-gtk2-master.owner = "nim-lang";
   inputs.src-gtk2-master.repo = "gtk2";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-skybook-master": "src-skybook-master"
+      }
+    },
+    "src-skybook-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568543026,
+        "narHash": "sha256-msdIcUt2ZGUQSj9CdoI+Yqf8fRnd2gF9hwsmwrJ/Azk=",
+        "owner": "muxueqz",
+        "repo": "skybook",
+        "rev": "1b96b4a32de38c0cc48848e4eaadf62f9d5541be",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/heads/master",
+        "repo": "skybook",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

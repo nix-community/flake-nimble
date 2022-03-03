@@ -2,11 +2,10 @@
   description = ''Small program to draw notifications on the screen in a highly customisable way'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-notifishower-v0_5_0.flake = false;
+    inputs.src-notifishower-v0_5_0.flake = false;
   inputs.src-notifishower-v0_5_0.type = "github";
   inputs.src-notifishower-v0_5_0.owner = "PMunch";
   inputs.src-notifishower-v0_5_0.repo = "notifishower";

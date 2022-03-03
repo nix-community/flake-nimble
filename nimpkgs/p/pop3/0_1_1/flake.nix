@@ -2,11 +2,10 @@
   description = ''POP3 client library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pop3-0_1_1.flake = false;
+    inputs.src-pop3-0_1_1.flake = false;
   inputs.src-pop3-0_1_1.type = "github";
   inputs.src-pop3-0_1_1.owner = "FedericoCeratto";
   inputs.src-pop3-0_1_1.repo = "nim-pop3";

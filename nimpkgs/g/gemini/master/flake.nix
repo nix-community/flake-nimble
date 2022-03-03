@@ -2,11 +2,10 @@
   description = ''Building blocks for making async Gemini servers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gemini-master.flake = false;
+    inputs.src-gemini-master.flake = false;
   inputs.src-gemini-master.type = "github";
   inputs.src-gemini-master.owner = "benob";
   inputs.src-gemini-master.repo = "gemini";

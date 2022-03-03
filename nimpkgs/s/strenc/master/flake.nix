@@ -2,11 +2,10 @@
   description = ''A library to automatically encrypt all string constants in your programs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-strenc-master.flake = false;
+    inputs.src-strenc-master.flake = false;
   inputs.src-strenc-master.type = "github";
   inputs.src-strenc-master.owner = "Yardanico";
   inputs.src-strenc-master.repo = "nim-strenc";

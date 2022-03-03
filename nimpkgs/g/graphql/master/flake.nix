@@ -2,11 +2,10 @@
   description = ''GraphQL parser, server and client implementation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-graphql-master.flake = false;
+    inputs.src-graphql-master.flake = false;
   inputs.src-graphql-master.type = "github";
   inputs.src-graphql-master.owner = "status-im";
   inputs.src-graphql-master.repo = "nim-graphql";

@@ -2,11 +2,10 @@
   description = ''Documentation generator that produces pdf and docx from Markdown. Uses Pandoc and LaTeX behind the scenes.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-foliant-develop.flake = false;
+    inputs.src-foliant-develop.flake = false;
   inputs.src-foliant-develop.type = "github";
   inputs.src-foliant-develop.owner = "foliant-docs";
   inputs.src-foliant-develop.repo = "foliant-nim";

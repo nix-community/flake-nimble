@@ -2,11 +2,10 @@
   description = ''Nucleic acid folding and design.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimna-master.flake = false;
+    inputs.src-nimna-master.flake = false;
   inputs.src-nimna-master.type = "github";
   inputs.src-nimna-master.owner = "mjendrusch";
   inputs.src-nimna-master.repo = "nimna";

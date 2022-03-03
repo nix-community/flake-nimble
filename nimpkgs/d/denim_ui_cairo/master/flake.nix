@@ -2,11 +2,10 @@
   description = ''Cairo backend for the denim ui engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-denim_ui_cairo-master.flake = false;
+    inputs.src-denim_ui_cairo-master.flake = false;
   inputs.src-denim_ui_cairo-master.type = "github";
   inputs.src-denim_ui_cairo-master.owner = "nortero-code";
   inputs.src-denim_ui_cairo-master.repo = "midio-ui-cairo";

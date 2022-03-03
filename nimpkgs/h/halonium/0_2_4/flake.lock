@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-halonium-0_2_4": "src-halonium-0_2_4"
+      }
+    },
+    "src-halonium-0_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610297122,
+        "narHash": "sha256-ckbv/gidyi4ZX8v3k3PtiE2Y1jMbuLmhtAtm+19r5UM=",
+        "owner": "halonium",
+        "repo": "halonium",
+        "rev": "df7af8174b2c2f215f3ad22db37cb91c7dfe892a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "halonium",
+        "ref": "refs/tags/0.2.4",
+        "repo": "halonium",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

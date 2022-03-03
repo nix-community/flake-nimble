@@ -2,11 +2,10 @@
   description = ''Nim interface to ANTLR4 listener/visitor via jsffi'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-antlr4nim-main.flake = false;
+    inputs.src-antlr4nim-main.flake = false;
   inputs.src-antlr4nim-main.type = "github";
   inputs.src-antlr4nim-main.owner = "jan0sc";
   inputs.src-antlr4nim-main.repo = "antlr4nim";

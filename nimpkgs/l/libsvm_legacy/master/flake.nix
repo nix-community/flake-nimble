@@ -2,11 +2,10 @@
   description = ''Wrapper for libsvm.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libsvm_legacy-master.flake = false;
+    inputs.src-libsvm_legacy-master.flake = false;
   inputs.src-libsvm_legacy-master.type = "github";
   inputs.src-libsvm_legacy-master.owner = "nim-lang";
   inputs.src-libsvm_legacy-master.repo = "libsvm_legacy";

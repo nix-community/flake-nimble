@@ -2,11 +2,10 @@
   description = ''Userspace SCTP bindings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sctp-master.flake = false;
+    inputs.src-sctp-master.flake = false;
   inputs.src-sctp-master.type = "github";
   inputs.src-sctp-master.owner = "metacontainer";
   inputs.src-sctp-master.repo = "sctp.nim";

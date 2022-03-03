@@ -2,11 +2,10 @@
   description = ''Convert json to xml  : JsonNode( comapatible with  module json ) To  XmlNode (comapatible with  module  xmltree)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-json2xml-main.flake = false;
+    inputs.src-json2xml-main.flake = false;
   inputs.src-json2xml-main.type = "github";
   inputs.src-json2xml-main.owner = "MhedhebiIssam";
   inputs.src-json2xml-main.repo = "json2xml";

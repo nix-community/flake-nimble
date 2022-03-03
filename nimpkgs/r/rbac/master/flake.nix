@@ -2,11 +2,10 @@
   description = ''Simple Role-based Access Control Library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rbac-master.flake = false;
+    inputs.src-rbac-master.flake = false;
   inputs.src-rbac-master.type = "github";
   inputs.src-rbac-master.owner = "ba0f3";
   inputs.src-rbac-master.repo = "rbac.nim";

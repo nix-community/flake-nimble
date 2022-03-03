@@ -2,11 +2,10 @@
   description = ''The core types and functions of the SciNim ecosystem'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-scinim-v0_2_3.flake = false;
+    inputs.src-scinim-v0_2_3.flake = false;
   inputs.src-scinim-v0_2_3.type = "github";
   inputs.src-scinim-v0_2_3.owner = "SciNim";
   inputs.src-scinim-v0_2_3.repo = "scinim";

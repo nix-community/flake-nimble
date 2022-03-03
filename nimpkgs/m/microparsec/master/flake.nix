@@ -2,11 +2,10 @@
   description = ''A performant Nim parsing library built for humans.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-microparsec-master.flake = false;
+    inputs.src-microparsec-master.flake = false;
   inputs.src-microparsec-master.type = "github";
   inputs.src-microparsec-master.owner = "schneiderfelipe";
   inputs.src-microparsec-master.repo = "microparsec";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nimgame2-v0_6": "src-nimgame2-v0_6"
+      }
+    },
+    "src-nimgame2-v0_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1548180651,
+        "narHash": "sha256-pbjVlZl4caIAqD0bIHmJN/xkbn/YBm4uwsWg2Xtp0hA=",
+        "owner": "Vladar4",
+        "repo": "nimgame2",
+        "rev": "ddca35597c04758920a71b73d35ba3fece4a935c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.6",
+        "repo": "nimgame2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -2,11 +2,10 @@
   description = ''Another micro web framework.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-prologue-v0_4_8.flake = false;
+    inputs.src-prologue-v0_4_8.flake = false;
   inputs.src-prologue-v0_4_8.type = "github";
   inputs.src-prologue-v0_4_8.owner = "planety";
   inputs.src-prologue-v0_4_8.repo = "Prologue";

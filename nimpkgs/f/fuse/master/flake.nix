@@ -2,11 +2,10 @@
   description = ''A FUSE binding for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fuse-master.flake = false;
+    inputs.src-fuse-master.flake = false;
   inputs.src-fuse-master.type = "github";
   inputs.src-fuse-master.owner = "akiradeveloper";
   inputs.src-fuse-master.repo = "nim-fuse";

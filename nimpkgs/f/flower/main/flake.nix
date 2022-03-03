@@ -2,11 +2,10 @@
   description = ''A pure Nim bloom filter.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-flower-main.flake = false;
+    inputs.src-flower-main.flake = false;
   inputs.src-flower-main.type = "github";
   inputs.src-flower-main.owner = "dizzyliam";
   inputs.src-flower-main.repo = "flower";

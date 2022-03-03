@@ -2,11 +2,10 @@
   description = ''Minimalistic libnotify wrapper for desktop notifications'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libnotify-master.flake = false;
+    inputs.src-libnotify-master.flake = false;
   inputs.src-libnotify-master.type = "github";
   inputs.src-libnotify-master.owner = "FedericoCeratto";
   inputs.src-libnotify-master.repo = "nim-libnotify";

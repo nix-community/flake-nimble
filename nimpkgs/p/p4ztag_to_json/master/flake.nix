@@ -2,11 +2,10 @@
   description = ''Convert Helix Version Control / Perforce (p4) -ztag output to JSON'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-p4ztag_to_json-master.flake = false;
+    inputs.src-p4ztag_to_json-master.flake = false;
   inputs.src-p4ztag_to_json-master.type = "github";
   inputs.src-p4ztag_to_json-master.owner = "kaushalmodi";
   inputs.src-p4ztag_to_json-master.repo = "p4ztag_to_json";

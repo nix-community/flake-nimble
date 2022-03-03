@@ -2,11 +2,10 @@
   description = ''The Nim badgemaker tool.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-badgemaker-master.flake = false;
+    inputs.src-badgemaker-master.flake = false;
   inputs.src-badgemaker-master.type = "github";
   inputs.src-badgemaker-master.owner = "ethosa";
   inputs.src-badgemaker-master.repo = "badgemaker";

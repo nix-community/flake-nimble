@@ -2,11 +2,10 @@
   description = ''Morepretty - Does more than nimpretty.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-morepretty-master.flake = false;
+    inputs.src-morepretty-master.flake = false;
   inputs.src-morepretty-master.type = "github";
   inputs.src-morepretty-master.owner = "treeform";
   inputs.src-morepretty-master.repo = "morepretty";

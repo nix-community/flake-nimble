@@ -2,11 +2,10 @@
   description = ''Writing a 2D Platform Game in Nim with SDL2'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-platformer-master.flake = false;
+    inputs.src-platformer-master.flake = false;
   inputs.src-platformer-master.type = "github";
   inputs.src-platformer-master.owner = "def-";
   inputs.src-platformer-master.repo = "nim-platformer";

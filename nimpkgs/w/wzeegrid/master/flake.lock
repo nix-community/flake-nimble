@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-wZeeGrid-master": "src-wZeeGrid-master"
+      }
+    },
+    "src-wZeeGrid-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609432801,
+        "narHash": "sha256-6LTXwAl3Z2YPoTnLDfS3q00wIfPrnxGTS9p+2e43oqw=",
+        "owner": "bunkford",
+        "repo": "wZeeGrid",
+        "rev": "b731756774043a7bf48b6fb89849b7877760f9e6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bunkford",
+        "ref": "refs/heads/master",
+        "repo": "wZeeGrid",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

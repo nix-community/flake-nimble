@@ -2,11 +2,10 @@
   description = ''fastText wrapper for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimfastText-master.flake = false;
+    inputs.src-nimfastText-master.flake = false;
   inputs.src-nimfastText-master.type = "github";
   inputs.src-nimfastText-master.owner = "genotrance";
   inputs.src-nimfastText-master.repo = "nimfastText";

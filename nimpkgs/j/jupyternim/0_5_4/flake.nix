@@ -2,11 +2,10 @@
   description = ''A Jupyter kernel for nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jupyternim-0_5_4.flake = false;
+    inputs.src-jupyternim-0_5_4.flake = false;
   inputs.src-jupyternim-0_5_4.type = "github";
   inputs.src-jupyternim-0_5_4.owner = "stisa";
   inputs.src-jupyternim-0_5_4.repo = "jupyternim";

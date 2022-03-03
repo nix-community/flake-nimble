@@ -2,11 +2,10 @@
   description = ''Web-based playground for testing Nim code.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-playground-v0_1_0.flake = false;
+    inputs.src-playground-v0_1_0.flake = false;
   inputs.src-playground-v0_1_0.type = "github";
   inputs.src-playground-v0_1_0.owner = "theduke";
   inputs.src-playground-v0_1_0.repo = "nim-playground";

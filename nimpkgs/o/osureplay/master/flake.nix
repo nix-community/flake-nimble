@@ -2,11 +2,10 @@
   description = ''osu! replay parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-osureplay-master.flake = false;
+    inputs.src-osureplay-master.flake = false;
   inputs.src-osureplay-master.type = "github";
   inputs.src-osureplay-master.owner = "Yardanico";
   inputs.src-osureplay-master.repo = "nim-osureplay";

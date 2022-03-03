@@ -2,11 +2,10 @@
   description = ''Matrix library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-manu-v1_9_1.flake = false;
+    inputs.src-manu-v1_9_1.flake = false;
   inputs.src-manu-v1_9_1.type = "github";
   inputs.src-manu-v1_9_1.owner = "planetis-m";
   inputs.src-manu-v1_9_1.repo = "manu";

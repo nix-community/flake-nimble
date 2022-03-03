@@ -2,11 +2,10 @@
   description = ''Nim wrapper of the Sophia key/value store'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sophia-master.flake = false;
+    inputs.src-sophia-master.flake = false;
   inputs.src-sophia-master.type = "github";
   inputs.src-sophia-master.owner = "gokr";
   inputs.src-sophia-master.repo = "nim-sophia";

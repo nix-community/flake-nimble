@@ -2,11 +2,10 @@
   description = ''Least recently used (LRU) cache'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-lrucache-master.flake = false;
+    inputs.src-lrucache-master.flake = false;
   inputs.src-lrucache-master.type = "github";
   inputs.src-lrucache-master.owner = "jackhftang";
   inputs.src-lrucache-master.repo = "lrucache";

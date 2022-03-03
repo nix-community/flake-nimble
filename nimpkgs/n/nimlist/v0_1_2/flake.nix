@@ -2,11 +2,10 @@
   description = ''View nim packages in your browser.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimlist-v0_1_2.flake = false;
+    inputs.src-nimlist-v0_1_2.flake = false;
   inputs.src-nimlist-v0_1_2.type = "github";
   inputs.src-nimlist-v0_1_2.owner = "flenniken";
   inputs.src-nimlist-v0_1_2.repo = "nimlist";

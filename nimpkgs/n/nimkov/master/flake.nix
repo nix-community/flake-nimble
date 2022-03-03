@@ -2,11 +2,10 @@
   description = ''Text generator, based on Markov Chains (Markov text generator)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimkov-master.flake = false;
+    inputs.src-nimkov-master.flake = false;
   inputs.src-nimkov-master.type = "github";
   inputs.src-nimkov-master.owner = "bit0r1n";
   inputs.src-nimkov-master.repo = "nimkov";

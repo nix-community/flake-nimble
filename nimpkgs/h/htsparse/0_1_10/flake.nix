@@ -2,11 +2,10 @@
   description = ''Nim wrappers for tree-sitter parser grammars'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-htsparse-0_1_10.flake = false;
+    inputs.src-htsparse-0_1_10.flake = false;
   inputs.src-htsparse-0_1_10.type = "github";
   inputs.src-htsparse-0_1_10.owner = "haxscramper";
   inputs.src-htsparse-0_1_10.repo = "htsparse";

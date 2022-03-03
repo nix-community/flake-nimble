@@ -2,11 +2,10 @@
   description = ''Transformer'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-retranslator-0_0_5.flake = false;
+    inputs.src-retranslator-0_0_5.flake = false;
   inputs.src-retranslator-0_0_5.type = "github";
   inputs.src-retranslator-0_0_5.owner = "linksplatform";
   inputs.src-retranslator-0_0_5.repo = "RegularExpressions.Transformer";

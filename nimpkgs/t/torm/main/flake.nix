@@ -2,11 +2,10 @@
   description = ''Tiny object relational mapper (torm) for SQLite in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-torm-main.flake = false;
+    inputs.src-torm-main.flake = false;
   inputs.src-torm-main.type = "github";
   inputs.src-torm-main.owner = "enimatek-nl";
   inputs.src-torm-main.repo = "torm";

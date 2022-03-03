@@ -2,11 +2,10 @@
   description = ''Wrapper for libclang C headers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-clang-v0_59.flake = false;
+    inputs.src-clang-v0_59.flake = false;
   inputs.src-clang-v0_59.type = "github";
   inputs.src-clang-v0_59.owner = "samdmarshall";
   inputs.src-clang-v0_59.repo = "libclang-nim";

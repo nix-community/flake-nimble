@@ -2,11 +2,10 @@
   description = ''LevelDB bindings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-leveldb-master.flake = false;
+    inputs.src-leveldb-master.flake = false;
   inputs.src-leveldb-master.type = "github";
   inputs.src-leveldb-master.owner = "zielmicha";
   inputs.src-leveldb-master.repo = "leveldb.nim";

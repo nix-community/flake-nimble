@@ -2,11 +2,10 @@
   description = ''prestodb simple connector'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-db_presto-0_9_91.flake = false;
+    inputs.src-db_presto-0_9_91.flake = false;
   inputs.src-db_presto-0_9_91.type = "github";
   inputs.src-db_presto-0_9_91.owner = "Bennyelg";
   inputs.src-db_presto-0_9_91.repo = "nimPresto";

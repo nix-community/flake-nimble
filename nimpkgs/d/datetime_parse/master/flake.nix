@@ -2,11 +2,10 @@
   description = ''parse datetime from various resources'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-datetime_parse-master.flake = false;
+    inputs.src-datetime_parse-master.flake = false;
   inputs.src-datetime_parse-master.type = "github";
   inputs.src-datetime_parse-master.owner = "bung87";
   inputs.src-datetime_parse-master.repo = "datetime_parse";

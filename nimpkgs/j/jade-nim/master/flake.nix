@@ -2,11 +2,10 @@
   description = ''Compiles jade templates to Nim procedures.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jade-nim-master.flake = false;
+    inputs.src-jade-nim-master.flake = false;
   inputs.src-jade-nim-master.type = "github";
   inputs.src-jade-nim-master.owner = "idlewan";
   inputs.src-jade-nim-master.repo = "jade-nim";

@@ -2,11 +2,10 @@
   description = ''Library to parse ANSI escape codes'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ansiparse-master.flake = false;
+    inputs.src-ansiparse-master.flake = false;
   inputs.src-ansiparse-master.type = "github";
   inputs.src-ansiparse-master.owner = "PMunch";
   inputs.src-ansiparse-master.repo = "ansiparse";

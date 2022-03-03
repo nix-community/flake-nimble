@@ -2,11 +2,10 @@
   description = ''A graphics math library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-origin-master.flake = false;
+    inputs.src-origin-master.flake = false;
   inputs.src-origin-master.type = "github";
   inputs.src-origin-master.owner = "mfiano";
   inputs.src-origin-master.repo = "origin.nim";

@@ -2,11 +2,10 @@
   description = ''A bunch of macros. sugar if you would'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimspice-master.flake = false;
+    inputs.src-nimspice-master.flake = false;
   inputs.src-nimspice-master.type = "github";
   inputs.src-nimspice-master.owner = "CodeDoes";
   inputs.src-nimspice-master.repo = "nimspice";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nimha-v0_3_3": "src-nimha-v0_3_3"
+      }
+    },
+    "src-nimha-v0_3_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543046773,
+        "narHash": "sha256-O4lUZu5rUN8Elj47BioRMZlUfIrxsXj4xR1eTbArZe8=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "c79a3848545f56451d4d1a40e6b327da8e423fb0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.3",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

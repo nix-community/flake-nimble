@@ -2,11 +2,10 @@
   description = ''Pseudo-random number generation library inspired by Python'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-random-v0_5_2.flake = false;
+    inputs.src-random-v0_5_2.flake = false;
   inputs.src-random-v0_5_2.type = "github";
   inputs.src-random-v0_5_2.owner = "oprypin";
   inputs.src-random-v0_5_2.repo = "nim-random";

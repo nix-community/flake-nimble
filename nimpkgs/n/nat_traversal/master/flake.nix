@@ -2,11 +2,10 @@
   description = ''miniupnpc and libnatpmp wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nat_traversal-master.flake = false;
+    inputs.src-nat_traversal-master.flake = false;
   inputs.src-nat_traversal-master.type = "github";
   inputs.src-nat_traversal-master.owner = "status-im";
   inputs.src-nat_traversal-master.repo = "nim-nat-traversal";

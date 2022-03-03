@@ -2,11 +2,10 @@
   description = ''A super-fast epoll-backed and parallel HTTP server.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-httpx-master.flake = false;
+    inputs.src-httpx-master.flake = false;
   inputs.src-httpx-master.type = "github";
   inputs.src-httpx-master.owner = "xflywind";
   inputs.src-httpx-master.repo = "httpx";

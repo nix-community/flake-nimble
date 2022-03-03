@@ -2,11 +2,10 @@
   description = ''Wraps the bcrypt (blowfish) library for creating encrypted hashes (useful for passwords)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bcrypt-master.flake = false;
+    inputs.src-bcrypt-master.flake = false;
   inputs.src-bcrypt-master.type = "github";
   inputs.src-bcrypt-master.owner = "ithkuil";
   inputs.src-bcrypt-master.repo = "bcryptnim";

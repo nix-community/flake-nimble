@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-mysqlparser-master": "src-mysqlparser-master"
+      }
+    },
+    "src-mysqlparser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597232072,
+        "narHash": "sha256-Kq+anrpgZ3WiYWwiPI9F/vAWKxRjMxulL+Oz1wPBXdo=",
+        "owner": "tulayang",
+        "repo": "mysqlparser",
+        "rev": "0b4c9ce39ff6eab4f398eac158b41fb0d7945d11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tulayang",
+        "ref": "refs/heads/master",
+        "repo": "mysqlparser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

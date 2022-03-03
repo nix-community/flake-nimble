@@ -2,11 +2,10 @@
   description = ''A Nim wrapper for ttmath: big numbers with fixed size'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ttmath-master.flake = false;
+    inputs.src-ttmath-master.flake = false;
   inputs.src-ttmath-master.type = "github";
   inputs.src-ttmath-master.owner = "status-im";
   inputs.src-ttmath-master.repo = "nim-ttmath";

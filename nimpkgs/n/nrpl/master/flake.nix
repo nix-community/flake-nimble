@@ -2,11 +2,10 @@
   description = ''A rudimentary Nim REPL'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nrpl-master.flake = false;
+    inputs.src-nrpl-master.flake = false;
   inputs.src-nrpl-master.type = "github";
   inputs.src-nrpl-master.owner = "vegansk";
   inputs.src-nrpl-master.repo = "nrpl";

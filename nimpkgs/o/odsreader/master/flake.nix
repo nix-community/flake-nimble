@@ -2,11 +2,10 @@
   description = ''OpenDocument Spreadhseet reader'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-odsreader-master.flake = false;
+    inputs.src-odsreader-master.flake = false;
   inputs.src-odsreader-master.type = "github";
   inputs.src-odsreader-master.owner = "dariolah";
   inputs.src-odsreader-master.repo = "odsreader";

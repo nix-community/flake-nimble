@@ -2,11 +2,10 @@
   description = ''Print is a set of pretty print macros, useful for print-debugging.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-print-master.flake = false;
+    inputs.src-print-master.flake = false;
   inputs.src-print-master.type = "github";
   inputs.src-print-master.owner = "treeform";
   inputs.src-print-master.repo = "print";

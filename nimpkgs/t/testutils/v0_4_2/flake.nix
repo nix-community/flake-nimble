@@ -2,11 +2,10 @@
   description = ''A comprehensive toolkit for all your testing needs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-testutils-v0_4_2.flake = false;
+    inputs.src-testutils-v0_4_2.flake = false;
   inputs.src-testutils-v0_4_2.type = "github";
   inputs.src-testutils-v0_4_2.owner = "status-im";
   inputs.src-testutils-v0_4_2.repo = "nim-testutils";

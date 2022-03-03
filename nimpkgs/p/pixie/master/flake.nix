@@ -2,11 +2,10 @@
   description = ''Full-featured 2d graphics library for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pixie-master.flake = false;
+    inputs.src-pixie-master.flake = false;
   inputs.src-pixie-master.type = "github";
   inputs.src-pixie-master.owner = "treeform";
   inputs.src-pixie-master.repo = "pixie";

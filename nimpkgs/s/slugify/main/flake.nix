@@ -2,11 +2,10 @@
   description = ''Convert strings to a slug. Can be used for URLs, file names, IDs etc.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-slugify-main.flake = false;
+    inputs.src-slugify-main.flake = false;
   inputs.src-slugify-main.type = "github";
   inputs.src-slugify-main.owner = "lenniezelk";
   inputs.src-slugify-main.repo = "slugify";

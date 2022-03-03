@@ -2,11 +2,10 @@
   description = ''High level, asynchronous file API mimicking Python's file interface.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-asyncpythonfile-master.flake = false;
+    inputs.src-asyncpythonfile-master.flake = false;
   inputs.src-asyncpythonfile-master.type = "github";
   inputs.src-asyncpythonfile-master.owner = "fallingduck";
   inputs.src-asyncpythonfile-master.repo = "asyncpythonfile-nim";

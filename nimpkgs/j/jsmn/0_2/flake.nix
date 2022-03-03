@@ -2,11 +2,10 @@
   description = ''Jsmn - a world fastest JSON parser - in pure Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jsmn-0_2.flake = false;
+    inputs.src-jsmn-0_2.flake = false;
   inputs.src-jsmn-0_2.type = "github";
   inputs.src-jsmn-0_2.owner = "OpenSystemsLab";
   inputs.src-jsmn-0_2.repo = "jsmn.nim";

@@ -2,11 +2,10 @@
   description = ''SuperCollider wrapper for omni.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-omnicollider-master.flake = false;
+    inputs.src-omnicollider-master.flake = false;
   inputs.src-omnicollider-master.type = "github";
   inputs.src-omnicollider-master.owner = "vitreo12";
   inputs.src-omnicollider-master.repo = "omnicollider";

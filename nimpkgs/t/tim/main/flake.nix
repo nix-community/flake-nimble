@@ -2,11 +2,10 @@
   description = ''Really lightweight template engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tim-main.flake = false;
+    inputs.src-tim-main.flake = false;
   inputs.src-tim-main.type = "github";
   inputs.src-tim-main.owner = "openpeep";
   inputs.src-tim-main.repo = "tim";

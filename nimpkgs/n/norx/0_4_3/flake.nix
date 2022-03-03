@@ -2,11 +2,10 @@
   description = ''A wrapper of the ORX 2.5D game engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-norx-0_4_3.flake = false;
+    inputs.src-norx-0_4_3.flake = false;
   inputs.src-norx-0_4_3.type = "github";
   inputs.src-norx-0_4_3.owner = "gokr";
   inputs.src-norx-0_4_3.repo = "norx";

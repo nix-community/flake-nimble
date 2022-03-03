@@ -2,11 +2,10 @@
   description = ''Google Cloud Platform (GCP) APIs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gcplat-master.flake = false;
+    inputs.src-gcplat-master.flake = false;
   inputs.src-gcplat-master.type = "github";
   inputs.src-gcplat-master.owner = "disruptek";
   inputs.src-gcplat-master.repo = "gcplat";

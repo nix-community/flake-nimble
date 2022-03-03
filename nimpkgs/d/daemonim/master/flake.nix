@@ -2,11 +2,10 @@
   description = ''daemonizer for Unix, Linux and OS X'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-daemonim-master.flake = false;
+    inputs.src-daemonim-master.flake = false;
   inputs.src-daemonim-master.type = "github";
   inputs.src-daemonim-master.owner = "bung87";
   inputs.src-daemonim-master.repo = "daemon";

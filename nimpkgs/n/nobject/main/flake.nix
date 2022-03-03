@@ -2,11 +2,10 @@
   description = ''A partially compile and runtime evaluated object, inspired from .net object'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nobject-main.flake = false;
+    inputs.src-nobject-main.flake = false;
   inputs.src-nobject-main.type = "github";
   inputs.src-nobject-main.owner = "Carpall";
   inputs.src-nobject-main.repo = "nobject";

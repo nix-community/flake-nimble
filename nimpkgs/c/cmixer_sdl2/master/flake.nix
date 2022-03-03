@@ -2,11 +2,10 @@
   description = ''Lightweight audio mixer for SDL2'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cmixer_sdl2-master.flake = false;
+    inputs.src-cmixer_sdl2-master.flake = false;
   inputs.src-cmixer_sdl2-master.type = "github";
   inputs.src-cmixer_sdl2-master.owner = "rxi";
   inputs.src-cmixer_sdl2-master.repo = "cmixer_sdl2-nim";

@@ -2,11 +2,10 @@
   description = ''Library for working with a slack app or sending messages to a slack channel (slack.com)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-slacklib-master.flake = false;
+    inputs.src-slacklib-master.flake = false;
   inputs.src-slacklib-master.type = "github";
   inputs.src-slacklib-master.owner = "ThomasTJdev";
   inputs.src-slacklib-master.repo = "nim_slacklib";

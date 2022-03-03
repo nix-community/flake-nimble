@@ -2,11 +2,10 @@
   description = ''Parse Standard SPDX Licenses from string to Enum'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-parselicense-master.flake = false;
+    inputs.src-parselicense-master.flake = false;
   inputs.src-parselicense-master.type = "github";
   inputs.src-parselicense-master.owner = "juancarlospaco";
   inputs.src-parselicense-master.repo = "parselicense";

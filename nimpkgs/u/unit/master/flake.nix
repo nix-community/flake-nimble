@@ -2,11 +2,10 @@
   description = ''A library that provides unit types in nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-Unit-master.flake = false;
+    inputs.src-Unit-master.flake = false;
   inputs.src-Unit-master.type = "github";
   inputs.src-Unit-master.owner = "momeemt";
   inputs.src-Unit-master.repo = "Unit";

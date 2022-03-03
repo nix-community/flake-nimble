@@ -2,11 +2,10 @@
   description = ''Nim module for better URI handling'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-uri2-master.flake = false;
+    inputs.src-uri2-master.flake = false;
   inputs.src-uri2-master.type = "github";
   inputs.src-uri2-master.owner = "achesak";
   inputs.src-uri2-master.repo = "nim-uri2";

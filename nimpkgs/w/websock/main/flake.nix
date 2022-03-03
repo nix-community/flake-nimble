@@ -2,11 +2,10 @@
   description = '' Websocket server and client implementation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-websock-main.flake = false;
+    inputs.src-websock-main.flake = false;
   inputs.src-websock-main.type = "github";
   inputs.src-websock-main.owner = "status-im";
   inputs.src-websock-main.repo = "nim-websock";

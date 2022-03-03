@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-react16-v0_3_7": "src-react16-v0_3_7"
+      }
+    },
+    "src-react16-v0_3_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584522806,
+        "narHash": "sha256-U9814V8m52zvTr7U/QHaFU63ktoSFdC1YSXkrlNk75E=",
+        "owner": "kristianmandrup",
+        "repo": "react-16.nim",
+        "rev": "25e9874a77decf971e7e639e60b31e963f4a8df8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kristianmandrup",
+        "ref": "refs/tags/v0.3.7",
+        "repo": "react-16.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

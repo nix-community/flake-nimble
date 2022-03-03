@@ -2,11 +2,10 @@
   description = ''Simple API wrapper for Mailcow'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mailcow-main.flake = false;
+    inputs.src-mailcow-main.flake = false;
   inputs.src-mailcow-main.type = "github";
   inputs.src-mailcow-main.owner = "Vaipex";
   inputs.src-mailcow-main.repo = "Mailcow-API";

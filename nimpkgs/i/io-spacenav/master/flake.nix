@@ -2,11 +2,10 @@
   description = ''Obsolete - please use spacenav instead!'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-io-spacenav-master.flake = false;
+    inputs.src-io-spacenav-master.flake = false;
   inputs.src-io-spacenav-master.type = "github";
   inputs.src-io-spacenav-master.owner = "nimious";
   inputs.src-io-spacenav-master.repo = "io-spacenav";

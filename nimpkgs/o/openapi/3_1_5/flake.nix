@@ -2,11 +2,10 @@
   description = ''OpenAPI Code Generator'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-openapi-3_1_5.flake = false;
+    inputs.src-openapi-3_1_5.flake = false;
   inputs.src-openapi-3_1_5.type = "github";
   inputs.src-openapi-3_1_5.owner = "disruptek";
   inputs.src-openapi-3_1_5.repo = "openapi";

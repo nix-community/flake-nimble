@@ -2,11 +2,10 @@
   description = ''InfluxDB API client library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimflux-master.flake = false;
+    inputs.src-nimflux-master.flake = false;
   inputs.src-nimflux-master.type = "github";
   inputs.src-nimflux-master.owner = "tdely";
   inputs.src-nimflux-master.repo = "nimflux";

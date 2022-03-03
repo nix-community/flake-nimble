@@ -2,11 +2,10 @@
   description = ''Collection of math routines for 2d and 3d graphics.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-vmath-master.flake = false;
+    inputs.src-vmath-master.flake = false;
   inputs.src-vmath-master.type = "github";
   inputs.src-vmath-master.owner = "treeform";
   inputs.src-vmath-master.repo = "vmath";

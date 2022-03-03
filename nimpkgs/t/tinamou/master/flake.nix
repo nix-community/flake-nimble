@@ -2,11 +2,10 @@
   description = ''Game Library in Nim with SDL2'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tinamou-master.flake = false;
+    inputs.src-tinamou-master.flake = false;
   inputs.src-tinamou-master.type = "github";
   inputs.src-tinamou-master.owner = "Double-oxygeN";
   inputs.src-tinamou-master.repo = "tinamou";

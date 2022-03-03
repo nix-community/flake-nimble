@@ -2,11 +2,10 @@
   description = ''gnuplot interface'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gnuplotlib-v1_0_0.flake = false;
+    inputs.src-gnuplotlib-v1_0_0.flake = false;
   inputs.src-gnuplotlib-v1_0_0.type = "github";
   inputs.src-gnuplotlib-v1_0_0.owner = "planetis-m";
   inputs.src-gnuplotlib-v1_0_0.repo = "gnuplotlib";

@@ -2,11 +2,10 @@
   description = ''A Nim implementation of Simon Cooke's Bip Buffer. A type of circular buffer ensuring contiguous blocks of memory'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bipbuffer-master.flake = false;
+    inputs.src-bipbuffer-master.flake = false;
   inputs.src-bipbuffer-master.type = "github";
   inputs.src-bipbuffer-master.owner = "MarcAzar";
   inputs.src-bipbuffer-master.repo = "BipBuffer";

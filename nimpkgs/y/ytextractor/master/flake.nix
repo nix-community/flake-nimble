@@ -2,11 +2,10 @@
   description = ''Youtube data extractor'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ytextractor-master.flake = false;
+    inputs.src-ytextractor-master.flake = false;
   inputs.src-ytextractor-master.type = "github";
   inputs.src-ytextractor-master.owner = "thisago";
   inputs.src-ytextractor-master.repo = "ytextractor";

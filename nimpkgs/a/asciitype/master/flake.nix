@@ -2,11 +2,10 @@
   description = ''This module performs character tests.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-asciitype-master.flake = false;
+    inputs.src-asciitype-master.flake = false;
   inputs.src-asciitype-master.type = "github";
   inputs.src-asciitype-master.owner = "chocobo333";
   inputs.src-asciitype-master.repo = "asciitype";

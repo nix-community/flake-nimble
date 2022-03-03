@@ -2,11 +2,10 @@
   description = ''WIP strongly-typed argument parser with sub command support'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-argparse-v0_9_0.flake = false;
+    inputs.src-argparse-v0_9_0.flake = false;
   inputs.src-argparse-v0_9_0.type = "github";
   inputs.src-argparse-v0_9_0.owner = "iffy";
   inputs.src-argparse-v0_9_0.repo = "nim-argparse";

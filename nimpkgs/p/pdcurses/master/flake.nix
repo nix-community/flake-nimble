@@ -2,11 +2,10 @@
   description = ''Nim wrapper for PDCurses'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pdcurses-master.flake = false;
+    inputs.src-pdcurses-master.flake = false;
   inputs.src-pdcurses-master.type = "github";
   inputs.src-pdcurses-master.owner = "lcrees";
   inputs.src-pdcurses-master.repo = "pdcurses";

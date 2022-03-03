@@ -2,11 +2,10 @@
   description = ''Libgit2 low level wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libgit2-master.flake = false;
+    inputs.src-libgit2-master.flake = false;
   inputs.src-libgit2-master.type = "github";
   inputs.src-libgit2-master.owner = "barcharcraz";
   inputs.src-libgit2-master.repo = "libgit2-nim";

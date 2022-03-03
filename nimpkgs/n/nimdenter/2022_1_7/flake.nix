@@ -2,11 +2,10 @@
   description = ''A tool for people who don't like Nim's indentation-based syntax'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimdenter-2022_1_7.flake = false;
+    inputs.src-nimdenter-2022_1_7.flake = false;
   inputs.src-nimdenter-2022_1_7.type = "github";
   inputs.src-nimdenter-2022_1_7.owner = "xigoi";
   inputs.src-nimdenter-2022_1_7.repo = "nimdenter";

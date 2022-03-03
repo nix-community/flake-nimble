@@ -2,11 +2,10 @@
   description = ''BSON Binary JSON Serialization'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bson-master.flake = false;
+    inputs.src-bson-master.flake = false;
   inputs.src-bson-master.type = "github";
   inputs.src-bson-master.owner = "JohnAD";
   inputs.src-bson-master.repo = "bson";

@@ -2,11 +2,10 @@
   description = ''A nim wrapper for the Argon2 hashing library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-argon2-v1_0_0.flake = false;
+    inputs.src-argon2-v1_0_0.flake = false;
   inputs.src-argon2-v1_0_0.type = "github";
   inputs.src-argon2-v1_0_0.owner = "Ahrotahn";
   inputs.src-argon2-v1_0_0.repo = "argon2";

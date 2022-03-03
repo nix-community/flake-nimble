@@ -2,11 +2,10 @@
   description = ''GeoNames API wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-geonames-master.flake = false;
+    inputs.src-geonames-master.flake = false;
   inputs.src-geonames-master.type = "github";
   inputs.src-geonames-master.owner = "achesak";
   inputs.src-geonames-master.repo = "nim-geonames";

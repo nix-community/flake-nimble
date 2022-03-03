@@ -2,11 +2,10 @@
   description = ''Support for ensemble file format and arithmetic using jackknife/bootstrap propagation of errors'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ensem-v1_2_1.flake = false;
+    inputs.src-ensem-v1_2_1.flake = false;
   inputs.src-ensem-v1_2_1.type = "github";
   inputs.src-ensem-v1_2_1.owner = "JeffersonLab";
   inputs.src-ensem-v1_2_1.repo = "ensem";

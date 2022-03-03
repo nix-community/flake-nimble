@@ -2,11 +2,10 @@
   description = ''A client for the Arch Linux User Repository (AUR)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-aur-v0_2_0.flake = false;
+    inputs.src-aur-v0_2_0.flake = false;
   inputs.src-aur-v0_2_0.type = "github";
   inputs.src-aur-v0_2_0.owner = "hnicke";
   inputs.src-aur-v0_2_0.repo = "aur.nim";

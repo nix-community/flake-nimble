@@ -2,11 +2,10 @@
   description = ''Various Layonara related functions for NWN Development'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-layonara_nwn-master.flake = false;
+    inputs.src-layonara_nwn-master.flake = false;
   inputs.src-layonara_nwn-master.type = "github";
   inputs.src-layonara_nwn-master.owner = "plenarius";
   inputs.src-layonara_nwn-master.repo = "layonara_nwn";

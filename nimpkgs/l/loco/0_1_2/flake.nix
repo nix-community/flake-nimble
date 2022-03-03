@@ -2,11 +2,10 @@
   description = ''Localization package for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-loco-0_1_2.flake = false;
+    inputs.src-loco-0_1_2.flake = false;
   inputs.src-loco-0_1_2.type = "github";
   inputs.src-loco-0_1_2.owner = "moigagoo";
   inputs.src-loco-0_1_2.repo = "loco";

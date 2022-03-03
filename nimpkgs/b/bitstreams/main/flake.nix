@@ -2,11 +2,10 @@
   description = ''Interface for reading per bits'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bitstreams-main.flake = false;
+    inputs.src-bitstreams-main.flake = false;
   inputs.src-bitstreams-main.type = "github";
   inputs.src-bitstreams-main.owner = "sealmove";
   inputs.src-bitstreams-main.repo = "bitstreams";

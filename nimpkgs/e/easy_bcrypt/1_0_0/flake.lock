@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-easy_bcrypt-1_0_0": "src-easy_bcrypt-1_0_0"
+      }
+    },
+    "src-easy_bcrypt-1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1417981591,
+        "narHash": "sha256-FKPQ7PVgw/6MgVZmn+dct74Od3eTrzcF3h38A7U9nJ4=",
+        "owner": "Akito13",
+        "repo": "easy-bcrypt",
+        "rev": "2272793ac8fd436f2cea3d7b90f4b01a9a7dd079",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Akito13",
+        "ref": "refs/tags/1.0.0",
+        "repo": "easy-bcrypt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

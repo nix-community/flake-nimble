@@ -2,11 +2,10 @@
   description = ''Human friendly DateTime string representations, seconds to millenniums.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-datetime2human-master.flake = false;
+    inputs.src-datetime2human-master.flake = false;
   inputs.src-datetime2human-master.type = "github";
   inputs.src-datetime2human-master.owner = "juancarlospaco";
   inputs.src-datetime2human-master.repo = "nim-datetime2human";

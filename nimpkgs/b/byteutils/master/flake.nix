@@ -2,11 +2,10 @@
   description = ''Useful utilities for manipulating and visualizing byte blobs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-byteutils-master.flake = false;
+    inputs.src-byteutils-master.flake = false;
   inputs.src-byteutils-master.type = "github";
   inputs.src-byteutils-master.owner = "status-im";
   inputs.src-byteutils-master.repo = "nim-byteutils";

@@ -2,11 +2,10 @@
   description = ''Shebang frontend for running nim code as scripts. Does not require .nim extensions.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimrun-master.flake = false;
+    inputs.src-nimrun-master.flake = false;
   inputs.src-nimrun-master.type = "github";
   inputs.src-nimrun-master.owner = "lee-b";
   inputs.src-nimrun-master.repo = "nimrun";

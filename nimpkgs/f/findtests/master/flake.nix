@@ -2,11 +2,10 @@
   description = ''A helper module for writing unit tests in Nim with nake or similar build system.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-findtests-master.flake = false;
+    inputs.src-findtests-master.flake = false;
   inputs.src-findtests-master.type = "github";
   inputs.src-findtests-master.owner = "jackvandrunen";
   inputs.src-findtests-master.repo = "findtests";

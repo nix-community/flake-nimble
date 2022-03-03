@@ -2,11 +2,10 @@
   description = ''A sinatra-like web framework for Nim with plugins.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jesterwithplugins-v0_2_1.flake = false;
+    inputs.src-jesterwithplugins-v0_2_1.flake = false;
   inputs.src-jesterwithplugins-v0_2_1.type = "github";
   inputs.src-jesterwithplugins-v0_2_1.owner = "JohnAD";
   inputs.src-jesterwithplugins-v0_2_1.repo = "jesterwithplugins";

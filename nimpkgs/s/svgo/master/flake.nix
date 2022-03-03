@@ -2,11 +2,10 @@
   description = ''SVG output from a shell.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-svgo-master.flake = false;
+    inputs.src-svgo-master.flake = false;
   inputs.src-svgo-master.type = "github";
   inputs.src-svgo-master.owner = "jiro4989";
   inputs.src-svgo-master.repo = "svgo";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nimgen-v0_2_2": "src-nimgen-v0_2_2"
+      }
+    },
+    "src-nimgen-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531000643,
+        "narHash": "sha256-ve8Wfd46I4LJn29SVi0gfoP7FYP/P4u1Ra83MYpf0VM=",
+        "owner": "genotrance",
+        "repo": "nimgen",
+        "rev": "a0369758afda24a0332f776c7a9d52a4ea9275ce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "nimgen",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

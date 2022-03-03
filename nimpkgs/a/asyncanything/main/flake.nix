@@ -2,11 +2,10 @@
   description = ''make anything async [to be honest, fake async]'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-asyncanything-main.flake = false;
+    inputs.src-asyncanything-main.flake = false;
   inputs.src-asyncanything-main.type = "github";
   inputs.src-asyncanything-main.owner = "hamidb80";
   inputs.src-asyncanything-main.repo = "asyncanything";

@@ -2,11 +2,10 @@
   description = ''Simple shape drawing'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hdrawing-0_1_3.flake = false;
+    inputs.src-hdrawing-0_1_3.flake = false;
   inputs.src-hdrawing-0_1_3.type = "github";
   inputs.src-hdrawing-0_1_3.owner = "haxscramper";
   inputs.src-hdrawing-0_1_3.repo = "hdrawing";

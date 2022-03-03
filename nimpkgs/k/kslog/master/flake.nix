@@ -2,11 +2,10 @@
   description = ''Minimalistic Kernel-Syslogd For Linux in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-kslog-master.flake = false;
+    inputs.src-kslog-master.flake = false;
   inputs.src-kslog-master.type = "github";
   inputs.src-kslog-master.owner = "c-blake";
   inputs.src-kslog-master.repo = "kslog";

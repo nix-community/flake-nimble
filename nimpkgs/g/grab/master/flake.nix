@@ -2,11 +2,10 @@
   description = ''grab statement for importing Nimble packages, similar to Groovy's Grape'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-grab-master.flake = false;
+    inputs.src-grab-master.flake = false;
   inputs.src-grab-master.type = "github";
   inputs.src-grab-master.owner = "metagn";
   inputs.src-grab-master.repo = "grab";

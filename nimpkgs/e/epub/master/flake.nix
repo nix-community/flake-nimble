@@ -2,11 +2,10 @@
   description = ''Module for working with EPUB e-book files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-epub-master.flake = false;
+    inputs.src-epub-master.flake = false;
   inputs.src-epub-master.type = "github";
   inputs.src-epub-master.owner = "achesak";
   inputs.src-epub-master.repo = "nim-epub";

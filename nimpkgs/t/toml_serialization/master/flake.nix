@@ -2,11 +2,10 @@
   description = ''Flexible TOML serialization [not] relying on run-time type information'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-toml_serialization-master.flake = false;
+    inputs.src-toml_serialization-master.flake = false;
   inputs.src-toml_serialization-master.type = "github";
   inputs.src-toml_serialization-master.owner = "status-im";
   inputs.src-toml_serialization-master.repo = "nim-toml-serialization";

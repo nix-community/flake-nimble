@@ -2,11 +2,10 @@
   description = ''Simple web to share books, Calibre, Jester, Spectre CSS, No JavaScript, WebP & ZIP to reduce bandwidth'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-biblioteca_guarrilla-0_1_8.flake = false;
+    inputs.src-biblioteca_guarrilla-0_1_8.flake = false;
   inputs.src-biblioteca_guarrilla-0_1_8.type = "github";
   inputs.src-biblioteca_guarrilla-0_1_8.owner = "juancarlospaco";
   inputs.src-biblioteca_guarrilla-0_1_8.repo = "biblioteca-guarrilla";

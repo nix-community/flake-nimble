@@ -2,11 +2,10 @@
   description = ''The Ultimate Raylib gaming library wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimraylib_now-v0_8_0.flake = false;
+    inputs.src-nimraylib_now-v0_8_0.flake = false;
   inputs.src-nimraylib_now-v0_8_0.type = "github";
   inputs.src-nimraylib_now-v0_8_0.owner = "greenfork";
   inputs.src-nimraylib_now-v0_8_0.repo = "nimraylib_now";

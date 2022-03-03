@@ -2,11 +2,10 @@
   description = ''Nim's function chaining and method cascading'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-chain-master.flake = false;
+    inputs.src-chain-master.flake = false;
   inputs.src-chain-master.type = "github";
   inputs.src-chain-master.owner = "khchen";
   inputs.src-chain-master.repo = "chain";

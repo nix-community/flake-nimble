@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-atoz-2596_0_0": "src-atoz-2596_0_0"
+      }
+    },
+    "src-atoz-2596_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577978961,
+        "narHash": "sha256-yZpSMuigG2oToWKIfq1X6oY/1QyoqpT0alD0iKPCHuA=",
+        "owner": "disruptek",
+        "repo": "atoz",
+        "rev": "dfdfc11a4676e46d2cb107ff8ae2441b28826488",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/2596.0.0",
+        "repo": "atoz",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

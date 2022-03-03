@@ -2,11 +2,10 @@
   description = ''Ping hosts using tcp packets'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tcping-master.flake = false;
+    inputs.src-tcping-master.flake = false;
   inputs.src-tcping-master.type = "github";
   inputs.src-tcping-master.owner = "pdrb";
   inputs.src-tcping-master.repo = "tcping";

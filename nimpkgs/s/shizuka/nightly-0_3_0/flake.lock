@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-shizuka-nightly-0_3_0": "src-shizuka-nightly-0_3_0"
+      }
+    },
+    "src-shizuka-nightly-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638608742,
+        "narHash": "sha256-ZIZtuYApx+iYb2DCyIKdBQ4WoE9BInmG5JLfdLIKXjk=",
+        "owner": "ethosa",
+        "repo": "shizuka",
+        "rev": "bb1f0127227bacf6326c56214580c408900e4a98",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/tags/nightly-0.3.0",
+        "repo": "shizuka",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

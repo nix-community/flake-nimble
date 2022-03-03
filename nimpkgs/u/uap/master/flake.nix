@@ -2,11 +2,10 @@
   description = ''Nim implementation of user-agent parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-uap-master.flake = false;
+    inputs.src-uap-master.flake = false;
   inputs.src-uap-master.type = "gitlab";
   inputs.src-uap-master.owner = "artemklevtsov";
   inputs.src-uap-master.repo = "nim-uap";

@@ -2,11 +2,10 @@
   description = ''micro and elegant web framework'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-scorper-v1_0_20.flake = false;
+    inputs.src-scorper-v1_0_20.flake = false;
   inputs.src-scorper-v1_0_20.type = "github";
   inputs.src-scorper-v1_0_20.owner = "bung87";
   inputs.src-scorper-v1_0_20.repo = "scorper";

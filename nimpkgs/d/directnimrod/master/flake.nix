@@ -2,11 +2,10 @@
   description = ''Wrapper for microsoft's DirectX libraries'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-directnimrod-master.flake = false;
+    inputs.src-directnimrod-master.flake = false;
   inputs.src-directnimrod-master.type = "bitbucket";
   inputs.src-directnimrod-master.owner = "barcharcraz";
   inputs.src-directnimrod-master.repo = "directnimrod";

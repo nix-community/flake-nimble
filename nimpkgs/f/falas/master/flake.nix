@@ -2,11 +2,10 @@
   description = ''fragment-aware assembler for short reads'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-falas-master.flake = false;
+    inputs.src-falas-master.flake = false;
   inputs.src-falas-master.type = "github";
   inputs.src-falas-master.owner = "brentp";
   inputs.src-falas-master.repo = "falas";

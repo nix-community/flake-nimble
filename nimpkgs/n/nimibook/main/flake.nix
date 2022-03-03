@@ -2,11 +2,10 @@
   description = ''A port of mdbook to nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimibook-main.flake = false;
+    inputs.src-nimibook-main.flake = false;
   inputs.src-nimibook-main.type = "github";
   inputs.src-nimibook-main.owner = "pietroppeter";
   inputs.src-nimibook-main.repo = "nimibook";

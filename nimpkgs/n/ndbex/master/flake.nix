@@ -2,11 +2,10 @@
   description = ''extension modules for Nim's 'db_*' modules'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ndbex-master.flake = false;
+    inputs.src-ndbex-master.flake = false;
   inputs.src-ndbex-master.type = "github";
   inputs.src-ndbex-master.owner = "Senketsu";
   inputs.src-ndbex-master.repo = "nim-db-ex";

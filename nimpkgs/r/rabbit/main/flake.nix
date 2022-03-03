@@ -2,11 +2,10 @@
   description = ''The Hundred Rabbits theme ecosystem brought to Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rabbit-main.flake = false;
+    inputs.src-rabbit-main.flake = false;
   inputs.src-rabbit-main.type = "github";
   inputs.src-rabbit-main.owner = "tonogram";
   inputs.src-rabbit-main.repo = "rabbit";

@@ -2,11 +2,10 @@
   description = ''HTML & CSS Minify Lib & App based on Regexes & parallel MultiReplaces'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-css_html_minify-master.flake = false;
+    inputs.src-css_html_minify-master.flake = false;
   inputs.src-css_html_minify-master.type = "github";
   inputs.src-css_html_minify-master.owner = "juancarlospaco";
   inputs.src-css_html_minify-master.repo = "nim-css-html-minify";

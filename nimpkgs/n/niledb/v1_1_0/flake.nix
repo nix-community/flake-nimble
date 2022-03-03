@@ -2,11 +2,10 @@
   description = ''Key/Value storage into a fast file-hash'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-niledb-v1_1_0.flake = false;
+    inputs.src-niledb-v1_1_0.flake = false;
   inputs.src-niledb-v1_1_0.type = "github";
   inputs.src-niledb-v1_1_0.owner = "JeffersonLab";
   inputs.src-niledb-v1_1_0.repo = "niledb";

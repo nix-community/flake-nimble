@@ -2,11 +2,10 @@
   description = ''A brainfuck interpreter & compiler implemented in nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimfcuk-main.flake = false;
+    inputs.src-nimfcuk-main.flake = false;
   inputs.src-nimfcuk-main.type = "github";
   inputs.src-nimfcuk-main.owner = "2KAbhishek";
   inputs.src-nimfcuk-main.repo = "nimfcuk";

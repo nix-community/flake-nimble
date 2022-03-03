@@ -152,6 +152,11 @@ proc projectFlake(pkg: JsonNode): auto =
   mkdir fmt"../{flakeDir}"
   writeFile(fmt"../{flakeDir}/flake.nix", flakeContent)
   writeFile(fmt"../{flakeDir}/meta.json", $pkg)
+  exec fmt"""
+    cd ../{flakeDir};
+    git init;
+    git add .
+  """
 
 proc inputInfo(refInfo: JsonNode, url: string): JsonNode =
   let nimbleUrls = (%* {
@@ -226,7 +231,7 @@ proc refsFlake(pkg: JsonNode): auto =
       flakeContent = fmt"""{{
   description = ''{description}'';
   {nimPkgsLibInput()}
-{inputs}
+  {inputs}
   outputs = {{ self, nixpkgs, flakeNimbleLib, {itName}, ...}}@deps:
     let lib = flakeNimbleLib.lib;
     in lib.mkRefOutput {{
@@ -239,6 +244,10 @@ proc refsFlake(pkg: JsonNode): auto =
     mkdir flakeDir
     writeFile(fmt"{flakeDir}/flake.nix", flakeContent)
     writeFile(fmt"{flakeDir}/meta.json", $refInfo)
+    exec fmt"""
+      cd {flakeDir};
+      git add .
+    """
 
 let pkg = readAllFromStdin().parseJson
 let refs = pkg["url"].getRefs

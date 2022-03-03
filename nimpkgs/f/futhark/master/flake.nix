@@ -2,11 +2,10 @@
   description = ''Zero-wrapping C imports in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-futhark-master.flake = false;
+    inputs.src-futhark-master.flake = false;
   inputs.src-futhark-master.type = "github";
   inputs.src-futhark-master.owner = "PMunch";
   inputs.src-futhark-master.repo = "futhark";

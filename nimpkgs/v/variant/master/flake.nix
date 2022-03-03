@@ -2,11 +2,10 @@
   description = ''Variant type and type matching'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-variant-master.flake = false;
+    inputs.src-variant-master.flake = false;
   inputs.src-variant-master.type = "github";
   inputs.src-variant-master.owner = "yglukhov";
   inputs.src-variant-master.repo = "variant";

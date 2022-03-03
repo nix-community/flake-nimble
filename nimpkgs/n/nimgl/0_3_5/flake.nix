@@ -2,11 +2,10 @@
   description = ''Nim Game Library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimgl-0_3_5.flake = false;
+    inputs.src-nimgl-0_3_5.flake = false;
   inputs.src-nimgl-0_3_5.type = "github";
   inputs.src-nimgl-0_3_5.owner = "nimgl";
   inputs.src-nimgl-0_3_5.repo = "nimgl";

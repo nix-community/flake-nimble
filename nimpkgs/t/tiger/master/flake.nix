@@ -2,11 +2,10 @@
   description = ''Tiger hash function'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tiger-master.flake = false;
+    inputs.src-tiger-master.flake = false;
   inputs.src-tiger-master.type = "other";
   inputs.src-tiger-master.owner = "~ehmry";
   inputs.src-tiger-master.repo = "nim_tiger";

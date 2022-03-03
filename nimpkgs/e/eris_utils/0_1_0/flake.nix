@@ -2,11 +2,10 @@
   description = ''Utilities for the Encoding for Robust Immutable Storage (ERIS)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-eris_utils-0_1_0.flake = false;
+    inputs.src-eris_utils-0_1_0.flake = false;
   inputs.src-eris_utils-0_1_0.type = "other";
   inputs.src-eris_utils-0_1_0.owner = "~ehmry";
   inputs.src-eris_utils-0_1_0.repo = "eris_utils";

@@ -2,11 +2,10 @@
   description = ''A nim flavor of pytorch'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-torch-v0_1_15.flake = false;
+    inputs.src-torch-v0_1_15.flake = false;
   inputs.src-torch-v0_1_15.type = "github";
   inputs.src-torch-v0_1_15.owner = "fragcolor-xyz";
   inputs.src-torch-v0_1_15.repo = "nimtorch";

@@ -2,11 +2,10 @@
   description = ''Game rules engine for simulating or playing turn-based games'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-turn_based_game-master.flake = false;
+    inputs.src-turn_based_game-master.flake = false;
   inputs.src-turn_based_game-master.type = "github";
   inputs.src-turn_based_game-master.owner = "JohnAD";
   inputs.src-turn_based_game-master.repo = "turn_based_game";

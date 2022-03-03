@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-wiki2text-master": "src-wiki2text-master"
+      }
+    },
+    "src-wiki2text-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543250396,
+        "narHash": "sha256-2ScFBcXHP2Xemai7qovbqQzdFpkzbLF6JpSc81Lm7+k=",
+        "owner": "rspeer",
+        "repo": "wiki2text",
+        "rev": "1859b9e336c8cdbb698b6b1a24cb077e18c094e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rspeer",
+        "ref": "refs/heads/master",
+        "repo": "wiki2text",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

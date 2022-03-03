@@ -2,11 +2,10 @@
   description = ''implements the cucumber BDD framework in the nim language'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cucumber-v0_0_4.flake = false;
+    inputs.src-cucumber-v0_0_4.flake = false;
   inputs.src-cucumber-v0_0_4.type = "github";
   inputs.src-cucumber-v0_0_4.owner = "shaunc";
   inputs.src-cucumber-v0_0_4.repo = "cucumber_nim";

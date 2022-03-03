@@ -2,11 +2,10 @@
   description = ''Code coverage CLI + library for Nim using LCOV'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-coco-master.flake = false;
+    inputs.src-coco-master.flake = false;
   inputs.src-coco-master.type = "github";
   inputs.src-coco-master.owner = "samuelroy";
   inputs.src-coco-master.repo = "coco";

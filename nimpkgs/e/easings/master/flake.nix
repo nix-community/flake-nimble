@@ -2,11 +2,10 @@
   description = ''Robert Penner Easing Functions for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-easings-master.flake = false;
+    inputs.src-easings-master.flake = false;
   inputs.src-easings-master.type = "github";
   inputs.src-easings-master.owner = "juancarlospaco";
   inputs.src-easings-master.repo = "nim-easings";

@@ -2,11 +2,10 @@
   description = ''Kombinator is a tool to generate commands line from parameters combination from a config file.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-kombinator-1_0_2.flake = false;
+    inputs.src-kombinator-1_0_2.flake = false;
   inputs.src-kombinator-1_0_2.type = "gitlab";
   inputs.src-kombinator-1_0_2.owner = "EchoPouet";
   inputs.src-kombinator-1_0_2.repo = "kombinator";

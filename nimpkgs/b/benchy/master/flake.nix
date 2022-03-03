@@ -2,11 +2,10 @@
   description = ''Simple benchmarking to time your code.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-benchy-master.flake = false;
+    inputs.src-benchy-master.flake = false;
   inputs.src-benchy-master.type = "github";
   inputs.src-benchy-master.owner = "treeform";
   inputs.src-benchy-master.repo = "benchy";

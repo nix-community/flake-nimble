@@ -2,11 +2,10 @@
   description = ''glue code generator to bind Nim and Lua together using Nim's powerful macro'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimLUA-master.flake = false;
+    inputs.src-nimLUA-master.flake = false;
   inputs.src-nimLUA-master.type = "github";
   inputs.src-nimLUA-master.owner = "jangko";
   inputs.src-nimLUA-master.repo = "nimLUA";

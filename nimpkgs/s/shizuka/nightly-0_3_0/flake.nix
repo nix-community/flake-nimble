@@ -2,11 +2,10 @@
   description = ''The Nim framework for VK API.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-shizuka-nightly-0_3_0.flake = false;
+    inputs.src-shizuka-nightly-0_3_0.flake = false;
   inputs.src-shizuka-nightly-0_3_0.type = "github";
   inputs.src-shizuka-nightly-0_3_0.owner = "ethosa";
   inputs.src-shizuka-nightly-0_3_0.repo = "shizuka";

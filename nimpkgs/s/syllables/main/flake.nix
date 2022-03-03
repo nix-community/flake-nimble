@@ -2,11 +2,10 @@
   description = ''Syllable estimation for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-syllables-main.flake = false;
+    inputs.src-syllables-main.flake = false;
   inputs.src-syllables-main.type = "github";
   inputs.src-syllables-main.owner = "tonogram";
   inputs.src-syllables-main.repo = "nim-syllables";

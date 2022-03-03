@@ -2,11 +2,10 @@
   description = ''Operators, commands and functions more c-like, plus a few other utilities'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-c_alikes-master.flake = false;
+    inputs.src-c_alikes-master.flake = false;
   inputs.src-c_alikes-master.type = "github";
   inputs.src-c_alikes-master.owner = "ReneSac";
   inputs.src-c_alikes-master.repo = "c_alikes";

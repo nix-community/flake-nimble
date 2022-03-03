@@ -2,11 +2,10 @@
   description = ''MongoDB driver in pure Nim language with synchronous and asynchronous I/O support'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimongo-master.flake = false;
+    inputs.src-nimongo-master.flake = false;
   inputs.src-nimongo-master.type = "github";
   inputs.src-nimongo-master.owner = "SSPkrolik";
   inputs.src-nimongo-master.repo = "nimongo";

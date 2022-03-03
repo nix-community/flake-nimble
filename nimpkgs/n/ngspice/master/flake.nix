@@ -2,11 +2,10 @@
   description = ''Analog electronic circuit simiulator library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ngspice-master.flake = false;
+    inputs.src-ngspice-master.flake = false;
   inputs.src-ngspice-master.type = "github";
   inputs.src-ngspice-master.owner = "haxscramper";
   inputs.src-ngspice-master.repo = "ngspice";

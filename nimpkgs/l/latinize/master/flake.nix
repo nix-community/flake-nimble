@@ -2,11 +2,10 @@
   description = ''Convert accents (diacritics) from strings to latin characters.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-latinize-master.flake = false;
+    inputs.src-latinize-master.flake = false;
   inputs.src-latinize-master.type = "github";
   inputs.src-latinize-master.owner = "AmanoTeam";
   inputs.src-latinize-master.repo = "Latinize";

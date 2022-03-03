@@ -2,11 +2,10 @@
   description = ''Infer & generate command-line interace/option/argument parsers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cligen-master.flake = false;
+    inputs.src-cligen-master.flake = false;
   inputs.src-cligen-master.type = "github";
   inputs.src-cligen-master.owner = "c-blake";
   inputs.src-cligen-master.repo = "cligen";

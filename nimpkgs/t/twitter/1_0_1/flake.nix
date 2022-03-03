@@ -2,11 +2,10 @@
   description = ''Low-level twitter API wrapper library for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-twitter-1_0_1.flake = false;
+    inputs.src-twitter-1_0_1.flake = false;
   inputs.src-twitter-1_0_1.type = "github";
   inputs.src-twitter-1_0_1.owner = "snus-kin";
   inputs.src-twitter-1_0_1.repo = "twitter.nim";

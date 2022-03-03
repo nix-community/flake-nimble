@@ -2,11 +2,10 @@
   description = ''Special mathematical functions in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-special_functions-master.flake = false;
+    inputs.src-special_functions-master.flake = false;
   inputs.src-special_functions-master.type = "github";
   inputs.src-special_functions-master.owner = "ayman-albaz";
   inputs.src-special_functions-master.repo = "special-functions";

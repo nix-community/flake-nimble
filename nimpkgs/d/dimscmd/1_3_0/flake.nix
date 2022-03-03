@@ -2,11 +2,10 @@
   description = ''A command handler for the dimscord discord library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dimscmd-1_3_0.flake = false;
+    inputs.src-dimscmd-1_3_0.flake = false;
   inputs.src-dimscmd-1_3_0.type = "github";
   inputs.src-dimscmd-1_3_0.owner = "ire4ever1190";
   inputs.src-dimscmd-1_3_0.repo = "dimscordCommandHandler";

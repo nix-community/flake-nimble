@@ -2,11 +2,10 @@
   description = ''A Nim package to convert filesizes into other units, and turns filesizes into human readable strings.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-filesize-master.flake = false;
+    inputs.src-filesize-master.flake = false;
   inputs.src-filesize-master.type = "github";
   inputs.src-filesize-master.owner = "sergiotapia";
   inputs.src-filesize-master.repo = "filesize";

@@ -2,11 +2,10 @@
   description = ''Conway's Game of Life implemented in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hayaa-main.flake = false;
+    inputs.src-hayaa-main.flake = false;
   inputs.src-hayaa-main.type = "github";
   inputs.src-hayaa-main.owner = "angus-lherrou";
   inputs.src-hayaa-main.repo = "hayaa";

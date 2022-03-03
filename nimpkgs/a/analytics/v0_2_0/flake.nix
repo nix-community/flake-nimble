@@ -2,11 +2,10 @@
   description = ''Allows statistics to be sent to and recorded in Google Analytics.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-analytics-v0_2_0.flake = false;
+    inputs.src-analytics-v0_2_0.flake = false;
   inputs.src-analytics-v0_2_0.type = "github";
   inputs.src-analytics-v0_2_0.owner = "dom96";
   inputs.src-analytics-v0_2_0.repo = "analytics";

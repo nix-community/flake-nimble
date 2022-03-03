@@ -2,11 +2,10 @@
   description = ''Nim lang smart pointers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nptr-develop.flake = false;
+    inputs.src-nptr-develop.flake = false;
   inputs.src-nptr-develop.type = "github";
   inputs.src-nptr-develop.owner = "henryas";
   inputs.src-nptr-develop.repo = "nptr";

@@ -2,11 +2,10 @@
   description = ''Pub/Sub engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-suber-main.flake = false;
+    inputs.src-suber-main.flake = false;
   inputs.src-suber-main.type = "github";
   inputs.src-suber-main.owner = "olliNiinivaara";
   inputs.src-suber-main.repo = "Suber";

@@ -2,11 +2,10 @@
   description = ''fast interval overlaps'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-lapper-v0_1_7.flake = false;
+    inputs.src-lapper-v0_1_7.flake = false;
   inputs.src-lapper-v0_1_7.type = "github";
   inputs.src-lapper-v0_1_7.owner = "brentp";
   inputs.src-lapper-v0_1_7.repo = "nim-lapper";

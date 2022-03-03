@@ -2,11 +2,10 @@
   description = ''Nim cryptographic library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimcrypto-master.flake = false;
+    inputs.src-nimcrypto-master.flake = false;
   inputs.src-nimcrypto-master.type = "github";
   inputs.src-nimcrypto-master.owner = "cheatfate";
   inputs.src-nimcrypto-master.repo = "nimcrypto";

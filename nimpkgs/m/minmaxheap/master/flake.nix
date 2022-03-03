@@ -2,11 +2,10 @@
   description = ''MinMaxHeap'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-minmaxheap-master.flake = false;
+    inputs.src-minmaxheap-master.flake = false;
   inputs.src-minmaxheap-master.type = "github";
   inputs.src-minmaxheap-master.owner = "stefansalewski";
   inputs.src-minmaxheap-master.repo = "minmaxheap";

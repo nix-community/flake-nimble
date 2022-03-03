@@ -2,11 +2,10 @@
   description = ''A higher-level wrapper for the Python Programing Language'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pythonize-master.flake = false;
+    inputs.src-pythonize-master.flake = false;
   inputs.src-pythonize-master.type = "github";
   inputs.src-pythonize-master.owner = "marcoapintoo";
   inputs.src-pythonize-master.repo = "nim-pythonize";

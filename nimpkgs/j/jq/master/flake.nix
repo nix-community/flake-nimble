@@ -2,11 +2,10 @@
   description = ''Fast JSON parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jq-master.flake = false;
+    inputs.src-jq-master.flake = false;
   inputs.src-jq-master.type = "github";
   inputs.src-jq-master.owner = "alialrahahleh";
   inputs.src-jq-master.repo = "fjq";

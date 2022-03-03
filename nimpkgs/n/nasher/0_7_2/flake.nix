@@ -2,11 +2,10 @@
   description = ''A build tool for Neverwinter Nights projects'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nasher-0_7_2.flake = false;
+    inputs.src-nasher-0_7_2.flake = false;
   inputs.src-nasher-0_7_2.type = "github";
   inputs.src-nasher-0_7_2.owner = "squattingmonk";
   inputs.src-nasher-0_7_2.repo = "nasher.nim";

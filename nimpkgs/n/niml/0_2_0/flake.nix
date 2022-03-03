@@ -2,11 +2,10 @@
   description = ''html dsl'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-niml-0_2_0.flake = false;
+    inputs.src-niml-0_2_0.flake = false;
   inputs.src-niml-0_2_0.type = "github";
   inputs.src-niml-0_2_0.owner = "jakubDoka";
   inputs.src-niml-0_2_0.repo = "niml";

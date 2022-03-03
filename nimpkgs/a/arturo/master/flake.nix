@@ -2,11 +2,10 @@
   description = ''Simple, modern and portable interpreted programming language for efficient scripting'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-arturo-master.flake = false;
+    inputs.src-arturo-master.flake = false;
   inputs.src-arturo-master.type = "github";
   inputs.src-arturo-master.owner = "arturo-lang";
   inputs.src-arturo-master.repo = "arturo";

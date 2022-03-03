@@ -2,11 +2,10 @@
   description = ''Easy and fast generator for valid json in nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-json_builder-master.flake = false;
+    inputs.src-json_builder-master.flake = false;
   inputs.src-json_builder-master.type = "github";
   inputs.src-json_builder-master.owner = "undecided";
   inputs.src-json_builder-master.repo = "json_builder";

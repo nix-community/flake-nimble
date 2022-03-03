@@ -2,11 +2,10 @@
   description = ''Karax extension to convert html in string form to embeddable Karax vdom'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-htmlToVdom-main.flake = false;
+    inputs.src-htmlToVdom-main.flake = false;
   inputs.src-htmlToVdom-main.type = "github";
   inputs.src-htmlToVdom-main.owner = "C-NERD";
   inputs.src-htmlToVdom-main.repo = "htmlToVdom";

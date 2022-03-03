@@ -2,11 +2,10 @@
   description = ''Simple window maker.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-siwin-master.flake = false;
+    inputs.src-siwin-master.flake = false;
   inputs.src-siwin-master.type = "github";
   inputs.src-siwin-master.owner = "levovix0";
   inputs.src-siwin-master.repo = "siwin";

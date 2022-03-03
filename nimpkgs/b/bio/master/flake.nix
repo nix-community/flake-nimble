@@ -2,11 +2,10 @@
   description = ''Bytes utils for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bio-master.flake = false;
+    inputs.src-bio-master.flake = false;
   inputs.src-bio-master.type = "github";
   inputs.src-bio-master.owner = "xzeshen";
   inputs.src-bio-master.repo = "bio";

@@ -2,11 +2,10 @@
   description = ''Steganography - hide data inside an image.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-steganography-master.flake = false;
+    inputs.src-steganography-master.flake = false;
   inputs.src-steganography-master.type = "github";
   inputs.src-steganography-master.owner = "treeform";
   inputs.src-steganography-master.repo = "steganography";

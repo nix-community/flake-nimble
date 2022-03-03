@@ -2,11 +2,10 @@
   description = ''Image manipulation library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-imageman-v0_6_2.flake = false;
+    inputs.src-imageman-v0_6_2.flake = false;
   inputs.src-imageman-v0_6_2.type = "github";
   inputs.src-imageman-v0_6_2.owner = "SolitudeSF";
   inputs.src-imageman-v0_6_2.repo = "imageman";

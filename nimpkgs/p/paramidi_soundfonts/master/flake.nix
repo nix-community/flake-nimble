@@ -2,11 +2,10 @@
   description = ''Soundfonts for paramidi'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-paramidi_soundfonts-master.flake = false;
+    inputs.src-paramidi_soundfonts-master.flake = false;
   inputs.src-paramidi_soundfonts-master.type = "github";
   inputs.src-paramidi_soundfonts-master.owner = "paranim";
   inputs.src-paramidi_soundfonts-master.repo = "paramidi_soundfonts";

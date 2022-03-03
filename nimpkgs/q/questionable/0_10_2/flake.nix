@@ -2,11 +2,10 @@
   description = ''Elegant optional types'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-questionable-0_10_2.flake = false;
+    inputs.src-questionable-0_10_2.flake = false;
   inputs.src-questionable-0_10_2.type = "github";
   inputs.src-questionable-0_10_2.owner = "markspanbroek";
   inputs.src-questionable-0_10_2.repo = "questionable";

@@ -2,11 +2,10 @@
   description = ''Game Boy Advance image conversion library and more'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-trick-0_1_2.flake = false;
+    inputs.src-trick-0_1_2.flake = false;
   inputs.src-trick-0_1_2.type = "github";
   inputs.src-trick-0_1_2.owner = "exelotl";
   inputs.src-trick-0_1_2.repo = "trick";

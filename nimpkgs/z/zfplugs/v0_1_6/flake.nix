@@ -2,11 +2,10 @@
   description = ''This is the plugins for the zfcore framework https://github.com/zendbit/nim.zfcore'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-zfplugs-v0_1_6.flake = false;
+    inputs.src-zfplugs-v0_1_6.flake = false;
   inputs.src-zfplugs-v0_1_6.type = "github";
   inputs.src-zfplugs-v0_1_6.owner = "zendbit";
   inputs.src-zfplugs-v0_1_6.repo = "nim.zfplugs";

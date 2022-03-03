@@ -2,11 +2,10 @@
   description = ''Bindings for picohttpparser.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-picohttpparser-0_9_0.flake = false;
+    inputs.src-picohttpparser-0_9_0.flake = false;
   inputs.src-picohttpparser-0_9_0.type = "github";
   inputs.src-picohttpparser-0_9_0.owner = "philip-wernersbach";
   inputs.src-picohttpparser-0_9_0.repo = "nim-picohttpparser";

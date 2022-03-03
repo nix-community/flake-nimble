@@ -2,11 +2,10 @@
   description = ''FastCGI library for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fastcgi-master.flake = false;
+    inputs.src-fastcgi-master.flake = false;
   inputs.src-fastcgi-master.type = "github";
   inputs.src-fastcgi-master.owner = "ba0f3";
   inputs.src-fastcgi-master.repo = "fastcgi.nim";

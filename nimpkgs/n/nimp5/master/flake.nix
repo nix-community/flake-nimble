@@ -2,11 +2,10 @@
   description = ''Nim bindings for p5.js.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimp5-master.flake = false;
+    inputs.src-nimp5-master.flake = false;
   inputs.src-nimp5-master.type = "github";
   inputs.src-nimp5-master.owner = "Foldover";
   inputs.src-nimp5-master.repo = "nim-p5";

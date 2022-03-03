@@ -2,11 +2,10 @@
   description = ''Image transformation and visualization utilities for arraymancer'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-arraymancer_vision-master.flake = false;
+    inputs.src-arraymancer_vision-master.flake = false;
   inputs.src-arraymancer_vision-master.type = "github";
   inputs.src-arraymancer_vision-master.owner = "edubart";
   inputs.src-arraymancer_vision-master.repo = "arraymancer-vision";

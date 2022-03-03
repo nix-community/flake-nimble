@@ -2,11 +2,10 @@
   description = ''Implementation of JSON5.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-samson-master.flake = false;
+    inputs.src-samson-master.flake = false;
   inputs.src-samson-master.type = "github";
   inputs.src-samson-master.owner = "GULPF";
   inputs.src-samson-master.repo = "samson";

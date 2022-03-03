@@ -2,11 +2,10 @@
   description = ''Nim Julia bridge'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimjl-v0_5_3.flake = false;
+    inputs.src-nimjl-v0_5_3.flake = false;
   inputs.src-nimjl-v0_5_3.type = "github";
   inputs.src-nimjl-v0_5_3.owner = "Clonkk";
   inputs.src-nimjl-v0_5_3.repo = "nimjl";

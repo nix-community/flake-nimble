@@ -2,11 +2,10 @@
   description = ''HTML5 Tools for Nim, all Templates, No CSS, No Libs, No JS Framework'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-html_tools-master.flake = false;
+    inputs.src-html_tools-master.flake = false;
   inputs.src-html_tools-master.type = "github";
   inputs.src-html_tools-master.owner = "juancarlospaco";
   inputs.src-html_tools-master.repo = "nim-html-tools";

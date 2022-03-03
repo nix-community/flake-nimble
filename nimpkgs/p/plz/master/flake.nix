@@ -2,11 +2,10 @@
   description = ''PLZ Python PIP alternative'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-plz-master.flake = false;
+    inputs.src-plz-master.flake = false;
   inputs.src-plz-master.type = "github";
   inputs.src-plz-master.owner = "juancarlospaco";
   inputs.src-plz-master.repo = "nim-pypi";

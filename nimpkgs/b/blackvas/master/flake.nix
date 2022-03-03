@@ -2,11 +2,10 @@
   description = ''declarative UI framework for building Canvas'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-Blackvas-master.flake = false;
+    inputs.src-Blackvas-master.flake = false;
   inputs.src-Blackvas-master.type = "github";
   inputs.src-Blackvas-master.owner = "momeemt";
   inputs.src-Blackvas-master.repo = "Blackvas";

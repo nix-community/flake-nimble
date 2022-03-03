@@ -2,11 +2,10 @@
   description = ''Proton template engine for xml and xhtml files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-proton-v0_2_2.flake = false;
+    inputs.src-proton-v0_2_2.flake = false;
   inputs.src-proton-v0_2_2.type = "github";
   inputs.src-proton-v0_2_2.owner = "jasonrbriggs";
   inputs.src-proton-v0_2_2.repo = "proton-nim";

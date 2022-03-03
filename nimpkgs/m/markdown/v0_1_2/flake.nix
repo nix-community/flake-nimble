@@ -2,11 +2,10 @@
   description = ''A Beautiful Markdown Parser in the Nim World.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-markdown-v0_1_2.flake = false;
+    inputs.src-markdown-v0_1_2.flake = false;
   inputs.src-markdown-v0_1_2.type = "github";
   inputs.src-markdown-v0_1_2.owner = "soasme";
   inputs.src-markdown-v0_1_2.repo = "nim-markdown";

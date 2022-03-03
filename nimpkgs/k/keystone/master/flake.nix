@@ -2,11 +2,10 @@
   description = ''Bindings to the Keystone Assembler.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-keystone-master.flake = false;
+    inputs.src-keystone-master.flake = false;
   inputs.src-keystone-master.type = "github";
   inputs.src-keystone-master.owner = "6A";
   inputs.src-keystone-master.repo = "Keystone.nim";

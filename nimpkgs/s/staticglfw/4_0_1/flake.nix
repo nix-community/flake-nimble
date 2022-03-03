@@ -2,11 +2,10 @@
   description = ''Static GLFW for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-staticglfw-4_0_1.flake = false;
+    inputs.src-staticglfw-4_0_1.flake = false;
   inputs.src-staticglfw-4_0_1.type = "github";
   inputs.src-staticglfw-4_0_1.owner = "treeform";
   inputs.src-staticglfw-4_0_1.repo = "staticglfw";

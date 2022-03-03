@@ -2,11 +2,10 @@
   description = ''Nim bindings for libOVR (Oculus Rift)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libovr-master.flake = false;
+    inputs.src-libovr-master.flake = false;
   inputs.src-libovr-master.type = "github";
   inputs.src-libovr-master.owner = "bluenote10";
   inputs.src-libovr-master.repo = "nim-ovr";

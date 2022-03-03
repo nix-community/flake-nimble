@@ -2,11 +2,10 @@
   description = ''OAuth library for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-oauth-develop.flake = false;
+    inputs.src-oauth-develop.flake = false;
   inputs.src-oauth-develop.type = "github";
   inputs.src-oauth-develop.owner = "CORDEA";
   inputs.src-oauth-develop.repo = "oauth";

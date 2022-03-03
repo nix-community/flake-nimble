@@ -2,11 +2,10 @@
   description = ''Utilities and simple helpers for programming with Nim on embedded MCU devices'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mcu_utils-v0_1_0.flake = false;
+    inputs.src-mcu_utils-v0_1_0.flake = false;
   inputs.src-mcu_utils-v0_1_0.type = "github";
   inputs.src-mcu_utils-v0_1_0.owner = "EmbeddedNim";
   inputs.src-mcu_utils-v0_1_0.repo = "mcu_utils";

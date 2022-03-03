@@ -2,11 +2,10 @@
   description = ''Nim wrapper for edlib'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-edlib-main.flake = false;
+    inputs.src-edlib-main.flake = false;
   inputs.src-edlib-main.type = "github";
   inputs.src-edlib-main.owner = "bio-nim";
   inputs.src-edlib-main.repo = "nim-edlib";

@@ -2,11 +2,10 @@
   description = ''UUIDs in pure Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-uuid4-main.flake = false;
+    inputs.src-uuid4-main.flake = false;
   inputs.src-uuid4-main.type = "github";
   inputs.src-uuid4-main.owner = "vtbassmatt";
   inputs.src-uuid4-main.repo = "nim-uuid4";

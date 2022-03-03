@@ -2,11 +2,10 @@
   description = ''XXTEA encryption algorithm library written in pure Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-xxtea-master.flake = false;
+    inputs.src-xxtea-master.flake = false;
   inputs.src-xxtea-master.type = "github";
   inputs.src-xxtea-master.owner = "xxtea";
   inputs.src-xxtea-master.repo = "xxtea-nim";

@@ -2,11 +2,10 @@
   description = ''encoded kmer library for fast operations on kmers up to 31'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-kmer-v0_2_6.flake = false;
+    inputs.src-kmer-v0_2_6.flake = false;
   inputs.src-kmer-v0_2_6.type = "github";
   inputs.src-kmer-v0_2_6.owner = "brentp";
   inputs.src-kmer-v0_2_6.repo = "nim-kmer";

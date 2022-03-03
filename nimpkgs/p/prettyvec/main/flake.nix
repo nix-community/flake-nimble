@@ -2,11 +2,10 @@
   description = ''Small library for working with vectors'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-prettyvec-main.flake = false;
+    inputs.src-prettyvec-main.flake = false;
   inputs.src-prettyvec-main.type = "github";
   inputs.src-prettyvec-main.owner = "prettybauble";
   inputs.src-prettyvec-main.repo = "prettyvec";

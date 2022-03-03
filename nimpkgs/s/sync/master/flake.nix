@@ -2,11 +2,10 @@
   description = ''Useful synchronization primitives'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sync-master.flake = false;
+    inputs.src-sync-master.flake = false;
   inputs.src-sync-master.type = "github";
   inputs.src-sync-master.owner = "planetis-m";
   inputs.src-sync-master.repo = "sync";

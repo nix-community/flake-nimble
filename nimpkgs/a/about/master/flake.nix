@@ -2,11 +2,10 @@
   description = ''Executable for finding information about programs in PATH'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-about-master.flake = false;
+    inputs.src-about-master.flake = false;
   inputs.src-about-master.type = "github";
   inputs.src-about-master.owner = "aleandros";
   inputs.src-about-master.repo = "about";

@@ -2,11 +2,10 @@
   description = ''An embedded text editor for paranim games'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-paravim-master.flake = false;
+    inputs.src-paravim-master.flake = false;
   inputs.src-paravim-master.type = "github";
   inputs.src-paravim-master.owner = "paranim";
   inputs.src-paravim-master.repo = "paravim";

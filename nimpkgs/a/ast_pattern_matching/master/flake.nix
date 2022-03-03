@@ -2,11 +2,10 @@
   description = ''a general ast pattern matching library with a focus on correctness and good error messages'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ast_pattern_matching-master.flake = false;
+    inputs.src-ast_pattern_matching-master.flake = false;
   inputs.src-ast_pattern_matching-master.type = "github";
   inputs.src-ast_pattern_matching-master.owner = "krux02";
   inputs.src-ast_pattern_matching-master.repo = "ast-pattern-matching";

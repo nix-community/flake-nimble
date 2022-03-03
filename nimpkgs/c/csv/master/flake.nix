@@ -2,11 +2,10 @@
   description = ''Library for parsing, stringifying, reading, and writing CSV (comma separated value) files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-csv-master.flake = false;
+    inputs.src-csv-master.flake = false;
   inputs.src-csv-master.type = "github";
   inputs.src-csv-master.owner = "achesak";
   inputs.src-csv-master.repo = "nim-csv";

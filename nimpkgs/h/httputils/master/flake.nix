@@ -2,11 +2,10 @@
   description = ''Common utilities for implementing HTTP servers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-httputils-master.flake = false;
+    inputs.src-httputils-master.flake = false;
   inputs.src-httputils-master.type = "github";
   inputs.src-httputils-master.owner = "status-im";
   inputs.src-httputils-master.repo = "nim-http-utils";

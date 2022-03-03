@@ -2,11 +2,10 @@
   description = ''REXPaint .xp parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rexpaint-master.flake = false;
+    inputs.src-rexpaint-master.flake = false;
   inputs.src-rexpaint-master.type = "github";
   inputs.src-rexpaint-master.owner = "irskep";
   inputs.src-rexpaint-master.repo = "rexpaint_nim";

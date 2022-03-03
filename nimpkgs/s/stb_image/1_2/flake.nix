@@ -2,11 +2,10 @@
   description = ''A wrapper for stb_image and stb_image_write.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-stb_image-1_2.flake = false;
+    inputs.src-stb_image-1_2.flake = false;
   inputs.src-stb_image-1_2.type = "gitlab";
   inputs.src-stb_image-1_2.owner = "define-private-public";
   inputs.src-stb_image-1_2.repo = "stb_image-Nim";

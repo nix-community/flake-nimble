@@ -2,11 +2,10 @@
   description = ''The Nim implementation of NanoID'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nanoid-master.flake = false;
+    inputs.src-nanoid-master.flake = false;
   inputs.src-nanoid-master.type = "github";
   inputs.src-nanoid-master.owner = "icyphox";
   inputs.src-nanoid-master.repo = "nanoid.nim";

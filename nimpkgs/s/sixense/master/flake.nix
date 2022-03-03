@@ -2,11 +2,10 @@
   description = ''Bindings for the Sixense Core API.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sixense-master.flake = false;
+    inputs.src-sixense-master.flake = false;
   inputs.src-sixense-master.type = "github";
   inputs.src-sixense-master.owner = "nimious";
   inputs.src-sixense-master.repo = "sixense";

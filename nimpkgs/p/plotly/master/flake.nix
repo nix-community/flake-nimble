@@ -2,11 +2,10 @@
   description = ''Nim interface to plotly'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-plotly-master.flake = false;
+    inputs.src-plotly-master.flake = false;
   inputs.src-plotly-master.type = "github";
   inputs.src-plotly-master.owner = "SciNim";
   inputs.src-plotly-master.repo = "nim-plotly";

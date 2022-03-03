@@ -2,11 +2,10 @@
   description = ''A fast, multithreaded miner for DuinoCoin'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ducominer-main.flake = false;
+    inputs.src-ducominer-main.flake = false;
   inputs.src-ducominer-main.type = "github";
   inputs.src-ducominer-main.owner = "its5Q";
   inputs.src-ducominer-main.repo = "ducominer";

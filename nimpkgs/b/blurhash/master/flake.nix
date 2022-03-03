@@ -2,11 +2,10 @@
   description = ''Encoder/decoder for blurhash algorithm'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-blurhash-master.flake = false;
+    inputs.src-blurhash-master.flake = false;
   inputs.src-blurhash-master.type = "github";
   inputs.src-blurhash-master.owner = "SolitudeSF";
   inputs.src-blurhash-master.repo = "blurhash";

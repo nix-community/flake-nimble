@@ -2,11 +2,10 @@
   description = ''Convert a Nim file or string to Markdown'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimtomd-v0_2_1.flake = false;
+    inputs.src-nimtomd-v0_2_1.flake = false;
   inputs.src-nimtomd-v0_2_1.type = "github";
   inputs.src-nimtomd-v0_2_1.owner = "ThomasTJdev";
   inputs.src-nimtomd-v0_2_1.repo = "nimtomd";

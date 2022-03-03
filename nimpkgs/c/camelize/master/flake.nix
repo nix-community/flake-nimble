@@ -2,11 +2,10 @@
   description = ''Convert json node to camelcase'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-camelize-master.flake = false;
+    inputs.src-camelize-master.flake = false;
   inputs.src-camelize-master.type = "github";
   inputs.src-camelize-master.owner = "kixixixixi";
   inputs.src-camelize-master.repo = "camelize";

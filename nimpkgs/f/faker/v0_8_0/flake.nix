@@ -2,11 +2,10 @@
   description = ''faker is a Nim package that generates fake data for you.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-faker-v0_8_0.flake = false;
+    inputs.src-faker-v0_8_0.flake = false;
   inputs.src-faker-v0_8_0.type = "github";
   inputs.src-faker-v0_8_0.owner = "jiro4989";
   inputs.src-faker-v0_8_0.repo = "faker";

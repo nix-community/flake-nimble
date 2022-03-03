@@ -2,11 +2,10 @@
   description = ''a couchDB client written in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mycouch-main.flake = false;
+    inputs.src-mycouch-main.flake = false;
   inputs.src-mycouch-main.type = "github";
   inputs.src-mycouch-main.owner = "hamidb80";
   inputs.src-mycouch-main.repo = "mycouch";

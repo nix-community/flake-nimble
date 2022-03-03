@@ -2,11 +2,10 @@
   description = ''RethinkDB driver for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rethinkdb-0_2_3_1.flake = false;
+    inputs.src-rethinkdb-0_2_3_1.flake = false;
   inputs.src-rethinkdb-0_2_3_1.type = "github";
   inputs.src-rethinkdb-0_2_3_1.owner = "OpenSystemsLab";
   inputs.src-rethinkdb-0_2_3_1.repo = "rethinkdb.nim";

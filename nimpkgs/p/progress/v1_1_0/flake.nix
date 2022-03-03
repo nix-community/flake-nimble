@@ -2,11 +2,10 @@
   description = ''A simple progress bar for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-progress-v1_1_0.flake = false;
+    inputs.src-progress-v1_1_0.flake = false;
   inputs.src-progress-v1_1_0.type = "github";
   inputs.src-progress-v1_1_0.owner = "euantorano";
   inputs.src-progress-v1_1_0.repo = "progress.nim";

@@ -2,11 +2,10 @@
   description = ''TinyFileDialogs for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tinyfiledialogs-master.flake = false;
+    inputs.src-tinyfiledialogs-master.flake = false;
   inputs.src-tinyfiledialogs-master.type = "github";
   inputs.src-tinyfiledialogs-master.owner = "juancarlospaco";
   inputs.src-tinyfiledialogs-master.repo = "nim-tinyfiledialogs";

@@ -2,11 +2,10 @@
   description = ''Tor helper library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tor-master.flake = false;
+    inputs.src-tor-master.flake = false;
   inputs.src-tor-master.type = "github";
   inputs.src-tor-master.owner = "FedericoCeratto";
   inputs.src-tor-master.repo = "nim-tor";

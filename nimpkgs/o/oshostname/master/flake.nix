@@ -2,11 +2,10 @@
   description = ''Get the current hostname with gethostname(2)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-oshostname-master.flake = false;
+    inputs.src-oshostname-master.flake = false;
   inputs.src-oshostname-master.type = "github";
   inputs.src-oshostname-master.owner = "jrfondren";
   inputs.src-oshostname-master.repo = "nim-oshostname";

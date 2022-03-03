@@ -2,11 +2,10 @@
   description = ''A small program to make Nim shebang-able without the overhead of compiling each time'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimcr-master.flake = false;
+    inputs.src-nimcr-master.flake = false;
   inputs.src-nimcr-master.type = "github";
   inputs.src-nimcr-master.owner = "PMunch";
   inputs.src-nimcr-master.repo = "nimcr";

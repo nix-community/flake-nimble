@@ -2,11 +2,10 @@
   description = ''A container runtime written in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nicoru-main.flake = false;
+    inputs.src-nicoru-main.flake = false;
   inputs.src-nicoru-main.type = "github";
   inputs.src-nicoru-main.owner = "fox0430";
   inputs.src-nicoru-main.repo = "nicoru";

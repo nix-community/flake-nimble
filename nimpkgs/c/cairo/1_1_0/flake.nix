@@ -2,11 +2,10 @@
   description = ''Wrapper for cairo, a vector graphics library with display and print output'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cairo-1_1_0.flake = false;
+    inputs.src-cairo-1_1_0.flake = false;
   inputs.src-cairo-1_1_0.type = "github";
   inputs.src-cairo-1_1_0.owner = "nim-lang";
   inputs.src-cairo-1_1_0.repo = "cairo";

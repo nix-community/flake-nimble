@@ -2,11 +2,10 @@
   description = ''A pure-nim implementation of the STOMP protocol for machine messaging.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-stomp-master.flake = false;
+    inputs.src-stomp-master.flake = false;
   inputs.src-stomp-master.type = "github";
   inputs.src-stomp-master.owner = "mahlonsmith";
   inputs.src-stomp-master.repo = "nim-stomp";

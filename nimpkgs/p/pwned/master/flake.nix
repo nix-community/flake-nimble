@@ -2,11 +2,10 @@
   description = ''A client for the Pwned passwords API.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pwned-master.flake = false;
+    inputs.src-pwned-master.flake = false;
   inputs.src-pwned-master.type = "github";
   inputs.src-pwned-master.owner = "dom96";
   inputs.src-pwned-master.repo = "pwned";

@@ -2,11 +2,10 @@
   description = ''Lightweight audio mixer for games'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cmixer-master.flake = false;
+    inputs.src-cmixer-master.flake = false;
   inputs.src-cmixer-master.type = "github";
   inputs.src-cmixer-master.owner = "rxi";
   inputs.src-cmixer-master.repo = "cmixer-nim";

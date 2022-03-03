@@ -2,11 +2,10 @@
   description = ''This is a xlsxio wrapper done Nim in mind.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-xlsxio-main.flake = false;
+    inputs.src-xlsxio-main.flake = false;
   inputs.src-xlsxio-main.type = "github";
   inputs.src-xlsxio-main.owner = "jiiihpeeh";
   inputs.src-xlsxio-main.repo = "xlsxio-nim";

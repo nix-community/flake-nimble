@@ -2,11 +2,10 @@
   description = ''Async MySQL Connector write in pure Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-amysql-master.flake = false;
+    inputs.src-amysql-master.flake = false;
   inputs.src-amysql-master.type = "github";
   inputs.src-amysql-master.owner = "bung87";
   inputs.src-amysql-master.repo = "amysql";

@@ -2,11 +2,10 @@
   description = ''base64 cui'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-base64_decoder-master.flake = false;
+    inputs.src-base64_decoder-master.flake = false;
   inputs.src-base64_decoder-master.type = "github";
   inputs.src-base64_decoder-master.owner = "momeemt";
   inputs.src-base64_decoder-master.repo = "base64_cui";

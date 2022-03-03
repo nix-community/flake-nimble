@@ -2,11 +2,10 @@
   description = ''Sha1 and Sha2 implementations'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libsha-master.flake = false;
+    inputs.src-libsha-master.flake = false;
   inputs.src-libsha-master.type = "github";
   inputs.src-libsha-master.owner = "forlan-ua";
   inputs.src-libsha-master.repo = "nim-libsha";

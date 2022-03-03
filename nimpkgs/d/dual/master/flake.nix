@@ -2,11 +2,10 @@
   description = ''Implementation of dual numbers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dual-master.flake = false;
+    inputs.src-dual-master.flake = false;
   inputs.src-dual-master.type = "github";
   inputs.src-dual-master.owner = "drjdn";
   inputs.src-dual-master.repo = "nim_dual";

@@ -2,11 +2,10 @@
   description = ''Turn TSV file or stream into JSON file or stream'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tsv2json-master.flake = false;
+    inputs.src-tsv2json-master.flake = false;
   inputs.src-tsv2json-master.type = "github";
   inputs.src-tsv2json-master.owner = "hectormonacci";
   inputs.src-tsv2json-master.repo = "tsv2json";

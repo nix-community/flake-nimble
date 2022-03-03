@@ -2,11 +2,10 @@
   description = ''Web Technologies based Crossplatform GUI Framework'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-crowngui-master.flake = false;
+    inputs.src-crowngui-master.flake = false;
   inputs.src-crowngui-master.type = "github";
   inputs.src-crowngui-master.owner = "bung87";
   inputs.src-crowngui-master.repo = "crowngui";

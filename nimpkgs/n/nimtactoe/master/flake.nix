@@ -2,11 +2,10 @@
   description = ''A new awesome nimble package'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-NimTacToe-master.flake = false;
+    inputs.src-NimTacToe-master.flake = false;
   inputs.src-NimTacToe-master.type = "github";
   inputs.src-NimTacToe-master.owner = "JesterOrNot";
   inputs.src-NimTacToe-master.repo = "Nim-Tac-Toe";

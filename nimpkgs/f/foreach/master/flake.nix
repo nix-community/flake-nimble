@@ -2,11 +2,10 @@
   description = ''A sugary for loop with syntax for typechecking loop variables'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-foreach-master.flake = false;
+    inputs.src-foreach-master.flake = false;
   inputs.src-foreach-master.type = "github";
   inputs.src-foreach-master.owner = "disruptek";
   inputs.src-foreach-master.repo = "foreach";

@@ -2,11 +2,10 @@
   description = ''A compile-time, compact, fast, without allocation, state-machine generator.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-synthesis-master.flake = false;
+    inputs.src-synthesis-master.flake = false;
   inputs.src-synthesis-master.type = "github";
   inputs.src-synthesis-master.owner = "mratsim";
   inputs.src-synthesis-master.repo = "Synthesis";

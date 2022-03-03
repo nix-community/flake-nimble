@@ -2,11 +2,10 @@
   description = ''Get information about colors and convert them in the command line'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-clr-v1_0_0.flake = false;
+    inputs.src-clr-v1_0_0.flake = false;
   inputs.src-clr-v1_0_0.type = "github";
   inputs.src-clr-v1_0_0.owner = "Calinou";
   inputs.src-clr-v1_0_0.repo = "clr";

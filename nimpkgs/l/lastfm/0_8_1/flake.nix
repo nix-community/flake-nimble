@@ -2,11 +2,10 @@
   description = ''Last.FM API bindings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-lastfm-0_8_1.flake = false;
+    inputs.src-lastfm-0_8_1.flake = false;
   inputs.src-lastfm-0_8_1.type = "gitlab";
   inputs.src-lastfm-0_8_1.owner = "tandy1000";
   inputs.src-lastfm-0_8_1.repo = "lastfm-nim";

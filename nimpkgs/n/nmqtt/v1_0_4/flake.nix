@@ -2,11 +2,10 @@
   description = ''Native MQTT client library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nmqtt-v1_0_4.flake = false;
+    inputs.src-nmqtt-v1_0_4.flake = false;
   inputs.src-nmqtt-v1_0_4.type = "github";
   inputs.src-nmqtt-v1_0_4.owner = "zevv";
   inputs.src-nmqtt-v1_0_4.repo = "nmqtt";

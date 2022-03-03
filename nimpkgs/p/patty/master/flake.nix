@@ -2,11 +2,10 @@
   description = ''Algebraic data types and pattern matching'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-patty-master.flake = false;
+    inputs.src-patty-master.flake = false;
   inputs.src-patty-master.type = "github";
   inputs.src-patty-master.owner = "andreaferretti";
   inputs.src-patty-master.repo = "patty";

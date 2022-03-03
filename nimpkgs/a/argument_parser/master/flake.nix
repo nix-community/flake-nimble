@@ -2,11 +2,10 @@
   description = ''Provides a complex command-line parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-argument_parser-master.flake = false;
+    inputs.src-argument_parser-master.flake = false;
   inputs.src-argument_parser-master.type = "github";
   inputs.src-argument_parser-master.owner = "Xe";
   inputs.src-argument_parser-master.repo = "argument_parser";

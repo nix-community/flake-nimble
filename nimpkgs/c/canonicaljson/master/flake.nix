@@ -2,11 +2,10 @@
   description = ''Canonical JSON according to RFC8785'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-canonicaljson-master.flake = false;
+    inputs.src-canonicaljson-master.flake = false;
   inputs.src-canonicaljson-master.type = "github";
   inputs.src-canonicaljson-master.owner = "jackhftang";
   inputs.src-canonicaljson-master.repo = "canonicaljson.nim";

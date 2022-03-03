@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nimpari-v0_1_0": "src-nimpari-v0_1_0"
+      }
+    },
+    "src-nimpari-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587822781,
+        "narHash": "sha256-Y9kteDWcnedDqyaLzeYJU4pnNnmd8SG2m6C69aOk2d0=",
+        "owner": "BarrOff",
+        "repo": "nim-pari",
+        "rev": "860b04e2ccecea61aef90583249ae9cadf91e5f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BarrOff",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nim-pari",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

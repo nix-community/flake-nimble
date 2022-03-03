@@ -2,11 +2,10 @@
   description = ''Nim Barreto-Naehrig pairing-friendly elliptic curve implementation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bncurve-master.flake = false;
+    inputs.src-bncurve-master.flake = false;
   inputs.src-bncurve-master.type = "github";
   inputs.src-bncurve-master.owner = "status-im";
   inputs.src-bncurve-master.repo = "nim-bncurve";

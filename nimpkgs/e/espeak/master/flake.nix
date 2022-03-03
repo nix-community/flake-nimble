@@ -2,11 +2,10 @@
   description = ''Nim Espeak NG wrapper, for super easy Voice and Text-To-Speech'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-espeak-master.flake = false;
+    inputs.src-espeak-master.flake = false;
   inputs.src-espeak-master.type = "github";
   inputs.src-espeak-master.owner = "juancarlospaco";
   inputs.src-espeak-master.repo = "nim-espeak";

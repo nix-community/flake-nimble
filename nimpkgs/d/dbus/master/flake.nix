@@ -2,11 +2,10 @@
   description = ''dbus bindings for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dbus-master.flake = false;
+    inputs.src-dbus-master.flake = false;
   inputs.src-dbus-master.type = "github";
   inputs.src-dbus-master.owner = "zielmicha";
   inputs.src-dbus-master.repo = "nim-dbus";

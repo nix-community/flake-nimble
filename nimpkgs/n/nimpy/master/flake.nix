@@ -2,11 +2,10 @@
   description = ''Nim - Python bridge'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimpy-master.flake = false;
+    inputs.src-nimpy-master.flake = false;
   inputs.src-nimpy-master.type = "github";
   inputs.src-nimpy-master.owner = "yglukhov";
   inputs.src-nimpy-master.repo = "nimpy";

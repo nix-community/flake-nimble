@@ -2,11 +2,10 @@
   description = ''Wrapper for Heng Li's kseq'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-readfq-master.flake = false;
+    inputs.src-readfq-master.flake = false;
   inputs.src-readfq-master.type = "github";
   inputs.src-readfq-master.owner = "andreas-wilm";
   inputs.src-readfq-master.repo = "nimreadfq";

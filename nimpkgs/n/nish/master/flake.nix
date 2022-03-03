@@ -2,11 +2,10 @@
   description = ''A Toy Shell Application'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nish-master.flake = false;
+    inputs.src-nish-master.flake = false;
   inputs.src-nish-master.type = "github";
   inputs.src-nish-master.owner = "owlinux1000";
   inputs.src-nish-master.repo = "nish";

@@ -2,11 +2,10 @@
   description = ''Static website generation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-baker-v2_0_5.flake = false;
+    inputs.src-baker-v2_0_5.flake = false;
   inputs.src-baker-v2_0_5.type = "github";
   inputs.src-baker-v2_0_5.owner = "jasonrbriggs";
   inputs.src-baker-v2_0_5.repo = "baker";

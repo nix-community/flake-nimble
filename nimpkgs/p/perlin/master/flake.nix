@@ -2,11 +2,10 @@
   description = ''Perlin noise and Simplex noise generation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-perlin-master.flake = false;
+    inputs.src-perlin-master.flake = false;
   inputs.src-perlin-master.type = "github";
   inputs.src-perlin-master.owner = "Nycto";
   inputs.src-perlin-master.repo = "PerlinNim";

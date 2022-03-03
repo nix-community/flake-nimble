@@ -2,11 +2,10 @@
   description = ''eachdo executes commands with each multidimensional values'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-eachdo-v0_1_0.flake = false;
+    inputs.src-eachdo-v0_1_0.flake = false;
   inputs.src-eachdo-v0_1_0.type = "github";
   inputs.src-eachdo-v0_1_0.owner = "jiro4989";
   inputs.src-eachdo-v0_1_0.repo = "eachdo";

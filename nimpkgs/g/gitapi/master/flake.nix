@@ -2,11 +2,10 @@
   description = ''Nim wrapper around the git version control software'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gitapi-master.flake = false;
+    inputs.src-gitapi-master.flake = false;
   inputs.src-gitapi-master.type = "github";
   inputs.src-gitapi-master.owner = "achesak";
   inputs.src-gitapi-master.repo = "nim-gitapi";

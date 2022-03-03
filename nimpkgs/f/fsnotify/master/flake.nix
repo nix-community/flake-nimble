@@ -2,11 +2,10 @@
   description = ''A file system monitor in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fsnotify-master.flake = false;
+    inputs.src-fsnotify-master.flake = false;
   inputs.src-fsnotify-master.type = "github";
   inputs.src-fsnotify-master.owner = "xflywind";
   inputs.src-fsnotify-master.repo = "fsnotify";

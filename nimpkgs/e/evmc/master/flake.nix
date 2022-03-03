@@ -2,11 +2,10 @@
   description = ''A wrapper for the The Ethereum EVMC library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-evmc-master.flake = false;
+    inputs.src-evmc-master.flake = false;
   inputs.src-evmc-master.type = "github";
   inputs.src-evmc-master.owner = "status-im";
   inputs.src-evmc-master.repo = "nim-evmc";

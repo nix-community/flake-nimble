@@ -2,11 +2,10 @@
   description = ''A command lined based text editor inspired by vi/vim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-moe-v0_0_84.flake = false;
+    inputs.src-moe-v0_0_84.flake = false;
   inputs.src-moe-v0_0_84.type = "github";
   inputs.src-moe-v0_0_84.owner = "fox0430";
   inputs.src-moe-v0_0_84.repo = "moe";

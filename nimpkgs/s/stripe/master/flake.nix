@@ -2,11 +2,10 @@
   description = ''Nim client for Stripe.com'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-stripe-master.flake = false;
+    inputs.src-stripe-master.flake = false;
   inputs.src-stripe-master.type = "github";
   inputs.src-stripe-master.owner = "iffy";
   inputs.src-stripe-master.repo = "nim-stripe";

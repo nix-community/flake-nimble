@@ -2,11 +2,10 @@
   description = ''this libraly able to use database/sql of Go'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-db_wrapper-master.flake = false;
+    inputs.src-db_wrapper-master.flake = false;
   inputs.src-db_wrapper-master.type = "github";
   inputs.src-db_wrapper-master.owner = "sivchari";
   inputs.src-db_wrapper-master.repo = "db_wrapper";

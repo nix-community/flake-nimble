@@ -2,11 +2,10 @@
   description = ''library for scraping google search results'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-googlesearch-v0_3_1.flake = false;
+    inputs.src-googlesearch-v0_3_1.flake = false;
   inputs.src-googlesearch-v0_3_1.type = "github";
   inputs.src-googlesearch-v0_3_1.owner = "xyb";
   inputs.src-googlesearch-v0_3_1.repo = "googlesearch.nim";

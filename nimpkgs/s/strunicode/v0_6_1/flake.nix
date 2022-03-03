@@ -2,11 +2,10 @@
   description = ''Swift-like unicode string handling'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-strunicode-v0_6_1.flake = false;
+    inputs.src-strunicode-v0_6_1.flake = false;
   inputs.src-strunicode-v0_6_1.type = "github";
   inputs.src-strunicode-v0_6_1.owner = "nitely";
   inputs.src-strunicode-v0_6_1.repo = "nim-strunicode";

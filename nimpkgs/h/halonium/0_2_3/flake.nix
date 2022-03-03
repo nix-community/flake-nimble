@@ -2,11 +2,10 @@
   description = ''A browser automation library written in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-halonium-0_2_3.flake = false;
+    inputs.src-halonium-0_2_3.flake = false;
   inputs.src-halonium-0_2_3.type = "github";
   inputs.src-halonium-0_2_3.owner = "halonium";
   inputs.src-halonium-0_2_3.repo = "halonium";

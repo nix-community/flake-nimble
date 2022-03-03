@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-rodster-main": "src-rodster-main"
+      }
+    },
+    "src-rodster-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643405542,
+        "narHash": "sha256-tTxAnWDWSak7EbYpz+taxRgEFZSJ4F3RgftGMo/j1h4=",
+        "owner": "j-a-s-d",
+        "repo": "rodster",
+        "rev": "be2c97e25eac782b002b624b361e81d045048c84",
+        "type": "github"
+      },
+      "original": {
+        "owner": "j-a-s-d",
+        "ref": "refs/heads/main",
+        "repo": "rodster",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

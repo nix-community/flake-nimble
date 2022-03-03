@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-notcurses-v2_4_2": "src-notcurses-v2_4_2"
+      }
+    },
+    "src-notcurses-v2_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633589660,
+        "narHash": "sha256-jlGiEiomyNstY0pk3zI8PUoAK60dxxe/6BntDfhbVZw=",
+        "owner": "michaelsbradleyjr",
+        "repo": "nim-notcurses",
+        "rev": "88b35966471eb47c0b62ae4b1715e2ce73cd40b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "michaelsbradleyjr",
+        "ref": "refs/tags/v2.4.2",
+        "repo": "nim-notcurses",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

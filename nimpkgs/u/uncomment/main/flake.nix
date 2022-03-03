@@ -2,11 +2,10 @@
   description = ''uncomment the codes at the compile time'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-uncomment-main.flake = false;
+    inputs.src-uncomment-main.flake = false;
   inputs.src-uncomment-main.type = "github";
   inputs.src-uncomment-main.owner = "hamidb80";
   inputs.src-uncomment-main.repo = "uncomment";

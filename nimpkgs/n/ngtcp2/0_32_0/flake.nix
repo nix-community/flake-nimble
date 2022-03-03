@@ -2,11 +2,10 @@
   description = ''Nim wrapper around the ngtcp2 library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ngtcp2-0_32_0.flake = false;
+    inputs.src-ngtcp2-0_32_0.flake = false;
   inputs.src-ngtcp2-0_32_0.type = "github";
   inputs.src-ngtcp2-0_32_0.owner = "status-im";
   inputs.src-ngtcp2-0_32_0.repo = "nim-ngtcp2";

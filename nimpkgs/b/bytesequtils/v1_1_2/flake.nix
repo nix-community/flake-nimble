@@ -2,11 +2,10 @@
   description = ''Nim package to manipulate buffer as either seq[byte] or string'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bytesequtils-v1_1_2.flake = false;
+    inputs.src-bytesequtils-v1_1_2.flake = false;
   inputs.src-bytesequtils-v1_1_2.type = "github";
   inputs.src-bytesequtils-v1_1_2.owner = "Clonkk";
   inputs.src-bytesequtils-v1_1_2.repo = "bytesequtils";

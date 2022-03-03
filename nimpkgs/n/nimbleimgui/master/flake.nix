@@ -2,11 +2,10 @@
   description = ''ImGui Frontend for Nimble'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-NimbleImGui-master.flake = false;
+    inputs.src-NimbleImGui-master.flake = false;
   inputs.src-NimbleImGui-master.type = "github";
   inputs.src-NimbleImGui-master.owner = "qb-0";
   inputs.src-NimbleImGui-master.repo = "NimbleImGui";

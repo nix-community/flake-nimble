@@ -2,11 +2,10 @@
   description = ''🍕🍺 emoji support for Nim 👑 and the world 🌍'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimoji-master.flake = false;
+    inputs.src-nimoji-master.flake = false;
   inputs.src-nimoji-master.type = "github";
   inputs.src-nimoji-master.owner = "pietroppeter";
   inputs.src-nimoji-master.repo = "nimoji";

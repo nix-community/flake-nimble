@@ -2,11 +2,10 @@
   description = ''A collection of numerical methods written in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-numericalnim-v0_7_1.flake = false;
+    inputs.src-numericalnim-v0_7_1.flake = false;
   inputs.src-numericalnim-v0_7_1.type = "github";
   inputs.src-numericalnim-v0_7_1.owner = "SciNim";
   inputs.src-numericalnim-v0_7_1.repo = "numericalnim";

@@ -2,11 +2,10 @@
   description = ''Library for reading KeePass files and decrypt the passwords within it'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libkeepass-master.flake = false;
+    inputs.src-libkeepass-master.flake = false;
   inputs.src-libkeepass-master.type = "github";
   inputs.src-libkeepass-master.owner = "PMunch";
   inputs.src-libkeepass-master.repo = "libkeepass";

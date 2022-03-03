@@ -2,11 +2,10 @@
   description = ''Currying library for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-currying-master.flake = false;
+    inputs.src-currying-master.flake = false;
   inputs.src-currying-master.type = "github";
   inputs.src-currying-master.owner = "t8m8";
   inputs.src-currying-master.repo = "currying";

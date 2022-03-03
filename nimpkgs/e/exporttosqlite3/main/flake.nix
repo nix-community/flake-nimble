@@ -2,11 +2,10 @@
   description = ''Export Nim functions to sqlite3'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-exporttosqlite3-main.flake = false;
+    inputs.src-exporttosqlite3-main.flake = false;
   inputs.src-exporttosqlite3-main.type = "github";
   inputs.src-exporttosqlite3-main.owner = "niklaskorz";
   inputs.src-exporttosqlite3-main.repo = "nim-exporttosqlite3";

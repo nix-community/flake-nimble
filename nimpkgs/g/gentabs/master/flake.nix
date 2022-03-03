@@ -2,11 +2,10 @@
   description = ''Efficient hash table that is a key-value mapping (removed from stdlib)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gentabs-master.flake = false;
+    inputs.src-gentabs-master.flake = false;
   inputs.src-gentabs-master.type = "github";
   inputs.src-gentabs-master.owner = "lcrees";
   inputs.src-gentabs-master.repo = "gentabs";

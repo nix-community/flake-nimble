@@ -2,11 +2,10 @@
   description = ''Define enums which values preserve their binary representation upon inserting or reordering'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-persistent_enums-master.flake = false;
+    inputs.src-persistent_enums-master.flake = false;
   inputs.src-persistent_enums-master.type = "github";
   inputs.src-persistent_enums-master.owner = "yglukhov";
   inputs.src-persistent_enums-master.repo = "persistent_enums";

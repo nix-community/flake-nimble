@@ -2,11 +2,10 @@
   description = ''A package to get the MAC address of a local IP address'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-getmac-master.flake = false;
+    inputs.src-getmac-master.flake = false;
   inputs.src-getmac-master.type = "github";
   inputs.src-getmac-master.owner = "PMunch";
   inputs.src-getmac-master.repo = "getmac";

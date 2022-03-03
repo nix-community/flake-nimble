@@ -2,11 +2,10 @@
   description = ''Provides a macro to curry function'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nim_curry-master.flake = false;
+    inputs.src-nim_curry-master.flake = false;
   inputs.src-nim_curry-master.type = "github";
   inputs.src-nim_curry-master.owner = "zer0-star";
   inputs.src-nim_curry-master.repo = "nim-curry";

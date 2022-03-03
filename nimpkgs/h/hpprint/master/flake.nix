@@ -2,11 +2,10 @@
   description = ''Pretty-printer'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hpprint-master.flake = false;
+    inputs.src-hpprint-master.flake = false;
   inputs.src-hpprint-master.type = "github";
   inputs.src-hpprint-master.owner = "haxscramper";
   inputs.src-hpprint-master.repo = "hpprint";

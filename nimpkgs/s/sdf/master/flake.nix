@@ -2,11 +2,10 @@
   description = ''Signed Distance Field builder for contour texturing in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-SDF-master.flake = false;
+    inputs.src-SDF-master.flake = false;
   inputs.src-SDF-master.type = "github";
   inputs.src-SDF-master.owner = "Halsys";
   inputs.src-SDF-master.repo = "SDF.nim";

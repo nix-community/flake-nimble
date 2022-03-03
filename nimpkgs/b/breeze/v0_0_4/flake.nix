@@ -2,11 +2,10 @@
   description = ''A dsl for writing macros in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-breeze-v0_0_4.flake = false;
+    inputs.src-breeze-v0_0_4.flake = false;
   inputs.src-breeze-v0_0_4.type = "github";
   inputs.src-breeze-v0_0_4.owner = "alehander42";
   inputs.src-breeze-v0_0_4.repo = "breeze";

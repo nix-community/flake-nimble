@@ -2,11 +2,10 @@
   description = ''A package to compile nim functions for AWS Lambda'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-awslambda-master.flake = false;
+    inputs.src-awslambda-master.flake = false;
   inputs.src-awslambda-master.type = "github";
   inputs.src-awslambda-master.owner = "lambci";
   inputs.src-awslambda-master.repo = "awslambda.nim";

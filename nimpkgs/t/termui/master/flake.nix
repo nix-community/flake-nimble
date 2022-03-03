@@ -2,11 +2,10 @@
   description = ''Simple UI components for the terminal.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-termui-master.flake = false;
+    inputs.src-termui-master.flake = false;
   inputs.src-termui-master.type = "github";
   inputs.src-termui-master.owner = "jjv360";
   inputs.src-termui-master.repo = "nim-termui";

@@ -2,11 +2,10 @@
   description = ''oracle odpi-c wrapper for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimodpi-master.flake = false;
+    inputs.src-nimodpi-master.flake = false;
   inputs.src-nimodpi-master.type = "github";
   inputs.src-nimodpi-master.owner = "mikra01";
   inputs.src-nimodpi-master.repo = "nimodpi";

@@ -2,11 +2,10 @@
   description = ''Experimental wrapper to webgl for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-webgl-master.flake = false;
+    inputs.src-webgl-master.flake = false;
   inputs.src-webgl-master.type = "github";
   inputs.src-webgl-master.owner = "stisa";
   inputs.src-webgl-master.repo = "webgl";

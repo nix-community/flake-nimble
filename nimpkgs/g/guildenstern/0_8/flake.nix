@@ -2,11 +2,10 @@
   description = ''Modular multithreading Linux HTTP server'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-guildenstern-0_8.flake = false;
+    inputs.src-guildenstern-0_8.flake = false;
   inputs.src-guildenstern-0_8.type = "github";
   inputs.src-guildenstern-0_8.owner = "olliNiinivaara";
   inputs.src-guildenstern-0_8.repo = "GuildenStern";

@@ -2,11 +2,10 @@
   description = ''A SQLbuilder with support for NULL values'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sqlbuilder-v0_3_1.flake = false;
+    inputs.src-sqlbuilder-v0_3_1.flake = false;
   inputs.src-sqlbuilder-v0_3_1.type = "github";
   inputs.src-sqlbuilder-v0_3_1.owner = "ThomasTJdev";
   inputs.src-sqlbuilder-v0_3_1.repo = "nim_sqlbuilder";

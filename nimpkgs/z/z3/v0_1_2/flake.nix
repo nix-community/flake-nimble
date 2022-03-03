@@ -2,11 +2,10 @@
   description = ''Nim Z3 theorem prover bindings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-z3-v0_1_2.flake = false;
+    inputs.src-z3-v0_1_2.flake = false;
   inputs.src-z3-v0_1_2.type = "github";
   inputs.src-z3-v0_1_2.owner = "zevv";
   inputs.src-z3-v0_1_2.repo = "nimz3";

@@ -2,11 +2,10 @@
   description = ''Nim functional programming library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimfp-v0_3_2.flake = false;
+    inputs.src-nimfp-v0_3_2.flake = false;
   inputs.src-nimfp-v0_3_2.type = "github";
   inputs.src-nimfp-v0_3_2.owner = "vegansk";
   inputs.src-nimfp-v0_3_2.repo = "nimfp";

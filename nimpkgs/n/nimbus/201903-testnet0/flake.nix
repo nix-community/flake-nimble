@@ -2,11 +2,10 @@
   description = ''An Ethereum 2.0 Sharding Client for Resource-Restricted Devices'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimbus-201903-testnet0.flake = false;
+    inputs.src-nimbus-201903-testnet0.flake = false;
   inputs.src-nimbus-201903-testnet0.type = "github";
   inputs.src-nimbus-201903-testnet0.owner = "status-im";
   inputs.src-nimbus-201903-testnet0.repo = "nimbus";

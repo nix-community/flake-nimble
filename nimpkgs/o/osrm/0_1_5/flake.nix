@@ -2,11 +2,10 @@
   description = ''Open Source Routing Machine for OpenStreetMap API Lib and App'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-osrm-0_1_5.flake = false;
+    inputs.src-osrm-0_1_5.flake = false;
   inputs.src-osrm-0_1_5.type = "github";
   inputs.src-osrm-0_1_5.owner = "juancarlospaco";
   inputs.src-osrm-0_1_5.repo = "nim-osrm";

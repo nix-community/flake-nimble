@@ -2,11 +2,10 @@
   description = ''Simple linear algebra for nim. Js too.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-snail-master.flake = false;
+    inputs.src-snail-master.flake = false;
   inputs.src-snail-master.type = "github";
   inputs.src-snail-master.owner = "stisa";
   inputs.src-snail-master.repo = "snail";

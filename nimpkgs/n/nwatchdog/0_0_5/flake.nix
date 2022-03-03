@@ -2,11 +2,10 @@
   description = ''Simple watchdog (watch file changes modified, deleted, created) in nim lang.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nwatchdog-0_0_5.flake = false;
+    inputs.src-nwatchdog-0_0_5.flake = false;
   inputs.src-nwatchdog-0_0_5.type = "github";
   inputs.src-nwatchdog-0_0_5.owner = "zendbit";
   inputs.src-nwatchdog-0_0_5.repo = "nim.nwatchdog";

@@ -2,11 +2,10 @@
   description = ''tools for handling CSV files (comma or tab-separated) with an API similar to Python's CSVDictReader and -Writer.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-csvtable-0_2_0.flake = false;
+    inputs.src-csvtable-0_2_0.flake = false;
   inputs.src-csvtable-0_2_0.type = "github";
   inputs.src-csvtable-0_2_0.owner = "apahl";
   inputs.src-csvtable-0_2_0.repo = "csvtable";

@@ -2,11 +2,10 @@
   description = ''Linear algebra for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-linalg-master.flake = false;
+    inputs.src-linalg-master.flake = false;
   inputs.src-linalg-master.type = "github";
   inputs.src-linalg-master.owner = "andreaferretti";
   inputs.src-linalg-master.repo = "linear-algebra";

@@ -2,11 +2,10 @@
   description = ''Wrapper for SDL 2.x'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sdl2-master.flake = false;
+    inputs.src-sdl2-master.flake = false;
   inputs.src-sdl2-master.type = "github";
   inputs.src-sdl2-master.owner = "nim-lang";
   inputs.src-sdl2-master.repo = "sdl2";

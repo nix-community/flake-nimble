@@ -2,11 +2,10 @@
   description = ''A Nim wrapper for Python's matplotlib'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-matplotnim-master.flake = false;
+    inputs.src-matplotnim-master.flake = false;
   inputs.src-matplotnim-master.type = "github";
   inputs.src-matplotnim-master.owner = "ruivieira";
   inputs.src-matplotnim-master.repo = "matplotnim";

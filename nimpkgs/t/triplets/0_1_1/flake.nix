@@ -2,11 +2,10 @@
   description = ''The Nim bindings for linksplatform/Data.Triplets.Kernel.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-triplets-0_1_1.flake = false;
+    inputs.src-triplets-0_1_1.flake = false;
   inputs.src-triplets-0_1_1.type = "github";
   inputs.src-triplets-0_1_1.owner = "linksplatform";
   inputs.src-triplets-0_1_1.repo = "Data.Triplets";

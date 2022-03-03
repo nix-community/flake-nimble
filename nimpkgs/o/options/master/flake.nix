@@ -2,11 +2,10 @@
   description = ''Temporary package to fix broken code in 0.11.2 stable.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-options-master.flake = false;
+    inputs.src-options-master.flake = false;
   inputs.src-options-master.type = "github";
   inputs.src-options-master.owner = "fallingduck";
   inputs.src-options-master.repo = "options-nim";

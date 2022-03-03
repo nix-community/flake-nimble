@@ -2,11 +2,10 @@
   description = ''A parser combinator library for easy generation of complex parsers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-combparser-master.flake = false;
+    inputs.src-combparser-master.flake = false;
   inputs.src-combparser-master.type = "github";
   inputs.src-combparser-master.owner = "PMunch";
   inputs.src-combparser-master.repo = "combparser";

@@ -2,11 +2,10 @@
   description = ''xchacha20_poly1305, chacha20, poly1305'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nim_chacha20_poly1305-master.flake = false;
+    inputs.src-nim_chacha20_poly1305-master.flake = false;
   inputs.src-nim_chacha20_poly1305-master.type = "github";
   inputs.src-nim_chacha20_poly1305-master.owner = "lantos-lgtm";
   inputs.src-nim_chacha20_poly1305-master.repo = "nim_chacha20_poly1305";

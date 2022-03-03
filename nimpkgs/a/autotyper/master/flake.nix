@@ -2,11 +2,10 @@
   description = ''Keyboard typing emulator'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-autotyper-master.flake = false;
+    inputs.src-autotyper-master.flake = false;
   inputs.src-autotyper-master.type = "github";
   inputs.src-autotyper-master.owner = "kijowski";
   inputs.src-autotyper-master.repo = "autotyper";

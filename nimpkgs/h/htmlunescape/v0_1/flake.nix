@@ -2,11 +2,10 @@
   description = ''Port of Python's html.escape and html.unescape to Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-htmlunescape-v0_1.flake = false;
+    inputs.src-htmlunescape-v0_1.flake = false;
   inputs.src-htmlunescape-v0_1.type = "github";
   inputs.src-htmlunescape-v0_1.owner = "AmanoTeam";
   inputs.src-htmlunescape-v0_1.repo = "htmlunescape";

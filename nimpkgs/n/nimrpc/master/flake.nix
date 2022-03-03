@@ -2,11 +2,10 @@
   description = ''RPC implementation for Nim based on msgpack4nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimrpc-master.flake = false;
+    inputs.src-nimrpc-master.flake = false;
   inputs.src-nimrpc-master.type = "github";
   inputs.src-nimrpc-master.owner = "rogercloud";
   inputs.src-nimrpc-master.repo = "nim-rpc";

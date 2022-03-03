@@ -2,11 +2,10 @@
   description = ''experiment to build a jinja like template parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nwt-master.flake = false;
+    inputs.src-nwt-master.flake = false;
   inputs.src-nwt-master.type = "github";
   inputs.src-nwt-master.owner = "enthus1ast";
   inputs.src-nwt-master.repo = "nimWebTemplates";

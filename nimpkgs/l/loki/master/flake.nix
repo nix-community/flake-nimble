@@ -2,11 +2,10 @@
   description = ''A small library for writing cli programs in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-loki-master.flake = false;
+    inputs.src-loki-master.flake = false;
   inputs.src-loki-master.type = "github";
   inputs.src-loki-master.owner = "beshrkayali";
   inputs.src-loki-master.repo = "loki";

@@ -2,11 +2,10 @@
   description = ''Bencode serialization/deserialization library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bencode-master.flake = false;
+    inputs.src-bencode-master.flake = false;
   inputs.src-bencode-master.type = "github";
   inputs.src-bencode-master.owner = "FedericoCeratto";
   inputs.src-bencode-master.repo = "nim-bencode";

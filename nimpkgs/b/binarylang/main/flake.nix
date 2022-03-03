@@ -2,11 +2,10 @@
   description = ''Binary parser/encoder DSL'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-binarylang-main.flake = false;
+    inputs.src-binarylang-main.flake = false;
   inputs.src-binarylang-main.type = "github";
   inputs.src-binarylang-main.owner = "sealmove";
   inputs.src-binarylang-main.repo = "binarylang";

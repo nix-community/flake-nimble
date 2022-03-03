@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-awk-master": "src-awk-master"
+      }
+    },
+    "src-awk-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573615898,
+        "narHash": "sha256-2Sw+iBu71npTLVOc2vmSIe5rTEXVgUF03R4oNue6/cI=",
+        "owner": "greencardamom",
+        "repo": "awk",
+        "rev": "0509ae5479627547d4f50b8daebb60f5c3a24bb0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "greencardamom",
+        "ref": "refs/heads/master",
+        "repo": "awk",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

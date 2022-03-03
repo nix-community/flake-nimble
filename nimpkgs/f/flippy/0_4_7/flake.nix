@@ -2,11 +2,10 @@
   description = ''Flippy is a simple 2d image and drawing library.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-flippy-0_4_7.flake = false;
+    inputs.src-flippy-0_4_7.flake = false;
   inputs.src-flippy-0_4_7.type = "github";
   inputs.src-flippy-0_4_7.owner = "treeform";
   inputs.src-flippy-0_4_7.repo = "flippy";

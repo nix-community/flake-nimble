@@ -2,11 +2,10 @@
   description = ''A simple library for localizing Nim applications.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-locale-master.flake = false;
+    inputs.src-locale-master.flake = false;
   inputs.src-locale-master.type = "github";
   inputs.src-locale-master.owner = "Amrykid";
   inputs.src-locale-master.repo = "nim-locale";

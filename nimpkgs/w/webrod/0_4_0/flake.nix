@@ -2,11 +2,10 @@
   description = ''webrod'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-webrod-0_4_0.flake = false;
+    inputs.src-webrod-0_4_0.flake = false;
   inputs.src-webrod-0_4_0.type = "github";
   inputs.src-webrod-0_4_0.owner = "j-a-s-d";
   inputs.src-webrod-0_4_0.repo = "webrod";

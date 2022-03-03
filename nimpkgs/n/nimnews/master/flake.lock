@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nimnews-master": "src-nimnews-master"
+      }
+    },
+    "src-nimnews-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605654722,
+        "narHash": "sha256-IIjJxhOQ96VaBl1+YwDuiAojIJ18+cLsqPYoQh1BHYk=",
+        "owner": "mildred",
+        "repo": "nimnews",
+        "rev": "3912f2932538b694a72362dbe2fb75bc9a5949b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mildred",
+        "ref": "refs/heads/master",
+        "repo": "nimnews",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -2,11 +2,10 @@
   description = ''A library to help you write rest APIs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimbler-master.flake = false;
+    inputs.src-nimbler-master.flake = false;
   inputs.src-nimbler-master.type = "github";
   inputs.src-nimbler-master.owner = "paul-nameless";
   inputs.src-nimbler-master.repo = "nimbler";

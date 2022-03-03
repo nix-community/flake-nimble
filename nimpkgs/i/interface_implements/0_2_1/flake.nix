@@ -2,11 +2,10 @@
   description = ''implements macro creates toInterface proc.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-interface_implements-0_2_1.flake = false;
+    inputs.src-interface_implements-0_2_1.flake = false;
   inputs.src-interface_implements-0_2_1.type = "github";
   inputs.src-interface_implements-0_2_1.owner = "itsumura-h";
   inputs.src-interface_implements-0_2_1.repo = "nim-interface-implements";

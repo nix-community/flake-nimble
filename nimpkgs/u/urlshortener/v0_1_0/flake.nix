@@ -2,11 +2,10 @@
   description = ''A URL shortener cli app. using bit.ly'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-urlshortener-v0_1_0.flake = false;
+    inputs.src-urlshortener-v0_1_0.flake = false;
   inputs.src-urlshortener-v0_1_0.type = "github";
   inputs.src-urlshortener-v0_1_0.owner = "jabbalaci";
   inputs.src-urlshortener-v0_1_0.repo = "UrlShortener";

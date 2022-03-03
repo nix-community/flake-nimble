@@ -2,11 +2,10 @@
   description = ''Loads environment variables from `.env`.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dotenv-v1_0_4.flake = false;
+    inputs.src-dotenv-v1_0_4.flake = false;
   inputs.src-dotenv-v1_0_4.type = "github";
   inputs.src-dotenv-v1_0_4.owner = "euantorano";
   inputs.src-dotenv-v1_0_4.repo = "dotenv.nim";

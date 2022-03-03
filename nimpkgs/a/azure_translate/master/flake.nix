@@ -2,11 +2,10 @@
   description = ''Nim Library for Azure Cognitive Services Translate'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-azure_translate-master.flake = false;
+    inputs.src-azure_translate-master.flake = false;
   inputs.src-azure_translate-master.type = "github";
   inputs.src-azure_translate-master.owner = "williamhatcher";
   inputs.src-azure_translate-master.repo = "azure_translate";

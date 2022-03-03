@@ -2,11 +2,10 @@
   description = ''Self-contained markdown compiler generating self-contained HTML documents'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hastyscribe-v1_0_7.flake = false;
+    inputs.src-hastyscribe-v1_0_7.flake = false;
   inputs.src-hastyscribe-v1_0_7.type = "github";
   inputs.src-hastyscribe-v1_0_7.owner = "h3rald";
   inputs.src-hastyscribe-v1_0_7.repo = "hastyscribe";

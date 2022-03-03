@@ -2,11 +2,10 @@
   description = ''Integrate nim projects in the C++Builder build process'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimcb-master.flake = false;
+    inputs.src-nimcb-master.flake = false;
   inputs.src-nimcb-master.type = "github";
   inputs.src-nimcb-master.owner = "AdrianV";
   inputs.src-nimcb-master.repo = "nimcb";

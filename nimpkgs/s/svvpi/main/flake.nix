@@ -2,11 +2,10 @@
   description = ''Wrapper for SystemVerilog VPI headers vpi_user.h and sv_vpi_user.h'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-svvpi-main.flake = false;
+    inputs.src-svvpi-main.flake = false;
   inputs.src-svvpi-main.type = "github";
   inputs.src-svvpi-main.owner = "kaushalmodi";
   inputs.src-svvpi-main.repo = "nim-svvpi";

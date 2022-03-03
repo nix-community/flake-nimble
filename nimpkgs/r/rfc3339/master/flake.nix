@@ -2,11 +2,10 @@
   description = ''RFC3339 (dates and times) implementation for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rfc3339-master.flake = false;
+    inputs.src-rfc3339-master.flake = false;
   inputs.src-rfc3339-master.type = "github";
   inputs.src-rfc3339-master.owner = "Skrylar";
   inputs.src-rfc3339-master.repo = "rfc3339";

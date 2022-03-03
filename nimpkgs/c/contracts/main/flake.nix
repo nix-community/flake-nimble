@@ -2,11 +2,10 @@
   description = ''Design by Contract (DbC) library with minimal runtime.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-contracts-main.flake = false;
+    inputs.src-contracts-main.flake = false;
   inputs.src-contracts-main.type = "github";
   inputs.src-contracts-main.owner = "Udiknedormin";
   inputs.src-contracts-main.repo = "NimContracts";

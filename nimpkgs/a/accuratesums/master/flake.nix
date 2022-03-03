@@ -2,11 +2,10 @@
   description = ''Accurate Floating Point Sums and Products.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-AccurateSums-master.flake = false;
+    inputs.src-AccurateSums-master.flake = false;
   inputs.src-AccurateSums-master.type = "gitlab";
   inputs.src-AccurateSums-master.owner = "lbartoletti";
   inputs.src-AccurateSums-master.repo = "accuratesums";

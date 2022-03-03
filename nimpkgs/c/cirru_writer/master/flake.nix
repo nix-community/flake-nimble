@@ -2,11 +2,10 @@
   description = ''Code writer for Cirru syntax'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cirru_writer-master.flake = false;
+    inputs.src-cirru_writer-master.flake = false;
   inputs.src-cirru_writer-master.type = "github";
   inputs.src-cirru_writer-master.owner = "Cirru";
   inputs.src-cirru_writer-master.repo = "writer.nim";

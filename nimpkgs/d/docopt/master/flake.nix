@@ -2,11 +2,10 @@
   description = ''Command-line args parser based on Usage message'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-docopt-master.flake = false;
+    inputs.src-docopt-master.flake = false;
   inputs.src-docopt-master.type = "github";
   inputs.src-docopt-master.owner = "docopt";
   inputs.src-docopt-master.repo = "docopt.nim";

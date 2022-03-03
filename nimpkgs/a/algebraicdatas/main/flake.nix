@@ -2,11 +2,10 @@
   description = ''This module provides the feature of algebraic data type and its associated method'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-algebraicdatas-main.flake = false;
+    inputs.src-algebraicdatas-main.flake = false;
   inputs.src-algebraicdatas-main.type = "github";
   inputs.src-algebraicdatas-main.owner = "chocobo333";
   inputs.src-algebraicdatas-main.repo = "AlgebraicDataTypes";

@@ -2,11 +2,10 @@
   description = ''Temporary files and directories'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tempfile-v0_1_4.flake = false;
+    inputs.src-tempfile-v0_1_4.flake = false;
   inputs.src-tempfile-v0_1_4.type = "github";
   inputs.src-tempfile-v0_1_4.owner = "OpenSystemsLab";
   inputs.src-tempfile-v0_1_4.repo = "tempfile.nim";

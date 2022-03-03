@@ -2,11 +2,10 @@
   description = ''Bindings for the Oculus VR SDK.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-oculus-master.flake = false;
+    inputs.src-oculus-master.flake = false;
   inputs.src-oculus-master.type = "github";
   inputs.src-oculus-master.owner = "nimious";
   inputs.src-oculus-master.repo = "oculus";

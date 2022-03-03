@@ -2,11 +2,10 @@
   description = ''RESP(REdis Serialization Protocol) Serialization for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-redisparser-master.flake = false;
+    inputs.src-redisparser-master.flake = false;
   inputs.src-redisparser-master.type = "github";
   inputs.src-redisparser-master.owner = "xmonader";
   inputs.src-redisparser-master.repo = "nim-redisparser";

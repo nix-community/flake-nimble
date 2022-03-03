@@ -2,11 +2,10 @@
   description = ''Hashicorp Vault HTTP Client'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-vaultclient-master.flake = false;
+    inputs.src-vaultclient-master.flake = false;
   inputs.src-vaultclient-master.type = "github";
   inputs.src-vaultclient-master.owner = "jackhftang";
   inputs.src-vaultclient-master.repo = "vaultclient.nim";

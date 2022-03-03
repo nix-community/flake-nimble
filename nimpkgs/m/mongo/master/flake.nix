@@ -2,11 +2,10 @@
   description = ''Bindings and a high-level interface for MongoDB'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mongo-master.flake = false;
+    inputs.src-mongo-master.flake = false;
   inputs.src-mongo-master.type = "github";
   inputs.src-mongo-master.owner = "nim-lang";
   inputs.src-mongo-master.repo = "mongo";

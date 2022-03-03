@@ -2,11 +2,10 @@
   description = ''Figma based UI library for nim, with HTML and OpenGL backends.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fidget-master.flake = false;
+    inputs.src-fidget-master.flake = false;
   inputs.src-fidget-master.type = "github";
   inputs.src-fidget-master.owner = "treeform";
   inputs.src-fidget-master.repo = "fidget";

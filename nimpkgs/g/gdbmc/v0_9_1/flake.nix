@@ -2,11 +2,10 @@
   description = ''This library is a wrapper to C GDBM library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gdbmc-v0_9_1.flake = false;
+    inputs.src-gdbmc-v0_9_1.flake = false;
   inputs.src-gdbmc-v0_9_1.type = "github";
   inputs.src-gdbmc-v0_9_1.owner = "vycb";
   inputs.src-gdbmc-v0_9_1.repo = "gdbmc.nim";

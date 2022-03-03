@@ -2,11 +2,10 @@
   description = ''Collection of string, parsing, pointer, ... utilities.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-utils-master.flake = false;
+    inputs.src-utils-master.flake = false;
   inputs.src-utils-master.type = "github";
   inputs.src-utils-master.owner = "nim-appkit";
   inputs.src-utils-master.repo = "utils";

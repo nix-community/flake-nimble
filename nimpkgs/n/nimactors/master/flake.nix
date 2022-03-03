@@ -2,11 +2,10 @@
   description = ''Actors library for Nim inspired by akka-actors'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimactors-master.flake = false;
+    inputs.src-nimactors-master.flake = false;
   inputs.src-nimactors-master.type = "github";
   inputs.src-nimactors-master.owner = "vegansk";
   inputs.src-nimactors-master.repo = "nimactors";

@@ -2,11 +2,10 @@
   description = ''A validator for greek social security number (AMKA)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-amka-master.flake = false;
+    inputs.src-amka-master.flake = false;
   inputs.src-amka-master.type = "github";
   inputs.src-amka-master.owner = "zoispag";
   inputs.src-amka-master.repo = "amka-nim";

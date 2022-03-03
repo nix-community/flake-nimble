@@ -2,11 +2,10 @@
   description = ''Cross-platform access to OS keychain'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-keyring-master.flake = false;
+    inputs.src-keyring-master.flake = false;
   inputs.src-keyring-master.type = "github";
   inputs.src-keyring-master.owner = "iffy";
   inputs.src-keyring-master.repo = "nim-keyring";

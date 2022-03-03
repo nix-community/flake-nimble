@@ -2,11 +2,10 @@
   description = ''Obsolete - please use egl instead!'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-io-egl-master.flake = false;
+    inputs.src-io-egl-master.flake = false;
   inputs.src-io-egl-master.type = "github";
   inputs.src-io-egl-master.owner = "nimious";
   inputs.src-io-egl-master.repo = "io-egl";

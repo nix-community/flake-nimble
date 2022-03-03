@@ -2,11 +2,10 @@
   description = ''A tiny immediate-mode UI library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mui-master.flake = false;
+    inputs.src-mui-master.flake = false;
   inputs.src-mui-master.type = "github";
   inputs.src-mui-master.owner = "angluca";
   inputs.src-mui-master.repo = "mui";

@@ -2,11 +2,10 @@
   description = ''AJAX wrapper for nim js backend.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ajax-master.flake = false;
+    inputs.src-ajax-master.flake = false;
   inputs.src-ajax-master.type = "github";
   inputs.src-ajax-master.owner = "stisa";
   inputs.src-ajax-master.repo = "ajax";

@@ -2,11 +2,10 @@
   description = ''eaiser use of OpenGL and GLSL shaders'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-Phosphor-master.flake = false;
+    inputs.src-Phosphor-master.flake = false;
   inputs.src-Phosphor-master.type = "github";
   inputs.src-Phosphor-master.owner = "barcharcraz";
   inputs.src-Phosphor-master.repo = "Phosphor";

@@ -2,11 +2,10 @@
   description = ''Definitions of various data structures used in the Ethereum eco-system'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-eth_common-master.flake = false;
+    inputs.src-eth_common-master.flake = false;
   inputs.src-eth_common-master.type = "github";
   inputs.src-eth_common-master.owner = "status-im";
   inputs.src-eth_common-master.repo = "nim-eth-common";

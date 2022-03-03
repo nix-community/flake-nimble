@@ -2,11 +2,10 @@
   description = ''Converts a file with Jester routes to Swagger JSON which can be imported in Postman.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jester2swagger-main.flake = false;
+    inputs.src-jester2swagger-main.flake = false;
   inputs.src-jester2swagger-main.type = "github";
   inputs.src-jester2swagger-main.owner = "ThomasTJdev";
   inputs.src-jester2swagger-main.repo = "jester2swagger";

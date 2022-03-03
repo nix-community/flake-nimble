@@ -2,11 +2,10 @@
   description = ''Collection of helper utilities'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hmisc-v0_12_2.flake = false;
+    inputs.src-hmisc-v0_12_2.flake = false;
   inputs.src-hmisc-v0_12_2.type = "github";
   inputs.src-hmisc-v0_12_2.owner = "haxscramper";
   inputs.src-hmisc-v0_12_2.repo = "hmisc";

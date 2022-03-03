@@ -2,11 +2,10 @@
   description = ''A port of ggplot2 for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ggplotnim-v0_3_21.flake = false;
+    inputs.src-ggplotnim-v0_3_21.flake = false;
   inputs.src-ggplotnim-v0_3_21.type = "github";
   inputs.src-ggplotnim-v0_3_21.owner = "Vindaar";
   inputs.src-ggplotnim-v0_3_21.repo = "ggplotnim";

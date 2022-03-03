@@ -2,11 +2,10 @@
   description = ''Nim wrapper for pl_mpeg single header mpeg library.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mpeg-master.flake = false;
+    inputs.src-mpeg-master.flake = false;
   inputs.src-mpeg-master.type = "github";
   inputs.src-mpeg-master.owner = "treeform";
   inputs.src-mpeg-master.repo = "mpeg";

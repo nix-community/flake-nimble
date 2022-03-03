@@ -2,11 +2,10 @@
   description = ''syntax sugar for assignments'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-assigns-v0_4_4.flake = false;
+    inputs.src-assigns-v0_4_4.flake = false;
   inputs.src-assigns-v0_4_4.type = "github";
   inputs.src-assigns-v0_4_4.owner = "metagn";
   inputs.src-assigns-v0_4_4.repo = "assigns";

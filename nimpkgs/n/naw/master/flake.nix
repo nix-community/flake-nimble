@@ -2,11 +2,10 @@
   description = ''A glue wrapper to do awk-style text processing with Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-naw-master.flake = false;
+    inputs.src-naw-master.flake = false;
   inputs.src-naw-master.type = "github";
   inputs.src-naw-master.owner = "capocasa";
   inputs.src-naw-master.repo = "naw";

@@ -2,11 +2,10 @@
   description = ''Test asynchronous code'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-asynctest-main.flake = false;
+    inputs.src-asynctest-main.flake = false;
   inputs.src-asynctest-main.type = "github";
   inputs.src-asynctest-main.owner = "markspanbroek";
   inputs.src-asynctest-main.repo = "asynctest";

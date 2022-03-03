@@ -2,11 +2,10 @@
   description = ''Nim's Windows GUI Framework.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-wnim-master.flake = false;
+    inputs.src-wnim-master.flake = false;
   inputs.src-wnim-master.type = "github";
   inputs.src-wnim-master.owner = "khchen";
   inputs.src-wnim-master.repo = "wNim";

@@ -2,11 +2,10 @@
   description = ''Unicode text segmentation tr29'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-segmentation-master.flake = false;
+    inputs.src-segmentation-master.flake = false;
   inputs.src-segmentation-master.type = "github";
   inputs.src-segmentation-master.owner = "nitely";
   inputs.src-segmentation-master.repo = "nim-segmentation";

@@ -2,11 +2,10 @@
   description = ''Determine if a useragent can access a URL using robots.txt'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-robotparser-master.flake = false;
+    inputs.src-robotparser-master.flake = false;
   inputs.src-robotparser-master.type = "github";
   inputs.src-robotparser-master.owner = "achesak";
   inputs.src-robotparser-master.repo = "nim-robotparser";

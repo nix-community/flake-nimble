@@ -2,11 +2,10 @@
   description = ''Glob pattern matching for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-globby-0_1_0.flake = false;
+    inputs.src-globby-0_1_0.flake = false;
   inputs.src-globby-0_1_0.type = "github";
   inputs.src-globby-0_1_0.owner = "treeform";
   inputs.src-globby-0_1_0.repo = "globby";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-dali-v0_3_0": "src-dali-v0_3_0"
+      }
+    },
+    "src-dali-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572130990,
+        "narHash": "sha256-xW8QOoHb1MLEbu0jKJerS51mRLDgl6og7QqxnmqEepE=",
+        "owner": "akavel",
+        "repo": "dali",
+        "rev": "91bdff02640b2d49b633d721f2354c50cb85d8b0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akavel",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "dali",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

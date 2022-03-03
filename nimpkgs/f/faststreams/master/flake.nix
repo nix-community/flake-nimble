@@ -2,11 +2,10 @@
   description = ''Nearly zero-overhead input/output streams for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-faststreams-master.flake = false;
+    inputs.src-faststreams-master.flake = false;
   inputs.src-faststreams-master.type = "github";
   inputs.src-faststreams-master.owner = "status-im";
   inputs.src-faststreams-master.repo = "nim-faststreams";

@@ -2,11 +2,10 @@
   description = ''Latent Dirichlet Allocation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-lda-master.flake = false;
+    inputs.src-lda-master.flake = false;
   inputs.src-lda-master.type = "github";
   inputs.src-lda-master.owner = "andreaferretti";
   inputs.src-lda-master.repo = "lda";

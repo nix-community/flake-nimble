@@ -2,11 +2,10 @@
   description = ''A thin asynchronous HTTP server library, API compatible with Nim's built-in asynchttpserver.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-microasynchttpserver-master.flake = false;
+    inputs.src-microasynchttpserver-master.flake = false;
   inputs.src-microasynchttpserver-master.type = "github";
   inputs.src-microasynchttpserver-master.owner = "philip-wernersbach";
   inputs.src-microasynchttpserver-master.repo = "microasynchttpserver";

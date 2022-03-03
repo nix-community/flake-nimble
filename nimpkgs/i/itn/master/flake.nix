@@ -2,11 +2,10 @@
   description = ''Nim module for parsing ITN (TomTom intinerary) files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-itn-master.flake = false;
+    inputs.src-itn-master.flake = false;
   inputs.src-itn-master.type = "github";
   inputs.src-itn-master.owner = "achesak";
   inputs.src-itn-master.repo = "nim-itn";

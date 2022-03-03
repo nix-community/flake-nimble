@@ -2,11 +2,10 @@
   description = ''A high performance Nim implementation of a Cyclic Polynomial Hash, aka BuzHash, and the Rabin-Karp algorithm'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-RollingHash-master.flake = false;
+    inputs.src-RollingHash-master.flake = false;
   inputs.src-RollingHash-master.type = "github";
   inputs.src-RollingHash-master.owner = "MarcAzar";
   inputs.src-RollingHash-master.repo = "RollingHash";

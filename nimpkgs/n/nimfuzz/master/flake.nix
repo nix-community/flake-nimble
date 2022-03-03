@@ -2,11 +2,10 @@
   description = ''Simple and compact fuzzing'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimfuzz-master.flake = false;
+    inputs.src-nimfuzz-master.flake = false;
   inputs.src-nimfuzz-master.type = "github";
   inputs.src-nimfuzz-master.owner = "apense";
   inputs.src-nimfuzz-master.repo = "nimfuzz";

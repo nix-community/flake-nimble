@@ -2,11 +2,10 @@
   description = ''threadsafe timerpool implementation for event purpose'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-timerpool-master.flake = false;
+    inputs.src-timerpool-master.flake = false;
   inputs.src-timerpool-master.type = "github";
   inputs.src-timerpool-master.owner = "mikra01";
   inputs.src-timerpool-master.repo = "timerpool";

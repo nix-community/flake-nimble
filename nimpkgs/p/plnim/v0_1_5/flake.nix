@@ -2,11 +2,10 @@
   description = ''Language Handler for executing Nim inside postgres as a procedural language'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-plnim-v0_1_5.flake = false;
+    inputs.src-plnim-v0_1_5.flake = false;
   inputs.src-plnim-v0_1_5.type = "github";
   inputs.src-plnim-v0_1_5.owner = "luisacosta828";
   inputs.src-plnim-v0_1_5.repo = "plnim";

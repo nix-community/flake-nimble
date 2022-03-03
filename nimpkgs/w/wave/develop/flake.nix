@@ -2,11 +2,10 @@
   description = ''wave is a tiny WAV sound module'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-wave-develop.flake = false;
+    inputs.src-wave-develop.flake = false;
   inputs.src-wave-develop.type = "github";
   inputs.src-wave-develop.owner = "jiro4989";
   inputs.src-wave-develop.repo = "wave";

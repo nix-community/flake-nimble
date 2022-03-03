@@ -2,11 +2,10 @@
   description = ''Retrieve info about a location from an IP address'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-geoip-master.flake = false;
+    inputs.src-geoip-master.flake = false;
   inputs.src-geoip-master.type = "github";
   inputs.src-geoip-master.owner = "achesak";
   inputs.src-geoip-master.repo = "nim-geoip";

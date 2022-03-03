@@ -2,11 +2,10 @@
   description = ''High-level and low-level wrapper for OpenGL'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-opengl-v1_2_2.flake = false;
+    inputs.src-opengl-v1_2_2.flake = false;
   inputs.src-opengl-v1_2_2.type = "github";
   inputs.src-opengl-v1_2_2.owner = "nim-lang";
   inputs.src-opengl-v1_2_2.repo = "opengl";

@@ -2,11 +2,10 @@
   description = ''The Nim GUI/2D framework based on OpenGL and SDL2.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nodesnim-master.flake = false;
+    inputs.src-nodesnim-master.flake = false;
   inputs.src-nodesnim-master.type = "github";
   inputs.src-nodesnim-master.owner = "Ethosa";
   inputs.src-nodesnim-master.repo = "nodesnim";

@@ -2,11 +2,10 @@
   description = ''Amazon Web Services (AWS) APIs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-atoz-2619_0_1.flake = false;
+    inputs.src-atoz-2619_0_1.flake = false;
   inputs.src-atoz-2619_0_1.type = "github";
   inputs.src-atoz-2619_0_1.owner = "disruptek";
   inputs.src-atoz-2619_0_1.repo = "atoz";

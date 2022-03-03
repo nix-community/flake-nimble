@@ -2,11 +2,10 @@
   description = ''A command-line YouTube player and more'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimcoon-master.flake = false;
+    inputs.src-nimcoon-master.flake = false;
   inputs.src-nimcoon-master.type = "other";
   inputs.src-nimcoon-master.owner = "gitweb";
   inputs.src-nimcoon-master.repo = "nimcoon";

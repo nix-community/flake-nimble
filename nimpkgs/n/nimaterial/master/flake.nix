@@ -2,11 +2,10 @@
   description = ''nimaterial is a CSS output library based on material design.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimaterial-master.flake = false;
+    inputs.src-nimaterial-master.flake = false;
   inputs.src-nimaterial-master.type = "github";
   inputs.src-nimaterial-master.owner = "momeemt";
   inputs.src-nimaterial-master.repo = "nimaterial";

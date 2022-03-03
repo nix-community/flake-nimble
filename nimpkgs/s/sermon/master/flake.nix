@@ -2,11 +2,10 @@
   description = ''Monitor the state and memory of processes and URL response.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sermon-master.flake = false;
+    inputs.src-sermon-master.flake = false;
   inputs.src-sermon-master.type = "github";
   inputs.src-sermon-master.owner = "ThomasTJdev";
   inputs.src-sermon-master.repo = "nim_sermon";

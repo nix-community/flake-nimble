@@ -2,11 +2,10 @@
   description = ''Game Engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-alasgar-main.flake = false;
+    inputs.src-alasgar-main.flake = false;
   inputs.src-alasgar-main.type = "github";
   inputs.src-alasgar-main.owner = "abisxir";
   inputs.src-alasgar-main.repo = "alasgar";

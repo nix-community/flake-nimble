@@ -2,11 +2,10 @@
   description = ''Nim port of a simple 2D physics engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-impulse_engine-master.flake = false;
+    inputs.src-impulse_engine-master.flake = false;
   inputs.src-impulse_engine-master.type = "github";
   inputs.src-impulse_engine-master.owner = "matkuki";
   inputs.src-impulse_engine-master.repo = "Nim-Impulse-Engine";

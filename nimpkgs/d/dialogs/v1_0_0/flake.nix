@@ -2,11 +2,10 @@
   description = ''wraps GTK+ or Windows' open file dialogs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dialogs-v1_0_0.flake = false;
+    inputs.src-dialogs-v1_0_0.flake = false;
   inputs.src-dialogs-v1_0_0.type = "github";
   inputs.src-dialogs-v1_0_0.owner = "nim-lang";
   inputs.src-dialogs-v1_0_0.repo = "dialogs";

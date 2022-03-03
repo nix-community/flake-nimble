@@ -2,11 +2,10 @@
   description = ''Prebuilt components for the Fidget GUI library.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-spinner-master.flake = false;
+    inputs.src-spinner-master.flake = false;
   inputs.src-spinner-master.type = "github";
   inputs.src-spinner-master.owner = "tonogram";
   inputs.src-spinner-master.repo = "spinner";

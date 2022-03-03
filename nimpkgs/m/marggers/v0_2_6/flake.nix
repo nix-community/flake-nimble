@@ -2,11 +2,10 @@
   description = ''dialect of Markdown in pure Nim with focus on HTML output'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-marggers-v0_2_6.flake = false;
+    inputs.src-marggers-v0_2_6.flake = false;
   inputs.src-marggers-v0_2_6.type = "github";
   inputs.src-marggers-v0_2_6.owner = "metagn";
   inputs.src-marggers-v0_2_6.repo = "marggers";

@@ -2,11 +2,10 @@
   description = ''Immature Newsgroup NNTP server using SQLite as backend'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimnews-master.flake = false;
+    inputs.src-nimnews-master.flake = false;
   inputs.src-nimnews-master.type = "github";
   inputs.src-nimnews-master.owner = "mildred";
   inputs.src-nimnews-master.repo = "nimnews";

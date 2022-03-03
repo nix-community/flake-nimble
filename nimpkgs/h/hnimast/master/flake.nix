@@ -2,11 +2,10 @@
   description = ''User-friendly wrapper for nim ast'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hnimast-master.flake = false;
+    inputs.src-hnimast-master.flake = false;
   inputs.src-hnimast-master.type = "github";
   inputs.src-hnimast-master.owner = "haxscramper";
   inputs.src-hnimast-master.repo = "hnimast";

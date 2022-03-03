@@ -2,11 +2,10 @@
   description = ''A library for playing audio files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-parasound-master.flake = false;
+    inputs.src-parasound-master.flake = false;
   inputs.src-parasound-master.type = "github";
   inputs.src-parasound-master.owner = "paranim";
   inputs.src-parasound-master.repo = "parasound";

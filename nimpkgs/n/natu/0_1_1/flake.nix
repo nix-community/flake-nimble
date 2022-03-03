@@ -2,11 +2,10 @@
   description = ''Game Boy Advance development library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-natu-0_1_1.flake = false;
+    inputs.src-natu-0_1_1.flake = false;
   inputs.src-natu-0_1_1.type = "github";
   inputs.src-natu-0_1_1.owner = "exelotl";
   inputs.src-natu-0_1_1.repo = "natu";

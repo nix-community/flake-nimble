@@ -2,11 +2,10 @@
   description = ''Unified db access module, providing a single library module to access the db_sqlite, db_mysql and db_postgres modules.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-db-1_1_0.flake = false;
+    inputs.src-db-1_1_0.flake = false;
   inputs.src-db-1_1_0.type = "github";
   inputs.src-db-1_1_0.owner = "jlp765";
   inputs.src-db-1_1_0.repo = "db";

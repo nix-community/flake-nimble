@@ -2,11 +2,10 @@
   description = ''Nim module for filename matching with UNIX shell patterns'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fnmatch-master.flake = false;
+    inputs.src-fnmatch-master.flake = false;
   inputs.src-fnmatch-master.type = "github";
   inputs.src-fnmatch-master.owner = "achesak";
   inputs.src-fnmatch-master.repo = "nim-fnmatch";

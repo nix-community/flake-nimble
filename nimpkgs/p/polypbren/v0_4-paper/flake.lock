@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-polypbren-v0_4-paper": "src-polypbren-v0_4-paper"
+      }
+    },
+    "src-polypbren-v0_4-paper": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1532606468,
+        "narHash": "sha256-shvlXk7zhyFHOvgsOphdQL3+JEGuOBR8dKBqIUAbgig=",
+        "owner": "guibar64",
+        "repo": "polypbren",
+        "rev": "b1a85476cb2901a04679c04b528ecfd9d30c76cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibar64",
+        "ref": "refs/tags/v0.4-paper",
+        "repo": "polypbren",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

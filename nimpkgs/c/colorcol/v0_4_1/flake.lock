@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-colorcol-v0_4_1": "src-colorcol-v0_4_1"
+      }
+    },
+    "src-colorcol-v0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589521391,
+        "narHash": "sha256-WtYiQ51DSOEYHRn/rm53u+pk+oVTWo0gdv+bdTOCsx0=",
+        "owner": "SolitudeSF",
+        "repo": "colorcol",
+        "rev": "4a356abe228cb78a28228da0a192a0edd62d9e91",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SolitudeSF",
+        "ref": "refs/tags/v0.4.1",
+        "repo": "colorcol",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

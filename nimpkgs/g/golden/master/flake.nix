@@ -2,11 +2,10 @@
   description = ''a benchmark tool'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-golden-master.flake = false;
+    inputs.src-golden-master.flake = false;
   inputs.src-golden-master.type = "github";
   inputs.src-golden-master.owner = "disruptek";
   inputs.src-golden-master.repo = "golden";

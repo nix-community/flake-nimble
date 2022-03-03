@@ -2,11 +2,10 @@
   description = ''Async Telegram Bot API Client'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-telebot-1_0_2.flake = false;
+    inputs.src-telebot-1_0_2.flake = false;
   inputs.src-telebot-1_0_2.type = "github";
   inputs.src-telebot-1_0_2.owner = "ba0f3";
   inputs.src-telebot-1_0_2.repo = "telebot.nim";

@@ -2,11 +2,10 @@
   description = ''Simple WebSocket library for nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ws-v0_4_0.flake = false;
+    inputs.src-ws-v0_4_0.flake = false;
   inputs.src-ws-v0_4_0.type = "github";
   inputs.src-ws-v0_4_0.owner = "treeform";
   inputs.src-ws-v0_4_0.repo = "ws";

@@ -2,11 +2,10 @@
   description = ''Structural sharing data structure of lists and maps.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ternary_tree-master.flake = false;
+    inputs.src-ternary_tree-master.flake = false;
   inputs.src-ternary_tree-master.type = "github";
   inputs.src-ternary_tree-master.owner = "calcit-lang";
   inputs.src-ternary_tree-master.repo = "ternary-tree";

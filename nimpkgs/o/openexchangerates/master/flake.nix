@@ -2,11 +2,10 @@
   description = ''OpenExchangeRates API Client for Nim. Works with/without SSL. Partially works with/without Free API Key.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-openexchangerates-master.flake = false;
+    inputs.src-openexchangerates-master.flake = false;
   inputs.src-openexchangerates-master.type = "github";
   inputs.src-openexchangerates-master.owner = "juancarlospaco";
   inputs.src-openexchangerates-master.repo = "nim-openexchangerates";

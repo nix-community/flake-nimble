@@ -2,11 +2,10 @@
   description = ''Renormalization of colloidal charges of polydipserse dispersions using the Poisson-Boltzmann equation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-polypbren-v0_4_1.flake = false;
+    inputs.src-polypbren-v0_4_1.flake = false;
   inputs.src-polypbren-v0_4_1.type = "github";
   inputs.src-polypbren-v0_4_1.owner = "guibar64";
   inputs.src-polypbren-v0_4_1.repo = "polypbren";

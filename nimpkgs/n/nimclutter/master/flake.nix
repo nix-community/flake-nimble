@@ -2,11 +2,10 @@
   description = ''Nim bindings for Clutter toolkit.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimclutter-master.flake = false;
+    inputs.src-nimclutter-master.flake = false;
   inputs.src-nimclutter-master.type = "github";
   inputs.src-nimclutter-master.owner = "KeepCoolWithCoolidge";
   inputs.src-nimclutter-master.repo = "nimclutter";

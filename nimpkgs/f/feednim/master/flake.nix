@@ -2,11 +2,10 @@
   description = ''An Atom, RSS, and JSONfeed parser'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-feednim-master.flake = false;
+    inputs.src-feednim-master.flake = false;
   inputs.src-feednim-master.type = "github";
   inputs.src-feednim-master.owner = "johnconway";
   inputs.src-feednim-master.repo = "feed-nim";

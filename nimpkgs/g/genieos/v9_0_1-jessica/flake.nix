@@ -2,11 +2,10 @@
   description = ''Too awesome procs to be included in nimrod.os module'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-genieos-v9_0_1-jessica.flake = false;
+    inputs.src-genieos-v9_0_1-jessica.flake = false;
   inputs.src-genieos-v9_0_1-jessica.type = "github";
   inputs.src-genieos-v9_0_1-jessica.owner = "Araq";
   inputs.src-genieos-v9_0_1-jessica.repo = "genieos";

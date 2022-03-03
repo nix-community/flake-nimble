@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-camelize-master": "src-camelize-master"
+      }
+    },
+    "src-camelize-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600335636,
+        "narHash": "sha256-sVbWRxwxyJ3SJUtNcPwwJMocteja4S1P/fRXahbmJus=",
+        "owner": "kixixixixi",
+        "repo": "camelize",
+        "rev": "0be04a7ffcb86994f9787431fe0f8a3a26f2db67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kixixixixi",
+        "ref": "refs/heads/master",
+        "repo": "camelize",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

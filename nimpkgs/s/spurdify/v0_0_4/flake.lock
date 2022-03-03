@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-spurdify-v0_0_4": "src-spurdify-v0_0_4"
+      }
+    },
+    "src-spurdify-v0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1564964393,
+        "narHash": "sha256-HuQhwI1p+LYcBxMnNz0ZHS0SkP2UyHURSpWvTRonFZI=",
+        "owner": "paradox460",
+        "repo": "spurdify",
+        "rev": "1de2b80e2a0e4034fc26b1275ec8a7943605a8f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paradox460",
+        "ref": "refs/tags/v0.0.4",
+        "repo": "spurdify",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

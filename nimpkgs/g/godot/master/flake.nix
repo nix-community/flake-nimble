@@ -2,11 +2,10 @@
   description = ''Nim bindings for Godot Engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-godot-master.flake = false;
+    inputs.src-godot-master.flake = false;
   inputs.src-godot-master.type = "github";
   inputs.src-godot-master.owner = "pragmagic";
   inputs.src-godot-master.repo = "godot-nim";

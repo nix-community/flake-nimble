@@ -2,11 +2,10 @@
   description = ''Amazon Web Services Signature Version 4'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sigv4-1_3_0.flake = false;
+    inputs.src-sigv4-1_3_0.flake = false;
   inputs.src-sigv4-1_3_0.type = "github";
   inputs.src-sigv4-1_3_0.owner = "disruptek";
   inputs.src-sigv4-1_3_0.repo = "sigv4";

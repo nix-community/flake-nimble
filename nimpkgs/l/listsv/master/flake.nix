@@ -2,11 +2,10 @@
   description = ''Basic operations on singly and doubly linked lists.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-listsv-master.flake = false;
+    inputs.src-listsv-master.flake = false;
   inputs.src-listsv-master.type = "github";
   inputs.src-listsv-master.owner = "srwiley";
   inputs.src-listsv-master.repo = "listsv";

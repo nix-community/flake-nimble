@@ -2,11 +2,10 @@
   description = ''Pleasant Nim bindings for SIMD instruction sets'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimsimd-0_4_6.flake = false;
+    inputs.src-nimsimd-0_4_6.flake = false;
   inputs.src-nimsimd-0_4_6.type = "github";
   inputs.src-nimsimd-0_4_6.owner = "guzba";
   inputs.src-nimsimd-0_4_6.repo = "nimsimd";

@@ -2,11 +2,10 @@
   description = ''Pretty looking, full featured, Python-inspired unit test library.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-einheit-master.flake = false;
+    inputs.src-einheit-master.flake = false;
   inputs.src-einheit-master.type = "github";
   inputs.src-einheit-master.owner = "jyapayne";
   inputs.src-einheit-master.repo = "einheit";

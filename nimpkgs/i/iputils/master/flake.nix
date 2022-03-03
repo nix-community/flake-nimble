@@ -2,11 +2,10 @@
   description = ''Utilities for use with IP. It has functions for IPv4, IPv6 and CIDR.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-iputils-master.flake = false;
+    inputs.src-iputils-master.flake = false;
   inputs.src-iputils-master.type = "github";
   inputs.src-iputils-master.owner = "rockcavera";
   inputs.src-iputils-master.repo = "nim-iputils";

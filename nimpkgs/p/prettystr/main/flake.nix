@@ -2,11 +2,10 @@
   description = ''Small library for working with strings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-prettystr-main.flake = false;
+    inputs.src-prettystr-main.flake = false;
   inputs.src-prettystr-main.type = "github";
   inputs.src-prettystr-main.owner = "prettybauble";
   inputs.src-prettystr-main.repo = "prettystr";

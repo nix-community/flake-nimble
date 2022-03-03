@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-dropbox_filename_sanitizer-master": "src-dropbox_filename_sanitizer-master"
+      }
+    },
+    "src-dropbox_filename_sanitizer-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1427639933,
+        "narHash": "sha256-dd00RDQh+lfhvydMI/6ICrER1vs0I+MbDgBxIXt/FIE=",
+        "owner": "Araq",
+        "repo": "dropbox_filename_sanitizer",
+        "rev": "5234c578564beb217000cd7ee7d805635ef5ae3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/master",
+        "repo": "dropbox_filename_sanitizer",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

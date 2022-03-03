@@ -2,11 +2,10 @@
   description = ''Nim wrapper for the C NanoVG antialiased vector graphics rendering library for OpenGL'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nanovg-v0_3_1.flake = false;
+    inputs.src-nanovg-v0_3_1.flake = false;
   inputs.src-nanovg-v0_3_1.type = "github";
   inputs.src-nanovg-v0_3_1.owner = "johnnovak";
   inputs.src-nanovg-v0_3_1.repo = "nim-nanovg";

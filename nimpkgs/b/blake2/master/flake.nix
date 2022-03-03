@@ -2,11 +2,10 @@
   description = ''blake2 - cryptographic hash function'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-blake2-master.flake = false;
+    inputs.src-blake2-master.flake = false;
   inputs.src-blake2-master.type = "github";
   inputs.src-blake2-master.owner = "narimiran";
   inputs.src-blake2-master.repo = "blake2";

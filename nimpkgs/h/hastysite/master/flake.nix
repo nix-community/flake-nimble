@@ -2,11 +2,10 @@
   description = ''A small but powerful static site generator powered by HastyScribe and min'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hastysite-master.flake = false;
+    inputs.src-hastysite-master.flake = false;
   inputs.src-hastysite-master.type = "github";
   inputs.src-hastysite-master.owner = "h3rald";
   inputs.src-hastysite-master.repo = "hastysite";

@@ -2,11 +2,10 @@
   description = ''A* Pathfinding'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-astar-0_6_0.flake = false;
+    inputs.src-astar-0_6_0.flake = false;
   inputs.src-astar-0_6_0.type = "github";
   inputs.src-astar-0_6_0.owner = "Nycto";
   inputs.src-astar-0_6_0.repo = "AStarNim";

@@ -2,11 +2,10 @@
   description = ''ANOther pure NIm MONGO driver.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-anonimongo-master.flake = false;
+    inputs.src-anonimongo-master.flake = false;
   inputs.src-anonimongo-master.type = "github";
   inputs.src-anonimongo-master.owner = "mashingan";
   inputs.src-anonimongo-master.repo = "anonimongo";

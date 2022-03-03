@@ -2,11 +2,10 @@
   description = ''ZeroMQ 4 wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-zmq-v0_3_4.flake = false;
+    inputs.src-zmq-v0_3_4.flake = false;
   inputs.src-zmq-v0_3_4.type = "github";
   inputs.src-zmq-v0_3_4.owner = "nim-lang";
   inputs.src-zmq-v0_3_4.repo = "nim-zmq";

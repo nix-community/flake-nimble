@@ -2,11 +2,10 @@
   description = ''Converts ANSI colour codes to HTML span tags with style tags'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ansitohtml-master.flake = false;
+    inputs.src-ansitohtml-master.flake = false;
   inputs.src-ansitohtml-master.type = "github";
   inputs.src-ansitohtml-master.owner = "PMunch";
   inputs.src-ansitohtml-master.repo = "ansitohtml";

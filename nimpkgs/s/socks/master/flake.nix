@@ -2,11 +2,10 @@
   description = ''Socks5 client and server library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-socks-master.flake = false;
+    inputs.src-socks-master.flake = false;
   inputs.src-socks-master.type = "github";
   inputs.src-socks-master.owner = "FedericoCeratto";
   inputs.src-socks-master.repo = "nim-socks5";

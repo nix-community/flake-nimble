@@ -2,11 +2,10 @@
   description = ''ISO codes for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-isocodes-1_7_1.flake = false;
+    inputs.src-isocodes-1_7_1.flake = false;
   inputs.src-isocodes-1_7_1.type = "github";
   inputs.src-isocodes-1_7_1.owner = "kraptor";
   inputs.src-isocodes-1_7_1.repo = "isocodes";

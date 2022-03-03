@@ -2,11 +2,10 @@
   description = ''Wrapper for OpenSSL's EVP interface'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-openssl_evp-master.flake = false;
+    inputs.src-openssl_evp-master.flake = false;
   inputs.src-openssl_evp-master.type = "github";
   inputs.src-openssl_evp-master.owner = "cowboy-coders";
   inputs.src-openssl_evp-master.repo = "nim-openssl-evp";

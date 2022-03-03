@@ -2,11 +2,10 @@
   description = ''Bindings to BearSSL library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bearssl-master.flake = false;
+    inputs.src-bearssl-master.flake = false;
   inputs.src-bearssl-master.type = "github";
   inputs.src-bearssl-master.owner = "status-im";
   inputs.src-bearssl-master.repo = "nim-bearssl";

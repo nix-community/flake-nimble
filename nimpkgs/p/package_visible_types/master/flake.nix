@@ -2,11 +2,10 @@
   description = ''A hacky helper lib for authoring Nim packages with package-level visiblity'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-package_visible_types-master.flake = false;
+    inputs.src-package_visible_types-master.flake = false;
   inputs.src-package_visible_types-master.type = "github";
   inputs.src-package_visible_types-master.owner = "zah";
   inputs.src-package_visible_types-master.repo = "nim-package-visible-types";

@@ -2,11 +2,10 @@
   description = ''OpenStreetMap Overpass API Lib'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-overpass-master.flake = false;
+    inputs.src-overpass-master.flake = false;
   inputs.src-overpass-master.type = "github";
   inputs.src-overpass-master.owner = "juancarlospaco";
   inputs.src-overpass-master.repo = "nim-overpass";

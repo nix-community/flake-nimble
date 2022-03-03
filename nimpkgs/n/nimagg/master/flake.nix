@@ -2,11 +2,10 @@
   description = ''Hi Fidelity Rendering Engine'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimAGG-master.flake = false;
+    inputs.src-nimAGG-master.flake = false;
   inputs.src-nimAGG-master.type = "github";
   inputs.src-nimAGG-master.owner = "jangko";
   inputs.src-nimAGG-master.repo = "nimAGG";

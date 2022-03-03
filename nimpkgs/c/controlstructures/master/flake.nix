@@ -2,11 +2,10 @@
   description = ''Additional control structures'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-controlStructures-master.flake = false;
+    inputs.src-controlStructures-master.flake = false;
   inputs.src-controlStructures-master.type = "github";
   inputs.src-controlStructures-master.owner = "TakeYourFreedom";
   inputs.src-controlStructures-master.repo = "Additional-Control-Structures-for-Nim";

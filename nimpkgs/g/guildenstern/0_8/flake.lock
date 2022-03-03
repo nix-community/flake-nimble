@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-guildenstern-0_8": "src-guildenstern-0_8"
+      }
+    },
+    "src-guildenstern-0_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603031807,
+        "narHash": "sha256-kzPXJ7EH46C00PQj2AiZU5cLhhmtnt6agSQrdDsBT9Q=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "1b56474e235e7602202762405de2dfb6ea53d38a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/0.8",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

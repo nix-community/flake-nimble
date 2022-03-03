@@ -2,11 +2,10 @@
   description = ''Library for detecting the format of a sound file'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sndhdr-master.flake = false;
+    inputs.src-sndhdr-master.flake = false;
   inputs.src-sndhdr-master.type = "github";
   inputs.src-sndhdr-master.owner = "achesak";
   inputs.src-sndhdr-master.repo = "nim-sndhdr";

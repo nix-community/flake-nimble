@@ -2,11 +2,10 @@
   description = ''Wrapper of the file procedures to provide an interface as similar as possible to that of Python'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pythonfile-master.flake = false;
+    inputs.src-pythonfile-master.flake = false;
   inputs.src-pythonfile-master.type = "github";
   inputs.src-pythonfile-master.owner = "achesak";
   inputs.src-pythonfile-master.repo = "nim-pythonfile";

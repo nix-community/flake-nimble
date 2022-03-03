@@ -2,11 +2,10 @@
   description = ''Unix process&system query&formatting library&multi-command CLI in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-procs-v0_2_1.flake = false;
+    inputs.src-procs-v0_2_1.flake = false;
   inputs.src-procs-v0_2_1.type = "github";
   inputs.src-procs-v0_2_1.owner = "c-blake";
   inputs.src-procs-v0_2_1.repo = "procs";

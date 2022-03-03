@@ -2,11 +2,10 @@
   description = ''A library to create interactive commandline menus without writing boilerplate code.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cli_menu-master.flake = false;
+    inputs.src-cli_menu-master.flake = false;
   inputs.src-cli_menu-master.type = "github";
   inputs.src-cli_menu-master.owner = "MnlPhlp";
   inputs.src-cli_menu-master.repo = "cli_menu";

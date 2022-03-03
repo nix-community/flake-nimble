@@ -2,11 +2,10 @@
   description = ''Nim library with python-like functions and operators'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pylib-master.flake = false;
+    inputs.src-pylib-master.flake = false;
   inputs.src-pylib-master.type = "github";
   inputs.src-pylib-master.owner = "Yardanico";
   inputs.src-pylib-master.repo = "nimpylib";

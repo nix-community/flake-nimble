@@ -2,11 +2,10 @@
   description = ''Simple AST in NIM'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-simpleAST-develop.flake = false;
+    inputs.src-simpleAST-develop.flake = false;
   inputs.src-simpleAST-develop.type = "github";
   inputs.src-simpleAST-develop.owner = "lguzzon-NIM";
   inputs.src-simpleAST-develop.repo = "simpleAST";

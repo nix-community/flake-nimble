@@ -2,11 +2,10 @@
   description = ''Basic Option[T] library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-optional_t-master.flake = false;
+    inputs.src-optional_t-master.flake = false;
   inputs.src-optional_t-master.type = "github";
   inputs.src-optional_t-master.owner = "flaviut";
   inputs.src-optional_t-master.repo = "optional_t";

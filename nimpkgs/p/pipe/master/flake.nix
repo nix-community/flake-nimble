@@ -2,11 +2,10 @@
   description = ''Pipe operator for nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pipe-master.flake = false;
+    inputs.src-pipe-master.flake = false;
   inputs.src-pipe-master.type = "github";
   inputs.src-pipe-master.owner = "CosmicToast";
   inputs.src-pipe-master.repo = "pipe";

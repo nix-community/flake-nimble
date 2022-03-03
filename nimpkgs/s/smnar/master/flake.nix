@@ -2,11 +2,10 @@
   description = ''Servicio Meteorologico Nacional Argentina API Client'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-smnar-master.flake = false;
+    inputs.src-smnar-master.flake = false;
   inputs.src-smnar-master.type = "github";
   inputs.src-smnar-master.owner = "juancarlospaco";
   inputs.src-smnar-master.repo = "nim-smnar";

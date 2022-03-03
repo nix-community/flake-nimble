@@ -2,11 +2,10 @@
   description = ''Wrapper for Allegro version 5.X'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-allegro5-master.flake = false;
+    inputs.src-allegro5-master.flake = false;
   inputs.src-allegro5-master.type = "github";
   inputs.src-allegro5-master.owner = "fowlmouth";
   inputs.src-allegro5-master.repo = "allegro5";

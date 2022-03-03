@@ -2,11 +2,10 @@
   description = ''vectored io for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-vecio-master.flake = false;
+    inputs.src-vecio-master.flake = false;
   inputs.src-vecio-master.type = "github";
   inputs.src-vecio-master.owner = "emekoi";
   inputs.src-vecio-master.repo = "vecio.nim";

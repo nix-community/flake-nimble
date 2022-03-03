@@ -2,11 +2,10 @@
   description = ''Pure Nim implementation of deflate, zlib, gzip and zip.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-zippy-0_2_1.flake = false;
+    inputs.src-zippy-0_2_1.flake = false;
   inputs.src-zippy-0_2_1.type = "github";
   inputs.src-zippy-0_2_1.owner = "guzba";
   inputs.src-zippy-0_2_1.repo = "zippy";

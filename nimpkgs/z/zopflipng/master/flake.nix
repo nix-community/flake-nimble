@@ -2,11 +2,10 @@
   description = ''zopflipng-like png optimization'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-zopflipng-master.flake = false;
+    inputs.src-zopflipng-master.flake = false;
   inputs.src-zopflipng-master.type = "github";
   inputs.src-zopflipng-master.owner = "bung87";
   inputs.src-zopflipng-master.repo = "zopflipng";

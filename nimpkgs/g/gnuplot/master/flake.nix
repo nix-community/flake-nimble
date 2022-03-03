@@ -2,11 +2,10 @@
   description = ''Nim interface to gnuplot'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gnuplot-master.flake = false;
+    inputs.src-gnuplot-master.flake = false;
   inputs.src-gnuplot-master.type = "github";
   inputs.src-gnuplot-master.owner = "dvolk";
   inputs.src-gnuplot-master.repo = "gnuplot.nim";

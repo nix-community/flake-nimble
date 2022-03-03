@@ -2,11 +2,10 @@
   description = ''Nim Static Blog & Site Generator'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pine-master.flake = false;
+    inputs.src-pine-master.flake = false;
   inputs.src-pine-master.type = "github";
   inputs.src-pine-master.owner = "Willyboar";
   inputs.src-pine-master.repo = "pine";

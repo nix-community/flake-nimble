@@ -2,11 +2,10 @@
   description = ''Pure Nim asyncronous driver for Redis DB'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-asyncredis-v0_8_1.flake = false;
+    inputs.src-asyncredis-v0_8_1.flake = false;
   inputs.src-asyncredis-v0_8_1.type = "github";
   inputs.src-asyncredis-v0_8_1.owner = "Q-Master";
   inputs.src-asyncredis-v0_8_1.repo = "redis.nim";

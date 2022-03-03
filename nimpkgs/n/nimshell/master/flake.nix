@@ -2,11 +2,10 @@
   description = ''Library for shell scripting in nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimshell-master.flake = false;
+    inputs.src-nimshell-master.flake = false;
   inputs.src-nimshell-master.type = "github";
   inputs.src-nimshell-master.owner = "vegansk";
   inputs.src-nimshell-master.repo = "nimshell";

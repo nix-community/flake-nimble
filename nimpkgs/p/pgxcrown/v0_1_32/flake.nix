@@ -2,11 +2,10 @@
   description = ''Build Postgres extensions in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pgxcrown-v0_1_32.flake = false;
+    inputs.src-pgxcrown-v0_1_32.flake = false;
   inputs.src-pgxcrown-v0_1_32.type = "github";
   inputs.src-pgxcrown-v0_1_32.owner = "luisacosta828";
   inputs.src-pgxcrown-v0_1_32.repo = "pgxcrown";

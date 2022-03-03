@@ -2,11 +2,10 @@
   description = ''A collection of geometry utilities for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-geometryutils-master.flake = false;
+    inputs.src-geometryutils-master.flake = false;
   inputs.src-geometryutils-master.type = "github";
   inputs.src-geometryutils-master.owner = "pseudo-random";
   inputs.src-geometryutils-master.repo = "geometryutils";

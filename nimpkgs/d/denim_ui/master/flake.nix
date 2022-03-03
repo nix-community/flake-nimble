@@ -2,11 +2,10 @@
   description = ''The Denim UI library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-denim_ui-master.flake = false;
+    inputs.src-denim_ui-master.flake = false;
   inputs.src-denim_ui-master.type = "github";
   inputs.src-denim_ui-master.owner = "nortero-code";
   inputs.src-denim_ui-master.repo = "denim-ui";

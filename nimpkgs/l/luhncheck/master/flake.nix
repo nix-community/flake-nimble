@@ -2,11 +2,10 @@
   description = ''Implementation of Luhn algorithm in nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-luhncheck-master.flake = false;
+    inputs.src-luhncheck-master.flake = false;
   inputs.src-luhncheck-master.type = "github";
   inputs.src-luhncheck-master.owner = "sillibird";
   inputs.src-luhncheck-master.repo = "luhncheck";

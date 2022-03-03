@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-genoiser-v0_2_5": "src-genoiser-v0_2_5"
+      }
+    },
+    "src-genoiser-v0_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554859010,
+        "narHash": "sha256-Iowib2ni88ebeqS5iSw4F334rIFm6AVOw+FoGHfQA6w=",
+        "owner": "brentp",
+        "repo": "genoiser",
+        "rev": "7a7e73f550d30bd99262c9fc721f1d4f77c40aa5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brentp",
+        "ref": "refs/tags/v0.2.5",
+        "repo": "genoiser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

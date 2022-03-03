@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-godot-v0_7_0": "src-godot-v0_7_0"
+      }
+    },
+    "src-godot-v0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1514523120,
+        "narHash": "sha256-L6hWEKNo/W0qDkwYTw/aaMDg9TeOxsYZrNxh7yZQrEs=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "d89073bac8affc5b0d90ea7fe4078442d6aa4d3e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

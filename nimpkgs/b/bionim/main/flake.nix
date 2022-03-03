@@ -2,11 +2,10 @@
   description = ''This package tries to provide a lot of the most useful data structures and alogrithms need in the different subfield of bio informatics'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bionim-main.flake = false;
+    inputs.src-bionim-main.flake = false;
   inputs.src-bionim-main.type = "github";
   inputs.src-bionim-main.owner = "Unaimend";
   inputs.src-bionim-main.repo = "bionim";

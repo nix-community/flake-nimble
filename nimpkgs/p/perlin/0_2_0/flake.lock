@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-perlin-0_2_0": "src-perlin-0_2_0"
+      }
+    },
+    "src-perlin-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1440366323,
+        "narHash": "sha256-ev4iY9o5ss6n6LsS5l20H8dRNwoiYF3sBIeeVR76WLs=",
+        "owner": "Nycto",
+        "repo": "PerlinNim",
+        "rev": "1d132fd5912656de2d251810ee35d32a581bf23f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Nycto",
+        "ref": "refs/tags/0.2.0",
+        "repo": "PerlinNim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

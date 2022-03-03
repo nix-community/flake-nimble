@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-pykot-v0_1_0": "src-pykot-v0_1_0"
+      }
+    },
+    "src-pykot-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539199135,
+        "narHash": "sha256-fFq7CKihPgJZ3Tei/InNUdwU7zEwi2BldL8Lb3KB1ts=",
+        "owner": "jabbalaci",
+        "repo": "nimpykot",
+        "rev": "54e9b89469114f0bd5e780dd18d78dd5a73a1153",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nimpykot",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

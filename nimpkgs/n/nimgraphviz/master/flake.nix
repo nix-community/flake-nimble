@@ -2,11 +2,10 @@
   description = ''Nim bindings for the GraphViz tool and the DOT graph language'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimgraphviz-master.flake = false;
+    inputs.src-nimgraphviz-master.flake = false;
   inputs.src-nimgraphviz-master.type = "github";
   inputs.src-nimgraphviz-master.owner = "Aveheuzed";
   inputs.src-nimgraphviz-master.repo = "nimgraphviz";

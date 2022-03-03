@@ -2,11 +2,10 @@
   description = ''3DES native library for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-des-master.flake = false;
+    inputs.src-des-master.flake = false;
   inputs.src-des-master.type = "github";
   inputs.src-des-master.owner = "LucaWolf";
   inputs.src-des-master.repo = "des.nim";

@@ -2,11 +2,10 @@
   description = ''Shiny bindings to the JACK Audio Connection Kit.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jack-master.flake = false;
+    inputs.src-jack-master.flake = false;
   inputs.src-jack-master.type = "github";
   inputs.src-jack-master.owner = "Skrylar";
   inputs.src-jack-master.repo = "nim-jack";

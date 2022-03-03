@@ -2,11 +2,10 @@
   description = ''Develop SuperCollider UGens in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-scnim-master.flake = false;
+    inputs.src-scnim-master.flake = false;
   inputs.src-scnim-master.type = "github";
   inputs.src-scnim-master.owner = "capocasa";
   inputs.src-scnim-master.repo = "scnim";

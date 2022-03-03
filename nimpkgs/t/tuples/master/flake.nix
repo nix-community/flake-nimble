@@ -2,11 +2,10 @@
   description = ''Tuple manipulation utilities'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tuples-master.flake = false;
+    inputs.src-tuples-master.flake = false;
   inputs.src-tuples-master.type = "github";
   inputs.src-tuples-master.owner = "MasonMcGill";
   inputs.src-tuples-master.repo = "tuples";

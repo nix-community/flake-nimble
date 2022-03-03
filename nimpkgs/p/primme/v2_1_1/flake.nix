@@ -2,11 +2,10 @@
   description = ''Nim interface for PRIMME: PReconditioned Iterative MultiMethod Eigensolver'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-primme-v2_1_1.flake = false;
+    inputs.src-primme-v2_1_1.flake = false;
   inputs.src-primme-v2_1_1.type = "github";
   inputs.src-primme-v2_1_1.owner = "jxy";
   inputs.src-primme-v2_1_1.repo = "primme";

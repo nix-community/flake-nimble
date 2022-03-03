@@ -2,11 +2,10 @@
   description = ''Nim module for parsing GPX (GPS Exchange format) files'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gpx-master.flake = false;
+    inputs.src-gpx-master.flake = false;
   inputs.src-gpx-master.type = "github";
   inputs.src-gpx-master.owner = "achesak";
   inputs.src-gpx-master.repo = "nim-gpx";

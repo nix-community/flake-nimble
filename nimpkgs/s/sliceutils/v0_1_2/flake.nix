@@ -2,11 +2,10 @@
   description = ''Utilities for and extensions to Slice/HSlice'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sliceutils-v0_1_2.flake = false;
+    inputs.src-sliceutils-v0_1_2.flake = false;
   inputs.src-sliceutils-v0_1_2.type = "github";
   inputs.src-sliceutils-v0_1_2.owner = "metagn";
   inputs.src-sliceutils-v0_1_2.repo = "sliceutils";

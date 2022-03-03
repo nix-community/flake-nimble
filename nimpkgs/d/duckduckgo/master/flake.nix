@@ -2,11 +2,10 @@
   description = ''Duckduckgo search'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-duckduckgo-master.flake = false;
+    inputs.src-duckduckgo-master.flake = false;
   inputs.src-duckduckgo-master.type = "gitlab";
   inputs.src-duckduckgo-master.owner = "lurlo";
   inputs.src-duckduckgo-master.repo = "duckduckgo";

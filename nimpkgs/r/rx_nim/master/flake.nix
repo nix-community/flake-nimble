@@ -2,11 +2,10 @@
   description = ''An implementation of rx observables in nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rx_nim-master.flake = false;
+    inputs.src-rx_nim-master.flake = false;
   inputs.src-rx_nim-master.type = "github";
   inputs.src-rx_nim-master.owner = "nortero-code";
   inputs.src-rx_nim-master.repo = "rx-nim";

@@ -2,11 +2,10 @@
   description = ''Gravatar API wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-gravatar-master.flake = false;
+    inputs.src-gravatar-master.flake = false;
   inputs.src-gravatar-master.type = "github";
   inputs.src-gravatar-master.owner = "achesak";
   inputs.src-gravatar-master.repo = "nim-gravatar";

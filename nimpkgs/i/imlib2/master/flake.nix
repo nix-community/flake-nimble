@@ -2,11 +2,10 @@
   description = ''Simple wrapper of the Imlib2 library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-imlib2-master.flake = false;
+    inputs.src-imlib2-master.flake = false;
   inputs.src-imlib2-master.type = "github";
   inputs.src-imlib2-master.owner = "PMunch";
   inputs.src-imlib2-master.repo = "Imlib2";

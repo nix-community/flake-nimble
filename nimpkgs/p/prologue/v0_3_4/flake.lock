@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-prologue-v0_3_4": "src-prologue-v0_3_4"
+      }
+    },
+    "src-prologue-v0_3_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598696180,
+        "narHash": "sha256-HOO5hehsvg5pDu2drgxsBOmw4X8zyxWFdX3GbEYRY10=",
+        "owner": "planety",
+        "repo": "Prologue",
+        "rev": "a66699f124f948fe74c4da424dcd4a0aee84afe6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/tags/v0.3.4",
+        "repo": "Prologue",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

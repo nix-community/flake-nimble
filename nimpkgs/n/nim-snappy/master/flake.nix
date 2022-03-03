@@ -2,11 +2,10 @@
   description = ''Nim implementation of Snappy compression algorithm'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nim-snappy-master.flake = false;
+    inputs.src-nim-snappy-master.flake = false;
   inputs.src-nim-snappy-master.type = "github";
   inputs.src-nim-snappy-master.owner = "status-im";
   inputs.src-nim-snappy-master.repo = "nim-snappy";

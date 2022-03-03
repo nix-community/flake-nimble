@@ -2,11 +2,10 @@
   description = ''ANSI art + MIDI music editor'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ansiwave-0_5_0-macos.flake = false;
+    inputs.src-ansiwave-0_5_0-macos.flake = false;
   inputs.src-ansiwave-0_5_0-macos.type = "github";
   inputs.src-ansiwave-0_5_0-macos.owner = "ansiwave";
   inputs.src-ansiwave-0_5_0-macos.repo = "ansiwave";

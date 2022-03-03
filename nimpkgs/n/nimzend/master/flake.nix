@@ -2,11 +2,10 @@
   description = ''Native Nim Zend API glue for easy PHP extension development.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimzend-master.flake = false;
+    inputs.src-nimzend-master.flake = false;
   inputs.src-nimzend-master.type = "github";
   inputs.src-nimzend-master.owner = "metatexx";
   inputs.src-nimzend-master.repo = "nimzend";

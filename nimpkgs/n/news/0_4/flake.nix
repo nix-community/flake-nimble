@@ -2,11 +2,10 @@
   description = ''Easy websocket with chronos support'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-news-0_4.flake = false;
+    inputs.src-news-0_4.flake = false;
   inputs.src-news-0_4.type = "github";
   inputs.src-news-0_4.owner = "tormund";
   inputs.src-news-0_4.repo = "news";

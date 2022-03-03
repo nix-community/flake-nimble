@@ -2,11 +2,10 @@
   description = ''ADB protocol implementation in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-adb-master.flake = false;
+    inputs.src-adb-master.flake = false;
   inputs.src-adb-master.type = "github";
   inputs.src-adb-master.owner = "Yardanico";
   inputs.src-adb-master.repo = "nim-adb";

@@ -2,11 +2,10 @@
   description = ''JSON schema validation and creation.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jsonschema-master.flake = false;
+    inputs.src-jsonschema-master.flake = false;
   inputs.src-jsonschema-master.type = "github";
   inputs.src-jsonschema-master.owner = "PMunch";
   inputs.src-jsonschema-master.repo = "jsonschema";

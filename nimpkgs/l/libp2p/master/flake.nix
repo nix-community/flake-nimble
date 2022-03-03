@@ -2,11 +2,10 @@
   description = ''libp2p implementation in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libp2p-master.flake = false;
+    inputs.src-libp2p-master.flake = false;
   inputs.src-libp2p-master.type = "github";
   inputs.src-libp2p-master.owner = "status-im";
   inputs.src-libp2p-master.repo = "nim-libp2p";

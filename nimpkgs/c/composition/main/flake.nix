@@ -2,11 +2,10 @@
   description = ''Composition pattern with event handling library in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-composition-main.flake = false;
+    inputs.src-composition-main.flake = false;
   inputs.src-composition-main.type = "github";
   inputs.src-composition-main.owner = "DavidMeagher1";
   inputs.src-composition-main.repo = "composition";

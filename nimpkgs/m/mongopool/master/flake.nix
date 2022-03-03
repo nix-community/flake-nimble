@@ -2,11 +2,10 @@
   description = ''MongoDb pooled driver'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mongopool-master.flake = false;
+    inputs.src-mongopool-master.flake = false;
   inputs.src-mongopool-master.type = "github";
   inputs.src-mongopool-master.owner = "JohnAD";
   inputs.src-mongopool-master.repo = "mongopool";

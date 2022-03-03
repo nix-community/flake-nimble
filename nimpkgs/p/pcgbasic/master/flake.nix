@@ -2,11 +2,10 @@
   description = ''Permuted Congruential Generator (PCG) Random Number Generation (RNG) for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pcgbasic-master.flake = false;
+    inputs.src-pcgbasic-master.flake = false;
   inputs.src-pcgbasic-master.type = "github";
   inputs.src-pcgbasic-master.owner = "rockcavera";
   inputs.src-pcgbasic-master.repo = "pcgbasic";

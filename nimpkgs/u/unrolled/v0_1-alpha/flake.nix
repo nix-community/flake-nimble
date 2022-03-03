@@ -2,11 +2,10 @@
   description = ''Unroll for-loops at compile-time.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-unrolled-v0_1-alpha.flake = false;
+    inputs.src-unrolled-v0_1-alpha.flake = false;
   inputs.src-unrolled-v0_1-alpha.type = "github";
   inputs.src-unrolled-v0_1-alpha.owner = "schneiderfelipe";
   inputs.src-unrolled-v0_1-alpha.repo = "unrolled";

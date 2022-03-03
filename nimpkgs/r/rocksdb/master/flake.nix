@@ -2,11 +2,10 @@
   description = ''A wrapper for Facebook's RocksDB, an embeddable, persistent key-value store for fast storage'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rocksdb-master.flake = false;
+    inputs.src-rocksdb-master.flake = false;
   inputs.src-rocksdb-master.type = "github";
   inputs.src-rocksdb-master.owner = "status-im";
   inputs.src-rocksdb-master.repo = "nim-rocksdb";

@@ -2,11 +2,10 @@
   description = ''std / sha1 extension'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sha1ext-master.flake = false;
+    inputs.src-sha1ext-master.flake = false;
   inputs.src-sha1ext-master.type = "github";
   inputs.src-sha1ext-master.owner = "CORDEA";
   inputs.src-sha1ext-master.repo = "sha1ext";

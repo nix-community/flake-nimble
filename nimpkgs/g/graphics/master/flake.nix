@@ -2,11 +2,10 @@
   description = ''Graphics module for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-graphics-master.flake = false;
+    inputs.src-graphics-master.flake = false;
   inputs.src-graphics-master.type = "github";
   inputs.src-graphics-master.owner = "nim-lang";
   inputs.src-graphics-master.repo = "graphics";

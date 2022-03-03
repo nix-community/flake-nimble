@@ -2,11 +2,10 @@
   description = ''Fuzzy search wrapper for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimfuzzy-master.flake = false;
+    inputs.src-nimfuzzy-master.flake = false;
   inputs.src-nimfuzzy-master.type = "github";
   inputs.src-nimfuzzy-master.owner = "genotrance";
   inputs.src-nimfuzzy-master.repo = "nimfuzzy";

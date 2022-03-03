@@ -2,11 +2,10 @@
   description = ''A crafty implementation of structured logging for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-chronicles-v0_9_2.flake = false;
+    inputs.src-chronicles-v0_9_2.flake = false;
   inputs.src-chronicles-v0_9_2.type = "github";
   inputs.src-chronicles-v0_9_2.owner = "status-im";
   inputs.src-chronicles-v0_9_2.repo = "nim-chronicles";

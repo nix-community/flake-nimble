@@ -2,11 +2,10 @@
   description = ''Calculate the next semver version given the git log and previous version'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-conventional_semver-master.flake = false;
+    inputs.src-conventional_semver-master.flake = false;
   inputs.src-conventional_semver-master.type = "gitlab";
   inputs.src-conventional_semver-master.owner = "SimplyZ";
   inputs.src-conventional_semver-master.repo = "conventional_semver";

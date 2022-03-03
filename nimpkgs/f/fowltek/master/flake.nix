@@ -2,11 +2,10 @@
   description = ''A collection of reusable modules and wrappers.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fowltek-master.flake = false;
+    inputs.src-fowltek-master.flake = false;
   inputs.src-fowltek-master.type = "github";
   inputs.src-fowltek-master.owner = "fowlmouth";
   inputs.src-fowltek-master.repo = "nimlibs";

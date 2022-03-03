@@ -2,11 +2,10 @@
   description = ''⚡️ Just... yellin' for changes! File System Monitor for devs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-watchout-main.flake = false;
+    inputs.src-watchout-main.flake = false;
   inputs.src-watchout-main.type = "github";
   inputs.src-watchout-main.owner = "openpeep";
   inputs.src-watchout-main.repo = "watchout";

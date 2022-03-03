@@ -2,11 +2,10 @@
   description = ''Command to remove acceptably empty directories.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-awesome_rmdir-develop.flake = false;
+    inputs.src-awesome_rmdir-develop.flake = false;
   inputs.src-awesome_rmdir-develop.type = "github";
   inputs.src-awesome_rmdir-develop.owner = "Araq";
   inputs.src-awesome_rmdir-develop.repo = "awesome_rmdir";

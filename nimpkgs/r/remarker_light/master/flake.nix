@@ -2,11 +2,10 @@
   description = ''remarker_light is a command line tool for building a remark-based slideshow page very easily.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-remarker_light-master.flake = false;
+    inputs.src-remarker_light-master.flake = false;
   inputs.src-remarker_light-master.type = "github";
   inputs.src-remarker_light-master.owner = "muxueqz";
   inputs.src-remarker_light-master.repo = "remarker_light";

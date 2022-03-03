@@ -2,11 +2,10 @@
   description = ''iterate through files and lines'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-fileinput-master.flake = false;
+    inputs.src-fileinput-master.flake = false;
   inputs.src-fileinput-master.type = "github";
   inputs.src-fileinput-master.owner = "achesak";
   inputs.src-fileinput-master.repo = "nim-fileinput";

@@ -2,11 +2,10 @@
   description = ''Awaitable threadpool'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-asyncthreadpool-main.flake = false;
+    inputs.src-asyncthreadpool-main.flake = false;
   inputs.src-asyncthreadpool-main.type = "github";
   inputs.src-asyncthreadpool-main.owner = "yglukhov";
   inputs.src-asyncthreadpool-main.repo = "asyncthreadpool";

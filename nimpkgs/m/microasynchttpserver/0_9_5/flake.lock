@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-microasynchttpserver-0_9_5": "src-microasynchttpserver-0_9_5"
+      }
+    },
+    "src-microasynchttpserver-0_9_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1477587765,
+        "narHash": "sha256-AKVrE/M827hCi/UQcv7ju8q/ua1yL7gv/g8Cbf582eQ=",
+        "owner": "philip-wernersbach",
+        "repo": "microasynchttpserver",
+        "rev": "dd5884d717ecb5e94fc8e3b2a8c462e2e78e4c84",
+        "type": "github"
+      },
+      "original": {
+        "owner": "philip-wernersbach",
+        "ref": "refs/tags/0.9.5",
+        "repo": "microasynchttpserver",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

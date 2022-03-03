@@ -2,11 +2,10 @@
   description = ''Library to support work with pathnames in Windows and Posix-based systems. Inspired by Rubies pathname.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pathname-v0_1_0.flake = false;
+    inputs.src-pathname-v0_1_0.flake = false;
   inputs.src-pathname-v0_1_0.type = "github";
   inputs.src-pathname-v0_1_0.owner = "RaimundHuebel";
   inputs.src-pathname-v0_1_0.repo = "nimpathname";

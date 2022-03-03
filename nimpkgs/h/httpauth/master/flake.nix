@@ -2,11 +2,10 @@
   description = ''HTTP Authentication and Authorization'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-httpauth-master.flake = false;
+    inputs.src-httpauth-master.flake = false;
   inputs.src-httpauth-master.type = "github";
   inputs.src-httpauth-master.owner = "FedericoCeratto";
   inputs.src-httpauth-master.repo = "nim-httpauth";

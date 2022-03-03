@@ -2,11 +2,10 @@
   description = ''Jenkins Hasher producing 32 bit digests'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jhash-v0_1_2.flake = false;
+    inputs.src-jhash-v0_1_2.flake = false;
   inputs.src-jhash-v0_1_2.type = "github";
   inputs.src-jhash-v0_1_2.owner = "mjfh";
   inputs.src-jhash-v0_1_2.repo = "nim-jhash";

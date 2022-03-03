@@ -2,11 +2,10 @@
   description = ''Deprecated implementation of the Ethereum suite of P2P protocols (now part of the 'eth' package)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-eth_p2p-master.flake = false;
+    inputs.src-eth_p2p-master.flake = false;
   inputs.src-eth_p2p-master.type = "github";
   inputs.src-eth_p2p-master.owner = "status-im";
   inputs.src-eth_p2p-master.repo = "nim-eth-p2p";

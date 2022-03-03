@@ -2,11 +2,10 @@
   description = ''A simple library to generate random data, using the system's PRNG.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sysrandom-master.flake = false;
+    inputs.src-sysrandom-master.flake = false;
   inputs.src-sysrandom-master.type = "github";
   inputs.src-sysrandom-master.owner = "euantorano";
   inputs.src-sysrandom-master.repo = "sysrandom.nim";

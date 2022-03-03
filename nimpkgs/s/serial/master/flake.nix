@@ -2,11 +2,10 @@
   description = ''A library to operate serial ports using pure Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-serial-master.flake = false;
+    inputs.src-serial-master.flake = false;
   inputs.src-serial-master.type = "github";
   inputs.src-serial-master.owner = "euantorano";
   inputs.src-serial-master.repo = "serial.nim";

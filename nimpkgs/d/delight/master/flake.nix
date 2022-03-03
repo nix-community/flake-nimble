@@ -2,11 +2,10 @@
   description = ''Engine-agnostic library for computing 2D raycasted lights'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-delight-master.flake = false;
+    inputs.src-delight-master.flake = false;
   inputs.src-delight-master.type = "github";
   inputs.src-delight-master.owner = "liquid600pgm";
   inputs.src-delight-master.repo = "delight";

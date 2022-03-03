@@ -2,11 +2,10 @@
   description = ''Redis client for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-redisclient-master.flake = false;
+    inputs.src-redisclient-master.flake = false;
   inputs.src-redisclient-master.type = "github";
   inputs.src-redisclient-master.owner = "xmonader";
   inputs.src-redisclient-master.repo = "nim-redisclient";

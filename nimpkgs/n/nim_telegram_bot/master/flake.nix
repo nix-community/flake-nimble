@@ -2,11 +2,10 @@
   description = ''Generic Configurable Telegram Bot for Nim, with builtin basic functionality and Plugins'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nim_telegram_bot-master.flake = false;
+    inputs.src-nim_telegram_bot-master.flake = false;
   inputs.src-nim_telegram_bot-master.type = "github";
   inputs.src-nim_telegram_bot-master.owner = "juancarlospaco";
   inputs.src-nim_telegram_bot-master.repo = "nim-telegram-bot";

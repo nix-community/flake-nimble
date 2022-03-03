@@ -2,11 +2,10 @@
   description = ''Nim utilities for advanced CPU operations: CPU identification, bindings to assorted intrinsics'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cpuwhat-master.flake = false;
+    inputs.src-cpuwhat-master.flake = false;
   inputs.src-cpuwhat-master.type = "github";
   inputs.src-cpuwhat-master.owner = "awr1";
   inputs.src-cpuwhat-master.repo = "cpuwhat";

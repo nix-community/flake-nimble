@@ -2,11 +2,10 @@
   description = ''Arbitrary-precision integers'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bigints-0_4_4.flake = false;
+    inputs.src-bigints-0_4_4.flake = false;
   inputs.src-bigints-0_4_4.type = "github";
   inputs.src-bigints-0_4_4.owner = "nim-lang";
   inputs.src-bigints-0_4_4.repo = "bigints";

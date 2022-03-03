@@ -2,11 +2,10 @@
   description = ''Distributions is a Nim library for distributions and their functions.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-distributions-master.flake = false;
+    inputs.src-distributions-master.flake = false;
   inputs.src-distributions-master.type = "github";
   inputs.src-distributions-master.owner = "ayman-albaz";
   inputs.src-distributions-master.repo = "distributions";

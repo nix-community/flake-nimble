@@ -2,11 +2,10 @@
   description = ''Libravatar library for Nim, Gravatar alternative. Libravatar is an open source free federated avatar api & service.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libravatar-master.flake = false;
+    inputs.src-libravatar-master.flake = false;
   inputs.src-libravatar-master.type = "github";
   inputs.src-libravatar-master.owner = "juancarlospaco";
   inputs.src-libravatar-master.repo = "nim-libravatar";

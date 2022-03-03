@@ -2,11 +2,10 @@
   description = ''Simple plugin implementation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pluginmanager-master.flake = false;
+    inputs.src-pluginmanager-master.flake = false;
   inputs.src-pluginmanager-master.type = "github";
   inputs.src-pluginmanager-master.owner = "samdmarshall";
   inputs.src-pluginmanager-master.repo = "plugin-manager";

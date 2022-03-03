@@ -2,11 +2,10 @@
   description = ''Sampling profiler that finds hot paths in your code.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hottie-master.flake = false;
+    inputs.src-hottie-master.flake = false;
   inputs.src-hottie-master.type = "github";
   inputs.src-hottie-master.owner = "treeform";
   inputs.src-hottie-master.repo = "hottie";

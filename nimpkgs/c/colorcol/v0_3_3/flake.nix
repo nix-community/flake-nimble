@@ -2,11 +2,10 @@
   description = ''Kakoune plugin for color preview'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-colorcol-v0_3_3.flake = false;
+    inputs.src-colorcol-v0_3_3.flake = false;
   inputs.src-colorcol-v0_3_3.type = "github";
   inputs.src-colorcol-v0_3_3.owner = "SolitudeSF";
   inputs.src-colorcol-v0_3_3.repo = "colorcol";

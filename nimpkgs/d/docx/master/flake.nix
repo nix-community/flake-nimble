@@ -2,11 +2,10 @@
   description = ''A simple docx reader.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-docx-master.flake = false;
+    inputs.src-docx-master.flake = false;
   inputs.src-docx-master.type = "github";
   inputs.src-docx-master.owner = "xflywind";
   inputs.src-docx-master.repo = "docx";

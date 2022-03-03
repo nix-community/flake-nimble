@@ -2,11 +2,10 @@
   description = ''IUP FFI bindings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-niup-3_27_7.flake = false;
+    inputs.src-niup-3_27_7.flake = false;
   inputs.src-niup-3_27_7.type = "github";
   inputs.src-niup-3_27_7.owner = "dariolah";
   inputs.src-niup-3_27_7.repo = "niup";

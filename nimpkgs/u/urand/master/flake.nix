@@ -2,11 +2,10 @@
   description = ''Simple method of obtaining secure random numbers from the OS'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-urand-master.flake = false;
+    inputs.src-urand-master.flake = false;
   inputs.src-urand-master.type = "github";
   inputs.src-urand-master.owner = "Matceporial";
   inputs.src-urand-master.repo = "nim-urand";

@@ -2,11 +2,10 @@
   description = ''High-level Wren wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-euwren-master.flake = false;
+    inputs.src-euwren-master.flake = false;
   inputs.src-euwren-master.type = "github";
   inputs.src-euwren-master.owner = "liquid600pgm";
   inputs.src-euwren-master.repo = "euwren";

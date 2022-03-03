@@ -2,11 +2,10 @@
   description = ''A postgres DB adapter for nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pdba-v0_2_4.flake = false;
+    inputs.src-pdba-v0_2_4.flake = false;
   inputs.src-pdba-v0_2_4.type = "github";
   inputs.src-pdba-v0_2_4.owner = "misebox";
   inputs.src-pdba-v0_2_4.repo = "pdba";

@@ -2,11 +2,10 @@
   description = ''Coinbase pro client for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-coinbase_pro-master.flake = false;
+    inputs.src-coinbase_pro-master.flake = false;
   inputs.src-coinbase_pro-master.type = "github";
   inputs.src-coinbase_pro-master.owner = "inv2004";
   inputs.src-coinbase_pro-master.repo = "coinbase-pro-nim";

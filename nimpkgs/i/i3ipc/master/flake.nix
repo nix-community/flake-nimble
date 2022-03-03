@@ -2,11 +2,10 @@
   description = ''i3 IPC client library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-i3ipc-master.flake = false;
+    inputs.src-i3ipc-master.flake = false;
   inputs.src-i3ipc-master.type = "github";
   inputs.src-i3ipc-master.owner = "FedericoCeratto";
   inputs.src-i3ipc-master.repo = "nim-i3ipc";

@@ -2,11 +2,10 @@
   description = ''xcb bindings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-xcb-master.flake = false;
+    inputs.src-xcb-master.flake = false;
   inputs.src-xcb-master.type = "github";
   inputs.src-xcb-master.owner = "SolitudeSF";
   inputs.src-xcb-master.repo = "xcb";

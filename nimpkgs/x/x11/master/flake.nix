@@ -2,11 +2,10 @@
   description = ''Wrapper for X11'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-x11-master.flake = false;
+    inputs.src-x11-master.flake = false;
   inputs.src-x11-master.type = "github";
   inputs.src-x11-master.owner = "nim-lang";
   inputs.src-x11-master.repo = "x11";

@@ -2,11 +2,10 @@
   description = ''A simple timing library for benchmarking code and other things.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-stopwatch-v3_5.flake = false;
+    inputs.src-stopwatch-v3_5.flake = false;
   inputs.src-stopwatch-v3_5.type = "gitlab";
   inputs.src-stopwatch-v3_5.owner = "define-private-public";
   inputs.src-stopwatch-v3_5.repo = "stopwatch";

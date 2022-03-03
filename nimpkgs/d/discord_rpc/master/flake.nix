@@ -2,11 +2,10 @@
   description = ''Discord RPC/Rich Presence client'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-discord_rpc-master.flake = false;
+    inputs.src-discord_rpc-master.flake = false;
   inputs.src-discord_rpc-master.type = "github";
   inputs.src-discord_rpc-master.owner = "SolitudeSF";
   inputs.src-discord_rpc-master.repo = "discord_rpc";

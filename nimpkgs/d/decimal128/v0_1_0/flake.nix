@@ -2,11 +2,10 @@
   description = ''Decimal type support based on the IEEE 754 2008 specification.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-decimal128-v0_1_0.flake = false;
+    inputs.src-decimal128-v0_1_0.flake = false;
   inputs.src-decimal128-v0_1_0.type = "github";
   inputs.src-decimal128-v0_1_0.owner = "JohnAD";
   inputs.src-decimal128-v0_1_0.repo = "decimal128";

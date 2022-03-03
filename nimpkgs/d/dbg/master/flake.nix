@@ -2,11 +2,10 @@
   description = ''dbg template; in debug echo'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dbg-master.flake = false;
+    inputs.src-dbg-master.flake = false;
   inputs.src-dbg-master.type = "github";
   inputs.src-dbg-master.owner = "enthus1ast";
   inputs.src-dbg-master.repo = "nimDbg";

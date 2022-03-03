@@ -2,11 +2,10 @@
   description = ''libipset wrapper for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libipset-master.flake = false;
+    inputs.src-libipset-master.flake = false;
   inputs.src-libipset-master.type = "github";
   inputs.src-libipset-master.owner = "ba0f3";
   inputs.src-libipset-master.repo = "libipset.nim";

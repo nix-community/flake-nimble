@@ -2,11 +2,10 @@
   description = ''Auto-generate a Python module that wraps a Nim module.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pymod-master.flake = false;
+    inputs.src-pymod-master.flake = false;
   inputs.src-pymod-master.type = "github";
   inputs.src-pymod-master.owner = "jboy";
   inputs.src-pymod-master.repo = "nim-pymod";

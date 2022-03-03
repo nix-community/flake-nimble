@@ -2,11 +2,10 @@
   description = ''A Nim library for data science and machine learning'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-mentat-master.flake = false;
+    inputs.src-mentat-master.flake = false;
   inputs.src-mentat-master.type = "github";
   inputs.src-mentat-master.owner = "ruivieira";
   inputs.src-mentat-master.repo = "nim-mentat";

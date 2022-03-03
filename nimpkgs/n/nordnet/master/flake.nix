@@ -2,11 +2,10 @@
   description = ''Scraping API for www.nordnet.dk ready to integrate with Home Assistant (Hassio)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nordnet-master.flake = false;
+    inputs.src-nordnet-master.flake = false;
   inputs.src-nordnet-master.type = "github";
   inputs.src-nordnet-master.owner = "ThomasTJdev";
   inputs.src-nordnet-master.repo = "nim_nordnet_api";

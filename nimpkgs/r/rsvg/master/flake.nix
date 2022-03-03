@@ -2,11 +2,10 @@
   description = ''Wrapper for librsvg, a Scalable Vector Graphics (SVG) rendering library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-rsvg-master.flake = false;
+    inputs.src-rsvg-master.flake = false;
   inputs.src-rsvg-master.type = "github";
   inputs.src-rsvg-master.owner = "def-";
   inputs.src-rsvg-master.repo = "rsvg";

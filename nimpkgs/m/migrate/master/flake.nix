@@ -2,11 +2,10 @@
   description = ''A simple database migration utility for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-migrate-master.flake = false;
+    inputs.src-migrate-master.flake = false;
   inputs.src-migrate-master.type = "github";
   inputs.src-migrate-master.owner = "euantorano";
   inputs.src-migrate-master.repo = "migrate.nim";

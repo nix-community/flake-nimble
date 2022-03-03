@@ -2,11 +2,10 @@
   description = ''Nim bindings for the WEBRTC VAD(voice actitvity Detection)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-webrtcvad-master.flake = false;
+    inputs.src-webrtcvad-master.flake = false;
   inputs.src-webrtcvad-master.type = "gitlab";
   inputs.src-webrtcvad-master.owner = "eagledot";
   inputs.src-webrtcvad-master.repo = "nim-webrtcvad";

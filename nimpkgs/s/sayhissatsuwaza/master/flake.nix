@@ -2,11 +2,10 @@
   description = ''Say hissatsuwaza (special attack) on your terminal.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sayhissatsuwaza-master.flake = false;
+    inputs.src-sayhissatsuwaza-master.flake = false;
   inputs.src-sayhissatsuwaza-master.type = "github";
   inputs.src-sayhissatsuwaza-master.owner = "jiro4989";
   inputs.src-sayhissatsuwaza-master.repo = "sayhissatsuwaza";

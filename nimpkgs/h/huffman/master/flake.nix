@@ -2,11 +2,10 @@
   description = ''Huffman encode/decode for Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-huffman-master.flake = false;
+    inputs.src-huffman-master.flake = false;
   inputs.src-huffman-master.type = "github";
   inputs.src-huffman-master.owner = "xzeshen";
   inputs.src-huffman-master.repo = "huffman";

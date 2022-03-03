@@ -2,11 +2,10 @@
   description = ''Crosscompile Nim source code into multiple targets on Linux with this proc.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-crosscompile-master.flake = false;
+    inputs.src-crosscompile-master.flake = false;
   inputs.src-crosscompile-master.type = "github";
   inputs.src-crosscompile-master.owner = "juancarlospaco";
   inputs.src-crosscompile-master.repo = "nim-crosscompile";

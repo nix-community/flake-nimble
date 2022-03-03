@@ -2,11 +2,10 @@
   description = ''Nim structs to work with Kdb in type-safe manner and low-level Nim to Kdb bindings'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-kdb-master.flake = false;
+    inputs.src-kdb-master.flake = false;
   inputs.src-kdb-master.type = "github";
   inputs.src-kdb-master.owner = "inv2004";
   inputs.src-kdb-master.repo = "kdb_nim";

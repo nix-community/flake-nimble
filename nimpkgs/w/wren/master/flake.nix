@@ -2,11 +2,10 @@
   description = ''A nim wrapper for Wren, an embedded scripting language'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-wren-master.flake = false;
+    inputs.src-wren-master.flake = false;
   inputs.src-wren-master.type = "github";
   inputs.src-wren-master.owner = "geotre";
   inputs.src-wren-master.repo = "wren";

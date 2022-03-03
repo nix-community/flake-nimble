@@ -2,11 +2,10 @@
   description = ''A nimterop wrapper for the opus audio decoder'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-opus-master.flake = false;
+    inputs.src-opus-master.flake = false;
   inputs.src-opus-master.type = "github";
   inputs.src-opus-master.owner = "capocasa";
   inputs.src-opus-master.repo = "nim-opus";

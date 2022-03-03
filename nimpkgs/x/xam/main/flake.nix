@@ -2,11 +2,10 @@
   description = ''xam'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-xam-main.flake = false;
+    inputs.src-xam-main.flake = false;
   inputs.src-xam-main.type = "github";
   inputs.src-xam-main.owner = "j-a-s-d";
   inputs.src-xam-main.repo = "xam";

@@ -2,11 +2,10 @@
   description = ''Converts 2D linear graph coordinates to pixels on screen'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libgraph-master.flake = false;
+    inputs.src-libgraph-master.flake = false;
   inputs.src-libgraph-master.type = "github";
   inputs.src-libgraph-master.owner = "Mnenmenth";
   inputs.src-libgraph-master.repo = "libgraphnim";

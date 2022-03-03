@@ -2,11 +2,10 @@
   description = ''High level xml library for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-xmltools-v0_1_1.flake = false;
+    inputs.src-xmltools-v0_1_1.flake = false;
   inputs.src-xmltools-v0_1_1.type = "github";
   inputs.src-xmltools-v0_1_1.owner = "vegansk";
   inputs.src-xmltools-v0_1_1.repo = "xmltools";

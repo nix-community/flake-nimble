@@ -2,11 +2,10 @@
   description = ''Surfing is a highly functional CLI for Base64.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-surfing-develop.flake = false;
+    inputs.src-surfing-develop.flake = false;
   inputs.src-surfing-develop.type = "github";
   inputs.src-surfing-develop.owner = "momeemt";
   inputs.src-surfing-develop.repo = "surfing";

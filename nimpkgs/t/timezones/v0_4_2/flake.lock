@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-timezones-v0_4_2": "src-timezones-v0_4_2"
+      }
+    },
+    "src-timezones-v0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541447788,
+        "narHash": "sha256-eT03Mn3/31bxywnI5pdOIAs1Bb8CkjEXrS22P4KTi9w=",
+        "owner": "GULPF",
+        "repo": "timezones",
+        "rev": "e6049ff2856e132032a9a8c6b6c22a5fadc72788",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GULPF",
+        "ref": "refs/tags/v0.4.2",
+        "repo": "timezones",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

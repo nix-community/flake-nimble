@@ -2,11 +2,10 @@
   description = ''mmap-backed bitarray implementation in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bitarray-master.flake = false;
+    inputs.src-bitarray-master.flake = false;
   inputs.src-bitarray-master.type = "github";
   inputs.src-bitarray-master.owner = "onecodex";
   inputs.src-bitarray-master.repo = "nim-bitarray";

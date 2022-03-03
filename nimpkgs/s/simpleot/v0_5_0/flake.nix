@@ -2,11 +2,10 @@
   description = ''Simple OT wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-simpleot-v0_5_0.flake = false;
+    inputs.src-simpleot-v0_5_0.flake = false;
   inputs.src-simpleot-v0_5_0.type = "github";
   inputs.src-simpleot-v0_5_0.owner = "markspanbroek";
   inputs.src-simpleot-v0_5_0.repo = "simpleot.nim";

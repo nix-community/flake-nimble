@@ -2,11 +2,10 @@
   description = ''Serializer and tools for flat binary files.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-flatty-master.flake = false;
+    inputs.src-flatty-master.flake = false;
   inputs.src-flatty-master.type = "github";
   inputs.src-flatty-master.owner = "treeform";
   inputs.src-flatty-master.repo = "flatty";

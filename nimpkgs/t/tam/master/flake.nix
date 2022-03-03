@@ -2,11 +2,10 @@
   description = ''Tales of Maj'Eyal addon manager'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tam-master.flake = false;
+    inputs.src-tam-master.flake = false;
   inputs.src-tam-master.type = "github";
   inputs.src-tam-master.owner = "SolitudeSF";
   inputs.src-tam-master.repo = "tam";

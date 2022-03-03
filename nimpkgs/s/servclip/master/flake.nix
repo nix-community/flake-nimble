@@ -2,11 +2,10 @@
   description = ''Manage your clipboard remotely'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-servclip-master.flake = false;
+    inputs.src-servclip-master.flake = false;
   inputs.src-servclip-master.type = "gitlab";
   inputs.src-servclip-master.owner = "lurlo";
   inputs.src-servclip-master.repo = "servclip";

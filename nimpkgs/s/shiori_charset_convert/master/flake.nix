@@ -2,11 +2,10 @@
   description = ''The SHIORI Message charset convert utility'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-shiori_charset_convert-master.flake = false;
+    inputs.src-shiori_charset_convert-master.flake = false;
   inputs.src-shiori_charset_convert-master.type = "github";
   inputs.src-shiori_charset_convert-master.owner = "Narazaka";
   inputs.src-shiori_charset_convert-master.repo = "shiori_charset_convert-nim";

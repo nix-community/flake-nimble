@@ -2,11 +2,10 @@
   description = ''A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-litestore-v1_9_0.flake = false;
+    inputs.src-litestore-v1_9_0.flake = false;
   inputs.src-litestore-v1_9_0.type = "github";
   inputs.src-litestore-v1_9_0.owner = "h3rald";
   inputs.src-litestore-v1_9_0.repo = "litestore";

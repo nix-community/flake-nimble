@@ -2,11 +2,10 @@
   description = ''A command to encode / decode text with your dictionary'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-edens-master.flake = false;
+    inputs.src-edens-master.flake = false;
   inputs.src-edens-master.type = "github";
   inputs.src-edens-master.owner = "jiro4989";
   inputs.src-edens-master.repo = "edens";

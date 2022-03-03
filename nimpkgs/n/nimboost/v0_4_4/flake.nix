@@ -2,11 +2,10 @@
   description = ''Additions to the Nim's standard library, like boost for C++'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimboost-v0_4_4.flake = false;
+    inputs.src-nimboost-v0_4_4.flake = false;
   inputs.src-nimboost-v0_4_4.type = "github";
   inputs.src-nimboost-v0_4_4.owner = "vegansk";
   inputs.src-nimboost-v0_4_4.repo = "nimboost";

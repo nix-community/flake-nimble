@@ -2,11 +2,10 @@
   description = ''A simple cross language struct and enum file generator.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-wings-v0_0_5-alpha.flake = false;
+    inputs.src-wings-v0_0_5-alpha.flake = false;
   inputs.src-wings-v0_0_5-alpha.type = "github";
   inputs.src-wings-v0_0_5-alpha.owner = "binhonglee";
   inputs.src-wings-v0_0_5-alpha.repo = "wings";

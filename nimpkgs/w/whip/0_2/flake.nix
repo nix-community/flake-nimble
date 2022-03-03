@@ -2,11 +2,10 @@
   description = ''Whip is high performance web application server based on httpbeast a nest for redix tree based routing with some extra opmtizations.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-whip-0_2.flake = false;
+    inputs.src-whip-0_2.flake = false;
   inputs.src-whip-0_2.type = "github";
   inputs.src-whip-0_2.owner = "mattaylor";
   inputs.src-whip-0_2.repo = "whip";

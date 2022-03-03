@@ -2,11 +2,10 @@
   description = ''Polynomial operations'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-polynumeric-v0_2_0.flake = false;
+    inputs.src-polynumeric-v0_2_0.flake = false;
   inputs.src-polynumeric-v0_2_0.type = "github";
   inputs.src-polynumeric-v0_2_0.owner = "SciNim";
   inputs.src-polynumeric-v0_2_0.repo = "polynumeric";

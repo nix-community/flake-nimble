@@ -2,11 +2,10 @@
   description = ''A simple task runner. Run tasks and watch file changes with custom paths.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-monit-v1_2_2.flake = false;
+    inputs.src-monit-v1_2_2.flake = false;
   inputs.src-monit-v1_2_2.type = "github";
   inputs.src-monit-v1_2_2.owner = "jiro4989";
   inputs.src-monit-v1_2_2.repo = "monit";

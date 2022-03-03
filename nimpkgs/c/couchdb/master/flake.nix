@@ -2,11 +2,10 @@
   description = ''A library for managing your CouchDB. Easy & comfortably to use.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-couchdb-master.flake = false;
+    inputs.src-couchdb-master.flake = false;
   inputs.src-couchdb-master.type = "github";
   inputs.src-couchdb-master.owner = "theAkito";
   inputs.src-couchdb-master.repo = "nim-couchdb";

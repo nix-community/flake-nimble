@@ -2,11 +2,10 @@
   description = ''Bindings for the Thalmic Labs Myo gesture control armband SDK.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-myo-master.flake = false;
+    inputs.src-myo-master.flake = false;
   inputs.src-myo-master.type = "github";
   inputs.src-myo-master.owner = "nimious";
   inputs.src-myo-master.repo = "myo";

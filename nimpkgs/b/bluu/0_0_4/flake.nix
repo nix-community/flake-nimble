@@ -2,11 +2,10 @@
   description = ''Microsoft Azure Cloud Computing Platform and Services (MAC) APIs'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bluu-0_0_4.flake = false;
+    inputs.src-bluu-0_0_4.flake = false;
   inputs.src-bluu-0_0_4.type = "github";
   inputs.src-bluu-0_0_4.owner = "disruptek";
   inputs.src-bluu-0_0_4.repo = "bluu";

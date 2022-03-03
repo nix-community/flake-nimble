@@ -2,11 +2,10 @@
   description = ''envconfig provides a function to get config objects from environment variables.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-envconfig-v1_0_0.flake = false;
+    inputs.src-envconfig-v1_0_0.flake = false;
   inputs.src-envconfig-v1_0_0.type = "github";
   inputs.src-envconfig-v1_0_0.owner = "jiro4989";
   inputs.src-envconfig-v1_0_0.repo = "envconfig";

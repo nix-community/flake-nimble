@@ -2,11 +2,10 @@
   description = ''Prints a dot graph of a nim ast dumped using the `dumpTree` macro.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-astdot-main.flake = false;
+    inputs.src-astdot-main.flake = false;
   inputs.src-astdot-main.type = "github";
   inputs.src-astdot-main.owner = "Rekihyt";
   inputs.src-astdot-main.repo = "astdot";

@@ -2,11 +2,10 @@
   description = ''A Nim library to create and manage temporary directories.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tempdir-master.flake = false;
+    inputs.src-tempdir-master.flake = false;
   inputs.src-tempdir-master.type = "github";
   inputs.src-tempdir-master.owner = "euantorano";
   inputs.src-tempdir-master.repo = "tempdir.nim";

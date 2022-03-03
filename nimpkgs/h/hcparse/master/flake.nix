@@ -2,11 +2,10 @@
   description = ''High-level nim wrapper for C/C++ parsing'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hcparse-master.flake = false;
+    inputs.src-hcparse-master.flake = false;
   inputs.src-hcparse-master.type = "github";
   inputs.src-hcparse-master.owner = "haxscramper";
   inputs.src-hcparse-master.repo = "hcparse";

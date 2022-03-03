@@ -2,11 +2,10 @@
   description = ''Statistic-driven microbenchmark framework'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-criterion-master.flake = false;
+    inputs.src-criterion-master.flake = false;
   inputs.src-criterion-master.type = "github";
   inputs.src-criterion-master.owner = "disruptek";
   inputs.src-criterion-master.repo = "criterion";

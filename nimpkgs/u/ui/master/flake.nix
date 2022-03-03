@@ -2,11 +2,10 @@
   description = ''A wrapper for libui'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-ui-master.flake = false;
+    inputs.src-ui-master.flake = false;
   inputs.src-ui-master.type = "github";
   inputs.src-ui-master.owner = "nim-lang";
   inputs.src-ui-master.repo = "ui";

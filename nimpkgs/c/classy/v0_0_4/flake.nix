@@ -2,11 +2,10 @@
   description = ''typeclasses for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-classy-v0_0_4.flake = false;
+    inputs.src-classy-v0_0_4.flake = false;
   inputs.src-classy-v0_0_4.type = "github";
   inputs.src-classy-v0_0_4.owner = "nigredo-tori";
   inputs.src-classy-v0_0_4.repo = "classy";

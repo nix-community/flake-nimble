@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-csvql-3_0": "src-csvql-3_0"
+      }
+    },
+    "src-csvql-3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1536755006,
+        "narHash": "sha256-Ch3FA6YbSCCZZxqk6K2QWS69jF3ncpuxGHXIikBX2PQ=",
+        "owner": "Bennyelg",
+        "repo": "csvql",
+        "rev": "d56a10e7a08a2144497a1a31f1e6642aa9e436e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Bennyelg",
+        "ref": "refs/tags/3.0",
+        "repo": "csvql",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

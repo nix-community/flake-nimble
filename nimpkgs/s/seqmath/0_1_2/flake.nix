@@ -2,11 +2,10 @@
   description = ''Nim math library for sequences and nested sequences (extends math library)'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-seqmath-0_1_2.flake = false;
+    inputs.src-seqmath-0_1_2.flake = false;
   inputs.src-seqmath-0_1_2.type = "github";
   inputs.src-seqmath-0_1_2.owner = "jlp765";
   inputs.src-seqmath-0_1_2.repo = "seqmath";

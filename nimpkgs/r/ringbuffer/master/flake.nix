@@ -2,11 +2,10 @@
   description = ''Circular buffer implementation'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-RingBuffer-master.flake = false;
+    inputs.src-RingBuffer-master.flake = false;
   inputs.src-RingBuffer-master.type = "github";
   inputs.src-RingBuffer-master.owner = "megawac";
   inputs.src-RingBuffer-master.repo = "RingBuffer.nim";

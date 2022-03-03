@@ -2,11 +2,10 @@
   description = ''Sitmo parallel random number generator in Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-sitmo-master.flake = false;
+    inputs.src-sitmo-master.flake = false;
   inputs.src-sitmo-master.type = "github";
   inputs.src-sitmo-master.owner = "jxy";
   inputs.src-sitmo-master.repo = "sitmo";

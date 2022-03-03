@@ -2,11 +2,10 @@
   description = ''UI building with Gnome's Glade'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-uibuilder-master.flake = false;
+    inputs.src-uibuilder-master.flake = false;
   inputs.src-uibuilder-master.type = "github";
   inputs.src-uibuilder-master.owner = "ba0f3";
   inputs.src-uibuilder-master.repo = "uibuilder.nim";

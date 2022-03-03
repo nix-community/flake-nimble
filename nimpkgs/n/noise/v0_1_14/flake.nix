@@ -2,11 +2,10 @@
   description = ''Nim implementation of linenoise command line editor'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-noise-v0_1_14.flake = false;
+    inputs.src-noise-v0_1_14.flake = false;
   inputs.src-noise-v0_1_14.type = "github";
   inputs.src-noise-v0_1_14.owner = "jangko";
   inputs.src-noise-v0_1_14.repo = "nim-noise";

@@ -2,11 +2,10 @@
   description = ''A MessagePack binding for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-msgpack-master.flake = false;
+    inputs.src-msgpack-master.flake = false;
   inputs.src-msgpack-master.type = "github";
   inputs.src-msgpack-master.owner = "akiradeveloper";
   inputs.src-msgpack-master.repo = "msgpack-nim";

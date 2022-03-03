@@ -2,11 +2,10 @@
   description = ''Jalili <=> Gregorian date converter, originally a copy of http://jdf.scr.ir/'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-jalali_nim-main.flake = false;
+    inputs.src-jalali_nim-main.flake = false;
   inputs.src-jalali_nim-main.type = "github";
   inputs.src-jalali_nim-main.owner = "hamidb80";
   inputs.src-jalali_nim-main.repo = "jalili-nim";

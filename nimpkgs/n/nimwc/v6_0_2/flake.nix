@@ -2,11 +2,10 @@
   description = ''A website management tool. Run the file and access your webpage.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nimwc-v6_0_2.flake = false;
+    inputs.src-nimwc-v6_0_2.flake = false;
   inputs.src-nimwc-v6_0_2.type = "github";
   inputs.src-nimwc-v6_0_2.owner = "ThomasTJdev";
   inputs.src-nimwc-v6_0_2.repo = "nim_websitecreator";

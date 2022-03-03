@@ -2,11 +2,10 @@
   description = ''Consistent Overhead Byte Stuffing for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-cobs-master.flake = false;
+    inputs.src-cobs-master.flake = false;
   inputs.src-cobs-master.type = "github";
   inputs.src-cobs-master.owner = "keyme";
   inputs.src-cobs-master.repo = "nim_cobs";

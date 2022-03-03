@@ -2,11 +2,10 @@
   description = ''A dead simple, no-nonsense parser combinator library written in pure Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-honeycomb-v0_1_1.flake = false;
+    inputs.src-honeycomb-v0_1_1.flake = false;
   inputs.src-honeycomb-v0_1_1.type = "github";
   inputs.src-honeycomb-v0_1_1.owner = "KatrinaKitten";
   inputs.src-honeycomb-v0_1_1.repo = "honeycomb";

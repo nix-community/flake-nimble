@@ -2,11 +2,10 @@
   description = ''Easy way to 'Mock' C++ interface'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-clibpp-master.flake = false;
+    inputs.src-clibpp-master.flake = false;
   inputs.src-clibpp-master.type = "github";
   inputs.src-clibpp-master.owner = "onionhammer";
   inputs.src-clibpp-master.repo = "clibpp";

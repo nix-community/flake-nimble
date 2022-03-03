@@ -2,11 +2,10 @@
   description = ''A mod manager for TF2'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-tf2plug-master.flake = false;
+    inputs.src-tf2plug-master.flake = false;
   inputs.src-tf2plug-master.type = "gitlab";
   inputs.src-tf2plug-master.owner = "waylon531";
   inputs.src-tf2plug-master.repo = "tf2plug";

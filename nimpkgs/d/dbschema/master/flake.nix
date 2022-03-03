@@ -2,11 +2,10 @@
   description = ''Database schema migration library for Nim language.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dbschema-master.flake = false;
+    inputs.src-dbschema-master.flake = false;
   inputs.src-dbschema-master.type = "github";
   inputs.src-dbschema-master.owner = "vegansk";
   inputs.src-dbschema-master.repo = "dbschema";

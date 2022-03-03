@@ -2,11 +2,10 @@
   description = ''zfcore is high performance asynchttpserver and web framework for nim lang'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-zfcore-v1_1_5.flake = false;
+    inputs.src-zfcore-v1_1_5.flake = false;
   inputs.src-zfcore-v1_1_5.type = "github";
   inputs.src-zfcore-v1_1_5.owner = "zendbit";
   inputs.src-zfcore-v1_1_5.repo = "nim.zfcore";

@@ -2,11 +2,10 @@
   description = ''Plotting tool using NiGui'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nmiline-master.flake = false;
+    inputs.src-nmiline-master.flake = false;
   inputs.src-nmiline-master.type = "github";
   inputs.src-nmiline-master.owner = "mzteruru52";
   inputs.src-nmiline-master.repo = "NmiLine";

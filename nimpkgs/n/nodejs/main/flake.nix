@@ -2,11 +2,10 @@
   description = ''NodeJS Standard Library for Nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-nodejs-main.flake = false;
+    inputs.src-nodejs-main.flake = false;
   inputs.src-nodejs-main.type = "github";
   inputs.src-nodejs-main.owner = "juancarlospaco";
   inputs.src-nodejs-main.repo = "nodestdlib";

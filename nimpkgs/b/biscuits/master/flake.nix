@@ -2,11 +2,10 @@
   description = ''better cookie handling'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-biscuits-master.flake = false;
+    inputs.src-biscuits-master.flake = false;
   inputs.src-biscuits-master.type = "github";
   inputs.src-biscuits-master.owner = "achesak";
   inputs.src-biscuits-master.repo = "nim-biscuits";

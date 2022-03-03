@@ -2,11 +2,10 @@
   description = ''Wrapper for Horde3D, a small open source 3D rendering engine.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-horde3d-master.flake = false;
+    inputs.src-horde3d-master.flake = false;
   inputs.src-horde3d-master.type = "github";
   inputs.src-horde3d-master.owner = "fowlmouth";
   inputs.src-horde3d-master.repo = "horde3d";

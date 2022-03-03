@@ -2,11 +2,10 @@
   description = ''JSON serialization framework'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-eminim-master.flake = false;
+    inputs.src-eminim-master.flake = false;
   inputs.src-eminim-master.type = "github";
   inputs.src-eminim-master.owner = "planetis-m";
   inputs.src-eminim-master.repo = "eminim";

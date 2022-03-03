@@ -2,11 +2,10 @@
   description = ''create db util sources from csv'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-csv2dbsrc-master.flake = false;
+    inputs.src-csv2dbsrc-master.flake = false;
   inputs.src-csv2dbsrc-master.type = "github";
   inputs.src-csv2dbsrc-master.owner = "z-kk";
   inputs.src-csv2dbsrc-master.repo = "csv2dbsrc";

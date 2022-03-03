@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-tf2plug-master": "src-tf2plug-master"
+      }
+    },
+    "src-tf2plug-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562618959,
+        "narHash": "sha256-hO2vv5f+YBf+Ydm0Z3ckmVZAfLrc7b2X7SlkrIhE7II=",
+        "owner": "waylon531",
+        "repo": "tf2plug",
+        "rev": "abacf19cc05bb72b90aff41adcd2a1a9d967ebbc",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "waylon531",
+        "ref": "refs/heads/master",
+        "repo": "tf2plug",
+        "type": "gitlab"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

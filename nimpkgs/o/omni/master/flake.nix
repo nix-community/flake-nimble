@@ -2,11 +2,10 @@
   description = ''omni is a DSL for low-level audio programming.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-omni-master.flake = false;
+    inputs.src-omni-master.flake = false;
   inputs.src-omni-master.type = "github";
   inputs.src-omni-master.owner = "vitreo12";
   inputs.src-omni-master.repo = "omni";

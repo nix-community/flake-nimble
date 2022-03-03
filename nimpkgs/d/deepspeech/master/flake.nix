@@ -2,11 +2,10 @@
   description = ''Nim bindings for mozilla's DeepSpeech model.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-deepspeech-master.flake = false;
+    inputs.src-deepspeech-master.flake = false;
   inputs.src-deepspeech-master.type = "gitlab";
   inputs.src-deepspeech-master.owner = "eagledot";
   inputs.src-deepspeech-master.repo = "nim-deepspeech";

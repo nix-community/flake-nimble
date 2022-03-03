@@ -2,11 +2,10 @@
   description = ''A library for colorizing paths according to LS_COLORS'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-lscolors-master.flake = false;
+    inputs.src-lscolors-master.flake = false;
   inputs.src-lscolors-master.type = "github";
   inputs.src-lscolors-master.owner = "joachimschmidt557";
   inputs.src-lscolors-master.repo = "nim-lscolors";

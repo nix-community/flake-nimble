@@ -2,11 +2,10 @@
   description = ''markx selects execution targets with editor and executes commands.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-markx-master.flake = false;
+    inputs.src-markx-master.flake = false;
   inputs.src-markx-master.type = "github";
   inputs.src-markx-master.owner = "jiro4989";
   inputs.src-markx-master.repo = "markx";

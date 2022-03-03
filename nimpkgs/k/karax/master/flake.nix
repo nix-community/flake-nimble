@@ -2,11 +2,10 @@
   description = ''Karax is a framework for developing single page applications in Nim.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-karax-master.flake = false;
+    inputs.src-karax-master.flake = false;
   inputs.src-karax-master.type = "github";
   inputs.src-karax-master.owner = "karaxnim";
   inputs.src-karax-master.repo = "karax";

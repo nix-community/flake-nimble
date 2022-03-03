@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nptr-v0_1_10": "src-nptr-v0_1_10"
+      }
+    },
+    "src-nptr-v0_1_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1619349451,
+        "narHash": "sha256-I60ygBAKduuH7Shb++j1FuoB7DP15nd6cLyzbx+psA8=",
+        "owner": "henryas",
+        "repo": "nptr",
+        "rev": "03618f9cc638654a2785299e394cb7511c92f773",
+        "type": "github"
+      },
+      "original": {
+        "owner": "henryas",
+        "ref": "refs/tags/v0.1.10",
+        "repo": "nptr",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

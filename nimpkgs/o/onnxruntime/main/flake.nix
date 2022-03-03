@@ -2,11 +2,10 @@
   description = ''onnxruntime C Api wrapped for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-onnxruntime-main.flake = false;
+    inputs.src-onnxruntime-main.flake = false;
   inputs.src-onnxruntime-main.type = "github";
   inputs.src-onnxruntime-main.owner = "YesDrX";
   inputs.src-onnxruntime-main.repo = "onnxruntime-nim";

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-ternary_tree-v0_1_13": "src-ternary_tree-v0_1_13"
+      }
+    },
+    "src-ternary_tree-v0_1_13": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602556583,
+        "narHash": "sha256-SwHbP5yf4JhHKB9tX5Zw4nwvGWdXGe/1uKQY6J86FB4=",
+        "owner": "calcit-lang",
+        "repo": "ternary-tree",
+        "rev": "e29d872e00432254ca3bd7b4eecb428ad6fd1718",
+        "type": "github"
+      },
+      "original": {
+        "owner": "calcit-lang",
+        "ref": "refs/tags/v0.1.13",
+        "repo": "ternary-tree",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

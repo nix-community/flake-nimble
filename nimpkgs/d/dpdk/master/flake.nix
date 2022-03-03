@@ -2,11 +2,10 @@
   description = ''Library for fast packet processing'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-dpdk-master.flake = false;
+    inputs.src-dpdk-master.flake = false;
   inputs.src-dpdk-master.type = "github";
   inputs.src-dpdk-master.owner = "nimscale";
   inputs.src-dpdk-master.repo = "dpdk";

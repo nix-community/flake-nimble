@@ -2,11 +2,10 @@
   description = ''subhook wrapper'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-subhook-master.flake = false;
+    inputs.src-subhook-master.flake = false;
   inputs.src-subhook-master.type = "github";
   inputs.src-subhook-master.owner = "ba0f3";
   inputs.src-subhook-master.repo = "subhook.nim";

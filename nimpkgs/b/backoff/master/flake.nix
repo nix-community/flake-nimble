@@ -2,11 +2,10 @@
   description = ''Implementation of exponential backoff for nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-backoff-master.flake = false;
+    inputs.src-backoff-master.flake = false;
   inputs.src-backoff-master.type = "github";
   inputs.src-backoff-master.owner = "CORDEA";
   inputs.src-backoff-master.repo = "backoff";

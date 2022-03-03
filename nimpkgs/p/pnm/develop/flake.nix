@@ -2,11 +2,10 @@
   description = ''pnm is library for PNM (Portable AnyMap).'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-pnm-develop.flake = false;
+    inputs.src-pnm-develop.flake = false;
   inputs.src-pnm-develop.type = "github";
   inputs.src-pnm-develop.owner = "jiro4989";
   inputs.src-pnm-develop.repo = "pnm";

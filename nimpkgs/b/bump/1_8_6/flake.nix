@@ -2,11 +2,10 @@
   description = ''a tiny tool to bump nimble versions'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-bump-1_8_6.flake = false;
+    inputs.src-bump-1_8_6.flake = false;
   inputs.src-bump-1_8_6.type = "github";
   inputs.src-bump-1_8_6.owner = "disruptek";
   inputs.src-bump-1_8_6.repo = "bump";

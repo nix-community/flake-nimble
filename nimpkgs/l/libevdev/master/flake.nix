@@ -2,11 +2,10 @@
   description = ''Wrapper for libevdev, Linux input device processing library'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-libevdev-master.flake = false;
+    inputs.src-libevdev-master.flake = false;
   inputs.src-libevdev-master.type = "github";
   inputs.src-libevdev-master.owner = "luked99";
   inputs.src-libevdev-master.repo = "libevdev.nim";

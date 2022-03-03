@@ -2,11 +2,10 @@
   description = ''A port of HSLuv, a human friendly alternative to HSL.'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-hsluv-master.flake = false;
+    inputs.src-hsluv-master.flake = false;
   inputs.src-hsluv-master.type = "github";
   inputs.src-hsluv-master.owner = "isthisnagee";
   inputs.src-hsluv-master.repo = "hsluv-nim";

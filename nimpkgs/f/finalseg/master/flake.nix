@@ -2,11 +2,10 @@
   description = ''jieba's finalseg port to nim'';
     inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "flake-nimble";
-  inputs.flakeNimbleLib.ref = "flake-pinning";
-  inputs.flakeNimbleLib.dir = "nimpkgs/";
+  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
+  inputs.flakeNimbleLib.ref = "master";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.src-finalseg-master.flake = false;
+    inputs.src-finalseg-master.flake = false;
   inputs.src-finalseg-master.type = "github";
   inputs.src-finalseg-master.owner = "bung87";
   inputs.src-finalseg-master.repo = "finalseg";
