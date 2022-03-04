@@ -32,10 +32,127 @@
         "type": "indirect"
       }
     },
+    "passgen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "passgen-0_1_0": "passgen-0_1_0",
+        "passgen-0_2_0": "passgen-0_2_0",
+        "passgen-master": "passgen-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/passgen",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/passgen",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "passgen-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "passgen",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "passgen",
+          "nixpkgs"
+        ],
+        "src-passgen-0_1_0": "src-passgen-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/passgen/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/passgen/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "passgen-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "passgen",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "passgen",
+          "nixpkgs"
+        ],
+        "src-passgen-0_2_0": "src-passgen-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/passgen/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/passgen/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "passgen-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "passgen",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "passgen",
+          "nixpkgs"
+        ],
+        "src-passgen-master": "src-passgen-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/passgen/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/passgen/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "passgen": "passgen",
         "src-npg-0_2_0": "src-npg-0_2_0"
       }
     },
@@ -53,6 +170,57 @@
         "owner": "rustomax",
         "ref": "refs/tags/0.2.0",
         "repo": "npg",
+        "type": "github"
+      }
+    },
+    "src-passgen-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569729805,
+        "narHash": "sha256-MsDLcRKx3HCkU4z5cc66tH+dy09lq9fmD1UtESAdIwY=",
+        "owner": "rustomax",
+        "repo": "nim-passgen",
+        "rev": "0f2447db2db1aca791162268773be04d46bf5056",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rustomax",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nim-passgen",
+        "type": "github"
+      }
+    },
+    "src-passgen-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613853409,
+        "narHash": "sha256-fRmNxJ0fZtTd1COM/umGzPFmtwkwGQ6yaWyorcAnfSA=",
+        "owner": "rustomax",
+        "repo": "nim-passgen",
+        "rev": "0842adfc441c62cf9b7aa24c0d55c41b39ef50b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rustomax",
+        "ref": "refs/tags/0.2.0",
+        "repo": "nim-passgen",
+        "type": "github"
+      }
+    },
+    "src-passgen-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613853409,
+        "narHash": "sha256-fRmNxJ0fZtTd1COM/umGzPFmtwkwGQ6yaWyorcAnfSA=",
+        "owner": "rustomax",
+        "repo": "nim-passgen",
+        "rev": "0842adfc441c62cf9b7aa24c0d55c41b39ef50b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rustomax",
+        "ref": "refs/heads/master",
+        "repo": "nim-passgen",
         "type": "github"
       }
     }

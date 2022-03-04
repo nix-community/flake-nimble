@@ -36,7 +36,8 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-cittadino-0_1_1": "src-cittadino-0_1_1"
+        "src-cittadino-0_1_1": "src-cittadino-0_1_1",
+        "stomp": "stomp"
       }
     },
     "src-cittadino-0_1_1": {
@@ -53,6 +54,79 @@
         "owner": "makingspace",
         "ref": "refs/tags/0.1.1",
         "repo": "cittadino",
+        "type": "github"
+      }
+    },
+    "src-stomp-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635370585,
+        "narHash": "sha256-QgGnDiOE/tsiQvBDL/3S2ZxsjFe30cqdwFvt30L63AE=",
+        "owner": "mahlonsmith",
+        "repo": "nim-stomp",
+        "rev": "0001914dad2e119e7f340f28e9c7cdc3e513bc5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mahlonsmith",
+        "ref": "refs/heads/master",
+        "repo": "nim-stomp",
+        "type": "github"
+      }
+    },
+    "stomp": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "stomp-master": "stomp-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/stomp",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/stomp",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "stomp-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "stomp",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "stomp",
+          "nixpkgs"
+        ],
+        "src-stomp-master": "src-stomp-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/stomp/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/stomp/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
         "type": "github"
       }
     }

@@ -1,5 +1,151 @@
 {
   "nodes": {
+    "bignum": {
+      "inputs": {
+        "bignum-1_0_2": "bignum-1_0_2",
+        "bignum-1_0_3": "bignum-1_0_3",
+        "bignum-1_0_4": "bignum-1_0_4",
+        "bignum-master": "bignum-master",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/b/bignum",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/bignum",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "bignum-1_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "bignum",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "bignum",
+          "nixpkgs"
+        ],
+        "src-bignum-1_0_2": "src-bignum-1_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/bignum/1_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/bignum/1_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "bignum-1_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "bignum",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "bignum",
+          "nixpkgs"
+        ],
+        "src-bignum-1_0_3": "src-bignum-1_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/bignum/1_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/bignum/1_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "bignum-1_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "bignum",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "bignum",
+          "nixpkgs"
+        ],
+        "src-bignum-1_0_4": "src-bignum-1_0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/bignum/1_0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/bignum/1_0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "bignum-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "bignum",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "bignum",
+          "nixpkgs"
+        ],
+        "src-bignum-master": "src-bignum-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/bignum/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/bignum/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,6 +180,7 @@
     },
     "root": {
       "inputs": {
+        "bignum": "bignum",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-ad-0_7": "src-ad-0_7"
@@ -53,6 +200,74 @@
         "owner": "subsetpark",
         "ref": "refs/tags/0.7",
         "repo": "ad",
+        "type": "github"
+      }
+    },
+    "src-bignum-1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1544026646,
+        "narHash": "sha256-iL32I36AbSRBhdtjUSs5eFMFNQU4RCeyZ80huTEU1sY=",
+        "owner": "SciNim",
+        "repo": "bignum",
+        "rev": "80bf98a5a950d19c9c2ff387be8dc863dba00380",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SciNim",
+        "ref": "refs/tags/1.0.2",
+        "repo": "bignum",
+        "type": "github"
+      }
+    },
+    "src-bignum-1_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1547003588,
+        "narHash": "sha256-rzm8AzjMF1YKCqCB1/TbUrNgQmmVO1haHYL5ZiRFxJo=",
+        "owner": "SciNim",
+        "repo": "bignum",
+        "rev": "4320e150323cf122d2ca989f496aa95a1a9d4008",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SciNim",
+        "ref": "refs/tags/1.0.3",
+        "repo": "bignum",
+        "type": "github"
+      }
+    },
+    "src-bignum-1_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1561046089,
+        "narHash": "sha256-ddMg4sQAAIwcDSSwCp6EPavUowTzIBm1Yk8P6G1jcXY=",
+        "owner": "SciNim",
+        "repo": "bignum",
+        "rev": "39b6e9a76d7c519b5383fa81c2a0fe20242953ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SciNim",
+        "ref": "refs/tags/1.0.4",
+        "repo": "bignum",
+        "type": "github"
+      }
+    },
+    "src-bignum-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1561046089,
+        "narHash": "sha256-ddMg4sQAAIwcDSSwCp6EPavUowTzIBm1Yk8P6G1jcXY=",
+        "owner": "SciNim",
+        "repo": "bignum",
+        "rev": "39b6e9a76d7c519b5383fa81c2a0fe20242953ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SciNim",
+        "ref": "refs/heads/master",
+        "repo": "bignum",
         "type": "github"
       }
     }

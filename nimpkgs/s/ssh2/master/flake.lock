@@ -21,6 +21,62 @@
         "type": "github"
       }
     },
+    "libssh2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "libssh2-master": "libssh2-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libssh2",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libssh2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libssh2-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libssh2",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libssh2",
+          "nixpkgs"
+        ],
+        "src-libssh2-master": "src-libssh2-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libssh2/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libssh2/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,8 +91,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "libssh2": "libssh2",
         "nixpkgs": "nixpkgs",
         "src-ssh2-master": "src-ssh2-master"
+      }
+    },
+    "src-libssh2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633048877,
+        "narHash": "sha256-RVEbRh4SPgj4PbLq+D3rLAlhma2heLmqYV0go1M4Nq0=",
+        "owner": "ba0f3",
+        "repo": "libssh2.nim",
+        "rev": "cef1f6419d0c0d2740778af7ba83c588db8cc6a3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "libssh2.nim",
+        "type": "github"
       }
     },
     "src-ssh2-master": {

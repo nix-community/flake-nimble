@@ -32,10 +32,67 @@
         "type": "indirect"
       }
     },
+    "python": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "python-master": "python-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/python",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/python",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "python-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "python",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "python",
+          "nixpkgs"
+        ],
+        "src-python-master": "src-python-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/python/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/python/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "python": "python",
         "src-pipelines-v0_1_0": "src-pipelines-v0_1_0"
       }
     },
@@ -53,6 +110,23 @@
         "owner": "calebwin",
         "ref": "refs/tags/v0.1.0",
         "repo": "pipelines",
+        "type": "github"
+      }
+    },
+    "src-python-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1508670376,
+        "narHash": "sha256-Wl4on0rf4zbNxmwmq/ZkNiPIFCZY+1BdokPQoba2EVI=",
+        "owner": "nim-lang",
+        "repo": "python",
+        "rev": "b7c3b2c447a69fdb0a974ba149062e52182fda08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "python",
         "type": "github"
       }
     }

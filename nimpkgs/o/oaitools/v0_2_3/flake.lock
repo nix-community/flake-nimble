@@ -36,7 +36,8 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-oaitools-v0_2_3": "src-oaitools-v0_2_3"
+        "src-oaitools-v0_2_3": "src-oaitools-v0_2_3",
+        "xmltools": "xmltools"
       }
     },
     "src-oaitools-v0_2_3": {
@@ -53,6 +54,502 @@
         "owner": "markpbaggett",
         "ref": "refs/tags/v0.2.3",
         "repo": "oaitools.nim",
+        "type": "github"
+      }
+    },
+    "src-xmltools-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1553571134,
+        "narHash": "sha256-ylNhog24NjqIcPC9XuZ1h54QthpH5S6HWaFkM71bY94=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "1b2c55196aacb76e54b1caa2c5840190b41d241f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/heads/master",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1459309357,
+        "narHash": "sha256-RJtLN0Lxr6x4bpJjiJawRYInW53HQWUkO8WrkjiDDLc=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "52663760f2cfbc247970e10a8a13c5bfeb7f14af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.0.1",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1459398789,
+        "narHash": "sha256-IBW6IQMUdLeVGH1f54zdpFFEDcHzxk3iC7wStFeicYg=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "0f4d031bb15d6f7770eb1de26e276255dbb39ea4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.0.2",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1464688459,
+        "narHash": "sha256-ofCXyJLpwemewlrHsCfMAbIOW7Km8mZJX7lUtf39HA0=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "6ac597ad8a1f63d577fe3e3ed5ba5d8eb1afacf9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487223787,
+        "narHash": "sha256-Hd51/eVjj7NMmqmPhxzIp54i1npHnHcNxKc3cXcfLCw=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "cfe5dfd4dbe1cf8cabaa6447eec3b9e5bffc0a0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487560006,
+        "narHash": "sha256-8w8pv3xHDgEAFzneYrzqqmXBdnkcVlgXzyeXsku1rDQ=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "baac57e785ef90388f3e8b273defb48c9884f7ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1488859936,
+        "narHash": "sha256-eTIdP8Do+QekJ83bZlhAChPMk7c//xyOjbjVZP9NVAg=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "6f7256ba551730287a030bc64ac224fc340a8f6d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1498382954,
+        "narHash": "sha256-FHx5xYu/zetXZWEgJM4h2OgJ5XifQbQ0HIFsH37aFAg=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "54cae25c5f36d1ae44a5690d8794c5089f41d974",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1510290714,
+        "narHash": "sha256-+u4fcgz9V8I5EVQ9pLewuyIZiNHExbyDWUpcZRrDtdc=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "d005ccf2403d5123b7ab81adc5b95a7b2d5a8c66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "src-xmltools-v0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1553512823,
+        "narHash": "sha256-FjmfFADiewMpXv0qX5VbKephxaCig3X5QTbrUDxPeJ0=",
+        "owner": "vegansk",
+        "repo": "xmltools",
+        "rev": "d01fe4ee613124bd8a05a08188dca53c0cad155d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.1.5",
+        "repo": "xmltools",
+        "type": "github"
+      }
+    },
+    "xmltools": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "xmltools-master": "xmltools-master",
+        "xmltools-v0_0_1": "xmltools-v0_0_1",
+        "xmltools-v0_0_2": "xmltools-v0_0_2",
+        "xmltools-v0_0_3": "xmltools-v0_0_3",
+        "xmltools-v0_1_0": "xmltools-v0_1_0",
+        "xmltools-v0_1_1": "xmltools-v0_1_1",
+        "xmltools-v0_1_2": "xmltools-v0_1_2",
+        "xmltools-v0_1_3": "xmltools-v0_1_3",
+        "xmltools-v0_1_4": "xmltools-v0_1_4",
+        "xmltools-v0_1_5": "xmltools-v0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-master": "src-xmltools-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_0_1": "src-xmltools-v0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_0_2": "src-xmltools-v0_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_0_3": "src-xmltools-v0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_1_0": "src-xmltools-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_1_1": "src-xmltools-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_1_2": "src-xmltools-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_1_3": "src-xmltools-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_1_4": "src-xmltools-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xmltools-v0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xmltools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xmltools",
+          "nixpkgs"
+        ],
+        "src-xmltools-v0_1_5": "src-xmltools-v0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xmltools/v0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xmltools/v0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
         "type": "github"
       }
     }

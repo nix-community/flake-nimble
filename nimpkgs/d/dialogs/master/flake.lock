@@ -21,6 +21,152 @@
         "type": "github"
       }
     },
+    "gtk2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "gtk2-master": "gtk2-master",
+        "gtk2-v1_0": "gtk2-v1_0",
+        "gtk2-v1_2": "gtk2-v1_2",
+        "gtk2-v1_3": "gtk2-v1_3",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/g/gtk2",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/gtk2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "gtk2-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gtk2",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gtk2",
+          "nixpkgs"
+        ],
+        "src-gtk2-master": "src-gtk2-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/gtk2/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/gtk2/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "gtk2-v1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gtk2",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gtk2",
+          "nixpkgs"
+        ],
+        "src-gtk2-v1_0": "src-gtk2-v1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/gtk2/v1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/gtk2/v1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "gtk2-v1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gtk2",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gtk2",
+          "nixpkgs"
+        ],
+        "src-gtk2-v1_2": "src-gtk2-v1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/gtk2/v1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/gtk2/v1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "gtk2-v1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gtk2",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gtk2",
+          "nixpkgs"
+        ],
+        "src-gtk2-v1_3": "src-gtk2-v1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/gtk2/v1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/gtk2/v1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,6 +181,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "gtk2": "gtk2",
         "nixpkgs": "nixpkgs",
         "src-dialogs-master": "src-dialogs-master"
       }
@@ -53,6 +200,74 @@
         "owner": "nim-lang",
         "ref": "refs/heads/master",
         "repo": "dialogs",
+        "type": "github"
+      }
+    },
+    "src-gtk2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615203690,
+        "narHash": "sha256-ETzF7KwtDHlp8gtAR7lGO1WiP1opo32K9INFHOjc5iU=",
+        "owner": "nim-lang",
+        "repo": "gtk2",
+        "rev": "f953f3a6a117e8a9dbdb5cc98adf564e6d8f6509",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "gtk2",
+        "type": "github"
+      }
+    },
+    "src-gtk2-v1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1458924989,
+        "narHash": "sha256-/9u9bghfwe0vPanfKFdQ9myhEwMhKb+vQ82HrqtvuWA=",
+        "owner": "nim-lang",
+        "repo": "gtk2",
+        "rev": "26d5ff359cb40dfd5de62ec379d5764dfb2b232e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.0",
+        "repo": "gtk2",
+        "type": "github"
+      }
+    },
+    "src-gtk2-v1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1507639034,
+        "narHash": "sha256-BzvpZU9PKSelLv6fyV0hKPpnBMnxm0ZYJlElXtHA/UA=",
+        "owner": "nim-lang",
+        "repo": "gtk2",
+        "rev": "d3f15fdd95aa822a7d7fc0f7384e44771e682bc8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.2",
+        "repo": "gtk2",
+        "type": "github"
+      }
+    },
+    "src-gtk2-v1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1509742308,
+        "narHash": "sha256-KPHMF2gHIwjRuslJOhbf7KU0VUwp4Oe0+63YKKOBCPk=",
+        "owner": "nim-lang",
+        "repo": "gtk2",
+        "rev": "6bf54b27e7be0b976bf820682c4c30014c479148",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.3",
+        "repo": "gtk2",
         "type": "github"
       }
     }

@@ -1,5 +1,121 @@
 {
   "nodes": {
+    "base32": {
+      "inputs": {
+        "base32-0_1_2": "base32-0_1_2",
+        "base32-0_1_3": "base32-0_1_3",
+        "base32-master": "base32-master",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/b/base32",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/base32",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "base32-0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "base32",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "base32",
+          "nixpkgs"
+        ],
+        "src-base32-0_1_2": "src-base32-0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/base32/0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/base32/0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "base32-0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "base32",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "base32",
+          "nixpkgs"
+        ],
+        "src-base32-0_1_3": "src-base32-0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/base32/0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/base32/0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "base32-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "base32",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "base32",
+          "nixpkgs"
+        ],
+        "src-base32-master": "src-base32-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/base32/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/base32/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +150,61 @@
     },
     "root": {
       "inputs": {
+        "base32": "base32",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-runeterra_decks-v0_6_0": "src-runeterra_decks-v0_6_0"
+      }
+    },
+    "src-base32-0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1497674573,
+        "narHash": "sha256-CDzXwjoldkoEaAm7LeQDXkEeBXoMp83rqar/cQMbOTY=",
+        "owner": "OpenSystemsLab",
+        "repo": "base32.nim",
+        "rev": "8d63f8c1c189885e7f7450845f2c6617ffe99d13",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.2",
+        "repo": "base32.nim",
+        "type": "github"
+      }
+    },
+    "src-base32-0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1560613959,
+        "narHash": "sha256-BsDly13xsY2bu4N9LGHB0OGej/JhAx3B01TDdF0M8Jk=",
+        "owner": "OpenSystemsLab",
+        "repo": "base32.nim",
+        "rev": "f541038fbe49fdb118cc2002d29824b9fc4bfd61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.3",
+        "repo": "base32.nim",
+        "type": "github"
+      }
+    },
+    "src-base32-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633050238,
+        "narHash": "sha256-MEezxEa4nXsaLKyQfZVwpU1vXqrxRWYQclSgB4/imDw=",
+        "owner": "OpenSystemsLab",
+        "repo": "base32.nim",
+        "rev": "3e1abe8dcdf801c0e112674502cfcbe6593fc4e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/heads/master",
+        "repo": "base32.nim",
+        "type": "github"
       }
     },
     "src-runeterra_decks-v0_6_0": {

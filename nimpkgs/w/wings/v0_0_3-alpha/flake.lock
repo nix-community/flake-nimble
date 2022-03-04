@@ -36,7 +36,8 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-wings-v0_0_3-alpha": "src-wings-v0_0_3-alpha"
+        "src-wings-v0_0_3-alpha": "src-wings-v0_0_3-alpha",
+        "stones": "stones"
       }
     },
     "src-wings-v0_0_3-alpha": {
@@ -53,6 +54,32 @@
         "owner": "binhonglee",
         "ref": "refs/tags/v0.0.3-alpha",
         "repo": "wings",
+        "type": "github"
+      }
+    },
+    "stones": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/s/stones",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/stones",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
         "type": "github"
       }
     }

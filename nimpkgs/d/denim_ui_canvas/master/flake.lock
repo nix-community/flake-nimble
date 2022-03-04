@@ -1,5 +1,61 @@
 {
   "nodes": {
+    "denim_ui": {
+      "inputs": {
+        "denim_ui-master": "denim_ui-master",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/d/denim_ui",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/denim_ui",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "denim_ui-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui",
+          "nixpkgs"
+        ],
+        "src-denim_ui-master": "src-denim_ui-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/denim_ui/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/denim_ui/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +90,27 @@
     },
     "root": {
       "inputs": {
+        "denim_ui": "denim_ui",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-denim_ui_canvas-master": "src-denim_ui_canvas-master"
+      }
+    },
+    "src-denim_ui-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641467777,
+        "narHash": "sha256-zroY7WAk1eYjn0zFi0LP1mOwEJgwa9IzYnaS7SsAe/c=",
+        "owner": "nortero-code",
+        "repo": "denim-ui",
+        "rev": "f7c11ce80d96197bd3a3ee457c742678b3c4f80f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nortero-code",
+        "ref": "refs/heads/master",
+        "repo": "denim-ui",
+        "type": "github"
       }
     },
     "src-denim_ui_canvas-master": {

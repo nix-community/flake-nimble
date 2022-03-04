@@ -32,11 +32,1072 @@
         "type": "indirect"
       }
     },
+    "paravim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "paravim-0_10_0": "paravim-0_10_0",
+        "paravim-0_11_0": "paravim-0_11_0",
+        "paravim-0_12_0": "paravim-0_12_0",
+        "paravim-0_13_0": "paravim-0_13_0",
+        "paravim-0_14_0": "paravim-0_14_0",
+        "paravim-0_15_1": "paravim-0_15_1",
+        "paravim-0_16_0": "paravim-0_16_0",
+        "paravim-0_16_1": "paravim-0_16_1",
+        "paravim-0_17_0": "paravim-0_17_0",
+        "paravim-0_17_1": "paravim-0_17_1",
+        "paravim-0_18_0": "paravim-0_18_0",
+        "paravim-0_18_1": "paravim-0_18_1",
+        "paravim-0_18_2": "paravim-0_18_2",
+        "paravim-0_2_0": "paravim-0_2_0",
+        "paravim-0_3_0": "paravim-0_3_0",
+        "paravim-0_4_0": "paravim-0_4_0",
+        "paravim-0_5_0": "paravim-0_5_0",
+        "paravim-0_6_0": "paravim-0_6_0",
+        "paravim-0_7_0": "paravim-0_7_0",
+        "paravim-0_8_0": "paravim-0_8_0",
+        "paravim-0_9_0": "paravim-0_9_0",
+        "paravim-master": "paravim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_10_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_10_0": "src-paravim-0_10_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_10_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_10_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_11_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_11_0": "src-paravim-0_11_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_11_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_11_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_12_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_12_0": "src-paravim-0_12_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_12_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_12_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_13_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_13_0": "src-paravim-0_13_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_13_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_13_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_14_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_14_0": "src-paravim-0_14_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_14_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_14_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_15_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_15_1": "src-paravim-0_15_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_15_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_15_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_16_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_16_0": "src-paravim-0_16_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_16_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_16_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_16_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_16_1": "src-paravim-0_16_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_16_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_16_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_17_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_17_0": "src-paravim-0_17_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_17_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_17_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_17_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_17_1": "src-paravim-0_17_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_17_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_17_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_18_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_18_0": "src-paravim-0_18_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_18_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_18_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_18_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_18_1": "src-paravim-0_18_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_18_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_18_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_18_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_18_2": "src-paravim-0_18_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_18_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_18_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_2_0": "src-paravim-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_3_0": "src-paravim-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_4_0": "src-paravim-0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_5_0": "src-paravim-0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_6_0": "src-paravim-0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_7_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_7_0": "src-paravim-0_7_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_7_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_7_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_8_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_8_0": "src-paravim-0_8_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_8_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_8_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-0_9_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-0_9_0": "src-paravim-0_9_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/0_9_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/0_9_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paravim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paravim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paravim",
+          "nixpkgs"
+        ],
+        "src-paravim-master": "src-paravim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paravim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paravim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "paravim": "paravim",
         "src-pvim-0_8_0": "src-pvim-0_8_0"
+      }
+    },
+    "src-paravim-0_10_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587225215,
+        "narHash": "sha256-RTtHBJZuTHwSLMvs8/tSFRjKOEvWeaX35S8FwNNwgqQ=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "434df5301e8299f74eb38e4f731c0d832f7ed23c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.10.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_11_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591918714,
+        "narHash": "sha256-sPQfHVcd3oVazTIk1im8Sj7XPcfpdZikc00lzWodKX0=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "ee54ffedd40ecf25fa733a1599310c72d4dd3ad1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.11.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_12_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592059588,
+        "narHash": "sha256-i/RM8Qb91TE2sKzWtaWZZANU+M4APMa9om2Y1e0SldU=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "6e7a2a966bbf39890a42e8c8a7ee5ea99ca24f76",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.12.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_13_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592355377,
+        "narHash": "sha256-A3wNlOmq0wlFqPqqKU2ayGYwBbuve4M7cQj3rWKEFB8=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "fd74c839f4d1e24fbdcab71e6374dc17308690b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.13.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_14_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592407512,
+        "narHash": "sha256-GzmfXyaDT6q8OxqcIVj3meiAIZ91QvTOH+ol8nk7ybM=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "7a067602e566fdfada5b084b3070c01aed20b7c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.14.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_15_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593207931,
+        "narHash": "sha256-GGf7iDryD8TDQKto0WzUFe58djvv7GqzQZ+lAl0PKYk=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "48b39d5c80b44ba90ec239afa083eb2b296899cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.15.1",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_16_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594060243,
+        "narHash": "sha256-RR20O5Hw7101HWzzbxhCu4vRfi+kzcWBhwFubXu21fs=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "b443298be23c2a900709b3eac955fa7d24c0f78e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.16.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_16_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594941630,
+        "narHash": "sha256-+7qBvsxFu+XNoehzS55PlwjMKsKBWqurkydw2TYd/vM=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "c2172747ff105bf94a010907cb27960952a6ec4b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.16.1",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_17_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595888474,
+        "narHash": "sha256-FBPNfzdxKEgf78EbvqkGxrWUGs+GPjs6THXvxOryYes=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "19b62a1a16db62f96096b3ff597ad5d30a5a16ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.17.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_17_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596042331,
+        "narHash": "sha256-5w3MjEHyUObu+k9GSJhxsF0C9spldeJK/TULW4zxVyc=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "c4612b26c88af51af6ab4da8920de827ed36e9cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.17.1",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_18_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597432856,
+        "narHash": "sha256-5Kv64hN0ZzRT9fNtfo05JV7SB3AFusEUygSPpEQhbks=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "ae8d3ae620ab2559948c0ca013c06006a52b9b01",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.18.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_18_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597970212,
+        "narHash": "sha256-tqjctRzYCPkuHW1ZKKSuD2JWdnBwOYEr0XoVeRuvJOA=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "cfdbb72063d9c9931509f813a82b80a726c96a29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.18.1",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_18_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603408298,
+        "narHash": "sha256-7lb5M/bt2N6tQLqD00VpIPjtpqLnFahxrzlHTnzlGNM=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "138531ba37baee0810570841791e9b23a6332b92",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.18.2",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584065758,
+        "narHash": "sha256-ZqPDL1sWjz/mAPF7tufa8rQh3AJHrzjYl9mier3L0I8=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "bfcf8cfb11f8beda7fe1535f47b2490116570ced",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.2.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584576271,
+        "narHash": "sha256-k+opTEZsMrbu2b+8x5nct1tVknKFAe5gToQz4LmfmDU=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "8a7872ce34831b9f26e2289148b9a19eb4a434a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.3.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584612973,
+        "narHash": "sha256-ztvOJddtk+Qkwn7kG+P9l8iPVqB0RqhSOn/+fbKnLUQ=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "dc232e4a2e5fe4eda0f569243d9d33b7923b6479",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.4.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584618246,
+        "narHash": "sha256-qxQPQ3LcROae+00cddQpsO4bD7buPMkryHTVAmFzJoY=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "fbb5fcdf2d8bd74b1f157a8007bca87d34e4caf3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.5.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584641854,
+        "narHash": "sha256-IyTQSrxLBxHVlebRHZnRXu5iN3oOB7ZaUN+67xHJc5c=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "ebab0263f2666d23002b1f0167122d571d0ffe69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.6.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584923847,
+        "narHash": "sha256-3JwpzwUzHTfYrOJdaNNCdFowquCr+gxRNlH7yq547s0=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "d5158bb25b8c41f224ec33718f0c898e7a3b9e2b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.7.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_8_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1585328427,
+        "narHash": "sha256-N/YyHqnU93SUhlkwAGJNCypzuUhYChYZv8T+2b/+hII=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "ba591af68f050f9646567afcc6421c024f18385a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.8.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-0_9_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586829898,
+        "narHash": "sha256-tdhc5ww93Wou02VcuaHrFlHn19ssTvcCIeBzKmnz1SA=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "a542de1bca88973e1ae06153763bb0dfc3de447b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.9.0",
+        "repo": "paravim",
+        "type": "github"
+      }
+    },
+    "src-paravim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641957187,
+        "narHash": "sha256-uDTQ++G10kodSU61jmUI3wKQuunqd35PtaDrB3J2cfc=",
+        "owner": "paranim",
+        "repo": "paravim",
+        "rev": "b8811d02a3701ae6fbfacf68db1fbac4bdb23c9f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/heads/master",
+        "repo": "paravim",
+        "type": "github"
       }
     },
     "src-pvim-0_8_0": {

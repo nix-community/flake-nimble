@@ -1,5 +1,61 @@
 {
   "nodes": {
+    "darwin": {
+      "inputs": {
+        "darwin-master": "darwin-master",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/d/darwin",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/darwin",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "darwin-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "darwin",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "darwin",
+          "nixpkgs"
+        ],
+        "src-darwin-master": "src-darwin-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/darwin/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/darwin/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +90,27 @@
     },
     "root": {
       "inputs": {
+        "darwin": "darwin",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-plists-master": "src-plists-master"
+      }
+    },
+    "src-darwin-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621267632,
+        "narHash": "sha256-c1S1NkA1QNgeqSINNUWqwoGYXx7v6L4kf6ASzWV9U2I=",
+        "owner": "yglukhov",
+        "repo": "darwin",
+        "rev": "ada28d08a0dd649cd4bde82551b46bd7313cd12c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "darwin",
+        "type": "github"
       }
     },
     "src-plists-master": {

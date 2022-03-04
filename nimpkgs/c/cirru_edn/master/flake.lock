@@ -1,5 +1,777 @@
 {
   "nodes": {
+    "cirru_parser": {
+      "inputs": {
+        "cirru_parser-0_0_5": "cirru_parser-0_0_5",
+        "cirru_parser-master": "cirru_parser-master",
+        "cirru_parser-v0_0_1": "cirru_parser-v0_0_1",
+        "cirru_parser-v0_0_2": "cirru_parser-v0_0_2",
+        "cirru_parser-v0_0_3": "cirru_parser-v0_0_3",
+        "cirru_parser-v0_0_4": "cirru_parser-v0_0_4",
+        "cirru_parser-v0_0_5": "cirru_parser-v0_0_5",
+        "cirru_parser-v0_1_0": "cirru_parser-v0_1_0",
+        "cirru_parser-v0_1_1": "cirru_parser-v0_1_1",
+        "cirru_parser-v0_1_2": "cirru_parser-v0_1_2",
+        "cirru_parser-v0_1_3": "cirru_parser-v0_1_3",
+        "cirru_parser-v0_1_4": "cirru_parser-v0_1_4",
+        "cirru_parser-v0_2_0": "cirru_parser-v0_2_0",
+        "cirru_parser-v0_2_1": "cirru_parser-v0_2_1",
+        "cirru_parser-v0_2_2": "cirru_parser-v0_2_2",
+        "cirru_parser-v0_2_3": "cirru_parser-v0_2_3",
+        "cirru_parser-v0_2_4": "cirru_parser-v0_2_4",
+        "cirru_parser-v0_3_0": "cirru_parser-v0_3_0",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-0_0_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-0_0_5": "src-cirru_parser-0_0_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/0_0_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/0_0_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-master": "src-cirru_parser-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_0_1": "src-cirru_parser-v0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_0_2": "src-cirru_parser-v0_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_0_3": "src-cirru_parser-v0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_0_4": "src-cirru_parser-v0_0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_0_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_0_5": "src-cirru_parser-v0_0_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_0_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_1_0": "src-cirru_parser-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_1_1": "src-cirru_parser-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_1_2": "src-cirru_parser-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_1_3": "src-cirru_parser-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_1_4": "src-cirru_parser-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_2_0": "src-cirru_parser-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_2_1": "src-cirru_parser-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_2_2": "src-cirru_parser-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_2_3": "src-cirru_parser-v0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_2_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_2_4": "src-cirru_parser-v0_2_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_2_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_parser-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_parser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_parser",
+          "nixpkgs"
+        ],
+        "src-cirru_parser-v0_3_0": "src-cirru_parser-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_parser/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_parser/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_writer": {
+      "inputs": {
+        "cirru_writer-master": "cirru_writer-master",
+        "cirru_writer-v0_1_0": "cirru_writer-v0_1_0",
+        "cirru_writer-v0_1_1": "cirru_writer-v0_1_1",
+        "cirru_writer-v0_1_2": "cirru_writer-v0_1_2",
+        "cirru_writer-v0_1_3": "cirru_writer-v0_1_3",
+        "cirru_writer-v0_1_4": "cirru_writer-v0_1_4",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_writer",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_writer",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_writer-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_writer",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_writer",
+          "nixpkgs"
+        ],
+        "src-cirru_writer-master": "src-cirru_writer-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_writer/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_writer/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_writer-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_writer",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_writer",
+          "nixpkgs"
+        ],
+        "src-cirru_writer-v0_1_0": "src-cirru_writer-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_writer-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_writer",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_writer",
+          "nixpkgs"
+        ],
+        "src-cirru_writer-v0_1_1": "src-cirru_writer-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_writer-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_writer",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_writer",
+          "nixpkgs"
+        ],
+        "src-cirru_writer-v0_1_2": "src-cirru_writer-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_writer-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_writer",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_writer",
+          "nixpkgs"
+        ],
+        "src-cirru_writer-v0_1_3": "src-cirru_writer-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cirru_writer-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cirru_writer",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cirru_writer",
+          "nixpkgs"
+        ],
+        "src-cirru_writer-v0_1_4": "src-cirru_writer-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cirru_writer/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,6 +806,8 @@
     },
     "root": {
       "inputs": {
+        "cirru_parser": "cirru_parser",
+        "cirru_writer": "cirru_writer",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-cirru_edn-master": "src-cirru_edn-master"
@@ -53,6 +827,414 @@
         "owner": "Cirru",
         "ref": "refs/heads/master",
         "repo": "cirru-edn.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-0_0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570896464,
+        "narHash": "sha256-+ILvonLh4wzrfyXsSFz7vj0y9WQoQLjjgXFrCN9hpSE=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "e720cd68b2830016ad0c45ea87a3782b1a1623c6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/0.0.5",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611553996,
+        "narHash": "sha256-bYa4KfOXDu/OgHe4CKXpR2UnB5GgIE8NHGz1zqo3VAU=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "83fa0ef3947153b803e3acdce8b8245ff3653914",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/heads/master",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566616827,
+        "narHash": "sha256-MkkB58p2RL1WLMXvE/pX5+L7F++/iOjWUdz+22cPjrY=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "958ee7ab47af0ff01fa6258e034457778e6af1fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.0.1",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566715334,
+        "narHash": "sha256-jjFpU/neUFpGph6OdKOKSlYnaatTPV9x24BdqXw1Kv8=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "259c6bc7174235e89f9bcca269d6b8d325055026",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.0.2",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567700599,
+        "narHash": "sha256-IvY0zFaLt2uU5W/MYDH/0SQE2ZL1zLE9OU3Q3CufCwo=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "ce901271a007040073e0c6c1256cffe6d8d69e43",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569379995,
+        "narHash": "sha256-LO7fgrx9tmwwDCg3pDSkwALyw181dms2xH/mJgVC3+k=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "6cbb6d7cc2befb130876d6a87e31bd0a504e6b3c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.0.4",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597901428,
+        "narHash": "sha256-b58VgW6aZ4jaEruUx9SbLrvMf1L44RlzjjX9Hh/lUSo=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "166603f77ce05533a73e78913aa985ddade4c848",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.0.5",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599043780,
+        "narHash": "sha256-J79OiL7QkTup2FoVZjkgt2mv4iy29DHUYi1o/372fq0=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "f0784ec80f04bc4b6bb27652102c1e72ec4a9ade",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599045327,
+        "narHash": "sha256-ar+zvKXoPIvq5QJlelVBuPg6XzatGt22k3zncuJfQQg=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "a13cd12730dfaa253660ced4add19eef6e57be71",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599973122,
+        "narHash": "sha256-AHwd68RUnGRH+/tz3axbApCunJd8kWJuzU+CdPM6VIU=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "842fea7964a9525f4f65d06b575c0b09fec0dd15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599985125,
+        "narHash": "sha256-lcBuu92fowIXsX7vSjBUElTKySuWrwrdtDv1uWvR5M8=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "aa525afd2373a3c6dcad0634c977f64d81d8f6fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601373992,
+        "narHash": "sha256-lWSOqx7MTTrOCxZTu1qJproJbYONLZVSRuIDRU16pys=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "255c3106695726476354fd82cdc62f9827a6e750",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601374448,
+        "narHash": "sha256-Kl7kpus8UyHweGY4e5KyDQNMf0grGaUYrdMb4EBUOYo=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "2647176fc95e6511eb22901dac4db818f45b97c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602320934,
+        "narHash": "sha256-AsGQHoB+Jl3awp3ls8WudzIpQQZJNoZ9YbTH2ZtEHDU=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "be7f06c5e51293abb9157e30e772a126c4b85ebd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602323953,
+        "narHash": "sha256-qj8646c37uqWLupNtAXhCITotf05BrfhLgftM5rZ2Mo=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "463aa0d05a0969a5d40f12877fd7c479b7d0b8df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603814976,
+        "narHash": "sha256-Sg8m29D1poBRCfgWorFajy/6AixCTOx5E9ZvFnUKNLk=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "c89f653f3dd4cccb212d85b9cfc44f31e8dfe778",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.2.3",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603953616,
+        "narHash": "sha256-CyfQBO2Hg/rr9O/7rjRT+KqNVCehLJ7gakAd/REyKeY=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "c0a93c5352b148e7dd212141cfcc9afd10663914",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.2.4",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_parser-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611497665,
+        "narHash": "sha256-bYa4KfOXDu/OgHe4CKXpR2UnB5GgIE8NHGz1zqo3VAU=",
+        "owner": "Cirru",
+        "repo": "parser.nim",
+        "rev": "5359673f86703b13ef94752a0424b0a4338e9e2a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "parser.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_writer-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615708272,
+        "narHash": "sha256-C4hfmLusPYeyvagrWP6gvyG4TFhMxChoTutkyRmd4Jg=",
+        "owner": "Cirru",
+        "repo": "writer.nim",
+        "rev": "d603e225f9436084abe955863591da3071245415",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/heads/master",
+        "repo": "writer.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_writer-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607411781,
+        "narHash": "sha256-VAal/W4U5OvebuW11bomfqRhQTAL5ALMaA49wD+MZ90=",
+        "owner": "Cirru",
+        "repo": "writer.nim",
+        "rev": "0a440964c5f9de0bfa02ab2683049f5b79c96997",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "writer.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_writer-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609237222,
+        "narHash": "sha256-Yet+xWE8HV+RC0yNm0n+XJcoDI1RWo/abS1XwaLtmII=",
+        "owner": "Cirru",
+        "repo": "writer.nim",
+        "rev": "21c9a7c4a4140c68e835cb0978b47323a4d0a028",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "writer.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_writer-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613656061,
+        "narHash": "sha256-XcJg5tLiVNrwx44HfeutjKzIB1k/rRIE66guTnGOQ+0=",
+        "owner": "Cirru",
+        "repo": "writer.nim",
+        "rev": "0a2844fcb38700bb70242e29e7abf82789e5cedc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "writer.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_writer-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613983639,
+        "narHash": "sha256-3nu3nCsfTwTKqurNcZikpXQqOD1HPkV8WXE6n7UWDY8=",
+        "owner": "Cirru",
+        "repo": "writer.nim",
+        "rev": "db9030f077eeaf7df9023ccfd7791992a12e56f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "writer.nim",
+        "type": "github"
+      }
+    },
+    "src-cirru_writer-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615600900,
+        "narHash": "sha256-C4hfmLusPYeyvagrWP6gvyG4TFhMxChoTutkyRmd4Jg=",
+        "owner": "Cirru",
+        "repo": "writer.nim",
+        "rev": "cad89cb60ce8f4cc49686765e32545b17ef3950b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cirru",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "writer.nim",
         "type": "github"
       }
     }

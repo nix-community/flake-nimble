@@ -32,10 +32,157 @@
         "type": "indirect"
       }
     },
+    "ptr_math": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "ptr_math-main": "ptr_math-main",
+        "ptr_math-v0_0_1": "ptr_math-v0_0_1",
+        "ptr_math-v0_2_0": "ptr_math-v0_2_0",
+        "ptr_math-v0_3_0": "ptr_math-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/ptr_math",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/ptr_math",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ptr_math-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ptr_math",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ptr_math",
+          "nixpkgs"
+        ],
+        "src-ptr_math-main": "src-ptr_math-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/ptr_math/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/ptr_math/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ptr_math-v0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ptr_math",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ptr_math",
+          "nixpkgs"
+        ],
+        "src-ptr_math-v0_0_1": "src-ptr_math-v0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/ptr_math/v0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/ptr_math/v0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ptr_math-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ptr_math",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ptr_math",
+          "nixpkgs"
+        ],
+        "src-ptr_math-v0_2_0": "src-ptr_math-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/ptr_math/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/ptr_math/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ptr_math-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ptr_math",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ptr_math",
+          "nixpkgs"
+        ],
+        "src-ptr_math-v0_3_0": "src-ptr_math-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/ptr_math/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/ptr_math/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "ptr_math": "ptr_math",
         "src-networkutils-master": "src-networkutils-master"
       }
     },
@@ -53,6 +200,74 @@
         "owner": "Q-Master",
         "ref": "refs/heads/master",
         "repo": "networkutils.nim",
+        "type": "github"
+      }
+    },
+    "src-ptr_math-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635774136,
+        "narHash": "sha256-Ia1+CqlIHcdY7U8t+NAjHZ+xMiUHsCB18+jxcXtwedM=",
+        "owner": "kaushalmodi",
+        "repo": "ptr_math",
+        "rev": "1ee3b7fe12f394edd5a1e2841491e8c2e9fd193b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaushalmodi",
+        "ref": "refs/heads/main",
+        "repo": "ptr_math",
+        "type": "github"
+      }
+    },
+    "src-ptr_math-v0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621563817,
+        "narHash": "sha256-Hg/aTmcMe5zXvMg8vGGSolyOIC0V8CGh1v66tL1hfUs=",
+        "owner": "kaushalmodi",
+        "repo": "ptr_math",
+        "rev": "b66a5a0d15794c4e4a57d82be59311da5434a4b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaushalmodi",
+        "ref": "refs/tags/v0.0.1",
+        "repo": "ptr_math",
+        "type": "github"
+      }
+    },
+    "src-ptr_math-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622742519,
+        "narHash": "sha256-D9PaokTjpSb4OeXd3NCLVDHPMmmzkJ0hwv3KwZNoaIo=",
+        "owner": "kaushalmodi",
+        "repo": "ptr_math",
+        "rev": "23de2eef31764e1b4bac13e88c89e744b7ed6462",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaushalmodi",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "ptr_math",
+        "type": "github"
+      }
+    },
+    "src-ptr_math-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623264503,
+        "narHash": "sha256-M+QEBwPtBMFkg1igbPeoE6B1Zi3A0DscCdLxy5eHwME=",
+        "owner": "kaushalmodi",
+        "repo": "ptr_math",
+        "rev": "fb1b0d5f484b80ec956d40d543ec836da4cfbc3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaushalmodi",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "ptr_math",
         "type": "github"
       }
     }

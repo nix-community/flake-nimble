@@ -1,5 +1,61 @@
 {
   "nodes": {
+    "dnsprotocol": {
+      "inputs": {
+        "dnsprotocol-main": "dnsprotocol-main",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dnsprotocol",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dnsprotocol",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dnsprotocol-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dnsprotocol",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dnsprotocol",
+          "nixpkgs"
+        ],
+        "src-dnsprotocol-main": "src-dnsprotocol-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dnsprotocol/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dnsprotocol/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +90,27 @@
     },
     "root": {
       "inputs": {
+        "dnsprotocol": "dnsprotocol",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-resolv-master": "src-resolv-master"
+      }
+    },
+    "src-dnsprotocol-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625196233,
+        "narHash": "sha256-di8Ky9rYRVAmH3E8oJZbv70xNkf3gSLerpXhcV10MPE=",
+        "owner": "rockcavera",
+        "repo": "nim-dnsprotocol",
+        "rev": "2cc2292005ca62e82333ceca26752bb4ae6e545e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/heads/main",
+        "repo": "nim-dnsprotocol",
+        "type": "github"
       }
     },
     "src-resolv-master": {

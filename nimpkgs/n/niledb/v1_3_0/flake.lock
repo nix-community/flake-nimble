@@ -36,7 +36,664 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "serializetools": "serializetools",
         "src-niledb-v1_3_0": "src-niledb-v1_3_0"
+      }
+    },
+    "serializetools": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "serializetools-master": "serializetools-master",
+        "serializetools-v1_0_0": "serializetools-v1_0_0",
+        "serializetools-v1_10_0": "serializetools-v1_10_0",
+        "serializetools-v1_11": "serializetools-v1_11",
+        "serializetools-v1_11_0": "serializetools-v1_11_0",
+        "serializetools-v1_12_0": "serializetools-v1_12_0",
+        "serializetools-v1_12_1": "serializetools-v1_12_1",
+        "serializetools-v1_12_2": "serializetools-v1_12_2",
+        "serializetools-v1_13_0": "serializetools-v1_13_0",
+        "serializetools-v1_16_0": "serializetools-v1_16_0",
+        "serializetools-v1_16_1": "serializetools-v1_16_1",
+        "serializetools-v1_16_2": "serializetools-v1_16_2",
+        "serializetools-v1_1_0": "serializetools-v1_1_0",
+        "serializetools-v1_2_0": "serializetools-v1_2_0",
+        "serializetools-v1_3_0": "serializetools-v1_3_0",
+        "serializetools-v1_3_1": "serializetools-v1_3_1",
+        "serializetools-v1_4_0": "serializetools-v1_4_0",
+        "serializetools-v1_5_0": "serializetools-v1_5_0",
+        "serializetools-v1_5_1": "serializetools-v1_5_1",
+        "serializetools-v1_6_0": "serializetools-v1_6_0",
+        "serializetools-v1_9_0": "serializetools-v1_9_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-master": "src-serializetools-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_0_0": "src-serializetools-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_10_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_10_0": "src-serializetools-v1_10_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_10_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_10_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_11": "src-serializetools-v1_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_11_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_11_0": "src-serializetools-v1_11_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_11_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_11_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_12_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_12_0": "src-serializetools-v1_12_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_12_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_12_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_12_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_12_1": "src-serializetools-v1_12_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_12_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_12_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_12_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_12_2": "src-serializetools-v1_12_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_12_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_12_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_13_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_13_0": "src-serializetools-v1_13_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_13_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_13_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_16_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_16_0": "src-serializetools-v1_16_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_16_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_16_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_16_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_16_1": "src-serializetools-v1_16_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_16_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_16_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_16_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_16_2": "src-serializetools-v1_16_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_16_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_16_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_1_0": "src-serializetools-v1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_2_0": "src-serializetools-v1_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_3_0": "src-serializetools-v1_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_3_1": "src-serializetools-v1_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_4_0": "src-serializetools-v1_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_5_0": "src-serializetools-v1_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_5_1": "src-serializetools-v1_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_6_0": "src-serializetools-v1_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "serializetools-v1_9_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "serializetools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "serializetools",
+          "nixpkgs"
+        ],
+        "src-serializetools-v1_9_0": "src-serializetools-v1_9_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/serializetools/v1_9_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/serializetools/v1_9_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
       }
     },
     "src-niledb-v1_3_0": {
@@ -53,6 +710,363 @@
         "owner": "JeffersonLab",
         "ref": "refs/tags/v1.3.0",
         "repo": "niledb",
+        "type": "github"
+      }
+    },
+    "src-serializetools-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609350540,
+        "narHash": "sha256-FgruZEgWYvSxUcBgRU4kRH1Dmc8B4tjhz6/9ok+f6Wg=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "2559bb0d87b2fcb09a77288afe6555a72eef4421",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/heads/master",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1495730286,
+        "narHash": "sha256-MTtQNUU/8rIB69e/LmK6rRSe53OKk1Ije/J5aBAEID0=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "9c8109873f85e33c8a1e74702cfa40ef01286db0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_10_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537391918,
+        "narHash": "sha256-C2O2TeXs6qSl3YS5/U6frHByt8rBeFOose9x8lNKX6Y=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "751b23235d7fe165dd99c88205d7775ee0f69be3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.10.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537459834,
+        "narHash": "sha256-Pfy/nsN/Jvj52utri2YfS2AjEV/EHIeBQnik0PPCSOY=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "6cb656db66995b01c373cd269b7251d8d50e8c74",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.11",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_11_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1542405126,
+        "narHash": "sha256-rtl1bJh9l9EuvUKGojw/atKXoZ1Gd7w92fWAG0CsjOc=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "954acc8a092eaca492a82fcc161020c402f28ee6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.11.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_12_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543096623,
+        "narHash": "sha256-J2Mqv01jAzauFqUQkhBl53aewCpR6CB82FOidZCmQWY=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "5b5d73a503f27dc57d68f1f103059b61535935c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.12.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_12_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543169500,
+        "narHash": "sha256-dSwseoa0kL7KN4+sZCwzu7MPeVn3o2ejHpif2DNZR9k=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "c0b45e34b065db54abc705c0346ba4a1ab3d05ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.12.1",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_12_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543173202,
+        "narHash": "sha256-2XitQR0vLn24JUxfcjbMqwHeopT1IDzyqTwmIyDyzbE=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "e99ec8f421a02852e426942403549c2b41d7fe00",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.12.2",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_13_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543779798,
+        "narHash": "sha256-DGio/P4D3d7JWdJBKgwJDpjQld4OSAEPu/xmSMKcKRo=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "6ae579a87840cd569325da7789bc14fe64d6c238",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.13.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_16_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608700340,
+        "narHash": "sha256-51RJEcL47FI7gUMG2/QpRJnvWV83ZLI3Uy7dToTh0Hk=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "38bd7cc0e854a3697cc0601fd7e2ee7e8a9f210a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.16.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_16_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609350343,
+        "narHash": "sha256-fKu/49X53CbTEAIR/8A7v6wZb4jNIHxvw+ZydLTsljo=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "a56cb8bfdd12e09159cbd2eac88647aef5754000",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.16.1",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_16_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609350540,
+        "narHash": "sha256-FgruZEgWYvSxUcBgRU4kRH1Dmc8B4tjhz6/9ok+f6Wg=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "2559bb0d87b2fcb09a77288afe6555a72eef4421",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.16.2",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1495861275,
+        "narHash": "sha256-Ee/xFbk7GiEVcNQ2qupwdIY/13BNHBY/YBYZ2j61q7A=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "3b5e12c7bb1b2b43c36cfa2f4aba2b78ddff8d7a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.1.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1495862880,
+        "narHash": "sha256-/K4PDZxgxTzYk8a2bopMBdJZNe5jexhN1Hk87C5CCDg=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "49c06ff0d23654f9b1bf8481d0fa68d15232de76",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1496328185,
+        "narHash": "sha256-s/dfvRD3ZLG9lPW0l4pcUuVAB/PN9HSlimIcopsBCfc=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "5d697882add3d19caa693092bd77f5c0d8d3cd84",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.3.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1496352992,
+        "narHash": "sha256-cLxZtRKxbLhVj6yBplK4l9YobPdes4v6Aew6UXoxjnU=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "290cec6bb52458ba961c1aed53853f3683c34db1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.3.1",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1496434914,
+        "narHash": "sha256-upnVTWYnxHsgvvlLjaynHdDkLprrYNiMv4r8DvUVffs=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "2f7389eddd67b8a02b7eaaaf02220e3f6cd6a922",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.4.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1498666669,
+        "narHash": "sha256-X9msR9K72lLFcJwOWqB63uVCg40blOz25y5uJGP2UUM=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "9b9e92a59130ffe93bdb7d6e61d5f41283407665",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.5.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1498878234,
+        "narHash": "sha256-S2sLXZfQsz1aWeJijavGJMrSQ7xkRBk7VL+jQosUSPU=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "ae9c3a2ecdfa64cc2effbc7683bf6b3125cdfde5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.5.1",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1499535077,
+        "narHash": "sha256-DUIn7g0p3r34DA/ZKKyMvnBshAxdlcKQrKRY403yxzI=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "3daf9d932a2be72473d13d3069ccc8faf2dfd0a6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.6.0",
+        "repo": "serializetools",
+        "type": "github"
+      }
+    },
+    "src-serializetools-v1_9_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506712246,
+        "narHash": "sha256-SnsLRb5betW7ojLYkMjsyfqIRRMjNcva/D0mzyYRzSo=",
+        "owner": "JeffersonLab",
+        "repo": "serializetools",
+        "rev": "96e5911f7d4526f43a8d13438995c715d4030710",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.9.0",
+        "repo": "serializetools",
         "type": "github"
       }
     }

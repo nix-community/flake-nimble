@@ -21,6 +21,212 @@
         "type": "github"
       }
     },
+    "ioselectors": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "ioselectors-master": "ioselectors-master",
+        "ioselectors-v0_1_0": "ioselectors-v0_1_0",
+        "ioselectors-v0_1_2": "ioselectors-v0_1_2",
+        "ioselectors-v0_1_4": "ioselectors-v0_1_4",
+        "ioselectors-v0_1_6": "ioselectors-v0_1_6",
+        "ioselectors-v0_1_8": "ioselectors-v0_1_8",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/i/ioselectors",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/ioselectors",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ioselectors-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ioselectors",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ioselectors",
+          "nixpkgs"
+        ],
+        "src-ioselectors-master": "src-ioselectors-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/ioselectors/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/ioselectors/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ioselectors-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ioselectors",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ioselectors",
+          "nixpkgs"
+        ],
+        "src-ioselectors-v0_1_0": "src-ioselectors-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ioselectors-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ioselectors",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ioselectors",
+          "nixpkgs"
+        ],
+        "src-ioselectors-v0_1_2": "src-ioselectors-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ioselectors-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ioselectors",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ioselectors",
+          "nixpkgs"
+        ],
+        "src-ioselectors-v0_1_4": "src-ioselectors-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ioselectors-v0_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ioselectors",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ioselectors",
+          "nixpkgs"
+        ],
+        "src-ioselectors-v0_1_6": "src-ioselectors-v0_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ioselectors-v0_1_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ioselectors",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ioselectors",
+          "nixpkgs"
+        ],
+        "src-ioselectors-v0_1_8": "src-ioselectors-v0_1_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/ioselectors/v0_1_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,6 +241,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "ioselectors": "ioselectors",
         "nixpkgs": "nixpkgs",
         "src-httpx-v0_1_8": "src-httpx-v0_1_8"
       }
@@ -53,6 +260,108 @@
         "owner": "xflywind",
         "ref": "refs/tags/v0.1.8",
         "repo": "httpx",
+        "type": "github"
+      }
+    },
+    "src-ioselectors-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604484256,
+        "narHash": "sha256-qCnSOE/3yeZ1tFnC+CI1dOu1iUb5kVqtL4YGEqMRZbk=",
+        "owner": "xflywind",
+        "repo": "ioselectors",
+        "rev": "6fcdbf3fddeb239885cd8bce15a0ab63c00647c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/heads/master",
+        "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "src-ioselectors-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598495472,
+        "narHash": "sha256-q/JfnGYN3hkMStiPRFHytVM/PO1iFkVCa3OmUULo/4o=",
+        "owner": "xflywind",
+        "repo": "ioselectors",
+        "rev": "ef5db4a395ade4f17fcfe328cb8e52c37059fb13",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "src-ioselectors-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598682238,
+        "narHash": "sha256-keJyy2FWcn+rPy+FszVxG6112QiKKWV+xpJQVlaxdtM=",
+        "owner": "xflywind",
+        "repo": "ioselectors",
+        "rev": "9d88fef2451e86e5431d6dbfcc05c7d5914f4f30",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "src-ioselectors-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600177354,
+        "narHash": "sha256-oSvTnFYb02e4SXCKWlySTdCm/6UB3EAJMgYYWKXZL5Y=",
+        "owner": "xflywind",
+        "repo": "ioselectors",
+        "rev": "1df6938c4395b12e742c81a0dd578f94cda065e3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "src-ioselectors-v0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601791925,
+        "narHash": "sha256-cFeQ8XXprznzwnH8WfQtwSNvPOCgfTe3Po31eq2feqQ=",
+        "owner": "xflywind",
+        "repo": "ioselectors",
+        "rev": "228e80c168847e87b9965ff236a5fafa8a15a02b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.6",
+        "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "src-ioselectors-v0_1_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604484256,
+        "narHash": "sha256-qCnSOE/3yeZ1tFnC+CI1dOu1iUb5kVqtL4YGEqMRZbk=",
+        "owner": "xflywind",
+        "repo": "ioselectors",
+        "rev": "6fcdbf3fddeb239885cd8bce15a0ab63c00647c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.8",
+        "repo": "ioselectors",
         "type": "github"
       }
     }

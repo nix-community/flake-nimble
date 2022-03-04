@@ -1,5 +1,331 @@
 {
   "nodes": {
+    "dimscord": {
+      "inputs": {
+        "dimscord-master": "dimscord-master",
+        "dimscord-v1_0_0": "dimscord-v1_0_0",
+        "dimscord-v1_0_1": "dimscord-v1_0_1",
+        "dimscord-v1_0_6": "dimscord-v1_0_6",
+        "dimscord-v1_0_7": "dimscord-v1_0_7",
+        "dimscord-v1_2_0": "dimscord-v1_2_0",
+        "dimscord-v1_2_1": "dimscord-v1_2_1",
+        "dimscord-v1_2_4": "dimscord-v1_2_4",
+        "dimscord-v1_2_5": "dimscord-v1_2_5",
+        "dimscord-v1_3_0": "dimscord-v1_3_0",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-master": "src-dimscord-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_0_0": "src-dimscord-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_0_1": "src-dimscord-v1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_0_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_0_6": "src-dimscord-v1_0_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_0_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_0_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_0_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_0_7": "src-dimscord-v1_0_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_0_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_0_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_2_0": "src-dimscord-v1_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_2_1": "src-dimscord-v1_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_2_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_2_4": "src-dimscord-v1_2_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_2_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_2_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_2_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_2_5": "src-dimscord-v1_2_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_2_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_2_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dimscord-v1_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dimscord",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dimscord",
+          "nixpkgs"
+        ],
+        "src-dimscord-v1_3_0": "src-dimscord-v1_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dimscord/v1_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dimscord/v1_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,6 +360,7 @@
     },
     "root": {
       "inputs": {
+        "dimscord": "dimscord",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-dimscmd-master": "src-dimscmd-master"
@@ -53,6 +380,176 @@
         "owner": "ire4ever1190",
         "ref": "refs/heads/master",
         "repo": "dimscordCommandHandler",
+        "type": "github"
+      }
+    },
+    "src-dimscord-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646064037,
+        "narHash": "sha256-9N+2ibDesUhTsCMDhgjZGTYP7DPzm0bxciI0tcPLI3k=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "56995964d1e07db2ac03629b016d7bf48a8545d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/heads/master",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594915691,
+        "narHash": "sha256-Hic15TEIJnemut46mAhF0DaxNbtsQk6AKcMNDIV2HB8=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "6da219eec3e59e775d64cc28598d3d5eb17fa20b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596823879,
+        "narHash": "sha256-f2O/tOtQffzV951mUxADO47qQC10cUDN72ngmrEsids=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "d2d0af4f07c6c6939ffb1a34f087c90b9640b616",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.0.1",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_0_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599761041,
+        "narHash": "sha256-abxR3BGuUV6an7K5xlavk6oXDgNE7Oz1TthP/dnFdCw=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "8a9391fede287fd5bc2f17b0683b8b56ddac8a9f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.0.6",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599833763,
+        "narHash": "sha256-DYVOCXJRGPuuOMZ/F077bF/mp8bvi/BspR0BhPXC2wg=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "96e313c71a270df1c955916219311eccc72cbeb9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.0.7",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604244828,
+        "narHash": "sha256-xGzbBGmHRNRVbNzgMpg2Ll1TKKSHJ0XVRLudlUB04cc=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "dd8a717973e4faa8f722b95fca6e46dcedce3f09",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604269660,
+        "narHash": "sha256-rahiWbvZQoMI/5YrcxLfoYHrEDpAnGBjMicwCFDEp1I=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "ee2858553d3cb88e8583d00d433925c7236370b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.2.1",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609014873,
+        "narHash": "sha256-uvp5VNP0wMpfU/XtHircpoAtmA/I2FD5fEuF/Y3nnQg=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "6305662d379e24e09b2ddf6af3c7eb0d533dd487",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.2.4",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609170551,
+        "narHash": "sha256-AHM9HJKxuzXtypVOhy9geROvL36z4DzRYYm4k6SIWxM=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "53f1f398765b4b4dab09c63f3b2689c0d763f6fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.2.5",
+        "repo": "dimscord",
+        "type": "github"
+      }
+    },
+    "src-dimscord-v1_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630010687,
+        "narHash": "sha256-B2wuFiGqX+krcASJrbaKEH/M+oDiUcZrSO1LM67haoM=",
+        "owner": "krisppurg",
+        "repo": "dimscord",
+        "rev": "38a26328a14ec17d7c463ee59a4c474c28830b7c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krisppurg",
+        "ref": "refs/tags/v1.3.0",
+        "repo": "dimscord",
         "type": "github"
       }
     }

@@ -32,10 +32,67 @@
         "type": "indirect"
       }
     },
+    "oldgtk3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "oldgtk3-master": "oldgtk3-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/oldgtk3",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/oldgtk3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "oldgtk3-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "oldgtk3",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "oldgtk3",
+          "nixpkgs"
+        ],
+        "src-oldgtk3-master": "src-oldgtk3-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/oldgtk3/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/oldgtk3/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "oldgtk3": "oldgtk3",
         "src-nimclutter-master": "src-nimclutter-master"
       }
     },
@@ -53,6 +110,23 @@
         "owner": "KeepCoolWithCoolidge",
         "ref": "refs/heads/master",
         "repo": "nimclutter",
+        "type": "github"
+      }
+    },
+    "src-oldgtk3-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613382861,
+        "narHash": "sha256-cpIVVXuxNjLVifJm+LvC0Uk8vjNhcAKzAD6+JjF5xPw=",
+        "owner": "stefansalewski",
+        "repo": "oldgtk3",
+        "rev": "4e60fd1c4c08241cc22336362fc4f487c633299c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stefansalewski",
+        "ref": "refs/heads/master",
+        "repo": "oldgtk3",
         "type": "github"
       }
     }

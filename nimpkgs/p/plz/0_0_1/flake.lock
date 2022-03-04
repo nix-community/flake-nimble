@@ -21,6 +21,62 @@
         "type": "github"
       }
     },
+    "libarchibi": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "libarchibi-master": "libarchibi-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libarchibi",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libarchibi",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libarchibi-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libarchibi",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libarchibi",
+          "nixpkgs"
+        ],
+        "src-libarchibi-master": "src-libarchibi-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libarchibi/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libarchibi/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -32,11 +88,86 @@
         "type": "indirect"
       }
     },
+    "requirementstxt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "requirementstxt-master": "requirementstxt-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/requirementstxt",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/requirementstxt",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "requirementstxt-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "requirementstxt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "requirementstxt",
+          "nixpkgs"
+        ],
+        "src-requirementstxt-master": "src-requirementstxt-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/requirementstxt/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/requirementstxt/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "libarchibi": "libarchibi",
         "nixpkgs": "nixpkgs",
+        "requirementstxt": "requirementstxt",
         "src-plz-0_0_1": "src-plz-0_0_1"
+      }
+    },
+    "src-libarchibi-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594235825,
+        "narHash": "sha256-hmCKvBUQ/OQUwKd7CHrhTECvUKZYZBz9XVruE9BebqQ=",
+        "owner": "juancarlospaco",
+        "repo": "libarchibi",
+        "rev": "862b18e47eacf45d87fd04215ec1875cb4d25fdf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "libarchibi",
+        "type": "github"
       }
     },
     "src-plz-0_0_1": {
@@ -53,6 +184,23 @@
         "owner": "juancarlospaco",
         "ref": "refs/tags/0.0.1",
         "repo": "nim-pypi",
+        "type": "github"
+      }
+    },
+    "src-requirementstxt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601846692,
+        "narHash": "sha256-nrOq1RzRksi2IaS+o6mflW10kslfcXkozsQuSeLsr9I=",
+        "owner": "juancarlospaco",
+        "repo": "nim-requirementstxt",
+        "rev": "769a099b3e4e512985413c9e2740c81d480381d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-requirementstxt",
         "type": "github"
       }
     }

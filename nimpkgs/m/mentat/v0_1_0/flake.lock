@@ -36,7 +36,94 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "science": "science",
         "src-mentat-v0_1_0": "src-mentat-v0_1_0"
+      }
+    },
+    "science": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "science-master": "science-master",
+        "science-v0_2_2": "science-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/science",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/science",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "science-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "science",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "science",
+          "nixpkgs"
+        ],
+        "src-science-master": "src-science-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/science/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/science/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "science-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "science",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "science",
+          "nixpkgs"
+        ],
+        "src-science-v0_2_2": "src-science-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/science/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/science/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
       }
     },
     "src-mentat-v0_1_0": {
@@ -53,6 +140,40 @@
         "owner": "ruivieira",
         "ref": "refs/tags/v0.1.0",
         "repo": "nim-mentat",
+        "type": "github"
+      }
+    },
+    "src-science-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1557217385,
+        "narHash": "sha256-1JSaNkmRd60gUf/3ZsRNvteGgC3j7qDP+5xgi5a8D20=",
+        "owner": "ruivieira",
+        "repo": "nim-science",
+        "rev": "6a0bba45d0fc75a295f178924a88e2866018ddab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ruivieira",
+        "ref": "refs/heads/master",
+        "repo": "nim-science",
+        "type": "github"
+      }
+    },
+    "src-science-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1557217143,
+        "narHash": "sha256-0JcmwS/ZhzYbLWcXI/cuY7gPOs7+LKS+X0cLOof+MQ4=",
+        "owner": "ruivieira",
+        "repo": "nim-science",
+        "rev": "58dffe403b50e5fcbc65a493d0e7628ed8f952ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ruivieira",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "nim-science",
         "type": "github"
       }
     }

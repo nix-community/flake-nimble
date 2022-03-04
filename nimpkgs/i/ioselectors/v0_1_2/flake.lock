@@ -36,7 +36,9 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-ioselectors-v0_1_2": "src-ioselectors-v0_1_2"
+        "src-ioselectors-v0_1_2": "src-ioselectors-v0_1_2",
+        "timerwheel": "timerwheel",
+        "wepoll": "wepoll"
       }
     },
     "src-ioselectors-v0_1_2": {
@@ -53,6 +55,246 @@
         "owner": "xflywind",
         "ref": "refs/tags/v0.1.2",
         "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "src-timerwheel-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599025238,
+        "narHash": "sha256-HPLel0nFPy5pmMl0ZkFjzZnJWGJ9umZFzyFG4m7wzXo=",
+        "owner": "xflywind",
+        "repo": "timerwheel",
+        "rev": "ee1cf5b40ed01b721daba214e4816949f6a2f79c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/heads/master",
+        "repo": "timerwheel",
+        "type": "github"
+      }
+    },
+    "src-timerwheel-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598961903,
+        "narHash": "sha256-RsgJa3zHPNypmDUNOtMejfTOzssqGnTXJqb5WQbqZnk=",
+        "owner": "xflywind",
+        "repo": "timerwheel",
+        "rev": "53bc0e6dfbfa44e6d3cd824bff6c3919626045b1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "timerwheel",
+        "type": "github"
+      }
+    },
+    "src-wepoll-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645866505,
+        "narHash": "sha256-iK5GouMRl7M1aWm2/qQRFLb83N1h1t36qgx5jSWFEHE=",
+        "owner": "xflywind",
+        "repo": "wepoll",
+        "rev": "b6d836b2e3eb7a1744dd86c60d825b893339d2d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/heads/master",
+        "repo": "wepoll",
+        "type": "github"
+      }
+    },
+    "src-wepoll-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596505072,
+        "narHash": "sha256-2y5blfgaAAe1PWH72sdbuzqkfnJP5ztm4malRG7zCvE=",
+        "owner": "xflywind",
+        "repo": "wepoll",
+        "rev": "c49c3280130bb724f1601b1d42f5b7deabad3198",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "wepoll",
+        "type": "github"
+      }
+    },
+    "timerwheel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "timerwheel-master": "timerwheel-master",
+        "timerwheel-v0_1_2": "timerwheel-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/timerwheel",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/timerwheel",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "timerwheel-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "timerwheel",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "timerwheel",
+          "nixpkgs"
+        ],
+        "src-timerwheel-master": "src-timerwheel-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/timerwheel/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/timerwheel/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "timerwheel-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "timerwheel",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "timerwheel",
+          "nixpkgs"
+        ],
+        "src-timerwheel-v0_1_2": "src-timerwheel-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/timerwheel/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/timerwheel/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "wepoll": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "wepoll-master": "wepoll-master",
+        "wepoll-v0_1_0": "wepoll-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/wepoll",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/wepoll",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "wepoll-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "wepoll",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "wepoll",
+          "nixpkgs"
+        ],
+        "src-wepoll-master": "src-wepoll-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/wepoll/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/wepoll/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "wepoll-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "wepoll",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "wepoll",
+          "nixpkgs"
+        ],
+        "src-wepoll-v0_1_0": "src-wepoll-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/wepoll/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/wepoll/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
         "type": "github"
       }
     }

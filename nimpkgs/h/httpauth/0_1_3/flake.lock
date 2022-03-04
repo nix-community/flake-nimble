@@ -21,6 +21,332 @@
         "type": "github"
       }
     },
+    "libsodium": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "libsodium-0_2_2": "libsodium-0_2_2",
+        "libsodium-0_3_0": "libsodium-0_3_0",
+        "libsodium-0_4_0": "libsodium-0_4_0",
+        "libsodium-0_4_1": "libsodium-0_4_1",
+        "libsodium-0_4_2": "libsodium-0_4_2",
+        "libsodium-0_5_0": "libsodium-0_5_0",
+        "libsodium-0_6_0": "libsodium-0_6_0",
+        "libsodium-0_7_0": "libsodium-0_7_0",
+        "libsodium-0_7_1": "libsodium-0_7_1",
+        "libsodium-master": "libsodium-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_2_2": "src-libsodium-0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_3_0": "src-libsodium-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_4_0": "src-libsodium-0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_4_1": "src-libsodium-0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_4_2": "src-libsodium-0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_5_0": "src-libsodium-0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_6_0": "src-libsodium-0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_7_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_7_0": "src-libsodium-0_7_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_7_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_7_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-0_7_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-0_7_1": "src-libsodium-0_7_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/0_7_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/0_7_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsodium-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libsodium",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libsodium",
+          "nixpkgs"
+        ],
+        "src-libsodium-master": "src-libsodium-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsodium/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsodium/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,6 +361,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "libsodium": "libsodium",
         "nixpkgs": "nixpkgs",
         "src-httpauth-0_1_3": "src-httpauth-0_1_3"
       }
@@ -53,6 +380,176 @@
         "owner": "FedericoCeratto",
         "ref": "refs/tags/0.1.3",
         "repo": "nim-httpauth",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1525442668,
+        "narHash": "sha256-bwmjNdoJd5IwDcxxPVuAZ6uOOEEHyaY+h7vLTQAbrRE=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "aa5ef489748bce727b707ebe01ee51ab0055998d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.2.2",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531675524,
+        "narHash": "sha256-ei5iHvX7wL7/HfJNxgdtQe6b7dQe0Wr0MoNFVbdG18c=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "69f8edd040eff66c7b97414573e68c0579df0fd5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.3.0",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539452190,
+        "narHash": "sha256-AZDiVqmNCnDP88Qtj1bTCqB2HbehHjFm1QMlqKd0jj8=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "a86bcad584ef6cd0437b92703e4f2b860d26c2fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.4.0",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1555676799,
+        "narHash": "sha256-LU1IFh41tvFBzlemuZlnQlh+irXYJPooWV5C7CEUi7Y=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "2c831c8539f2bc8ed123b1fb8f845de1cab60fc4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.4.1",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1556184600,
+        "narHash": "sha256-OmiwlSr+Q0ZqFtfU0esqsC1bJ+x3jfLjfd1kNAtMhLk=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "e851e5f9fe25f3d1b90923556fdf5e1a925dbd3f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.4.2",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1571310553,
+        "narHash": "sha256-Ky9Xk3X8So6+K5bA275rnni6FeMO8XFvzBYUBLo6CKI=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "a01589322491380804ad4410d5fe14a908fb5b8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.5.0",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577359508,
+        "narHash": "sha256-0Qe6Ix33l/ticjG9weImEOVbDIi5y5xK0NT891uNUGU=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "0258efe4e7f48e22daedf26f70e3efbe830abfb5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.6.0",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641234442,
+        "narHash": "sha256-qRA64yqrZi7LAxWnkM9f786wpmoXlhljCxQh/opUwXo=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "9a1d3dee65d48c9c8514142e506b81f93224d386",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.7.0",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-0_7_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641329615,
+        "narHash": "sha256-7X+I1yZnqUwPcAVqd4zcZNW6VSgjgoK4SV0GVoy3tbM=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "f5490ee194d5a0bbc5fa3d4d0b6e58c617d49790",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.7.1",
+        "repo": "nim-libsodium",
+        "type": "github"
+      }
+    },
+    "src-libsodium-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641414871,
+        "narHash": "sha256-mve8LjzdqYqoPyJ8/SXEGyCUoYpIJ5U0d06wdV+87wE=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libsodium",
+        "rev": "fa35382ad03abc234f601c615493282dea939835",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-libsodium",
         "type": "github"
       }
     }

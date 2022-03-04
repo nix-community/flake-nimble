@@ -1,5 +1,91 @@
 {
   "nodes": {
+    "dogapi": {
+      "inputs": {
+        "dogapi-main": "dogapi-main",
+        "dogapi-v1_0_0": "dogapi-v1_0_0",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dogapi",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dogapi",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dogapi-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dogapi",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dogapi",
+          "nixpkgs"
+        ],
+        "src-dogapi-main": "src-dogapi-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dogapi/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dogapi/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "dogapi-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dogapi",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dogapi",
+          "nixpkgs"
+        ],
+        "src-dogapi-v1_0_0": "src-dogapi-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/dogapi/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/dogapi/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +120,44 @@
     },
     "root": {
       "inputs": {
+        "dogapi": "dogapi",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-dogapi_cli-main": "src-dogapi_cli-main"
+      }
+    },
+    "src-dogapi-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645135897,
+        "narHash": "sha256-TbsG82YJWH+NBqvK+KccC2chw8NToKN7ycYH5ax0c1A=",
+        "owner": "thexxiv",
+        "repo": "dogapi-nim",
+        "rev": "598779efb36994fee957f1739ca1a3e3ed6cb480",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thexxiv",
+        "ref": "refs/heads/main",
+        "repo": "dogapi-nim",
+        "type": "github"
+      }
+    },
+    "src-dogapi-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645135897,
+        "narHash": "sha256-TbsG82YJWH+NBqvK+KccC2chw8NToKN7ycYH5ax0c1A=",
+        "owner": "thexxiv",
+        "repo": "dogapi-nim",
+        "rev": "598779efb36994fee957f1739ca1a3e3ed6cb480",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thexxiv",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "dogapi-nim",
+        "type": "github"
       }
     },
     "src-dogapi_cli-main": {

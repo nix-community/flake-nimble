@@ -21,6 +21,212 @@
         "type": "github"
       }
     },
+    "mddoc": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "mddoc-0_0_1": "mddoc-0_0_1",
+        "mddoc-0_0_2": "mddoc-0_0_2",
+        "mddoc-0_0_3": "mddoc-0_0_3",
+        "mddoc-0_0_4": "mddoc-0_0_4",
+        "mddoc-master": "mddoc-master",
+        "mddoc-v0_0_4": "mddoc-v0_0_4",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mddoc",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mddoc",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mddoc-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mddoc",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mddoc",
+          "nixpkgs"
+        ],
+        "src-mddoc-0_0_1": "src-mddoc-0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mddoc/0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mddoc/0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mddoc-0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mddoc",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mddoc",
+          "nixpkgs"
+        ],
+        "src-mddoc-0_0_2": "src-mddoc-0_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mddoc/0_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mddoc/0_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mddoc-0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mddoc",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mddoc",
+          "nixpkgs"
+        ],
+        "src-mddoc-0_0_3": "src-mddoc-0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mddoc/0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mddoc/0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mddoc-0_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mddoc",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mddoc",
+          "nixpkgs"
+        ],
+        "src-mddoc-0_0_4": "src-mddoc-0_0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mddoc/0_0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mddoc/0_0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mddoc-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mddoc",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mddoc",
+          "nixpkgs"
+        ],
+        "src-mddoc-master": "src-mddoc-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mddoc/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mddoc/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mddoc-v0_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mddoc",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mddoc",
+          "nixpkgs"
+        ],
+        "src-mddoc-v0_0_4": "src-mddoc-v0_0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mddoc/v0_0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mddoc/v0_0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,8 +241,111 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "mddoc": "mddoc",
         "nixpkgs": "nixpkgs",
         "src-vmath-v0_3_0": "src-vmath-v0_3_0"
+      }
+    },
+    "src-mddoc-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583458590,
+        "narHash": "sha256-TlGs6/Xwl+TVfIzKLmYzwY+eJB9h2e+Gj4fdLhcKCjU=",
+        "owner": "treeform",
+        "repo": "mddoc",
+        "rev": "6fa26670b821837384e79690cb88d186df5e92c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.0.1",
+        "repo": "mddoc",
+        "type": "github"
+      }
+    },
+    "src-mddoc-0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583458590,
+        "narHash": "sha256-TlGs6/Xwl+TVfIzKLmYzwY+eJB9h2e+Gj4fdLhcKCjU=",
+        "owner": "treeform",
+        "repo": "mddoc",
+        "rev": "6fa26670b821837384e79690cb88d186df5e92c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.0.2",
+        "repo": "mddoc",
+        "type": "github"
+      }
+    },
+    "src-mddoc-0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583463692,
+        "narHash": "sha256-sN5JgBIbuP5hs9ke74d/tqpwgscqfdh3EpdzDridEMs=",
+        "owner": "treeform",
+        "repo": "mddoc",
+        "rev": "bc49c179c2575f58c8a4a9faef7bb5fda18c5604",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.0.3",
+        "repo": "mddoc",
+        "type": "github"
+      }
+    },
+    "src-mddoc-0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583465470,
+        "narHash": "sha256-zVJJ85xEBRxrpQz03MsMHTv8yLza3JCMGqOHKfuFxRU=",
+        "owner": "treeform",
+        "repo": "mddoc",
+        "rev": "81488710f60958dde18c4963975cdc8e8e3a8820",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.0.4",
+        "repo": "mddoc",
+        "type": "github"
+      }
+    },
+    "src-mddoc-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633048377,
+        "narHash": "sha256-NdzZ3DgiKhDMNF6YfYxDPPLLxYrEjjJn5+54KNfmLBs=",
+        "owner": "treeform",
+        "repo": "mddoc",
+        "rev": "b330712aa8ad15eea2891550a9ca156914fcde88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/heads/master",
+        "repo": "mddoc",
+        "type": "github"
+      }
+    },
+    "src-mddoc-v0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583465470,
+        "narHash": "sha256-zVJJ85xEBRxrpQz03MsMHTv8yLza3JCMGqOHKfuFxRU=",
+        "owner": "treeform",
+        "repo": "mddoc",
+        "rev": "81488710f60958dde18c4963975cdc8e8e3a8820",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.0.4",
+        "repo": "mddoc",
+        "type": "github"
       }
     },
     "src-vmath-v0_3_0": {

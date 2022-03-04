@@ -32,10 +32,67 @@
         "type": "indirect"
       }
     },
+    "nuuid": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nuuid-master": "nuuid-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nuuid",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nuuid",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nuuid-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nuuid",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nuuid",
+          "nixpkgs"
+        ],
+        "src-nuuid-master": "src-nuuid-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nuuid/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nuuid/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "nuuid": "nuuid",
         "src-azure_translate-master": "src-azure_translate-master"
       }
     },
@@ -53,6 +110,23 @@
         "owner": "williamhatcher",
         "ref": "refs/heads/master",
         "repo": "azure_translate",
+        "type": "github"
+      }
+    },
+    "src-nuuid-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603895899,
+        "narHash": "sha256-P32Wnp9IA5UE9Iev+cEPJyX6salT8xq9Oe3fvPxs9oU=",
+        "owner": "yglukhov",
+        "repo": "nim-only-uuid",
+        "rev": "078f473fc811793119df55b766a3670a62f988c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nim-only-uuid",
         "type": "github"
       }
     }

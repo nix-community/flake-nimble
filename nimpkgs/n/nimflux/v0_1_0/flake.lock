@@ -1,5 +1,61 @@
 {
   "nodes": {
+    "coverage": {
+      "inputs": {
+        "coverage-master": "coverage-master",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/c/coverage",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/coverage",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "coverage-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "coverage",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "coverage",
+          "nixpkgs"
+        ],
+        "src-coverage-master": "src-coverage-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/coverage/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/coverage/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +90,27 @@
     },
     "root": {
       "inputs": {
+        "coverage": "coverage",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-nimflux-v0_1_0": "src-nimflux-v0_1_0"
+      }
+    },
+    "src-coverage-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1576645836,
+        "narHash": "sha256-xA5mo93mx/getucUbkQqsndV2V9OPx92pkEQZUglHEY=",
+        "owner": "yglukhov",
+        "repo": "coverage",
+        "rev": "fe1c51e8cd235509e700c689b5646b730d3617ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "coverage",
+        "type": "github"
       }
     },
     "src-nimflux-v0_1_0": {

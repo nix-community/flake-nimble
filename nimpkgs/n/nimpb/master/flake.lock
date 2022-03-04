@@ -21,6 +21,62 @@
         "type": "github"
       }
     },
+    "nimpb_protoc": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimpb_protoc-master": "nimpb_protoc-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimpb_protoc",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimpb_protoc",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimpb_protoc-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimpb_protoc",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimpb_protoc",
+          "nixpkgs"
+        ],
+        "src-nimpb_protoc-master": "src-nimpb_protoc-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimpb_protoc/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimpb_protoc/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,6 +91,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "nimpb_protoc": "nimpb_protoc",
         "nixpkgs": "nixpkgs",
         "src-nimpb-master": "src-nimpb-master"
       }
@@ -53,6 +110,23 @@
         "owner": "oswjk",
         "ref": "refs/heads/master",
         "repo": "nimpb",
+        "type": "github"
+      }
+    },
+    "src-nimpb_protoc-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1523475403,
+        "narHash": "sha256-MipbxVH4PlRDwJN/OrcjDLCO7pyWSlA72nlbkYE68kY=",
+        "owner": "oswjk",
+        "repo": "nimpb_protoc",
+        "rev": "4a54eff46b816e7d2f1d69df24cc85780406e2f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oswjk",
+        "ref": "refs/heads/master",
+        "repo": "nimpb_protoc",
         "type": "github"
       }
     }

@@ -21,6 +21,62 @@
         "type": "github"
       }
     },
+    "jsonschema": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "jsonschema-master": "jsonschema-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jsonschema",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jsonschema",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jsonschema-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jsonschema",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jsonschema",
+          "nixpkgs"
+        ],
+        "src-jsonschema-master": "src-jsonschema-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jsonschema/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jsonschema/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,8 +91,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "jsonschema": "jsonschema",
         "nixpkgs": "nixpkgs",
         "src-nimlsp-v0_4_0": "src-nimlsp-v0_4_0"
+      }
+    },
+    "src-jsonschema-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568274992,
+        "narHash": "sha256-f9F1oam/ZXwDKXqGMUUQ5+tMZKTe7t4UlZ4U1LAkRss=",
+        "owner": "PMunch",
+        "repo": "jsonschema",
+        "rev": "7b41c03e3e1a487d5a8f6b940ca8e764dc2cbabf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "jsonschema",
+        "type": "github"
       }
     },
     "src-nimlsp-v0_4_0": {

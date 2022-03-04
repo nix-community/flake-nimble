@@ -32,11 +32,602 @@
         "type": "indirect"
       }
     },
+    "paranim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "paranim-0_10_0": "paranim-0_10_0",
+        "paranim-0_11_0": "paranim-0_11_0",
+        "paranim-0_1_0": "paranim-0_1_0",
+        "paranim-0_2_0": "paranim-0_2_0",
+        "paranim-0_3_0": "paranim-0_3_0",
+        "paranim-0_4_0": "paranim-0_4_0",
+        "paranim-0_5_0": "paranim-0_5_0",
+        "paranim-0_6_0": "paranim-0_6_0",
+        "paranim-0_7_0": "paranim-0_7_0",
+        "paranim-0_8_0": "paranim-0_8_0",
+        "paranim-0_9_0": "paranim-0_9_0",
+        "paranim-master": "paranim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_10_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_10_0": "src-paranim-0_10_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_10_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_10_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_11_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_11_0": "src-paranim-0_11_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_11_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_11_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_1_0": "src-paranim-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_2_0": "src-paranim-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_3_0": "src-paranim-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_4_0": "src-paranim-0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_5_0": "src-paranim-0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_6_0": "src-paranim-0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_7_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_7_0": "src-paranim-0_7_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_7_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_7_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_8_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_8_0": "src-paranim-0_8_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_8_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_8_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-0_9_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-0_9_0": "src-paranim-0_9_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/0_9_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/0_9_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "paranim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "paranim",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "paranim",
+          "nixpkgs"
+        ],
+        "src-paranim-master": "src-paranim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/paranim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/paranim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "paranim": "paranim",
         "src-paratext-0_7_0": "src-paratext-0_7_0"
+      }
+    },
+    "src-paranim-0_10_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603406749,
+        "narHash": "sha256-ZOiixCbtaWwIm1puCvsztXwU7U4s/+8CrO6fWSx4dAc=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "ff68bebd9d565674c93c4e041987640586ae9541",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.10.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_11_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613641162,
+        "narHash": "sha256-k88MsM/eo6kmRn4Yi+lg+DJuk9cz1BVSyRNqdkbnr9s=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "b8fe4814ea74ed67f769d73bba1d4d2f53e1ad8a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.11.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1581853647,
+        "narHash": "sha256-0poPah1qUw6O/WFnpCK4WSlrK4CqPplmGeMXggV9OWQ=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "989d8ae29ee3317f903bec4dce5b04e5632a0393",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.1.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582655366,
+        "narHash": "sha256-3RW2WdvUx93WY8cBaGX7bpn5L6KYunPjmr89hQYIOfE=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "141a4619b3bef9219e560b3c50f100a91aecb0b1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.2.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583953903,
+        "narHash": "sha256-Q3VC41P5shIKo+vxm10iQGUtdqdR/3KvFqfNDwmik2c=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "103be926af29fed0b22b52b8f59bb8d60176e273",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.3.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586840793,
+        "narHash": "sha256-DxS2mRmRTFhZp0BWulebtXKPTbMCuHInfG086oyIlhs=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "aa2c3d0c883fdf713dabf09f6501197f36b65835",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.4.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587219763,
+        "narHash": "sha256-GrjuKo5MEW1O336scIEPFr7PRlahQ+RAqNFsO2gmfm4=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "3f873553b49ccba3d80ba72a7a2192b04524c96f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.5.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589482521,
+        "narHash": "sha256-YPS7uzc3TOZYdIiiqjRnn2fz0jLEVHtyKXZXV25sEoI=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "7f98b3ffac05dc74a25a4b36d42259a235d9c3f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.6.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593094450,
+        "narHash": "sha256-F3cM5Tf1htWwZjWgR+eEas5tTxxui5lCwlaBuQij3Jg=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "496196dbc9bf1593253ca6c186b3d4d3210861f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.7.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_8_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594941336,
+        "narHash": "sha256-dIOLbX2iWiUTkUewGGYMItoBHzNSoJFkjfv7EDnrTXI=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "4b4e87b4d2d7056c1cb6b193692860be86861cbd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.8.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-0_9_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595803639,
+        "narHash": "sha256-1q5b5grWewCudQ9qEYMPmvgr8eHkoFpMYLm8I+4LSaQ=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "f9b7be1492537eabf55e17d2e683b3fb9c35be5c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/tags/0.9.0",
+        "repo": "paranim",
+        "type": "github"
+      }
+    },
+    "src-paranim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631550608,
+        "narHash": "sha256-SUpOpr1I5oV+0AqRD6DKqg6AN/qpfAg+fbvuzy9huiY=",
+        "owner": "paranim",
+        "repo": "paranim",
+        "rev": "68da1f0f7bab48fad9a1bb1a464579bf78597f34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paranim",
+        "ref": "refs/heads/master",
+        "repo": "paranim",
+        "type": "github"
       }
     },
     "src-paratext-0_7_0": {

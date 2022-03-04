@@ -1,5 +1,121 @@
 {
   "nodes": {
+    "cairo": {
+      "inputs": {
+        "cairo-1_1_0": "cairo-1_1_0",
+        "cairo-1_1_1": "cairo-1_1_1",
+        "cairo-master": "cairo-master",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cairo",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cairo",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cairo-1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cairo",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cairo",
+          "nixpkgs"
+        ],
+        "src-cairo-1_1_0": "src-cairo-1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cairo/1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cairo/1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cairo-1_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cairo",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cairo",
+          "nixpkgs"
+        ],
+        "src-cairo-1_1_1": "src-cairo-1_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cairo/1_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cairo/1_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cairo-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "cairo",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "cairo",
+          "nixpkgs"
+        ],
+        "src-cairo-master": "src-cairo-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cairo/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cairo/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +150,61 @@
     },
     "root": {
       "inputs": {
+        "cairo": "cairo",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-gtk2-v1_0": "src-gtk2-v1_0"
+      }
+    },
+    "src-cairo-1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573854836,
+        "narHash": "sha256-78QY6G367ODPtqkx2gH2iLt+E6spVzQEhmjwmIqPwio=",
+        "owner": "nim-lang",
+        "repo": "cairo",
+        "rev": "47878f414d05fe1ce8884b1226cbf5258247acc1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/1.1.0",
+        "repo": "cairo",
+        "type": "github"
+      }
+    },
+    "src-cairo-1_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587491257,
+        "narHash": "sha256-O0+7gRNh7vtRsx6KRH1XfCDcL++VtlXjOeVdaGv4Fzw=",
+        "owner": "nim-lang",
+        "repo": "cairo",
+        "rev": "50ca8ed54554eae686024c0dc88490502af31cb8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/1.1.1",
+        "repo": "cairo",
+        "type": "github"
+      }
+    },
+    "src-cairo-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588887086,
+        "narHash": "sha256-QvmdGbmZBYD9X/O54MYRfkRcC8ctzFR00zLpqODBv68=",
+        "owner": "nim-lang",
+        "repo": "cairo",
+        "rev": "0f3ac504fd1b10091550f7398f48c68538f6b989",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "cairo",
+        "type": "github"
       }
     },
     "src-gtk2-v1_0": {

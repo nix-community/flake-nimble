@@ -36,7 +36,65 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-aws_sdk-master": "src-aws_sdk-master"
+        "sph": "sph",
+        "src-aws_sdk-master": "src-aws_sdk-master",
+        "stringinterpolation": "stringinterpolation"
+      }
+    },
+    "sph": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "sph-master": "sph-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sph",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sph",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "sph-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "sph",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "sph",
+          "nixpkgs"
+        ],
+        "src-sph-master": "src-sph-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sph/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sph/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
       }
     },
     "src-aws_sdk-master": {
@@ -53,6 +111,96 @@
         "owner": "aidansteele",
         "ref": "refs/heads/master",
         "repo": "aws_sdk.nim",
+        "type": "github"
+      }
+    },
+    "src-sph-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539987858,
+        "narHash": "sha256-z8TYQOP8crwduhCTvy33GMkduzVfCsftil96DVKldzo=",
+        "owner": "aidansteele",
+        "repo": "sph",
+        "rev": "04c78a0005a83af3f8956f1994b7c01df56639aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aidansteele",
+        "ref": "refs/heads/master",
+        "repo": "sph",
+        "type": "github"
+      }
+    },
+    "src-stringinterpolation-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1434886518,
+        "narHash": "sha256-/YGsehtfbvUReeQM+gmzzMKhh1nHMY8fuazg2FU0c3k=",
+        "owner": "bluenote10",
+        "repo": "nim-stringinterpolation",
+        "rev": "4e07f8052f83cce9056a3a3e8b9fcb4640c0dd29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bluenote10",
+        "ref": "refs/heads/master",
+        "repo": "nim-stringinterpolation",
+        "type": "github"
+      }
+    },
+    "stringinterpolation": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "stringinterpolation-master": "stringinterpolation-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/stringinterpolation",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/stringinterpolation",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "stringinterpolation-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "stringinterpolation",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "stringinterpolation",
+          "nixpkgs"
+        ],
+        "src-stringinterpolation-master": "src-stringinterpolation-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/stringinterpolation/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/stringinterpolation/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
         "type": "github"
       }
     }

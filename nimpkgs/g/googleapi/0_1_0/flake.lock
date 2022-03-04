@@ -32,10 +32,157 @@
         "type": "indirect"
       }
     },
+    "quickjwt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "quickjwt-0_0_1": "quickjwt-0_0_1",
+        "quickjwt-0_2_1": "quickjwt-0_2_1",
+        "quickjwt-master": "quickjwt-master",
+        "quickjwt-v0_2_1": "quickjwt-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/q/quickjwt",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/q/quickjwt",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "quickjwt-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "quickjwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "quickjwt",
+          "nixpkgs"
+        ],
+        "src-quickjwt-0_0_1": "src-quickjwt-0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/q/quickjwt/0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/q/quickjwt/0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "quickjwt-0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "quickjwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "quickjwt",
+          "nixpkgs"
+        ],
+        "src-quickjwt-0_2_1": "src-quickjwt-0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/q/quickjwt/0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/q/quickjwt/0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "quickjwt-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "quickjwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "quickjwt",
+          "nixpkgs"
+        ],
+        "src-quickjwt-master": "src-quickjwt-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/q/quickjwt/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/q/quickjwt/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "quickjwt-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "quickjwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "quickjwt",
+          "nixpkgs"
+        ],
+        "src-quickjwt-v0_2_1": "src-quickjwt-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/q/quickjwt/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/q/quickjwt/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "quickjwt": "quickjwt",
         "src-googleapi-0_1_0": "src-googleapi-0_1_0"
       }
     },
@@ -53,6 +200,74 @@
         "owner": "treeform",
         "ref": "refs/tags/0.1.0",
         "repo": "googleapi",
+        "type": "github"
+      }
+    },
+    "src-quickjwt-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1558647928,
+        "narHash": "sha256-V7fXxSBXrPLGuucTtF8D4L0x3zxWYCQK5ttug+iKoWg=",
+        "owner": "treeform",
+        "repo": "quickjwt",
+        "rev": "3b923666c339d252721763f470498495f4af0cef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.0.1",
+        "repo": "quickjwt",
+        "type": "github"
+      }
+    },
+    "src-quickjwt-0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579208162,
+        "narHash": "sha256-jEcVmKYKH5XBehTjSsr0+gL099CFSLwUvBmXHMRLAxQ=",
+        "owner": "treeform",
+        "repo": "quickjwt",
+        "rev": "d3989dce8b025bd7c813190b7079f6531b9f0f27",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.2.1",
+        "repo": "quickjwt",
+        "type": "github"
+      }
+    },
+    "src-quickjwt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633046192,
+        "narHash": "sha256-BXFbwlm6AI/9FWUk6Xwyr2F7HYyeIwNYuIxRs1eRAbA=",
+        "owner": "treeform",
+        "repo": "quickjwt",
+        "rev": "96f6111ee495c0b0a319aaac0549bb2b160589f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/heads/master",
+        "repo": "quickjwt",
+        "type": "github"
+      }
+    },
+    "src-quickjwt-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579208162,
+        "narHash": "sha256-jEcVmKYKH5XBehTjSsr0+gL099CFSLwUvBmXHMRLAxQ=",
+        "owner": "treeform",
+        "repo": "quickjwt",
+        "rev": "d3989dce8b025bd7c813190b7079f6531b9f0f27",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "quickjwt",
         "type": "github"
       }
     }

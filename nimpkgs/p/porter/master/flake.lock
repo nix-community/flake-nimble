@@ -21,6 +21,62 @@
         "type": "github"
       }
     },
+    "mutableseqs": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "mutableseqs-master": "mutableseqs-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mutableseqs",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mutableseqs",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mutableseqs-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mutableseqs",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mutableseqs",
+          "nixpkgs"
+        ],
+        "src-mutableseqs-master": "src-mutableseqs-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mutableseqs/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mutableseqs/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,8 +91,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "mutableseqs": "mutableseqs",
         "nixpkgs": "nixpkgs",
         "src-porter-master": "src-porter-master"
+      }
+    },
+    "src-mutableseqs-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1489082129,
+        "narHash": "sha256-+6QKH3o6oQ3sfZmmZ6sTPg7Wqj6Hsg7FwD00JZkQujA=",
+        "owner": "iourinski",
+        "repo": "mutableseqs",
+        "rev": "75bd0a6e5db62ceb0e632ac8ce92ca85dfbf4db4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "iourinski",
+        "ref": "refs/heads/master",
+        "repo": "mutableseqs",
+        "type": "github"
       }
     },
     "src-porter-master": {

@@ -21,6 +21,92 @@
         "type": "github"
       }
     },
+    "mysqlparser": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "mysqlparser-0_2_0": "mysqlparser-0_2_0",
+        "mysqlparser-master": "mysqlparser-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mysqlparser",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mysqlparser",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mysqlparser-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mysqlparser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mysqlparser",
+          "nixpkgs"
+        ],
+        "src-mysqlparser-0_2_0": "src-mysqlparser-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mysqlparser/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mysqlparser/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "mysqlparser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mysqlparser",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mysqlparser",
+          "nixpkgs"
+        ],
+        "src-mysqlparser-master": "src-mysqlparser-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mysqlparser/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mysqlparser/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,6 +121,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "mysqlparser": "mysqlparser",
         "nixpkgs": "nixpkgs",
         "src-asyncmysql-0_4_3": "src-asyncmysql-0_4_3"
       }
@@ -53,6 +140,40 @@
         "owner": "tulayang",
         "ref": "refs/tags/0.4.3",
         "repo": "asyncmysql",
+        "type": "github"
+      }
+    },
+    "src-mysqlparser-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1509765093,
+        "narHash": "sha256-kEbRQHzo60lZRLG4aG5ZJhFmXAf7lvkvQtw5NOeM4EI=",
+        "owner": "tulayang",
+        "repo": "mysqlparser",
+        "rev": "228625be4a344e4f9dd6467e8b8141ae568dd0a7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tulayang",
+        "ref": "refs/tags/0.2.0",
+        "repo": "mysqlparser",
+        "type": "github"
+      }
+    },
+    "src-mysqlparser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597232072,
+        "narHash": "sha256-Kq+anrpgZ3WiYWwiPI9F/vAWKxRjMxulL+Oz1wPBXdo=",
+        "owner": "tulayang",
+        "repo": "mysqlparser",
+        "rev": "0b4c9ce39ff6eab4f398eac158b41fb0d7945d11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tulayang",
+        "ref": "refs/heads/master",
+        "repo": "mysqlparser",
         "type": "github"
       }
     }

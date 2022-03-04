@@ -21,6 +21,62 @@
         "type": "github"
       }
     },
+    "jwt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "jwt-master": "jwt-master",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jwt",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jwt",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jwt-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jwt",
+          "nixpkgs"
+        ],
+        "src-jwt-master": "src-jwt-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jwt/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jwt/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -35,6 +91,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "jwt": "jwt",
         "nixpkgs": "nixpkgs",
         "src-googleapi-0_1_4": "src-googleapi-0_1_4"
       }
@@ -53,6 +110,23 @@
         "owner": "treeform",
         "ref": "refs/tags/0.1.4",
         "repo": "googleapi",
+        "type": "github"
+      }
+    },
+    "src-jwt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645366596,
+        "narHash": "sha256-CB48Pw4RP3qI/vLhoG1UY66ZlY6F+Nie97ax4M+eEi8=",
+        "owner": "yglukhov",
+        "repo": "nim-jwt",
+        "rev": "2ef77272d8754be01cfc04b8af53f42d30aaca34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nim-jwt",
         "type": "github"
       }
     }

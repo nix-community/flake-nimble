@@ -1,5 +1,61 @@
 {
   "nodes": {
+    "contra": {
+      "inputs": {
+        "contra-master": "contra-master",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nimpkgs/c/contra",
+        "lastModified": 1646353868,
+        "narHash": "sha256-wTelICJz3iCd9nYIgIVyfFYpT/t6z6aTCwWZHmpPwvQ=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "d1f438d34450ae9511549eb6801e9bd8afbc4a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/contra",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "contra-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "contra",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "contra",
+          "nixpkgs"
+        ],
+        "src-contra-master": "src-contra-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/contra/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/contra/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,9 +90,27 @@
     },
     "root": {
       "inputs": {
+        "contra": "contra",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-html_tools-master": "src-html_tools-master"
+      }
+    },
+    "src-contra-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643233667,
+        "narHash": "sha256-kr4/UkrM4QltwtG7mj3VRGF6qa9ZcZ5cd2C5qgOPeKU=",
+        "owner": "juancarlospaco",
+        "repo": "nim-contra",
+        "rev": "21a9794324e82047928282a73bb19683437b72f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-contra",
+        "type": "github"
       }
     },
     "src-html_tools-master": {
