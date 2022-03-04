@@ -110,6 +110,7 @@ iterator projectInputs(refs: JsonNode; flakeDir: string): string =
       gitRef = refInfo.refName
       name = refInfo["name"].getStr.toLower
     yield fmt"""
+
   inputs."{name}-{gitRef}".type = "github";
   inputs."{name}-{gitRef}".owner = "riinr";
   inputs."{name}-{gitRef}".repo = "flake-nimble";
@@ -122,6 +123,7 @@ iterator projectInputs(refs: JsonNode; flakeDir: string): string =
 
 proc nimPkgsLibInput(): string =
   """
+
   inputs.flakeNimbleLib.type = "github";
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.repo = "nim-flakes-lib";
@@ -190,6 +192,7 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
     inputInfo = refInfo.inputInfo url
     itName = fmt"src-{name}-{gitRef}"
   yield fmt"""
+
   inputs.{itName}.flake = false;
   inputs.{itName}.type = "{inputInfo["type"].getStr}";
   inputs.{itName}.owner = "{inputInfo["owner"].getStr()}";
@@ -206,13 +209,13 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
         continue
       yield fmt"""
 
-  # inputs."{depName}".type = "github";
-  # inputs."{depName}".owner = "riinr";
-  # inputs."{depName}".repo = "flake-nimble";
-  # inputs."{depName}".ref = "flake-pinning";
-  # inputs."{depName}".dir = "nimpkgs/{initial}/{depName}";
-  # inputs."{depName}".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."{depName}".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."{depName}".type = "github";
+  inputs."{depName}".owner = "riinr";
+  inputs."{depName}".repo = "flake-nimble";
+  inputs."{depName}".ref = "flake-pinning";
+  inputs."{depName}".dir = "nimpkgs/{initial}/{depName}";
+  inputs."{depName}".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."{depName}".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 """
 
 proc refsFlake(pkg: JsonNode): auto =

@@ -13,13 +13,13 @@
   inputs.src-regex-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."unicodedb".type = "github";
-  # inputs."unicodedb".owner = "riinr";
-  # inputs."unicodedb".repo = "flake-nimble";
-  # inputs."unicodedb".ref = "flake-pinning";
-  # inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
-  # inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."unicodedb".type = "github";
+  inputs."unicodedb".owner = "riinr";
+  inputs."unicodedb".repo = "flake-nimble";
+  inputs."unicodedb".ref = "flake-pinning";
+  inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-regex-master, ...}@deps:
     let lib = flakeNimbleLib.lib;
