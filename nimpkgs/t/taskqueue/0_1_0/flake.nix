@@ -13,13 +13,13 @@
   inputs.src-taskqueue-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."timestamp".type = "github";
-  # inputs."timestamp".owner = "riinr";
-  # inputs."timestamp".repo = "flake-nimble";
-  # inputs."timestamp".ref = "flake-pinning";
-  # inputs."timestamp".dir = "nimpkgs/t/timestamp";
-  # inputs."timestamp".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."timestamp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."timestamp".type = "github";
+  inputs."timestamp".owner = "riinr";
+  inputs."timestamp".repo = "flake-nimble";
+  inputs."timestamp".ref = "flake-pinning";
+  inputs."timestamp".dir = "nimpkgs/t/timestamp";
+  inputs."timestamp".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."timestamp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-taskqueue-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

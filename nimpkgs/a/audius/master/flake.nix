@@ -13,13 +13,13 @@
   inputs.src-audius-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jsony".type = "github";
-  # inputs."jsony".owner = "riinr";
-  # inputs."jsony".repo = "flake-nimble";
-  # inputs."jsony".ref = "flake-pinning";
-  # inputs."jsony".dir = "nimpkgs/j/jsony";
-  # inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsony".type = "github";
+  inputs."jsony".owner = "riinr";
+  inputs."jsony".repo = "flake-nimble";
+  inputs."jsony".ref = "flake-pinning";
+  inputs."jsony".dir = "nimpkgs/j/jsony";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-audius-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

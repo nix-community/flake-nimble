@@ -13,22 +13,22 @@
   inputs.src-pdba-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."yaml".type = "github";
-  # inputs."yaml".owner = "riinr";
-  # inputs."yaml".repo = "flake-nimble";
-  # inputs."yaml".ref = "flake-pinning";
-  # inputs."yaml".dir = "nimpkgs/y/yaml";
-  # inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."yaml".type = "github";
+  inputs."yaml".owner = "riinr";
+  inputs."yaml".repo = "flake-nimble";
+  inputs."yaml".ref = "flake-pinning";
+  inputs."yaml".dir = "nimpkgs/y/yaml";
+  inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."ndb".type = "github";
-  # inputs."ndb".owner = "riinr";
-  # inputs."ndb".repo = "flake-nimble";
-  # inputs."ndb".ref = "flake-pinning";
-  # inputs."ndb".dir = "nimpkgs/n/ndb";
-  # inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ndb".type = "github";
+  inputs."ndb".owner = "riinr";
+  inputs."ndb".repo = "flake-nimble";
+  inputs."ndb".ref = "flake-pinning";
+  inputs."ndb".dir = "nimpkgs/n/ndb";
+  inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-pdba-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

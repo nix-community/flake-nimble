@@ -13,13 +13,13 @@
   inputs.src-netty-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."flatty".type = "github";
-  # inputs."flatty".owner = "riinr";
-  # inputs."flatty".repo = "flake-nimble";
-  # inputs."flatty".ref = "flake-pinning";
-  # inputs."flatty".dir = "nimpkgs/f/flatty";
-  # inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."flatty".type = "github";
+  inputs."flatty".owner = "riinr";
+  inputs."flatty".repo = "flake-nimble";
+  inputs."flatty".ref = "flake-pinning";
+  inputs."flatty".dir = "nimpkgs/f/flatty";
+  inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-netty-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

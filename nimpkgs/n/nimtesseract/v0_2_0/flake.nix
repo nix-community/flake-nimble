@@ -13,13 +13,13 @@
   inputs.src-nimtesseract-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."pixie".type = "github";
-  # inputs."pixie".owner = "riinr";
-  # inputs."pixie".repo = "flake-nimble";
-  # inputs."pixie".ref = "flake-pinning";
-  # inputs."pixie".dir = "nimpkgs/p/pixie";
-  # inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."pixie".type = "github";
+  inputs."pixie".owner = "riinr";
+  inputs."pixie".repo = "flake-nimble";
+  inputs."pixie".ref = "flake-pinning";
+  inputs."pixie".dir = "nimpkgs/p/pixie";
+  inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimtesseract-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

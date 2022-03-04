@@ -13,13 +13,13 @@
   inputs.src-bignum-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."gmp".type = "github";
-  # inputs."gmp".owner = "riinr";
-  # inputs."gmp".repo = "flake-nimble";
-  # inputs."gmp".ref = "flake-pinning";
-  # inputs."gmp".dir = "nimpkgs/g/gmp";
-  # inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."gmp".type = "github";
+  inputs."gmp".owner = "riinr";
+  inputs."gmp".repo = "flake-nimble";
+  inputs."gmp".ref = "flake-pinning";
+  inputs."gmp".dir = "nimpkgs/g/gmp";
+  inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-bignum-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

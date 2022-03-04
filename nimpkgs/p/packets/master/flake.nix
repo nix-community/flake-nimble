@@ -13,22 +13,22 @@
   inputs.src-packets-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."packedjson".type = "github";
-  # inputs."packedjson".owner = "riinr";
-  # inputs."packedjson".repo = "flake-nimble";
-  # inputs."packedjson".ref = "flake-pinning";
-  # inputs."packedjson".dir = "nimpkgs/p/packedjson";
-  # inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."packedjson".type = "github";
+  inputs."packedjson".owner = "riinr";
+  inputs."packedjson".repo = "flake-nimble";
+  inputs."packedjson".ref = "flake-pinning";
+  inputs."packedjson".dir = "nimpkgs/p/packedjson";
+  inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."crc32".type = "github";
-  # inputs."crc32".owner = "riinr";
-  # inputs."crc32".repo = "flake-nimble";
-  # inputs."crc32".ref = "flake-pinning";
-  # inputs."crc32".dir = "nimpkgs/c/crc32";
-  # inputs."crc32".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."crc32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."crc32".type = "github";
+  inputs."crc32".owner = "riinr";
+  inputs."crc32".repo = "flake-nimble";
+  inputs."crc32".ref = "flake-pinning";
+  inputs."crc32".dir = "nimpkgs/c/crc32";
+  inputs."crc32".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."crc32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-packets-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

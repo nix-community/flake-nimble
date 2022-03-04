@@ -13,13 +13,13 @@
   inputs.src-wox-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."unicodeplus".type = "github";
-  # inputs."unicodeplus".owner = "riinr";
-  # inputs."unicodeplus".repo = "flake-nimble";
-  # inputs."unicodeplus".ref = "flake-pinning";
-  # inputs."unicodeplus".dir = "nimpkgs/u/unicodeplus";
-  # inputs."unicodeplus".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."unicodeplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."unicodeplus".type = "github";
+  inputs."unicodeplus".owner = "riinr";
+  inputs."unicodeplus".repo = "flake-nimble";
+  inputs."unicodeplus".ref = "flake-pinning";
+  inputs."unicodeplus".dir = "nimpkgs/u/unicodeplus";
+  inputs."unicodeplus".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unicodeplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-wox-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

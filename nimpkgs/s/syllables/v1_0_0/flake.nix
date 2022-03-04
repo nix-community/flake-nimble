@@ -13,22 +13,22 @@
   inputs.src-syllables-v1_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."regex".type = "github";
-  # inputs."regex".owner = "riinr";
-  # inputs."regex".repo = "flake-nimble";
-  # inputs."regex".ref = "flake-pinning";
-  # inputs."regex".dir = "nimpkgs/r/regex";
-  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."regex".type = "github";
+  inputs."regex".owner = "riinr";
+  inputs."regex".repo = "flake-nimble";
+  inputs."regex".ref = "flake-pinning";
+  inputs."regex".dir = "nimpkgs/r/regex";
+  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."https://github.com/disruptek/testes".type = "github";
-  # inputs."https://github.com/disruptek/testes".owner = "riinr";
-  # inputs."https://github.com/disruptek/testes".repo = "flake-nimble";
-  # inputs."https://github.com/disruptek/testes".ref = "flake-pinning";
-  # inputs."https://github.com/disruptek/testes".dir = "nimpkgs/h/https://github.com/disruptek/testes";
-  # inputs."https://github.com/disruptek/testes".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/disruptek/testes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/disruptek/testes".type = "github";
+  inputs."https://github.com/disruptek/testes".owner = "riinr";
+  inputs."https://github.com/disruptek/testes".repo = "flake-nimble";
+  inputs."https://github.com/disruptek/testes".ref = "flake-pinning";
+  inputs."https://github.com/disruptek/testes".dir = "nimpkgs/h/https://github.com/disruptek/testes";
+  inputs."https://github.com/disruptek/testes".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/disruptek/testes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-syllables-v1_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

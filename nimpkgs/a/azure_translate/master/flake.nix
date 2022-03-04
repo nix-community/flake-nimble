@@ -13,13 +13,13 @@
   inputs.src-azure_translate-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nuuid".type = "github";
-  # inputs."nuuid".owner = "riinr";
-  # inputs."nuuid".repo = "flake-nimble";
-  # inputs."nuuid".ref = "flake-pinning";
-  # inputs."nuuid".dir = "nimpkgs/n/nuuid";
-  # inputs."nuuid".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nuuid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nuuid".type = "github";
+  inputs."nuuid".owner = "riinr";
+  inputs."nuuid".repo = "flake-nimble";
+  inputs."nuuid".ref = "flake-pinning";
+  inputs."nuuid".dir = "nimpkgs/n/nuuid";
+  inputs."nuuid".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nuuid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-azure_translate-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

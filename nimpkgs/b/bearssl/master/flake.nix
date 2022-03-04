@@ -13,13 +13,13 @@
   inputs.src-bearssl-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."unittest2".type = "github";
-  # inputs."unittest2".owner = "riinr";
-  # inputs."unittest2".repo = "flake-nimble";
-  # inputs."unittest2".ref = "flake-pinning";
-  # inputs."unittest2".dir = "nimpkgs/u/unittest2";
-  # inputs."unittest2".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."unittest2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."unittest2".type = "github";
+  inputs."unittest2".owner = "riinr";
+  inputs."unittest2".repo = "flake-nimble";
+  inputs."unittest2".ref = "flake-pinning";
+  inputs."unittest2".dir = "nimpkgs/u/unittest2";
+  inputs."unittest2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unittest2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-bearssl-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

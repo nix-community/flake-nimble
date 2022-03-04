@@ -13,13 +13,13 @@
   inputs.src-cittadino-0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stomp".type = "github";
-  # inputs."stomp".owner = "riinr";
-  # inputs."stomp".repo = "flake-nimble";
-  # inputs."stomp".ref = "flake-pinning";
-  # inputs."stomp".dir = "nimpkgs/s/stomp";
-  # inputs."stomp".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stomp".type = "github";
+  inputs."stomp".owner = "riinr";
+  inputs."stomp".repo = "flake-nimble";
+  inputs."stomp".ref = "flake-pinning";
+  inputs."stomp".dir = "nimpkgs/s/stomp";
+  inputs."stomp".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cittadino-0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

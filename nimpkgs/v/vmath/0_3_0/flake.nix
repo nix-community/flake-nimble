@@ -13,13 +13,13 @@
   inputs.src-vmath-0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."mddoc".type = "github";
-  # inputs."mddoc".owner = "riinr";
-  # inputs."mddoc".repo = "flake-nimble";
-  # inputs."mddoc".ref = "flake-pinning";
-  # inputs."mddoc".dir = "nimpkgs/m/mddoc";
-  # inputs."mddoc".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mddoc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mddoc".type = "github";
+  inputs."mddoc".owner = "riinr";
+  inputs."mddoc".repo = "flake-nimble";
+  inputs."mddoc".ref = "flake-pinning";
+  inputs."mddoc".dir = "nimpkgs/m/mddoc";
+  inputs."mddoc".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mddoc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-vmath-0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

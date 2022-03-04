@@ -13,22 +13,22 @@
   inputs.src-eth_keys-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimcrypto".type = "github";
-  # inputs."nimcrypto".owner = "riinr";
-  # inputs."nimcrypto".repo = "flake-nimble";
-  # inputs."nimcrypto".ref = "flake-pinning";
-  # inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
-  # inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimcrypto".type = "github";
+  inputs."nimcrypto".owner = "riinr";
+  inputs."nimcrypto".repo = "flake-nimble";
+  inputs."nimcrypto".ref = "flake-pinning";
+  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."secp256k1".type = "github";
-  # inputs."secp256k1".owner = "riinr";
-  # inputs."secp256k1".repo = "flake-nimble";
-  # inputs."secp256k1".ref = "flake-pinning";
-  # inputs."secp256k1".dir = "nimpkgs/s/secp256k1";
-  # inputs."secp256k1".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."secp256k1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."secp256k1".type = "github";
+  inputs."secp256k1".owner = "riinr";
+  inputs."secp256k1".repo = "flake-nimble";
+  inputs."secp256k1".ref = "flake-pinning";
+  inputs."secp256k1".dir = "nimpkgs/s/secp256k1";
+  inputs."secp256k1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."secp256k1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-eth_keys-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

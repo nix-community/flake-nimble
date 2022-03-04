@@ -13,13 +13,13 @@
   inputs.src-zxcvbn-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."testutils".type = "github";
-  # inputs."testutils".owner = "riinr";
-  # inputs."testutils".repo = "flake-nimble";
-  # inputs."testutils".ref = "flake-pinning";
-  # inputs."testutils".dir = "nimpkgs/t/testutils";
-  # inputs."testutils".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."testutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."testutils".type = "github";
+  inputs."testutils".owner = "riinr";
+  inputs."testutils".repo = "flake-nimble";
+  inputs."testutils".ref = "flake-pinning";
+  inputs."testutils".dir = "nimpkgs/t/testutils";
+  inputs."testutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."testutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-zxcvbn-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-resolv-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."dnsprotocol".type = "github";
-  # inputs."dnsprotocol".owner = "riinr";
-  # inputs."dnsprotocol".repo = "flake-nimble";
-  # inputs."dnsprotocol".ref = "flake-pinning";
-  # inputs."dnsprotocol".dir = "nimpkgs/d/dnsprotocol";
-  # inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."dnsprotocol".type = "github";
+  inputs."dnsprotocol".owner = "riinr";
+  inputs."dnsprotocol".repo = "flake-nimble";
+  inputs."dnsprotocol".ref = "flake-pinning";
+  inputs."dnsprotocol".dir = "nimpkgs/d/dnsprotocol";
+  inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-resolv-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

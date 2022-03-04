@@ -13,13 +13,13 @@
   inputs.src-nimi3status-0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."colorsys".type = "github";
-  # inputs."colorsys".owner = "riinr";
-  # inputs."colorsys".repo = "flake-nimble";
-  # inputs."colorsys".ref = "flake-pinning";
-  # inputs."colorsys".dir = "nimpkgs/c/colorsys";
-  # inputs."colorsys".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."colorsys".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."colorsys".type = "github";
+  inputs."colorsys".owner = "riinr";
+  inputs."colorsys".repo = "flake-nimble";
+  inputs."colorsys".ref = "flake-pinning";
+  inputs."colorsys".dir = "nimpkgs/c/colorsys";
+  inputs."colorsys".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."colorsys".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimi3status-0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

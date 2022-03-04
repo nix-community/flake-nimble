@@ -13,22 +13,22 @@
   inputs.src-xiaomi-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."multicast".type = "github";
-  # inputs."multicast".owner = "riinr";
-  # inputs."multicast".repo = "flake-nimble";
-  # inputs."multicast".ref = "flake-pinning";
-  # inputs."multicast".dir = "nimpkgs/m/multicast";
-  # inputs."multicast".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."multicast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."multicast".type = "github";
+  inputs."multicast".owner = "riinr";
+  inputs."multicast".repo = "flake-nimble";
+  inputs."multicast".ref = "flake-pinning";
+  inputs."multicast".dir = "nimpkgs/m/multicast";
+  inputs."multicast".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."multicast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nimcrypto".type = "github";
-  # inputs."nimcrypto".owner = "riinr";
-  # inputs."nimcrypto".repo = "flake-nimble";
-  # inputs."nimcrypto".ref = "flake-pinning";
-  # inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
-  # inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimcrypto".type = "github";
+  inputs."nimcrypto".owner = "riinr";
+  inputs."nimcrypto".repo = "flake-nimble";
+  inputs."nimcrypto".ref = "flake-pinning";
+  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-xiaomi-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-zopflipng-v0_1_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimpng".type = "github";
-  # inputs."nimpng".owner = "riinr";
-  # inputs."nimpng".repo = "flake-nimble";
-  # inputs."nimpng".ref = "flake-pinning";
-  # inputs."nimpng".dir = "nimpkgs/n/nimpng";
-  # inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimpng".type = "github";
+  inputs."nimpng".owner = "riinr";
+  inputs."nimpng".repo = "flake-nimble";
+  inputs."nimpng".ref = "flake-pinning";
+  inputs."nimpng".dir = "nimpkgs/n/nimpng";
+  inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-zopflipng-v0_1_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-Polymers-0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."polymorph".type = "github";
-  # inputs."polymorph".owner = "riinr";
-  # inputs."polymorph".repo = "flake-nimble";
-  # inputs."polymorph".ref = "flake-pinning";
-  # inputs."polymorph".dir = "nimpkgs/p/polymorph";
-  # inputs."polymorph".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."polymorph".type = "github";
+  inputs."polymorph".owner = "riinr";
+  inputs."polymorph".repo = "flake-nimble";
+  inputs."polymorph".ref = "flake-pinning";
+  inputs."polymorph".dir = "nimpkgs/p/polymorph";
+  inputs."polymorph".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-polymers-0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

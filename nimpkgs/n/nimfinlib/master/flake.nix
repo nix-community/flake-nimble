@@ -13,13 +13,13 @@
   inputs.src-nimFinLib-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/qqtop/nimcx".type = "github";
-  # inputs."https://github.com/qqtop/nimcx".owner = "riinr";
-  # inputs."https://github.com/qqtop/nimcx".repo = "flake-nimble";
-  # inputs."https://github.com/qqtop/nimcx".ref = "flake-pinning";
-  # inputs."https://github.com/qqtop/nimcx".dir = "nimpkgs/h/https://github.com/qqtop/nimcx";
-  # inputs."https://github.com/qqtop/nimcx".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/qqtop/nimcx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/qqtop/nimcx".type = "github";
+  inputs."https://github.com/qqtop/nimcx".owner = "riinr";
+  inputs."https://github.com/qqtop/nimcx".repo = "flake-nimble";
+  inputs."https://github.com/qqtop/nimcx".ref = "flake-pinning";
+  inputs."https://github.com/qqtop/nimcx".dir = "nimpkgs/h/https://github.com/qqtop/nimcx";
+  inputs."https://github.com/qqtop/nimcx".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/qqtop/nimcx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimFinLib-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

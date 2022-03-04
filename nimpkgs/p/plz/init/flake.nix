@@ -13,13 +13,13 @@
   inputs.src-plz-init.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimarchive".type = "github";
-  # inputs."nimarchive".owner = "riinr";
-  # inputs."nimarchive".repo = "flake-nimble";
-  # inputs."nimarchive".ref = "flake-pinning";
-  # inputs."nimarchive".dir = "nimpkgs/n/nimarchive";
-  # inputs."nimarchive".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimarchive".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimarchive".type = "github";
+  inputs."nimarchive".owner = "riinr";
+  inputs."nimarchive".repo = "flake-nimble";
+  inputs."nimarchive".ref = "flake-pinning";
+  inputs."nimarchive".dir = "nimpkgs/n/nimarchive";
+  inputs."nimarchive".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimarchive".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-plz-init, ...}@deps:
     let lib = flakeNimbleLib.lib;

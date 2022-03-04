@@ -13,13 +13,13 @@
   inputs.src-subfield-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."einheit".type = "github";
-  # inputs."einheit".owner = "riinr";
-  # inputs."einheit".repo = "flake-nimble";
-  # inputs."einheit".ref = "flake-pinning";
-  # inputs."einheit".dir = "nimpkgs/e/einheit";
-  # inputs."einheit".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."einheit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."einheit".type = "github";
+  inputs."einheit".owner = "riinr";
+  inputs."einheit".repo = "flake-nimble";
+  inputs."einheit".ref = "flake-pinning";
+  inputs."einheit".dir = "nimpkgs/e/einheit";
+  inputs."einheit".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."einheit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-subfield-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

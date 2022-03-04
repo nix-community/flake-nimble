@@ -13,13 +13,13 @@
   inputs.src-wZeeGrid-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."wnim".type = "github";
-  # inputs."wnim".owner = "riinr";
-  # inputs."wnim".repo = "flake-nimble";
-  # inputs."wnim".ref = "flake-pinning";
-  # inputs."wnim".dir = "nimpkgs/w/wnim";
-  # inputs."wnim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."wnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."wnim".type = "github";
+  inputs."wnim".owner = "riinr";
+  inputs."wnim".repo = "flake-nimble";
+  inputs."wnim".ref = "flake-pinning";
+  inputs."wnim".dir = "nimpkgs/w/wnim";
+  inputs."wnim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."wnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-wZeeGrid-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

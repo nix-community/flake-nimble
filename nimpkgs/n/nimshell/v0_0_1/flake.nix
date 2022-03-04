@@ -13,13 +13,13 @@
   inputs.src-nimshell-v0_0_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."monad".type = "github";
-  # inputs."monad".owner = "riinr";
-  # inputs."monad".repo = "flake-nimble";
-  # inputs."monad".ref = "flake-pinning";
-  # inputs."monad".dir = "nimpkgs/m/monad";
-  # inputs."monad".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."monad".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."monad".type = "github";
+  inputs."monad".owner = "riinr";
+  inputs."monad".repo = "flake-nimble";
+  inputs."monad".ref = "flake-pinning";
+  inputs."monad".dir = "nimpkgs/m/monad";
+  inputs."monad".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."monad".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimshell-v0_0_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

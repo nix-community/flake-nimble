@@ -13,13 +13,13 @@
   inputs.src-googleapi-0_1_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jwt".type = "github";
-  # inputs."jwt".owner = "riinr";
-  # inputs."jwt".repo = "flake-nimble";
-  # inputs."jwt".ref = "flake-pinning";
-  # inputs."jwt".dir = "nimpkgs/j/jwt";
-  # inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jwt".type = "github";
+  inputs."jwt".owner = "riinr";
+  inputs."jwt".repo = "flake-nimble";
+  inputs."jwt".ref = "flake-pinning";
+  inputs."jwt".dir = "nimpkgs/j/jwt";
+  inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-googleapi-0_1_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

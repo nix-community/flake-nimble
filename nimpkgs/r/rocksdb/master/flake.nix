@@ -13,22 +13,22 @@
   inputs.src-rocksdb-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stew".type = "github";
-  # inputs."stew".owner = "riinr";
-  # inputs."stew".repo = "flake-nimble";
-  # inputs."stew".ref = "flake-pinning";
-  # inputs."stew".dir = "nimpkgs/s/stew";
-  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stew".type = "github";
+  inputs."stew".owner = "riinr";
+  inputs."stew".repo = "flake-nimble";
+  inputs."stew".ref = "flake-pinning";
+  inputs."stew".dir = "nimpkgs/s/stew";
+  inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."tempfile".type = "github";
-  # inputs."tempfile".owner = "riinr";
-  # inputs."tempfile".repo = "flake-nimble";
-  # inputs."tempfile".ref = "flake-pinning";
-  # inputs."tempfile".dir = "nimpkgs/t/tempfile";
-  # inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."tempfile".type = "github";
+  inputs."tempfile".owner = "riinr";
+  inputs."tempfile".repo = "flake-nimble";
+  inputs."tempfile".ref = "flake-pinning";
+  inputs."tempfile".dir = "nimpkgs/t/tempfile";
+  inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-rocksdb-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

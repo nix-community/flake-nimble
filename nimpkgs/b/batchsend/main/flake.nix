@@ -13,13 +13,13 @@
   inputs.src-batchsend-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimpy".type = "github";
-  # inputs."nimpy".owner = "riinr";
-  # inputs."nimpy".repo = "flake-nimble";
-  # inputs."nimpy".ref = "flake-pinning";
-  # inputs."nimpy".dir = "nimpkgs/n/nimpy";
-  # inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimpy".type = "github";
+  inputs."nimpy".owner = "riinr";
+  inputs."nimpy".repo = "flake-nimble";
+  inputs."nimpy".ref = "flake-pinning";
+  inputs."nimpy".dir = "nimpkgs/n/nimpy";
+  inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-batchsend-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

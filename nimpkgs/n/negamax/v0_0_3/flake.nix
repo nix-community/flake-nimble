@@ -13,13 +13,13 @@
   inputs.src-negamax-v0_0_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."turn_based_game".type = "github";
-  # inputs."turn_based_game".owner = "riinr";
-  # inputs."turn_based_game".repo = "flake-nimble";
-  # inputs."turn_based_game".ref = "flake-pinning";
-  # inputs."turn_based_game".dir = "nimpkgs/t/turn_based_game";
-  # inputs."turn_based_game".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."turn_based_game".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."turn_based_game".type = "github";
+  inputs."turn_based_game".owner = "riinr";
+  inputs."turn_based_game".repo = "flake-nimble";
+  inputs."turn_based_game".ref = "flake-pinning";
+  inputs."turn_based_game".dir = "nimpkgs/t/turn_based_game";
+  inputs."turn_based_game".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."turn_based_game".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-negamax-v0_0_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

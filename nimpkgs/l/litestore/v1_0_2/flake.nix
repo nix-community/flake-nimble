@@ -13,13 +13,13 @@
   inputs.src-litestore-v1_0_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimrod".type = "github";
-  # inputs."nimrod".owner = "riinr";
-  # inputs."nimrod".repo = "flake-nimble";
-  # inputs."nimrod".ref = "flake-pinning";
-  # inputs."nimrod".dir = "nimpkgs/n/nimrod";
-  # inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimrod".type = "github";
+  inputs."nimrod".owner = "riinr";
+  inputs."nimrod".repo = "flake-nimble";
+  inputs."nimrod".ref = "flake-pinning";
+  inputs."nimrod".dir = "nimpkgs/n/nimrod";
+  inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-litestore-v1_0_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

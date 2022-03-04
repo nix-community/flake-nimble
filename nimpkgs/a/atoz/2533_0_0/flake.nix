@@ -13,22 +13,22 @@
   inputs.src-atoz-2533_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."openapi".type = "github";
-  # inputs."openapi".owner = "riinr";
-  # inputs."openapi".repo = "flake-nimble";
-  # inputs."openapi".ref = "flake-pinning";
-  # inputs."openapi".dir = "nimpkgs/o/openapi";
-  # inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."openapi".type = "github";
+  inputs."openapi".owner = "riinr";
+  inputs."openapi".repo = "flake-nimble";
+  inputs."openapi".ref = "flake-pinning";
+  inputs."openapi".dir = "nimpkgs/o/openapi";
+  inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."sigv4".type = "github";
-  # inputs."sigv4".owner = "riinr";
-  # inputs."sigv4".repo = "flake-nimble";
-  # inputs."sigv4".ref = "flake-pinning";
-  # inputs."sigv4".dir = "nimpkgs/s/sigv4";
-  # inputs."sigv4".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."sigv4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sigv4".type = "github";
+  inputs."sigv4".owner = "riinr";
+  inputs."sigv4".repo = "flake-nimble";
+  inputs."sigv4".ref = "flake-pinning";
+  inputs."sigv4".dir = "nimpkgs/s/sigv4";
+  inputs."sigv4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sigv4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-atoz-2533_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

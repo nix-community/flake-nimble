@@ -13,13 +13,13 @@
   inputs.src-pipelines-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."python".type = "github";
-  # inputs."python".owner = "riinr";
-  # inputs."python".repo = "flake-nimble";
-  # inputs."python".ref = "flake-pinning";
-  # inputs."python".dir = "nimpkgs/p/python";
-  # inputs."python".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."python".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."python".type = "github";
+  inputs."python".owner = "riinr";
+  inputs."python".repo = "flake-nimble";
+  inputs."python".ref = "flake-pinning";
+  inputs."python".dir = "nimpkgs/p/python";
+  inputs."python".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."python".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-pipelines-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-chronicles-v0_5_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."json_serialization".type = "github";
-  # inputs."json_serialization".owner = "riinr";
-  # inputs."json_serialization".repo = "flake-nimble";
-  # inputs."json_serialization".ref = "flake-pinning";
-  # inputs."json_serialization".dir = "nimpkgs/j/json_serialization";
-  # inputs."json_serialization".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."json_serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."json_serialization".type = "github";
+  inputs."json_serialization".owner = "riinr";
+  inputs."json_serialization".repo = "flake-nimble";
+  inputs."json_serialization".ref = "flake-pinning";
+  inputs."json_serialization".dir = "nimpkgs/j/json_serialization";
+  inputs."json_serialization".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."json_serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-chronicles-v0_5_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

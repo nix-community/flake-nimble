@@ -13,22 +13,22 @@
   inputs.src-distances-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."arraymancer".type = "github";
-  # inputs."arraymancer".owner = "riinr";
-  # inputs."arraymancer".repo = "flake-nimble";
-  # inputs."arraymancer".ref = "flake-pinning";
-  # inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
-  # inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."arraymancer".type = "github";
+  inputs."arraymancer".owner = "riinr";
+  inputs."arraymancer".repo = "flake-nimble";
+  inputs."arraymancer".ref = "flake-pinning";
+  inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
+  inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."neo".type = "github";
-  # inputs."neo".owner = "riinr";
-  # inputs."neo".repo = "flake-nimble";
-  # inputs."neo".ref = "flake-pinning";
-  # inputs."neo".dir = "nimpkgs/n/neo";
-  # inputs."neo".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."neo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."neo".type = "github";
+  inputs."neo".owner = "riinr";
+  inputs."neo".repo = "flake-nimble";
+  inputs."neo".ref = "flake-pinning";
+  inputs."neo".dir = "nimpkgs/n/neo";
+  inputs."neo".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."neo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-distances-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-flickr_image_bot-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/snus-kin/twitter.nim".type = "github";
-  # inputs."https://github.com/snus-kin/twitter.nim".owner = "riinr";
-  # inputs."https://github.com/snus-kin/twitter.nim".repo = "flake-nimble";
-  # inputs."https://github.com/snus-kin/twitter.nim".ref = "flake-pinning";
-  # inputs."https://github.com/snus-kin/twitter.nim".dir = "nimpkgs/h/https://github.com/snus-kin/twitter.nim";
-  # inputs."https://github.com/snus-kin/twitter.nim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/snus-kin/twitter.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/snus-kin/twitter.nim".type = "github";
+  inputs."https://github.com/snus-kin/twitter.nim".owner = "riinr";
+  inputs."https://github.com/snus-kin/twitter.nim".repo = "flake-nimble";
+  inputs."https://github.com/snus-kin/twitter.nim".ref = "flake-pinning";
+  inputs."https://github.com/snus-kin/twitter.nim".dir = "nimpkgs/h/https://github.com/snus-kin/twitter.nim";
+  inputs."https://github.com/snus-kin/twitter.nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/snus-kin/twitter.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-flickr_image_bot-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

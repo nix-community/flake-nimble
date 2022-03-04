@@ -13,13 +13,13 @@
   inputs.src-datetime_parse-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."timezones".type = "github";
-  # inputs."timezones".owner = "riinr";
-  # inputs."timezones".repo = "flake-nimble";
-  # inputs."timezones".ref = "flake-pinning";
-  # inputs."timezones".dir = "nimpkgs/t/timezones";
-  # inputs."timezones".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."timezones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."timezones".type = "github";
+  inputs."timezones".owner = "riinr";
+  inputs."timezones".repo = "flake-nimble";
+  inputs."timezones".ref = "flake-pinning";
+  inputs."timezones".dir = "nimpkgs/t/timezones";
+  inputs."timezones".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."timezones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-datetime_parse-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

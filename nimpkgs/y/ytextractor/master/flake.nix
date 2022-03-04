@@ -13,13 +13,13 @@
   inputs.src-ytextractor-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ajax".type = "github";
-  # inputs."ajax".owner = "riinr";
-  # inputs."ajax".repo = "flake-nimble";
-  # inputs."ajax".ref = "flake-pinning";
-  # inputs."ajax".dir = "nimpkgs/a/ajax";
-  # inputs."ajax".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ajax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ajax".type = "github";
+  inputs."ajax".owner = "riinr";
+  inputs."ajax".repo = "flake-nimble";
+  inputs."ajax".ref = "flake-pinning";
+  inputs."ajax".dir = "nimpkgs/a/ajax";
+  inputs."ajax".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ajax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ytextractor-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,40 +13,40 @@
   inputs.src-listenbrainz-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jsony".type = "github";
-  # inputs."jsony".owner = "riinr";
-  # inputs."jsony".repo = "flake-nimble";
-  # inputs."jsony".ref = "flake-pinning";
-  # inputs."jsony".dir = "nimpkgs/j/jsony";
-  # inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsony".type = "github";
+  inputs."jsony".owner = "riinr";
+  inputs."jsony".repo = "flake-nimble";
+  inputs."jsony".ref = "flake-pinning";
+  inputs."jsony".dir = "nimpkgs/j/jsony";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nodejs".type = "github";
-  # inputs."nodejs".owner = "riinr";
-  # inputs."nodejs".repo = "flake-nimble";
-  # inputs."nodejs".ref = "flake-pinning";
-  # inputs."nodejs".dir = "nimpkgs/n/nodejs";
-  # inputs."nodejs".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nodejs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nodejs".type = "github";
+  inputs."nodejs".owner = "riinr";
+  inputs."nodejs".repo = "flake-nimble";
+  inputs."nodejs".ref = "flake-pinning";
+  inputs."nodejs".dir = "nimpkgs/n/nodejs";
+  inputs."nodejs".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nodejs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."https://github.com/alaviss/union".type = "github";
-  # inputs."https://github.com/alaviss/union".owner = "riinr";
-  # inputs."https://github.com/alaviss/union".repo = "flake-nimble";
-  # inputs."https://github.com/alaviss/union".ref = "flake-pinning";
-  # inputs."https://github.com/alaviss/union".dir = "nimpkgs/h/https://github.com/alaviss/union";
-  # inputs."https://github.com/alaviss/union".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/alaviss/union".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/alaviss/union".type = "github";
+  inputs."https://github.com/alaviss/union".owner = "riinr";
+  inputs."https://github.com/alaviss/union".repo = "flake-nimble";
+  inputs."https://github.com/alaviss/union".ref = "flake-pinning";
+  inputs."https://github.com/alaviss/union".dir = "nimpkgs/h/https://github.com/alaviss/union";
+  inputs."https://github.com/alaviss/union".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/alaviss/union".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."https://github.com/tandy-1000/uniony".type = "github";
-  # inputs."https://github.com/tandy-1000/uniony".owner = "riinr";
-  # inputs."https://github.com/tandy-1000/uniony".repo = "flake-nimble";
-  # inputs."https://github.com/tandy-1000/uniony".ref = "flake-pinning";
-  # inputs."https://github.com/tandy-1000/uniony".dir = "nimpkgs/h/https://github.com/tandy-1000/uniony";
-  # inputs."https://github.com/tandy-1000/uniony".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/tandy-1000/uniony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/tandy-1000/uniony".type = "github";
+  inputs."https://github.com/tandy-1000/uniony".owner = "riinr";
+  inputs."https://github.com/tandy-1000/uniony".repo = "flake-nimble";
+  inputs."https://github.com/tandy-1000/uniony".ref = "flake-pinning";
+  inputs."https://github.com/tandy-1000/uniony".dir = "nimpkgs/h/https://github.com/tandy-1000/uniony";
+  inputs."https://github.com/tandy-1000/uniony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/tandy-1000/uniony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-listenbrainz-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-packedArgs-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."macroplus".type = "github";
-  # inputs."macroplus".owner = "riinr";
-  # inputs."macroplus".repo = "flake-nimble";
-  # inputs."macroplus".ref = "flake-pinning";
-  # inputs."macroplus".dir = "nimpkgs/m/macroplus";
-  # inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."macroplus".type = "github";
+  inputs."macroplus".owner = "riinr";
+  inputs."macroplus".repo = "flake-nimble";
+  inputs."macroplus".ref = "flake-pinning";
+  inputs."macroplus".dir = "nimpkgs/m/macroplus";
+  inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-packedArgs-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

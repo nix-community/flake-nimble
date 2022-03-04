@@ -13,13 +13,13 @@
   inputs.src-nimassets-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."zstd".type = "github";
-  # inputs."zstd".owner = "riinr";
-  # inputs."zstd".repo = "flake-nimble";
-  # inputs."zstd".ref = "flake-pinning";
-  # inputs."zstd".dir = "nimpkgs/z/zstd";
-  # inputs."zstd".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zstd".type = "github";
+  inputs."zstd".owner = "riinr";
+  inputs."zstd".repo = "flake-nimble";
+  inputs."zstd".ref = "flake-pinning";
+  inputs."zstd".dir = "nimpkgs/z/zstd";
+  inputs."zstd".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimassets-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

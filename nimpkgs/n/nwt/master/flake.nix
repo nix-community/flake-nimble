@@ -13,13 +13,13 @@
   inputs.src-nwt-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/enthus1ast/nimcommandparser".type = "github";
-  # inputs."https://github.com/enthus1ast/nimcommandparser".owner = "riinr";
-  # inputs."https://github.com/enthus1ast/nimcommandparser".repo = "flake-nimble";
-  # inputs."https://github.com/enthus1ast/nimcommandparser".ref = "flake-pinning";
-  # inputs."https://github.com/enthus1ast/nimcommandparser".dir = "nimpkgs/h/https://github.com/enthus1ast/nimcommandparser";
-  # inputs."https://github.com/enthus1ast/nimcommandparser".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/enthus1ast/nimcommandparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/enthus1ast/nimcommandparser".type = "github";
+  inputs."https://github.com/enthus1ast/nimcommandparser".owner = "riinr";
+  inputs."https://github.com/enthus1ast/nimcommandparser".repo = "flake-nimble";
+  inputs."https://github.com/enthus1ast/nimcommandparser".ref = "flake-pinning";
+  inputs."https://github.com/enthus1ast/nimcommandparser".dir = "nimpkgs/h/https://github.com/enthus1ast/nimcommandparser";
+  inputs."https://github.com/enthus1ast/nimcommandparser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/enthus1ast/nimcommandparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nwt-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-kview-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."karax".type = "github";
-  # inputs."karax".owner = "riinr";
-  # inputs."karax".repo = "flake-nimble";
-  # inputs."karax".ref = "flake-pinning";
-  # inputs."karax".dir = "nimpkgs/k/karax";
-  # inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."karax".type = "github";
+  inputs."karax".owner = "riinr";
+  inputs."karax".repo = "flake-nimble";
+  inputs."karax".ref = "flake-pinning";
+  inputs."karax".dir = "nimpkgs/k/karax";
+  inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-kview-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

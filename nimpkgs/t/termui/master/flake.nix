@@ -13,22 +13,22 @@
   inputs.src-termui-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."classes".type = "github";
-  # inputs."classes".owner = "riinr";
-  # inputs."classes".repo = "flake-nimble";
-  # inputs."classes".ref = "flake-pinning";
-  # inputs."classes".dir = "nimpkgs/c/classes";
-  # inputs."classes".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."classes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."classes".type = "github";
+  inputs."classes".owner = "riinr";
+  inputs."classes".repo = "flake-nimble";
+  inputs."classes".ref = "flake-pinning";
+  inputs."classes".dir = "nimpkgs/c/classes";
+  inputs."classes".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."classes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."elvis".type = "github";
-  # inputs."elvis".owner = "riinr";
-  # inputs."elvis".repo = "flake-nimble";
-  # inputs."elvis".ref = "flake-pinning";
-  # inputs."elvis".dir = "nimpkgs/e/elvis";
-  # inputs."elvis".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."elvis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."elvis".type = "github";
+  inputs."elvis".owner = "riinr";
+  inputs."elvis".repo = "flake-nimble";
+  inputs."elvis".ref = "flake-pinning";
+  inputs."elvis".dir = "nimpkgs/e/elvis";
+  inputs."elvis".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."elvis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-termui-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

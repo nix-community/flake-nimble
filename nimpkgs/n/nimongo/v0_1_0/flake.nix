@@ -13,13 +13,13 @@
   inputs.src-nimongo-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."scram".type = "github";
-  # inputs."scram".owner = "riinr";
-  # inputs."scram".repo = "flake-nimble";
-  # inputs."scram".ref = "flake-pinning";
-  # inputs."scram".dir = "nimpkgs/s/scram";
-  # inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."scram".type = "github";
+  inputs."scram".owner = "riinr";
+  inputs."scram".repo = "flake-nimble";
+  inputs."scram".ref = "flake-pinning";
+  inputs."scram".dir = "nimpkgs/s/scram";
+  inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimongo-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

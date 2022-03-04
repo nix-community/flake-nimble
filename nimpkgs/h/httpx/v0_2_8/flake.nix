@@ -13,13 +13,13 @@
   inputs.src-httpx-v0_2_8.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ioselectors".type = "github";
-  # inputs."ioselectors".owner = "riinr";
-  # inputs."ioselectors".repo = "flake-nimble";
-  # inputs."ioselectors".ref = "flake-pinning";
-  # inputs."ioselectors".dir = "nimpkgs/i/ioselectors";
-  # inputs."ioselectors".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ioselectors".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ioselectors".type = "github";
+  inputs."ioselectors".owner = "riinr";
+  inputs."ioselectors".repo = "flake-nimble";
+  inputs."ioselectors".ref = "flake-pinning";
+  inputs."ioselectors".dir = "nimpkgs/i/ioselectors";
+  inputs."ioselectors".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ioselectors".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-httpx-v0_2_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-runeterra_decks-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."base32".type = "github";
-  # inputs."base32".owner = "riinr";
-  # inputs."base32".repo = "flake-nimble";
-  # inputs."base32".ref = "flake-pinning";
-  # inputs."base32".dir = "nimpkgs/b/base32";
-  # inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."base32".type = "github";
+  inputs."base32".owner = "riinr";
+  inputs."base32".repo = "flake-nimble";
+  inputs."base32".ref = "flake-pinning";
+  inputs."base32".dir = "nimpkgs/b/base32";
+  inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-runeterra_decks-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

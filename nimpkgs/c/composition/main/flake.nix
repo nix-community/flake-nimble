@@ -13,13 +13,13 @@
   inputs.src-composition-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."macrosex".type = "github";
-  # inputs."macrosex".owner = "riinr";
-  # inputs."macrosex".repo = "flake-nimble";
-  # inputs."macrosex".ref = "flake-pinning";
-  # inputs."macrosex".dir = "nimpkgs/m/macrosex";
-  # inputs."macrosex".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."macrosex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."macrosex".type = "github";
+  inputs."macrosex".owner = "riinr";
+  inputs."macrosex".repo = "flake-nimble";
+  inputs."macrosex".ref = "flake-pinning";
+  inputs."macrosex".dir = "nimpkgs/m/macrosex";
+  inputs."macrosex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."macrosex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-composition-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

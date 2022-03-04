@@ -13,22 +13,22 @@
   inputs.src-native_dialogs-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."oldwinapi".type = "github";
-  # inputs."oldwinapi".owner = "riinr";
-  # inputs."oldwinapi".repo = "flake-nimble";
-  # inputs."oldwinapi".ref = "flake-pinning";
-  # inputs."oldwinapi".dir = "nimpkgs/o/oldwinapi";
-  # inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."oldwinapi".type = "github";
+  inputs."oldwinapi".owner = "riinr";
+  inputs."oldwinapi".repo = "flake-nimble";
+  inputs."oldwinapi".ref = "flake-pinning";
+  inputs."oldwinapi".dir = "nimpkgs/o/oldwinapi";
+  inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."gtk2".type = "github";
-  # inputs."gtk2".owner = "riinr";
-  # inputs."gtk2".repo = "flake-nimble";
-  # inputs."gtk2".ref = "flake-pinning";
-  # inputs."gtk2".dir = "nimpkgs/g/gtk2";
-  # inputs."gtk2".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."gtk2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."gtk2".type = "github";
+  inputs."gtk2".owner = "riinr";
+  inputs."gtk2".repo = "flake-nimble";
+  inputs."gtk2".ref = "flake-pinning";
+  inputs."gtk2".dir = "nimpkgs/g/gtk2";
+  inputs."gtk2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gtk2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-native_dialogs-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

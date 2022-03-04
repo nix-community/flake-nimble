@@ -13,13 +13,13 @@
   inputs.src-nimaterial-ver_0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."palette".type = "github";
-  # inputs."palette".owner = "riinr";
-  # inputs."palette".repo = "flake-nimble";
-  # inputs."palette".ref = "flake-pinning";
-  # inputs."palette".dir = "nimpkgs/p/palette";
-  # inputs."palette".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."palette".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."palette".type = "github";
+  inputs."palette".owner = "riinr";
+  inputs."palette".repo = "flake-nimble";
+  inputs."palette".ref = "flake-pinning";
+  inputs."palette".dir = "nimpkgs/p/palette";
+  inputs."palette".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."palette".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimaterial-ver_0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

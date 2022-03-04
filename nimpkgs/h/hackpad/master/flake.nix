@@ -13,22 +13,22 @@
   inputs.src-hackpad-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jester".type = "github";
-  # inputs."jester".owner = "riinr";
-  # inputs."jester".repo = "flake-nimble";
-  # inputs."jester".ref = "flake-pinning";
-  # inputs."jester".dir = "nimpkgs/j/jester";
-  # inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jester".type = "github";
+  inputs."jester".owner = "riinr";
+  inputs."jester".repo = "flake-nimble";
+  inputs."jester".ref = "flake-pinning";
+  inputs."jester".dir = "nimpkgs/j/jester";
+  inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."zip".type = "github";
-  # inputs."zip".owner = "riinr";
-  # inputs."zip".repo = "flake-nimble";
-  # inputs."zip".ref = "flake-pinning";
-  # inputs."zip".dir = "nimpkgs/z/zip";
-  # inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zip".type = "github";
+  inputs."zip".owner = "riinr";
+  inputs."zip".repo = "flake-nimble";
+  inputs."zip".ref = "flake-pinning";
+  inputs."zip".dir = "nimpkgs/z/zip";
+  inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-hackpad-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

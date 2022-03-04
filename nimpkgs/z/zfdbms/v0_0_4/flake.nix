@@ -13,13 +13,13 @@
   inputs.src-zfdbms-v0_0_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stdext".type = "github";
-  # inputs."stdext".owner = "riinr";
-  # inputs."stdext".repo = "flake-nimble";
-  # inputs."stdext".ref = "flake-pinning";
-  # inputs."stdext".dir = "nimpkgs/s/stdext";
-  # inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stdext".type = "github";
+  inputs."stdext".owner = "riinr";
+  inputs."stdext".repo = "flake-nimble";
+  inputs."stdext".ref = "flake-pinning";
+  inputs."stdext".dir = "nimpkgs/s/stdext";
+  inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-zfdbms-v0_0_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

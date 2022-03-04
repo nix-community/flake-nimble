@@ -13,13 +13,13 @@
   inputs.src-rlp-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ranges".type = "github";
-  # inputs."ranges".owner = "riinr";
-  # inputs."ranges".repo = "flake-nimble";
-  # inputs."ranges".ref = "flake-pinning";
-  # inputs."ranges".dir = "nimpkgs/r/ranges";
-  # inputs."ranges".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ranges".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ranges".type = "github";
+  inputs."ranges".owner = "riinr";
+  inputs."ranges".repo = "flake-nimble";
+  inputs."ranges".ref = "flake-pinning";
+  inputs."ranges".dir = "nimpkgs/r/ranges";
+  inputs."ranges".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ranges".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-rlp-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

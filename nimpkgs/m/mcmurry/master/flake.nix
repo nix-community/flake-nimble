@@ -13,31 +13,31 @@
   inputs.src-mcmurry-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."asciitype".type = "github";
-  # inputs."asciitype".owner = "riinr";
-  # inputs."asciitype".repo = "flake-nimble";
-  # inputs."asciitype".ref = "flake-pinning";
-  # inputs."asciitype".dir = "nimpkgs/a/asciitype";
-  # inputs."asciitype".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."asciitype".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."asciitype".type = "github";
+  inputs."asciitype".owner = "riinr";
+  inputs."asciitype".repo = "flake-nimble";
+  inputs."asciitype".ref = "flake-pinning";
+  inputs."asciitype".dir = "nimpkgs/a/asciitype";
+  inputs."asciitype".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."asciitype".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."ast_pattern_matching".type = "github";
-  # inputs."ast_pattern_matching".owner = "riinr";
-  # inputs."ast_pattern_matching".repo = "flake-nimble";
-  # inputs."ast_pattern_matching".ref = "flake-pinning";
-  # inputs."ast_pattern_matching".dir = "nimpkgs/a/ast_pattern_matching";
-  # inputs."ast_pattern_matching".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ast_pattern_matching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ast_pattern_matching".type = "github";
+  inputs."ast_pattern_matching".owner = "riinr";
+  inputs."ast_pattern_matching".repo = "flake-nimble";
+  inputs."ast_pattern_matching".ref = "flake-pinning";
+  inputs."ast_pattern_matching".dir = "nimpkgs/a/ast_pattern_matching";
+  inputs."ast_pattern_matching".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ast_pattern_matching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."regex".type = "github";
-  # inputs."regex".owner = "riinr";
-  # inputs."regex".repo = "flake-nimble";
-  # inputs."regex".ref = "flake-pinning";
-  # inputs."regex".dir = "nimpkgs/r/regex";
-  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."regex".type = "github";
+  inputs."regex".owner = "riinr";
+  inputs."regex".repo = "flake-nimble";
+  inputs."regex".ref = "flake-pinning";
+  inputs."regex".dir = "nimpkgs/r/regex";
+  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mcmurry-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

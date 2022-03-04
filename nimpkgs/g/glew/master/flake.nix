@@ -13,22 +13,22 @@
   inputs.src-glew-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/jyapayne/nimterop".type = "github";
-  # inputs."https://github.com/jyapayne/nimterop".owner = "riinr";
-  # inputs."https://github.com/jyapayne/nimterop".repo = "flake-nimble";
-  # inputs."https://github.com/jyapayne/nimterop".ref = "flake-pinning";
-  # inputs."https://github.com/jyapayne/nimterop".dir = "nimpkgs/h/https://github.com/jyapayne/nimterop";
-  # inputs."https://github.com/jyapayne/nimterop".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/jyapayne/nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/jyapayne/nimterop".type = "github";
+  inputs."https://github.com/jyapayne/nimterop".owner = "riinr";
+  inputs."https://github.com/jyapayne/nimterop".repo = "flake-nimble";
+  inputs."https://github.com/jyapayne/nimterop".ref = "flake-pinning";
+  inputs."https://github.com/jyapayne/nimterop".dir = "nimpkgs/h/https://github.com/jyapayne/nimterop";
+  inputs."https://github.com/jyapayne/nimterop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/jyapayne/nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."https://github.com/jyapayne/nim-glfw".type = "github";
-  # inputs."https://github.com/jyapayne/nim-glfw".owner = "riinr";
-  # inputs."https://github.com/jyapayne/nim-glfw".repo = "flake-nimble";
-  # inputs."https://github.com/jyapayne/nim-glfw".ref = "flake-pinning";
-  # inputs."https://github.com/jyapayne/nim-glfw".dir = "nimpkgs/h/https://github.com/jyapayne/nim-glfw";
-  # inputs."https://github.com/jyapayne/nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/jyapayne/nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/jyapayne/nim-glfw".type = "github";
+  inputs."https://github.com/jyapayne/nim-glfw".owner = "riinr";
+  inputs."https://github.com/jyapayne/nim-glfw".repo = "flake-nimble";
+  inputs."https://github.com/jyapayne/nim-glfw".ref = "flake-pinning";
+  inputs."https://github.com/jyapayne/nim-glfw".dir = "nimpkgs/h/https://github.com/jyapayne/nim-glfw";
+  inputs."https://github.com/jyapayne/nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/jyapayne/nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-glew-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

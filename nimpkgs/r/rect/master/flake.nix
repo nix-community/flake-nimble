@@ -13,22 +13,22 @@
   inputs.src-rect-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."eastasianwidth".type = "github";
-  # inputs."eastasianwidth".owner = "riinr";
-  # inputs."eastasianwidth".repo = "flake-nimble";
-  # inputs."eastasianwidth".ref = "flake-pinning";
-  # inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
-  # inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."eastasianwidth".type = "github";
+  inputs."eastasianwidth".owner = "riinr";
+  inputs."eastasianwidth".repo = "flake-nimble";
+  inputs."eastasianwidth".ref = "flake-pinning";
+  inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
+  inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."docopt".type = "github";
-  # inputs."docopt".owner = "riinr";
-  # inputs."docopt".repo = "flake-nimble";
-  # inputs."docopt".ref = "flake-pinning";
-  # inputs."docopt".dir = "nimpkgs/d/docopt";
-  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."docopt".type = "github";
+  inputs."docopt".owner = "riinr";
+  inputs."docopt".repo = "flake-nimble";
+  inputs."docopt".ref = "flake-pinning";
+  inputs."docopt".dir = "nimpkgs/d/docopt";
+  inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-rect-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

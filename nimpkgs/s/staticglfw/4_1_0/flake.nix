@@ -13,13 +13,13 @@
   inputs.src-staticglfw-4_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."opengl".type = "github";
-  # inputs."opengl".owner = "riinr";
-  # inputs."opengl".repo = "flake-nimble";
-  # inputs."opengl".ref = "flake-pinning";
-  # inputs."opengl".dir = "nimpkgs/o/opengl";
-  # inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."opengl".type = "github";
+  inputs."opengl".owner = "riinr";
+  inputs."opengl".repo = "flake-nimble";
+  inputs."opengl".ref = "flake-pinning";
+  inputs."opengl".dir = "nimpkgs/o/opengl";
+  inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-staticglfw-4_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

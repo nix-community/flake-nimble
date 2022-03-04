@@ -13,22 +13,22 @@
   inputs.src-til-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."colorize".type = "github";
-  # inputs."colorize".owner = "riinr";
-  # inputs."colorize".repo = "flake-nimble";
-  # inputs."colorize".ref = "flake-pinning";
-  # inputs."colorize".dir = "nimpkgs/c/colorize";
-  # inputs."colorize".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."colorize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."colorize".type = "github";
+  inputs."colorize".owner = "riinr";
+  inputs."colorize".repo = "flake-nimble";
+  inputs."colorize".ref = "flake-pinning";
+  inputs."colorize".dir = "nimpkgs/c/colorize";
+  inputs."colorize".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."colorize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."argparse".type = "github";
-  # inputs."argparse".owner = "riinr";
-  # inputs."argparse".repo = "flake-nimble";
-  # inputs."argparse".ref = "flake-pinning";
-  # inputs."argparse".dir = "nimpkgs/a/argparse";
-  # inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."argparse".type = "github";
+  inputs."argparse".owner = "riinr";
+  inputs."argparse".repo = "flake-nimble";
+  inputs."argparse".ref = "flake-pinning";
+  inputs."argparse".dir = "nimpkgs/a/argparse";
+  inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-til-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

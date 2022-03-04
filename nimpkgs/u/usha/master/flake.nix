@@ -13,13 +13,13 @@
   inputs.src-usha-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."docopt".type = "github";
-  # inputs."docopt".owner = "riinr";
-  # inputs."docopt".repo = "flake-nimble";
-  # inputs."docopt".ref = "flake-pinning";
-  # inputs."docopt".dir = "nimpkgs/d/docopt";
-  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."docopt".type = "github";
+  inputs."docopt".owner = "riinr";
+  inputs."docopt".repo = "flake-nimble";
+  inputs."docopt".ref = "flake-pinning";
+  inputs."docopt".dir = "nimpkgs/d/docopt";
+  inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-usha-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

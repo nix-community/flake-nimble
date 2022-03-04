@@ -13,13 +13,13 @@
   inputs.src-retranslator-0_2_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nre".type = "github";
-  # inputs."nre".owner = "riinr";
-  # inputs."nre".repo = "flake-nimble";
-  # inputs."nre".ref = "flake-pinning";
-  # inputs."nre".dir = "nimpkgs/n/nre";
-  # inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nre".type = "github";
+  inputs."nre".owner = "riinr";
+  inputs."nre".repo = "flake-nimble";
+  inputs."nre".ref = "flake-pinning";
+  inputs."nre".dir = "nimpkgs/n/nre";
+  inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-retranslator-0_2_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

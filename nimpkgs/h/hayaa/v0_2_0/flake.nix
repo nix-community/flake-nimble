@@ -13,13 +13,13 @@
   inputs.src-hayaa-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."illwill".type = "github";
-  # inputs."illwill".owner = "riinr";
-  # inputs."illwill".repo = "flake-nimble";
-  # inputs."illwill".ref = "flake-pinning";
-  # inputs."illwill".dir = "nimpkgs/i/illwill";
-  # inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."illwill".type = "github";
+  inputs."illwill".owner = "riinr";
+  inputs."illwill".repo = "flake-nimble";
+  inputs."illwill".ref = "flake-pinning";
+  inputs."illwill".dir = "nimpkgs/i/illwill";
+  inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-hayaa-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

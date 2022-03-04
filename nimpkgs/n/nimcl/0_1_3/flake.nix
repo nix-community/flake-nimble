@@ -13,13 +13,13 @@
   inputs.src-nimcl-0_1_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."opencl".type = "github";
-  # inputs."opencl".owner = "riinr";
-  # inputs."opencl".repo = "flake-nimble";
-  # inputs."opencl".ref = "flake-pinning";
-  # inputs."opencl".dir = "nimpkgs/o/opencl";
-  # inputs."opencl".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."opencl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."opencl".type = "github";
+  inputs."opencl".owner = "riinr";
+  inputs."opencl".repo = "flake-nimble";
+  inputs."opencl".ref = "flake-pinning";
+  inputs."opencl".dir = "nimpkgs/o/opencl";
+  inputs."opencl".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."opencl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimcl-0_1_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

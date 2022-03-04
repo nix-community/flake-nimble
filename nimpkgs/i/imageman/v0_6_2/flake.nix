@@ -13,13 +13,13 @@
   inputs.src-imageman-v0_6_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stb_image".type = "github";
-  # inputs."stb_image".owner = "riinr";
-  # inputs."stb_image".repo = "flake-nimble";
-  # inputs."stb_image".ref = "flake-pinning";
-  # inputs."stb_image".dir = "nimpkgs/s/stb_image";
-  # inputs."stb_image".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stb_image".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stb_image".type = "github";
+  inputs."stb_image".owner = "riinr";
+  inputs."stb_image".repo = "flake-nimble";
+  inputs."stb_image".ref = "flake-pinning";
+  inputs."stb_image".dir = "nimpkgs/s/stb_image";
+  inputs."stb_image".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stb_image".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-imageman-v0_6_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

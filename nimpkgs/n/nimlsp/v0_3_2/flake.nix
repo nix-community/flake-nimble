@@ -13,22 +13,22 @@
   inputs.src-nimlsp-v0_3_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."astpatternmatching".type = "github";
-  # inputs."astpatternmatching".owner = "riinr";
-  # inputs."astpatternmatching".repo = "flake-nimble";
-  # inputs."astpatternmatching".ref = "flake-pinning";
-  # inputs."astpatternmatching".dir = "nimpkgs/a/astpatternmatching";
-  # inputs."astpatternmatching".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."astpatternmatching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."astpatternmatching".type = "github";
+  inputs."astpatternmatching".owner = "riinr";
+  inputs."astpatternmatching".repo = "flake-nimble";
+  inputs."astpatternmatching".ref = "flake-pinning";
+  inputs."astpatternmatching".dir = "nimpkgs/a/astpatternmatching";
+  inputs."astpatternmatching".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."astpatternmatching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."jsonschema".type = "github";
-  # inputs."jsonschema".owner = "riinr";
-  # inputs."jsonschema".repo = "flake-nimble";
-  # inputs."jsonschema".ref = "flake-pinning";
-  # inputs."jsonschema".dir = "nimpkgs/j/jsonschema";
-  # inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsonschema".type = "github";
+  inputs."jsonschema".owner = "riinr";
+  inputs."jsonschema".repo = "flake-nimble";
+  inputs."jsonschema".ref = "flake-pinning";
+  inputs."jsonschema".dir = "nimpkgs/j/jsonschema";
+  inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimlsp-v0_3_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

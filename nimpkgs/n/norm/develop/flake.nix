@@ -13,13 +13,13 @@
   inputs.src-norm-develop.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ndb".type = "github";
-  # inputs."ndb".owner = "riinr";
-  # inputs."ndb".repo = "flake-nimble";
-  # inputs."ndb".ref = "flake-pinning";
-  # inputs."ndb".dir = "nimpkgs/n/ndb";
-  # inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ndb".type = "github";
+  inputs."ndb".owner = "riinr";
+  inputs."ndb".repo = "flake-nimble";
+  inputs."ndb".ref = "flake-pinning";
+  inputs."ndb".dir = "nimpkgs/n/ndb";
+  inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-norm-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;

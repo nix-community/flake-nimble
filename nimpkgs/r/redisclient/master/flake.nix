@@ -13,13 +13,13 @@
   inputs.src-redisclient-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."redisparser".type = "github";
-  # inputs."redisparser".owner = "riinr";
-  # inputs."redisparser".repo = "flake-nimble";
-  # inputs."redisparser".ref = "flake-pinning";
-  # inputs."redisparser".dir = "nimpkgs/r/redisparser";
-  # inputs."redisparser".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."redisparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."redisparser".type = "github";
+  inputs."redisparser".owner = "riinr";
+  inputs."redisparser".repo = "flake-nimble";
+  inputs."redisparser".ref = "flake-pinning";
+  inputs."redisparser".dir = "nimpkgs/r/redisparser";
+  inputs."redisparser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."redisparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-redisclient-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

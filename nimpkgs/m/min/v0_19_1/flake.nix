@@ -13,13 +13,13 @@
   inputs.src-min-v0_19_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nifty".type = "github";
-  # inputs."nifty".owner = "riinr";
-  # inputs."nifty".repo = "flake-nimble";
-  # inputs."nifty".ref = "flake-pinning";
-  # inputs."nifty".dir = "nimpkgs/n/nifty";
-  # inputs."nifty".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nifty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nifty".type = "github";
+  inputs."nifty".owner = "riinr";
+  inputs."nifty".repo = "flake-nimble";
+  inputs."nifty".ref = "flake-pinning";
+  inputs."nifty".dir = "nimpkgs/n/nifty";
+  inputs."nifty".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nifty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-min-v0_19_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-allographer-v0_19_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."dotenv".type = "github";
-  # inputs."dotenv".owner = "riinr";
-  # inputs."dotenv".repo = "flake-nimble";
-  # inputs."dotenv".ref = "flake-pinning";
-  # inputs."dotenv".dir = "nimpkgs/d/dotenv";
-  # inputs."dotenv".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."dotenv".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."dotenv".type = "github";
+  inputs."dotenv".owner = "riinr";
+  inputs."dotenv".repo = "flake-nimble";
+  inputs."dotenv".ref = "flake-pinning";
+  inputs."dotenv".dir = "nimpkgs/d/dotenv";
+  inputs."dotenv".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dotenv".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-allographer-v0_19_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

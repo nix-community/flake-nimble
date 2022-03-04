@@ -13,22 +13,22 @@
   inputs.src-testrunner-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."libnotify".type = "github";
-  # inputs."libnotify".owner = "riinr";
-  # inputs."libnotify".repo = "flake-nimble";
-  # inputs."libnotify".ref = "flake-pinning";
-  # inputs."libnotify".dir = "nimpkgs/l/libnotify";
-  # inputs."libnotify".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."libnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."libnotify".type = "github";
+  inputs."libnotify".owner = "riinr";
+  inputs."libnotify".repo = "flake-nimble";
+  inputs."libnotify".ref = "flake-pinning";
+  inputs."libnotify".dir = "nimpkgs/l/libnotify";
+  inputs."libnotify".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."fswatch".type = "github";
-  # inputs."fswatch".owner = "riinr";
-  # inputs."fswatch".repo = "flake-nimble";
-  # inputs."fswatch".ref = "flake-pinning";
-  # inputs."fswatch".dir = "nimpkgs/f/fswatch";
-  # inputs."fswatch".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."fswatch".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."fswatch".type = "github";
+  inputs."fswatch".owner = "riinr";
+  inputs."fswatch".repo = "flake-nimble";
+  inputs."fswatch".ref = "flake-pinning";
+  inputs."fswatch".dir = "nimpkgs/f/fswatch";
+  inputs."fswatch".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fswatch".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-testrunner-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

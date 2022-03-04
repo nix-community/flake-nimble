@@ -13,13 +13,13 @@
   inputs.src-plists-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."darwin".type = "github";
-  # inputs."darwin".owner = "riinr";
-  # inputs."darwin".repo = "flake-nimble";
-  # inputs."darwin".ref = "flake-pinning";
-  # inputs."darwin".dir = "nimpkgs/d/darwin";
-  # inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."darwin".type = "github";
+  inputs."darwin".owner = "riinr";
+  inputs."darwin".repo = "flake-nimble";
+  inputs."darwin".ref = "flake-pinning";
+  inputs."darwin".dir = "nimpkgs/d/darwin";
+  inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-plists-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

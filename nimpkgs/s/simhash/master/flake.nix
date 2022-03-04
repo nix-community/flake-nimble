@@ -13,13 +13,13 @@
   inputs.src-simhash-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."lc".type = "github";
-  # inputs."lc".owner = "riinr";
-  # inputs."lc".repo = "flake-nimble";
-  # inputs."lc".ref = "flake-pinning";
-  # inputs."lc".dir = "nimpkgs/l/lc";
-  # inputs."lc".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."lc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."lc".type = "github";
+  inputs."lc".owner = "riinr";
+  inputs."lc".repo = "flake-nimble";
+  inputs."lc".ref = "flake-pinning";
+  inputs."lc".dir = "nimpkgs/l/lc";
+  inputs."lc".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."lc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-simhash-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

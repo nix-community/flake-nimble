@@ -13,13 +13,13 @@
   inputs.src-uuids-v0_1_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."isaac".type = "github";
-  # inputs."isaac".owner = "riinr";
-  # inputs."isaac".repo = "flake-nimble";
-  # inputs."isaac".ref = "flake-pinning";
-  # inputs."isaac".dir = "nimpkgs/i/isaac";
-  # inputs."isaac".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."isaac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."isaac".type = "github";
+  inputs."isaac".owner = "riinr";
+  inputs."isaac".repo = "flake-nimble";
+  inputs."isaac".ref = "flake-pinning";
+  inputs."isaac".dir = "nimpkgs/i/isaac";
+  inputs."isaac".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."isaac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-uuids-v0_1_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

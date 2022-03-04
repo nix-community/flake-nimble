@@ -13,22 +13,22 @@
   inputs.src-aws_sdk-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stringinterpolation".type = "github";
-  # inputs."stringinterpolation".owner = "riinr";
-  # inputs."stringinterpolation".repo = "flake-nimble";
-  # inputs."stringinterpolation".ref = "flake-pinning";
-  # inputs."stringinterpolation".dir = "nimpkgs/s/stringinterpolation";
-  # inputs."stringinterpolation".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stringinterpolation".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stringinterpolation".type = "github";
+  inputs."stringinterpolation".owner = "riinr";
+  inputs."stringinterpolation".repo = "flake-nimble";
+  inputs."stringinterpolation".ref = "flake-pinning";
+  inputs."stringinterpolation".dir = "nimpkgs/s/stringinterpolation";
+  inputs."stringinterpolation".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stringinterpolation".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."sph".type = "github";
-  # inputs."sph".owner = "riinr";
-  # inputs."sph".repo = "flake-nimble";
-  # inputs."sph".ref = "flake-pinning";
-  # inputs."sph".dir = "nimpkgs/s/sph";
-  # inputs."sph".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."sph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sph".type = "github";
+  inputs."sph".owner = "riinr";
+  inputs."sph".repo = "flake-nimble";
+  inputs."sph".ref = "flake-pinning";
+  inputs."sph".dir = "nimpkgs/s/sph";
+  inputs."sph".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-aws_sdk-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-microparsec-v0_1-alpha.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."result".type = "github";
-  # inputs."result".owner = "riinr";
-  # inputs."result".repo = "flake-nimble";
-  # inputs."result".ref = "flake-pinning";
-  # inputs."result".dir = "nimpkgs/r/result";
-  # inputs."result".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."result".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."result".type = "github";
+  inputs."result".owner = "riinr";
+  inputs."result".repo = "flake-nimble";
+  inputs."result".ref = "flake-pinning";
+  inputs."result".dir = "nimpkgs/r/result";
+  inputs."result".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."result".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-microparsec-v0_1-alpha, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,31 +13,31 @@
   inputs.src-blscurve-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimcrypto".type = "github";
-  # inputs."nimcrypto".owner = "riinr";
-  # inputs."nimcrypto".repo = "flake-nimble";
-  # inputs."nimcrypto".ref = "flake-pinning";
-  # inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
-  # inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimcrypto".type = "github";
+  inputs."nimcrypto".owner = "riinr";
+  inputs."nimcrypto".repo = "flake-nimble";
+  inputs."nimcrypto".ref = "flake-pinning";
+  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."stew".type = "github";
-  # inputs."stew".owner = "riinr";
-  # inputs."stew".repo = "flake-nimble";
-  # inputs."stew".ref = "flake-pinning";
-  # inputs."stew".dir = "nimpkgs/s/stew";
-  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stew".type = "github";
+  inputs."stew".owner = "riinr";
+  inputs."stew".repo = "flake-nimble";
+  inputs."stew".ref = "flake-pinning";
+  inputs."stew".dir = "nimpkgs/s/stew";
+  inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."https://github.com/status-im/nim-taskpools.git".type = "github";
-  # inputs."https://github.com/status-im/nim-taskpools.git".owner = "riinr";
-  # inputs."https://github.com/status-im/nim-taskpools.git".repo = "flake-nimble";
-  # inputs."https://github.com/status-im/nim-taskpools.git".ref = "flake-pinning";
-  # inputs."https://github.com/status-im/nim-taskpools.git".dir = "nimpkgs/h/https://github.com/status-im/nim-taskpools.git";
-  # inputs."https://github.com/status-im/nim-taskpools.git".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/status-im/nim-taskpools.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/status-im/nim-taskpools.git".type = "github";
+  inputs."https://github.com/status-im/nim-taskpools.git".owner = "riinr";
+  inputs."https://github.com/status-im/nim-taskpools.git".repo = "flake-nimble";
+  inputs."https://github.com/status-im/nim-taskpools.git".ref = "flake-pinning";
+  inputs."https://github.com/status-im/nim-taskpools.git".dir = "nimpkgs/h/https://github.com/status-im/nim-taskpools.git";
+  inputs."https://github.com/status-im/nim-taskpools.git".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/status-im/nim-taskpools.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-blscurve-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

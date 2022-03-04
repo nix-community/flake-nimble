@@ -13,13 +13,13 @@
   inputs.src-noisy-0_4_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimsimd".type = "github";
-  # inputs."nimsimd".owner = "riinr";
-  # inputs."nimsimd".repo = "flake-nimble";
-  # inputs."nimsimd".ref = "flake-pinning";
-  # inputs."nimsimd".dir = "nimpkgs/n/nimsimd";
-  # inputs."nimsimd".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimsimd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimsimd".type = "github";
+  inputs."nimsimd".owner = "riinr";
+  inputs."nimsimd".repo = "flake-nimble";
+  inputs."nimsimd".ref = "flake-pinning";
+  inputs."nimsimd".dir = "nimpkgs/n/nimsimd";
+  inputs."nimsimd".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimsimd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-noisy-0_4_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

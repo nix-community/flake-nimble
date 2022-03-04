@@ -13,13 +13,13 @@
   inputs.src-npg-0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."passgen".type = "github";
-  # inputs."passgen".owner = "riinr";
-  # inputs."passgen".repo = "flake-nimble";
-  # inputs."passgen".ref = "flake-pinning";
-  # inputs."passgen".dir = "nimpkgs/p/passgen";
-  # inputs."passgen".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."passgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."passgen".type = "github";
+  inputs."passgen".owner = "riinr";
+  inputs."passgen".repo = "flake-nimble";
+  inputs."passgen".ref = "flake-pinning";
+  inputs."passgen".dir = "nimpkgs/p/passgen";
+  inputs."passgen".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."passgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-npg-0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

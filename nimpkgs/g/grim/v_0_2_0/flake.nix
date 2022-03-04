@@ -13,13 +13,13 @@
   inputs.src-grim-v_0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."yaml".type = "github";
-  # inputs."yaml".owner = "riinr";
-  # inputs."yaml".repo = "flake-nimble";
-  # inputs."yaml".ref = "flake-pinning";
-  # inputs."yaml".dir = "nimpkgs/y/yaml";
-  # inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."yaml".type = "github";
+  inputs."yaml".owner = "riinr";
+  inputs."yaml".repo = "flake-nimble";
+  inputs."yaml".ref = "flake-pinning";
+  inputs."yaml".dir = "nimpkgs/y/yaml";
+  inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-grim-v_0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

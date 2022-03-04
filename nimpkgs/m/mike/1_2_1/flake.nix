@@ -13,22 +13,22 @@
   inputs.src-mike-1_2_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."httpx".type = "github";
-  # inputs."httpx".owner = "riinr";
-  # inputs."httpx".repo = "flake-nimble";
-  # inputs."httpx".ref = "flake-pinning";
-  # inputs."httpx".dir = "nimpkgs/h/httpx";
-  # inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."httpx".type = "github";
+  inputs."httpx".owner = "riinr";
+  inputs."httpx".repo = "flake-nimble";
+  inputs."httpx".ref = "flake-pinning";
+  inputs."httpx".dir = "nimpkgs/h/httpx";
+  inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."websocketx".type = "github";
-  # inputs."websocketx".owner = "riinr";
-  # inputs."websocketx".repo = "flake-nimble";
-  # inputs."websocketx".ref = "flake-pinning";
-  # inputs."websocketx".dir = "nimpkgs/w/websocketx";
-  # inputs."websocketx".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."websocketx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."websocketx".type = "github";
+  inputs."websocketx".owner = "riinr";
+  inputs."websocketx".repo = "flake-nimble";
+  inputs."websocketx".ref = "flake-pinning";
+  inputs."websocketx".dir = "nimpkgs/w/websocketx";
+  inputs."websocketx".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."websocketx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mike-1_2_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

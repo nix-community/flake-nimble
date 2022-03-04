@@ -13,13 +13,13 @@
   inputs.src-blurhash-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."imageman".type = "github";
-  # inputs."imageman".owner = "riinr";
-  # inputs."imageman".repo = "flake-nimble";
-  # inputs."imageman".ref = "flake-pinning";
-  # inputs."imageman".dir = "nimpkgs/i/imageman";
-  # inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."imageman".type = "github";
+  inputs."imageman".owner = "riinr";
+  inputs."imageman".repo = "flake-nimble";
+  inputs."imageman".ref = "flake-pinning";
+  inputs."imageman".dir = "nimpkgs/i/imageman";
+  inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-blurhash-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

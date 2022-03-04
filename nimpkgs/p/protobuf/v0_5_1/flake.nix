@@ -13,13 +13,13 @@
   inputs.src-protobuf-v0_5_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."combparser".type = "github";
-  # inputs."combparser".owner = "riinr";
-  # inputs."combparser".repo = "flake-nimble";
-  # inputs."combparser".ref = "flake-pinning";
-  # inputs."combparser".dir = "nimpkgs/c/combparser";
-  # inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."combparser".type = "github";
+  inputs."combparser".owner = "riinr";
+  inputs."combparser".repo = "flake-nimble";
+  inputs."combparser".ref = "flake-pinning";
+  inputs."combparser".dir = "nimpkgs/c/combparser";
+  inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-protobuf-v0_5_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

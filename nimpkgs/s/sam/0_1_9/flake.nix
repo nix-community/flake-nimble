@@ -13,13 +13,13 @@
   inputs.src-sam-0_1_9.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jsmn".type = "github";
-  # inputs."jsmn".owner = "riinr";
-  # inputs."jsmn".repo = "flake-nimble";
-  # inputs."jsmn".ref = "flake-pinning";
-  # inputs."jsmn".dir = "nimpkgs/j/jsmn";
-  # inputs."jsmn".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsmn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsmn".type = "github";
+  inputs."jsmn".owner = "riinr";
+  inputs."jsmn".repo = "flake-nimble";
+  inputs."jsmn".ref = "flake-pinning";
+  inputs."jsmn".dir = "nimpkgs/j/jsmn";
+  inputs."jsmn".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsmn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-sam-0_1_9, ...}@deps:
     let lib = flakeNimbleLib.lib;

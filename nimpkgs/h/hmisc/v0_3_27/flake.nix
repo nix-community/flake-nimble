@@ -13,31 +13,31 @@
   inputs.src-hmisc-v0_3_27.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."with".type = "github";
-  # inputs."with".owner = "riinr";
-  # inputs."with".repo = "flake-nimble";
-  # inputs."with".ref = "flake-pinning";
-  # inputs."with".dir = "nimpkgs/w/with";
-  # inputs."with".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."with".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."with".type = "github";
+  inputs."with".owner = "riinr";
+  inputs."with".repo = "flake-nimble";
+  inputs."with".ref = "flake-pinning";
+  inputs."with".dir = "nimpkgs/w/with";
+  inputs."with".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."with".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."shell".type = "github";
-  # inputs."shell".owner = "riinr";
-  # inputs."shell".repo = "flake-nimble";
-  # inputs."shell".ref = "flake-pinning";
-  # inputs."shell".dir = "nimpkgs/s/shell";
-  # inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."shell".type = "github";
+  inputs."shell".owner = "riinr";
+  inputs."shell".repo = "flake-nimble";
+  inputs."shell".ref = "flake-pinning";
+  inputs."shell".dir = "nimpkgs/s/shell";
+  inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."macroutils".type = "github";
-  # inputs."macroutils".owner = "riinr";
-  # inputs."macroutils".repo = "flake-nimble";
-  # inputs."macroutils".ref = "flake-pinning";
-  # inputs."macroutils".dir = "nimpkgs/m/macroutils";
-  # inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."macroutils".type = "github";
+  inputs."macroutils".owner = "riinr";
+  inputs."macroutils".repo = "flake-nimble";
+  inputs."macroutils".ref = "flake-pinning";
+  inputs."macroutils".dir = "nimpkgs/m/macroutils";
+  inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-hmisc-v0_3_27, ...}@deps:
     let lib = flakeNimbleLib.lib;

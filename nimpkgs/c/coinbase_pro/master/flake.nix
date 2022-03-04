@@ -13,31 +13,31 @@
   inputs.src-coinbase_pro-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ws".type = "github";
-  # inputs."ws".owner = "riinr";
-  # inputs."ws".repo = "flake-nimble";
-  # inputs."ws".ref = "flake-pinning";
-  # inputs."ws".dir = "nimpkgs/w/ws";
-  # inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ws".type = "github";
+  inputs."ws".owner = "riinr";
+  inputs."ws".repo = "flake-nimble";
+  inputs."ws".ref = "flake-pinning";
+  inputs."ws".dir = "nimpkgs/w/ws";
+  inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."decimal".type = "github";
-  # inputs."decimal".owner = "riinr";
-  # inputs."decimal".repo = "flake-nimble";
-  # inputs."decimal".ref = "flake-pinning";
-  # inputs."decimal".dir = "nimpkgs/d/decimal";
-  # inputs."decimal".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."decimal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."decimal".type = "github";
+  inputs."decimal".owner = "riinr";
+  inputs."decimal".repo = "flake-nimble";
+  inputs."decimal".ref = "flake-pinning";
+  inputs."decimal".dir = "nimpkgs/d/decimal";
+  inputs."decimal".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."decimal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."uuids".type = "github";
-  # inputs."uuids".owner = "riinr";
-  # inputs."uuids".repo = "flake-nimble";
-  # inputs."uuids".ref = "flake-pinning";
-  # inputs."uuids".dir = "nimpkgs/u/uuids";
-  # inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."uuids".type = "github";
+  inputs."uuids".owner = "riinr";
+  inputs."uuids".repo = "flake-nimble";
+  inputs."uuids".ref = "flake-pinning";
+  inputs."uuids".dir = "nimpkgs/u/uuids";
+  inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-coinbase_pro-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

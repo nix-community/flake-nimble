@@ -13,13 +13,13 @@
   inputs.src-timecop-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."subhook".type = "github";
-  # inputs."subhook".owner = "riinr";
-  # inputs."subhook".repo = "flake-nimble";
-  # inputs."subhook".ref = "flake-pinning";
-  # inputs."subhook".dir = "nimpkgs/s/subhook";
-  # inputs."subhook".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."subhook".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."subhook".type = "github";
+  inputs."subhook".owner = "riinr";
+  inputs."subhook".repo = "flake-nimble";
+  inputs."subhook".ref = "flake-pinning";
+  inputs."subhook".dir = "nimpkgs/s/subhook";
+  inputs."subhook".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."subhook".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-timecop-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

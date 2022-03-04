@@ -13,13 +13,13 @@
   inputs.src-distributions-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."special_functions".type = "github";
-  # inputs."special_functions".owner = "riinr";
-  # inputs."special_functions".repo = "flake-nimble";
-  # inputs."special_functions".ref = "flake-pinning";
-  # inputs."special_functions".dir = "nimpkgs/s/special_functions";
-  # inputs."special_functions".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."special_functions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."special_functions".type = "github";
+  inputs."special_functions".owner = "riinr";
+  inputs."special_functions".repo = "flake-nimble";
+  inputs."special_functions".ref = "flake-pinning";
+  inputs."special_functions".dir = "nimpkgs/s/special_functions";
+  inputs."special_functions".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."special_functions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-distributions-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

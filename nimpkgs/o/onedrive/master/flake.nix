@@ -13,13 +13,13 @@
   inputs.src-onedrive-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."packedjson".type = "github";
-  # inputs."packedjson".owner = "riinr";
-  # inputs."packedjson".repo = "flake-nimble";
-  # inputs."packedjson".ref = "flake-pinning";
-  # inputs."packedjson".dir = "nimpkgs/p/packedjson";
-  # inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."packedjson".type = "github";
+  inputs."packedjson".owner = "riinr";
+  inputs."packedjson".repo = "flake-nimble";
+  inputs."packedjson".ref = "flake-pinning";
+  inputs."packedjson".dir = "nimpkgs/p/packedjson";
+  inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-onedrive-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

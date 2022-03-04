@@ -13,22 +13,22 @@
   inputs.src-mongrel2-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."tnetstring".type = "github";
-  # inputs."tnetstring".owner = "riinr";
-  # inputs."tnetstring".repo = "flake-nimble";
-  # inputs."tnetstring".ref = "flake-pinning";
-  # inputs."tnetstring".dir = "nimpkgs/t/tnetstring";
-  # inputs."tnetstring".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."tnetstring".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."tnetstring".type = "github";
+  inputs."tnetstring".owner = "riinr";
+  inputs."tnetstring".repo = "flake-nimble";
+  inputs."tnetstring".ref = "flake-pinning";
+  inputs."tnetstring".dir = "nimpkgs/t/tnetstring";
+  inputs."tnetstring".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tnetstring".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."zmq".type = "github";
-  # inputs."zmq".owner = "riinr";
-  # inputs."zmq".repo = "flake-nimble";
-  # inputs."zmq".ref = "flake-pinning";
-  # inputs."zmq".dir = "nimpkgs/z/zmq";
-  # inputs."zmq".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."zmq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zmq".type = "github";
+  inputs."zmq".owner = "riinr";
+  inputs."zmq".repo = "flake-nimble";
+  inputs."zmq".ref = "flake-pinning";
+  inputs."zmq".dir = "nimpkgs/z/zmq";
+  inputs."zmq".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zmq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mongrel2-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

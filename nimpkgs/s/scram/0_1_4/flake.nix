@@ -13,13 +13,13 @@
   inputs.src-scram-0_1_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."hmac".type = "github";
-  # inputs."hmac".owner = "riinr";
-  # inputs."hmac".repo = "flake-nimble";
-  # inputs."hmac".ref = "flake-pinning";
-  # inputs."hmac".dir = "nimpkgs/h/hmac";
-  # inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."hmac".type = "github";
+  inputs."hmac".owner = "riinr";
+  inputs."hmac".repo = "flake-nimble";
+  inputs."hmac".ref = "flake-pinning";
+  inputs."hmac".dir = "nimpkgs/h/hmac";
+  inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-scram-0_1_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

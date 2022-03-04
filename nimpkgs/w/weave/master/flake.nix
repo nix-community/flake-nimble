@@ -13,13 +13,13 @@
   inputs.src-weave-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."synthesis".type = "github";
-  # inputs."synthesis".owner = "riinr";
-  # inputs."synthesis".repo = "flake-nimble";
-  # inputs."synthesis".ref = "flake-pinning";
-  # inputs."synthesis".dir = "nimpkgs/s/synthesis";
-  # inputs."synthesis".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."synthesis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."synthesis".type = "github";
+  inputs."synthesis".owner = "riinr";
+  inputs."synthesis".repo = "flake-nimble";
+  inputs."synthesis".ref = "flake-pinning";
+  inputs."synthesis".dir = "nimpkgs/s/synthesis";
+  inputs."synthesis".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."synthesis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-weave-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

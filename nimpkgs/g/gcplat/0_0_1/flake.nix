@@ -13,13 +13,13 @@
   inputs.src-gcplat-0_0_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."openapi".type = "github";
-  # inputs."openapi".owner = "riinr";
-  # inputs."openapi".repo = "flake-nimble";
-  # inputs."openapi".ref = "flake-pinning";
-  # inputs."openapi".dir = "nimpkgs/o/openapi";
-  # inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."openapi".type = "github";
+  inputs."openapi".owner = "riinr";
+  inputs."openapi".repo = "flake-nimble";
+  inputs."openapi".ref = "flake-pinning";
+  inputs."openapi".dir = "nimpkgs/o/openapi";
+  inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-gcplat-0_0_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

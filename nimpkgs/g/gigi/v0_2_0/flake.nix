@@ -13,13 +13,13 @@
   inputs.src-gigi-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."puppy".type = "github";
-  # inputs."puppy".owner = "riinr";
-  # inputs."puppy".repo = "flake-nimble";
-  # inputs."puppy".ref = "flake-pinning";
-  # inputs."puppy".dir = "nimpkgs/p/puppy";
-  # inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."puppy".type = "github";
+  inputs."puppy".owner = "riinr";
+  inputs."puppy".repo = "flake-nimble";
+  inputs."puppy".ref = "flake-pinning";
+  inputs."puppy".dir = "nimpkgs/p/puppy";
+  inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-gigi-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

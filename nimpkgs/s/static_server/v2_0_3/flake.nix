@@ -13,13 +13,13 @@
   inputs.src-static_server-v2_0_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/bung87/finder".type = "github";
-  # inputs."https://github.com/bung87/finder".owner = "riinr";
-  # inputs."https://github.com/bung87/finder".repo = "flake-nimble";
-  # inputs."https://github.com/bung87/finder".ref = "flake-pinning";
-  # inputs."https://github.com/bung87/finder".dir = "nimpkgs/h/https://github.com/bung87/finder";
-  # inputs."https://github.com/bung87/finder".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/bung87/finder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/bung87/finder".type = "github";
+  inputs."https://github.com/bung87/finder".owner = "riinr";
+  inputs."https://github.com/bung87/finder".repo = "flake-nimble";
+  inputs."https://github.com/bung87/finder".ref = "flake-pinning";
+  inputs."https://github.com/bung87/finder".dir = "nimpkgs/h/https://github.com/bung87/finder";
+  inputs."https://github.com/bung87/finder".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/bung87/finder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-static_server-v2_0_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-sigv4-1_0_8.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/jangko/nimsha2".type = "github";
-  # inputs."https://github.com/jangko/nimsha2".owner = "riinr";
-  # inputs."https://github.com/jangko/nimsha2".repo = "flake-nimble";
-  # inputs."https://github.com/jangko/nimsha2".ref = "flake-pinning";
-  # inputs."https://github.com/jangko/nimsha2".dir = "nimpkgs/h/https://github.com/jangko/nimsha2";
-  # inputs."https://github.com/jangko/nimsha2".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/jangko/nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/jangko/nimsha2".type = "github";
+  inputs."https://github.com/jangko/nimsha2".owner = "riinr";
+  inputs."https://github.com/jangko/nimsha2".repo = "flake-nimble";
+  inputs."https://github.com/jangko/nimsha2".ref = "flake-pinning";
+  inputs."https://github.com/jangko/nimsha2".dir = "nimpkgs/h/https://github.com/jangko/nimsha2";
+  inputs."https://github.com/jangko/nimsha2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/jangko/nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-sigv4-1_0_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-buffer-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."struct".type = "github";
-  # inputs."struct".owner = "riinr";
-  # inputs."struct".repo = "flake-nimble";
-  # inputs."struct".ref = "flake-pinning";
-  # inputs."struct".dir = "nimpkgs/s/struct";
-  # inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."struct".type = "github";
+  inputs."struct".owner = "riinr";
+  inputs."struct".repo = "flake-nimble";
+  inputs."struct".ref = "flake-pinning";
+  inputs."struct".dir = "nimpkgs/s/struct";
+  inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-buffer-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

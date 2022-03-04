@@ -13,13 +13,13 @@
   inputs.src-coverage-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nake".type = "github";
-  # inputs."nake".owner = "riinr";
-  # inputs."nake".repo = "flake-nimble";
-  # inputs."nake".ref = "flake-pinning";
-  # inputs."nake".dir = "nimpkgs/n/nake";
-  # inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nake".type = "github";
+  inputs."nake".owner = "riinr";
+  inputs."nake".repo = "flake-nimble";
+  inputs."nake".ref = "flake-pinning";
+  inputs."nake".dir = "nimpkgs/n/nake";
+  inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-coverage-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

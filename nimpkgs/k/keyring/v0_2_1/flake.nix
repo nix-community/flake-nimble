@@ -13,13 +13,13 @@
   inputs.src-keyring-v0_2_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."dbus".type = "github";
-  # inputs."dbus".owner = "riinr";
-  # inputs."dbus".repo = "flake-nimble";
-  # inputs."dbus".ref = "flake-pinning";
-  # inputs."dbus".dir = "nimpkgs/d/dbus";
-  # inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."dbus".type = "github";
+  inputs."dbus".owner = "riinr";
+  inputs."dbus".repo = "flake-nimble";
+  inputs."dbus".ref = "flake-pinning";
+  inputs."dbus".dir = "nimpkgs/d/dbus";
+  inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-keyring-v0_2_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

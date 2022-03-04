@@ -13,22 +13,22 @@
   inputs.src-linear_models-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."arraymancer".type = "github";
-  # inputs."arraymancer".owner = "riinr";
-  # inputs."arraymancer".repo = "flake-nimble";
-  # inputs."arraymancer".ref = "flake-pinning";
-  # inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
-  # inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."arraymancer".type = "github";
+  inputs."arraymancer".owner = "riinr";
+  inputs."arraymancer".repo = "flake-nimble";
+  inputs."arraymancer".ref = "flake-pinning";
+  inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
+  inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."distributions".type = "github";
-  # inputs."distributions".owner = "riinr";
-  # inputs."distributions".repo = "flake-nimble";
-  # inputs."distributions".ref = "flake-pinning";
-  # inputs."distributions".dir = "nimpkgs/d/distributions";
-  # inputs."distributions".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."distributions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."distributions".type = "github";
+  inputs."distributions".owner = "riinr";
+  inputs."distributions".repo = "flake-nimble";
+  inputs."distributions".ref = "flake-pinning";
+  inputs."distributions".dir = "nimpkgs/d/distributions";
+  inputs."distributions".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."distributions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-linear_models-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

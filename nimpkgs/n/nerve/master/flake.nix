@@ -13,13 +13,13 @@
   inputs.src-nerve-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ws".type = "github";
-  # inputs."ws".owner = "riinr";
-  # inputs."ws".repo = "flake-nimble";
-  # inputs."ws".ref = "flake-pinning";
-  # inputs."ws".dir = "nimpkgs/w/ws";
-  # inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ws".type = "github";
+  inputs."ws".owner = "riinr";
+  inputs."ws".repo = "flake-nimble";
+  inputs."ws".ref = "flake-pinning";
+  inputs."ws".dir = "nimpkgs/w/ws";
+  inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nerve-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

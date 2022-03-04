@@ -13,31 +13,31 @@
   inputs.src-astdot-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."strings".type = "github";
-  # inputs."strings".owner = "riinr";
-  # inputs."strings".repo = "flake-nimble";
-  # inputs."strings".ref = "flake-pinning";
-  # inputs."strings".dir = "nimpkgs/s/strings";
-  # inputs."strings".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."strings".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."strings".type = "github";
+  inputs."strings".owner = "riinr";
+  inputs."strings".repo = "flake-nimble";
+  inputs."strings".ref = "flake-pinning";
+  inputs."strings".dir = "nimpkgs/s/strings";
+  inputs."strings".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."strings".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."clapfn".type = "github";
-  # inputs."clapfn".owner = "riinr";
-  # inputs."clapfn".repo = "flake-nimble";
-  # inputs."clapfn".ref = "flake-pinning";
-  # inputs."clapfn".dir = "nimpkgs/c/clapfn";
-  # inputs."clapfn".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."clapfn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."clapfn".type = "github";
+  inputs."clapfn".owner = "riinr";
+  inputs."clapfn".repo = "flake-nimble";
+  inputs."clapfn".ref = "flake-pinning";
+  inputs."clapfn".dir = "nimpkgs/c/clapfn";
+  inputs."clapfn".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."clapfn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nimgraphviz".type = "github";
-  # inputs."nimgraphviz".owner = "riinr";
-  # inputs."nimgraphviz".repo = "flake-nimble";
-  # inputs."nimgraphviz".ref = "flake-pinning";
-  # inputs."nimgraphviz".dir = "nimpkgs/n/nimgraphviz";
-  # inputs."nimgraphviz".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimgraphviz".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimgraphviz".type = "github";
+  inputs."nimgraphviz".owner = "riinr";
+  inputs."nimgraphviz".repo = "flake-nimble";
+  inputs."nimgraphviz".ref = "flake-pinning";
+  inputs."nimgraphviz".dir = "nimpkgs/n/nimgraphviz";
+  inputs."nimgraphviz".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimgraphviz".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-astdot-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

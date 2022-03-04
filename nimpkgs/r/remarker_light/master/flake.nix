@@ -13,22 +13,22 @@
   inputs.src-remarker_light-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jester".type = "github";
-  # inputs."jester".owner = "riinr";
-  # inputs."jester".repo = "flake-nimble";
-  # inputs."jester".ref = "flake-pinning";
-  # inputs."jester".dir = "nimpkgs/j/jester";
-  # inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jester".type = "github";
+  inputs."jester".owner = "riinr";
+  inputs."jester".repo = "flake-nimble";
+  inputs."jester".ref = "flake-pinning";
+  inputs."jester".dir = "nimpkgs/j/jester";
+  inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."docopt".type = "github";
-  # inputs."docopt".owner = "riinr";
-  # inputs."docopt".repo = "flake-nimble";
-  # inputs."docopt".ref = "flake-pinning";
-  # inputs."docopt".dir = "nimpkgs/d/docopt";
-  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."docopt".type = "github";
+  inputs."docopt".owner = "riinr";
+  inputs."docopt".repo = "flake-nimble";
+  inputs."docopt".ref = "flake-pinning";
+  inputs."docopt".dir = "nimpkgs/d/docopt";
+  inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-remarker_light-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

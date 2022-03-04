@@ -13,22 +13,22 @@
   inputs.src-foliant-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."docopt".type = "github";
-  # inputs."docopt".owner = "riinr";
-  # inputs."docopt".repo = "flake-nimble";
-  # inputs."docopt".ref = "flake-pinning";
-  # inputs."docopt".dir = "nimpkgs/d/docopt";
-  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."docopt".type = "github";
+  inputs."docopt".owner = "riinr";
+  inputs."docopt".repo = "flake-nimble";
+  inputs."docopt".ref = "flake-pinning";
+  inputs."docopt".dir = "nimpkgs/d/docopt";
+  inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."yaml".type = "github";
-  # inputs."yaml".owner = "riinr";
-  # inputs."yaml".repo = "flake-nimble";
-  # inputs."yaml".ref = "flake-pinning";
-  # inputs."yaml".dir = "nimpkgs/y/yaml";
-  # inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."yaml".type = "github";
+  inputs."yaml".owner = "riinr";
+  inputs."yaml".repo = "flake-nimble";
+  inputs."yaml".ref = "flake-pinning";
+  inputs."yaml".dir = "nimpkgs/y/yaml";
+  inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-foliant-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

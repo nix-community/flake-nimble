@@ -13,13 +13,13 @@
   inputs.src-alut-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."openal".type = "github";
-  # inputs."openal".owner = "riinr";
-  # inputs."openal".repo = "flake-nimble";
-  # inputs."openal".ref = "flake-pinning";
-  # inputs."openal".dir = "nimpkgs/o/openal";
-  # inputs."openal".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."openal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."openal".type = "github";
+  inputs."openal".owner = "riinr";
+  inputs."openal".repo = "flake-nimble";
+  inputs."openal".ref = "flake-pinning";
+  inputs."openal".dir = "nimpkgs/o/openal";
+  inputs."openal".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-alut-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

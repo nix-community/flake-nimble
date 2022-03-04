@@ -13,13 +13,13 @@
   inputs.src-asyncredis-v0_8_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."networkutils".type = "github";
-  # inputs."networkutils".owner = "riinr";
-  # inputs."networkutils".repo = "flake-nimble";
-  # inputs."networkutils".ref = "flake-pinning";
-  # inputs."networkutils".dir = "nimpkgs/n/networkutils";
-  # inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."networkutils".type = "github";
+  inputs."networkutils".owner = "riinr";
+  inputs."networkutils".repo = "flake-nimble";
+  inputs."networkutils".ref = "flake-pinning";
+  inputs."networkutils".dir = "nimpkgs/n/networkutils";
+  inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-asyncredis-v0_8_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

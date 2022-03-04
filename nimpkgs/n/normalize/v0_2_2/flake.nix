@@ -13,13 +13,13 @@
   inputs.src-normalize-v0_2_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."unicodedb".type = "github";
-  # inputs."unicodedb".owner = "riinr";
-  # inputs."unicodedb".repo = "flake-nimble";
-  # inputs."unicodedb".ref = "flake-pinning";
-  # inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
-  # inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."unicodedb".type = "github";
+  inputs."unicodedb".owner = "riinr";
+  inputs."unicodedb".repo = "flake-nimble";
+  inputs."unicodedb".ref = "flake-pinning";
+  inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-normalize-v0_2_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

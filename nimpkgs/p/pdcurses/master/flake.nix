@@ -13,13 +13,13 @@
   inputs.src-pdcurses-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."oldwinapi".type = "github";
-  # inputs."oldwinapi".owner = "riinr";
-  # inputs."oldwinapi".repo = "flake-nimble";
-  # inputs."oldwinapi".ref = "flake-pinning";
-  # inputs."oldwinapi".dir = "nimpkgs/o/oldwinapi";
-  # inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."oldwinapi".type = "github";
+  inputs."oldwinapi".owner = "riinr";
+  inputs."oldwinapi".repo = "flake-nimble";
+  inputs."oldwinapi".ref = "flake-pinning";
+  inputs."oldwinapi".dir = "nimpkgs/o/oldwinapi";
+  inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-pdcurses-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

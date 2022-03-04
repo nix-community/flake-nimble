@@ -13,13 +13,13 @@
   inputs.src-astar-0_6_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."binaryheap".type = "github";
-  # inputs."binaryheap".owner = "riinr";
-  # inputs."binaryheap".repo = "flake-nimble";
-  # inputs."binaryheap".ref = "flake-pinning";
-  # inputs."binaryheap".dir = "nimpkgs/b/binaryheap";
-  # inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."binaryheap".type = "github";
+  inputs."binaryheap".owner = "riinr";
+  inputs."binaryheap".repo = "flake-nimble";
+  inputs."binaryheap".ref = "flake-pinning";
+  inputs."binaryheap".dir = "nimpkgs/b/binaryheap";
+  inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-astar-0_6_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

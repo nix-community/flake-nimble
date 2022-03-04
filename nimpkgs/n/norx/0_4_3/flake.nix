@@ -13,13 +13,13 @@
   inputs.src-norx-0_4_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/yglukhov/android".type = "github";
-  # inputs."https://github.com/yglukhov/android".owner = "riinr";
-  # inputs."https://github.com/yglukhov/android".repo = "flake-nimble";
-  # inputs."https://github.com/yglukhov/android".ref = "flake-pinning";
-  # inputs."https://github.com/yglukhov/android".dir = "nimpkgs/h/https://github.com/yglukhov/android";
-  # inputs."https://github.com/yglukhov/android".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/yglukhov/android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/yglukhov/android".type = "github";
+  inputs."https://github.com/yglukhov/android".owner = "riinr";
+  inputs."https://github.com/yglukhov/android".repo = "flake-nimble";
+  inputs."https://github.com/yglukhov/android".ref = "flake-pinning";
+  inputs."https://github.com/yglukhov/android".dir = "nimpkgs/h/https://github.com/yglukhov/android";
+  inputs."https://github.com/yglukhov/android".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/yglukhov/android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-norx-0_4_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

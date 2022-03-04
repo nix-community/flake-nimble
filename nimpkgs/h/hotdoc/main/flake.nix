@@ -13,22 +13,22 @@
   inputs.src-hotdoc-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."docopt".type = "github";
-  # inputs."docopt".owner = "riinr";
-  # inputs."docopt".repo = "flake-nimble";
-  # inputs."docopt".ref = "flake-pinning";
-  # inputs."docopt".dir = "nimpkgs/d/docopt";
-  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."docopt".type = "github";
+  inputs."docopt".owner = "riinr";
+  inputs."docopt".repo = "flake-nimble";
+  inputs."docopt".ref = "flake-pinning";
+  inputs."docopt".dir = "nimpkgs/d/docopt";
+  inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."karax".type = "github";
-  # inputs."karax".owner = "riinr";
-  # inputs."karax".repo = "flake-nimble";
-  # inputs."karax".ref = "flake-pinning";
-  # inputs."karax".dir = "nimpkgs/k/karax";
-  # inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."karax".type = "github";
+  inputs."karax".owner = "riinr";
+  inputs."karax".repo = "flake-nimble";
+  inputs."karax".ref = "flake-pinning";
+  inputs."karax".dir = "nimpkgs/k/karax";
+  inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-hotdoc-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

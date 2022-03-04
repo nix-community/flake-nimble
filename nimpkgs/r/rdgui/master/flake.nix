@@ -13,13 +13,13 @@
   inputs.src-rdgui-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."rapid".type = "github";
-  # inputs."rapid".owner = "riinr";
-  # inputs."rapid".repo = "flake-nimble";
-  # inputs."rapid".ref = "flake-pinning";
-  # inputs."rapid".dir = "nimpkgs/r/rapid";
-  # inputs."rapid".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."rapid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."rapid".type = "github";
+  inputs."rapid".owner = "riinr";
+  inputs."rapid".repo = "flake-nimble";
+  inputs."rapid".ref = "flake-pinning";
+  inputs."rapid".dir = "nimpkgs/r/rapid";
+  inputs."rapid".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."rapid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-rdgui-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

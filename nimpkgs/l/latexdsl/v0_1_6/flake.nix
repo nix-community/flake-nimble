@@ -13,13 +13,13 @@
   inputs.src-latexdsl-v0_1_6.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."datamancer".type = "github";
-  # inputs."datamancer".owner = "riinr";
-  # inputs."datamancer".repo = "flake-nimble";
-  # inputs."datamancer".ref = "flake-pinning";
-  # inputs."datamancer".dir = "nimpkgs/d/datamancer";
-  # inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."datamancer".type = "github";
+  inputs."datamancer".owner = "riinr";
+  inputs."datamancer".repo = "flake-nimble";
+  inputs."datamancer".ref = "flake-pinning";
+  inputs."datamancer".dir = "nimpkgs/d/datamancer";
+  inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-latexdsl-v0_1_6, ...}@deps:
     let lib = flakeNimbleLib.lib;

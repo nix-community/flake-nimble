@@ -13,13 +13,13 @@
   inputs.src-nery-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."fusion".type = "github";
-  # inputs."fusion".owner = "riinr";
-  # inputs."fusion".repo = "flake-nimble";
-  # inputs."fusion".ref = "flake-pinning";
-  # inputs."fusion".dir = "nimpkgs/f/fusion";
-  # inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."fusion".type = "github";
+  inputs."fusion".owner = "riinr";
+  inputs."fusion".repo = "flake-nimble";
+  inputs."fusion".ref = "flake-pinning";
+  inputs."fusion".dir = "nimpkgs/f/fusion";
+  inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nery-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-torch-v0_1_15.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."fragments".type = "github";
-  # inputs."fragments".owner = "riinr";
-  # inputs."fragments".repo = "flake-nimble";
-  # inputs."fragments".ref = "flake-pinning";
-  # inputs."fragments".dir = "nimpkgs/f/fragments";
-  # inputs."fragments".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."fragments".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."fragments".type = "github";
+  inputs."fragments".owner = "riinr";
+  inputs."fragments".repo = "flake-nimble";
+  inputs."fragments".ref = "flake-pinning";
+  inputs."fragments".dir = "nimpkgs/f/fragments";
+  inputs."fragments".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fragments".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-torch-v0_1_15, ...}@deps:
     let lib = flakeNimbleLib.lib;

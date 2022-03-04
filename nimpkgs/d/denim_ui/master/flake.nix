@@ -13,31 +13,31 @@
   inputs.src-denim_ui-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."itertools".type = "github";
-  # inputs."itertools".owner = "riinr";
-  # inputs."itertools".repo = "flake-nimble";
-  # inputs."itertools".ref = "flake-pinning";
-  # inputs."itertools".dir = "nimpkgs/i/itertools";
-  # inputs."itertools".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."itertools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."itertools".type = "github";
+  inputs."itertools".owner = "riinr";
+  inputs."itertools".repo = "flake-nimble";
+  inputs."itertools".ref = "flake-pinning";
+  inputs."itertools".dir = "nimpkgs/i/itertools";
+  inputs."itertools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."itertools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."macroutils".type = "github";
-  # inputs."macroutils".owner = "riinr";
-  # inputs."macroutils".repo = "flake-nimble";
-  # inputs."macroutils".ref = "flake-pinning";
-  # inputs."macroutils".dir = "nimpkgs/m/macroutils";
-  # inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."macroutils".type = "github";
+  inputs."macroutils".owner = "riinr";
+  inputs."macroutils".repo = "flake-nimble";
+  inputs."macroutils".ref = "flake-pinning";
+  inputs."macroutils".dir = "nimpkgs/m/macroutils";
+  inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."rx_nim".type = "github";
-  # inputs."rx_nim".owner = "riinr";
-  # inputs."rx_nim".repo = "flake-nimble";
-  # inputs."rx_nim".ref = "flake-pinning";
-  # inputs."rx_nim".dir = "nimpkgs/r/rx_nim";
-  # inputs."rx_nim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."rx_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."rx_nim".type = "github";
+  inputs."rx_nim".owner = "riinr";
+  inputs."rx_nim".repo = "flake-nimble";
+  inputs."rx_nim".ref = "flake-pinning";
+  inputs."rx_nim".dir = "nimpkgs/r/rx_nim";
+  inputs."rx_nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."rx_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-denim_ui-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-alignment-v1_2_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."eastasianwidth".type = "github";
-  # inputs."eastasianwidth".owner = "riinr";
-  # inputs."eastasianwidth".repo = "flake-nimble";
-  # inputs."eastasianwidth".ref = "flake-pinning";
-  # inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
-  # inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."eastasianwidth".type = "github";
+  inputs."eastasianwidth".owner = "riinr";
+  inputs."eastasianwidth".repo = "flake-nimble";
+  inputs."eastasianwidth".ref = "flake-pinning";
+  inputs."eastasianwidth".dir = "nimpkgs/e/eastasianwidth";
+  inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-alignment-v1_2_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

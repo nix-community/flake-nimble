@@ -13,13 +13,13 @@
   inputs.src-ioselectors-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."wepoll".type = "github";
-  # inputs."wepoll".owner = "riinr";
-  # inputs."wepoll".repo = "flake-nimble";
-  # inputs."wepoll".ref = "flake-pinning";
-  # inputs."wepoll".dir = "nimpkgs/w/wepoll";
-  # inputs."wepoll".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."wepoll".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."wepoll".type = "github";
+  inputs."wepoll".owner = "riinr";
+  inputs."wepoll".repo = "flake-nimble";
+  inputs."wepoll".ref = "flake-pinning";
+  inputs."wepoll".dir = "nimpkgs/w/wepoll";
+  inputs."wepoll".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."wepoll".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ioselectors-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

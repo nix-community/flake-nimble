@@ -13,13 +13,13 @@
   inputs.src-drng-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."cpuwhat".type = "github";
-  # inputs."cpuwhat".owner = "riinr";
-  # inputs."cpuwhat".repo = "flake-nimble";
-  # inputs."cpuwhat".ref = "flake-pinning";
-  # inputs."cpuwhat".dir = "nimpkgs/c/cpuwhat";
-  # inputs."cpuwhat".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."cpuwhat".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cpuwhat".type = "github";
+  inputs."cpuwhat".owner = "riinr";
+  inputs."cpuwhat".repo = "flake-nimble";
+  inputs."cpuwhat".ref = "flake-pinning";
+  inputs."cpuwhat".dir = "nimpkgs/c/cpuwhat";
+  inputs."cpuwhat".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cpuwhat".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-drng-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

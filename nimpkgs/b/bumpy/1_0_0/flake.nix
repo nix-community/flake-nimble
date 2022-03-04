@@ -13,13 +13,13 @@
   inputs.src-bumpy-1_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."vmath".type = "github";
-  # inputs."vmath".owner = "riinr";
-  # inputs."vmath".repo = "flake-nimble";
-  # inputs."vmath".ref = "flake-pinning";
-  # inputs."vmath".dir = "nimpkgs/v/vmath";
-  # inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."vmath".type = "github";
+  inputs."vmath".owner = "riinr";
+  inputs."vmath".repo = "flake-nimble";
+  inputs."vmath".ref = "flake-pinning";
+  inputs."vmath".dir = "nimpkgs/v/vmath";
+  inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-bumpy-1_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

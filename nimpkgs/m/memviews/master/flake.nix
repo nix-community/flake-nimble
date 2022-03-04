@@ -13,13 +13,13 @@
   inputs.src-memviews-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."c_alikes".type = "github";
-  # inputs."c_alikes".owner = "riinr";
-  # inputs."c_alikes".repo = "flake-nimble";
-  # inputs."c_alikes".ref = "flake-pinning";
-  # inputs."c_alikes".dir = "nimpkgs/c/c_alikes";
-  # inputs."c_alikes".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."c_alikes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."c_alikes".type = "github";
+  inputs."c_alikes".owner = "riinr";
+  inputs."c_alikes".repo = "flake-nimble";
+  inputs."c_alikes".ref = "flake-pinning";
+  inputs."c_alikes".dir = "nimpkgs/c/c_alikes";
+  inputs."c_alikes".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."c_alikes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-memviews-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

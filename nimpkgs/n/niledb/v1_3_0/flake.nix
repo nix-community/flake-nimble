@@ -13,13 +13,13 @@
   inputs.src-niledb-v1_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."serializetools".type = "github";
-  # inputs."serializetools".owner = "riinr";
-  # inputs."serializetools".repo = "flake-nimble";
-  # inputs."serializetools".ref = "flake-pinning";
-  # inputs."serializetools".dir = "nimpkgs/s/serializetools";
-  # inputs."serializetools".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."serializetools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."serializetools".type = "github";
+  inputs."serializetools".owner = "riinr";
+  inputs."serializetools".repo = "flake-nimble";
+  inputs."serializetools".ref = "flake-pinning";
+  inputs."serializetools".dir = "nimpkgs/s/serializetools";
+  inputs."serializetools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."serializetools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-niledb-v1_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-microasynchttpserver-0_10_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."picohttpparser".type = "github";
-  # inputs."picohttpparser".owner = "riinr";
-  # inputs."picohttpparser".repo = "flake-nimble";
-  # inputs."picohttpparser".ref = "flake-pinning";
-  # inputs."picohttpparser".dir = "nimpkgs/p/picohttpparser";
-  # inputs."picohttpparser".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."picohttpparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."picohttpparser".type = "github";
+  inputs."picohttpparser".owner = "riinr";
+  inputs."picohttpparser".repo = "flake-nimble";
+  inputs."picohttpparser".ref = "flake-pinning";
+  inputs."picohttpparser".dir = "nimpkgs/p/picohttpparser";
+  inputs."picohttpparser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."picohttpparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-microasynchttpserver-0_10_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

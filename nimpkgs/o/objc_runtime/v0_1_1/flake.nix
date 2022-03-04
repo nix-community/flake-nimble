@@ -13,22 +13,22 @@
   inputs.src-objc_runtime-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/yglukhov/darwin".type = "github";
-  # inputs."https://github.com/yglukhov/darwin".owner = "riinr";
-  # inputs."https://github.com/yglukhov/darwin".repo = "flake-nimble";
-  # inputs."https://github.com/yglukhov/darwin".ref = "flake-pinning";
-  # inputs."https://github.com/yglukhov/darwin".dir = "nimpkgs/h/https://github.com/yglukhov/darwin";
-  # inputs."https://github.com/yglukhov/darwin".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/yglukhov/darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/yglukhov/darwin".type = "github";
+  inputs."https://github.com/yglukhov/darwin".owner = "riinr";
+  inputs."https://github.com/yglukhov/darwin".repo = "flake-nimble";
+  inputs."https://github.com/yglukhov/darwin".ref = "flake-pinning";
+  inputs."https://github.com/yglukhov/darwin".dir = "nimpkgs/h/https://github.com/yglukhov/darwin";
+  inputs."https://github.com/yglukhov/darwin".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/yglukhov/darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."regex".type = "github";
-  # inputs."regex".owner = "riinr";
-  # inputs."regex".repo = "flake-nimble";
-  # inputs."regex".ref = "flake-pinning";
-  # inputs."regex".dir = "nimpkgs/r/regex";
-  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."regex".type = "github";
+  inputs."regex".owner = "riinr";
+  inputs."regex".repo = "flake-nimble";
+  inputs."regex".ref = "flake-pinning";
+  inputs."regex".dir = "nimpkgs/r/regex";
+  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-objc_runtime-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

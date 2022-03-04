@@ -13,13 +13,13 @@
   inputs.src-ansitohtml-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ansiparse".type = "github";
-  # inputs."ansiparse".owner = "riinr";
-  # inputs."ansiparse".repo = "flake-nimble";
-  # inputs."ansiparse".ref = "flake-pinning";
-  # inputs."ansiparse".dir = "nimpkgs/a/ansiparse";
-  # inputs."ansiparse".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ansiparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ansiparse".type = "github";
+  inputs."ansiparse".owner = "riinr";
+  inputs."ansiparse".repo = "flake-nimble";
+  inputs."ansiparse".ref = "flake-pinning";
+  inputs."ansiparse".dir = "nimpkgs/a/ansiparse";
+  inputs."ansiparse".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ansitohtml-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

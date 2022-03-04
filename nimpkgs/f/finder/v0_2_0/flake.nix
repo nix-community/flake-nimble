@@ -13,13 +13,13 @@
   inputs.src-finder-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."zippy".type = "github";
-  # inputs."zippy".owner = "riinr";
-  # inputs."zippy".repo = "flake-nimble";
-  # inputs."zippy".ref = "flake-pinning";
-  # inputs."zippy".dir = "nimpkgs/z/zippy";
-  # inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zippy".type = "github";
+  inputs."zippy".owner = "riinr";
+  inputs."zippy".repo = "flake-nimble";
+  inputs."zippy".ref = "flake-pinning";
+  inputs."zippy".dir = "nimpkgs/z/zippy";
+  inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-finder-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

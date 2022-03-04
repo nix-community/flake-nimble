@@ -13,22 +13,22 @@
   inputs.src-OTP-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."hmac".type = "github";
-  # inputs."hmac".owner = "riinr";
-  # inputs."hmac".repo = "flake-nimble";
-  # inputs."hmac".ref = "flake-pinning";
-  # inputs."hmac".dir = "nimpkgs/h/hmac";
-  # inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."hmac".type = "github";
+  inputs."hmac".owner = "riinr";
+  inputs."hmac".repo = "flake-nimble";
+  inputs."hmac".ref = "flake-pinning";
+  inputs."hmac".dir = "nimpkgs/h/hmac";
+  inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."base32".type = "github";
-  # inputs."base32".owner = "riinr";
-  # inputs."base32".repo = "flake-nimble";
-  # inputs."base32".ref = "flake-pinning";
-  # inputs."base32".dir = "nimpkgs/b/base32";
-  # inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."base32".type = "github";
+  inputs."base32".owner = "riinr";
+  inputs."base32".repo = "flake-nimble";
+  inputs."base32".ref = "flake-pinning";
+  inputs."base32".dir = "nimpkgs/b/base32";
+  inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-otp-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

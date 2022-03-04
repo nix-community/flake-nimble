@@ -13,22 +13,22 @@
   inputs.src-fsnotify-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."timerwheel".type = "github";
-  # inputs."timerwheel".owner = "riinr";
-  # inputs."timerwheel".repo = "flake-nimble";
-  # inputs."timerwheel".ref = "flake-pinning";
-  # inputs."timerwheel".dir = "nimpkgs/t/timerwheel";
-  # inputs."timerwheel".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."timerwheel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."timerwheel".type = "github";
+  inputs."timerwheel".owner = "riinr";
+  inputs."timerwheel".repo = "flake-nimble";
+  inputs."timerwheel".ref = "flake-pinning";
+  inputs."timerwheel".dir = "nimpkgs/t/timerwheel";
+  inputs."timerwheel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."timerwheel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."xio".type = "github";
-  # inputs."xio".owner = "riinr";
-  # inputs."xio".repo = "flake-nimble";
-  # inputs."xio".ref = "flake-pinning";
-  # inputs."xio".dir = "nimpkgs/x/xio";
-  # inputs."xio".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."xio".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."xio".type = "github";
+  inputs."xio".owner = "riinr";
+  inputs."xio".repo = "flake-nimble";
+  inputs."xio".ref = "flake-pinning";
+  inputs."xio".dir = "nimpkgs/x/xio";
+  inputs."xio".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xio".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-fsnotify-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

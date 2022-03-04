@@ -13,31 +13,31 @@
   inputs.src-nimib-v0_1_5.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."tempfile".type = "github";
-  # inputs."tempfile".owner = "riinr";
-  # inputs."tempfile".repo = "flake-nimble";
-  # inputs."tempfile".ref = "flake-pinning";
-  # inputs."tempfile".dir = "nimpkgs/t/tempfile";
-  # inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."tempfile".type = "github";
+  inputs."tempfile".owner = "riinr";
+  inputs."tempfile".repo = "flake-nimble";
+  inputs."tempfile".ref = "flake-pinning";
+  inputs."tempfile".dir = "nimpkgs/t/tempfile";
+  inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."markdown".type = "github";
-  # inputs."markdown".owner = "riinr";
-  # inputs."markdown".repo = "flake-nimble";
-  # inputs."markdown".ref = "flake-pinning";
-  # inputs."markdown".dir = "nimpkgs/m/markdown";
-  # inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."markdown".type = "github";
+  inputs."markdown".owner = "riinr";
+  inputs."markdown".repo = "flake-nimble";
+  inputs."markdown".ref = "flake-pinning";
+  inputs."markdown".dir = "nimpkgs/m/markdown";
+  inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."mustache".type = "github";
-  # inputs."mustache".owner = "riinr";
-  # inputs."mustache".repo = "flake-nimble";
-  # inputs."mustache".ref = "flake-pinning";
-  # inputs."mustache".dir = "nimpkgs/m/mustache";
-  # inputs."mustache".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mustache".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mustache".type = "github";
+  inputs."mustache".owner = "riinr";
+  inputs."mustache".repo = "flake-nimble";
+  inputs."mustache".ref = "flake-pinning";
+  inputs."mustache".dir = "nimpkgs/m/mustache";
+  inputs."mustache".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mustache".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimib-v0_1_5, ...}@deps:
     let lib = flakeNimbleLib.lib;

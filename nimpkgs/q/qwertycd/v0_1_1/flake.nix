@@ -13,13 +13,13 @@
   inputs.src-qwertycd-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."illwill".type = "github";
-  # inputs."illwill".owner = "riinr";
-  # inputs."illwill".repo = "flake-nimble";
-  # inputs."illwill".ref = "flake-pinning";
-  # inputs."illwill".dir = "nimpkgs/i/illwill";
-  # inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."illwill".type = "github";
+  inputs."illwill".owner = "riinr";
+  inputs."illwill".repo = "flake-nimble";
+  inputs."illwill".ref = "flake-pinning";
+  inputs."illwill".dir = "nimpkgs/i/illwill";
+  inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-qwertycd-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

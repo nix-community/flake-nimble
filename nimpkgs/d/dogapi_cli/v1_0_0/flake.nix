@@ -13,13 +13,13 @@
   inputs.src-dogapi_cli-v1_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."dogapi".type = "github";
-  # inputs."dogapi".owner = "riinr";
-  # inputs."dogapi".repo = "flake-nimble";
-  # inputs."dogapi".ref = "flake-pinning";
-  # inputs."dogapi".dir = "nimpkgs/d/dogapi";
-  # inputs."dogapi".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."dogapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."dogapi".type = "github";
+  inputs."dogapi".owner = "riinr";
+  inputs."dogapi".repo = "flake-nimble";
+  inputs."dogapi".ref = "flake-pinning";
+  inputs."dogapi".dir = "nimpkgs/d/dogapi";
+  inputs."dogapi".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dogapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dogapi_cli-v1_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

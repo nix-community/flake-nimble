@@ -13,13 +13,13 @@
   inputs.src-guildenstern-0_7.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."weave".type = "github";
-  # inputs."weave".owner = "riinr";
-  # inputs."weave".repo = "flake-nimble";
-  # inputs."weave".ref = "flake-pinning";
-  # inputs."weave".dir = "nimpkgs/w/weave";
-  # inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."weave".type = "github";
+  inputs."weave".owner = "riinr";
+  inputs."weave".repo = "flake-nimble";
+  inputs."weave".ref = "flake-pinning";
+  inputs."weave".dir = "nimpkgs/w/weave";
+  inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-guildenstern-0_7, ...}@deps:
     let lib = flakeNimbleLib.lib;

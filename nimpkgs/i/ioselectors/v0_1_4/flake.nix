@@ -13,13 +13,13 @@
   inputs.src-ioselectors-v0_1_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."timerwheel".type = "github";
-  # inputs."timerwheel".owner = "riinr";
-  # inputs."timerwheel".repo = "flake-nimble";
-  # inputs."timerwheel".ref = "flake-pinning";
-  # inputs."timerwheel".dir = "nimpkgs/t/timerwheel";
-  # inputs."timerwheel".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."timerwheel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."timerwheel".type = "github";
+  inputs."timerwheel".owner = "riinr";
+  inputs."timerwheel".repo = "flake-nimble";
+  inputs."timerwheel".ref = "flake-pinning";
+  inputs."timerwheel".dir = "nimpkgs/t/timerwheel";
+  inputs."timerwheel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."timerwheel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ioselectors-v0_1_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

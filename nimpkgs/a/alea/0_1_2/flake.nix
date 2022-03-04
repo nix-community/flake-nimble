@@ -13,13 +13,13 @@
   inputs.src-alea-0_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."random".type = "github";
-  # inputs."random".owner = "riinr";
-  # inputs."random".repo = "flake-nimble";
-  # inputs."random".ref = "flake-pinning";
-  # inputs."random".dir = "nimpkgs/r/random";
-  # inputs."random".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."random".type = "github";
+  inputs."random".owner = "riinr";
+  inputs."random".repo = "flake-nimble";
+  inputs."random".ref = "flake-pinning";
+  inputs."random".dir = "nimpkgs/r/random";
+  inputs."random".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-alea-0_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

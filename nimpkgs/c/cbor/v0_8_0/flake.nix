@@ -13,13 +13,13 @@
   inputs.src-cbor-v0_8_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."bignum".type = "github";
-  # inputs."bignum".owner = "riinr";
-  # inputs."bignum".repo = "flake-nimble";
-  # inputs."bignum".ref = "flake-pinning";
-  # inputs."bignum".dir = "nimpkgs/b/bignum";
-  # inputs."bignum".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."bignum".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bignum".type = "github";
+  inputs."bignum".owner = "riinr";
+  inputs."bignum".repo = "flake-nimble";
+  inputs."bignum".ref = "flake-pinning";
+  inputs."bignum".dir = "nimpkgs/b/bignum";
+  inputs."bignum".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bignum".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cbor-v0_8_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

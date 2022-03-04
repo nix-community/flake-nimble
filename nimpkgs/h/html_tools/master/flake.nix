@@ -13,13 +13,13 @@
   inputs.src-html_tools-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."contra".type = "github";
-  # inputs."contra".owner = "riinr";
-  # inputs."contra".repo = "flake-nimble";
-  # inputs."contra".ref = "flake-pinning";
-  # inputs."contra".dir = "nimpkgs/c/contra";
-  # inputs."contra".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."contra".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."contra".type = "github";
+  inputs."contra".owner = "riinr";
+  inputs."contra".repo = "flake-nimble";
+  inputs."contra".ref = "flake-pinning";
+  inputs."contra".dir = "nimpkgs/c/contra";
+  inputs."contra".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."contra".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-html_tools-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

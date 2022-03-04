@@ -13,31 +13,31 @@
   inputs.src-moe-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ncurses".type = "github";
-  # inputs."ncurses".owner = "riinr";
-  # inputs."ncurses".repo = "flake-nimble";
-  # inputs."ncurses".ref = "flake-pinning";
-  # inputs."ncurses".dir = "nimpkgs/n/ncurses";
-  # inputs."ncurses".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ncurses".type = "github";
+  inputs."ncurses".owner = "riinr";
+  inputs."ncurses".repo = "flake-nimble";
+  inputs."ncurses".ref = "flake-pinning";
+  inputs."ncurses".dir = "nimpkgs/n/ncurses";
+  inputs."ncurses".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."unicodedb".type = "github";
-  # inputs."unicodedb".owner = "riinr";
-  # inputs."unicodedb".repo = "flake-nimble";
-  # inputs."unicodedb".ref = "flake-pinning";
-  # inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
-  # inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."unicodedb".type = "github";
+  inputs."unicodedb".owner = "riinr";
+  inputs."unicodedb".repo = "flake-nimble";
+  inputs."unicodedb".ref = "flake-pinning";
+  inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."parsetoml".type = "github";
-  # inputs."parsetoml".owner = "riinr";
-  # inputs."parsetoml".repo = "flake-nimble";
-  # inputs."parsetoml".ref = "flake-pinning";
-  # inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
-  # inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."parsetoml".type = "github";
+  inputs."parsetoml".owner = "riinr";
+  inputs."parsetoml".repo = "flake-nimble";
+  inputs."parsetoml".ref = "flake-pinning";
+  inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
+  inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-moe-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

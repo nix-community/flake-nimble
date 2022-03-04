@@ -13,22 +13,22 @@
   inputs.src-nimblegui-v0_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."uibuilder".type = "github";
-  # inputs."uibuilder".owner = "riinr";
-  # inputs."uibuilder".repo = "flake-nimble";
-  # inputs."uibuilder".ref = "flake-pinning";
-  # inputs."uibuilder".dir = "nimpkgs/u/uibuilder";
-  # inputs."uibuilder".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."uibuilder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."uibuilder".type = "github";
+  inputs."uibuilder".owner = "riinr";
+  inputs."uibuilder".repo = "flake-nimble";
+  inputs."uibuilder".ref = "flake-pinning";
+  inputs."uibuilder".dir = "nimpkgs/u/uibuilder";
+  inputs."uibuilder".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."uibuilder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."ui".type = "github";
-  # inputs."ui".owner = "riinr";
-  # inputs."ui".repo = "flake-nimble";
-  # inputs."ui".ref = "flake-pinning";
-  # inputs."ui".dir = "nimpkgs/u/ui";
-  # inputs."ui".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ui".type = "github";
+  inputs."ui".owner = "riinr";
+  inputs."ui".repo = "flake-nimble";
+  inputs."ui".ref = "flake-pinning";
+  inputs."ui".dir = "nimpkgs/u/ui";
+  inputs."ui".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimblegui-v0_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-eloverblik-v0_0_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nmqtt".type = "github";
-  # inputs."nmqtt".owner = "riinr";
-  # inputs."nmqtt".repo = "flake-nimble";
-  # inputs."nmqtt".ref = "flake-pinning";
-  # inputs."nmqtt".dir = "nimpkgs/n/nmqtt";
-  # inputs."nmqtt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nmqtt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nmqtt".type = "github";
+  inputs."nmqtt".owner = "riinr";
+  inputs."nmqtt".repo = "flake-nimble";
+  inputs."nmqtt".ref = "flake-pinning";
+  inputs."nmqtt".dir = "nimpkgs/n/nmqtt";
+  inputs."nmqtt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nmqtt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-eloverblik-v0_0_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

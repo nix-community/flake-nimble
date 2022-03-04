@@ -13,13 +13,13 @@
   inputs.src-googlesearch-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimquery".type = "github";
-  # inputs."nimquery".owner = "riinr";
-  # inputs."nimquery".repo = "flake-nimble";
-  # inputs."nimquery".ref = "flake-pinning";
-  # inputs."nimquery".dir = "nimpkgs/n/nimquery";
-  # inputs."nimquery".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimquery".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimquery".type = "github";
+  inputs."nimquery".owner = "riinr";
+  inputs."nimquery".repo = "flake-nimble";
+  inputs."nimquery".ref = "flake-pinning";
+  inputs."nimquery".dir = "nimpkgs/n/nimquery";
+  inputs."nimquery".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimquery".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-googlesearch-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

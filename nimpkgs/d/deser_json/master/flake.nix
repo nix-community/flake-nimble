@@ -13,22 +13,22 @@
   inputs.src-deser_json-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."faststreams".type = "github";
-  # inputs."faststreams".owner = "riinr";
-  # inputs."faststreams".repo = "flake-nimble";
-  # inputs."faststreams".ref = "flake-pinning";
-  # inputs."faststreams".dir = "nimpkgs/f/faststreams";
-  # inputs."faststreams".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."faststreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."faststreams".type = "github";
+  inputs."faststreams".owner = "riinr";
+  inputs."faststreams".repo = "flake-nimble";
+  inputs."faststreams".ref = "flake-pinning";
+  inputs."faststreams".dir = "nimpkgs/f/faststreams";
+  inputs."faststreams".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."faststreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."deser".type = "github";
-  # inputs."deser".owner = "riinr";
-  # inputs."deser".repo = "flake-nimble";
-  # inputs."deser".ref = "flake-pinning";
-  # inputs."deser".dir = "nimpkgs/d/deser";
-  # inputs."deser".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."deser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."deser".type = "github";
+  inputs."deser".owner = "riinr";
+  inputs."deser".repo = "flake-nimble";
+  inputs."deser".ref = "flake-pinning";
+  inputs."deser".dir = "nimpkgs/d/deser";
+  inputs."deser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."deser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-deser_json-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

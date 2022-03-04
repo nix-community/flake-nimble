@@ -13,22 +13,22 @@
   inputs.src-cmixer_sdl2-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."cmixer".type = "github";
-  # inputs."cmixer".owner = "riinr";
-  # inputs."cmixer".repo = "flake-nimble";
-  # inputs."cmixer".ref = "flake-pinning";
-  # inputs."cmixer".dir = "nimpkgs/c/cmixer";
-  # inputs."cmixer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."cmixer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cmixer".type = "github";
+  inputs."cmixer".owner = "riinr";
+  inputs."cmixer".repo = "flake-nimble";
+  inputs."cmixer".ref = "flake-pinning";
+  inputs."cmixer".dir = "nimpkgs/c/cmixer";
+  inputs."cmixer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cmixer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."sdl2".type = "github";
-  # inputs."sdl2".owner = "riinr";
-  # inputs."sdl2".repo = "flake-nimble";
-  # inputs."sdl2".ref = "flake-pinning";
-  # inputs."sdl2".dir = "nimpkgs/s/sdl2";
-  # inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sdl2".type = "github";
+  inputs."sdl2".owner = "riinr";
+  inputs."sdl2".repo = "flake-nimble";
+  inputs."sdl2".ref = "flake-pinning";
+  inputs."sdl2".dir = "nimpkgs/s/sdl2";
+  inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cmixer_sdl2-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

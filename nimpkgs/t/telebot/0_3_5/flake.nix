@@ -13,13 +13,13 @@
   inputs.src-telebot-0_3_5.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."asyncevents".type = "github";
-  # inputs."asyncevents".owner = "riinr";
-  # inputs."asyncevents".repo = "flake-nimble";
-  # inputs."asyncevents".ref = "flake-pinning";
-  # inputs."asyncevents".dir = "nimpkgs/a/asyncevents";
-  # inputs."asyncevents".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."asyncevents".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."asyncevents".type = "github";
+  inputs."asyncevents".owner = "riinr";
+  inputs."asyncevents".repo = "flake-nimble";
+  inputs."asyncevents".ref = "flake-pinning";
+  inputs."asyncevents".dir = "nimpkgs/a/asyncevents";
+  inputs."asyncevents".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."asyncevents".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-telebot-0_3_5, ...}@deps:
     let lib = flakeNimbleLib.lib;

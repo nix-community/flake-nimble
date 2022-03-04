@@ -13,22 +13,22 @@
   inputs.src-moe-v0_0_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."ncurses".type = "github";
-  # inputs."ncurses".owner = "riinr";
-  # inputs."ncurses".repo = "flake-nimble";
-  # inputs."ncurses".ref = "flake-pinning";
-  # inputs."ncurses".dir = "nimpkgs/n/ncurses";
-  # inputs."ncurses".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ncurses".type = "github";
+  inputs."ncurses".owner = "riinr";
+  inputs."ncurses".repo = "flake-nimble";
+  inputs."ncurses".ref = "flake-pinning";
+  inputs."ncurses".dir = "nimpkgs/n/ncurses";
+  inputs."ncurses".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."unicodedb".type = "github";
-  # inputs."unicodedb".owner = "riinr";
-  # inputs."unicodedb".repo = "flake-nimble";
-  # inputs."unicodedb".ref = "flake-pinning";
-  # inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
-  # inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."unicodedb".type = "github";
+  inputs."unicodedb".owner = "riinr";
+  inputs."unicodedb".repo = "flake-nimble";
+  inputs."unicodedb".ref = "flake-pinning";
+  inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-moe-v0_0_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

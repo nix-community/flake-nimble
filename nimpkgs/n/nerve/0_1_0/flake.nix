@@ -13,13 +13,13 @@
   inputs.src-nerve-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."httpbeast".type = "github";
-  # inputs."httpbeast".owner = "riinr";
-  # inputs."httpbeast".repo = "flake-nimble";
-  # inputs."httpbeast".ref = "flake-pinning";
-  # inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
-  # inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."httpbeast".type = "github";
+  inputs."httpbeast".owner = "riinr";
+  inputs."httpbeast".repo = "flake-nimble";
+  inputs."httpbeast".ref = "flake-pinning";
+  inputs."httpbeast".dir = "nimpkgs/h/httpbeast";
+  inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nerve-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

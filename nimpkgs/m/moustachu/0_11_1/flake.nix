@@ -13,13 +13,13 @@
   inputs.src-moustachu-0_11_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."commandeer".type = "github";
-  # inputs."commandeer".owner = "riinr";
-  # inputs."commandeer".repo = "flake-nimble";
-  # inputs."commandeer".ref = "flake-pinning";
-  # inputs."commandeer".dir = "nimpkgs/c/commandeer";
-  # inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."commandeer".type = "github";
+  inputs."commandeer".owner = "riinr";
+  inputs."commandeer".repo = "flake-nimble";
+  inputs."commandeer".ref = "flake-pinning";
+  inputs."commandeer".dir = "nimpkgs/c/commandeer";
+  inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-moustachu-0_11_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

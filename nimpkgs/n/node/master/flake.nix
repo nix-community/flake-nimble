@@ -13,13 +13,13 @@
   inputs.src-node-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."httpkit".type = "github";
-  # inputs."httpkit".owner = "riinr";
-  # inputs."httpkit".repo = "flake-nimble";
-  # inputs."httpkit".ref = "flake-pinning";
-  # inputs."httpkit".dir = "nimpkgs/h/httpkit";
-  # inputs."httpkit".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."httpkit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."httpkit".type = "github";
+  inputs."httpkit".owner = "riinr";
+  inputs."httpkit".repo = "flake-nimble";
+  inputs."httpkit".ref = "flake-pinning";
+  inputs."httpkit".dir = "nimpkgs/h/httpkit";
+  inputs."httpkit".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."httpkit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-node-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

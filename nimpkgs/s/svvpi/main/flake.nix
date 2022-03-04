@@ -13,13 +13,13 @@
   inputs.src-svvpi-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimterop".type = "github";
-  # inputs."nimterop".owner = "riinr";
-  # inputs."nimterop".repo = "flake-nimble";
-  # inputs."nimterop".ref = "flake-pinning";
-  # inputs."nimterop".dir = "nimpkgs/n/nimterop";
-  # inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimterop".type = "github";
+  inputs."nimterop".owner = "riinr";
+  inputs."nimterop".repo = "flake-nimble";
+  inputs."nimterop".ref = "flake-pinning";
+  inputs."nimterop".dir = "nimpkgs/n/nimterop";
+  inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-svvpi-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

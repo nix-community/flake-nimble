@@ -13,13 +13,13 @@
   inputs.src-httpbeast-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/iffy/asynctools".type = "github";
-  # inputs."https://github.com/iffy/asynctools".owner = "riinr";
-  # inputs."https://github.com/iffy/asynctools".repo = "flake-nimble";
-  # inputs."https://github.com/iffy/asynctools".ref = "flake-pinning";
-  # inputs."https://github.com/iffy/asynctools".dir = "nimpkgs/h/https://github.com/iffy/asynctools";
-  # inputs."https://github.com/iffy/asynctools".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/iffy/asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/iffy/asynctools".type = "github";
+  inputs."https://github.com/iffy/asynctools".owner = "riinr";
+  inputs."https://github.com/iffy/asynctools".repo = "flake-nimble";
+  inputs."https://github.com/iffy/asynctools".ref = "flake-pinning";
+  inputs."https://github.com/iffy/asynctools".dir = "nimpkgs/h/https://github.com/iffy/asynctools";
+  inputs."https://github.com/iffy/asynctools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/iffy/asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-httpbeast-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

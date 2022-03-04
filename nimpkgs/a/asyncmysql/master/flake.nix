@@ -13,13 +13,13 @@
   inputs.src-asyncmysql-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."mysqlparser".type = "github";
-  # inputs."mysqlparser".owner = "riinr";
-  # inputs."mysqlparser".repo = "flake-nimble";
-  # inputs."mysqlparser".ref = "flake-pinning";
-  # inputs."mysqlparser".dir = "nimpkgs/m/mysqlparser";
-  # inputs."mysqlparser".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mysqlparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mysqlparser".type = "github";
+  inputs."mysqlparser".owner = "riinr";
+  inputs."mysqlparser".repo = "flake-nimble";
+  inputs."mysqlparser".ref = "flake-pinning";
+  inputs."mysqlparser".dir = "nimpkgs/m/mysqlparser";
+  inputs."mysqlparser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mysqlparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-asyncmysql-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,22 +13,22 @@
   inputs.src-jestermongopool-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jesterwithplugins".type = "github";
-  # inputs."jesterwithplugins".owner = "riinr";
-  # inputs."jesterwithplugins".repo = "flake-nimble";
-  # inputs."jesterwithplugins".ref = "flake-pinning";
-  # inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
-  # inputs."jesterwithplugins".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jesterwithplugins".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jesterwithplugins".type = "github";
+  inputs."jesterwithplugins".owner = "riinr";
+  inputs."jesterwithplugins".repo = "flake-nimble";
+  inputs."jesterwithplugins".ref = "flake-pinning";
+  inputs."jesterwithplugins".dir = "nimpkgs/j/jesterwithplugins";
+  inputs."jesterwithplugins".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jesterwithplugins".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."mongopool".type = "github";
-  # inputs."mongopool".owner = "riinr";
-  # inputs."mongopool".repo = "flake-nimble";
-  # inputs."mongopool".ref = "flake-pinning";
-  # inputs."mongopool".dir = "nimpkgs/m/mongopool";
-  # inputs."mongopool".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mongopool".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mongopool".type = "github";
+  inputs."mongopool".owner = "riinr";
+  inputs."mongopool".repo = "flake-nimble";
+  inputs."mongopool".ref = "flake-pinning";
+  inputs."mongopool".dir = "nimpkgs/m/mongopool";
+  inputs."mongopool".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mongopool".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-jestermongopool-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-diffoutput-v0_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."diff".type = "github";
-  # inputs."diff".owner = "riinr";
-  # inputs."diff".repo = "flake-nimble";
-  # inputs."diff".ref = "flake-pinning";
-  # inputs."diff".dir = "nimpkgs/d/diff";
-  # inputs."diff".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."diff".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."diff".type = "github";
+  inputs."diff".owner = "riinr";
+  inputs."diff".repo = "flake-nimble";
+  inputs."diff".ref = "flake-pinning";
+  inputs."diff".dir = "nimpkgs/d/diff";
+  inputs."diff".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."diff".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-diffoutput-v0_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

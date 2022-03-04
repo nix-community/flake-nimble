@@ -13,13 +13,13 @@
   inputs.src-nicoru-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/def-/nim-syscall".type = "github";
-  # inputs."https://github.com/def-/nim-syscall".owner = "riinr";
-  # inputs."https://github.com/def-/nim-syscall".repo = "flake-nimble";
-  # inputs."https://github.com/def-/nim-syscall".ref = "flake-pinning";
-  # inputs."https://github.com/def-/nim-syscall".dir = "nimpkgs/h/https://github.com/def-/nim-syscall";
-  # inputs."https://github.com/def-/nim-syscall".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/def-/nim-syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/def-/nim-syscall".type = "github";
+  inputs."https://github.com/def-/nim-syscall".owner = "riinr";
+  inputs."https://github.com/def-/nim-syscall".repo = "flake-nimble";
+  inputs."https://github.com/def-/nim-syscall".ref = "flake-pinning";
+  inputs."https://github.com/def-/nim-syscall".dir = "nimpkgs/h/https://github.com/def-/nim-syscall";
+  inputs."https://github.com/def-/nim-syscall".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/def-/nim-syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nicoru-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

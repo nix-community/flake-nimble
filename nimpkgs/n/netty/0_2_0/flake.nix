@@ -13,13 +13,13 @@
   inputs.src-netty-0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."snappy".type = "github";
-  # inputs."snappy".owner = "riinr";
-  # inputs."snappy".repo = "flake-nimble";
-  # inputs."snappy".ref = "flake-pinning";
-  # inputs."snappy".dir = "nimpkgs/s/snappy";
-  # inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."snappy".type = "github";
+  inputs."snappy".owner = "riinr";
+  inputs."snappy".repo = "flake-nimble";
+  inputs."snappy".ref = "flake-pinning";
+  inputs."snappy".dir = "nimpkgs/s/snappy";
+  inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-netty-0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

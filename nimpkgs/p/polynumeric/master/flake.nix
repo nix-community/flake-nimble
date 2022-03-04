@@ -13,13 +13,13 @@
   inputs.src-polynumeric-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."arraymancer".type = "github";
-  # inputs."arraymancer".owner = "riinr";
-  # inputs."arraymancer".repo = "flake-nimble";
-  # inputs."arraymancer".ref = "flake-pinning";
-  # inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
-  # inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."arraymancer".type = "github";
+  inputs."arraymancer".owner = "riinr";
+  inputs."arraymancer".repo = "flake-nimble";
+  inputs."arraymancer".ref = "flake-pinning";
+  inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
+  inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-polynumeric-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-xmlio-v0_1_7.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."vtable".type = "github";
-  # inputs."vtable".owner = "riinr";
-  # inputs."vtable".repo = "flake-nimble";
-  # inputs."vtable".ref = "flake-pinning";
-  # inputs."vtable".dir = "nimpkgs/v/vtable";
-  # inputs."vtable".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."vtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."vtable".type = "github";
+  inputs."vtable".owner = "riinr";
+  inputs."vtable".repo = "flake-nimble";
+  inputs."vtable".ref = "flake-pinning";
+  inputs."vtable".dir = "nimpkgs/v/vtable";
+  inputs."vtable".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-xmlio-v0_1_7, ...}@deps:
     let lib = flakeNimbleLib.lib;

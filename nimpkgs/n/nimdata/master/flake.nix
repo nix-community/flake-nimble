@@ -13,22 +13,22 @@
   inputs.src-nimdata-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."zip".type = "github";
-  # inputs."zip".owner = "riinr";
-  # inputs."zip".repo = "flake-nimble";
-  # inputs."zip".ref = "flake-pinning";
-  # inputs."zip".dir = "nimpkgs/z/zip";
-  # inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zip".type = "github";
+  inputs."zip".owner = "riinr";
+  inputs."zip".repo = "flake-nimble";
+  inputs."zip".ref = "flake-pinning";
+  inputs."zip".dir = "nimpkgs/z/zip";
+  inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."plotly".type = "github";
-  # inputs."plotly".owner = "riinr";
-  # inputs."plotly".repo = "flake-nimble";
-  # inputs."plotly".ref = "flake-pinning";
-  # inputs."plotly".dir = "nimpkgs/p/plotly";
-  # inputs."plotly".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."plotly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."plotly".type = "github";
+  inputs."plotly".owner = "riinr";
+  inputs."plotly".repo = "flake-nimble";
+  inputs."plotly".ref = "flake-pinning";
+  inputs."plotly".dir = "nimpkgs/p/plotly";
+  inputs."plotly".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."plotly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-NimData-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

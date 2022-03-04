@@ -13,22 +13,22 @@
   inputs.src-mctranslog-v0_1_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."mcresponse".type = "github";
-  # inputs."mcresponse".owner = "riinr";
-  # inputs."mcresponse".repo = "flake-nimble";
-  # inputs."mcresponse".ref = "flake-pinning";
-  # inputs."mcresponse".dir = "nimpkgs/m/mcresponse";
-  # inputs."mcresponse".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mcresponse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mcresponse".type = "github";
+  inputs."mcresponse".owner = "riinr";
+  inputs."mcresponse".repo = "flake-nimble";
+  inputs."mcresponse".ref = "flake-pinning";
+  inputs."mcresponse".dir = "nimpkgs/m/mcresponse";
+  inputs."mcresponse".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mcresponse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."mcdb".type = "github";
-  # inputs."mcdb".owner = "riinr";
-  # inputs."mcdb".repo = "flake-nimble";
-  # inputs."mcdb".ref = "flake-pinning";
-  # inputs."mcdb".dir = "nimpkgs/m/mcdb";
-  # inputs."mcdb".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mcdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mcdb".type = "github";
+  inputs."mcdb".owner = "riinr";
+  inputs."mcdb".repo = "flake-nimble";
+  inputs."mcdb".ref = "flake-pinning";
+  inputs."mcdb".dir = "nimpkgs/m/mcdb";
+  inputs."mcdb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mcdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mctranslog-v0_1_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

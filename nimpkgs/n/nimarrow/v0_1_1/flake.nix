@@ -13,13 +13,13 @@
   inputs.src-nimarrow-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimarrow_glib".type = "github";
-  # inputs."nimarrow_glib".owner = "riinr";
-  # inputs."nimarrow_glib".repo = "flake-nimble";
-  # inputs."nimarrow_glib".ref = "flake-pinning";
-  # inputs."nimarrow_glib".dir = "nimpkgs/n/nimarrow_glib";
-  # inputs."nimarrow_glib".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimarrow_glib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimarrow_glib".type = "github";
+  inputs."nimarrow_glib".owner = "riinr";
+  inputs."nimarrow_glib".repo = "flake-nimble";
+  inputs."nimarrow_glib".ref = "flake-pinning";
+  inputs."nimarrow_glib".dir = "nimpkgs/n/nimarrow_glib";
+  inputs."nimarrow_glib".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimarrow_glib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimarrow-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

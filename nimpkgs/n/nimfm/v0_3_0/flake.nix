@@ -13,22 +13,22 @@
   inputs.src-nimfm-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."cligen".type = "github";
-  # inputs."cligen".owner = "riinr";
-  # inputs."cligen".repo = "flake-nimble";
-  # inputs."cligen".ref = "flake-pinning";
-  # inputs."cligen".dir = "nimpkgs/c/cligen";
-  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cligen".type = "github";
+  inputs."cligen".owner = "riinr";
+  inputs."cligen".repo = "flake-nimble";
+  inputs."cligen".ref = "flake-pinning";
+  inputs."cligen".dir = "nimpkgs/c/cligen";
+  inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nimlapack".type = "github";
-  # inputs."nimlapack".owner = "riinr";
-  # inputs."nimlapack".repo = "flake-nimble";
-  # inputs."nimlapack".ref = "flake-pinning";
-  # inputs."nimlapack".dir = "nimpkgs/n/nimlapack";
-  # inputs."nimlapack".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimlapack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimlapack".type = "github";
+  inputs."nimlapack".owner = "riinr";
+  inputs."nimlapack".repo = "flake-nimble";
+  inputs."nimlapack".ref = "flake-pinning";
+  inputs."nimlapack".dir = "nimpkgs/n/nimlapack";
+  inputs."nimlapack".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimlapack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimfm-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

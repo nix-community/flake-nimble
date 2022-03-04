@@ -13,13 +13,13 @@
   inputs.src-awsSTS-v1_0_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."sigv4".type = "github";
-  # inputs."sigv4".owner = "riinr";
-  # inputs."sigv4".repo = "flake-nimble";
-  # inputs."sigv4".ref = "flake-pinning";
-  # inputs."sigv4".dir = "nimpkgs/s/sigv4";
-  # inputs."sigv4".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."sigv4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sigv4".type = "github";
+  inputs."sigv4".owner = "riinr";
+  inputs."sigv4".repo = "flake-nimble";
+  inputs."sigv4".ref = "flake-pinning";
+  inputs."sigv4".dir = "nimpkgs/s/sigv4";
+  inputs."sigv4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sigv4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-awsSTS-v1_0_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

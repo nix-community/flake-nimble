@@ -13,22 +13,22 @@
   inputs.src-plz-0_0_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."requirementstxt".type = "github";
-  # inputs."requirementstxt".owner = "riinr";
-  # inputs."requirementstxt".repo = "flake-nimble";
-  # inputs."requirementstxt".ref = "flake-pinning";
-  # inputs."requirementstxt".dir = "nimpkgs/r/requirementstxt";
-  # inputs."requirementstxt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."requirementstxt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."requirementstxt".type = "github";
+  inputs."requirementstxt".owner = "riinr";
+  inputs."requirementstxt".repo = "flake-nimble";
+  inputs."requirementstxt".ref = "flake-pinning";
+  inputs."requirementstxt".dir = "nimpkgs/r/requirementstxt";
+  inputs."requirementstxt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."requirementstxt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."libarchibi".type = "github";
-  # inputs."libarchibi".owner = "riinr";
-  # inputs."libarchibi".repo = "flake-nimble";
-  # inputs."libarchibi".ref = "flake-pinning";
-  # inputs."libarchibi".dir = "nimpkgs/l/libarchibi";
-  # inputs."libarchibi".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."libarchibi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."libarchibi".type = "github";
+  inputs."libarchibi".owner = "riinr";
+  inputs."libarchibi".repo = "flake-nimble";
+  inputs."libarchibi".ref = "flake-pinning";
+  inputs."libarchibi".dir = "nimpkgs/l/libarchibi";
+  inputs."libarchibi".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libarchibi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-plz-0_0_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

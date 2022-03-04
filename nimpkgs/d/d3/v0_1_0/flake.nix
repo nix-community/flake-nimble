@@ -13,13 +13,13 @@
   inputs.src-d3-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jsbind".type = "github";
-  # inputs."jsbind".owner = "riinr";
-  # inputs."jsbind".repo = "flake-nimble";
-  # inputs."jsbind".ref = "flake-pinning";
-  # inputs."jsbind".dir = "nimpkgs/j/jsbind";
-  # inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsbind".type = "github";
+  inputs."jsbind".owner = "riinr";
+  inputs."jsbind".repo = "flake-nimble";
+  inputs."jsbind".ref = "flake-pinning";
+  inputs."jsbind".dir = "nimpkgs/j/jsbind";
+  inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-d3-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

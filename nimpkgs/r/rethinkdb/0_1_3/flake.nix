@@ -13,13 +13,13 @@
   inputs.src-rethinkdb-0_1_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."struct".type = "github";
-  # inputs."struct".owner = "riinr";
-  # inputs."struct".repo = "flake-nimble";
-  # inputs."struct".ref = "flake-pinning";
-  # inputs."struct".dir = "nimpkgs/s/struct";
-  # inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."struct".type = "github";
+  inputs."struct".owner = "riinr";
+  inputs."struct".repo = "flake-nimble";
+  inputs."struct".ref = "flake-pinning";
+  inputs."struct".dir = "nimpkgs/s/struct";
+  inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-rethinkdb-0_1_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

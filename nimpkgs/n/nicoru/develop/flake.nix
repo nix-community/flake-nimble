@@ -13,22 +13,22 @@
   inputs.src-nicoru-develop.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/def-/nim-syscall".type = "github";
-  # inputs."https://github.com/def-/nim-syscall".owner = "riinr";
-  # inputs."https://github.com/def-/nim-syscall".repo = "flake-nimble";
-  # inputs."https://github.com/def-/nim-syscall".ref = "flake-pinning";
-  # inputs."https://github.com/def-/nim-syscall".dir = "nimpkgs/h/https://github.com/def-/nim-syscall";
-  # inputs."https://github.com/def-/nim-syscall".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/def-/nim-syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/def-/nim-syscall".type = "github";
+  inputs."https://github.com/def-/nim-syscall".owner = "riinr";
+  inputs."https://github.com/def-/nim-syscall".repo = "flake-nimble";
+  inputs."https://github.com/def-/nim-syscall".ref = "flake-pinning";
+  inputs."https://github.com/def-/nim-syscall".dir = "nimpkgs/h/https://github.com/def-/nim-syscall";
+  inputs."https://github.com/def-/nim-syscall".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/def-/nim-syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."seccomp".type = "github";
-  # inputs."seccomp".owner = "riinr";
-  # inputs."seccomp".repo = "flake-nimble";
-  # inputs."seccomp".ref = "flake-pinning";
-  # inputs."seccomp".dir = "nimpkgs/s/seccomp";
-  # inputs."seccomp".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."seccomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."seccomp".type = "github";
+  inputs."seccomp".owner = "riinr";
+  inputs."seccomp".repo = "flake-nimble";
+  inputs."seccomp".ref = "flake-pinning";
+  inputs."seccomp".dir = "nimpkgs/s/seccomp";
+  inputs."seccomp".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."seccomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nicoru-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;

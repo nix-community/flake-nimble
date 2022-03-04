@@ -13,13 +13,13 @@
   inputs.src-sermon-v0_3_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jester".type = "github";
-  # inputs."jester".owner = "riinr";
-  # inputs."jester".repo = "flake-nimble";
-  # inputs."jester".ref = "flake-pinning";
-  # inputs."jester".dir = "nimpkgs/j/jester";
-  # inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jester".type = "github";
+  inputs."jester".owner = "riinr";
+  inputs."jester".repo = "flake-nimble";
+  inputs."jester".ref = "flake-pinning";
+  inputs."jester".dir = "nimpkgs/j/jester";
+  inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-sermon-v0_3_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

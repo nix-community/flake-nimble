@@ -13,22 +13,22 @@
   inputs.src-ngspice-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."sorta".type = "github";
-  # inputs."sorta".owner = "riinr";
-  # inputs."sorta".repo = "flake-nimble";
-  # inputs."sorta".ref = "flake-pinning";
-  # inputs."sorta".dir = "nimpkgs/s/sorta";
-  # inputs."sorta".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."sorta".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sorta".type = "github";
+  inputs."sorta".owner = "riinr";
+  inputs."sorta".repo = "flake-nimble";
+  inputs."sorta".ref = "flake-pinning";
+  inputs."sorta".dir = "nimpkgs/s/sorta";
+  inputs."sorta".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sorta".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."hmisc".type = "github";
-  # inputs."hmisc".owner = "riinr";
-  # inputs."hmisc".repo = "flake-nimble";
-  # inputs."hmisc".ref = "flake-pinning";
-  # inputs."hmisc".dir = "nimpkgs/h/hmisc";
-  # inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."hmisc".type = "github";
+  inputs."hmisc".owner = "riinr";
+  inputs."hmisc".repo = "flake-nimble";
+  inputs."hmisc".ref = "flake-pinning";
+  inputs."hmisc".dir = "nimpkgs/h/hmisc";
+  inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ngspice-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

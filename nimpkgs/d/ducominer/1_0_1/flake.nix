@@ -13,13 +13,13 @@
   inputs.src-ducominer-1_0_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."hashlib".type = "github";
-  # inputs."hashlib".owner = "riinr";
-  # inputs."hashlib".repo = "flake-nimble";
-  # inputs."hashlib".ref = "flake-pinning";
-  # inputs."hashlib".dir = "nimpkgs/h/hashlib";
-  # inputs."hashlib".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."hashlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."hashlib".type = "github";
+  inputs."hashlib".owner = "riinr";
+  inputs."hashlib".repo = "flake-nimble";
+  inputs."hashlib".ref = "flake-pinning";
+  inputs."hashlib".dir = "nimpkgs/h/hashlib";
+  inputs."hashlib".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hashlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ducominer-1_0_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

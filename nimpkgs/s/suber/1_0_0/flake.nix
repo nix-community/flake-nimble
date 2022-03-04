@@ -13,13 +13,13 @@
   inputs.src-suber-1_0_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stashtable".type = "github";
-  # inputs."stashtable".owner = "riinr";
-  # inputs."stashtable".repo = "flake-nimble";
-  # inputs."stashtable".ref = "flake-pinning";
-  # inputs."stashtable".dir = "nimpkgs/s/stashtable";
-  # inputs."stashtable".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stashtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stashtable".type = "github";
+  inputs."stashtable".owner = "riinr";
+  inputs."stashtable".repo = "flake-nimble";
+  inputs."stashtable".ref = "flake-pinning";
+  inputs."stashtable".dir = "nimpkgs/s/stashtable";
+  inputs."stashtable".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stashtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-suber-1_0_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

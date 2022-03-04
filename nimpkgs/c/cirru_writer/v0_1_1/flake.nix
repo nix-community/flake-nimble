@@ -13,13 +13,13 @@
   inputs.src-cirru_writer-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/rosado/edn.nim".type = "github";
-  # inputs."https://github.com/rosado/edn.nim".owner = "riinr";
-  # inputs."https://github.com/rosado/edn.nim".repo = "flake-nimble";
-  # inputs."https://github.com/rosado/edn.nim".ref = "flake-pinning";
-  # inputs."https://github.com/rosado/edn.nim".dir = "nimpkgs/h/https://github.com/rosado/edn.nim";
-  # inputs."https://github.com/rosado/edn.nim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/rosado/edn.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/rosado/edn.nim".type = "github";
+  inputs."https://github.com/rosado/edn.nim".owner = "riinr";
+  inputs."https://github.com/rosado/edn.nim".repo = "flake-nimble";
+  inputs."https://github.com/rosado/edn.nim".ref = "flake-pinning";
+  inputs."https://github.com/rosado/edn.nim".dir = "nimpkgs/h/https://github.com/rosado/edn.nim";
+  inputs."https://github.com/rosado/edn.nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/rosado/edn.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cirru_writer-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

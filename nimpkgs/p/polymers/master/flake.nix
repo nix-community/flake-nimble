@@ -13,13 +13,13 @@
   inputs.src-polymers-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/rlipsc/polymorph".type = "github";
-  # inputs."https://github.com/rlipsc/polymorph".owner = "riinr";
-  # inputs."https://github.com/rlipsc/polymorph".repo = "flake-nimble";
-  # inputs."https://github.com/rlipsc/polymorph".ref = "flake-pinning";
-  # inputs."https://github.com/rlipsc/polymorph".dir = "nimpkgs/h/https://github.com/rlipsc/polymorph";
-  # inputs."https://github.com/rlipsc/polymorph".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/rlipsc/polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/rlipsc/polymorph".type = "github";
+  inputs."https://github.com/rlipsc/polymorph".owner = "riinr";
+  inputs."https://github.com/rlipsc/polymorph".repo = "flake-nimble";
+  inputs."https://github.com/rlipsc/polymorph".ref = "flake-pinning";
+  inputs."https://github.com/rlipsc/polymorph".dir = "nimpkgs/h/https://github.com/rlipsc/polymorph";
+  inputs."https://github.com/rlipsc/polymorph".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/rlipsc/polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-polymers-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

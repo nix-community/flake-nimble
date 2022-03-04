@@ -13,22 +13,22 @@
   inputs.src-scinim-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."arraymancer".type = "github";
-  # inputs."arraymancer".owner = "riinr";
-  # inputs."arraymancer".repo = "flake-nimble";
-  # inputs."arraymancer".ref = "flake-pinning";
-  # inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
-  # inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."arraymancer".type = "github";
+  inputs."arraymancer".owner = "riinr";
+  inputs."arraymancer".repo = "flake-nimble";
+  inputs."arraymancer".ref = "flake-pinning";
+  inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
+  inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."polynumeric".type = "github";
-  # inputs."polynumeric".owner = "riinr";
-  # inputs."polynumeric".repo = "flake-nimble";
-  # inputs."polynumeric".ref = "flake-pinning";
-  # inputs."polynumeric".dir = "nimpkgs/p/polynumeric";
-  # inputs."polynumeric".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."polynumeric".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."polynumeric".type = "github";
+  inputs."polynumeric".owner = "riinr";
+  inputs."polynumeric".repo = "flake-nimble";
+  inputs."polynumeric".ref = "flake-pinning";
+  inputs."polynumeric".dir = "nimpkgs/p/polynumeric";
+  inputs."polynumeric".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."polynumeric".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-scinim-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

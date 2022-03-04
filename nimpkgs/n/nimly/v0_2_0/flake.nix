@@ -13,13 +13,13 @@
   inputs.src-nimly-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."patty".type = "github";
-  # inputs."patty".owner = "riinr";
-  # inputs."patty".repo = "flake-nimble";
-  # inputs."patty".ref = "flake-pinning";
-  # inputs."patty".dir = "nimpkgs/p/patty";
-  # inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."patty".type = "github";
+  inputs."patty".owner = "riinr";
+  inputs."patty".repo = "flake-nimble";
+  inputs."patty".ref = "flake-pinning";
+  inputs."patty".dir = "nimpkgs/p/patty";
+  inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimly-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

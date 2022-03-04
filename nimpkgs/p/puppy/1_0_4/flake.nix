@@ -13,31 +13,31 @@
   inputs.src-puppy-1_0_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."urlly".type = "github";
-  # inputs."urlly".owner = "riinr";
-  # inputs."urlly".repo = "flake-nimble";
-  # inputs."urlly".ref = "flake-pinning";
-  # inputs."urlly".dir = "nimpkgs/u/urlly";
-  # inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."urlly".type = "github";
+  inputs."urlly".owner = "riinr";
+  inputs."urlly".repo = "flake-nimble";
+  inputs."urlly".ref = "flake-pinning";
+  inputs."urlly".dir = "nimpkgs/u/urlly";
+  inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."libcurl".type = "github";
-  # inputs."libcurl".owner = "riinr";
-  # inputs."libcurl".repo = "flake-nimble";
-  # inputs."libcurl".ref = "flake-pinning";
-  # inputs."libcurl".dir = "nimpkgs/l/libcurl";
-  # inputs."libcurl".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."libcurl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."libcurl".type = "github";
+  inputs."libcurl".owner = "riinr";
+  inputs."libcurl".repo = "flake-nimble";
+  inputs."libcurl".ref = "flake-pinning";
+  inputs."libcurl".dir = "nimpkgs/l/libcurl";
+  inputs."libcurl".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libcurl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."zippy".type = "github";
-  # inputs."zippy".owner = "riinr";
-  # inputs."zippy".repo = "flake-nimble";
-  # inputs."zippy".ref = "flake-pinning";
-  # inputs."zippy".dir = "nimpkgs/z/zippy";
-  # inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zippy".type = "github";
+  inputs."zippy".owner = "riinr";
+  inputs."zippy".repo = "flake-nimble";
+  inputs."zippy".ref = "flake-pinning";
+  inputs."zippy".dir = "nimpkgs/z/zippy";
+  inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-puppy-1_0_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

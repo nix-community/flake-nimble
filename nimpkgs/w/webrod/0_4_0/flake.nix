@@ -13,13 +13,13 @@
   inputs.src-webrod-0_4_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."xam".type = "github";
-  # inputs."xam".owner = "riinr";
-  # inputs."xam".repo = "flake-nimble";
-  # inputs."xam".ref = "flake-pinning";
-  # inputs."xam".dir = "nimpkgs/x/xam";
-  # inputs."xam".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."xam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."xam".type = "github";
+  inputs."xam".owner = "riinr";
+  inputs."xam".repo = "flake-nimble";
+  inputs."xam".ref = "flake-pinning";
+  inputs."xam".dir = "nimpkgs/x/xam";
+  inputs."xam".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-webrod-0_4_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

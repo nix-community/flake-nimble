@@ -13,13 +13,13 @@
   inputs.src-nimsl-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."variant".type = "github";
-  # inputs."variant".owner = "riinr";
-  # inputs."variant".repo = "flake-nimble";
-  # inputs."variant".ref = "flake-pinning";
-  # inputs."variant".dir = "nimpkgs/v/variant";
-  # inputs."variant".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."variant".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."variant".type = "github";
+  inputs."variant".owner = "riinr";
+  inputs."variant".repo = "flake-nimble";
+  inputs."variant".ref = "flake-pinning";
+  inputs."variant".dir = "nimpkgs/v/variant";
+  inputs."variant".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."variant".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimsl-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-binarylang-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."bitstreams".type = "github";
-  # inputs."bitstreams".owner = "riinr";
-  # inputs."bitstreams".repo = "flake-nimble";
-  # inputs."bitstreams".ref = "flake-pinning";
-  # inputs."bitstreams".dir = "nimpkgs/b/bitstreams";
-  # inputs."bitstreams".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."bitstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bitstreams".type = "github";
+  inputs."bitstreams".owner = "riinr";
+  inputs."bitstreams".repo = "flake-nimble";
+  inputs."bitstreams".ref = "flake-pinning";
+  inputs."bitstreams".dir = "nimpkgs/b/bitstreams";
+  inputs."bitstreams".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bitstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-binarylang-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

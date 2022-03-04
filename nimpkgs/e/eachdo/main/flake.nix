@@ -13,13 +13,13 @@
   inputs.src-eachdo-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."argparse".type = "github";
-  # inputs."argparse".owner = "riinr";
-  # inputs."argparse".repo = "flake-nimble";
-  # inputs."argparse".ref = "flake-pinning";
-  # inputs."argparse".dir = "nimpkgs/a/argparse";
-  # inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."argparse".type = "github";
+  inputs."argparse".owner = "riinr";
+  inputs."argparse".repo = "flake-nimble";
+  inputs."argparse".ref = "flake-pinning";
+  inputs."argparse".dir = "nimpkgs/a/argparse";
+  inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-eachdo-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-metrics-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."chronos".type = "github";
-  # inputs."chronos".owner = "riinr";
-  # inputs."chronos".repo = "flake-nimble";
-  # inputs."chronos".ref = "flake-pinning";
-  # inputs."chronos".dir = "nimpkgs/c/chronos";
-  # inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."chronos".type = "github";
+  inputs."chronos".owner = "riinr";
+  inputs."chronos".repo = "flake-nimble";
+  inputs."chronos".ref = "flake-pinning";
+  inputs."chronos".dir = "nimpkgs/c/chronos";
+  inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-metrics-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

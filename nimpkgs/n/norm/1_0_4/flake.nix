@@ -13,13 +13,13 @@
   inputs.src-norm-1_0_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."chronicles".type = "github";
-  # inputs."chronicles".owner = "riinr";
-  # inputs."chronicles".repo = "flake-nimble";
-  # inputs."chronicles".ref = "flake-pinning";
-  # inputs."chronicles".dir = "nimpkgs/c/chronicles";
-  # inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."chronicles".type = "github";
+  inputs."chronicles".owner = "riinr";
+  inputs."chronicles".repo = "flake-nimble";
+  inputs."chronicles".ref = "flake-pinning";
+  inputs."chronicles".dir = "nimpkgs/c/chronicles";
+  inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-norm-1_0_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

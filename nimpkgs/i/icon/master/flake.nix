@@ -13,22 +13,22 @@
   inputs.src-icon-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimpng".type = "github";
-  # inputs."nimpng".owner = "riinr";
-  # inputs."nimpng".repo = "flake-nimble";
-  # inputs."nimpng".ref = "flake-pinning";
-  # inputs."nimpng".dir = "nimpkgs/n/nimpng";
-  # inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimpng".type = "github";
+  inputs."nimpng".owner = "riinr";
+  inputs."nimpng".repo = "flake-nimble";
+  inputs."nimpng".ref = "flake-pinning";
+  inputs."nimpng".dir = "nimpkgs/n/nimpng";
+  inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."struct".type = "github";
-  # inputs."struct".owner = "riinr";
-  # inputs."struct".repo = "flake-nimble";
-  # inputs."struct".ref = "flake-pinning";
-  # inputs."struct".dir = "nimpkgs/s/struct";
-  # inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."struct".type = "github";
+  inputs."struct".owner = "riinr";
+  inputs."struct".repo = "flake-nimble";
+  inputs."struct".ref = "flake-pinning";
+  inputs."struct".dir = "nimpkgs/s/struct";
+  inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-icon-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

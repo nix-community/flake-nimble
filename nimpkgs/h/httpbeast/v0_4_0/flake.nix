@@ -13,13 +13,13 @@
   inputs.src-httpbeast-v0_4_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."asynctools".type = "github";
-  # inputs."asynctools".owner = "riinr";
-  # inputs."asynctools".repo = "flake-nimble";
-  # inputs."asynctools".ref = "flake-pinning";
-  # inputs."asynctools".dir = "nimpkgs/a/asynctools";
-  # inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."asynctools".type = "github";
+  inputs."asynctools".owner = "riinr";
+  inputs."asynctools".repo = "flake-nimble";
+  inputs."asynctools".ref = "flake-pinning";
+  inputs."asynctools".dir = "nimpkgs/a/asynctools";
+  inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-httpbeast-v0_4_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

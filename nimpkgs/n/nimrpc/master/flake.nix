@@ -13,13 +13,13 @@
   inputs.src-nimrpc-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."msgpack4nim".type = "github";
-  # inputs."msgpack4nim".owner = "riinr";
-  # inputs."msgpack4nim".repo = "flake-nimble";
-  # inputs."msgpack4nim".ref = "flake-pinning";
-  # inputs."msgpack4nim".dir = "nimpkgs/m/msgpack4nim";
-  # inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."msgpack4nim".type = "github";
+  inputs."msgpack4nim".owner = "riinr";
+  inputs."msgpack4nim".repo = "flake-nimble";
+  inputs."msgpack4nim".ref = "flake-pinning";
+  inputs."msgpack4nim".dir = "nimpkgs/m/msgpack4nim";
+  inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimrpc-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,22 +13,22 @@
   inputs.src-rethinkdb-0_2_3_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."struct".type = "github";
-  # inputs."struct".owner = "riinr";
-  # inputs."struct".repo = "flake-nimble";
-  # inputs."struct".ref = "flake-pinning";
-  # inputs."struct".dir = "nimpkgs/s/struct";
-  # inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."struct".type = "github";
+  inputs."struct".owner = "riinr";
+  inputs."struct".repo = "flake-nimble";
+  inputs."struct".ref = "flake-pinning";
+  inputs."struct".dir = "nimpkgs/s/struct";
+  inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."scram".type = "github";
-  # inputs."scram".owner = "riinr";
-  # inputs."scram".repo = "flake-nimble";
-  # inputs."scram".ref = "flake-pinning";
-  # inputs."scram".dir = "nimpkgs/s/scram";
-  # inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."scram".type = "github";
+  inputs."scram".owner = "riinr";
+  inputs."scram".repo = "flake-nimble";
+  inputs."scram".ref = "flake-pinning";
+  inputs."scram".dir = "nimpkgs/s/scram";
+  inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-rethinkdb-0_2_3_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

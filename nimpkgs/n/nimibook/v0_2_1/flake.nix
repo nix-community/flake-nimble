@@ -13,22 +13,22 @@
   inputs.src-nimibook-v0_2_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimib".type = "github";
-  # inputs."nimib".owner = "riinr";
-  # inputs."nimib".repo = "flake-nimble";
-  # inputs."nimib".ref = "flake-pinning";
-  # inputs."nimib".dir = "nimpkgs/n/nimib";
-  # inputs."nimib".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimib".type = "github";
+  inputs."nimib".owner = "riinr";
+  inputs."nimib".repo = "flake-nimble";
+  inputs."nimib".ref = "flake-pinning";
+  inputs."nimib".dir = "nimpkgs/n/nimib";
+  inputs."nimib".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."jsony".type = "github";
-  # inputs."jsony".owner = "riinr";
-  # inputs."jsony".repo = "flake-nimble";
-  # inputs."jsony".ref = "flake-pinning";
-  # inputs."jsony".dir = "nimpkgs/j/jsony";
-  # inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsony".type = "github";
+  inputs."jsony".owner = "riinr";
+  inputs."jsony".repo = "flake-nimble";
+  inputs."jsony".ref = "flake-pinning";
+  inputs."jsony".dir = "nimpkgs/j/jsony";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimibook-v0_2_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,22 +13,22 @@
   inputs.src-neoid-0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."random".type = "github";
-  # inputs."random".owner = "riinr";
-  # inputs."random".repo = "flake-nimble";
-  # inputs."random".ref = "flake-pinning";
-  # inputs."random".dir = "nimpkgs/r/random";
-  # inputs."random".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."random".type = "github";
+  inputs."random".owner = "riinr";
+  inputs."random".repo = "flake-nimble";
+  inputs."random".ref = "flake-pinning";
+  inputs."random".dir = "nimpkgs/r/random";
+  inputs."random".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."winim".type = "github";
-  # inputs."winim".owner = "riinr";
-  # inputs."winim".repo = "flake-nimble";
-  # inputs."winim".ref = "flake-pinning";
-  # inputs."winim".dir = "nimpkgs/w/winim";
-  # inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."winim".type = "github";
+  inputs."winim".owner = "riinr";
+  inputs."winim".repo = "flake-nimble";
+  inputs."winim".ref = "flake-pinning";
+  inputs."winim".dir = "nimpkgs/w/winim";
+  inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-neoid-0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

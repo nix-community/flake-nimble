@@ -13,13 +13,13 @@
   inputs.src-eris_utils-0_1_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."eris".type = "github";
-  # inputs."eris".owner = "riinr";
-  # inputs."eris".repo = "flake-nimble";
-  # inputs."eris".ref = "flake-pinning";
-  # inputs."eris".dir = "nimpkgs/e/eris";
-  # inputs."eris".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."eris".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."eris".type = "github";
+  inputs."eris".owner = "riinr";
+  inputs."eris".repo = "flake-nimble";
+  inputs."eris".ref = "flake-pinning";
+  inputs."eris".dir = "nimpkgs/e/eris";
+  inputs."eris".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-eris_utils-0_1_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-dimscmd-1_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/krisppurg/dimscord".type = "github";
-  # inputs."https://github.com/krisppurg/dimscord".owner = "riinr";
-  # inputs."https://github.com/krisppurg/dimscord".repo = "flake-nimble";
-  # inputs."https://github.com/krisppurg/dimscord".ref = "flake-pinning";
-  # inputs."https://github.com/krisppurg/dimscord".dir = "nimpkgs/h/https://github.com/krisppurg/dimscord";
-  # inputs."https://github.com/krisppurg/dimscord".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/krisppurg/dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/krisppurg/dimscord".type = "github";
+  inputs."https://github.com/krisppurg/dimscord".owner = "riinr";
+  inputs."https://github.com/krisppurg/dimscord".repo = "flake-nimble";
+  inputs."https://github.com/krisppurg/dimscord".ref = "flake-pinning";
+  inputs."https://github.com/krisppurg/dimscord".dir = "nimpkgs/h/https://github.com/krisppurg/dimscord";
+  inputs."https://github.com/krisppurg/dimscord".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/krisppurg/dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dimscmd-1_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

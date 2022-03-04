@@ -13,13 +13,13 @@
   inputs.src-asyncredis-v0_8_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/q-master/networkutils.nim.git".type = "github";
-  # inputs."https://github.com/q-master/networkutils.nim.git".owner = "riinr";
-  # inputs."https://github.com/q-master/networkutils.nim.git".repo = "flake-nimble";
-  # inputs."https://github.com/q-master/networkutils.nim.git".ref = "flake-pinning";
-  # inputs."https://github.com/q-master/networkutils.nim.git".dir = "nimpkgs/h/https://github.com/q-master/networkutils.nim.git";
-  # inputs."https://github.com/q-master/networkutils.nim.git".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/q-master/networkutils.nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/q-master/networkutils.nim.git".type = "github";
+  inputs."https://github.com/q-master/networkutils.nim.git".owner = "riinr";
+  inputs."https://github.com/q-master/networkutils.nim.git".repo = "flake-nimble";
+  inputs."https://github.com/q-master/networkutils.nim.git".ref = "flake-pinning";
+  inputs."https://github.com/q-master/networkutils.nim.git".dir = "nimpkgs/h/https://github.com/q-master/networkutils.nim.git";
+  inputs."https://github.com/q-master/networkutils.nim.git".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/q-master/networkutils.nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-asyncredis-v0_8_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,22 +13,22 @@
   inputs.src-ndns-main.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."dnsprotocol".type = "github";
-  # inputs."dnsprotocol".owner = "riinr";
-  # inputs."dnsprotocol".repo = "flake-nimble";
-  # inputs."dnsprotocol".ref = "flake-pinning";
-  # inputs."dnsprotocol".dir = "nimpkgs/d/dnsprotocol";
-  # inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."dnsprotocol".type = "github";
+  inputs."dnsprotocol".owner = "riinr";
+  inputs."dnsprotocol".repo = "flake-nimble";
+  inputs."dnsprotocol".ref = "flake-pinning";
+  inputs."dnsprotocol".dir = "nimpkgs/d/dnsprotocol";
+  inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."stew".type = "github";
-  # inputs."stew".owner = "riinr";
-  # inputs."stew".repo = "flake-nimble";
-  # inputs."stew".ref = "flake-pinning";
-  # inputs."stew".dir = "nimpkgs/s/stew";
-  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stew".type = "github";
+  inputs."stew".owner = "riinr";
+  inputs."stew".repo = "flake-nimble";
+  inputs."stew".ref = "flake-pinning";
+  inputs."stew".dir = "nimpkgs/s/stew";
+  inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ndns-main, ...}@deps:
     let lib = flakeNimbleLib.lib;

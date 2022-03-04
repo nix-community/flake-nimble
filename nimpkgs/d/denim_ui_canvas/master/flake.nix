@@ -13,13 +13,13 @@
   inputs.src-denim_ui_canvas-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."denim_ui".type = "github";
-  # inputs."denim_ui".owner = "riinr";
-  # inputs."denim_ui".repo = "flake-nimble";
-  # inputs."denim_ui".ref = "flake-pinning";
-  # inputs."denim_ui".dir = "nimpkgs/d/denim_ui";
-  # inputs."denim_ui".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."denim_ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."denim_ui".type = "github";
+  inputs."denim_ui".owner = "riinr";
+  inputs."denim_ui".repo = "flake-nimble";
+  inputs."denim_ui".ref = "flake-pinning";
+  inputs."denim_ui".dir = "nimpkgs/d/denim_ui";
+  inputs."denim_ui".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."denim_ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-denim_ui_canvas-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

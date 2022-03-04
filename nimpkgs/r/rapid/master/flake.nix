@@ -13,22 +13,22 @@
   inputs.src-rapid-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."aglet".type = "github";
-  # inputs."aglet".owner = "riinr";
-  # inputs."aglet".repo = "flake-nimble";
-  # inputs."aglet".ref = "flake-pinning";
-  # inputs."aglet".dir = "nimpkgs/a/aglet";
-  # inputs."aglet".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."aglet".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."aglet".type = "github";
+  inputs."aglet".owner = "riinr";
+  inputs."aglet".repo = "flake-nimble";
+  inputs."aglet".ref = "flake-pinning";
+  inputs."aglet".dir = "nimpkgs/a/aglet";
+  inputs."aglet".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."aglet".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."stbimage".type = "github";
-  # inputs."stbimage".owner = "riinr";
-  # inputs."stbimage".repo = "flake-nimble";
-  # inputs."stbimage".ref = "flake-pinning";
-  # inputs."stbimage".dir = "nimpkgs/s/stbimage";
-  # inputs."stbimage".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stbimage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stbimage".type = "github";
+  inputs."stbimage".owner = "riinr";
+  inputs."stbimage".repo = "flake-nimble";
+  inputs."stbimage".ref = "flake-pinning";
+  inputs."stbimage".dir = "nimpkgs/s/stbimage";
+  inputs."stbimage".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stbimage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-rapid-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

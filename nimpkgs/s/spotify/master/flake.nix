@@ -13,13 +13,13 @@
   inputs.src-spotify-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."oauth".type = "github";
-  # inputs."oauth".owner = "riinr";
-  # inputs."oauth".repo = "flake-nimble";
-  # inputs."oauth".ref = "flake-pinning";
-  # inputs."oauth".dir = "nimpkgs/o/oauth";
-  # inputs."oauth".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."oauth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."oauth".type = "github";
+  inputs."oauth".owner = "riinr";
+  inputs."oauth".repo = "flake-nimble";
+  inputs."oauth".ref = "flake-pinning";
+  inputs."oauth".dir = "nimpkgs/o/oauth";
+  inputs."oauth".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oauth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-spotify-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

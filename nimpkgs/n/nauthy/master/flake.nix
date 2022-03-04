@@ -13,13 +13,13 @@
   inputs.src-nauthy-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimsha2".type = "github";
-  # inputs."nimsha2".owner = "riinr";
-  # inputs."nimsha2".repo = "flake-nimble";
-  # inputs."nimsha2".ref = "flake-pinning";
-  # inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
-  # inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimsha2".type = "github";
+  inputs."nimsha2".owner = "riinr";
+  inputs."nimsha2".repo = "flake-nimble";
+  inputs."nimsha2".ref = "flake-pinning";
+  inputs."nimsha2".dir = "nimpkgs/n/nimsha2";
+  inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nauthy-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,22 +13,22 @@
   inputs.src-feta-0_0_3.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."mime".type = "github";
-  # inputs."mime".owner = "riinr";
-  # inputs."mime".repo = "flake-nimble";
-  # inputs."mime".ref = "flake-pinning";
-  # inputs."mime".dir = "nimpkgs/m/mime";
-  # inputs."mime".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mime".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mime".type = "github";
+  inputs."mime".owner = "riinr";
+  inputs."mime".repo = "flake-nimble";
+  inputs."mime".ref = "flake-pinning";
+  inputs."mime".dir = "nimpkgs/m/mime";
+  inputs."mime".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mime".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."jester".type = "github";
-  # inputs."jester".owner = "riinr";
-  # inputs."jester".repo = "flake-nimble";
-  # inputs."jester".ref = "flake-pinning";
-  # inputs."jester".dir = "nimpkgs/j/jester";
-  # inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jester".type = "github";
+  inputs."jester".owner = "riinr";
+  inputs."jester".repo = "flake-nimble";
+  inputs."jester".ref = "flake-pinning";
+  inputs."jester".dir = "nimpkgs/j/jester";
+  inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-feta-0_0_3, ...}@deps:
     let lib = flakeNimbleLib.lib;

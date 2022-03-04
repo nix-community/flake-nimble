@@ -13,13 +13,13 @@
   inputs.src-gmp-v0_2_5.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimrod".type = "github";
-  # inputs."nimrod".owner = "riinr";
-  # inputs."nimrod".repo = "flake-nimble";
-  # inputs."nimrod".ref = "flake-pinning";
-  # inputs."nimrod".dir = "nimpkgs/n/nimrod";
-  # inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimrod".type = "github";
+  inputs."nimrod".owner = "riinr";
+  inputs."nimrod".repo = "flake-nimble";
+  inputs."nimrod".ref = "flake-pinning";
+  inputs."nimrod".dir = "nimpkgs/n/nimrod";
+  inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-gmp-v0_2_5, ...}@deps:
     let lib = flakeNimbleLib.lib;

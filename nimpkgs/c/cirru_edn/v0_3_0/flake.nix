@@ -13,13 +13,13 @@
   inputs.src-cirru_edn-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."cirru-parser".type = "github";
-  # inputs."cirru-parser".owner = "riinr";
-  # inputs."cirru-parser".repo = "flake-nimble";
-  # inputs."cirru-parser".ref = "flake-pinning";
-  # inputs."cirru-parser".dir = "nimpkgs/c/cirru-parser";
-  # inputs."cirru-parser".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."cirru-parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cirru-parser".type = "github";
+  inputs."cirru-parser".owner = "riinr";
+  inputs."cirru-parser".repo = "flake-nimble";
+  inputs."cirru-parser".ref = "flake-pinning";
+  inputs."cirru-parser".dir = "nimpkgs/c/cirru-parser";
+  inputs."cirru-parser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cirru-parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cirru_edn-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,31 +13,31 @@
   inputs.src-os_files-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."oldgtk3".type = "github";
-  # inputs."oldgtk3".owner = "riinr";
-  # inputs."oldgtk3".repo = "flake-nimble";
-  # inputs."oldgtk3".ref = "flake-pinning";
-  # inputs."oldgtk3".dir = "nimpkgs/o/oldgtk3";
-  # inputs."oldgtk3".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."oldgtk3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."oldgtk3".type = "github";
+  inputs."oldgtk3".owner = "riinr";
+  inputs."oldgtk3".repo = "flake-nimble";
+  inputs."oldgtk3".ref = "flake-pinning";
+  inputs."oldgtk3".dir = "nimpkgs/o/oldgtk3";
+  inputs."oldgtk3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oldgtk3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."jsbind".type = "github";
-  # inputs."jsbind".owner = "riinr";
-  # inputs."jsbind".repo = "flake-nimble";
-  # inputs."jsbind".ref = "flake-pinning";
-  # inputs."jsbind".dir = "nimpkgs/j/jsbind";
-  # inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsbind".type = "github";
+  inputs."jsbind".owner = "riinr";
+  inputs."jsbind".repo = "flake-nimble";
+  inputs."jsbind".ref = "flake-pinning";
+  inputs."jsbind".dir = "nimpkgs/j/jsbind";
+  inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."https://github.com/yglukhov/darwin".type = "github";
-  # inputs."https://github.com/yglukhov/darwin".owner = "riinr";
-  # inputs."https://github.com/yglukhov/darwin".repo = "flake-nimble";
-  # inputs."https://github.com/yglukhov/darwin".ref = "flake-pinning";
-  # inputs."https://github.com/yglukhov/darwin".dir = "nimpkgs/h/https://github.com/yglukhov/darwin";
-  # inputs."https://github.com/yglukhov/darwin".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/yglukhov/darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/yglukhov/darwin".type = "github";
+  inputs."https://github.com/yglukhov/darwin".owner = "riinr";
+  inputs."https://github.com/yglukhov/darwin".repo = "flake-nimble";
+  inputs."https://github.com/yglukhov/darwin".ref = "flake-pinning";
+  inputs."https://github.com/yglukhov/darwin".dir = "nimpkgs/h/https://github.com/yglukhov/darwin";
+  inputs."https://github.com/yglukhov/darwin".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/yglukhov/darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-os_files-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

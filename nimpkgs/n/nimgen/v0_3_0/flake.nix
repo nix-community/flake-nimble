@@ -13,22 +13,22 @@
   inputs.src-nimgen-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."c2nim".type = "github";
-  # inputs."c2nim".owner = "riinr";
-  # inputs."c2nim".repo = "flake-nimble";
-  # inputs."c2nim".ref = "flake-pinning";
-  # inputs."c2nim".dir = "nimpkgs/c/c2nim";
-  # inputs."c2nim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."c2nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."c2nim".type = "github";
+  inputs."c2nim".owner = "riinr";
+  inputs."c2nim".repo = "flake-nimble";
+  inputs."c2nim".ref = "flake-pinning";
+  inputs."c2nim".dir = "nimpkgs/c/c2nim";
+  inputs."c2nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."c2nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."regex".type = "github";
-  # inputs."regex".owner = "riinr";
-  # inputs."regex".repo = "flake-nimble";
-  # inputs."regex".ref = "flake-pinning";
-  # inputs."regex".dir = "nimpkgs/r/regex";
-  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."regex".type = "github";
+  inputs."regex".owner = "riinr";
+  inputs."regex".repo = "flake-nimble";
+  inputs."regex".ref = "flake-pinning";
+  inputs."regex".dir = "nimpkgs/r/regex";
+  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimgen-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

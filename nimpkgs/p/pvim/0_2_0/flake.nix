@@ -13,13 +13,13 @@
   inputs.src-pvim-0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."paravim".type = "github";
-  # inputs."paravim".owner = "riinr";
-  # inputs."paravim".repo = "flake-nimble";
-  # inputs."paravim".ref = "flake-pinning";
-  # inputs."paravim".dir = "nimpkgs/p/paravim";
-  # inputs."paravim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."paravim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."paravim".type = "github";
+  inputs."paravim".owner = "riinr";
+  inputs."paravim".repo = "flake-nimble";
+  inputs."paravim".ref = "flake-pinning";
+  inputs."paravim".dir = "nimpkgs/p/paravim";
+  inputs."paravim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."paravim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-pvim-0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

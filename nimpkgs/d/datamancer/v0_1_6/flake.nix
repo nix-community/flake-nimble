@@ -13,22 +13,22 @@
   inputs.src-datamancer-v0_1_6.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/vindaar/seqmath".type = "github";
-  # inputs."https://github.com/vindaar/seqmath".owner = "riinr";
-  # inputs."https://github.com/vindaar/seqmath".repo = "flake-nimble";
-  # inputs."https://github.com/vindaar/seqmath".ref = "flake-pinning";
-  # inputs."https://github.com/vindaar/seqmath".dir = "nimpkgs/h/https://github.com/vindaar/seqmath";
-  # inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/vindaar/seqmath".type = "github";
+  inputs."https://github.com/vindaar/seqmath".owner = "riinr";
+  inputs."https://github.com/vindaar/seqmath".repo = "flake-nimble";
+  inputs."https://github.com/vindaar/seqmath".ref = "flake-pinning";
+  inputs."https://github.com/vindaar/seqmath".dir = "nimpkgs/h/https://github.com/vindaar/seqmath";
+  inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."arraymancer".type = "github";
-  # inputs."arraymancer".owner = "riinr";
-  # inputs."arraymancer".repo = "flake-nimble";
-  # inputs."arraymancer".ref = "flake-pinning";
-  # inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
-  # inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."arraymancer".type = "github";
+  inputs."arraymancer".owner = "riinr";
+  inputs."arraymancer".repo = "flake-nimble";
+  inputs."arraymancer".ref = "flake-pinning";
+  inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
+  inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-datamancer-v0_1_6, ...}@deps:
     let lib = flakeNimbleLib.lib;

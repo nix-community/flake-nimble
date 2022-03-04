@@ -13,13 +13,13 @@
   inputs.src-nimblegui-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."webgui".type = "github";
-  # inputs."webgui".owner = "riinr";
-  # inputs."webgui".repo = "flake-nimble";
-  # inputs."webgui".ref = "flake-pinning";
-  # inputs."webgui".dir = "nimpkgs/w/webgui";
-  # inputs."webgui".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."webgui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."webgui".type = "github";
+  inputs."webgui".owner = "riinr";
+  inputs."webgui".repo = "flake-nimble";
+  inputs."webgui".ref = "flake-pinning";
+  inputs."webgui".dir = "nimpkgs/w/webgui";
+  inputs."webgui".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webgui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimblegui-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

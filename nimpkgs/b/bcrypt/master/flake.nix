@@ -13,13 +13,13 @@
   inputs.src-bcrypt-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimrod".type = "github";
-  # inputs."nimrod".owner = "riinr";
-  # inputs."nimrod".repo = "flake-nimble";
-  # inputs."nimrod".ref = "flake-pinning";
-  # inputs."nimrod".dir = "nimpkgs/n/nimrod";
-  # inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimrod".type = "github";
+  inputs."nimrod".owner = "riinr";
+  inputs."nimrod".repo = "flake-nimble";
+  inputs."nimrod".ref = "flake-pinning";
+  inputs."nimrod".dir = "nimpkgs/n/nimrod";
+  inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-bcrypt-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

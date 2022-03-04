@@ -13,13 +13,13 @@
   inputs.src-ormin-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."websocket".type = "github";
-  # inputs."websocket".owner = "riinr";
-  # inputs."websocket".repo = "flake-nimble";
-  # inputs."websocket".ref = "flake-pinning";
-  # inputs."websocket".dir = "nimpkgs/w/websocket";
-  # inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."websocket".type = "github";
+  inputs."websocket".owner = "riinr";
+  inputs."websocket".repo = "flake-nimble";
+  inputs."websocket".ref = "flake-pinning";
+  inputs."websocket".dir = "nimpkgs/w/websocket";
+  inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-ormin-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

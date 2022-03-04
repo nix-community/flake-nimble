@@ -13,13 +13,13 @@
   inputs.src-telebot-0_7_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."sam".type = "github";
-  # inputs."sam".owner = "riinr";
-  # inputs."sam".repo = "flake-nimble";
-  # inputs."sam".ref = "flake-pinning";
-  # inputs."sam".dir = "nimpkgs/s/sam";
-  # inputs."sam".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."sam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sam".type = "github";
+  inputs."sam".owner = "riinr";
+  inputs."sam".repo = "flake-nimble";
+  inputs."sam".ref = "flake-pinning";
+  inputs."sam".dir = "nimpkgs/s/sam";
+  inputs."sam".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-telebot-0_7_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

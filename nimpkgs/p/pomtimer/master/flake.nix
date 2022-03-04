@@ -13,22 +13,22 @@
   inputs.src-pomTimer-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."progress".type = "github";
-  # inputs."progress".owner = "riinr";
-  # inputs."progress".repo = "flake-nimble";
-  # inputs."progress".ref = "flake-pinning";
-  # inputs."progress".dir = "nimpkgs/p/progress";
-  # inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."progress".type = "github";
+  inputs."progress".owner = "riinr";
+  inputs."progress".repo = "flake-nimble";
+  inputs."progress".ref = "flake-pinning";
+  inputs."progress".dir = "nimpkgs/p/progress";
+  inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."notify".type = "github";
-  # inputs."notify".owner = "riinr";
-  # inputs."notify".repo = "flake-nimble";
-  # inputs."notify".ref = "flake-pinning";
-  # inputs."notify".dir = "nimpkgs/n/notify";
-  # inputs."notify".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."notify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."notify".type = "github";
+  inputs."notify".owner = "riinr";
+  inputs."notify".repo = "flake-nimble";
+  inputs."notify".ref = "flake-pinning";
+  inputs."notify".dir = "nimpkgs/n/notify";
+  inputs."notify".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."notify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-pomTimer-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

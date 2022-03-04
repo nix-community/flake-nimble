@@ -13,13 +13,13 @@
   inputs.src-nimbench-v0_2_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."strfmt".type = "github";
-  # inputs."strfmt".owner = "riinr";
-  # inputs."strfmt".repo = "flake-nimble";
-  # inputs."strfmt".ref = "flake-pinning";
-  # inputs."strfmt".dir = "nimpkgs/s/strfmt";
-  # inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."strfmt".type = "github";
+  inputs."strfmt".owner = "riinr";
+  inputs."strfmt".repo = "flake-nimble";
+  inputs."strfmt".ref = "flake-pinning";
+  inputs."strfmt".dir = "nimpkgs/s/strfmt";
+  inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimbench-v0_2_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

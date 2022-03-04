@@ -13,13 +13,13 @@
   inputs.src-spry-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."spryvm".type = "github";
-  # inputs."spryvm".owner = "riinr";
-  # inputs."spryvm".repo = "flake-nimble";
-  # inputs."spryvm".ref = "flake-pinning";
-  # inputs."spryvm".dir = "nimpkgs/s/spryvm";
-  # inputs."spryvm".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."spryvm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."spryvm".type = "github";
+  inputs."spryvm".owner = "riinr";
+  inputs."spryvm".repo = "flake-nimble";
+  inputs."spryvm".ref = "flake-pinning";
+  inputs."spryvm".dir = "nimpkgs/s/spryvm";
+  inputs."spryvm".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."spryvm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-spry-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

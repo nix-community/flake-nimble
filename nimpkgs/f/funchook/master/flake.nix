@@ -13,13 +13,13 @@
   inputs.src-funchook-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/ba0f3/distorm3.nim".type = "github";
-  # inputs."https://github.com/ba0f3/distorm3.nim".owner = "riinr";
-  # inputs."https://github.com/ba0f3/distorm3.nim".repo = "flake-nimble";
-  # inputs."https://github.com/ba0f3/distorm3.nim".ref = "flake-pinning";
-  # inputs."https://github.com/ba0f3/distorm3.nim".dir = "nimpkgs/h/https://github.com/ba0f3/distorm3.nim";
-  # inputs."https://github.com/ba0f3/distorm3.nim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/ba0f3/distorm3.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/ba0f3/distorm3.nim".type = "github";
+  inputs."https://github.com/ba0f3/distorm3.nim".owner = "riinr";
+  inputs."https://github.com/ba0f3/distorm3.nim".repo = "flake-nimble";
+  inputs."https://github.com/ba0f3/distorm3.nim".ref = "flake-pinning";
+  inputs."https://github.com/ba0f3/distorm3.nim".dir = "nimpkgs/h/https://github.com/ba0f3/distorm3.nim";
+  inputs."https://github.com/ba0f3/distorm3.nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/ba0f3/distorm3.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-funchook-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

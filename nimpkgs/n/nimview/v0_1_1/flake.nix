@@ -13,40 +13,40 @@
   inputs.src-nimview-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jester".type = "github";
-  # inputs."jester".owner = "riinr";
-  # inputs."jester".repo = "flake-nimble";
-  # inputs."jester".ref = "flake-pinning";
-  # inputs."jester".dir = "nimpkgs/j/jester";
-  # inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jester".type = "github";
+  inputs."jester".owner = "riinr";
+  inputs."jester".repo = "flake-nimble";
+  inputs."jester".ref = "flake-pinning";
+  inputs."jester".dir = "nimpkgs/j/jester";
+  inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nimpy".type = "github";
-  # inputs."nimpy".owner = "riinr";
-  # inputs."nimpy".repo = "flake-nimble";
-  # inputs."nimpy".ref = "flake-pinning";
-  # inputs."nimpy".dir = "nimpkgs/n/nimpy";
-  # inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimpy".type = "github";
+  inputs."nimpy".owner = "riinr";
+  inputs."nimpy".repo = "flake-nimble";
+  inputs."nimpy".ref = "flake-pinning";
+  inputs."nimpy".dir = "nimpkgs/n/nimpy";
+  inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."webview".type = "github";
-  # inputs."webview".owner = "riinr";
-  # inputs."webview".repo = "flake-nimble";
-  # inputs."webview".ref = "flake-pinning";
-  # inputs."webview".dir = "nimpkgs/w/webview";
-  # inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."webview".type = "github";
+  inputs."webview".owner = "riinr";
+  inputs."webview".repo = "flake-nimble";
+  inputs."webview".ref = "flake-pinning";
+  inputs."webview".dir = "nimpkgs/w/webview";
+  inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nake".type = "github";
-  # inputs."nake".owner = "riinr";
-  # inputs."nake".repo = "flake-nimble";
-  # inputs."nake".ref = "flake-pinning";
-  # inputs."nake".dir = "nimpkgs/n/nake";
-  # inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nake".type = "github";
+  inputs."nake".owner = "riinr";
+  inputs."nake".repo = "flake-nimble";
+  inputs."nake".ref = "flake-pinning";
+  inputs."nake".dir = "nimpkgs/n/nake";
+  inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimview-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-reframe-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."edn".type = "github";
-  # inputs."edn".owner = "riinr";
-  # inputs."edn".repo = "flake-nimble";
-  # inputs."edn".ref = "flake-pinning";
-  # inputs."edn".dir = "nimpkgs/e/edn";
-  # inputs."edn".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."edn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."edn".type = "github";
+  inputs."edn".owner = "riinr";
+  inputs."edn".repo = "flake-nimble";
+  inputs."edn".ref = "flake-pinning";
+  inputs."edn".dir = "nimpkgs/e/edn";
+  inputs."edn".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."edn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-reframe-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

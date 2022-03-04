@@ -13,13 +13,13 @@
   inputs.src-porter-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."mutableseqs".type = "github";
-  # inputs."mutableseqs".owner = "riinr";
-  # inputs."mutableseqs".repo = "flake-nimble";
-  # inputs."mutableseqs".ref = "flake-pinning";
-  # inputs."mutableseqs".dir = "nimpkgs/m/mutableseqs";
-  # inputs."mutableseqs".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."mutableseqs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."mutableseqs".type = "github";
+  inputs."mutableseqs".owner = "riinr";
+  inputs."mutableseqs".repo = "flake-nimble";
+  inputs."mutableseqs".ref = "flake-pinning";
+  inputs."mutableseqs".dir = "nimpkgs/m/mutableseqs";
+  inputs."mutableseqs".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mutableseqs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-porter-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

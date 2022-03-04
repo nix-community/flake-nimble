@@ -13,22 +13,22 @@
   inputs.src-strunicode-v0_5_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."normalize".type = "github";
-  # inputs."normalize".owner = "riinr";
-  # inputs."normalize".repo = "flake-nimble";
-  # inputs."normalize".ref = "flake-pinning";
-  # inputs."normalize".dir = "nimpkgs/n/normalize";
-  # inputs."normalize".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."normalize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."normalize".type = "github";
+  inputs."normalize".owner = "riinr";
+  inputs."normalize".repo = "flake-nimble";
+  inputs."normalize".ref = "flake-pinning";
+  inputs."normalize".dir = "nimpkgs/n/normalize";
+  inputs."normalize".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."normalize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."graphemes".type = "github";
-  # inputs."graphemes".owner = "riinr";
-  # inputs."graphemes".repo = "flake-nimble";
-  # inputs."graphemes".ref = "flake-pinning";
-  # inputs."graphemes".dir = "nimpkgs/g/graphemes";
-  # inputs."graphemes".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."graphemes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."graphemes".type = "github";
+  inputs."graphemes".owner = "riinr";
+  inputs."graphemes".repo = "flake-nimble";
+  inputs."graphemes".ref = "flake-pinning";
+  inputs."graphemes".dir = "nimpkgs/g/graphemes";
+  inputs."graphemes".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."graphemes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-strunicode-v0_5_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

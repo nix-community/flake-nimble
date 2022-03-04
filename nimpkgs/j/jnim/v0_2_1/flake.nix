@@ -13,13 +13,13 @@
   inputs.src-jnim-v0_2_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimfp".type = "github";
-  # inputs."nimfp".owner = "riinr";
-  # inputs."nimfp".repo = "flake-nimble";
-  # inputs."nimfp".ref = "flake-pinning";
-  # inputs."nimfp".dir = "nimpkgs/n/nimfp";
-  # inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimfp".type = "github";
+  inputs."nimfp".owner = "riinr";
+  inputs."nimfp".repo = "flake-nimble";
+  inputs."nimfp".ref = "flake-pinning";
+  inputs."nimfp".dir = "nimpkgs/n/nimfp";
+  inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-jnim-v0_2_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

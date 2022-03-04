@@ -13,13 +13,13 @@
   inputs.src-dnd-v0_6_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."gintro".type = "github";
-  # inputs."gintro".owner = "riinr";
-  # inputs."gintro".repo = "flake-nimble";
-  # inputs."gintro".ref = "flake-pinning";
-  # inputs."gintro".dir = "nimpkgs/g/gintro";
-  # inputs."gintro".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."gintro".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."gintro".type = "github";
+  inputs."gintro".owner = "riinr";
+  inputs."gintro".repo = "flake-nimble";
+  inputs."gintro".ref = "flake-pinning";
+  inputs."gintro".dir = "nimpkgs/g/gintro";
+  inputs."gintro".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gintro".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-dnd-v0_6_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

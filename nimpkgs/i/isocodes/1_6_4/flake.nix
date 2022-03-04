@@ -13,13 +13,13 @@
   inputs.src-isocodes-1_6_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."jsony".type = "github";
-  # inputs."jsony".owner = "riinr";
-  # inputs."jsony".repo = "flake-nimble";
-  # inputs."jsony".ref = "flake-pinning";
-  # inputs."jsony".dir = "nimpkgs/j/jsony";
-  # inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsony".type = "github";
+  inputs."jsony".owner = "riinr";
+  inputs."jsony".repo = "flake-nimble";
+  inputs."jsony".ref = "flake-pinning";
+  inputs."jsony".dir = "nimpkgs/j/jsony";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-isocodes-1_6_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

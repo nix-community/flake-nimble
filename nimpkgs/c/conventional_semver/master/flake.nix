@@ -13,22 +13,22 @@
   inputs.src-conventional_semver-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."semver".type = "github";
-  # inputs."semver".owner = "riinr";
-  # inputs."semver".repo = "flake-nimble";
-  # inputs."semver".ref = "flake-pinning";
-  # inputs."semver".dir = "nimpkgs/s/semver";
-  # inputs."semver".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."semver".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."semver".type = "github";
+  inputs."semver".owner = "riinr";
+  inputs."semver".repo = "flake-nimble";
+  inputs."semver".ref = "flake-pinning";
+  inputs."semver".dir = "nimpkgs/s/semver";
+  inputs."semver".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."semver".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."simpleparseopt".type = "github";
-  # inputs."simpleparseopt".owner = "riinr";
-  # inputs."simpleparseopt".repo = "flake-nimble";
-  # inputs."simpleparseopt".ref = "flake-pinning";
-  # inputs."simpleparseopt".dir = "nimpkgs/s/simpleparseopt";
-  # inputs."simpleparseopt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."simpleparseopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."simpleparseopt".type = "github";
+  inputs."simpleparseopt".owner = "riinr";
+  inputs."simpleparseopt".repo = "flake-nimble";
+  inputs."simpleparseopt".ref = "flake-pinning";
+  inputs."simpleparseopt".dir = "nimpkgs/s/simpleparseopt";
+  inputs."simpleparseopt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."simpleparseopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-conventional_semver-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

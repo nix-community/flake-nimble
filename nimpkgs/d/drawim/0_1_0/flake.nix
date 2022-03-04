@@ -13,22 +13,22 @@
   inputs.src-drawim-0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."staticglfw".type = "github";
-  # inputs."staticglfw".owner = "riinr";
-  # inputs."staticglfw".repo = "flake-nimble";
-  # inputs."staticglfw".ref = "flake-pinning";
-  # inputs."staticglfw".dir = "nimpkgs/s/staticglfw";
-  # inputs."staticglfw".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."staticglfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."staticglfw".type = "github";
+  inputs."staticglfw".owner = "riinr";
+  inputs."staticglfw".repo = "flake-nimble";
+  inputs."staticglfw".ref = "flake-pinning";
+  inputs."staticglfw".dir = "nimpkgs/s/staticglfw";
+  inputs."staticglfw".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."staticglfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."jscanvas".type = "github";
-  # inputs."jscanvas".owner = "riinr";
-  # inputs."jscanvas".repo = "flake-nimble";
-  # inputs."jscanvas".ref = "flake-pinning";
-  # inputs."jscanvas".dir = "nimpkgs/j/jscanvas";
-  # inputs."jscanvas".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jscanvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jscanvas".type = "github";
+  inputs."jscanvas".owner = "riinr";
+  inputs."jscanvas".repo = "flake-nimble";
+  inputs."jscanvas".ref = "flake-pinning";
+  inputs."jscanvas".dir = "nimpkgs/j/jscanvas";
+  inputs."jscanvas".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jscanvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-drawim-0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

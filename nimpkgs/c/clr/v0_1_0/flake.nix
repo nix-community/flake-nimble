@@ -13,22 +13,22 @@
   inputs.src-clr-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."chroma".type = "github";
-  # inputs."chroma".owner = "riinr";
-  # inputs."chroma".repo = "flake-nimble";
-  # inputs."chroma".ref = "flake-pinning";
-  # inputs."chroma".dir = "nimpkgs/c/chroma";
-  # inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."chroma".type = "github";
+  inputs."chroma".owner = "riinr";
+  inputs."chroma".repo = "flake-nimble";
+  inputs."chroma".ref = "flake-pinning";
+  inputs."chroma".dir = "nimpkgs/c/chroma";
+  inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."docopt".type = "github";
-  # inputs."docopt".owner = "riinr";
-  # inputs."docopt".repo = "flake-nimble";
-  # inputs."docopt".ref = "flake-pinning";
-  # inputs."docopt".dir = "nimpkgs/d/docopt";
-  # inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."docopt".type = "github";
+  inputs."docopt".owner = "riinr";
+  inputs."docopt".repo = "flake-nimble";
+  inputs."docopt".ref = "flake-pinning";
+  inputs."docopt".dir = "nimpkgs/d/docopt";
+  inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-clr-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

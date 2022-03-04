@@ -13,22 +13,22 @@
   inputs.src-kdb-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."terminaltables".type = "github";
-  # inputs."terminaltables".owner = "riinr";
-  # inputs."terminaltables".repo = "flake-nimble";
-  # inputs."terminaltables".ref = "flake-pinning";
-  # inputs."terminaltables".dir = "nimpkgs/t/terminaltables";
-  # inputs."terminaltables".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."terminaltables".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."terminaltables".type = "github";
+  inputs."terminaltables".owner = "riinr";
+  inputs."terminaltables".repo = "flake-nimble";
+  inputs."terminaltables".ref = "flake-pinning";
+  inputs."terminaltables".dir = "nimpkgs/t/terminaltables";
+  inputs."terminaltables".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."terminaltables".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."uuids".type = "github";
-  # inputs."uuids".owner = "riinr";
-  # inputs."uuids".repo = "flake-nimble";
-  # inputs."uuids".ref = "flake-pinning";
-  # inputs."uuids".dir = "nimpkgs/u/uuids";
-  # inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."uuids".type = "github";
+  inputs."uuids".owner = "riinr";
+  inputs."uuids".repo = "flake-nimble";
+  inputs."uuids".ref = "flake-pinning";
+  inputs."uuids".dir = "nimpkgs/u/uuids";
+  inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-kdb-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

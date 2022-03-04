@@ -13,22 +13,22 @@
   inputs.src-mongopool-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."bson".type = "github";
-  # inputs."bson".owner = "riinr";
-  # inputs."bson".repo = "flake-nimble";
-  # inputs."bson".ref = "flake-pinning";
-  # inputs."bson".dir = "nimpkgs/b/bson";
-  # inputs."bson".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."bson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bson".type = "github";
+  inputs."bson".owner = "riinr";
+  inputs."bson".repo = "flake-nimble";
+  inputs."bson".ref = "flake-pinning";
+  inputs."bson".dir = "nimpkgs/b/bson";
+  inputs."bson".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."scram".type = "github";
-  # inputs."scram".owner = "riinr";
-  # inputs."scram".repo = "flake-nimble";
-  # inputs."scram".ref = "flake-pinning";
-  # inputs."scram".dir = "nimpkgs/s/scram";
-  # inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."scram".type = "github";
+  inputs."scram".owner = "riinr";
+  inputs."scram".repo = "flake-nimble";
+  inputs."scram".ref = "flake-pinning";
+  inputs."scram".dir = "nimpkgs/s/scram";
+  inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mongopool-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

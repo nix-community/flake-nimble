@@ -13,13 +13,13 @@
   inputs.src-statistical_tests-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."distributions".type = "github";
-  # inputs."distributions".owner = "riinr";
-  # inputs."distributions".repo = "flake-nimble";
-  # inputs."distributions".ref = "flake-pinning";
-  # inputs."distributions".dir = "nimpkgs/d/distributions";
-  # inputs."distributions".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."distributions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."distributions".type = "github";
+  inputs."distributions".owner = "riinr";
+  inputs."distributions".repo = "flake-nimble";
+  inputs."distributions".ref = "flake-pinning";
+  inputs."distributions".dir = "nimpkgs/d/distributions";
+  inputs."distributions".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."distributions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-statistical_tests-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

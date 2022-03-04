@@ -13,13 +13,13 @@
   inputs.src-snail-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimblas".type = "github";
-  # inputs."nimblas".owner = "riinr";
-  # inputs."nimblas".repo = "flake-nimble";
-  # inputs."nimblas".ref = "flake-pinning";
-  # inputs."nimblas".dir = "nimpkgs/n/nimblas";
-  # inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimblas".type = "github";
+  inputs."nimblas".owner = "riinr";
+  inputs."nimblas".repo = "flake-nimble";
+  inputs."nimblas".ref = "flake-pinning";
+  inputs."nimblas".dir = "nimpkgs/n/nimblas";
+  inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-snail-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

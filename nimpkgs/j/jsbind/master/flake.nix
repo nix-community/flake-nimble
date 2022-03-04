@@ -13,13 +13,13 @@
   inputs.src-jsbind-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/yglukhov/wasmrt".type = "github";
-  # inputs."https://github.com/yglukhov/wasmrt".owner = "riinr";
-  # inputs."https://github.com/yglukhov/wasmrt".repo = "flake-nimble";
-  # inputs."https://github.com/yglukhov/wasmrt".ref = "flake-pinning";
-  # inputs."https://github.com/yglukhov/wasmrt".dir = "nimpkgs/h/https://github.com/yglukhov/wasmrt";
-  # inputs."https://github.com/yglukhov/wasmrt".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/yglukhov/wasmrt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/yglukhov/wasmrt".type = "github";
+  inputs."https://github.com/yglukhov/wasmrt".owner = "riinr";
+  inputs."https://github.com/yglukhov/wasmrt".repo = "flake-nimble";
+  inputs."https://github.com/yglukhov/wasmrt".ref = "flake-pinning";
+  inputs."https://github.com/yglukhov/wasmrt".dir = "nimpkgs/h/https://github.com/yglukhov/wasmrt";
+  inputs."https://github.com/yglukhov/wasmrt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/yglukhov/wasmrt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-jsbind-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

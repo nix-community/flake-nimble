@@ -13,13 +13,13 @@
   inputs.src-nimboost-v0_4_8.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."patty".type = "github";
-  # inputs."patty".owner = "riinr";
-  # inputs."patty".repo = "flake-nimble";
-  # inputs."patty".ref = "flake-pinning";
-  # inputs."patty".dir = "nimpkgs/p/patty";
-  # inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."patty".type = "github";
+  inputs."patty".owner = "riinr";
+  inputs."patty".repo = "flake-nimble";
+  inputs."patty".ref = "flake-pinning";
+  inputs."patty".dir = "nimpkgs/p/patty";
+  inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimboost-v0_4_8, ...}@deps:
     let lib = flakeNimbleLib.lib;

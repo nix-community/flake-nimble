@@ -13,22 +13,22 @@
   inputs.src-discord_rpc-v0_1_1.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."uuids".type = "github";
-  # inputs."uuids".owner = "riinr";
-  # inputs."uuids".repo = "flake-nimble";
-  # inputs."uuids".ref = "flake-pinning";
-  # inputs."uuids".dir = "nimpkgs/u/uuids";
-  # inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."uuids".type = "github";
+  inputs."uuids".owner = "riinr";
+  inputs."uuids".repo = "flake-nimble";
+  inputs."uuids".ref = "flake-pinning";
+  inputs."uuids".dir = "nimpkgs/u/uuids";
+  inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."packedjson".type = "github";
-  # inputs."packedjson".owner = "riinr";
-  # inputs."packedjson".repo = "flake-nimble";
-  # inputs."packedjson".ref = "flake-pinning";
-  # inputs."packedjson".dir = "nimpkgs/p/packedjson";
-  # inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."packedjson".type = "github";
+  inputs."packedjson".owner = "riinr";
+  inputs."packedjson".repo = "flake-nimble";
+  inputs."packedjson".ref = "flake-pinning";
+  inputs."packedjson".dir = "nimpkgs/p/packedjson";
+  inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-discord_rpc-v0_1_1, ...}@deps:
     let lib = flakeNimbleLib.lib;

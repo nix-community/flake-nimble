@@ -13,31 +13,31 @@
   inputs.src-analytics-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."uuids".type = "github";
-  # inputs."uuids".owner = "riinr";
-  # inputs."uuids".repo = "flake-nimble";
-  # inputs."uuids".ref = "flake-pinning";
-  # inputs."uuids".dir = "nimpkgs/u/uuids";
-  # inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."uuids".type = "github";
+  inputs."uuids".owner = "riinr";
+  inputs."uuids".repo = "flake-nimble";
+  inputs."uuids".ref = "flake-pinning";
+  inputs."uuids".dir = "nimpkgs/u/uuids";
+  inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."osinfo".type = "github";
-  # inputs."osinfo".owner = "riinr";
-  # inputs."osinfo".repo = "flake-nimble";
-  # inputs."osinfo".ref = "flake-pinning";
-  # inputs."osinfo".dir = "nimpkgs/o/osinfo";
-  # inputs."osinfo".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."osinfo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."osinfo".type = "github";
+  inputs."osinfo".owner = "riinr";
+  inputs."osinfo".repo = "flake-nimble";
+  inputs."osinfo".ref = "flake-pinning";
+  inputs."osinfo".dir = "nimpkgs/o/osinfo";
+  inputs."osinfo".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."osinfo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."puppy".type = "github";
-  # inputs."puppy".owner = "riinr";
-  # inputs."puppy".repo = "flake-nimble";
-  # inputs."puppy".ref = "flake-pinning";
-  # inputs."puppy".dir = "nimpkgs/p/puppy";
-  # inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."puppy".type = "github";
+  inputs."puppy".owner = "riinr";
+  inputs."puppy".repo = "flake-nimble";
+  inputs."puppy".ref = "flake-pinning";
+  inputs."puppy".dir = "nimpkgs/p/puppy";
+  inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-analytics-v0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

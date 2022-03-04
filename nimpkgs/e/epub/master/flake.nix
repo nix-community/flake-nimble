@@ -13,13 +13,13 @@
   inputs.src-epub-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nim>=".type = "github";
-  # inputs."nim>=".owner = "riinr";
-  # inputs."nim>=".repo = "flake-nimble";
-  # inputs."nim>=".ref = "flake-pinning";
-  # inputs."nim>=".dir = "nimpkgs/n/nim>=";
-  # inputs."nim>=".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nim>=".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nim>=".type = "github";
+  inputs."nim>=".owner = "riinr";
+  inputs."nim>=".repo = "flake-nimble";
+  inputs."nim>=".ref = "flake-pinning";
+  inputs."nim>=".dir = "nimpkgs/n/nim>=";
+  inputs."nim>=".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nim>=".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-epub-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

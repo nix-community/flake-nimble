@@ -13,13 +13,13 @@
   inputs.src-gtk2-v1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."cairo".type = "github";
-  # inputs."cairo".owner = "riinr";
-  # inputs."cairo".repo = "flake-nimble";
-  # inputs."cairo".ref = "flake-pinning";
-  # inputs."cairo".dir = "nimpkgs/c/cairo";
-  # inputs."cairo".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."cairo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cairo".type = "github";
+  inputs."cairo".owner = "riinr";
+  inputs."cairo".repo = "flake-nimble";
+  inputs."cairo".ref = "flake-pinning";
+  inputs."cairo".dir = "nimpkgs/c/cairo";
+  inputs."cairo".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cairo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-gtk2-v1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

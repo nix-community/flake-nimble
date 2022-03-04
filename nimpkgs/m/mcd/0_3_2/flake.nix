@@ -13,31 +13,31 @@
   inputs.src-mcd-0_3_2.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."parsetoml".type = "github";
-  # inputs."parsetoml".owner = "riinr";
-  # inputs."parsetoml".repo = "flake-nimble";
-  # inputs."parsetoml".ref = "flake-pinning";
-  # inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
-  # inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."parsetoml".type = "github";
+  inputs."parsetoml".owner = "riinr";
+  inputs."parsetoml".repo = "flake-nimble";
+  inputs."parsetoml".ref = "flake-pinning";
+  inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
+  inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."cligen".type = "github";
-  # inputs."cligen".owner = "riinr";
-  # inputs."cligen".repo = "flake-nimble";
-  # inputs."cligen".ref = "flake-pinning";
-  # inputs."cligen".dir = "nimpkgs/c/cligen";
-  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cligen".type = "github";
+  inputs."cligen".owner = "riinr";
+  inputs."cligen".repo = "flake-nimble";
+  inputs."cligen".ref = "flake-pinning";
+  inputs."cligen".dir = "nimpkgs/c/cligen";
+  inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."colorizeecho".type = "github";
-  # inputs."colorizeecho".owner = "riinr";
-  # inputs."colorizeecho".repo = "flake-nimble";
-  # inputs."colorizeecho".ref = "flake-pinning";
-  # inputs."colorizeecho".dir = "nimpkgs/c/colorizeecho";
-  # inputs."colorizeecho".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."colorizeecho".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."colorizeecho".type = "github";
+  inputs."colorizeecho".owner = "riinr";
+  inputs."colorizeecho".repo = "flake-nimble";
+  inputs."colorizeecho".ref = "flake-pinning";
+  inputs."colorizeecho".dir = "nimpkgs/c/colorizeecho";
+  inputs."colorizeecho".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."colorizeecho".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mcd-0_3_2, ...}@deps:
     let lib = flakeNimbleLib.lib;

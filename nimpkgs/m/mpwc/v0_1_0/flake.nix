@@ -13,22 +13,22 @@
   inputs.src-mpwc-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."masterpassword".type = "github";
-  # inputs."masterpassword".owner = "riinr";
-  # inputs."masterpassword".repo = "flake-nimble";
-  # inputs."masterpassword".ref = "flake-pinning";
-  # inputs."masterpassword".dir = "nimpkgs/m/masterpassword";
-  # inputs."masterpassword".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."masterpassword".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."masterpassword".type = "github";
+  inputs."masterpassword".owner = "riinr";
+  inputs."masterpassword".repo = "flake-nimble";
+  inputs."masterpassword".ref = "flake-pinning";
+  inputs."masterpassword".dir = "nimpkgs/m/masterpassword";
+  inputs."masterpassword".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."masterpassword".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."cligen".type = "github";
-  # inputs."cligen".owner = "riinr";
-  # inputs."cligen".repo = "flake-nimble";
-  # inputs."cligen".ref = "flake-pinning";
-  # inputs."cligen".dir = "nimpkgs/c/cligen";
-  # inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cligen".type = "github";
+  inputs."cligen".owner = "riinr";
+  inputs."cligen".repo = "flake-nimble";
+  inputs."cligen".ref = "flake-pinning";
+  inputs."cligen".dir = "nimpkgs/c/cligen";
+  inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mpwc-v0_1_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-plnim-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."pgxcrown".type = "github";
-  # inputs."pgxcrown".owner = "riinr";
-  # inputs."pgxcrown".repo = "flake-nimble";
-  # inputs."pgxcrown".ref = "flake-pinning";
-  # inputs."pgxcrown".dir = "nimpkgs/p/pgxcrown";
-  # inputs."pgxcrown".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."pgxcrown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."pgxcrown".type = "github";
+  inputs."pgxcrown".owner = "riinr";
+  inputs."pgxcrown".repo = "flake-nimble";
+  inputs."pgxcrown".ref = "flake-pinning";
+  inputs."pgxcrown".dir = "nimpkgs/p/pgxcrown";
+  inputs."pgxcrown".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pgxcrown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-plnim-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

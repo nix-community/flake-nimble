@@ -13,22 +13,22 @@
   inputs.src-argument_parser-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/xe/badger_bits.git".type = "github";
-  # inputs."https://github.com/xe/badger_bits.git".owner = "riinr";
-  # inputs."https://github.com/xe/badger_bits.git".repo = "flake-nimble";
-  # inputs."https://github.com/xe/badger_bits.git".ref = "flake-pinning";
-  # inputs."https://github.com/xe/badger_bits.git".dir = "nimpkgs/h/https://github.com/xe/badger_bits.git";
-  # inputs."https://github.com/xe/badger_bits.git".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/xe/badger_bits.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/xe/badger_bits.git".type = "github";
+  inputs."https://github.com/xe/badger_bits.git".owner = "riinr";
+  inputs."https://github.com/xe/badger_bits.git".repo = "flake-nimble";
+  inputs."https://github.com/xe/badger_bits.git".ref = "flake-pinning";
+  inputs."https://github.com/xe/badger_bits.git".dir = "nimpkgs/h/https://github.com/xe/badger_bits.git";
+  inputs."https://github.com/xe/badger_bits.git".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/xe/badger_bits.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nake".type = "github";
-  # inputs."nake".owner = "riinr";
-  # inputs."nake".repo = "flake-nimble";
-  # inputs."nake".ref = "flake-pinning";
-  # inputs."nake".dir = "nimpkgs/n/nake";
-  # inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nake".type = "github";
+  inputs."nake".owner = "riinr";
+  inputs."nake".repo = "flake-nimble";
+  inputs."nake".ref = "flake-pinning";
+  inputs."nake".dir = "nimpkgs/n/nake";
+  inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-argument_parser-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

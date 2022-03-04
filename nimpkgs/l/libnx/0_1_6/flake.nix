@@ -13,22 +13,22 @@
   inputs.src-libnx-0_1_6.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/genotrance/nimgen".type = "github";
-  # inputs."https://github.com/genotrance/nimgen".owner = "riinr";
-  # inputs."https://github.com/genotrance/nimgen".repo = "flake-nimble";
-  # inputs."https://github.com/genotrance/nimgen".ref = "flake-pinning";
-  # inputs."https://github.com/genotrance/nimgen".dir = "nimpkgs/h/https://github.com/genotrance/nimgen";
-  # inputs."https://github.com/genotrance/nimgen".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/genotrance/nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/genotrance/nimgen".type = "github";
+  inputs."https://github.com/genotrance/nimgen".owner = "riinr";
+  inputs."https://github.com/genotrance/nimgen".repo = "flake-nimble";
+  inputs."https://github.com/genotrance/nimgen".ref = "flake-pinning";
+  inputs."https://github.com/genotrance/nimgen".dir = "nimpkgs/h/https://github.com/genotrance/nimgen";
+  inputs."https://github.com/genotrance/nimgen".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/genotrance/nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."https://github.com/jyapayne/switch-build".type = "github";
-  # inputs."https://github.com/jyapayne/switch-build".owner = "riinr";
-  # inputs."https://github.com/jyapayne/switch-build".repo = "flake-nimble";
-  # inputs."https://github.com/jyapayne/switch-build".ref = "flake-pinning";
-  # inputs."https://github.com/jyapayne/switch-build".dir = "nimpkgs/h/https://github.com/jyapayne/switch-build";
-  # inputs."https://github.com/jyapayne/switch-build".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/jyapayne/switch-build".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/jyapayne/switch-build".type = "github";
+  inputs."https://github.com/jyapayne/switch-build".owner = "riinr";
+  inputs."https://github.com/jyapayne/switch-build".repo = "flake-nimble";
+  inputs."https://github.com/jyapayne/switch-build".ref = "flake-pinning";
+  inputs."https://github.com/jyapayne/switch-build".dir = "nimpkgs/h/https://github.com/jyapayne/switch-build";
+  inputs."https://github.com/jyapayne/switch-build".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/jyapayne/switch-build".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-libnx-0_1_6, ...}@deps:
     let lib = flakeNimbleLib.lib;

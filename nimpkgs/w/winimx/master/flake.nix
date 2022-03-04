@@ -13,31 +13,31 @@
   inputs.src-winimx-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."winim".type = "github";
-  # inputs."winim".owner = "riinr";
-  # inputs."winim".repo = "flake-nimble";
-  # inputs."winim".ref = "flake-pinning";
-  # inputs."winim".dir = "nimpkgs/w/winim";
-  # inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."winim".type = "github";
+  inputs."winim".owner = "riinr";
+  inputs."winim".repo = "flake-nimble";
+  inputs."winim".ref = "flake-pinning";
+  inputs."winim".dir = "nimpkgs/w/winim";
+  inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."zippy".type = "github";
-  # inputs."zippy".owner = "riinr";
-  # inputs."zippy".repo = "flake-nimble";
-  # inputs."zippy".ref = "flake-pinning";
-  # inputs."zippy".dir = "nimpkgs/z/zippy";
-  # inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zippy".type = "github";
+  inputs."zippy".owner = "riinr";
+  inputs."zippy".repo = "flake-nimble";
+  inputs."zippy".ref = "flake-pinning";
+  inputs."zippy".dir = "nimpkgs/z/zippy";
+  inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."jsony".type = "github";
-  # inputs."jsony".owner = "riinr";
-  # inputs."jsony".repo = "flake-nimble";
-  # inputs."jsony".ref = "flake-pinning";
-  # inputs."jsony".dir = "nimpkgs/j/jsony";
-  # inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jsony".type = "github";
+  inputs."jsony".owner = "riinr";
+  inputs."jsony".repo = "flake-nimble";
+  inputs."jsony".ref = "flake-pinning";
+  inputs."jsony".dir = "nimpkgs/j/jsony";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-winimx-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

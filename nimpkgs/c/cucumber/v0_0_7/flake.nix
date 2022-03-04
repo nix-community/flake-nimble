@@ -13,22 +13,22 @@
   inputs.src-cucumber-v0_0_7.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nre".type = "github";
-  # inputs."nre".owner = "riinr";
-  # inputs."nre".repo = "flake-nimble";
-  # inputs."nre".ref = "flake-pinning";
-  # inputs."nre".dir = "nimpkgs/n/nre";
-  # inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nre".type = "github";
+  inputs."nre".owner = "riinr";
+  inputs."nre".repo = "flake-nimble";
+  inputs."nre".ref = "flake-pinning";
+  inputs."nre".dir = "nimpkgs/n/nre";
+  inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."commandeer".type = "github";
-  # inputs."commandeer".owner = "riinr";
-  # inputs."commandeer".repo = "flake-nimble";
-  # inputs."commandeer".ref = "flake-pinning";
-  # inputs."commandeer".dir = "nimpkgs/c/commandeer";
-  # inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."commandeer".type = "github";
+  inputs."commandeer".owner = "riinr";
+  inputs."commandeer".repo = "flake-nimble";
+  inputs."commandeer".ref = "flake-pinning";
+  inputs."commandeer".dir = "nimpkgs/c/commandeer";
+  inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-cucumber-v0_0_7, ...}@deps:
     let lib = flakeNimbleLib.lib;

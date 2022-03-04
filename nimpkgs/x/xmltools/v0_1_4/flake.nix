@@ -13,22 +13,22 @@
   inputs.src-xmltools-v0_1_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."nimfp".type = "github";
-  # inputs."nimfp".owner = "riinr";
-  # inputs."nimfp".repo = "flake-nimble";
-  # inputs."nimfp".ref = "flake-pinning";
-  # inputs."nimfp".dir = "nimpkgs/n/nimfp";
-  # inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimfp".type = "github";
+  inputs."nimfp".owner = "riinr";
+  inputs."nimfp".repo = "flake-nimble";
+  inputs."nimfp".ref = "flake-pinning";
+  inputs."nimfp".dir = "nimpkgs/n/nimfp";
+  inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."nimboost".type = "github";
-  # inputs."nimboost".owner = "riinr";
-  # inputs."nimboost".repo = "flake-nimble";
-  # inputs."nimboost".ref = "flake-pinning";
-  # inputs."nimboost".dir = "nimpkgs/n/nimboost";
-  # inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimboost".type = "github";
+  inputs."nimboost".owner = "riinr";
+  inputs."nimboost".repo = "flake-nimble";
+  inputs."nimboost".ref = "flake-pinning";
+  inputs."nimboost".dir = "nimpkgs/n/nimboost";
+  inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-xmltools-v0_1_4, ...}@deps:
     let lib = flakeNimbleLib.lib;

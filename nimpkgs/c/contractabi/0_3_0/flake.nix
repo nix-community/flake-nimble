@@ -13,40 +13,40 @@
   inputs.src-contractabi-0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stint".type = "github";
-  # inputs."stint".owner = "riinr";
-  # inputs."stint".repo = "flake-nimble";
-  # inputs."stint".ref = "flake-pinning";
-  # inputs."stint".dir = "nimpkgs/s/stint";
-  # inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stint".type = "github";
+  inputs."stint".owner = "riinr";
+  inputs."stint".repo = "flake-nimble";
+  inputs."stint".ref = "flake-pinning";
+  inputs."stint".dir = "nimpkgs/s/stint";
+  inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."stew".type = "github";
-  # inputs."stew".owner = "riinr";
-  # inputs."stew".repo = "flake-nimble";
-  # inputs."stew".ref = "flake-pinning";
-  # inputs."stew".dir = "nimpkgs/s/stew";
-  # inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stew".type = "github";
+  inputs."stew".owner = "riinr";
+  inputs."stew".repo = "flake-nimble";
+  inputs."stew".ref = "flake-pinning";
+  inputs."stew".dir = "nimpkgs/s/stew";
+  inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."questionable".type = "github";
-  # inputs."questionable".owner = "riinr";
-  # inputs."questionable".repo = "flake-nimble";
-  # inputs."questionable".ref = "flake-pinning";
-  # inputs."questionable".dir = "nimpkgs/q/questionable";
-  # inputs."questionable".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."questionable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."questionable".type = "github";
+  inputs."questionable".owner = "riinr";
+  inputs."questionable".repo = "flake-nimble";
+  inputs."questionable".ref = "flake-pinning";
+  inputs."questionable".dir = "nimpkgs/q/questionable";
+  inputs."questionable".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."questionable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   
-  # inputs."upraises".type = "github";
-  # inputs."upraises".owner = "riinr";
-  # inputs."upraises".repo = "flake-nimble";
-  # inputs."upraises".ref = "flake-pinning";
-  # inputs."upraises".dir = "nimpkgs/u/upraises";
-  # inputs."upraises".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."upraises".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."upraises".type = "github";
+  inputs."upraises".owner = "riinr";
+  inputs."upraises".repo = "flake-nimble";
+  inputs."upraises".ref = "flake-pinning";
+  inputs."upraises".dir = "nimpkgs/u/upraises";
+  inputs."upraises".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."upraises".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-contractabi-0_3_0, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-nimscripter-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/disruptek/assume".type = "github";
-  # inputs."https://github.com/disruptek/assume".owner = "riinr";
-  # inputs."https://github.com/disruptek/assume".repo = "flake-nimble";
-  # inputs."https://github.com/disruptek/assume".ref = "flake-pinning";
-  # inputs."https://github.com/disruptek/assume".dir = "nimpkgs/h/https://github.com/disruptek/assume";
-  # inputs."https://github.com/disruptek/assume".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/disruptek/assume".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/disruptek/assume".type = "github";
+  inputs."https://github.com/disruptek/assume".owner = "riinr";
+  inputs."https://github.com/disruptek/assume".repo = "flake-nimble";
+  inputs."https://github.com/disruptek/assume".ref = "flake-pinning";
+  inputs."https://github.com/disruptek/assume".dir = "nimpkgs/h/https://github.com/disruptek/assume";
+  inputs."https://github.com/disruptek/assume".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/disruptek/assume".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-Nimscripter-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

@@ -13,13 +13,13 @@
   inputs.src-mentat-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."science".type = "github";
-  # inputs."science".owner = "riinr";
-  # inputs."science".repo = "flake-nimble";
-  # inputs."science".ref = "flake-pinning";
-  # inputs."science".dir = "nimpkgs/s/science";
-  # inputs."science".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."science".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."science".type = "github";
+  inputs."science".owner = "riinr";
+  inputs."science".repo = "flake-nimble";
+  inputs."science".ref = "flake-pinning";
+  inputs."science".dir = "nimpkgs/s/science";
+  inputs."science".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."science".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-mentat-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

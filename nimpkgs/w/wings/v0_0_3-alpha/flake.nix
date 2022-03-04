@@ -13,13 +13,13 @@
   inputs.src-wings-v0_0_3-alpha.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."stones".type = "github";
-  # inputs."stones".owner = "riinr";
-  # inputs."stones".repo = "flake-nimble";
-  # inputs."stones".ref = "flake-pinning";
-  # inputs."stones".dir = "nimpkgs/s/stones";
-  # inputs."stones".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."stones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stones".type = "github";
+  inputs."stones".owner = "riinr";
+  inputs."stones".repo = "flake-nimble";
+  inputs."stones".ref = "flake-pinning";
+  inputs."stones".dir = "nimpkgs/s/stones";
+  inputs."stones".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-wings-v0_0_3-alpha, ...}@deps:
     let lib = flakeNimbleLib.lib;

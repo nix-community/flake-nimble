@@ -13,13 +13,13 @@
   inputs.src-nimgame2-master.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."sdl2_nim".type = "github";
-  # inputs."sdl2_nim".owner = "riinr";
-  # inputs."sdl2_nim".repo = "flake-nimble";
-  # inputs."sdl2_nim".ref = "flake-pinning";
-  # inputs."sdl2_nim".dir = "nimpkgs/s/sdl2_nim";
-  # inputs."sdl2_nim".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."sdl2_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sdl2_nim".type = "github";
+  inputs."sdl2_nim".owner = "riinr";
+  inputs."sdl2_nim".repo = "flake-nimble";
+  inputs."sdl2_nim".ref = "flake-pinning";
+  inputs."sdl2_nim".dir = "nimpkgs/s/sdl2_nim";
+  inputs."sdl2_nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sdl2_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nimgame2-master, ...}@deps:
     let lib = flakeNimbleLib.lib;

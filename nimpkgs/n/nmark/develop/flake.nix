@@ -13,13 +13,13 @@
   inputs.src-nmark-develop.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."regex".type = "github";
-  # inputs."regex".owner = "riinr";
-  # inputs."regex".repo = "flake-nimble";
-  # inputs."regex".ref = "flake-pinning";
-  # inputs."regex".dir = "nimpkgs/r/regex";
-  # inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."regex".type = "github";
+  inputs."regex".owner = "riinr";
+  inputs."regex".repo = "flake-nimble";
+  inputs."regex".ref = "flake-pinning";
+  inputs."regex".dir = "nimpkgs/r/regex";
+  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-nmark-develop, ...}@deps:
     let lib = flakeNimbleLib.lib;

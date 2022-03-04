@@ -13,13 +13,13 @@
   inputs.src-deser-v0_1_4.inputs.nixpkgs.follows = "nixpkgs";
   
   
-  # inputs."https://github.com/gabbhack/anycase-fork".type = "github";
-  # inputs."https://github.com/gabbhack/anycase-fork".owner = "riinr";
-  # inputs."https://github.com/gabbhack/anycase-fork".repo = "flake-nimble";
-  # inputs."https://github.com/gabbhack/anycase-fork".ref = "flake-pinning";
-  # inputs."https://github.com/gabbhack/anycase-fork".dir = "nimpkgs/h/https://github.com/gabbhack/anycase-fork";
-  # inputs."https://github.com/gabbhack/anycase-fork".inputs.nixpkgs.follows = "nixpkgs";
-  # inputs."https://github.com/gabbhack/anycase-fork".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."https://github.com/gabbhack/anycase-fork".type = "github";
+  inputs."https://github.com/gabbhack/anycase-fork".owner = "riinr";
+  inputs."https://github.com/gabbhack/anycase-fork".repo = "flake-nimble";
+  inputs."https://github.com/gabbhack/anycase-fork".ref = "flake-pinning";
+  inputs."https://github.com/gabbhack/anycase-fork".dir = "nimpkgs/h/https://github.com/gabbhack/anycase-fork";
+  inputs."https://github.com/gabbhack/anycase-fork".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."https://github.com/gabbhack/anycase-fork".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-deser-v0_1_4, ...}@deps:
     let lib = flakeNimbleLib.lib;
