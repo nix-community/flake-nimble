@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimsvg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimsvg-master": "src-nimsvg-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimsvg/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimsvg/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimsvg-master": "nimsvg-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimsvg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623310823,
+        "narHash": "sha256-U+8UbQvos4ycJUDatGHHeCr/7vX6llVTkDJ7I/9cdAA=",
+        "owner": "bluenote10",
+        "repo": "NimSvg",
+        "rev": "89e7b31a1937524451fdf57f3e851f293385e8ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bluenote10",
+        "ref": "refs/heads/master",
+        "repo": "NimSvg",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

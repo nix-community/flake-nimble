@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "inumon-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-inumon-master": "src-inumon-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/inumon/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/inumon/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "inumon-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-inumon-v0_1_2": "src-inumon-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/inumon/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/inumon/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "inumon-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-inumon-v0_2_2": "src-inumon-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/inumon/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/inumon/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "inumon-v0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-inumon-v0_2_3": "src-inumon-v0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/inumon/v0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/inumon/v0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "inumon-master": "inumon-master",
+        "inumon-v0_1_2": "inumon-v0_1_2",
+        "inumon-v0_2_2": "inumon-v0_2_2",
+        "inumon-v0_2_3": "inumon-v0_2_3",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-inumon-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591864694,
+        "narHash": "sha256-2BfhafF4qF0+dqgrIr43jXrEl1fJeOzzu3RLsZrxROw=",
+        "owner": "dizzyliam",
+        "repo": "inumon",
+        "rev": "81196ce50e2c66d3fd101520ece4aa9da14f7f42",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dizzyliam",
+        "ref": "refs/heads/master",
+        "repo": "inumon",
+        "type": "github"
+      }
+    },
+    "src-inumon-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591592393,
+        "narHash": "sha256-DeOArS7FRXtbE1KIlncajXwchue/fQgBCYmhWGPVYm8=",
+        "owner": "dizzyliam",
+        "repo": "inumon",
+        "rev": "4de7d1c1c6304fbcf63ce55d5bdbd04699d21592",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dizzyliam",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "inumon",
+        "type": "github"
+      }
+    },
+    "src-inumon-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591701070,
+        "narHash": "sha256-t6SLCCsqa7+8as2Z3ioBbrMqvcoLO9Qot1QNWa45kwY=",
+        "owner": "dizzyliam",
+        "repo": "inumon",
+        "rev": "dad85f8c5598c8996262eea5fbabf4087cb26116",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dizzyliam",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "inumon",
+        "type": "github"
+      }
+    },
+    "src-inumon-v0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591768666,
+        "narHash": "sha256-Tst4bhhiUilgmoR0G+DN+ABMriIpziJdQt8+edvdyT8=",
+        "owner": "dizzyliam",
+        "repo": "inumon",
+        "rev": "6907d5523aa9e3e6183bb488f99b634a883aceed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dizzyliam",
+        "ref": "refs/tags/v0.2.3",
+        "repo": "inumon",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

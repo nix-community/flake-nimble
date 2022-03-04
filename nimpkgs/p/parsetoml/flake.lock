@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "parsetoml-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-master": "src-parsetoml-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/parsetoml/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/parsetoml/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "parsetoml-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-v0_4_0": "src-parsetoml-v0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/parsetoml/v0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/parsetoml/v0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "parsetoml-v0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-v0_5_0": "src-parsetoml-v0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/parsetoml/v0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/parsetoml/v0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "parsetoml-v0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-v0_6_0": "src-parsetoml-v0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/parsetoml/v0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/parsetoml/v0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "parsetoml-master": "parsetoml-master",
+        "parsetoml-v0_4_0": "parsetoml-v0_4_0",
+        "parsetoml-v0_5_0": "parsetoml-v0_5_0",
+        "parsetoml-v0_6_0": "parsetoml-v0_6_0"
+      }
+    },
+    "src-parsetoml-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625258249,
+        "narHash": "sha256-AOCPwdxxch3DA60Ug5eU13y+EVSrPGqiX3l66kUS0HM=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "692beb44fa5641f6b7be05a46a94f4b44f91907a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/heads/master",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "src-parsetoml-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540560804,
+        "narHash": "sha256-cJpMLgnXvrebMj0OITE9DnyI60dG7a1mNzIWfcd6Hks=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "078b406b3ff58b9a41c082acfd00ad0c9bb77ad8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "src-parsetoml-v0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1560182747,
+        "narHash": "sha256-gHpMzmK7TtbIr5u2ZMEwn0e8y9kpI0P82BUFkqqxrb0=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "329cc618fe27a6c89708d1fa17ddc72f8da97e08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/tags/v0.5.0",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "src-parsetoml-v0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623068333,
+        "narHash": "sha256-7s54U1Nx5FlCPjQXqNoe9d1ZF57MzzVhbYo4NFl7iOc=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "9cdeb3f65fd10302da157db8a8bac5c42f055249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/tags/v0.6.0",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

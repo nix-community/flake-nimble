@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tor-0_1_0": "tor-0_1_0",
+        "tor-0_2_0": "tor-0_2_0",
+        "tor-master": "tor-master"
+      }
+    },
+    "src-tor-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578525459,
+        "narHash": "sha256-TrrXUQOASmQsssM7c7viHMq5YbRoslgJBagc90BbAmU=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-tor",
+        "rev": "3bdf6b46d06a7fa7cb271000c7a0060901bfb391",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nim-tor",
+        "type": "github"
+      }
+    },
+    "src-tor-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598301833,
+        "narHash": "sha256-ZSYeEN97WPpHwZHGtcCEKNb3huDyr9wyLJldF5dMgKk=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-tor",
+        "rev": "c2bec83962af1c17cfe96bdfaf77da879cf8ecf4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.2.0",
+        "repo": "nim-tor",
+        "type": "github"
+      }
+    },
+    "src-tor-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602436761,
+        "narHash": "sha256-fN5ethhh9LYDlQ1XBc5ZsosNy+8WASheoKl7dbCM8QA=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-tor",
+        "rev": "f3e20d2c71f21ca17cac109e22120cf9ad37801c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-tor",
+        "type": "github"
+      }
+    },
+    "tor-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tor-0_1_0": "src-tor-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/tor/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/tor/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "tor-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tor-0_2_0": "src-tor-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/tor/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/tor/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "tor-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tor-master": "src-tor-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/tor/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/tor/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

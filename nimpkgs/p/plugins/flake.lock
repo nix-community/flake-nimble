@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "plugins-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-plugins-master": "src-plugins-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/plugins/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/plugins/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "plugins-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-plugins-v0_1_0": "src-plugins-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/plugins/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/plugins/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "plugins-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-plugins-v0_1_1": "src-plugins-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/plugins/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/plugins/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "plugins-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-plugins-v0_1_2": "src-plugins-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/plugins/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/plugins/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "plugins-master": "plugins-master",
+        "plugins-v0_1_0": "plugins-v0_1_0",
+        "plugins-v0_1_1": "plugins-v0_1_1",
+        "plugins-v0_1_2": "plugins-v0_1_2"
+      }
+    },
+    "src-plugins-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594502492,
+        "narHash": "sha256-kGjFIHC4JDlgzP1dtNmu2S/VUOBr9MQbglbjKEJ8h+M=",
+        "owner": "genotrance",
+        "repo": "plugins",
+        "rev": "d35f59eb772250d852ed1a786f1c8b97b4143c98",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/heads/master",
+        "repo": "plugins",
+        "type": "github"
+      }
+    },
+    "src-plugins-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583194269,
+        "narHash": "sha256-sKmcBvVRhrwnTmUYdE5Y5Zzm4/oXb7IVPZ8y41LoMJ0=",
+        "owner": "genotrance",
+        "repo": "plugins",
+        "rev": "f9a1c4d560ed01899297788f7f91392cb9529a0b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "plugins",
+        "type": "github"
+      }
+    },
+    "src-plugins-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583566897,
+        "narHash": "sha256-zVGVphwz4k4E6xuBsxBJSqj8w4dKBKRne7BnOtMxkSU=",
+        "owner": "genotrance",
+        "repo": "plugins",
+        "rev": "33d54d99cf67cc40ba0b18edded0c10e7ccd4759",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "plugins",
+        "type": "github"
+      }
+    },
+    "src-plugins-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594502492,
+        "narHash": "sha256-kGjFIHC4JDlgzP1dtNmu2S/VUOBr9MQbglbjKEJ8h+M=",
+        "owner": "genotrance",
+        "repo": "plugins",
+        "rev": "d35f59eb772250d852ed1a786f1c8b97b4143c98",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "plugins",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

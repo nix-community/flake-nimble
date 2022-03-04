@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "news-0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-news-0_2": "src-news-0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/news/0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/news/0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "news-0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-news-0_3": "src-news-0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/news/0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/news/0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "news-0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-news-0_4": "src-news-0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/news/0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/news/0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "news-0_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-news-0_5": "src-news-0_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/news/0_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/news/0_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "news-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-news-master": "src-news-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/news/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/news/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "news-0_2": "news-0_2",
+        "news-0_3": "news-0_3",
+        "news-0_4": "news-0_4",
+        "news-0_5": "news-0_5",
+        "news-master": "news-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-news-0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1571385534,
+        "narHash": "sha256-PUkUg+gV13y6+Mf/g9OkJaoivGmMT4q8V4yN36qeP00=",
+        "owner": "tormund",
+        "repo": "news",
+        "rev": "8ea2ee260207c57a4b495931508569e181bb7b93",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tormund",
+        "ref": "refs/tags/0.2",
+        "repo": "news",
+        "type": "github"
+      }
+    },
+    "src-news-0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574080332,
+        "narHash": "sha256-UAlTFQePRejS0v6Phv1eGcaday2h6wRrIjf3vKsz4bI=",
+        "owner": "tormund",
+        "repo": "news",
+        "rev": "c5e7527601655040921deb0c5624c8deabdca72c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tormund",
+        "ref": "refs/tags/0.3",
+        "repo": "news",
+        "type": "github"
+      }
+    },
+    "src-news-0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588920010,
+        "narHash": "sha256-rrHjOMqSQJcmpqPOR1GvyXpeBrpGhijDtj1PxspAZQg=",
+        "owner": "tormund",
+        "repo": "news",
+        "rev": "1caa232d63f4607f90d5a9eb428fbe772e010d21",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tormund",
+        "ref": "refs/tags/0.4",
+        "repo": "news",
+        "type": "github"
+      }
+    },
+    "src-news-0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592862806,
+        "narHash": "sha256-ueadbb2YbBV+Pi3Y1D+OnDkmsYDccP8JXHS9m9EAD30=",
+        "owner": "tormund",
+        "repo": "news",
+        "rev": "2de5efc0cfad01c8b53f876a60a533fe082035ce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tormund",
+        "ref": "refs/tags/0.5",
+        "repo": "news",
+        "type": "github"
+      }
+    },
+    "src-news-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638304383,
+        "narHash": "sha256-c32DYg13YPlnHN4QjJiXNizIOCBzPidlXQT17hB3eHg=",
+        "owner": "tormund",
+        "repo": "news",
+        "rev": "fadc54f4683869fe9c97fe59e122daa2607abc8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tormund",
+        "ref": "refs/heads/master",
+        "repo": "news",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

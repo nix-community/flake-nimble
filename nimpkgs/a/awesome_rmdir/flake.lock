@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "awesome_rmdir-develop": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-awesome_rmdir-develop": "src-awesome_rmdir-develop"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/awesome_rmdir/develop",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/awesome_rmdir/develop",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "awesome_rmdir-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-awesome_rmdir-master": "src-awesome_rmdir-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/awesome_rmdir/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/awesome_rmdir/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "awesome_rmdir-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-awesome_rmdir-v0_2_0": "src-awesome_rmdir-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/awesome_rmdir/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/awesome_rmdir/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "awesome_rmdir-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-awesome_rmdir-v0_2_1": "src-awesome_rmdir-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/awesome_rmdir/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/awesome_rmdir/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "awesome_rmdir-develop": "awesome_rmdir-develop",
+        "awesome_rmdir-master": "awesome_rmdir-master",
+        "awesome_rmdir-v0_2_0": "awesome_rmdir-v0_2_0",
+        "awesome_rmdir-v0_2_1": "awesome_rmdir-v0_2_1",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-awesome_rmdir-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1387984460,
+        "narHash": "sha256-VixgoGRJE4hIpj+vXpcsV80kREXcTabIhUJMBPQT4sE=",
+        "owner": "Araq",
+        "repo": "awesome_rmdir",
+        "rev": "b70612545ee289b85a59ae835d7959ceb44aa3ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/develop",
+        "repo": "awesome_rmdir",
+        "type": "github"
+      }
+    },
+    "src-awesome_rmdir-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1387652824,
+        "narHash": "sha256-iN/2s4MuovlXLPHvYgavs9oQrngqbUA3LV1LU2rK90g=",
+        "owner": "Araq",
+        "repo": "awesome_rmdir",
+        "rev": "b41cf9363819c52210f45df9cc31b9ffd2cf45b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/master",
+        "repo": "awesome_rmdir",
+        "type": "github"
+      }
+    },
+    "src-awesome_rmdir-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1366314909,
+        "narHash": "sha256-oVJvr983sdkUsguZwSxVgbZWQl321sd/SJIS0hQSX/8=",
+        "owner": "Araq",
+        "repo": "awesome_rmdir",
+        "rev": "3dc0bc90eb320997bed371c091c7ed26eef513de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "awesome_rmdir",
+        "type": "github"
+      }
+    },
+    "src-awesome_rmdir-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1387652797,
+        "narHash": "sha256-iN/2s4MuovlXLPHvYgavs9oQrngqbUA3LV1LU2rK90g=",
+        "owner": "Araq",
+        "repo": "awesome_rmdir",
+        "rev": "c3765642d1578ef2fd7f21072076446dbd389294",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "awesome_rmdir",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

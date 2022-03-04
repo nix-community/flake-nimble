@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "syslog-0_0_3": "syslog-0_0_3",
+        "syslog-0_0_5": "syslog-0_0_5",
+        "syslog-master": "syslog-master"
+      }
+    },
+    "src-syslog-0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1480248161,
+        "narHash": "sha256-PgA8tEep9LCMV/a02Pg7+AsvDExdL3wUgiSzMpcUj5k=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-syslog",
+        "rev": "dcc034f0fd5d2fcaefca2766a8dc9b636b80c5ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.0.3",
+        "repo": "nim-syslog",
+        "type": "github"
+      }
+    },
+    "src-syslog-0_0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566048273,
+        "narHash": "sha256-nIYojONuT/eyaA8YWvTYfuij0y6kJsFLbGSHlxKhI+o=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-syslog",
+        "rev": "15fe01ec6c7aefa76f79729e7c3e3f514da97e44",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.0.5",
+        "repo": "nim-syslog",
+        "type": "github"
+      }
+    },
+    "src-syslog-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566049968,
+        "narHash": "sha256-qj2IpccEF1NasYiKTUH53HHi7fWCU+G0E4I2Q45q8Ww=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-syslog",
+        "rev": "728ce9521f1d1df06d8a902649f9c5a7154ac98c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-syslog",
+        "type": "github"
+      }
+    },
+    "syslog-0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-syslog-0_0_3": "src-syslog-0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/syslog/0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/syslog/0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "syslog-0_0_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-syslog-0_0_5": "src-syslog-0_0_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/syslog/0_0_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/syslog/0_0_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "syslog-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-syslog-master": "src-syslog-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/syslog/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/syslog/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

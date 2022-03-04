@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "ffmpeg-0_3_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ffmpeg-0_3_11": "src-ffmpeg-0_3_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/ffmpeg/0_3_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/ffmpeg/0_3_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ffmpeg-0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ffmpeg-0_4_2": "src-ffmpeg-0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/ffmpeg/0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/ffmpeg/0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ffmpeg-0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ffmpeg-0_5_0": "src-ffmpeg-0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/ffmpeg/0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/ffmpeg/0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ffmpeg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ffmpeg-master": "src-ffmpeg-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/ffmpeg/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/ffmpeg/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ffmpeg-0_3_11": "ffmpeg-0_3_11",
+        "ffmpeg-0_4_2": "ffmpeg-0_4_2",
+        "ffmpeg-0_5_0": "ffmpeg-0_5_0",
+        "ffmpeg-master": "ffmpeg-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ffmpeg-0_3_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1618626585,
+        "narHash": "sha256-N8pOEzEu7ptruN5cyZ8dqm+oDkOE60ErxZQDLzH+IdI=",
+        "owner": "momeemt",
+        "repo": "ffmpeg.nim",
+        "rev": "ad416e6d000d6d1c68fdf159974e7c515caeb3f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/tags/0.3.11",
+        "repo": "ffmpeg.nim",
+        "type": "github"
+      }
+    },
+    "src-ffmpeg-0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628517248,
+        "narHash": "sha256-N7AGJ1GCWeJ/EFQveWgJLfN5FDtwlLraxxR+ZDhnHwk=",
+        "owner": "momeemt",
+        "repo": "ffmpeg.nim",
+        "rev": "253322c70332e0188c237dcdba062ee0c19e54b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/tags/0.4.2",
+        "repo": "ffmpeg.nim",
+        "type": "github"
+      }
+    },
+    "src-ffmpeg-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646232090,
+        "narHash": "sha256-Fu4iO3VFcL7h3kH0YtXSqinB24vAgjZbNew1KqSEpBU=",
+        "owner": "momeemt",
+        "repo": "ffmpeg.nim",
+        "rev": "27642fdc794fc0cb3983b5627fd1eca8dcee12cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/tags/0.5.0",
+        "repo": "ffmpeg.nim",
+        "type": "github"
+      }
+    },
+    "src-ffmpeg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646232090,
+        "narHash": "sha256-Fu4iO3VFcL7h3kH0YtXSqinB24vAgjZbNew1KqSEpBU=",
+        "owner": "momeemt",
+        "repo": "ffmpeg.nim",
+        "rev": "27642fdc794fc0cb3983b5627fd1eca8dcee12cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/heads/master",
+        "repo": "ffmpeg.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

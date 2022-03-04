@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libsvm-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libsvm-master": "src-libsvm-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsvm/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsvm/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsvm-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libsvm-v0_1_1": "src-libsvm-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsvm/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsvm/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsvm-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libsvm-v0_1_2": "src-libsvm-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsvm/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsvm/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsvm-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libsvm-v0_1_3": "src-libsvm-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsvm/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsvm/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libsvm-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libsvm-v0_2_0": "src-libsvm-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libsvm/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libsvm/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libsvm-master": "libsvm-master",
+        "libsvm-v0_1_1": "libsvm-v0_1_1",
+        "libsvm-v0_1_2": "libsvm-v0_1_2",
+        "libsvm-v0_1_3": "libsvm-v0_1_3",
+        "libsvm-v0_2_0": "libsvm-v0_2_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libsvm-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1563332539,
+        "narHash": "sha256-/RERCdDuk2+h+D+QCx5NQQb1FwosCxJXB88HbEr+SnE=",
+        "owner": "genotrance",
+        "repo": "libsvm",
+        "rev": "ee8e0cbda75fc5be6a083ebe25dcf075a5a9e8d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/heads/master",
+        "repo": "libsvm",
+        "type": "github"
+      }
+    },
+    "src-libsvm-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1520806678,
+        "narHash": "sha256-t8P8newQbfteW1yNveXjKQ1PaLbgYV78VRY8KBh7ENE=",
+        "owner": "genotrance",
+        "repo": "libsvm",
+        "rev": "8c1d7d285793cdf8fda799ec7d3c7741603e3a39",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "libsvm",
+        "type": "github"
+      }
+    },
+    "src-libsvm-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531084011,
+        "narHash": "sha256-aLeSE5bmk31l3dz6MjeyUF89O3UeR69QSw8b1oiROJs=",
+        "owner": "genotrance",
+        "repo": "libsvm",
+        "rev": "f409f70bc48cbcc2c4d166dc078f2b480ddbe060",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "libsvm",
+        "type": "github"
+      }
+    },
+    "src-libsvm-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541103956,
+        "narHash": "sha256-AlYIMF8bUj/mtJpqdwQqDZt120dvAMP/7Dotz+l9ZTA=",
+        "owner": "genotrance",
+        "repo": "libsvm",
+        "rev": "d3ab379eded79699ca4365f908ebc8fbcfd614d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "libsvm",
+        "type": "github"
+      }
+    },
+    "src-libsvm-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1563332539,
+        "narHash": "sha256-/RERCdDuk2+h+D+QCx5NQQb1FwosCxJXB88HbEr+SnE=",
+        "owner": "genotrance",
+        "repo": "libsvm",
+        "rev": "ee8e0cbda75fc5be6a083ebe25dcf075a5a9e8d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "libsvm",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

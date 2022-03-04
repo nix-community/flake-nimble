@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "camelize-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-camelize-master": "src-camelize-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/camelize/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/camelize/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "camelize-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-camelize-v0_1_0": "src-camelize-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/camelize/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/camelize/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "camelize-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-camelize-v0_2_0": "src-camelize-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/camelize/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/camelize/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "camelize-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-camelize-v0_2_1": "src-camelize-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/camelize/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/camelize/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "camelize-master": "camelize-master",
+        "camelize-v0_1_0": "camelize-v0_1_0",
+        "camelize-v0_2_0": "camelize-v0_2_0",
+        "camelize-v0_2_1": "camelize-v0_2_1",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-camelize-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600335636,
+        "narHash": "sha256-sVbWRxwxyJ3SJUtNcPwwJMocteja4S1P/fRXahbmJus=",
+        "owner": "kixixixixi",
+        "repo": "camelize",
+        "rev": "0be04a7ffcb86994f9787431fe0f8a3a26f2db67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kixixixixi",
+        "ref": "refs/heads/master",
+        "repo": "camelize",
+        "type": "github"
+      }
+    },
+    "src-camelize-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589892872,
+        "narHash": "sha256-tRjWHFVp+ooGF87eGS9dNlVLh56gzgthczNz15cGVHY=",
+        "owner": "kixixixixi",
+        "repo": "camelize",
+        "rev": "7919b8b9f6b23b1aa62449ad7a7ce3c5f8ef09eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kixixixixi",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "camelize",
+        "type": "github"
+      }
+    },
+    "src-camelize-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592136946,
+        "narHash": "sha256-tT09CK+8smdMhQw8hIquwJZHxKH5EjbWT9n/Uc1azoM=",
+        "owner": "kixixixixi",
+        "repo": "camelize",
+        "rev": "79f80ff419cf3a5ff494a4c65e5042c4892047c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kixixixixi",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "camelize",
+        "type": "github"
+      }
+    },
+    "src-camelize-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592138801,
+        "narHash": "sha256-EZZuUAWxYZP81dck+FOYn8/w657T3q0DNi9cBgm6mgE=",
+        "owner": "kixixixixi",
+        "repo": "camelize",
+        "rev": "30ae9e4e4d6abea494ed3367650bda56fb63c907",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kixixixixi",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "camelize",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

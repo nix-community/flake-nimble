@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "vmprotect-0_1_0": "vmprotect-0_1_0",
+        "vmprotect-master": "vmprotect-master"
+      }
+    },
+    "src-vmprotect-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607309655,
+        "narHash": "sha256-i/QQ5OeSFGSvJVibQ39k4kkEXmByxe/bcREFj1eQSzA=",
+        "owner": "ba0f3",
+        "repo": "vmprotect.nim",
+        "rev": "1a12ea45bcc7288a8819fc804800ab050fccd3e8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.1.0",
+        "repo": "vmprotect.nim",
+        "type": "github"
+      }
+    },
+    "src-vmprotect-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633049509,
+        "narHash": "sha256-DERx+LpxWUePc5oN2T3U91S5+DAyzeLv4LZfw7Km7tw=",
+        "owner": "ba0f3",
+        "repo": "vmprotect.nim",
+        "rev": "6eaf6e6938bd74acae5f01d4a3447feaa37e9700",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "vmprotect.nim",
+        "type": "github"
+      }
+    },
+    "vmprotect-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vmprotect-0_1_0": "src-vmprotect-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/v/vmprotect/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/v/vmprotect/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "vmprotect-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vmprotect-master": "src-vmprotect-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/v/vmprotect/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/v/vmprotect/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

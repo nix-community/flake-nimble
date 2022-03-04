@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "genoiser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genoiser-master": "src-genoiser-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genoiser/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genoiser/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genoiser-v0_2_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genoiser-v0_2_4": "src-genoiser-v0_2_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genoiser/v0_2_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genoiser/v0_2_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genoiser-v0_2_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genoiser-v0_2_5": "src-genoiser-v0_2_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genoiser/v0_2_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genoiser/v0_2_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genoiser-v0_2_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genoiser-v0_2_6": "src-genoiser-v0_2_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genoiser/v0_2_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genoiser/v0_2_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genoiser-v0_2_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genoiser-v0_2_7": "src-genoiser-v0_2_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genoiser/v0_2_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genoiser/v0_2_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "genoiser-master": "genoiser-master",
+        "genoiser-v0_2_4": "genoiser-v0_2_4",
+        "genoiser-v0_2_5": "genoiser-v0_2_5",
+        "genoiser-v0_2_6": "genoiser-v0_2_6",
+        "genoiser-v0_2_7": "genoiser-v0_2_7",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-genoiser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586981191,
+        "narHash": "sha256-HttA7bT41MRVEYu4+b03TJQfhfn1kt+l4trKVdKDhdc=",
+        "owner": "brentp",
+        "repo": "genoiser",
+        "rev": "20036fa80cbc4a1a65ce125f76c2936571e7f94a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brentp",
+        "ref": "refs/heads/master",
+        "repo": "genoiser",
+        "type": "github"
+      }
+    },
+    "src-genoiser-v0_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1551234834,
+        "narHash": "sha256-S7rdeQ4DlN78+aGOO6ECrOcIbC5cSC7WRcXPQVuSz58=",
+        "owner": "brentp",
+        "repo": "genoiser",
+        "rev": "048b486fbb56f007a65681e483c616518905aabc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brentp",
+        "ref": "refs/tags/v0.2.4",
+        "repo": "genoiser",
+        "type": "github"
+      }
+    },
+    "src-genoiser-v0_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554859010,
+        "narHash": "sha256-Iowib2ni88ebeqS5iSw4F334rIFm6AVOw+FoGHfQA6w=",
+        "owner": "brentp",
+        "repo": "genoiser",
+        "rev": "7a7e73f550d30bd99262c9fc721f1d4f77c40aa5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brentp",
+        "ref": "refs/tags/v0.2.5",
+        "repo": "genoiser",
+        "type": "github"
+      }
+    },
+    "src-genoiser-v0_2_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562085389,
+        "narHash": "sha256-t3oiZ5yXE4TesfSgZ0E38zxu9SGfbkwogykzebm+AZY=",
+        "owner": "brentp",
+        "repo": "genoiser",
+        "rev": "adcd45d6cd455d0b0eb2de4156d5984773b8c445",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brentp",
+        "ref": "refs/tags/v0.2.6",
+        "repo": "genoiser",
+        "type": "github"
+      }
+    },
+    "src-genoiser-v0_2_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586981191,
+        "narHash": "sha256-HttA7bT41MRVEYu4+b03TJQfhfn1kt+l4trKVdKDhdc=",
+        "owner": "brentp",
+        "repo": "genoiser",
+        "rev": "20036fa80cbc4a1a65ce125f76c2936571e7f94a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brentp",
+        "ref": "refs/tags/v0.2.7",
+        "repo": "genoiser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

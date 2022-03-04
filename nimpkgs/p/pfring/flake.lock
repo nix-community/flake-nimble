@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pfring-0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pfring-0_0_2": "src-pfring-0_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/pfring/0_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/pfring/0_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "pfring-0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pfring-0_0_3": "src-pfring-0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/pfring/0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/pfring/0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "pfring-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pfring-master": "src-pfring-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/pfring/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/pfring/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pfring-0_0_2": "pfring-0_0_2",
+        "pfring-0_0_3": "pfring-0_0_3",
+        "pfring-master": "pfring-master"
+      }
+    },
+    "src-pfring-0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1439947352,
+        "narHash": "sha256-M5oaUGs3bXQrdxrsFCmQuKD/fXKNWY6KQVEhSNt54Fk=",
+        "owner": "ba0f3",
+        "repo": "pfring.nim",
+        "rev": "7f91b8a4f123084bf870580523a2cda02cf72ffb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.0.2",
+        "repo": "pfring.nim",
+        "type": "github"
+      }
+    },
+    "src-pfring-0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1440084112,
+        "narHash": "sha256-gV+y9/+V79RYOJ/rfw+/YN2T/J0K5irlb43hD/J2C6k=",
+        "owner": "ba0f3",
+        "repo": "pfring.nim",
+        "rev": "0b3cb2c2bc5aec36edf16a38860cea70b8312861",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.0.3",
+        "repo": "pfring.nim",
+        "type": "github"
+      }
+    },
+    "src-pfring-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633049827,
+        "narHash": "sha256-/qUbynErD1BIECvU27ByTKg4Zdeeza0GqggAUfzlKg4=",
+        "owner": "ba0f3",
+        "repo": "pfring.nim",
+        "rev": "c3fbbd27686d24830d45c4c2ad642a9263433873",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "pfring.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

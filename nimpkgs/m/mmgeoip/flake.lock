@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "mmgeoip-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mmgeoip-master": "src-mmgeoip-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/mmgeoip/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/mmgeoip/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mmgeoip-master": "mmgeoip-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mmgeoip-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1478628521,
+        "narHash": "sha256-LMiUoITEAJKMB+D7vserbQjdMwiRicXPFZBhR98/D6E=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-mmgeoip",
+        "rev": "c7b84ce31a2f5d240f97294459d63ed9849e8447",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-mmgeoip",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

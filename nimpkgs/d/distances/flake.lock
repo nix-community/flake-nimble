@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "distances-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-distances-master": "src-distances-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/distances/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/distances/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "distances-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-distances-v0_1_0": "src-distances-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/distances/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/distances/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "distances-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-distances-v0_1_1": "src-distances-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/distances/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/distances/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "distances-master": "distances-master",
+        "distances-v0_1_0": "distances-v0_1_0",
+        "distances-v0_1_1": "distances-v0_1_1",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-distances-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623286743,
+        "narHash": "sha256-6wYMojg0A0ZqtThuXOMhNVazwihksDmu5t3DJ00mP1c=",
+        "owner": "ayman-albaz",
+        "repo": "distances",
+        "rev": "4b040c012b2e81c1a5510539e7cbf3c69d90e854",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ayman-albaz",
+        "ref": "refs/heads/master",
+        "repo": "distances",
+        "type": "github"
+      }
+    },
+    "src-distances-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623277931,
+        "narHash": "sha256-BolbrMTO+E9iU1rdUDUZmYy+q4tFWZzSVVpTm3vspvc=",
+        "owner": "ayman-albaz",
+        "repo": "distances",
+        "rev": "131b42d02806579cd66935510274ee436834d805",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ayman-albaz",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "distances",
+        "type": "github"
+      }
+    },
+    "src-distances-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623283706,
+        "narHash": "sha256-qB2jQaWKpLc4DZzD/tZ7VXC16TuNQZZ735do1RNb6sY=",
+        "owner": "ayman-albaz",
+        "repo": "distances",
+        "rev": "e51ba10185f8d02cfaf98ae43e51380516f4d254",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ayman-albaz",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "distances",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

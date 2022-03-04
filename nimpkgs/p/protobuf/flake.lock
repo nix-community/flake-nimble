@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "protobuf-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-protobuf-master": "src-protobuf-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/protobuf/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/protobuf/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "protobuf-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-protobuf-v0_4_0": "src-protobuf-v0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/protobuf/v0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/protobuf/v0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "protobuf-v0_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-protobuf-v0_5_1": "src-protobuf-v0_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/protobuf/v0_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/protobuf/v0_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "protobuf-master": "protobuf-master",
+        "protobuf-v0_4_0": "protobuf-v0_4_0",
+        "protobuf-v0_5_1": "protobuf-v0_5_1"
+      }
+    },
+    "src-protobuf-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1612860915,
+        "narHash": "sha256-T0uKhB87doP7vkyeI9FIExiePm4vnXQGo3rBMwX5hs8=",
+        "owner": "PMunch",
+        "repo": "protobuf-nim",
+        "rev": "2bc68425e2a1fab10d9de358e30b4b035a17244a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "protobuf-nim",
+        "type": "github"
+      }
+    },
+    "src-protobuf-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582630054,
+        "narHash": "sha256-N27acKIc368ockmJEJxqrbwJlmNZZmVOY9ItBh4VzK8=",
+        "owner": "PMunch",
+        "repo": "protobuf-nim",
+        "rev": "ce4360ab9614788ddf1e6e8a94294be9b07ece68",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "protobuf-nim",
+        "type": "github"
+      }
+    },
+    "src-protobuf-v0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609541833,
+        "narHash": "sha256-JXG9uwsuxOQVW1GnRREhioro9AYgbHYWNhDg4aq0+x0=",
+        "owner": "PMunch",
+        "repo": "protobuf-nim",
+        "rev": "4a9ec69006ea68dc1bdff977cd38342c67564854",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v0.5.1",
+        "repo": "protobuf-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

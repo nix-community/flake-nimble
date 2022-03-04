@@ -1,0 +1,629 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "loony-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_0": "src-loony-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_1": "src-loony-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_10": "src-loony-0_1_10"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_10",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_10",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_11": "src-loony-0_1_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_12": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_12": "src-loony-0_1_12"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_12",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_12",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_2": "src-loony-0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_3": "src-loony-0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_5": "src-loony-0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_6": "src-loony-0_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_7": "src-loony-0_1_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_8": "src-loony-0_1_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-0_1_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-0_1_9": "src-loony-0_1_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/0_1_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/0_1_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "loony-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-loony-main": "src-loony-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/loony/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/loony/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "loony-0_1_0": "loony-0_1_0",
+        "loony-0_1_1": "loony-0_1_1",
+        "loony-0_1_10": "loony-0_1_10",
+        "loony-0_1_11": "loony-0_1_11",
+        "loony-0_1_12": "loony-0_1_12",
+        "loony-0_1_2": "loony-0_1_2",
+        "loony-0_1_3": "loony-0_1_3",
+        "loony-0_1_5": "loony-0_1_5",
+        "loony-0_1_6": "loony-0_1_6",
+        "loony-0_1_7": "loony-0_1_7",
+        "loony-0_1_8": "loony-0_1_8",
+        "loony-0_1_9": "loony-0_1_9",
+        "loony-main": "loony-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-loony-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632024350,
+        "narHash": "sha256-j8gCp1yP/0mQpWwIuU9yRumuamR7EgtXskad0uBVR1g=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "2643c0db13dd1d2ef36a5d47d157d430536839b7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.0",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632414394,
+        "narHash": "sha256-r6rmvQnw0TTG0WYgduaR9AHy3Y8aqqjG4Rc4u7SEDlc=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "49acf624a022baf4007b42f19e17cd8a04e25952",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.1",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637931549,
+        "narHash": "sha256-jDYdQ3kJY7Xa6/6mw/j2FYa+j8y1uizIVvSXGFmDjfU=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "0ead72c05ba9c2ca057861d9ec51f8f5ddb8d793",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.10",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637970372,
+        "narHash": "sha256-oY2uQD7PuLXbG8cvM792hAvw5lzgw3UcxK2XMZYoBns=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "f6f80e1cbefbd27e615a313b9a8ec074ed743b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.11",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_12": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638508678,
+        "narHash": "sha256-3IX9I0/Y8QCBmukWIjAbZTC271X8JBUccrHTs3ya3tY=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "6414f666f45bcd72e7d93edb904db06a2e489f80",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.12",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632465932,
+        "narHash": "sha256-/pDSS9mg7urZsUrroYFuC+1td5i/TuOVFM76+uHT58M=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "4871c29312623b61d4ea2c53b2c2083988b64f42",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.2",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632715033,
+        "narHash": "sha256-46u/PuGhstQJz3TYP7PvnNhGA3Ko2QyOJNVqL7DvZvk=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "c29ac5e238ba3f60fd8b07393c326b87d9e67558",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.3",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632889707,
+        "narHash": "sha256-nrBRx2AXC7pwH6iLIiDcHN/dUlxk/kMvN+9D9Hwnya8=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "b4f340448738b257d1a560a25ab8a40d5e5990aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.5",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633090381,
+        "narHash": "sha256-AYZgVPJlA/+O9eR2mKvayc2w6zfCX+G7qUwE0oKqOjI=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "9071632461af40c9677618548372f9a5a1d6ffff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.6",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633280373,
+        "narHash": "sha256-ISOGGHaeeNm2BKxx77DWwAzSEstLM+f8XXGkmn+wLco=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "75e8a7effd5902c5df7bacecc694921a5f8b32ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.7",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635375805,
+        "narHash": "sha256-z1IzbjK5NDplSr9p4cBxlxqv0VjBLxqAtkgen60gaD4=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "b2104042bce4ac61414bccdb9c5cd988398a2e56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.8",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-0_1_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637908034,
+        "narHash": "sha256-V4kHbqK3OHCaun/zeFVonqZZ0UjyqFQtRznWfiYZt9g=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "a8c3adb2c1a20f95ed6a4c1f3ba80e170bb74bcc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/tags/0.1.9",
+        "repo": "loony",
+        "type": "github"
+      }
+    },
+    "src-loony-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638508629,
+        "narHash": "sha256-G/oHOJhjrmTkTSC+GNqMNlOREAe7NeWYPIIyljR7N5U=",
+        "owner": "shayanhabibi",
+        "repo": "loony",
+        "rev": "f8365e2bc1f13f0def29923344a020b81d2e6f5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shayanhabibi",
+        "ref": "refs/heads/main",
+        "repo": "loony",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

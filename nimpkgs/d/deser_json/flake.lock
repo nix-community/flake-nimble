@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "deser_json-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-deser_json-master": "src-deser_json-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/deser_json/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/deser_json/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "deser_json-master": "deser_json-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-deser_json-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636103082,
+        "narHash": "sha256-J+KCiBHe3Zzik1xXr0NGnHMqI3N3GDVBMtxCsE0Pmvc=",
+        "owner": "gabbhack",
+        "repo": "deser_json",
+        "rev": "e98b650dc3fe7caf5042150d45074365c4de7da6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gabbhack",
+        "ref": "refs/heads/master",
+        "repo": "deser_json",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

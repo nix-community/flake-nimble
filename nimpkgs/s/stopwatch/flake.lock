@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "stopwatch-master": "stopwatch-master",
+        "stopwatch-v3_5": "stopwatch-v3_5"
+      }
+    },
+    "src-stopwatch-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538329384,
+        "narHash": "sha256-93jZwg4uCR2x8Vuj3xVfnLh7nYG7MCca0JIcsQMXbWo=",
+        "owner": "define-private-public",
+        "repo": "stopwatch",
+        "rev": "2a71ab5e44f3b91ceec3a420c26e15962108622f",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "define-private-public",
+        "ref": "refs/heads/master",
+        "repo": "stopwatch",
+        "type": "gitlab"
+      }
+    },
+    "src-stopwatch-v3_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538329384,
+        "narHash": "sha256-93jZwg4uCR2x8Vuj3xVfnLh7nYG7MCca0JIcsQMXbWo=",
+        "owner": "define-private-public",
+        "repo": "stopwatch",
+        "rev": "2a71ab5e44f3b91ceec3a420c26e15962108622f",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "define-private-public",
+        "ref": "refs/tags/v3.5",
+        "repo": "stopwatch",
+        "type": "gitlab"
+      }
+    },
+    "stopwatch-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-stopwatch-master": "src-stopwatch-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/stopwatch/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/stopwatch/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "stopwatch-v3_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-stopwatch-v3_5": "src-stopwatch-v3_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/stopwatch/v3_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/stopwatch/v3_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

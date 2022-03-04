@@ -1,0 +1,674 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "xlsx-0_4_5": "xlsx-0_4_5",
+        "xlsx-master": "xlsx-master",
+        "xlsx-v0_1_0": "xlsx-v0_1_0",
+        "xlsx-v0_1_2": "xlsx-v0_1_2",
+        "xlsx-v0_1_6": "xlsx-v0_1_6",
+        "xlsx-v0_1_8": "xlsx-v0_1_8",
+        "xlsx-v0_2_0": "xlsx-v0_2_0",
+        "xlsx-v0_3_0": "xlsx-v0_3_0",
+        "xlsx-v0_3_2": "xlsx-v0_3_2",
+        "xlsx-v0_3_6": "xlsx-v0_3_6",
+        "xlsx-v0_3_8": "xlsx-v0_3_8",
+        "xlsx-v0_4_0": "xlsx-v0_4_0",
+        "xlsx-v0_4_2": "xlsx-v0_4_2",
+        "xlsx-v0_4_4": "xlsx-v0_4_4"
+      }
+    },
+    "src-xlsx-0_4_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617441837,
+        "narHash": "sha256-TU7t9ScZ0y9ATshTtdWlmCcSDlRhTAa5UGj3zfn+Pgw=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "1aa3ab99f0f5770c7650bda654c779155bf140cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/0.4.5",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629351931,
+        "narHash": "sha256-5SiinPtkc1RNE8WYUnyz8/FWW43Ep47Tf0auzs9dNPI=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "80847eaa0e608457b91090afd8fbdcf4f3bf4872",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/heads/master",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577451468,
+        "narHash": "sha256-ItI4vkERY9+kq183rGX27GhQdmAY2fJb9IjMW2wVX5Q=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "7befee7a386a0e5ef2baf9ce5831300f6a984226",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577527642,
+        "narHash": "sha256-0xKjuokZ/cbCSwqu1Fe5di6Dvb5Sj2Kn9wEcY4fHeqk=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "4e562ca7233eef3b5227c57f1c0f3bd4f79924a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577600987,
+        "narHash": "sha256-PO2jGETcgqWfY2K1Ho2hvuNfMH2RpVWN6l9deHay2rM=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "ba83c7df890c5a6bc53168f36bfbd50c2ecdb4ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.6",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_1_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577627114,
+        "narHash": "sha256-XcdXUvvROYRycL7MUw+a9XtL39XBDjVTzXxMDvyI09g=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "1e94550034855f3dad3775363dbfadffcd8c5b23",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.8",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577679026,
+        "narHash": "sha256-PIgEbeZ0kSel0NdcQWOADYeVO9i0Fd7IUM86IfGtjN4=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "c165eba2d80d0dbdf70b581b3c95d77442509150",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577950349,
+        "narHash": "sha256-NgZSRWBZdNLk3Mh8PPfdfqUQHiougJyCw4F12Gx92cw=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "2df5396a128508a7a6fe7cc9c01c670e03d2d8bd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578044359,
+        "narHash": "sha256-G966wg8PRTKzfHErkfraM/UpgeLhHXPfqsSw0lI2Q9I=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "b273cc3895070b5008bc9e7388df8856a3e6faec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.3.2",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_3_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578046185,
+        "narHash": "sha256-sINQvihBU3wPDuaYAci4cZPyrm7S2ADoY2zg2P4R1WE=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "009f2158e47fcf2a0d1e8adc585fa7b3601bb723",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.3.6",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_3_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578052538,
+        "narHash": "sha256-bRkw0/7fSy8nsI1EPNgGrVbvfDH+VHqZHVbDxCt9DSo=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "fefb8dbd40b2880b77dc2da323869ac13ad6196e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.3.8",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579960324,
+        "narHash": "sha256-cS6HSgLhE2iEsyEnY4+9HH7cWxUbp+HbdMj7CvCYcSY=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "d70e0c6b26c1bf77f0984ded61eafdc6497b9136",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1580023494,
+        "narHash": "sha256-ucmeoRgnd6WfQ1gNVdN7tB9GXqGPlhvBNhRi+dKyZBs=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "b1a7fd78b76b8bddd96b76fae2e5f3d92a555c48",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.4.2",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "src-xlsx-v0_4_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584021246,
+        "narHash": "sha256-ttCLS+r1Vj3YOMFXQg8PJtQAkkRDrDHNM9fdhcuENnE=",
+        "owner": "xflywind",
+        "repo": "xlsx",
+        "rev": "4f07bce1f68591bd9af793cceae3cad9a587cf1a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.4.4",
+        "repo": "xlsx",
+        "type": "github"
+      }
+    },
+    "xlsx-0_4_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-0_4_5": "src-xlsx-0_4_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/0_4_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/0_4_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-master": "src-xlsx-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_1_0": "src-xlsx-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_1_2": "src-xlsx-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_1_6": "src-xlsx-v0_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_1_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_1_8": "src-xlsx-v0_1_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_1_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_1_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_2_0": "src-xlsx-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_3_0": "src-xlsx-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_3_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_3_2": "src-xlsx-v0_3_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_3_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_3_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_3_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_3_6": "src-xlsx-v0_3_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_3_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_3_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_3_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_3_8": "src-xlsx-v0_3_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_3_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_3_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_4_0": "src-xlsx-v0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_4_2": "src-xlsx-v0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "xlsx-v0_4_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsx-v0_4_4": "src-xlsx-v0_4_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/x/xlsx/v0_4_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/x/xlsx/v0_4_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

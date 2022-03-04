@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "lrparser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-lrparser-master": "src-lrparser-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/lrparser/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/lrparser/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "lrparser-master": "lrparser-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-lrparser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642807803,
+        "narHash": "sha256-lTbtT6UO4MVy6KR6yaNgmXMfImZToUJ0KAbvQI5kEgo=",
+        "owner": "vanyle",
+        "repo": "lrparser",
+        "rev": "3287bfdaca7beaff8f9009a2e6c3b660694cc2d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vanyle",
+        "ref": "refs/heads/master",
+        "repo": "lrparser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

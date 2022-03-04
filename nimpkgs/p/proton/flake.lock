@@ -1,0 +1,314 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "proton-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-proton-master": "src-proton-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/proton/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/proton/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "proton-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-proton-v0_2_2": "src-proton-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/proton/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/proton/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "proton-v0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-proton-v0_2_3": "src-proton-v0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/proton/v0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/proton/v0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "proton-v0_2_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-proton-v0_2_4": "src-proton-v0_2_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/proton/v0_2_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/proton/v0_2_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "proton-v0_2_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-proton-v0_2_5": "src-proton-v0_2_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/proton/v0_2_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/proton/v0_2_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "proton-v0_2_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-proton-v0_2_6": "src-proton-v0_2_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/proton/v0_2_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/proton/v0_2_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "proton-master": "proton-master",
+        "proton-v0_2_2": "proton-v0_2_2",
+        "proton-v0_2_3": "proton-v0_2_3",
+        "proton-v0_2_4": "proton-v0_2_4",
+        "proton-v0_2_5": "proton-v0_2_5",
+        "proton-v0_2_6": "proton-v0_2_6"
+      }
+    },
+    "src-proton-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626719114,
+        "narHash": "sha256-9+kw8SlP+0RWolkjMJDJD58LOVxeXhgc9iex6rWmRno=",
+        "owner": "jasonrbriggs",
+        "repo": "proton-nim",
+        "rev": "625fe292a2f60fb1656453db9768b5edaa7290e0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jasonrbriggs",
+        "ref": "refs/heads/master",
+        "repo": "proton-nim",
+        "type": "github"
+      }
+    },
+    "src-proton-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1564634940,
+        "narHash": "sha256-cAq3aaJ8G6MV+9gO2NUzCeUT+F1fJAn6kGZo6n/kNWk=",
+        "owner": "jasonrbriggs",
+        "repo": "proton-nim",
+        "rev": "0f7757bbd16f7993526f77135fc7df176f7819de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jasonrbriggs",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "proton-nim",
+        "type": "github"
+      }
+    },
+    "src-proton-v0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1565688290,
+        "narHash": "sha256-Ut5TXvqRqLU7n4OpWxU24OXpfDEIwFkEo+S9dD6OG48=",
+        "owner": "jasonrbriggs",
+        "repo": "proton-nim",
+        "rev": "6c1996859e9b3f5f614659fb30cf1e4a06517b54",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jasonrbriggs",
+        "ref": "refs/tags/v0.2.3",
+        "repo": "proton-nim",
+        "type": "github"
+      }
+    },
+    "src-proton-v0_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569621724,
+        "narHash": "sha256-7Akt08VcN5Q3SNDYEqJ1pGFGpLKnpenqQgNU1RewDog=",
+        "owner": "jasonrbriggs",
+        "repo": "proton-nim",
+        "rev": "1eac0c7a53e0fee1c4039988e47cdac31b1b90d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jasonrbriggs",
+        "ref": "refs/tags/v0.2.4",
+        "repo": "proton-nim",
+        "type": "github"
+      }
+    },
+    "src-proton-v0_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626680926,
+        "narHash": "sha256-rukTGxPKn9nGNyz62DlE0ayJqfo0WMWrGaUrMjhtJlE=",
+        "owner": "jasonrbriggs",
+        "repo": "proton-nim",
+        "rev": "7493ff4cb15507965a5689a69d80254c9581fda9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jasonrbriggs",
+        "ref": "refs/tags/v0.2.5",
+        "repo": "proton-nim",
+        "type": "github"
+      }
+    },
+    "src-proton-v0_2_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626719114,
+        "narHash": "sha256-9+kw8SlP+0RWolkjMJDJD58LOVxeXhgc9iex6rWmRno=",
+        "owner": "jasonrbriggs",
+        "repo": "proton-nim",
+        "rev": "625fe292a2f60fb1656453db9768b5edaa7290e0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jasonrbriggs",
+        "ref": "refs/tags/v0.2.6",
+        "repo": "proton-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

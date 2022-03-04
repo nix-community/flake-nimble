@@ -1,0 +1,404 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "hypixel-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-main": "src-hypixel-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hypixel-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-v0_2_0": "src-hypixel-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hypixel-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-v0_2_1": "src-hypixel-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hypixel-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-v0_2_2": "src-hypixel-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hypixel-v0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-v0_2_3": "src-hypixel-v0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/v0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/v0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hypixel-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-v0_3_0": "src-hypixel-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hypixel-v0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-v0_3_1": "src-hypixel-v0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/v0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/v0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hypixel-v0_3_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hypixel-v0_3_2": "src-hypixel-v0_3_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hypixel/v0_3_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hypixel/v0_3_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "hypixel-main": "hypixel-main",
+        "hypixel-v0_2_0": "hypixel-v0_2_0",
+        "hypixel-v0_2_1": "hypixel-v0_2_1",
+        "hypixel-v0_2_2": "hypixel-v0_2_2",
+        "hypixel-v0_2_3": "hypixel-v0_2_3",
+        "hypixel-v0_3_0": "hypixel-v0_3_0",
+        "hypixel-v0_3_1": "hypixel-v0_3_1",
+        "hypixel-v0_3_2": "hypixel-v0_3_2",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-hypixel-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638799802,
+        "narHash": "sha256-rOa7IshbJgjU1qia9PuWHx8QV4LBUCfx8WInaMUhWo8=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "6bee38894ea490233d72d99629f4613c81826b7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/heads/main",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    },
+    "src-hypixel-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620407408,
+        "narHash": "sha256-BPlD1MZJiBh91jBw1X/LjJQL14CzAxDQIVg9liamYEA=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "5254b2e52c2351f440910784e1f33d3aa8c2f450",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    },
+    "src-hypixel-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620425719,
+        "narHash": "sha256-sVoNezegpawXfpFq3Wcbe9YLJmC3fiujwzXiyAAwCFU=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "e841cdb63c88d01c3b44515e504630deb312688a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    },
+    "src-hypixel-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620433483,
+        "narHash": "sha256-r3PdwPliCDRJsaHBKLydQ/j6QNX/dfgco+Ziv3xUnos=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "0940976b79c8969b1bdca62b654af2505706c264",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    },
+    "src-hypixel-v0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620451605,
+        "narHash": "sha256-qv3xzg5n+9w1oYVozlqQ0E23CURGgoOW52ZqL7REQCU=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "8172f0611ce480929aaf98ed79592527b4d60d0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.2.3",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    },
+    "src-hypixel-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620515899,
+        "narHash": "sha256-sO+2QyeGcs1F9sMRwRLiWPYaf7CEGrkGZ3vB8vRet94=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "ba988a409af03a1722ab37d8938d47e2217edb4d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    },
+    "src-hypixel-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621358682,
+        "narHash": "sha256-2xWn74fWwFv5p218Io07rqV3Pps8tLQITZWQWKHqNM8=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "b080fe92cf5191ed7e8c53a37f8d8a8712c6dcdc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    },
+    "src-hypixel-v0_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621622014,
+        "narHash": "sha256-zR8d+YwalvSVP1FJSnY76VMzBNRqUBCVo8ltMF0AROQ=",
+        "owner": "tonogram",
+        "repo": "hypixel-nim",
+        "rev": "20a5a08ada9496b381483f719a4fb98a9ded34a3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.3.2",
+        "repo": "hypixel-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

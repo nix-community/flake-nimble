@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "kaitai_struct_nim_runtime-0_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-kaitai_struct_nim_runtime-0_9": "src-kaitai_struct_nim_runtime-0_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/k/kaitai_struct_nim_runtime/0_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/k/kaitai_struct_nim_runtime/0_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "kaitai_struct_nim_runtime-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-kaitai_struct_nim_runtime-master": "src-kaitai_struct_nim_runtime-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/k/kaitai_struct_nim_runtime/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/k/kaitai_struct_nim_runtime/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "kaitai_struct_nim_runtime-0_9": "kaitai_struct_nim_runtime-0_9",
+        "kaitai_struct_nim_runtime-master": "kaitai_struct_nim_runtime-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-kaitai_struct_nim_runtime-0_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602807624,
+        "narHash": "sha256-okZuI+j6rH6EAt8dAs16Es0J4hpoi43V3d60HXLn4/4=",
+        "owner": "kaitai-io",
+        "repo": "kaitai_struct_nim_runtime",
+        "rev": "ff151ea22c398d3a1dc1083aac180a5675bada66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaitai-io",
+        "ref": "refs/tags/0.9",
+        "repo": "kaitai_struct_nim_runtime",
+        "type": "github"
+      }
+    },
+    "src-kaitai_struct_nim_runtime-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602807624,
+        "narHash": "sha256-okZuI+j6rH6EAt8dAs16Es0J4hpoi43V3d60HXLn4/4=",
+        "owner": "kaitai-io",
+        "repo": "kaitai_struct_nim_runtime",
+        "rev": "ff151ea22c398d3a1dc1083aac180a5675bada66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaitai-io",
+        "ref": "refs/heads/master",
+        "repo": "kaitai_struct_nim_runtime",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

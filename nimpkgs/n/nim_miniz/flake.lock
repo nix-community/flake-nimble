@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nim_miniz-1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nim_miniz-1_0_1": "src-nim_miniz-1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nim_miniz/1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nim_miniz/1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nim_miniz-1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nim_miniz-1_1_0": "src-nim_miniz-1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nim_miniz/1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nim_miniz/1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nim_miniz-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nim_miniz-master": "src-nim_miniz-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nim_miniz/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nim_miniz/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nim_miniz-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nim_miniz-v1_0_0": "src-nim_miniz-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nim_miniz/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nim_miniz/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nim_miniz-1_0_1": "nim_miniz-1_0_1",
+        "nim_miniz-1_1_0": "nim_miniz-1_1_0",
+        "nim_miniz-master": "nim_miniz-master",
+        "nim_miniz-v1_0_0": "nim_miniz-v1_0_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nim_miniz-1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584801728,
+        "narHash": "sha256-5DY/Wkdfn/u6z7xJWJvNs2gWJ5wLLwy1DvEKpRx69IY=",
+        "owner": "h3rald",
+        "repo": "nim-miniz",
+        "rev": "a6dad3750ba2c70500ee36161a0258ca9c2f22fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/1.0.1",
+        "repo": "nim-miniz",
+        "type": "github"
+      }
+    },
+    "src-nim_miniz-1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584802429,
+        "narHash": "sha256-t+cfR+V/ff21gq76uwSZuAdSYgfWd7OMxqxJt/EoBkc=",
+        "owner": "h3rald",
+        "repo": "nim-miniz",
+        "rev": "b47edf871f2c780b72dcce7da232ef5afee57d56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/1.1.0",
+        "repo": "nim-miniz",
+        "type": "github"
+      }
+    },
+    "src-nim_miniz-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584802429,
+        "narHash": "sha256-t+cfR+V/ff21gq76uwSZuAdSYgfWd7OMxqxJt/EoBkc=",
+        "owner": "h3rald",
+        "repo": "nim-miniz",
+        "rev": "b47edf871f2c780b72dcce7da232ef5afee57d56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/heads/master",
+        "repo": "nim-miniz",
+        "type": "github"
+      }
+    },
+    "src-nim_miniz-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1545415122,
+        "narHash": "sha256-/nPOTbAqtXJ0q/yPfxunrMYRukHHSsfTDVPyvkemrwg=",
+        "owner": "h3rald",
+        "repo": "nim-miniz",
+        "rev": "4ef614363a7303aa2887b3c73f8bdeb7cadaf18e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "nim-miniz",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

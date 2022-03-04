@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jeknil-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jeknil-master": "src-jeknil-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jeknil/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jeknil/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jeknil-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jeknil-v0_1_0": "src-jeknil-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jeknil/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jeknil/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jeknil-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jeknil-v0_1_1": "src-jeknil-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jeknil/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jeknil/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jeknil-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jeknil-v0_2_0": "src-jeknil-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jeknil/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jeknil/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jeknil-master": "jeknil-master",
+        "jeknil-v0_1_0": "jeknil-v0_1_0",
+        "jeknil-v0_1_1": "jeknil-v0_1_1",
+        "jeknil-v0_2_0": "jeknil-v0_2_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jeknil-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629469798,
+        "narHash": "sha256-sWjYYgAd3ApJBqKGYTUmEd6WXpWlCkCF6ERanMnD9EU=",
+        "owner": "tonogram",
+        "repo": "jeknil",
+        "rev": "53a3f47331ecc3a64238489ef3f37079bcc6d473",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/heads/master",
+        "repo": "jeknil",
+        "type": "github"
+      }
+    },
+    "src-jeknil-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594317587,
+        "narHash": "sha256-mkwOYVF8ray+0V7fdF8eEny+E/es1QlOZKIWpHyE6yU=",
+        "owner": "tonogram",
+        "repo": "jeknil",
+        "rev": "ed09fa1ae74eee33744b80ba53958a71f4db995a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "jeknil",
+        "type": "github"
+      }
+    },
+    "src-jeknil-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594330264,
+        "narHash": "sha256-w9r6g7ESlDJQdGL424wfFAMVfD5mOTPTeWLM9Bijz+Y=",
+        "owner": "tonogram",
+        "repo": "jeknil",
+        "rev": "cb002fae504e16ba6ac9fbfffaa3567a35d733a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "jeknil",
+        "type": "github"
+      }
+    },
+    "src-jeknil-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594335049,
+        "narHash": "sha256-q9QQr2JZ3jmtDBUQINrkqVngcEJkudkYdbguRXoAtC8=",
+        "owner": "tonogram",
+        "repo": "jeknil",
+        "rev": "1f1b649f591f2410d3fd892853c8dec981141030",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tonogram",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "jeknil",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

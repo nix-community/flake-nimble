@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "lazy_rest-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-lazy_rest-master": "src-lazy_rest-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/lazy_rest/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/lazy_rest/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "lazy_rest-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-lazy_rest-v0_2_0": "src-lazy_rest-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/lazy_rest/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/lazy_rest/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "lazy_rest-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-lazy_rest-v0_2_2": "src-lazy_rest-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/lazy_rest/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/lazy_rest/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "lazy_rest-master": "lazy_rest-master",
+        "lazy_rest-v0_2_0": "lazy_rest-v0_2_0",
+        "lazy_rest-v0_2_2": "lazy_rest-v0_2_2",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-lazy_rest-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1421691105,
+        "narHash": "sha256-v6aKCu7t62ANT45qn9awXwQkyKni8FWE4ZBJGoiIFGY=",
+        "owner": "Araq",
+        "repo": "lazy_rest",
+        "rev": "dddffda34b56a640d8f30f6d50796fdc93b344f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/master",
+        "repo": "lazy_rest",
+        "type": "github"
+      }
+    },
+    "src-lazy_rest-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1418251800,
+        "narHash": "sha256-xUfpPFdBDfKchhMCYOH76VnO/7mb84VVijs84ruX/D4=",
+        "owner": "Araq",
+        "repo": "lazy_rest",
+        "rev": "cd5295f35e487e6a6d07513286c975bb0e59dafd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "lazy_rest",
+        "type": "github"
+      }
+    },
+    "src-lazy_rest-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1421109989,
+        "narHash": "sha256-CdHgM943Soqii3U8GiZ57/jRbrdTuTVqm+PFRhTP5yw=",
+        "owner": "Araq",
+        "repo": "lazy_rest",
+        "rev": "9876f6a1514cc9b3507d3ed6b5f46c54c6d737de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "lazy_rest",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,314 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "genieos-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genieos-master": "src-genieos-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genieos/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genieos/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genieos-v9_0_0-taeyeon": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genieos-v9_0_0-taeyeon": "src-genieos-v9_0_0-taeyeon"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genieos/v9_0_0-taeyeon",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genieos/v9_0_0-taeyeon",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genieos-v9_0_1-jessica": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genieos-v9_0_1-jessica": "src-genieos-v9_0_1-jessica"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genieos/v9_0_1-jessica",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genieos/v9_0_1-jessica",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genieos-v9_2_0-sunny": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genieos-v9_2_0-sunny": "src-genieos-v9_2_0-sunny"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genieos/v9_2_0-sunny",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genieos/v9_2_0-sunny",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genieos-v9_4_0-tiffany": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genieos-v9_4_0-tiffany": "src-genieos-v9_4_0-tiffany"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genieos/v9_4_0-tiffany",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genieos/v9_4_0-tiffany",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "genieos-v9_4_2-hyoyeon": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-genieos-v9_4_2-hyoyeon": "src-genieos-v9_4_2-hyoyeon"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/genieos/v9_4_2-hyoyeon",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/genieos/v9_4_2-hyoyeon",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "genieos-master": "genieos-master",
+        "genieos-v9_0_0-taeyeon": "genieos-v9_0_0-taeyeon",
+        "genieos-v9_0_1-jessica": "genieos-v9_0_1-jessica",
+        "genieos-v9_2_0-sunny": "genieos-v9_2_0-sunny",
+        "genieos-v9_4_0-tiffany": "genieos-v9_4_0-tiffany",
+        "genieos-v9_4_2-hyoyeon": "genieos-v9_4_2-hyoyeon",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-genieos-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1434211681,
+        "narHash": "sha256-kcFpF9fGu9p+4qoi2maxsHeDJh8pLiABcMWKG2zKxE0=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "b883d016772036ccc81322d95dcca9ee856a5f4b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/master",
+        "repo": "genieos",
+        "type": "github"
+      }
+    },
+    "src-genieos-v9_0_0-taeyeon": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1365539129,
+        "narHash": "sha256-8SJNCiWjJ7MKZPmbI/vrDodrlnzXtUVsYe2SJFxCOQQ=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "2bf2ea4342e9591e82fbccd8ef1e6cdcbe03d67b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v9.0.0-taeyeon",
+        "repo": "genieos",
+        "type": "github"
+      }
+    },
+    "src-genieos-v9_0_1-jessica": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1365964447,
+        "narHash": "sha256-tJ/LcjO6sjCvoWSufPfb1eJqSTMXiBDt3XfSRJEQZNI=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "6d9acc47d522c1cc94c704ccae4f46817c5fa5dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v9.0.1-jessica",
+        "repo": "genieos",
+        "type": "github"
+      }
+    },
+    "src-genieos-v9_2_0-sunny": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1385749312,
+        "narHash": "sha256-ZmyUR4HzwcXdETuC1Tn4tUVEpvZW5En+nfGVEepLRcc=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "1657e33af98542381cb7d8c8d12762a7edebe3ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v9.2.0-sunny",
+        "repo": "genieos",
+        "type": "github"
+      }
+    },
+    "src-genieos-v9_4_0-tiffany": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1399325708,
+        "narHash": "sha256-HPZ0XUtgeifc+OUIB1fZaEpTF7LLcfVlWPiLRT/0hiw=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "226905a20104a1be0a8dbb0e1e2a3c46c66a0238",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v9.4.0-tiffany",
+        "repo": "genieos",
+        "type": "github"
+      }
+    },
+    "src-genieos-v9_4_2-hyoyeon": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1422053632,
+        "narHash": "sha256-vGp3quMC6NKG2RaCBvIpvxD/mPdM4tC17/EpOxtIkH4=",
+        "owner": "Araq",
+        "repo": "genieos",
+        "rev": "9801bcf42d1a0266f0395b7b38a429ad937e32ab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v9.4.2-hyoyeon",
+        "repo": "genieos",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

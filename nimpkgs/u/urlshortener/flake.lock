@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "urlshortener-master": "urlshortener-master",
+        "urlshortener-v0_1_0": "urlshortener-v0_1_0"
+      }
+    },
+    "src-urlshortener-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540369287,
+        "narHash": "sha256-lLwgntuMOYvgV33EdQRI/LdQqYsgZWUY0Il2oNy5crQ=",
+        "owner": "jabbalaci",
+        "repo": "UrlShortener",
+        "rev": "309317069ef97a77eb956dd50ee58519aabeebcd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/heads/master",
+        "repo": "UrlShortener",
+        "type": "github"
+      }
+    },
+    "src-urlshortener-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540312384,
+        "narHash": "sha256-4OFVKSVhsjkV9BbaA6hvxfz71dIPomTGVxqqfVM+nys=",
+        "owner": "jabbalaci",
+        "repo": "UrlShortener",
+        "rev": "8c7678df7ced0a6ba9b17c85a6284cf4e13c477a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "UrlShortener",
+        "type": "github"
+      }
+    },
+    "urlshortener-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-urlshortener-master": "src-urlshortener-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/u/urlshortener/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/u/urlshortener/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "urlshortener-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-urlshortener-v0_1_0": "src-urlshortener-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/u/urlshortener/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/u/urlshortener/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

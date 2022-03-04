@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "breeze-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-breeze-master": "src-breeze-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/breeze/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/breeze/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "breeze-v0_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-breeze-v0_0_4": "src-breeze-v0_0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/breeze/v0_0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/breeze/v0_0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "breeze-master": "breeze-master",
+        "breeze-v0_0_4": "breeze-v0_0_4",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-breeze-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605561719,
+        "narHash": "sha256-0XgQJ7eKFvEuFl+eMGb5zmeM7XqEw75HfDZjOgw/wLI=",
+        "owner": "alehander42",
+        "repo": "breeze",
+        "rev": "df8dd1b8cee2ff5a3c15369d523955c7744a281c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "alehander42",
+        "ref": "refs/heads/master",
+        "repo": "breeze",
+        "type": "github"
+      }
+    },
+    "src-breeze-v0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506332777,
+        "narHash": "sha256-C4e36VL1U9+PwWIPT+1TnDTktg68eOECSdDDpUcYeb0=",
+        "owner": "alehander42",
+        "repo": "breeze",
+        "rev": "c640c8a20549a1feb6f6b9f2487579dde22be67f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "alehander42",
+        "ref": "refs/tags/v0.0.4",
+        "repo": "breeze",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

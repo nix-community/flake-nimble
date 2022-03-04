@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimcfitsio-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcfitsio-master": "src-nimcfitsio-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimcfitsio/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimcfitsio/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimcfitsio-master": "nimcfitsio-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimcfitsio-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569310367,
+        "narHash": "sha256-6fp/MlJKUCP9x5SycSudebRicmE2S2P48tbdpqKGqWY=",
+        "owner": "ziotom78",
+        "repo": "nimcfitsio",
+        "rev": "4f339f84b29363e31ce55f357b0e67520c8332b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ziotom78",
+        "ref": "refs/heads/master",
+        "repo": "nimcfitsio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

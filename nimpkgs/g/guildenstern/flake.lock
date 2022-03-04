@@ -1,0 +1,629 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "guildenstern-0_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-0_7": "src-guildenstern-0_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/0_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/0_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-0_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-0_8": "src-guildenstern-0_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/0_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/0_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-0_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-0_9": "src-guildenstern-0_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/0_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/0_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-1_0_0": "src-guildenstern-1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-1_0_1": "src-guildenstern-1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-2_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-2_0_0": "src-guildenstern-2_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/2_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/2_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-3_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-3_0_0": "src-guildenstern-3_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/3_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/3_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-3_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-3_1_0": "src-guildenstern-3_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/3_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/3_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-4_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-4_0_0": "src-guildenstern-4_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/4_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/4_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-4_0_0-rc1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-4_0_0-rc1": "src-guildenstern-4_0_0-rc1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/4_0_0-rc1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/4_0_0-rc1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-5_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-5_0_0": "src-guildenstern-5_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/5_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/5_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-5_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-5_1_0": "src-guildenstern-5_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/5_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/5_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "guildenstern-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-guildenstern-master": "src-guildenstern-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/guildenstern/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/guildenstern/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "guildenstern-0_7": "guildenstern-0_7",
+        "guildenstern-0_8": "guildenstern-0_8",
+        "guildenstern-0_9": "guildenstern-0_9",
+        "guildenstern-1_0_0": "guildenstern-1_0_0",
+        "guildenstern-1_0_1": "guildenstern-1_0_1",
+        "guildenstern-2_0_0": "guildenstern-2_0_0",
+        "guildenstern-3_0_0": "guildenstern-3_0_0",
+        "guildenstern-3_1_0": "guildenstern-3_1_0",
+        "guildenstern-4_0_0": "guildenstern-4_0_0",
+        "guildenstern-4_0_0-rc1": "guildenstern-4_0_0-rc1",
+        "guildenstern-5_0_0": "guildenstern-5_0_0",
+        "guildenstern-5_1_0": "guildenstern-5_1_0",
+        "guildenstern-master": "guildenstern-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-guildenstern-0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591012121,
+        "narHash": "sha256-FELMkOO2C7xFv8fi32nThDl9UR0ro7yP0Rr1msOG8oY=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "0a9325e28ff0cc699ce1242c763e823d2465faa9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/0.7",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-0_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603031807,
+        "narHash": "sha256-kzPXJ7EH46C00PQj2AiZU5cLhhmtnt6agSQrdDsBT9Q=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "1b56474e235e7602202762405de2dfb6ea53d38a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/0.8",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-0_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605013466,
+        "narHash": "sha256-lHW9BzsvKSRGIR2OJsJxEU6nmKMxoTJlbkIYBMjokFs=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "e19ebed9ff816a10ebf7a85dd8472733227c92be",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/0.9",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611823395,
+        "narHash": "sha256-kzhEG2sF+roybK7G0n1fgUgaY9XwKNc50YdivSci1WA=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "495aff7d1a364474590a67afca9239214179fab0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/1.0.0",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614863232,
+        "narHash": "sha256-Gs92InQO/PNgmYnidhJk3vX0LLcRBa4f1Oaf41ZX1AM=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "89464e5ead7ee4c5ff5358e3a39fab70352ced2d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/1.0.1",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-2_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615735486,
+        "narHash": "sha256-lptkYzlSzHxo2HSZoBNuLACfAuZ7cZPZJFtJv0enyFQ=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "1bb652d9d85d42756421511e8bcb3544f65b6988",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/2.0.0",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-3_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1616778260,
+        "narHash": "sha256-SU/ochQoR+KoL8I/8qFtWeLcpp3PoVMeq16Kl7/IFE0=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "a8d9cca2c52c3e61a524ae9684d7f8b11ffa0a19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/3.0.0",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-3_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622122663,
+        "narHash": "sha256-rQkGDugieciADXhPEtMpgAYboBVc7PMo4UniVWms1cY=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "9c7b92f4c2f36800b6cd734a1b94c9c59879fafa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/3.1.0",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-4_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630940894,
+        "narHash": "sha256-iXe/WWSupCrNfF+RyEx0Voul+pwNrahA3ZQwKU7ySjI=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "f1ae098236368e417c88c6761fafe4aa65e2759a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/4.0.0",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-4_0_0-rc1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628690300,
+        "narHash": "sha256-bKjObZd/QzFbqOU3MF5gJTC/0fYSfVpITO/vkbGQS8I=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "5d8159ed093b45965a95a9f6f339f6eb234cef3e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/4.0.0-rc1",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-5_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632306013,
+        "narHash": "sha256-jtnLcf4uH/Ls7i2D7lfMGPD1S4LAQK3f1XDLIOwAMlE=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "4b322bd46d2c6aa3513b87dddf7e1ee69e216e95",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/5.0.0",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-5_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644162250,
+        "narHash": "sha256-HCLVdKW9pz3kYiY4OvvfET8lMb2fZNd5BI728//lggw=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "0c2a2ae9a9b86121eb971828850c0ae37c03babe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/tags/5.1.0",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    },
+    "src-guildenstern-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644162250,
+        "narHash": "sha256-HCLVdKW9pz3kYiY4OvvfET8lMb2fZNd5BI728//lggw=",
+        "owner": "olliNiinivaara",
+        "repo": "GuildenStern",
+        "rev": "0c2a2ae9a9b86121eb971828850c0ae37c03babe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olliNiinivaara",
+        "ref": "refs/heads/master",
+        "repo": "GuildenStern",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

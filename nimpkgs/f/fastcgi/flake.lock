@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "fastcgi-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fastcgi-0_1_0": "src-fastcgi-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/fastcgi/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/fastcgi/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "fastcgi-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fastcgi-master": "src-fastcgi-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/fastcgi/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/fastcgi/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fastcgi-0_1_0": "fastcgi-0_1_0",
+        "fastcgi-master": "fastcgi-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fastcgi-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591055055,
+        "narHash": "sha256-wy3Ex9IcCxMFIBj7j2AoYO9Ofw+8p+//ZpSuYdo/Vuw=",
+        "owner": "ba0f3",
+        "repo": "fastcgi.nim",
+        "rev": "1d1d897a6612a818df8dfe1690af765fe52fd09c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.1.0",
+        "repo": "fastcgi.nim",
+        "type": "github"
+      }
+    },
+    "src-fastcgi-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591201904,
+        "narHash": "sha256-uHUFkdp2E5jv8rPFjTGuPTiqPWWssq/EX3U4xv5wy4M=",
+        "owner": "ba0f3",
+        "repo": "fastcgi.nim",
+        "rev": "8d6e4914f5dceab92475a4f3b374b71954e707fc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "fastcgi.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "deepspeech-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-deepspeech-master": "src-deepspeech-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/deepspeech/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/deepspeech/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "deepspeech-v0_7_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-deepspeech-v0_7_0": "src-deepspeech-v0_7_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/deepspeech/v0_7_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/deepspeech/v0_7_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "deepspeech-v0_7_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-deepspeech-v0_7_1": "src-deepspeech-v0_7_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/deepspeech/v0_7_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/deepspeech/v0_7_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "deepspeech-master": "deepspeech-master",
+        "deepspeech-v0_7_0": "deepspeech-v0_7_0",
+        "deepspeech-v0_7_1": "deepspeech-v0_7_1",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-deepspeech-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592368076,
+        "narHash": "sha256-R51HmJElWVuv/fh+ATgIDLkdrEYpj800ATi27/WWPwQ=",
+        "owner": "eagledot",
+        "repo": "nim-deepspeech",
+        "rev": "ff465cedbf4b17b92a9101186d87a4116ff0a38f",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "eagledot",
+        "ref": "refs/heads/master",
+        "repo": "nim-deepspeech",
+        "type": "gitlab"
+      }
+    },
+    "src-deepspeech-v0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591332376,
+        "narHash": "sha256-INsjyyY4dlX9ljfQhqHcb4n60+rcjkNrHAuGqLTMsew=",
+        "owner": "eagledot",
+        "repo": "nim-deepspeech",
+        "rev": "5acefdf4f4f5b8c9419d03c6c9970223a35f123b",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "eagledot",
+        "ref": "refs/tags/v0.7.0",
+        "repo": "nim-deepspeech",
+        "type": "gitlab"
+      }
+    },
+    "src-deepspeech-v0_7_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592368076,
+        "narHash": "sha256-R51HmJElWVuv/fh+ATgIDLkdrEYpj800ATi27/WWPwQ=",
+        "owner": "eagledot",
+        "repo": "nim-deepspeech",
+        "rev": "ff465cedbf4b17b92a9101186d87a4116ff0a38f",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "eagledot",
+        "ref": "refs/tags/v0.7.1",
+        "repo": "nim-deepspeech",
+        "type": "gitlab"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

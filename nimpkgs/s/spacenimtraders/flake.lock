@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "spacenimtraders-0_2_0": "spacenimtraders-0_2_0",
+        "spacenimtraders-master": "spacenimtraders-master"
+      }
+    },
+    "spacenimtraders-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-spacenimtraders-0_2_0": "src-spacenimtraders-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/spacenimtraders/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/spacenimtraders/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "spacenimtraders-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-spacenimtraders-master": "src-spacenimtraders-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/spacenimtraders/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/spacenimtraders/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-spacenimtraders-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1616288483,
+        "narHash": "sha256-CGTj+6PhDdhP5XcotdZ//ETpGJxVIRtEDgT2h2xws8E=",
+        "owner": "ire4ever1190",
+        "repo": "SpaceNimTraders",
+        "rev": "838378b06dea2fb55bf554bd4d686214f59e319a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ire4ever1190",
+        "ref": "refs/tags/0.2.0",
+        "repo": "SpaceNimTraders",
+        "type": "github"
+      }
+    },
+    "src-spacenimtraders-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1616288743,
+        "narHash": "sha256-zEmjTwm/wt+NX+AeLcaZcqv90/9HjlEWx2d2RAVN84o=",
+        "owner": "ire4ever1190",
+        "repo": "SpaceNimTraders",
+        "rev": "dd13996b2ff5f8aca2540d544cfa5223d073cc2a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ire4ever1190",
+        "ref": "refs/heads/master",
+        "repo": "SpaceNimTraders",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

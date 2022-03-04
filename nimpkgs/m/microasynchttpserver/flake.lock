@@ -1,0 +1,314 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "microasynchttpserver-0_10_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-microasynchttpserver-0_10_0": "src-microasynchttpserver-0_10_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_10_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_10_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "microasynchttpserver-0_10_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-microasynchttpserver-0_10_1": "src-microasynchttpserver-0_10_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_10_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_10_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "microasynchttpserver-0_10_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-microasynchttpserver-0_10_2": "src-microasynchttpserver-0_10_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_10_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_10_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "microasynchttpserver-0_9_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-microasynchttpserver-0_9_0": "src-microasynchttpserver-0_9_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_9_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_9_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "microasynchttpserver-0_9_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-microasynchttpserver-0_9_5": "src-microasynchttpserver-0_9_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_9_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/microasynchttpserver/0_9_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "microasynchttpserver-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-microasynchttpserver-master": "src-microasynchttpserver-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/microasynchttpserver/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/microasynchttpserver/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "microasynchttpserver-0_10_0": "microasynchttpserver-0_10_0",
+        "microasynchttpserver-0_10_1": "microasynchttpserver-0_10_1",
+        "microasynchttpserver-0_10_2": "microasynchttpserver-0_10_2",
+        "microasynchttpserver-0_9_0": "microasynchttpserver-0_9_0",
+        "microasynchttpserver-0_9_5": "microasynchttpserver-0_9_5",
+        "microasynchttpserver-master": "microasynchttpserver-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-microasynchttpserver-0_10_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1480310884,
+        "narHash": "sha256-D0Y32DsOYn2JuFdq7wR+7KIrCUCfNaTN8VkXvgK/oYc=",
+        "owner": "philip-wernersbach",
+        "repo": "microasynchttpserver",
+        "rev": "7a461767f961536200c7232448d0446687e71a67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "philip-wernersbach",
+        "ref": "refs/tags/0.10.0",
+        "repo": "microasynchttpserver",
+        "type": "github"
+      }
+    },
+    "src-microasynchttpserver-0_10_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500567669,
+        "narHash": "sha256-R1N/XRqfs9kBAQsUtXzOLgGqHlRAWnznPYx8L+8zA6E=",
+        "owner": "philip-wernersbach",
+        "repo": "microasynchttpserver",
+        "rev": "ab56cab429e336c09485ae3adb2e662dfdfa446d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "philip-wernersbach",
+        "ref": "refs/tags/0.10.1",
+        "repo": "microasynchttpserver",
+        "type": "github"
+      }
+    },
+    "src-microasynchttpserver-0_10_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500933121,
+        "narHash": "sha256-vH4MF9Ppf+KtitQLeDYA7G7k5CfnS/B21ayO1Qrm/NU=",
+        "owner": "philip-wernersbach",
+        "repo": "microasynchttpserver",
+        "rev": "90118afb1dab0ffe81eb496536895ce2b121b031",
+        "type": "github"
+      },
+      "original": {
+        "owner": "philip-wernersbach",
+        "ref": "refs/tags/0.10.2",
+        "repo": "microasynchttpserver",
+        "type": "github"
+      }
+    },
+    "src-microasynchttpserver-0_9_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1471746232,
+        "narHash": "sha256-9vo8M33V/HqU27Tk7TMswcG6l1AKFnuxxsOXb9Sa504=",
+        "owner": "philip-wernersbach",
+        "repo": "microasynchttpserver",
+        "rev": "77a5badaf786fd627eb77757d1545e41fb1059ce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "philip-wernersbach",
+        "ref": "refs/tags/0.9.0",
+        "repo": "microasynchttpserver",
+        "type": "github"
+      }
+    },
+    "src-microasynchttpserver-0_9_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1477587765,
+        "narHash": "sha256-AKVrE/M827hCi/UQcv7ju8q/ua1yL7gv/g8Cbf582eQ=",
+        "owner": "philip-wernersbach",
+        "repo": "microasynchttpserver",
+        "rev": "dd5884d717ecb5e94fc8e3b2a8c462e2e78e4c84",
+        "type": "github"
+      },
+      "original": {
+        "owner": "philip-wernersbach",
+        "ref": "refs/tags/0.9.5",
+        "repo": "microasynchttpserver",
+        "type": "github"
+      }
+    },
+    "src-microasynchttpserver-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500933121,
+        "narHash": "sha256-vH4MF9Ppf+KtitQLeDYA7G7k5CfnS/B21ayO1Qrm/NU=",
+        "owner": "philip-wernersbach",
+        "repo": "microasynchttpserver",
+        "rev": "90118afb1dab0ffe81eb496536895ce2b121b031",
+        "type": "github"
+      },
+      "original": {
+        "owner": "philip-wernersbach",
+        "ref": "refs/heads/master",
+        "repo": "microasynchttpserver",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

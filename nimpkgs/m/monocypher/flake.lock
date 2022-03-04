@@ -1,0 +1,314 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "monocypher-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-monocypher-master": "src-monocypher-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/monocypher/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/monocypher/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "monocypher-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-monocypher-v0_1_0": "src-monocypher-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/monocypher/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/monocypher/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "monocypher-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-monocypher-v0_1_1": "src-monocypher-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/monocypher/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/monocypher/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "monocypher-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-monocypher-v0_1_2": "src-monocypher-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/monocypher/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/monocypher/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "monocypher-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-monocypher-v0_2_0": "src-monocypher-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/monocypher/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/monocypher/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "monocypher-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-monocypher-v0_2_1": "src-monocypher-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/monocypher/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/monocypher/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "monocypher-master": "monocypher-master",
+        "monocypher-v0_1_0": "monocypher-v0_1_0",
+        "monocypher-v0_1_1": "monocypher-v0_1_1",
+        "monocypher-v0_1_2": "monocypher-v0_1_2",
+        "monocypher-v0_2_0": "monocypher-v0_2_0",
+        "monocypher-v0_2_1": "monocypher-v0_2_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-monocypher-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610194275,
+        "narHash": "sha256-c8NCtJZqM8bdBBrJPv84E+UyJCpbCnyrrRikBge170A=",
+        "owner": "markspanbroek",
+        "repo": "monocypher.nim",
+        "rev": "6bf84aa83966b836b6529f0c2e6681a5df72de37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/heads/master",
+        "repo": "monocypher.nim",
+        "type": "github"
+      }
+    },
+    "src-monocypher-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572856044,
+        "narHash": "sha256-xRaqBI/v85j79sPkhAt2zzgARB/3pW4daLMwb48wMAk=",
+        "owner": "markspanbroek",
+        "repo": "monocypher.nim",
+        "rev": "99e89e1c53e37c2ce565b3dda22205f1266e91e3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "monocypher.nim",
+        "type": "github"
+      }
+    },
+    "src-monocypher-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584271342,
+        "narHash": "sha256-0Pp1UwuClXEjkYOBsgcIJkaDO3+WZI/dEy/rCfqP8+Q=",
+        "owner": "markspanbroek",
+        "repo": "monocypher.nim",
+        "rev": "b2948c963bd9d056088d3e97c0c791643abac8d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "monocypher.nim",
+        "type": "github"
+      }
+    },
+    "src-monocypher-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584461165,
+        "narHash": "sha256-fPMQuB3gsHJ3rOXcfP9nd1bIzlI+ER4L0ohjXB7xwM8=",
+        "owner": "markspanbroek",
+        "repo": "monocypher.nim",
+        "rev": "fec4bfe191923b3ed0913bf83e599373e6a21b1b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "monocypher.nim",
+        "type": "github"
+      }
+    },
+    "src-monocypher-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592469361,
+        "narHash": "sha256-Ul6WZOls3UaWD3AuD05GbR4k4d8AcdqcpeBuiMnuvyI=",
+        "owner": "markspanbroek",
+        "repo": "monocypher.nim",
+        "rev": "0109ee7da170019b8331cd5fd3ce1dc73dd9da54",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "monocypher.nim",
+        "type": "github"
+      }
+    },
+    "src-monocypher-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610194275,
+        "narHash": "sha256-c8NCtJZqM8bdBBrJPv84E+UyJCpbCnyrrRikBge170A=",
+        "owner": "markspanbroek",
+        "repo": "monocypher.nim",
+        "rev": "6bf84aa83966b836b6529f0c2e6681a5df72de37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "monocypher.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

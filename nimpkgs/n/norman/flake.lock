@@ -1,0 +1,629 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "norman-1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-1_0_0": "src-norman-1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-1_0_1": "src-norman-1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-1_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-1_0_2": "src-norman-1_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/1_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/1_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_0_0": "src-norman-2_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_1_0": "src-norman-2_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_1_1": "src-norman-2_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_1_2": "src-norman-2_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_1_3": "src-norman-2_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_1_4": "src-norman-2_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_1_5": "src-norman-2_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-2_1_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-2_1_7": "src-norman-2_1_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/2_1_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/2_1_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-develop": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-develop": "src-norman-develop"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/develop",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/develop",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "norman-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-norman-master": "src-norman-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/norman/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/norman/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "norman-1_0_0": "norman-1_0_0",
+        "norman-1_0_1": "norman-1_0_1",
+        "norman-1_0_2": "norman-1_0_2",
+        "norman-2_0_0": "norman-2_0_0",
+        "norman-2_1_0": "norman-2_1_0",
+        "norman-2_1_1": "norman-2_1_1",
+        "norman-2_1_2": "norman-2_1_2",
+        "norman-2_1_3": "norman-2_1_3",
+        "norman-2_1_4": "norman-2_1_4",
+        "norman-2_1_5": "norman-2_1_5",
+        "norman-2_1_7": "norman-2_1_7",
+        "norman-develop": "norman-develop",
+        "norman-master": "norman-master"
+      }
+    },
+    "src-norman-1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584018420,
+        "narHash": "sha256-ULs85+VMOZUhC7AsGDM+D8dHpeDlrbJ1fgkWO+BJ5LA=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "ca221fc1071fea772e6dc7ef71cd56689516c10b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/1.0.0",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584102146,
+        "narHash": "sha256-gKpBIQLRoKv6vH+cTq5OurKDCpP9gch+yFxqtbiPMlg=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "b7caee4f4f9b4f0cb8073d505819d2f0c9406aa9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/1.0.1",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584128943,
+        "narHash": "sha256-M/4oZPOkxyiZS5dqhBbpNrdiJcicpRQTL+UEqkPsRKI=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "d8b525c9a61ad5744c428922b5f31e2515432561",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/1.0.2",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595707320,
+        "narHash": "sha256-iwwowHtq89vhJmhAvGU53KlyH+DcFkw1DzRJpt3pIic=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "0e4373eea55bbf1201bac633fd1b4b79a20251ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.0.0",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596458942,
+        "narHash": "sha256-x8JbsU0nOiEro7tf2WM8rJ8W1JoENzy7CfbkYiK8bK0=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "0075562d94a84c4883e85b2c14b563db6fab26cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.1.0",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596537284,
+        "narHash": "sha256-D5KlqWE1AC64QiHJptTe8MtZ3MnjQIy5UAm10ZdYP3k=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "4ebd3643c7d713f1e591254b4c1421dcb362ac13",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.1.1",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596537597,
+        "narHash": "sha256-eF6zHdfEOT2yce3ZUhpCKWJKeak0QLaJnZLYWdQpQWk=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "a59de656f9d27dd10b3c90ab07a163ac14fc52f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.1.2",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596568454,
+        "narHash": "sha256-Q9WM2mKOpMAKi2RkU7dXKN1g3aU2oSRNjbB93qt6vXQ=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "988293e02be40f8f6f5e46f98ab715d1c76edd16",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.1.3",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596574746,
+        "narHash": "sha256-zPjOzQN9fkV4gMoqpUpFufjZJAuiCe2pFvbVaaPCcM8=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "292c1dc63761fb125b92da531748e92fc6d06c7f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.1.4",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596578230,
+        "narHash": "sha256-qnLcznp18iV2kyGVIEgzwFImjn0Bk+zmLRlmjOc4O8Y=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "2213f002c71b40cd12d39de0e9ab7f991f065a30",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.1.5",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-2_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605728881,
+        "narHash": "sha256-t80x+4fMiM7tyQPl9YlYz4pA3uz5EYnRik/AWqm9Dy8=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "10d32a5efdb59875921db5fc1eed078ff71c96a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/tags/2.1.7",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606164945,
+        "narHash": "sha256-I6gpv6rt1PcbOvXZA1yDsvjGKovk3aEBGG+NZQk6HAo=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "6ffa848eb1408efcae6533a480c2dbd4c34be3d4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/heads/develop",
+        "repo": "norman",
+        "type": "github"
+      }
+    },
+    "src-norman-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605728881,
+        "narHash": "sha256-t80x+4fMiM7tyQPl9YlYz4pA3uz5EYnRik/AWqm9Dy8=",
+        "owner": "moigagoo",
+        "repo": "norman",
+        "rev": "10d32a5efdb59875921db5fc1eed078ff71c96a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moigagoo",
+        "ref": "refs/heads/master",
+        "repo": "norman",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,989 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_1_1": "src-jupyternim-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_2_0": "src-jupyternim-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_4_1": "src-jupyternim-0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_4_2": "src-jupyternim-0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_0": "src-jupyternim-0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_1": "src-jupyternim-0_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_2": "src-jupyternim-0_5_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_3": "src-jupyternim-0_5_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_4": "src-jupyternim-0_5_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_5": "src-jupyternim-0_5_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_7": "src-jupyternim-0_5_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_5_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_5_8": "src-jupyternim-0_5_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_5_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_5_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_6_0": "src-jupyternim-0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_6_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_6_1": "src-jupyternim-0_6_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_6_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_6_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_6_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_6_2": "src-jupyternim-0_6_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_6_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_6_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_6_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_6_3": "src-jupyternim-0_6_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_6_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_6_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-0_7_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-0_7_0": "src-jupyternim-0_7_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/0_7_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/0_7_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-master": "src-jupyternim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-v0_3_0": "src-jupyternim-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-v0_4_0": "src-jupyternim-v0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/v0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/v0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jupyternim-v0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jupyternim-v0_4_1": "src-jupyternim-v0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jupyternim/v0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jupyternim/v0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jupyternim-0_1_1": "jupyternim-0_1_1",
+        "jupyternim-0_2_0": "jupyternim-0_2_0",
+        "jupyternim-0_4_1": "jupyternim-0_4_1",
+        "jupyternim-0_4_2": "jupyternim-0_4_2",
+        "jupyternim-0_5_0": "jupyternim-0_5_0",
+        "jupyternim-0_5_1": "jupyternim-0_5_1",
+        "jupyternim-0_5_2": "jupyternim-0_5_2",
+        "jupyternim-0_5_3": "jupyternim-0_5_3",
+        "jupyternim-0_5_4": "jupyternim-0_5_4",
+        "jupyternim-0_5_5": "jupyternim-0_5_5",
+        "jupyternim-0_5_7": "jupyternim-0_5_7",
+        "jupyternim-0_5_8": "jupyternim-0_5_8",
+        "jupyternim-0_6_0": "jupyternim-0_6_0",
+        "jupyternim-0_6_1": "jupyternim-0_6_1",
+        "jupyternim-0_6_2": "jupyternim-0_6_2",
+        "jupyternim-0_6_3": "jupyternim-0_6_3",
+        "jupyternim-0_7_0": "jupyternim-0_7_0",
+        "jupyternim-master": "jupyternim-master",
+        "jupyternim-v0_3_0": "jupyternim-v0_3_0",
+        "jupyternim-v0_4_0": "jupyternim-v0_4_0",
+        "jupyternim-v0_4_1": "jupyternim-v0_4_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jupyternim-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1518309496,
+        "narHash": "sha256-RTmEAdU1CM659gudXy2xGhpYguWngxz0I0zogJ1LNc8=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "554eb2110926fafe73cc529b679a0b57a6acfe8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.1.1",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582662438,
+        "narHash": "sha256-krZJBK4L9dgPAK2wyR9JCrHAnkCWwVFZMFdRUdHEfaQ=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "bb8672fd2a1cf8fe591506d8fb0861a11b4c16a9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.2.0",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596022759,
+        "narHash": "sha256-kWha0eby5XGDOozMMfOhjlNU5Id1JCvMjNi8k7n4mHM=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "81d91690b1adc2e5512fd1ef90606934d96763bc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.4.1",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596026006,
+        "narHash": "sha256-CCDEN0tsHCvjSwPO7SjwmtdJjsolEaDJbuEQ7ig1u3w=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "c5cadaa47cf67038abfc753b8f2fb6dfdf8ccbe8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.4.2",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596182600,
+        "narHash": "sha256-JGE2cYqstqb2Owu7gUDsrIoia/FdSKoyypWUf4abfro=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "8ec098114ece4f537a35ef3d9ba91dd6bd05af5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.0",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596693152,
+        "narHash": "sha256-FhJSmsm+g8Q9DPIyQM94RW8fXzGRZnRDzVmCYgUM1Po=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "e26dfc627e1d1d1205b30dd51a3b81d96e943f5f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.1",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596804965,
+        "narHash": "sha256-OJsS8fxqfJ++dWBTQU/yQ/aZgsPT3qScbUFYxph1cLI=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "f6ca32bcc7584b54273adca9c9b0cdef97f5d423",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.2",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596807595,
+        "narHash": "sha256-ra57ZYF8mIKem+/N+Rl7aMS59UEeqql2nsrkCxBD7vc=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "9a214274a5fe89b8798445419c5b9acc29e39986",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.3",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596847964,
+        "narHash": "sha256-xaKbqmdUqTXiA7mcczMJHcPlchFzMPJv+x77t+q+AZk=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "c6044f8a3d4bd1d138644d0e6029ee2905668b19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.4",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596894763,
+        "narHash": "sha256-kOKI//OwR/EkYqm0j2mGLR+faCXDRz9eFyRkqvOxnpo=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "75a1c1af8930913832055031ac53ece3747669d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.5",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596906636,
+        "narHash": "sha256-2Y8vUwtEgqWwTAkLigQE8AMj11Sm6Uly+usxWM6Yvgg=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "fb1bdfeedc9b81720dc3faeb8a1c865a3d4f05d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.7",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_5_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597132260,
+        "narHash": "sha256-ualf5zBG+POMI27TQ+rA2SVw8XpQohFDn80dwsaVeAQ=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "e3933ce5510de6b38fe283c92f01b201b8bfcc1b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.5.8",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600325838,
+        "narHash": "sha256-VqYcJIuJSL2yJ+ulXjqDl2I/gkm58wXIvlEg89lUkJ0=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "ecbe2c2b93f707612ec1fe3fef1571c1dfbb0d11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.6.0",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_6_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600694926,
+        "narHash": "sha256-K7B8w/dHzhlF1DlzDDIXtneSg/EBgQHIAYm4ykhzaXM=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "d56245989b0859d8893cbe8d7ce9233edf573483",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.6.1",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_6_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622289326,
+        "narHash": "sha256-shICEdxhAITaJl3CCxr2OVblzVdtCiWhWspG+4JNhFw=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "4b7ede109fdfd25a49e813a103e6ec68fd1784f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.6.2",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_6_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635460522,
+        "narHash": "sha256-co07VB+1Gz2omfK3awASneQiqoPTazrszVaG6qji0Rg=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "a7fcfef931c8cd60212e852930747823e390e67f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.6.3",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638712738,
+        "narHash": "sha256-/kjK6hoyVElZAWMFsqO7NyQAsL35IV1HI586c2z5WN8=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "d24a22943ce44afc8ca2a36d98d7a93e9a17d244",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/0.7.0",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639989125,
+        "narHash": "sha256-e5KqPcd9G/U8liN70amTbIbfXGxFkmvy9HvxYoqYMcU=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "400ec5d7bb7618826f084b1a92a84deb3abfa72d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/heads/master",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592343552,
+        "narHash": "sha256-pP1UvScbMEbq5aA8jX2tXa750tX1AsdBD9pIMAElX+4=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "823eeb2d30f8b8dd105dca4817790188a572476a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592668855,
+        "narHash": "sha256-KE1bjt2NCB7kBYy1C9JlEs8ZVuspGa5F/Q8UddxVtXA=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "1bb84477c86946e5646a7745d0d5537f06f60b60",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    },
+    "src-jupyternim-v0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594646020,
+        "narHash": "sha256-KpTK9SO1GVLk1TgCQpp4Le6Re7lotl4pXUyKe+Vqslw=",
+        "owner": "stisa",
+        "repo": "jupyternim",
+        "rev": "6c32b954dd9219f9919b7981954c3d0aa1544d3a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/tags/v0.4.1",
+        "repo": "jupyternim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

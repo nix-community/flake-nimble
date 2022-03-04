@@ -1,0 +1,314 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimssl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimssl-master": "src-nimssl-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimssl/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimssl/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimssl-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimssl-v0_1_0": "src-nimssl-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimssl/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimssl/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimssl-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimssl-v0_1_2": "src-nimssl-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimssl/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimssl/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimssl-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimssl-v0_1_3": "src-nimssl-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimssl/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimssl/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimssl-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimssl-v0_1_4": "src-nimssl-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimssl/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimssl/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimssl-v0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimssl-v0_1_5": "src-nimssl-v0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimssl/v0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimssl/v0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimssl-master": "nimssl-master",
+        "nimssl-v0_1_0": "nimssl-v0_1_0",
+        "nimssl-v0_1_2": "nimssl-v0_1_2",
+        "nimssl-v0_1_3": "nimssl-v0_1_3",
+        "nimssl-v0_1_4": "nimssl-v0_1_4",
+        "nimssl-v0_1_5": "nimssl-v0_1_5",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimssl-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577316134,
+        "narHash": "sha256-xs4sUkGJ9yptqNjF+STQ16xQZ0ApL09T79smPMVVWwY=",
+        "owner": "genotrance",
+        "repo": "nimssl",
+        "rev": "893ae26213621c7aa9dceedc3336a2f710ea6d8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/heads/master",
+        "repo": "nimssl",
+        "type": "github"
+      }
+    },
+    "src-nimssl-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1510612808,
+        "narHash": "sha256-3E00SfFMgWMVen+hUWJYiIIyULOXgkBNP+0kK0m1TGM=",
+        "owner": "genotrance",
+        "repo": "nimssl",
+        "rev": "e91895551b4ad2ec1d84ee57fcaa73214d31377c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nimssl",
+        "type": "github"
+      }
+    },
+    "src-nimssl-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1520808657,
+        "narHash": "sha256-1goFMzFpF8B5gxVdN35rVVN36ddmX+AZ1OplopTD2nc=",
+        "owner": "genotrance",
+        "repo": "nimssl",
+        "rev": "13b6f7e3dcc2fb9d99207c1bf25ac2808b464b61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "nimssl",
+        "type": "github"
+      }
+    },
+    "src-nimssl-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541116151,
+        "narHash": "sha256-sPEN8CLM1PR9lWP3tcVNqV0+HVp/rsp80UwrIM0/8v0=",
+        "owner": "genotrance",
+        "repo": "nimssl",
+        "rev": "16e3ffade619b164af57260779aa11bff40ab4dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "nimssl",
+        "type": "github"
+      }
+    },
+    "src-nimssl-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1544199703,
+        "narHash": "sha256-jqMi++VMwjE03rLKunTqdYSD/3ZKSV6oVHDKis4iVG0=",
+        "owner": "genotrance",
+        "repo": "nimssl",
+        "rev": "84dd727e741394a32859fba3bb22d4d63fafcd53",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "nimssl",
+        "type": "github"
+      }
+    },
+    "src-nimssl-v0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1563301109,
+        "narHash": "sha256-3kt7sAOgVddsDgAc53k84CGnQb++5W7AkCkLByVbt9o=",
+        "owner": "genotrance",
+        "repo": "nimssl",
+        "rev": "951008ec93d351b15023a5301a15402363348fa5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.5",
+        "repo": "nimssl",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

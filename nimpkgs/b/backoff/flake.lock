@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "backoff-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-backoff-master": "src-backoff-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/backoff/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/backoff/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "backoff-v0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-backoff-v0_1": "src-backoff-v0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/backoff/v0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/backoff/v0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "backoff-master": "backoff-master",
+        "backoff-v0_1": "backoff-v0_1",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-backoff-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644119493,
+        "narHash": "sha256-jpANyxUe37jqcr/MdPn99ERWqiG9jCjs8fffJPyHeYI=",
+        "owner": "CORDEA",
+        "repo": "backoff",
+        "rev": "cf567b616d9af81fe712ca408928a2ccf7d9538f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "CORDEA",
+        "ref": "refs/heads/master",
+        "repo": "backoff",
+        "type": "github"
+      }
+    },
+    "src-backoff-v0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1542523040,
+        "narHash": "sha256-iV7Uw5JUI4aRMDK6Cl01Npjr9jUrW/v3QsUz3M02SYw=",
+        "owner": "CORDEA",
+        "repo": "backoff",
+        "rev": "e1705de060f8c5f3ccd4d0621192ddda37175913",
+        "type": "github"
+      },
+      "original": {
+        "owner": "CORDEA",
+        "ref": "refs/tags/v0.1",
+        "repo": "backoff",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "macroplus-0_1_17": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-macroplus-0_1_17": "src-macroplus-0_1_17"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/macroplus/0_1_17",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/macroplus/0_1_17",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "macroplus-0_1_20": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-macroplus-0_1_20": "src-macroplus-0_1_20"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/macroplus/0_1_20",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/macroplus/0_1_20",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "macroplus-0_1_22": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-macroplus-0_1_22": "src-macroplus-0_1_22"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/macroplus/0_1_22",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/macroplus/0_1_22",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "macroplus-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-macroplus-main": "src-macroplus-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/macroplus/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/macroplus/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "macroplus-0_1_17": "macroplus-0_1_17",
+        "macroplus-0_1_20": "macroplus-0_1_20",
+        "macroplus-0_1_22": "macroplus-0_1_22",
+        "macroplus-main": "macroplus-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-macroplus-0_1_17": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643874874,
+        "narHash": "sha256-JIRXhomAlqUOXuce7BGxrAqp69pK6+nE+bsz0zX8x2g=",
+        "owner": "hamidb80",
+        "repo": "macroplus",
+        "rev": "155019ff60e185693f09c8f14a90730a0a51c68c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/tags/0.1.17",
+        "repo": "macroplus",
+        "type": "github"
+      }
+    },
+    "src-macroplus-0_1_20": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644838991,
+        "narHash": "sha256-ytqpKi2V+EWKNWPrVLYcrrJQ/nG0+5ls/BngUrb5npw=",
+        "owner": "hamidb80",
+        "repo": "macroplus",
+        "rev": "8dc6f921b44becebe7701915703691832e534798",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/tags/0.1.20",
+        "repo": "macroplus",
+        "type": "github"
+      }
+    },
+    "src-macroplus-0_1_22": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645813417,
+        "narHash": "sha256-3eKtql850ml11kg+QL1C1ul1KXr04LyEPCFXcPwEwRk=",
+        "owner": "hamidb80",
+        "repo": "macroplus",
+        "rev": "598228408ab9273286e358cdbd1bc436988d8fad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/tags/0.1.22",
+        "repo": "macroplus",
+        "type": "github"
+      }
+    },
+    "src-macroplus-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645813417,
+        "narHash": "sha256-3eKtql850ml11kg+QL1C1ul1KXr04LyEPCFXcPwEwRk=",
+        "owner": "hamidb80",
+        "repo": "macroplus",
+        "rev": "598228408ab9273286e358cdbd1bc436988d8fad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/heads/main",
+        "repo": "macroplus",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

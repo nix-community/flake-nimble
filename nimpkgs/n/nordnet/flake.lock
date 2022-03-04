@@ -1,0 +1,404 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nordnet-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-master": "src-nordnet-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nordnet-v0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-v0_0_1": "src-nordnet-v0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/v0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/v0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nordnet-v0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-v0_0_2": "src-nordnet-v0_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/v0_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/v0_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nordnet-v0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-v0_0_3": "src-nordnet-v0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/v0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/v0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nordnet-v0_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-v0_0_4": "src-nordnet-v0_0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/v0_0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/v0_0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nordnet-v0_0_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-v0_0_5": "src-nordnet-v0_0_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/v0_0_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/v0_0_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nordnet-v0_0_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-v0_0_6": "src-nordnet-v0_0_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/v0_0_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/v0_0_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nordnet-v0_0_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordnet-v0_0_7": "src-nordnet-v0_0_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nordnet/v0_0_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nordnet/v0_0_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nordnet-master": "nordnet-master",
+        "nordnet-v0_0_1": "nordnet-v0_0_1",
+        "nordnet-v0_0_2": "nordnet-v0_0_2",
+        "nordnet-v0_0_3": "nordnet-v0_0_3",
+        "nordnet-v0_0_4": "nordnet-v0_0_4",
+        "nordnet-v0_0_5": "nordnet-v0_0_5",
+        "nordnet-v0_0_6": "nordnet-v0_0_6",
+        "nordnet-v0_0_7": "nordnet-v0_0_7"
+      }
+    },
+    "src-nordnet-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587493281,
+        "narHash": "sha256-TyFF11HLYB2/Pfr+wVG0K4ygSjn8ZIMb24zTlqygk0Y=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "3c08ae09939082b2a00c31ca8b4f1d8de544338a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/heads/master",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    },
+    "src-nordnet-v0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584779045,
+        "narHash": "sha256-/5P5p37AoN+S3K2CnqepPBuhFcs+wX3CemDHObfeZdM=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "424b1748a7d3e2d6beb3919797774326abad1144",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.0.1",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    },
+    "src-nordnet-v0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587139294,
+        "narHash": "sha256-W+v27i56ptUfv/keq0Ol7ILdJj3Xu+FeI/gTqBsraqQ=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "27375f41ab48fef2bd69014842500efb8c8e3844",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.0.2",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    },
+    "src-nordnet-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587225558,
+        "narHash": "sha256-/TBvZgGY+ly9D5v4649UN87ix8a+buPKArTX8KvWBFQ=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "157e379bac7bae0d8832714bce28e467dc153208",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    },
+    "src-nordnet-v0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587229867,
+        "narHash": "sha256-CCi/8ADrZnMuDmqqf3zEvh+n3iFfbzArZIVaJE45z2Y=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "d35237e1d6f8e6d475848e01d62b9367b7157a22",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.0.4",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    },
+    "src-nordnet-v0_0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587231818,
+        "narHash": "sha256-+XPit87LsKtnKRDFrzu+55ygTKbuIz03Ve52b24sxkg=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "e9b496b69fbb1ef1f5f3d0db958548db84d8cbb3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.0.5",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    },
+    "src-nordnet-v0_0_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587412100,
+        "narHash": "sha256-F0gapz6wXapJbaQ8HsAXaRaGJSA8uPA50f0NUeYr3WQ=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "10b95f90911d5a407c34a7a1c74e463b96a0fd48",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.0.6",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    },
+    "src-nordnet-v0_0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587493281,
+        "narHash": "sha256-TyFF11HLYB2/Pfr+wVG0K4ygSjn8ZIMb24zTlqygk0Y=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_nordnet_api",
+        "rev": "3c08ae09939082b2a00c31ca8b4f1d8de544338a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.0.7",
+        "repo": "nim_nordnet_api",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

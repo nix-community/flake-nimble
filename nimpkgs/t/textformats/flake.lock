@@ -1,0 +1,314 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "textformats-1_2_0": "textformats-1_2_0",
+        "textformats-main": "textformats-main",
+        "textformats-v1_0_0": "textformats-v1_0_0",
+        "textformats-v1_1_0": "textformats-v1_1_0",
+        "textformats-v1_2_1": "textformats-v1_2_1",
+        "textformats-v1_2_2": "textformats-v1_2_2"
+      }
+    },
+    "src-textformats-1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644750390,
+        "narHash": "sha256-m6ZW/6277wNAoNnSc1nycRw3LE6MhODHAJWnQAR0fvo=",
+        "owner": "ggonnella",
+        "repo": "textformats",
+        "rev": "8c19af7bf81935a9f6b649721478dafef85109df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggonnella",
+        "ref": "refs/tags/1.2.0",
+        "repo": "textformats",
+        "type": "github"
+      }
+    },
+    "src-textformats-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645101900,
+        "narHash": "sha256-GnV1DbHymJouwwIih5vwStsD7Kc/FzYEoP+sgoMzoEE=",
+        "owner": "ggonnella",
+        "repo": "textformats",
+        "rev": "341798a71d6bfd43b9b604faba0554c0f52375f2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggonnella",
+        "ref": "refs/heads/main",
+        "repo": "textformats",
+        "type": "github"
+      }
+    },
+    "src-textformats-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636561227,
+        "narHash": "sha256-BfFXkSHAlvo9gwVSTnQRSAG4XP5Fejz69YtuRT7h80U=",
+        "owner": "ggonnella",
+        "repo": "textformats",
+        "rev": "2e0c4ae6e28fffc68115639748ae30d1ad85db44",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggonnella",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "textformats",
+        "type": "github"
+      }
+    },
+    "src-textformats-v1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636737694,
+        "narHash": "sha256-MlXSOmTFGP4rnOtzQ4vouzv4ifvEbwCwcjHnkRzN/yc=",
+        "owner": "ggonnella",
+        "repo": "textformats",
+        "rev": "8df0873b514ec203cb7c43862f48ee03662803b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggonnella",
+        "ref": "refs/tags/v1.1.0",
+        "repo": "textformats",
+        "type": "github"
+      }
+    },
+    "src-textformats-v1_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644958484,
+        "narHash": "sha256-dsd1j9JN+pTt3cXoyUPuBHwuQ9ejmGpGCmuG9EiWLlA=",
+        "owner": "ggonnella",
+        "repo": "textformats",
+        "rev": "a1e46aa52b5ad67e1884642491e5db684e33babc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggonnella",
+        "ref": "refs/tags/v1.2.1",
+        "repo": "textformats",
+        "type": "github"
+      }
+    },
+    "src-textformats-v1_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645101900,
+        "narHash": "sha256-GnV1DbHymJouwwIih5vwStsD7Kc/FzYEoP+sgoMzoEE=",
+        "owner": "ggonnella",
+        "repo": "textformats",
+        "rev": "341798a71d6bfd43b9b604faba0554c0f52375f2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggonnella",
+        "ref": "refs/tags/v1.2.2",
+        "repo": "textformats",
+        "type": "github"
+      }
+    },
+    "textformats-1_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-textformats-1_2_0": "src-textformats-1_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/textformats/1_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/textformats/1_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "textformats-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-textformats-main": "src-textformats-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/textformats/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/textformats/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "textformats-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-textformats-v1_0_0": "src-textformats-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/textformats/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/textformats/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "textformats-v1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-textformats-v1_1_0": "src-textformats-v1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/textformats/v1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/textformats/v1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "textformats-v1_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-textformats-v1_2_1": "src-textformats-v1_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/textformats/v1_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/textformats/v1_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "textformats-v1_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-textformats-v1_2_2": "src-textformats-v1_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/textformats/v1_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/textformats/v1_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

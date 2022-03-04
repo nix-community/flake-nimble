@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "winregistry-master": "winregistry-master",
+        "winregistry-v0_1_7": "winregistry-v0_1_7",
+        "winregistry-v0_1_8": "winregistry-v0_1_8",
+        "winregistry-v0_2_0": "winregistry-v0_2_0",
+        "winregistry-v0_2_1": "winregistry-v0_2_1"
+      }
+    },
+    "src-winregistry-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562956985,
+        "narHash": "sha256-slGfoHVR5cDIJdj+kFKJwqcclYkT9lqhatsa0U51E/M=",
+        "owner": "miere43",
+        "repo": "nim-registry",
+        "rev": "43da083bbc19099bcfa95d024d5cc9e64109c4ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "miere43",
+        "ref": "refs/heads/master",
+        "repo": "nim-registry",
+        "type": "github"
+      }
+    },
+    "src-winregistry-v0_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1486635935,
+        "narHash": "sha256-Mifn/BRK4HL6kGCCF66ytHA8AHFNLRtISnR/ciEKdk0=",
+        "owner": "miere43",
+        "repo": "nim-registry",
+        "rev": "91ae11214910b231d2c5d764bd8c1e6cd6d3d1d6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "miere43",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim-registry",
+        "type": "github"
+      }
+    },
+    "src-winregistry-v0_1_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487093003,
+        "narHash": "sha256-CaSq31l9+4SPCrxJbqDkF/CX9kNnq83g0NlbD453wSA=",
+        "owner": "miere43",
+        "repo": "nim-registry",
+        "rev": "16d1b5d855d859db5a7f79b5027a4599524edb41",
+        "type": "github"
+      },
+      "original": {
+        "owner": "miere43",
+        "ref": "refs/tags/v0.1.8",
+        "repo": "nim-registry",
+        "type": "github"
+      }
+    },
+    "src-winregistry-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543738718,
+        "narHash": "sha256-xoHjC+rz4Lc0vqXFnCW7YPwD0K/oDEYql9KcJAF0p1g=",
+        "owner": "miere43",
+        "repo": "nim-registry",
+        "rev": "cf3d95a36130d9837f6273216a410200d3d87e6f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "miere43",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "nim-registry",
+        "type": "github"
+      }
+    },
+    "src-winregistry-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562956985,
+        "narHash": "sha256-slGfoHVR5cDIJdj+kFKJwqcclYkT9lqhatsa0U51E/M=",
+        "owner": "miere43",
+        "repo": "nim-registry",
+        "rev": "43da083bbc19099bcfa95d024d5cc9e64109c4ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "miere43",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "nim-registry",
+        "type": "github"
+      }
+    },
+    "winregistry-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-winregistry-master": "src-winregistry-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/winregistry/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/winregistry/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "winregistry-v0_1_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-winregistry-v0_1_7": "src-winregistry-v0_1_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/winregistry/v0_1_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/winregistry/v0_1_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "winregistry-v0_1_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-winregistry-v0_1_8": "src-winregistry-v0_1_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/winregistry/v0_1_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/winregistry/v0_1_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "winregistry-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-winregistry-v0_2_0": "src-winregistry-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/winregistry/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/winregistry/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "winregistry-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-winregistry-v0_2_1": "src-winregistry-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/winregistry/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/winregistry/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

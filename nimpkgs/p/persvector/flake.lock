@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "persvector-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-persvector-master": "src-persvector-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/persvector/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/persvector/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "persvector-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-persvector-v1_0_0": "src-persvector-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/persvector/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/persvector/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "persvector-master": "persvector-master",
+        "persvector-v1_0_0": "persvector-v1_0_0"
+      }
+    },
+    "src-persvector-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572962395,
+        "narHash": "sha256-VQH+XqiYxqD2k9DF/WT6GyOTlNEyqbIM/ldt2DdAn74=",
+        "owner": "PMunch",
+        "repo": "nim-persistent-vector",
+        "rev": "3f92a26aced63c4d443f62a31402329a1c18d22e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "nim-persistent-vector",
+        "type": "github"
+      }
+    },
+    "src-persvector-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572962395,
+        "narHash": "sha256-VQH+XqiYxqD2k9DF/WT6GyOTlNEyqbIM/ldt2DdAn74=",
+        "owner": "PMunch",
+        "repo": "nim-persistent-vector",
+        "rev": "3f92a26aced63c4d443f62a31402329a1c18d22e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "nim-persistent-vector",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

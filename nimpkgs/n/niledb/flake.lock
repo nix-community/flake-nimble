@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "niledb-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-niledb-master": "src-niledb-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/niledb/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/niledb/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "niledb-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-niledb-v1_0_0": "src-niledb-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/niledb/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/niledb/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "niledb-v1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-niledb-v1_1_0": "src-niledb-v1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/niledb/v1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/niledb/v1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "niledb-v1_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-niledb-v1_3_0": "src-niledb-v1_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/niledb/v1_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/niledb/v1_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "niledb-v1_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-niledb-v1_3_1": "src-niledb-v1_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/niledb/v1_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/niledb/v1_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "niledb-master": "niledb-master",
+        "niledb-v1_0_0": "niledb-v1_0_0",
+        "niledb-v1_1_0": "niledb-v1_1_0",
+        "niledb-v1_3_0": "niledb-v1_3_0",
+        "niledb-v1_3_1": "niledb-v1_3_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-niledb-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609368470,
+        "narHash": "sha256-QzCPdjvGax6r8W2s2NAM3W9fk0lOfErVukKw0rxldnc=",
+        "owner": "JeffersonLab",
+        "repo": "niledb",
+        "rev": "03f683dc257aa5fa7accece7910d80541b2dde29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/heads/master",
+        "repo": "niledb",
+        "type": "github"
+      }
+    },
+    "src-niledb-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506714075,
+        "narHash": "sha256-fvKe1lVmOtr9Lkb0/k+kbboNn8mXlOytyT6T+8Wqe/U=",
+        "owner": "JeffersonLab",
+        "repo": "niledb",
+        "rev": "6feacf1a5e48cdc34caac6a4c2c6e88a398eeb9e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "niledb",
+        "type": "github"
+      }
+    },
+    "src-niledb-v1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537979015,
+        "narHash": "sha256-HYi1Ai/3qWtukhsKKETSDS5t4N6jemxvO3Fh9yNupns=",
+        "owner": "JeffersonLab",
+        "repo": "niledb",
+        "rev": "b900f141ee8112014648deaaffe2f1042784284a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.1.0",
+        "repo": "niledb",
+        "type": "github"
+      }
+    },
+    "src-niledb-v1_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608700448,
+        "narHash": "sha256-oB+26Irc1XPYVrQYI8cREfAEXGUw4UMq7pSLN+ZuFq4=",
+        "owner": "JeffersonLab",
+        "repo": "niledb",
+        "rev": "b52a80674def188dcde2e559890b310514f5dd51",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.3.0",
+        "repo": "niledb",
+        "type": "github"
+      }
+    },
+    "src-niledb-v1_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609368470,
+        "narHash": "sha256-QzCPdjvGax6r8W2s2NAM3W9fk0lOfErVukKw0rxldnc=",
+        "owner": "JeffersonLab",
+        "repo": "niledb",
+        "rev": "03f683dc257aa5fa7accece7910d80541b2dde29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JeffersonLab",
+        "ref": "refs/tags/v1.3.1",
+        "repo": "niledb",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

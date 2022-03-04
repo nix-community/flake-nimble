@@ -1,0 +1,3014 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "godot-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-master": "src-godot-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_1_0": "src-godot-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_1_1": "src-godot-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_2_0": "src-godot-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_2_1": "src-godot-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_2_2": "src-godot-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_2_3": "src-godot-v0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_2_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_2_4": "src-godot-v0_2_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_2_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_2_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_3_0": "src-godot-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_4_0": "src-godot-v0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_4_1": "src-godot-v0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_0": "src-godot-v0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_1": "src-godot-v0_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_10": "src-godot-v0_5_10"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_10",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_10",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_2": "src-godot-v0_5_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_3": "src-godot-v0_5_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_4": "src-godot-v0_5_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_5": "src-godot-v0_5_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_6": "src-godot-v0_5_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_7": "src-godot-v0_5_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_8": "src-godot-v0_5_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_5_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_5_9": "src-godot-v0_5_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_5_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_5_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_0": "src-godot-v0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_1": "src-godot-v0_6_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_10": "src-godot-v0_6_10"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_10",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_10",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_11": "src-godot-v0_6_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_2": "src-godot-v0_6_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_3": "src-godot-v0_6_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_4": "src-godot-v0_6_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_5": "src-godot-v0_6_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_8": "src-godot-v0_6_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_6_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_6_9": "src-godot-v0_6_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_6_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_6_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_0": "src-godot-v0_7_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_1": "src-godot-v0_7_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_10": "src-godot-v0_7_10"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_10",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_10",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_11": "src-godot-v0_7_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_12": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_12": "src-godot-v0_7_12"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_12",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_12",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_13": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_13": "src-godot-v0_7_13"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_13",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_13",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_14": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_14": "src-godot-v0_7_14"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_14",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_14",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_15": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_15": "src-godot-v0_7_15"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_15",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_15",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_16": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_16": "src-godot-v0_7_16"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_16",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_16",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_17": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_17": "src-godot-v0_7_17"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_17",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_17",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_19": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_19": "src-godot-v0_7_19"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_19",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_19",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_2": "src-godot-v0_7_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_20": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_20": "src-godot-v0_7_20"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_20",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_20",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_21": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_21": "src-godot-v0_7_21"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_21",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_21",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_22": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_22": "src-godot-v0_7_22"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_22",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_22",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_23": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_23": "src-godot-v0_7_23"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_23",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_23",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_24": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_24": "src-godot-v0_7_24"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_24",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_24",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_25": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_25": "src-godot-v0_7_25"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_25",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_25",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_26": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_26": "src-godot-v0_7_26"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_26",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_26",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_27": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_27": "src-godot-v0_7_27"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_27",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_27",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_28": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_28": "src-godot-v0_7_28"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_28",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_28",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_3": "src-godot-v0_7_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_4": "src-godot-v0_7_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_5": "src-godot-v0_7_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_6": "src-godot-v0_7_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_7": "src-godot-v0_7_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_8": "src-godot-v0_7_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_7_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_7_9": "src-godot-v0_7_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_7_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_7_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_8_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_8_0": "src-godot-v0_8_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_8_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_8_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_8_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_8_1": "src-godot-v0_8_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_8_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_8_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_8_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_8_2": "src-godot-v0_8_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_8_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_8_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_8_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_8_3": "src-godot-v0_8_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_8_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_8_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_8_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_8_4": "src-godot-v0_8_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_8_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_8_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "godot-v0_8_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-godot-v0_8_5": "src-godot-v0_8_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/godot/v0_8_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/godot/v0_8_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "godot-master": "godot-master",
+        "godot-v0_1_0": "godot-v0_1_0",
+        "godot-v0_1_1": "godot-v0_1_1",
+        "godot-v0_2_0": "godot-v0_2_0",
+        "godot-v0_2_1": "godot-v0_2_1",
+        "godot-v0_2_2": "godot-v0_2_2",
+        "godot-v0_2_3": "godot-v0_2_3",
+        "godot-v0_2_4": "godot-v0_2_4",
+        "godot-v0_3_0": "godot-v0_3_0",
+        "godot-v0_4_0": "godot-v0_4_0",
+        "godot-v0_4_1": "godot-v0_4_1",
+        "godot-v0_5_0": "godot-v0_5_0",
+        "godot-v0_5_1": "godot-v0_5_1",
+        "godot-v0_5_10": "godot-v0_5_10",
+        "godot-v0_5_2": "godot-v0_5_2",
+        "godot-v0_5_3": "godot-v0_5_3",
+        "godot-v0_5_4": "godot-v0_5_4",
+        "godot-v0_5_5": "godot-v0_5_5",
+        "godot-v0_5_6": "godot-v0_5_6",
+        "godot-v0_5_7": "godot-v0_5_7",
+        "godot-v0_5_8": "godot-v0_5_8",
+        "godot-v0_5_9": "godot-v0_5_9",
+        "godot-v0_6_0": "godot-v0_6_0",
+        "godot-v0_6_1": "godot-v0_6_1",
+        "godot-v0_6_10": "godot-v0_6_10",
+        "godot-v0_6_11": "godot-v0_6_11",
+        "godot-v0_6_2": "godot-v0_6_2",
+        "godot-v0_6_3": "godot-v0_6_3",
+        "godot-v0_6_4": "godot-v0_6_4",
+        "godot-v0_6_5": "godot-v0_6_5",
+        "godot-v0_6_8": "godot-v0_6_8",
+        "godot-v0_6_9": "godot-v0_6_9",
+        "godot-v0_7_0": "godot-v0_7_0",
+        "godot-v0_7_1": "godot-v0_7_1",
+        "godot-v0_7_10": "godot-v0_7_10",
+        "godot-v0_7_11": "godot-v0_7_11",
+        "godot-v0_7_12": "godot-v0_7_12",
+        "godot-v0_7_13": "godot-v0_7_13",
+        "godot-v0_7_14": "godot-v0_7_14",
+        "godot-v0_7_15": "godot-v0_7_15",
+        "godot-v0_7_16": "godot-v0_7_16",
+        "godot-v0_7_17": "godot-v0_7_17",
+        "godot-v0_7_19": "godot-v0_7_19",
+        "godot-v0_7_2": "godot-v0_7_2",
+        "godot-v0_7_20": "godot-v0_7_20",
+        "godot-v0_7_21": "godot-v0_7_21",
+        "godot-v0_7_22": "godot-v0_7_22",
+        "godot-v0_7_23": "godot-v0_7_23",
+        "godot-v0_7_24": "godot-v0_7_24",
+        "godot-v0_7_25": "godot-v0_7_25",
+        "godot-v0_7_26": "godot-v0_7_26",
+        "godot-v0_7_27": "godot-v0_7_27",
+        "godot-v0_7_28": "godot-v0_7_28",
+        "godot-v0_7_3": "godot-v0_7_3",
+        "godot-v0_7_4": "godot-v0_7_4",
+        "godot-v0_7_5": "godot-v0_7_5",
+        "godot-v0_7_6": "godot-v0_7_6",
+        "godot-v0_7_7": "godot-v0_7_7",
+        "godot-v0_7_8": "godot-v0_7_8",
+        "godot-v0_7_9": "godot-v0_7_9",
+        "godot-v0_8_0": "godot-v0_8_0",
+        "godot-v0_8_1": "godot-v0_8_1",
+        "godot-v0_8_2": "godot-v0_8_2",
+        "godot-v0_8_3": "godot-v0_8_3",
+        "godot-v0_8_4": "godot-v0_8_4",
+        "godot-v0_8_5": "godot-v0_8_5",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-godot-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640563388,
+        "narHash": "sha256-jbnF4JZbYjzCcMREsEQAqNWFNWzQB6x5iKebTKXmU3s=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "107f30ac38cf2bfb2557e47b64d3f58bd8ad9169",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/heads/master",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500622813,
+        "narHash": "sha256-jb8rr3kmdCDAGCyehmCmYhdM05tFF4TCYi2+RLu3nxo=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "daf972d722b98b40fe102ade4698e305a225be90",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500955435,
+        "narHash": "sha256-gspVQwhYLdoW7c1WobOt5MEE/gpjdlRguUHYzAkn8es=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "1e6646713f63db22fbd04c393e2d8f324066d218",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500961025,
+        "narHash": "sha256-BIeBf9HbBhEvRe8gPJSGLi3JUVn/4Dc8toKT7RI3Su4=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "b41a37681f7ad87faa11b91c4b5e54b8137618c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501002820,
+        "narHash": "sha256-y54BWHIOKeNzxHiYnqM25ylpIXnWhHU0/mbAQ+ed6f4=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "e716926207d432b6e2d55c3b1e8d03680d286a1a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501066729,
+        "narHash": "sha256-UXYoD6s4vghPIPH+8dz8Pi/NkOVq1+gNtQsFueDut4Q=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "15a527d8b4158fd247a05e276939167c444bc20a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501088805,
+        "narHash": "sha256-IkxJZdA0ig1tEe3GVrqCLE4eBpJQAwq3ukiKdUPq6jI=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "de89df71ade1a980741695003c8c57a808c53f18",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.2.3",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501149502,
+        "narHash": "sha256-7G+e8DRpfJT1YidiNJquD7YTy4RJYqZjX190mjC58o4=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "69cb8287503f4d2861e6f4ff35e0154238b4cac3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.2.4",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501258723,
+        "narHash": "sha256-P/lzDzKZ+67a3s7k4Ub10NVU5RTaxPR/7/WCU5aYqco=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "0fe948c4a1cde1111a405a78d08e569a483f8b99",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501686881,
+        "narHash": "sha256-wmQkUqINfoc8uIvMtbOnU87uC9H7soJRZksiikBNJLc=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "988b9e1f11164c92118960283ee6eff9ccd0d43e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501822975,
+        "narHash": "sha256-fTWipEMP+EnzUmd4o1N2eeUjask4mP/riDrcCvMpBzM=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "0062568dbc2952813f7a6abbeae25d755587b212",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.4.1",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502273129,
+        "narHash": "sha256-P8FB2AWXFq3tsMgQHND42w8FhgXDrdWtovaRNUuB5JI=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "53f0f230da7192e0eab0e82695508b5dc470a8cb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502429578,
+        "narHash": "sha256-yQH0sc/DfwrGRfuthfQxSOaU7NOvCWDkV86N4NpvhC4=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "6da07cada0f85615e6daf6d1b3873099f64ebac1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.1",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1505820415,
+        "narHash": "sha256-vXE22fcYI7+O9/yojC3BZYgYxso1Z87hinRNdqBydMQ=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "cf75723fa154c75204807256483ac24833b9fced",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.10",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502716928,
+        "narHash": "sha256-v0hZVAxZGrahurm8kQFveoBb7w3zDwQxxASQp3aAV7o=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "c5f6d47f3e07e236543ae70f99a2f0f6b75f949c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.2",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502768757,
+        "narHash": "sha256-R58Gu/alqzqVIpz6viNHYsg86h6N+o25DA4CbIGyMuM=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "8d49c0b9108afe1e6d00dd3c31272d96544695e3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.3",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502970084,
+        "narHash": "sha256-bcZuDy9Z4t00O3MBZ86CJpH7dqs5tr7kys0mqxLevlA=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "3349fe232175fc4856c89988536bdf7da935be6e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.4",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1503469824,
+        "narHash": "sha256-3BpDKysy/iD3OhRi39DdIEeuVyokzUqmYW/D0K9zQcM=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "7e230480488d066eebf41dc594ca363bb28fcaf1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.5",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1504513285,
+        "narHash": "sha256-V3gTdBaFDuLZGcSF92lzXNNa9TmoIIaAeg/0zodI3HA=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "e3c014a3596196ba415dbe34443b895ac5f6b36a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.6",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1504528199,
+        "narHash": "sha256-OrZliLrorhb21DOWy1AYP7Xo0fFNw6cQrQfHLKQcH3c=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "b5fd4295e63f35a3e5bc5cd60f22077d890c5a1a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.7",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1504531714,
+        "narHash": "sha256-AiCeG5iEvUjJhVH0Ba0bwRLLpTvs88Y4FSjL4tMMRdk=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "ee53768c13feed2cdb279f8b518493da7ec7cf67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.8",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_5_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1505362263,
+        "narHash": "sha256-bEU2CNHA/N34VHe21QaOET016WTFTHMVOWwCepgQBns=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "178192651f08f26610b71caf33d2d674fb4ff67f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.5.9",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1507204551,
+        "narHash": "sha256-WtG8IGsq00hby/T8kYrO+Vb+f6s3ufWu+ZbS9WphKmE=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "54d962afd4e7dd7273c3ca917ef716838338aaff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1507535248,
+        "narHash": "sha256-9yKu7FYU+K7II2+q0ygcLeX+k/e4pv9V+TkPCOAV6/I=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "f5abff05e6383cbbfdecd144303e05be58941561",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.1",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1513579681,
+        "narHash": "sha256-h8mS6Id2e+oSN7tYUzrsz7Dp6X++gba58oF9cjujDOo=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "4d19140d7c8d1ae7ba84325d86351472cd87e187",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.10",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1513592532,
+        "narHash": "sha256-yT4++r+C+qboWx5z5O2oVgyCx2jyu++/KpHL6YSpKWQ=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "e2feb0646889d908dc3a54ff57a285eaa01aa2f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.11",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1508159416,
+        "narHash": "sha256-H0wMjuri0yIFPc2QMB8NJvuIk8LVwsgmIDIDoWjN3yE=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "1b47dac4e96b75e2676e5302be34741c08caed16",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.2",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1510115947,
+        "narHash": "sha256-tXU99x2XuK3E74X9a/J0t5/ulb36HdEDUIcYOQVP8gw=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "a93dcd1d4d3f957f04725e89df4d7606323dc4a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.3",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1510543105,
+        "narHash": "sha256-4Vs0kFCNPfruwh0B0wXQtI4Z3uLg0j9+sEmCMGWRrGg=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "cc6bfa00458a2eee572ee25343a91d4b5a48ef38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.4",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1511135557,
+        "narHash": "sha256-2sP/N/DtkySictzL6x2s72267mk+aq4oMKdpaTuedc4=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "bf5bd54356931e0e3baed793501cd4eb2377b450",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.5",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1511343508,
+        "narHash": "sha256-Brdlkdd/8l6YteE6RSHEtdIFV/aVTZk5P4jTP/3HWlA=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "e2049ff1a71d034a025b9b7820227b01d35adede",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.8",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_6_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1511845447,
+        "narHash": "sha256-9k5yz6rRX25j2fnEPEYg0vF8m0kStI9y7fVa42hVago=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "0d21c361d00d528e3fb678ae409899ff643ab853",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.6.9",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1514523120,
+        "narHash": "sha256-L6hWEKNo/W0qDkwYTw/aaMDg9TeOxsYZrNxh7yZQrEs=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "d89073bac8affc5b0d90ea7fe4078442d6aa4d3e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1515664361,
+        "narHash": "sha256-n6MfEeZKU/slY773eSKO8qB73ghKIfxcYFWCXPCsY6E=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "09326f5104bdf6290a9b3f071e69bf650347758e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.1",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1526307311,
+        "narHash": "sha256-KcUShIzcwisFqHkwrn0FEEQZFUOUJHWnmfPRT1b+w4Y=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "a1d14819678b9406e5927f73019fdb67dbcf7a62",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.10",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1526458017,
+        "narHash": "sha256-EL7CSU3/BSrHj0uiDAWIueXvKhJzV63SntJUaulwSPk=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "96dfc7de904d36fe93321e41df861aacd9d205f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.11",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_12": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1528087837,
+        "narHash": "sha256-DBnp/HDX/r4vgI62Z9toE578R+SOgnvLuadB3/ZTOwk=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "9e610308172d24d8adc8083e950eb90aec5df063",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.12",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_13": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1528107986,
+        "narHash": "sha256-hUvQPGo6QEiNEYKSnjZT2wItOeRfAged+yyvDdEod9M=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "13f5aba3feb8bc841dc7f05cf0f6f7ed6007ce0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.13",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_14": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1529578381,
+        "narHash": "sha256-9bQDO/oXL/EbSk3nOTKgBjUaVXS0VDaHOMpuNP6L3Fs=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "8d68051f23f54f343443bc025b06f162c654e90a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.14",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_15": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1534244364,
+        "narHash": "sha256-Fc3z9Tit8YWcilJ25FIpzu9qmgsWmIG12Y8ikxfuDyU=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "fd5f77e7c2ce68f17d5b50fc273b54112bf5aa55",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.15",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_16": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1535525077,
+        "narHash": "sha256-2xqLre/tjjqbUrD/MTL6/dI5CqbAI/UneAM/EvqugTg=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "ceaf66a34cd6bee674755032d418370950b46425",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.16",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_17": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537522449,
+        "narHash": "sha256-84uIF1Bs0w07b3gBw0P+kZCc29r1N0zmDjOxsI2Maus=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "859f9f04fb764fc81eae3e531c64a58cd5dfadaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.17",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_19": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562654934,
+        "narHash": "sha256-Of2AqMr9dAs3mUDpfzOnfef4Yy/zHsezkpyPQUFb6P0=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "db4bb91765b5502d9f660eaef8c59583c6b3756f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.19",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1515774170,
+        "narHash": "sha256-zlN70Ea4DIO1jGOMiTRm3Q2z4NjP2cGaQTAYQp/ifjc=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "d4ab8a5524b767610e4b87787386af7ada801911",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.2",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_20": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568289551,
+        "narHash": "sha256-YvsrEROUV+paCUkSvj54/837wXUpLh+Ufeez8YJyoKk=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "f45281f5a0cdb9e1de482a047aa49156fbc8f92f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.20",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_21": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568553075,
+        "narHash": "sha256-YJ+GXQD5MrzIjgmdOc4f86fE3oSZ81pAs6KgunBiBdQ=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "19b0c23d6223e448d512d6637531b53e943f76e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.21",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_22": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568788051,
+        "narHash": "sha256-V/uzYF8f99wVsJgyQ4c9LUm2qnE3Vtf1pYAf/rycIVo=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "2f3f4034cfd8d532efea88d15b62e39af67419e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.22",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_23": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568946050,
+        "narHash": "sha256-mpjqeA0013EkBPPhlj1KcJfIQvHs/kNQzgFH8f1YfR0=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "c2db807da4bbc68fb7a70d4feb77b1575e869e53",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.23",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_24": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570004801,
+        "narHash": "sha256-FI8zOZ8XaP08+6r+8vI1CbVPeHI8joQNfcWtpLAU9+A=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "1b8e7ccd983e26f0838696ca7c7fe4df2282ae3d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.24",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_25": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1575478693,
+        "narHash": "sha256-PpZSas/JrvnPWUJUZudjfxTZpAYtKOm7NrFwC3pzLIs=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "78d3626fa36c5749e098fa32086c34a39a6ad81e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.25",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_26": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577109193,
+        "narHash": "sha256-FOvdbiQ3Yjtf3enprm2439xLN0yyMSIGhygBXIDnnow=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "d1b82d351c81243670694e6f79d584ac7b837106",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.26",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_27": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1580880884,
+        "narHash": "sha256-aMbWkAoGaC6ibElSH0AZjSIu1tR7nm1/3ygb12lzXGU=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "ed9ede5cb357022d18bd6fdb326c76aa3eb3b92d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.27",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_28": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591181927,
+        "narHash": "sha256-nb2q3ZG4H1i2z6/RPxYGaHB5prKoTHKa+w+lykg/P0I=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "031774f54f1ee88d9a88e8be0a255c3a590c58fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.28",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1515988908,
+        "narHash": "sha256-lmtYf1XFS5Hv1JFY4JuD5qXCZxhQCDva4d8E+VPMwuk=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "ae3171cb98a1bf9e005615c0ced636590af4dc9b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.3",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1516877578,
+        "narHash": "sha256-KSuZBWgKXkjjiaus79RfKrmoImV/m3TwtP8tDevLjAk=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "f05eb090f710df4aed71e6502da8258c5abbb6d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.4",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1517406735,
+        "narHash": "sha256-bKkKJWjCFiaVx7JYHs4KKYcBYZNnnvA5QtsX7Dk6/og=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "0aab6e17efd99253912889a222c7878ba3208e4c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.5",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1518885847,
+        "narHash": "sha256-3sVr4W8/vEWZd3AaRuxCAhsd0tg4JER0s9GAsapK3N4=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "d11856377e05212663c72dd06947f9e40456cff3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.6",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1519300552,
+        "narHash": "sha256-6HgJbA8kNf3tHK9i6QZNbKCcsMOt58HyYtN21G/aB7Y=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "be6f01e3b7517f1a6dff17fb0fea84a1b7c94c03",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.7",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1522493150,
+        "narHash": "sha256-/EYM3nRuRaOSdXNWju0tx6dsxrxU2sCXDqoH7fCf/+0=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "dc6ebaf5757b82436d714a779855207c6009afe4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.8",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_7_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1524543169,
+        "narHash": "sha256-mlgaYH5844a+3EpmCDLfW/8y6u9+QXchxb6RiNZBYEA=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "6e014bbc01a97aed1b5211e8ff17cae7a605eaa1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.7.9",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_8_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591350814,
+        "narHash": "sha256-nR07Y1HHv51CNtXe6I8Vkd/5Zg0ZFRkf3QGZm+fQJls=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "3f46e3c6481e9f18041f3b4b7d018635ae36b819",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.8.0",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_8_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597344288,
+        "narHash": "sha256-vgx53uLOYkwKeBF1NPvvOsEnnfZxCfDUqLJ9txLWwbI=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "d3e5f91b403cb1cabc3d2f298b2c6ffc994493e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.8.1",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_8_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620058730,
+        "narHash": "sha256-eORN25El8goFEHutrWhdozyY/Mdvjehm4q1cDwia0KY=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "4175dbb3e50d09341ae61cfa55907f40e9eb388b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.8.2",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_8_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622032654,
+        "narHash": "sha256-ZsGTKLEwH3KT9YDJt2cBDuuiJkbNin/ENQ3dOj8yooY=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "7fb22f69af92aa916e56dba14ba3938fc7fa1dd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.8.3",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_8_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631195131,
+        "narHash": "sha256-ihB5ocBLOLMYqgPYyrCF7L1z2xFK5tVCMl654/WHMeg=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "6b09d085c4259fb7f8bf1c55f7b51b69d6aa12c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.8.4",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    },
+    "src-godot-v0_8_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632139560,
+        "narHash": "sha256-6G1/5Cpjs6mqgRJYbYJ51OE7Z00zXJlQm5r+7UTEjls=",
+        "owner": "pragmagic",
+        "repo": "godot-nim",
+        "rev": "a88ebf72867deb50c65bfe8afe8c6230afeee6bc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.8.5",
+        "repo": "godot-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

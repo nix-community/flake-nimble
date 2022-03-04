@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "assigns-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-assigns-master": "src-assigns-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/assigns/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/assigns/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "assigns-v0_4_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-assigns-v0_4_4": "src-assigns-v0_4_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/assigns/v0_4_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/assigns/v0_4_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "assigns-v0_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-assigns-v0_5_1": "src-assigns-v0_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/assigns/v0_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/assigns/v0_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "assigns-v0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-assigns-v0_6_0": "src-assigns-v0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/assigns/v0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/assigns/v0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "assigns-master": "assigns-master",
+        "assigns-v0_4_4": "assigns-v0_4_4",
+        "assigns-v0_5_1": "assigns-v0_5_1",
+        "assigns-v0_6_0": "assigns-v0_6_0",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-assigns-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642628979,
+        "narHash": "sha256-51OfIQq+tA4GvZgmRWN9uA47FVg7uM563mYmHUqvGGM=",
+        "owner": "metagn",
+        "repo": "assigns",
+        "rev": "b78b360a232bb8e2259ab9597a3ed98c4f17edf9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "metagn",
+        "ref": "refs/heads/master",
+        "repo": "assigns",
+        "type": "github"
+      }
+    },
+    "src-assigns-v0_4_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606721307,
+        "narHash": "sha256-YKyVwv/e1IL5YcUBQcQSHelBY6s6ZeQSezUUQ25dXAA=",
+        "owner": "metagn",
+        "repo": "assigns",
+        "rev": "c32e4399be2cb1f687e35bf45f278d4418fe93e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "metagn",
+        "ref": "refs/tags/v0.4.4",
+        "repo": "assigns",
+        "type": "github"
+      }
+    },
+    "src-assigns-v0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607438951,
+        "narHash": "sha256-RtuXU5oWwJZhcMjRc5RC1ZdiQ5VBm8407DSYZc1RirM=",
+        "owner": "metagn",
+        "repo": "assigns",
+        "rev": "f65675c7568e3d02019ad462da174c13d871ec99",
+        "type": "github"
+      },
+      "original": {
+        "owner": "metagn",
+        "ref": "refs/tags/v0.5.1",
+        "repo": "assigns",
+        "type": "github"
+      }
+    },
+    "src-assigns-v0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613064848,
+        "narHash": "sha256-ItYG6ql9NMpcLfZ3JeaTGQJ50U4agNK0Qj6coF8PsP0=",
+        "owner": "metagn",
+        "repo": "assigns",
+        "rev": "8ec7a0c53844164465c1feff0c8a6103a02ae89d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "metagn",
+        "ref": "refs/tags/v0.6.0",
+        "repo": "assigns",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

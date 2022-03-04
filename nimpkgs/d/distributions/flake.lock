@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "distributions-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-distributions-master": "src-distributions-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/distributions/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/distributions/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "distributions-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-distributions-v0_1_0": "src-distributions-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/distributions/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/distributions/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "distributions-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-distributions-v0_1_1": "src-distributions-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/distributions/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/distributions/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "distributions-master": "distributions-master",
+        "distributions-v0_1_0": "distributions-v0_1_0",
+        "distributions-v0_1_1": "distributions-v0_1_1",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-distributions-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623770830,
+        "narHash": "sha256-9AqjjV9jAgXgPhxhWmgdmMqEtJftmZqHGNjOfBZyzq8=",
+        "owner": "ayman-albaz",
+        "repo": "distributions",
+        "rev": "68a8cec146ad015f2c88f85a44e7f4567506d127",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ayman-albaz",
+        "ref": "refs/heads/master",
+        "repo": "distributions",
+        "type": "github"
+      }
+    },
+    "src-distributions-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623170144,
+        "narHash": "sha256-JV4et5j8Jiujk79OlycL76t/WGxFDcw2cXSjDIBvSyI=",
+        "owner": "ayman-albaz",
+        "repo": "distributions",
+        "rev": "dbd32564b5d0a1ec67c2c6422358cd6f02cf8327",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ayman-albaz",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "distributions",
+        "type": "github"
+      }
+    },
+    "src-distributions-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623770513,
+        "narHash": "sha256-rJob07jD5v1ZemW4yDIPF8jF1mSTFMB/ALlVN0LXuuA=",
+        "owner": "ayman-albaz",
+        "repo": "distributions",
+        "rev": "b7ca5fc5d0f16c7e7b8a8e769f855cb43d335dbb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ayman-albaz",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "distributions",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

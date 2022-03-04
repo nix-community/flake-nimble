@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sequoia-0_1_0": "sequoia-0_1_0",
+        "sequoia-0_1_1": "sequoia-0_1_1",
+        "sequoia-master": "sequoia-master"
+      }
+    },
+    "sequoia-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sequoia-0_1_0": "src-sequoia-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sequoia/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sequoia/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "sequoia-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sequoia-0_1_1": "src-sequoia-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sequoia/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sequoia/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "sequoia-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sequoia-master": "src-sequoia-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sequoia/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sequoia/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-sequoia-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539179474,
+        "narHash": "sha256-GPX+pITu1uD5z2mHz1t/ALzJqGblwtSVUSKqD0Loodc=",
+        "owner": "ba0f3",
+        "repo": "sequoia.nim",
+        "rev": "d21bbbefd14d413fa155dd805fd5a555337fb4d4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.1.0",
+        "repo": "sequoia.nim",
+        "type": "github"
+      }
+    },
+    "src-sequoia-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539312777,
+        "narHash": "sha256-bMm21RAWttOdrlKq8CGvwaQNB5/143pu3XFM3Hgs9aw=",
+        "owner": "ba0f3",
+        "repo": "sequoia.nim",
+        "rev": "45d839c8f658680a959e762dd36845b2ed81c704",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.1.1",
+        "repo": "sequoia.nim",
+        "type": "github"
+      }
+    },
+    "src-sequoia-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633049861,
+        "narHash": "sha256-0LvR4Z6STOpZ8Umeaihw0qhNllJ44Yt439vkoNrE5p0=",
+        "owner": "ba0f3",
+        "repo": "sequoia.nim",
+        "rev": "92e5fb8307d7945624099f38a31bdbf9b109442c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "sequoia.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

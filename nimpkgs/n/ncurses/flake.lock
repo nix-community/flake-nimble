@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "ncurses-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ncurses-master": "src-ncurses-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/ncurses/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/ncurses/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "ncurses-master": "ncurses-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ncurses-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588327817,
+        "narHash": "sha256-HJi2tfD+sW4l4dPLy+TRih85N1bLty5jPQYi39rbqbM=",
+        "owner": "walkre-niboshi",
+        "repo": "nim-ncurses",
+        "rev": "1027fe13d091583608e7e7da3c3e0d13aceb4b11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "walkre-niboshi",
+        "ref": "refs/heads/master",
+        "repo": "nim-ncurses",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

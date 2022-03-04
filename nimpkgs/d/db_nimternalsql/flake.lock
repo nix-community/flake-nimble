@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "db_nimternalsql-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-db_nimternalsql-main": "src-db_nimternalsql-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/db_nimternalsql/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/db_nimternalsql/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "db_nimternalsql-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-db_nimternalsql-v1_0_0": "src-db_nimternalsql-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/db_nimternalsql/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/db_nimternalsql/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "db_nimternalsql-v1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-db_nimternalsql-v1_1_0": "src-db_nimternalsql-v1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/db_nimternalsql/v1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/db_nimternalsql/v1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "db_nimternalsql-main": "db_nimternalsql-main",
+        "db_nimternalsql-v1_0_0": "db_nimternalsql-v1_0_0",
+        "db_nimternalsql-v1_1_0": "db_nimternalsql-v1_1_0",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-db_nimternalsql-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646065039,
+        "narHash": "sha256-CUrgVnQJ+m6V7MK+nx+oid2coypVaN3ja1kgCXsdXdk=",
+        "owner": "rehartmann",
+        "repo": "nimternalsql",
+        "rev": "d8f253be8a93b0d2745d73745539c801278261e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rehartmann",
+        "ref": "refs/heads/main",
+        "repo": "nimternalsql",
+        "type": "github"
+      }
+    },
+    "src-db_nimternalsql-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635363328,
+        "narHash": "sha256-rzVI6ZttRV2rIteVyY34SWtvbMVvsl//bijGM9dwGes=",
+        "owner": "rehartmann",
+        "repo": "nimternalsql",
+        "rev": "f333dcadd8f038860720de9f5bc664b0c9287d5f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rehartmann",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "nimternalsql",
+        "type": "github"
+      }
+    },
+    "src-db_nimternalsql-v1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638654758,
+        "narHash": "sha256-hIMo7tWWH1FHYR2GfB6nH7MmXFjYr0WwPdxUX637GpI=",
+        "owner": "rehartmann",
+        "repo": "nimternalsql",
+        "rev": "39a96399f0d8ffbe9d8a618d73e5470d8d266607",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rehartmann",
+        "ref": "refs/tags/v1.1.0",
+        "repo": "nimternalsql",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

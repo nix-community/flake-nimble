@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "finder-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-finder-master": "src-finder-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/finder/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/finder/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "finder-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-finder-v0_1_1": "src-finder-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/finder/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/finder/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "finder-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-finder-v0_2_0": "src-finder-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/finder/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/finder/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "finder-master": "finder-master",
+        "finder-v0_1_1": "finder-v0_1_1",
+        "finder-v0_2_0": "finder-v0_2_0",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-finder-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617147932,
+        "narHash": "sha256-Ocin40P033PHEIolPkZMyAPDe7ZSVnj5uDUJpt7C1h0=",
+        "owner": "bung87",
+        "repo": "finder",
+        "rev": "adcf22afdfab2acf706bd98a1a12107765ba0c63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bung87",
+        "ref": "refs/heads/master",
+        "repo": "finder",
+        "type": "github"
+      }
+    },
+    "src-finder-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1616979440,
+        "narHash": "sha256-2S84G12aDEcl4BTRcQWgZEBGqEO9SFxKDKBcdAM9NXc=",
+        "owner": "bung87",
+        "repo": "finder",
+        "rev": "b64144c444a3305d8b64e3a36bb087fe0eba9fcd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bung87",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "finder",
+        "type": "github"
+      }
+    },
+    "src-finder-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617147932,
+        "narHash": "sha256-Ocin40P033PHEIolPkZMyAPDe7ZSVnj5uDUJpt7C1h0=",
+        "owner": "bung87",
+        "repo": "finder",
+        "rev": "adcf22afdfab2acf706bd98a1a12107765ba0c63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bung87",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "finder",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

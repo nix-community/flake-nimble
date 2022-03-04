@@ -1,0 +1,584 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "simpleast-0_0_0": "simpleast-0_0_0",
+        "simpleast-0_1_0": "simpleast-0_1_0",
+        "simpleast-1_1_0": "simpleast-1_1_0",
+        "simpleast-1_1_1": "simpleast-1_1_1",
+        "simpleast-1_1_2": "simpleast-1_1_2",
+        "simpleast-1_1_3": "simpleast-1_1_3",
+        "simpleast-1_1_4": "simpleast-1_1_4",
+        "simpleast-1_1_5": "simpleast-1_1_5",
+        "simpleast-1_1_6": "simpleast-1_1_6",
+        "simpleast-1_2_0": "simpleast-1_2_0",
+        "simpleast-develop": "simpleast-develop",
+        "simpleast-master": "simpleast-master"
+      }
+    },
+    "simpleast-0_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-0_0_0": "src-simpleAST-0_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/0_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/0_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-0_1_0": "src-simpleAST-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_1_0": "src-simpleAST-1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_1_1": "src-simpleAST-1_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_1_2": "src-simpleAST-1_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_1_3": "src-simpleAST-1_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_1_4": "src-simpleAST-1_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_1_5": "src-simpleAST-1_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_1_6": "src-simpleAST-1_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-1_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-1_2_0": "src-simpleAST-1_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/1_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/1_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-develop": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-develop": "src-simpleAST-develop"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/develop",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/develop",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleast-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleAST-master": "src-simpleAST-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleast/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleast/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-0_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1504174747,
+        "narHash": "sha256-7FOUx0PgYn+J4mAodeXMI5QQTVDF3KOsw0rjYcjYZSU=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "85e7358d4921df8d4b6fb28831f1372bbf9b6c96",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/0.0.0",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506526772,
+        "narHash": "sha256-Qprp/1sTnqBxkeNMgh7+4l8q2s2u/ci90xscRM/vGEU=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "35e3d90ad323545c3080793918b6bf5cdb808060",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/0.1.0",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506931360,
+        "narHash": "sha256-G4KzG1Ni8NaaXJNsb+Qa1nW4fVrQZ3HtT8T/SVlWp1k=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "d9bed9cb6eb20b6107ab3325f0480cd9dc8a1165",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.1.0",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538648253,
+        "narHash": "sha256-Zp33P1/FMME3w6H7PBj/Ns4RjP5BJSFilmpRQVGNsZ8=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "e665a8c0950a31827b5eb5e419ecc587c8bff796",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.1.1",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538657783,
+        "narHash": "sha256-IPYVKjSEWV14ig4+lC1jPQlRZ+3UANmncD5+FUbzx1A=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "377eb5c5a5434c6cf6195288cec1782b29cae94b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.1.2",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539782243,
+        "narHash": "sha256-Ut+7lgGmN0YQLBg24ewS4qjSVnAbhNm3Vt6NsN1kGug=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "e4c41704a74de3ddc1cc7f9ee909ebac3bcab019",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.1.3",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567118196,
+        "narHash": "sha256-/s87JR8fGbKlttockgkiPQuqGWF4JiVm9MnZ1tcw47s=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "458a51e44efbaed98b15439e23aebe6887c39264",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.1.4",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567153465,
+        "narHash": "sha256-guyiHWDPlxRkqEao9wCTBlqbLZlXryJ+djpZm7CsCj0=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "cd6d0694df366e60a38408b11907aa81b73ecea3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.1.5",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567155977,
+        "narHash": "sha256-rOVb0Oe7Ly9NP/DI7uAHxCwmL/IifKvDBO/EXwvxa/U=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "ca8361ca4a582f108b5addfbde1d34614dbd1b2c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.1.6",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636237033,
+        "narHash": "sha256-aHYhfPTqUq2e5tufw6zAVqn1FjqhIBJ2Z1G9+/vZswU=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "c336503839101e37d050f74c73a89c4060c74a7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/tags/1.2.0",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636279450,
+        "narHash": "sha256-kKc2lyJ3NY8pYk6/lFoidc2kqCjgw/3+7MXGMqHPbAM=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "5f52f0fa891751a741cfec806508b28fd0230485",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/heads/develop",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    },
+    "src-simpleAST-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636237033,
+        "narHash": "sha256-aHYhfPTqUq2e5tufw6zAVqn1FjqhIBJ2Z1G9+/vZswU=",
+        "owner": "lguzzon-NIM",
+        "repo": "simpleAST",
+        "rev": "c336503839101e37d050f74c73a89c4060c74a7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lguzzon-NIM",
+        "ref": "refs/heads/master",
+        "repo": "simpleAST",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jdec-develop": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jdec-develop": "src-jdec-develop"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jdec/develop",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jdec/develop",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jdec-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jdec-master": "src-jdec-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jdec/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jdec/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jdec-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jdec-v0_1_0": "src-jdec-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jdec/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jdec/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jdec-develop": "jdec-develop",
+        "jdec-master": "jdec-master",
+        "jdec-v0_1_0": "jdec-v0_1_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jdec-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1526146131,
+        "narHash": "sha256-MwzPv0D7sJOKVNFPx911IxN/oHpKoi/fuU937hZXaXw=",
+        "owner": "diegogub",
+        "repo": "jdec",
+        "rev": "dcbb29a03ef41e8c3ed27bef163d1002b782904f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "diegogub",
+        "ref": "refs/heads/develop",
+        "repo": "jdec",
+        "type": "github"
+      }
+    },
+    "src-jdec-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1530115798,
+        "narHash": "sha256-Aw3jlKm4WWHgI8I3c+B5817jN1ee0W9wlIuHAWw6B84=",
+        "owner": "diegogub",
+        "repo": "jdec",
+        "rev": "ade4bd9f3f285a1367a5245b714ba2baa6565fbb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "diegogub",
+        "ref": "refs/heads/master",
+        "repo": "jdec",
+        "type": "github"
+      }
+    },
+    "src-jdec-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1526146131,
+        "narHash": "sha256-MwzPv0D7sJOKVNFPx911IxN/oHpKoi/fuU937hZXaXw=",
+        "owner": "diegogub",
+        "repo": "jdec",
+        "rev": "dcbb29a03ef41e8c3ed27bef163d1002b782904f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "diegogub",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "jdec",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

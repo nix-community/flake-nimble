@@ -1,0 +1,494 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "triplets-0_0_1": "triplets-0_0_1",
+        "triplets-0_0_2": "triplets-0_0_2",
+        "triplets-0_0_3": "triplets-0_0_3",
+        "triplets-0_0_4": "triplets-0_0_4",
+        "triplets-0_0_5": "triplets-0_0_5",
+        "triplets-0_0_6": "triplets-0_0_6",
+        "triplets-0_0_7": "triplets-0_0_7",
+        "triplets-0_1_0": "triplets-0_1_0",
+        "triplets-0_1_1": "triplets-0_1_1",
+        "triplets-master": "triplets-master"
+      }
+    },
+    "src-triplets-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1564472188,
+        "narHash": "sha256-MMgPWjwbz8zxzwyfAz0qYL5z2nAaNcDvUQLjAzoIf0k=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "76992ca366bda4d6da43054b9e4f6e288a565246",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.0.1",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1564474316,
+        "narHash": "sha256-xpKz8HkNuaoJBaH68y64ufnD7EWSiqYzUmFCbgr1POM=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "e4feebeab96a4fb03e655d366b99bf84a6a34af9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.0.2",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566496514,
+        "narHash": "sha256-R4D/SDa03caWAMV15Ykz00aadfcC/6ipbwN8+vYM3S4=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "ab8cfb393e4d3314387efc52ea6707ec419fedf9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.0.3",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566576386,
+        "narHash": "sha256-el4tHD8lklK5WOPGH5O5rGsfmdLPQUp0KS7B2W/OvBE=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "876cfb244f94b33afea20801b764150c32c5e774",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.0.4",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568727946,
+        "narHash": "sha256-wHDdeohtTG/iASL9CDNvboxH7tZ1ODY5julQsh7XJL0=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "07b9eb2c1d5c819a7eb67ec26debd1df3e65cb54",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.0.5",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_0_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573213864,
+        "narHash": "sha256-76K+8JmEhTpyUS9LHLQbH8xSd1Wn7+LJSw8Kf7LvIDs=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "2caa5401718f907212d5f5c19c53b7d7bdd60329",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.0.6",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573415461,
+        "narHash": "sha256-o43GV78Xd98nJ+TsWC4cOeQx1ngtm87I2/4rUZZJ8PE=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "a1aba26ebab787aceee571ad585b81cb5403ce47",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.0.7",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582657964,
+        "narHash": "sha256-au37ikEIepDeZwHs9lZT6pKTN8EoEVRa7d+qterP65c=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "024b14cbe2994c3bd6612bda2cc09ce27241721b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.1.0",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635079547,
+        "narHash": "sha256-7F66BooZZbH+iMnpQHT9fNu8JKu1NdCkZUxjSceKWuA=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "41b195b3cd256f8c8b4da510caa0997de6875a8f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/tags/0.1.1",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "src-triplets-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646129080,
+        "narHash": "sha256-OV0d09lm/tUz2NqqND+2TTmvQzziZw7lgCBoZG/OcL8=",
+        "owner": "linksplatform",
+        "repo": "Data.Triplets",
+        "rev": "6ad437ab810e5f8488cdf6ab45bcb0664e078385",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linksplatform",
+        "ref": "refs/heads/master",
+        "repo": "Data.Triplets",
+        "type": "github"
+      }
+    },
+    "triplets-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_0_1": "src-triplets-0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_0_2": "src-triplets-0_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_0_3": "src-triplets-0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_0_4": "src-triplets-0_0_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_0_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_0_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_0_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_0_5": "src-triplets-0_0_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_0_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_0_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_0_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_0_6": "src-triplets-0_0_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_0_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_0_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_0_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_0_7": "src-triplets-0_0_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_0_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_0_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_1_0": "src-triplets-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-0_1_1": "src-triplets-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "triplets-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-triplets-master": "src-triplets-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/triplets/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/triplets/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

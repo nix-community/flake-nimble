@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "huffman-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-huffman-master": "src-huffman-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/huffman/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/huffman/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "huffman-master": "huffman-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-huffman-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589120280,
+        "narHash": "sha256-JbHwPVC0W/YnZ9q1t/MlPLJUq+HZrgaWMsRbkEsbaxE=",
+        "owner": "xzeshen",
+        "repo": "huffman",
+        "rev": "732a045bf90918d9ba2a6662ad4315ac70d6c70e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xzeshen",
+        "ref": "refs/heads/master",
+        "repo": "huffman",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

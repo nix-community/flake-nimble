@@ -1,0 +1,494 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nanovg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-master": "src-nanovg-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_1_0": "src-nanovg-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_2_0": "src-nanovg-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_2_1": "src-nanovg-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_2_2": "src-nanovg-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_2_3": "src-nanovg-v0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_3_0": "src-nanovg-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_3_1": "src-nanovg-v0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_3_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_3_2": "src-nanovg-v0_3_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_3_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_3_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanovg-v0_3_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanovg-v0_3_3": "src-nanovg-v0_3_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanovg/v0_3_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanovg/v0_3_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nanovg-master": "nanovg-master",
+        "nanovg-v0_1_0": "nanovg-v0_1_0",
+        "nanovg-v0_2_0": "nanovg-v0_2_0",
+        "nanovg-v0_2_1": "nanovg-v0_2_1",
+        "nanovg-v0_2_2": "nanovg-v0_2_2",
+        "nanovg-v0_2_3": "nanovg-v0_2_3",
+        "nanovg-v0_3_0": "nanovg-v0_3_0",
+        "nanovg-v0_3_1": "nanovg-v0_3_1",
+        "nanovg-v0_3_2": "nanovg-v0_3_2",
+        "nanovg-v0_3_3": "nanovg-v0_3_3",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nanovg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644728309,
+        "narHash": "sha256-nOY6lbHVmnfJl2V81G4LUDWf+rNVCeor1xqmfyhQjQM=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "a4f6bbad9917aadc9d6568d38e341eae89f99bf1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/heads/master",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574329217,
+        "narHash": "sha256-koGECP/uoZte5zujaST1blkbxmDRvROE86FuAcWMJwc=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "db67e8bcd29d0df429b4f467260b3b5e531481aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582192006,
+        "narHash": "sha256-lL2p8zCOzqLCaSYarOwtM49dx1CyX/H1az+piF/LSEs=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "5c7f5bc253c9aad49b8e307e56d9e9e14dea343b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582195926,
+        "narHash": "sha256-aAn1XUQMllk7fRmUeDj0EAMkvm/TqZvlvNoBxqOzm3E=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "6805a9ae72ce62a1d9187120ede1fa3408636041",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582196811,
+        "narHash": "sha256-tJPjIf8bEk2jVNl+GlXVJL/8/7dalKKKAuU0zlxXvZw=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "960e99f6b504266879f1289281712721fb8f6e09",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586068813,
+        "narHash": "sha256-H+rGupWOZYzFBFQtYHcqg/YRjhE0At6hrzMPzYIUTp4=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "e561bd776e855a2b95aef21a7ce6e936bb9efdd6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.2.3",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588927100,
+        "narHash": "sha256-28ORsQIbCXJ4e04qrGe3w5BSy83aahgbrcXi/6uK+3A=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "37be0e4f1b3e09198d137bcf7a6724f95598360f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604302019,
+        "narHash": "sha256-qcSEcz9BWqMG2YcQy+Yz/gi+SOZYPpXxFensWCOV+As=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "70fc19d547825f5f40a4ca5c04f55c3798f2a3cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626768629,
+        "narHash": "sha256-gIpFxNn9FkrYACbelKINXcdcdwsgVZowwhxAnQxoD74=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "ad400328cba0e47fc63e4243ad7a6f7c538e59a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.3.2",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    },
+    "src-nanovg-v0_3_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644727977,
+        "narHash": "sha256-srtSgRpCemw11euQXtZsnGPd29m03Qk6jLYRhMt8fbw=",
+        "owner": "johnnovak",
+        "repo": "nim-nanovg",
+        "rev": "a8495f053545c8865fc7d486c6a2ce440862bc38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.3.3",
+        "repo": "nim-nanovg",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

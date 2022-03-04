@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "phoon-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-phoon-master": "src-phoon-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/phoon/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/phoon/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "phoon-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-phoon-v0_1_0": "src-phoon-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/phoon/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/phoon/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "phoon-master": "phoon-master",
+        "phoon-v0_1_0": "phoon-v0_1_0"
+      }
+    },
+    "src-phoon-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579817149,
+        "narHash": "sha256-ieKHvoLfoLllLYFzaOl67L+FCBgXTCQKhrmbyriuH30=",
+        "owner": "ducdetronquito",
+        "repo": "phoon",
+        "rev": "83eeb00152f86d3370651e712d340d3db16ff7c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ducdetronquito",
+        "ref": "refs/heads/master",
+        "repo": "phoon",
+        "type": "github"
+      }
+    },
+    "src-phoon-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579466220,
+        "narHash": "sha256-4DUTyRzG++mxSdxPrXAvAtOjZC7vTFFStA0T0c1r8jY=",
+        "owner": "ducdetronquito",
+        "repo": "phoon",
+        "rev": "9b53811b44c7d7cfa6f451f6a3bb75cdf0c05b63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ducdetronquito",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "phoon",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

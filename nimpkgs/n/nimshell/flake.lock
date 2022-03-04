@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimshell-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimshell-master": "src-nimshell-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimshell/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimshell/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimshell-v0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimshell-v0_0_1": "src-nimshell-v0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimshell/v0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimshell/v0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimshell-v0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimshell-v0_0_2": "src-nimshell-v0_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimshell/v0_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimshell/v0_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimshell-v0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimshell-v0_0_3": "src-nimshell-v0_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimshell/v0_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimshell/v0_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimshell-master": "nimshell-master",
+        "nimshell-v0_0_1": "nimshell-v0_0_1",
+        "nimshell-v0_0_2": "nimshell-v0_0_2",
+        "nimshell-v0_0_3": "nimshell-v0_0_3",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimshell-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1553652936,
+        "narHash": "sha256-mXRy/l95QjxFjPTnWjNSMBq8hVAJYxC4wIAclhDPg0U=",
+        "owner": "vegansk",
+        "repo": "nimshell",
+        "rev": "d92e710a031c88f953509940d15b0132fee11ddc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/heads/master",
+        "repo": "nimshell",
+        "type": "github"
+      }
+    },
+    "src-nimshell-v0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1457583988,
+        "narHash": "sha256-JHyiyc16NJ6x2lPHPkY1VQG0AZIqWhCoV4xlR7W1HD4=",
+        "owner": "vegansk",
+        "repo": "nimshell",
+        "rev": "9a08a5c8e6095163562880a7a675a7c090797b01",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.0.1",
+        "repo": "nimshell",
+        "type": "github"
+      }
+    },
+    "src-nimshell-v0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501488559,
+        "narHash": "sha256-lParM86CxbtwbDtqm1E6ZovBkMlGfGWbMH7wcg9CBS4=",
+        "owner": "vegansk",
+        "repo": "nimshell",
+        "rev": "adaade9596c68c4d1dcf240ed7a4fdd425e6ca58",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.0.2",
+        "repo": "nimshell",
+        "type": "github"
+      }
+    },
+    "src-nimshell-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1553652936,
+        "narHash": "sha256-mXRy/l95QjxFjPTnWjNSMBq8hVAJYxC4wIAclhDPg0U=",
+        "owner": "vegansk",
+        "repo": "nimshell",
+        "rev": "d92e710a031c88f953509940d15b0132fee11ddc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nimshell",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

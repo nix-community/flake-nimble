@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "patgraph-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-patgraph-master": "src-patgraph-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/patgraph/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/patgraph/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "patgraph-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-patgraph-v0_1_0": "src-patgraph-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/patgraph/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/patgraph/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "patgraph-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-patgraph-v0_2_0": "src-patgraph-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/patgraph/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/patgraph/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "patgraph-master": "patgraph-master",
+        "patgraph-v0_1_0": "patgraph-v0_1_0",
+        "patgraph-v0_2_0": "patgraph-v0_2_0"
+      }
+    },
+    "src-patgraph-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623949593,
+        "narHash": "sha256-A6cOwtYWDxu7MR94VWLETUy0RHMMGhNY8W6KtCNwyO8=",
+        "owner": "planetis-m",
+        "repo": "patgraph",
+        "rev": "a2b4dafb5a9a2362476278d2121730d2c528ce7d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/heads/master",
+        "repo": "patgraph",
+        "type": "github"
+      }
+    },
+    "src-patgraph-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577719637,
+        "narHash": "sha256-GS3C6CnwsrsniuIhqSRXEctZ2yUj4rgUGZ0t4BH09Zo=",
+        "owner": "planetis-m",
+        "repo": "patgraph",
+        "rev": "791d10092b8fffd08f070ddd77f9f90f799e187e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "patgraph",
+        "type": "github"
+      }
+    },
+    "src-patgraph-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577823292,
+        "narHash": "sha256-8mflMbN/FCEk4lphziGNazDEoMzWZ+mKHRu3EYIamak=",
+        "owner": "planetis-m",
+        "repo": "patgraph",
+        "rev": "8d090451c9ba90f2b3c1f634b378c4828e249e14",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "patgraph",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "argument_parser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-argument_parser-master": "src-argument_parser-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/argument_parser/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/argument_parser/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "argument_parser-master": "argument_parser-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-argument_parser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1440382711,
+        "narHash": "sha256-+zu50KzcnD0g7Tw0LRmoXeMPnLmUyvBjBtGyGddAxN4=",
+        "owner": "Xe",
+        "repo": "argument_parser",
+        "rev": "920be52019e7511387361228c1f9b7b00500764a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Xe",
+        "ref": "refs/heads/master",
+        "repo": "argument_parser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "iputils-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-iputils-master": "src-iputils-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/iputils/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/iputils/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "iputils-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-iputils-v0_1_0": "src-iputils-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/iputils/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/iputils/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "iputils-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-iputils-v0_2_0": "src-iputils-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/i/iputils/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/i/iputils/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "iputils-master": "iputils-master",
+        "iputils-v0_1_0": "iputils-v0_1_0",
+        "iputils-v0_2_0": "iputils-v0_2_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-iputils-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603905811,
+        "narHash": "sha256-z+k1M5iyahNWDimSfC/cEz90dB8Rt4g69ywbK7SVOxA=",
+        "owner": "rockcavera",
+        "repo": "nim-iputils",
+        "rev": "53df2697e912ef8fc914752c3f39a404f5346d1c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/heads/master",
+        "repo": "nim-iputils",
+        "type": "github"
+      }
+    },
+    "src-iputils-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587326627,
+        "narHash": "sha256-b2oo4cAudNi6LI5DJ8PJHBhc2Cr2yWbZtDUHuE13b6I=",
+        "owner": "rockcavera",
+        "repo": "nim-iputils",
+        "rev": "5f93da63cb60e6efb8cf538b523bc9d8bd86e40d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nim-iputils",
+        "type": "github"
+      }
+    },
+    "src-iputils-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603900099,
+        "narHash": "sha256-xBAS6qVCEwgQ6Pz1xO/M6LkjVWVyENzPYmgQx1Qfdag=",
+        "owner": "rockcavera",
+        "repo": "nim-iputils",
+        "rev": "0908952f4616118b90e9dceb1c317d8caccdcb7c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "nim-iputils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

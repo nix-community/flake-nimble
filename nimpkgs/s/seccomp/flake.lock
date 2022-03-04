@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "seccomp-0_2_0": "seccomp-0_2_0",
+        "seccomp-0_2_1": "seccomp-0_2_1",
+        "seccomp-master": "seccomp-master"
+      }
+    },
+    "seccomp-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-seccomp-0_2_0": "src-seccomp-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/seccomp/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/seccomp/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "seccomp-0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-seccomp-0_2_1": "src-seccomp-0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/seccomp/0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/seccomp/0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "seccomp-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-seccomp-master": "src-seccomp-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/seccomp/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/seccomp/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-seccomp-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554570881,
+        "narHash": "sha256-iJWnu+dM1DVzZwHQeyfNbcxdEd8vSIR6Kq0RrZ0+Azw=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-seccomp",
+        "rev": "c676263b5183b8a1805cdf86bdd10d05ad6d65fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.2.0",
+        "repo": "nim-seccomp",
+        "type": "github"
+      }
+    },
+    "src-seccomp-0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627750625,
+        "narHash": "sha256-2yBGR4O47nNSVScwAebvgWPG5ETIxpvgae7j2SiWR4c=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-seccomp",
+        "rev": "5a77686d4eadd40bb120c75a028ee94249256c42",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.2.1",
+        "repo": "nim-seccomp",
+        "type": "github"
+      }
+    },
+    "src-seccomp-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627750625,
+        "narHash": "sha256-2yBGR4O47nNSVScwAebvgWPG5ETIxpvgae7j2SiWR4c=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-seccomp",
+        "rev": "5a77686d4eadd40bb120c75a028ee94249256c42",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-seccomp",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

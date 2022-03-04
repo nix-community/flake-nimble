@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "simpleot-0_4_1": "simpleot-0_4_1",
+        "simpleot-master": "simpleot-master",
+        "simpleot-v0_4_2": "simpleot-v0_4_2",
+        "simpleot-v0_5_0": "simpleot-v0_5_0",
+        "simpleot-v0_5_1": "simpleot-v0_5_1"
+      }
+    },
+    "simpleot-0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleot-0_4_1": "src-simpleot-0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleot/0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleot/0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleot-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleot-master": "src-simpleot-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleot/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleot/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleot-v0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleot-v0_4_2": "src-simpleot-v0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleot/v0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleot/v0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleot-v0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleot-v0_5_0": "src-simpleot-v0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleot/v0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleot/v0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "simpleot-v0_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleot-v0_5_1": "src-simpleot-v0_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/simpleot/v0_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/simpleot/v0_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-simpleot-0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572447624,
+        "narHash": "sha256-wz0tz7MATdgDAbEX0e1GOpW4e4e6s+xpAaFqPUINo5A=",
+        "owner": "markspanbroek",
+        "repo": "simpleot.nim",
+        "rev": "924d27f32e22a8443370adae275d68181adf2550",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/0.4.1",
+        "repo": "simpleot.nim",
+        "type": "github"
+      }
+    },
+    "src-simpleot-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592469588,
+        "narHash": "sha256-LNSI4pTYzc9/5OgwqepKFHKBHjfySdnPFgV0El8FJeU=",
+        "owner": "markspanbroek",
+        "repo": "simpleot.nim",
+        "rev": "2f4671f378bf6ef3e1c1241c09243c72bd42ed29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/heads/master",
+        "repo": "simpleot.nim",
+        "type": "github"
+      }
+    },
+    "src-simpleot-v0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572880528,
+        "narHash": "sha256-OgyrnFhpEcQhJ+4uQpwZNf0GPWhw6lmK9LwpMmNYklg=",
+        "owner": "markspanbroek",
+        "repo": "simpleot.nim",
+        "rev": "77206f9a640415f350246024b8db6202122b9506",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.4.2",
+        "repo": "simpleot.nim",
+        "type": "github"
+      }
+    },
+    "src-simpleot-v0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592464899,
+        "narHash": "sha256-9AZHfTiFLt1Nl+WsG7z902cvN/Ff+youANm9SooJL6E=",
+        "owner": "markspanbroek",
+        "repo": "simpleot.nim",
+        "rev": "4d36591f5dfc0987fe161219c56280d2003bfc85",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.5.0",
+        "repo": "simpleot.nim",
+        "type": "github"
+      }
+    },
+    "src-simpleot-v0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592469588,
+        "narHash": "sha256-LNSI4pTYzc9/5OgwqepKFHKBHjfySdnPFgV0El8FJeU=",
+        "owner": "markspanbroek",
+        "repo": "simpleot.nim",
+        "rev": "2f4671f378bf6ef3e1c1241c09243c72bd42ed29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/tags/v0.5.1",
+        "repo": "simpleot.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

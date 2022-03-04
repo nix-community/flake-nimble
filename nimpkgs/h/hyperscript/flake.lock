@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "hyperscript-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hyperscript-master": "src-hyperscript-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hyperscript/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hyperscript/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "hyperscript-v0_1-alpha": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hyperscript-v0_1-alpha": "src-hyperscript-v0_1-alpha"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/hyperscript/v0_1-alpha",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/hyperscript/v0_1-alpha",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "hyperscript-master": "hyperscript-master",
+        "hyperscript-v0_1-alpha": "hyperscript-v0_1-alpha",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-hyperscript-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625449169,
+        "narHash": "sha256-q1/3DmPBzhEHkBvk9PIYmK86vI32b79dj4Vq7CIJN9o=",
+        "owner": "schneiderfelipe",
+        "repo": "hyperscript",
+        "rev": "f02971acedabe1dec46e604136ab568bb93127f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "schneiderfelipe",
+        "ref": "refs/heads/master",
+        "repo": "hyperscript",
+        "type": "github"
+      }
+    },
+    "src-hyperscript-v0_1-alpha": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625254545,
+        "narHash": "sha256-XA/yXb/By2jZwMbmUNnQxSFTSQOpjSJxxalVClYGtjc=",
+        "owner": "schneiderfelipe",
+        "repo": "hyperscript",
+        "rev": "d129a161f108493c8be311ce458c4351c1da9271",
+        "type": "github"
+      },
+      "original": {
+        "owner": "schneiderfelipe",
+        "ref": "refs/tags/v0.1-alpha",
+        "repo": "hyperscript",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

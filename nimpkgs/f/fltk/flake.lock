@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "fltk-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fltk-master": "src-fltk-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/fltk/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/fltk/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "fltk-master": "fltk-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fltk-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562982536,
+        "narHash": "sha256-QNS8fIew4B+AZrqQLdwyUNQjZuFf1D9JLcLHy3g02yk=",
+        "owner": "Skrylar",
+        "repo": "nfltk",
+        "rev": "d1b497d74a3be64a11e8b819a482022c611bcfe0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Skrylar",
+        "ref": "refs/heads/master",
+        "repo": "nfltk",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

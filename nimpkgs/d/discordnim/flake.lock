@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "discordnim-develop": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-discordnim-develop": "src-discordnim-develop"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/discordnim/develop",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/discordnim/develop",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "discordnim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-discordnim-master": "src-discordnim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/d/discordnim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/d/discordnim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "discordnim-develop": "discordnim-develop",
+        "discordnim-master": "discordnim-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-discordnim-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1546692757,
+        "narHash": "sha256-MBbTuZU7b5uCQRszSLGqurpVeIrFvHp685yAs5BCuAM=",
+        "owner": "Krognol",
+        "repo": "discordnim",
+        "rev": "907b838ba2e1e7e8542d44a8469f209e66b9c542",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Krognol",
+        "ref": "refs/heads/develop",
+        "repo": "discordnim",
+        "type": "github"
+      }
+    },
+    "src-discordnim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579184271,
+        "narHash": "sha256-laEUAedpd24t5gWw4s88+9Sy6fpcBfBSNwtUDPvYZ6o=",
+        "owner": "Krognol",
+        "repo": "discordnim",
+        "rev": "dab2e9fe6a0fd190d17e1d96f92168aa78398c7f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Krognol",
+        "ref": "refs/heads/master",
+        "repo": "discordnim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

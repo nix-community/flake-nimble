@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "shizuka-master": "shizuka-master",
+        "shizuka-nightly-0_3_0": "shizuka-nightly-0_3_0",
+        "shizuka-stable-1_0_0": "shizuka-stable-1_0_0",
+        "shizuka-v0_2_1": "shizuka-v0_2_1",
+        "shizuka-v0_2_2": "shizuka-v0_2_2"
+      }
+    },
+    "shizuka-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shizuka-master": "src-shizuka-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shizuka/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shizuka/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shizuka-nightly-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shizuka-nightly-0_3_0": "src-shizuka-nightly-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shizuka/nightly-0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shizuka/nightly-0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shizuka-stable-1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shizuka-stable-1_0_0": "src-shizuka-stable-1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shizuka/stable-1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shizuka/stable-1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shizuka-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shizuka-v0_2_1": "src-shizuka-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shizuka/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shizuka/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shizuka-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shizuka-v0_2_2": "src-shizuka-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shizuka/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shizuka/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-shizuka-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645292670,
+        "narHash": "sha256-bN6AyQ5usfkhmTJsx6a76tXp35+Zvqws4tBqsMuCBYo=",
+        "owner": "ethosa",
+        "repo": "shizuka",
+        "rev": "9cf07b64c63f7056d079cc5f2c793f81ad3cd581",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/heads/master",
+        "repo": "shizuka",
+        "type": "github"
+      }
+    },
+    "src-shizuka-nightly-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638608742,
+        "narHash": "sha256-ZIZtuYApx+iYb2DCyIKdBQ4WoE9BInmG5JLfdLIKXjk=",
+        "owner": "ethosa",
+        "repo": "shizuka",
+        "rev": "bb1f0127227bacf6326c56214580c408900e4a98",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/tags/nightly-0.3.0",
+        "repo": "shizuka",
+        "type": "github"
+      }
+    },
+    "src-shizuka-stable-1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639070923,
+        "narHash": "sha256-q83xyr63AEyqfsAFYyxSZmfCFV2yHlqe5Dw0wrKGwfY=",
+        "owner": "ethosa",
+        "repo": "shizuka",
+        "rev": "19b66ff863a65e97117f3494c988c403fe844b30",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/tags/stable-1.0.0",
+        "repo": "shizuka",
+        "type": "github"
+      }
+    },
+    "src-shizuka-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584022799,
+        "narHash": "sha256-6hbHrKCNjaaNU/kINGajYeWCFdWJcu9LWpzeANideLA=",
+        "owner": "ethosa",
+        "repo": "shizuka",
+        "rev": "37f2aab3eb61b97fbc1a8500be647788dfb72a07",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "shizuka",
+        "type": "github"
+      }
+    },
+    "src-shizuka-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584093435,
+        "narHash": "sha256-2wL6/cZrWjC3UrAoUZVwfWB44P1kxhWv5yZa0lgBfP0=",
+        "owner": "ethosa",
+        "repo": "shizuka",
+        "rev": "49e5b316b4699d8e2dd38f65fa30dafd74e26dc6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ethosa",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "shizuka",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

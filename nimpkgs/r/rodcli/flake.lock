@@ -1,0 +1,449 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "rodcli-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-master": "src-rodcli-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_2": "src-rodcli-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_3": "src-rodcli-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_4": "src-rodcli-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_5": "src-rodcli-v0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_6": "src-rodcli-v0_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_7": "src-rodcli-v0_1_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_8": "src-rodcli-v0_1_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rodcli-v0_1_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rodcli-v0_1_9": "src-rodcli-v0_1_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rodcli/v0_1_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rodcli/v0_1_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rodcli-master": "rodcli-master",
+        "rodcli-v0_1_2": "rodcli-v0_1_2",
+        "rodcli-v0_1_3": "rodcli-v0_1_3",
+        "rodcli-v0_1_4": "rodcli-v0_1_4",
+        "rodcli-v0_1_5": "rodcli-v0_1_5",
+        "rodcli-v0_1_6": "rodcli-v0_1_6",
+        "rodcli-v0_1_7": "rodcli-v0_1_7",
+        "rodcli-v0_1_8": "rodcli-v0_1_8",
+        "rodcli-v0_1_9": "rodcli-v0_1_9"
+      }
+    },
+    "src-rodcli-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543663890,
+        "narHash": "sha256-bKwmPOm4tQI9Kd5lYx3alqZB7Q+ohbJx/PF7Ezv2xSo=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "3b791f56411427563aaf0fe6c45ef47fdb065d0f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/heads/master",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539541146,
+        "narHash": "sha256-s6KGrklBz6iCPXWXfzIjBI/15PWrZF6uNnr52+3tM/M=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "aa110639d943a01448a79eabde17ab79c2508c90",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539541146,
+        "narHash": "sha256-s6KGrklBz6iCPXWXfzIjBI/15PWrZF6uNnr52+3tM/M=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "aa110639d943a01448a79eabde17ab79c2508c90",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539544831,
+        "narHash": "sha256-GBghclAZulG/STyC+WkNYbz/tYM6Lq4citR3HdpxlaM=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "6aa2057b9e447d85c9f4a0721159ed0faf47cdc4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539614303,
+        "narHash": "sha256-I244Nu7RqJUj2YGIipKTEspmlPDLl82Eeyq4Isb2SLI=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "17ab8976aace43c755f6b28d448dd849f0d3bc81",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.5",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539683922,
+        "narHash": "sha256-HkMPAWNXzUf7NVoq5D1IrRGVhaa6l42AhvxI9rvob1U=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "9bc6cfbedd932eab45dcc2b052de8b9baf0348ed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.6",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540061904,
+        "narHash": "sha256-7UGZoVhWpEI/6fuPKwh4Bgi3BD/6zPvbioG+12+LVk4=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "d258c35be4efb17fce6eef50e62cee6745a79535",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1542463241,
+        "narHash": "sha256-yht8suAl/vdrPabdUet39qwe4spGon6LSVmVDFe/DIs=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "cefe68a8c162ead0fae6d7b182f095035200a7ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.8",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    },
+    "src-rodcli-v0_1_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543663735,
+        "narHash": "sha256-rgwnbPRyE8/2nC25KYaEA2Mu7eyQodgUcInz02XKKnI=",
+        "owner": "jabbalaci",
+        "repo": "NimCliHelper",
+        "rev": "e9d926329794ef0cf04c27e55632c92d8f5b8d98",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jabbalaci",
+        "ref": "refs/tags/v0.1.9",
+        "repo": "NimCliHelper",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

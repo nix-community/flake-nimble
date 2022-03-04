@@ -1,0 +1,854 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "rethinkdb-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_1_0": "src-rethinkdb-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_1_1": "src-rethinkdb-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_1_2": "src-rethinkdb-0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_1_3": "src-rethinkdb-0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_1_4": "src-rethinkdb-0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_1_5": "src-rethinkdb-0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_1_6": "src-rethinkdb-0_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_0": "src-rethinkdb-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_3": "src-rethinkdb-0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_3_1": "src-rethinkdb-0_2_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_3_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_3_2": "src-rethinkdb-0_2_3_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_3_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_3_3": "src-rethinkdb-0_2_3_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_3_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_3_4": "src-rethinkdb-0_2_3_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_3_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_3_5": "src-rethinkdb-0_2_3_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_3_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_4": "src-rethinkdb-0_2_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_5": "src-rethinkdb-0_2_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-0_2_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-0_2_6": "src-rethinkdb-0_2_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/0_2_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rethinkdb-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rethinkdb-master": "src-rethinkdb-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rethinkdb/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rethinkdb/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rethinkdb-0_1_0": "rethinkdb-0_1_0",
+        "rethinkdb-0_1_1": "rethinkdb-0_1_1",
+        "rethinkdb-0_1_2": "rethinkdb-0_1_2",
+        "rethinkdb-0_1_3": "rethinkdb-0_1_3",
+        "rethinkdb-0_1_4": "rethinkdb-0_1_4",
+        "rethinkdb-0_1_5": "rethinkdb-0_1_5",
+        "rethinkdb-0_1_6": "rethinkdb-0_1_6",
+        "rethinkdb-0_2_0": "rethinkdb-0_2_0",
+        "rethinkdb-0_2_3": "rethinkdb-0_2_3",
+        "rethinkdb-0_2_3_1": "rethinkdb-0_2_3_1",
+        "rethinkdb-0_2_3_2": "rethinkdb-0_2_3_2",
+        "rethinkdb-0_2_3_3": "rethinkdb-0_2_3_3",
+        "rethinkdb-0_2_3_4": "rethinkdb-0_2_3_4",
+        "rethinkdb-0_2_3_5": "rethinkdb-0_2_3_5",
+        "rethinkdb-0_2_4": "rethinkdb-0_2_4",
+        "rethinkdb-0_2_5": "rethinkdb-0_2_5",
+        "rethinkdb-0_2_6": "rethinkdb-0_2_6",
+        "rethinkdb-master": "rethinkdb-master"
+      }
+    },
+    "src-rethinkdb-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1437451139,
+        "narHash": "sha256-BGK6TPvF2JATcbXrcjIvztduhBKcjnXl/RH2y8t4Qsc=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "d2b72641ef2f4e1c4168903efa52c0792149769d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.0",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1446916674,
+        "narHash": "sha256-ngePagJJbKh0cPPy9QLYiNoSZwUhbrCLB6Q1J7ng7N8=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "c4562abc05faed9593df14fe8ac2ebb862ab59e0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.1",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1447372874,
+        "narHash": "sha256-5RVXTCf/2o4tJK4UIjD9znaUjej486czXP5ybdCa6WE=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "0a686322d57b2397494638178c020cf788f93f83",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.2",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1448666926,
+        "narHash": "sha256-EmRuPQE+pf0W+v2p2pd/kSlXHz+Z68/PO2s441shO54=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "1718f69cbbf5f6f0bdfc1b089bad2ed105eae0af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.3",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1448963960,
+        "narHash": "sha256-i6x7Bn6YIj8tE+SrykyT0XfRF3VsCkOMrkRVPaL4O3w=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "f96f504d5156e29aa1a807d9dcab48128306aa7d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.4",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1453140949,
+        "narHash": "sha256-7ri5LdRUn1fet3JVMTSD1cODeG29ky5yHU3q4E/5Li0=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "91c980027c5aea62db33d17ea26cb09f5b8ffb3a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.5",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1455293185,
+        "narHash": "sha256-678P7EIpzIN0IgxuYK64faw3Q1th2q+k+XF/smgzD6o=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "dc803d1b7e0194e3613c88cb16a3163280ae023e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.6",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1498625452,
+        "narHash": "sha256-OYQ15qTAm+3je5rlFhHjyZZAtbEYGlBT2T8bvMkQk/k=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "9191d4d4bd256278f6df73b2c6d9ddf31fb487cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.0",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1498671488,
+        "narHash": "sha256-eMg3Fuy4wN+Qarqfc7kOiKS+CzUF0ewM/+DHLFbQcpU=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "3fd84b293f14aae50133ae52869137b5b9d341a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.3",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1498882595,
+        "narHash": "sha256-d7rtuSGyB0JCfbl2I6Pm174qZ1WHXAn+0TpbPGW0oT0=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "6289a755f1d2dddbaf1a71daaeac183a7c3207f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.3.1",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531184643,
+        "narHash": "sha256-eJBNmxRTA17VfKN5n64jlWb9eRmqCzLkLCAl5QZFlUw=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "13a3bba2cf4dcc5246b493b0e4eeeae4e5c2bab4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.3.2",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_3_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1535009099,
+        "narHash": "sha256-Z7mJDask1yIQfJ3lrPEVxRopb73PslNeDk5PCxzXlvY=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "36fa90c1549d2f39d6f2c7ef0b25a8bf3f83f69c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.3.3",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_3_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1536140818,
+        "narHash": "sha256-MVIQRaAJn5JwDtt/WYhzkRQTAi2GoIB/RNZAge1Su2s=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "31946ddd642c1d193918f78f4715bd1aea77d380",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.3.4",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_3_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1536246316,
+        "narHash": "sha256-csKMRoViJF5ZC+MRgScvbDG5JbE8t+UyI/1lb9S+zAE=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "9cd520a161e9f0012b31f4c5da0c9c571563597c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.3.5",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578421455,
+        "narHash": "sha256-+JGc9dsH/OQaMqtjTEM9+XpjZQ1qH0xAGmd0Y5UxqPg=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "53ecbd434d04f1ed90b65edc36206b82b56e2c33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.4",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629394847,
+        "narHash": "sha256-P471EL83bA8jFkz9lJqfKAQmlDGPAsPTFKjbnX0Odsk=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "fa848b4184302c7f764aeb8b2d2ae7702df396e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.5",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-0_2_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629396157,
+        "narHash": "sha256-t3VJRdtPSpyZ3Zo8yJraM4VSfj2KAxH9JlyNRF4GDi0=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "48a2f22e76f431c69a7c214ae4c4f1742a29952e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.2.6",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    },
+    "src-rethinkdb-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633049915,
+        "narHash": "sha256-0JY2V9Gwt5grIX7flK3R07tVxxhCDpfHmRf+o3QTYrA=",
+        "owner": "OpenSystemsLab",
+        "repo": "rethinkdb.nim",
+        "rev": "b5b177adc9e3d8a163ea1f2adab061a123a82465",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/heads/master",
+        "repo": "rethinkdb.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

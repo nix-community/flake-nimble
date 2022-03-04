@@ -1,0 +1,1034 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "openapi-1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-1_0_0": "src-openapi-1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-1_0_1": "src-openapi-1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-1_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-1_0_2": "src-openapi-1_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/1_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/1_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-1_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-1_0_3": "src-openapi-1_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/1_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/1_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-2_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-2_0_0": "src-openapi-2_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/2_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/2_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-2_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-2_0_1": "src-openapi-2_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/2_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/2_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_0_0": "src-openapi-3_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_0_1": "src-openapi-3_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_0": "src-openapi-3_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_1": "src-openapi-3_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_2": "src-openapi-3_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_3": "src-openapi-3_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_4": "src-openapi-3_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_5": "src-openapi-3_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_6": "src-openapi-3_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_1_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_1_7": "src-openapi-3_1_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_1_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_1_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_2_0": "src-openapi-3_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_2_1": "src-openapi-3_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_2_2": "src-openapi-3_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_3_0": "src-openapi-3_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-3_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-3_3_1": "src-openapi-3_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/3_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/3_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "openapi-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openapi-master": "src-openapi-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/openapi/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/openapi/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "openapi-1_0_0": "openapi-1_0_0",
+        "openapi-1_0_1": "openapi-1_0_1",
+        "openapi-1_0_2": "openapi-1_0_2",
+        "openapi-1_0_3": "openapi-1_0_3",
+        "openapi-2_0_0": "openapi-2_0_0",
+        "openapi-2_0_1": "openapi-2_0_1",
+        "openapi-3_0_0": "openapi-3_0_0",
+        "openapi-3_0_1": "openapi-3_0_1",
+        "openapi-3_1_0": "openapi-3_1_0",
+        "openapi-3_1_1": "openapi-3_1_1",
+        "openapi-3_1_2": "openapi-3_1_2",
+        "openapi-3_1_3": "openapi-3_1_3",
+        "openapi-3_1_4": "openapi-3_1_4",
+        "openapi-3_1_5": "openapi-3_1_5",
+        "openapi-3_1_6": "openapi-3_1_6",
+        "openapi-3_1_7": "openapi-3_1_7",
+        "openapi-3_2_0": "openapi-3_2_0",
+        "openapi-3_2_1": "openapi-3_2_1",
+        "openapi-3_2_2": "openapi-3_2_2",
+        "openapi-3_3_0": "openapi-3_3_0",
+        "openapi-3_3_1": "openapi-3_3_1",
+        "openapi-master": "openapi-master"
+      }
+    },
+    "src-openapi-1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568915496,
+        "narHash": "sha256-uZgP2SurkLAn4oC3wKZoQhjXR8xOjABQnXxVwKqj3Mc=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "9ad11b94ad183031b49a7fb0c763b5a2455bbbfa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.0.0",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569036332,
+        "narHash": "sha256-DBh8v6YyaLPdtOz2KzTBUxhkXfO9uR1lEeUUJy8Ss/k=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "1d003cdb5e6589d1b858163f8a5367b7e557fbb3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.0.1",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569161814,
+        "narHash": "sha256-FCg8UDkKgOfN1YWBq/JnY8HoivJOLNE0on58qTCAwys=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "90f13c7378999bedb9129022e716859879a64441",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.0.2",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-1_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569206756,
+        "narHash": "sha256-su9eIwuYTVWJn3bFzhrQxpnRYt3qY09qXHSc623dsOE=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "d2b6b063d06b968bb6b0fbd4c27ac55191b330b7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.0.3",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-2_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569259155,
+        "narHash": "sha256-nmEk0U4R7SF9naqWW4tiIE8fX3rD5/7+z+1tUAce9dc=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "306ec5b1182463759512018723690dda41bec9d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/2.0.0",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-2_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569262694,
+        "narHash": "sha256-xGnba4Ym6NPorrvK5rnKOLvi0zlJixSyo3rSsKgDhrU=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "e146b5443091e9268363a16f640efd1540184c3e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/2.0.1",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569688075,
+        "narHash": "sha256-dPJmaYYVndvCpBgZQxlqNq9ELWgAn5OIZYIZ2hb55Gk=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "29fa150208a01a1114eb549852dee1c317052a81",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.0.0",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569689981,
+        "narHash": "sha256-jGk5CmZRHreTvMpJAdsFP605hIwedTPoAl0YIcgZS7I=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "3a291bf44d352dd81bd55566e86ee754a0ef3c19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.0.1",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569711014,
+        "narHash": "sha256-S8j9cgzjRq9vmDSVmJE3wcc926wYHEeDgrkjbR9h+M0=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "3f1d33048bcb99bbf0805d650d9ccb736543a5c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.0",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1571435837,
+        "narHash": "sha256-uxkNauiv/UDprnFM++yPdVwWYM1aDaj3YsK/30KO0RQ=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "0957c684ecccdeaf16a4e952ce0498a24a4b65f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.1",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1571533981,
+        "narHash": "sha256-IMIVlo0RX2ryVxSUF1T/URXiHPqvDOPysDpVJlsnWBo=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "3538a379b81f6eb15ad8b902fd4cb5e1e2e7ad6c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.2",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572904213,
+        "narHash": "sha256-ciCJ3dTLFTOg+Eb0dW5UMHaE2A0JmT0zzoKdrT1Cr2g=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "7f5980e7d15fe301e22c42632b566da20149aa17",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.3",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579540820,
+        "narHash": "sha256-rSmjHJgRk6TOxGsZSG7G3YwmgkVT3hm/epFwlA4kpc8=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "ad6f112cb367d6afe4794bd7e60844f962ed1b2d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.4",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588282646,
+        "narHash": "sha256-S7658bg2OssFIiuGbLvqMavHxXylgoDPlObw0Ly7Gng=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "fa14318c21621350a0dd4c8c4adb28d2879beb6f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.5",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588303061,
+        "narHash": "sha256-09idcKm5/D1KK4uueVxpsXGNc5UeJVj7YrDUgR1xU58=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "a607768052d6d8487d6c8ebbd0d8f521793d67c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.6",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590427655,
+        "narHash": "sha256-AS9ao8UeIHC50flSSFl0xR07kjQHD3Ap+GMNn2UhxKk=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "953bb02535a132ef0b155f64721338de87f79178",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.1.7",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593100010,
+        "narHash": "sha256-0H1imH4lanbpkICW4wnJBJXuuOUkixAVWAZf3AvZZDU=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "d6c03c658dccde21dc32b7ae21411364b73f04ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.2.0",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601302614,
+        "narHash": "sha256-NrEu+7CBSSN2X9IQdcMb9X76RgbIkcsFE7GmrGK36U8=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "dc2874b7b8cf577425f6e2b8e0fb95b8a0ebf579",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.2.1",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604854098,
+        "narHash": "sha256-uehF1eXMHquMXcI/RSIO58Vz2biySRzDltUMuZLvjBg=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "e40c2249d845c6f8c65e63c7a612ade5a18a1148",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.2.2",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624049259,
+        "narHash": "sha256-ZAsRPhyKecF5q9JO9tfsGxYb6oC2ioIWT07nNm9W3lY=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "5a797bc4a3c7eae0b8c18c41d5b006f6e083c7f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.3.0",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-3_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628463390,
+        "narHash": "sha256-v7WRj4iucvWY5GC0vTgL+PA2W3zintj4n1ohl8/c7Ls=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "6a4424fc184c61781b16d5f75cdd3d809736673f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.3.1",
+        "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-openapi-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628463390,
+        "narHash": "sha256-v7WRj4iucvWY5GC0vTgL+PA2W3zintj4n1ohl8/c7Ls=",
+        "owner": "disruptek",
+        "repo": "openapi",
+        "rev": "6a4424fc184c61781b16d5f75cdd3d809736673f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/heads/master",
+        "repo": "openapi",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

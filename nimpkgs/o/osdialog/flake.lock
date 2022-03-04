@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "osdialog-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-osdialog-master": "src-osdialog-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/osdialog/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/osdialog/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "osdialog-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-osdialog-v0_1_0": "src-osdialog-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/osdialog/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/osdialog/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "osdialog-master": "osdialog-master",
+        "osdialog-v0_1_0": "osdialog-v0_1_0"
+      }
+    },
+    "src-osdialog-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636537272,
+        "narHash": "sha256-Kbr0Nk+UH/847EKdpaMXSsNkkSTUAugKdcFwXHtmTJk=",
+        "owner": "johnnovak",
+        "repo": "nim-osdialog",
+        "rev": "56c71c182fd62a051972ecdcf122bdc29a419795",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/heads/master",
+        "repo": "nim-osdialog",
+        "type": "github"
+      }
+    },
+    "src-osdialog-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582278759,
+        "narHash": "sha256-Ua8U0q8uTbjgBaYx2gmP/c5mrSUDfQvVMrVJis956zc=",
+        "owner": "johnnovak",
+        "repo": "nim-osdialog",
+        "rev": "7583c362ce177787e9ff1591b8eeb3c2f4985466",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnnovak",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nim-osdialog",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

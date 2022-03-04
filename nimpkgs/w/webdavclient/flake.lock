@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "webdavclient-0_1_0": "webdavclient-0_1_0",
+        "webdavclient-master": "webdavclient-master"
+      }
+    },
+    "src-webdavclient-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578253509,
+        "narHash": "sha256-PmpwVByC5cagsTPXeWLLQXbTd6iUMIzgZOGOEwVqNrM=",
+        "owner": "beshrkayali",
+        "repo": "webdavclient",
+        "rev": "8e32db41a7596a2917045efeaf82921a703dd692",
+        "type": "github"
+      },
+      "original": {
+        "owner": "beshrkayali",
+        "ref": "refs/tags/0.1.0",
+        "repo": "webdavclient",
+        "type": "github"
+      }
+    },
+    "src-webdavclient-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603115137,
+        "narHash": "sha256-cSW0IO1xfsgizT6WQp6Yc+UW3vCEyjgSrJXRtDznfII=",
+        "owner": "beshrkayali",
+        "repo": "webdavclient",
+        "rev": "bbdd40250a8bb7448ffb0c4e1017e43924ea81eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "beshrkayali",
+        "ref": "refs/heads/master",
+        "repo": "webdavclient",
+        "type": "github"
+      }
+    },
+    "webdavclient-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-webdavclient-0_1_0": "src-webdavclient-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/webdavclient/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/webdavclient/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "webdavclient-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-webdavclient-master": "src-webdavclient-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/webdavclient/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/webdavclient/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

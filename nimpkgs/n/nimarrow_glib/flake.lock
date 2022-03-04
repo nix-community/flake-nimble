@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimarrow_glib-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimarrow_glib-master": "src-nimarrow_glib-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimarrow_glib/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimarrow_glib/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimarrow_glib-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimarrow_glib-v0_1_1": "src-nimarrow_glib-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimarrow_glib/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimarrow_glib/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimarrow_glib-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimarrow_glib-v0_1_2": "src-nimarrow_glib-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimarrow_glib/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimarrow_glib/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimarrow_glib-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimarrow_glib-v0_1_3": "src-nimarrow_glib-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimarrow_glib/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimarrow_glib/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimarrow_glib-master": "nimarrow_glib-master",
+        "nimarrow_glib-v0_1_1": "nimarrow_glib-v0_1_1",
+        "nimarrow_glib-v0_1_2": "nimarrow_glib-v0_1_2",
+        "nimarrow_glib-v0_1_3": "nimarrow_glib-v0_1_3",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimarrow_glib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625610709,
+        "narHash": "sha256-DuRtp5xKbjwEvLMN9erjbQvzGKedH2akrLZLXG6I9ps=",
+        "owner": "emef",
+        "repo": "nimarrow_glib",
+        "rev": "bce244fe7ef3bb872b93b2947bbe72c92a56244f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "emef",
+        "ref": "refs/heads/master",
+        "repo": "nimarrow_glib",
+        "type": "github"
+      }
+    },
+    "src-nimarrow_glib-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624464883,
+        "narHash": "sha256-0r+dwy2/2xBNTBT0NToa9kzQMeEAX4xdeep/glfcVAQ=",
+        "owner": "emef",
+        "repo": "nimarrow_glib",
+        "rev": "aaa3aba6a21adef2f80ccc87e77403cee78bfe4a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "emef",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "nimarrow_glib",
+        "type": "github"
+      }
+    },
+    "src-nimarrow_glib-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625174180,
+        "narHash": "sha256-mr8onV1jFz+fBC+AYWujEkY6hD6/XFsSwdTsXAruij4=",
+        "owner": "emef",
+        "repo": "nimarrow_glib",
+        "rev": "61c1126c2d36ff0a4aa50d2a54be3935f219648a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "emef",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "nimarrow_glib",
+        "type": "github"
+      }
+    },
+    "src-nimarrow_glib-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625778298,
+        "narHash": "sha256-F0igvviDQUeVKOZli6kIpT5VAFLiz9l4w7iS7FFqZMM=",
+        "owner": "emef",
+        "repo": "nimarrow_glib",
+        "rev": "9e624b28e9ee4acdfe6cbf6074f59414748517f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "emef",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "nimarrow_glib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

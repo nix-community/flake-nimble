@@ -1,0 +1,314 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimvisa-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimvisa-0_1_0": "src-nimvisa-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimvisa/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimvisa/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimvisa-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimvisa-0_1_1": "src-nimvisa-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimvisa/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimvisa/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimvisa-0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimvisa-0_1_2": "src-nimvisa-0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimvisa/0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimvisa/0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimvisa-0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimvisa-0_1_3": "src-nimvisa-0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimvisa/0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimvisa/0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimvisa-0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimvisa-0_1_4": "src-nimvisa-0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimvisa/0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimvisa/0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimvisa-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimvisa-main": "src-nimvisa-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimvisa/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimvisa/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimvisa-0_1_0": "nimvisa-0_1_0",
+        "nimvisa-0_1_1": "nimvisa-0_1_1",
+        "nimvisa-0_1_2": "nimvisa-0_1_2",
+        "nimvisa-0_1_3": "nimvisa-0_1_3",
+        "nimvisa-0_1_4": "nimvisa-0_1_4",
+        "nimvisa-main": "nimvisa-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimvisa-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604403829,
+        "narHash": "sha256-mSuIJyPPtGXvcH/JU4/jO46Sg0UekOMhiGNiygX/rII=",
+        "owner": "leeooox",
+        "repo": "nimvisa",
+        "rev": "712a3b9c726c054472346ce8475efe0e601cdafe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nimvisa",
+        "type": "github"
+      }
+    },
+    "src-nimvisa-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604444601,
+        "narHash": "sha256-r2iyQ/YARSKHlfSYJKXkIW4HYA6nKLGM4PO0NquQ6mo=",
+        "owner": "leeooox",
+        "repo": "nimvisa",
+        "rev": "7131c1e4af9febda361badb228fad5a59d3612b9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/tags/0.1.1",
+        "repo": "nimvisa",
+        "type": "github"
+      }
+    },
+    "src-nimvisa-0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604450902,
+        "narHash": "sha256-UgCHcgF1aDF+ffxylkGKs9xLHWA9XnWYR9PjNv/+PdY=",
+        "owner": "leeooox",
+        "repo": "nimvisa",
+        "rev": "0595a45754ec824f5ec5a9ad159c4bac6bdd6234",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/tags/0.1.2",
+        "repo": "nimvisa",
+        "type": "github"
+      }
+    },
+    "src-nimvisa-0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604452797,
+        "narHash": "sha256-2yT4JqZHo9YZoEeDKCOuKnuyf/myuBF0UUhGh3KoFRU=",
+        "owner": "leeooox",
+        "repo": "nimvisa",
+        "rev": "48c8ffe0604234f6d98b43caa56c56fb6d873734",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/tags/0.1.3",
+        "repo": "nimvisa",
+        "type": "github"
+      }
+    },
+    "src-nimvisa-0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604474712,
+        "narHash": "sha256-TS4qk1pZX9l9f0pRBT7y2AazjCAFRi3bNMtLs3hu5G8=",
+        "owner": "leeooox",
+        "repo": "nimvisa",
+        "rev": "eac80c7aacdce7663b862b2126081febc27da0fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/tags/0.1.4",
+        "repo": "nimvisa",
+        "type": "github"
+      }
+    },
+    "src-nimvisa-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604474712,
+        "narHash": "sha256-TS4qk1pZX9l9f0pRBT7y2AazjCAFRi3bNMtLs3hu5G8=",
+        "owner": "leeooox",
+        "repo": "nimvisa",
+        "rev": "eac80c7aacdce7663b862b2126081febc27da0fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/heads/main",
+        "repo": "nimvisa",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

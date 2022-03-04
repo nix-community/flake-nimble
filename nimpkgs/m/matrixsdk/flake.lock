@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "matrixsdk-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-matrixsdk-0_1_0": "src-matrixsdk-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/matrixsdk/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/matrixsdk/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "matrixsdk-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-matrixsdk-main": "src-matrixsdk-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/matrixsdk/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/matrixsdk/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "matrixsdk-0_1_0": "matrixsdk-0_1_0",
+        "matrixsdk-main": "matrixsdk-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-matrixsdk-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633364087,
+        "narHash": "sha256-KT42TVtEiUKvJPtHScb0+1iCGx7PYvJnGNlk6DH/IAc=",
+        "owner": "dylhack",
+        "repo": "matrix-nim-sdk",
+        "rev": "3966bba90de0578497dd144dacf01b46cd111cb5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dylhack",
+        "ref": "refs/tags/0.1.0",
+        "repo": "matrix-nim-sdk",
+        "type": "github"
+      }
+    },
+    "src-matrixsdk-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644658912,
+        "narHash": "sha256-F4I14J1+Rw/ttP0C38al4sfgXfQih4uQS7DjLaILKx8=",
+        "owner": "dylhack",
+        "repo": "matrix-nim-sdk",
+        "rev": "3061909368d00ea05f0eaeedd08e7ea6de16e5ed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dylhack",
+        "ref": "refs/heads/main",
+        "repo": "matrix-nim-sdk",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "rapid-2019_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rapid-2019_1": "src-rapid-2019_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rapid/2019_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rapid/2019_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "rapid-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rapid-master": "src-rapid-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/rapid/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/rapid/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rapid-2019_1": "rapid-2019_1",
+        "rapid-master": "rapid-master"
+      }
+    },
+    "src-rapid-2019_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588691093,
+        "narHash": "sha256-gu9v97K6DH0oUB/msK0KBTy/zwKFt94qjloozcQYhlg=",
+        "owner": "liquid600pgm",
+        "repo": "rapid",
+        "rev": "60134a9492d25ff601b6defe2b13044a0a29300e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "liquid600pgm",
+        "ref": "refs/tags/2019.1",
+        "repo": "rapid",
+        "type": "github"
+      }
+    },
+    "src-rapid-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623498594,
+        "narHash": "sha256-dy7auKgJHeHAhxfxDdoV4gzup12Ci8kbHdxKbNmdfNc=",
+        "owner": "liquid600pgm",
+        "repo": "rapid",
+        "rev": "a50704e542987dc9cb9456e481f8f631e885c56a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "liquid600pgm",
+        "ref": "refs/heads/master",
+        "repo": "rapid",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

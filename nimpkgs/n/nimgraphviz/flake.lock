@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimgraphviz-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimgraphviz-master": "src-nimgraphviz-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimgraphviz/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimgraphviz/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimgraphviz-v3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimgraphviz-v3_0": "src-nimgraphviz-v3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimgraphviz/v3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimgraphviz/v3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimgraphviz-master": "nimgraphviz-master",
+        "nimgraphviz-v3_0": "nimgraphviz-v3_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimgraphviz-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631002871,
+        "narHash": "sha256-zQ5L10hwvyTqKBJ9qP7xrqG6KrYK8yVHuzLrbaRl/Vc=",
+        "owner": "Aveheuzed",
+        "repo": "nimgraphviz",
+        "rev": "de13bc4714e8ea79de443677c00a02c3e37be87b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Aveheuzed",
+        "ref": "refs/heads/master",
+        "repo": "nimgraphviz",
+        "type": "github"
+      }
+    },
+    "src-nimgraphviz-v3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631002871,
+        "narHash": "sha256-zQ5L10hwvyTqKBJ9qP7xrqG6KrYK8yVHuzLrbaRl/Vc=",
+        "owner": "Aveheuzed",
+        "repo": "nimgraphviz",
+        "rev": "de13bc4714e8ea79de443677c00a02c3e37be87b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Aveheuzed",
+        "ref": "refs/tags/v3.0",
+        "repo": "nimgraphviz",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

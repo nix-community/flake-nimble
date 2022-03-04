@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "scnim-0_0_1": "scnim-0_0_1",
+        "scnim-master": "scnim-master"
+      }
+    },
+    "scnim-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-scnim-0_0_1": "src-scnim-0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/scnim/0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/scnim/0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "scnim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-scnim-master": "src-scnim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/scnim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/scnim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-scnim-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1520970067,
+        "narHash": "sha256-jFqJigwOasbiLQWEe89c2WtYLMhCafF+p/XjMP25kOU=",
+        "owner": "capocasa",
+        "repo": "scnim",
+        "rev": "e95e4f6d8db47e24a469ed4854137631649ed9f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "capocasa",
+        "ref": "refs/tags/0.0.1",
+        "repo": "scnim",
+        "type": "github"
+      }
+    },
+    "src-scnim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574623851,
+        "narHash": "sha256-k/g3hXaNz/ldMxcO7uePWl/Tla2Lnws+1N6uBUfbydE=",
+        "owner": "capocasa",
+        "repo": "scnim",
+        "rev": "93c45a5730f5e3d3cbcecd50509ac21f27f61b3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "capocasa",
+        "ref": "refs/heads/master",
+        "repo": "scnim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

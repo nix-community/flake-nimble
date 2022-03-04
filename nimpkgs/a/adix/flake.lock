@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "adix-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-adix-0_2_0": "src-adix-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/adix/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/adix/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "adix-0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-adix-0_2_1": "src-adix-0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/adix/0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/adix/0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "adix-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-adix-master": "src-adix-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/adix/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/adix/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "adix-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-adix-v0_3_0": "src-adix-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/adix/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/adix/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "adix-0_2_0": "adix-0_2_0",
+        "adix-0_2_1": "adix-0_2_1",
+        "adix-master": "adix-master",
+        "adix-v0_3_0": "adix-v0_3_0",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-adix-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630008336,
+        "narHash": "sha256-XZT0ZhGrsZjvV7PFd8/yNsj/wvFBtJJ/+M/4+yJJXW4=",
+        "owner": "c-blake",
+        "repo": "adix",
+        "rev": "1f5eef6d4b685458e480969cf4d6819f7a705faf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/0.2.0",
+        "repo": "adix",
+        "type": "github"
+      }
+    },
+    "src-adix-0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630428725,
+        "narHash": "sha256-j9IfcgLCkChGt8yjNSMLcfQokAoEZvtXbXCeFr8Ds9A=",
+        "owner": "c-blake",
+        "repo": "adix",
+        "rev": "a57909feaedf6f1ff6c212cec0d034b89553ff40",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/0.2.1",
+        "repo": "adix",
+        "type": "github"
+      }
+    },
+    "src-adix-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643746020,
+        "narHash": "sha256-pUVNGXFqSynwV1yMJ4o5En6w125ZqSyV8GdwJPqduPQ=",
+        "owner": "c-blake",
+        "repo": "adix",
+        "rev": "5329cae6b27b9eff89b0a97b7a589880f5f02a31",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/heads/master",
+        "repo": "adix",
+        "type": "github"
+      }
+    },
+    "src-adix-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639584866,
+        "narHash": "sha256-flguAvaWzvUJzgV+goT7Ua/XEBDFJ281erquspXs/IA=",
+        "owner": "c-blake",
+        "repo": "adix",
+        "rev": "3fe3ea86781ae19115e7506cd4800847dc0f520a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "adix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "adb-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-adb-master": "src-adb-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/adb/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/adb/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "adb-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-adb-v0_1_0": "src-adb-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/adb/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/adb/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "adb-master": "adb-master",
+        "adb-v0_1_0": "adb-v0_1_0",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-adb-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579776278,
+        "narHash": "sha256-mZl+Z/0b7Ny0F1Qnu/9jdDukU/XapVF5LeHuVkzgBKY=",
+        "owner": "Yardanico",
+        "repo": "nim-adb",
+        "rev": "837450b5b703ff3ca8d3995f2927ea45d65056d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Yardanico",
+        "ref": "refs/heads/master",
+        "repo": "nim-adb",
+        "type": "github"
+      }
+    },
+    "src-adb-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579776278,
+        "narHash": "sha256-mZl+Z/0b7Ny0F1Qnu/9jdDukU/XapVF5LeHuVkzgBKY=",
+        "owner": "Yardanico",
+        "repo": "nim-adb",
+        "rev": "837450b5b703ff3ca8d3995f2927ea45d65056d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Yardanico",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nim-adb",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

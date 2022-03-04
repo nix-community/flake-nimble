@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "woocommerce-api-nim-master": "woocommerce-api-nim-master"
+      }
+    },
+    "src-woocommerce-api-nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1580397510,
+        "narHash": "sha256-S4c9z1pu6hcsHhX3Gl5XG7z99/fO70pGSZSdqKzka34=",
+        "owner": "mrhdias",
+        "repo": "woocommerce-api-nim",
+        "rev": "e5fb8821e73a0b0f372b6f9a71da9bece69516e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrhdias",
+        "ref": "refs/heads/master",
+        "repo": "woocommerce-api-nim",
+        "type": "github"
+      }
+    },
+    "woocommerce-api-nim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-woocommerce-api-nim-master": "src-woocommerce-api-nim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/woocommerce-api-nim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/woocommerce-api-nim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

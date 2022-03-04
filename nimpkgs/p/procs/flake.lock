@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "procs-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-procs-master": "src-procs-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/procs/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/procs/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "procs-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-procs-v0_2_1": "src-procs-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/procs/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/procs/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "procs-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-procs-v0_3_0": "src-procs-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/procs/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/procs/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "procs-master": "procs-master",
+        "procs-v0_2_1": "procs-v0_2_1",
+        "procs-v0_3_0": "procs-v0_3_0"
+      }
+    },
+    "src-procs-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646162260,
+        "narHash": "sha256-gVPKx4I2TkeFbWcO9PVl45TRiJvuA9F6lLK7k6r3D4Q=",
+        "owner": "c-blake",
+        "repo": "procs",
+        "rev": "dff3a723174fa7a3463637ca39be8e9c7a926303",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/heads/master",
+        "repo": "procs",
+        "type": "github"
+      }
+    },
+    "src-procs-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598552840,
+        "narHash": "sha256-wikozavHAUJEIjmtYAh+tC+Kb2rmvUaAp8WUoO0Ggrs=",
+        "owner": "c-blake",
+        "repo": "procs",
+        "rev": "35f26d981d6a5fcb04f0b34458a02f6c87a40543",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "procs",
+        "type": "github"
+      }
+    },
+    "src-procs-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610629783,
+        "narHash": "sha256-kUWzNTKJ6dSDt5hdQDjgydIJ7wGJGWXrGqUu7LwBegM=",
+        "owner": "c-blake",
+        "repo": "procs",
+        "rev": "eb32f9bc781086e8e52afe9f335cebe7352626f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "procs",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

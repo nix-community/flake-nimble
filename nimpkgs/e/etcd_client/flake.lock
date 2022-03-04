@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "etcd_client-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-etcd_client-0_1_0": "src-etcd_client-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/e/etcd_client/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/e/etcd_client/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "etcd_client-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-etcd_client-0_2_0": "src-etcd_client-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/e/etcd_client/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/e/etcd_client/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "etcd_client-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-etcd_client-master": "src-etcd_client-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/e/etcd_client/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/e/etcd_client/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "etcd_client-0_1_0": "etcd_client-0_1_0",
+        "etcd_client-0_2_0": "etcd_client-0_2_0",
+        "etcd_client-master": "etcd_client-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-etcd_client-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1480795150,
+        "narHash": "sha256-7ZHst2ucIQ30H04gleSsuD8o9REL7rUBzJTNI4SyQ9U=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-etcd-client",
+        "rev": "7efa1e5eb8a90b63f752a494bcee8ef9b37b5b01",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nim-etcd-client",
+        "type": "github"
+      }
+    },
+    "src-etcd_client-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588447336,
+        "narHash": "sha256-j/PU4qLctZ5C5WbPATolMAL3Puv53yQq6QKdd84DoSo=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-etcd-client",
+        "rev": "62fc98faca9e98b63afa191ebc319247b7a9a06d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.2.0",
+        "repo": "nim-etcd-client",
+        "type": "github"
+      }
+    },
+    "src-etcd_client-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588447336,
+        "narHash": "sha256-j/PU4qLctZ5C5WbPATolMAL3Puv53yQq6QKdd84DoSo=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-etcd-client",
+        "rev": "62fc98faca9e98b63afa191ebc319247b7a9a06d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-etcd-client",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

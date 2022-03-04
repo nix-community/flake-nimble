@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tinypool-0_2_0": "tinypool-0_2_0",
+        "tinypool-0_2_1": "tinypool-0_2_1",
+        "tinypool-master": "tinypool-master"
+      }
+    },
+    "src-tinypool-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643630999,
+        "narHash": "sha256-IBvmH0M7pk8LN2DhEMf4v1eTXomGOOTocBqfgdPBom4=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "dcc30222131cdeb589cf1688367ff94a0d37542b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/tags/0.2.0",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "src-tinypool-0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643631173,
+        "narHash": "sha256-53KoHlUSIupb5a+gEMR+Yrxoe3u7okSoxXrldXDmZnc=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "608c619addad6e94076f58f4cfe28e6a7aa0992a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/tags/0.2.1",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "src-tinypool-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643984083,
+        "narHash": "sha256-+s5No6DmtcC0tinMUQHfVPfC/hjAhJctkluKw+r/wjU=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "0144d37d399f29ce00a0c947915fd7f549a4f7e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/heads/master",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "tinypool-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-0_2_0": "src-tinypool-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/tinypool/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/tinypool/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "tinypool-0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-0_2_1": "src-tinypool-0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/tinypool/0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/tinypool/0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "tinypool-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-master": "src-tinypool-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/t/tinypool/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/t/tinypool/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

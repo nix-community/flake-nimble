@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "slappy-0_3_0": "slappy-0_3_0",
+        "slappy-0_3_1": "slappy-0_3_1",
+        "slappy-master": "slappy-master",
+        "slappy-v0_1_0": "slappy-v0_1_0",
+        "slappy-v0_2_0": "slappy-v0_2_0"
+      }
+    },
+    "slappy-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-slappy-0_3_0": "src-slappy-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/slappy/0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/slappy/0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "slappy-0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-slappy-0_3_1": "src-slappy-0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/slappy/0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/slappy/0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "slappy-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-slappy-master": "src-slappy-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/slappy/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/slappy/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "slappy-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-slappy-v0_1_0": "src-slappy-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/slappy/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/slappy/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "slappy-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-slappy-v0_2_0": "src-slappy-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/slappy/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/slappy/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-slappy-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590770537,
+        "narHash": "sha256-9vNS02oAJ4Yfln5zXVneDPOb51wg92sBXMKfwkKG4S0=",
+        "owner": "treeform",
+        "repo": "slappy",
+        "rev": "f4c4722d39a91f6ed68c61fa05fb21d92fb3bc43",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.3.0",
+        "repo": "slappy",
+        "type": "github"
+      }
+    },
+    "src-slappy-0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1616798738,
+        "narHash": "sha256-BsqTpYTasx2i+Wk8fphYvJ02fXW/ZWCMmHm5xqQlrho=",
+        "owner": "treeform",
+        "repo": "slappy",
+        "rev": "43bd685ef7de13ea4536ad2bcd9d4a91e657648e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.3.1",
+        "repo": "slappy",
+        "type": "github"
+      }
+    },
+    "src-slappy-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633047288,
+        "narHash": "sha256-76egDIhnZgHxIBwapSZiCjtAxiBGOcwdDwB9XFkO3jU=",
+        "owner": "treeform",
+        "repo": "slappy",
+        "rev": "d077976fbc664f0cdcd01a80953f55a15ae9aa89",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/heads/master",
+        "repo": "slappy",
+        "type": "github"
+      }
+    },
+    "src-slappy-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574030911,
+        "narHash": "sha256-SvWXLoLWT4v56djsjGRqhbLYquotSnDbZ+awJAM3kn8=",
+        "owner": "treeform",
+        "repo": "slappy",
+        "rev": "f66535bd45f49d0d09fc562ef3363c9ba275d7fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "slappy",
+        "type": "github"
+      }
+    },
+    "src-slappy-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584067792,
+        "narHash": "sha256-JyC63IJF6Iq4l4GHd2XoM8s2wY+BDB2SOfU0N+YycEk=",
+        "owner": "treeform",
+        "repo": "slappy",
+        "rev": "7f1798e999dfcf3d931a6360d3a486dfe9b89801",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "slappy",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "grab-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-grab-master": "src-grab-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/grab/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/grab/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "grab-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-grab-v0_1_0": "src-grab-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/grab/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/grab/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "grab-master": "grab-master",
+        "grab-v0_1_0": "grab-v0_1_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-grab-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642627859,
+        "narHash": "sha256-2QNBWDEqg1c+ngQ6sbWSvlBHBvI6VceKd4QiyZPNTNQ=",
+        "owner": "metagn",
+        "repo": "grab",
+        "rev": "b6dae314bcc90434d6740c71c517d3112c17440b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "metagn",
+        "ref": "refs/heads/master",
+        "repo": "grab",
+        "type": "github"
+      }
+    },
+    "src-grab-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642270375,
+        "narHash": "sha256-r8dU2KvMdv458YBRRCkTdvyw6uBnPgUq7XKl1mzt3zw=",
+        "owner": "metagn",
+        "repo": "grab",
+        "rev": "70f2563db11bdcc364f37abfbb707b098d5efea7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "metagn",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "grab",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

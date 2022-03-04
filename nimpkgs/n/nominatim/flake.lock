@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nominatim-0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nominatim-0_1_5": "src-nominatim-0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nominatim/0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nominatim/0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nominatim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nominatim-master": "src-nominatim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nominatim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nominatim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nominatim-0_1_5": "nominatim-0_1_5",
+        "nominatim-master": "nominatim-master"
+      }
+    },
+    "src-nominatim-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541090437,
+        "narHash": "sha256-xIrucCPdCoeCf5imvUSEjjP7mQ1U6EuDEg8boAxW3Bc=",
+        "owner": "juancarlospaco",
+        "repo": "nim-nominatim",
+        "rev": "12cb97d59b0bfd977cfbf9bcd4f828f993e878a8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.1.5",
+        "repo": "nim-nominatim",
+        "type": "github"
+      }
+    },
+    "src-nominatim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559843532,
+        "narHash": "sha256-qOeXs1OnAizXBqzcsGWP9Xh4bnIlGGi1gApw+N260k0=",
+        "owner": "juancarlospaco",
+        "repo": "nim-nominatim",
+        "rev": "4be3a868971d627d2682caf340389e175fcee99f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-nominatim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nanoid-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanoid-master": "src-nanoid-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanoid/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanoid/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanoid-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanoid-v0_1_0": "src-nanoid-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanoid/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanoid/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nanoid-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanoid-v0_2_0": "src-nanoid-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nanoid/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nanoid/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nanoid-master": "nanoid-master",
+        "nanoid-v0_1_0": "nanoid-v0_1_0",
+        "nanoid-v0_2_0": "nanoid-v0_2_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nanoid-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1545584468,
+        "narHash": "sha256-gt3Q5PztCdJMMKhtpnmBzWHl3cR6PYqCyn+yjgdkhw0=",
+        "owner": "icyphox",
+        "repo": "nanoid.nim",
+        "rev": "78f2004e66f66153dffa0410e4d7d60dec977b24",
+        "type": "github"
+      },
+      "original": {
+        "owner": "icyphox",
+        "ref": "refs/heads/master",
+        "repo": "nanoid.nim",
+        "type": "github"
+      }
+    },
+    "src-nanoid-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538816393,
+        "narHash": "sha256-2NNoKAbMEfRDQCBI2YcPfCHapNwISlNGOZJaBZKdPKU=",
+        "owner": "icyphox",
+        "repo": "nanoid.nim",
+        "rev": "683297dad7116d717fe58e125ad27cdfbf18c40c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "icyphox",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nanoid.nim",
+        "type": "github"
+      }
+    },
+    "src-nanoid-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541679166,
+        "narHash": "sha256-mlYUhzBc/v/Vr4EaGfKrk6HlMAdun1xM1ZQLBCwf31Y=",
+        "owner": "icyphox",
+        "repo": "nanoid.nim",
+        "rev": "54ab178c7c86e737be10562ce6683bb81b067749",
+        "type": "github"
+      },
+      "original": {
+        "owner": "icyphox",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "nanoid.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

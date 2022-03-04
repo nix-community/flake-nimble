@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nicoru-develop": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nicoru-develop": "src-nicoru-develop"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nicoru/develop",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nicoru/develop",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nicoru-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nicoru-main": "src-nicoru-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nicoru/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nicoru/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nicoru-develop": "nicoru-develop",
+        "nicoru-main": "nicoru-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nicoru-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646120758,
+        "narHash": "sha256-QFP2Wca44cQ/ajgJJhrp/Wakd8aKOeNU69xLvocKF38=",
+        "owner": "fox0430",
+        "repo": "nicoru",
+        "rev": "6a038b0a00f58236d53c8a6a70eb9dd054d12293",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fox0430",
+        "ref": "refs/heads/develop",
+        "repo": "nicoru",
+        "type": "github"
+      }
+    },
+    "src-nicoru-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624353227,
+        "narHash": "sha256-Vz1qHxCbYpckmZpEnGRwriQAQd9aoxwVNVHtS5bs4Bc=",
+        "owner": "fox0430",
+        "repo": "nicoru",
+        "rev": "1888e22399b5937bd8febff6b3de4d28e80d22f2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fox0430",
+        "ref": "refs/heads/main",
+        "repo": "nicoru",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

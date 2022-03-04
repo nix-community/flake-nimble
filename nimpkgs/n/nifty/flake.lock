@@ -1,0 +1,404 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nifty-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-master": "src-nifty-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nifty-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v0_1_0": "src-nifty-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nifty-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v1_0_0": "src-nifty-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nifty-v1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v1_0_1": "src-nifty-v1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/v1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/v1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nifty-v1_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v1_1_0": "src-nifty-v1_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/v1_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/v1_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nifty-v1_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v1_2_0": "src-nifty-v1_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/v1_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/v1_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nifty-v1_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v1_2_1": "src-nifty-v1_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/v1_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/v1_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nifty-v1_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v1_2_2": "src-nifty-v1_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nifty/v1_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nifty/v1_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nifty-master": "nifty-master",
+        "nifty-v0_1_0": "nifty-v0_1_0",
+        "nifty-v1_0_0": "nifty-v1_0_0",
+        "nifty-v1_0_1": "nifty-v1_0_1",
+        "nifty-v1_1_0": "nifty-v1_1_0",
+        "nifty-v1_2_0": "nifty-v1_2_0",
+        "nifty-v1_2_1": "nifty-v1_2_1",
+        "nifty-v1_2_2": "nifty-v1_2_2",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nifty-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636544032,
+        "narHash": "sha256-lGGnsXsWpeXSJeos+qJjf/gUXCPyZKwvTURfgxidb44=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "64310417eb1c135c0c196e77498eaf2079e5cc46",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/heads/master",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "src-nifty-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1479589835,
+        "narHash": "sha256-uBTWQiyiGeyV+PYhcNBN6IN9Ofp5t8BIgcVlgk+OjAw=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "de27ccc6b079e7fa0ffe1a57f51098ee646f8980",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "src-nifty-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1525008845,
+        "narHash": "sha256-A8rm6Url0cvvpP5VVDNNbJfagaBW9EdJfHbKqWj/CQE=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "000ea8b48f6f9ac686e2cd031a8cb59ece641b63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "src-nifty-v1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540127656,
+        "narHash": "sha256-+ARuqHsRFqDRIJtnzi9orYFdXmw8L+iXpsSinFjjZc8=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "db501108b473e4b4d9e95a6efde7325cfcdf2038",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.0.1",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "src-nifty-v1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540132511,
+        "narHash": "sha256-KpjyicavhyJ5IFojbmgD3MHPnqnBNKFIBjZGgEWJ2IU=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "05858d3b3fe9e6a1be5c03fa13ca5d7adb98656c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.1.0",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "src-nifty-v1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599905562,
+        "narHash": "sha256-RaUGnwjaDlfm0NExZWFYwzANGy24QsS9vQIXL9hi5wc=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "603c2078d088114c7f43529916695f5461372a07",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "src-nifty-v1_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600507764,
+        "narHash": "sha256-bRXwnNKV7BZGFCbgndxYbFvpGzivV6Qv9QDTOVadGEs=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "fb3f1b6aec53a432d8c0182b761099979d0cf133",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.2.1",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "src-nifty-v1_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603640331,
+        "narHash": "sha256-mlZPB9pkdgSf8XrvEN8EkNeXhyGPf50jx3VVVRNyKDA=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "4d0d0181f89d922961769489893d44b6fb593b04",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.2.2",
+        "repo": "nifty",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

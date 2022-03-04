@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "honeycomb-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-honeycomb-master": "src-honeycomb-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/honeycomb/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/honeycomb/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "honeycomb-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-honeycomb-v0_1_0": "src-honeycomb-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/honeycomb/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/honeycomb/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "honeycomb-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-honeycomb-v0_1_1": "src-honeycomb-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/h/honeycomb/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/h/honeycomb/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "honeycomb-master": "honeycomb-master",
+        "honeycomb-v0_1_0": "honeycomb-v0_1_0",
+        "honeycomb-v0_1_1": "honeycomb-v0_1_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-honeycomb-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640906913,
+        "narHash": "sha256-rP51bOz0+A+uciS5I9Rzhh0XhdgkdioTovRMzyeRHAQ=",
+        "owner": "KatrinaKitten",
+        "repo": "honeycomb",
+        "rev": "ea10bf45b83e3f703366875517e74672637a3c0b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KatrinaKitten",
+        "ref": "refs/heads/master",
+        "repo": "honeycomb",
+        "type": "github"
+      }
+    },
+    "src-honeycomb-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640768338,
+        "narHash": "sha256-FF2FOYJg0KmsvfpnddTfD+ZIdUxpEy8chAa+AQ/AiLs=",
+        "owner": "KatrinaKitten",
+        "repo": "honeycomb",
+        "rev": "d8c46573e8f095dab9024c533fd2492a507014c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KatrinaKitten",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "honeycomb",
+        "type": "github"
+      }
+    },
+    "src-honeycomb-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640906913,
+        "narHash": "sha256-rP51bOz0+A+uciS5I9Rzhh0XhdgkdioTovRMzyeRHAQ=",
+        "owner": "KatrinaKitten",
+        "repo": "honeycomb",
+        "rev": "ea10bf45b83e3f703366875517e74672637a3c0b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KatrinaKitten",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "honeycomb",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

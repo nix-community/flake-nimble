@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "futhark-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-futhark-master": "src-futhark-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/futhark/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/futhark/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "futhark-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-futhark-v0_3_0": "src-futhark-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/futhark/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/futhark/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "futhark-v0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-futhark-v0_3_1": "src-futhark-v0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/futhark/v0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/futhark/v0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "futhark-master": "futhark-master",
+        "futhark-v0_3_0": "futhark-v0_3_0",
+        "futhark-v0_3_1": "futhark-v0_3_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-futhark-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634294129,
+        "narHash": "sha256-bcUjs4dWebzwy+Hs8BStbzr3wpscv5HFUWOXEwrGvwU=",
+        "owner": "PMunch",
+        "repo": "futhark",
+        "rev": "875a7f5cf727483bc4c4d394f7d3c23699002aa8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "futhark",
+        "type": "github"
+      }
+    },
+    "src-futhark-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633696282,
+        "narHash": "sha256-WGQVIw91dKzAPRf7wj6gHbwDwHCuOgmRNXHUBwSmEIQ=",
+        "owner": "PMunch",
+        "repo": "futhark",
+        "rev": "385a46f5177f88e88abb866e7e787baedbbaf631",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "futhark",
+        "type": "github"
+      }
+    },
+    "src-futhark-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634294129,
+        "narHash": "sha256-bcUjs4dWebzwy+Hs8BStbzr3wpscv5HFUWOXEwrGvwU=",
+        "owner": "PMunch",
+        "repo": "futhark",
+        "rev": "875a7f5cf727483bc4c4d394f7d3c23699002aa8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "futhark",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

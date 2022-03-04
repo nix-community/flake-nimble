@@ -1,0 +1,404 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "latexdsl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-master": "src-latexdsl-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "latexdsl-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-v0_1_1": "src-latexdsl-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "latexdsl-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-v0_1_2": "src-latexdsl-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "latexdsl-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-v0_1_3": "src-latexdsl-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "latexdsl-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-v0_1_4": "src-latexdsl-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "latexdsl-v0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-v0_1_5": "src-latexdsl-v0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "latexdsl-v0_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-v0_1_6": "src-latexdsl-v0_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "latexdsl-v0_1_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-latexdsl-v0_1_7": "src-latexdsl-v0_1_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/latexdsl/v0_1_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "latexdsl-master": "latexdsl-master",
+        "latexdsl-v0_1_1": "latexdsl-v0_1_1",
+        "latexdsl-v0_1_2": "latexdsl-v0_1_2",
+        "latexdsl-v0_1_3": "latexdsl-v0_1_3",
+        "latexdsl-v0_1_4": "latexdsl-v0_1_4",
+        "latexdsl-v0_1_5": "latexdsl-v0_1_5",
+        "latexdsl-v0_1_6": "latexdsl-v0_1_6",
+        "latexdsl-v0_1_7": "latexdsl-v0_1_7",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-latexdsl-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638101429,
+        "narHash": "sha256-XeuAMATWgkQNvoUcqqgaBu/+toijH2LTzNZhR9eWISA=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "f35748b80c5c766b5c6f7d7e53e105592b548dc4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/heads/master",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602849227,
+        "narHash": "sha256-DudrczpHESOppJALwgGfmHGQ7Z4kVoKbGlX/9GdervE=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "1f9dd2805e2ced39e21a2e9b878dd082a35f3815",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602861748,
+        "narHash": "sha256-1nfTsJPAnMlZOUzxUKAn0CQaQQvqSKLyED3Me+47V+g=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "e31e89cc908baa7322a83f0e35875ddd2c56e75e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603101460,
+        "narHash": "sha256-wyn6je9pGb9JEWBtr1vjXe7V1gfOe8OYd8aV1LEEQCg=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "554176e78b4fe6acf430d33037b69231a2d38e69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627051447,
+        "narHash": "sha256-d9KIxQnYo51pk/QheuKji71r+lVffr4bcds8Lw8rkCM=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "d7dbe0e53f423bd7d885905fd435c4d7ccdb3466",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627318304,
+        "narHash": "sha256-Pb9G0PXLXoHEVxVNsynCpeA3bIPu15uXAeTz7tmVpN8=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "a6380730e6b5dd321a39cc803a490e996774c569",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.5",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638017047,
+        "narHash": "sha256-U/v+njrZ34vJ6B/1ZtfDHzfZ0MVB/Nnt0spBfw6zIs8=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "60884e1df721efeabc4bb954b4fc193ff465e68f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.6",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638101429,
+        "narHash": "sha256-XeuAMATWgkQNvoUcqqgaBu/+toijH2LTzNZhR9eWISA=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "f35748b80c5c766b5c6f7d7e53e105592b548dc4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

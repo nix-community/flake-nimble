@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "remarker_light-1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-remarker_light-1_0_0": "src-remarker_light-1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/remarker_light/1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/remarker_light/1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "remarker_light-1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-remarker_light-1_0_1": "src-remarker_light-1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/remarker_light/1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/remarker_light/1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "remarker_light-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-remarker_light-master": "src-remarker_light-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/remarker_light/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/remarker_light/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "remarker_light-1_0_0": "remarker_light-1_0_0",
+        "remarker_light-1_0_1": "remarker_light-1_0_1",
+        "remarker_light-master": "remarker_light-master"
+      }
+    },
+    "src-remarker_light-1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1542468080,
+        "narHash": "sha256-sABxCmS//ioZuRpJY1g830FMnP2SE9pNcSw0OWdVkmQ=",
+        "owner": "muxueqz",
+        "repo": "remarker_light",
+        "rev": "6799da7e0716c1960f57e5c6d76a85f383243626",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/tags/1.0.0",
+        "repo": "remarker_light",
+        "type": "github"
+      }
+    },
+    "src-remarker_light-1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1549936730,
+        "narHash": "sha256-6cyywe3L6KSPpqgDqTCq2Kdvuea3MZsLOu7vxaJyqKw=",
+        "owner": "muxueqz",
+        "repo": "remarker_light",
+        "rev": "ea3c338fde2b7574eae5c7749ae7effe9b287a1e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/tags/1.0.1",
+        "repo": "remarker_light",
+        "type": "github"
+      }
+    },
+    "src-remarker_light-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577705980,
+        "narHash": "sha256-K/5v6cAMj7ClKvEH7R7T+wNkVxdfRRpKeRs74I7kztg=",
+        "owner": "muxueqz",
+        "repo": "remarker_light",
+        "rev": "34ca9fcbfa0c5753ccf02b5f7aedca2f9157b233",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/heads/master",
+        "repo": "remarker_light",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

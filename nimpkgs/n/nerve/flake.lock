@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nerve-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nerve-0_1_0": "src-nerve-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nerve/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nerve/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nerve-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nerve-0_1_1": "src-nerve-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nerve/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nerve/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nerve-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nerve-0_2_0": "src-nerve-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nerve/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nerve/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nerve-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nerve-0_3_0": "src-nerve-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nerve/0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nerve/0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nerve-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nerve-master": "src-nerve-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nerve/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nerve/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nerve-0_1_0": "nerve-0_1_0",
+        "nerve-0_1_1": "nerve-0_1_1",
+        "nerve-0_2_0": "nerve-0_2_0",
+        "nerve-0_3_0": "nerve-0_3_0",
+        "nerve-master": "nerve-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nerve-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1561670322,
+        "narHash": "sha256-gwjeMp0wx6ih21wEraOPj1PAPS9OoIa/5dTDMOaUSSo=",
+        "owner": "nepeckman",
+        "repo": "nerve-rpc",
+        "rev": "9ea4ded6bb08f41979925a8a18ccf220e67e828f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nepeckman",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nerve-rpc",
+        "type": "github"
+      }
+    },
+    "src-nerve-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562012928,
+        "narHash": "sha256-kmtnGLZT2reRuVMVgReI3nSjyEuem2wfqXUlOYT2quk=",
+        "owner": "nepeckman",
+        "repo": "nerve-rpc",
+        "rev": "bca5ee1bca7f6899ecb7f30cd06611be33613554",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nepeckman",
+        "ref": "refs/tags/0.1.1",
+        "repo": "nerve-rpc",
+        "type": "github"
+      }
+    },
+    "src-nerve-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1564090751,
+        "narHash": "sha256-l8hoQqqpQIvJbEJpSjq3eGlhBisy8wdOy9VGbgSKhmA=",
+        "owner": "nepeckman",
+        "repo": "nerve-rpc",
+        "rev": "b0400fe06869cf268cd811f1658cfde477edd30b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nepeckman",
+        "ref": "refs/tags/0.2.0",
+        "repo": "nerve-rpc",
+        "type": "github"
+      }
+    },
+    "src-nerve-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574822750,
+        "narHash": "sha256-/K5TnuIn5PUHxkODcyKrPR7SmAmlNjJ7dbH+fPZICIM=",
+        "owner": "nepeckman",
+        "repo": "nerve-rpc",
+        "rev": "d2cb58ffc27086507bc62e4b03ba346c61b881f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nepeckman",
+        "ref": "refs/tags/0.3.0",
+        "repo": "nerve-rpc",
+        "type": "github"
+      }
+    },
+    "src-nerve-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574822750,
+        "narHash": "sha256-/K5TnuIn5PUHxkODcyKrPR7SmAmlNjJ7dbH+fPZICIM=",
+        "owner": "nepeckman",
+        "repo": "nerve-rpc",
+        "rev": "d2cb58ffc27086507bc62e4b03ba346c61b881f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nepeckman",
+        "ref": "refs/heads/master",
+        "repo": "nerve-rpc",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

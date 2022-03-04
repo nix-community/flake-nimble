@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimactors-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimactors-master": "src-nimactors-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimactors/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimactors/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimactors-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimactors-v0_1_0": "src-nimactors-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimactors/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimactors/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimactors-master": "nimactors-master",
+        "nimactors-v0_1_0": "nimactors-v0_1_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimactors-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1486380828,
+        "narHash": "sha256-7kxEI4AN6bYRRxy7k1aq+SCVNyb8LpwMPwgodJcySww=",
+        "owner": "vegansk",
+        "repo": "nimactors",
+        "rev": "b73c5040d8bb50b261bf7e13c8a25340aba6a733",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/heads/master",
+        "repo": "nimactors",
+        "type": "github"
+      }
+    },
+    "src-nimactors-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1482994086,
+        "narHash": "sha256-TQ+dV9ZN4HoZyzYSIP2J27PVHo7y/NbfM+tj65iqHQw=",
+        "owner": "vegansk",
+        "repo": "nimactors",
+        "rev": "bbc44230c512a00655189e7b3edfb0cf25bf9597",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vegansk",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nimactors",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

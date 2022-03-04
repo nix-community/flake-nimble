@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimcrypt-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcrypt-main": "src-nimcrypt-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimcrypt/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimcrypt/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimcrypt-v0_0_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcrypt-v0_0_6": "src-nimcrypt-v0_0_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimcrypt/v0_0_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimcrypt/v0_0_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimcrypt-v0_0_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcrypt-v0_0_7": "src-nimcrypt-v0_0_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimcrypt/v0_0_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimcrypt/v0_0_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimcrypt-v0_0_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcrypt-v0_0_8": "src-nimcrypt-v0_0_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimcrypt/v0_0_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimcrypt/v0_0_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimcrypt-main": "nimcrypt-main",
+        "nimcrypt-v0_0_6": "nimcrypt-v0_0_6",
+        "nimcrypt-v0_0_7": "nimcrypt-v0_0_7",
+        "nimcrypt-v0_0_8": "nimcrypt-v0_0_8",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimcrypt-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637274820,
+        "narHash": "sha256-YUoCQrhEqjitIS7XECwJ1Xwvp1ZmByqxnKjrWCENdKY=",
+        "owner": "napalu",
+        "repo": "nimcrypt",
+        "rev": "35cdc9d5eb06aa9e023c91deaa3d9aafd8112330",
+        "type": "github"
+      },
+      "original": {
+        "owner": "napalu",
+        "ref": "refs/heads/main",
+        "repo": "nimcrypt",
+        "type": "github"
+      }
+    },
+    "src-nimcrypt-v0_0_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632044033,
+        "narHash": "sha256-aZT5y+rrQ12sh4SiAHkfA44tP3+sPc8edrn9bqvD4Do=",
+        "owner": "napalu",
+        "repo": "nimcrypt",
+        "rev": "5bc676d7d83c525acf5dad800bc3c33ecb44c8ee",
+        "type": "github"
+      },
+      "original": {
+        "owner": "napalu",
+        "ref": "refs/tags/v0.0.6",
+        "repo": "nimcrypt",
+        "type": "github"
+      }
+    },
+    "src-nimcrypt-v0_0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632414758,
+        "narHash": "sha256-hfYv/hzp7+s7XIV51aubeb197Tz1CSrxM3wkEJ95KrM=",
+        "owner": "napalu",
+        "repo": "nimcrypt",
+        "rev": "eb540910489547be62f0804aed88493ed0d686be",
+        "type": "github"
+      },
+      "original": {
+        "owner": "napalu",
+        "ref": "refs/tags/v0.0.7",
+        "repo": "nimcrypt",
+        "type": "github"
+      }
+    },
+    "src-nimcrypt-v0_0_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635057024,
+        "narHash": "sha256-XDaN+eCFKC0v7tnr5WlWvYtdBLBGG0t/DD/Adqf6e4Q=",
+        "owner": "napalu",
+        "repo": "nimcrypt",
+        "rev": "301f351c887b46c793c6df176dd683e866fe1743",
+        "type": "github"
+      },
+      "original": {
+        "owner": "napalu",
+        "ref": "refs/tags/v0.0.8",
+        "repo": "nimcrypt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

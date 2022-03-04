@@ -1,0 +1,2969 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "ggplotnim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-master": "src-ggplotnim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_1_2": "src-ggplotnim-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_1_3": "src-ggplotnim-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_1_4": "src-ggplotnim-v0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_1_5": "src-ggplotnim-v0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_1_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_1_6": "src-ggplotnim-v0_1_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_1_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_0": "src-ggplotnim-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_1": "src-ggplotnim-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_10": "src-ggplotnim-v0_2_10"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_10",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_10",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_11": "src-ggplotnim-v0_2_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_12": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_12": "src-ggplotnim-v0_2_12"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_12",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_12",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_13": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_13": "src-ggplotnim-v0_2_13"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_13",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_13",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_14": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_14": "src-ggplotnim-v0_2_14"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_14",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_14",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_15": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_15": "src-ggplotnim-v0_2_15"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_15",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_15",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_16": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_16": "src-ggplotnim-v0_2_16"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_16",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_16",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_17": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_17": "src-ggplotnim-v0_2_17"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_17",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_17",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_18": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_18": "src-ggplotnim-v0_2_18"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_18",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_18",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_19": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_19": "src-ggplotnim-v0_2_19"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_19",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_19",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_2": "src-ggplotnim-v0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_20": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_20": "src-ggplotnim-v0_2_20"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_20",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_20",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_3": "src-ggplotnim-v0_2_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_4": "src-ggplotnim-v0_2_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_5": "src-ggplotnim-v0_2_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_6": "src-ggplotnim-v0_2_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_7": "src-ggplotnim-v0_2_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_8": "src-ggplotnim-v0_2_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_2_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_2_9": "src-ggplotnim-v0_2_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_2_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_0": "src-ggplotnim-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_1": "src-ggplotnim-v0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_10": "src-ggplotnim-v0_3_10"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_10",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_10",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_11": "src-ggplotnim-v0_3_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_12": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_12": "src-ggplotnim-v0_3_12"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_12",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_12",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_13": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_13": "src-ggplotnim-v0_3_13"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_13",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_13",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_14": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_14": "src-ggplotnim-v0_3_14"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_14",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_14",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_15": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_15": "src-ggplotnim-v0_3_15"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_15",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_15",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_16": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_16": "src-ggplotnim-v0_3_16"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_16",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_16",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_17": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_17": "src-ggplotnim-v0_3_17"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_17",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_17",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_18": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_18": "src-ggplotnim-v0_3_18"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_18",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_18",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_2": "src-ggplotnim-v0_3_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_20": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_20": "src-ggplotnim-v0_3_20"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_20",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_20",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_21": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_21": "src-ggplotnim-v0_3_21"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_21",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_21",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_22": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_22": "src-ggplotnim-v0_3_22"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_22",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_22",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_24": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_24": "src-ggplotnim-v0_3_24"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_24",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_24",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_25": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_25": "src-ggplotnim-v0_3_25"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_25",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_25",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_26": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_26": "src-ggplotnim-v0_3_26"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_26",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_26",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_3": "src-ggplotnim-v0_3_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_4": "src-ggplotnim-v0_3_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_5": "src-ggplotnim-v0_3_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_6": "src-ggplotnim-v0_3_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_7": "src-ggplotnim-v0_3_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_8": "src-ggplotnim-v0_3_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_3_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_3_9": "src-ggplotnim-v0_3_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_3_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_0": "src-ggplotnim-v0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_1": "src-ggplotnim-v0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_10": "src-ggplotnim-v0_4_10"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_10",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_10",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_11": "src-ggplotnim-v0_4_11"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_11",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_11",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_2": "src-ggplotnim-v0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_3": "src-ggplotnim-v0_4_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_5": "src-ggplotnim-v0_4_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_6": "src-ggplotnim-v0_4_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_7": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_7": "src-ggplotnim-v0_4_7"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_7",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_7",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_8": "src-ggplotnim-v0_4_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_4_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_4_9": "src-ggplotnim-v0_4_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_4_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_5_0": "src-ggplotnim-v0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ggplotnim-v0_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ggplotnim-v0_5_1": "src-ggplotnim-v0_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/ggplotnim/v0_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/ggplotnim/v0_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "ggplotnim-master": "ggplotnim-master",
+        "ggplotnim-v0_1_2": "ggplotnim-v0_1_2",
+        "ggplotnim-v0_1_3": "ggplotnim-v0_1_3",
+        "ggplotnim-v0_1_4": "ggplotnim-v0_1_4",
+        "ggplotnim-v0_1_5": "ggplotnim-v0_1_5",
+        "ggplotnim-v0_1_6": "ggplotnim-v0_1_6",
+        "ggplotnim-v0_2_0": "ggplotnim-v0_2_0",
+        "ggplotnim-v0_2_1": "ggplotnim-v0_2_1",
+        "ggplotnim-v0_2_10": "ggplotnim-v0_2_10",
+        "ggplotnim-v0_2_11": "ggplotnim-v0_2_11",
+        "ggplotnim-v0_2_12": "ggplotnim-v0_2_12",
+        "ggplotnim-v0_2_13": "ggplotnim-v0_2_13",
+        "ggplotnim-v0_2_14": "ggplotnim-v0_2_14",
+        "ggplotnim-v0_2_15": "ggplotnim-v0_2_15",
+        "ggplotnim-v0_2_16": "ggplotnim-v0_2_16",
+        "ggplotnim-v0_2_17": "ggplotnim-v0_2_17",
+        "ggplotnim-v0_2_18": "ggplotnim-v0_2_18",
+        "ggplotnim-v0_2_19": "ggplotnim-v0_2_19",
+        "ggplotnim-v0_2_2": "ggplotnim-v0_2_2",
+        "ggplotnim-v0_2_20": "ggplotnim-v0_2_20",
+        "ggplotnim-v0_2_3": "ggplotnim-v0_2_3",
+        "ggplotnim-v0_2_4": "ggplotnim-v0_2_4",
+        "ggplotnim-v0_2_5": "ggplotnim-v0_2_5",
+        "ggplotnim-v0_2_6": "ggplotnim-v0_2_6",
+        "ggplotnim-v0_2_7": "ggplotnim-v0_2_7",
+        "ggplotnim-v0_2_8": "ggplotnim-v0_2_8",
+        "ggplotnim-v0_2_9": "ggplotnim-v0_2_9",
+        "ggplotnim-v0_3_0": "ggplotnim-v0_3_0",
+        "ggplotnim-v0_3_1": "ggplotnim-v0_3_1",
+        "ggplotnim-v0_3_10": "ggplotnim-v0_3_10",
+        "ggplotnim-v0_3_11": "ggplotnim-v0_3_11",
+        "ggplotnim-v0_3_12": "ggplotnim-v0_3_12",
+        "ggplotnim-v0_3_13": "ggplotnim-v0_3_13",
+        "ggplotnim-v0_3_14": "ggplotnim-v0_3_14",
+        "ggplotnim-v0_3_15": "ggplotnim-v0_3_15",
+        "ggplotnim-v0_3_16": "ggplotnim-v0_3_16",
+        "ggplotnim-v0_3_17": "ggplotnim-v0_3_17",
+        "ggplotnim-v0_3_18": "ggplotnim-v0_3_18",
+        "ggplotnim-v0_3_2": "ggplotnim-v0_3_2",
+        "ggplotnim-v0_3_20": "ggplotnim-v0_3_20",
+        "ggplotnim-v0_3_21": "ggplotnim-v0_3_21",
+        "ggplotnim-v0_3_22": "ggplotnim-v0_3_22",
+        "ggplotnim-v0_3_24": "ggplotnim-v0_3_24",
+        "ggplotnim-v0_3_25": "ggplotnim-v0_3_25",
+        "ggplotnim-v0_3_26": "ggplotnim-v0_3_26",
+        "ggplotnim-v0_3_3": "ggplotnim-v0_3_3",
+        "ggplotnim-v0_3_4": "ggplotnim-v0_3_4",
+        "ggplotnim-v0_3_5": "ggplotnim-v0_3_5",
+        "ggplotnim-v0_3_6": "ggplotnim-v0_3_6",
+        "ggplotnim-v0_3_7": "ggplotnim-v0_3_7",
+        "ggplotnim-v0_3_8": "ggplotnim-v0_3_8",
+        "ggplotnim-v0_3_9": "ggplotnim-v0_3_9",
+        "ggplotnim-v0_4_0": "ggplotnim-v0_4_0",
+        "ggplotnim-v0_4_1": "ggplotnim-v0_4_1",
+        "ggplotnim-v0_4_10": "ggplotnim-v0_4_10",
+        "ggplotnim-v0_4_11": "ggplotnim-v0_4_11",
+        "ggplotnim-v0_4_2": "ggplotnim-v0_4_2",
+        "ggplotnim-v0_4_3": "ggplotnim-v0_4_3",
+        "ggplotnim-v0_4_5": "ggplotnim-v0_4_5",
+        "ggplotnim-v0_4_6": "ggplotnim-v0_4_6",
+        "ggplotnim-v0_4_7": "ggplotnim-v0_4_7",
+        "ggplotnim-v0_4_8": "ggplotnim-v0_4_8",
+        "ggplotnim-v0_4_9": "ggplotnim-v0_4_9",
+        "ggplotnim-v0_5_0": "ggplotnim-v0_5_0",
+        "ggplotnim-v0_5_1": "ggplotnim-v0_5_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ggplotnim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645466426,
+        "narHash": "sha256-5fPPb3Na9aRqPniUJxBH7+OCpi0P3o8c3Ts+MZ/CIss=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "8e99ebbfa6b8b00206f43410c05e3fd4a3d54727",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/heads/master",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572941439,
+        "narHash": "sha256-POUb+f2xWrOJzaomyh+4uMGn7It1Z1fv+coXjlXxDDg=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "c9af9e142738886ee766d4bcc76c1aec97159195",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572959111,
+        "narHash": "sha256-8BbciYYMD6nvmk1+oRAAVYKS+/YwucIvrN7ra/JnEQM=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "99bfee721c3f77a5dd139337f14c9a6f8030768a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572965015,
+        "narHash": "sha256-89ERuDWaBV2dRm7o7SM3Iv/GVwww9oj9hw9ntUv1AiQ=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "960890decdde3db70d0418168ded5eeb4a70a614",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.4",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572965894,
+        "narHash": "sha256-mHf3s56yCpTYxQ8OVAQS+R0Ye7DrBuXb2BumK3kPqT0=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "582ed2706f270aebb410d77145dde7837d060932",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.5",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573123892,
+        "narHash": "sha256-yPQO8BEp0ctbp+2AIRwFQs4VGGNWx2+tVCWpxJsx7i8=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "c747cee9fc3d79abd8f1796c35145fefac66ed26",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.6",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573894100,
+        "narHash": "sha256-kg3fxR+3JWyz412lFLN9kHOx2hrhZkm9oeIK2Q7h5oE=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "af01e28575a374ffdea79a1b6d3f8858971b6be7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573971475,
+        "narHash": "sha256-r71+PndXDUvJ0HYDqDlnTcoRwImKG+LcN8TZqdTwFtc=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "8029c720287cd5447086e1349104f1a1966d0516",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582402238,
+        "narHash": "sha256-2Aqqr3/aciCkw8CLJl0nfDM1cDmyW65wVc5XEgBlr4A=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "11b83ec24ebb310a645bb1cc934cb910ed339baf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.10",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582733024,
+        "narHash": "sha256-T5ODXfE/pI8IxdhPPG6KkZzmksrnznmbYH0d1OKLiGk=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "b40a472b202789e1f6f20d5976b6bdd007dc97df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.11",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_12": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582804927,
+        "narHash": "sha256-gxFrW3h3Y+xTdeUuRgQ+AYh+yssfLx4N+XaOOPjdbAs=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "678541ef947f2429abaff918203cfbd3bdf4f3cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.12",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_13": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583075965,
+        "narHash": "sha256-rdxTQsmtQo0fISoReTTbl4aDn8iO8vfm1Wb1RyYcH2E=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "3ef2b2c9dfc074e9061df56a906fc1608652f5f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.13",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_14": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583774365,
+        "narHash": "sha256-BL4wvLRiTckPbZc1swh57FyjyHd0oUeK2XFg2MqXEqA=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "e5db4ca8aff65496d381a4ba600b19fbfea97b07",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.14",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_15": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584112060,
+        "narHash": "sha256-kF7gRE9VfGdsM/KoddpWrH1THxeUejgE1pF+mqegC+Q=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "c032f26799d562033112d5c385f1fa5589234454",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.15",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_16": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584549227,
+        "narHash": "sha256-s1hARHV+HKy1CyWtj+YcIojoHkyOCFmDqa3zQ70Av8w=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "2df249e1f65d92283347b20cdeb797b213f21e80",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.16",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_17": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584632663,
+        "narHash": "sha256-Yl9BRfCT8ZsybJXomHaVEi8wx9wzjSi15ZZgE9Ne0h4=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "82331593dcb413af8bafb4bc997dad16825d7f99",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.17",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_18": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584810450,
+        "narHash": "sha256-0/zUfruQQUccv7jQ1pRYUcE5q1FGiBWOj3s5fe0rX2o=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "0e5d55fedc8773b2197cfb11f79f2035a364afd9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.18",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_19": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584828524,
+        "narHash": "sha256-dYPWqbZ+nQiPu53cdkXjnolcKJsPKpWCuu3TgNqkw84=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "106d2bce7cc73b6048e6ac9ef971a10f17242ad8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.19",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574624808,
+        "narHash": "sha256-h2yYa1krAkmeyxYcnPrJOOezAL/l/O+xB+B7wbTZeGs=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "fd927f9cff6cee9f8e1cac173c686ad88f646f28",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.2",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_20": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586109117,
+        "narHash": "sha256-628SuwslimYoXrNvBf3W+DW+1MI7+A/E2ZUoifMCkfI=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "a92b94203dbba411aa1f3bd9bd8807f69480cba1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.20",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579445729,
+        "narHash": "sha256-e/CXseZVsg7xb3NYy1P7w5G1GaAJDE1DZrgvj0griXY=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "43c514b5cd2b466db13eb00b384c2e31a9f99588",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.3",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579525579,
+        "narHash": "sha256-PQCKC4YfKtDtI5IdvrJIbSh7iU6zWT2Y4i5o/avj4/8=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "1e62e8bc324c0b7ab9f5f25be4c9f26e5bd3f62b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.4",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579616701,
+        "narHash": "sha256-TZ7n/2sAzjGNYaRhB2WtWCPwIg4NHo0UxhE5UY9q5EM=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "7161b96333820359f980c1192ede263e2edcf6b9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.5",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579896829,
+        "narHash": "sha256-CJ2/bgd/VJPvT9tS5Y/Zu62azPhigYmtNv2sEM9SJUk=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "68bc4134fa0d88dd3bf811bac727dd112da7d1e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.6",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1581702467,
+        "narHash": "sha256-xyQqMY5hM8csFBHk1Q4Kwy1mB4US9uUnFK6IETAebjU=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "c9e3032a93e2b6bb04ff4bf78cef2f5ac1ecd384",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.7",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582030899,
+        "narHash": "sha256-UVHvvis+V8ZeTmHtNcp/ZQOGetkIFR4zsVHpqu4KZ74=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "218ac9479522a8673932dddeec91098dab16f1a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.8",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_2_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582216184,
+        "narHash": "sha256-82LVDQSO0arTTlV78FqVxK3EKYX+2pNJGrEU4aAChFo=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "b736f1fc5027a7613b8309ef774422866042685e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.2.9",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586277151,
+        "narHash": "sha256-T98d62d8bI7ZIO8zJml4Ake7ZFplwVckxgFDR3dnpDA=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "d15c47cbc2d16da849bed86b2c0bdb339320fa6d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586683035,
+        "narHash": "sha256-6Y+bhF3BttHyrbx/ItSHIFJCX6K1OGLFXNJH8ZzW0jY=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "5903804226b77a9cccf9ec5c5dc828031110c265",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592242960,
+        "narHash": "sha256-OfedoslGKeuNDj6Im9ZuE9lcBvcv3lQeB4RHkzdn6bc=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "f09947109a1cd3d7917db4791a7a20265a0e7026",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.10",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593121638,
+        "narHash": "sha256-B8zwJs2nq1h8wdjz3avNJnyEzPl6ePoukkFfi8qdxto=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "20bd9f15420860ad8c11c945e77737cecb51347f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.11",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_12": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593133164,
+        "narHash": "sha256-dg3D2la8c1lo4plNRR5exzbWpnwC0GdQyCTyMrVMH7c=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "3e68fe3f8f660d0a2cf2ea274fe256a371587532",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.12",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_13": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593212391,
+        "narHash": "sha256-K5P35DGvBIkr33CmedzZ1tZEWTlFOf0Bm+4ou/SNgFY=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "78bc3cae4e46dd26c112f88b855bb922f98871fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.13",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_14": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593376541,
+        "narHash": "sha256-8W/JfZSk8lMLcei50QJmDLlc3ZUUiUNTL2IwckVq4JE=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "197b1ac0eb0fc2482e7361b787d6c34e43a7c11c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.14",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_15": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594374831,
+        "narHash": "sha256-tP8lnBDP2pd9UmKGy3S+R1Bp/inQ9jHOa/09rwg+VGQ=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "cdd248727269ced34de1bb7b2d94ca26658409a9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.15",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_16": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594392452,
+        "narHash": "sha256-X/ztNXqUDMeiOWPwXm8SVWtWQtjHydmonwMaNJzqzeU=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "919455ab14944398ae06fdae89b5ab4487c18649",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.16",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_17": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595099938,
+        "narHash": "sha256-F7HEisbuqQs2FGjx544JhSxDkuN3PVybOk9dEo8+K0k=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "e3849e14c58cf989b57b2e58021ab19b731a94be",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.17",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_18": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595621954,
+        "narHash": "sha256-OOWT05llEJFH15Xrg/luinRQPjskL9s3GvSYgzPGpg8=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "ec3952880618ed09440b416f00599ac7751c72df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.18",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587046844,
+        "narHash": "sha256-NHes3EkvxLc3Jdvp5ZMX1REGMrade8HM0ZiUpIb1F3w=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "a431c30e0e336812cdb24dc3607ab4f82e038fae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.2",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_20": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604136583,
+        "narHash": "sha256-GPWUHHfmLZLP2w3iJN36S6RMak4D28KKHLsIa5Wl5XQ=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "4cc5cbd746c3938aa39eb481efc7638f69ed2796",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.20",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_21": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609369916,
+        "narHash": "sha256-IQCGcCC81HRvOH4BTgUqQ+fdvLB6jsQmy2Z/4FFZals=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "a6864d85dd8e35095cc0111777aa046e3ad807c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.21",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_22": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609429017,
+        "narHash": "sha256-71k/vXsz1/9mLpp8jJSYRJba579J95g6Gf6uk4zLQIU=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "5857acbd7961fde426bfe84479a857787bf4311e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.22",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_24": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613611775,
+        "narHash": "sha256-/+c+M+uFKvuoesPOC+lfp1Th19uJUOh35Vnq/veyvao=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "6af659d64da255562a3f1989c15db24e5850e46b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.24",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_25": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613829775,
+        "narHash": "sha256-uxgeL4Bfcl1shydBZSCmJP9Wqn7qAXAoEVZebU9OzK4=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "2da0d362b5db98329c4842053775fbbc0fc5aae7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.25",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_26": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623863817,
+        "narHash": "sha256-tm6xr4UmqXkzi39QIlab8A8sX5ssF5mCQlkNCmAA8zQ=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "eb54155dc2aade907545584ed42f846968fa11f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.26",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587199809,
+        "narHash": "sha256-L3KLjvfkEzJYNRgZcBD79bEH0q2M14HHmJFBqyAYQ+Q=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "5155fbd12a9dce98fe387e1c30482b20ef42e057",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.3",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587495019,
+        "narHash": "sha256-MvEFC6AKcz25Lvr3rd8GpHlsx7mxVbUBm9FbYRY91T0=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "856ba4afaf9e3815b31ff3e21f1ffcc993e5dc12",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.4",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587900980,
+        "narHash": "sha256-+lsmS6KIo1e2GQ+GKri97XH+xXed0QT/uvefkNNvgXo=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "49a36bf0fd28562043796f8018a16a52579f1188",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.5",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589548639,
+        "narHash": "sha256-WhuJs0rm0avu/Lw6W4vktp5YpK7eSntTzMXrA2BJdZs=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "ac7ebb23833a4a191152b509f14a6e759bec76bd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.6",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589557047,
+        "narHash": "sha256-tDuxlUzKIg7S1qrRNWXWmCvuOaTqBZranhGdGJTPNzU=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "85c35e9823cbf2effd898d16c0937abd16f61b21",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.7",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591464511,
+        "narHash": "sha256-eYsVRyjHSPJYD8YOBhGU45yPp8Ra921+BiOflDp0jqE=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "7a82562314b0e77ff582e8a90a9a4d0c6ef3352c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.8",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_3_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592237734,
+        "narHash": "sha256-pG2/dToIvxZWjhtASD1+q+UwAiep1RKzrJmqUF5jt5Q=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "7d9ee89f2fc1d0e948f398709f3cbc835228b3c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.3.9",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623941006,
+        "narHash": "sha256-MNI6PN/DBUQavtb7fjTKvtiMA7pDZNiBuqp9l5eXglk=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "fe272113d916691b7b510de0c3238db462ae87f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624622383,
+        "narHash": "sha256-buzBoAqs6X57sH62sdfWS4J3EhXKzO1QHMx1Ut+6JeA=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "31527ab6f1c53bf6d3b0a93f3c1aa02a45b66f61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.1",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638023944,
+        "narHash": "sha256-TrgC5E5R6pZ5YVqATYaleuu96nx7pX+vr46MJrdpvzc=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "50b3404174dd5ad2005c9a10fbabb87bf662cb59",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.10",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641725293,
+        "narHash": "sha256-YPpLDIkPgyO89qPMsezgjEgLMPtPkAda2Jt2GP3iqxg=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "6c00d70cc69437e9b5d61e53e3a63a438fb9bf6b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.11",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624625491,
+        "narHash": "sha256-H6HdJNJ5wHG/n+15WE+r0mnueK/qbuQ4U5MpnIHT7RU=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "0494e09aa7561170557729984b75378b1e6cc7e6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.2",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625347314,
+        "narHash": "sha256-7mqLostV+z5G3sF4SCqIwfKT88bL5KjjU8givDgGyL0=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "fed986c1a2644061bd35b780f5efe84f6e086d6a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.3",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627489334,
+        "narHash": "sha256-gKqv3ICbmzBaPIZchTRSdYlhzR/cNJefjrVzTcqvwPM=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "7d0344d3eba934b7169838dcd9b3f1cf579fd064",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.5",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629204659,
+        "narHash": "sha256-84CaS+pC0pi5+/Fbgt1aH1NT4WjWYATxqJgtaDltWAw=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "e1c36b44a758be49924c4c133f01682a3e23187b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.6",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630063889,
+        "narHash": "sha256-vnXt9CPU5dqOhB5+8X5w6Nbp495RFNl3aFTziZN5moE=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "4afac9d0457cfd11c719b2e24e02ee2613b8f16a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.7",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634224765,
+        "narHash": "sha256-0u3+86VprnwVa5+o5o03SnNWMN2J4vE+Ma4mevFN0Gs=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "93c292961d7a8dc3d35e8ae84ea70072f02a5976",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.8",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_4_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636802409,
+        "narHash": "sha256-YfFmIUq6T1aIL1Qg3/v95Hrm0gewavA1Lbu8O2utcEI=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "87383c3bd00832806bcc581658756c8293930afd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.9",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645459435,
+        "narHash": "sha256-Awyy9UFO+qVJAgLK1Xx5XwLz8TCmx75K3zo6+rJbls4=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "db54774d0229b8a5c1b87bdc4c30aaea3ebcf551",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.5.0",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-ggplotnim-v0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645466426,
+        "narHash": "sha256-5fPPb3Na9aRqPniUJxBH7+OCpi0P3o8c3Ts+MZ/CIss=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "8e99ebbfa6b8b00206f43410c05e3fd4a3d54727",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.5.1",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

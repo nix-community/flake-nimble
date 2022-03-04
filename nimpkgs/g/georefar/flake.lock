@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "georefar-0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-georefar-0_1_5": "src-georefar-0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/georefar/0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/georefar/0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "georefar-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-georefar-master": "src-georefar-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/g/georefar/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/g/georefar/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "georefar-0_1_5": "georefar-0_1_5",
+        "georefar-master": "georefar-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-georefar-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540639965,
+        "narHash": "sha256-N0YC4Iyk3kRMtC37X/Al5SobeNbIrfscKZlFpW8z1nI=",
+        "owner": "juancarlospaco",
+        "repo": "nim-georefar",
+        "rev": "54bc0a77ceb506785c59db94ac3436d813b6b98a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.1.5",
+        "repo": "nim-georefar",
+        "type": "github"
+      }
+    },
+    "src-georefar-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624671960,
+        "narHash": "sha256-h8D8YJmoxLWDMOrYUtyQW8O7tF1uTA0H6Ngsj6AN0Dk=",
+        "owner": "juancarlospaco",
+        "repo": "nim-georefar",
+        "rev": "8597c5f91c1614445ffee7042f2009a7aa78b6e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-georefar",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

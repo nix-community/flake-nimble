@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "vec-master": "vec-master",
+        "vec-v1_0": "vec-v1_0"
+      }
+    },
+    "src-vec-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543680350,
+        "narHash": "sha256-mJkoLURmyNTvU24wWF6AMWcFVZqqoScdnu982BKA3x0=",
+        "owner": "dom96",
+        "repo": "vec",
+        "rev": "ac6a04f0798c92570955bb6ccbe99b77fdab62dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/heads/master",
+        "repo": "vec",
+        "type": "github"
+      }
+    },
+    "src-vec-v1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543680350,
+        "narHash": "sha256-mJkoLURmyNTvU24wWF6AMWcFVZqqoScdnu982BKA3x0=",
+        "owner": "dom96",
+        "repo": "vec",
+        "rev": "ac6a04f0798c92570955bb6ccbe99b77fdab62dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/tags/v1.0",
+        "repo": "vec",
+        "type": "github"
+      }
+    },
+    "vec-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vec-master": "src-vec-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/v/vec/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/v/vec/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "vec-v1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vec-v1_0": "src-vec-v1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/v/vec/v1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/v/vec/v1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

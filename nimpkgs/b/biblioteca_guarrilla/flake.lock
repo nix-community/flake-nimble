@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "biblioteca_guarrilla-0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-biblioteca_guarrilla-0_1_5": "src-biblioteca_guarrilla-0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "biblioteca_guarrilla-0_1_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-biblioteca_guarrilla-0_1_8": "src-biblioteca_guarrilla-0_1_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/0_1_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/0_1_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "biblioteca_guarrilla-0_1_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-biblioteca_guarrilla-0_1_9": "src-biblioteca_guarrilla-0_1_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/0_1_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/0_1_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "biblioteca_guarrilla-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-biblioteca_guarrilla-master": "src-biblioteca_guarrilla-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/biblioteca_guarrilla/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "biblioteca_guarrilla-0_1_5": "biblioteca_guarrilla-0_1_5",
+        "biblioteca_guarrilla-0_1_8": "biblioteca_guarrilla-0_1_8",
+        "biblioteca_guarrilla-0_1_9": "biblioteca_guarrilla-0_1_9",
+        "biblioteca_guarrilla-master": "biblioteca_guarrilla-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-biblioteca_guarrilla-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541693210,
+        "narHash": "sha256-NQvMaK5adpkM5OlhWCc4eY+6c11+pH9Wos+J5RYlRFc=",
+        "owner": "juancarlospaco",
+        "repo": "biblioteca-guarrilla",
+        "rev": "fce41084df456dbae7240d745491fb9db884da02",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.1.5",
+        "repo": "biblioteca-guarrilla",
+        "type": "github"
+      }
+    },
+    "src-biblioteca_guarrilla-0_1_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541840150,
+        "narHash": "sha256-T8zJTDNUz99Xe3ZlC/si8sx1p0LmlbHoL41UfeiqPlE=",
+        "owner": "juancarlospaco",
+        "repo": "biblioteca-guarrilla",
+        "rev": "10a37427a31612564276e650df4c30423c0b1b10",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.1.8",
+        "repo": "biblioteca-guarrilla",
+        "type": "github"
+      }
+    },
+    "src-biblioteca_guarrilla-0_1_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1546000020,
+        "narHash": "sha256-lvbCZylOsBenDmnO0qx0ppTP57WDeo7X0mJ51i4v+xw=",
+        "owner": "juancarlospaco",
+        "repo": "biblioteca-guarrilla",
+        "rev": "979c044c78b8a3b9e190d08fb235077c435f5ae4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.1.9",
+        "repo": "biblioteca-guarrilla",
+        "type": "github"
+      }
+    },
+    "src-biblioteca_guarrilla-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559847682,
+        "narHash": "sha256-AMpMiMce3x/AAjjhcFp0BOAVPjrCjwnJTNsLS7w4Dr4=",
+        "owner": "juancarlospaco",
+        "repo": "biblioteca-guarrilla",
+        "rev": "1fc83dc423b5b2452c414e224c068bbd081fbd4f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "biblioteca-guarrilla",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

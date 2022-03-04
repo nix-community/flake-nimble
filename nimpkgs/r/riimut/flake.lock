@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "riimut-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-riimut-main": "src-riimut-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/riimut/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/riimut/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "riimut-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-riimut-v1_0_0": "src-riimut-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/r/riimut/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/r/riimut/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "riimut-main": "riimut-main",
+        "riimut-v1_0_0": "riimut-v1_0_0"
+      }
+    },
+    "src-riimut-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640511765,
+        "narHash": "sha256-RnNbCVzpX4l+xS6GV9yG3NQ1mPxKkJ/rSA3y8tCwbwM=",
+        "owner": "stscoundrel",
+        "repo": "riimut-nim",
+        "rev": "9b67d96c63a7ec43828a199b06ec25fc6aab6866",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stscoundrel",
+        "ref": "refs/heads/main",
+        "repo": "riimut-nim",
+        "type": "github"
+      }
+    },
+    "src-riimut-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637944919,
+        "narHash": "sha256-CUb0x5EFRs1YOXI6SUxpkIHpdOu5xZzGKYDOFUpKxOk=",
+        "owner": "stscoundrel",
+        "repo": "riimut-nim",
+        "rev": "410dda94ecb4b2031eaa63fb0426b97734445bc7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stscoundrel",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "riimut-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

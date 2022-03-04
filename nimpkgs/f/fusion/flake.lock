@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "fusion-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fusion-master": "src-fusion-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/fusion/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/fusion/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "fusion-v1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fusion-v1_0": "src-fusion-v1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/fusion/v1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/fusion/v1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "fusion-v1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fusion-v1_1": "src-fusion-v1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/f/fusion/v1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/f/fusion/v1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "fusion-master": "fusion-master",
+        "fusion-v1_0": "fusion-v1_0",
+        "fusion-v1_1": "fusion-v1_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fusion-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638793851,
+        "narHash": "sha256-vMJcV8EvcTqvyGzn4c70ysymUel6+J0Z8nVugrEbvPo=",
+        "owner": "nim-lang",
+        "repo": "fusion",
+        "rev": "1bde44921fe3deaf13094480b132c9cf80b0ce14",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "fusion",
+        "type": "github"
+      }
+    },
+    "src-fusion-v1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615534682,
+        "narHash": "sha256-CaxXCpjvxydpaUXPPOrpRkVJ1RSGa3FSAyv8lLgCMZk=",
+        "owner": "nim-lang",
+        "repo": "fusion",
+        "rev": "24f04ab8e38435156f8f885dea0a57c18b02626b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.0",
+        "repo": "fusion",
+        "type": "github"
+      }
+    },
+    "src-fusion-v1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638436623,
+        "narHash": "sha256-9tn0NTXHhlpoefmlsSkoNZlCjGE8JB3eXtYcm/9Mr0I=",
+        "owner": "nim-lang",
+        "repo": "fusion",
+        "rev": "b10839c2c0c0be06a556145b973f27522fa69306",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.1",
+        "repo": "fusion",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

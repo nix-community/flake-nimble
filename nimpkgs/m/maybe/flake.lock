@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "maybe-1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-maybe-1_0": "src-maybe-1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/maybe/1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/maybe/1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "maybe-2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-maybe-2_0": "src-maybe-2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/maybe/2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/maybe/2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "maybe-2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-maybe-2_2": "src-maybe-2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/maybe/2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/maybe/2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "maybe-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-maybe-master": "src-maybe-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/maybe/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/maybe/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "maybe-1_0": "maybe-1_0",
+        "maybe-2_0": "maybe-2_0",
+        "maybe-2_2": "maybe-2_2",
+        "maybe-master": "maybe-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-maybe-1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502866616,
+        "narHash": "sha256-A3RhEU3xH7h0XHM8YrBHmIMeEhOEi/MdyWl1H5vlpv0=",
+        "owner": "superfunc",
+        "repo": "maybe",
+        "rev": "42f054b9ec7783ed96b479160f37ab6183cda213",
+        "type": "github"
+      },
+      "original": {
+        "owner": "superfunc",
+        "ref": "refs/tags/1.0",
+        "repo": "maybe",
+        "type": "github"
+      }
+    },
+    "src-maybe-2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1509334178,
+        "narHash": "sha256-4n+foh2ia8j7/YgPol9bjHsFt1mTXDEAIOTxnTCnAEM=",
+        "owner": "superfunc",
+        "repo": "maybe",
+        "rev": "07497e483dcb14f5e2dd45c0ac93c31a7083614d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "superfunc",
+        "ref": "refs/tags/2.0",
+        "repo": "maybe",
+        "type": "github"
+      }
+    },
+    "src-maybe-2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1511508060,
+        "narHash": "sha256-Yq7j69JBYgkm6+nfJN9cSEehV/iHakLuBQjaFZl1PRs=",
+        "owner": "superfunc",
+        "repo": "maybe",
+        "rev": "080eab78e7d4b6ab0330051f78b5fdea5ab1adba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "superfunc",
+        "ref": "refs/tags/2.2",
+        "repo": "maybe",
+        "type": "github"
+      }
+    },
+    "src-maybe-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567960664,
+        "narHash": "sha256-M5ISLm6SbT1CG8mN6S5PtoB6TQ5ET+XiffsyM/6YalM=",
+        "owner": "superfunc",
+        "repo": "maybe",
+        "rev": "f8b80750a6f08cdfcf16cc1e2d79815392244a6a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "superfunc",
+        "ref": "refs/heads/master",
+        "repo": "maybe",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

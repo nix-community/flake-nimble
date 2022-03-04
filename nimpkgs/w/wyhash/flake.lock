@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "wyhash-0_1_0": "wyhash-0_1_0",
+        "wyhash-main": "wyhash-main"
+      }
+    },
+    "src-wyhash-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605776171,
+        "narHash": "sha256-qaBa4vzQKmOPO6vsy5ulQybsTcLw8mObFNiAIl7zVhg=",
+        "owner": "jackhftang",
+        "repo": "wyhash.nim",
+        "rev": "322e71496b7bc4a9c0bd75319cf33edf57c3cbe4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jackhftang",
+        "ref": "refs/tags/0.1.0",
+        "repo": "wyhash.nim",
+        "type": "github"
+      }
+    },
+    "src-wyhash-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605792229,
+        "narHash": "sha256-8r6YcFb54pbGesZXZN0pDYVjzC+MfRzTS9ZyyD145VE=",
+        "owner": "jackhftang",
+        "repo": "wyhash.nim",
+        "rev": "d087ea8a83e5ec62f1388df0945f123eb8081bdb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jackhftang",
+        "ref": "refs/heads/main",
+        "repo": "wyhash.nim",
+        "type": "github"
+      }
+    },
+    "wyhash-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wyhash-0_1_0": "src-wyhash-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/wyhash/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/wyhash/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "wyhash-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wyhash-main": "src-wyhash-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/w/wyhash/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/w/wyhash/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

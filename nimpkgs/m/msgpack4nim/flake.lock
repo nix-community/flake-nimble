@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "msgpack4nim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-msgpack4nim-master": "src-msgpack4nim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/msgpack4nim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/msgpack4nim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "msgpack4nim-v0_2_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-msgpack4nim-v0_2_9": "src-msgpack4nim-v0_2_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/msgpack4nim/v0_2_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/msgpack4nim/v0_2_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "msgpack4nim-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-msgpack4nim-v0_3_0": "src-msgpack4nim-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/msgpack4nim/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/msgpack4nim/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "msgpack4nim-v0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-msgpack4nim-v0_3_1": "src-msgpack4nim-v0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/m/msgpack4nim/v0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/m/msgpack4nim/v0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "msgpack4nim-master": "msgpack4nim-master",
+        "msgpack4nim-v0_2_9": "msgpack4nim-v0_2_9",
+        "msgpack4nim-v0_3_0": "msgpack4nim-v0_3_0",
+        "msgpack4nim-v0_3_1": "msgpack4nim-v0_3_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-msgpack4nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608115001,
+        "narHash": "sha256-MCavm6/ynuWragEUlRP+p0Um5RrwfQTzuv9WXGeaQLg=",
+        "owner": "jangko",
+        "repo": "msgpack4nim",
+        "rev": "ed4ff1aaa8d42e76d4474b44146c019d89458ff9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/heads/master",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    },
+    "src-msgpack4nim-v0_2_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572437256,
+        "narHash": "sha256-YZzDGgheKknyR80o6gUObQHhiUajQ9aeZouctnfi1V4=",
+        "owner": "jangko",
+        "repo": "msgpack4nim",
+        "rev": "9c4bc6e66d5d193692be0e7c5605166dc61756dc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.2.9",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    },
+    "src-msgpack4nim-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574511134,
+        "narHash": "sha256-SX3n1JDbJUZrL2bZx/3wetXZUBIPDsU1onfRtpuXT8Q=",
+        "owner": "jangko",
+        "repo": "msgpack4nim",
+        "rev": "a16c0a6f45f470a1bd0b80df64b2bd4fb184adfb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    },
+    "src-msgpack4nim-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578112201,
+        "narHash": "sha256-3f7DhmVEgOu4JmwDO20gmzM+ynVOPP0oCnsSGGNPAtE=",
+        "owner": "jangko",
+        "repo": "msgpack4nim",
+        "rev": "472152dd56a8b282535647caeba4643f3c4992f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "opencolor-v1_9_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-opencolor-v1_9_1": "src-opencolor-v1_9_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/opencolor/v1_9_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/opencolor/v1_9_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "opencolor-v1_9_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-opencolor-v1_9_1_1": "src-opencolor-v1_9_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/opencolor/v1_9_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/opencolor/v1_9_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "opencolor-v1_9_1": "opencolor-v1_9_1",
+        "opencolor-v1_9_1_1": "opencolor-v1_9_1_1"
+      }
+    },
+    "src-opencolor-v1_9_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634698466,
+        "narHash": "sha256-dAt4J5bi9kUhnMkHHXpvLUymCZAIStxkowk6JUr9tk4=",
+        "owner": "Double-oxygeN",
+        "repo": "opencolor.nim",
+        "rev": "bcb23ca9c63b631a84150b5ac90232bf7a098b68",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Double-oxygeN",
+        "ref": "refs/tags/v1.9.1",
+        "repo": "opencolor.nim",
+        "type": "github"
+      }
+    },
+    "src-opencolor-v1_9_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634727924,
+        "narHash": "sha256-HKiMaeQj6flECxNeuf86euEsarGg7mqVM87TFIse9a8=",
+        "owner": "Double-oxygeN",
+        "repo": "opencolor.nim",
+        "rev": "442f6d1244d4c989f0fc41b69691caf76237fe39",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Double-oxygeN",
+        "ref": "refs/tags/v1.9.1.1",
+        "repo": "opencolor.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

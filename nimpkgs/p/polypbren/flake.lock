@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "polypbren-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polypbren-master": "src-polypbren-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/polypbren/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/polypbren/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "polypbren-v0_4-paper": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polypbren-v0_4-paper": "src-polypbren-v0_4-paper"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/polypbren/v0_4-paper",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/polypbren/v0_4-paper",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "polypbren-v0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polypbren-v0_4_1": "src-polypbren-v0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/polypbren/v0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/polypbren/v0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "polypbren-v0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polypbren-v0_4_2": "src-polypbren-v0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/polypbren/v0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/polypbren/v0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "polypbren-v0_4_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polypbren-v0_4_3": "src-polypbren-v0_4_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/p/polypbren/v0_4_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/p/polypbren/v0_4_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "polypbren-master": "polypbren-master",
+        "polypbren-v0_4-paper": "polypbren-v0_4-paper",
+        "polypbren-v0_4_1": "polypbren-v0_4_1",
+        "polypbren-v0_4_2": "polypbren-v0_4_2",
+        "polypbren-v0_4_3": "polypbren-v0_4_3"
+      }
+    },
+    "src-polypbren-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574775321,
+        "narHash": "sha256-fznPSXaQuTZ4r4n0VfxE3p03vta2LxixoQ7t96AMtsQ=",
+        "owner": "guibar64",
+        "repo": "polypbren",
+        "rev": "be079e155d2e6759e449175a790e59aaae7962cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibar64",
+        "ref": "refs/heads/master",
+        "repo": "polypbren",
+        "type": "github"
+      }
+    },
+    "src-polypbren-v0_4-paper": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1532606468,
+        "narHash": "sha256-shvlXk7zhyFHOvgsOphdQL3+JEGuOBR8dKBqIUAbgig=",
+        "owner": "guibar64",
+        "repo": "polypbren",
+        "rev": "b1a85476cb2901a04679c04b528ecfd9d30c76cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibar64",
+        "ref": "refs/tags/v0.4-paper",
+        "repo": "polypbren",
+        "type": "github"
+      }
+    },
+    "src-polypbren-v0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1542300412,
+        "narHash": "sha256-KRqk6gcDnnwBnhSgtPL1EX//5SbmqGkvxJaPws/68wU=",
+        "owner": "guibar64",
+        "repo": "polypbren",
+        "rev": "3d2dce0bc0ca3402fe82ef37d5bdbe0425479fc2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibar64",
+        "ref": "refs/tags/v0.4.1",
+        "repo": "polypbren",
+        "type": "github"
+      }
+    },
+    "src-polypbren-v0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554989276,
+        "narHash": "sha256-S5K74sUX6Xe6EWn70vHlpzO4e2CzgU7cdO+AIFEONIg=",
+        "owner": "guibar64",
+        "repo": "polypbren",
+        "rev": "276f9ba4f4e08300c0122cd8165dad3c9e1f354c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibar64",
+        "ref": "refs/tags/v0.4.2",
+        "repo": "polypbren",
+        "type": "github"
+      }
+    },
+    "src-polypbren-v0_4_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1560776558,
+        "narHash": "sha256-lpJgpRKzgdWJHTRR/epYxvHv5gdUKnYHR/v7l7Xvr6c=",
+        "owner": "guibar64",
+        "repo": "polypbren",
+        "rev": "818da0fd907fdf21b0a12c6792cf8eb0c50c8fe5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibar64",
+        "ref": "refs/tags/v0.4.3",
+        "repo": "polypbren",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

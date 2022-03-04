@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "shioridll-master": "shioridll-master",
+        "shioridll-v1_0_0": "shioridll-v1_0_0",
+        "shioridll-v1_0_1": "shioridll-v1_0_1",
+        "shioridll-v2_0_0": "shioridll-v2_0_0",
+        "shioridll-v3_0_0": "shioridll-v3_0_0"
+      }
+    },
+    "shioridll-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shioridll-master": "src-shioridll-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shioridll/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shioridll/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shioridll-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shioridll-v1_0_0": "src-shioridll-v1_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shioridll/v1_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shioridll/v1_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shioridll-v1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shioridll-v1_0_1": "src-shioridll-v1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shioridll/v1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shioridll/v1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shioridll-v2_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shioridll-v2_0_0": "src-shioridll-v2_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shioridll/v2_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shioridll/v2_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "shioridll-v3_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shioridll-v3_0_0": "src-shioridll-v3_0_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/shioridll/v3_0_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/shioridll/v3_0_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-shioridll-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1546607471,
+        "narHash": "sha256-JzL6WUxSv54SBgjhZwOqyBE2XbmiZSMLv7paGzcyrfY=",
+        "owner": "Narazaka",
+        "repo": "shioridll-nim",
+        "rev": "ed52a64eba4f456c78140db16c6944cd7ca4f3e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Narazaka",
+        "ref": "refs/heads/master",
+        "repo": "shioridll-nim",
+        "type": "github"
+      }
+    },
+    "src-shioridll-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1507363528,
+        "narHash": "sha256-Vc6+tzWm8JkijKfoLku1cJ676X8CJcXJqyrHkzcxem0=",
+        "owner": "Narazaka",
+        "repo": "shioridll-nim",
+        "rev": "102211d00093ef114942cff72e8b7bc59c3903fc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Narazaka",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "shioridll-nim",
+        "type": "github"
+      }
+    },
+    "src-shioridll-v1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1508215100,
+        "narHash": "sha256-te+Pcm5ijlSOys2XCdd7MirS/m0piB47Z8Y4EQNaH+Q=",
+        "owner": "Narazaka",
+        "repo": "shioridll-nim",
+        "rev": "56db249b939569de524f4783bb4b31f039e7872b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Narazaka",
+        "ref": "refs/tags/v1.0.1",
+        "repo": "shioridll-nim",
+        "type": "github"
+      }
+    },
+    "src-shioridll-v2_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1516419510,
+        "narHash": "sha256-qHhKVNhul+Rx1r6fVzpVPwRYEHrl314SfZRCFKTqe88=",
+        "owner": "Narazaka",
+        "repo": "shioridll-nim",
+        "rev": "3685a50ad2b5013cbd0a53c85c19dbdad15a5641",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Narazaka",
+        "ref": "refs/tags/v2.0.0",
+        "repo": "shioridll-nim",
+        "type": "github"
+      }
+    },
+    "src-shioridll-v3_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1516437990,
+        "narHash": "sha256-Oir3h2YODCP2IDcjEb56HL04ftKdXmVkqESTGWHh+jw=",
+        "owner": "Narazaka",
+        "repo": "shioridll-nim",
+        "rev": "bde72bafccae843feaf5d9b79d0cc437f40d312e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Narazaka",
+        "ref": "refs/tags/v3.0.0",
+        "repo": "shioridll-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

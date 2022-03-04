@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "csvtable-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-csvtable-0_2_0": "src-csvtable-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/csvtable/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/csvtable/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "csvtable-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-csvtable-0_3_0": "src-csvtable-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/csvtable/0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/csvtable/0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "csvtable-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-csvtable-master": "src-csvtable-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/csvtable/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/csvtable/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "csvtable-v0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-csvtable-v0_3_1": "src-csvtable-v0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/csvtable/v0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/csvtable/v0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "csvtable-0_2_0": "csvtable-0_2_0",
+        "csvtable-0_3_0": "csvtable-0_3_0",
+        "csvtable-master": "csvtable-master",
+        "csvtable-v0_3_1": "csvtable-v0_3_1",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-csvtable-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1527074428,
+        "narHash": "sha256-0uV6d66IxE1BYMOlflW0xAsfu/DbgqE34XYy4lexlY0=",
+        "owner": "apahl",
+        "repo": "csvtable",
+        "rev": "417f1330dba4aea2a065eef426eca7a1c99a9b02",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apahl",
+        "ref": "refs/tags/0.2.0",
+        "repo": "csvtable",
+        "type": "github"
+      }
+    },
+    "src-csvtable-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1528811371,
+        "narHash": "sha256-oz03FCe4WwcJGZFIuB0EDEPaODtkT1ppqkq8w9pszn4=",
+        "owner": "apahl",
+        "repo": "csvtable",
+        "rev": "4c926bebd26ece9b514243931308a2ff0fdd98ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apahl",
+        "ref": "refs/tags/0.3.0",
+        "repo": "csvtable",
+        "type": "github"
+      }
+    },
+    "src-csvtable-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586937464,
+        "narHash": "sha256-Ie93DJCI4ItndO9csM/Hdpzjrd5jyNheYX8ac5lo4rs=",
+        "owner": "apahl",
+        "repo": "csvtable",
+        "rev": "87001dfde274e09d24d1682226b40235f600b3cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apahl",
+        "ref": "refs/heads/master",
+        "repo": "csvtable",
+        "type": "github"
+      }
+    },
+    "src-csvtable-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586936020,
+        "narHash": "sha256-2EH0d77SpXyR7+cGBWjr6zO4IYofGcElG47jxWZa08k=",
+        "owner": "apahl",
+        "repo": "csvtable",
+        "rev": "f269252496ed65269acb03181bf65d1dd684d182",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apahl",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "csvtable",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

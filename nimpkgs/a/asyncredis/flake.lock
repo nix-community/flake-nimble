@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "asyncredis-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asyncredis-master": "src-asyncredis-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/asyncredis/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/asyncredis/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "asyncredis-v0_8": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asyncredis-v0_8": "src-asyncredis-v0_8"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/asyncredis/v0_8",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/asyncredis/v0_8",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "asyncredis-v0_8_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asyncredis-v0_8_1": "src-asyncredis-v0_8_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/asyncredis/v0_8_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/asyncredis/v0_8_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "asyncredis-v0_8_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asyncredis-v0_8_2": "src-asyncredis-v0_8_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/asyncredis/v0_8_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/asyncredis/v0_8_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "asyncredis-master": "asyncredis-master",
+        "asyncredis-v0_8": "asyncredis-v0_8",
+        "asyncredis-v0_8_1": "asyncredis-v0_8_1",
+        "asyncredis-v0_8_2": "asyncredis-v0_8_2",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-asyncredis-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645043860,
+        "narHash": "sha256-h3+gEOtflixo91YdwPO+PMRGPwwzY/fEfjNR+rkUAkQ=",
+        "owner": "Q-Master",
+        "repo": "redis.nim",
+        "rev": "07ea37d6d4ffd1018ac592fa9c3fbafd14c37c5b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Q-Master",
+        "ref": "refs/heads/master",
+        "repo": "redis.nim",
+        "type": "github"
+      }
+    },
+    "src-asyncredis-v0_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639350906,
+        "narHash": "sha256-8TMNw74NOghM5Ad3E8VwJePQf79TOpEDQPZuJ54Y4GU=",
+        "owner": "Q-Master",
+        "repo": "redis.nim",
+        "rev": "27e0413486bd9b2eaefa7071143ea883208fc315",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Q-Master",
+        "ref": "refs/tags/v0.8",
+        "repo": "redis.nim",
+        "type": "github"
+      }
+    },
+    "src-asyncredis-v0_8_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644353229,
+        "narHash": "sha256-wZNv0wzwpVa0JB0ICemDlaOzk01D21gKZlyZB5wiOAk=",
+        "owner": "Q-Master",
+        "repo": "redis.nim",
+        "rev": "48afab0766fc5cc7eef1c912623f7b85a33ed136",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Q-Master",
+        "ref": "refs/tags/v0.8.1",
+        "repo": "redis.nim",
+        "type": "github"
+      }
+    },
+    "src-asyncredis-v0_8_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645043860,
+        "narHash": "sha256-h3+gEOtflixo91YdwPO+PMRGPwwzY/fEfjNR+rkUAkQ=",
+        "owner": "Q-Master",
+        "repo": "redis.nim",
+        "rev": "07ea37d6d4ffd1018ac592fa9c3fbafd14c37c5b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Q-Master",
+        "ref": "refs/tags/v0.8.2",
+        "repo": "redis.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

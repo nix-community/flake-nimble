@@ -1,0 +1,584 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimha-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-master": "src-nimha-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_3_0": "src-nimha-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_3_1": "src-nimha-v0_3_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_3_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_3_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_3_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_3_2": "src-nimha-v0_3_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_3_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_3_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_3_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_3_3": "src-nimha-v0_3_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_3_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_3_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_3_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_3_5": "src-nimha-v0_3_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_3_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_3_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_3_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_3_6": "src-nimha-v0_3_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_3_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_3_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_4_0": "src-nimha-v0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_4_1": "src-nimha-v0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_4_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_4_3": "src-nimha-v0_4_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_4_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_4_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_4_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_4_4": "src-nimha-v0_4_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_4_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_4_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimha-v0_4_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimha-v0_4_5": "src-nimha-v0_4_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimha/v0_4_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimha/v0_4_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimha-master": "nimha-master",
+        "nimha-v0_3_0": "nimha-v0_3_0",
+        "nimha-v0_3_1": "nimha-v0_3_1",
+        "nimha-v0_3_2": "nimha-v0_3_2",
+        "nimha-v0_3_3": "nimha-v0_3_3",
+        "nimha-v0_3_5": "nimha-v0_3_5",
+        "nimha-v0_3_6": "nimha-v0_3_6",
+        "nimha-v0_4_0": "nimha-v0_4_0",
+        "nimha-v0_4_1": "nimha-v0_4_1",
+        "nimha-v0_4_3": "nimha-v0_4_3",
+        "nimha-v0_4_4": "nimha-v0_4_4",
+        "nimha-v0_4_5": "nimha-v0_4_5",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimha-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1575125832,
+        "narHash": "sha256-s0jh8oaKSlL4+n3j6+X25ry8Ux9qXrx/vQbP4/EYYMk=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "ae0a445a82295e7da13d0ded692351b065e9251a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/heads/master",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538908581,
+        "narHash": "sha256-kVd7gMMoYfg/N/+1uzMfnFHfxtmZpN1IzvGb3UR8z48=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "0b8cb8ab8e98456a50be9bb52d636461e24962eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538911549,
+        "narHash": "sha256-1DtCntkaHBGebOe1bDdo2kHhBwSUtqRJqt8k0dNMiPQ=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "02d0371e2275881413e696912dec8f35c8d8148c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543046413,
+        "narHash": "sha256-flEy971w56fTa3KJ9DVEuhHGMgz5yS1xnBGVt++DQNs=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "cc026ac86087263e0df0a482a7aae3dae7ad20ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.2",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_3_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543046773,
+        "narHash": "sha256-O4lUZu5rUN8Elj47BioRMZlUfIrxsXj4xR1eTbArZe8=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "c79a3848545f56451d4d1a40e6b327da8e423fb0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.3",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_3_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543059455,
+        "narHash": "sha256-FjNOx1yDc33Bz0Bw6leSzhU3Cv0w1CfkloAbVJG3e18=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "7123cfdc996d905d9eec29ffebf80c532985a9cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.5",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_3_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543065657,
+        "narHash": "sha256-mGIC06Fw6sO+ndoX+qLE0GYj/U+RZqyR32RlwgUPrd4=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "bc83ac2d326cc98b95a40eb8c547028247122cc6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.6",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1547057298,
+        "narHash": "sha256-vH/79dc+xHcSQ6t80WKj1pm1NQRDCtzcx973kBJs204=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "32a794137d6f84d6cd141e864587318651f46ec2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1550253896,
+        "narHash": "sha256-VHSG8VsMpk3pJyiiL33sQueXj0Zzqrd+Bqn60L/2TaE=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "2c28eab8e1c152d20b64074f00ab437e2d58422c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.4.1",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_4_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1552072316,
+        "narHash": "sha256-DtxStac7UohNOBtqwnUlbMWbo60MQMbcpNfFbs5lNq8=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "fbdb548f7de1d5f49f641562973bf7a3b1d59191",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.4.3",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_4_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1558634941,
+        "narHash": "sha256-pKgwY51cELKufXXQRPC0zSP9Q4w86HosIGA6n8sM2qA=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "7045c2fdcd2cd18fedb02fc7aac91cb433811eb0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.4.4",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    },
+    "src-nimha-v0_4_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1575125832,
+        "narHash": "sha256-s0jh8oaKSlL4+n3j6+X25ry8Ux9qXrx/vQbP4/EYYMk=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_homeassistant",
+        "rev": "ae0a445a82295e7da13d0ded692351b065e9251a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.4.5",
+        "repo": "nim_homeassistant",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

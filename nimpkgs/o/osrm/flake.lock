@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "osrm-0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-osrm-0_1_5": "src-osrm-0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/osrm/0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/osrm/0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "osrm-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-osrm-master": "src-osrm-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/osrm/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/osrm/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "osrm-0_1_5": "osrm-0_1_5",
+        "osrm-master": "osrm-master"
+      }
+    },
+    "src-osrm-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541277717,
+        "narHash": "sha256-MWzhvXWM+8N+3yLO0wALdP1CoOZip8JMT7mOWTemvL8=",
+        "owner": "juancarlospaco",
+        "repo": "nim-osrm",
+        "rev": "2b36c81363b0638aa30129fb39ff573d01f33e94",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.1.5",
+        "repo": "nim-osrm",
+        "type": "github"
+      }
+    },
+    "src-osrm-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559843989,
+        "narHash": "sha256-MG6DsNOnqrmu4nDetLOOUOwhtmZkttrlKynkS9LEsvE=",
+        "owner": "juancarlospaco",
+        "repo": "nim-osrm",
+        "rev": "8ee7885f17b79b0f741c0f6f5abb6b7f0b930899",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-osrm",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

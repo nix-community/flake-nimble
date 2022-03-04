@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "ballena_itcher-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ballena_itcher-0_0_1": "src-ballena_itcher-0_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/ballena_itcher/0_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/ballena_itcher/0_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "ballena_itcher-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ballena_itcher-master": "src-ballena_itcher-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/b/ballena_itcher/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/b/ballena_itcher/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ballena_itcher-0_0_1": "ballena_itcher-0_0_1",
+        "ballena_itcher-master": "ballena_itcher-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ballena_itcher-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586253662,
+        "narHash": "sha256-6Geu4vASL6sKlQkNmNKDySETJdF2S/Zwfl4hrTZyiyM=",
+        "owner": "juancarlospaco",
+        "repo": "ballena-itcher",
+        "rev": "1f613afedc1ae6f646ad1919e999660331c197e1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.0.1",
+        "repo": "ballena-itcher",
+        "type": "github"
+      }
+    },
+    "src-ballena_itcher-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586282351,
+        "narHash": "sha256-o+qnCAB9eQDrFAoWeTtv9D//drBI+23iBABDBJMPqGQ=",
+        "owner": "juancarlospaco",
+        "repo": "ballena-itcher",
+        "rev": "c436047fcc865860ba8b34128131c72eb7692dfa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "ballena-itcher",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

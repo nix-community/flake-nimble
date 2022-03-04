@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimlibxlsxwriter-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimlibxlsxwriter-master": "src-nimlibxlsxwriter-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimlibxlsxwriter-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimlibxlsxwriter-v0_1_1": "src-nimlibxlsxwriter-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimlibxlsxwriter-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimlibxlsxwriter-v0_1_2": "src-nimlibxlsxwriter-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimlibxlsxwriter-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimlibxlsxwriter-v0_1_3": "src-nimlibxlsxwriter-v0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimlibxlsxwriter-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimlibxlsxwriter-v0_3_0": "src-nimlibxlsxwriter-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimlibxlsxwriter/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimlibxlsxwriter-master": "nimlibxlsxwriter-master",
+        "nimlibxlsxwriter-v0_1_1": "nimlibxlsxwriter-v0_1_1",
+        "nimlibxlsxwriter-v0_1_2": "nimlibxlsxwriter-v0_1_2",
+        "nimlibxlsxwriter-v0_1_3": "nimlibxlsxwriter-v0_1_3",
+        "nimlibxlsxwriter-v0_3_0": "nimlibxlsxwriter-v0_3_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimlibxlsxwriter-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641492408,
+        "narHash": "sha256-bsB2vx3dTeZshi2sapcXs8Bik7iVgWfn85P24fH6DUk=",
+        "owner": "ThomasTJdev",
+        "repo": "nimlibxlsxwriter",
+        "rev": "a36864cb2ec35b7f36381043edcdfdf4b18fbf0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/heads/master",
+        "repo": "nimlibxlsxwriter",
+        "type": "github"
+      }
+    },
+    "src-nimlibxlsxwriter-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537628667,
+        "narHash": "sha256-fdFMma4HR+aPd4Re+D+nUWLqkL+FMKw/4iae3EbosAw=",
+        "owner": "ThomasTJdev",
+        "repo": "nimlibxlsxwriter",
+        "rev": "dd1c3943c7ae1e8302fba59a047230be3ae2bae7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "nimlibxlsxwriter",
+        "type": "github"
+      }
+    },
+    "src-nimlibxlsxwriter-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539552981,
+        "narHash": "sha256-4X8sSRMv4CX2l+CMhDsIdc1c55bf76b2o+SMhVcO75Q=",
+        "owner": "ThomasTJdev",
+        "repo": "nimlibxlsxwriter",
+        "rev": "a7faf082c2e97e096f9b891df1aafb8d1c68a260",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "nimlibxlsxwriter",
+        "type": "github"
+      }
+    },
+    "src-nimlibxlsxwriter-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607832813,
+        "narHash": "sha256-E83UAWuCE8WS96yO6T0+15J+iydLx/tU703CmXwp6SY=",
+        "owner": "ThomasTJdev",
+        "repo": "nimlibxlsxwriter",
+        "rev": "5513ece4385da6fdd639ce1d023f6d12199ba798",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "nimlibxlsxwriter",
+        "type": "github"
+      }
+    },
+    "src-nimlibxlsxwriter-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641492408,
+        "narHash": "sha256-bsB2vx3dTeZshi2sapcXs8Bik7iVgWfn85P24fH6DUk=",
+        "owner": "ThomasTJdev",
+        "repo": "nimlibxlsxwriter",
+        "rev": "a36864cb2ec35b7f36381043edcdfdf4b18fbf0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "nimlibxlsxwriter",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

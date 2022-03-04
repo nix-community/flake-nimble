@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "oblivion-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-oblivion-main": "src-oblivion-main"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/oblivion/main",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/oblivion/main",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "oblivion-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-oblivion-v0_1_0": "src-oblivion-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/o/oblivion/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/o/oblivion/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "oblivion-main": "oblivion-main",
+        "oblivion-v0_1_0": "oblivion-v0_1_0"
+      }
+    },
+    "src-oblivion-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1618572788,
+        "narHash": "sha256-trbuqu3kQz/eHELVdHlMKUPKZM7+bzJcUgyd/KWBX2Y=",
+        "owner": "sealmove",
+        "repo": "oblivion",
+        "rev": "afd0581d7cd7f054ee849e65ab4b026238f23d8c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sealmove",
+        "ref": "refs/heads/main",
+        "repo": "oblivion",
+        "type": "github"
+      }
+    },
+    "src-oblivion-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602082091,
+        "narHash": "sha256-9ZJzGzPsAcUJsH991pMny6TfRniE6WCPIdYU5QAYeoY=",
+        "owner": "sealmove",
+        "repo": "oblivion",
+        "rev": "ae180ff3102e223fbae86b97a6ebbaa854301b8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sealmove",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "oblivion",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

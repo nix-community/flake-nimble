@@ -1,0 +1,1304 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "linalg-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_1_0": "src-linalg-0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_1_1": "src-linalg-0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_1_2": "src-linalg-0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_1_3": "src-linalg-0_1_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_1_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_1_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_1_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_1_4": "src-linalg-0_1_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_1_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_1_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_1_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_1_5": "src-linalg-0_1_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_1_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_1_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_2_0": "src-linalg-0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_2_1": "src-linalg-0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_2_2": "src-linalg-0_2_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_2_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_2_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_3_0": "src-linalg-0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_4_0": "src-linalg-0_4_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_4_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_4_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_4_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_4_1": "src-linalg-0_4_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_4_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_4_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_4_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_4_2": "src-linalg-0_4_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_4_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_4_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_4_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_4_3": "src-linalg-0_4_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_4_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_4_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_4_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_4_4": "src-linalg-0_4_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_4_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_4_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_5_0": "src-linalg-0_5_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_5_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_5_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_5_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_5_1": "src-linalg-0_5_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_5_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_5_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_5_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_5_2": "src-linalg-0_5_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_5_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_5_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_5_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_5_3": "src-linalg-0_5_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_5_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_5_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_6_0": "src-linalg-0_6_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_6_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_6_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_6_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_6_1": "src-linalg-0_6_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_6_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_6_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_6_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_6_2": "src-linalg-0_6_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_6_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_6_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_6_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_6_3": "src-linalg-0_6_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_6_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_6_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_6_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_6_4": "src-linalg-0_6_4"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_6_4",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_6_4",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_6_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_6_5": "src-linalg-0_6_5"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_6_5",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_6_5",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-0_6_6": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-0_6_6": "src-linalg-0_6_6"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/0_6_6",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/0_6_6",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-master": "src-linalg-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "linalg-raw-pointers": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-linalg-raw-pointers": "src-linalg-raw-pointers"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/linalg/raw-pointers",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/linalg/raw-pointers",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "linalg-0_1_0": "linalg-0_1_0",
+        "linalg-0_1_1": "linalg-0_1_1",
+        "linalg-0_1_2": "linalg-0_1_2",
+        "linalg-0_1_3": "linalg-0_1_3",
+        "linalg-0_1_4": "linalg-0_1_4",
+        "linalg-0_1_5": "linalg-0_1_5",
+        "linalg-0_2_0": "linalg-0_2_0",
+        "linalg-0_2_1": "linalg-0_2_1",
+        "linalg-0_2_2": "linalg-0_2_2",
+        "linalg-0_3_0": "linalg-0_3_0",
+        "linalg-0_4_0": "linalg-0_4_0",
+        "linalg-0_4_1": "linalg-0_4_1",
+        "linalg-0_4_2": "linalg-0_4_2",
+        "linalg-0_4_3": "linalg-0_4_3",
+        "linalg-0_4_4": "linalg-0_4_4",
+        "linalg-0_5_0": "linalg-0_5_0",
+        "linalg-0_5_1": "linalg-0_5_1",
+        "linalg-0_5_2": "linalg-0_5_2",
+        "linalg-0_5_3": "linalg-0_5_3",
+        "linalg-0_6_0": "linalg-0_6_0",
+        "linalg-0_6_1": "linalg-0_6_1",
+        "linalg-0_6_2": "linalg-0_6_2",
+        "linalg-0_6_3": "linalg-0_6_3",
+        "linalg-0_6_4": "linalg-0_6_4",
+        "linalg-0_6_5": "linalg-0_6_5",
+        "linalg-0_6_6": "linalg-0_6_6",
+        "linalg-master": "linalg-master",
+        "linalg-raw-pointers": "linalg-raw-pointers",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-linalg-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1433924648,
+        "narHash": "sha256-nLHSGfpJJMac36o4GBl+wZIT/BcNqmRlRxncFBUdFYQ=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "48b31098620837621eeb0a9b006ef453cdb5f355",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.1.0",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1434378649,
+        "narHash": "sha256-MVarZ4tWJWmqwribxIG0WEs9DxsiVyMaeTYmMGgNY6M=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "af03d549ac3f2e95eb0bcae35d5f36583aea38a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.1.1",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1437491418,
+        "narHash": "sha256-xbs/ZLyRZ0uXB8+fjjj3F7x42Kqx3aSMS0hNFHDHuHY=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "759edfbf4d708f0970631037d26be62c8dbf6521",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.1.2",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1437555748,
+        "narHash": "sha256-DgjVw6o143FK1XdRnW0ChuICQ6svaxup5UeDGmadqa0=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "c334c865cbc466fb60fca165fa643ebfebfc4f20",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.1.3",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1437749886,
+        "narHash": "sha256-jrDCyKFRGOc/kjEmKfEFCU0xhfqoEclzwHjY6BygRQc=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "e339f001f053ce528d61529fc0ae1cfb7223aea5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.1.4",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1438700748,
+        "narHash": "sha256-doEKWJmbHEZUuGEXWi8DLkFIA78TrCIQvJ/V3tds5Pg=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "59be69086c8b50054a9a7ec499adad8452bb5d8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.1.5",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1451759826,
+        "narHash": "sha256-bbcu37gsCbunh0dG9XR+Am2yGOUoQFMmzdolPhv/+2g=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "c4319722b1783cae4a72d12f0238d6564749f09e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.2.0",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1451770624,
+        "narHash": "sha256-Y/11eX/DUfAdN3cyK53K6bnhs9tuJrKlhfR1gkZODec=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "6b9fc4897b8a9dc7fb5fdb93b738588ff77f48f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.2.1",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1463129721,
+        "narHash": "sha256-3M2iXLRxZ9fnAfNPXiWKQak1e0tl/kfvFLaj/lkn2is=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "a6050587bdaf0392281cec61c94202d0b100a128",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.2.2",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1463158877,
+        "narHash": "sha256-5DNQU+j8GVW9Z/1L63yLdP8Kfll7KfR8c0Y7PRnw838=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "b1990f3d41e7d37330be4bdf886090e9ab342860",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.3.0",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1464257398,
+        "narHash": "sha256-n+qV02jBbRj1PwUg6zAcUBUAeCa35ZhNvM50ECJpXDs=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "cbdad628d5e5767dcec6f4bb0dffc0df57d570b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.4.0",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_4_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1464355997,
+        "narHash": "sha256-4AoUmkU4yM6z4odV6N3HYCufErpcl9HSwnyF/MJAifc=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "8f92bdf9c19e9a1954d3f374808a893093da463b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.4.1",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1464596245,
+        "narHash": "sha256-eKynn0mWrF+Cs5ZPlA5xYod+aWIV0cGykR3r5g0EFac=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "e238a45d17468afb21d965b881e6119ab2495664",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.4.2",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_4_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1465061593,
+        "narHash": "sha256-PfAYYGCe0POH4Oq7ERBjNAoi6JcPdpwlHK9TCsCm/ks=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "1f07686d3557d363b0755415376612ba7587cee9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.4.3",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_4_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1471009501,
+        "narHash": "sha256-CjTeBBwOEPQvfLk1tcFSGzsJrR4TkbA7u6hprK4mOS0=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "dc7ae14243d7be4bb07029303ef91e837e054987",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.4.4",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1478884291,
+        "narHash": "sha256-/+IXO3q3wy5y5+ruNtSK/etDTxxuXNJiD8dZtKGg/lw=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "4826fe5b9d238f7972924a10f45565c21394b83d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.5.0",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1478977084,
+        "narHash": "sha256-/XwQl254ALyD54mbsczCuU7Y+PhFyHxpBqMxvXne5WM=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "d17aaf1b526720106a0babafba7d124579484632",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.5.1",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_5_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1478977675,
+        "narHash": "sha256-lYQHF5CxCF3eBXTE1gqrQI2ke87yQTH6AgEz4prshUQ=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "bdbf37014b086975789e2400e8d2b51a2ea25046",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.5.2",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_5_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1484909028,
+        "narHash": "sha256-XhLK3RCvAJkK/z+aDWqvU/+UwQbYVeLJlWnkd9zdlxU=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "949cb323956fb2cfdbeb95a11b21ea21e8194e7d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.5.3",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1486126699,
+        "narHash": "sha256-jfGzVY0LjmbF8npzBkr1NLk/CwzTFRU2h8SGhjCEIT8=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "032bf5df2baeb9afb6ec85590c3808d02edbca5c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.6.0",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_6_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487343964,
+        "narHash": "sha256-xPbXbqLZe2O6Hf285aWDhGOhidgbdte/ZO1nHAD5Roo=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "81315947b18082954ce07ac15ca5589051d35641",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.6.1",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_6_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487344370,
+        "narHash": "sha256-lhyDCKd3iUhZV1NJqMhn+dneKIy+cIml0CKQA+H/igA=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "b9c53ab92774e5ad2e0b3151e9bc93c5c3ca452d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.6.2",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_6_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487344480,
+        "narHash": "sha256-mz/zTjjhGQJ6MLL6J0Kfiuv+xtP0RAaJqekIpeK6xxI=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "f4fcafd9085a0d0fdc5087ad372b2211fc892b1c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.6.3",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_6_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487347472,
+        "narHash": "sha256-20UJrXjqTUSu+t8fq1zQzliWi8VOpXxj8j9qL3/tUYo=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "622496dbb3ac45c818b14fa9ab962fe974c1baa3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.6.4",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_6_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487347901,
+        "narHash": "sha256-1BUGcWiLsvn/bmL4v64p3ElbbafXTxMSZ9nC178PyVw=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "7a1ed0f0899c9a2f6aa058a644a50f8b4a798b5c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.6.5",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-0_6_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1487951855,
+        "narHash": "sha256-pXB8SONlps1svuosj63JEUwG/12bnKpJ+GpES591Buw=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "064bb92e1e2778653f2bfa53965e99a1744ac778",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.6.6",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611225066,
+        "narHash": "sha256-IWoucFXjXM4vsWkycd5morjmy5eZHRsmBBWs/yz2ojI=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "450e2f4a4903329c9266686866892b2724490c53",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/heads/master",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    },
+    "src-linalg-raw-pointers": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1433352033,
+        "narHash": "sha256-V22b2JUNbyuFcvPM9iEbqF9uRjvmf4izOZFx/CKX3tQ=",
+        "owner": "andreaferretti",
+        "repo": "linear-algebra",
+        "rev": "92935884de884658d9081a19026eb121045fffaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/raw-pointers",
+        "repo": "linear-algebra",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

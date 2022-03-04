@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sysinfo-master": "sysinfo-master",
+        "sysinfo-v0_1_0": "sysinfo-v0_1_0",
+        "sysinfo-v0_2_1": "sysinfo-v0_2_1"
+      }
+    },
+    "src-sysinfo-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633048347,
+        "narHash": "sha256-cqhAfUgQ+X6MQYhNQgRJv6y2bIkXqNrZWMrG2ca0Phg=",
+        "owner": "treeform",
+        "repo": "sysinfo",
+        "rev": "6974c3d9ca461db25f3b4d0028a05931dd561fc9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/heads/master",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "src-sysinfo-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1557869053,
+        "narHash": "sha256-xCEoHfhJdWce25RZTruJzhAZBiGpRHuyhZlyY5pEXV8=",
+        "owner": "treeform",
+        "repo": "sysinfo",
+        "rev": "4ef135010b0a837ddb321cc39dbd3864d931bb9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "src-sysinfo-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579412351,
+        "narHash": "sha256-5n9f9ncz0OKkRrBTjRH098bjpqgOGoYfyQVU/WOwzKc=",
+        "owner": "treeform",
+        "repo": "sysinfo",
+        "rev": "1b72980e1f576934fd731fc9fc017e231cfac796",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "sysinfo-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sysinfo-master": "src-sysinfo-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sysinfo/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sysinfo/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "sysinfo-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sysinfo-v0_1_0": "src-sysinfo-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sysinfo/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sysinfo/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "sysinfo-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sysinfo-v0_2_1": "src-sysinfo-v0_2_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/sysinfo/v0_2_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/sysinfo/v0_2_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

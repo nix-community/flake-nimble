@@ -1,0 +1,494 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-master": "src-libtcod_nim-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v0_9": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v0_9": "src-libtcod_nim-v0_9"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_9",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_9",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v0_95": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v0_95": "src-libtcod_nim-v0_95"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_95",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_95",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v0_96": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v0_96": "src-libtcod_nim-v0_96"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_96",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_96",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v0_97": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v0_97": "src-libtcod_nim-v0_97"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_97",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_97",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v0_98": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v0_98": "src-libtcod_nim-v0_98"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_98",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_98",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v0_98_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v0_98_1": "src-libtcod_nim-v0_98_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_98_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_98_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v0_99": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v0_99": "src-libtcod_nim-v0_99"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_99",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v0_99",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v1_112_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v1_112_0": "src-libtcod_nim-v1_112_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v1_112_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v1_112_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "libtcod_nim-v1_112_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libtcod_nim-v1_112_1": "src-libtcod_nim-v1_112_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/l/libtcod_nim/v1_112_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/l/libtcod_nim/v1_112_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libtcod_nim-master": "libtcod_nim-master",
+        "libtcod_nim-v0_9": "libtcod_nim-v0_9",
+        "libtcod_nim-v0_95": "libtcod_nim-v0_95",
+        "libtcod_nim-v0_96": "libtcod_nim-v0_96",
+        "libtcod_nim-v0_97": "libtcod_nim-v0_97",
+        "libtcod_nim-v0_98": "libtcod_nim-v0_98",
+        "libtcod_nim-v0_98_1": "libtcod_nim-v0_98_1",
+        "libtcod_nim-v0_99": "libtcod_nim-v0_99",
+        "libtcod_nim-v1_112_0": "libtcod_nim-v1_112_0",
+        "libtcod_nim-v1_112_1": "libtcod_nim-v1_112_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libtcod_nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608237784,
+        "narHash": "sha256-WX3kxJPeyP6qDXeLQsBbqMVnquXptmTx1g+hCsTWySY=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "3f9be2188ff08fa503af9f9d8cc83ac0a1dffc1f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/heads/master",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v0_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1353966493,
+        "narHash": "sha256-rG3dkc6PqAcBIG7/o52BF39z52d+pOyFwQ/Q0mJYlcw=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "37301044fbbd2d0dee9b5756eb11ce6240d538ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.9",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v0_95": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1354800354,
+        "narHash": "sha256-5debrNoeiQ9AhNG8i3WnVwsyhwnx95YLCzPuEG/7Jhk=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "0da2080fa28932eb767d0f35754a6a31f0f33186",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.95",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v0_96": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1355687610,
+        "narHash": "sha256-/woT6Q1D1DINPC7eAJodO02TwR2FwvsWSNFSqQJwxMU=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "1a24b0e1c4933e7d5cde65020729f7d7da65766c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.96",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v0_97": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1420140834,
+        "narHash": "sha256-1+AkwCd38f28hEpSaPsdljY5Xbk8+hDtSboYAQAiSO8=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "d3997dfcfda81eb1f8b20f2f6ddb3d661589dadc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.97",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v0_98": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1485280108,
+        "narHash": "sha256-RWFIOYW1vg5bOrqzknYAMa2n1oYK330Nw4T2qIe16a8=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "7e5f3face19d710d87b799260bd2101bd0f4ea07",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.98",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v0_98_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540117918,
+        "narHash": "sha256-0UgOmuF+v8yf5DDTUruB1Ljm8V7jRHJI119Poz48hAM=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "ed11a68f9cae49237466da5ff4efb0636e9571a4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.98.1",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v0_99": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1544964303,
+        "narHash": "sha256-x+P/MH5jZ2q29vRS7TPztuozIS4oHt8WA+pElWLC7Zc=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "35d771e1c03abbfed392a452bc0d8b14bfbfc25c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v0.99",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v1_112_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1558945667,
+        "narHash": "sha256-AytahRMedkV4Va62QnDgJ+VpQy1fnAfvZ7PCKlUT3co=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "8c443ae4b9ce80f4632a0ffdfd3f3a43dd893232",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v1.112.0",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    },
+    "src-libtcod_nim-v1_112_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608237784,
+        "narHash": "sha256-WX3kxJPeyP6qDXeLQsBbqMVnquXptmTx1g+hCsTWySY=",
+        "owner": "Vladar4",
+        "repo": "libtcod_nim",
+        "rev": "3f9be2188ff08fa503af9f9d8cc83ac0a1dffc1f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vladar4",
+        "ref": "refs/tags/v1.112.1",
+        "repo": "libtcod_nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

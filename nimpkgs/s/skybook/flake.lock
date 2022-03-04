@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "skybook-1_0": "skybook-1_0",
+        "skybook-1_0_1": "skybook-1_0_1",
+        "skybook-1_0_2": "skybook-1_0_2",
+        "skybook-1_0_3": "skybook-1_0_3",
+        "skybook-master": "skybook-master"
+      }
+    },
+    "skybook-1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-skybook-1_0": "src-skybook-1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/skybook/1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/skybook/1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "skybook-1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-skybook-1_0_1": "src-skybook-1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/skybook/1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/skybook/1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "skybook-1_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-skybook-1_0_2": "src-skybook-1_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/skybook/1_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/skybook/1_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "skybook-1_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-skybook-1_0_3": "src-skybook-1_0_3"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/skybook/1_0_3",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/skybook/1_0_3",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "skybook-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-skybook-master": "src-skybook-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/s/skybook/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/s/skybook/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "src-skybook-1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567157795,
+        "narHash": "sha256-f2QSDO9F8xXJN+/EIuCTv+Iyo1Lrk5QvVtOFzbRj7rA=",
+        "owner": "muxueqz",
+        "repo": "skybook",
+        "rev": "13bb2bf25622f2719556aa2e6eddc16b76d1f61d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/tags/1.0",
+        "repo": "skybook",
+        "type": "github"
+      }
+    },
+    "src-skybook-1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567158201,
+        "narHash": "sha256-x4U4ix9atEn8VdKCgUBgZXB06OkWK8KChHgVqgR+Mqg=",
+        "owner": "muxueqz",
+        "repo": "skybook",
+        "rev": "50aef8b22746691d2fce327ed81d423f93bf2363",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/tags/1.0.1",
+        "repo": "skybook",
+        "type": "github"
+      }
+    },
+    "src-skybook-1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567159961,
+        "narHash": "sha256-lw+k9tQ+TkHXTXBVJTVRBsUDTPrvGG1Az2ulBdebgB8=",
+        "owner": "muxueqz",
+        "repo": "skybook",
+        "rev": "db81fedb2d7a2a8be0c373bb491bb03d8e617225",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/tags/1.0.2",
+        "repo": "skybook",
+        "type": "github"
+      }
+    },
+    "src-skybook-1_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567160892,
+        "narHash": "sha256-cKuQmFeiRpqi3FHTXzI6XFl8Aw3zhOyEUu3kGVuVGyI=",
+        "owner": "muxueqz",
+        "repo": "skybook",
+        "rev": "3a5848178b3940b2675e7c5c00113cd71d5a1592",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/tags/1.0.3",
+        "repo": "skybook",
+        "type": "github"
+      }
+    },
+    "src-skybook-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568543026,
+        "narHash": "sha256-msdIcUt2ZGUQSj9CdoI+Yqf8fRnd2gF9hwsmwrJ/Azk=",
+        "owner": "muxueqz",
+        "repo": "skybook",
+        "rev": "1b96b4a32de38c0cc48848e4eaadf62f9d5541be",
+        "type": "github"
+      },
+      "original": {
+        "owner": "muxueqz",
+        "ref": "refs/heads/master",
+        "repo": "skybook",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

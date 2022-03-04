@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "cookiejar-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cookiejar-master": "src-cookiejar-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cookiejar/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cookiejar/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cookiejar-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cookiejar-v0_1_0": "src-cookiejar-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cookiejar/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cookiejar/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cookiejar-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cookiejar-v0_2_0": "src-cookiejar-v0_2_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cookiejar/v0_2_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cookiejar/v0_2_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "cookiejar-v0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cookiejar-v0_3_0": "src-cookiejar-v0_3_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/c/cookiejar/v0_3_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/c/cookiejar/v0_3_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cookiejar-master": "cookiejar-master",
+        "cookiejar-v0_1_0": "cookiejar-v0_1_0",
+        "cookiejar-v0_2_0": "cookiejar-v0_2_0",
+        "cookiejar-v0_3_0": "cookiejar-v0_3_0",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cookiejar-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642085401,
+        "narHash": "sha256-m/FA1WLf4gfYP/KXQXIPuW5vnYquWzGHJ7IRKBDH5Zg=",
+        "owner": "planety",
+        "repo": "cookiejar",
+        "rev": "0934b18dc6acd5639bad985e15fcab2552bff1b0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/heads/master",
+        "repo": "cookiejar",
+        "type": "github"
+      }
+    },
+    "src-cookiejar-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588131862,
+        "narHash": "sha256-4zgcksohuviOFrzpxkFPQM2XsqpEBGEMetqv6qwytaA=",
+        "owner": "planety",
+        "repo": "cookiejar",
+        "rev": "3bdf27f532d5c5a2095acf0a3d87bcbb49043606",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "cookiejar",
+        "type": "github"
+      }
+    },
+    "src-cookiejar-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588151563,
+        "narHash": "sha256-5VBJz+pSktlZza3seUY5/UJsChb17kZHQZC5X++ygTE=",
+        "owner": "planety",
+        "repo": "cookiejar",
+        "rev": "7d93e7c1287bdfcc114d44592c1ee343d04ec5f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "cookiejar",
+        "type": "github"
+      }
+    },
+    "src-cookiejar-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601612291,
+        "narHash": "sha256-zkQ68GUaImj5+/05ej90Ix8c6URnjVPCVj/jvVXGqcQ=",
+        "owner": "planety",
+        "repo": "cookiejar",
+        "rev": "aa96ca83a7c154f08803c7715f054d77f2d623cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "cookiejar",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

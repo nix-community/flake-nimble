@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimkerberos-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimkerberos-master": "src-nimkerberos-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimkerberos/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimkerberos/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimkerberos-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimkerberos-v0_1_0": "src-nimkerberos-v0_1_0"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimkerberos/v0_1_0",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimkerberos/v0_1_0",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimkerberos-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimkerberos-v0_1_1": "src-nimkerberos-v0_1_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimkerberos/v0_1_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimkerberos/v0_1_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nimkerberos-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimkerberos-v0_1_2": "src-nimkerberos-v0_1_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/n/nimkerberos/v0_1_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/n/nimkerberos/v0_1_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimkerberos-master": "nimkerberos-master",
+        "nimkerberos-v0_1_0": "nimkerberos-v0_1_0",
+        "nimkerberos-v0_1_1": "nimkerberos-v0_1_1",
+        "nimkerberos-v0_1_2": "nimkerberos-v0_1_2",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimkerberos-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541564833,
+        "narHash": "sha256-4F9Vsb6oEthQLqDHjI7VGmj65WFEjGf/9O8hn5tmf5w=",
+        "owner": "genotrance",
+        "repo": "nimkerberos",
+        "rev": "c40d99e0a551f4cccdfd546876444ddfffdc41ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/heads/master",
+        "repo": "nimkerberos",
+        "type": "github"
+      }
+    },
+    "src-nimkerberos-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1525475088,
+        "narHash": "sha256-iSZJRBcRxKs7JEjkyKBvdv88Ia07jByXiGvrwc5Q7dc=",
+        "owner": "genotrance",
+        "repo": "nimkerberos",
+        "rev": "3c870570f88ff5374273e082dba4f4ed220282ee",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nimkerberos",
+        "type": "github"
+      }
+    },
+    "src-nimkerberos-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531096742,
+        "narHash": "sha256-fOeWBTMW9YlSM9tFU7F2kierqHNb+45abXqay5Pj7u8=",
+        "owner": "genotrance",
+        "repo": "nimkerberos",
+        "rev": "36187d14280138398dca3a6b8ec657198b9ed465",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "nimkerberos",
+        "type": "github"
+      }
+    },
+    "src-nimkerberos-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541564833,
+        "narHash": "sha256-4F9Vsb6oEthQLqDHjI7VGmj65WFEjGf/9O8hn5tmf5w=",
+        "owner": "genotrance",
+        "repo": "nimkerberos",
+        "rev": "c40d99e0a551f4cccdfd546876444ddfffdc41ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "nimkerberos",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

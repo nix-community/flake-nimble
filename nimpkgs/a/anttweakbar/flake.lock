@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "anttweakbar-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-AntTweakBar-master": "src-AntTweakBar-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/anttweakbar/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/anttweakbar/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "anttweakbar-v1_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-AntTweakBar-v1_0_2": "src-AntTweakBar-v1_0_2"
+      },
+      "locked": {
+        "dir": "nimpkgs/a/anttweakbar/v1_0_2",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/a/anttweakbar/v1_0_2",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "anttweakbar-master": "anttweakbar-master",
+        "anttweakbar-v1_0_2": "anttweakbar-v1_0_2",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-AntTweakBar-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632043009,
+        "narHash": "sha256-19BfHgsqkHYDQve9vzUc8l2pIlgM1Xs+axQkoXGbiy8=",
+        "owner": "krux02",
+        "repo": "nimAntTweakBar",
+        "rev": "5edfe9a0c019674dba3260dc6b112611d6619c5b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krux02",
+        "ref": "refs/heads/master",
+        "repo": "nimAntTweakBar",
+        "type": "github"
+      }
+    },
+    "src-AntTweakBar-v1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1533685279,
+        "narHash": "sha256-p62UEC8mHaK9ONbeI37cgETKqZ4CXXKtnLOpidL/y7Y=",
+        "owner": "krux02",
+        "repo": "nimAntTweakBar",
+        "rev": "9844876394d9bd763bc1c7f78c748ff853cc00fc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "krux02",
+        "ref": "refs/tags/v1.0.2",
+        "repo": "nimAntTweakBar",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

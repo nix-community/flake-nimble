@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646260104,
+        "narHash": "sha256-2YBiF1ENMVia3KnJjuOlgyfgjkW/8DHnBeC9qy8rbcM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b7d734585eaf91f3d0bf3dd4a1c37d09fc413f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jestermongopool-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jestermongopool-master": "src-jestermongopool-master"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jestermongopool/master",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jestermongopool/master",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "jestermongopool-v1_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jestermongopool-v1_0_1": "src-jestermongopool-v1_0_1"
+      },
+      "locked": {
+        "dir": "nimpkgs/j/jestermongopool/v1_0_1",
+        "lastModified": 1646297813,
+        "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
+        "owner": "riinr",
+        "repo": "flake-nimble",
+        "rev": "035e26fba15ab4d38c1d25530222858f81bebb53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nimpkgs/j/jestermongopool/v1_0_1",
+        "owner": "riinr",
+        "ref": "flake-pinning",
+        "repo": "flake-nimble",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jestermongopool-master": "jestermongopool-master",
+        "jestermongopool-v1_0_1": "jestermongopool-v1_0_1",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jestermongopool-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592095631,
+        "narHash": "sha256-8K/H442+zsoGLzTgh2nOX+kFKqOdgWTLrje5aBTNucg=",
+        "owner": "JohnAD",
+        "repo": "jestermongopool",
+        "rev": "a6503a5eaea3525a028f70b27a91760b188973e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/heads/master",
+        "repo": "jestermongopool",
+        "type": "github"
+      }
+    },
+    "src-jestermongopool-v1_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592095631,
+        "narHash": "sha256-8K/H442+zsoGLzTgh2nOX+kFKqOdgWTLrje5aBTNucg=",
+        "owner": "JohnAD",
+        "repo": "jestermongopool",
+        "rev": "a6503a5eaea3525a028f70b27a91760b188973e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v1.0.1",
+        "repo": "jestermongopool",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
