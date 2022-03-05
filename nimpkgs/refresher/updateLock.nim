@@ -1,21 +1,11 @@
 import std/[json, sequtils, strutils, os]
 
 let 
-  flakeNimbleLibLock = %* {
-    "lastModified": 0,
-    "narHash": "sha256-88FkQfLAsTaX6EmtBF5Kr41Ff9nubkDOLx6otLSGS0o=",
-    "owner": "riinr",
-    "repo": "nim-flakes-lib",
-    "rev": "605eb3aa5ab508f8b0dc6589e949e0cc7dc432d7",
-    "type": "github"
-  }
-  nimPkgsLock = %* {
-    "lastModified": 0,
-    "narHash": "sha256-2KA6/J5BT+7scrKCcd3lsy3laazgbhQbsy8OIcKElFM=",
-    "rev": "97fc2d34320140f269274931f25431652873deb8",
-  }
+  base = paramStr(1).parseFile
+  flakeNimbleLibLock = base["flakeNimbleLibLock"]
+  nimPkgsLock = base["nimPkgsLock"]
 
-for i in 1..paramCount():
+for i in 2..paramCount():
   let 
     d = paramStr(i)
     j = d.parseFile
@@ -33,6 +23,6 @@ for i in 1..paramCount():
   if j["nodes"].hasKey "flakeNimbleLib":
     j["nodes"]["flakeNimbleLib"]["locked"] = flakeNimbleLibLock
   echo d
-  writeFile(d, j.pretty)
+  writeFile(d, j.pretty & "\n")
 
 echo paramCount()
