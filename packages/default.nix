@@ -563,6 +563,7 @@
   "isaac" = ./isaac.json;
   "isocodes" = ./isocodes.json;
   "itchio" = ./itchio.json;
+  "iterrr" = ./iterrr.json;
   "itertools" = ./itertools.json;
   "iterutils" = ./iterutils.json;
   "itn" = ./itn.json;
