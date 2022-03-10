@@ -1356,6 +1356,7 @@
   "skybook" = ./skybook.json;
   "skyhash" = ./skyhash.json;
   "slacklib" = ./slacklib.json;
+  "slap" = ./SLAP.json;
   "slappy" = ./slappy.json;
   "slicerator" = ./slicerator.json;
   "sliceutils" = ./sliceutils.json;
