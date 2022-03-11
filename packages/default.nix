@@ -675,6 +675,7 @@
   "localize" = ./localize.json;
   "lockfreequeues" = ./lockfreequeues.json;
   "loco" = ./loco.json;
+  "logit" = ./logit.json;
   "logue" = ./logue.json;
   "loki" = ./loki.json;
   "lolcat" = ./lolcat.json;
@@ -1008,6 +1009,7 @@
   "node" = ./node.json;
   "nodejs" = ./nodejs.json;
   "nodesnim" = ./nodesnim.json;
+  "nofi" = ./nofi.json;
   "noise" = ./noise.json;
   "noisy" = ./noisy.json;
   "nominatim" = ./nominatim.json;
@@ -1248,6 +1250,7 @@
   "reframe" = ./reframe.json;
   "regex" = ./regex.json;
   "remarker_light" = ./remarker_light.json;
+  "remizstd" = ./remizstd.json;
   "remotery" = ./Remotery.json;
   "rena" = ./rena.json;
   "replim" = ./replim.json;
@@ -1376,6 +1379,7 @@
   "sonic" = ./sonic.json;
   "sophia" = ./sophia.json;
   "sorta" = ./sorta.json;
+  "sos" = ./sos.json;
   "sound" = ./sound.json;
   "soundex" = ./soundex.json;
   "soundio" = ./soundio.json;
