@@ -998,6 +998,7 @@
   "nimzend" = ./nimzend.json;
   "nint128" = ./nint128.json;
   "nio" = ./nio.json;
+  "niprefs" = ./niprefs.json;
   "nish" = ./nish.json;
   "niup" = ./niup.json;
   "nlopt" = ./nlopt.json;
