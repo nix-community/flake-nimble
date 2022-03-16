@@ -31,6 +31,7 @@
   "aossoa" = ./aossoa.json;
   "applicates" = ./applicates.json;
   "argon2" = ./argon2.json;
+  "argon2_highlevel" = ./argon2_highlevel.json;
   "argparse" = ./argparse.json;
   "argument_parser" = ./argument_parser.json;
   "aria" = ./aria.json;
@@ -514,6 +515,7 @@
   "html5_canvas" = ./html5_canvas.json;
   "html_tools" = ./html_tools.json;
   "htmlanticopy" = ./htmlAntiCopy.json;
+  "htmlgenerator" = ./htmlgenerator.json;
   "htmlunescape" = ./htmlunescape.json;
   "hts" = ./hts.json;
   "htsparse" = ./htsparse.json;
