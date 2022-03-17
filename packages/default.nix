@@ -30,6 +30,7 @@
   "anycase" = ./anycase.json;
   "aossoa" = ./aossoa.json;
   "applicates" = ./applicates.json;
+  "aqcalc" = ./aqcalc.json;
   "argon2" = ./argon2.json;
   "argon2_highlevel" = ./argon2_highlevel.json;
   "argparse" = ./argparse.json;
