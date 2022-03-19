@@ -408,6 +408,7 @@
   "fsm" = ./fsm.json;
   "fsnotify" = ./fsnotify.json;
   "fswatch" = ./fswatch.json;
+  "ftd2xx" = ./ftd2xx.json;
   "fugitive" = ./fugitive.json;
   "funchook" = ./funchook.json;
   "fuse" = ./fuse.json;
