@@ -976,6 +976,7 @@
   "nimsl" = ./nimsl.json;
   "nimsnappy" = ./nimsnappy.json;
   "nimsnappyc" = ./nimsnappyc.json;
+  "nimsocks" = ./nimSocks.json;
   "nimspice" = ./nimspice.json;
   "nimssh2" = ./nimssh2.json;
   "nimssl" = ./nimssl.json;
@@ -1283,6 +1284,7 @@
   "rss" = ./rss.json;
   "rsvg" = ./rsvg.json;
   "rtree" = ./rtree.json;
+  "run_exe" = ./run_exe.json;
   "runeterra_decks" = ./runeterra_decks.json;
   "rx_nim" = ./rx_nim.json;
   "sam" = ./sam.json;
