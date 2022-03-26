@@ -1185,6 +1185,7 @@
   "prologue" = ./prologue.json;
   "prometheus" = ./prometheus.json;
   "prompt" = ./prompt.json;
+  "pronimgress" = ./pronimgress.json;
   "protobuf" = ./protobuf.json;
   "protobuf_serialization" = ./protobuf_serialization.json;
   "protocoled" = ./protocoled.json;
@@ -1278,6 +1279,7 @@
   "rodcli" = ./rodcli.json;
   "rodster" = ./rodster.json;
   "rollinghash" = ./RollingHash.json;
+  "romanim" = ./romanim.json;
   "romans" = ./romans.json;
   "roots" = ./roots.json;
   "rosencrantz" = ./rosencrantz.json;
