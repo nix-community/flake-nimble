@@ -919,6 +919,7 @@
   "nimkalc" = ./nimkalc.json;
   "nimkerberos" = ./nimkerberos.json;
   "nimkov" = ./nimkov.json;
+  "nimlangserver" = ./nimlangserver.json;
   "nimlapack" = ./nimlapack.json;
   "nimler" = ./nimler.json;
   "nimlevenshtein" = ./nimlevenshtein.json;
