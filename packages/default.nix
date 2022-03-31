@@ -732,6 +732,7 @@
   "midnight_dynamite" = ./midnight_dynamite.json;
   "migrate" = ./migrate.json;
   "mike" = ./mike.json;
+  "millie" = ./millie.json;
   "mime" = ./mime.json;
   "minecraft_server_status" = ./minecraft_server_status.json;
   "minhash" = ./minhash.json;
@@ -1100,6 +1101,7 @@
   "otp" = ./otp.json;
   "otplib" = ./otplib.json;
   "overpass" = ./overpass.json;
+  "owlkettle" = ./owlkettle.json;
   "owo" = ./owo.json;
   "owoifynim" = ./owoifynim.json;
   "p4ztag_to_json" = ./p4ztag_to_json.json;
@@ -1419,6 +1421,7 @@
   "srt" = ./srt.json;
   "ssh2" = ./ssh2.json;
   "sss" = ./sss.json;
+  "ssz_serialization" = ./ssz_serialization.json;
   "stacks" = ./stacks.json;
   "stage" = ./stage.json;
   "stalinsort" = ./stalinsort.json;
@@ -1479,6 +1482,7 @@
   "taglib" = ./taglib.json;
   "tam" = ./tam.json;
   "taps" = ./taps.json;
+  "taskpools" = ./taskpools.json;
   "taskqueue" = ./taskqueue.json;
   "tcl" = ./tcl.json;
   "tcping" = ./tcping.json;
