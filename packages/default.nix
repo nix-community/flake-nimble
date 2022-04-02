@@ -446,6 +446,7 @@
   "gifwriter" = ./gifwriter.json;
   "gigi" = ./gigi.json;
   "gimei" = ./gimei.json;
+  "gimg" = ./gimg.json;
   "ginger" = ./ginger.json;
   "gintro" = ./gintro.json;
   "gitapi" = ./gitapi.json;
@@ -1597,6 +1598,7 @@
   "urlshortener" = ./urlshortener.json;
   "usagov" = ./usagov.json;
   "useragents" = ./useragents.json;
+  "userdef" = ./userdef.json;
   "usha" = ./usha.json;
   "usigar" = ./usigar.json;
   "ustring" = ./ustring.json;
