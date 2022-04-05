@@ -1125,6 +1125,7 @@
   "parsegemini" = ./parsegemini.json;
   "parseini" = ./parseini.json;
   "parselicense" = ./parselicense.json;
+  "parsepage" = ./parsepage.json;
   "parsesql" = ./parsesql.json;
   "parsetoml" = ./parsetoml.json;
   "pas2nim" = ./pas2nim.json;
