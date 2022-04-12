@@ -1008,6 +1008,7 @@
   "nio" = ./nio.json;
   "niprefs" = ./niprefs.json;
   "nish" = ./nish.json;
+  "nitro" = ./nitro.json;
   "niup" = ./niup.json;
   "nlopt" = ./nlopt.json;
   "nmark" = ./nmark.json;
@@ -1269,6 +1270,7 @@
   "requirementstxt" = ./requirementstxt.json;
   "resolv" = ./resolv.json;
   "result" = ./result.json;
+  "resultutils" = ./resultutils.json;
   "rethinkdb" = ./rethinkdb.json;
   "retranslator" = ./retranslator.json;
   "rexpaint" = ./rexpaint.json;
