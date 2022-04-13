@@ -348,6 +348,7 @@
   "eth_p2p" = ./eth_p2p.json;
   "eth_trie" = ./eth_trie.json;
   "ethash" = ./ethash.json;
+  "ethers" = ./ethers.json;
   "euclidean" = ./euclidean.json;
   "euwren" = ./euwren.json;
   "eventemitter" = ./eventemitter.json;
