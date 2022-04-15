@@ -1601,6 +1601,7 @@
   "urlly" = ./urlly.json;
   "urlshortener" = ./urlshortener.json;
   "usagov" = ./usagov.json;
+  "useradd" = ./useradd.json;
   "useragents" = ./useragents.json;
   "userdef" = ./userdef.json;
   "usha" = ./usha.json;
