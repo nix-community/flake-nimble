@@ -1436,6 +1436,7 @@
   "stb_image" = ./stb_image.json;
   "stb_truetype" = ./stb_truetype.json;
   "std_shims" = ./std_shims.json;
+  "stdarg" = ./stdarg.json;
   "stdext" = ./stdext.json;
   "steam" = ./steam.json;
   "steamworks" = ./steamworks.json;
