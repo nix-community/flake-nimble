@@ -726,6 +726,7 @@
   "mentat" = ./mentat.json;
   "meow" = ./meow.json;
   "meta" = ./meta.json;
+  "metatag" = ./metatag.json;
   "metatools" = ./metatools.json;
   "metric" = ./metric.json;
   "metrics" = ./metrics.json;
@@ -1114,6 +1115,7 @@
   "packets" = ./packets.json;
   "pager" = ./pager.json;
   "palette" = ./Palette.json;
+  "pantry" = ./pantry.json;
   "paramidi" = ./paramidi.json;
   "paramidi_soundfonts" = ./paramidi_soundfonts.json;
   "paramidib" = ./paramidib.json;
