@@ -77,6 +77,7 @@
   "baker" = ./baker.json;
   "ballena_itcher" = ./ballena_itcher.json;
   "ballpark" = ./ballpark.json;
+  "bamboo_websocket" = ./bamboo_websocket.json;
   "barbarus" = ./barbarus.json;
   "barcode" = ./barcode.json;
   "base32" = ./base32.json;
@@ -471,6 +472,7 @@
   "golib" = ./golib.json;
   "googleapi" = ./googleapi.json;
   "googlesearch" = ./googlesearch.json;
+  "govee" = ./govee.json;
   "gplay" = ./gplay.json;
   "gpx" = ./gpx.json;
   "grab" = ./grab.json;
