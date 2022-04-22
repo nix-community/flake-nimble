@@ -229,6 +229,7 @@
   "couchdb" = ./couchdb.json;
   "coverage" = ./coverage.json;
   "coverartarchive" = ./coverartarchive.json;
+  "cppclass" = ./cppclass.json;
   "cppstl" = ./cppstl.json;
   "cpuwhat" = ./cpuwhat.json;
   "cpython" = ./cpython.json;
