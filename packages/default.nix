@@ -355,6 +355,7 @@
   "euwren" = ./euwren.json;
   "eventemitter" = ./eventemitter.json;
   "evmc" = ./evmc.json;
+  "excelin" = ./excelin.json;
   "expander" = ./expander.json;
   "expat" = ./expat.json;
   "exporttosqlite3" = ./exporttosqlite3.json;
@@ -517,6 +518,7 @@
   "hottie" = ./hottie.json;
   "hpack" = ./hpack.json;
   "hpprint" = ./hpprint.json;
+  "hpx" = ./hpx.json;
   "hsluv" = ./hsluv.json;
   "html2karax" = ./html2karax.json;
   "html5_canvas" = ./html5_canvas.json;
