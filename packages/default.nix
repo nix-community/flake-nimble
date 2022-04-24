@@ -941,6 +941,7 @@
   "nimly" = ./nimly.json;
   "nimlz4" = ./nimlz4.json;
   "nimmarc" = ./NimMarc.json;
+  "nimmikudance" = ./nimmikudance.json;
   "nimmm" = ./nimmm.json;
   "nimmonocypher" = ./nimmonocypher.json;
   "nimna" = ./nimna.json;
@@ -1301,6 +1302,7 @@
   "rss" = ./rss.json;
   "rsvg" = ./rsvg.json;
   "rtree" = ./rtree.json;
+  "ruby" = ./ruby.json;
   "run_exe" = ./run_exe.json;
   "runeterra_decks" = ./runeterra_decks.json;
   "rx_nim" = ./rx_nim.json;
