@@ -61,6 +61,7 @@
   "asyncthreadpool" = ./asyncthreadpool.json;
   "asynctools" = ./asynctools.json;
   "atoz" = ./atoz.json;
+  "audiodb" = ./audiodb.json;
   "audius" = ./audius.json;
   "aur" = ./aur.json;
   "autome" = ./autome.json;
@@ -229,6 +230,7 @@
   "couchdb" = ./couchdb.json;
   "coverage" = ./coverage.json;
   "coverartarchive" = ./coverartarchive.json;
+  "cowstrings" = ./cowstrings.json;
   "cppclass" = ./cppclass.json;
   "cppstl" = ./cppstl.json;
   "cpuwhat" = ./cpuwhat.json;
@@ -892,6 +894,7 @@
   "nimdata" = ./NimData.json;
   "nimdbx" = ./NimDBX.json;
   "nimdenter" = ./nimdenter.json;
+  "nimdotenv" = ./nimdotenv.json;
   "nimem" = ./nimem.json;
   "nimes" = ./nimes.json;
   "nimeverything" = ./nimeverything.json;
@@ -1434,6 +1437,7 @@
   "sqliteral" = ./sqliteral.json;
   "srt" = ./srt.json;
   "ssh2" = ./ssh2.json;
+  "ssostrings" = ./ssostrings.json;
   "sss" = ./sss.json;
   "ssz_serialization" = ./ssz_serialization.json;
   "stacks" = ./stacks.json;
