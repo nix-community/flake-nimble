@@ -202,6 +202,7 @@
   "cmixer_sdl2" = ./cmixer_sdl2.json;
   "coalesce" = ./coalesce.json;
   "cobs" = ./cobs.json;
+  "cocktaildb" = ./cocktaildb.json;
   "coco" = ./coco.json;
   "coinbase_pro" = ./coinbase_pro.json;
   "collections" = ./collections.json;
@@ -1151,6 +1152,7 @@
   "pcgbasic" = ./pcgbasic.json;
   "pdba" = ./pdba.json;
   "pdcurses" = ./pdcurses.json;
+  "periapsisengine" = ./periapsisEngine.json;
   "perlin" = ./perlin.json;
   "persistent_enums" = ./persistent_enums.json;
   "persvector" = ./persvector.json;
