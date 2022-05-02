@@ -728,6 +728,7 @@
   "mddoc" = ./mddoc.json;
   "mdevolve" = ./mdevolve.json;
   "mdlldk" = ./mdlldk.json;
+  "mealdb" = ./mealdb.json;
   "memlib" = ./memlib.json;
   "memo" = ./memo.json;
   "memviews" = ./memviews.json;
