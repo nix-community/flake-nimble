@@ -806,6 +806,7 @@
   "negamax" = ./negamax.json;
   "neo" = ./neo.json;
   "neoid" = ./neoid.json;
+  "nephyr" = ./nephyr.json;
   "nerve" = ./nerve.json;
   "nery" = ./nery.json;
   "nesm" = ./nesm.json;
