@@ -23,6 +23,7 @@
   "anonimongo" = ./anonimongo.json;
   "ansiparse" = ./ansiparse.json;
   "ansitohtml" = ./ansitohtml.json;
+  "ansiutils" = ./ansiutils.json;
   "ansiwave" = ./ansiwave.json;
   "antlr4nim" = ./antlr4nim.json;
   "anttweakbar" = ./AntTweakBar.json;
@@ -545,6 +546,7 @@
   "i18n" = ./i18n.json;
   "i3ipc" = ./i3ipc.json;
   "icon" = ./icon.json;
+  "illwave" = ./illwave.json;
   "illwill" = ./illwill.json;
   "illwill_unsafe" = ./illwill_unsafe.json;
   "imageman" = ./imageman.json;
@@ -1013,6 +1015,7 @@
   "nimtrs" = ./nimtrs.json;
   "nimvisa" = ./nimvisa.json;
   "nimviz" = ./nimviz.json;
+  "nimwave" = ./nimwave.json;
   "nimwc" = ./nimwc.json;
   "nimwebp" = ./nimwebp.json;
   "nimx" = ./nimx.json;
