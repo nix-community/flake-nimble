@@ -1508,6 +1508,7 @@
   "taglib" = ./taglib.json;
   "tam" = ./tam.json;
   "taps" = ./taps.json;
+  "taskman" = ./taskman.json;
   "taskpools" = ./taskpools.json;
   "taskqueue" = ./taskqueue.json;
   "tcl" = ./tcl.json;
