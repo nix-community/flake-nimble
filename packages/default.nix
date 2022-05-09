@@ -1556,6 +1556,7 @@
   "tkrzw" = ./tkrzw.json;
   "tm_client" = ./tm_client.json;
   "tmplpro" = ./tmplpro.json;
+  "tmpnim" = ./tmpnim.json;
   "tnetstring" = ./tnetstring.json;
   "tnim" = ./tnim.json;
   "todoist" = ./todoist.json;
