@@ -1289,6 +1289,7 @@
   "requirementstxt" = ./requirementstxt.json;
   "resolv" = ./resolv.json;
   "result" = ./result.json;
+  "resultsutils" = ./resultsutils.json;
   "resultutils" = ./resultutils.json;
   "rethinkdb" = ./rethinkdb.json;
   "retranslator" = ./retranslator.json;
