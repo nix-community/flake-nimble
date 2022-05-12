@@ -717,6 +717,7 @@
   "markdown" = ./markdown.json;
   "markx" = ./markx.json;
   "masterpassword" = ./masterpassword.json;
+  "matext" = ./matext.json;
   "mathexpr" = ./mathexpr.json;
   "matplotnim" = ./matplotnim.json;
   "matrixsdk" = ./matrixsdk.json;
