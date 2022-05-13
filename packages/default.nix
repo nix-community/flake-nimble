@@ -124,6 +124,7 @@
   "blackvas" = ./Blackvas.json;
   "blackvas_cli" = ./blackvas_cli.json;
   "blake2" = ./blake2.json;
+  "blarg" = ./blarg.json;
   "bloom" = ./bloom.json;
   "blosc" = ./blosc.json;
   "blscurve" = ./blscurve.json;
@@ -645,6 +646,7 @@
   "lazyseq" = ./lazyseq.json;
   "lc" = ./lc.json;
   "lda" = ./lda.json;
+  "leopard" = ./leopard.json;
   "leveldb" = ./leveldb.json;
   "libarchibi" = ./libarchibi.json;
   "libbacktrace" = ./libbacktrace.json;
@@ -678,6 +680,7 @@
   "libusb" = ./libusb.json;
   "libuv" = ./libuv.json;
   "libvlc" = ./libvlc.json;
+  "limiter" = ./limiter.json;
   "linalg" = ./linalg.json;
   "linear_models" = ./linear_models.json;
   "linenoise" = ./linenoise.json;
@@ -1406,6 +1409,7 @@
   "slugify" = ./slugify.json;
   "smbexec" = ./SMBExec.json;
   "smnar" = ./smnar.json;
+  "smoothing" = ./smoothing.json;
   "snail" = ./snail.json;
   "snappy" = ./snappy.json;
   "sndfile" = ./sndfile.json;
@@ -1490,6 +1494,7 @@
   "sumtypes" = ./sumtypes.json;
   "sunvox" = ./sunvox.json;
   "supersnappy" = ./supersnappy.json;
+  "supranim" = ./supranim.json;
   "surfing" = ./surfing.json;
   "suru" = ./suru.json;
   "svdpi" = ./svdpi.json;
