@@ -335,6 +335,7 @@
   "elvis" = ./elvis.json;
   "emerald" = ./emerald.json;
   "eminim" = ./eminim.json;
+  "emitter" = ./emitter.json;
   "emmy" = ./emmy.json;
   "encode" = ./encode.json;
   "enet" = ./enet.json;
