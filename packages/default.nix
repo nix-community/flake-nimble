@@ -659,6 +659,7 @@
   "libfuzzer" = ./libfuzzer.json;
   "libgcrypt" = ./libgcrypt.json;
   "libgraph" = ./libgraph.json;
+  "libharu" = ./libharu.json;
   "libipset" = ./libipset.json;
   "libjwt" = ./libjwt.json;
   "libkeepass" = ./libkeepass.json;
