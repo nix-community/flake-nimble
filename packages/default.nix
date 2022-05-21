@@ -1082,6 +1082,7 @@
   "objc_runtime" = ./objc_runtime.json;
   "oblivion" = ./oblivion.json;
   "oculus" = ./oculus.json;
+  "odbcn" = ./odbcn.json;
   "odsreader" = ./odsreader.json;
   "ogham" = ./ogham.json;
   "oldgtk3" = ./oldgtk3.json;
