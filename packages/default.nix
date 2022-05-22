@@ -157,6 +157,7 @@
   "camelize" = ./camelize.json;
   "canonicaljson" = ./canonicaljson.json;
   "capnp" = ./capnp.json;
+  "capstone" = ./capstone.json;
   "cascade" = ./cascade.json;
   "cassandra" = ./cassandra.json;
   "cassette" = ./cassette.json;
