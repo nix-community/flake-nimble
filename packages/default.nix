@@ -41,6 +41,7 @@
   "arrayfirenim" = ./ArrayFireNim.json;
   "arraymancer" = ./arraymancer.json;
   "arraymancer_vision" = ./arraymancer_vision.json;
+  "artemis" = ./artemis.json;
   "asciigraph" = ./asciigraph.json;
   "asciitables" = ./asciitables.json;
   "asciitext" = ./asciitext.json;
