@@ -776,6 +776,7 @@
   "morepretty" = ./morepretty.json;
   "mort" = ./mort.json;
   "moss_nim" = ./moss_nim.json;
+  "mouse" = ./mouse.json;
   "mpdclient" = ./mpdclient.json;
   "mpeg" = ./mpeg.json;
   "mpfit" = ./mpfit.json;
