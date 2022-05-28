@@ -1564,6 +1564,7 @@
   "timestamp" = ./timestamp.json;
   "tinamou" = ./tinamou.json;
   "tiny_sqlite" = ./tiny_sqlite.json;
+  "tinydialogs" = ./tinydialogs.json;
   "tinyfiledialogs" = ./tinyfiledialogs.json;
   "tinypool" = ./tinypool.json;
   "tissue" = ./tissue.json;
