@@ -66,6 +66,7 @@
   "audiodb" = ./audiodb.json;
   "audius" = ./audius.json;
   "aur" = ./aur.json;
+  "autoderef" = ./autoderef.json;
   "autome" = ./autome.json;
   "autonim" = ./autonim.json;
   "autotyper" = ./autotyper.json;
