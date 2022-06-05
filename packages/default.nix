@@ -1281,6 +1281,7 @@
   "reactorfuse" = ./reactorfuse.json;
   "readfq" = ./readfq.json;
   "recaptcha" = ./recaptcha.json;
+  "receq" = ./receq.json;
   "rect" = ./rect.json;
   "rect_packer" = ./rect_packer.json;
   "redis" = ./redis.json;
