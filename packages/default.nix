@@ -1323,6 +1323,7 @@
   "romans" = ./romans.json;
   "roots" = ./roots.json;
   "rosencrantz" = ./rosencrantz.json;
+  "rpgsheet" = ./rpgsheet.json;
   "rss" = ./rss.json;
   "rsvg" = ./rsvg.json;
   "rtree" = ./rtree.json;
