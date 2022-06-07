@@ -165,6 +165,7 @@
   "cassette" = ./cassette.json;
   "catnip" = ./catnip.json;
   "cbor" = ./cbor.json;
+  "cdecl" = ./cdecl.json;
   "cello" = ./cello.json;
   "chacha20" = ./chacha20.json;
   "chain" = ./chain.json;
@@ -384,6 +385,7 @@
   "ffpass" = ./ffpass.json;
   "fftw3" = ./fftw3.json;
   "fidget" = ./fidget.json;
+  "fidgetty" = ./fidgetty.json;
   "figures" = ./figures.json;
   "fileinput" = ./fileinput.json;
   "filesize" = ./filesize.json;
