@@ -207,6 +207,7 @@
   "cmixer" = ./cmixer.json;
   "cmixer_sdl2" = ./cmixer_sdl2.json;
   "coalesce" = ./coalesce.json;
+  "coap" = ./coap.json;
   "cobs" = ./cobs.json;
   "cocktaildb" = ./cocktaildb.json;
   "coco" = ./coco.json;
@@ -553,6 +554,7 @@
   "i18n" = ./i18n.json;
   "i3ipc" = ./i3ipc.json;
   "icon" = ./icon.json;
+  "ikeahomesmart" = ./ikeahomesmart.json;
   "illwave" = ./illwave.json;
   "illwill" = ./illwill.json;
   "illwill_unsafe" = ./illwill_unsafe.json;
