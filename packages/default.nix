@@ -62,6 +62,7 @@
   "asynctest" = ./asynctest.json;
   "asyncthreadpool" = ./asyncthreadpool.json;
   "asynctools" = ./asynctools.json;
+  "at" = ./at.json;
   "atoz" = ./atoz.json;
   "audiodb" = ./audiodb.json;
   "audius" = ./audius.json;
