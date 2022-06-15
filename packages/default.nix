@@ -1193,6 +1193,7 @@
   "pipelines" = ./pipelines.json;
   "pixels" = ./pixels.json;
   "pixie" = ./pixie.json;
+  "pkginfo" = ./pkginfo.json;
   "platformer" = ./platformer.json;
   "playground" = ./playground.json;
   "playlists" = ./playlists.json;
