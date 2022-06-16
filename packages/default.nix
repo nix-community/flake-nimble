@@ -566,6 +566,7 @@
   "imlib2" = ./imlib2.json;
   "importc_helpers" = ./importc_helpers.json;
   "impulse_engine" = ./impulse_engine.json;
+  "imstyle" = ./imstyle.json;
   "influx" = ./influx.json;
   "inim" = ./inim.json;
   "intel_hex" = ./intel_hex.json;
