@@ -313,6 +313,7 @@
   "docx" = ./docx.json;
   "dogapi" = ./dogapi.json;
   "dotenv" = ./dotenv.json;
+  "downit" = ./downit.json;
   "dpdk" = ./dpdk.json;
   "drand48" = ./drand48.json;
   "drawille" = ./drawille.json;
@@ -922,6 +923,7 @@
   "nimeverything" = ./nimeverything.json;
   "nimfasttext" = ./nimfastText.json;
   "nimfcuk" = ./nimfcuk.json;
+  "nimff" = ./nimFF.json;
   "nimfinlib" = ./nimFinLib.json;
   "nimflux" = ./nimflux.json;
   "nimfm" = ./nimfm.json;
