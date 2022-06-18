@@ -1460,6 +1460,7 @@
   "spills" = ./spills.json;
   "spinner" = ./spinner.json;
   "spinny" = ./spinny.json;
+  "splitmix64" = ./splitmix64.json;
   "spotify" = ./spotify.json;
   "spry" = ./spry.json;
   "sprymicro" = ./sprymicro.json;
