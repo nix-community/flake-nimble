@@ -18,6 +18,7 @@
   "amka" = ./amka.json;
   "amysql" = ./amysql.json;
   "analytics" = ./analytics.json;
+  "anano" = ./anano.json;
   "animatecss" = ./animatecss.json;
   "anime" = ./anime.json;
   "anonimongo" = ./anonimongo.json;
