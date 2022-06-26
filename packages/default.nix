@@ -1121,6 +1121,7 @@
   "openssl_evp" = ./openssl_evp.json;
   "openstreetmap" = ./openstreetmap.json;
   "opentdb" = ./opentdb.json;
+  "openurl" = ./openurl.json;
   "openweathermap" = ./openweathermap.json;
   "optional_t" = ./optional_t.json;
   "optionals" = ./optionals.json;
