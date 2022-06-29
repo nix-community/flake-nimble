@@ -681,6 +681,7 @@
   "libnx" = ./libnx.json;
   "libovr" = ./libovr.json;
   "libp2p" = ./libp2p.json;
+  "libp2pdht" = ./libp2pdht.json;
   "libplist" = ./libplist.json;
   "libravatar" = ./libravatar.json;
   "libsaedea" = ./libsaedea.json;
@@ -1248,6 +1249,7 @@
   "pvim" = ./pvim.json;
   "pwd" = ./pwd.json;
   "pwned" = ./pwned.json;
+  "pwnedpass" = ./pwnedpass.json;
   "py2nim" = ./py2nim.json;
   "pych" = ./pych.json;
   "pykot" = ./pykot.json;
