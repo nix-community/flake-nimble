@@ -540,6 +540,7 @@
   "html_tools" = ./html_tools.json;
   "htmlanticopy" = ./htmlAntiCopy.json;
   "htmlgenerator" = ./htmlgenerator.json;
+  "htmltovdom" = ./htmlToVdom.json;
   "htmlunescape" = ./htmlunescape.json;
   "hts" = ./hts.json;
   "htsparse" = ./htsparse.json;
@@ -1369,6 +1370,7 @@
   "segmentation" = ./segmentation.json;
   "selenimum" = ./selenimum.json;
   "semver" = ./semver.json;
+  "seq2d" = ./seq2d.json;
   "seqmath" = ./seqmath.json;
   "sequester" = ./sequester.json;
   "sequoia" = ./sequoia.json;
