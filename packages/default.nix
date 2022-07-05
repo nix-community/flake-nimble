@@ -432,6 +432,7 @@
   "fugitive" = ./fugitive.json;
   "funchook" = ./funchook.json;
   "fuse" = ./fuse.json;
+  "fushin" = ./fushin.json;
   "fusion" = ./fusion.json;
   "futhark" = ./futhark.json;
   "fuzzy" = ./fuzzy.json;
