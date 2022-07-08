@@ -511,6 +511,7 @@
   "gyaric" = ./gyaric.json;
   "hackpad" = ./hackpad.json;
   "halonium" = ./halonium.json;
+  "hangover" = ./hangover.json;
   "haraka" = ./haraka.json;
   "harpoon" = ./harpoon.json;
   "hashids" = ./hashids.json;
