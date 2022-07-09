@@ -847,6 +847,7 @@
   "neverwinter" = ./neverwinter.json;
   "newfix" = ./newfix.json;
   "news" = ./news.json;
+  "nexus" = ./nexus.json;
   "ngspice" = ./ngspice.json;
   "ngtcp2" = ./ngtcp2.json;
   "ngxcmod" = ./ngxcmod.json;
@@ -1740,6 +1741,7 @@
   "wren" = ./wren.json;
   "ws" = ./ws.json;
   "wstp" = ./wstp.json;
+  "wttrin" = ./wttrin.json;
   "wxnim" = ./wxnim.json;
   "wxpay" = ./wxpay.json;
   "wyhash" = ./wyhash.json;
