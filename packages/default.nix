@@ -956,6 +956,7 @@
   "nimics" = ./nimics.json;
   "niminst" = ./niminst.json;
   "nimish" = ./nimish.json;
+  "nimislides" = ./nimiSlides.json;
   "nimja" = ./nimja.json;
   "nimjl" = ./nimjl.json;
   "nimjson" = ./nimjson.json;
@@ -1044,6 +1045,7 @@
   "nimwave" = ./nimwave.json;
   "nimwc" = ./nimwc.json;
   "nimwebp" = ./nimwebp.json;
+  "nimwin" = ./nimwin.json;
   "nimx" = ./nimx.json;
   "nimzbar" = ./nimzbar.json;
   "nimzend" = ./nimzend.json;
