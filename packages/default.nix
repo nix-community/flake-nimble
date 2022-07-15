@@ -1291,6 +1291,7 @@
   "ranges" = ./ranges.json;
   "rapid" = ./rapid.json;
   "ratel" = ./ratel.json;
+  "raytracingalgorithm" = ./RaytracingAlgorithm.json;
   "rbac" = ./rbac.json;
   "rbtree" = ./rbtree.json;
   "rc4" = ./RC4.json;
