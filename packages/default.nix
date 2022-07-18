@@ -782,6 +782,7 @@
   "mnemonic" = ./mnemonic.json;
   "moduleinit" = ./moduleinit.json;
   "mofuw" = ./mofuw.json;
+  "monerorpc" = ./monerorpc.json;
   "mongo" = ./mongo.json;
   "mongopool" = ./mongopool.json;
   "mongrel2" = ./mongrel2.json;
@@ -808,6 +809,7 @@
   "mycouch" = ./mycouch.json;
   "myo" = ./myo.json;
   "mysqlparser" = ./mysqlparser.json;
+  "nage" = ./nage.json;
   "nake" = ./nake.json;
   "names" = ./names.json;
   "nancy" = ./nancy.json;
