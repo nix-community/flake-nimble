@@ -349,6 +349,7 @@
   "encode" = ./encode.json;
   "enet" = ./enet.json;
   "ensem" = ./ensem.json;
+  "entgrep" = ./entgrep.json;
   "entoody" = ./entoody.json;
   "envconfig" = ./envconfig.json;
   "epub" = ./epub.json;
@@ -357,6 +358,7 @@
   "espeak" = ./espeak.json;
   "etcd_client" = ./etcd_client.json;
   "eternity" = ./eternity.json;
+  "etf" = ./etf.json;
   "eth" = ./eth.json;
   "eth_bloom" = ./eth_bloom.json;
   "eth_common" = ./eth_common.json;
@@ -1057,6 +1059,7 @@
   "nish" = ./nish.json;
   "nitro" = ./nitro.json;
   "niup" = ./niup.json;
+  "njo" = ./njo.json;
   "nlopt" = ./nlopt.json;
   "nmark" = ./nmark.json;
   "nmi" = ./nmi.json;
@@ -1548,6 +1551,7 @@
   "syslog" = ./syslog.json;
   "sysrandom" = ./sysrandom.json;
   "systimes" = ./systimes.json;
+  "tagger" = ./tagger.json;
   "taglib" = ./taglib.json;
   "tam" = ./tam.json;
   "taps" = ./taps.json;
