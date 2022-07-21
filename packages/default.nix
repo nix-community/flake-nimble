@@ -96,6 +96,7 @@
   "basic2d" = ./basic2d.json;
   "basic3d" = ./basic3d.json;
   "batchsend" = ./batchsend.json;
+  "batteries" = ./batteries.json;
   "battery_widget" = ./battery_widget.json;
   "bcra" = ./bcra.json;
   "bcrypt" = ./bcrypt.json;
