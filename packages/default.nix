@@ -40,6 +40,7 @@
   "argument_parser" = ./argument_parser.json;
   "aria" = ./aria.json;
   "arksys" = ./arksys.json;
+  "array2d" = ./array2d.json;
   "arrayfirenim" = ./ArrayFireNim.json;
   "arraymancer" = ./arraymancer.json;
   "arraymancer_vision" = ./arraymancer_vision.json;
