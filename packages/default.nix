@@ -331,6 +331,7 @@
   "ducominer" = ./ducominer.json;
   "duktape" = ./duktape.json;
   "dumpincludes" = ./dumpincludes.json;
+  "dye" = ./dye.json;
   "eachdo" = ./eachdo.json;
   "easings" = ./easings.json;
   "eastasianwidth" = ./eastasianwidth.json;
