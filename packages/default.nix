@@ -1405,6 +1405,7 @@
   "shared" = ./shared.json;
   "sharedmempool" = ./sharedmempool.json;
   "shell" = ./shell.json;
+  "shellopt" = ./shellopt.json;
   "shene" = ./shene.json;
   "shiori" = ./shiori.json;
   "shiori_charset_convert" = ./shiori_charset_convert.json;
