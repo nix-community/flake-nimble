@@ -1042,6 +1042,7 @@
   "nimterop" = ./nimterop.json;
   "nimtess2" = ./nimtess2.json;
   "nimtesseract" = ./nimtesseract.json;
+  "nimtest" = ./nimtest.json;
   "nimtetris" = ./nimtetris.json;
   "nimtiingo" = ./nimTiingo.json;
   "nimtomd" = ./nimtomd.json;
@@ -1622,6 +1623,7 @@
   "torm" = ./torm.json;
   "toxcore" = ./toxcore.json;
   "tradingview" = ./tradingview.json;
+  "trayx" = ./trayx.json;
   "treesitter" = ./treesitter.json;
   "treesitter_agda" = ./treesitter_agda.json;
   "treesitter_bash" = ./treesitter_bash.json;
