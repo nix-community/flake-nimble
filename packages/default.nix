@@ -1686,6 +1686,7 @@
   "usigar" = ./usigar.json;
   "ustring" = ./ustring.json;
   "utf8tests" = ./utf8tests.json;
+  "util" = ./util.json;
   "utils" = ./utils.json;
   "uuid" = ./uuid.json;
   "uuid4" = ./uuid4.json;
