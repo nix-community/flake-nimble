@@ -650,6 +650,7 @@
   "kinto" = ./Kinto.json;
   "kissfft" = ./kissfft.json;
   "kiwi" = ./kiwi.json;
+  "kiwifydownload" = ./kiwifyDownload.json;
   "klymene" = ./klymene.json;
   "kmer" = ./kmer.json;
   "kmod" = ./kmod.json;
@@ -1705,6 +1706,7 @@
   "vector" = ./vector.json;
   "vectors" = ./vectors.json;
   "vidhdr" = ./vidhdr.json;
+  "vimeo" = ./vimeo.json;
   "vkapi" = ./vkapi.json;
   "vla" = ./vla.json;
   "vmath" = ./vmath.json;
