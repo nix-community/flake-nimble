@@ -1720,6 +1720,7 @@
   "wauto" = ./wAuto.json;
   "wave" = ./wave.json;
   "wavecore" = ./wavecore.json;
+  "wayland" = ./wayland.json;
   "wchart" = ./wChart.json;
   "weave" = ./weave.json;
   "web3" = ./web3.json;
@@ -1751,6 +1752,7 @@
   "wiringpinim" = ./wiringPiNim.json;
   "witai" = ./witai.json;
   "with" = ./with.json;
+  "wlroots" = ./wlroots.json;
   "wnim" = ./wNim.json;
   "woocommerce-api-nim" = ./woocommerce-api-nim.json;
   "word2vec" = ./word2vec.json;
@@ -1774,6 +1776,7 @@
   "xiaomi" = ./xiaomi.json;
   "xidoc" = ./xidoc.json;
   "xio" = ./xio.json;
+  "xkb" = ./xkb.json;
   "xlsx" = ./xlsx.json;
   "xlsxio" = ./xlsxio.json;
   "xml" = ./xml.json;
