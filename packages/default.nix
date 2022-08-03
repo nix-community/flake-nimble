@@ -502,6 +502,7 @@
   "grab" = ./grab.json;
   "gradient" = ./gradient.json;
   "grafanim" = ./grafanim.json;
+  "gralg" = ./grAlg.json;
   "graphemes" = ./graphemes.json;
   "graphics" = ./graphics.json;
   "graphql" = ./graphql.json;
