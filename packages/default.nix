@@ -340,6 +340,7 @@
   "echon" = ./Echon.json;
   "ed25519" = ./ed25519.json;
   "edens" = ./edens.json;
+  "editlyconf" = ./editlyconf.json;
   "edlib" = ./edlib.json;
   "edn" = ./edn.json;
   "egl" = ./egl.json;
@@ -460,6 +461,7 @@
   "genoiser" = ./genoiser.json;
   "gentabs" = ./gentabs.json;
   "geoip" = ./geoip.json;
+  "geomancer" = ./geomancer.json;
   "geometryutils" = ./geometryutils.json;
   "geonames" = ./geonames.json;
   "georefar" = ./georefar.json;
@@ -832,6 +834,7 @@
   "nauthy" = ./nauthy.json;
   "naw" = ./naw.json;
   "nbaser" = ./nbaser.json;
+  "nbcnews" = ./nbcnews.json;
   "ncurses" = ./ncurses.json;
   "ndb" = ./ndb.json;
   "ndbex" = ./ndbex.json;
@@ -1315,6 +1318,7 @@
   "readfq" = ./readfq.json;
   "recaptcha" = ./recaptcha.json;
   "receq" = ./receq.json;
+  "records" = ./records.json;
   "rect" = ./rect.json;
   "rect_packer" = ./rect_packer.json;
   "redis" = ./redis.json;
