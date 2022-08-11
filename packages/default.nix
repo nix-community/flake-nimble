@@ -1431,6 +1431,7 @@
   "simple_graph" = ./simple_graph.json;
   "simple_parseopt" = ./simple_parseopt.json;
   "simple_vector" = ./simple_vector.json;
+  "simpleargs" = ./simpleargs.json;
   "simpleast" = ./simpleAST.json;
   "simpledecimal" = ./simpledecimal.json;
   "simplediff" = ./simplediff.json;
