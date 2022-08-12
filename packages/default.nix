@@ -1293,6 +1293,7 @@
   "quickcrypt" = ./quickcrypt.json;
   "quickjs4nim" = ./QuickJS4nim.json;
   "quickjwt" = ./quickjwt.json;
+  "qwatcher" = ./qwatcher.json;
   "qwertycd" = ./qwertycd.json;
   "rabbit" = ./rabbit.json;
   "rain" = ./rain.json;
