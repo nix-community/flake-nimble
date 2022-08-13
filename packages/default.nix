@@ -695,6 +695,7 @@
   "libovr" = ./libovr.json;
   "libp2p" = ./libp2p.json;
   "libp2pdht" = ./libp2pdht.json;
+  "libpe" = ./libpe.json;
   "libplist" = ./libplist.json;
   "libravatar" = ./libravatar.json;
   "libsaedea" = ./libsaedea.json;
@@ -768,6 +769,7 @@
   "memviews" = ./memviews.json;
   "mentat" = ./mentat.json;
   "meow" = ./meow.json;
+  "mersal" = ./mersal.json;
   "meta" = ./meta.json;
   "metatag" = ./metatag.json;
   "metatools" = ./metatools.json;
