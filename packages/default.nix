@@ -147,6 +147,7 @@
   "breeze" = ./breeze.json;
   "bs" = ./bs.json;
   "bson" = ./bson.json;
+  "bu" = ./bu.json;
   "buffer" = ./buffer.json;
   "bump" = ./bump.json;
   "bumpy" = ./bumpy.json;
