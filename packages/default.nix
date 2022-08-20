@@ -203,6 +203,7 @@
   "clibpp" = ./clibpp.json;
   "cliche" = ./cliche.json;
   "cligen" = ./cligen.json;
+  "clipper2" = ./clipper2.json;
   "cliptomania" = ./cliptomania.json;
   "closure_compiler" = ./closure_compiler.json;
   "cloudbet" = ./cloudbet.json;
