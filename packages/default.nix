@@ -681,6 +681,7 @@
   "libbacktrace" = ./libbacktrace.json;
   "libclang" = ./libclang.json;
   "libcurl" = ./libcurl.json;
+  "libdeflate_gzip" = ./libdeflate_gzip.json;
   "libevdev" = ./libevdev.json;
   "libffi" = ./libffi.json;
   "libfswatch" = ./libfswatch.json;
