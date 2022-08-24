@@ -998,6 +998,7 @@
   "nimmm" = ./nimmm.json;
   "nimmonocypher" = ./nimmonocypher.json;
   "nimna" = ./nimna.json;
+  "nimnn" = ./NimNN.json;
   "nimnoise" = ./nimnoise.json;
   "nimobserver" = ./nimobserver.json;
   "nimodpi" = ./nimodpi.json;
@@ -1614,6 +1615,7 @@
   "timerwheel" = ./timerwheel.json;
   "timespec_get" = ./timespec_get.json;
   "timestamp" = ./timestamp.json;
+  "timsort2" = ./timsort2.json;
   "tinamou" = ./tinamou.json;
   "tiny_sqlite" = ./tiny_sqlite.json;
   "tinydialogs" = ./tinydialogs.json;
