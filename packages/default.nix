@@ -123,6 +123,7 @@
   "biscuits" = ./biscuits.json;
   "bisect" = ./bisect.json;
   "bitarray" = ./bitarray.json;
+  "bitcoinlightning" = ./bitcoinlightning.json;
   "bitset" = ./bitset.json;
   "bitstreams" = ./bitstreams.json;
   "bitty" = ./bitty.json;
@@ -324,6 +325,7 @@
   "drand48" = ./drand48.json;
   "drawille" = ./drawille.json;
   "drawim" = ./drawim.json;
+  "drchaos" = ./drchaos.json;
   "drng" = ./drng.json;
   "dropbox_filename_sanitizer" = ./dropbox_filename_sanitizer.json;
   "dslutils" = ./dslutils.json;
