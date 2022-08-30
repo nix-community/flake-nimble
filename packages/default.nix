@@ -146,6 +146,7 @@
   "brainfuck" = ./brainfuck.json;
   "brainlyextractor" = ./brainlyextractor.json;
   "breeze" = ./breeze.json;
+  "brightcove" = ./brightcove.json;
   "bs" = ./bs.json;
   "bson" = ./bson.json;
   "bu" = ./bu.json;
@@ -1257,6 +1258,7 @@
   "prettyclr" = ./prettyclr.json;
   "prettystr" = ./prettystr.json;
   "prettyvec" = ./prettyvec.json;
+  "pricecsv" = ./pricecsv.json;
   "primme" = ./primme.json;
   "print" = ./print.json;
   "printdebug" = ./printdebug.json;
@@ -1542,6 +1544,7 @@
   "strslice" = ./strslice.json;
   "struct" = ./struct.json;
   "strunicode" = ./strunicode.json;
+  "studiobacklottv" = ./studiobacklottv.json;
   "suber" = ./suber.json;
   "subfield" = ./subfield.json;
   "subhook" = ./subhook.json;
