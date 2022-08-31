@@ -220,6 +220,7 @@
   "cobs" = ./cobs.json;
   "cocktaildb" = ./cocktaildb.json;
   "coco" = ./coco.json;
+  "codegenlib" = ./codegenlib.json;
   "coinbase_pro" = ./coinbase_pro.json;
   "collections" = ./collections.json;
   "colorcol" = ./colorcol.json;
