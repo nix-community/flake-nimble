@@ -1381,6 +1381,7 @@
   "run_exe" = ./run_exe.json;
   "runeterra_decks" = ./runeterra_decks.json;
   "rx_nim" = ./rx_nim.json;
+  "safeset" = ./safeset.json;
   "sam" = ./sam.json;
   "sampletodolist" = ./sampleTodoList.json;
   "sass" = ./sass.json;
@@ -1629,6 +1630,7 @@
   "tinypool" = ./tinypool.json;
   "tissue" = ./tissue.json;
   "tkrzw" = ./tkrzw.json;
+  "tlv" = ./tlv.json;
   "tm_client" = ./tm_client.json;
   "tmplpro" = ./tmplpro.json;
   "tmpnim" = ./tmpnim.json;
