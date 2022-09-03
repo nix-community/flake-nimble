@@ -73,6 +73,7 @@
   "autoderef" = ./autoderef.json;
   "autome" = ./autome.json;
   "autonim" = ./autonim.json;
+  "autotemplate" = ./autotemplate.json;
   "autotyper" = ./autotyper.json;
   "avbin" = ./avbin.json;
   "awesome_rmdir" = ./awesome_rmdir.json;
@@ -297,6 +298,7 @@
   "denim_ui" = ./denim_ui.json;
   "denim_ui_cairo" = ./denim_ui_cairo.json;
   "denim_ui_canvas" = ./denim_ui_canvas.json;
+  "deriveables" = ./deriveables.json;
   "des" = ./des.json;
   "deser_json" = ./deser_json.json;
   "desim" = ./desim.json;
@@ -690,6 +692,7 @@
   "libffi" = ./libffi.json;
   "libfswatch" = ./libfswatch.json;
   "libfuzzer" = ./libfuzzer.json;
+  "libfuzzy" = ./libfuzzy.json;
   "libgcrypt" = ./libgcrypt.json;
   "libgraph" = ./libgraph.json;
   "libharu" = ./libharu.json;
@@ -850,6 +853,7 @@
   "ndbex" = ./ndbex.json;
   "ndf" = ./ndf.json;
   "ndns" = ./ndns.json;
+  "ndup" = ./ndup.json;
   "neel" = ./Neel.json;
   "negamax" = ./negamax.json;
   "neo" = ./neo.json;
