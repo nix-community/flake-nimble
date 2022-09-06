@@ -1432,6 +1432,7 @@
   "shell" = ./shell.json;
   "shellopt" = ./shellopt.json;
   "shene" = ./shene.json;
+  "shiftfields" = ./shiftfields.json;
   "shiori" = ./shiori.json;
   "shiori_charset_convert" = ./shiori_charset_convert.json;
   "shioridll" = ./shioridll.json;
