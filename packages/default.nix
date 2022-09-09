@@ -125,6 +125,7 @@
   "bisect" = ./bisect.json;
   "bitarray" = ./bitarray.json;
   "bitcoinlightning" = ./bitcoinlightning.json;
+  "bitseqs" = ./bitseqs.json;
   "bitset" = ./bitset.json;
   "bitstreams" = ./bitstreams.json;
   "bitty" = ./bitty.json;
@@ -1216,6 +1217,7 @@
   "pcgbasic" = ./pcgbasic.json;
   "pdba" = ./pdba.json;
   "pdcurses" = ./pdcurses.json;
+  "peni" = ./peni.json;
   "periapsisengine" = ./periapsisEngine.json;
   "perlin" = ./perlin.json;
   "persistent_enums" = ./persistent_enums.json;
