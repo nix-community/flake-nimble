@@ -391,6 +391,7 @@
   "exporttosqlite3" = ./exporttosqlite3.json;
   "exprgrad" = ./exprgrad.json;
   "extensions" = ./extensions.json;
+  "ezscr" = ./ezscr.json;
   "fab" = ./fab.json;
   "faker" = ./faker.json;
   "fastcgi" = ./fastcgi.json;
