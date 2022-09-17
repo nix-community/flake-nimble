@@ -211,6 +211,7 @@
   "cliptomania" = ./cliptomania.json;
   "closure_compiler" = ./closure_compiler.json;
   "cloudbet" = ./cloudbet.json;
+  "clown_limiter" = ./clown_limiter.json;
   "clr" = ./clr.json;
   "cmake" = ./cmake.json;
   "cmark" = ./cmark.json;
