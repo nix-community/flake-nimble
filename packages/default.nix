@@ -1831,6 +1831,7 @@
   "zfdbms" = ./zfdbms.json;
   "zfplugs" = ./zfplugs.json;
   "zhsh" = ./zhsh.json;
+  "zigcc" = ./zigcc.json;
   "zip" = ./zip.json;
   "zippy" = ./zippy.json;
   "zlib" = ./zlib.json;
