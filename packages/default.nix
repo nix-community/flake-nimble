@@ -820,6 +820,7 @@
   "mpdclient" = ./mpdclient.json;
   "mpeg" = ./mpeg.json;
   "mpfit" = ./mpfit.json;
+  "mpv" = ./mpv.json;
   "mpwc" = ./mpwc.json;
   "mqtt" = ./mqtt.json;
   "ms" = ./ms.json;
@@ -1190,6 +1191,7 @@
   "packedargs" = ./packedArgs.json;
   "packedjson" = ./packedjson.json;
   "packets" = ./packets.json;
+  "packy" = ./packy.json;
   "pager" = ./pager.json;
   "palette" = ./Palette.json;
   "pantry" = ./pantry.json;
