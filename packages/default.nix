@@ -659,6 +659,7 @@
   "kashae" = ./kashae.json;
   "kdb" = ./kdb.json;
   "kdialog" = ./kdialog.json;
+  "kdl" = ./kdl.json;
   "keccak_tiny" = ./keccak_tiny.json;
   "kexpr" = ./kexpr.json;
   "keyring" = ./keyring.json;
