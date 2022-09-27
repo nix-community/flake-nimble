@@ -181,6 +181,7 @@
   "chain" = ./chain.json;
   "changer" = ./changer.json;
   "chebyshev" = ./chebyshev.json;
+  "checkif" = ./checkif.json;
   "checkpack" = ./checkpack.json;
   "chipmunk" = ./chipmunk.json;
   "chipmunk6" = ./chipmunk6.json;
@@ -1215,6 +1216,7 @@
   "parsetoml" = ./parsetoml.json;
   "pas2nim" = ./pas2nim.json;
   "passgen" = ./passgen.json;
+  "passy" = ./passy.json;
   "pastebin" = ./pastebin.json;
   "patgraph" = ./patgraph.json;
   "pathname" = ./pathname.json;
