@@ -475,6 +475,7 @@
   "gentabs" = ./gentabs.json;
   "geoip" = ./geoip.json;
   "geomancer" = ./geomancer.json;
+  "geometrymath" = ./geometrymath.json;
   "geometryutils" = ./geometryutils.json;
   "geonames" = ./geonames.json;
   "georefar" = ./georefar.json;
