@@ -1314,6 +1314,7 @@
   "qr" = ./qr.json;
   "qrcode" = ./qrcode.json;
   "qrcodegen" = ./qrcodegen.json;
+  "qrterm" = ./QRterm.json;
   "qt5_qtsql" = ./qt5_qtsql.json;
   "quadtree" = ./quadtree.json;
   "questionable" = ./questionable.json;
