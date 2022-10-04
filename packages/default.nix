@@ -119,6 +119,7 @@
   "bingo" = ./bingo.json;
   "binio" = ./binio.json;
   "bio" = ./bio.json;
+  "bio_seq" = ./bio_seq.json;
   "bionim" = ./bionim.json;
   "bipbuffer" = ./BipBuffer.json;
   "biscuits" = ./biscuits.json;
