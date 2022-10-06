@@ -70,6 +70,7 @@
   "audiodb" = ./audiodb.json;
   "audius" = ./audius.json;
   "aur" = ./aur.json;
+  "authenticode" = ./authenticode.json;
   "autoderef" = ./autoderef.json;
   "autome" = ./autome.json;
   "autonim" = ./autonim.json;
@@ -265,6 +266,7 @@
   "crowngui" = ./crowngui.json;
   "csfml" = ./csfml.json;
   "css_html_minify" = ./css_html_minify.json;
+  "cssgrid" = ./cssgrid.json;
   "csv" = ./csv.json;
   "csv2dbsrc" = ./csv2dbsrc.json;
   "csvql" = ./csvql.json;
