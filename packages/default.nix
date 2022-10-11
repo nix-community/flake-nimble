@@ -49,6 +49,7 @@
   "asciitables" = ./asciitables.json;
   "asciitext" = ./asciitext.json;
   "asciitype" = ./asciitype.json;
+  "aspartame" = ./aspartame.json;
   "ass" = ./ass.json;
   "assigns" = ./assigns.json;
   "ast_pattern_matching" = ./ast_pattern_matching.json;
@@ -1833,6 +1834,7 @@
   "xxtea" = ./xxtea.json;
   "yahooweather" = ./yahooweather.json;
   "yaml" = ./yaml.json;
+  "ytcc" = ./ytcc.json;
   "ytextractor" = ./ytextractor.json;
   "yukiko" = ./yukiko.json;
   "z3nim" = ./z3nim.json;
