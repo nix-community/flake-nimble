@@ -1766,6 +1766,7 @@
   "wavecore" = ./wavecore.json;
   "wayland" = ./wayland.json;
   "wchart" = ./wChart.json;
+  "wcwidth" = ./wcwidth.json;
   "weave" = ./weave.json;
   "web3" = ./web3.json;
   "webaudio" = ./webaudio.json;
