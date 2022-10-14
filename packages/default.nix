@@ -362,6 +362,7 @@
   "egl" = ./egl.json;
   "einheit" = ./einheit.json;
   "elvis" = ./elvis.json;
+  "emath" = ./emath.json;
   "emerald" = ./emerald.json;
   "eminim" = ./eminim.json;
   "emitter" = ./emitter.json;
@@ -745,6 +746,7 @@
   "localize" = ./localize.json;
   "lockfreequeues" = ./lockfreequeues.json;
   "loco" = ./loco.json;
+  "lodns" = ./lodns.json;
   "logit" = ./logit.json;
   "logue" = ./logue.json;
   "loki" = ./loki.json;
