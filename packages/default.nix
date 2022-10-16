@@ -1601,6 +1601,7 @@
   "syslog" = ./syslog.json;
   "sysrandom" = ./sysrandom.json;
   "systimes" = ./systimes.json;
+  "tabcompletion" = ./tabcompletion.json;
   "tagger" = ./tagger.json;
   "taglib" = ./taglib.json;
   "tam" = ./tam.json;
