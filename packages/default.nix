@@ -788,6 +788,7 @@
   "mdevolve" = ./mdevolve.json;
   "mdlldk" = ./mdlldk.json;
   "mealdb" = ./mealdb.json;
+  "measuremancer" = ./measuremancer.json;
   "memlib" = ./memlib.json;
   "memo" = ./memo.json;
   "memviews" = ./memviews.json;
