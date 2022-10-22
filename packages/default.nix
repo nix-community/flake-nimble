@@ -176,6 +176,7 @@
   "cascade" = ./cascade.json;
   "cassandra" = ./cassandra.json;
   "cassette" = ./cassette.json;
+  "casting" = ./casting.json;
   "catnip" = ./catnip.json;
   "cbor" = ./cbor.json;
   "cdecl" = ./cdecl.json;
