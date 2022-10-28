@@ -1248,6 +1248,7 @@
   "phylogeni" = ./PhylogeNi.json;
   "physfs" = ./physfs.json;
   "picohttpparser" = ./picohttpparser.json;
+  "pigeon" = ./pigeon.json;
   "pine" = ./pine.json;
   "pinggraph" = ./pinggraph.json;
   "pipe" = ./pipe.json;
