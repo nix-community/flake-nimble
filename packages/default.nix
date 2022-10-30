@@ -441,6 +441,7 @@
   "fontconfig" = ./fontconfig.json;
   "foreach" = ./foreach.json;
   "forestdb" = ./forestdb.json;
+  "formatstr" = ./formatstr.json;
   "formulas" = ./formulas.json;
   "fowltek" = ./fowltek.json;
   "fpn" = ./fpn.json;
