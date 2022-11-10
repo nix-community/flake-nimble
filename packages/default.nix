@@ -1008,6 +1008,7 @@
   "nimkov" = ./nimkov.json;
   "nimlangserver" = ./nimlangserver.json;
   "nimlapack" = ./nimlapack.json;
+  "nimldap" = ./nimldap.json;
   "nimler" = ./nimler.json;
   "nimlevenshtein" = ./nimlevenshtein.json;
   "nimlibpng" = ./nimlibpng.json;
