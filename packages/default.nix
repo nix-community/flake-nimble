@@ -1506,6 +1506,7 @@
   "snappy" = ./snappy.json;
   "sndfile" = ./sndfile.json;
   "sndhdr" = ./sndhdr.json;
+  "snekim" = ./snekim.json;
   "snip" = ./snip.json;
   "socks" = ./socks.json;
   "sodium" = ./sodium.json;
