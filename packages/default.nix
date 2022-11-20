@@ -1378,6 +1378,7 @@
   "replim" = ./replim.json;
   "requirementstxt" = ./requirementstxt.json;
   "resolv" = ./resolv.json;
+  "resolver" = ./resolver.json;
   "result" = ./result.json;
   "resultsutils" = ./resultsutils.json;
   "resultutils" = ./resultutils.json;
@@ -1671,6 +1672,7 @@
   "toktok" = ./toktok.json;
   "tome" = ./tome.json;
   "toml_serialization" = ./toml_serialization.json;
+  "toposort" = ./toposort.json;
   "tor" = ./tor.json;
   "torch" = ./torch.json;
   "torim" = ./torim.json;
