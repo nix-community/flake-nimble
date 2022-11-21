@@ -252,6 +252,7 @@
   "contracts" = ./contracts.json;
   "controlstructures" = ./controlStructures.json;
   "conventional_semver" = ./conventional_semver.json;
+  "convertkana" = ./convertKana.json;
   "cookiejar" = ./cookiejar.json;
   "couchdb" = ./couchdb.json;
   "coverage" = ./coverage.json;
