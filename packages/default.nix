@@ -1834,6 +1834,7 @@
   "xidoc" = ./xidoc.json;
   "xio" = ./xio.json;
   "xkb" = ./xkb.json;
+  "xl" = ./xl.json;
   "xlsx" = ./xlsx.json;
   "xlsxio" = ./xlsxio.json;
   "xml" = ./xml.json;
