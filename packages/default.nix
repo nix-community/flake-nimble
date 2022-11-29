@@ -260,6 +260,7 @@
   "cowstrings" = ./cowstrings.json;
   "cppclass" = ./cppclass.json;
   "cppstl" = ./cppstl.json;
+  "cpptuples" = ./cpptuples.json;
   "cpuwhat" = ./cpuwhat.json;
   "cpython" = ./cpython.json;
   "crap" = ./crap.json;
@@ -959,6 +960,7 @@
   "nimclipboard" = ./nimclipboard.json;
   "nimclutter" = ./nimclutter.json;
   "nimcmaes" = ./nimcmaes.json;
+  "nimcolor" = ./nimcolor.json;
   "nimcoon" = ./nimcoon.json;
   "nimcr" = ./nimcr.json;
   "nimcrypt" = ./nimcrypt.json;
