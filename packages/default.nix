@@ -59,6 +59,7 @@
   "asyncanything" = ./asyncanything.json;
   "asyncdocker" = ./asyncdocker.json;
   "asyncevents" = ./asyncevents.json;
+  "asyncftpclient" = ./asyncftpclient.json;
   "asyncmysql" = ./asyncmysql.json;
   "asyncpg" = ./asyncpg.json;
   "asyncpythonfile" = ./asyncpythonfile.json;
@@ -181,6 +182,7 @@
   "cbor" = ./cbor.json;
   "cdecl" = ./cdecl.json;
   "cello" = ./cello.json;
+  "cgi" = ./cgi.json;
   "chacha20" = ./chacha20.json;
   "chain" = ./chain.json;
   "changer" = ./changer.json;
@@ -1506,6 +1508,7 @@
   "smbexec" = ./SMBExec.json;
   "smnar" = ./smnar.json;
   "smoothing" = ./smoothing.json;
+  "smtp" = ./smtp.json;
   "snail" = ./snail.json;
   "snappy" = ./snappy.json;
   "sndfile" = ./sndfile.json;
