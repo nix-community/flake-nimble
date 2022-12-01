@@ -260,6 +260,7 @@
   "coverage" = ./coverage.json;
   "coverartarchive" = ./coverartarchive.json;
   "cowstrings" = ./cowstrings.json;
+  "cppany" = ./cppany.json;
   "cppclass" = ./cppclass.json;
   "cppstl" = ./cppstl.json;
   "cpptuples" = ./cpptuples.json;
