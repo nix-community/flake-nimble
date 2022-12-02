@@ -296,6 +296,7 @@
   "dav1d" = ./dav1d.json;
   "db" = ./db.json;
   "db_clickhouse" = ./db_clickhouse.json;
+  "db_connector" = ./db_connector.json;
   "db_nimternalsql" = ./db_nimternalsql.json;
   "db_presto" = ./db_presto.json;
   "db_wrapper" = ./db_wrapper.json;
@@ -1261,6 +1262,7 @@
   "pinggraph" = ./pinggraph.json;
   "pipe" = ./pipe.json;
   "pipelines" = ./pipelines.json;
+  "pipexp" = ./pipexp.json;
   "pixels" = ./pixels.json;
   "pixie" = ./pixie.json;
   "pkginfo" = ./pkginfo.json;
@@ -1310,6 +1312,7 @@
   "ptest" = ./ptest.json;
   "ptr_math" = ./ptr_math.json;
   "ptrace" = ./ptrace.json;
+  "punycode" = ./punycode.json;
   "puppy" = ./puppy.json;
   "pvim" = ./pvim.json;
   "pwd" = ./pwd.json;
@@ -1414,6 +1417,7 @@
   "ruby" = ./ruby.json;
   "run_exe" = ./run_exe.json;
   "runeterra_decks" = ./runeterra_decks.json;
+  "rwlocks" = ./rwlocks.json;
   "rx_nim" = ./rx_nim.json;
   "safeset" = ./safeset.json;
   "sam" = ./sam.json;
