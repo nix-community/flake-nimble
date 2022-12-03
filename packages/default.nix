@@ -847,6 +847,7 @@
   "msgpack4nim" = ./msgpack4nim.json;
   "mui" = ./mui.json;
   "multicast" = ./multicast.json;
+  "mummy" = ./mummy.json;
   "murmur" = ./murmur.json;
   "murmurhash" = ./murmurhash.json;
   "mustache" = ./mustache.json;
