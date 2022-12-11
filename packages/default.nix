@@ -1521,6 +1521,7 @@
   "sndhdr" = ./sndhdr.json;
   "snekim" = ./snekim.json;
   "snip" = ./snip.json;
+  "snorlogue" = ./snorlogue.json;
   "socks" = ./socks.json;
   "sodium" = ./sodium.json;
   "sol" = ./sol.json;
@@ -1583,6 +1584,7 @@
   "streamfix" = ./streamfix.json;
   "strenc" = ./strenc.json;
   "strfmt" = ./strfmt.json;
+  "strides" = ./strides.json;
   "stringinterpolation" = ./stringinterpolation.json;
   "stripe" = ./stripe.json;
   "strslice" = ./strslice.json;
