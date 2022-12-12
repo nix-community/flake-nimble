@@ -527,6 +527,7 @@
   "googlesearch" = ./googlesearch.json;
   "govee" = ./govee.json;
   "gplay" = ./gplay.json;
+  "gptcli" = ./gptcli.json;
   "gpx" = ./gpx.json;
   "grab" = ./grab.json;
   "gradient" = ./gradient.json;
@@ -1225,6 +1226,7 @@
   "parasound" = ./parasound.json;
   "paratext" = ./paratext.json;
   "paravim" = ./paravim.json;
+  "parazoa" = ./parazoa.json;
   "pari" = ./pari.json;
   "parsefixed" = ./parseFixed.json;
   "parsegemini" = ./parsegemini.json;
