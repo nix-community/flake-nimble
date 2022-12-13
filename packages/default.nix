@@ -1742,6 +1742,7 @@
   "unrolled" = ./unrolled.json;
   "unsplash" = ./unsplash.json;
   "untar" = ./untar.json;
+  "update_nimble_version" = ./update_nimble_version.json;
   "upraises" = ./upraises.json;
   "ur" = ./ur.json;
   "urand" = ./urand.json;
@@ -1788,6 +1789,7 @@
   "w8crc" = ./w8crc.json;
   "watch_for_files" = ./watch_for_files.json;
   "watchout" = ./watchout.json;
+  "waterpark" = ./waterpark.json;
   "wauto" = ./wAuto.json;
   "wave" = ./wave.json;
   "wavecore" = ./wavecore.json;
