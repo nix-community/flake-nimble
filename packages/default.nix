@@ -432,6 +432,7 @@
   "findtests" = ./findtests.json;
   "firejail" = ./firejail.json;
   "fision" = ./fision.json;
+  "fitl" = ./fitl.json;
   "fixmath" = ./fixmath.json;
   "flatdb" = ./flatdb.json;
   "flatty" = ./flatty.json;
@@ -1675,6 +1676,7 @@
   "tinydialogs" = ./tinydialogs.json;
   "tinyfiledialogs" = ./tinyfiledialogs.json;
   "tinypool" = ./tinypool.json;
+  "tinyre" = ./tinyre.json;
   "tissue" = ./tissue.json;
   "tkrzw" = ./tkrzw.json;
   "tlv" = ./tlv.json;
