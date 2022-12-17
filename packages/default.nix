@@ -613,6 +613,7 @@
   "imstyle" = ./imstyle.json;
   "influx" = ./influx.json;
   "inim" = ./inim.json;
+  "integers" = ./integers.json;
   "intel_hex" = ./intel_hex.json;
   "interface_implements" = ./interface_implements.json;
   "interfaced" = ./interfaced.json;
