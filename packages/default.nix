@@ -1698,6 +1698,7 @@
   "torm" = ./torm.json;
   "toxcore" = ./toxcore.json;
   "tradingview" = ./tradingview.json;
+  "tram" = ./tram.json;
   "trayx" = ./trayx.json;
   "treesitter" = ./treesitter.json;
   "treesitter_agda" = ./treesitter_agda.json;
@@ -1802,6 +1803,7 @@
   "weave" = ./weave.json;
   "web3" = ./web3.json;
   "webaudio" = ./webaudio.json;
+  "webby" = ./webby.json;
   "webdavclient" = ./webdavclient.json;
   "webdriver" = ./webdriver.json;
   "webgl" = ./WebGL.json;
