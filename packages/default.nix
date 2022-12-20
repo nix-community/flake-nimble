@@ -312,6 +312,7 @@
   "denim_ui" = ./denim_ui.json;
   "denim_ui_cairo" = ./denim_ui_cairo.json;
   "denim_ui_canvas" = ./denim_ui_canvas.json;
+  "depot" = ./depot.json;
   "deriveables" = ./deriveables.json;
   "des" = ./des.json;
   "deser_json" = ./deser_json.json;
@@ -1415,6 +1416,7 @@
   "romans" = ./romans.json;
   "roots" = ./roots.json;
   "rosencrantz" = ./rosencrantz.json;
+  "rowdy" = ./rowdy.json;
   "rpgsheet" = ./rpgsheet.json;
   "rss" = ./rss.json;
   "rsvg" = ./rsvg.json;
