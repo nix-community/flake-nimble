@@ -1178,6 +1178,7 @@
   "oolib" = ./oolib.json;
   "oop_utils" = ./oop_utils.json;
   "open_elevation" = ./open_elevation.json;
+  "openai" = ./openai.json;
   "openal" = ./openal.json;
   "openapi" = ./openapi.json;
   "opencl" = ./opencl.json;
