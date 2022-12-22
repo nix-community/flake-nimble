@@ -1727,6 +1727,7 @@
   "tsundoku" = ./tsundoku.json;
   "tsv2json" = ./tsv2json.json;
   "ttmath" = ./ttmath.json;
+  "ttop" = ./ttop.json;
   "tuples" = ./tuples.json;
   "turn_based_game" = ./turn_based_game.json;
   "tweens" = ./tweens.json;
