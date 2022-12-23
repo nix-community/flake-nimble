@@ -576,6 +576,7 @@
   "hpprint" = ./hpprint.json;
   "hpx" = ./hpx.json;
   "hsluv" = ./hsluv.json;
+  "htest" = ./htest.json;
   "html2karax" = ./html2karax.json;
   "html5_canvas" = ./html5_canvas.json;
   "html_tools" = ./html_tools.json;
