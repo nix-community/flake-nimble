@@ -127,6 +127,7 @@
   "bipbuffer" = ./BipBuffer.json;
   "biscuits" = ./biscuits.json;
   "bisect" = ./bisect.json;
+  "bitables" = ./bitables.json;
   "bitarray" = ./bitarray.json;
   "bitcoinlightning" = ./bitcoinlightning.json;
   "bitseqs" = ./bitseqs.json;
@@ -731,6 +732,7 @@
   "libovr" = ./libovr.json;
   "libp2p" = ./libp2p.json;
   "libp2pdht" = ./libp2pdht.json;
+  "libpcap" = ./libpcap.json;
   "libpe" = ./libpe.json;
   "libplist" = ./libplist.json;
   "libravatar" = ./libravatar.json;
