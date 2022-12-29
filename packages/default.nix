@@ -780,6 +780,7 @@
   "lz77" = ./lz77.json;
   "macroplus" = ./macroplus.json;
   "macroutils" = ./macroutils.json;
+  "madam" = ./madam.json;
   "magic" = ./magic.json;
   "mailcow" = ./mailcow.json;
   "manu" = ./manu.json;
