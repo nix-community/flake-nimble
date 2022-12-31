@@ -148,6 +148,7 @@
   "bluu" = ./bluu.json;
   "bncurve" = ./bncurve.json;
   "boneio" = ./boneIO.json;
+  "bossy" = ./bossy.json;
   "boxy" = ./boxy.json;
   "bpg" = ./bpg.json;
   "brainfuck" = ./brainfuck.json;
