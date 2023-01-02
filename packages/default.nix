@@ -1219,6 +1219,7 @@
   "owo" = ./owo.json;
   "owoifynim" = ./owoifynim.json;
   "p4ztag_to_json" = ./p4ztag_to_json.json;
+  "p5nim" = ./p5nim.json;
   "package_visible_types" = ./package_visible_types.json;
   "packedargs" = ./packedArgs.json;
   "packedjson" = ./packedjson.json;
