@@ -976,6 +976,7 @@
   "nimcmaes" = ./nimcmaes.json;
   "nimcolor" = ./nimcolor.json;
   "nimcoon" = ./nimcoon.json;
+  "nimcorpora" = ./nimcorpora.json;
   "nimcr" = ./nimcr.json;
   "nimcrypt" = ./nimcrypt.json;
   "nimcrypto" = ./nimcrypto.json;
@@ -1228,6 +1229,7 @@
   "pager" = ./pager.json;
   "palette" = ./Palette.json;
   "pantry" = ./pantry.json;
+  "pape" = ./pape.json;
   "paramidi" = ./paramidi.json;
   "paramidi_soundfonts" = ./paramidi_soundfonts.json;
   "paramidib" = ./paramidib.json;
