@@ -529,6 +529,7 @@
   "golib" = ./golib.json;
   "googleapi" = ./googleapi.json;
   "googlesearch" = ./googlesearch.json;
+  "googletranslate" = ./googleTranslate.json;
   "govee" = ./govee.json;
   "gplay" = ./gplay.json;
   "gptcli" = ./gptcli.json;
@@ -1240,6 +1241,7 @@
   "paravim" = ./paravim.json;
   "parazoa" = ./parazoa.json;
   "pari" = ./pari.json;
+  "parlexgen" = ./parlexgen.json;
   "parsefixed" = ./parseFixed.json;
   "parsegemini" = ./parsegemini.json;
   "parseini" = ./parseini.json;
