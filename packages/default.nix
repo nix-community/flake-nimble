@@ -273,6 +273,7 @@
   "criterion" = ./criterion.json;
   "crosscompile" = ./crosscompile.json;
   "crowngui" = ./crowngui.json;
+  "crunchy" = ./crunchy.json;
   "csfml" = ./csfml.json;
   "css_html_minify" = ./css_html_minify.json;
   "cssgrid" = ./cssgrid.json;
