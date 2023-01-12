@@ -1867,6 +1867,7 @@
   "xdo" = ./xdo.json;
   "xevloop" = ./xevloop.json;
   "xgboost.nim" = ./xgboost.nim.json;
+  "xgui" = ./xgui.json;
   "xiaomi" = ./xiaomi.json;
   "xidoc" = ./xidoc.json;
   "xio" = ./xio.json;
