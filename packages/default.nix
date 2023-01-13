@@ -284,6 +284,7 @@
   "csvtools" = ./csvtools.json;
   "ctrulib" = ./ctrulib.json;
   "cucumber" = ./cucumber.json;
+  "curly" = ./curly.json;
   "currying" = ./currying.json;
   "d3" = ./d3.json;
   "daemon" = ./daemon.json;
