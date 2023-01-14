@@ -259,6 +259,7 @@
   "convertkana" = ./convertKana.json;
   "cookiejar" = ./cookiejar.json;
   "couchdb" = ./couchdb.json;
+  "couchdbapi" = ./couchdbapi.json;
   "coverage" = ./coverage.json;
   "coverartarchive" = ./coverartarchive.json;
   "cowstrings" = ./cowstrings.json;
@@ -1887,6 +1888,7 @@
   "xxtea" = ./xxtea.json;
   "yahooweather" = ./yahooweather.json;
   "yaml" = ./yaml.json;
+  "yawd" = ./yawd.json;
   "ytcc" = ./ytcc.json;
   "ytextractor" = ./ytextractor.json;
   "yukiko" = ./yukiko.json;
