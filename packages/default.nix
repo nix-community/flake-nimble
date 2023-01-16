@@ -891,6 +891,7 @@
   "ndf" = ./ndf.json;
   "ndns" = ./ndns.json;
   "ndup" = ./ndup.json;
+  "necsus" = ./necsus.json;
   "neel" = ./Neel.json;
   "negamax" = ./negamax.json;
   "neo" = ./neo.json;
