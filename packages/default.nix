@@ -1508,6 +1508,7 @@
   "simple_vector" = ./simple_vector.json;
   "simpleargs" = ./simpleargs.json;
   "simpleast" = ./simpleAST.json;
+  "simpledb" = ./simpledb.json;
   "simpledecimal" = ./simpledecimal.json;
   "simplediff" = ./simplediff.json;
   "simpleflake" = ./simpleflake.json;
