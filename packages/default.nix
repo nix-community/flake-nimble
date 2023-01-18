@@ -1466,6 +1466,7 @@
   "segmentation" = ./segmentation.json;
   "selenimum" = ./selenimum.json;
   "semver" = ./semver.json;
+  "sensors" = ./sensors.json;
   "seq2d" = ./seq2d.json;
   "seqmath" = ./seqmath.json;
   "sequester" = ./sequester.json;
