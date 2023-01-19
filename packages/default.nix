@@ -1618,6 +1618,7 @@
   "subfield" = ./subfield.json;
   "subhook" = ./subhook.json;
   "subnet" = ./subnet.json;
+  "subscribestar" = ./subscribestar.json;
   "subviewer" = ./subviewer.json;
   "sue" = ./sue.json;
   "suffer" = ./suffer.json;
