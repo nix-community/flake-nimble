@@ -421,6 +421,7 @@
   "faststreams" = ./faststreams.json;
   "fasttext" = ./fasttext.json;
   "fastx_reader" = ./fastx_reader.json;
+  "fblib" = ./fblib.json;
   "feednim" = ./feednim.json;
   "ffbookmarks" = ./ffbookmarks.json;
   "ffmpeg" = ./ffmpeg.json;
@@ -460,6 +461,7 @@
   "fpn" = ./fpn.json;
   "frag" = ./frag.json;
   "fragments" = ./fragments.json;
+  "freedesktop_org" = ./freedesktop_org.json;
   "freegeoip" = ./freegeoip.json;
   "freeimage" = ./freeimage.json;
   "freetype" = ./freetype.json;
@@ -1670,6 +1672,7 @@
   "termstyle" = ./termstyle.json;
   "termui" = ./termui.json;
   "ternary_tree" = ./ternary_tree.json;
+  "testdiff" = ./testdiff.json;
   "testify" = ./testify.json;
   "testrunner" = ./testrunner.json;
   "testutils" = ./testutils.json;
