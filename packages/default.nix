@@ -382,6 +382,7 @@
   "emmy" = ./emmy.json;
   "encode" = ./encode.json;
   "enet" = ./enet.json;
+  "enkodo" = ./enkodo.json;
   "ensem" = ./ensem.json;
   "entgrep" = ./entgrep.json;
   "entoody" = ./entoody.json;
@@ -1806,6 +1807,7 @@
   "vector" = ./vector.json;
   "vectors" = ./vectors.json;
   "vidhdr" = ./vidhdr.json;
+  "vikunja" = ./vikunja.json;
   "vimeo" = ./vimeo.json;
   "vkapi" = ./vkapi.json;
   "vla" = ./vla.json;
