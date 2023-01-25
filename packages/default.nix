@@ -426,6 +426,7 @@
   "feednim" = ./feednim.json;
   "ffbookmarks" = ./ffbookmarks.json;
   "ffmpeg" = ./ffmpeg.json;
+  "ffmpeg_cli" = ./ffmpeg_cli.json;
   "ffpass" = ./ffpass.json;
   "fftw3" = ./fftw3.json;
   "fidget" = ./fidget.json;
@@ -683,6 +684,7 @@
   "jswebsockets" = ./jswebsockets.json;
   "jupyternim" = ./jupyternim.json;
   "jwt" = ./jwt.json;
+  "jwtea" = ./jwtea.json;
   "kaitai_struct_nim_runtime" = ./kaitai_struct_nim_runtime.json;
   "karax" = ./karax.json;
   "kashae" = ./kashae.json;
