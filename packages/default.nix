@@ -967,6 +967,7 @@
   "nimblegui" = ./nimblegui.json;
   "nimbleimgui" = ./NimbleImGui.json;
   "nimbler" = ./nimbler.json;
+  "nimblex" = ./nimblex.json;
   "nimbluez" = ./nimbluez.json;
   "nimbmp" = ./nimBMP.json;
   "nimbomb" = ./nimbomb.json;
@@ -1310,6 +1311,7 @@
   "polynumeric" = ./polynumeric.json;
   "polypbren" = ./polypbren.json;
   "pomtimer" = ./pomTimer.json;
+  "ponairi" = ./ponairi.json;
   "pop3" = ./pop3.json;
   "porter" = ./porter.json;
   "ppm" = ./PPM.json;
