@@ -1393,6 +1393,7 @@
   "reactor" = ./reactor.json;
   "reactorfuse" = ./reactorfuse.json;
   "readfq" = ./readfq.json;
+  "ready" = ./ready.json;
   "recaptcha" = ./recaptcha.json;
   "receq" = ./receq.json;
   "records" = ./records.json;
