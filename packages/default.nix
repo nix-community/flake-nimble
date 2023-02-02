@@ -1761,8 +1761,10 @@
   "typelists" = ./typelists.json;
   "typography" = ./typography.json;
   "uap" = ./uap.json;
+  "uf2lib" = ./uf2lib.json;
   "ui" = ./ui.json;
   "uibuilder" = ./uibuilder.json;
+  "uing" = ./uing.json;
   "ulid" = ./ulid.json;
   "unchained" = ./unchained.json;
   "uncomment" = ./uncomment.json;
