@@ -251,6 +251,7 @@
   "constants" = ./constants.json;
   "constructor" = ./constructor.json;
   "consul" = ./consul.json;
+  "containertools" = ./containertools.json;
   "contra" = ./contra.json;
   "contractabi" = ./contractabi.json;
   "contracts" = ./contracts.json;
@@ -1121,6 +1122,7 @@
   "nimwc" = ./nimwc.json;
   "nimwebp" = ./nimwebp.json;
   "nimwin" = ./nimwin.json;
+  "nimword" = ./nimword.json;
   "nimx" = ./nimx.json;
   "nimzbar" = ./nimzbar.json;
   "nimzend" = ./nimzend.json;
