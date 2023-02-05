@@ -829,6 +829,7 @@
   "metrics" = ./metrics.json;
   "microasynchttpserver" = ./microasynchttpserver.json;
   "microparsec" = ./microparsec.json;
+  "micros" = ./micros.json;
   "midnight_dynamite" = ./midnight_dynamite.json;
   "migrate" = ./migrate.json;
   "mike" = ./mike.json;
@@ -1296,6 +1297,7 @@
   "pixie" = ./pixie.json;
   "pkginfo" = ./pkginfo.json;
   "platformer" = ./platformer.json;
+  "playdate" = ./playdate.json;
   "playground" = ./playground.json;
   "playlists" = ./playlists.json;
   "pledge" = ./pledge.json;
