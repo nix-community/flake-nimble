@@ -438,6 +438,7 @@
   "filetype" = ./filetype.json;
   "finals" = ./finals.json;
   "finalseg" = ./finalseg.json;
+  "find" = ./find.json;
   "finder" = ./finder.json;
   "findtests" = ./findtests.json;
   "firejail" = ./firejail.json;
