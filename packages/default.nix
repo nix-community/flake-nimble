@@ -1808,6 +1808,7 @@
   "validateip" = ./validateip.json;
   "validation" = ./validation.json;
   "validator" = ./validator.json;
+  "valido" = ./valido.json;
   "values" = ./values.json;
   "variant" = ./variant.json;
   "variantkey" = ./variantkey.json;
