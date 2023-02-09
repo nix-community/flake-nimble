@@ -375,6 +375,7 @@
   "edn" = ./edn.json;
   "egl" = ./egl.json;
   "einheit" = ./einheit.json;
+  "elfcore" = ./elfcore.json;
   "elvis" = ./elvis.json;
   "emath" = ./emath.json;
   "emerald" = ./emerald.json;
@@ -764,6 +765,7 @@
   "linear_models" = ./linear_models.json;
   "linenoise" = ./linenoise.json;
   "linuxfb" = ./linuxfb.json;
+  "lis3dhtr" = ./lis3dhtr.json;
   "listenbrainz" = ./listenbrainz.json;
   "listsv" = ./listsv.json;
   "llvm" = ./LLVM.json;
