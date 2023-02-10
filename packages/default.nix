@@ -86,6 +86,7 @@
   "azure_translate" = ./azure_translate.json;
   "backoff" = ./backoff.json;
   "badgemaker" = ./badgemaker.json;
+  "bag" = ./bag.json;
   "baker" = ./baker.json;
   "ballena_itcher" = ./ballena_itcher.json;
   "ballpark" = ./ballpark.json;
