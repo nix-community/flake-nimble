@@ -710,6 +710,7 @@
   "kslog" = ./kslog.json;
   "kview" = ./kview.json;
   "kwin" = ./kwin.json;
+  "labeledtypes" = ./labeledtypes.json;
   "ladder" = ./ladder.json;
   "lapper" = ./lapper.json;
   "laser" = ./laser.json;
