@@ -614,6 +614,7 @@
   "i18n" = ./i18n.json;
   "i3ipc" = ./i3ipc.json;
   "icon" = ./icon.json;
+  "iconim" = ./iconim.json;
   "ikeahomesmart" = ./ikeahomesmart.json;
   "illwave" = ./illwave.json;
   "illwill" = ./illwill.json;
