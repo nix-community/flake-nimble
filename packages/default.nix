@@ -786,6 +786,7 @@
   "loony" = ./loony.json;
   "looper" = ./looper.json;
   "loopfusion" = ./loopfusion.json;
+  "lowdb" = ./lowdb.json;
   "lq" = ./lq.json;
   "lrparser" = ./lrparser.json;
   "lrucache" = ./lrucache.json;
