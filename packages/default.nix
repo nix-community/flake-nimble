@@ -708,6 +708,7 @@
   "kmer" = ./kmer.json;
   "kmod" = ./kmod.json;
   "kombinator" = ./kombinator.json;
+  "kroutes" = ./kroutes.json;
   "kslog" = ./kslog.json;
   "kview" = ./kview.json;
   "kwin" = ./kwin.json;
