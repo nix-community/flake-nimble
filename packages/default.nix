@@ -909,6 +909,7 @@
   "necsus" = ./necsus.json;
   "neel" = ./Neel.json;
   "negamax" = ./negamax.json;
+  "nemini" = ./nemini.json;
   "neo" = ./neo.json;
   "neoid" = ./neoid.json;
   "nephyr" = ./nephyr.json;
