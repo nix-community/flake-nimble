@@ -111,8 +111,10 @@
   "bearssl" = ./bearssl.json;
   "benchy" = ./benchy.json;
   "bencode" = ./bencode.json;
+  "bezier" = ./bezier.json;
   "bgfx" = ./bgfx.json;
   "bgfxdotnim" = ./bgfxdotnim.json;
+  "bibletools" = ./bibleTools.json;
   "biblioteca_guarrilla" = ./biblioteca_guarrilla.json;
   "bigints" = ./bigints.json;
   "bignum" = ./bignum.json;
@@ -1134,6 +1136,7 @@
   "nimwin" = ./nimwin.json;
   "nimword" = ./nimword.json;
   "nimx" = ./nimx.json;
+  "nimx2" = ./nimx2.json;
   "nimzbar" = ./nimzbar.json;
   "nimzend" = ./nimzend.json;
   "nint128" = ./nint128.json;
