@@ -504,6 +504,7 @@
   "genoiser" = ./genoiser.json;
   "gentabs" = ./gentabs.json;
   "geoip" = ./geoip.json;
+  "geolocation" = ./geolocation.json;
   "geomancer" = ./geomancer.json;
   "geometrymath" = ./geometrymath.json;
   "geometryutils" = ./geometryutils.json;
