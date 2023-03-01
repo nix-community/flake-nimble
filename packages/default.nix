@@ -27,6 +27,7 @@
   "ansiutils" = ./ansiutils.json;
   "ansiwave" = ./ansiwave.json;
   "antlr4nim" = ./antlr4nim.json;
+  "ants" = ./ants.json;
   "anttweakbar" = ./AntTweakBar.json;
   "anybar" = ./anybar.json;
   "anycase" = ./anycase.json;
