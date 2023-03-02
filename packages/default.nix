@@ -220,8 +220,10 @@
   "clibpp" = ./clibpp.json;
   "cliche" = ./cliche.json;
   "cligen" = ./cligen.json;
+  "climate" = ./climate.json;
   "clipper2" = ./clipper2.json;
   "cliptomania" = ./cliptomania.json;
+  "cliseqselector" = ./cliSeqSelector.json;
   "closure_compiler" = ./closure_compiler.json;
   "cloudbet" = ./cloudbet.json;
   "clown_limiter" = ./clown_limiter.json;
@@ -577,6 +579,7 @@
   "hayaa" = ./hayaa.json;
   "hcparse" = ./hcparse.json;
   "hdrawing" = ./hdrawing.json;
+  "heine" = ./heine.json;
   "hex" = ./hex.json;
   "hexclock" = ./hexclock.json;
   "highlight" = ./highlight.json;
@@ -685,6 +688,7 @@
   "json_builder" = ./json_builder.json;
   "json_rpc" = ./json_rpc.json;
   "json_serialization" = ./json_serialization.json;
+  "jsonfmt" = ./jsonfmt.json;
   "jsonob" = ./jsonob.json;
   "jsonschema" = ./jsonschema.json;
   "jsony" = ./jsony.json;
@@ -782,6 +786,7 @@
   "loadenv" = ./loadenv.json;
   "locale" = ./locale.json;
   "localize" = ./localize.json;
+  "locert" = ./locert.json;
   "lockfreequeues" = ./lockfreequeues.json;
   "loco" = ./loco.json;
   "lodns" = ./lodns.json;
@@ -938,6 +943,7 @@
   "ngxcmod" = ./ngxcmod.json;
   "nhsl" = ./nhsl.json;
   "ni" = ./ni.json;
+  "ni18n" = ./ni18n.json;
   "nico" = ./nico.json;
   "nicoru" = ./nicoru.json;
   "nicy" = ./nicy.json;
@@ -1090,6 +1096,7 @@
   "nimpmda" = ./nimpmda.json;
   "nimpng" = ./nimPNG.json;
   "nimpress" = ./nimpress.json;
+  "nimprotect" = ./nimprotect.json;
   "nimpy" = ./nimpy.json;
   "nimqbittorrent" = ./nimQBittorrent.json;
   "nimqml" = ./nimqml.json;
@@ -1333,6 +1340,7 @@
   "ponairi" = ./ponairi.json;
   "pop3" = ./pop3.json;
   "porter" = ./porter.json;
+  "powernim" = ./powernim.json;
   "ppm" = ./PPM.json;
   "preprod" = ./preprod.json;
   "preserves" = ./preserves.json;
@@ -1341,6 +1349,7 @@
   "prettystr" = ./prettystr.json;
   "prettyvec" = ./prettyvec.json;
   "pricecsv" = ./pricecsv.json;
+  "primes" = ./primes.json;
   "primme" = ./primme.json;
   "print" = ./print.json;
   "printdebug" = ./printdebug.json;
@@ -1356,6 +1365,7 @@
   "proton" = ./proton.json;
   "proxyproto" = ./proxyproto.json;
   "psutil" = ./psutil.json;
+  "psutilim" = ./psutilim.json;
   "ptest" = ./ptest.json;
   "ptr_math" = ./ptr_math.json;
   "ptrace" = ./ptrace.json;
@@ -1466,14 +1476,17 @@
   "ruby" = ./ruby.json;
   "run_exe" = ./run_exe.json;
   "runeterra_decks" = ./runeterra_decks.json;
+  "runned" = ./Runned.json;
   "rwlocks" = ./rwlocks.json;
   "rx_nim" = ./rx_nim.json;
   "safeset" = ./safeset.json;
   "sam" = ./sam.json;
+  "sam_protocol" = ./sam_protocol.json;
   "sampletodolist" = ./sampleTodoList.json;
   "sass" = ./sass.json;
   "sayhissatsuwaza" = ./sayhissatsuwaza.json;
   "sbttl" = ./sbttl.json;
+  "scfg" = ./scfg.json;
   "schedules" = ./schedules.json;
   "science" = ./science.json;
   "scinim" = ./scinim.json;
@@ -1573,6 +1586,7 @@
   "snip" = ./snip.json;
   "snorlogue" = ./snorlogue.json;
   "socks" = ./socks.json;
+  "socks5" = ./socks5.json;
   "sodium" = ./sodium.json;
   "sol" = ./sol.json;
   "sonic" = ./sonic.json;
@@ -1596,6 +1610,7 @@
   "sphinx" = ./sphinx.json;
   "spills" = ./spills.json;
   "spinner" = ./spinner.json;
+  "spinners" = ./spinners.json;
   "spinny" = ./spinny.json;
   "splitmix64" = ./splitmix64.json;
   "spotify" = ./spotify.json;
@@ -1833,6 +1848,7 @@
   "vecmath" = ./vecmath.json;
   "vector" = ./vector.json;
   "vectors" = ./vectors.json;
+  "versicles" = ./versicles.json;
   "vidhdr" = ./vidhdr.json;
   "vikunja" = ./vikunja.json;
   "vimeo" = ./vimeo.json;
