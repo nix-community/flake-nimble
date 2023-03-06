@@ -734,6 +734,7 @@
   "lc" = ./lc.json;
   "lda" = ./lda.json;
   "leopard" = ./leopard.json;
+  "letutils" = ./letUtils.json;
   "leveldb" = ./leveldb.json;
   "libarchibi" = ./libarchibi.json;
   "libbacktrace" = ./libbacktrace.json;
