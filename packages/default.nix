@@ -1803,6 +1803,7 @@
   "ulid" = ./ulid.json;
   "unchained" = ./unchained.json;
   "uncomment" = ./uncomment.json;
+  "unibs" = ./unibs.json;
   "unicode_numbers" = ./unicode_numbers.json;
   "unicodedb" = ./unicodedb.json;
   "unicodeplus" = ./unicodeplus.json;
