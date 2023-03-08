@@ -396,6 +396,7 @@
   "entoody" = ./entoody.json;
   "envconfig" = ./envconfig.json;
   "epub" = ./epub.json;
+  "epub2gpub" = ./epub2gpub.json;
   "eris" = ./eris.json;
   "eris_utils" = ./eris_utils.json;
   "espeak" = ./espeak.json;
@@ -1265,6 +1266,7 @@
   "packy" = ./packy.json;
   "pager" = ./pager.json;
   "palette" = ./Palette.json;
+  "palladian" = ./palladian.json;
   "pantry" = ./pantry.json;
   "pape" = ./pape.json;
   "paramidi" = ./paramidi.json;
@@ -1485,6 +1487,7 @@
   "sam_protocol" = ./sam_protocol.json;
   "sampletodolist" = ./sampleTodoList.json;
   "sass" = ./sass.json;
+  "sauer" = ./sauer.json;
   "sayhissatsuwaza" = ./sayhissatsuwaza.json;
   "sbttl" = ./sbttl.json;
   "scfg" = ./scfg.json;
@@ -1892,6 +1895,7 @@
   "whip" = ./whip.json;
   "whois" = ./whois.json;
   "wiki2text" = ./wiki2text.json;
+  "wilayahindonesia" = ./wilayahindonesia.json;
   "windy" = ./windy.json;
   "wings" = ./wings.json;
   "winim" = ./winim.json;
