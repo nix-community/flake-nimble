@@ -61,6 +61,7 @@
   "asyncdocker" = ./asyncdocker.json;
   "asyncevents" = ./asyncevents.json;
   "asyncftpclient" = ./asyncftpclient.json;
+  "asynciters" = ./asyncIters.json;
   "asyncmysql" = ./asyncmysql.json;
   "asyncpg" = ./asyncpg.json;
   "asyncpythonfile" = ./asyncpythonfile.json;
