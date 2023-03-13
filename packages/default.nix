@@ -331,6 +331,7 @@
   "deser_json" = ./deser_json.json;
   "desim" = ./desim.json;
   "devil" = ./DevIL.json;
+  "dhash" = ./dhash.json;
   "diff" = ./diff.json;
   "diffoutput" = ./diffoutput.json;
   "digitalocean" = ./digitalocean.json;
@@ -1890,6 +1891,7 @@
   "websocket" = ./websocket.json;
   "websocketx" = ./websocketx.json;
   "webterminal" = ./webterminal.json;
+  "webui" = ./webui.json;
   "webview" = ./webview.json;
   "weightedgraph" = ./weightedgraph.json;
   "wepoll" = ./wepoll.json;
