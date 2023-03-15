@@ -686,6 +686,7 @@
   "jsbind" = ./jsbind.json;
   "jscanvas" = ./jscanvas.json;
   "jser" = ./jser.json;
+  "jsfetchmock" = ./jsFetchMock.json;
   "jsmn" = ./jsmn.json;
   "json2xml" = ./json2xml.json;
   "json_builder" = ./json_builder.json;
@@ -861,6 +862,7 @@
   "minhash" = ./minhash.json;
   "minhook" = ./minhook.json;
   "miniblink" = ./miniblink.json;
+  "minicoro" = ./minicoro.json;
   "miniz" = ./miniz.json;
   "minmaxheap" = ./minmaxheap.json;
   "miter" = ./miter.json;
