@@ -1102,6 +1102,7 @@
   "nimpmda" = ./nimpmda.json;
   "nimpng" = ./nimPNG.json;
   "nimpress" = ./nimpress.json;
+  "nimpretty_t" = ./nimpretty_t.json;
   "nimprotect" = ./nimprotect.json;
   "nimpy" = ./nimpy.json;
   "nimqbittorrent" = ./nimQBittorrent.json;
