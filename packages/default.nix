@@ -486,6 +486,7 @@
   "ftd2xx" = ./ftd2xx.json;
   "fugitive" = ./fugitive.json;
   "funchook" = ./funchook.json;
+  "fungus" = ./fungus.json;
   "fuse" = ./fuse.json;
   "fushin" = ./fushin.json;
   "fusion" = ./fusion.json;
@@ -1176,6 +1177,7 @@
   "noise" = ./noise.json;
   "noisy" = ./noisy.json;
   "nominatim" = ./nominatim.json;
+  "noptics" = ./noptics.json;
   "nordaudio" = ./nordaudio.json;
   "nordnet" = ./nordnet.json;
   "norm" = ./norm.json;
