@@ -222,6 +222,7 @@
   "cliche" = ./cliche.json;
   "cligen" = ./cligen.json;
   "climate" = ./climate.json;
+  "climinesweeper" = ./climinesweeper.json;
   "clipper2" = ./clipper2.json;
   "cliptomania" = ./cliptomania.json;
   "cliseqselector" = ./cliSeqSelector.json;
